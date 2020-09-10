@@ -1,0 +1,87 @@
+*start|スタート
+//"ステージ２ラウンド２開始"
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+//[bgm storage = "013"]
+
+*01
+//-------------------------------------------------------------------------------
+//  フリーザ（天使）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_022_003"]
+
+[character x=170 y=-210 storage = "00068/card_02" scale = 1.0 action = "fadein" time = 0.1]
+//天使の輪
+[character x = 170 y = 210 storage = "99999/ring" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon x=-120 y=100 shape="002_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+地獄でなまった[r]
+このカラダを…
+[p]
+
+[balloon x=-120 y=-200 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+ちょうど[r]
+ほぐしたかった[r]
+ところでしてねえ…
+[p]
+
+//点滅（白）
+[se storage = "3025"]
+//点滅
+[balloon shape="008_02" x = 140 y = -30 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+//[balloon shape="008_02" x = 140 y = -30 scale = 50 action = "fadein" time = 0.1]
+//[wait time = 0.3]
+//[clear target = ".bln"]
+
+//フェードアウト（フェードアウトするコマ）
+[balloon x=0 y=0 shape="008_02" scale = 50.0 action = "fadein" time = 0.5]
+[wait time = 0.7] 
+
+
+*02
+//-------------------------------------------------------------------------------
+//  フリーザがゴールデンフリーザに変身する。
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="S0001" bg = "bg_022_003"]
+
+[lwfobject id = "kaki1" storage="kakimoji:ef_009" in="04" x=-200 y=-330 scale = 2.0]
+[quake target = "kaki1" power = 1 time = 300]
+
+[character x=30 y=-120 storage = "00241/card_03" scale = 1.2 action = "fadein" time = 0.1]
+
+//フェードイン（フェードインするコマ）
+[balloon x=0 y=0 shape="008_02" scale = 50]
+[wait time = 1]
+[fadeout target = ".bln" time = 2]
+[wait_anim target=".bln"]
+
+[balloon x=-115 y=450 shape="002_03" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+水面すら揺らさぬ繊細さと[r]
+究極の激しさを併せ持った…
+[p]
+
+[balloon x=150 y=-380 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+真の[r]
+ゴールデンフリーザ！！
+[p]
+
+//-------------------------------------------------------------------------------
+//[stopbgm]

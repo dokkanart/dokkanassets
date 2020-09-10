@@ -1,0 +1,272 @@
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "002"]
+
+*001
+//-------------------------------------------------------------------------------
+//  超ベジット
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+
+[coma shape="N0001R" bg = "bg_008_001"]
+
+[character x = 190 y = -270 storage = "00535/card_02" scale = 1.1 action = "fadein" time = 0.1]
+
+[balloon x=-110 y=120 shape="001_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+もうちっと強いのかと[r]
+思ったがな…[p]
+
+[balloon x=-125 y=-85 shape="001_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+オレに[r]
+出させてくれよ…[r]
+本気を[p]
+
+*002
+//-------------------------------------------------------------------------------
+//  魔人ブウ(アルティメット悟飯吸収)
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_008_001"]
+
+[character x=-210 y=-330 storage = "00364/card_02" scale = 1.1 action = "fadein" time = 0.1]
+
+
+[balloon x=145 y=60 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+こうなったら[r]
+きさまを吸収してやる…！[p]
+
+*003
+//-------------------------------------------------------------------------------
+//  超ベジット
+//-------------------------------------------------------------------------------
+[se storage = "03"]
+[coma shape="N0004R" bg = "bg_000_014"]
+
+[character id = "ve" x = 0 y = -755 storage = "00535/card_01" scale = 2.3 action = "fadein" time = 0.1]
+
+[balloon x=-140 y=70 shape="001_02" scale = 0.65 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 44]
+[quake target =".bln" power = 3 time = 0.2]
+なに！？
+[p]
+
+
+//吸収
+[se storage = "3020"]
+
+[clear target = "ve"]
+
+[character id = "buu2" x = 10 y = -200 storage = "00231/atc_sp01_p_03" scale = 4.0 angle = 0 action = "expand" time = 0.3]
+[move target ="buu2" y=50 time = 0.3]
+
+
+[character id = "ve2" x = 0 y = -755 storage = "00535/card_01" scale = 2.3]
+
+[wait time = 0.3]
+
+[quake target ="buu2" power = 9 time = 0.2]
+
+[wait time = 0.2]
+
+[se storage = "3014"]
+
+[fadeout target = "buu2" time = 0.2]
+[fadeout target = "ve2" time = 0.2]
+
+[character id = "buu3" x = 100 y = 0 storage = "00231/atc_sp01_p_01" scale = 3.0 angle = 0 action = "fadein" time = 0.1]
+[quake target ="buu3" power = 2 time = 100]
+
+[wait time = 0.7]
+
+
+
+
+
+
+
+
+
+
+[se storage = "3025"]
+//点滅
+[balloon shape="008_02" x = 140 y = -30 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+//[balloon shape="008_02" x = 140 y = -30 scale = 50 action = "fadein" time = 0.1]
+//[wait time = 0.3]
+//[clear target = ".bln"]
+
+//フェードアウト（フェードアウトするコマ）
+[balloon x=130 y=40 shape="008_02" scale = 50.0 action = "fadein" time = 0.3]
+[wait time = 0.5] 
+
+
+*004
+//-------------------------------------------------------------------------------
+//  魔人ブウ(アルティメット悟飯吸収)
+//-------------------------------------------------------------------------------
+
+//[se storage = "04"]
+[coma shape="S0001" bg = "bg_008_001"]
+
+[character x = 0 y = 60 storage = "00364/card_01" scale = 1.0 action = "fadein" time = 0.1]
+
+//フェードイン（フェードインするコマ）
+[balloon x=130 y=40 shape="008_02" scale = 50]
+[wait time = 0.5]
+[fadeout target = ".bln" time = 1.5]
+[wait_anim target=".bln"]
+
+[bgm storage = "013"]	
+
+[balloon x=160 y=30 shape="002_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+やった……[r]
+やったぞ…！
+[p]
+
+
+*005
+//-------------------------------------------------------------------------------
+//  キビト界王神(界王神界)
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_023"]
+
+[character x = 200 y = -140 storage = "00360/idl_side_e_01" scale = 1.3 action = "fadein" time = 0.1]
+[character x = 175 y = 155 storage = "99999/ase" scale = 0.5 action = "fadein" time = 0.1]
+[balloon x=-145 y=100 shape="004_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+な…[r]
+なんてことだ…[r]
+吸収されてしまった…
+[p]
+
+[balloon x=-145 y=-110 shape="004_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+ご…悟空さんと[r]
+ベジータさんまで……[r]
+…もう終わりだ……[p]
+
+*006
+//-------------------------------------------------------------------------------
+//  老界王神
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_023"]
+
+[character x = -180 y = -120 storage = "90003/oldkaiousin" scale = 1.2 action = "fadein" time = 0.1]
+[character x = -182 y = 160 storage = "99999/ring" scale = 0.6 action = "fadein" time = 0.1]
+
+[balloon x=120 y=110 shape="001_02" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+…いや わからんぞ…[r]
+魔人ブウは戦士を吸収する[r]
+たびに姿を変えてきた…[p]
+
+[balloon x=120 y=-100 shape="001_03" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+じゃが今回は……[p]
+
+*007
+//-------------------------------------------------------------------------------
+//  キビト界王神(界王神界)
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_023"]
+
+[character x = 200 y = -140 storage = "00360/idl_side_e_01" scale = 1.3 action = "fadein" time = 0.1]
+
+[balloon x=-115 y=90 shape="001_02" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+[quake target =".bln" power = 3 time = 0.2]
+か…変わってない…！[r]
+どういうことですか！？[p]
+
+*008
+//-------------------------------------------------------------------------------
+//  老界王神
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_023"]
+
+[character x = -180 y = -120 storage = "90003/oldkaiousin" scale = 1.2 action = "fadein" time = 0.1]
+[character x = -182 y = 160 storage = "99999/ring" scale = 0.6 action = "fadein" time = 0.1]
+
+[balloon x=110 y=100 shape="001_01" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+悟空たちは[r]
+なにか作戦があって[r]
+わざと吸収されたの[r]かもしれん[p]
+
+*009
+//-------------------------------------------------------------------------------
+//  キビト界王神(界王神界)
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_023"]
+
+[character x = 200 y = -140 storage = "00360/idl_side_e_01" scale = 1.3 action = "fadein" time = 0.1]
+
+[balloon x=-120 y=100 shape="001_02" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+で…では[r]
+悟空さんたちの狙いどおりに[r]
+なれば勝機もあると…！[p]
+
+
+*010
+//-------------------------------------------------------------------------------
+//  老界王神
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002L" bg = "bg_000_023"]
+
+[character x = -160 y = -160 storage = "90003/oldkaiousin" scale = 1.4 action = "fadein" time = 0.1]
+[character x = -160 y = 180 storage = "99999/ring" scale = 0.7 action = "fadein" time = 0.1]
+
+[balloon x=145 y=90 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+うむ…[r]
+きっとブウを倒す策が[r]
+あるにちがいない！[p]
+
+[balloon x=145 y=-190 shape="006_01" scale = 0.9 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 7 time = 0.2]
+それまでは[r]
+魔人ブウの攻撃を[r]
+耐え抜くのじゃ！！[p]
+
+//-------------------------------------------------------------------------------
+[stopbgm]

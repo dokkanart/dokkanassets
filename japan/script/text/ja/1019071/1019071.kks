@@ -1,0 +1,127 @@
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "005"]
+
+
+*001
+//-------------------------------------------------------------------------------
+//  大界王神
+//-------------------------------------------------------------------------------
+
+//[se storage = "04"]
+[coma shape="N0001L" bg = "bg_012_001"]
+
+[character x = -250 y = -110 storage = "00413/idl_side_p_01" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x=100 y=130 shape="001_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 3 time = 0.2]
+[font size = 28]
+すばらしい力だ…！！[r]
+…あらためて頼もう…[p]
+
+[balloon x=100 y=-80 shape="001_03" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 3 time = 0.2]
+[font size = 24]
+魔人ブウ復活を[r]阻止するために[r]
+おぬしらの力を[r]貸してほしい！！[p]
+
+
+*002
+//-------------------------------------------------------------------------------
+//  トランクス
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_012_001"]
+
+[character x = 210 y = -200 storage = "90000/wait_right_normal" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x=-90 y=115 shape="001_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 3 time = 0.2]
+[font size = 32]
+もちろんです！[p]
+
+[balloon x=-80 y=-80 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target =".bln" power = 3 time = 0.2]
+[font size = 28]
+地球の…いえ[r]
+宇宙の危機を見過ごす[r]
+ことはできませんから！[p]
+
+
+*003
+//-------------------------------------------------------------------------------
+//  大界王神
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_012_001"]
+
+[character x = -250 y = -110 storage = "00413/idl_side_p_01" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x=70 y=120 shape="001_01" scale = 0.65 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 3 time = 0.2]
+[font size = 44]
+うむ！[p]
+
+[balloon x=130 y=-80 shape="001_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target =".bln" power = 3 time = 0.2]
+[font size = 28]
+北の界王よ[r]
+少しの間 この者たちの[r]
+力を借りるぞ[p]
+
+
+*004
+//-------------------------------------------------------------------------------
+//  界王
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_080_001"]
+
+[character x = 150 y = -50 storage = "90001/stand" scale = 0.7 action = "fadein" time = 0.1]
+ 
+[character x = 210 y = 75 storage = "99999/ase" scale = 0.55 action = "fadein" time = 0.1]
+
+[balloon x=-120 y=100 shape="004_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 3 time = 0.2]
+[font size = 28]
+は！ はい…！！[r]
+大界王神さま…[r]
+どうぞご自由に…！[p]
+
+[balloon x=-130 y=-150 shape="004_02" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 3 time = 0.2]
+[font size = 28]
+…わ……[r]
+わしの立場は[r]
+どうなるんじゃ……
+//[p]
+
+[wait_anim target=".bln"]
+
+
+[rotate_by target=".bln" angle=-10 time=0.2]
+[move target =".bln" y=-210 time = 0.2]
+//[quake target =".bln" power = 3 time = 0.2]
+
+[wait_anim target=".bln"]
+
+// 空のフキダシ（セリフがないコマを送るために使用）
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+
+[stopbgm]

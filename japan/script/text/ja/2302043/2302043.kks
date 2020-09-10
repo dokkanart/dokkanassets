@@ -1,0 +1,80 @@
+
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "008"]
+
+
+//-------------------------------------------------------------------------------
+//  ベジータ
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0001L" bg = "bg_008_001"]
+
+[character x=-220 y=-110 storage = "00061/heapup_p_01" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x=130 y=95 shape="002_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 34]
+くっくっく…
+[p]
+
+[balloon x=130 y=-90 shape="002_03" scale = 1 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+今の攻撃が[r]
+限界だとしたら[r]
+とんだ期待はずれだぜ
+[p]
+
+*001
+//-------------------------------------------------------------------------------
+//  悟空
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_008_001"]
+
+
+
+[character x=250 y=-110 storage = "00003/atc_energyball_e_02" scale = 1.8 action = "fadein" time = 0.1]
+
+[balloon x=-130 y=90 shape="001_01" scale = 0.95 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+な…[r]
+なんてやろうだ……！
+[p]
+
+
+*002
+//-------------------------------------------------------------------------------
+//  悟空
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_008_001"]
+
+
+
+[character x=170 y=-130 storage = "00003/card_01" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x=-170 y=100 shape="001_02" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 46]
+でもよ…
+[p]
+
+
+
+[balloon x=-150 y=-90 shape="001_03" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 27]
+[quake target =".bln" power = 3 time = 0.2]
+こんなヤバいとき[r]
+だってのにワクワク[r]
+してきやがった……！
+[p]
+
+[stopbgm]
+

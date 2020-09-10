@@ -1,0 +1,462 @@
+*start|スタート
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "013"]
+
+*001
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0003R" bg = "bg_000_032"]
+
+[balloon x=0 y=100 shape="003_01" scale = 1.5 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 15]
+//[quake target =".bln" power = 3 time = 0.2]
+ヤムーと[r]スポポビッチを追跡し[r]
+悟空たちが[r]たどり着いたのは[r]
+バビディの宇宙船だった[r]
+　[r]
+気配を悟られぬよう[r]
+ヤムーたちの動向を探る[r]
+悟空たち…[r]
+　[r]
+そこへ現れたのは……
+[p]
+
+
+
+*002
+//-------------------------------------------------------------------------------
+//  バビディ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0003L" bg = "bg_000_032"]
+
+[wait time = 0.7]
+
+[se storage = "3010"]
+
+
+
+
+[character x=0 y= -80 storage = "00238/idl_side_p_01" priority=110 scale = 1.0 action = "fadein" time = 0.7]
+
+[wait time = 0.5]
+
+[character id = "1" x = -260 y = -130 storage = "00233/atc_sp01_p_02" priority=100 scale = 1.0 action = "fadein" time = 0.7]
+
+
+
+[wait_anim target="1"]
+
+
+//空のフキダシ
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+
+
+*003
+//-------------------------------------------------------------------------------
+//  キビト
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_032"]
+
+[character x= 210 y= -140 storage = "00359/heapup_e_01" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x = -100 y = 90 shape="004_03" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 40]
+[quake target =".bln" power = 3 time = 0.2]
+ダーブラ…！！
+[p]
+
+
+[balloon x=-145 y=-105 shape="004_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+…バビディのやつ[r]
+魔界の王まで手の内に[r]
+いれてしまったのか！！
+[p]
+
+
+*004
+//-------------------------------------------------------------------------------
+//  孫悟空（天使）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_032"]
+
+[character x = 170 y = 165 storage = "99999/ring" scale = 0.8 action = "fadein" time = 0.1]
+[character x=250 y=-140 storage = "00003/none_idl_side_e_01" scale = 1.1 action = "fadein" time = 0.1]
+
+[balloon x = -120 y = 55 shape="001_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+え！？ダーブラ？[r]
+どっち？[r]
+でかいほう？
+[p]
+
+
+*005
+//-------------------------------------------------------------------------------
+//  シン
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_032"]
+
+[character x = 230 y = -100 storage = "00361/heapup_e_01" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x = -105 y = 60 shape="004_02" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size =  40]
+//[quake target =".bln" power = 3 time = 0.2]
+そうです…
+[p]
+
+
+*006
+//-------------------------------------------------------------------------------
+//  孫悟飯（青年期）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_032"]
+
+[character x=200 y=-160 storage = "00366/idl_side_e_06" scale = 1.1 action = "fadein" time = 0.1]
+
+[balloon x = -120 y = 50 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+…ということは…[r]
+あのちっちゃいほうが[r]
+魔導師バビディ[r]なんですか？
+[p]
+
+
+*007
+//-------------------------------------------------------------------------------
+//  シン
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_032"]
+
+[character x = 230 y = -100 storage = "00361/heapup_e_01" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x = -120 y = 90 shape="001_02" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+そうです…力はまったく[r]
+非力ですが恐ろしい魔術を[r]
+使いますのでけっして[r]
+あなどってはいけません…
+[p]
+
+
+[balloon x=-100 y=-110 shape="001_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+…あのダーブラですら[r]
+手下にしてしまう[r]ほどの…
+[p]
+
+
+*008
+//-------------------------------------------------------------------------------
+//  ピッコロ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_032"]
+
+[character x = 180 y = -90 storage = "00010/idl_side_e_02" scale = 1.5 action = "fadein" time = 0.1]
+
+[balloon x = -130 y = 40 shape="002_03" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+そ…そんな強さを[r]
+もった者をも[r]
+屈服させてしまうほどの[r]
+魔術なのですか？
+[p]
+
+
+*009
+//-------------------------------------------------------------------------------
+//  キビト
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_032"]
+
+[character x= 210 y= -140 storage = "00359/heapup_e_01" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x = -105 y = 90 shape="001_02" scale = 1.1 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 22]
+//[quake target =".bln" power = 3 time = 0.2]
+…いや おそらく相手の心の中の[r]
+悪や欲につけこんで思いのままに[r]
+支配をしてしまったのだと思う
+[p]
+
+
+[balloon x=-130 y=-115 shape="001_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+そういう意味では[r]
+ダーブラは[r]
+うってつけの相手だ…
+[p]
+
+
+*010
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0004L" bg = "bg_000_014"]
+
+
+[balloon x=0 y=-20 shape="003_01" scale = 1.6 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 14]
+//[quake target =".bln" power = 3 time = 0.2]
+ついに その姿を現した[r]
+黒幕 魔導師バビディ…[r]
+そして[r]
+暗黒魔界の王ダーブラ[r]
+　[r]
+エネルギーを受け取った[r]
+バビディは[r]
+用済みになった[r]ヤムーたちを[r]
+その場で殺してしまう…[r]
+さらに…
+[p]
+
+
+*011
+//-------------------------------------------------------------------------------
+//  バビディ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_032"]
+
+[character x = -210 y = -90 storage = "00238/idl_side_p_01" scale = 1.1 action = "fadein" time = 0.1]
+
+[balloon x=125 y=30 shape="002_03" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+さーてダーブラ…[r]
+やっぱしボクの計算どおり[r]
+ヤムーたちはたくさんの[r]
+エサを連れてきたようだね
+[p]
+
+
+*012
+//-------------------------------------------------------------------------------
+//  ダーブラ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_032"]
+
+//[character x = -350 y = -180 storage = "00233/atc_sp01_p_02" scale = 1.3 action = "fadein" time = 0.1]
+[character x = -230 y = -240 storage = "00233/atc_sp01_p_04" scale = 1.3 action = "fadein" time = 0.1]
+
+
+
+[balloon x=130 y=40 shape="002_03" scale = 1.05 action = "fadein" time = 0.1]
+[wait_anim target=".bln"] 
+[font size = 22]
+//[quake target =".bln" power = 3 time = 0.2]
+界王神と[r]キビトのエネルギーは[r]
+使えないとして…３匹ほどは[r]
+すばらしいエネルギーを[r]
+もっているようですな…
+[p]
+
+
+*013
+//-------------------------------------------------------------------------------
+//  バビディ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_032"]
+
+[character x = -210 y = -90 storage = "00238/idl_side_p_01" scale = 1.1 action = "fadein" time = 0.1]
+
+[balloon x=125 y=30 shape="002_03" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+あの３匹を[r]
+宇宙船の中にさそいこんで[r]
+エネルギーを吸い取るのが[r]
+一番確実だよね…
+[p]
+
+
+*014
+//-------------------------------------------------------------------------------
+//  ダーブラ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_032"]
+
+[character x = -230 y = -240 storage = "00233/atc_sp01_p_04" scale = 1.3 action = "fadein" time = 0.1]
+
+
+[balloon x=140 y=60 shape="002_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+しかし界王神が[r]
+そうはさせないでしょう
+[p]
+
+
+*015
+//-------------------------------------------------------------------------------
+//  バビディ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_032"]
+
+[character x = -210 y = -90 storage = "00238/idl_side_p_01" scale = 1.1 action = "fadein" time = 0.1]
+
+[balloon x=120 y=95 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+あの３匹以外のクズを[r]
+おそうじしてさ
+[p]
+
+
+[balloon x=120 y=-105 shape="002_03" scale = 1.05 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 22]
+//[quake target =".bln" power = 3 time = 0.2]
+そしてすぐに船内に[r]
+もどってくれば３匹は[r]
+カッとなって必ず追って[r]
+中に入ってくると[r]思うんだよね
+[p]
+
+
+*016
+//-------------------------------------------------------------------------------
+//  ダーブラ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_032"]
+
+[character x = -230 y = -240 storage = "00233/atc_sp01_p_04" scale = 1.3 action = "fadein" time = 0.1]
+
+
+[balloon x=100 y=70 shape="002_02" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 40]
+//[quake target =".bln" power = 3 time = 0.2]
+なるほど
+[p]
+
+
+[balloon x=120 y=-105 shape="002_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+わかりました[r]
+バビディさま
+[p]
+
+
+*017
+//-------------------------------------------------------------------------------
+//  バビディ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_032"]
+
+[character x = -210 y = -90 storage = "00238/idl_side_p_01" scale = 1.1 action = "fadein" time = 0.1]
+
+[balloon x=120 y=55 shape="002_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+じゃあ[r]
+まかせたからね[r]
+ダーブラ
+[p]
+
+[fadeout target = ".chara" time = 0.7]
+
+[wait_anim target=".chara"]
+
+
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+
+*018
+//-------------------------------------------------------------------------------
+//  孫悟空（天使）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_032"]
+
+[character x = 170 y = 165 storage = "99999/ring" scale = 0.8 action = "fadein" time = 0.1]
+[character x=250 y=-140 storage = "00003/none_idl_side_e_01" scale = 1.1 action = "fadein" time = 0.1]
+
+[balloon x = -115 y = 50 shape="001_02" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+…あれ[r]
+ダーブラだけ残して[r]
+バビディは宇宙船の中に[r]
+入っていったぞ…
+[p]
+
+
+*019
+//-------------------------------------------------------------------------------
+//  ダーブラ
+//-------------------------------------------------------------------------------
+[se storage = "3022"]
+[coma shape="N0002L" bg = "bg_000_032"]
+
+[character x = -100 y = -100 storage = "00233/atc_sp01_p_03" scale =1.0 action = "fadein" time = 0.1]
+[quake target =".chara" power = 5 time = 0.4]
+
+[balloon x = 165 y = 120 shape="002_02" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+//[quake target =".bln" power = 3 time = 0.2]
+さて……[r]
+やるか…
+[p]
+
+[se storage = "3012"]
+//点滅
+[balloon shape="008_02" x = 0 y = 0 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+[balloon shape="008_02" x = 0 y = 0 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+
+//-------------------------------------------------------------------------------
+[stopbgm]

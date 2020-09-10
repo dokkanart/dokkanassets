@@ -1,0 +1,232 @@
+*start|スタート
+//ステージ１ゴール
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "004"]
+
+
+*01
+//-------------------------------------------------------------------------------
+//  孫悟空
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0001R" bg = "bg_081_012"]
+
+[character x = 190 y = -50 storage = "00261/card_03" scale = 1 action = "fadein" time = 0.1]
+
+
+[balloon shape="001_03" x = -130 y = 60 scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+どうだ！[r]
+まいったか！
+[p]
+
+*02
+//-------------------------------------------------------------------------------
+//  ブルマ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_081_012"]
+
+[character x = 190 y = -210 storage = "00668/idl_side_p_01" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon shape="001_02" x = -110 y = 60 scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+あんた[r]
+チビのくせに[r]
+強いのね！
+[p]
+
+*03
+//-------------------------------------------------------------------------------
+//  孫悟空
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_081_012"]
+
+[character x = 190 y = -50 storage = "00261/card_03" scale = 1 action = "fadein" time = 0.1]
+
+
+
+[balloon shape="001_03" x = -130 y = 60 scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+じいちゃんに[r]
+鍛えられたんだ！
+[p]
+
+*04
+//-------------------------------------------------------------------------------
+//  "パスタ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_081_012"]
+
+[character x = -200 y = -100 storage = "00896/atc_punch_p_02" scale = 1.3 action = "fadein" time = 0.1]
+[character x = -100 y = -170 storage = "00897/atc_punch_p_02" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon shape="001_01" x = 150 y = 90 scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+なかなか[r]
+やるじゃない…
+[p]
+
+*05
+//-------------------------------------------------------------------------------
+//  ブルマ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_081_012"]
+
+[character x = 190 y = -210 storage = "00668/idl_side_p_01" scale = 1.2 action = "fadein" time = 0.1]
+
+
+[balloon shape="006_01" x = -110 y = 60 scale = 0.75 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+[quake target =".bln" power = 7 time = 0.2]
+さあ[r]
+とどめよ！！
+[p]
+
+*06
+//-------------------------------------------------------------------------------
+//  "パスタ
+//-------------------------------------------------------------------------------
+[se storage = "3022"]
+[coma shape="N0003L" bg = "bg_081_012"]
+
+[lwfobject id = "kaki1" storage="kakimoji:ef_023" x=-200 y=-100 scale = 1.3 action = "fadein" time = 0.1]
+[quake target = "kaki1" power = 15 time = 0.4]
+
+[character id = "1" x = -190 y = -180 storage = "00897/atc_sp01_e_05" scale = 1.3 action = "fadein" time = 0.1]
+[quake target = "1" power = 5 time = 0.4]
+
+[character id = "2" x = 50 y = -70 storage = "99999/bomb_2" scale = 0.7 angle=60 action = "fadein" time = 0.1]
+//[quake target = "2" power = 9 time = 0.7]
+//[spin target="2" velocity=30]
+[rotate_to target="2" angle=160 time=0.5]
+[move target ="2" x=120 time = 0.5]
+
+[balloon shape="006_02" x = 170 y = 140 scale = 0.8 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 7 time = 0.2]
+調子にのるんじゃ[r]
+ないわよ！
+//[p]
+
+[wait time = 0.3]
+
+
+*07
+//-------------------------------------------------------------------------------
+//  孫悟空　ブルマ
+//-------------------------------------------------------------------------------
+[se storage = "03"]
+[coma shape="N0001R" bg = "bg_081_012"]
+
+[lwfobject id = "kaki1" storage="kakimoji:ef_001" x=-120 y=50 scale = 3.0 angle = -15 action = "fadein" time = 0.1]
+[quake target = "kaki1" power = 15 time = 0.4]
+
+[character x = 240 y = -140 storage = "00668/idl_side_p_01" scale = 0.9 action = "fadein" time = 0.1]
+
+[character x = 100 y = -40 storage = "00261/idl_side_e_02" scale = 1.2 action = "fadein" time = 0.1]
+
+
+[balloon shape="001_03" x = -110 y = 100 scale = 0 action = "fadein" time = 0.1]
+[p]
+
+
+*08
+//-------------------------------------------------------------------------------
+//  パスタの攻撃で爆発が起こる。
+//-------------------------------------------------------------------------------
+[se storage = "3013"]
+[coma shape="N0003L" bg = "bg_081_012"]
+
+[lwfobject id = "kaki2" storage="kakimoji:ef_019" x=10 y=60 scale = 3.0 action = "fadein" time = 0.1]
+
+[quake target = "kaki2" power = 15 time = 1]
+
+[character x=0 y=-120 storage = "99999/ef_sp_explosion" scale = 3.0 angle = -20 action = "expand" time = 0.1]
+
+[quake target = ".chara" power = 10 time = 1]
+
+[balloon x=0 y=0 shape="008_02" scale = 50 action = "fadein" time = 0.5]
+
+[wait_anim target=".bln"]
+
+[fadeout target = ".bln" time = 1.5]
+
+[wait_anim target=".bln"]
+
+
+[balloon shape="001_03" x = 150 y = 90 scale = 0 action = "fadein" time = 0.1]
+[p]
+
+
+*09
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002L" bg = "bg_000_014"]
+
+[balloon shape="010_04" x = -180 y = -35 scale = 2.5 angle = -13 action = "fadein" time = 0.1]
+
+
+[balloon shape="003_01" x = 120 y = 0 scale = 1.5 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 16]
+//[quake target =".bln" power = 3 time = 0.2]
+ドラゴンボールを[r]
+探す少女 ブルマと[r]
+出会った孫悟空[r]
+　[r]
+…だが[r]
+悟空が持つ四星球は[r]
+謎のふたり組に[r]
+奪われてしまった
+[p]
+
+
+*10
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_000_024"]
+
+[character x = 230 y = -100 storage = "00668/card_02" scale = 0.8 action = "fadein" time = 0.1]
+
+
+[character x = 150 y = -120 storage = "00261/card_03" scale = 0.8 action = "fadein" time = 0.1]
+
+
+[balloon shape="003_01" x = -140 y = -40 scale = 1.5 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 16]
+//[quake target =".bln" power = 3 time = 0.2]
+悟空は[r]
+じいちゃんの形見を[r]
+取り戻すため[r]
+ブルマは[r]
+ドラゴンボールを[r]
+７つ集めるため…[r]
+　[r]
+こうしてふたりの[r]
+冒険は始まるのだった！
+[p]
+
+
+//-------------------------------------------------------------------------------
+[stopbgm]

@@ -1,0 +1,353 @@
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "013"]
+
+
+*01
+//-------------------------------------------------------------------------------
+//  ピッコロ
+//-------------------------------------------------------------------------------
+[se storage = "03"]
+[coma shape="N0001R" bg = "bg_001_002"]
+
+
+[character x = 180 y = -90 storage = "00010/idl_side_e_02" scale = 1.5 action = "fadein" time = 0.1]
+
+
+[lwfobject id = "kaki1" storage="kakimoji:ef_001" in="02" x=-30 y=130 scale = 2.5 angle = -10 action = "fadein" time = 0.1]
+[quake target = "kaki1" power = 5 time = 0.3]
+[wait_anim target="kaki1"]
+
+
+
+[balloon x=-130 y=-80 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target = ".bln" power = 3 time = 0.2]
+邪悪な大パワーが[r]５つ…こちらに[r]向かってきている…！[p]
+
+//[balloon x=-140 y=-80 shape="002_01" scale = 1 action = "fadein" time = 0.1]
+//[wait_anim target=".bln"]
+//[font size = 30]
+//こちらに[r]向かってきている…！[p]
+
+
+*02
+//-------------------------------------------------------------------------------
+//  ギニュー
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0003L" bg = "bg_001_002"]
+
+
+
+[wait time = 0.3]
+
+
+[se storage = "3033"]
+
+[character x=70 y=-20 storage = "00031/idl_side_p_02" scale = 1.2 action = "slide:left" time = 0.4]
+
+[character x=-200 y=-20 storage = "00033/idl_side_p_02" scale = 1.2 action = "slide:left" time = 0.4]
+
+[character x=-160 y=-100 storage = "00034/idl_side_p_02" scale = 1.3 action = "slide:left" time = 0.3]
+
+[character x=150 y=-90 storage = "00017/idl_side_p_02" scale = 1.3 action = "slide:left" time = 0.2]
+
+
+[lwfobject id = "kaki1" storage="kakimoji:ef_024" in="02" x=-160 y=-120 scale = 2 action = "fadein" time = 0.2]
+[quake target = "kaki1" power = 12 time = 0.2]
+
+[character x=-20 y=-120 storage = "00032/idl_side_p_02" scale = 1.3 action = "slide:left" time = 0.3]
+
+[wait_anim target=".chara"]
+
+// 空のフキダシ（セリフがないコマを送るために使用）
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+
+
+*02.5
+//-------------------------------------------------------------------------------
+//  ギニュー
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_001_002"]
+
+[character x=-200 y=-110 storage = "00017/idl_side_p_02" scale = 1.5 action = "fadein" time = 0.1]
+
+
+[balloon x=100 y=110 shape="002_02" scale = 0.65 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 44]
+[quake target = ".bln" power = 3 time = 0.2]
+よう！[p]
+
+
+*03
+//-------------------------------------------------------------------------------
+//  孫悟飯
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_001_002"]
+
+
+
+[lwfobject id = "kaki1" storage="kakimoji:ef_001" in="02" x=-30 y=70 scale = 2.5 angle = -10 action = "fadein" time = 0.1]
+[quake target = "kaki1" power = 5 time = 0.3]
+
+[character x = 200 y = -60 storage = "00007/heapup_e_02" scale = 1.2 action = "fadein" time = 0.1]
+
+
+// 空のフキダシ
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+
+
+
+*04
+//-------------------------------------------------------------------------------
+//  クリリン
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_001_002"]
+
+[character x = 180 y = -100 storage = "00009/idl_side_e_03" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon x=-90 y=70 shape="004_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28][quake target = ".bln" power = 3 time = 0.2]
+は…はやい…！[r]接近が[r]わからなかった…[p]
+
+*05
+//-------------------------------------------------------------------------------
+//  リクーム
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_001_002"]
+
+//[character x=-190 y=-105 storage = "00031/idl_side_p_02" scale = 1.2 action = "fadein" time = 0.1]
+
+[character x=-200 y=-150 storage = "00031/idl_side_p_02" scale = 1.4 action = "fadein" time = 0.1]
+
+[balloon x=120 y=120 shape="002_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+隊長…こいつら…[r]ナメック星人と[r]地球人ですぜ[p]
+
+[balloon x=130 y=-80 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+サイヤ人のサルども[r]じゃない[p]
+
+
+
+*06
+//-------------------------------------------------------------------------------
+//  ギニュー
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_001_002"]
+
+[character x=-200 y=-110 storage = "00017/idl_side_p_02" scale = 1.5 action = "fadein" time = 0.1]
+
+[balloon x=110 y=110 shape="002_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+そのようだな…[r]しかたない…[p]
+
+[balloon x=120 y=-80 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+ジャンケンで負けた[r]
+ヤツがこいつらを相手[r]
+する…これでどうだ？
+[p]
+
+*07
+//-------------------------------------------------------------------------------
+//  ギニュー
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0004R" bg = "bg_001_002"]
+
+[character x=300 y=-100 storage = "90000/wait_right_anger" scale = 0.3 action = "fadein" time = 0.1]
+
+[character x=130 y=-100 storage = "00009/idl_side_e_02" scale = 0.5 action = "fadein" time = 0.1]
+
+
+
+[character x=200 y=-80 storage = "00010/idl_side_e_02" scale = 0.5 action = "fadein" time = 0.1]
+
+[character x=270 y=-90 storage = "00007/idl_side_e_02" scale = 0.6 action = "fadein" time = 0.1]
+
+
+
+[character id = "ginyu" x=-300 y=-0 storage = "00017/atc_sp01_e_01" scale = 2.5 action = "fadein" time = 0.1]
+
+[wait time = 0.3]
+
+[balloon x=0 y=85 shape="006_02" scale = 0.7 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[quake target = ".bln" power = 7 time = 0.2]
+[font size = 40]
+ジャンケン…[wait time = 1]
+
+[quake target = "ginyu" power = 9 time = 0.6]
+
+[balloon x=-120 y=-110 shape="006_02" scale = 0.65 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[quake target = ".bln" power = 7 time = 0.2]
+[font size = 44]
+[se storage = "3022"]
+ポン！[p]
+
+
+*08
+//-------------------------------------------------------------------------------
+//  グルド
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_001_002"]
+
+[character x=-230 y=-90 storage = "00033/idl_side_p_02" scale = 1.2 action = "fadein" time = 0.1]
+
+[character x=-80 y=-140 storage = "00032/idl_side_p_02" scale = 1.5 action = "fadein" time = 0.1]
+
+//[wait_anim target=".chara"]
+
+[balloon x=80 y=100 shape="002_03" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+[quake target = ".bln" power = 3 time = 0.2]
+ズルイすよ〜[r]隊長[p]
+
+[balloon x=150 y=-90 shape="002_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target = ".bln" power = 3 time = 0.2]
+ま〜た[r]おいしいところは[r]隊長ですか？[p]
+
+
+
+
+*09
+//-------------------------------------------------------------------------------
+//  ギニュー
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_001_002"]
+
+[character x=-200 y=-110 storage = "00017/idl_side_p_02" scale = 1.5 action = "fadein" time = 0.1]
+
+[balloon x=120 y=80 shape="002_01" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+ふっふっふ…[r]わるいな[r]
+ベジータと遊べるのは[r]このオレだ
+[p]
+
+[fadeout target = ".chara" time = 0.13]
+[se storage = "3035"]
+[lwfobject id = "kaki1" storage="kakimoji:ef_012" in="02" x=-180 y=-85 scale = 1.5]
+[quake target = "kaki1" power = 6 time = 0.4]
+
+[wait_anim target="kaki1"]
+
+[p]
+
+
+*10
+//-------------------------------------------------------------------------------
+//  トランクス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_001_002"]
+
+[character x = 210 y = -200 storage = "90000/wait_right_anger_strong" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x=-100 y=70 shape="004_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[quake target = ".bln" power = 3 time = 0.2]
+[font size = 28]
+…べ……[r]ベジータだって！？[p]
+
+
+
+*11
+//-------------------------------------------------------------------------------
+//  ピッコロ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_001_002"]
+
+[character x = 180 y = -90 storage = "00010/idl_side_e_02" scale = 1.5 action = "fadein" time = 0.1]
+
+[balloon x=-135 y=90 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+トランクス…[r]今はよけいなことは[r]考えるな[p]
+
+
+[balloon x=-145 y=-100 shape="002_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+こいつらを[r]
+倒すことだけに[r]
+集中するんだ
+[p]
+
+
+
+*12
+//-------------------------------------------------------------------------------
+//  ジース
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_001_002"]
+
+//[character x=-180 y=-75 storage = "00034/idl_side_p_02" scale = 1.4 action = "fadein" time = 0.1]
+
+[character x=-180 y=-75 storage = "00034/idl_side_p_02" scale = 1.5 action = "fadein" time = 0.1]
+
+
+[balloon x=110 y=80 shape="002_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+さあて…たっぷりと[r]かわいがってやるか[p]
+
+*13
+//-------------------------------------------------------------------------------
+//  ジース
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002L" bg = "bg_001_002"]
+
+
+[character x=-140 y=-110 storage = "00034/card_02" scale = 1.3 action = "fadein" time = 0.1]
+//[quake target = ".chara" power = 10 time = 0.2]
+
+[balloon x=140 y=30 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+かわいがるといっても[r]
+アタマをよしよしと[r]
+したりするんじゃないぞ
+[p]
+//[quake target = ".chara" power = 12 time = 0.2]
+
+[balloon x=140 y=-200 shape="002_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[quake target = ".bln" power = 3 time = 0.2]
+[font size = 32]
+痛めつけてやると[r]いうことだ！
+[p]
+
+
+
+[stopbgm]

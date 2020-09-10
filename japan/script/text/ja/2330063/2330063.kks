@@ -1,0 +1,57 @@
+*start|スタート
+//復讐鬼ベビー完結編_エリア6：ボス前
+//2330063
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "027"]
+
+*001
+//-------------------------------------------------------------------------------
+//  超サイヤ人４孫悟空
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0001R" bg = "bg_081_008"]
+
+[character id = "ss" x=180 y=-170 storage = "99999/supersaiyan" scale = 1.1 angle = 0 action = "fadein" time = 0.1]
+[quake target ="ss" power = 1 time = 300]
+
+[character x = 220 y = -190 storage = "00504/idl_side_e_01" scale = 1.4 action = "fadein" time = 0.1]
+
+[balloon x = -130 y =120 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target = ".bln" power = 3 time = 0.2]
+そろそろ[r]
+お互い本気を出して…[p]
+
+[balloon x = -110 y =-80 shape="001_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target = ".bln" power = 3 time = 0.2]
+決戦も決戦…[r]
+超最終決戦と[r]
+いこうじゃねえか！[p]
+
+
+*002
+//-------------------------------------------------------------------------------
+//  大猿ベビー
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002L" bg = "bg_081_009"]
+
+[character x=-130 y=-280 storage = "00532/card_01" scale = 1.5  angle = 5 action = "fadein" time = 0.1]
+
+
+[balloon x=140 y=60 shape="007_02" scale = 0.9 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 7 time = 0.2]
+今度こそ…[r]
+本当におまえを殺して[r]
+終わりにしてやる！！
+[p]
+
+//-------------------------------------------------------------------------------
+[stopbgm]

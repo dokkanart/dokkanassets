@@ -1,0 +1,38 @@
+*start|スタート
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+//[bgm storage = "013"]
+
+*001
+//-------------------------------------------------------------------------------
+//  サウザー
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="S0001" bg = "bg_000_021"]
+
+[character id = "kura" x=10 y=-20 storage = "00285/card_02" scale = 0.9 action = "fadein" time = 0.1 angle=-0]
+//[quake target = ".chara" power = 5 time = 0.3] 
+
+[balloon x=-0 y=450 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+バカなやつだ！！[r]
+のこのこ[r]
+出てきやがって…
+[p]
+
+//[quake target = ".chara" power = 8 time = 0.3] 
+
+[balloon x=0 y=-400 shape="006_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 7 time = 0.2]
+きさまも[r]
+あのガキたちと[r]
+同じ目にあわせてやる！
+[p]
+
+//-------------------------------------------------------------------------------
+//[stopbgm]

@@ -1,0 +1,606 @@
+//	エリア１スタート
+
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[stopbgm]
+
+
+//-------------------------------------------------------------------------------
+//  バーダックの声
+//-------------------------------------------------------------------------------
+[coma shape="S0001" bg = "bg_000_014"]
+
+[wait time = 0.7]
+
+[balloon x=-120 y=180 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target = ".bln" power = 3 time = 0.2]
+[font size = 27]
+…これですべてが[r]
+変わる……！！[p]
+
+[balloon x=90 y=-140 shape="002_03" scale = 1 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target = ".bln" power = 3 time = 0.2]
+[font size = 27]
+このオレの運命…[r]
+カカロットの運命…[r]
+そして……[p]
+
+*coma2
+//-------------------------------------------------------------------------------
+//  バーダック
+//-------------------------------------------------------------------------------
+[se storage = "03"]
+[coma shape="N0001R" bg = "bg_000_003"]
+
+[character x=250 y=-260 storage = "00067/heapup_e_01" scale = 1.9 action = "fadein" time = 0.1]
+
+[balloon x=-135 y=80 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 3 time = 0.2]
+[font size = 30]
+きさまの運命も！！[p]
+
+
+*coma3
+//-------------------------------------------------------------------------------
+//  バーダックとフリーザが対峙
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+
+[coma shape="N0003L" bg = "bg_000_003"]
+
+[lwfobject id = "ゴゴゴゴ" storage="kakimoji:ef_009" in="02" x = 60 y=-40 scale = 1.8 action = "fadein" time = 3]
+[quake target = "ゴゴゴゴ" power = 2 time = 600]
+//[wait_anim target = "ゴゴゴゴ"]
+
+
+
+//[wait time = 1.0]
+
+//[se storage = "3025"]
+
+[character x=220 y=-65 storage = "00067/heapup_e_01" scale = 0.3 action = "slide:right" time = 2.0]
+
+[character x=-220 y=-90 storage = "00058/idl_back_p_01" scale = 1.0 action = "slide:left" time = 2.0]
+
+[wait time = 2.0]
+
+// 空のフキダシ
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+
+*coma4
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0003L" bg = "bg_000_005"]
+
+[wait time = 0.7]
+
+
+[balloon x=0 y=-10 shape="003_01" scale = 1.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 15]
+フリーザが[r]
+惑星ベジータもろとも[r]
+サイヤ人を[r]
+皆殺しにしようと[r]
+していることを知った[r]
+孫悟空の父である[r]
+バーダックは[r]
+ただひとり敢然と[r]
+フリーザに[r]
+闘いを挑んでいった…[p]
+
+*coma5
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0003R" bg = "bg_000_003"]
+
+[character x=180 y=-20 storage = "00067/Images_ef_beam_head_01" scale = 0.3 action = "fadein" time = 0.1]
+[quake target =".chara" power = 1 time = 300]
+
+[wait time = 0.7]
+
+[balloon x=-110 y=-30 shape="003_01" scale = 1.5 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 18]
+そして[r]
+ちょうどその頃[r]
+下級戦士として[r]
+生まれたばかりの[r]
+孫悟空を乗せた[r]
+宇宙ポッドが[r]
+地球へ向けて[r]
+発射されていた…[p]
+
+*coma6
+//-------------------------------------------------------------------------------
+//  バーダックが右手でエネルギー弾をためる
+//-------------------------------------------------------------------------------
+//[se storage = "3024"]
+[coma shape="N0004R" bg = "bg_000_003"]
+
+[character x=50 y=90 storage = "00067/hand" scale = 1.5 action = "fadein" time = 0.1]
+
+
+[character id = "ki" x=30 y=-30 storage = "00067/Images_ef_charge_ballpng" scale = 1.5 action = "fadein" time = 0.1]
+[wait time = 0.2]
+[fadeout target = "ki" time = 0.2]
+[wait time = 0.1]
+
+[character id = "ki" x=30 y=-30 storage = "00067/Images_ef_charge_ballpng" scale = 1.5 action = "fadein" time = 0.1]
+[wait time = 0.2]
+[fadeout target = "ki" time = 0.2]
+[wait time = 0.1]
+
+[character id = "ki" x=30 y=-30 storage = "00067/Images_ef_charge_ballpng" scale = 1.5 action = "fadein" time = 0.1]
+[wait time = 0.2]
+[fadeout target = "ki" time = 0.2]
+[wait time = 0.1]
+
+[character id = "ki" x=30 y=-30 storage = "00067/Images_ef_charge_ballpng" scale = 1.5 action = "fadein" time = 0.1]
+[wait time = 0.2]
+[fadeout target = "ki" time = 0.2]
+[wait time = 0.1]
+
+[character id = "ki" x=30 y=-30 storage = "00067/Images_ef_charge_ballpng" scale = 1.5 action = "fadein" time = 0.1]
+[wait time = 0.2]
+[fadeout target = "ki" time = 0.2]
+[wait time = 0.1]
+
+
+[character id = "ki" x=30 y=-30 storage = "00067/Images_ef_charge_ballpng" scale = 1.5 action = "fadein" time = 0.1]
+[wait time = 0.1]
+
+// 空のフキダシ
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+*coma7
+//-------------------------------------------------------------------------------
+//  バーダック
+//-------------------------------------------------------------------------------
+[se storage = "3029"]
+[coma shape="N0002R" bg = "bg_000_003"]
+
+[lwfobject id = "ガッ" storage="kakimoji:ef_013" in="02" x = 95 y=220 scale = 1.6 action = "fadein" time = 0.1]
+[quake target ="ガッ" power = 12 time = 0.2]
+
+[character id = "bdk" x=190 y=0 storage = "00067/atc_energyball_e_01" action = "fadein" time = 0.1]
+[quake target ="bdk" power = 10 time = 0.2]
+//[wait_anim target=".chara"]
+
+[character id = "sc" x=-270 y=105 storage = "00067/Images_ef_beam_head_01" scale = 1.8 action = "fadein" time = 0.1]
+[quake target ="sc" power = 22 time = 0.2]
+
+//[wait time = 0.3]
+
+[balloon x=-125 y=-80 shape="006_01" scale = 1.0 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[quake target = ".bln" power = 7 time = 0.2]
+[font size = 30]
+これで最後だーっ！！
+[p]
+
+
+*coma8
+//-------------------------------------------------------------------------------
+//  フリーザの「スーパーノヴァ」
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0003L" bg = "bg_000_003"]
+
+[character id = "frz" x=0 y=-160 storage = "00058/card_01" scale = 1.0 action = "fadein" time = 0.1]
+
+[character id = "sn" x=-91 y=100 storage = "00058/ef_uniBall" scale = 0.25 action = "fadein" time = 0.1]
+[wait time = 0.2]
+[fadeout target = "sn" time = 0.2]
+[wait time = 0.1]
+
+[character id = "sn" x=-91 y=100 storage = "00058/ef_uniBall" scale = 0.25 action = "fadein" time = 0.1]
+[wait time = 0.2]
+[fadeout target = "sn" time = 0.2]
+[wait time = 0.1]
+
+[character id = "sn" x=-91 y=100 storage = "00058/ef_uniBall" scale = 0.25 action = "fadein" time = 0.1]
+[wait time = 0.2]
+[fadeout target = "sn" time = 0.2]
+[wait time = 0.1]
+
+[character id = "sn" x=-91 y=100 storage = "00058/ef_uniBall" scale = 0.25 action = "fadein" time = 0.1]
+[wait time = 0.2]
+[fadeout target = "sn" time = 0.2]
+[wait time = 0.1]
+
+[character id = "sn" x=-91 y=100 storage = "00058/ef_uniBall" scale = 0.25 action = "fadein" time = 0.1]
+[wait time = 0.2]
+[fadeout target = "sn" time = 0.2]
+[wait time = 0.1]
+
+[character id = "sn" x=-91 y=100 storage = "00058/ef_uniBall" scale = 0.25 action = "fadein" time = 0.1]
+[wait time = 0.2]
+[fadeout target = "sn" time = 0.2]
+[wait time = 0.1]
+
+[se storage = "3029"]
+
+//[bgm storage = "014"]
+
+[balloon x=-115 y=620 shape="008_15" scale = 2.4 action = "fadein" time = 0.5]
+
+[wait_anim target=".bln"]
+
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+*coma9
+//-------------------------------------------------------------------------------
+//  バーダック
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0004R" bg = "bg_000_003"]
+
+//アップ
+[character x=250 y=-278 storage = "00067/atc_energyball_e_01" scale = 1.9 action = "fadein" time = 0.1]
+
+
+[balloon x=-0 y=80 shape="006_02" scale = 0.75 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[quake target = ".bln" power = 7 time = 0.2]
+[font size = 38]
+な…なに！？
+[p]
+
+*coma10
+//-------------------------------------------------------------------------------
+//  バーダックがスーパーノヴァの中に消えていく
+//-------------------------------------------------------------------------------
+[se storage = "3017"]
+[coma shape="N0002R" bg = "bg_000_006"]
+
+//[balloon x=-115 y=620 shape="008_15" scale = 2.4 action = "fadein" time = 1.0]
+
+[lwfobject id = "ゴゴゴゴ" storage="kakimoji:ef_009" in="02" x = -160 y=-0 scale = 2.5 action = "fadein" time = 0.1]
+[quake target ="ゴゴゴゴ" power = 12 time = 10.0]
+
+[character x=0 y=-0 storage = "00067/dam_back_e_01" scale = 0.6 action = "fadein" time = 0.1]
+[quake target =".chara" power = 9 time = 10.0]
+
+
+[wait time = 0.3]
+
+[fadeout target = ".chara" time = 3.0]
+
+[fadeout target = ".bln" time = 3.0]
+
+[wait time = 1]
+
+
+//フェードアウト
+[balloon x=130 y=40 shape="008_03" scale = 50.0 action = "fadein" time = 2.0]
+[wait time = 2.5]
+
+*coma11
+//-------------------------------------------------------------------------------
+//  ドーレ
+//-------------------------------------------------------------------------------
+[coma shape="S0001" bg = "bg_000_006"]
+
+//フェードイン
+[balloon x=130 y=40 shape="008_03" scale = 50]
+[wait time = 1]
+[fadeout target = ".bln" time = 1.5]
+[wait time = 1.5]
+
+
+
+[character x=-220 y=-0 storage = "00286/idl_side_p_01" scale = 1.0 action = "fadein" time = 0.7]
+
+[wait time = 0.3]
+
+[character x=220 y=-20 storage = "00285/idl_side_e_01" scale = 0.75 action = "fadein" time = 0.7]
+
+[wait time = 0.7]
+
+[balloon x=0 y=260 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+これでサイヤ人も[r]
+終わりだな
+[p]
+
+[balloon x=100 y=-180 shape="002_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+ああ[r]
+さすがフリーザ様だ[p]
+
+
+*coma13
+//-------------------------------------------------------------------------------
+//  サウザー
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_008"]
+
+[character x=220 y=-170 storage = "00285/idl_side_e_01" scale = 1.3 action = "fadein" time = 0.1]
+
+
+[balloon x=-100 y=130 shape="002_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+ん？[r]
+なんだあれは……[p]
+
+[balloon x=-150 y=-70 shape="002_01" scale = 0.85 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+モニター確認！[p]
+
+*coma14
+//-------------------------------------------------------------------------------
+//  ドーレ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0003L" bg = "bg_000_003"]
+
+[character x=180 y=-20 storage = "00067/Images_ef_beam_head_01" scale = 0.3 action = "fadein" time = 0.1]
+[quake target =".chara" power = 1 time = 300]
+
+[character x=-230 y=-220 storage = "00286/idl_side_p_01" scale = 1.5 action = "fadein" time = 0.1]
+
+
+[balloon x=120 y=100 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][font size = 28]
+宇宙ポッドだ…[r]
+サイヤ人のガキが[r]
+乗ってるみたいだな[p]
+
+*coma15
+//-------------------------------------------------------------------------------
+//  ネイズ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_008"]
+
+[character x=-270 y=-220 storage = "00287/idl_side_p_01" scale = 1.5 action = "fadein" time = 0.1]
+
+
+[balloon x=120 y=120 shape="002_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][font size = 28]
+はるか辺境の[r]
+地球とかいう星に[r]
+向かっているな…[p]
+
+[balloon x=140 y=-90 shape="002_01" scale = 0.85 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][font size = 32]
+撃ち落とすか？[p]
+
+*coma16
+//-------------------------------------------------------------------------------
+//  サウザー
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_008"]
+
+[character x=220 y=-170 storage = "00285/idl_side_e_01" scale = 1.3 action = "fadein" time = 0.1]
+
+
+[balloon x=-90 y=40 shape="002_02" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][font size = 40]
+ああ…[p]
+
+*coma17
+//-------------------------------------------------------------------------------
+//  クウラの声
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0003L" bg = "bg_000_008"]
+
+
+[balloon x=130 y=70 shape="002_01" scale = 0.85 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+ほうっておけ
+
+[wait time = 0.3]
+
+//  クウラ登場	フェードイン
+[character x=-140 y=-250 storage = "00283/idl_side_p_01" scale = 1.7 action = "fadein" time = 0.7]
+[wait time = 0.7]
+
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+*coma18
+//-------------------------------------------------------------------------------
+//  サウザーたち
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_008"]
+
+[character x=40 y=-160 storage = "00287/idl_side_e_01" scale = 0.8 action = "fadein" time = 0.1]
+[character x=250 y=-140 storage = "00286/idl_side_e_01" scale = 0.8 action = "fadein" time = 0.1]
+[character x=140 y=-190 storage = "00285/idl_side_e_01" scale = 1.0 action = "fadein" time = 0.1]
+
+
+[balloon  x=-130 y=120 shape="002_03" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 40]
+[quake target =".bln" power = 3 time = 0.2]
+クウラ様…[p]
+
+*coma19
+//-------------------------------------------------------------------------------
+//  クウラ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_008"]
+
+[character x=-100 y=-270 storage = "00283/idl_front_p_01" scale = 1.6 action = "fadein" time = 0.1]
+
+
+[balloon x=120 y=120 shape="002_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][font size = 28]
+ここはフリーザの[r]
+任された地区…[p]
+
+[balloon x=120 y=-80 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][font size = 28]
+自分でまいた種だ…[r]
+自分で刈らせろ！[p]
+
+*coma20
+//-------------------------------------------------------------------------------
+//  クウラ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002L" bg = "bg_000_008"]
+
+[character x=-120 y=-270 storage = "00283/idl_side_p_01" scale = 1.7 action = "fadein" time = 0.1]
+
+
+[balloon x=120 y=90 shape="002_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+…しかし赤子とはいえ[r]
+サイヤ人を一匹[r]
+逃がしたとは…[p]
+
+[balloon shape="002_03" x = 130 y = -140 scale = 0.9 action = "fadein" time = 0.1]
+[font size = 28]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 3 time = 0.2]
+フリーザもまだまだ[r]
+…甘い！！[p]
+
+//フェードアウト（フェードアウトするコマ）
+[balloon x=130 y=40 shape="008_03" scale = 50.0 action = "fadein" time = 0.5]
+[wait time = 0.7] 
+
+*title
+//-------------------------------------------------------------------------------
+//  title
+//-------------------------------------------------------------------------------
+
+
+[coma id = "coma1" shape="S0001" bg = "bg_000_006"]
+
+
+//フェードイン（フェードインするコマ）
+[balloon x=130 y=40 shape="008_03" scale = 50]
+[wait time = 1]
+[fadeout target = ".bln" time = 2]
+[wait_anim target=".bln"]
+
+
+[se storage = "17"]
+
+[balloon x=0 y=0 shape="011_06" scale = 1.1 action = "fadein" time = 2.0]
+
+[wait_anim target=".bln"]
+
+[p]
+
+*coma22
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+[bgm storage = "010"]
+[coma shape="N0003L" bg = "bg_000_022"]
+
+
+
+
+[wait time = 0.7]
+
+[balloon x=0 y=160 shape="003_01" scale = 1.6 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 16]
+時は流れ…[r]
+　[r]
+最強の敵[r]
+フリーザを倒し[r]
+ナメック星から地球に[r]
+帰還した孫悟空は[r]
+仲間たちとの[r]
+平和な日々を[r]
+すごしていた…[r]
+[p]
+
+*coma23
+//-------------------------------------------------------------------------------
+//  悟空
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_022"]
+
+[character x=200 y=-160 storage = "00300/heapup_e_01" scale = 1.3 action = "fadein" time = 0.1]
+
+
+[balloon x=-120 y=140 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+やっぱ[r]
+みんなでキャンプは[r]
+楽しいな！[p]
+
+[balloon x=-120 y=-80 shape="001_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][font size = 28]
+でもよクリリン…[r]
+オラ[r]
+ハラへっちまったぞ…[p]
+
+*coma24
+//-------------------------------------------------------------------------------
+//  クリリン
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_022"]
+
+[character x=-100 y=-100 storage = "90003/hiredragon_nomal_left" scale = 0.6 action = "fadein" time = 0.1]
+
+[character x=-230 y=-100 storage = "00009/heapup_p_01" scale = 1.8 action = "fadein" time = 0.1]
+
+
+[balloon x=100 y=90 shape="001_01" scale = 1.2 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][font size = 20]
+よし…[r]
+カレーはオレが作るから[r]
+悟空は魚でもとってきてくれ！[p]
+
+[balloon x=100 y=-120 shape="001_02" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][font size = 34]
+[quake target =".bln" power = 3 time = 0.2]
+悟飯は[r]
+薪をたのむぞ！[p]
+
+*coma25
+//-------------------------------------------------------------------------------
+//  悟飯
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0003R" bg = "bg_000_022"]
+
+[character x=130 y=-100 storage = "00007/okappa_right" scale = 1.3 action = "fadein" time = 0.1]
+
+
+[balloon x=-130 y=70 shape="001_02" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][font size = 44]
+[quake target =".bln" power = 3 time = 0.2]
+はい！[p]
+
+[stopbgm]

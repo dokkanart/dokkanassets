@@ -1,0 +1,57 @@
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+//[bgm storage = "013"]
+
+*001
+//-------------------------------------------------------------------------------
+ベジータ
+//-------------------------------------------------------------------------------
+
+[coma shape="S0001" bg = "bg_008_001"]
+
+
+
+[character x = -0 y = -0 storage = "00061/card_1005680" scale = 1.6 action = "fadein" time = 0.1]
+
+[wait time = 0.7]
+
+[se storage = "3025"]
+
+//点滅（白）
+[se storage = "3025"]
+//点滅
+[balloon shape="008_02" x = 140 y = -30 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+[balloon shape="008_02" x = 140 y = -30 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+
+[lwfobject id = "kaki1" storage="kakimoji:ef_009" in="04" x=-180 y=-100 scale = 2.0 action = "fadein" time = 0.1]
+[quake target = "kaki1" power = 1 time = 300]
+
+//[wait_anim target=".bln"]
+
+[wait time = 0.7]
+
+
+[balloon x = -120 y = 400 shape="002_03" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+そこまでが限界らしいな…[r]
+ではきさまの死にみやげに[r]
+見せてやろう…
+[p]
+
+[balloon x = 140 y = -330 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+超エリートサイヤ人の[r]
+圧倒的パワーを……！
+[p]
+
+//[stopbgm]

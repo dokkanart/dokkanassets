@@ -1,0 +1,208 @@
+*start|スタート
+//ステージ5スタート
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "013"]
+
+*01
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+[se storage = "3038"]
+[coma shape="N0004L" bg = "bg_000_014"]
+
+[lwfobject id = "kaki1" storage="kakimoji:ef_009" x=-220 y=100 scale = 1.2 action = "fadein" time = 0.1]
+[quake target = "kaki1" power = 1 time = 300]
+
+[character x = -180 y = -1070 storage = "00812/card_01" scale = 3.0 action = "fadein" time = 0.1]
+
+[balloon x=120 y=50 shape="003_02" scale = 1.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 14]
+//[quake target =".bln" power = 3 time = 0.2]
+強豪だけが生き残り[r]
+さらに激しさを増していく[r]
+力の大会…！[r]
+　[r]
+さらに[r]
+ここまでは力の温存のため[r]
+闘ってこなかった[r]
+ジレンがついに戦闘態勢に[r]
+入るのだった
+[p]
+
+*02
+//-------------------------------------------------------------------------------
+//  カリフラ　ケール
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_055"]
+
+[character x = -70 y = -180 storage = "00737/idl_side_p_01" scale = 0.9 action = "fadein" time = 0.1]
+
+//[character x = -230 y = -120 storage = "00738/heapup_p_01" scale = 1.0 action = "fadein" time = 0.1]
+[character x = -150 y = -120 storage = "00738/guard_p_01" scale = 1.1 action = "fadein" time = 0.1]
+
+
+[balloon x=30 y=130 shape="001_02" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+[quake target =".bln" power = 3 time = 0.2]
+感じたか？[r]
+ケール
+[p]
+
+[balloon x=160 y=-100 shape="004_02" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+//[quake target =".bln" power = 3 time = 0.2]
+ええ…[r]
+あねさん…
+[p]
+
+*03
+//-------------------------------------------------------------------------------
+//  ベジータ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_055"]
+
+[character x = 180 y = -110 storage = "00004/idl_side_e_02" scale = 1.1 action = "fadein" time = 0.1]
+
+[balloon x=-100 y=70 shape="002_02" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+//[quake target =".bln" power = 3 time = 0.2]
+なんだ？[r]
+この気は…
+[p]
+
+*04
+//-------------------------------------------------------------------------------
+//  17号　18号
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_055"]
+
+
+[character id = "18" x=-100 y=-190 storage = "00020/idl_side_p_04" scale = 0.9 action = "fadein" time = 0.1]
+
+
+
+[character x = -240 y = -180 storage = "00021/idl_side_p_03" scale = 1.2 action = "fadein" time = 0.1]
+
+
+[balloon x=-10 y=150 shape="002_02" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 40]
+//[quake target =".bln" power = 3 time = 0.2]
+わかるか？
+[p]
+
+[balloon x=135 y=-80 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+ああ…大気が…[r]
+この無の界全体が[r]
+震えている…
+[p]
+
+
+*05
+//-------------------------------------------------------------------------------
+//  フリーザ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_055"]
+
+//立ち_背中_01+天使の輪
+[character id = "f" x=240 y=-180 storage = "00068/idl_back_p_01" scale = 1.2 action = "fadein" time = 0.1]
+[flip target ="f" h=1]
+[character x = 190 y = 190 storage = "99999/ring" scale = 0.8 action = "fadein" time = 0.1]
+
+
+
+[balloon x=-60 y=120 shape="002_02" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 40]
+//[quake target =".bln" power = 3 time = 0.2]
+おやおや…
+[p]
+
+[balloon x=-90 y=-90 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+とんでもないバケモノが[r]
+動き出したようですねえ
+[p]
+
+
+
+*06
+//-------------------------------------------------------------------------------
+//  トッポ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_055"]
+
+[character x = -220 y = -120 storage = "00754/heapup_p_01" scale = 1.2 action = "fadein" time = 0.1]
+
+
+[balloon x=110 y=110 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+ジレン…[r]存分にやるがいい[r]
+おまえの望みを[r]叶えるため…
+[p]
+
+[balloon x=135 y=-100 shape="001_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+超ドラゴンボールを[r]
+手に入れるために！
+[p]
+
+
+
+*07
+//-------------------------------------------------------------------------------
+//  ジレン
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_055"]
+
+[character x = -210 y = -180 storage = "00812/idl_side_p_01" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x=90 y=45 shape="002_01" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 54]
+//[quake target =".bln" power = 3 time = 0.2]
+………
+[p]
+
+
+
+*08
+//-------------------------------------------------------------------------------
+//  孫悟空
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_000_055"]
+
+[character x=170 y=-180 storage = "00003/heapup_e_06" scale = 1.4 action = "fadein" time = 0.1]
+//[character x=200 y=-150 storage = "00003/none_heapup_e_01" scale = 1.3 action = "fadein" time = 0.1]
+
+[balloon shape="001_03" x = -130 y = 60 scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+やっと[r]オラと闘う気に[r]なってくれたか
+[p]
+
+//-------------------------------------------------------------------------------
+[stopbgm]

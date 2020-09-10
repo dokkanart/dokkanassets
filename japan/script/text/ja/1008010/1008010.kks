@@ -1,0 +1,110 @@
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "008"]
+
+
+*coma1
+//-------------------------------------------------------------------------------
+//  フリーザ
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0001L" bg = "bg_004_001"]
+
+[character x=-190 y=-90 storage = "00058/idl_side_p_01" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon x=110 y=120 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][font size = 28]
+おやおや[r]
+地球人がなにか[r]御用でしょうか？
+[p]
+
+*coma2
+//-------------------------------------------------------------------------------
+//  トランクス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_004_001"]
+
+[character x=210 y=-200 storage = "90000/wait_right_anger_strong" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x=-100 y=80 shape="006_02" scale = 0.8 action = "expand" time = 0.1]
+[wait_anim target=".bln"][font size = 32][quake target =".bln" power = 7 time = 0.2]
+
+フリーザ[r]おまえたちを[r]倒しにきた…[p]
+
+*coma3
+//-------------------------------------------------------------------------------
+//  ドドリア
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_004_001"]
+
+//[character x=-185 y=-110 storage = "00030/idl_side_p_02" scale = 1.2 action = "fadein" time = 0.1]
+
+[character x=-190 y=-70 storage = "00030/heapup_p_01" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x=120 y=100 shape="002_02" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][quake target =".bln" power = 3 time = 0.2]
+[font size = 36]
+フリーザさま！[p]
+
+[balloon x=130 y=-80 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+こ…こいつらです[r]我々に逆らう[r]地球人というのは…！[p]
+
+*coma4
+//-------------------------------------------------------------------------------
+//  フリーザ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_004_001"]
+
+
+[character x=-190 y=-90 storage = "00058/idl_side_p_01" scale = 1.0 action = "fadein" time = 0.1]
+
+
+[balloon x=110 y=80 shape="002_01" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][font size = 24]
+ほう…[r]相当の自信が[r]おありになるようですね[p]
+
+//[balloon x=110 y=-80 shape="002_02" scale = 0.75 action = "fadein" time = 0.1]
+//[wait_anim target=".bln"][font size = 28]
+//どうやら相当の自信が[r]おありになるようですね[p]
+
+*coma5
+//-------------------------------------------------------------------------------
+//  フリーザ
+//-------------------------------------------------------------------------------
+[se storage = "3014"]
+[coma shape="N0002L" bg = "bg_004_001"]
+//[lwfobject id="syuutyuu1" storage="syucyu:ef_002" mask="inside" loop=1 priority=10 scale=1.0]
+
+
+
+[character x=-270 y=-100 storage = "00034/idl_side_p_02" scale = 0.7 action = "slide:left" time = 0.3]
+
+[character x=-110 y=-105 storage = "00031/idl_side_p_02" scale = 0.7 action = "slide:left" time = 0.3]
+
+//部下
+[character id = "buka2" x=280 y=-130 storage = "00053/heapup_p_01" scale = 0.7 action = "slide:left" time = 0.3]
+
+[character x=20 y=-110 storage = "00016/idl_side_p_02" scale = 0.7 action = "slide:left" time = 0.3]
+
+[character x=150 y=-120 storage = "00030/idl_side_p_02" scale = 0.7 action = "slide:left" time = 0.3]
+
+
+
+[character x=-190 y=-95 storage = "00005/card_03" scale = 1.0 action = "fadein" time = 0.1]
+
+[wait_anim target=".chara"]
+
+[balloon x=140 y=110 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+その自信…これだけの[r]軍勢を相手にどこまで[r]もつでしょうか？[p]
+
+[stopbgm]

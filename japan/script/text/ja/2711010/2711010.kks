@@ -1,0 +1,75 @@
+*start|スタート
+//ステージ１スタート
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "018"]
+
+*01
+//-------------------------------------------------------------------------------
+//  アナウンサー
+//-------------------------------------------------------------------------------
+[se storage = "39"]
+[coma shape="S0001" bg = "bg_025_002"]
+[paint target=".coma" color="#D8D8D8"]
+
+[character x = -150 y = 20 storage = "99999/punchmachine" scale = 1.0 action = "fadein" time = 0.1]
+
+[character id = "ana1" x=160 y= 20 storage = "90003/shout_1" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon shape="005_02" x = -100 y = 390 scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+さあ[r]お集まりのみなさん！[r]
+準備はよろしいで[r]しょうか！？
+[p]
+
+[balloon shape="005_01" x = -90 y = -140 scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+ここでは[r]このパンチマシンを使い[r]
+ダメージ値を[r]計測いたします！
+[p]
+
+[balloon shape="005_02" x = 100 y = -350 scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+より高い[r]
+ダメージ値を目指して[r]
+がんばってください！
+[p]
+
+
+
+*02
+//-------------------------------------------------------------------------------
+//  ミスター・サタン
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002L" bg = "bg_025_002"]
+[paint target=".coma" color="#D8D8D8"]
+
+[character x = -210 y = -150 storage = "00038/card_08" scale = 1.2 angle = 0 action = "fadein" time = 0.1]
+
+[balloon shape="006_01" x = 150 y = 40 scale = 0.9 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 7 time = 0.2]
+はっはーっ！！[r]
+わたしの数値を超える[r]ことができるかな！？
+[p]
+
+[balloon shape="006_01" x = 150 y = -230 scale = 0.9 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 7 time = 0.2]
+　諸君らの[r]
+　とびっきりの一撃を[r]
+　見せてくれたまえ！！
+[p]
+
+//-------------------------------------------------------------------------------
+[stopbgm]

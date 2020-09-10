@@ -1,0 +1,54 @@
+//エリア4ゴール
+
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "011"]
+
+//-------------------------------------------------------------------------------
+//  サイヤマン１号
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0001R" bg = "bg_019_001"]
+
+[character x=320 y=-240 storage = "00366/card_001" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon x=-140 y=140 shape="006_02" scale = 1.1 action = "expand" time = 0.1]
+[wait_anim target=".bln"][font size = 22]
+[quake target =".bln" power = 7 time = 0.2]
+この世に悪がある限り！[r]
+正義の怒りが炎と燃える！[p]
+
+
+[balloon x=-140 y=-120 shape="006_01" scale = 0.85 action = "expand" time = 0.1]
+[wait_anim target=".bln"][font size = 30]
+[quake target =".bln" power = 7 time = 0.2]
+グレートサイヤマン[r]
+１号！！[p]
+
+*coma2
+
+//-------------------------------------------------------------------------------
+//  サイヤマン２号
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_019_001"]
+
+[character x=290 y=-160 storage = "00323/card_001" scale = 1.0 action = "fadein" time = 0.1]
+
+
+[balloon x=-160 y=50 shape="006_02" scale = 0.7 action = "expand" time = 0.1]
+[wait_anim target=".bln"][font size = 36]
+[quake target =".bln" power = 3 time = 0.2]
+同じく２号！！[p]
+
+[balloon x=-140 y=-160 shape="006_01" scale = 0.85 action = "expand" time = 0.1]
+[wait_anim target=".bln"][font size = 30]
+[quake target =".bln" power = 7 time = 0.2]
+またまたズバッと[r]
+一丁上がり！！[p]
+
+
+[stopbgm]

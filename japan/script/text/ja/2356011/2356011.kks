@@ -1,0 +1,309 @@
+*start|スタート
+//ゴール
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "011"]
+ 
+*001
+//-------------------------------------------------------------------------------
+//  パン（GT）
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0001L" bg = "bg_081_017"]
+
+[character x=-180 y=-140 storage = "00326/heapup_p_01" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x=110 y=50 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+ギル…[r]
+助けにきてくれた[r]
+の…！？
+[p]
+
+
+*002
+//-------------------------------------------------------------------------------
+//  ギル
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_081_017"]
+
+[character x = 215 y = -50 storage = "90003/giru_R" scale = 1.2 action = "fadein" time = 0.1]
+
+//五星球
+[balloon x=63 y=130 shape="010_15" scale = 1.6 action = "fadein" time = 0.1]
+
+
+[balloon x=-145 y=80 shape="002_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+ギル[r]
+オアシス見つけた！
+[p]
+
+
+[balloon x=-110 y=-100 shape="002_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+ドラゴンボールも[r]発見！ 回収済み！
+[p]
+
+
+*003
+//-------------------------------------------------------------------------------
+//  パン（GT）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_081_017"]
+
+[character x=-200 y=-120 storage = "00326/idl_side_p_01" scale = 1.1 action = "fadein" time = 0.1]
+
+[balloon x=70 y=60 shape="001_02" scale = 0.65 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 44]
+//[quake target =".bln" power = 3 time = 0.2]
+ギル…
+[p]
+
+
+*004
+//-------------------------------------------------------------------------------
+// 悟空とトランクス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_081_017"]
+
+[balloon x=-130 y=60 shape="001_01" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 40]
+[quake target =".bln" power = 3 time = 0.2]
+おーい[r]
+パーン！
+//[p]
+ 
+[wait time = 0.2]
+
+[se storage = "3022"]
+
+//スライドで登場 となりに悟空もいる
+[character x=180 y=-110 storage = "00325/idl_side_e_01" scale = 1.2 action = "slide:right" time = 0.4]
+[character x=260 y=-50 storage = "00324/idl_side_e_01" scale = 1.1 action = "slide:right" time = 0.3]
+
+[wait_anim target=".chara"]
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+
+
+
+*005
+//-------------------------------------------------------------------------------
+//  パン（GT）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_081_017"]
+
+[character x=-200 y=-120 storage = "00326/idl_side_p_01" scale = 1.1 action = "fadein" time = 0.1]
+
+[balloon x=100 y=60 shape="001_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+おじいちゃん！[r]
+トランクス！
+[p]
+
+*006
+//-------------------------------------------------------------------------------
+//  トランクス（GT)
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_081_017"]
+ 
+[character x=270 y=-110 storage = "00325/idl_side_e_01" scale = 1.2 action = "fadein" time = 0.1]
+ 
+[balloon x=-100 y=90 shape="001_02" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+パンちゃん…ごめん[r]
+パンちゃんの気持ちも[r]
+考えずに悟天と交代[r]
+させるなんて言って…
+[p]
+
+
+[balloon x=-110 y=-110 shape="001_03" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+地球にもどるって話[r]
+取り消すよ
+[p]
+
+*007
+//-------------------------------------------------------------------------------
+//  パン（GT）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_081_017"]
+
+[character x=-200 y=-120 storage = "00326/idl_side_p_01" scale = 1.1 action = "fadein" time = 0.1]
+
+[balloon x=100 y=50 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+それじゃ わたし…[r]
+いっしょにいても[r]
+いいの？
+[p]
+
+*008
+//-------------------------------------------------------------------------------
+//  トランクス（GT)
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_081_017"]
+ 
+[character x=270 y=-110 storage = "00325/idl_side_e_01" scale = 1.2 action = "fadein" time = 0.1]
+ 
+[balloon x=-90 y=95 shape="001_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+あたりまえじゃ[r]ないか！
+[p]
+
+
+[balloon x=-110 y=-100 shape="001_02" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+オレたちは[r]
+みんな仲間だから[r]
+これからも力を合わせて[r]
+がんばろう！
+[p]
+
+*009
+//-------------------------------------------------------------------------------
+//  ギル
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_081_017"]
+
+[character x = -215 y = -50 storage = "90003/giru_L" scale = 1.2 action = "fadein" time = 0.1]
+
+
+[balloon x=100 y=45 shape="002_01" scale = 0.65 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 44]
+[quake target =".bln" power = 3 time = 0.2]
+ギルル！
+[p]
+
+
+*010
+//-------------------------------------------------------------------------------
+//  トランクス（GT)
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_081_017"]
+ 
+[character x=270 y=-110 storage = "00325/idl_side_e_01" scale = 1.2 action = "fadein" time = 0.1]
+ 
+[balloon x=-90 y=60 shape="001_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+ギル！[r]
+おまえ なかなか[r]
+やるじゃないか！
+[p]
+
+*011
+//-------------------------------------------------------------------------------
+//  ギル
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_081_017"]
+
+[character x = -215 y = -50 storage = "90003/giru_L" scale = 1.2 action = "fadein" time = 0.1]
+
+
+[balloon x=100 y=80 shape="002_01" scale = 0.65 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 44]
+[quake target =".bln" power = 3 time = 0.2]
+パン仲間！
+[p]
+
+[balloon x=100 y=-90 shape="002_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+仲良くする[r]
+危険度下がる
+[p]
+
+*012
+//-------------------------------------------------------------------------------
+//  トランクス（GT)
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_081_017"]
+ 
+[character x=270 y=-110 storage = "00325/idl_side_e_01" scale = 1.2 action = "fadein" time = 0.1]
+ 
+[balloon x=-90 y=90 shape="001_03" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 40]
+//[quake target =".bln" power = 3 time = 0.2]
+え…！？
+[p]
+
+
+[balloon x=-90 y=-100 shape="001_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+…ははは！[r]
+ちがいないや！
+[p]
+
+
+*013
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002L" bg = "bg_000_003"]
+ 
+//[character x = -160 y = -0 storage = "90003/gt_ship" scale = 1.1 action = "fadein" time = 0.1]
+
+//[wait time = 0.7]
+ 
+[balloon x=0 y=-30 shape="003_01" scale = 1.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 15]
+//[quake target =".bln" power = 3 time = 0.2]
+ギルの大活躍により[r]
+再び結束を固めた[r]
+悟空たち！[r]
+　[r]
+ドラゴンボール探しの旅は[r]
+まだまだ続くのだった…[r]
+[p]
+ 
+[balloon x=0 y=0 shape="008_03" scale = 50.0 action = "fadein" time = 0.5]
+[wait time = 2.5]
+
+[stopbgm]
+

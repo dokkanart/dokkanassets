@@ -1,0 +1,126 @@
+*start|スタート
+//エリア７スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "013"]
+
+*01
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0003R" bg = "bg_000_062"]
+
+[balloon x=0 y=20 shape="003_02" scale = 1.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 14]
+//[quake target =".bln" power = 7 time = 0.2]
+宇宙の命運をかけた[r]
+力の大会も[r]
+いよいよクライマックスを[r]
+迎えようとしていた[r]
+　[r]
+第11宇宙最後にして[r]
+最強の戦士ジレンと[r]
+悟空たち第7宇宙の[r]
+ラストバトルが始まる…！
+[p]
+
+
+*02
+//-------------------------------------------------------------------------------
+//  ジレン
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_061"]
+
+//[character x = -210 y = -180 storage = "00812/idl_side_p_01" scale = 1.2 action = "fadein" time = 0.1]
+[character x = -230 y = -160 storage = "00812/heapup_p_01" scale = 1.3 action = "fadein" time = 0.1]
+
+[wait time = 0.3]
+
+[se storage = "50"]
+
+[character x = -230 y = -160 storage = "00812/heapup_p_02" scale = 1.3 action = "fadein" time = 0.2]
+
+[balloon x=120 y=80 shape="006_02" scale = 0.8 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 7 time = 0.2]
+はああああ…！！
+[p]
+
+
+*03
+//-------------------------------------------------------------------------------
+//  悟空
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_061"]
+
+//[character id = "gokui" x=200 y=0 storage = "99999/ultra_instinct" scale = 2.0 action = "fadein" time = 0.1]
+
+[character x = 200 y = -150 storage = "00281/heapup_e_01" scale = 1.3 action = "fadein" time = 0.1]
+
+
+
+[balloon x=-125 y=70 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+ジレン…！！[r]
+ケタ外れの気だな…！
+[p]
+
+*04
+//-------------------------------------------------------------------------------
+//  17号
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_061"]
+
+[character x = 170 y = -180 storage = "00021/idl_side_e_03" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon shape="002_03" x = -85 y = 70 scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+化け物か…[r]
+あいつは…！
+[p]
+
+
+*05
+//-------------------------------------------------------------------------------
+//  ベジータ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_000_061"]
+
+[character x = 165 y = -115 storage = "00004/idl_side_e_02" scale = 1.2 action = "fadein" time = 0.1]
+//[flip target =".chara" h=1]
+
+
+
+[balloon shape="002_02" x = -130 y = 80 scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+お仲間がいなくなって[r]
+いよいよ本気ってわけか
+[p]
+
+
+[balloon shape="002_03" x = -130 y = -200 scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+最後のひとり…[r]
+きさまを倒せば[r]
+オレたちの優勝だ！
+[p]
+
+//-------------------------------------------------------------------------------
+[stopbgm]

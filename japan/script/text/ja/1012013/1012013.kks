@@ -1,0 +1,68 @@
+
+*start|スタート
+
+//１２−１ボス前
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "008"]
+
+
+//-------------------------------------------------------------------------------
+//  トランクス
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0001R" bg = "bg_015_001"]
+
+[character x = 210 y = -200 storage = "90000/wait_right_anger" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon id = "01" x = -110 y = 80 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target = "01"]
+[font size = 30]
+ギニュー特戦隊…[r]
+…また闘うことに[r]
+なるとは…
+[p]
+
+*coma2
+//-------------------------------------------------------------------------------
+//  ヤムチャ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_015_001"]
+
+[character x = 200 y = -50 storage = "00013/idl_side_e_02" scale = 1.4 action = "fadein" time = 0.1]
+
+[balloon id = "01" x = -130 y = 80 shape="004_02" scale = 0.95 action = "fadein" time = 0.1]
+[wait_anim target = "01"]
+[quake target =".bln" power = 3 time = 0.2]
+[font size = 28]
+こいつら…[r]
+とんでもない気だぞ…
+[p]
+
+
+*coma3
+//-------------------------------------------------------------------------------
+//  リクーム
+//-------------------------------------------------------------------------------
+[se storage = "3022"]
+
+[coma shape="N0002L" bg = "bg_015_001"]
+
+[character x=-85 y=-140 storage = "00031/card_01" scale = 1.7 action = "fadein" time = 0.1]
+
+[balloon x=150 y=145 shape="006_01" scale = 0.7 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 7 time = 0.2]
+[font size = 40]
+くたばれ！！[p]
+
+[balloon x=140 y=-130 shape="006_01" scale = 0.65 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 7 time = 0.2]
+[font size = 48]
+とう！！[p]
+
+[stopbgm]

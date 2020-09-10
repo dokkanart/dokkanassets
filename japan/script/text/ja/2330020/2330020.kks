@@ -1,0 +1,258 @@
+*start|スタート
+//復讐鬼ベビー完結編_エリア2：スタート
+//2330020
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "013"]
+
+*001
+//-------------------------------------------------------------------------------
+//  ドラゴンボールが集まる
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0003L" bg = "bg_000_014"]
+
+[balloon x=0 y=0 shape="010_11" scale = 1.4 action = "fadein" time = 0.05]
+[balloon x=-110 y=-90 shape="010_12" scale = 1.4 action = "fadein" time = 0.05]
+[balloon x=-45 y=100 shape="010_13" scale = 1.4 action = "fadein" time = 0.05]
+[balloon x=210 y=-30 shape="010_14" scale = 1.4 action = "fadein" time = 0.05]
+[balloon x=-205 y=15 shape="010_15" scale = 1.4 action = "fadein" time = 0.05]
+[balloon x=110 y=90 shape="010_16" scale = 1.4 action = "fadein" time = 0.05]
+[balloon x=90 y=-100 shape="010_17" scale = 1.4 action = "fadein" time = 0.05]
+[wait time = 0.7]
+[se storage = "3024"]
+[balloon id = "db1" x=0 y=0 shape="010_08" scale = 1.4 action = "fadein" time = 1.2]
+[balloon id = "db2" x=-110 y=-90 shape="010_08" scale = 1.4 action = "fadein" time = 1.2]
+[balloon id = "db3" x=-45 y=100 shape="010_08" scale = 1.4 action = "fadein" time = 1.2]
+[balloon id = "db4" x=210 y=-30 shape="010_08" scale = 1.4 action = "fadein" time = 1.2]
+[balloon id = "db5" x=-205 y=15 shape="010_08" scale = 1.4 action = "fadein" time = 1.2]
+[balloon id = "db6" x=110 y=90 shape="010_08" scale = 1.4 action = "fadein" time = 1.2]
+[balloon id = "db7" x=90 y=-100 shape="010_08" scale = 1.4 action = "fadein" time = 1.2]
+[wait time = 0.8]
+[fadeout target = "db1" time = 0.7]
+[fadeout target = "db2" time = 0.7]
+[fadeout target = "db3" time = 0.7]
+[fadeout target = "db4" time = 0.7]
+[fadeout target = "db5" time = 0.7]
+[fadeout target = "db6" time = 0.7]
+[fadeout target = "db7" time = 0.7]
+[wait time = 0.4]
+[balloon id = "db1" x=0 y=0 shape="010_08" scale = 1.4 action = "fadein" time = 1.2]
+[balloon id = "db2" x=-110 y=-90 shape="010_08" scale = 1.4 action = "fadein" time = 1.2]
+[balloon id = "db3" x=-45 y=100 shape="010_08" scale = 1.4 action = "fadein" time = 1.2]
+[balloon id = "db4" x=210 y=-30 shape="010_08" scale = 1.4 action = "fadein" time = 1.2]
+[balloon id = "db5" x=-205 y=15 shape="010_08" scale = 1.4 action = "fadein" time = 1.2]
+[balloon id = "db6" x=110 y=90 shape="010_08" scale = 1.4 action = "fadein" time = 1.2]
+[balloon id = "db7" x=90 y=-100 shape="010_08" scale = 1.4 action = "fadein" time = 1.2]
+[wait time = 1.3]
+[fadeout target = "db1" time = 0.7]
+[fadeout target = "db2" time = 0.7]
+[fadeout target = "db3" time = 0.7]
+[fadeout target = "db4" time = 0.7]
+[fadeout target = "db5" time = 0.7]
+[fadeout target = "db6" time = 0.7]
+[fadeout target = "db7" time = 0.7]
+[wait time = 1.0]
+//[p]
+
+*002
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0004R" bg = "bg_000_003"]
+
+[character x=20 y=0 storage = "99999/earth" scale = 0.2 action = "fadein" time = 0.1]
+
+[wait time = 0.7]
+
+[se storage = "3025"]
+//点滅
+[balloon shape="008_02" x = 140 y = -30 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+[balloon shape="008_02" x = 140 y = -30 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+
+[balloon id = "hikari" x=180 y=-40 shape="010_10" scale = 7.0 action = "expand" time = 0.7]
+
+//[fadeout target = "goku1" time = 2.0]
+
+[wait time = 0.2]
+
+[fadeout target = "hikari" time = 0.7]
+
+[character id = "tufuru" x=180 y=-50 storage = "99999/tuffle" scale = 0.7 action = "fadein" time = 1.5]
+
+[wait_anim target="tufuru"]
+
+[wait time = 0.7]
+
+[balloon x=-140 y=40 shape="003_01" scale = 1.6 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 14]
+悟空たちが集めてきた[r]
+究極ドラゴンボールを使い[r]
+地球のすぐそばに[r]
+ツフル人の故郷である[r]
+プラント星を[r]
+復活させるベビー…[r]
+　[r]
+ベビーの野望である[r]
+全宇宙ツフル化計画が[r]
+いよいよ本格的に[r]
+動き出す！！
+[p]
+
+*003
+//-------------------------------------------------------------------------------
+//  スーパーベビー2
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_016"]
+
+[character x=-190 y=-200 storage = "00484/idl_side_p_01" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x=120 y=150 shape="002_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+あれぞ まさしく[r]
+ツフル人第二の故郷…！
+[p]
+
+[balloon x=120 y=-80 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+そうだ…[r]
+ツフル星と名付けよう
+[p]
+
+*004
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0003R" bg = "bg_014_001"]
+
+[character x = 170 y = -240 storage = "90003/bluma_sennou" scale = 1.2 action = "fadein" time = 0.1]
+//[wait time = 0.7]
+
+[balloon x=-130 y=0 shape="003_02" scale = 1.6 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 15]
+//[quake target =".bln" power = 3 time = 0.2]
+タマゴにより[r]
+地球人全てを[r]
+支配下に置いたベビー！[r]
+　[r]
+ベビーは地球人を連れ[r]
+ブルマの作った[r]
+大型宇宙船で[r]
+ツフル星への移住を[r]
+始めるのだった…
+[p]
+
+
+//フェードアウト（フェードアウトするコマ）
+[balloon x=130 y=40 shape="008_03" scale = 50.0 action = "fadein" time = 0.5]
+[wait time = 0.7] 
+
+*005
+//-------------------------------------------------------------------------------
+//  スーパーベビー2
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="S0001" bg = "bg_081_008"]
+
+
+//フェードイン（フェードインするコマ）
+[balloon x=130 y=40 shape="008_03" scale = 50]
+[wait time = 1]
+[fadeout target = ".bln" time = 2]
+[wait_anim target=".bln"]
+
+
+[character x=-160 y=-0 storage = "00484/idl_side_p_01" scale = 1.1 action = "fadein" time = 0.5]
+
+[wait_anim target=".chara"]
+
+
+[balloon x=120 y=370 shape="002_03" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+新しい我がツフル星よ…[r]
+もう二度とサイヤ猿のような[r]
+野蛮なやつらに汚されはせぬ
+[p]
+
+[balloon x=120 y=-160 shape="002_01" scale = 1.05 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 22]
+[quake target =".bln" power = 3 time = 0.2]
+これからは[r]
+北の銀河も南の銀河も[r]
+宇宙は全てツフルのものだ！！
+[p]
+
+*006
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_081_009"]
+
+//[character x = -120 y = -100 storage = "00025/atc_down_p_01" scale = 1.6 action = "fadein" time = 0.1]
+//[wait time = 0.7]
+
+[balloon x=0 y=80 shape="003_02" scale = 1.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 13]
+//[quake target =".bln" power = 3 time = 0.2]
+しかし[r]
+ベビーの寄生を免れた[r]
+パン、サタン、ブウの３人は[r]
+あやつられた地球人に紛れ[r]
+ツフル星への潜入に[r]
+成功する…[r]
+　[r]
+はたして ベビーを倒し[r]
+地球人を解放するチャンスを[r]
+作ることはできるのか…！？
+[p]
+
+*007
+//-------------------------------------------------------------------------------
+//  パン ブウ サタン（GT)
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_081_008"]
+
+//サタン
+[character x = 370 y = -255 storage = "00334/idl_side_e_01" scale = 0.8 action = "fadein" time = 0.1]
+
+
+//ブウ
+[character id ="buu"  x = -0 y = -200 storage = "00229/energyball_p_02" scale = 1.1 action = "fadein" time = 0.1]
+[flip target = "buu" h=1]
+
+
+
+//パン
+[character x=90 y=-160 storage = "00326/heapup_e_01" scale = 1.4 action = "fadein" time = 0.1]
+
+
+[balloon x=-150 y=120 shape="001_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+よーし！ みんなを[r]
+助けにいくわよ！[p]
+
+
+//-------------------------------------------------------------------------------
+[stopbgm]

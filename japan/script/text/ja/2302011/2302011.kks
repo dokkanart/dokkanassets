@@ -1,0 +1,109 @@
+
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "007"]
+
+//-------------------------------------------------------------------------------
+//  悟空
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0003R" bg = "bg_008_001"]
+
+[character x=195 y=-90 storage = "00007/heapup_e_01" scale = 1.3 action = "fadein" time = 0.1]
+
+[character x=-100 y=-140 storage = "00056/idl_side_e_01" scale = 1.5 action = "fadein" time = 0.1]
+
+[wait time = 0.7]
+
+[balloon x=170 y=110 shape="001_01" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 3 time = 0.2]
+[font size = 32]
+あ…ありがとう[r]
+ピッコロさん…
+[p]
+
+[balloon x=-130 y=-150 shape="002_01" scale = 0.85 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 27]
+勘違いするんじゃない[r]
+きさまなんぞ助けるか…
+[p]
+
+
+*002
+///-------------------------------------------------------------------------------
+//  ラディッツ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_008_001"]
+
+[character x=220 y=-283 storage = "00056/idl_side_e_01" scale = 2.0 action = "fadein" time = 0.1]
+
+[balloon id="radhi1" x=-130 y=15 shape="002_03" scale = 0.85 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 27]
+これから始まる闘いの[r]
+ウォーミングアップだ…
+[p]
+
+
+
+
+
+*003
+//-------------------------------------------------------------------------------
+//  悟空
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_008_001"]
+
+[character x=-280 y=-70 storage = "00015/idl_side_p_02" scale = 1.1 action = "fadein" time = 0.1]
+
+[character x=-100 y=-140 storage = "00218/idl_side_p_01" scale = 0.85 action = "fadein" time = 0.1]
+
+
+[balloon x=150 y=20 shape="002_01" scale = 0.85 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+では望みどおり[r]
+お遊びは終わると[r]
+するか…
+[p]
+
+[balloon x=-140 y=-175 shape="002_03" scale = 0.85 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 30]
+ぎひひひひ…[r]
+いよいよ本番てわけだ
+[p]
+
+
+*004
+//-------------------------------------------------------------------------------
+//  悟空
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002L" bg = "bg_008_001"]
+
+[character x=-190 y=-118 storage = "00015/heapup_p_01" scale = 1.4 action = "fadein" time = 0.1]
+
+[balloon x=150 y=80 shape="002_02" scale = 0.85 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+オレにやらせてくれ
+[p]
+
+[balloon x=150 y=-175 shape="002_03" scale = 0.85 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+一瞬でかたづけて[r]
+みせるぜ
+[p]
+
+
+[stopbgm]

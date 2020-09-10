@@ -1,0 +1,126 @@
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "041"]
+
+
+*01
+//-------------------------------------------------------------------------------
+//  トランクス（GT）
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0001R" bg = "bg_069_004"]
+
+[character x=260 y=-110 storage = "00325/idl_side_p_02" scale = 1.2 action = "fadein" time = 0.1]
+[flip target =".chara" h=1]
+
+[balloon x=-85 y=70 shape="001_03" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+[quake target =".bln" power = 3 time = 0.2]
+父さん！！
+[p]
+
+
+
+
+
+
+*02
+//-------------------------------------------------------------------------------
+//  孫悟飯（GT） 孫悟天（GT）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_069_004"]
+
+[character id = "goten" x = 10 y = -160 storage = "00390/heapup_e_01" scale = 0.9 action = "fadein" time = 0.1]
+
+[character x = 220 y = -120 storage = "00341/idl_side_e_03" scale = 1.5 action = "fadein" time = 0.1]
+
+
+[balloon x=-120 y=120 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+ベジータさん！！[r]
+オレたちも闘います！！
+[p]
+
+
+
+*03
+//-------------------------------------------------------------------------------
+//  ベジータ（GT）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_069_004"]
+
+[character x = 190 y = -140 storage = "00328/idl_side_p_01" scale = 1.2 action = "fadein" time = 0.1]
+[flip target =".chara" h=1]
+
+[balloon x=-110 y=60 shape="002_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+ふ……[r]
+おまえら…
+[p]
+
+
+
+
+
+*04
+//-------------------------------------------------------------------------------
+//  超一星龍
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_069_004"]
+
+[character x = -230 y = -230 storage = "00523/heapup_p_01" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon x=120 y=60 shape="002_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+しつこいやつらだ…
+[p]
+
+
+
+
+*05
+//-------------------------------------------------------------------------------
+//  ベジータ（GT）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_069_004"]
+
+[character x = 170 y = -120 storage = "00328/heapup_p_01" scale = 1.5 action = "fadein" time = 0.1]
+[flip target =".chara" h=1]
+
+[balloon x=-135 y=75 shape="002_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+頼むぜ[r]
+カカロット…
+[p]
+
+
+[balloon x=-130 y=-220 shape="006_01" scale = 0.9 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 7 time = 0.2]
+　オレに…[r]
+　このオレに力をくれ！！
+[p]
+
+
+
+
+
+//-------------------------------------------------------------------------------
+[stopbgm]

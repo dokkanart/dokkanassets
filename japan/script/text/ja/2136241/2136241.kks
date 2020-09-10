@@ -1,0 +1,98 @@
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "005"]
+
+
+*01
+//-------------------------------------------------------------------------------
+//
+//-------------------------------------------------------------------------------
+
+[se storage = "3008"]
+[coma shape="S0001" bg = "bg_081_008"]
+
+[character x=-0 y=-0 storage = "00330/card_02" scale = 1.8 angle=-10 action = "expand" time = 0.2]
+[quake target = ".chara" power = 20 time = 0.3]
+
+[balloon x=0 y=-60 shape="006_01" scale = 0.9 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+[quake target =".bln" power = 7 time = 0.2]
+グオオオオッ！！[p]
+
+
+*02
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0003L" bg = "bg_081_008"]
+ 
+
+ 
+[balloon x=-0 y=-40 shape="003_01" scale = 1.4 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 16]
+//[quake target =".bln" power = 3 time = 0.2]
+大猿に変身し[r]
+大暴れする悟空には[r]
+さすがのベビーも[r]
+苦戦を強いられる…[r]
+　[r]
+…そして……[r]
+　[r]
+理性を取り戻した[r]
+悟空はさらなる[r]
+変身を始める…！[p]
+
+[character id = "ss" x=0 y=-300 storage = "99999/supersaiyan" scale = 1.1 angle = 0 action = "expand" time = 0.1]
+[move target ="ss" y=-100 time = 0.2]
+[quake target ="ss" power = 30 time = 0.2]
+
+[wait time = 0.1]
+
+//[wait_anim target="ss"]
+
+//点滅（白）
+[se storage = "3029"]
+//点滅
+[balloon shape="008_02" x = 140 y = -30 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+[balloon shape="008_02" x = 140 y = -30 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+
+
+*03
+//-------------------------------------------------------------------------------
+//  
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0004R" bg = "bg_000_014"]
+
+//[wait time = 0.3]
+
+[character id = "1" x=170 y=40 storage = "00333/heapup_back_e_01" scale = 0.9 angle = -2 action = "fadein" time = 0.8]
+[move target ="1" y=-120 time = 3.0]
+
+[wait time = 2.0]
+
+[fadeout target = "1" time = 0.7]
+
+[character id = "2" x=0 y=-180 storage = "00333/heapup_back_e_01" scale = 1.5 angle = -2 action = "fadein" time = 2.5]
+
+[wait_anim target="2"]
+
+// 空のフキダシ（セリフがないコマを送るために使用）
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+[balloon x=130 y=40 shape="008_03" scale = 50.0 action = "fadein" time = 0.5]
+[wait time = 2.5]
+
+[stopbgm]

@@ -1,0 +1,86 @@
+*start|スタート
+
+//"２6−２スタート" 
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "002"]
+ 
+*001
+//-------------------------------------------------------------------------------
+//  トランクス
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0001R" bg = "bg_023_004"]
+ 
+[character x = 210 y = -200 storage = "90000/wait_right_surprise" scale = 1.2 action = "fadein" time = 0.1]
+ 
+[balloon x=-90 y=110 shape="001_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+ある科学者だと…！？
+[p]
+
+[balloon x=-80 y=-100 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+…ドクター・ゲロと[r]
+何者かが手を組んだ[r]
+ということか…？
+[p]
+
+*002
+//-------------------------------------------------------------------------------
+//  ドクター・ゲロ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_023_004"]
+ 
+[character x = -170 y = -135 storage = "00019/gero_idl_side_p_01" scale = 1.0 action = "fadein" time = 0.1]
+ 
+[balloon x=110 y=120 shape="002_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+ふっふっふ…
+[p]
+
+[balloon x=150 y=-90 shape="002_03" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+きさまらの[r]
+もがき苦しむ姿が[r]
+目に浮かぶぞ
+[p]
+
+*003
+//-------------------------------------------------------------------------------
+//  トランクス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_023_004"]
+ 
+[character x=170 y=-325 storage = "90000/wait_right_anger" scale = 1.4 action = "fadein" time = 0.1]
+ 
+[balloon x=-120 y=90 shape="001_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+今度はいったい何を[r]
+企んでいるんだ…
+[p]
+ 
+[balloon x=-110 y=-190 shape="001_02" scale = 1.05 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 22]
+//[quake target =".bln" power = 3 time = 0.2]
+[$player]さん[r]
+何が起こるかわかりません[r]
+気をつけてください！
+[p]
+ 
+//-------------------------------------------------------------------------------
+[stopbgm]

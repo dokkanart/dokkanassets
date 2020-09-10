@@ -1,0 +1,197 @@
+*start|スタート
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "003"]
+
+*001
+//-------------------------------------------------------------------------------
+//  シーラス
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0001L" bg = "bg_073_001"]
+
+//[character x = -185 y = -255 storage = "00972/idl_side_p_01" scale = 1.2 action = "fadein" time = 0.1]
+
+//[character x = -140 y = -140 storage = "00982/idl_side_p_01" scale = 0.9 action = "fadein" time = 0.1]
+//[character x = -270 y = -255 storage = "00972/idl_side_p_01" scale = 1.2 action = "fadein" time = 0.1]
+
+[character x = -120 y = -200 storage = "00982/idl_side_p_01" scale = 0.9 action = "fadein" time = 0.1]
+[character x = -240 y = -255 storage = "00972/idl_side_p_01" scale = 1.2 action = "fadein" time = 0.1]
+
+
+[balloon x=140 y=85 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+…潮時か[r]
+データもそろい[r]
+ここでやることは[r]もうない
+[p]
+
+[balloon x=140 y=-100 shape="002_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+それよりも[r]
+アムズの精度を[r]
+もっと高めなければな
+[p]
+
+*002
+//-------------------------------------------------------------------------------
+//  ベジータ（ゼノ）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_073_001"]
+
+[character x = 230 y = -110 storage = "00984/idl_side_e_01" scale = 1.1 action = "fadein" time = 0.1]
+
+[balloon x = -100 y = 50 shape="006_01"  scale = 0.8 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 7 time = 0.2]
+　きさま また[r]
+　逃げるつもりか！？
+[p]
+
+*003
+//-------------------------------------------------------------------------------
+//  シーラス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_073_001"]
+
+//[character x = -185 y = -255 storage = "00972/idl_side_p_01" scale = 1.2 action = "fadein" time = 0.1]
+//[character id = "amz" x = -140 y = -140 storage = "00982/idl_side_p_01" scale = 0.9 action = "fadein" time = 0.1]
+//[character id = "sirasu" x = -270 y = -255 storage = "00972/idl_side_p_01" scale = 1.2 action = "fadein" time = 0.1]
+[character  id = "amz" x = -120 y = -200 storage = "00982/idl_side_p_01" scale = 0.9 action = "fadein" time = 0.1]
+[character  id = "sirasu" x = -240 y = -255 storage = "00972/idl_side_p_01" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x=130 y=90 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+むろんだ[r]
+無理に闘っては[r]
+計画に支障が出るのでな
+[p]
+
+[balloon x=130 y=-100 shape="002_01" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+いずれ[r]
+また闘うことになるだろう[r]
+その時に相手をしよう…
+[p]
+
+
+[se storage = "08"]
+//点滅
+[balloon shape="008_02" x = 0 y = 0 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+//[balloon shape="008_02" x = 0 y = 0 scale = 50 action = "fadein" time = 0.1]
+//[wait time = 0.3]
+//[clear target = ".bln"]
+
+[fadeout target ="amz" time =1.0]
+[fadeout target ="sirasu" time =1.0]
+
+[wait_anim target="sirasu"]
+
+
+//空のフキダシ(セリフがないコマを送るために使用)
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+*004
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0003R" bg = "bg_073_001"]
+
+
+[balloon x=0 y=0 shape="003_02" scale = 1.5 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 16]
+//[quake target =".bln" power = 3 time = 0.2]
+皮肉なことに[r]
+シーラスの行動によって[r]
+ゴクウブラックの[r]脅威はなくなり[r]
+未来の世界は[r]
+平和をとりもどした…
+[p]
+
+*005
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0003L" bg = "bg_000_014"]
+
+//[character id ="1" x = 220 y = 120 storage = "00980/amuzu_1" scale = 0.5 action = "fadein" time = 0.1]
+//[character id ="2"  x = 280 y = -100 storage = "00981/card_01" scale = 0.6 action = "fadein" time = 0.1]
+
+[character id ="3" x = -180 y = -360 storage = "00982/card_01" scale = 1.2 action = "fadein" time = 0.1]
+
+//[paint target="1" color="#666666"]
+//[paint target="2" color="#8c8c8c"]
+
+[balloon x=140 y=0 shape="003_02" scale = 1.4 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 17]
+//[quake target =".bln" power = 3 time = 0.2]
+しかし[r]
+シーラスには逃げられ[r]
+アムズはさらに[r]パワーアップ[r]
+してしまった[r]
+　[r]
+まだ すべての脅威が[r]
+解決したわけでは[r]ないのだ…
+[p]
+
+*006
+//-------------------------------------------------------------------------------
+//  ノート（アバター状態）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_073_001"]
+
+[character x = 185 y = -210 storage = "90003/noto_02" scale = 1.4 action = "fadein" time = 0.1]
+
+[balloon x = -90 y = 55 shape="001_01" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+//[quake target =".bln" power = 3 time = 0.2]
+…ちょっと[r]
+歯切れの悪い[r]
+結末ね
+[p]
+
+*007
+//-------------------------------------------------------------------------------
+//  ビート（アバター状態）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_073_001"]
+
+//[character x = 220 y = -100 storage = "00969/heapup_e_01" scale = 1.1 action = "fadein" time = 0.1]
+[character x = 175 y = -150 storage = "00969/card_01" scale = 1.0 action = "fadein" time = 0.1]
+
+
+[balloon x = -130 y = 35 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+でも[r]
+次に会ったときは[r]
+今回みたいには[r]
+いかないぞ！
+[p]
+
+//-------------------------------------------------------------------------------
+[stopbgm]
+

@@ -1,0 +1,858 @@
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "032"]
+
+*001
+//-------------------------------------------------------------------------------
+//  超サイヤ人孫悟飯（青年期）
+//-------------------------------------------------------------------------------
+[se storage = "3024"]
+[coma shape="N0001R" bg = "bg_070_003"]
+ 
+[character x = 240 y = -100 storage = "00347/atc_sp01_e_01" scale = 1.1 action = "fadein" time = 0.1]
+ 
+[balloon x=-140 y=40 shape="006_02" scale = 0.8 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 7 time = 0.2]
+か…め…は…め…
+[p]
+
+*002
+//-------------------------------------------------------------------------------
+//  伝説の超サイヤ人ブロリー
+//-------------------------------------------------------------------------------
+[se storage = "3012"]
+[coma shape="N0003L" bg = "bg_070_003"]
+
+
+[lwfobject id = "kaki1" storage="kakimoji:ef_009" angle = 10 x=-240 y=70 scale = 1.2 action = "fadein" time = 0.1]
+[quake target = "kaki1" power = 1 time = 300]
+
+//[character id = "blo1" x = -170 y = -150 storage = "00256/atc_energyball_p_02" scale = 1.0 action = "fadein" time = 0.1]
+
+[character id = "blo1" x = -20 y = -260 storage = "00256/card_08" scale = 1.0 action = "fadein" time = 0.1]
+
+[character id = "ki" x = 100 y = -5 storage = "99999/barrier_02" scale = 0.55 action = "fade:40" time = 0.1]
+[quake target ="ki" power = 1 time = 300]
+
+
+[balloon x=190 y=200 shape="002_02" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 40]
+//[quake target =".bln" power = 3 time = 0.2]
+くっくっく…
+[p]
+
+*003
+//-------------------------------------------------------------------------------
+//  超サイヤ人孫悟飯（青年期）
+//-------------------------------------------------------------------------------
+[se storage = "3029"]
+[coma shape="N0003R" bg = "bg_070_003"]
+ 
+[character id = "gohan" x = 180 y = -240 storage = "00347/card_02" scale = 0.8 action = "fadein" time = 0.1]
+[quake target ="gohan" power = 5 time = 0.4]
+
+[character id = "kame1" x = -580 y = -30 storage = "99999/kamehameha_r" scale = 1.6 action = "fadein" time = 0.1]
+[quake target ="kame1" power = 8 time = 0.4]
+ 
+[balloon x=-150 y=130 shape="006_02" scale = 0.75 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 40]
+[quake target =".bln" power = 7 time = 0.2]
+波ーっ！！
+[p]
+
+*004
+//-------------------------------------------------------------------------------
+//  伝説の超サイヤ人ブロリー
+//-------------------------------------------------------------------------------
+[se storage = "50"]
+[coma shape="N0003L" bg = "bg_070_003"]
+
+[character id = "blo1" x = -200 y = -170 storage = "00256/atc_energyball_p_02" scale = 1.2 action = "fadein" time = 0.1]
+[quake target ="blo1" power = 5 time = 0.4]
+
+[character id = "tama2"  x=360 y=-5 storage = "99999/ef_beam_circle" scale = 2.0 action = "fadein" time = 0.1]
+[paint target="tama2" color="#A9F5E1"]
+[quake target ="tama2" power = 8 time = 0.4]
+[rotate_to target="tama2" angle=-180 time=0.4]
+
+[balloon x=20 y=130 shape="006_01" scale = 0.65 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 54]
+[quake target =".bln" power = 7 time = 0.2]
+ハァ！！
+
+[wait_anim target="tama2"]
+ 
+// 空のフキダシ（セリフがないコマを送るために使用）
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+*005
+//-------------------------------------------------------------------------------
+//  悟飯のかめはめ波と、ブロリーの気弾がぶつかる。悟飯のほうが押されている。
+//-------------------------------------------------------------------------------
+[se storage = "3038"]
+[coma shape="N0004L" bg = "bg_000_014"]
+
+//描き文字：ゴゴゴゴ
+[lwfobject id = "kaki1" storage="kakimoji:ef_009" in="04" angle = -5 x=-30 y=0 scale = 2.0 action = "fadein" time = 0.1]
+[quake target = "kaki1" power = 2 time = 300]
+
+[character id = "kame1" x = 380 y = -30 storage = "99999/kamehameha_r" scale = 0.6 action = "fadein" time = 0.1]
+[flip target ="kame1" h=1] 
+[quake target ="kame1" power = 3 time = 300]
+
+[character id = "tama2"  x=-90 y=-5 storage = "99999/ef_beam_circle" scale = 2.4 action = "fadein" time = 0.1]
+[paint target="tama2" color="#A9F5E1"]
+[spin target="tama2" velocity=500]
+
+[wait time = 0.7]
+ 
+//空のフキダシ
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+*006
+//-------------------------------------------------------------------------------
+//  超サイヤ人孫悟飯（青年期）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0003R" bg = "bg_070_003"]
+ 
+[character id = "gohan" x = 180 y = -240 storage = "00347/card_02" scale = 0.8 action = "fadein" time = 0.1]
+[quake target ="gohan" power = 1 time = 300]
+
+[character id = "kame1" x = -580 y = -30 storage = "99999/kamehameha_r" scale = 1.6 action = "fadein" time = 0.1]
+[quake target ="kame1" power = 2 time = 300]
+ 
+[balloon x=-120 y=120 shape="006_02" scale = 0.7 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 44]
+[quake target =".bln" power = 7 time = 0.2]
+く…っ！！
+[p]
+
+*007
+//-------------------------------------------------------------------------------
+//  伝説の超サイヤ人ブロリー
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0003L" bg = "bg_070_003"]
+
+[character id = "blo1" x = -200 y = -170 storage = "00256/atc_energyball_p_02" scale = 1.2 action = "fadein" time = 0.1]
+
+[character id = "tama2"  x=360 y=-5 storage = "99999/ef_beam_circle" scale = 2.0 action = "fadein" time = 0.1]
+[paint target="tama2" color="#A9F5E1"]
+[quake target ="tama2" power = 8 time = 0.4]
+[spin target="tama2" velocity=500]
+ 
+[balloon x=40 y=140 shape="002_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+ふっふっふっふ…
+[p]
+
+*008
+//-------------------------------------------------------------------------------
+//  孫悟天
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_070_003"]
+ 
+[character id = "goten1" x=200 y=-95 storage = "00225/heapup_p_01" scale = 1.2 action = "fadein" time = 0.1]
+[flip target ="goten1" h=1]
+ 
+[balloon x=-100 y=135 shape="006_02" scale = 0.8 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 7 time = 0.2]
+にいちゃん！！
+[p]
+
+//セリフ後、超サイヤ人に変身する。
+
+//点滅（白）
+[se storage = "3024"]
+//点滅
+[balloon shape="008_02" x = 140 y = -30 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+//[balloon shape="008_02" x = 140 y = -30 scale = 50 action = "fadein" time = 0.1]
+//[wait time = 0.3]
+//[clear target = ".bln"]
+
+[clear target = "goten1"]
+
+[lwfobject id = "kaki1" storage="kakimoji:ef_020" x=-90 y=-100 angle = -0 scale = 1.8 action = "fadein" time = 0.1]
+[quake target = "kaki1" power = 15 time = 0.4]
+
+[character id = "ss" x = 190 y = -220 storage = "99999/supersaiyan" scale = 1.0]
+[quake target ="ss" power = 6 time = 0.4]
+
+[character id = "goten2" x = 220 y = -100 storage = "00279/heapup_e_01" angle = -0 scale = 1.2]
+[quake target ="goten2" power = 4 time = 0.4]
+
+[wait_anim target="2"]
+
+// 空のフキダシ（セリフがないコマを送るために使用）
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+*009
+//-------------------------------------------------------------------------------
+//  超サイヤ人孫悟天
+//-------------------------------------------------------------------------------
+[se storage = "3029"]
+[coma shape="N0003R" bg = "bg_070_003"]
+ 
+//悟飯の隣でかめはめ波を撃つ。 
+
+[character id = "gohan" x = 110 y = -150 storage = "00347/card_02" scale = 0.6 action = "fadein" time = 0.1]
+[quake target ="gohan" power = 1 time = 300]
+
+[character id = "kame1" x = -580 y = -00 storage = "99999/kamehameha_r" scale = 1.6 action = "fadein" time = 0.1]
+[quake target ="kame1" power = 2 time = 300]
+
+[character id = "goten" x = 220 y = -100 storage = "00279/card_01" scale = 0.8 action = "fadein" time = 0.1]
+[quake target ="goten" power = 1 time = 300]
+
+[character id = "kame2" x = -400 y = -40 storage = "99999/kamehameha_r" scale = 1.4 action = "fadein" time = 0.1]
+[quake target ="kame2" power = 3 time = 300]
+ 
+[balloon x=-80 y=-120 shape="006_02" scale = 0.7 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 40]
+[quake target =".bln" power = 7 time = 0.2]
+かめはめ…[r]波ーっ！！
+[p]
+
+*010
+//-------------------------------------------------------------------------------
+//  かめはめ波と、ブロリーの気弾がぶつかる。まだブロリーのほうが優勢。
+//-------------------------------------------------------------------------------
+[se storage = "3038"]
+[coma shape="N0004L" bg = "bg_070_003"]
+ 
+//描き文字：ゴゴゴゴ
+[lwfobject id = "kaki1" storage="kakimoji:ef_009" in="04" angle = -5 x=-30 y=0 scale = 2.0 action = "fadein" time = 0.1]
+[quake target = "kaki1" power = 2 time = 300]
+
+[character id = "kame1" x = 350 y = -20 storage = "99999/kamehameha_r" scale = 0.6 action = "fadein" time = 0.1]
+[flip target ="kame1" h=1] 
+[quake target ="kame1" power = 3 time = 300]
+
+[character id = "kame2" x = 380 y = -80 storage = "99999/kamehameha_r" scale = 0.6 action = "fadein" time = 0.1]
+[flip target ="kame2" h=1] 
+[quake target ="kame2" power = 3 time = 300]
+
+[character id = "tama2"  x=-90 y=-5 storage = "99999/ef_beam_circle" scale = 2.4 action = "fadein" time = 0.1]
+[paint target="tama2" color="#A9F5E1"]
+[spin target="tama2" velocity=500]
+
+[wait time = 0.7]
+ 
+//空のフキダシ
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+*011
+//-------------------------------------------------------------------------------
+//  超サイヤ人孫悟飯（青年期）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0004R" bg = "bg_000_014"]
+ 
+[character id = "gohan" x = 110 y = -640 storage = "00347/card_02" scale = 1.7 action = "fadein" time = 0.1]
+[quake target ="gohan" power = 1 time = 300]
+
+[character id = "kame1" x = -1750 y = -30 storage = "99999/kamehameha_r" scale = 4.0 action = "fadein" time = 0.1]
+[quake target ="kame1" power = 2 time = 300]
+ 
+[balloon x=-80 y=120 shape="006_02" scale = 0.9 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 7 time = 0.2]
+パワーがたりない…！[r]
+もっとパワーを！！ 
+[p]
+
+*012
+//-------------------------------------------------------------------------------
+//  超サイヤ人孫悟天
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0004R" bg = "bg_000_014"]
+ 
+[character id = "goten" x = 180 y = -250 storage = "00279/card_01" scale = 1.8 action = "fadein" time = 0.1]
+[quake target ="goten" power = 1 time = 300]
+
+[character id = "kame1" x = -1550 y = -30 storage = "99999/kamehameha_r" scale = 4.0 action = "fadein" time = 0.1]
+[quake target ="kame1" power = 2 time = 300]
+ 
+[balloon x=-120 y=120 shape="006_02" scale = 0.9 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 7 time = 0.2]
+神龍おねがい！！[r]
+助けて！！
+[p]
+
+[stopbgm fadeout = 1.5]
+
+
+
+*013
+//-------------------------------------------------------------------------------
+//  ７つのドラゴンボールが光る。
+//-------------------------------------------------------------------------------
+[se storage = "48"]
+
+[coma shape="N0003L" bg = "bg_000_014"]
+
+[balloon x=0 y=0 shape="010_01" scale = 1.4 action = "fadein" time = 0.05]
+[balloon x=-110 y=-90 shape="010_02" scale = 1.4 action = "fadein" time = 0.05]
+[balloon x=-45 y=100 shape="010_03" scale = 1.4 action = "fadein" time = 0.05]
+[balloon x=210 y=-30 shape="010_04" scale = 1.4 action = "fadein" time = 0.05]
+[balloon x=-205 y=15 shape="010_05" scale = 1.4 action = "fadein" time = 0.05]
+[balloon x=110 y=90 shape="010_06" scale = 1.4 action = "fadein" time = 0.05]
+[balloon x=90 y=-100 shape="010_07" scale = 1.4 action = "fadein" time = 0.05]
+[wait time = 0.7]
+[se storage = "3024"]
+[balloon id = "db1" x=0 y=0 shape="010_08" scale = 1.4 action = "fadein" time = 1.2]
+[balloon id = "db2" x=-110 y=-90 shape="010_08" scale = 1.4 action = "fadein" time = 1.2]
+[balloon id = "db3" x=-45 y=100 shape="010_08" scale = 1.4 action = "fadein" time = 1.2]
+[balloon id = "db4" x=210 y=-30 shape="010_08" scale = 1.4 action = "fadein" time = 1.2]
+[balloon id = "db5" x=-205 y=15 shape="010_08" scale = 1.4 action = "fadein" time = 1.2]
+[balloon id = "db6" x=110 y=90 shape="010_08" scale = 1.4 action = "fadein" time = 1.2]
+[balloon id = "db7" x=90 y=-100 shape="010_08" scale = 1.4 action = "fadein" time = 1.2]
+[wait time = 0.8]
+[fadeout target = "db1" time = 0.7]
+[fadeout target = "db2" time = 0.7]
+[fadeout target = "db3" time = 0.7]
+[fadeout target = "db4" time = 0.7]
+[fadeout target = "db5" time = 0.7]
+[fadeout target = "db6" time = 0.7]
+[fadeout target = "db7" time = 0.7]
+[wait time = 0.4]
+[balloon id = "db1" x=0 y=0 shape="010_08" scale = 1.4 action = "fadein" time = 1.2]
+[balloon id = "db2" x=-110 y=-90 shape="010_08" scale = 1.4 action = "fadein" time = 1.2]
+[balloon id = "db3" x=-45 y=100 shape="010_08" scale = 1.4 action = "fadein" time = 1.2]
+[balloon id = "db4" x=210 y=-30 shape="010_08" scale = 1.4 action = "fadein" time = 1.2]
+[balloon id = "db5" x=-205 y=15 shape="010_08" scale = 1.4 action = "fadein" time = 1.2]
+[balloon id = "db6" x=110 y=90 shape="010_08" scale = 1.4 action = "fadein" time = 1.2]
+[balloon id = "db7" x=90 y=-100 shape="010_08" scale = 1.4 action = "fadein" time = 1.2]
+[wait time = 1.3]
+[fadeout target = "db1" time = 0.7]
+[fadeout target = "db2" time = 0.7]
+[fadeout target = "db3" time = 0.7]
+[fadeout target = "db4" time = 0.7]
+[fadeout target = "db5" time = 0.7]
+[fadeout target = "db6" time = 0.7]
+[fadeout target = "db7" time = 0.7]
+[wait time = 1.0]
+[p]
+
+*014
+//-------------------------------------------------------------------------------
+//  孫悟空の声
+//-------------------------------------------------------------------------------
+[se storage = "3034"]
+[coma shape="N0003R" bg = "bg_000_014"]
+ 
+//[character x = -120 y = -100 storage = "00025/atc_down_p_01" scale = 1.6 action = "fadein" time = 0.1]
+
+//[wait time = 0.7]
+
+//[se storage = "3034"]
+ 
+[balloon x=0 y=60 shape="005_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+この程度で音をあげて[r]
+どうすんだ！
+[p]
+
+*015
+//-------------------------------------------------------------------------------
+//  超サイヤ人孫悟飯（青年期）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0004R" bg = "bg_000_014"]
+ 
+[character id = "gohan" x = 110 y = -640 storage = "00347/card_02" scale = 1.7 action = "fadein" time = 0.1]
+[quake target ="gohan" power = 1 time = 300]
+
+[character id = "kame1" x = -1750 y = -30 storage = "99999/kamehameha_r" scale = 4.0 action = "fadein" time = 0.1]
+[quake target ="kame1" power = 2 time = 300]
+ 
+[balloon x=-20 y=100 shape="006_02" scale = 0.7 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 40]
+[quake target =".bln" power = 7 time = 0.2]
+父さん！？
+[p]
+
+*016
+//-------------------------------------------------------------------------------
+//  超サイヤ人孫悟天
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0004R" bg = "bg_000_014"]
+ 
+[character id = "goten" x = 180 y = -250 storage = "00279/card_01" scale = 1.8 action = "fadein" time = 0.1]
+[quake target ="goten" power = 1 time = 300]
+
+[character id = "kame1" x = -1550 y = -30 storage = "99999/kamehameha_r" scale = 4.0 action = "fadein" time = 0.1]
+[quake target ="kame1" power = 2 time = 300]
+ 
+[balloon x=-20 y=100 shape="006_02" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+[quake target =".bln" power = 7 time = 0.2]
+おとうさん！？
+[p]
+
+
+
+*017
+//-------------------------------------------------------------------------------
+//  孫悟空
+//-------------------------------------------------------------------------------
+//[se storage = "3024"]
+[coma shape="S0001" bg = "bg_000_014"]
+
+[wait time = 0.7]
+
+
+[character id = "gok1" x = 0 y = 0 storage = "00003/card_25" scale = 1.0 action = "fadein" time = 1.5]
+
+[wait_anim target="gok1"]
+
+[wait time = 0.3]
+
+ 
+[balloon x=-140 y=470 shape="006_01" scale = 0.9 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 7 time = 0.2]
+おめえたちが[r]
+持ってるパワーを[r]
+全部使い切るんだ！！ 
+[p]
+ 
+[balloon x=140 y=-300 shape="006_02" scale = 0.8 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 7 time = 0.2]
+　あとは[r]
+　もうねえんだぞ！！ 
+[p]
+
+[bgm storage = "035"]
+
+
+
+[character id = "ki1" x = -170 y = 150 storage = "99999/beam_04" scale = 2.0 angle = 80 action = "fade:80" time = 0.1]
+[quake target ="ki1" power = 4 time = 0.2]
+
+[character id = "ki2" x = 100 y = 100 storage = "99999/beam_04" scale = 1.3 angle = 100 action = "fade:80" time = 0.1]
+[quake target ="ki2" power = 4 time = 0.2]
+
+[character id = "ki3" x = 200 y = 100 storage = "99999/beam_04" scale = 0.7 angle = 110 action = "fade:80" time = 0.1]
+[quake target ="ki3" power = 4 time = 0.2]
+
+[character id = "ki4" x = -210 y = 50 storage = "99999/beam_04" scale = 0.5 angle = 75 action = "fade:80" time = 0.1]
+[quake target ="ki4" power = 4 time = 0.2]
+
+[character id = "ki5" x = 120 y = 800 storage = "99999/beam_04" scale = 2.3 angle = 97 action = "fade:80" time = 0.1]
+[quake target ="ki5" power = 4 time = 0.2]
+
+
+
+[wait_anim target="ki1"]
+
+
+
+
+//セリフ後、超サイヤ人に変身する。
+[se storage = "50"]
+//点滅
+[balloon shape="008_02" x = 0 y = 0 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+
+[clear target = "gok1"]
+[clear target = "ki1"]
+[clear target = "ki2"]
+[clear target = "ki3"]
+[clear target = "ki4"]
+[clear target = "ki5"]
+
+[character id = "ss" x = 0 y = 20 storage = "99999/supersaiyan" scale = 1.3 angle = 0 action = "fade:50" time = 0.1]
+[quake target ="ss" power = 6 time = 0.4] 
+
+[character id = "gok2" x = 0 y = 0 storage = "00003/card_26" scale = 1.0]
+
+[wait_anim target="ss"]
+
+[balloon x=120 y=70 shape="002_01" scale = 0 action = "fadein" time = 0.1]
+[p]
+
+*018
+//-------------------------------------------------------------------------------
+//  伝説の超サイヤ人ブロリー
+//-------------------------------------------------------------------------------
+[se storage = "03"]
+[coma shape="N0004L" bg = "bg_000_014"]
+ 
+[character x = -90 y = -200 storage = "00256/card_03" scale = 2.5  angle = -5 action = "fadein" time = 0.1]
+ 
+[balloon x=120 y=70 shape="002_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+カカロット！？
+[p]
+
+*019
+//-------------------------------------------------------------------------------
+//  超サイヤ人孫悟空
+//-------------------------------------------------------------------------------
+[se storage = "3029"]
+[coma shape="N0003R" bg = "bg_000_014"]
+
+[lwfobject id = "kaki1" storage="kakimoji:ef_020" in="04" x=-140 y=120 angle = -10 scale = 2.0]
+[quake target = "kaki1" power = 15 time = 0.4]
+ 
+[character id = "gohan" x = 50 y = -100 storage = "00347/card_02" scale = 0.6 action = "fadein" time = 0.1]
+[quake target ="gohan" power = 1 time = 300]
+
+[character id = "gok" x = 160 y = -150 storage = "00003/card_09" scale = 0.7 action = "fadein" time = 0.1]
+[quake target ="gok" power = 1 time = 300]
+ 
+[character id = "goten" x = 250 y = -100 storage = "00279/card_01" scale = 0.8 action = "fadein" time = 0.1]
+[quake target ="goten" power = 1 time = 300]
+
+[character id = "kame2" x = -900 y = -10 storage = "99999/kamehameha_r" scale = 2.5 action = "fadein" time = 0.1]
+[quake target ="kame2" power = 3 time = 300]
+
+[character id = "kame1" x = -400 y = -40 storage = "99999/kamehameha_r" scale = 1.4 action = "fadein" time = 0.1]
+[quake target ="kame1" power = 3 time = 300]
+ 
+[balloon x=-120 y=-120 shape="006_02" scale = 0.7 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 40]
+[quake target =".bln" power = 7 time = 0.2]
+かめはめ…[r]波ーっ！！
+[p]
+
+*020
+//-------------------------------------------------------------------------------
+//  かめはめ波と、ブロリーの気弾がぶつかる。まだブロリーのほうが優勢。
+//-------------------------------------------------------------------------------
+[se storage = "3038"]
+[coma shape="N0004L" bg = "bg_000_014"]
+ 
+//描き文字：ゴゴゴゴ
+[lwfobject id = "kaki1" storage="kakimoji:ef_009" in="04" angle = -5 x=-30 y=-15 scale = 2.0 action = "fadein" time = 0.1]
+[quake target = "kaki1" power = 2 time = 300]
+
+[character id = "kame1" x = 350 y = -0 storage = "99999/kamehameha_r" scale = 0.6 action = "fadein" time = 0.1]
+[flip target ="kame1" h=1] 
+[quake target ="kame1" power = 3 time = 300]
+
+[character id = "kame3" x = 330 y = -40 storage = "99999/kamehameha_r" scale = 0.6 action = "fadein" time = 0.1]
+[flip target ="kame3" h=1] 
+[quake target ="kame3" power = 3 time = 300]
+
+[character id = "kame2" x = 380 y = -100 storage = "99999/kamehameha_r" scale = 0.6 action = "fadein" time = 0.1]
+[flip target ="kame2" h=1] 
+[quake target ="kame2" power = 3 time = 300]
+
+[character id = "tama2"  x=-90 y=-5 storage = "99999/ef_beam_circle" scale = 2.4 action = "fadein" time = 0.1]
+[paint target="tama2" color="#A9F5E1"]
+[spin target="tama2" velocity=500]
+
+[wait time = 0.7]
+ 
+// 空のフキダシ（セリフがないコマを送るために使用）
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+ 
+*021
+//-------------------------------------------------------------------------------
+//  超サイヤ人孫悟飯（青年期）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0004R" bg = "bg_000_014"]
+ 
+[character id = "gohan" x = -80 y = -440 storage = "00347/card_02" scale = 1.2 action = "fadein" time = 0.1]
+[quake target ="gohan" power = 1 time = 300]
+
+[character id = "gok"  x = 110 y = -700 storage = "00003/card_09" scale = 1.7 action = "fadein" time = 0.1]
+[quake target ="gok" power = 1 time = 300]
+ 
+[balloon x=-70 y=140 shape="007_02" scale = 0.9 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 7 time = 0.2]
+悟飯！[r]
+パワーが足んねえぞ！！ 
+[p]
+
+*022
+//-------------------------------------------------------------------------------
+//  超サイヤ人孫悟天
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0004R" bg = "bg_000_014"]
+
+[character id = "gok"  x = -80 y = -430 storage = "00003/card_09" scale = 1.1 action = "fadein" time = 0.1]
+[quake target ="gok" power = 1 time = 300]
+ 
+[character id = "goten" x = 180 y = -250 storage = "00279/card_01" scale = 1.8 action = "fadein" time = 0.1]
+[quake target ="goten" power = 1 time = 300]
+ 
+[balloon x=-150 y=140 shape="007_02" scale = 0.8 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 7 time = 0.2]
+悟天！[r]
+おびえるな！！ 
+[p]
+
+*023
+//-------------------------------------------------------------------------------
+//  超サイヤ人孫悟空
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0004R" bg = "bg_000_014"]
+ 
+[character id = "gok"  x = 100 y = -630 storage = "00003/card_09" scale = 1.5 action = "fadein" time = 0.1]
+ 
+[balloon x=-120 y=120 shape="007_02" scale = 1.0 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+[quake target =".bln" power = 7 time = 0.2]
+ブロリーに地球が[r]
+メチャクチャに[r]
+されちまってもいいのか！ 
+[p]
+ 
+[balloon x=-130 y=-120 shape="007_02" scale = 0.8 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 7 time = 0.2]
+オラがいねえと[r]
+守れねえのかっ！！ 
+[p]
+
+[bgm storage = "036"]
+
+*024
+//-------------------------------------------------------------------------------
+//  超サイヤ人孫悟空 超サイヤ人孫悟飯 超サイヤ人孫悟天
+//-------------------------------------------------------------------------------
+
+
+[se storage = "3029"]
+[coma shape="S0001" bg = "bg_000_014"]
+
+[lwfobject id = "kaki1" storage="kakimoji:ef_020" in="04" x=0 y=-280 scale = 2.5]
+[quake target = "kaki1" power = 15 time = 0.2]
+
+[character id = "gok" x = 20 y = 100 storage = "00003/card_1004340" scale = 1.6 action = "fadein" time = 0.1]
+[quake target ="gok" power = 5 time = 0.4]
+
+[character id = "gohan" x = -170 y = -130 storage = "00347/card_1004350" scale = 1.6  angle = -8 action = "fadein" time = 0.1]
+[quake target ="gohan" power = 5 time = 0.4]
+
+[character id = "goten" x = 210 y = -90 storage = "00279/card_1004360" scale = 1.0 angle = 8 action = "fadein" time = 0.1]
+[quake target ="goten" power = 5 time = 0.4]
+
+[balloon x=0 y=470 shape="006_02" scale = 0.8 action = "expnad" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 48]
+[quake target =".bln" power = 7 time = 0.2]
+波ーっ！！
+//[p]
+
+[character id = "kame" x = -0 y = -0 storage = "00067/Images_ef_charge_ballpng" scale = 10.0 action = "expand" time = 1.0]
+[spin target="kame" velocity=500]
+[wait time = 0.5]
+[fadeout target = "kame" time = 0.5]
+ 
+[wait_anim target="kame"]
+
+// 空のフキダシ（セリフがないコマを送るために使用）
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+*025
+//-------------------------------------------------------------------------------
+//  かめはめ波でブロリーの気弾を押し返す。
+//-------------------------------------------------------------------------------
+[se storage = "3025"]
+[coma shape="N0004R" bg = "bg_000_014"]
+
+//描き文字：ゴゴゴゴ
+[lwfobject id = "kaki1" storage="kakimoji:ef_009" in="04" angle = -5 x=-30 y=0 scale = 2.0 action = "fadein" time = 0.1]
+[quake target = "kaki1" power = 2 time = 300]
+
+[character id = "kame1" x = 540 y = -30 storage = "99999/kamehameha_r" scale = 1.0 action = "fadein" time = 0.1]
+[flip target ="kame1" h=1] 
+//[quake target ="kame1" power = 3 time = 300]
+[move target ="kame1" x=100 time = 0.7]
+
+
+[character id = "tama2"  x=-90 y=-5 storage = "99999/ef_beam_circle" scale = 2.4 action = "fadein" time = 0.1]
+[paint target="tama2" color="#A9F5E1"]
+[spin target="tama2" velocity=500]
+[move target ="tama2" x=-500 time = 0.7]
+
+[wait time = 0.5]
+
+//空のフキダシ
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+ 
+*026
+//-------------------------------------------------------------------------------
+//  伝説の超サイヤ人ブロリー
+//-------------------------------------------------------------------------------
+[se storage = "03"]
+[coma shape="N0004L" bg = "bg_070_003"]
+ 
+[character x = -90 y = -200 storage = "00256/card_03" scale = 2.5  angle = -5 action = "fadein" time = 0.1]
+ 
+[balloon x=120 y=80 shape="006_01" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 44]
+[quake target =".bln" power = 7 time = 0.2]
+なに！？
+[p]
+
+*027
+//-------------------------------------------------------------------------------
+//  
+//-------------------------------------------------------------------------------
+[se storage = "3016"]
+[coma shape="N0004R" bg = "bg_070_003"]
+
+//[lwfobject id = "kaki2" storage="kakimoji:ef_013" x=0 y=50 scale = 3 action = "expand" time = 0.1]
+//[quake target = "kaki2" power = 15 time = 1]
+
+[lwfobject id = "kaki2" storage="kakimoji:ef_019" x=0 y=50 scale = 3 action = "expand" time = 0.1]
+[quake target = "kaki2" power = 15 time = 1]
+
+[character x=-30 y=-50 storage = "99999/ef_explode_005" scale = 3.0 action = "expand" time = 0.1]
+[quake target = ".chara" power = 10 time = 1]
+
+[balloon x=130 y=40 shape="008_02" scale = 50 action = "fadein" time = 0.5]
+[wait_anim target=".bln"]
+[fadeout target = ".bln" time = 1.5]
+[wait time = 1.5]
+
+//空のフキダシ
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+*028
+//-------------------------------------------------------------------------------
+//  孫悟飯（青年期） 孫悟天
+//-------------------------------------------------------------------------------
+//[se storage = "3032"]
+[se storage = "04"]
+[coma shape="N0003R" bg = "bg_070_003"]
+ 
+[character x = -30 y = -140 storage = "00346/heapup_e_01" scale = 1.3 angle = -5 action = "fadein" time = 0.1]
+
+[character id = "goten1" x=200 y=-95 storage = "00225/heapup_p_01" scale = 1.2 action = "fadein" time = 0.1]
+[flip target ="goten1" h=1]
+ 
+[balloon x=150 y=160 shape="004_02" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+//[quake target =".bln" power = 3 time = 0.2]
+はあ…[r]
+はあ…… 
+[p]
+ 
+[balloon x=-130 y=-120 shape="001_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+あれ？[r]
+おとうさんは…！？ 
+[p]
+
+*029
+//-------------------------------------------------------------------------------
+//  孫悟飯（青年期）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_016"]
+ 
+//[character x = 210 y = -140 storage = "00346/idl_side_e_01" scale = 1.3 action = "fadein" time = 0.1]
+[character x = 200 y = -240 storage = "00346/card_03" scale = 1.1 action = "fadein" time = 0.1]
+
+
+[balloon id = "01" x = -105 y = 90 shape="001_03" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target = "01"]
+[font size = 54]
+………
+[p]
+
+[balloon x=-120 y=-90 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+父さん…[r]
+来てくれたんでしょう？
+[p]
+
+*030
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002L" bg = "bg_000_016"]
+ 
+//[character x = -120 y = -100 storage = "00347/atc_sp01_e_01" scale = 1.6 action = "fadein" time = 0.1]
+ 
+//[wait time = 0.7] 
+ 
+[balloon x=0 y=-30 shape="003_02" scale = 1.6 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 14]
+//[quake target =".bln" power = 3 time = 0.2]
+いったい[r]
+あの悟空の姿は[r]
+なんだったのか…[r]
+　[r]
+ドラゴンボールの奇跡か[r]
+それとも[r]
+一瞬の幻だったのか…[r]
+　[r]
+それは誰にもわからない…
+[p]
+
+[stopbgm fadeout = 1.5]
+
+
+//フェードアウト
+[balloon x=130 y=40 shape="008_03" scale = 50.0 action = "fadein" time = 0.5]
+[wait time = 2.5]
+
+
+//-------------------------------------------------------------------------------
+[stopbgm]

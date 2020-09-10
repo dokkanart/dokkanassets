@@ -1,0 +1,38 @@
+//	エリア２スタート
+
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+//[bgm storage = "010"]
+
+*coma1
+//-------------------------------------------------------------------------------
+//  サイヤマン１号
+//-------------------------------------------------------------------------------
+//[se storage = "3022"]
+[se storage = "40"]
+[coma shape="S0001" bg = "bg_019_001"]
+
+[character x=180 y=-165 storage = "00323/card_004" scale = 0.8 action = "fadein" time = 0.1]
+
+[character x=-150 y=-85 storage = "00366/card_10" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x=0 y=420 shape="006_02" scale = 1.0 action = "expand" time = 0.1]
+[wait_anim target=".bln"][font size = 24]
+[quake target =".bln" power = 7 time = 0.2]
+天が呼ぶ 地が呼ぶ[r]
+人が呼ぶ！[r]
+悪を倒せとボクを呼ぶ！[p]
+
+
+[balloon x=0 y=-440 shape="006_01" scale = 1.0 action = "expand" time = 0.1]
+[wait_anim target=".bln"][font size = 24]
+[quake target =".bln" power = 7 time = 0.2]
+ご存知！[r]
+天下無敵の究極ヒーロー！[r]
+グレートサイヤマン！！[p]
+
+
+//[stopbgm]

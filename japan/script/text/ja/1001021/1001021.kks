@@ -1,0 +1,133 @@
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  場面転換
+//-------------------------------------------------------------------------------
+[bgm storage = "012"]
+
+
+*001
+//-------------------------------------------------------------------------------
+//  界王
+//-------------------------------------------------------------------------------
+[se storage = "3034"]
+
+//bg界王星
+[coma shape="N0001L" bg = "bg_080_001"]
+
+
+//[character x = -180 y = -90 storage = "90001/stand" scale = 0.8 action = "fadein" time = 0.1]
+[character x = -180 y = -40 storage = "90001/stand" scale = 0.5 action = "fadein" time = 0.1]
+
+
+//セリフ1
+[balloon x = 110 y = 140 shape="005_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 3 time = 0.2]
+[font size = 28]
+わしから[r]
+これからの調査に役立つ[r]
+アドバイスじゃ！
+[p]
+
+ 
+//セリフ2
+[balloon x = 130 y = -90 shape="005_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target =".bln" power = 3 time = 0.2]
+[font size = 28]
+今はこれくらいしか[r]
+手伝えんので[r]
+かんべんしてくれ…
+[p]
+
+
+
+*002
+//-------------------------------------------------------------------------------
+//  界王
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+//bg界王星
+[coma shape="N0003L" bg = "bg_080_001"]
+
+[character x = -150 y = -50 storage = "90001/stand" scale = 0.7 action = "fadein" time = 0.1]
+
+
+//セリフ1
+[balloon x = 130 y = 75 shape="005_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+サポートアイテムは[r]
+ステージ中やバトルで[r]
+使うことができるぞ！
+[p]
+
+
+ 
+//セリフ2
+[balloon x = 140 y = -140 shape="005_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+使うには[r]
+[font color="#34c402"]「ITEM」ボタン[font color="#141414"]を[r]
+押すのじゃ！[r]
+[p]
+
+
+
+*003
+//-------------------------------------------------------------------------------
+//  界王
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+//bg界王星
+[coma shape="N0002L" bg = "bg_080_001"]
+
+
+[character x = -150 y = -60 storage = "90001/stand" scale = 0.7 action = "fadein" time = 0.1]
+
+
+[balloon x = 140 y = 25 shape="005_02" scale = 0.85 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+様々な効果で[r]
+おまえたちの手助けと[r]
+なってくれるはずじゃ
+[p]
+
+
+
+//以下説明画像
+//フェードアウト
+[balloon x=0 y=0 shape="008_03" scale = 50.0 action = "fadein" time = 1.5]
+
+[wait time = 1.5]
+
+//空のフキダシ
+//[balloon x = 0 y = 0 shape="002_01" scale = 0]
+//[p]
+
+
+
+
+
+
+[balloon x = -0 y =250 shape="009_03" scale = 0.95 action = "fadein" time = 2]
+
+[wait_anim target=".bln"]
+
+[p]
+
+
+[stopbgm]
+
+
+
+
+
+
+

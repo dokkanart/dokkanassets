@@ -1,0 +1,62 @@
+//スタート
+
+*start|スタート
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+
+[bgm storage = "008"]
+
+*001
+//-------------------------------------------------------------------------------
+//  クウラ(クウラ機甲戦隊といっしょに出てくる。)
+//-------------------------------------------------------------------------------
+[se storage = "40"]
+
+[coma shape="S0001" bg = "bg_000_021"]
+
+[character id = "nazu" x=-190 y=-70 storage = "00287/card_01" scale = 1.3 action = "fadein" time = 0.1]
+[character id = "dore"x=300 y=-150 storage = "00286/card_01" scale = 1.3 action = "fadein" time = 0.1]
+[character id = "sauza"x=-20 y=-270 storage = "00285/card_01" scale = 1.6 action = "fadein" time = 0.1]
+[quake target = "nazu" power = 9 time = 0.2]
+[quake target = "dore" power = 9 time = 0.2]
+[quake target = "sauza" power = 9 time = 0.2]
+
+
+[wait time = 0.2]
+
+[clear target = "nazu"]
+[clear target = "dore"]
+[clear target = "sauza"]
+
+
+[character id = "kura" x=-0 y=-60 storage = "00283/card_01" scale = 0.8 action = "fadein" time = 0.7]
+
+[character id = "naz2" x=-190 y=-70 storage = "00287/card_01" scale = 1.3]
+[character id = "dor2"x=300 y=-150 storage = "00286/card_01" scale = 1.3]
+[character id = "sauz2"x=-20 y=-270 storage = "00285/card_01" scale = 1.6]
+
+[wait_anim target="kura"]
+
+
+[balloon x=-90 y=430 shape="002_02" scale = 1.1 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 20]
+//[quake target =".bln" power = 3 time = 0.2]
+この星ごと[r]
+きさまを消すのはたやすいが[r]
+このオレのプライドがゆるさん！
+[p]
+
+[balloon x=60 y=-440 shape="002_03" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+[quake target =".bln" power = 3 time = 0.2]
+この星の人間を根絶やしにし[r]
+徹底的に壊滅させる…！！
+[p]
+
+
+
+//-------------------------------------------------------------------------------
+[stopbgm]

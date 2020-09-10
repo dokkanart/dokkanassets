@@ -1,0 +1,91 @@
+*start|スタート
+//"ステージ７ゴール"
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+//[bgm storage = "002"]
+
+*001
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002L" bg = "bg_069_005"]
+
+
+[balloon x=0 y=30 shape="003_01" scale = 1.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 15]
+最強にして[r]
+最後の邪悪龍である[r]
+一星龍を討ち倒し[r]
+これで[r]
+すべての脅威は[r]
+去ったかに思われたが…
+[p]
+
+
+
+
+*002
+//-------------------------------------------------------------------------------
+//  一星龍がドラゴンボールを取り込んで復活する。
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0004R" bg = "bg_000_014"]
+
+[wait time = 0.7]
+
+
+[character x = 65 y = -910 storage = "00515/card_01" scale = 2.5 action = "fadein" time = 0.7]
+[paint target=".chara" color="#BDBDBD"]
+
+
+[wait time = 1.2]
+
+
+
+
+[se storage = "10"]
+
+[balloon id = "db2" x=-160 y=-170 shape="010_05" scale = 1.4 action = "fadein" time = 0.6]
+[move target ="db2"  x=-110 y=-120 time = 0.7]
+
+[balloon id = "db3" x=-70 y=120 shape="010_02" scale = 1.4 action = "fadein" time = 0.6]
+[move target ="db3"  x=-50 y=70 time = 0.7]
+
+
+[balloon id = "db4" x=235 y=-25 shape="010_06" scale = 1.4 action = "fadein" time = 0.6]
+[move target ="db4"  x=185 y=-30 time = 0.7]
+
+[balloon id = "db5" x=-230 y=10 shape="010_07" scale = 1.4 action = "fadein" time = 0.6]
+[move target ="db5"  x=-180 y=0 time = 0.7]
+
+[balloon id = "db6" x=170 y=85 shape="010_04" scale = 1.4 action = "fadein" time = 0.6]
+[move target ="db6"  x=120 y=55 time = 0.7]
+
+[balloon id = "db7" x=155 y=-180 shape="010_03" scale = 1.4 action = "fadein" time = 0.6]
+[move target ="db7"  x=115 y=-130 time = 0.7]
+
+
+
+[wait time = 0.7]
+
+//[p]
+
+[se storage = "3025"]
+//点滅
+[balloon shape="008_02" x = 0 y = 0 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+[balloon shape="008_02" x = 0 y = 0 scale = 50 action = "fadein" time = 0.7]
+[wait time = 0.7]
+//[clear target = ".bln"]
+
+[balloon x=0 y=0 shape="008_03" scale = 50.0 action = "fadein" time = 2.0]
+
+[wait time = 3.5]
+
+//-------------------------------------------------------------------------------
+//[stopbgm]

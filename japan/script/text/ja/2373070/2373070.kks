@@ -1,0 +1,182 @@
+*start|スタート
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "008"]
+
+*001
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0004R" bg = "bg_000_024"]
+
+[balloon x=0 y=0 shape="003_01" scale = 1.4 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 16]
+//[quake target =".bln" power = 3 time = 0.2]
+クウラと[r]
+互角の闘いを[r]
+繰り広げる悟空…[r]
+　[r]
+だが クウラは[r]
+あと１回[r]
+変身を残していた！！[r]
+　[r]
+はたして悟空に[r]
+勝ち目はあるのか！？
+[p]
+
+*002
+//-------------------------------------------------------------------------------
+//  クウラ
+//-------------------------------------------------------------------------------
+[se storage = "3022"]
+[coma shape="S0001" bg = "bg_000_021"]
+
+[character id = "kura" x=-10 y=-60 storage = "00283/card_04" scale = 1.0 action = "fadein" time = 0.1]
+
+
+[balloon x=0 y=480 shape="002_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+　[r]
+　光栄に思うがいい！！[r]
+　オレの究極の変身を[r]
+　見られるのは…[p]
+
+[balloon shape="002_03" x = 150 y = -310 scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+[quake target =".bln" power = 3 time = 0.2]
+　おまえが[r]
+　最初で最後だ！！[p]
+
+*003
+//-------------------------------------------------------------------------------
+//  悟空
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_021"]
+
+[character x=290 y=-140 storage = "00300/atc_energyball_e_02" scale = 1.3 action = "fadein" time = 0.1]
+
+
+[balloon shape="006_02" x = -130 y = 60 scale = 0.7 action = "expand" time = 0.1]
+[font size = 40]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 7 time = 0.2]
+……！！[p]
+
+*004
+//-------------------------------------------------------------------------------
+//  クウラ
+//-------------------------------------------------------------------------------
+[coma shape="N0002L" bg = "bg_000_021"]
+
+[se storage = "3038"]
+//岩が巻き上がるよセット
+[quake target ="iwa3" power = 1 time = 300]
+[character id = "iwa1" x=200 y=-200 storage = "99999/rock_02" scale = 1.0 action = "fadein" time = 0.1 mask="inside"]
+[move target ="iwa1" y=5000 time = 300]
+[character id = "iwa2" x=-200 y=-200 storage = "99999/rock_02" scale = 1.0 action = "fadein" time = 0.1 mask="inside"]
+[move target ="iwa2" y=5000 time = 300]
+
+//[lwfobject id = "kaki2" storage="kakimoji:ef_009" in="04" x=-200 y=-160 scale = 1.6]
+//[quake target = "kaki2" power = 1 time = 300]
+
+[character id="cura1" x=-290-20 y=-200 storage = "00283/card_05" scale = 1.0 action = "fadein" time = 0.1 priority=120]
+[quake target = "cura1" power = 1 time = 300]
+
+[balloon x=160 y=-200 shape="007_02" scale = 0.8 action = "fadein" time = 0.1 priority=150]
+[wait_anim target=".bln"][font size = 32]
+[quake target = ".bln" power = 2 time = 300]
+　かああああ……！！
+[p]
+
+[se storage = "3012"]
+//点滅
+[balloon shape="008_02" x = 0 y = 0 scale = 50 action = "fadein" time = 0.1 priority=200]
+[wait time = 0.3]
+[clear target = ".bln"]
+
+
+[balloon shape="008_03" x = 0 y = 0 scale = 50 action = "fadein" time = 0.1 priority=100]
+
+[character id="cura2" x=-220+20 y=-80-10 storage = "00283/card_06" scale = 1.1 action = "fadein" time = 0.4 priority=130]
+[fadeout target="cura1" time=0.4]
+[wait time=0.1]
+
+[se storage = "3025"]
+
+[character id="ss" x=-150 y=150 storage = "99999/ef_aura_front" scale = 3.0 action = "expand" time = 0.1 priority=110]
+[wait_anim target="ss"]
+
+//[quake target =".coma" power = 9 time = 0.3]
+[fadeout target="ss" time=0.3]
+//[wait_anim target="ss"]
+
+[quake target = "cura2" power = 2 time = 300]
+
+
+
+//[se storage = "3025"]
+//点滅
+[balloon shape="008_02" x = 140 y = -30 scale = 50 action = "fadein" time = 0.1 priority=210]
+[wait time = 0.3]
+[clear target = ".bln"]
+[balloon shape="008_02" x = 140 y = -30 scale = 50 action = "fadein" time = 0.1 priority=210]
+[wait time = 0.3]
+[clear target = ".bln"]
+
+//フェードアウト
+[balloon x=0 y=0 shape="008_02" scale = 50.0 action = "fadein" time = 1.0 priority=210]
+[wait time = 1.2]
+
+*005
+//-------------------------------------------------------------------------------
+//クウラが最終形態に変身
+//-------------------------------------------------------------------------------
+[coma shape="S0001" bg = "bg_000_021"]
+
+[character x=0 y=55 storage = "00284/card_05" scale = 1.1 angle = 0 action = "fadein" time = 0.1]
+
+//フェードイン（フェードインするコマ）
+[balloon x=0 y=0 shape="008_02" scale = 50]
+[wait time = 1.0]
+[fadeout target = ".bln" time = 2.0]
+[wait_anim target=".bln"]
+
+//[wait time = 1.5]
+
+//[quake target =".chara" power = 4 time = 0.3]
+
+[balloon x=0 y=-300 shape="006_02" scale = 0.75 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+[quake target =".bln" power = 7 time = 0.2]
+　さあ…[r]
+　始めようか！！[p]
+
+
+
+*007
+//-------------------------------------------------------------------------------
+//  孫悟空
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_000_021"]
+
+//[character x=180 y=-180 storage = "00003/card_01" scale = 1.3 action = "fadein" time = 0.1]
+[character x=180 y=-150 storage = "00300/heapup_e_01" scale = 1.3 action = "fadein" time = 0.1]
+
+
+
+[balloon x=-145 y=45 shape="004_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+すげえ…！！[r]
+フリーザ以上の…[r]
+すげえ気だ……！！[p]
+
+[stopbgm]

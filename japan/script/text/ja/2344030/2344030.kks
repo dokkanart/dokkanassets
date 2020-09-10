@@ -1,0 +1,256 @@
+*start|スタート
+//ステージ3 スタート
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "002"]
+
+*01
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0003L" bg = "bg_000_056"]
+
+[balloon x=0 y=220 shape="003_02" scale = 1.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 14]
+//[quake target =".bln" power = 7 time = 0.2]
+佳境を迎える力の大会…[r]
+　[r]
+ついに[r]
+生き残っている宇宙は[r]
+第3宇宙、第7宇宙、[r]
+第11宇宙の3つだけに[r]
+なってしまった…
+[p]
+
+*02
+//-------------------------------------------------------------------------------
+//  全王
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_060"]
+
+[character id = "2" x = 90 y = -160 storage = "90003/zenoh" scale = 0.9 action = "fadein" time = 0.1]
+//[flip target ="2" h=1]
+[character id = "1" x = 250 y = -160 storage = "90003/zenoh" scale = 1.1 action = "fadein" time = 0.1]
+//[flip target ="1" h=1]
+
+[balloon x=-100 y=100 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+わあ〜 たくさん[r]
+いなくなっちゃったね〜
+[p]
+
+[balloon x=-140 y=-100 shape="001_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+もうすぐ[r]
+終わっちゃうね〜
+[p]
+
+
+*03
+//-------------------------------------------------------------------------------
+//  大神官
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_060"]
+
+[character x = -200 y = -260 storage = "90003/daishinkan" scale = 1.1 action = "fadein" time = 0.1]
+
+[balloon x=100 y=105 shape="001_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+ずいぶん減りましたが[r]
+ここからが[r]
+力の大会の醍醐味です
+[p]
+
+[balloon x=100 y=-100 shape="001_02" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+残された３つの宇宙の[r]
+猛者たちによる闘いが[r]
+いよいよ始まるのですから
+[p]
+
+*04
+//-------------------------------------------------------------------------------
+//  
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0003R" bg = "bg_000_056"]
+
+//フリーザ
+[character x = -280 y = -20 storage = "99999/ring" scale = 0.3 action = "fadein" time = 0.1]
+[character id = "f" x = -280 y = -150 storage = "00068/idl_side_p_01" scale = 0.4 action = "fadein" time = 0.1]
+[flip target ="f" h=1]
+
+//悟飯
+[character x = -140 y = -130 storage = "00235/idl_side_e_02" scale = 0.5 action = "fadein" time = 0.1]
+
+//ベジータ
+[character x = -80 y = -110 storage = "00004/idl_side_e_02" scale = 0.5 action = "fadein" time = 0.1]
+
+//悟空
+[character x = 40 y = -150 storage = "00281/idl_side_e_01" scale = 0.7 action = "fadein" time = 0.1]
+
+//18号
+[character x = 150 y = -190 storage = "00020/idl_side_e_05" scale = 0.9 action = "fadein" time = 0.1]
+
+//17号
+[character x = 250 y = -180 storage = "00021/idl_side_e_03" scale = 1.0 action = "fadein" time = 0.1]
+
+
+
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+
+
+*05
+//-------------------------------------------------------------------------------
+//  孫悟飯
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_056"]
+
+
+
+[character x = 220 y = -130 storage = "00235/idl_side_e_02" scale = 1.1 action = "fadein" time = 0.1]
+//[flip target =".chara" h=1]
+
+[balloon id = "01" x = -100 y = 100 shape="001_03" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target = "01"]
+[font size = 32]
+ボクたち第7宇宙は[r]
+残りあと6人…
+[p]
+
+[balloon id = "02" x = -120 y = -100 shape="001_02" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target = "02"]
+[font size = 24]
+ここからは[r]
+ますます気を引き締めて[r]
+かからなければ[r]なりませんね
+[p]
+
+*06
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0003L" bg = "bg_000_014"]
+
+[balloon x=0 y=-50 shape="003_02" scale = 1.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 14]
+//[quake target =".bln" power = 7 time = 0.2]
+改造戦士や機械生命体で[r]
+構成された第3宇宙[r]
+　[r]
+総力戦で挑む第3宇宙は[r]
+巨大な融合戦士[r]アニラーザに変身し[r]
+第7宇宙の戦士たちの前に[r]
+立ちふさがるのだった！
+[p]
+
+*07
+//-------------------------------------------------------------------------------
+//  アニラーザ
+//-------------------------------------------------------------------------------
+[se storage = "50"]
+[coma shape="S0001" bg = "bg_000_060"]
+
+[lwfobject id = "kaki1" storage="kakimoji:ef_017" x=-135 y=-90 angle = -25 scale = 2.5 action = "fadein" time = 0.1]
+[quake target = "kaki1" power = 12 time = 0.4]
+
+[character x = 0 y = 50 storage = "00834/card_01" scale = 1.3 action = "fadein" time = 0.1]
+[quake target =".chara" power = 15 time = 0.4]
+
+
+[balloon x=125 y=-280 shape="006_02" scale = 0.8 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 7 time = 0.2]
+ウガアアッ！！
+[p]
+
+*08
+//-------------------------------------------------------------------------------
+//  孫悟空
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_056"]
+
+//[character x=170 y=-180 storage = "00003/heapup_e_06" scale = 1.4 action = "fadein" time = 0.1]
+
+[character x = 200 y = -150 storage = "00281/heapup_e_01" scale = 1.3 action = "fadein" time = 0.1]
+
+
+[balloon x=-120 y=50 shape="001_03" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target =".bln" power = 3 time = 0.2]
+[font size = 32]
+と…とんでもなく[r]
+でけえぞ！
+[p]
+
+*09
+//-------------------------------------------------------------------------------
+//  ベジータ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_056"]
+
+[character x = 180 y = -110 storage = "00004/idl_side_e_02" scale = 1.1 action = "fadein" time = 0.1]
+//[flip target =".chara" h=1]
+
+[balloon x=-105 y=70 shape="002_02" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+//[quake target =".bln" power = 3 time = 0.2]
+ふん！[r]
+くだらん…
+[p]
+
+
+*10
+//-------------------------------------------------------------------------------
+//  17号 18号
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_000_056"]
+
+
+[character x = 110 y = -170 storage = "00020/idl_side_e_05" scale = 1.1 action = "fadein" time = 0.1]
+
+[character x = 240 y = -150 storage = "00021/idl_side_e_03" scale = 1.2 action = "fadein" time = 0.1]
+
+[wait time = 0.3]
+
+
+[balloon shape="002_01" x = -135 y = 100 scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 7 time = 0.2]
+18号[r]
+オレたちも闘うか？
+[p]
+
+[balloon shape="002_02" x = -90 y = -200 scale = 0.65 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 44]
+[quake target =".bln" power = 3 time = 0.2]
+ああ！
+[p]
+
+//-------------------------------------------------------------------------------
+[stopbgm]

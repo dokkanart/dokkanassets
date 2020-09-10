@@ -1,0 +1,300 @@
+*start|スタート
+
+//-------------------------------------------------------------------------------
+[bgm storage = "005"]
+//----------------------------------------------------------
+
+//-------------------------------------------------------------------------------
+//ピッコロ
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_021"]
+
+[character x = -190 y = -100 storage = "00010/idl_side_p_02" scale = 1.4 action = "fadein" time = 0.1]
+
+
+[balloon x = 130 y = 80 shape="002_01" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+よし…悟飯[r]
+今日はここまでにしよう
+[p]
+
+
+*coma2
+//-------------------------------------------------------------------------------
+//悟飯
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_021"]
+
+[character x = 200 y = -70 storage = "00007/heapup_e_01" scale = 2.0 action = "fadein" time = 0.1]
+
+
+[balloon x = -100 y = 80 shape="001_01" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+はあ…はあ……[r]
+ありがとうございました！[p]
+
+
+*coma3
+//-------------------------------------------------------------------------------
+//爆発
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0003L" bg = "bg_014_002"]
+
+[wait time = 1.5] 
+
+[se storage = "3017"]
+
+[lwfobject id = "kaki2" storage="kakimoji:ef_019" in="04" x=0 y=50 scale = 3]
+[quake target = "kaki2" power = 15 time = 1]
+
+[character x=-80 y=-150 storage = "90000/bomb" scale = 1.0 action = "expand" time = 0.1]
+[quake target = ".chara" power = 10 time = 1]
+[balloon x=130 y=40 shape="008_02" scale = 50 action = "fadein" time = 0.5]
+[wait_anim target=".bln"]
+[fadeout target = ".bln" time = 1.5]
+[wait time = 1.5]
+
+
+//空のフキダシ
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+*coma4
+//-------------------------------------------------------------------------------
+//悟飯
+//-------------------------------------------------------------------------------
+[bgm storage = "013"]
+
+[se storage = "03"]
+[coma shape="N0001R" bg = "bg_000_021"]
+
+[character x = 200 y = -70 storage = "00007/heapup_e_01" scale = 2.0 action = "fadein" time = 0.1]
+
+[lwfobject id = "kaki2" storage="kakimoji:ef_001" in="04" x=50 y=110 scale = 2 action = "fadein" time = 0.1]
+[quake target = "kaki2" power = 7 time = 0.4]
+
+//空のフキダシ
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+[balloon x = -90 y = -80 shape="004_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+み…[r]
+都が……！！
+[p]
+
+
+*coma5
+//-------------------------------------------------------------------------------
+//ピッコロ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_021"]
+
+[character x = -190 y = -110 storage = "00010/heapup_p_01" scale = 1.6 action = "fadein" time = 0.1]
+
+
+[balloon x = 110 y = 130 shape="002_03" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+おのれ[r]
+人造人間め…！！
+[p]
+
+[balloon x = 140 y = -70 shape="007_02" scale = 0.8 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 7 time = 0.2]
+今日こそ[r]
+倒してやる！！
+[p]
+
+
+*coma6
+//-------------------------------------------------------------------------------
+//悟飯
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_021"]
+
+[character x = 200 y = -70 storage = "00007/heapup_e_01" scale = 2.0 action = "fadein" time = 0.1]
+
+
+[balloon x = -140 y = 100 shape="006_01" scale = 0.9 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 7 time = 0.2]
+ピッコロさん！[r]
+ボクも連れていって[r]
+ください！！
+[p]
+
+[balloon x = -110 y = -120 shape="006_02" scale = 0.9 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 7 time = 0.2]
+ボクも[r]
+もうずいぶん[r]
+強くなりました！！
+[p]
+
+
+*coma7
+//-------------------------------------------------------------------------------
+//ピッコロ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_021"]
+
+[character x = -190 y = -100 storage = "00010/idl_side_p_02" scale = 1.4 action = "fadein" time = 0.1]
+
+
+[balloon id = "01" x = 120 y = 40 shape="002_02" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target = "01"]
+[font size = 54]
+………
+[p]
+
+
+*coma8
+//-------------------------------------------------------------------------------
+//ピッコロ、悟飯を気絶させる
+//-------------------------------------------------------------------------------
+[stopbgm]
+
+[se storage = "3002"]
+[coma shape="N0003L" bg = "bg_000_014"]
+
+[lwfobject id = "kaki2" storage="kakimoji:ef_006" in="04" x=80 y=0 scale = 3.0]
+[quake target = "kaki2" power = 15 time = 0.4]
+
+[character id = "ghn" x = 200 y = -70 storage = "00007/heapup_e_01" scale = 2.0 action = "fadein" time = 0.1]
+
+[character id = "dageki" x = 190 y = -80 storage = "99999/04_syougeki" scale = 0.8 action = "fadein" time = 0.1]
+[quake target ="dageki" power = 7 time = 0.4]
+
+[wait time = 0.2]
+
+[fadeout target = "ghn" time = 1.5]
+[fadeout target = "dageki" time = 0.5]
+
+[wait_anim target="ghn"]
+
+// 空のフキダシ（セリフがないコマを送るために使用）
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+
+
+*coma9
+//-------------------------------------------------------------------------------
+//ピッコロ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_021"]
+
+[character x = -190 y = -100 storage = "00010/idl_side_p_02" scale = 1.4 action = "fadein" time = 0.1]
+//ピッコロ立ち位置
+
+[balloon x = 120 y = 110 shape="002_01" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+悟飯……おまえは[r]
+孫悟空の血を受け継いだ[r]
+ただひとりの戦士だ…
+[p]
+
+[balloon x = 120 y = -90 shape="002_02" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][font size = 24]
+今はムリでもいずれ必ず[r]
+ヤツらを倒せる戦士に[r]
+成長するだろう…
+[p]
+
+
+
+
+*coma10
+//-------------------------------------------------------------------------------
+//ナレーション
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0003R" bg = "bg_015_001"]
+
+[wait time = 0.7]
+
+[balloon x = 0 y = 0 shape="003_02" scale = 1.6 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][font size = 15]
+悟飯を[r]気絶させたピッコロは[r]
+ひとりで人造人間に[r]
+闘いを挑むのだった[r]
+　[r]
+…しかし人造人間の[r]
+圧倒的なパワーの前には[r]
+なす術がなく[r]
+倒されてしまう
+[p]
+
+
+
+*coma11
+//-------------------------------------------------------------------------------
+//ナレーション
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0004L" bg = "bg_000_014"]
+
+
+
+[balloon id = "1" x=0 y=-40 shape="010_01" scale = 1.4 action = "fadein" time = 0.1]
+
+[balloon id = "2" x=-110 y=-130 shape="010_02" scale = 1.4 action = "fadein" time = 0.1]
+
+[balloon id = "3" x=-45 y=60 shape="010_03" scale = 1.4 action = "fadein" time = 0.1]
+
+[balloon id = "4" x=210 y=-70 shape="010_04" scale = 1.4 action = "fadein" time = 0.1]
+
+[balloon id = "5" x=-205 y=-25 shape="010_05" scale = 1.4 action = "fadein" time = 0.1]
+
+[balloon id = "6" x=110 y=50 shape="010_06" scale = 1.4 action = "fadein" time = 0.1]
+
+[balloon id = "7" x=90 y=-140 shape="010_07" scale = 1.4 action = "fadein" time = 0.1]
+
+[wait time = 1.5]
+
+[fadeout target = "1" time = 2.0]
+[fadeout target = "2" time = 2.0]
+[fadeout target = "3" time = 2.0]
+[fadeout target = "4" time = 2.0]
+[fadeout target = "5" time = 2.0]
+[fadeout target = "6" time = 2.0]
+[fadeout target = "7" time = 2.0]
+
+[wait_anim target="7"]
+
+[balloon x = 0 y = 0 shape="003_02" scale = 1.4 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 18]
+ピッコロが死に[r]
+ドラゴンボールも[r]
+消えて[r]
+なくなってしまった[r]
+　[r]
+もう誰も[r]
+生き返ることは[r]
+できない…
+[p]
+
+//終わりのフェードアウト
+[balloon x=130 y=40 shape="008_03" scale = 50.0 action = "fadein" time = 0.5]
+[wait time = 2.5]
+
+

@@ -1,0 +1,439 @@
+*start|スタート
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "028"]
+
+*001
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0003L" bg = "bg_000_014"]
+
+[character x = -220 y = -150 storage = "00006/card_01" scale = 0.7 action = "fadein" time = 0.1]
+
+[balloon x=140 y=0 shape="003_01" scale = 1.6 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 14]
+//[quake target =".bln" power = 3 time = 0.2]
+人造人間17号と[r]
+激しい闘いをくりひろげる[r]
+ピッコロ…！[r]
+　[r]
+だが そこへ[r]
+ピッコロの闘いの気を[r]
+察知したセルが姿を現し…
+[p]
+
+*002
+//-------------------------------------------------------------------------------
+//  ピッコロ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_070"]
+
+[character x = 180 y = -100 storage = "00056/heapup_e_01" scale = 0.8 action = "fadein" time = 0.1]
+
+[balloon x = -130 y = 80 shape="004_01" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+[quake target =".bln" power = 3 time = 0.2]
+し…[r]
+しまった…！！
+[p]
+
+[balloon x=-120 y=-105 shape="004_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+闘いに気をとられて[r]
+接近に気がつかなかった[r]
+か…！！
+[p]
+
+*003
+//-------------------------------------------------------------------------------
+//  人造人間17号
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_070"]
+
+//[character x = 200 y = -180 storage = "00021/17_card_01" scale = 1.0 action = "fadein" time = 0.1]
+[character x = 170 y = -120 storage = "00021/idl_side_e_01" scale = 1.0 action = "fadein" time = 0.1]
+
+
+
+[balloon x = -105 y = 70 shape="002_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+なんだ？[r]
+あの変なやつは……
+[p]
+
+*004
+//-------------------------------------------------------------------------------
+//  セル（第一形態）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_070"]
+
+[character x = -250 y = -80 storage = "00006/idl_side_p_02" scale = 1.4 action = "fadein" time = 0.1]
+
+
+[balloon x=120 y=90 shape="002_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+くっくっく…[r]
+とうとう記念すべき日が[r]
+やってきたのだ…
+[p]
+
+[balloon x=120 y=-100 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+このわたしが[r]
+17号・18号と合体し[r]
+完全体になる日が…！！
+[p]
+
+*005
+//-------------------------------------------------------------------------------
+//  人造人間17号
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_070"]
+
+//[character x = 200 y = -180 storage = "00021/17_card_01" scale = 1.0 action = "fadein" time = 0.1]
+//[character x = 170 y = -120 storage = "00021/idl_side_e_01" scale = 1.0 action = "fadein" time = 0.1]
+[character id = "17" x = 190 y = -160 storage = "00021/idl_side_e_05" scale = 1.1 action = "fadein" time = 0.1]
+
+[balloon x = -90 y = 70 shape="002_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+何者か知らんが[r]
+ジャマだ[r]
+とっとと消えろ
+[p]
+
+*006
+//-------------------------------------------------------------------------------
+//  セル（第一形態）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_070"]
+
+[character x = -250 y = -80 storage = "00006/idl_side_p_02" scale = 1.4 action = "fadein" time = 0.1]
+
+
+//沈黙セリフの平均サイズ（※フキダシの指定は例）	
+[balloon id = "01" x = 100 y = 80 shape="002_02" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target = "01"]
+[font size = 54]
+………
+[p]
+
+*007
+//-------------------------------------------------------------------------------
+//  ピッコロ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_070"]
+
+[character x = 180 y = -100 storage = "00056/heapup_e_01" scale = 0.8 action = "fadein" time = 0.1]
+
+[balloon x = -125 y = 90 shape="002_03" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+[quake target =".bln" power = 3 time = 0.2]
+17号！！[r]
+そいつは きさまを殺して[r]
+自分に吸収するつもりだ！
+[p]
+
+[balloon x=-130 y=-110 shape="006_02" scale = 0.7 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 40]
+[quake target =".bln" power = 7 time = 0.2]
+逃げろっ！！
+[p]
+
+*008
+//-------------------------------------------------------------------------------
+//  人造人間17号
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_070"]
+
+[character x = 170 y = -120 storage = "00021/idl_side_e_01" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon x = -110 y = 70 shape="002_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+どういうことだ[r]
+…オレをこの化物が[r]
+吸収する？
+[p]
+
+*009
+//-------------------------------------------------------------------------------
+//  ピッコロ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_070"]
+
+[character x=200 y=-140 storage = "00056/idl_side_e_01" scale = 1.5 action = "fadein" time = 0.1]
+//[character x = 180 y = -100 storage = "00056/heapup_e_01" scale = 0.8 action = "fadein" time = 0.1]
+
+[balloon x = -120 y = 100 shape="002_01" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+そいつはセルという名で[r]
+ドクター・ゲロが[r]
+造りあげた化け物だ…
+[p]
+
+[balloon x=-120 y=-105 shape="002_03" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+今はまだ未完成で[r]
+きさまと18号を吸収して[r]
+やっと完全体になるらしい
+[p]
+
+*010
+//-------------------------------------------------------------------------------
+//  人造人間18号
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_070"]
+
+[character x = 180 y = -150 storage = "00020/idl_side_e_08" scale = 1.1 action = "fadein" time = 0.1]
+
+
+
+[balloon x = -80 y = 70 shape="002_01" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+//[quake target =".bln" power = 3 time = 0.2]
+なんだって…！？
+[p]
+
+*011
+//-------------------------------------------------------------------------------
+//  人造人間17号
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_070"]
+
+[character id = "17" x = 190 y = -160 storage = "00021/idl_side_e_05" scale = 1.1 action = "fadein" time = 0.1]
+
+
+[balloon x = -90 y = 80 shape="002_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+ふざけるのも[r]
+いいかげんにしろ…
+[p]
+
+[balloon x=-100 y=-105 shape="002_03" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+誰がきさまなんぞに[r]
+吸収されるものか
+[p]
+
+*012
+//-------------------------------------------------------------------------------
+//  セル（第一形態）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_070"]
+
+[character x = -250 y = -80 storage = "00006/idl_side_p_02" scale = 1.4 action = "fadein" time = 0.1]
+
+
+[balloon x=100 y=90 shape="002_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+おまえの意志など[r]
+どうでもいい
+[p]
+
+[balloon x=120 y=-100 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+吸収されることは[r]
+もう決まっているのだ
+[p]
+
+*013
+//-------------------------------------------------------------------------------
+//  人造人間17号
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_070"]
+
+[character x = 170 y = -120 storage = "00021/idl_side_e_01" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon x = -120 y = 70 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+その[r]
+うっとおしいクチを[r]
+だまらせてやる！
+[p]
+
+*014
+//-------------------------------------------------------------------------------
+//  人造人間16号
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_070"]
+
+[character x=230 y=-240 storage = "00022/atc_sp01_p_01" scale = 1.1 angle = 20 action = "fadein" time = 0.1]
+
+
+[balloon x = -125 y = 100 shape="006_01" scale = 0.7 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 40]
+[quake target =".bln" power = 7 time = 0.2]
+逃げるのだ[r]
+17号！！
+[p]
+
+[balloon x=-120 y=-100 shape="006_02" scale = 0.8 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 7 time = 0.2]
+敵の戦闘力は[r]
+あまりにも[r]
+大きすぎる！！
+[p]
+
+*015
+//-------------------------------------------------------------------------------
+//  セル（第一形態）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_070"]
+
+[character x = -250 y = -80 storage = "00006/idl_side_p_02" scale = 1.4 action = "fadein" time = 0.1]
+
+
+//沈黙セリフの平均サイズ（※フキダシの指定は例）	
+[balloon id = "01" x = 100 y = 70 shape="002_02" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target = "01"]
+[font size = 54]
+………
+[p]
+
+*016
+//-------------------------------------------------------------------------------
+//  人造人間16号
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_070"]
+
+[character x=230 y=-240 storage = "00022/atc_sp01_p_01" scale = 1.1 angle = 20 action = "fadein" time = 0.1]
+
+
+[balloon x = -105 y = 90 shape="002_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+そいつを[r]
+完全体にしては[r]
+ならない
+[p]
+
+[balloon x=-120 y=-100 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+そいつの目的は もはや[r]
+孫悟空の死ではない[r]
+全宇宙を[r]
+滅ぼすつもりだ！
+[p]
+
+*017
+//-------------------------------------------------------------------------------
+//  人造人間17号
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_070"]
+
+[character x = 170 y = -120 storage = "00021/idl_side_e_01" scale = 1.0 action = "fadein" time = 0.1]
+
+
+[balloon x = -120 y = 70 shape="002_03" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+やれやれ [r]やっとまともに[r]
+お話をしたと思ったら[r]
+このオレに逃げろだと？
+[p]
+
+[balloon x=-130 y=-120 shape="006_01" scale = 0.65 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 44]
+[quake target =".bln" power = 7 time = 0.2]
+バカに[r]するなっ！！
+[p]
+
+*018
+//-------------------------------------------------------------------------------
+//  セル（第一形態）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_070"]
+
+[character x = -250 y = -80 storage = "00006/idl_side_p_02" scale = 1.4 action = "fadein" time = 0.1]
+
+
+
+[balloon x=100 y=70 shape="002_02" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 40]
+//[quake target =".bln" power = 3 time = 0.2]
+くっくっく…
+[p]
+
+*019
+//-------------------------------------------------------------------------------
+//  ピッコロ
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0002R" bg = "bg_000_070"]
+[se storage = "3022"] 
+
+//[character x = 180 y = -100 storage = "00056/atc_front_p_01" scale = 0.85 action = "fadein" time = 0.1]
+//[character x = 180 y = -100 storage = "00056/heapup_e_01" scale = 0.8 action = "fadein" time = 0.1]
+
+
+[character x = 240 y = -110 storage = "00056/atc_punch_e_03" scale = 1.5 action = "fadein" time = 0.1]
+[quake target = ".chara" power = 5 time = 0.4] 
+
+[balloon x = -170 y = 50 shape="006_01" scale = 0.7 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 40]
+[quake target =".bln" power = 7 time = 0.2]
+くそーっ！！
+[p]
+
+//-------------------------------------------------------------------------------
+[stopbgm]

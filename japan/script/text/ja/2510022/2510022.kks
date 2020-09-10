@@ -1,0 +1,45 @@
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+//[bgm storage = "003"]
+
+*01
+//-------------------------------------------------------------------------------
+//  超サイヤ人２：ベジータ
+//-------------------------------------------------------------------------------
+[se storage = "3022"]
+
+[coma shape="S0001" bg = "bg_000_033"]
+
+//[lwfobject id = "kaki1" storage="kakimoji:ef_023" in="04" x=-0 y=-250 scale = 2.2]
+//[quake target = "kaki1" power = 15 time = 0.4]
+
+[character id = "beji" x = 0 y = -50 storage = "00335/card_02" scale = 1.2 action = "fadein" time = 0.1] 
+
+[quake target ="beji" power = 10 time = 0.4]
+
+
+[wait_anim target="beji"]
+
+[balloon x=-172 y=430 shape="002_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+わるいな…[r]
+まだ この変化に[r]
+慣れていないんだ
+[p]
+[quake target ="beji" power = 5 time = 0.2]
+
+[balloon x=120 y=-300 shape="006_01" scale = 0.8 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 7 time = 0.2]
+今度は[r]
+全力でいくぞ！！
+[p]
+
+//[stopbgm]
+

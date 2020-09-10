@@ -1,0 +1,31 @@
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+//[bgm storage = "012"]
+
+*001
+//-------------------------------------------------------------------------------
+//  孫悟天（幼年期）
+//-------------------------------------------------------------------------------
+//[se storage = "3022"]
+[coma shape="S0001" bg = "bg_081_012"]
+
+//[character x= -10 y= -40 storage = "00225/card_03" scale = 1.3 action = "fadein" time = 0.1]
+[character id = "goten" x = 0 y = 0 storage = "00225/card_05" scale = 1.0 angle = 0 action = "fadein" time = 0.1]
+//[rotate_to target = "goten" angle = 0 time = 0.2]
+//[wait_anim target = "goten"]
+//[quake target = "goten" power = 5 time = 0.2]
+
+[balloon x=0 y=390 shape="001_01" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+[quake target =".bln" power = 3 time = 0.2]
+ねえねえ！[r]
+修業じゃなくて[r]
+対決ゴッコしようよ！
+[p]
+
+
+//[stopbgm]

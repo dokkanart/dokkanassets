@@ -1,0 +1,161 @@
+*start|スタート
+
+//-------------------------------------------------------------------------------
+[bgm storage = "005"]
+//-------------------------------------------------------------------------------
+
+*001
+//-------------------------------------------------------------------------------
+//  セル完全体 
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_004"]
+ 
+[character x = -200 y = -140 storage = "00205/idl_side_p_01" scale = 1.1 action = "fadein" time = 0.1]
+ 
+[balloon x=120 y=140 shape="002_03" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+そんな[r]
+パワーアップのためだけの[r]
+変身では何も生み出せない…
+[p]
+ 
+[balloon x=120 y=-70 shape="002_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+バカだ[r]
+おまえは… 
+[p]
+
+*002
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0003L" bg = "bg_000_004"]
+ 
+
+ 
+[balloon x=0 y=40 shape="003_02" scale = 1.5 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 16]
+//[quake target =".bln" power = 3 time = 0.2]
+パワーは[r]
+大きく上がっても[r]
+スピードが[r]
+殺されてしまう[r]
+　[r]
+セルは[r]
+パワーに頼った変身の[r]
+弱点を指摘するのだった
+[p]
+
+*003
+//-------------------------------------------------------------------------------
+//  超トランクス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_004"]
+ 
+[character x = 190 y = -140 storage = "00208/heapup_e_01" scale = 1.5 action = "fadein" time = 0.1]
+ 
+[balloon x=-120 y=120 shape="004_02" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+そ…そうだったのか[r]
+父さんは だからあえて[r]
+この変身をしなかったんだ… 
+[p]
+ 
+[balloon x=-130 y=-90 shape="004_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+こ…こうなるのが[r]
+わかっていて…… 
+[p]
+
+*004
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0003L" bg = "bg_000_004"]
+ 
+
+ 
+[balloon x=0 y=20 shape="003_02" scale = 1.6 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 15]
+//[quake target =".bln" power = 3 time = 0.2]
+勝機をなくし[r]
+負けを認めたトランクス…[r]
+　[r]
+しかし[r]
+トランクスたちの[r]
+急激なパワーアップに[r]
+興味を持ったセルは[r]
+意外な提案をする
+[p]
+
+*005
+//-------------------------------------------------------------------------------
+//  セル完全体 
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_004"]
+ 
+[character x = -200 y = -190 storage = "00205/idl_side_p_01" scale = 1.1 action = "fadein" time = 0.1]
+ 
+[balloon x=120 y=130 shape="002_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+武道大会を開いてやる…[r]
+１０日後にしよう 
+[p]
+ 
+[balloon x=130 y=-75 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+大サービスだ[r]
+せいぜい強くなって[r]
+楽しませてくれ 
+[p]
+
+*006
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002L" bg = "bg_005_001"]
+ 
+[wait time = 0.7]
+ 
+[balloon x=0 y=-30 shape="003_02" scale = 1.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 14]
+//[quake target =".bln" power = 3 time = 0.2]
+セルは[r]
+武道大会で自分と闘う[r]
+選手全員が[r]
+負けてしまった場合[r]
+世界中の[r]
+すべての人間を殺すと[r]
+宣言する…[r]
+　[r]
+…そして[r]
+それぞれの思惑を胸に[r]
+１０日が過ぎていった……
+[p]
+
+//終わりのフェードアウト
+[balloon x=130 y=40 shape="008_03" scale = 50.0 action = "fadein" time = 0.5]
+[wait time = 2.5]
+
+[stopbgm]

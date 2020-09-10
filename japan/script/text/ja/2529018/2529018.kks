@@ -1,0 +1,39 @@
+//吸収→バリア(通常から)から 2529018
+
+*start|スタート
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+
+//[bgm storage = "028"]
+*001
+//-------------------------------------------------------------------------------
+//  超17号
+//-------------------------------------------------------------------------------
+[se storage = "3011"]
+[coma shape="S0001" bg = "bg_015_001"]
+//超17号
+[character id = "17" x = -10 y = 0 storage = "00480/card_01" scale = 0.9 action = "fadein" time = 0.1]
+[quake target ="17" power = 3 time = 0.3]
+
+//[wait time = 0.3]
+
+[character id = "barrier" x = 0 y = 0 storage = "99999/barrier_02" scale = 1.6 action = "expand" time = 0.3]
+//[rotate_to target="barrier" angle=720 time=0.5]
+
+[quake target ="barrier" power = 1 time = 500]
+
+[wait time = 0.1]
+
+
+
+[balloon x=0 y=430 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+//[quake target =".chara" power = 4 time = 0.3]
+きさまのコケ脅しなど[r]
+通用せんぞ…！[p]
+
+//-------------------------------------------------------------------------------
+//[stopbgm]

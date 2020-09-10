@@ -1,0 +1,73 @@
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "013"]
+
+
+*001
+//-------------------------------------------------------------------------------
+//  クウラ機甲部隊：サウザー
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0001L" bg = "bg_004_001"]
+
+[character x=-220 y=-180 storage = "00285/idl_side_p_01" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x=100 y=100 shape="002_02" scale = 1.0 action = "fadein" time = 0.1]
+[font size = 24]
+[wait_anim target=".bln"]
+腕は立つらしいが…[r]
+あまり調子に乗らないほうが[r]
+身のためだぞ？[p]
+
+
+*002
+//-------------------------------------------------------------------------------
+//  トランクス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_004_001"]
+
+[character x = 210 y = -200 storage = "90000/wait_right_anger" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x=-110 y=120 shape="001_01" scale = 0.9 action = "fadein" time = 0.1]
+[font size = 28]
+[wait_anim target=".bln"]
+こいつらも[r]
+フリーザの部下[r]
+なのか…？[p]
+
+[balloon x=-100 y=-90 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[font size = 28]
+[wait_anim target=".bln"]
+ギニュー特戦隊より[r]
+力が上かも[r]
+しれないぞ…[p]
+
+
+*003
+//-------------------------------------------------------------------------------
+//  フリーザ（第三形態）
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0002L" bg = "bg_004_001"]
+
+[character x=-190 y=-90 storage = "00072/heapup_p_01" scale = 1.4 action = "fadein" time = 0.1]
+
+[balloon x=160 y=100 shape="002_01" scale = 0.8 action = "fadein" time = 0.1]
+[font size = 32]
+[wait_anim target=".bln"]
+クウラ機甲戦隊…[p]
+
+[balloon x=100 y=-190 shape="002_02" scale = 0.9 action = "fadein" time = 0.1]
+[font size = 28]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 3 time = 0.2]
+こうなった以上[r]
+あなたたちにも[r]
+働いてもらいますよ[p]
+
+[stopbgm]

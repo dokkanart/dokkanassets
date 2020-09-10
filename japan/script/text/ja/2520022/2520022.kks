@@ -1,0 +1,86 @@
+*start|スタート
+
+////"エリア２ R２開始"
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+//[bgm storage = "013"]
+
+ 
+*001
+//-------------------------------------------------------------------------------
+//  ゴクウブラック
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002L" bg = "bg_073_001"]
+ 
+[character x = -160 y = -250 storage = "00621/card_04" scale = 1.3 action = "fadein" time = 0.1]
+ 
+[balloon x=140 y=100 shape="002_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+人間の身で[r]
+よくぞそこまで…
+[p]
+ 
+[balloon x=130 y=-180 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+褒美に[r]
+いいものを見せてやろう 
+[p]
+ 
+[se storage = "3025"]
+//点滅
+[balloon shape="008_02" x = 140 y = -30 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+//[balloon shape="008_02" x = 140 y = -30 scale = 50 action = "fadein" time = 0.1]
+//[wait time = 0.3]
+//[clear target = ".bln"]
+
+//フェードアウト（フェードアウトするコマ）
+[balloon x=130 y=40 shape="008_02" scale = 50.0 action = "fadein" time = 0.3]
+[wait time = 0.5]
+
+*002
+//-------------------------------------------------------------------------------
+//  ブラック（超サイヤ人ロゼ）
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="S0001" bg = "bg_073_001"]
+
+//ゴゴゴゴ
+//[lwfobject id = "kaki1" storage="kakimoji:ef_009" in="04" x=-170 y=-165 scale = 2.0 angle = 10 action = "fadein" time = 0.1]
+//[quake target = "kaki1" power = 2 time = 300]
+
+[character x = 100 y = -60 storage = "00654/card_01" scale = 1.1 action = "fadein" time = 0.1]
+
+
+//フェードイン（フェードインするコマ）
+[balloon x=130 y=40 shape="008_02" scale = 50]
+[wait time = 0.2]
+[fadeout target = ".bln" time = 1.5]
+[wait_anim target=".bln"]
+
+ 
+[balloon x=-140 y=470 shape="002_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+ふっふっふっふ[r]…！！
+[p]
+ 
+[balloon x=-115 y=-200 shape="002_03" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+[quake target =".bln" power = 3 time = 0.2]
+オレは[r] 
+ついに孫悟空の力を[r]
+完全に我がものにした…！
+[p]
+  
+//-------------------------------------------------------------------------------
+//[stopbgm]

@@ -1,0 +1,379 @@
+*start|スタート
+//"ステージ2ゴール"
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "013"]
+
+*001
+//-------------------------------------------------------------------------------
+//  桃白白
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_083"]
+
+[character x=-220 y=-90 storage = "00024/tao_dash_p_01" scale = 1.1 action = "fadein" time = 0.1]
+
+[balloon x=90 y=110 shape="002_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+お遊びは[r]
+これまでだ
+[p]
+
+[balloon x=120 y=-100 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+ドラゴンボールは[r]
+どこにある？[r]
+言わなければ…
+[p]
+
+*002
+//-------------------------------------------------------------------------------
+//  ボラ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_083"]
+
+[character x = 190 y = -310 storage = "90003/bora" scale = 1.3 action = "fadein" time = 0.1]
+
+[balloon x=-145 y=50 shape="006_02" scale = 0.9 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 7 time = 0.2]
+おまえたちなどには[r]
+死んでも教えん！！
+[p]
+
+*003
+//-------------------------------------------------------------------------------
+//  桃白白
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_083"]
+
+//[character x=-220 y=-90 storage = "00024/tao_dash_p_01" scale = 1.1 action = "fadein" time = 0.1]
+
+//[character x=-175 y=-70 storage = "00024/idl_side_p_02" scale = 1.3 action = "fadein" time = 0.1]
+
+[character x=-185 y=-115 storage = "00024/tao_idl_side_p_01" scale = 1.2 action = "fadein" time = 0.1]
+
+
+[balloon x=120 y=110 shape="002_01" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+//[quake target =".bln" power = 3 time = 0.2]
+そうか[r]
+ならば……
+[p]
+
+[se storage = "40"]
+//点滅
+[balloon shape="008_02" x = 0 y = 0 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+[balloon shape="008_02" x = 0 y = 0 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+
+*004
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0003R" bg = "bg_000_014"]
+
+//[character x = -120 y = -100 storage = "00025/atc_down_p_01" scale = 1.6 action = "fadein" time = 0.1]
+
+
+[balloon x=0 y=10 shape="003_02" scale = 1.6 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 15]
+//[quake target =".bln" power = 3 time = 0.2]
+桃白白は[r]
+その恐るべき強さで[r]
+ボラを圧倒する！[r]
+　[r]
+そして[r]
+その冷酷で非情な力は[r]
+ボラの命までも[r]
+奪ってしまうのだった…！
+[p]
+
+*005
+//-------------------------------------------------------------------------------
+//  桃白白
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_083"]
+
+[character x=-220 y=-90 storage = "00024/tao_dash_p_01" scale = 1.1 action = "fadein" time = 0.1]
+
+[balloon x=90 y=75 shape="002_02" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 40]
+//[quake target =".bln" power = 3 time = 0.2]
+ふん…
+[p]
+
+*006
+//-------------------------------------------------------------------------------
+//  孫悟空(少年期)
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_083"]
+
+[character x = 190 y = -25 storage = "00261/heapup_e_03" scale = 1.2 action = "fadein" time = 0.1]
+[quake target =".chara" power = 4 time = 0.4]
+
+[balloon x=-130 y=40 shape="007_02" scale = 0.9 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 7 time = 0.2]
+このやろー！！[r]
+よくもボラを！！
+[p]
+
+*007
+//-------------------------------------------------------------------------------
+//  桃白白
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_083"]
+
+[character x=-220 y=-90 storage = "00024/tao_dash_p_01" scale = 1.1 action = "fadein" time = 0.1]
+
+[balloon x=100 y=70 shape="002_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+おまえも死ぬか？
+[p]
+
+*008
+//-------------------------------------------------------------------------------
+//  孫悟空(少年期)
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_083"]
+
+
+[character x = 190 y = -25 storage = "00261/heapup_e_03" scale = 1.2 action = "fadein" time = 0.1]
+[quake target =".chara" power = 4 time = 0.4]
+
+[balloon x=-110 y=60 shape="007_02" scale = 0.7 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 40]
+[quake target =".bln" power = 7 time = 0.2]
+誰がっ！！
+[p]
+
+*009
+//-------------------------------------------------------------------------------
+//  桃白白
+//-------------------------------------------------------------------------------
+[se storage = "3025"]
+[coma shape="N0003L" bg = "bg_000_083"]
+
+[character id = "tao" x=-215 y=-135 storage = "00024/tao_atc_sp01_p_01" scale = 1.3 action = "fadein" time = 0.1]
+
+[lwfobject id = "kaki1" storage="kakimoji:ef_025" in="04" x=160 y=-110 scale = 1.2]
+[quake target = "kaki1" power = 15 time = 0.2]
+
+//セリフ後、桃白白がどどん波を撃つ。
+[character id = "dodo" x=360 y=-10 storage = "99999/dodonpa" scale = 1.2 action = "fadein" time = 0.1]
+
+[quake target ="tao" power = 7 time = 0.3]
+[quake target ="dodo" power = 5 time = 0.3]
+
+
+[balloon shape="007_02" x = -150 y = -140 scale = 0.8 action = "expand" time = 0.1]
+[font size = 36]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 7 time = 0.2]
+どどん波！！
+//[p]
+
+
+
+[move target ="tao" x=-500 time = 0.5]
+[move target ="dodo" x=-500 time = 0.5]
+
+[fadeout target = "tao" time = 0.2]
+[fadeout target = "dodo" time = 0.2]
+
+
+[character id = "dod2" x=-190 y=-15 storage = "99999/dodonpa" scale = 2.0 action = "fadein" time = 0.2]
+[quake target ="dod2" power = 8 time = 0.4]
+[move target ="dodo" x=300 time = 0.3]
+
+[wait_anim target="dod2"]
+
+*010
+//-------------------------------------------------------------------------------
+// ふっとぶ
+//-------------------------------------------------------------------------------
+[se storage = "3017"]
+[coma shape="N0003L" bg = "bg_000_083"]
+
+[lwfobject id = "kaki2" storage="kakimoji:ef_019" in="04" x=-150 y=50 angle = -40 scale = 2.5]
+[quake target = "kaki2" power = 15 time = 1]
+
+[character id = "bomb" x=-70 y=-130 storage = "99999/ef_sp_explosion" scale = 1.8 angle = -20 action = "expand" time = 0.1]
+[quake target = "bomb" power = 10 time = 1]
+
+[character id = "arare" x = 140 y = -20 storage = "00261/dam_front_e_01" scale = 1.4 action = "fadein" time = 0.1]
+[quake target = "arare" power = 10 time = 1]
+
+[balloon id = "hoyo" shape="007_02" x = -0 y = -150 scale = 0.75 action = "expand" time = 0.1]
+[font size = 36]
+[wait_anim target="hoyo"]
+[quake target ="hoyo" power = 7 time = 0.2]
+うわあぁぁー！！
+[balloon id = "white"x=0 y=0 shape="008_02" scale = 50 action = "fadein" time = 0.5]
+[wait_anim target="white"]
+[fadeout target = "white" time = 0.7]
+[wait time = 0.7]
+
+// 空のフキダシ（セリフがないコマを送るために使用）
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+
+*011
+//-------------------------------------------------------------------------------
+//  鶴仙人
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_083"]
+
+//[character x = -200 y = -100 storage = "00065/heapup_p_01" scale = 1.4 action = "fadein" time = 0.1]
+[character x = -200 y = -100 storage = "00065/heapup_p_03" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon x=120 y=70 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+ひゃひゃひゃ…[r]
+桃白白の恐ろしさが[r]
+わかったか！
+[p]
+
+[balloon x=130 y=-115 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+これで[r]
+ドラゴンボールが[r]そろって[r]
+世界はわしの思い通り！
+[p]
+
+*012
+//-------------------------------------------------------------------------------
+//  餃子
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_083"]
+
+[character x = 190 y = -70 storage = "90003/chaoz_01" scale = 1.0 action = "fadein" time = 0.1]
+[character x = 240 y = 60 storage = "99999/ase" scale = 0.6 action = "fadein" time = 0.1]
+
+[balloon x=-110 y=40 shape="004_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+え！？[r]
+ボクの[r]
+ランランちゃんは？
+[p]
+
+*013
+//-------------------------------------------------------------------------------
+//  鶴仙人
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_083"]
+
+[character x = -175 y = -115 storage = "00065/side_p_03" scale = 1.1 action = "fadein" time = 0.1]
+
+[balloon x=120 y=90 shape="002_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+ランランちゃん？
+[p]
+
+[balloon x=130 y=-110 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+…陛下 もはや[r]
+あなたの思い通りには[r]
+ならないのです
+[p]
+
+*014
+//-------------------------------------------------------------------------------
+//  餃子
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_083"]
+
+[character x = 190 y = -70 storage = "90003/chaoz_01" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon x=-110 y=40 shape="004_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+ああ…ボク[r]
+だまされていたんだね…
+[p]
+
+*015
+//-------------------------------------------------------------------------------
+//  天津飯
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_083"]
+
+[character x = -200 y = -130 storage = "00954/idl_side_e_01" scale = 1.0 action = "fadein" time = 0.1]
+[flip target =".chara" h=1]
+
+[balloon x=120 y=60 shape="001_03" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 54]
+//[quake target =".bln" power = 3 time = 0.2]
+………
+[p]
+
+*016
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_000_014"]
+
+//[character x = -120 y = -100 storage = "00025/atc_down_p_01" scale = 1.6 action = "fadein" time = 0.1]
+
+
+[balloon x=0 y=-40 shape="003_02" scale = 1.6 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 15]
+//[quake target =".bln" power = 3 time = 0.2]
+ケタちがいの[r]
+強さを誇る桃白白！[r]
+　[r]
+そして ついに[r]
+鶴仙人も[r]
+その邪悪な本性を現した…[r]
+　[r]
+このままミーファン帝国は[r]
+悪の手に[r]
+落ちてしまうのか！？
+[p]
+
+//-------------------------------------------------------------------------------
+[stopbgm]

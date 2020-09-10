@@ -1,0 +1,38 @@
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+//[bgm storage = "012"]
+
+*001
+//-------------------------------------------------------------------------------
+//  孫悟空&ベジータ(天使)
+//-------------------------------------------------------------------------------
+//[se storage = "3022"]
+[coma shape="S0001" bg = "bg_008_001"]
+
+[character x = -60 y = 30-20 storage = "00003/card_41" scale = 1.0 action = "fadein" time = 0.1] 
+[character x = 120 y = -120-20 storage = "00282/card_12" scale = 1.0 action = "fadein" time = 0.1] 
+
+//悟空
+[balloon x= -35 y= 450 shape="001_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+オラたちが[r]
+闘うしかねえんだ！！
+[p]
+
+
+//ベジータ
+[balloon x= 35 y= -450 shape="002_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+敵が目の前に[r]いるかぎり[r]
+オレは闘う！！
+[p]
+
+
+//[stopbgm]

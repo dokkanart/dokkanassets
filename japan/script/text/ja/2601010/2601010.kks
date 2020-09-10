@@ -1,0 +1,44 @@
+
+
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "002"]
+
+
+*01
+//-------------------------------------------------------------------------------
+//  超サイヤ人・孫悟空
+//-------------------------------------------------------------------------------
+[se storage = "50"]
+[coma shape="S0001" bg = "bg_000_021"]
+
+[character x=-0 y=-0 storage = "00003/card_04" scale = 1.2 angle = -100 action = "expand" time = 0.2]
+
+[quake target =".chara" power = 8 time = 0.6]
+[rotate_to target=".chara" angle=0 time=0.2]
+
+[lwfobject id = "kaki1" storage="kakimoji:ef_020" in="04" x=-120 y=-240 scale = 2.2 angle = 10 action = "fadein" time = 0.1]
+[quake target = "kaki1" power = 15 time = 0.4]
+
+[wait_anim target=".chara"]
+
+[balloon x=-120 y=350 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target = ".bln" power = 7 time = 0.2]
+おめえか[r]
+オラと闘いたいって[r]
+いうやつは…[p]
+
+[balloon x=120 y=-410 shape="001_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][font size = 28]
+//[quake target = ".bln" power = 7 time = 0.2]
+そうとう腕に[r]
+自信があるみたいだな[p]
+
+
+
+[stopbgm]

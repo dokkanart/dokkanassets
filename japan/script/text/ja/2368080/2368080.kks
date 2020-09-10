@@ -1,0 +1,89 @@
+*start|スタート
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "039"]
+
+
+*001
+//-------------------------------------------------------------------------------
+//  トランクスが、超トランクスに変身する
+//-------------------------------------------------------------------------------
+[se storage = "50"]
+[coma shape="S0001" bg = "bg_000_024"]
+
+[lwfobject id = "kaki1" storage="kakimoji:ef_009" x=-210 y=430 scale = 1.5 angle = 10 action = "fadein" time = 0.1]
+[quake target = "kaki1" power = 1 time = 300]
+
+
+[character id = "ss" x=0 y=50 storage = "99999/ef_aura_front" scale = 2.7 angle = -20 action = "fadein" time = 0.1]
+[paint target="ss" color="#FFBF00"]
+[quake target ="ss" power = 2 time = 300]
+
+
+[character id = "tra" x = 0 y = 110 storage = "00208/card_01" scale = 0.9 action = "fadein" time = 0.1]
+[quake target ="tra" power = 1 time = 300]
+
+[wait time = 2]
+
+
+[balloon x=0 y=-250 shape="003_01" scale = 1.4 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 16]
+//[quake target =".bln" power = 3 time = 0.2]
+完全体となったセルの[r]
+圧倒的パワーの前に[r]
+手も足も出ない[r]ベジータ…[r]
+　[r]
+しかし そんな[r]
+父ベジータの危機に[r]
+フルパワーを解放した[r]
+トランクスが[r]
+立ち上がった！
+[p]
+
+
+
+*002
+//-------------------------------------------------------------------------------
+//  セル（完全体）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_004"]
+
+[character x = -200 y = -330 storage = "00205/card_04" scale = 1.1 action = "fadein" time = 0.1]
+
+[balloon x=105 y=70 shape="002_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+トランクス……！？
+[p]
+
+[balloon x=130 y=-100 shape="002_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+…こんな底力を[r]
+秘めていたのか…！
+[p]
+
+*003
+//-------------------------------------------------------------------------------
+//  超トランクス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_000_004"]
+
+[character id = "tra" x = 135 y = -220 storage = "00208/card_01" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon x = -160 y = 30 shape="001_03" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+おまえを殺すぞ[r]
+セル…！
+[p]
+
+//-------------------------------------------------------------------------------
+[stopbgm]

@@ -1,0 +1,167 @@
+
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "013"]
+
+*001
+//-------------------------------------------------------------------------------
+//  桃白白
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0001L" bg = "bg_027_001"]
+
+[character x=-175 y=-70 storage = "00024/idl_side_p_02" scale = 1.3 action = "fadein" time = 0.1]
+
+[balloon x=120 y=130 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+アロ〜ハ〜[r]
+世界一の殺し屋[r]桃白白だじょー[p]
+
+*002
+//-------------------------------------------------------------------------------
+//  トランクス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_027_001"]
+
+[character x=210 y=-200 storage = "90000/wait_right_anger_strong" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon id="tora1" x=-80 y=50 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+こいつが桃白白か…！[r]武道の達人を襲って[r]いるのはおまえだな！[p]
+//元シナリオ
+//こいつが[r]桃白白か…！
+//武道の達人を[r]次々に襲っているのは[r]おまえだな！[p]
+
+*003
+//-------------------------------------------------------------------------------
+//  桃白白
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_027_001"]
+
+//[character x=-300 y=-140 storage = "00024/dash_p_01" scale = 1.8 action = "fadein" time = 0.1]
+[character x=-175 y=-70 storage = "00024/idl_side_p_02" scale = 1.3 action = "fadein" time = 0.1]
+
+[balloon x=120 y=130 shape="002_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+ほう…何も知らずに[r]やって来たわけでは[r]ないということか[p]
+
+[balloon x=130 y=-100 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+その威勢だけは[r]認めてやろう[p]
+
+*004
+//-------------------------------------------------------------------------------
+//  トランクス
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+//[se storage = "03"]
+
+[coma shape="N0003R" bg = "bg_027_001"]
+
+//[lwfobject id="syuutyuu1" storage="syucyu:ef_001" mask="inside" loop=1 priority=10 scale=1.2]
+//[move target = "syuutyuu1" x = 120 y = -30]
+
+[character x = 170 y = -380 storage = "90000/wait_right_anger_strong" scale = 1.7 action = "fadein" time = 0.1]
+
+[balloon x=-110 y=40 shape="006_01" scale = 0.8 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 7 time = 0.2]
+[font size = 32]
+なぜ[r]こんなことを[r]続けるんだ！！[p]
+
+*005
+//-------------------------------------------------------------------------------
+//  桃白白
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_027_001"]
+
+[character x=-175 y=-70 storage = "00024/idl_side_p_02" scale = 1.3 action = "fadein" time = 0.1]
+
+[balloon x=110 y=130 shape="002_01" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+なぜだと？[r]
+つまらん質問だな[r]
+わたしは殺し屋なんだぞ？
+[p]
+
+[balloon x=130 y=-90 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+金さえ手に入れば[r]どんなヤツでも[r]消してみせる[p]
+
+
+
+*007
+//-------------------------------------------------------------------------------
+//  桃白白
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0003L" bg = "bg_027_001"]
+
+[character x=-300 y=-110 storage = "00024/dash_p_01" scale = 1.8 action = "fadein" time = 0.1]
+
+[balloon x=130 y=120 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+そうだ！きさまにも[r]
+誰か消してほしい[r]
+ヤツはいないのか？
+[p]
+
+[balloon x=130 y=-100 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+今なら半額の[r]
+５０００万ゼニーに[r]
+サービスしてやるぞ？
+[p]
+
+*008
+//-------------------------------------------------------------------------------
+//  トランクス
+//-------------------------------------------------------------------------------
+[se storage = "3022"]
+
+[coma shape="B0001" bg = "bg_027_002"]
+//[lwfobject storage="syucyu:ef_001" mask="inside" loop=1 priority=10 scale=0.8]
+
+[character id = "tora1" x=0 y=0 storage = "90000/stance_right_anger_strong" scale = 1.3 angle = 0 action = "fadein" time = 0.1]
+[quake target = "tora1" power = 5 time = 0.4]
+
+[lwfobject id = "kaki1" storage="kakimoji:ef_023" in="02" x=145 y=-50 scale = 1.7 angle = 20 action = "fadein" time = 0.1]
+[quake target = "kaki1" power = 8 time = 0.4]
+
+[balloon x=-50 y=450 shape="006_01" scale = 0.9 action = "expand" time = 0.11]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 7 time = 0.2]
+[font size = 28]
+ふざけるな！[r]金のためだけに[r]罪もない武道家を…！
+[p]
+
+//[se storage = "03"]
+
+[balloon x=-0 y=-400 shape="006_02" scale = 1.0 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 7 time = 0.2]
+[font size = 24]
+桃白白！[r]おまえを許すわけには[r]いかない！！
+[p]
+
+//元シナリオ
+//ふざけるな！[r]金のためだけに罪もない[r]武道家たちを次々と…！
+//桃白白！[r]おまえを許すわけには[r]いかない！！
+
+[stopbgm]

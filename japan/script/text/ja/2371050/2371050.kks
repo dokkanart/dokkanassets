@@ -1,0 +1,302 @@
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//[stopbgm]
+//-------------------------------------------------------------------------------
+
+*001
+//-------------------------------------------------------------------------------
+//爆発
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0003R" bg = "bg_014_002"]
+
+[wait time = 0.7] 
+
+[se storage = "3017"]
+
+[bgm storage = "013"]
+
+[lwfobject id = "kaki2" storage="kakimoji:ef_019" in="04" x=0 y=50 scale = 2.5 action = "expand" time = 0.2]
+[quake target = "kaki2" power = 12 time = 1]
+
+[character x=0 y=-80 storage = "99999/ef_explode_005" angle =20 scale = 2.0 action = "expand" time = 0.1]
+[quake target = ".chara" power = 10 time = 1]
+[balloon x=130 y=40 shape="008_02" scale = 50 action = "fadein" time = 0.5]
+[wait_anim target=".bln"]
+[fadeout target = ".bln" time = 1.5]
+[wait time = 1.5]
+
+
+//空のフキダシ
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+*002
+//----------------------------------------------------------
+//トランクス（未来）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_016"]
+
+
+[character x = -220 y = -120-30 storage = "00216/heapup_p_01" scale = 1.3 action = "fadein" time = 0.1]
+
+
+
+[balloon x = 100 y = 70 shape="004_02" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+//[quake target =".bln" power = 3 time = 0.2]
+み…[r]
+都が……！！
+[p]
+
+
+*003
+//-------------------------------------------------------------------------------
+//悟飯（未来）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_016"]
+
+[character x = 200 y = -105 storage = "00462/heapup_e_01" scale = 1.3 action = "fadein" time = 0.1]
+
+
+[balloon x = -130 y = 90 shape="004_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+人造人間…！！[r]
+また来たのか！！
+[p]
+
+[balloon x = -130 y = -100 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+くそ……[r]
+も…もう[r]
+ゆるせない……！！
+[p]
+
+
+*004
+//----------------------------------------------------------
+//トランクス（未来）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_016"]
+
+[character x = -220 y = -120-30 storage = "00216/heapup_p_01" scale = 1.3 action = "fadein" time = 0.1]
+
+[balloon x = 110 y = 60 shape="004_02" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+//[quake target =".bln" power = 3 time = 0.2]
+ご…[r]悟飯さん…！！
+[p]
+
+
+*005
+//-------------------------------------------------------------------------------
+//悟飯（未来）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_016"]
+
+[character x = 200 y = -105 storage = "00462/heapup_e_01" scale = 1.3 action = "fadein" time = 0.1]
+
+
+
+[balloon x = -130 y = 70 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+トランクス！！[r]
+キミはここにいるんだ[r]
+いいな！！
+[p]
+
+*006
+//----------------------------------------------------------
+//トランクス（未来）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_016"]
+
+[character x = -220 y = -120-30 storage = "00216/heapup_p_01" scale = 1.3 action = "fadein" time = 0.1]
+//[character x = -220 y = -120 storage = "00462/idl_side_p_01" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x = 120 y = 90 shape="006_01" scale = 0.9 action = "expand" time = 0.1]
+[wait_anim target=".bln"][font size = 28]
+[quake target =".bln" power = 7 time = 0.2]
+イヤだ[r]
+悟飯さんが行くんなら[r]
+ボクも行く！！
+[p]
+
+[balloon x = 130 y = -110 shape="006_02" scale = 0.8 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 7 time = 0.2]
+ボクも[r]
+もうずいぶん[r]
+強くなった！！
+[p]
+
+
+*007
+//-------------------------------------------------------------------------------
+//悟飯（未来）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_016"]
+
+//[character x = 200 y = -105 storage = "00462/heapup_e_01" scale = 1.3 action = "fadein" time = 0.1]
+[character x = 220 y = -120+25 storage = "00462/idl_side_e_01" scale = 1.2 action = "fadein" time = 0.1]
+
+
+[balloon x = -110 y = 75 shape="001_03" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][font size = 54]
+………
+[p]
+
+
+*008
+//-------------------------------------------------------------------------------
+//気絶させる
+//-------------------------------------------------------------------------------
+[stopbgm]
+
+[se storage = "3002"]
+[coma shape="N0004R" bg = "bg_000_014"]
+
+[lwfobject id = "kaki2" storage="kakimoji:ef_006" in="04" x=180 y=70 scale = 1.8 action = "fadein" time = 0.1 angle = 15]
+[quake target = "kaki2" power = 9 time = 0.4]
+
+[character id = "tr" x = -105 y = -110 storage = "00216/heapup_p_01" scale = 2.1 action = "fadein" time = 0.1]
+[quake target = "tr" power = 5 time = 0.4]
+
+[character id = "gh" x=345 y=-230 storage = "00209/card_01" scale = 2.0 action = "fadein" time = 0.1 angle = 20]
+//[flip target ="gh" h=1]
+[quake target = "gh" power = 8 time = 0.4]
+
+[character id = "dageki" x = -30 y = -30 storage = "99999/04_syougeki" scale = 1.5 action = "fade:90" time = 0.1]
+[quake target ="dageki" power = 7 time = 0.4]
+
+//点滅
+[balloon shape="008_02" x = 0 y = 0 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+
+// 空のフキダシ（セリフがないコマを送るために使用）
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+
+
+*008-2
+//-------------------------------------------------------------------------------
+//
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_016"]
+
+[character x = -220 y = -120-30 storage = "00216/heapup_p_01" scale = 1.3 action = "fadein" time = 0.1]
+[quake target =".chara" power = 1 time = 1.0]
+
+[wait_anim target=".chara"]
+
+
+//沈んでいく。
+[move target =".chara" y=-430 time = 1.5 ease="In:2.5"]
+
+[wait time = 1.4]
+
+[se storage = "3023"]
+[quake target =".coma" power = 5 time = 0.5]
+
+[wait_anim target=".coma"]
+
+// 空のフキダシ（セリフがないコマを送るために使用）
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+
+
+*009
+//-------------------------------------------------------------------------------
+//悟飯（未来）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_000_016"]
+
+[character x = 160 y = -270 storage = "00462/card_02" scale = 1.0 action = "fadein" time = 0.1]
+
+
+[balloon x = -120 y = 40 shape="001_02" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+もしキミまで[r]死んでしまったら[r]
+地球を守る戦士は誰も[r]
+いなくなってしまう…
+[p]
+
+[balloon x = -120 y = -210 shape="001_03" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+何年か先[r]
+あの人造人間どもを[r]
+倒すことのできる可能性を[r]
+もった最後の戦士が……
+[p]
+
+//フェードアウト（フェードアウトするコマ）
+//[stopbgm fadeout = 1.5]
+[balloon x=0 y=0 shape="008_03" scale = 50.0 action = "fadein" time = 1.5]
+[wait time = 3.0] 
+
+
+
+[balloon x = 0 y = 250 shape="003_02" scale = 1.5 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 15]
+トランクスを[r]
+気絶させた悟飯は[r]
+ひとりで[r]人造人間のもとへ[r]
+飛び立つのだった…[r]
+　[r]
+たったひとつの希望を[r]
+残して……
+[p]
+
+//フェードアウト（フェードアウトするコマ）
+[balloon id = "fo" x=0 y=0 shape="008_03" scale = 50.0 action = "fadein" time = 1.5]
+[wait time = 3.0] 
+
+
+
+[balloon id = "n" x=0 y=240 shape="009_17" scale = 1.0 action = "fadein" time = 0.1]
+[font color="#FFFFFF"]
+[font size = 40]
+トランクス…[r]
+キミは最後の希望だ
+//[p]
+
+
+[balloon id = "fo2" x=0 y=0 shape="008_03" scale = 50.0]
+[fadeout target = "fo2" time = 2.0]
+
+
+[wait_anim target="fo2"]
+
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+
+//終わりのフェードアウト
+//[stopbgm fadeout = 1.5]
+[balloon x=0 y=0 shape="008_03" scale = 50.0 action = "fadein" time = 2.0]
+[wait time = 3.5]
+

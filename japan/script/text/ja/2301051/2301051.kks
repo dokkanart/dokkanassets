@@ -1,0 +1,86 @@
+
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "001"]
+
+//-------------------------------------------------------------------------------
+//  悟空
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_027_001"]
+
+[character x=195 y=-110 storage = "00003/heapup_e_01" scale = 1.8 action = "fadein" time = 0.1]
+
+
+[balloon x=-120 y=10 shape="001_01" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 42]
+[quake target =".bln" power = 3 time = 0.2]
+よし…[r]
+いくぞ！！
+[p]
+
+
+*002
+///-------------------------------------------------------------------------------
+//  ラディッツ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_027_001"]
+
+[character x=-170 y=-90 storage = "00014/heapup_p_01" scale = 1.4 action = "fadein" time = 0.1]
+
+
+[balloon id="radhi1" x=120 y=145 shape="002_01" scale = 1 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 26]
+調子にのるなよ…！[r]
+さっきのガキの一撃は[r]
+かなりのダメージだが…
+[p]
+
+
+[balloon id="radhi1" x=120 y=-80 shape="002_01" scale = 1.1 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 26]
+[quake target =".bln" power = 3 time = 0.2]
+きさまらをあの世に送る[r]
+パワーは残っているぞ！
+[p]
+
+
+
+
+*003
+//-------------------------------------------------------------------------------
+//  悟空
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_027_001"]
+
+[character x=170 y=-150 storage = "00003/card_01" scale = 1.2 action = "fadein" time = 0.1]
+
+
+[balloon x=-140 y=90 shape="001_01" scale = 1 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 27]
+[$player]と[r]
+オラの力を合わせれば…
+[p]
+
+[balloon x=-140 y=-130 shape="001_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 3 time = 0.2]
+[font size = 30]
+今のあいつなら[r]
+倒せるはずだ！！
+[p]
+
+
+
+
+
+[stopbgm]

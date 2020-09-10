@@ -1,0 +1,88 @@
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "005"]
+
+
+*001
+//-------------------------------------------------------------------------------
+//  ピッコロ
+//-------------------------------------------------------------------------------
+
+//[se storage = "04"]
+[coma shape="N0001L" bg = "bg_012_001"]
+
+[character x = -190 y = -150 storage = "00010/idl_side_p_02" scale = 1.6 action = "fadein" time = 0.1]
+
+[balloon x=120 y=130 shape="002_01" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 3 time = 0.2]
+[font size = 24]
+魔導師バビディが[r]
+復活させようとしている[r]
+魔人…ブウ…！！[p]
+
+
+[balloon x=120 y=-80 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target =".bln" power = 3 time = 0.2]
+[font size = 28]
+ふざけた名前だが[r]
+とんでもなく[r]
+恐ろしい怪物らしい[p]
+
+*002
+//-------------------------------------------------------------------------------
+//  トランクス
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_012_001"]
+
+[character x = 210 y = -200 storage = "90000/wait_right_surprise" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x=-100 y=125 shape="001_01" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 3 time = 0.2]
+[font size = 36]
+魔人ブウ…！？[p]
+
+
+[balloon x=-90 y=-80 shape="001_02" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 3 time = 0.2]
+[font size = 24]
+い…いったい[r]
+どんなやつなんですか！？[p]
+
+
+*003
+//-------------------------------------------------------------------------------
+//  大界王神
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0002L" bg = "bg_012_001"]
+
+[character x = -240 y = -120 storage = "00413/heapup_p_01" scale = 1.3 action = "fadein" time = 0.1]
+
+[balloon x=140 y=110 shape="001_01" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target =".bln" power = 3 time = 0.2]
+[font size = 24]
+ひたすら破壊と殺戮だけを[r]
+くりかえす恐怖の怪物だ[p]
+
+[balloon x=120 y=-160 shape="001_03" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 3 time = 0.2]
+[font size = 24]
+魔人ブウによって[r]
+なん百という星が 死の星に[r]
+変えられてしまった…！[p]
+
+
+
+[stopbgm]

@@ -1,0 +1,47 @@
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+//[bgm storage = "012"]
+
+*001
+//-------------------------------------------------------------------------------
+//  元気玉の構え
+//-------------------------------------------------------------------------------
+[se storage = "3022"]
+[coma id = "coma1" shape="S0001" bg = "bg_000_059"]
+
+[lwfobject id = "kaki1" storage="kakimoji:ef_023" x=-140 y=80 angle = -10 scale = 1.7 action = "fadein" time = 0.1]
+[quake target = "kaki1" power = 15 time = 0.2]
+
+[character id = "1" x = 100 y = -80 storage = "00003/card_17" scale = 1.1 action = "fadein" time = 0.1]
+[quake target ="1" power = 2 time = 0.2]
+
+[wait_anim target="kaki1"]
+
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+[balloon shape="001_01" x = -130 y = 460 scale = 0.9 action = "fadein" time = 0.1]
+[font size = 28]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 3 time = 0.2]
+おめえの強さは[r]
+よぉくわかった！
+[p]
+
+
+
+
+[balloon shape="006_01" x = -50 y = -390 scale = 0.9 action = "expand" time = 0.1]
+[font size = 28]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 7 time = 0.2]
+そんなら[r]
+オラのとっておきを[r]
+見せてやる！
+[p]
+
+
+//[stopbgm]

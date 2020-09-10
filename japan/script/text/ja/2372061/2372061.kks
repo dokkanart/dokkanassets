@@ -1,0 +1,224 @@
+*start|スタート
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "049"]
+
+
+*001
+//-------------------------------------------------------------------------------
+//  パンチ
+//-------------------------------------------------------------------------------
+[se storage = "50"]
+[coma shape="S0001" bg = "bg_000_014"]
+
+//[character id = "BG" x = 0 y = 0 storage = "99999/flare" scale = 20 action = "fadein" time = 0.1 mask="inside"]
+[character id = "BG" x = 0 y = -500 storage = "99999/ring" scale = 30 action = "fadein" time = 0.1 mask="inside"]
+
+
+[character id = "goku" x= 0 y= 80 storage = "00300/card_14" scale = 1.1 action = "fadein" time = 0.1]
+[quake target = "goku" power = 9 time = 0.4]
+
+[balloon x = 0 y = 490 shape="006_02" scale = 0.75 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+[quake target =".bln" power = 7 time = 0.2]
+うおおおおっ！！
+[p]
+
+
+[se storage = "3012"]
+//点滅
+[balloon shape="008_02" x = 0 y = 0 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+
+
+
+*002
+//-------------------------------------------------------------------------------
+//  パンチ
+//-------------------------------------------------------------------------------
+[se storage = "3002"]
+[coma shape = "N0002R" bg = "bg_000_014"]
+
+[character id = "BG" x = 0 y = -500 storage = "99999/ring" scale = 30 action = "fadein" time = 0.1 mask="inside"]
+
+[lwfobject id = "kaki1" storage="kakimoji:ef_006" x=-130 y=260 angle = 10 scale = 2.0 angle = -20 action = "expand" time = 0.1] 
+[quake target = "kaki1" power = 15 time = 0.4]
+
+
+
+[character id = "panch" x = 130 y = 50 storage = "00300/card_19" scale = 0.7 angle = 30 action = "fadein" time = 0.1]
+[quake target = "panch" power = 10 time = 0.4]
+
+
+
+[character id = "13gou" x = -85 y = -40 storage = "00289/heapup_back_p_01" scale = 1.2 angle = 0 action = "fadein" time = 0.1]
+[quake target = "13gou" power = 12 time = 0.4]
+
+
+[wait_anim target="13gou"]
+
+
+
+//空のフキダシ
+//[balloon x = 0 y = 0 shape="002_01" scale = 0]
+//[p]
+
+//[character id = "ki3" x = -65 y = 30 storage = "99999/ef_beam_circle" scale = 0.3 action = "fadein" time = 0.1]
+//[spin target="ki3" velocity=-100]
+//[move target ="ki3" x=-180 time = 0.5]
+
+
+//[wait time = 0.7]
+
+//[fadeout target = "ki3" time = 0.3]
+
+//[wait time = 1.2]
+
+[se storage = "3031"]
+
+
+
+[character id = "hukari_1" x = -60 y = 960 storage = "99999/beam_04" scale = 3.0 angle = 90 action = "fadein" time = 0.3]
+[quake target ="hukari_1" power = 4 time = 300]
+
+[character id = "hukari_2" x = -770 y = 620 storage = "99999/beam_04" scale = 3.0 angle = 40 action = "fadein" time = 0.3]
+[quake target ="hukari_2" power = 4 time = 300]
+
+[character id = "hukari_3" x = 810 y = 340 storage = "99999/beam_04" scale = 3.0 angle = -200 action = "fadein" time = 0.3]
+[quake target ="hukari_3" power = 4 time = 300]
+
+[character id = "hukari_4" x = 830 y = -210 storage = "99999/beam_04" scale = 3.0 angle = 194 action = "fadein" time = 0.3]
+[quake target ="hukari_4" power = 4 time = 300]
+
+[character id = "hukari_5" x = 340 y = -820 storage = "99999/beam_04" scale = 3.0 angle = 244 action = "fadein" time = 0.3]
+[quake target ="hukari_5" power = 4 time = 300]
+
+[character id = "hukari_6" x = -230 y = -890 storage = "99999/beam_04" scale = 3.0 angle = 280 action = "fadein" time = 0.3]
+[quake target ="hukari_6" power = 4 time = 300]
+
+[character id = "hukari_7" x = -890 y = -400 storage = "99999/beam_04" scale = 3.0 angle = 333 action = "fadein" time = 0.3]
+[quake target ="hukari_7" power = 4 time = 300]
+
+
+
+[wait time = 1.2]
+
+
+
+[se storage = "3025"]
+//点滅
+[balloon id = "wh" shape="008_02" x = 0 y = 0 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = "wh"]
+[balloon id = "wh2" shape="008_02" x = 0 y = 0 scale = 50 action = "fadein" time = 0.7]
+[wait time = 1.5]
+
+[clear target = "hukari_1"]
+[clear target = "hukari_2"]
+[clear target = "hukari_3"]
+[clear target = "hukari_4"]
+[clear target = "hukari_5"]
+[clear target = "hukari_6"]
+[clear target = "hukari_7"]
+
+
+[fadeout target = "wh2" time = 0.7]
+
+
+//[wait time = 0.5]
+
+
+
+*003
+//-------------------------------------------------------------------------------
+//  合体13号
+//-------------------------------------------------------------------------------
+[se storage = "3023"]
+[coma shape="N0004R" bg = "bg_000_014"]
+
+
+[character id = "BG" x = 0 y = -500 storage = "99999/ring" scale = 30 action = "fadein" time = 0.1 mask="inside"]
+
+[character id = "13gou" x = -110 y = -110 storage = "00289/dam_roll_p_01" scale = 1.1 angle = -10 action = "fadein" time = 0.1]
+[quake target = "13gou" power = 2]
+
+
+[balloon x=160 y=40 shape="007_02" scale = 0.8 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 7 time = 0.2]
+孫悟空ゥゥーッ！！
+[p]
+
+[se storage = "3038"]
+//[scale target = "13gou" scale = 0.5 time = 2.0]
+[fadeout target = "13gou" time = 2.0]
+
+
+[wait_anim target="13gou"]
+
+//空のフキダシ
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+
+*004
+//-------------------------------------------------------------------------------
+//  超サイヤ人孫悟空
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0004R" bg = "bg_000_014"]
+
+//[character id = "BG" x = 0 y = 0 storage = "99999/flare" scale = 20 action = "fadein" time = 0.1 mask="inside"]
+[character id = "BG" x = 0 y = -500 storage = "99999/ring" scale = 30 action = "fadein" time = 0.1 mask="inside"]
+
+[lwfobject id = "kaki1" storage="kakimoji:ef_009" x=-220 y=0 scale = 1.5 action = "fadein" time = 0.1]
+[quake target = "kaki1" power = 2]
+
+//[character id="ss" x = 0 y = -400 storage = "99999/supersaiyan" scale = 1.8 action = "fade:100" time = 0.1]
+//[quake target ="ss" power = 2 time = 300]
+
+[character id = "goku" x= 10 y= -90 storage = "00300/card_17" scale = 1.2 action = "fadein" time = 0.1]
+
+
+//空のフキダシ
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+*005
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002L" bg = "bg_000_016"]
+
+[balloon x=0 y=-30 shape="003_01" scale = 1.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 13]
+//[quake target =".bln" power = 3 time = 0.2]
+超サイヤ人に変身し[r]
+元気玉のエネルギーを[r]
+自分の中にとりこんだ[r]
+悟空の一撃によって[r]
+13号は消滅した…！[r]
+　[r]
+こうして[r]
+ドクター・ゲロが残した[r]
+人造人間たちの野望は[r]
+崩れ去り[r]
+地球に再び平和な日々が[r]
+もどるのだった…
+[p]
+
+
+[stopbgm fadeout = 1.5]
+[balloon x=0 y=0 shape="008_03" scale = 50.0 action = "fadein" time = 0.5]
+[wait time = 2.5]
+
+
+
+//-------------------------------------------------------------------------------
+//[stopbgm]

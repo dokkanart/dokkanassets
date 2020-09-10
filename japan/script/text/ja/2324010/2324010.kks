@@ -1,0 +1,535 @@
+*start|スタート
+//復讐鬼ベビー編_エリア1：スタート
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "005"]
+
+
+*001
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0002R" bg = "bg_000_003"]
+
+[wait time = 0.7]
+
+[character x=240 y=130 storage = "00325/card_01" scale = 0.5 action = "fadein" time = 0.7]
+
+[wait time = 0.4]
+
+[character x=60 y=60 storage = "00326/card_01" scale = 0.6 action = "fadein" time = 0.7]
+
+
+[wait time = 0.4]
+
+[character x=160 y=-60 storage = "00324/card_01" scale = 0.8 action = "fadein" time = 1.0]
+
+[wait_anim target=".chara"]
+
+[balloon x=-160 y=0 shape="003_01" scale = 1.4 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 17]
+
+地球消滅の[r]
+危機を救うため[r]
+宇宙に飛び散った[r]
+究極ドラゴンボールを[r]
+探す旅に出た[r]
+悟空、トランクス、[r]
+パンの３人…[p]
+
+
+*002
+//-------------------------------------------------------------------------------
+//  ドクターミュー
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0002L" bg = "bg_081_006"]
+
+[wait time = 0.7]
+
+[balloon x=0 y=0 shape="003_01" scale = 1.4 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 17]
+順調に[r]
+ドラゴンボールを[r]
+集めていく[r]
+悟空たちの前に[r]
+全ギャラクシー征服を[r]
+もくろむ[r]
+ドクター・ミューが[r]
+現れた！[p]
+
+
+
+*003
+//-------------------------------------------------------------------------------
+//  ドクターミュー＆べびーI
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0003L" bg = "bg_081_006"]
+
+[character x = -210 y = -100 storage = "00329/heapup_p_01" scale = 0.8 action = "fadein" time = 0.1]
+
+[character x=180 y=-80 storage = "00481/idl_side_p_01" scale = 1.4 action = "fadein" time = 0.1]
+
+[wait time = 0.7]
+
+[balloon x=-20 y=120 shape="007_02" scale = 0.8 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+殺してしまえ[r]
+ベビー！
+[p]
+
+[balloon x=30 y=-100 shape="007_01" scale = 0.9 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+忌々しいサイヤ人どもを[r]
+地獄に叩き込んでやれ！！
+[p]
+
+
+*004
+//-------------------------------------------------------------------------------
+//  悟空
+//-------------------------------------------------------------------------------
+[se storage = "3029"]
+[coma shape="N0003R" bg = "bg_081_006"]
+
+
+
+[lwfobject id = "kaki1" storage="kakimoji:ef_013" in="04" x=-150 y=-110 scale = 2.0]
+[quake target = "kaki1" power = 15 time = 0.4]
+
+[character id = "goku2" x = 230 y = -50 storage = "00324/atc_sp01_e_02" scale = 1.1]
+
+[character id = "kame" x = -525 y = -60 storage = "99999/kamehameha_r" scale = 1.6]
+
+[quake target ="goku2" power = 7 time = 0.5]
+[quake target ="kame" power = 1 time = 300]
+
+[balloon x=-50 y=90 shape="006_01" scale = 0.7 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 44]
+[quake target =".bln" power = 7 time = 0.2]
+波ーっ！！
+[p]
+
+
+*005
+//-------------------------------------------------------------------------------
+//  ベビー
+//-------------------------------------------------------------------------------
+
+[se storage = "03"]
+[coma shape="N0004L" bg = "bg_000_014"]
+
+[character x=-280 y=-390 storage = "00481/idl_side_p_01" scale = 2.5 action = "fadein" time = 0.1]
+
+
+[lwfobject id = "kaki2" storage="kakimoji:ef_001" in="02" x=110 y=40 scale = 3.5 angle = 15] 
+[quake target ="kaki2" power = 15 time = 0.4]
+
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+
+*006
+//-------------------------------------------------------------------------------
+//  爆発
+//-------------------------------------------------------------------------------
+[se storage = "3017"]
+[coma shape="N0004R" bg = "bg_081_006"]
+
+[lwfobject id = "kaki2" storage="kakimoji:ef_019" in="04" x=0 y=50 scale = 3 angle = 20]
+[quake target = "kaki2" power = 15 time = 1]
+[character x=-130 y=-90 storage = "90000/bomb" scale = 1.2 action = "expand" time = 0.1]
+[quake target = ".chara" power = 10 time = 1]
+[balloon x=130 y=40 shape="008_02" scale = 50 action = "fadein" time = 0.5]
+[wait_anim target=".bln"]
+[fadeout target = ".bln" time = 1.5]
+[wait time = 1.5]
+//空のフキダシ
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+
+
+*007
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_000_014"]
+
+[balloon x=0 y=30 shape="003_01" scale = 1.6 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 16]
+悟空たちの[r]
+予想外のパワーを[r]
+目の当たりにし[r]
+宇宙へと逃走する [r]
+ドクター・ミュー[r]
+　[r]
+切り札である[r]
+ベビーを倒され[r]
+ミューの野望もついえた[r]
+と思われたが…[p]
+
+
+*008
+//-------------------------------------------------------------------------------
+//  ドクターミュー（声のみ）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0003L" bg = "bg_000_003"]
+
+[wait time = 0.7]
+
+[balloon x=0 y=50 shape="004_01" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+[quake target =".bln" power = 3 time = 0.2]
+くそ…サイヤ人め…！[r]
+全ギャラクシー征服の野望を[r]
+ことごとくジャマしおって…[p]
+
+
+*009
+//-------------------------------------------------------------------------------
+//  ドクターミュー
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_008"]
+
+[character x = -220 y = -130 storage = "00329/heapup_p_01" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x=100 y=120 shape="002_01" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+[quake target =".bln" power = 3 time = 0.2]
+だが これしきのことで[r]
+あきらめる[r]
+わしではないわ…！[p]
+
+[balloon x=120 y=-80 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+わしが本気を出せば[r]
+数ヶ月でベビーを再生[r]
+させることだってできる[p]
+
+
+*010
+//-------------------------------------------------------------------------------
+//  ベビー（声のみ）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0003R" bg = "bg_000_014"]
+
+[wait time = 0.7]
+
+[se storage = "3034"]
+
+[balloon x=-120 y=100 shape="005_01" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+[quake target =".bln" power = 3 time = 0.2]
+なにがベビーだ…[p]
+
+[balloon x=120 y=-100 shape="005_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+おまえに[r]
+そう呼ばれるたびに[r]
+どんなにハラワタが[r]
+煮えくり返ったか…！[p]
+
+
+*011
+//-------------------------------------------------------------------------------
+//  ミュー死亡・ベビー登場
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0003L" bg = "bg_000_008"]
+
+[lwfobject id = "kaki1" storage="kakimoji:ef_002" in="02" x=100 y=90 scale = 2.5 angle = 10] 
+[quake target ="kaki1" power = 15 time = 0.4]
+
+[character id = "myu" x = -100 y = -130 storage = "00329/heapup_p_01" scale = 1.3 action = "fadein" time = 0.1]
+
+[wait time = 0.7]
+
+[fadeout target = "kaki1" time = 0.5]
+
+
+
+[character id = "1" x = -100 y = -100 storage = "99999/charge_ball" scale = 4.0 angle = -90 action = "expand" time = 0.3]
+
+[wait time = 0.2]
+
+[fadeout target = "1" time = 0.5]
+
+[character id = "2" x = -100 y = -100 storage = "99999/ef_explode_005" scale = 3.0 angle = -90 action = "expand" time = 0.2]
+
+[wait time = 0.1]
+
+
+//点滅（白）
+[se storage = "3025"]
+//点滅
+[balloon shape="008_02" x = 140 y = -30 scale = 50 action = "fadein" time = 0.1]
+
+[wait time = 0.7]
+
+//[clear target = ".bln"]
+
+//[balloon shape="008_02" x = 140 y = -30 scale = 50 action = "fadein" time = 0.3]
+
+//[wait time = 0.3]
+
+[clear target = "1"]
+
+[clear target = "2"]
+
+[clear target = "myu"]
+
+[character x=-150 y=-120 storage = "00481/idl_side_p_01" scale = 1.2 action = "fadein" time = 0.1]
+
+[fadeout target = ".bln" time = 2.5]
+
+
+
+
+
+[wait_anim target=".bln"]
+
+[balloon x=140 y=-70 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+誰が主人かも[r]
+わからなくなった[r]
+愚か者が…！！
+[p]
+
+
+*013
+//-------------------------------------------------------------------------------
+//  ベビー
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0003L" bg = "bg_000_008"]
+
+
+[character x=-240 y=-250 storage = "00481/heapup_p_01" scale = 2.0 action = "fadein" time = 0.1]
+
+
+
+[balloon x=120 y=120 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+…サイヤ人め…！！[p]
+
+[balloon x=120 y=-100 shape="002_03" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+[quake target =".bln" power = 3 time = 0.2]
+オレはオレのやり方で[r]
+おまえたちを倒せるまでに[r]
+成長してみせる…！！[p]
+
+
+*014
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0003R" bg = "bg_000_003"]
+
+
+[balloon x=0 y=-20 shape="003_01" scale = 1.6 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 16]
+サイヤ人への[r]
+復讐に燃えるベビー！[r]
+　[r]
+その野望は[r]
+地球をも巻き込み[r]
+悟空を[r]
+かつてない危機に[r]
+陥れようとしていた…[p]
+
+//フェードアウト（フェードアウトするコマ）
+[balloon x=130 y=40 shape="008_03" scale = 50.0 action = "fadein" time = 0.5]
+[wait time = 0.7] 
+
+*015
+//-------------------------------------------------------------------------------
+//  タイトル
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="S0001" bg = "bg_000_003"]
+
+[character x=-0 y=-0 storage = "99999/earth" scale = 2.0 action = "fadein" time = 0.1]
+
+[balloon x=130 y=40 shape="008_03" scale = 50]
+[wait time = 1]
+[fadeout target = ".bln" time = 2]
+[wait_anim target=".bln"]
+
+[se storage = "10"]
+
+[balloon x=-220 y=150 shape="010_11" scale = 1.4 action = "fadein" time = 0.7]
+
+[balloon x=-110 y=-240 shape="010_12" scale = 0.9 action = "fadein" time = 0.7]
+
+[balloon x=15 y=200 shape="010_13" scale = 0.9 action = "fadein" time = 0.7]
+
+[balloon x=250 y=-190 shape="010_14" scale = 2.0 action = "fadein" time = 0.7]
+
+[balloon x=-280 y=-25 shape="010_15" scale = 1.3 action = "fadein" time = 0.7]
+
+[balloon x=230 y=90 shape="010_16" scale = 1.5 action = "fadein" time = 0.7]
+
+[balloon x=70 y=-175 shape="010_17" scale = 1.0 action = "fadein" time = 0.7]
+
+[bgm storage = "013"]
+
+[wait time = 0.5]
+
+[balloon x=0 y=0 shape="011_11" scale = 1.5 action = "fadein" time = 0.5]
+
+[wait time = 0.5]
+
+[p]
+
+
+
+
+
+
+
+*016
+//-------------------------------------------------------------------------------
+//  爆発
+//-------------------------------------------------------------------------------
+[se storage = "3017"]
+[coma shape="N0003L" bg = "bg_019_001"]
+
+[lwfobject id = "kaki2" storage="kakimoji:ef_019" in="04" x=0 y=50 scale = 3 angle = -20]
+[quake target = "kaki2" power = 15 time = 1]
+[character x=130 y=-90 storage = "90000/bomb" scale = 1.2 angle = 10 action = "expand" time = 0.1]
+[quake target = ".chara" power = 10 time = 1]
+[balloon x=130 y=40 shape="008_02" scale = 50 action = "fadein" time = 0.5]
+[wait_anim target=".bln"]
+[fadeout target = ".bln" time = 1.5]
+[wait time = 1.5]
+//空のフキダシ
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+
+*017
+//-------------------------------------------------------------------------------
+//  ベビー
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_019_001"]
+
+[character x=-210 y=-120 storage = "00481/idl_side_p_01" scale = 1.1 action = "fadein" time = 0.1]
+
+[balloon x=100 y=80 shape="002_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+くっくっく…[p]
+
+
+*018
+//-------------------------------------------------------------------------------
+//  サタン（GT)
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_019_001"]
+
+[character x = 235 y = -105 storage = "00334/heapup_e_01" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x=-80 y=150 shape="006_02" scale = 0.75 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+[quake target =".bln" power = 7 time = 0.2]
+こらーっ！！[p]
+
+[balloon x=-120 y=-80 shape="006_01" scale = 1.0 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+[quake target =".bln" power = 7 time = 0.2]
+平和でのどかな[r]サタンシティ…[r]
+このわたしの町で暴挙に[r]
+出るとは ふとどき千万！！[p]
+
+
+*019
+//-------------------------------------------------------------------------------
+//  サタン（GT)＆悟天
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0003R" bg = "bg_019_001"]
+
+[character x=-200 y=-180 storage = "00390/idl_side_e_01" scale = 0.8 action = "fadein" time = 0.1]
+
+[character x=320 y=-100 storage = "00334/idl_side_e_01" scale = 1.1 action = "fadein" time = 0.1]
+
+[balloon x=-40 y=90 shape="007_02" scale = 0.9 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 7 time = 0.2]
+きさまの相手など[r]
+わたしの弟子で[r]
+じゅうぶんだ！[p]
+
+[character id = "ase" x=-240 y=-0 storage = "99999/ase" scale = 0.5 action = "fadein" time = 0.3]
+
+[move target ="ase" y=-20 time = 0.6]
+
+[balloon x=-60 y=-160 shape="004_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+え…！？ まさか…[r]
+弟子ってオレのこと？[p]
+
+
+
+*021
+//-------------------------------------------------------------------------------
+//  悟天
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_019_001"]
+
+[character x = 180 y = -160 storage = "00390/heapup_e_01" scale = 1.4 action = "fadein" time = 0.1]
+[character x=160 y=40 storage = "99999/ase" scale = 0.4 action = "fadein" time = 0.1]
+
+[balloon x=-140 y=40 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+調子いいとこ[r]
+あいかわらずだなあ…[p]
+
+
+[stopbgm]
+
+

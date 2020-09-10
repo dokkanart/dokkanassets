@@ -1,0 +1,36 @@
+
+
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "008"]
+
+
+*coma1
+//-------------------------------------------------------------------------------
+//  ギニュー
+//-------------------------------------------------------------------------------
+//[se storage = "3024"]
+[coma shape="S0001" bg = "bg_050_001"]
+
+[character x=190 y=0 storage = "00034/card_03" scale = 1.0 action = "fadein" time = 0.1]
+
+[character x=-0 y=-0 storage = "00074/card_01" scale = 1.0 action = "fadein" time = 0.1]
+
+
+[balloon x=-170 y=300 shape="002_03" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][font size = 34]
+[quake target =".bln" power = 3 time = 0.2]
+体をとりかえて[r]
+もらったのさ…！
+[p]
+
+[balloon x=-0 y=-250 shape="002_01" scale = 0.85 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][font size = 30]
+こっちのほうが相当に[r]
+強かったもんでね
+[p]
+
+[stopbgm]

@@ -1,0 +1,99 @@
+*start|スタート
+//"ステージ1ボス前"
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "012"]
+
+*001
+//-------------------------------------------------------------------------------
+//  クリリン(少年期)
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_016"]
+
+
+[character x = -200 y = -70 storage = "00270/heapup_e_02" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon x=100 y=60 shape="001_03" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+//[quake target =".bln" power = 3 time = 0.2]
+なあ[r]
+悟空……
+[p]
+
+*002
+//-------------------------------------------------------------------------------
+//  孫悟空(少年期)
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_016"]
+
+[character x = 200 y = -60 storage = "90003/gokou_03" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon x=-110 y=50 shape="001_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+ん？[r]
+どうしたクリリン
+[p]
+
+*003
+//-------------------------------------------------------------------------------
+//  クリリン(少年期)
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_016"]
+
+[character x = -200 y = -70 storage = "00270/heapup_e_02" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon x=120 y=90 shape="001_02" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+武天老師さま[r]
+闘い方なんて てんで[r]
+教えてくれなかったけど…
+[p]
+
+[balloon x=110 y=-120 shape="001_03" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+このまま[r]
+武道大会に出場して[r]
+オレたち大丈夫かなぁ…
+[p]
+
+*004
+//-------------------------------------------------------------------------------
+//  孫悟空(少年期)
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_000_016"]
+
+[character x = 160 y = -110 storage = "90003/gokou_03" scale = 1.2 action = "fadein" time = 0.1]
+
+
+[balloon shape="001_02" x = -125 y = 60 scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+じいちゃんの[r]
+言ったとおりに[r]
+やってきたんだから[r]
+大丈夫だって！
+[p]
+
+[balloon x=-120 y=-200 shape="001_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+そんなに心配なら[r]
+ちょっと[r]試してみるか？
+[p]
+
+//-------------------------------------------------------------------------------
+[stopbgm]

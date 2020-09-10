@@ -1,0 +1,65 @@
+
+
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "008"]
+
+*coma1
+//-------------------------------------------------------------------------------
+//  フリーザ
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0001L" bg = "bg_050_001"]
+
+
+[character x=-190 y=-90 storage = "00005/idl_side_p_02" scale = 1.5 action = "fadein" time = 0.1]
+
+
+[balloon x=80 y=120 shape="002_02" scale = 0.85 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][font size = 32]
+はじめてですよ…[p]
+
+
+[balloon x=100 y=-70 shape="002_01" scale = 0.95 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 27]
+このわたしを[r]
+ここまでコケにした[r]
+おバカさんたちは……
+[p]
+
+
+*coma2
+//-------------------------------------------------------------------------------
+//  フリーザ
+//-------------------------------------------------------------------------------
+[se storage = "3024"]
+[coma shape="N0002L" bg = "bg_050_001"]
+
+
+[character x=-190 y=-90 storage = "00005/heapup_p_01" scale = 1.9 action = "fadein" time = 0.1]
+[quake target = ".chara" power = 9 time = 0.2]
+
+[balloon x=120 y=105 shape="007_02" scale = 0.85 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 7 time = 0.2]
+絶対にゆるさんぞ[r]
+虫ケラども！！
+[p]
+
+
+[balloon x=120 y=-120 shape="007_01" scale = 0.85 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 7 time = 0.2]
+じわじわと[r]
+なぶり殺しに[r]
+してくれる！！
+[p]
+
+
+[stopbgm]

@@ -1,0 +1,39 @@
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+//[bgm storage = "026"]
+
+*001
+//-------------------------------------------------------------------------------
+//  セルジュニアとセル（完全体）
+//-------------------------------------------------------------------------------
+//[se storage = "3022"]
+[se storage = "38"]
+[coma shape="S0001" bg = "bg_005_005"]
+
+[character id = "sell1" x=-55 y=150 storage = "00205/card_07" scale = 1.0 action = "fadein" time = 0.1]
+[quake target =".chara" power = 3 time = 0.2]
+[character id = "sell2" x=5 y=0 storage = "00205/card_06" scale = 1.0 action = "fadein" time = 0.1] 
+[character id = "sell3" x=18 y=-70 storage = "00205/card_08" scale = 1.0 action = "fadein" time = 0.1] 
+[quake target =".chara" power = 3 time = 0.2]
+
+[wait time = 0.5]
+
+[balloon x=-180 y=475 shape="002_02" scale = 0.65 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 44]
+//[quake target =".bln" power = 3 time = 0.2]
+ウキキ…
+[p]
+
+[balloon x=110 y=-400 shape="006_02" scale = 0.9 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 7 time = 0.2]
+さあ行け！[r]
+セルジュニアたちよ
+[p]
+
+//[stopbgm]

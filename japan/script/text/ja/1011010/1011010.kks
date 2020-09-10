@@ -1,0 +1,125 @@
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  １１−１スタート
+//-------------------------------------------------------------------------------
+
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "013"]
+
+//-------------------------------------------------------------------------------
+//  ヤムチャ
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0001R" bg = "bg_023_002"]
+
+[character x = 200 y = -50 storage = "00013/idl_side_e_02" scale = 1.4 action = "fadein" time = 0.1]
+
+
+[balloon shape="001_01" x = -100 y = 115 scale = 1.0 action = "fadein" time = 0.1]
+[font size = 27]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 3 time = 0.2]
+お…おい…[r]
+[$player]…[r]
+トランクス…
+[p]
+
+
+
+[balloon shape="001_02" x = -130 y = -100 scale = 0.9 action = "fadein" time = 0.1]
+[font size = 28]
+[wait_anim target=".bln"]
+あの１７号と１８号って[r]
+人造人間…[r]
+悟空と闘うって…
+[p]
+
+
+*coma2
+//-------------------------------------------------------------------------------
+//  トランクス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_023_002"]
+
+//coma shape="N0001R"小さいトランクス
+[character x = 210 y = -200 storage = "90000/wait_right_anger" scale = 1 action = "fadein" time = 0.1]
+
+[balloon id="tora1" x=-100 y=10 shape="001_02" scale = 1.1 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 25]
+…もともと人造人間は[r]
+孫悟空さんを倒すために[r]
+ゲロが造り出したんです…
+[p]
+
+
+
+*coma3
+//-------------------------------------------------------------------------------
+//  ヤムチャ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_023_002"]
+
+
+
+[character x = 190 y = -50 storage = "00013/yam_heapup_e_01" scale = 1.0 action = "fadein" time = 0.1]
+
+
+[balloon shape="001_01" x = -110 y = 115 scale = 1.0 action = "fadein" time = 0.1]
+[font size = 27]
+[wait_anim target=".bln"]
+あ…[r]
+あんなとんでもない[r]
+やつらに…
+[p]
+
+
+
+[balloon shape="001_02" x = -120 y = -100 scale = 0.9 action = "fadein" time = 0.1]
+[font size = 32]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 3 time = 0.2]
+悟空は狙われて[r]
+いるってのか！？
+[p]
+
+
+*coma4
+//-------------------------------------------------------------------------------
+//   トランクス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_023_002"]
+
+//coma shape="N0002R"大きいトランクス
+[character x=170 y=-325 storage = "90000/wait_right_anger_strong" scale = 1.4 action = "fadein" time = 0.1]
+
+
+[balloon shape="001_01" x = -120 y = 80 scale = 1.0 action = "fadein" time = 0.1]
+[font size = 27]
+[wait_anim target=".bln"]
+父さんとの闘いの後[r]
+悟空さんの行方は[r]
+わかっていない…
+[p]
+
+
+
+
+[balloon shape="001_02" x = -120 y = -165 scale = 1.1 action = "fadein" time = 0.1]
+[font size = 25]
+[wait_anim target=".bln"]
+研究所をさがすのは[r]
+一旦打ち切って[r]
+悟空さんをさがしましょう
+[p]
+
+
+
+[stopbgm]

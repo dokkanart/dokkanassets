@@ -1,0 +1,52 @@
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+
+
+
+*01
+//-------------------------------------------------------------------------------
+//  ビルス
+//-------------------------------------------------------------------------------
+
+//[se storage = "3032"]
+[coma shape="S0001" bg = "bg_000_015"]
+
+[character id="bi" x = 55 y = -170 storage = "00242/card_05" scale = 1.4 action = "fadein" time = 0.1]
+
+[move target ="bi" y=-90 time = 1]
+
+[balloon x=-150 y=450 shape="004_01" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 3 time = 0.2]
+[font size = 36]
+完全に…
+//[p]
+
+[wait_anim target="bi"]
+
+[clear target = "bi"]
+
+[se storage = "3024"]
+
+[lwfobject id = "kaki1" storage="kakimoji:ef_020" in="04" x=10 y=-10 scale = 2.7 angle = -20]
+[quake target = "kaki1" power = 15 time = 0.3]
+
+
+[character id="ki" x = 0 y = 0 storage = "99999/aura_purple" scale = 1.5]
+[quake target ="ki" power = 18 time = 0.3]
+
+
+[character id="bi2" x = 55 y = -90 storage = "00242/card_05" scale = 1.4]
+[quake target ="bi2" power = 20 time = 0.3]
+
+[balloon x=0 y=-350 shape="006_01" scale = 1.1 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+[quake target =".bln" power = 7 time = 0.2]
+キレたぞーっ！！[p]
+
+//[stopbgm]
+

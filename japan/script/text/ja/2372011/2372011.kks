@@ -1,0 +1,126 @@
+*start|スタート
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "007"]
+
+*001
+//-------------------------------------------------------------------------------
+//  人造人間14号&15号
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+//街背景
+[coma shape="N0001L" bg = "bg_014_006"]
+
+[character x=-220 y=-130 storage = "00290/idl_side_p_01" scale = 1.1 action = "fadein" time = 0.1]
+
+[character x=-120 y=-150 storage = "00291/idl_side_p_01" scale = 0.8 action = "fadein" time = 0.1]
+
+[balloon x=100 y=75 shape="002_02" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 40]
+[quake target =".bln" power = 3 time = 0.2]
+孫悟空！
+[p]
+
+
+*002
+//-------------------------------------------------------------------------------
+//  トランクス（青年期）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_014_006"]
+
+[character x = 230 y = -120 storage = "00069/heapup_e_04" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x = -105 y = 80 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+悟空さん！[r]
+ここで闘っていると[r]
+被害が大きくなる[r]ばかりです
+[p]
+
+
+[balloon x=-120 y=-115 shape="001_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+誰もいない[r]
+北の氷河地帯まで[r]
+飛びましょう！
+[p]
+
+
+*003
+//-------------------------------------------------------------------------------
+//  孫悟空
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_014_006"]
+
+[character x=200 y=-150 storage = "00003/none_heapup_e_01" scale = 1.3 action = "fadein" time = 0.1]
+
+
+[balloon x = -120 y = 80 shape="001_03" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 40]
+[quake target =".bln" power = 3 time = 0.2]
+よし！
+[p]
+
+
+[balloon x=-140 y=-110 shape="006_01" scale = 0.7 action = "expnad" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 40]
+[quake target =".bln" power = 7 time = 0.2]
+おめえら[r]
+ついてこいっ！[r]
+[p]
+
+
+*004
+//-------------------------------------------------------------------------------
+//  人造人間14号&15号
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_014_006"]
+
+[character x=-220 y=-130 storage = "00290/idl_side_p_01" scale = 1.1 action = "fadein" time = 0.1]
+
+[character x=-120 y=-150 storage = "00291/idl_side_p_01" scale = 0.8 action = "fadein" time = 0.1]
+
+[balloon x=100 y=75 shape="002_02" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 54]
+//[quake target =".bln" power = 3 time = 0.2]
+………
+[p]
+
+
+*005
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0004R" bg = "bg_000_024"]
+
+[balloon x=0 y=-20 shape="003_01" scale = 1.3 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 18]
+//[quake target =".bln" power = 3 time = 0.2]
+悟空の命を狙う[r]
+人造人間…！[r]
+　[r]
+それを[r]
+迎え討つ悟空たち！[r]
+　[r]
+闘いの火蓋は今[r]
+切って落とされた！
+[p]
+
+
+
+//-------------------------------------------------------------------------------
+[stopbgm]

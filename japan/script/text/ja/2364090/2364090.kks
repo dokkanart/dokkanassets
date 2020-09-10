@@ -1,0 +1,123 @@
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  フルパワー最終決戦！ スタート
+//-------------------------------------------------------------------------------
+[bgm storage = "007"]
+
+*001
+//-------------------------------------------------------------------------------
+//  超サイヤ人悟飯
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_019"]
+
+[character x=200 y=-125 storage = "00305/heapup_e_01" scale = 1.3 action = "fadein" time = 0.1]
+
+
+[balloon x=-120 y=50 shape="001_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+おとうさんが…[r]
+助けてくれた……
+[p]
+
+//超サイヤ人に変身
+[se storage = "50"]
+//点滅
+[balloon shape="008_02" x = 140 y = -30 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+
+[clear target = ".chara"]
+
+//[lwfobject id = "kaki1" storage="kakimoji:ef_020" in="04" x=115 y=-90 scale = 2.0]
+//[quake target = "kaki1" power = 15 time = 0.2]
+
+[character id = "super" x = 180 y = -130 storage = "99999/supersaiyan" scale = 0.9]
+[quake target ="super" power = 1 time = 300]
+
+[character x=200 y=-125 storage = "00306/heapup_e_01" scale = 1.3]
+[quake target = ".chara" power = 7 time = 0.2]
+
+[wait time = 0.2]
+
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+*002
+//-------------------------------------------------------------------------------
+//  フルパワーボージャック
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_019"]
+
+[character x=-180 y=-255 storage = "00293/idl_side_p_01" scale = 1.3 action = "fadein" time = 0.1]
+
+[balloon x=135 y=90 shape="002_02" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 40]
+ふん…
+[p]
+
+*003
+//-------------------------------------------------------------------------------
+//  超サイヤ人悟飯 超サイヤ人２に変身
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_000_019"]
+
+[character id = "super" x = 175 y = -200 storage = "99999/supersaiyan" scale = 1.0]
+[quake target ="super" power = 2 time = 300]
+[flip target ="super" h=1]
+
+[character x=170 y=-150 storage = "00306/heapup_e_01" scale = 1.4 action = "fadein" time = 0.1]
+
+[wait time = 0.7]
+
+//変身
+[se storage = "3012"]
+//点滅
+[balloon shape="008_02" x = 140 y = -30 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+
+[clear target = ".chara"]
+
+[lwfobject id = "kaki1" storage="kakimoji:ef_020" x=150 y=-230 scale = 2.0]
+[quake target = "kaki1" power = 15 time = 0.4]
+
+//[character id = "super" x = 175 y = -200 storage = "99999/supersaiyan" scale = 1.0]
+//[quake target ="super" power = 9 time = 0.4]
+//[flip target ="super" h=1]
+
+[character x=215 y=-130 storage = "00307/heapup_e_01" scale = 1.4]
+[quake target = ".chara" power = 7 time = 0.4]
+
+
+
+[wait time = 0.2]
+
+[fadeout target = "kaki1" time = 0.5]
+[se storage = "3038"]	
+
+[wait time = 0.2]
+
+[balloon shape="001_02" x = -120 y = 60 scale = 1.0 action = "fadein" time = 0.1]
+[font size = 24]
+[wait_anim target=".bln"]
+…そして…[r]
+おまえたちを絶対に[r]
+ゆるすなと言ってた！！
+[p]
+
+[balloon shape="001_03" x = -130 y = -205 scale = 0.9 action = "fadein" time = 0.1]
+[font size = 28]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 3 time = 0.2]
+ボクに[r]
+地球を守れと[r]言ってた！！
+[p]
+
+//-------------------------------------------------------------------------------
+[stopbgm]

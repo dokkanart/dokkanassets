@@ -1,0 +1,92 @@
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "001"]
+
+
+*01
+//-------------------------------------------------------------------------------
+//  孫悟空
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_016"]
+
+[character x = 220 y = -40 storage = "00261/idl_side_e_02" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon shape="001_02" x = -110 y = 55 scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+オラ ぜったいに[r]
+じいちゃんとこで[r]
+修業するぞー！！
+[p]
+
+*02
+//-------------------------------------------------------------------------------
+//  クリリン
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_016"]
+
+//[character x = 200 y = -70 storage = "00270/heapup_p_02" scale = 1.0 action = "fadein" time = 0.1]
+[character x = -200 y = -70 storage = "00270/heapup_e_02" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon x = 110 y = 50 shape="006_02" scale = 0.8 action = "expand" time = 0.1]
+[wait_anim target = ".bln"]
+[font size = 32]
+[quake target = ".bln" power = 7 time = 0.2]
+武天老師さまの[r]
+弟子になるのは[r]
+このオレだ！
+[p]
+
+*03
+//-------------------------------------------------------------------------------
+//  孫悟空
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_016"]
+
+[character x = 220 y = -40 storage = "00261/idl_side_e_02" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon shape="001_03" x = -110 y = 50 scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+//[quake target =".bln" power = 3 time = 0.2]
+ん？[r]
+クリリン！？
+[p]
+
+
+*04
+//-------------------------------------------------------------------------------
+//  クリリン
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002L" bg = "bg_000_016"]
+
+[character x = -185 y = -90 storage = "00270/heapup_e_02" scale = 1.3 action = "fadein" time = 0.1]
+
+
+[balloon x = 150 y = 60 shape="001_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target = ".bln"]
+[font size = 32]
+//[quake target = ".bln" power = 3 time = 0.2]
+勝負の世界は[r]
+きびしいのだ！！
+[p]
+
+[quake target = ".chara" power = 5 time = 0.3]
+
+[balloon x = 150 y = -180 shape="007_01" scale = 0.65 action = "expand" time = 0.1]
+[wait_anim target = ".bln"]
+[font size = 44]
+[quake target = ".bln" power = 7 time = 0.2]
+はーっ！！
+[p]
+
+//-------------------------------------------------------------------------------
+[stopbgm]

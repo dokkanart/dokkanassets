@@ -1,0 +1,395 @@
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  怒りの変身！！
+//-------------------------------------------------------------------------------
+[bgm storage = "032"]
+
+*001
+//-------------------------------------------------------------------------------
+//  チルド
+//-------------------------------------------------------------------------------
+[coma shape="N0001L" bg = "bg_000_101"]
+
+[character x=-250 y=-120 storage = "00083/idl_side_p_01" scale = 1.4 action = "fadein" time = 0.1]
+
+
+[balloon id="radhi1" x=120 y=50 shape="002_03" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+こんな弱いやつ…[r]
+もうい〜らない
+[p]
+
+*002
+//-------------------------------------------------------------------------------
+//  チルドがバーダックに連続攻撃
+//-------------------------------------------------------------------------------
+[se storage = "3000"]
+[coma shape="N0003L" bg = "bg_000_101"]
+
+[lwfobject id = "kaki1" storage="kakimoji:ef_006" x=-30 y=-120 scale = 1.6]
+[quake target = "kaki1" power = 11 time = 0.4]
+
+
+[character id = "bdk1" x=0 y=-90 storage = "00067/dam_roll_e_01" scale = 0.9 action = "fadein" time = 0.1]
+[quake target = "bdk1" power = 5 time = 0.4]
+
+[character id = "ef1" x=90 y=-50 storage = "99999/04_syougeki" scale = 1.1 action = "fade:75" time = 0.1]
+[quake target = "ef1" power = 4 time = 0.4]
+
+[character id = "crd1" x=-100 y=-10 storage = "00083/atc_punch_p_02" scale = 1.1 action = "fadein" time = 0.1]
+[quake target = "crd1" power = 6 time = 0.4]
+
+[wait time = 0.4]
+
+[se storage = "3021"]
+
+
+//点滅
+[balloon shape="008_02" x = 0 y = 0 scale = 50 action = "fadein" time = 0.1]
+
+[clear target = "crd1"]
+[clear target = "ef1"]
+[clear target = "kaki1"]
+
+[lwfobject id = "kaki2" storage="kakimoji:ef_021" x=0 y=-120 angle = 7 scale = 1.6]
+[quake target = "kaki2" power = 11 time = 0.4]
+
+
+[character id = "ef2" x=160 y=-25 storage = "99999/04_syougeki" scale = 1.1]
+[quake target = "ef2" power = 4 time = 0.4]
+
+[character id = "crd2" x=-10 y=-70 storage = "00083/atc_kick_p_03" scale = 1.2]
+[quake target = "crd2" power = 6 time = 0.4]
+
+[move target ="bdk1" x=700 time = 0.9]
+
+[wait time = 0.3]
+
+
+
+[clear target = ".bln"]
+
+
+
+
+
+
+//[character id = "crd2" x=-80 y=-10 storage = "00083/atc_kick_p_03" scale = 1.0 action = "fadein" time = 0.1]
+
+
+
+
+
+
+
+
+//[se storage = "3001"]
+
+
+
+//[se storage = "3021"]
+
+
+// 空のフキダシ（セリフがないコマを送るために使用）
+//[balloon x = 0 y = 0 shape="002_01" scale = 0]
+//[p]
+
+*003
+//-------------------------------------------------------------------------------
+//  バーダック
+//-------------------------------------------------------------------------------
+[se storage = "3002"]
+[coma shape="N0001R" bg = "bg_000_101"]
+
+//[character x=170 y=-155 storage = "00067/idl_side_e_01" scale = 1.4 action = "fadein" time = 0.1]
+
+
+[character x=140 y=-180 storage = "00067/dam_side_e_01" scale = 1.4 angle = -40 action = "fadein" time = 0.1]
+
+
+[move target =".chara" x=200 time = 0.3 ease="In:3.32"]
+
+[wait_anim target=".chara"]
+
+[quake target =".chara" power = 3 time = 0.2]
+
+
+
+
+
+[balloon x=-80 y=70 shape="004_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+ぐ……！！[r]
+ぐああ…！！
+[p]
+
+*004
+//-------------------------------------------------------------------------------
+//  ベリー
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0003R" bg = "bg_000_101"]
+[paint target=".coma" color="#F2F2F2"]
+
+//[character x = 180 y = -50 storage = "90003/berry_ssd_r" scale = 1.0 action = "slide:right" time = 0.7]
+//[wait time = 0.5]
+//[se storage = "3022"]
+
+[character id = "ve" x = 240 y = -85 storage = "90003/berry_ssd_l" scale = 0.65 action = "fadein" time = 0.1]
+[flip target ="ve" h=1]
+[quake target ="ve" power = 3 time = 0.4]
+
+[character x=-140 y=-170 storage = "00067/idl_side_e_01" scale = 1.6 action = "fadein" time = 0.1]
+
+
+
+
+
+[balloon x=120 y=140 shape="007_01" scale = 0.7 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 7 time = 0.2]
+[font size = 40]
+おじさん！！
+[p]
+
+
+
+[balloon x=-40 y=-120 shape="002_03" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+[quake target =".bln" power = 3 time = 0.2]
+バ…バカやろう！[r]
+来るな……！
+[p]
+
+
+*006
+//-------------------------------------------------------------------------------
+//  チルドがベリーを攻撃
+//-------------------------------------------------------------------------------
+[se storage = "3012"]
+[coma shape="N0003L" bg = "bg_000_101"]
+
+[lwfobject id = "kaki1" storage="kakimoji:ef_013" x=-20 y=-145 scale = 1.7 action = "fadein" time = 0.1]
+[quake target = "kaki1" power = 11 time = 0.4]
+
+
+[character id = "ch1" x=-190 y=-150 storage = "00083/atc_energyball_p_01" scale = 1.7 action = "fadein" time = 0.1]
+[quake target = "ch1" power = 4 time = 0.4]
+
+
+[character id = "ki" x=230 y=-40 storage = "99999/beam" scale = 0.9 action = "fade:100" time = 0.1]
+[quake target = "ki" power = 7 time = 0.4]
+
+
+[balloon x=150 y=100 shape="006_01" scale = 0.75 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 7 time = 0.2]
+[font size = 36]
+ジャマだよ！！
+//[p]
+
+
+[se storage = "3025"]
+//点滅
+[balloon shape="008_02" x = 0 y = 0 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+//[balloon shape="008_02" x = 0 y = 0 scale = 50 action = "fadein" time = 0.1]
+//[wait time = 0.3]
+//[clear target = ".bln"]
+
+*007
+//-------------------------------------------------------------------------------
+//  ベリー
+//-------------------------------------------------------------------------------
+[se storage = "3016"]
+[coma shape="N0003L" bg = "bg_000_101"]
+
+[character id = "bom" x=150 y=-50 storage = "99999/ef_explode_005" scale = 2.0 angle = 0 action = "fade:80" time=0.1]
+[quake target = "bom" power = 15 time = 1]
+
+[character x = 150 y = 20 storage = "90003/berry_damage" scale = 1.2 action = "fadein" time = 0.1]
+[quake target =".chara" power = 10 time = 1]
+
+[character id = "bom2" x=-180 y=-200 storage = "99999/ef_explode_005" scale = 3.0 angle = 0 action = "fade:80" time=0.1]
+[quake target = "bom2" power = 15 time = 1]
+
+[balloon x=-150 y=40 shape="007_01" scale = 0.7 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 7 time = 0.2]
+[font size = 40]
+うわああっ！！
+
+[balloon x=0 y=0 shape="008_02" scale = 50 action = "fadein" time = 0.5]
+
+[wait_anim target=".bln"]
+
+[fadeout target = ".bln" time = 1.5]
+
+
+[wait_anim target = ".bln"]
+
+[balloon x=-150 y=70 shape="007_01" scale = 0 action = "expand" time = 0.1]
+[p]
+
+
+
+*008
+//-------------------------------------------------------------------------------
+//  バーダック
+//-------------------------------------------------------------------------------
+[se storage = "03"]
+[coma shape="N0001R" bg = "bg_000_101"]
+
+[character x=190 y=-150 storage = "00067/heapup_e_01" scale = 1.3 action = "fadein" time = 0.1]
+
+
+//描き文字：！！
+[lwfobject id = "kaki1" storage="kakimoji:ef_001" x=-30 y=100 angle = -10 scale = 3.0 action = "fadein" time = 0.1]
+[quake target = "kaki1" power = 15 time = 0.4]
+
+// 空のフキダシ（セリフがないコマを送るために使用）
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+*009
+//-------------------------------------------------------------------------------
+//  バーダック
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0003R" bg = "bg_000_014"]
+
+//[character x=190 y=-150 storage = "00067/heapup_e_01" scale = 1.3 action = "fadein" time = 0.1]
+
+[character x=220 y=-140 storage = "00067/idl_front_e_01" scale = 1.2 action = "fadein" time = 0.1]
+
+[wait time = 0.7]
+
+
+
+
+[se storage = "3034"]
+
+//バーダック
+[character id = "bad" x=-110 y=-120 storage = "00067/idl_front_e_02" scale = 0.8 action = "fade:80" time = 0.4]
+
+//トーマ
+[character id = "tom" x=-270 y=-300 storage = "00077/heapup_back_p_01" scale = 1.2 action = "fade:80" time = 0.4]
+//[paint target=".chara" color="#6E6E6E"]
+
+[wait time = 0.5]
+
+[fadeout target = "bad" time = 0.7]
+
+[fadeout target = "tom" time = 0.7]
+
+[wait time = 0.5]
+
+[se storage = "3034"]
+
+//フリーザ
+[character id = "f" x=-190 y=-280 storage = "00005/card_01" scale = 1.3 action = "fade:80" time = 0.4]
+
+
+[wait time = 0.5]
+
+[fadeout target = "f" time = 0.7]
+
+[wait time = 0.5]
+
+[se storage = "3034"]
+
+//崩壊
+[character id = "1" x=-70 y=-60 storage = "99999/tuffle" scale = 0.4 action = "fade:80" time = 0.4]
+
+[character id = "2" x=-240 y=-80 storage = "00058/balloon_008_15" scale = 0.6 action = "fade:80" time = 0.4]
+
+
+
+[wait time = 0.5]
+
+[fadeout target = "1" time = 0.7]
+[fadeout target = "2" time = 0.7]
+
+[wait time = 0.9]
+
+
+[balloon x=-120 y=80 shape="002_03" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target =".bln" power = 3 time = 0.2]
+[font size = 32]
+オレにもっと力が[r]
+あれば……
+[p]
+
+[balloon x=-130 y=-100 shape="002_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+…あのときも[r]……！！[r]
+………
+[p]
+
+
+*010
+//-------------------------------------------------------------------------------
+//  バーダックが超サイヤ人に変身 描き文字：ドンッ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_000_101"]
+
+
+[character x=190 y=-150 storage = "00067/heapup_e_01" scale = 1.3 action = "fadein" time = 0.1]
+[quake target =".chara" power = 5 time = 0.4]
+
+[balloon x=-130 y=70 shape="007_01" scale = 0.75 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 7 time = 0.2]
+[font size = 36]
+くっそおぉぉ[r]ーっ！！
+[p]
+
+[se storage = "3025"]
+//点滅
+[balloon shape="008_02" x = 0 y = 0 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+[balloon shape="008_02" x = 0 y = 0 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+
+
+*011
+//-------------------------------------------------------------------------------
+//  
+//-------------------------------------------------------------------------------
+//[se storage = "50"]
+[se storage = "3029"]
+[coma shape="S0001" bg = "bg_000_101"]
+
+[lwfobject id = "ドンッ" storage="kakimoji:ef_020" in="02" x = 0 y=-400 scale = 3.5 action = "fadein" time = 0.1]
+[quake target ="ドンッ" power = 11 time = 0.4]
+
+
+[character id = "ss" x=-20 y=0 storage = "99999/supersaiyan" scale = 1.5 action = "fadein" time = 0.1]
+[quake target ="ss" power = 9 time = 0.4]
+
+
+[character id = "ssb" x=0 y=0 storage = "00081/card" scale = 1.5 angle = 5 action = "fadein" time = 0.1]
+[quake target ="ssb" power = 4 time = 0.4]
+
+
+[wait_anim target="ss"]
+
+// 空のフキダシ（セリフがないコマを送るために使用）
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+[stopbgm]
+

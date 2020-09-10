@@ -1,0 +1,41 @@
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+//[bgm storage = "012"]
+
+*001
+//-------------------------------------------------------------------------------
+//  スーパージャネンバ
+//-------------------------------------------------------------------------------
+[coma id = "coma1" shape="S0001" bg = "bg_056_001"]
+
+[se storage = "3024"]
+[character id = "z1" x = -70 y = 60 storage = "99999/final_hope_03" angle = 0 scale = 1.6]
+[quake target ="z1" power = 7 time = 0.4]
+[wait time = 0.4]
+[fadeout target = "z1" time = 0.7]
+
+[se storage = "3030"]
+[character id = "z2" x = 20 y = 0 storage = "99999/final_hope_01" angle = 0 scale = 1.5 ction = "expand" time = 0.2]
+[quake target ="z2" power = 7 time = 0.2]
+[wait time = 0.2]
+[fadeout target = "z2" time = 1.5]
+
+[se storage = "10"]
+[character id = "jan" x = -0 y = -20 storage = "00438/card_04" scale = 1.3 angle = -10 action = "fadein" time = 0.7]
+
+[wait_anim target="jan"]
+
+[quake target ="jan" power = 5 time = 0.4]
+
+[balloon shape="006_01" x = 0 y = -390 scale = 0.9 action = "expand" time = 0.1]
+[font size = 28]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 7 time = 0.2]
+ヒェッヘッヘッヘ！！
+[p]
+
+
+//[stopbgm]

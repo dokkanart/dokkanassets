@@ -1,0 +1,85 @@
+
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "001"]
+
+//-------------------------------------------------------------------------------
+//  悟空、ラディッツ、ごはん
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+
+[coma shape="N0003L" bg = "bg_027_001"]
+
+[character x=0 y=-70 storage = "00060/heapup_p_01" scale = 1.2 action = "fadein" time = 0.1]
+
+[wait_anim target=".chara"]
+
+
+[balloon x=160 y=130 shape="001_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 3 time = 0.2]
+[font size = 32]
+ご…悟飯……！？
+[p]
+
+[balloon id="radhi1" x=-170 y=-160 shape="004_03" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 3 time = 0.2]
+[font size = 34]
+なんだ…！？[r]
+この戦闘力は……
+[p]
+
+*002
+//-------------------------------------------------------------------------------
+//  ごはん
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+
+[coma shape="N0003L" bg = "bg_027_001"]
+[lwfobject id="syuutyuu1" storage="syucyu:ef_001" mask="inside" loop=1 priority=10 scale=1.2]
+[move target = "syuutyuu1" x = -120 y = -30]
+
+
+[character x=-220 y=-70 storage = "00060/atc_sp01_p_01" scale = 2.5 action = "fadein" time = 0.1]
+
+[balloon x=160 y=100 shape="007_01" scale = 0.8 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 7 time = 0.2]
+[font size = 38]
+おとうさんを…
+[p]
+
+[balloon x=130 y=-135 shape="007_01" scale = 0.95 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 7 time = 0.2]
+[font size = 34]
+いじめるなーっ！！
+[p]
+
+
+*003
+//-------------------------------------------------------------------------------
+//  ごはんの攻撃
+//-------------------------------------------------------------------------------
+[se storage = "3001"]
+[coma shape="B0001" bg = "bg_027_002"]
+[lwfobject id="syuutyuu1" storage="syucyu:ef_002" mask="inside" loop=1 priority=10 scale=1.0]
+
+[lwfobject id = "kaki1" storage="kakimoji:ef_021" in="02" x=0 y=260 scale = 3]
+[quake target ="kaki1" power = 17 time = 0.2]
+
+[character id = "rad" x=200 y=-230 storage = "00014/dam_side_e_01" scale = 2.2 action = "fadein" time = 0.1]
+[quake target ="rad" power = 15 time = 0.2]
+
+[character id = "gohan" x=-80 y=-70 storage = "00060/atc_sp01_p_02" scale = 2.3 action = "fadein" time = 0.1]
+[quake target ="gohan" power = 12 time = 0.2]
+
+// 空のフキダシ
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+[stopbgm]

@@ -1,0 +1,46 @@
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "012"]
+
+*01
+//-------------------------------------------------------------------------------
+//  チャオズ
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0001L" bg = "bg_012_001"]
+
+[character x=-190 y=-100 storage = "00012/idl_side_p_02" scale = 1.8 action = "fadein" time = 0.1]
+
+[balloon x = 90 y = 125 shape="001_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+新しい超能力を[r]考えたんだけど…[p]
+
+[balloon x = 100 y = -90 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+ためす相手がいなくて[r]こまってたんだ[p]
+
+*02
+//-------------------------------------------------------------------------------
+//  チャオズ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002L" bg = "bg_012_001"]
+
+[character x = -180 y = -80 storage = "00012/heapup_p_01" scale = 2.0 action = "fadein" time = 0.1]
+//[quake target = ".chara" power = 11 time = 0.2]
+
+
+//[lwfobject id = "シュン" storage="kakimoji:ef_012" in="02" x = 50 y = 60 scale = 1.6]
+//[quake target = "シュン" power = 12 time = 0.2]
+
+[balloon x = 120 y = 70 shape="001_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+へへへ…ちょっと[r]つきあってよ！[p]
+
+[stopbgm]

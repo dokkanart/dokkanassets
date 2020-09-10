@@ -1,0 +1,106 @@
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "007"]
+
+*001
+//-------------------------------------------------------------------------------
+//  ザーボン
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0001L" bg = "bg_004_001"]
+
+
+[character x = -170 y = -80 storage = "00016/guard_p_01" scale = 1.3 action = "fadein" time = 0.1]
+[quake target =".chara" power = 5 time = 0.4]
+
+[balloon x=130 y=100 shape="004_02" scale = 0.9 action = "fadein" time = 0.1]
+[font size = 28]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 3 time = 0.2]
+くっ…！[r]
+なめたマネを……！[p]
+
+
+*002
+//-------------------------------------------------------------------------------
+//  フリーザ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_004_001"]
+
+[character x=-190 y=-90 storage = "00058/idl_side_p_01" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon x=130 y=120 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[font size = 28]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 3 time = 0.2]
+ザーボンさん！[r]
+何をしているんです！[p]
+
+[balloon x=120 y=-90 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[font size = 28]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 3 time = 0.2]
+あなたの本気を[r]
+見せてあげなさい！[p]
+
+
+*003
+//-------------------------------------------------------------------------------
+//  ザーボン
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_004_001"]
+
+[character x = -180 y = -80 storage = "00016/heapup_p_01" scale = 1.3 action = "fadein" time = 0.1]
+
+[balloon x=140 y=100 shape="002_01" scale = 0.8 action = "fadein" time = 0.1]
+[font size = 32]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 3 time = 0.2]
+は…はい！[r]
+フリーザさま！
+[p]
+
+
+[lwfobject id = "kaki2" storage="kakimoji:ef_009" in="02" x=-200 y=-80 scale = 1.2 action = "fadein" time = 0.7]
+[quake target ="kaki2" power = 1 time = 300]
+
+[wait time = 1.5]
+
+//点滅（白）
+[se storage = "3011"]
+//点滅
+[balloon shape="008_02" x = 140 y = -30 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+[balloon shape="008_02" x = 140 y = -30 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+
+[wait_anim target=".bln"]
+
+
+*004
+//-------------------------------------------------------------------------------
+//  スーパーザーボン
+//-------------------------------------------------------------------------------
+[se storage = "3037"]
+[coma shape="N0002L" bg = "bg_004_001"]
+
+[lwfobject id = "kaki1" storage="kakimoji:ef_020" in="04" x=-120 y=-240 scale = 2.5]
+[quake target = "kaki1" power = 15 time = 0.2]
+
+[character x = 0 y = -130 storage = "00073/card_1001530" scale = 1.5 action = "fadein" time = 0.1]
+[quake target = ".chara" power = 5 time = 0.4]
+
+[wait_anim target=".chara"]
+
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+[stopbgm]
+ 

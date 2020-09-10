@@ -1,0 +1,154 @@
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  場面転換
+//-------------------------------------------------------------------------------
+[bgm storage = "012"]
+
+
+*001
+//-------------------------------------------------------------------------------
+//  界王
+//-------------------------------------------------------------------------------
+[se storage = "3034"]
+//bg界王星
+[coma shape="N0001L" bg = "bg_080_001"]
+
+[character x = -180 y = -40 storage = "90001/stand" scale = 0.5 action = "fadein" time = 0.1]
+
+
+ //セリフ1
+[balloon x = 100 y = 120 shape="005_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+この凶悪な気は…[r]
+かなり手強い相手に[r]
+なりそうじゃ…[p]
+
+ 
+ //セリフ2
+[balloon x = 140 y = -90 shape="005_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+今のおまえたちでは[r]
+勝つのは難しい[r]
+かもしれん…！！
+[p]
+
+
+
+*002
+//-------------------------------------------------------------------------------
+//  界王
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+//bg界王星
+[coma shape="N0003L" bg = "bg_080_001"]
+
+
+[character x = -150 y = -50 storage = "90001/stand" scale = 0.7 action = "fadein" time = 0.1]
+
+
+ //セリフ1
+[balloon x = 130 y = 100 shape="005_01" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+//[quake target =".bln" power = 3 time = 0.2]
+だが恐れるでないぞ
+[p]
+ 
+ //セリフ2
+[balloon x = 140 y = -100 shape="005_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 3 time = 0.2]
+[font size = 32]
+[font color="#FF1493"]リンクスキル[font color="#141414"]を使えば[r]
+おまえたちの能力が[r]
+一時的にアップする！
+[p]
+
+
+
+
+//*003
+//-------------------------------------------------------------------------------
+//  界王
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+//bg界王星
+//[coma shape="N0001L" bg = "bg_080_001"]
+
+
+//[character x = -150 y = -50 storage = "90001/stand" scale = 0.7 action = "fadein" time = 0.1]
+
+
+//[balloon x = 145 y = 9 shape="005_02" scale = 1.0 action = "fadein" time = 0.1]
+//[wait_anim target=".bln"]
+//[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+//例えば…仲間にZ戦士が[r]
+//いる場合はそやつらが[r]
+//隣り合うように[r]
+//並べ替えるのじゃ
+//[p]
+
+*004
+//-------------------------------------------------------------------------------
+//  界王
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+//bg界王星
+[coma shape="N0002L" bg = "bg_080_001"]
+
+
+[character x = -150 y = -70 storage = "90001/stand" scale = 0.7 action = "fadein" time = 0.1]
+
+[balloon x = 130 y = 70 shape="005_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+例えば…仲間にZ戦士が[r]
+いる場合はそやつらが[r]
+隣り合うように[r]並べ替えるのじゃ
+[p]
+
+
+[balloon x = 145 y = -170 shape="005_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+[font color="#FF1493"]リンクスキル[font color="#141414"]が[r] 
+発動すれば攻撃力が[r]
+超絶アップするぞ！[r]
+[p]
+
+
+//以下説明画像
+//フェードアウト
+[balloon x=0 y=0 shape="008_03" scale = 50.0 action = "fadein" time = 1.5]
+
+[wait time = 1.5]
+
+//空のフキダシ
+//[balloon x = 0 y = 0 shape="002_01" scale = 0]
+//[p]
+
+
+
+
+
+
+//予告
+[balloon x = -0 y =250 shape="009_07" scale = 1.0 action = "fadein" time = 2]
+
+[wait_anim target=".bln"]
+
+[p]
+
+
+[stopbgm]
+
+
+

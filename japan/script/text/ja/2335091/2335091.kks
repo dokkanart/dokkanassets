@@ -1,0 +1,268 @@
+*start|スタート
+//ステージ9ゴール
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "011"]
+
+*01
+//-------------------------------------------------------------------------------
+//  孫悟空
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_047"]
+
+[character x=200 y=-150 storage = "00003/heapup_e_06" scale = 1.3 action = "fadein" time = 0.1]
+
+[balloon x=-100 y=100 shape="001_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+悟飯…[r]
+いっしょにいこうぜ！
+[p]
+
+[balloon x=-150 y=-90 shape="001_02" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+[quake target =".bln" power = 3 time = 0.2]
+もっと先へよ！
+[p]
+
+*02
+//-------------------------------------------------------------------------------
+//  孫悟飯
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_047"]
+
+[character x = -220 y = -130 storage = "00235/idl_side_e_02" scale = 1.1 action = "fadein" time = 0.1]
+[flip target =".chara" h=1]
+
+[balloon x=100 y=70 shape="001_03" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+ありがとう[r]ございました！！
+[p]
+
+*03
+//-------------------------------------------------------------------------------
+//  孫悟空
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_047"]
+
+[character x=200 y=-150 storage = "00003/heapup_e_06" scale = 1.3 action = "fadein" time = 0.1]
+
+[balloon x=-100 y=100 shape="001_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+オラ[r]
+第7宇宙のリーダー[r]
+決めたぞ！
+[p]
+
+[balloon x=-120 y=-90 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+第7宇宙チームの[r]
+リーダーは[r]
+おめえだ悟飯！
+[p]
+
+*04
+//-------------------------------------------------------------------------------
+//  孫悟飯
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_047"]
+
+[character x = -220 y = -130 storage = "00235/idl_side_e_02" scale = 1.1 action = "fadein" time = 0.1]
+[flip target =".chara" h=1]
+
+[balloon x=100 y=70 shape="001_01" scale = 0.65 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 44]
+[quake target =".bln" power = 3 time = 0.2]
+え…！？
+[p]
+
+*05
+//-------------------------------------------------------------------------------
+//  孫悟空
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_047"]
+
+[character x=200 y=-150 storage = "00003/heapup_e_06" scale = 1.3 action = "fadein" time = 0.1]
+
+[balloon x=-100 y=70 shape="001_03" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+へへ…[r]
+頼りにしてっぞ[r]
+悟飯！
+[p]
+
+*06
+//-------------------------------------------------------------------------------
+//  孫悟飯
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_047"]
+
+[character x = -220 y = -130 storage = "00235/idl_side_e_02" scale = 1.1 action = "fadein" time = 0.1]
+[flip target =".chara" h=1]
+
+[balloon x=100 y=70 shape="001_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+任せてください！
+[p]
+
+*07
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+[bgm storage = "013"]
+
+[se storage = "04"]
+[coma shape="N0004R" bg = "bg_000_024"]
+
+//[character id = "tail" x=160 y=-30 storage = "99999/tail" scale = 1.8 angle = 50 action = "fadein" time = 0.1]
+//[character id = "goku" x=-50 y=30 storage = "00324/heapup_e_01" scale = 2.0 action = "fadein" time = 0.1]
+
+[balloon x=0 y=0 shape="003_02" scale = 1.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 13]
+//[quake target =".bln" power = 7 time = 0.2]
+宇宙の運命が決まる[r]
+力の大会まで[r]あと4時間30分…[r]
+ようやく[r]
+代表選手10人がそろった[r]
+第7宇宙チームだったが[r]
+緊急事態がおとずれる…[r]
+　[r]
+…なんとブウが[r]
+深い眠りに入ったまま[r]
+起きなくなって[r]しまったのだ！
+[p]
+
+*08
+//-------------------------------------------------------------------------------
+//  ビルスの声
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0003L" bg = "bg_014_004"]
+
+//[character x = -240 y = -280 storage = "00242/idl_side_p_01" scale = 1.4 action = "fadein" time = 0.1]
+
+[balloon x=0 y=40 shape="007_02" scale = 0.9 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 7 time = 0.2]
+時間がないぞ時間が！！[r]
+誰かいないのか！！
+[p]
+
+*09
+//-------------------------------------------------------------------------------
+//  ビルス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_014_004"]
+
+[character x = -210 y = -280 storage = "00242/heapup_p_01" scale = 1.4 action = "fadein" time = 0.1]
+
+[balloon x=100 y=110 shape="004_02" scale = 1.05 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 22]
+[quake target =".bln" power = 3 time = 0.2]
+宇宙はバカみたいに広いのに[r]
+メンバーは[r]
+ハナクソみたいな地球に[r]
+いるやつばかりじゃないか！！
+[p]
+
+[balloon x=120 y=-100 shape="004_01" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+[quake target =".bln" power = 3 time = 0.2]
+だいたい おまえたちが[r]
+フリーザ軍の連中を[r]
+ぶっつぶして[r]しまったからだぞ！
+[p]
+
+*10
+//-------------------------------------------------------------------------------
+//  孫悟空
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_014_004"]
+
+[character x=200 y=-150 storage = "00003/heapup_e_06" scale = 1.3 action = "fadein" time = 0.1]
+
+[balloon x=-100 y=100 shape="001_02" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+[quake target =".bln" power = 3 time = 0.2]
+あ！！ ビルスさまの[r]言うとおりだよ！[r]
+フリーザだ！[r]フリーザがいた！
+[p]
+
+[balloon x=-120 y=-100 shape="001_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+あいつを[r]
+10人目にしよう！
+[p]
+
+*11
+//-------------------------------------------------------------------------------
+//  みんな
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0003L" bg = "bg_014_004"]
+
+//[character x = -240 y = -280 storage = "00242/idl_side_p_01" scale = 1.4 action = "fadein" time = 0.1]
+
+[balloon x=0 y=50 shape="007_02" scale = 1.0 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 7 time = 0.2]
+フリーザ〜！！？
+[p]
+
+
+*12
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0004R" bg = "bg_000_024"]
+
+//[character id = "tail" x=160 y=-30 storage = "99999/tail" scale = 1.8 angle = 50 action = "fadein" time = 0.1]
+//[character id = "goku" x=-50 y=30 storage = "00324/heapup_e_01" scale = 2.0 action = "fadein" time = 0.1]
+
+[balloon x=0 y=0 shape="003_02" scale = 1.6 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 14]
+//[quake target =".bln" power = 7 time = 0.2]
+悟空の口からとびだした[r]
+予想もしなかった[r]
+10人目の戦士の名前…[r]
+　[r]
+はたして[r]
+宇宙の帝王フリーザと[r]
+悟空たちは共に闘うことが[r]
+できるのだろうか…！？
+[p]
+
+//-------------------------------------------------------------------------------
+[stopbgm]

@@ -1,0 +1,156 @@
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+//[bgm storage = "012"]
+
+*001
+//-------------------------------------------------------------------------------
+//  孫悟空
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_008_001"]
+
+[character x = -165 y = -315 storage = "00003/card_40" scale = 1.2 angle = 0 action = "fadein" time = 0.1] 
+
+//[balloon x= -271 y= -85 shape="011_12" scale = 0.25 angle = -5 action = "fadein" time = 0.1]
+
+
+[balloon x= 150 y= 30 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+たのむ ベジータ！！[r]
+このポタラを[r]
+右の耳につけてくれ！
+[p]
+
+
+*002
+//-------------------------------------------------------------------------------
+//  ベジータ
+//-------------------------------------------------------------------------------
+[se storage = "3034"]
+[coma shape="N0001R" bg = "bg_008_001"]
+
+[character x = 120 y = -180 storage = "00282/card_13" scale = 1.0 action = "fadein" time = 0.1] 
+
+
+
+[balloon x= -130 y= 60 shape="006_02" scale = 0.7 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 40]
+[quake target =".bln" power = 7 time = 0.2]
+いいんだろ[r]
+これで！！
+[p]
+
+//[se storage = "3034"]
+//[character id = "hikari" x = 153 y = -45 storage = "99999/04_syougeki" scale = 0.8 angle = 0 action = "expand" time = 0.5]
+//[wait time = 0.2]
+//[fadeout target = "hikari" time = 0.3]
+
+//[wait_anim target="hikari"]
+
+
+*003
+//-------------------------------------------------------------------------------
+//  孫悟空
+//-------------------------------------------------------------------------------
+[se storage = "3034"]
+[coma shape="N0001L" bg = "bg_008_001"]
+
+[character x = -180 y = -345 storage = "00003/card_42" scale = 1.2 action = "fadein" time = 0.1] 
+
+[balloon x= 130 y= 60 shape="006_01" scale = 0.7 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 40]
+[quake target =".bln" power = 7 time = 0.2]
+サンキュー[r]
+ベジータ！！
+[p]
+
+//[se storage = "3034"]
+//[character id = "hikari" x = -82 y = -56 storage = "99999/04_syougeki" scale = 0.8 angle = 0 action = "expand" time = 0.5]
+//[wait time = 0.2]
+//[fadeout target = "hikari" time = 0.3]
+
+//[wait_anim target="hikari"]
+
+
+*004
+//-------------------------------------------------------------------------------
+//  ベジータと悟空が合体する。
+//-------------------------------------------------------------------------------
+//[se storage = "3022"]
+[coma shape="N0002R" bg = "bg_000_014"]
+
+[character id = "veg" x = 1500 y = -120 storage = "00282/card_14" scale = 0.6 action = "fadein" time = 0.1]
+[character id = "gok" x = -1500 y = -90 storage = "00003/card_43" scale = 0.7 action = "fadein" time = 0.1]
+
+[move target = "veg" x = 40 time = 0.2]
+[move target = "gok" x = -160 time = 0.2]
+
+[wait_anim target = "gok"]
+
+[quake target = "veg" power = 7 time = 0.3]
+[quake target = "gok" power = 7 time = 0.3]
+
+[se storage = "03"]
+
+
+
+[character id = "hikari2" x = 0 y = 0 storage = "99999/powerball" scale = 0.3 action = "fade:60" time = 0.1] 
+[paint target = "hikari2" color = "#00ff99"]
+[spin target="hikari2" velocity=300 ease = "in:2"]
+//[rotate_by target = "hikari2" angle = 720 time = 1.4 ease = "in:2"]
+[scale target = "hikari2" scale = 8.0 time = 1.0 ease = "in:4"]
+
+
+
+
+
+
+//[character id = "hikari" x = 0 y = 10 storage = "99999/04_syougeki" scale = 0.3 action = "fade:80" time = 0.1] 
+//[paint target = "hikari" color = "#00ff99"]
+
+//[rotate_by target = "hikari" angle = 720 time = 1.4 ease = "in:2"]
+//[scale target = "hikari" scale = 1.7 time = 1.0 ease = "in:4"]
+
+[wait time = 1.0]
+
+[se storage = "3025"]
+//フェードアウト（フェードアウトするコマ）
+[balloon x=0 y=0 shape="008_02" scale = 50.0 action = "fadein" time = 0.5 priority=120]
+[wait time = 0.7]
+
+
+*005
+//-------------------------------------------------------------------------------
+//  孫悟空
+//-------------------------------------------------------------------------------
+//[se storage = "3022"]
+[coma shape="S0001" bg = "bg_008_001"]
+
+[character x = 0 y = -70 storage = "00275/card_08" scale = 1.0 action = "fadein" time = 0.1] 
+
+//フェードイン（フェードインするコマ）
+[balloon x=0 y=0 shape="008_02" scale = 50]
+[wait time = 1]
+[fadeout target = ".bln" time = 2]
+[wait_anim target=".bln"]
+
+[wait time = 0.3]
+
+[balloon x= 0 y= 450 shape="001_03" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+ベジータとカカロットが[r]
+合体して……[r]
+ベジットってとこかな……
+[p]
+
+
+//[stopbgm]

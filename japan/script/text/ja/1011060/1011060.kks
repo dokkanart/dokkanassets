@@ -1,0 +1,126 @@
+*start|スタート
+
+//１１−６スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "013"]
+
+//-------------------------------------------------------------------------------
+//  トランクス
+//-------------------------------------------------------------------------------
+[coma shape="N0003R" bg = "bg_014_001"]
+
+//coma shape="N0003R"大きいトランクス
+[character x = 170 y = -380 storage = "90000/wait_right_anger_strong" scale = 1.7 action = "fadein" time = 0.1]
+
+[balloon id = "01" x = -145 y = 70 shape="001_03" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target = "01"]
+[font size = 27]
+こ…こんなに強い[r]
+サイヤ人がまだ[r]
+いたなんて…！
+[p]
+
+*coma2
+//-------------------------------------------------------------------------------
+//  トーマ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_014_001"]
+
+[character x=-230 y=-200 storage = "00077/idl_side_p_01" scale = 1.5 action = "fadein" time = 0.1]
+
+[balloon id = "01" x = 125 y = 100 shape="002_01" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target = "01"]
+[font size = 27]
+セリパ！[r]
+さっさと片付けちまえよ
+[p]
+
+*coma3
+//-------------------------------------------------------------------------------
+//  セリパ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_014_001"]
+
+[character x=-200 y=-150 storage = "00070/heapup_p_01" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x = 90 y = 120 shape="002_02" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 40]
+うるさいね…
+[p]
+
+[balloon x = 150 y = -70 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 30]
+いいから黙って[r]
+わたしに任せな…[r]
+…ん？
+[p]
+
+*coma4
+//-------------------------------------------------------------------------------
+//  トテッポ
+//-------------------------------------------------------------------------------
+
+[coma shape="N0003L" bg = "bg_014_001"]
+
+[character x=-200 y=-130 storage = "00070/heapup_p_01" scale = 0.8 action = "fadein" time = 0.1]
+
+[se storage = "3022"]
+
+[character id = "ttp" x=0 y=-120 storage = "00078/idl_side_p_01" scale = 1.2 action = "slide:left" time = 0.35]
+
+//[wait_anim target = "ttp"]
+
+[wait time = 0.7]
+
+[balloon id = "01" x =25 y = -110 shape="002_02" scale = 0.6 action = "fadein" time = 0.1]
+[wait_anim target = "01"]
+[font size = 54]
+………
+[p]
+
+*coma5
+//-------------------------------------------------------------------------------
+//  セリパ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_014_001"]
+
+[character x=-290 y=-200 storage = "00070/idl_side_p_01" scale = 1.7 action = "fadein" time = 0.1]
+
+[balloon x = 155 y = 120 shape="002_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 34]
+…なんだい？[r]
+トテッポ
+[p]
+
+[balloon x = 145 y = -80 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 30]
+あんたも闘いたく[r]
+なったのかい？
+[p]
+
+*coma6
+//-------------------------------------------------------------------------------
+//  トテッポ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002L" bg = "bg_014_001"]
+
+[character x=-200 y=-160 storage = "00078/idl_side_p_01" scale = 1.4 action = "fadein" time = 0.1]
+
+[balloon id = "01" x = 160 y = 60 shape="002_02" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target = "01"]
+[font size = 54]
+………
+[p]
+
+[stopbgm]

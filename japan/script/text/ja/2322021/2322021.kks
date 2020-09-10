@@ -1,0 +1,385 @@
+*start|スタート
+//究極のDB編_エリア２：ゴール
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "005"]
+ 
+*001
+//-------------------------------------------------------------------------------
+//  孫悟空（GT)スーパーサイヤ人　→　ノーマル
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0001R" bg = "bg_081_001"]
+
+[character id = "super" x = 180 y = -150 storage = "99999/supersaiyan" scale = 1.1 action = "fadein" time = 0.1]
+[quake target ="super" power = 1 time = 1.7]
+ 
+[character id = "goku1" x = 200 y = -50 storage = "00330/heapup_e_01" scale = 1.1 action = "fadein" time = 0.1]
+
+
+[wait time = 0.7]
+
+[fadeout target = "super" time = 1]
+[fadeout target = "goku1" time = 1]
+
+[character x=189 y=-47 storage = "00324/heapup_e_01" scale = 1.1 action = "fadein" time = 1]
+
+
+[wait_anim target="goku1"]
+
+[balloon x=-120 y=140 shape="001_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+おめえ修業したら[r]
+もっと強くなっぞ
+[p]
+ 
+[balloon x=-100 y=-80 shape="001_02" scale = 1.1 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 22]
+[quake target =".bln" power = 3 time = 0.2]
+オラも修業して[r]
+もっと強くなっから[r]
+そんときはもう１回やろうな！
+[p]
+
+
+
+
+
+
+*003
+//-------------------------------------------------------------------------------
+//  レジック
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_081_001"]
+ 
+[character x = -180 y = -200 storage = "00337/idl_side_p_01" scale = 1.4 action = "fadein" time = 0.1]
+ 
+[balloon x=120 y=120 shape="002_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+ふ…[r]
+変わったガキだな
+[p]
+ 
+
+
+
+*004
+//-------------------------------------------------------------------------------
+//  孫悟空（GT)
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_081_001"]
+ 
+[character x=200 y=-50 storage = "00324/idl_side_e_01" scale = 1.1 action = "fadein" time = 0.1]
+ 
+[balloon x=-100 y=80 shape="001_01" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+はは…オラ変わってるって[r]
+言われるけど[r]
+ホントはガキじゃねえぞ
+[p]
+ 
+
+
+
+*005
+//-------------------------------------------------------------------------------
+//  レジック
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_081_001"]
+ 
+[character x = -180 y = -200 storage = "00337/idl_side_p_01" scale = 1.4 action = "fadein" time = 0.1]
+ 
+[balloon x=100 y=120 shape="002_03" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+…よくわからんが[r]
+宇宙は広い…
+[p]
+ 
+[balloon x=130 y=-80 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+オレもまだまだ[r]
+未熟だということか…
+[p]
+
+
+//[balloon x = 0 y = 0 shape="002_01" scale = 0]
+//[p]
+
+
+*006
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0003R" bg = "bg_081_001"]
+ 
+//[character x = 120 y = -90 storage = "90003/gt_ship" scale = 0.9 action = "fadein" time = 0.1]
+ 
+[balloon x=-0 y=20 shape="003_01" scale = 1.6 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 15]
+//[quake target =".bln" power = 3 time = 0.2]
+用心棒レジックを撃退し[r]
+無事に宇宙船を[r]
+取り戻すことができた[r]
+悟空たち…[r]
+　[r]
+本来の目的である[r]
+ドラゴンボール探しも[r]
+これで再開できると[r]
+思われたが…[r]
+[p]
+ 
+
+//[balloon x = 0 y = 0 shape="002_01" scale = 0]
+//[p]
+
+
+*007
+//-------------------------------------------------------------------------------
+//  孫悟空（GT)
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_081_001"]
+ 
+[character x=200 y=-50 storage = "00324/heapup_e_01" scale = 1.1 action = "fadein" time = 0.1]
+ 
+[balloon x=-100 y=80 shape="001_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+でも どうすんだ？[r]
+ドラゴンレーダー[r]
+食われちまったぞ
+[p]
+
+
+
+*008
+//-------------------------------------------------------------------------------
+//  ギル
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_081_001"]
+ 
+[character x = -180 y = -50 storage = "90003/giru_L" scale = 1.2 action = "fadein" time = 0.1]
+ 
+[balloon x=100 y=40 shape="002_01" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 40]
+[quake target =".bln" power = 3 time = 0.2]
+ギルルルルッ
+[p]
+
+[se storage = "35"]
+[wait time = 0.5]
+[se storage = "35"]
+[wait time = 0.5]
+
+*009
+//-------------------------------------------------------------------------------
+//  トランクス（GT)
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_081_001"]
+ 
+[character x=270 y=-110 storage = "00325/idl_side_e_01" scale = 1.2 action = "fadein" time = 0.1]
+ 
+[balloon x=-90 y=120 shape="001_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+もしかして…[r]
+キミ…
+[p]
+
+
+[balloon x=-110 y=-80 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+吸収したメカの機能を[r]
+自分のものにすることが[r]
+できるんじゃ…
+[p]
+
+//[balloon x = 0 y = 0 shape="002_01" scale = 0]
+//[p]
+
+
+*010
+//-------------------------------------------------------------------------------
+//  パン
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_081_001"]
+ 
+[character x=200 y=-120 storage = "00326/idl_side_e_01" scale = 1.1 action = "fadein" time = 0.1]
+ 
+[balloon x=-90 y=80 shape="001_03" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+じゃあ こいつ[r]
+ドラゴンレーダーに[r]
+なっちゃったってわけ？
+[p]
+
+
+*011
+//-------------------------------------------------------------------------------
+//  ギル
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_081_001"]
+ 
+[character x = -180 y = -50 storage = "90003/giru_L" scale = 1.2 action = "fadein" time = 0.1]
+ 
+[balloon x=100 y=40 shape="002_01" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 40]
+[quake target =".bln" power = 3 time = 0.2]
+ギルルルルッ
+[p]
+
+
+*012
+//-------------------------------------------------------------------------------
+//  孫悟空（GT)
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_081_001"]
+ 
+[character x=200 y=-50 storage = "00324/idl_side_e_01" scale = 1.1 action = "fadein" time = 0.1]
+ 
+[balloon x=-120 y=120 shape="001_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+はは！[r]
+すげえぞっ！
+[p]
+
+[balloon x=-100 y=-80 shape="001_02" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+なあ こいつの名前[r]
+ギルっちゅうのはどうだ？
+[p]
+
+
+
+
+*013
+//-------------------------------------------------------------------------------
+//  トランクス（GT)
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_081_001"]
+ 
+[character x=270 y=-110 storage = "00325/idl_side_e_01" scale = 1.2 action = "fadein" time = 0.1]
+ 
+[balloon x=-70 y=120 shape="001_03" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 40]
+//[quake target =".bln" power = 3 time = 0.2]
+ギルか…
+[p]
+
+[balloon x=-100 y=-70 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+そういえば しょっちゅう[r]
+ギルギルって[r]
+言ってますもんね
+[p]
+
+
+*014
+//-------------------------------------------------------------------------------
+//  パン
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_081_001"]
+ 
+[character x=200 y=-120 storage = "00326/idl_side_e_01" scale = 1.1 action = "fadein" time = 0.1]
+ 
+[balloon x=-90 y=120 shape="001_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+よーし決まり！[r]
+今日からおまえは[r]
+ギルよ！
+[p]
+
+[balloon x=-90 y=-80 shape="001_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+よろしくね！[r]
+ギル！
+[p]
+
+
+*015
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_000_003"]
+ 
+//[character x = -160 y = -0 storage = "90003/gt_ship" scale = 1.1 action = "fadein" time = 0.1]
+
+//[wait time = 0.7]
+ 
+[balloon x=0 y=-30 shape="003_01" scale = 1.6 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 15]
+//[quake target =".bln" power = 3 time = 0.2]
+新たな仲間ギルを加え[r]
+ドラゴンボールを[r]
+手に入れるべく[r]
+新たな星に旅立つ[r]
+悟空たち…[r]
+　[r]
+今度は[r]
+どんな冒険が[r]
+待っているのだろうか？
+[p]
+ 
+
+
+[stopbgm]
+

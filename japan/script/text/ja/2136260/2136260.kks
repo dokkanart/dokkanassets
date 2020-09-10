@@ -1,0 +1,136 @@
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "005"]
+
+
+//-------------------------------------------------------------------------------
+//  test
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+
+[coma shape="S0001" bg = "bg_000_014"]
+
+[balloon shape="009_15" x = 50 y = 170 scale = 1.2 action = "fadein" time = 0.1]
+
+
+//19×7
+[balloon shape="009_16" x = 35 y = -200 scale = 0.95 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 27]
+
+ひとつの小さな出会いから始まった[r]
+ななつのドラゴンボールをめぐる物語…[r]
+　[r]
+ドラゴンボールで復活したフリーザが[r]
+復讐の炎を燃やし地球にやってきた…[r]
+フリーザの策略により負傷した悟空に[r]
+代わり、ベジータが立ち上がる！　　[p]
+
+
+//[bgm storage = "013"]
+
+*01
+//-------------------------------------------------------------------------------
+//  ゴールデンフリーザ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_004_002"]
+
+[character x=-210 y=-330 storage = "00241/card_01" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x=120 y=120 shape="002_02" scale = 1 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+あなたなどが このわたしに[r]
+勝てるわけないでしょう[p]
+
+*02
+//-------------------------------------------------------------------------------
+//  ベジータ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_004_002"]
+
+[character id = "veg1" x = 190 y = -180 storage = "00245/heapup_e_01" scale = 1.9 action = "fadein" time = 0.1]
+
+
+[balloon x=-70 y=130 shape="002_01" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 40]
+//[quake target =".bln" power = 7 time = 0.2]
+ふん…
+[p]
+
+[balloon x=-140 y=-70 shape="006_02" scale = 0.8 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 7 time = 0.2]
+はああああ…！！
+[p]
+
+//ベジータが超サイヤ人ゴッドSSに変身する
+[character id = "super" x = 200 y = -170 storage = "99999/supersaiyangodss" scale = 1.0 action = "expand" time = 0.1]
+
+[wait time = 0.1]
+
+//点滅（白）
+[se storage = "3025"]
+
+[balloon shape="008_02" x = 140 y = -30 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+[balloon shape="008_02" x = 140 y = -30 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+
+[balloon id = "white" shape="008_02" x = 140 y = -30 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = "veg1"]
+[clear target = "super"]
+[fadeout target = "white" time = 2.0]
+
+[lwfobject id = "kaki1" storage="kakimoji:ef_009" in="04" x=190 y=-100 scale = 1.3 angle = -5]
+[quake target = "kaki1" power = 1 time = 300]
+
+[character id = "super" x = 220 y = -240 storage = "99999/supersaiyangodss" scale = 1.2 action = "fadein" time = 0.1]
+[character id = "veg2" x = 190 y = -180 storage = "00240/heapup_e_01" scale = 1.9 action = "fadein" time = 0.1]
+
+[wait_anim target="white"]
+
+// 空のフキダシ（セリフがないコマを送るために使用）
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+
+*03
+//-------------------------------------------------------------------------------
+//  "ベジータ（超サイヤ人ゴッドSS）"
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_004_002"]
+
+[character x = 210 y = -180 storage = "00240/card_01" scale = 1.3 action = "fadein" time = 0.1]
+
+[balloon x=-120 y=80 shape="002_03" scale = 1 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+きさまは[r]
+知らなかったろうが…[r]
+オレさまも[r]
+なれるんだよ[p]
+
+[balloon x=-120 y=-160 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+伝説の超サイヤ人を[r]
+超える存在にな…！[p]
+
+
+//-------------------------------------------------------------------------------
+[stopbgm]

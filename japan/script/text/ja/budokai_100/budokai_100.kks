@@ -1,0 +1,283 @@
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "012"]
+
+//-------------------------------------------------------------------------------
+//  審判のおっちゃん
+//-------------------------------------------------------------------------------
+[se storage = "39"]
+
+[coma shape="N0002R" bg = "bg_025_002"]
+
+[character id = "ana" x=210 y=-190 storage = "90003/shout_1" scale = 1.3 action = "fadein" time = 0.1]
+
+[wait_anim target=".coma"]
+
+[balloon id = "1" shape="005_01" x = -120 y = 140 scale = 0.9 action = "fadein" time = 0.1]
+[font size = 27]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 3 time = 0.2]
+はるばる遠い所より[r]
+お集まりいただき[r]
+ありがとうございます！！
+[p]
+
+[balloon id = "2" shape="005_02" x = -100 y = -220 scale = 0.8 action = "fadein" time = 0.1]
+[font size = 34]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 3 time = 0.2]
+ただいまより[r]
+天下一武道会を[r]
+はじめます！！！
+[p]
+
+[clear target = "ana"]
+[clear target = "1"]
+[clear target = "2"]
+
+[character id = "guide" x=0 y=430 storage = "90003/budokai_01" scale = 1.0]
+[character id = "ana" x=170 y=-125 storage = "90003/count" scale = 1.3]
+
+[balloon id = "1" shape="005_01" x = -120 y = 80 scale = 0.9 action = "fadein" time = 0.1]
+[font size = 27]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 3 time = 0.2]
+天下一武道会で[r]
+目指すはもちろん[r]
+[font size = 40]優勝！！
+[p]
+
+[balloon id = "2" shape="005_02" x = -130 y = -200 scale = 0.9 action = "fadein" time = 0.1]
+[font size = 27]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 3 time = 0.2]
+厳しい予選を勝ち抜き[r]
+決勝戦を制した選手が[r]
+優勝となります！！
+[p]
+
+[clear target = "guide"]
+[clear target = "ana"]
+[clear target = "1"]
+[clear target = "2"]
+
+//[character id = "guide1" x=0 y=422 storage = "90003/budokai_11" scale = 1.0]
+//[character id = "guide4" x=-10 y=380 storage = "90003/budokai_17" scale = 1.0]
+
+//親
+[character id = "guide1" x=0 y=422 storage = "90003/budokai_21" scale = 1.0]
+
+[character id = "ana" x=210 y=-190 storage = "90003/shout_1" scale = 1.3]
+
+[balloon id = "1" shape="005_01" x = -120 y = 70 scale = 0.8 action = "fadein" time = 0.1]
+[font size = 32]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 3 time = 0.2]
+もちろん栄誉だけでは[r]
+ありません！[r]
+[p]
+
+[clear target = "guide1"]
+
+[clear target = "ana"]
+
+[character id = "guide2" x=0 y=350 storage = "90003/budokai_20" scale = 0.9]
+[character id = "guide7" x=0 y=550 storage = "90003/budokai_13" scale = 0.9]
+
+[character id = "guide1" x=0 y=422 storage = "90003/budokai_11" scale = 1.0]
+
+[character id = "ana" x=210 y=-190 storage = "90003/shout_1" scale = 1.3]
+
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+[clear target = "guide2"]
+
+[character id = "guide3" x=0 y=350 storage = "90003/budokai_15" scale = 0.9]
+
+[balloon id = "2" shape="005_02" x = -80 y = -220 scale = 0.8 action = "fadein" time = 0.1]
+[font size = 30]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 3 time = 0.2]
+優勝回数に応じた[r]
+様々な報酬を[r]
+用意しております！
+[p]
+
+[clear target = "guide1"]
+
+[clear target = "guide3"]
+
+[clear target = "guide7"]
+
+[clear target = "ana"]
+[clear target = "1"]
+[clear target = "2"]
+
+[character id = "guide1" x=0 y=421 storage = "90003/budokai_19" scale = 1.0]
+[character id = "ana1" x=210 y=-190 storage = "90003/shout_1" scale = 1.3]
+
+[balloon id = "1" shape="005_01" x = -130 y = 60 scale = 0.9 action = "fadein" time = 0.1]
+[font size = 27]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 3 time = 0.2]
+豪華報酬の獲得チャンスは[r]
+[font color="#294eef"]武道会pt[font color="#141414"]を競うミッション[r]
+にもあります！！
+[p]
+
+[clear target = "guide1"]
+
+[clear target = "ana1"]
+
+[character id = "guide2" x=0 y=421 storage = "90003/budokai_24" scale = 1.0]
+
+
+
+[character id = "ana" x=210 y=-190 storage = "90003/shout_1" scale = 1.3]
+
+
+// 空のフキダシ（セリフがないコマを送るために使用）
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+[clear target = "guide2"]
+[clear target = "ana"]
+
+[character id = "guide3" x=0 y=421 storage = "90003/budokai_31" scale = 1.0]
+
+[character id = "ana2" x=210 y=-190 storage = "90003/shout_1" scale = 1.3]
+
+// 空のフキダシ（セリフがないコマを送るために使用）
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+
+[clear target = "guide3"]
+[clear target = "ana2"]
+
+
+//金カプセル
+[character id = "guide10" x=0 y=421 storage = "90003/budokai_22" scale = 1.0]
+
+[character id = "ana" x=210 y=-190 storage = "90003/shout_1" scale = 1.3]
+
+// 空のフキダシ（セリフがないコマを送るために使用）
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+
+[clear target = "guide10"]
+[clear target = "ana"]
+
+[character id = "guide11" x=0 y=421 storage = "90003/budokai_23" scale = 1.0]
+
+[character id = "ana" x=210 y=-190 storage = "90003/shout_1" scale = 1.3]
+
+
+
+[balloon id = "2" shape="005_02" x = -80 y = -220 scale = 0.9 action = "fadein" time = 0.1]
+[font size = 27]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 3 time = 0.2]
+武道会で何度も優勝して[r]
+[font color="#294eef"]武道会pt[font color="#141414"]をじゃんじゃん[r]
+稼ぎましょう！
+[p]
+
+[clear target = "guide11"]
+//[clear target = "guide2"]
+[clear target = "ana"]
+[clear target = "1"]
+[clear target = "2"]
+
+[character id = "guide" x=0 y=450 storage = "90003/budokai_04" scale = 1.0]
+[character id = "ana" x=170 y=-125 storage = "90003/index" scale = 1.3]
+
+[balloon id = "1" shape="005_01" x = -120 y = 80 scale = 0.9 action = "fadein" time = 0.1]
+[font size = 27]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 3 time = 0.2]
+天下一武道会では[r]
+すごろくもバトルも[r]
+通常の冒険とは異なります
+[p]
+
+[balloon id = "2" shape="005_02" x = -130 y = -200 scale = 0.9 action = "fadein" time = 0.1]
+[font size = 27]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 3 time = 0.2]
+ルールを[r]
+しっかり確認して[r]
+おいてくださいね！
+[p]
+
+[clear target = "guide"]
+[clear target = "ana"]
+[clear target = "1"]
+[clear target = "2"]
+
+[character id = "guide" x=0 y=450 storage = "90003/budokai_05" scale = 1.0]
+[character id = "ana" x=170 y=-125 storage = "90003/count" scale = 1.3]
+
+[balloon id = "1" shape="005_01" x = -120 y = 80 scale = 0.95 action = "fadein" time = 0.1]
+[font size = 25]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 3 time = 0.2]
+ルールを守り[r]
+天下一の技を競いあって[r]
+素晴らしい大会となるよう[r]
+がんばってください！
+[p]
+
+[clear target = "guide"]
+[clear target = "ana"]
+[clear target = "1"]
+
+[character id = "guide" x=0 y=450 storage = "90003/budokai_06" scale = 1.0]
+[character id = "ana" x=210 y=-190 storage = "90003/shout_1" scale = 1.3]
+
+[balloon id = "1" shape="005_01" x = -130 y = 60 scale = 0.9 action = "fadein" time = 0.1]
+[font size = 28]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 3 time = 0.2]
+[font color="#294eef"]武道会pt[font color="#141414"]を稼ぐことが[r]
+勝ち進むための重要な[r]
+ポイントとなります！
+[p]
+
+[clear target = "guide"]
+[clear target = "ana"]
+[clear target = "1"]
+
+[character id = "guide" x=0 y=450 storage = "90003/budokai_07" scale = 1.0]
+[character id = "ana" x=210 y=-190 storage = "90003/shout_1" scale = 1.3]
+
+[balloon id = "1" shape="005_01" x = -140 y = 60 scale = 0.95 action = "fadein" time = 0.1]
+[font size = 24]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 3 time = 0.2]
+報酬やルールは[r]
+天下一武道会トップページの[r]
+[font color="#d02d00"]「大会ルール」[font color="#141414"]からも確認[r]
+することができます！
+[p]
+
+[clear target = "ana"]
+[character id = "ana2" x=210 y=-190 storage = "90003/shout_2" scale = 1.3]
+[quake target ="ana2" power = 7 time = 0.2]
+[se storage = "39"]
+
+[balloon id = "2" shape="005_02" x = -80 y = -220 scale = 0.85 action = "fadein" time = 0.1]
+[font size = 32]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 3 time = 0.2]
+それでは白熱の試合を[r]
+期待しておりますー！
+[p]
+
+
+[stopbgm]

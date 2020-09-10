@@ -1,0 +1,39 @@
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+//[bgm storage = "026"]
+
+*001
+//-------------------------------------------------------------------------------
+//  孫悟飯（未来）
+//-------------------------------------------------------------------------------
+//[se storage = "50"]
+[se storage = "3022"]
+[coma shape="S0001" bg = "bg_015_001"]
+
+//[character id = "ss" x = 0 y = 0 storage = "99999/supersaiyan" scale = 1.0 action = "fadein" time = 0.1]
+//[quake target = "ss" power = 10 time = 0.4]
+
+[character id = "gohan" x=0 y=-50 storage = "00462/card_03" scale = 0.95 action = "fadein" time = 0.1]
+//[quake target = "gohan" power = 7 time = 0.4]
+
+[balloon x=-0 y=455 shape="001_03" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+お父さんならどんなときでも[r]
+怯まず勇敢に闘っただろう…
+[p]
+
+[balloon x=-40 y=-450 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+オレも[r]
+お父さんのように[r]
+強く生きたい！！
+[p]
+
+//[stopbgm]

@@ -1,0 +1,133 @@
+*start|スタート
+
+//"２２－６ゴール" 
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "029"]
+ 
+*001
+//-------------------------------------------------------------------------------
+//  ダイーズ
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0001L" bg = "bg_006_001"]
+ 
+[character x = -240 y = -165 storage = "00386/idl_side_p_01" scale = 1.4 action = "fadein" time = 0.1]
+ 
+[balloon x=120 y=120 shape="002_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+あぶなかったぜ… 
+[p]
+ 
+[balloon x=130 y=-90 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+だが この程度では[r]
+オレたちを倒すことは[r]
+できない…！！ 
+[p]
+
+*002
+//-------------------------------------------------------------------------------
+//  トランクス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_006_001"]
+ 
+[character x = 210 y = -200 storage = "90000/wait_right_anger_strong" scale = 1.2 action = "fadein" time = 0.1]
+ 
+[balloon x=-100 y=70 shape="001_03" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+くそ…っ！[r]
+こう敵の数が多くては…！
+[p]
+
+*003
+//-------------------------------------------------------------------------------
+//  天津飯の声
+//-------------------------------------------------------------------------------
+[se storage = "03"]
+[coma shape="N0003R" bg = "bg_000_016"]
+ 
+
+ 
+[balloon x=0 y=50 shape="006_02" scale = 0.9 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 7 time = 0.2]
+[$player]！[r]
+トランクス！
+[p]
+
+*004
+//-------------------------------------------------------------------------------
+//  天津飯、餃子、ヤムチャが助けに来る。
+//-------------------------------------------------------------------------------
+[se storage = "3033"]
+[coma shape="N0003R" bg = "bg_006_001"]
+
+[lwfobject id = "kaki1" storage="kakimoji:ef_023" in="04" angle=-10 x=-160 y=120 scale = 1.5]
+[quake target = "kaki1" power = 15 time = 0.4]
+
+// 天津飯、餃子、ヤムチャが助けに来る。
+//[character x = -140 y = -60 storage = "00035/idl_side_e_03" scale = 0.7 action = "fadein" time = 0.1]
+
+[character id = "yam" x = 40 y = -30 storage = "00013/yam_heapup_e_01" scale = 0.7 action = "fadein" time = 0.1]
+[quake target ="yam" power = 7 time = 0.3]
+
+[character id = "chaoz" x = 120 y = 90 storage = "00012/idl_side_e_01" scale = 0.9 action = "fadein" time = 0.1]
+[quake target ="chaoz" power = 7 time = 0.3]
+
+[character id = "ten" x = 220 y = -20 storage = "00257/ten_heapup_e_01" scale = 0.7 action = "fadein" time = 0.1]
+[quake target ="ten" power = 7 time = 0.3] 
+ 
+ 
+ 
+ 
+
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+
+*005
+//-------------------------------------------------------------------------------
+//  トランクス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_006_001"]
+ 
+[character x = 210 y = -200 storage = "90000/wait_right_shout" scale = 1.2 action = "fadein" time = 0.1]
+ 
+[balloon x=-90 y=90 shape="001_02" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+[quake target =".bln" power = 3 time = 0.2]
+天津飯さん！ 餃子さん！[r]
+ヤムチャさん！
+[p]
+
+*006
+//-------------------------------------------------------------------------------
+//  ターレス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002L" bg = "bg_006_001"]
+ 
+//[character x = -230 y = -140 storage = "00298/idl_side_p_01" scale = 1.3 action = "fadein" time = 0.1]
+[character x = -200 y = -90 storage = "00298/idl_side_p_01" scale = 1.3 action = "fadein" time = 0.1] 
+ 
+[balloon x=120 y=80 shape="002_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+おやおや…[r]
+助っ人のおでましか？
+[p] 
+//-------------------------------------------------------------------------------
+[stopbgm]

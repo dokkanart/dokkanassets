@@ -1,0 +1,472 @@
+*start|スタート
+//ステージ2 ゴール
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "012"]
+
+*01
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0002R" bg = "bg_000_016"]
+
+//[wait time = 0.7]
+
+[character x = 190 y = 140 storage = "00039/card_04" scale = 1.3 action = "fadein" time = 0.1]
+[quake target =".chara" power = 1 time = 300]
+
+[balloon shape="003_01" x = -130 y = 10 scale = 1.7 action = "fadein" time = 0.1]
+[font size = 14]
+[wait_anim target=".bln"]
+//[quake target =".bln" power = 3 time = 0.2]
+悟飯に[r]
+気のコントロールについて[r]教わるビーデル…[r]
+　[r]
+もともと武道を[r]やっていた経験から[r]
+すぐにコツをつかんだ[r]ビーデルは[r]
+早くも自分の体を[r]浮かせることに[r]
+成功するのだった
+[p]
+
+*02
+//-------------------------------------------------------------------------------
+//  孫悟飯（青年期）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_081_013"]
+
+[character x = -230 y = -190 storage = "00346/card_02" scale = 1.2 angle = 20 action = "fadein" time = 0.1]
+
+[balloon x=120 y=70 shape="001_01" scale = 0.7 action = "fadein" time = 0.1]
+[font size = 40]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 3 time = 0.2]
+やった！！[r]
+浮いた！！
+[p]
+
+[balloon x=120 y=-115 shape="001_02" scale = 0.7 action = "fadein" time = 0.1]
+[font size = 40]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 3 time = 0.2]
+ちょっと[r]
+浮いてるよ！！
+[p]
+
+*03
+//-------------------------------------------------------------------------------
+//  ビーデル
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_016"]
+
+[character x = 190 y = -190 storage = "00039/card_04" scale = 1.3 action = "fadein" time = 0.1]
+[quake target =".chara" power = 1 time = 300]
+
+[balloon x=-110 y=100 shape="001_03" scale = 0.75 action = "fadein" time = 0.1]
+[font size = 36]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 3 time = 0.2]
+しーっ！！[r]
+だまってて！！
+[p]
+
+[balloon x=-110 y=-90 shape="001_01" scale = 0.75 action = "fadein" time = 0.1]
+[font size = 36]
+[wait_anim target=".bln"]
+//[quake target =".bln" power = 7 time = 0.2]
+集中できない[r]から…！！
+[p]
+
+*04
+//-------------------------------------------------------------------------------
+//  孫悟飯（青年期）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_081_013"]
+
+[character x = -230 y = -190 storage = "00346/card_02" scale = 1.2 angle = 20 action = "fadein" time = 0.1]
+
+[balloon x=120 y=100 shape="001_03" scale = 0.9 action = "fadein" time = 0.1]
+[font size = 28]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 3 time = 0.2]
+すごいじゃないか！！
+[p]
+
+[balloon x=120 y=-100 shape="001_02" scale = 0.8 action = "fadein" time = 0.1]
+[font size = 32]
+[wait_anim target=".bln"]
+//[quake target =".bln" power = 3 time = 0.2]
+たった1日で[r]
+浮けるように[r]
+なったなんて！！
+[p]
+
+*05
+//-------------------------------------------------------------------------------
+//  ビーデル
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_081_013"]
+
+[character x = 190 y = -140 storage = "00039/card_04" scale = 1.3 action = "fadein" time = 0.1]
+
+[move target =".chara" y=-190 time = 2.0 ease="Out:5"]
+
+[wait time = 2.5]
+
+[balloon x=-110 y=100 shape="001_03" scale = 0.75 action = "fadein" time = 0.1]
+[font size = 36]
+[wait_anim target=".bln"]
+//[quake target =".bln" power = 7 time = 0.2]
+そうかしら…
+[p]
+
+[balloon x=-110 y=-100 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[font size = 28]
+[wait_anim target=".bln"]
+//[quake target =".bln" power = 7 time = 0.2]
+弟さんのほうは もう[r]
+ビュンビュン自在に[r]
+飛べるようになった[r]
+みたいだけど…
+[p]
+
+*06
+//-------------------------------------------------------------------------------
+//  孫悟飯（青年期）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_081_013"]
+
+[character x = -180 y = -220 storage = "00346/atc_sp01_e_02" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x=120 y=100 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[font size = 28]
+[wait_anim target=".bln"]
+//[quake target =".bln" power = 3 time = 0.2]
+ご…悟天はもともと[r]
+気のコントロールが[r]
+バッチリできてたんだ
+[p]
+
+[balloon x=130 y=-100 shape="001_01" scale = 0.9 action = "fadein" time = 0.1]
+[font size = 28]
+[wait_anim target=".bln"]
+//[quake target =".bln" power = 3 time = 0.2]
+そこまでできれば[r]
+すぐ悟天みたいに[r]
+飛べるようになるよ
+[p]
+
+*07
+//-------------------------------------------------------------------------------
+//  ビーデル
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_081_013"]
+
+[character x = 170 y = -240 storage = "00039/card_02" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x=-110 y=60 shape="001_03" scale = 0.8 action = "fadein" time = 0.1]
+[font size = 32]
+[wait_anim target=".bln"]
+//[quake target =".bln" power = 7 time = 0.2]
+また明日も来るわ
+[p]
+
+*08
+//-------------------------------------------------------------------------------
+//  孫悟飯（青年期）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_081_013"]
+
+[character x = -180 y = -220 storage = "00346/atc_sp01_e_02" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x=120 y=100 shape="001_03" scale = 1.0 action = "fadein" time = 0.1]
+[font size = 24]
+[wait_anim target=".bln"]
+//[quake target =".bln" power = 3 time = 0.2]
+え！？[r]
+もうほとんど[r]
+できたも同然じゃない…
+[p]
+
+[balloon x=120 y=-100 shape="001_02" scale = 0.8 action = "fadein" time = 0.1]
+[font size = 32]
+[wait_anim target=".bln"]
+//[quake target =".bln" power = 3 time = 0.2]
+あとは自分だけでも[r]
+じゅうぶん…
+[p]
+
+
+*09
+//-------------------------------------------------------------------------------
+//  ビーデル
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_081_013"]
+
+[character x = 170 y = -240 storage = "00039/card_02" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x=-100 y=100 shape="001_01" scale = 0.8 action = "fadein" time = 0.1]
+[font size = 32]
+[wait_anim target=".bln"]
+//[quake target =".bln" power = 7 time = 0.2]
+気のことを[r]
+もっと知りたいわ
+[p]
+
+[balloon x=-120 y=-100 shape="001_03" scale = 0.9 action = "fadein" time = 0.1]
+[font size = 28]
+[wait_anim target=".bln"]
+//[quake target =".bln" power = 7 time = 0.2]
+それとも[r]
+わたしがいたら[r]迷惑！？
+[p]
+
+*10
+//-------------------------------------------------------------------------------
+//  孫悟飯（青年期）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_081_013"]
+
+[character x = -180 y = -220 storage = "00346/atc_sp01_e_02" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x=120 y=70 shape="004_02" scale = 0.9 action = "fadein" time = 0.1]
+[font size = 28]
+[wait_anim target=".bln"]
+//[quake target =".bln" power = 3 time = 0.2]
+い…いや！[r]
+そんなことないけど…
+[p]
+
+
+*11
+//-------------------------------------------------------------------------------
+//  ビーデル
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_081_013"]
+
+[character x = 170 y = -240 storage = "00039/card_02" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x=-90 y=70 shape="001_03" scale = 0.75 action = "fadein" time = 0.1]
+[font size = 36]
+[wait_anim target=".bln"]
+//[quake target =".bln" power = 7 time = 0.2]
+じゃあ明日ね
+[p]
+
+*12
+//-------------------------------------------------------------------------------
+//  孫悟飯（青年期）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_081_013"]
+
+[character id = "gohan" x=-210 y=-160 storage = "00346/idl_side_p_01" scale = 1.3 action = "fadein" time = 0.1]
+
+[balloon x=120 y=100 shape="001_01" scale = 0.8 action = "fadein" time = 0.1]
+[font size = 32]
+[wait_anim target=".bln"]
+//[quake target =".bln" power = 3 time = 0.2]
+あ…そういえば…[r]
+ビーデルさんの[r]
+髪の毛だけど…
+[p]
+
+[balloon x=120 y=-100 shape="001_02" scale = 0.8 action = "fadein" time = 0.1]
+[font size = 32]
+[wait_anim target=".bln"]
+//[quake target =".bln" power = 3 time = 0.2]
+…もっと[r]
+短くしたほうが[r]
+いいと思うよ…
+[p]
+
+
+*13
+//-------------------------------------------------------------------------------
+//  ビーデル
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_081_013"]
+
+[character x =170 y = -300 storage = "00039/card_05" scale = 1.3 action = "fadein" time = 0.1]
+
+[balloon x=-110 y=100 shape="001_03" scale = 0.7 action = "fadein" time = 0.1]
+[font size = 40]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 3 time = 0.2]
+え…！？
+[p]
+
+[balloon x=-115 y=-100 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[font size = 28]
+[wait_anim target=".bln"]
+//[quake target =".bln" power = 7 time = 0.2]
+ショ…[r]
+ショートヘアのほうが…[r]
+悟飯くんの好み？……
+[p]
+
+*14
+//-------------------------------------------------------------------------------
+//  孫悟飯（青年期）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_081_013"]
+
+[character id = "gohan" x=-210 y=-160 storage = "00346/idl_side_p_01" scale = 1.3 action = "fadein" time = 0.1]
+
+[balloon x=125 y=100 shape="001_02" scale = 1.0 action = "fadein" time = 0.1]
+[font size = 24]
+[wait_anim target=".bln"]
+//[quake target =".bln" power = 3 time = 0.2]
+え！？ いや[r]
+好みとかじゃなくて[r]
+試合するんだったら[r]
+短いほうが有利だと[r]思ってさ…
+[p]
+
+[balloon x=120 y=-100 shape="001_03" scale = 1.0 action = "fadein" time = 0.1]
+[font size = 24]
+[wait_anim target=".bln"]
+//[quake target =".bln" power = 3 time = 0.2]
+ほら 長いと[r]目にかかったり[r]
+相手に髪の毛[r]つかまれたりして…
+[p]
+
+
+*15
+//-------------------------------------------------------------------------------
+//  ビーデル
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_081_013"]
+
+[character x = 200 y = -160 storage = "00039/card_06" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon x=-70 y=120 shape="004_03" scale = 0.7 action = "fadein" time = 0.1]
+[font size = 54]
+[wait_anim target=".bln"]
+//[quake target =".bln" power = 7 time = 0.2]
+………
+[p]
+
+[quake target =".chara" power = 5 time = 0.4]
+
+[balloon x=-90 y=-90 shape="007_02" scale = 1.0 action = "expand" time = 0.1]
+[font size = 24]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 7 time = 0.2]
+　うるさいわね[r]
+　ほっといてよ！！[r]
+　そんなこと[r]
+　わたしの勝手でしょ！！
+[p]
+
+*16
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0003L" bg = "bg_000_014"]
+
+//[wait time = 0.7]
+
+[balloon shape="003_01" x = 0 y = -20 scale = 1.6 action = "fadein" time = 0.1]
+[font size = 15]
+[wait_anim target=".bln"]
+//[quake target =".bln" power = 3 time = 0.2]
+翌朝……[r]
+　[r]
+再び ビーデルは[r]
+舞空術を教わるため[r]
+悟飯の家へとやってきた[r]
+　[r]
+長かった髪を[r]
+バッサリと短くして…
+[p]
+
+
+*17
+//-------------------------------------------------------------------------------
+//   孫悟天（幼年期）孫悟飯（青年期）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_081_013"]
+
+[character x=-70 y=-100 storage = "00225/idl_side_p_01" scale = 0.7 action = "fadein" time = 0.1]
+
+[character id = "gohan" x=-250 y=-160 storage = "00346/idl_side_p_01" scale = 1.3 action = "fadein" time = 0.1]
+
+
+[balloon x=120 y=70 shape="001_02" scale = 0.75 action = "fadein" time = 0.1]
+[font size = 36]
+[wait_anim target=".bln"]
+//[quake target =".bln" power = 3 time = 0.2]
+にいちゃん[r]
+あのひと誰？…
+[p]
+
+[quake target ="gohan" power = 2 time = 0.4]
+
+[balloon x=130 y=-120 shape="001_01" scale = 0.65 action = "fadein" time = 0.1]
+[font size = 44]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 3 time = 0.2]
+あ！
+[p]
+
+
+*18
+//-------------------------------------------------------------------------------
+//  ビーデル
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_081_013"]
+
+[character x=210 y=-210 storage = "00039/atc_sp01_e_01" angle = 9 scale = 1.1 action = "fadein" time = 0.1]
+
+[balloon x=-90 y=60 shape="001_02" scale = 0.75 action = "fadein" time = 0.1]
+[font size = 36]
+[wait_anim target=".bln"]
+//[quake target =".bln" power = 3 time = 0.2]
+さ！ 昨日の続き[r]始めましょ！
+[p]
+
+*19
+//-------------------------------------------------------------------------------
+//  孫悟飯（青年期）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002L" bg = "bg_081_013"]
+
+//[character x = -220 y = -145 storage = "00235/idl_side_e_02" scale = 1.3 action = "fadein" time = 0.1]
+//[flip target =".chara" h=1]
+
+[character id = "gohan" x=-220 y=-160 storage = "00346/idl_side_p_01" scale = 1.4 action = "fadein" time = 0.1]
+
+[character x = -165 y = 115 storage = "99999/ase" scale = 0.6 action = "fadein" time = 0.1]
+
+[balloon x=135 y=50 shape="004_02" scale = 0.9 action = "fadein" time = 0.1]
+[font size = 28]
+[wait_anim target=".bln"]
+//[quake target =".bln" power = 3 time = 0.2]
+や…[r]
+やっぱりわからない…[r]
+ビーデルさん…って……
+[p]
+
+
+//-------------------------------------------------------------------------------
+[stopbgm]

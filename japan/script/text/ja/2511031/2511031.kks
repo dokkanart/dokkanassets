@@ -1,0 +1,48 @@
+*start|スタート
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+//[bgm storage = "012"]
+
+*001
+//-------------------------------------------------------------------------------
+//  ウイス
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="S0001" bg = "bg_014_001"]
+
+[wait time = 0.7]
+
+
+[character id = "uis" x = -110 y = 0 storage = "00243/card_03" scale = 0.8 action = "fadein" time = 0.7]
+//[wait_anim target = "uis"]
+
+[wait time = 1.0]
+
+[balloon x = 30 y = 455 shape="001_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+わたしはウイス[r]
+こちらはわたしの主[r]
+ビルスさまです
+[p]
+
+[se storage = "48"]
+[character id = "bills" x = 110 y = -100 storage = "00242/card_06" scale = 1.1 action = "fade:100" time = 0.7]
+
+//[wait_anim target = "bills"]
+[wait time = 1.0]
+
+[balloon x = -120 y = -420 shape="001_03" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 40]
+//[quake target =".bln" power = 3 time = 0.2]
+やあ[r]
+よろしく…
+[p]
+
+
+
+//-------------------------------------------------------------------------------
+//[stopbgm]

@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="35" height="32" tilewidth="40" tileheight="40" nextobjectid="66">
+ <properties>
+  <property name="charageki_bg_01" value="normal_004_001"/>
+ </properties>
+ <tileset firstgid="1" name="Path" tilewidth="40" tileheight="40" spacing="1" tilecount="32">
+  <image source="image/common/mapchip-base.png" width="163" height="327"/>
+ </tileset>
+ <tileset firstgid="33" name="Attribute" tilewidth="40" tileheight="40" spacing="1" tilecount="32">
+  <image source="image/common/mapchip-meta.png" width="163" height="327"/>
+ </tileset>
+ <tileset firstgid="65" name="green" tilewidth="40" tileheight="40" spacing="1" tilecount="352">
+  <image source="image/common/green.png" width="901" height="655"/>
+ </tileset>
+ <tileset firstgid="417" name="break" tilewidth="40" tileheight="40" spacing="1" tilecount="320">
+  <image source="image/common/break.png" width="655" height="819"/>
+ </tileset>
+ <tileset firstgid="737" name="tree" tilewidth="40" tileheight="40" spacing="1" tilecount="189">
+  <image source="image/common/tree.png" width="860" height="368"/>
+ </tileset>
+ <tileset firstgid="926" name="concrete" tilewidth="40" tileheight="40" spacing="1" tilecount="240">
+  <image source="image/common/concrete.png" width="819" height="491"/>
+ </tileset>
+ <tileset firstgid="1166" name="area_028_concrete_01" tilewidth="40" tileheight="40" spacing="1" tilecount="108">
+  <image source="image/area_028/area_028_concrete_01.png" width="368" height="491"/>
+ </tileset>
+ <tileset firstgid="1274" name="smoke" tilewidth="40" tileheight="40" spacing="1" tilecount="150">
+  <image source="image/common/smoke2.png" width="409" height="614"/>
+ </tileset>
+ <tileset firstgid="1424" name="broken_cars" tilewidth="40" tileheight="40" spacing="1" tilecount="24">
+  <image source="image/common/broken_cars.png" width="245" height="163"/>
+ </tileset>
+ <tileset firstgid="1448" name="broken_aircraft" tilewidth="40" tileheight="40" spacing="1" tilecount="18">
+  <image source="image/common/broken_aircraft.png" width="245" height="122"/>
+ </tileset>
+ <tileset firstgid="1466" name="area_028_bill_01" tilewidth="40" tileheight="40" spacing="1" tilecount="120">
+  <image source="image/area_028/area_028_bill_01.png" width="409" height="491"/>
+ </tileset>
+ <tileset firstgid="1586" name="area_028_housing_03" tilewidth="40" tileheight="40" spacing="1" tilecount="80">
+  <image source="image/area_028/area_028_housing_03.png" width="409" height="327"/>
+ </tileset>
+ <tileset firstgid="1666" name="area_028_housing_02" tilewidth="40" tileheight="40" spacing="1" tilecount="72">
+  <image source="image/area_028/area_028_housing_02.png" width="368" height="327"/>
+ </tileset>
+ <tileset firstgid="1738" name="area_028_house_01" tilewidth="40" tileheight="40" spacing="1" tilecount="144">
+  <image source="image/area_028/area_028_house_01.png" width="491" height="491"/>
+ </tileset>
+ <tileset firstgid="1882" name="area_028_housing_04" tilewidth="40" tileheight="40" spacing="1" tilecount="56">
+  <image source="image/area_028/area_028_housing_04.png" width="327" height="286"/>
+ </tileset>
+ <tileset firstgid="1938" name="area_028_bill_02" tilewidth="40" tileheight="40" spacing="1" tilecount="120">
+  <image source="image/area_028/area_028_bill_02.png" width="491" height="409"/>
+ </tileset>
+ <layer name="bg" width="35" height="32">
+  <data encoding="base64" compression="zlib">
+   eJztwzEJAAAMA7Ae8w91XBX7EkgvqaqqqqpvB05Si/8=
+  </data>
+ </layer>
+ <layer name="green" width="35" height="32">
+  <data encoding="base64" compression="zlib">
+   eJzdl9sNwjAMRbtxQcAIgIAZgBl4j8B7J24lLJkoaRzHyQeWjlrxkZy6vW5pGlntwB4cwBFsGCdwBhfhWrl1BTePU+fwBC/wztxjDCYKpzt4GDm0YACWYKRwsihymIIZWINFZSfXYf714JR2kjiEnFaVHSgP/DfrjEr7wPNJDlYZpXLnQMiF59PagSo0m1yXmhVzsiieO0n2Qk7aomwMm9/cpcwC10nr4MuGdj6RU2pJ8ulzKjHLpfl0Z2aJOS7NJ/cp/W5JdUp9nlqFu7UTz4ZVPskpdv+4k5tP+obNzaemT6F8dj7bgFPObI19r/TR51SiT7Sf5LykE+2Ryr/fuxwfS6e7s557XtOpYevEjtwv9nxrnaTXm9orTZ+0ObLIXWpfJNev6ZPvf+AHFMZ3Xg==
+  </data>
+ </layer>
+ <layer name="road" width="35" height="32">
+  <data encoding="base64" compression="zlib">
+   eJzllzEOwjAMRTP04D4BjMBIYSxshbEMBcFQzsQvqBIKSeo4cYdi6S/Bjp+rflcYE45NYWgNraAltIDsHJwZ/GaQY5Db16hEid5byMXkYkBuXyOKK+pujFoXUy4G9Cdw0BP1bRHPtEPuPhND++Gg/qzDXbFMKWEzdI53UJuJw+BjqqADdBQyDZ4LMXTFb751x9sfNXSCzkIWzECYhSrmcxjzaANdhCyYgTAL1YHd9B0aHh0CM1Dj2U2u/Jwe9UVoX+bs07+Xd7A/GL7TYrK9EbMLfEzc3lx/pjBxWWL8KWXissT6U8LEjVh/TsGU4oUYpqn8GWLS8KeEScufEiYtf0p3q4YXpvgG/RNTmcA4VyZpbw2msTzXuZbvxu5Mjan/B86R6QU/InYj
+  </data>
+ </layer>
+ <layer name="yogosi" width="35" height="32">
+  <data encoding="base64" compression="zlib">
+   eJztlckKwyAQQD3k/z+va6A7tOkC3a99t3jQOuKgCfjgHQSZjMwSY3omjTFTnOEcF7jEtjFRSOK47tisOK9xg1vc4R4PkblI4rju2Bw5n7DDM17wirfIXCRxXHds7pwf+MQXvvGDX08u/2oRiuP6VgpaNdVAq6YaxNY0Fa0510DaEzlylvaERh+H3iLtCY0+1prJUM6SGuaaSUkNc81kag01ZyN1F9Ud7yb3jh8zY/w/5aD2c6UyDHw7qgS+HVUC344qgW9HDYkfZZoKgQ==
+  </data>
+ </layer>
+ <layer name="crack" width="35" height="32">
+  <data encoding="base64" compression="zlib">
+   eJzt1zdvFGEQBuDziRxdkHMwNtCRQ0cOHcHY0GEyv4ucC3IuyLkg54KcC3J+kK46vFpLO/ZKiFd6mjtpdk6fbr7ZmmKhMJwRjCTPTPD8iUxicqmXdRWFwno2sJFNbGYLW9nGdnawk10VMb3M8vzZzGFuqZfdau9hL/vYzwEOcojDHOEoxzie0stgdYcwlCqGUU1N2ZnUUc9ilpR6OaH2SU5xmjOc5RznucBFLnGZKym9jFJ3NGMYyzjGF/8+k1WsZg1rS71cVfsa17nBTW5xmzvc5R73ecDDlF6mqDuVaUxnBjOLjZ9JeR6p/ZgnPOUZz3nBS17xmje85V1KL/M8Zz4LWEgtixLOpDzv1f7ARz7xmS985Rvf+cFPfv3pI+X/t9T3DSxjOStYmXAm5Wnl89a0oS3taE8HOtKJznShK5XNOAu6qd2dHvSkF73pQ1/60Z8BDGRQM/WS12xpLNGzJUuiZ0uWRM+WLImeLVkSPVuy5P9syS9JO0QeSdoh8kjSDpFHknaIPJK0Q0TlX7tTo35PxJ0atSNE3KlRO0LEnRq1I0TcqVE7QsSdGrUjRNypLbEjNPV9uiV2hKa+T/8GGOolAA==
+  </data>
+ </layer>
+ <layer name="crack2" width="35" height="32">
+  <data encoding="base64" compression="zlib">
+   eJzt1scKwkAUheHgm9jLzl529rKzd8Heff+l/1KiwYxOxgFz4dskhHsgnGEMw5mZegxjhjkWnuf3Z55dcMXtxXuZo3KX7vPuv6gc3f6Llww++BFAECGEEUEUMUU54+xJIIkU0sggixzyKCjKUmRPCWVUUEUNdTTQREtRljZ7Ouiihz4GGGKEMSaKsizZs8IaG2yxwx4HHHFyMItIl53uvUiXVfReRpdlnQMiXbbKLescEOmyVW5Z54BIl61yyzoH7HbZ3KPH3aLffjvmHj3ufrfDbgdlZJbVc93uCzqMe59zR9f5h/v0J/1z6j79Sf/c+/Rv5w5+VVtj
+  </data>
+ </layer>
+ <layer name="house6" width="35" height="32">
+  <data encoding="base64" compression="zlib">
+   eJzt1rlSglEQhNE/4oEEBQUEWRQBZVHZBGRTwA2RVQV5db7M8HrrVk00XXXi6cna8zSavxz4PM+PAA5xhCBCOPbJdolwL4pTxBDHGRJICnc5594FMrhEFjnkcSXcpci9Esq4wS3uUEFVuEuDe/doooU2HtBBV7jLgHuPeMIQI4zxjBfhLu/cm+ADU3xihjkWwl3W3PvCN36wwRa/2Al30Wg0Go1GIxvTtj9BWGgPmLZ9CmmHLja/mrb9NQoOXWx+NW37GuoOXWx+NW37HvoOXWx+NW37V7w5dLH51bTtl1j9s8seoFRAGQ==
+  </data>
+ </layer>
+ <layer name="house5" width="35" height="32">
+  <data encoding="base64" compression="zlib">
+   eJzt18tOAkEQheFe1YMjgoAgIBdFBEFB5aYiN0FFERHfin/TO1aTga5MOMm3mc2pTNKVlDF6EhZjjhFBFCeIIS77nyVJZwpnSCODLM4dzFKgs4gLXKKEK5QdzFKl8wY11HGLOzQczPJA5yNaaKODLnoOZnmhs49XDDDECGMHs0zpnOEdH/jEHF8OZvmhc4lfrPCHNf4dzBKEhPhvR6JjVyboOhUduzJHV1507MpruiqiY1c26boXHbvyia5n0bErJ3S9ib+70uvb/Ob7QvzdlYe3uT2Ht7k9QX+bXrOLtxmEaLjRbDTcaDYabjQbDTeajYYbzUbDjWazATFlmXw=
+  </data>
+ </layer>
+ <layer name="house4" width="35" height="32">
+  <data encoding="base64" compression="zlib">
+   eJzt10cOwkAMQNHZ5Y703nsLvffOjfkXGAkCeITkL71t7IWlJMa83tIzZoU1Nthihz0O3hsP+kJH5p1wxgVX3HDHQ3gXTdM0TfunQrwnw4ggihjiSCAp/A5NMS+NDLLIIY8CisK7lJhXRgVV1FBHA03hXVrMa6ODLnrw0cdAeJch80YYY4IpZphjIbxL0G/RX9x20G9RF7dty8Vt23Jx27Zc3LYtF/9ZtvQ/S9M+7wkMtis+
+  </data>
+ </layer>
+ <layer name="house3" width="35" height="32">
+  <data encoding="base64" compression="zlib">
+   eJztkrsOgkAUBS8V/H+h2PpoBVsfrUqD2gq0qK2PVhm/wLhbbEjOJFPO3UOCmRBCCCGEEP2ljM0OeMRTHHbLmfcrrLFx2DKgGWKKI89vaekveMWbw60xzQSnOPPccqd/4BNfDrfmNBnmuPDc8qb/fG8kZlHyf7+kXeEaN4H/ty3v73CPReAtQojfdAJpHuc=
+  </data>
+ </layer>
+ <layer name="house2" width="35" height="32">
+  <data encoding="base64" compression="zlib">
+   eJzt0jEOgkAQRuHtuH8DCNooCDSKoA2iSKMIeiffFTbZZC3+l3zdZHZIMEYppZRSSinlujAwJkKMVeD3li3v75Aht7wlYT7FGhsH33FgxxE1Tpb79swXKFE5uKVjxxU9bpb7GuZbnHFxcMuTHS9MeFvuuzM/4IHR87828/6CD76eb1Hq3/oBHzYc1Q==
+  </data>
+ </layer>
+ <layer name="house1" width="35" height="32">
+  <data encoding="base64" compression="zlib">
+   eJztzrkSgkAURNFXAs589nwjqGSyZeCSgUvi/YZ5mfSp6rTrmomIiIiIyB6cg9mFtSH/4xQsNaxmnpaBhpFNjpaeho5dnS13Gh7s6Wi50bCw2dnypuHDvo6WFw0bW50tVTQ7shDzP8poqWCH6GsR+Qc/fKgeEA==
+  </data>
+ </layer>
+ <layer name="ride" width="35" height="32">
+  <data encoding="base64" compression="zlib">
+   eJztl8sOgjAQRWfT/55PUARFRUgQ/9PrgkCMtR2YIY32JCzKYx7l9lKIJq6O+IKDjNg5or2zij7RIMctkOeI66cP9xQ4d1CssUes+8J4NZ47bzBfqVGi5yqRvrEeXuvip2jRT+f84y0ZkPfh/GNNoCkuF/qbtnfNvTbGr+b4vEuDNX6lBbTIbeR70vJrnzagRR4CtYx+peXXku/wu3Y0/EqqxxEL7WjHhFa4MNzjSIBWuE6klkwYiS9ZE+NL/wz8i5tE5gf+xX0itUhZs2fSxvr/9Bt57WcseAKO6URY
+  </data>
+ </layer>
+ <layer name="Path" width="35" height="32">
+  <data encoding="base64" compression="zlib">
+   eJzt1LEKwCAMRdGAYFGnFuz/f6pxs6W1UtAs98CbstwpIgBw5XSHdUTj1CWh6QtNY2pTsI4ADPR++67bOvcZ7v+hNnhdfrmvaopNw9OdnwYA+KsAA9sCWQ==
+  </data>
+ </layer>
+ <layer name="Attribute" width="35" height="32">
+  <data encoding="base64" compression="zlib">
+   eJztzjERADAIBDAstfj31hkBvR9IFKQKYLrpAHzW6QAEnHQAAJZ7OkIAlw==
+  </data>
+ </layer>
+ <layer name="smoke" width="35" height="32">
+  <data encoding="base64" compression="zlib">
+   eJzt11lvTVEYBuBNWjUFNQU1xVTEVAQ1BTUFNQU1BTUFNQU1BTXFzG96/5jhSc4FOelFL5x11ZU8ycm5+d6111rf3quq/o4NzVW1kU10spktbGUb25urYmOHWjvZRRe72cNe9rG/YJYDah3kEN0c5ghHOcbxgllOqHWSU/RwmjOc5RznC2a5oNZFLtHLZa5wlWtcL5jlhlo3uUUft7nDXe5xv2CWB2o95BH9POYJT3nG84JZXqj1klcM8Jo3vOUd7wtm+aDWRz7xmS985Rvf+VEwS6lhTjG3mGPMNeYcc0+J2vV90lrHmsfaxx6IvZCBQlnq+6QzEGchzkScjTgj6S+Upb5P6g3RI6JXRM+I3pG+Qlnq+6Tf8V/00Oil0VPTWyhLfZ/0jOJZxbsl3jHxrklPoSz1fdLeiT0U79x498Y7ON2Fsvxsqqpf/KaSaQQja98i8U0S3ybp+s9Z/u2TTTQzihZGM4axjGN87RstvtXimy2dDXwuE9SayCRamcwUpjKN6axVv4M1rG5glhlqzWQWbcxmDnOZx3yWqt/OEhY3MMsCtRayCHUq9ar2Wv1qGctruSJf5ExbA7OsUGslq/D8K+tQddTWpVrH+tp6xbrF+qW1gVmGcqewj2M/x75OSwOzDOlOob5zHuc9zn3DsgzfKQYfw3eKwcfwnWLw0Yg7Rcl7yh9cUKea
+  </data>
+ </layer>
+ <objectgroup name="obj_eff">
+  <object id="23" name="eff" type="flash" x="846" y="606.666" width="24.6663" height="21.3337">
+   <properties>
+    <property name="file" value="sugoroku_tile_00000"/>
+    <property name="movie" value="ef_005"/>
+    <property name="scale" value="0.6"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="24" name="eff_1" type="flash" x="707" y="438.666" width="26.3337" height="24.0003">
+   <properties>
+    <property name="file" value="sugoroku_tile_00000"/>
+    <property name="movie" value="ef_005"/>
+    <property name="scale" value="0.3"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="25" name="eff_2" type="flash" x="1053.33" y="625.333" width="26.667" height="26.6667">
+   <properties>
+    <property name="file" value="sugoroku_tile_00000"/>
+    <property name="movie" value="ef_005"/>
+    <property name="scale" value="0.3"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="26" name="eff_2" type="flash" x="415" y="894" width="19.6667" height="18.0003">
+   <properties>
+    <property name="file" value="sugoroku_tile_00000"/>
+    <property name="movie" value="ef_005"/>
+    <property name="scale" value="0.3"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="27" name="eff_2" type="flash" x="631" y="957.334" width="19.6667" height="18.666">
+   <properties>
+    <property name="file" value="sugoroku_tile_00000"/>
+    <property name="movie" value="ef_005"/>
+    <property name="scale" value="0.3"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="28" name="eff_2" type="flash" x="1041.67" y="300.666" width="19.6633" height="20.6673">
+   <properties>
+    <property name="file" value="sugoroku_tile_00000"/>
+    <property name="movie" value="ef_005"/>
+    <property name="scale" value="0.3"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="29" name="eff_2" type="flash" x="269.666" y="828.667" width="18.3337" height="18">
+   <properties>
+    <property name="file" value="sugoroku_tile_00000"/>
+    <property name="movie" value="ef_005"/>
+    <property name="scale" value="0.3"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="30" name="eff" type="flash" x="210.999" y="718" width="23.6673" height="21.9997">
+   <properties>
+    <property name="file" value="sugoroku_tile_00000"/>
+    <property name="movie" value="ef_005"/>
+    <property name="scale" value="0.6"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="31" name="eff" type="flash" x="486.666" y="524" width="14.667" height="17.333">
+   <properties>
+    <property name="file" value="sugoroku_tile_00000"/>
+    <property name="movie" value="ef_005"/>
+    <property name="scale" value="0.6"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="32" name="eff_1" type="flash" x="748.333" y="638.333" width="33" height="23.0003">
+   <properties>
+    <property name="file" value="sugoroku_tile_00000"/>
+    <property name="movie" value="ef_005"/>
+    <property name="scale" value="0.3"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="33" name="eff_1" type="flash" x="1184.34" y="866.334" width="28.9967" height="28.333">
+   <properties>
+    <property name="file" value="sugoroku_tile_00000"/>
+    <property name="movie" value="ef_005"/>
+    <property name="scale" value="0.3"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="34" name="eff_1" type="flash" x="507" y="975.667" width="19.6667" height="18.9997">
+   <properties>
+    <property name="file" value="sugoroku_tile_00000"/>
+    <property name="movie" value="ef_005"/>
+    <property name="scale" value="0.3"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="36" name="eff_1" type="flash" x="1226.67" y="344" width="21.33" height="24">
+   <properties>
+    <property name="file" value="sugoroku_tile_00000"/>
+    <property name="movie" value="ef_005"/>
+    <property name="scale" value="0.3"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="49" name="eff_2" type="flash" x="1223" y="182" width="20.9967" height="20.667">
+   <properties>
+    <property name="file" value="sugoroku_tile_00000"/>
+    <property name="movie" value="ef_005"/>
+    <property name="scale" value="0.3"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="50" name="eff" type="flash" x="168" y="617.333" width="17.3337" height="17.334">
+   <properties>
+    <property name="file" value="sugoroku_tile_00000"/>
+    <property name="movie" value="ef_005"/>
+    <property name="scale" value="0.6"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="65" name="eff" type="flash" x="492" y="205.334" width="26.6667" height="21.333">
+   <properties>
+    <property name="file" value="sugoroku_tile_00000"/>
+    <property name="movie" value="ef_005"/>
+    <property name="scale" value="0.6"/>
+   </properties>
+   <ellipse/>
+  </object>
+ </objectgroup>
+ <objectgroup name="PathAttributes">
+  <object id="51" name="0" type="space" x="280" y="720" width="40" height="40">
+   <properties>
+    <property name="group" value="0"/>
+    <property name="next" value="1"/>
+   </properties>
+  </object>
+  <object id="52" name="1" type="space" x="360" y="760" width="40" height="40">
+   <properties>
+    <property name="group" value="0"/>
+    <property name="next" value="2"/>
+   </properties>
+  </object>
+  <object id="53" name="2" type="space" x="440" y="800" width="40" height="40">
+   <properties>
+    <property name="group" value="0"/>
+    <property name="next" value="3"/>
+   </properties>
+  </object>
+  <object id="54" name="3" type="space" x="520" y="760" width="40" height="40">
+   <properties>
+    <property name="group" value="0"/>
+    <property name="next" value="4"/>
+   </properties>
+  </object>
+  <object id="55" name="4" type="space" x="600" y="720" width="40" height="40">
+   <properties>
+    <property name="group" value="0"/>
+    <property name="next" value="5"/>
+   </properties>
+  </object>
+  <object id="56" name="5" type="space" x="680" y="760" width="40" height="40">
+   <properties>
+    <property name="group" value="0"/>
+    <property name="next" value="6"/>
+   </properties>
+  </object>
+  <object id="57" name="6" type="space" x="760" y="800" width="40" height="40">
+   <properties>
+    <property name="group" value="0"/>
+    <property name="next" value="7"/>
+   </properties>
+  </object>
+  <object id="58" name="7" type="space" x="840" y="840" width="40" height="40"/>
+  <object id="59" name="8" type="space" x="1080" y="480" width="40" height="40">
+   <properties>
+    <property name="group" value="1"/>
+    <property name="next" value="9"/>
+   </properties>
+  </object>
+  <object id="60" name="9" type="space" x="1000" y="440" width="40" height="40">
+   <properties>
+    <property name="group" value="1"/>
+    <property name="next" value="10"/>
+   </properties>
+  </object>
+  <object id="61" name="10" type="space" x="920" y="400" width="40" height="40">
+   <properties>
+    <property name="group" value="1"/>
+    <property name="next" value="11"/>
+   </properties>
+  </object>
+  <object id="62" name="11" type="space" x="840" y="360" width="40" height="40">
+   <properties>
+    <property name="group" value="1"/>
+    <property name="next" value="12"/>
+   </properties>
+  </object>
+  <object id="63" name="12" type="space" x="760" y="320" width="40" height="40">
+   <properties>
+    <property name="group" value="1"/>
+    <property name="next" value="13"/>
+   </properties>
+  </object>
+  <object id="64" name="13" type="space" x="680" y="280" width="40" height="40"/>
+ </objectgroup>
+</map>

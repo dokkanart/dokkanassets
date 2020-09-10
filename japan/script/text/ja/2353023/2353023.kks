@@ -1,0 +1,132 @@
+*start|スタート
+//ステージ2 ボス前
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "002"]
+
+*01
+//-------------------------------------------------------------------------------
+//  ガステル
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_081"]
+
+[character x = -250 y = -90 storage = "00934/atc_energyball_p_02" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon shape="002_01" x = 140 y = 80 scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+なにしにきた！[r]
+小僧ども！！
+[p]
+
+
+*02
+//-------------------------------------------------------------------------------
+//  孫悟空
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_081"]
+
+[character x = 220 y = -40 storage = "00261/idl_side_e_02" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon shape="001_02" x = -110 y = 50 scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+おまえか？[r]
+ねむり姫を[r]
+さらったってのは！
+[p]
+
+*03
+//-------------------------------------------------------------------------------
+//  ガステル
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_081"]
+
+[character x = -250 y = -90 storage = "00934/atc_energyball_p_02" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon shape="002_01" x = 130 y = 80 scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+オレは[r]
+ねむり姫じゃねえ！
+[p]
+
+*04
+//-------------------------------------------------------------------------------
+//  クリリン
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_081"]
+
+[character x = 200 y = -70 storage = "00270/heapup_p_02" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon shape="007_01" x = -95 y = 50 scale = 0.7 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 40]
+[quake target =".bln" power = 7 time = 0.2]
+どこにいる！
+[p]
+
+*05
+//-------------------------------------------------------------------------------
+//  ガステル
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_081"]
+
+[character x = -250 y = -90 storage = "00934/atc_energyball_p_02" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon shape="002_01" x = 110 y = 80 scale = 0.65 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 44]
+[quake target =".bln" power = 3 time = 0.2]
+んん！？
+[p]
+
+*06
+//-------------------------------------------------------------------------------
+//  クリリン
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_081"]
+
+[character x = 200 y = -70 storage = "00270/heapup_p_02" scale = 1.0 action = "fadein" time = 0.1]
+[character x = 215 y = 70 storage = "99999/ase" scale = 0.7 action = "fadein" time = 0.1]
+
+
+[balloon shape="004_02" x = -95 y = 50 scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+//[quake target =".bln" power = 3 time = 0.2]
+…のですか？
+[p]
+
+*07
+//-------------------------------------------------------------------------------
+//  ガステル
+//-------------------------------------------------------------------------------
+[se storage = "3022"]
+[coma shape="N0002L" bg = "bg_000_081"]
+
+[character x = -150 y = -90 storage = "00934/atc_front_p_01" scale = 1.1 action = "fadein" time = 0.1]
+[quake target = ".chara" power = 5 time = 0.4]
+
+
+[balloon x = 170 y = -170 shape="007_01" scale = 0.7 action = "expand" time = 0.1]
+[wait_anim target = ".bln"]
+[font size = 40]
+[quake target = ".bln" power = 7 time = 0.2]
+でえーい！！
+[p]
+
+
+//-------------------------------------------------------------------------------
+[stopbgm]

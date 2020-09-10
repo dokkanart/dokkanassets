@@ -1,0 +1,68 @@
+*start|スタート
+
+//"エリア１３ラウンド２開始"
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+//[bgm storage = "012"]
+
+*001
+//-------------------------------------------------------------------------------
+//  超サイヤ人孫悟飯(少年期)
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0001L" bg = "bg_004_001"]
+
+[character x = -190 y = -100 storage = "00199/heapup_p_01" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon x=120 y=100 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+地球を守るためには…[r]
+闘うしかない！！
+//[p]
+
+[wait time = 0.5]
+
+//点滅
+[se storage = "44"]
+//点滅
+[balloon shape="008_02" x = 140 y = -30 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+
+[balloon shape="008_02" x = 140 y = -30 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+
+//フェードアウト（フェードアウトするコマ）
+//[balloon x=130 y=40 shape="008_02" scale = 50.0 action = "fadein" time = 0.2]
+[wait time = 0.3] 
+
+
+*002
+//-------------------------------------------------------------------------------
+//  超サイヤ人2に変身
+//-------------------------------------------------------------------------------
+
+[coma shape="N0002L" bg = "bg_004_001"]
+
+[se storage = "50"]
+
+[lwfobject id = "kaki1" storage="kakimoji:ef_020" in="04" x=-120 y=90 scale = 2.5]
+[quake target = "kaki1" power = 15 time = 0.2]
+
+[character x = -140 y = -100 storage = "00203/atc_front_e_01" scale = 1.4 action = "fadein" time = 0.1]
+[quake target =".chara" power = 5 time = 0.2]
+
+[balloon x=170 y=-100 shape="006_02" scale = 0.9 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 7 time = 0.2]
+今度ははじめから[r]
+全力でいくぞ！！
+[p]
+//-------------------------------------------------------------------------------
+//[stopbgm]

@@ -1,0 +1,48 @@
+*start|スタート
+//究極のスーパーゴジータ！！　ボス前
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "026"]
+
+*01
+//----------------------------------------------------------
+// 超サイヤ人4孫悟空
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="S0001" bg = "bg_069_001"]
+
+[wait time = 0.7] 
+
+[character x = 80 y = -490 storage = "00504/card_01" scale = 2.0 action = "fadein" time = 0.2]
+
+[quake target = ".chara" power = 7 time = 0.4] 
+[se storage = "3035"]
+
+//シュンッ
+[lwfobject id = "kaki2" storage="kakimoji:ef_012" in="04" x=0 y=-50 scale = 3.5]
+[quake target = "kaki2" power = 15 time = 0.2]
+
+[wait_anim target=".chara"]
+
+[fadeout target = "kaki2" time = 0.3]
+
+[balloon x=-70 y=440 shape="001_02" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+超サイヤ人４になったオレには[r]
+ハンパな攻撃は[r]通用しねえぞ？[r]
+[p]
+
+[balloon x=100 y=-420 shape="006_01" scale = 0.9 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 7 time = 0.2]
+思う存分闘ってやる！[r]
+さあ来い！！
+[p]
+
+
+//-------------------------------------------------------------------------------
+[stopbgm]

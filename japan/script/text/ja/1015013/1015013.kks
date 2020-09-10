@@ -1,0 +1,121 @@
+
+*start|スタート
+
+//"１５−１ボス前"
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "005"]
+
+//-------------------------------------------------------------------------------
+//  トランクス
+//-------------------------------------------------------------------------------
+[coma shape="N0001R" bg = "bg_005_001"]
+
+[character x = 210 y = -200 storage = "90000/wait_right_surprise" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon id = "01" x = -100 y = 80 shape="004_01" scale = 0.85 action = "fadein" time = 0.1]
+[wait_anim target = "01"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+ご…[r]
+悟空さん！？
+[p]
+
+*coma2
+//-------------------------------------------------------------------------------
+//  バーダック
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+
+[coma shape="N0001L" bg = "bg_005_001"]
+
+[character x=-220 y=-160 storage = "00067/idl_side_p_01" scale = 1.5 action = "fadein" time = 0.1]
+
+[balloon x=130 y=100 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 30]
+ん…！？[r]
+なんだ[r]
+てめえらは…
+[p]
+
+*coma3
+//-------------------------------------------------------------------------------
+//  トランクス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_005_001"]
+
+[character x = 210 y = -200 storage = "90000/wait_right_anger_strong" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon id = "01" x = -100 y = 120 shape="001_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target = "01"]
+[font size = 28]
+ち…ちがう…[r]
+悟空さんじゃない…[r]
+だけど…
+[p]
+
+[balloon id = "01" x = -100 y = -80 shape="001_02" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target = "01"]
+[font size = 24]
+…このあいだの[r]
+ギニューのときのような[r]
+イヤな感じはしないぞ……
+[p]
+
+*coma4
+//-------------------------------------------------------------------------------
+//  バーダック
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_005_001"]
+
+[character x=-220 y=-160 storage = "00067/idl_side_p_01" scale = 1.5 action = "fadein" time = 0.1]
+
+[balloon x=135 y=130 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+こうやってヒトが[r]
+現れたってことは…
+[p]
+
+[balloon x=155 y=-70 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+…どうやら地獄に[r]
+落ちたわけじゃ[r]
+ないみてえだな…
+[p]
+
+
+
+*coma5
+//-------------------------------------------------------------------------------
+//  バーダック
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+
+[coma shape="N0002L" bg = "bg_005_001"]
+
+[character x=-200 y=-150 storage = "00067/heapup_p_01" scale = 1.5 action = "fadein" time = 0.1]
+
+[balloon x=145 y=100 shape="002_01" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 25]
+悪いが[r]
+オレが本当に[r]
+生きているのかどうか…
+[p]
+
+[balloon x=125 y=-155 shape="002_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+その証を確かめさせて[r]
+もらうぜ…！
+[p]
+
+[stopbgm]

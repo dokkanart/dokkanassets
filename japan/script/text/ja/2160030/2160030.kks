@@ -1,0 +1,70 @@
+*start|スタート
+//ステージ3 スタート
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "011"]
+
+*01
+//-------------------------------------------------------------------------------
+//  
+//-------------------------------------------------------------------------------
+[se storage = "46"]
+[coma shape="S0001" bg = "bg_000_058"]
+
+
+//カクンサ
+[character x = -220 y = 120 storage = "00819/card_01" scale = 0.7 angle = -20 action = "fadein" time = 0.1]
+
+//ロージィ
+[character x = 230 y = 80 storage = "00818/card_01" scale = 0.9 action = "fadein" time = 0.1]
+
+//リブリアン
+[character x = 0 y = 0 storage = "00816/card_03" scale = 1.0 angle = 0 action = "fadein" time = 0.1]
+
+[balloon shape="001_02" x = 0 y = 420 scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+愛に障害はつきもの…[r]
+障害を乗り越えてこそ[r]
+本当の愛！！
+[p]
+
+[balloon shape="001_03" x = 0 y = -270 scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+負けはしないわ！[r]
+全宇宙が私たちの愛を[r]
+待っている！
+[p]
+
+*02
+//-------------------------------------------------------------------------------
+//  ヘレス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+
+[coma shape="N0002L" bg = "bg_000_058"]
+
+[character x = -170 y = -390 storage = "90003/heresu" scale = 1.3 action = "fadein" time = 0.1]
+
+[balloon shape="001_01" x = 150 y = 40 scale = 0.8 action = "fadein" time = 0.1]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+[wait_anim target=".bln"]
+さすが[r]
+我が第2宇宙の[r]乙女たち！
+[p]
+
+[balloon shape="001_03" x = 120 y = -255 scale = 0.9 action = "fadein" time = 0.1]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+[wait_anim target=".bln"]
+美しきその魂に[r]
+この体がふるえるぞよ！
+[p]
+
+//-------------------------------------------------------------------------------
+[stopbgm]

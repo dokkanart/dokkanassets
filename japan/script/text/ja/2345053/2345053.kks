@@ -1,0 +1,89 @@
+*start|スタート
+//"ステージ５ボス前"
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "013"]
+
+*001
+//-------------------------------------------------------------------------------
+//  ベジータ
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0001R" bg = "bg_015_001"]
+
+[character id = "veg1" x=200 y=-100 storage = "00328/heapup_p_01" scale = 1.2 action = "fadein" time = 0.1]
+[flip target ="veg1" h=1]
+
+
+[balloon x = -110 y = 80 shape="006_02" scale = 0.8 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target = ".bln" power = 7 time = 0.2]
+はあぁぁーっ！！
+[p]
+
+//ベジータが超サイヤ人に変身する。
+[character id = "super" x = 200 y = -170 storage = "99999/supersaiyan" scale = 1.0 action = "expand" time = 0.1]
+
+[wait time = 0.1]
+
+//点滅（白）
+[se storage = "3025"]
+//点滅
+[balloon shape="008_02" x = 0 y = 0 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+//[balloon shape="008_02" x = 0 y = 0 scale = 50 action = "fadein" time = 0.1]
+//[wait time = 0.3]
+//[clear target = ".bln"]
+
+[balloon id = "white" shape="008_02" x = 0 y = 0 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = "veg1"]
+[clear target = "super"]
+[fadeout target = "white" time = 2.0]
+
+[lwfobject id = "kaki1" storage="kakimoji:ef_009" in="04" x=20 y=-120 scale = 1.1]
+[quake target = "kaki1" power = 1 time = 300]
+
+[character id = "super" x = 220 y = -240 storage = "99999/supersaiyan" scale = 1.2 action = "fadein" time = 0.1]
+[character id = "veg2" x=200 y=-100 storage = "00391/heapup_e_01" scale = 1.2 action = "fadein" time = 0.1]
+
+[wait_anim target="white"]
+
+// 空のフキダシ（セリフがないコマを送るために使用）
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+
+
+
+*002
+//-------------------------------------------------------------------------------
+//  超17号
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002L" bg = "bg_015_001"]
+
+[character x=-200 y=-250 storage = "00480/card_02" scale = 1.1  angle = 0 action = "fadein" time = 0.1]
+
+[balloon x=130 y=70 shape="002_03" scale = 1 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 7 time = 0.2]
+そんなコケおどしに[r]
+なんの意味もないことが[r]
+まだわかってないようだな
+[p]
+
+[balloon x=130 y=-180 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 7 time = 0.2]
+しょうがない[r]
+少しだけ技を見せてやる
+[p]
+
+//-------------------------------------------------------------------------------
+[stopbgm]

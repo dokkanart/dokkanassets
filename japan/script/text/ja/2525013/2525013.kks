@@ -1,0 +1,88 @@
+//ラウンド３開始
+
+*start|スタート
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+
+//[bgm storage = "013"]
+
+*001
+//-------------------------------------------------------------------------------
+//  孫悟空（GT）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+
+[coma shape="N0002L" bg = "bg_081_008"]
+
+
+[character id = "goku" x=-90 y=-50 storage = "00330/ape_atc_sp01_e_01" scale = 1.0 action = "fadein" time = 0.1]
+[flip target = "goku" h = 1]
+[quake target ="goku" power = 1 time = 300]
+
+
+[balloon x=130 y=330 shape="004_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+グオオオオ…！！
+[p]
+
+[se storage = "3024"]
+
+[clear target = "goku"]
+
+
+[character id = "ss" x=-120 y=-50 storage = "99999/supersaiyan" scale = 1.5 action = "expand" time = 0.1]
+[quake target ="ss" power = 9 time = 0.2]
+
+
+[character id = "goku2" x=-90 y=-50 storage = "00330/ape_atc_sp01_e_01" scale = 1.0]
+[flip target = "goku2" h = 1]
+[quake target ="goku2" power = 8 time = 0.2]
+
+[wait_anim target="ss"]
+
+
+
+//点滅（白）
+[se storage = "3025"]
+//点滅
+[balloon shape="008_02" x = 140 y = -30 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+//[balloon shape="008_02" x = 140 y = -30 scale = 50 action = "fadein" time = 0.1]
+//[wait time = 0.3]
+//[clear target = ".bln"]
+
+//フェードアウト（フェードアウトするコマ）
+[balloon x=0 y=0 shape="008_02" scale = 50.0 action = "fadein" time = 0.5]
+[wait time = 0.7] 
+
+
+*002
+//-------------------------------------------------------------------------------
+//  悟空が黄金の大猿に変身する。
+//-------------------------------------------------------------------------------
+//[se storage = "3008"]
+[coma shape="S0001" bg = "bg_081_008"]
+
+[character x=-20 y=-80 storage = "00504/card_02" scale = 1.3 angle=-5 action = "expand" time = 0.2]
+[quake target = ".chara" power = 20 time = 0.3]
+
+//フェードイン（フェードインするコマ）
+[balloon x=0 y=0 shape="008_02" scale = 50]
+[wait time = 1]
+[fadeout target = ".bln" time = 2]
+[wait_anim target=".bln"]
+
+[balloon x=150 y=390 shape="001_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+今度のオレは[r]
+ちょっと強えぞ…！！
+[p]
+
+//-------------------------------------------------------------------------------
+//[stopbgm]

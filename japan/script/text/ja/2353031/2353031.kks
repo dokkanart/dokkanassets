@@ -1,0 +1,287 @@
+*start|スタート
+//ステージ3 ゴール
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "002"]
+
+*01
+//-------------------------------------------------------------------------------
+//  ランチ（金髪）	
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_081"]
+
+[character x = -190 y = -140 storage = "00401/atc_sp01_p_01" scale = 1.1 action = "fadein" time = 0.1]
+
+[balloon x = 110 y = 65 shape="004_02" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target = ".bln"]
+[font size = 40]
+[quake target = ".bln" power = 3 time = 0.2]
+まずい！[r]
+は…は……
+[p]
+
+
+
+*02
+//-------------------------------------------------------------------------------
+//  ランチ（金髪）	
+//-------------------------------------------------------------------------------
+[se storage = "03"]
+[coma shape="N0004L" bg = "bg_000_081"]
+
+
+[balloon x = 0 y = 50 shape="006_02" scale = 0.75 action = "expand" time = 0.1]
+[wait_anim target = ".bln"]
+[font size = 36]
+[quake target = ".bln" power = 7 time = 0.2]
+　はっくしょい！！
+//[p]
+
+//点滅
+[balloon shape="008_02" x = 0 y = 0 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+
+// 空のフキダシ（セリフがないコマを送るために使用）
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+
+
+*03
+//-------------------------------------------------------------------------------
+//  ランチ（黒髪）	
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_081"]
+
+[character x = -170 y = -80 storage = "00401/card_02" scale = 1.0 action = "fadein" time = 0.1]
+
+[wait time = 0.3]
+
+[balloon x = 120 y = 90 shape="001_01" scale = 0.65 action = "fadein" time = 0.1]
+[wait_anim target = ".bln"]
+[font size = 44]
+//[quake target = ".bln" power = 3 time = 0.2]
+あら…？
+[p]
+
+[balloon x = 130 y = -90 shape="001_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target = ".bln"]
+[font size = 28]
+//[quake target = ".bln" power = 3 time = 0.2]
+わたし[r]
+どうしたのかしら…
+[p]
+
+*04
+//-------------------------------------------------------------------------------
+//  孫悟空
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_081"]
+
+[character x = 220 y = -40 storage = "00261/idl_side_e_02" scale = 1.2 action = "fadein" time = 0.1]
+
+
+[balloon shape="001_01" x = -110 y = 80 scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+ねむり姫[r]
+もーらった！
+[p]
+
+[balloon shape="001_02" x = -95 y = -110 scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+へへへ…これで[r]
+じいちゃんとこで[r]
+修業ができるぞ！
+[p]
+
+*05
+//-------------------------------------------------------------------------------
+//  ルシフェル
+//-------------------------------------------------------------------------------
+[se storage = "03"]
+[coma shape="N0004L" bg = "bg_000_081"]
+
+//[character x = -180 y = -100 storage = "00023/card_04" scale = 0.8 action = "fadein" time = 0.1]
+
+[balloon x = 0 y = 30 shape="006_01" scale = 0.65 action = "expand" time = 0.1]
+[wait_anim target = ".bln"]
+[font size = 44]
+[quake target = ".bln" power = 7 time = 0.2]
+まて！！
+[p]
+
+
+*06
+//-------------------------------------------------------------------------------
+//  ルシフェルがクリリンをつかまえている。
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_081"]
+
+
+[character x = -30 y = -320 storage = "00587/idl_side_p_01" scale = 1.2 action = "fadein" time = 0.1]
+
+[character id = "kuri" x = -250 y = -100 storage = "00270/dam_side_p_02" scale = 0.8 angle = 60 action = "fadein" time = 0.1]
+[quake target = "kuri" power = 2 time = 0.3]
+
+
+[balloon x = 120 y = 0 shape="004_01" scale = 0.65 action = "fadein" time = 0.1]
+[wait_anim target = ".bln"]
+[font size = 44]
+[quake target = ".bln" power = 3 time = 0.2]
+ぐぐ……
+[p]
+
+*07
+//-------------------------------------------------------------------------------
+//  孫悟空
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_081"]
+
+[character x = 220 y = -40 storage = "00261/idl_side_e_02" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon shape="006_02" x = -110 y = 60 scale = 0.7 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 40]
+[quake target =".bln" power = 7 time = 0.2]
+クリリン！！
+[p]
+
+
+
+*08
+//-------------------------------------------------------------------------------
+//  ルシフェル
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_081"]
+
+[character x = -30 y = -320 storage = "00587/idl_side_p_01" scale = 1.2 action = "fadein" time = 0.1]
+
+[character id = "kuri" x = -250 y = -100 storage = "00270/dam_side_p_02" scale = 0.8 angle = 60 action = "fadein" time = 0.1]
+//[quake target = "kuri" power = 2 time = 0.3]
+
+[balloon x = 120 y = 50 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target = ".bln"]
+[font size = 28]
+//[quake target = ".bln" power = 3 time = 0.2]
+友達を[r]
+殺されたくなかったら[r]
+ねむり姫を返せ！
+[p]
+
+*09
+//-------------------------------------------------------------------------------
+//  孫悟空
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_081"]
+
+[character x = 220 y = -40 storage = "00261/idl_side_e_02" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon shape="001_03" x = -110 y = 60 scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 54]
+//[quake target =".bln" power = 3 time = 0.2]
+………
+[p]
+
+
+
+*10
+//-------------------------------------------------------------------------------
+//  ルシフェル
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_081"]
+
+[character x = -30 y = -320 storage = "00587/idl_side_p_01" scale = 1.2 action = "fadein" time = 0.1]
+
+[character id = "kuri" x = -250 y = -100 storage = "00270/dam_side_p_02" scale = 0.8 angle = 60 action = "fadein" time = 0.1]
+//[quake target = "kuri" power = 2 time = 0.3]
+
+[balloon x = 110 y = 90 shape="002_01" scale = 0.65 action = "fadein" time = 0.1]
+[wait_anim target = ".bln"]
+[font size = 44]
+[quake target = ".bln" power = 3 time = 0.2]
+さあ！
+[p]
+
+
+*11
+//-------------------------------------------------------------------------------
+//  孫悟空
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_081"]
+
+[character x = 220 y = -40 storage = "00261/idl_side_e_02" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon shape="001_03" x = -110 y = 60 scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+//[quake target =".bln" power = 3 time = 0.2]
+…わかったよ！
+[p]
+
+
+
+*12
+//-------------------------------------------------------------------------------
+//  クリリン
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_081"]
+
+[character x = -30 y = -320 storage = "00587/idl_side_p_01" scale = 1.2 action = "fadein" time = 0.1]
+
+[character id = "kuri" x = -250 y = -100 storage = "00270/dam_side_p_02" scale = 0.8 angle = 60 action = "fadein" time = 0.1]
+[quake target = "kuri" power = 2 time = 0.3]
+
+[balloon x = 120 y = 0 shape="004_02" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target = ".bln"]
+[font size = 36]
+[quake target = ".bln" power = 3 time = 0.2]
+ご…悟空……
+[p]
+
+
+*13
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002L" bg = "bg_000_068"]
+
+//[wait time = 0.7]
+
+[character x = 180 y = -35 storage = "99999/nemurihime" scale = 0.9 action = "fadein" time = 0.1]
+
+[balloon shape="003_01" x = -130 y = -30 scale = 1.6 action = "fadein" time = 0.1]
+[font size = 17]
+//[quake target =".bln" power = 3 time = 0.2]
+[wait_anim target=".bln"]
+ねむり姫を[r]
+再び取り戻した[r]
+ルシフェル…[r]
+　[r]
+いったいルシフェルは[r]
+ねむり姫を使い[r]
+なにを企んで[r]
+いるのだろうか…！？
+[p]
+
+
+
+//-------------------------------------------------------------------------------
+[stopbgm]

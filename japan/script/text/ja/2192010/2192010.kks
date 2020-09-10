@@ -1,0 +1,70 @@
+*start|スタート
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+//[bgm storage = "063"]
+
+*001
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+[coma shape="S0001" bg = "bg_000_014"]
+
+//黒
+[character id = "kuro2" x=0 y=0 storage = "99999/black" scale = 50 angle = 90 action = "fade:100"] 
+
+//[character id = "freeza" x=-50 y=-70 storage = "00878/card_01" scale = 1.0 action = "fade:40" time = 0.1] 
+
+[character id = "fune" x=0 y=0 storage = "90003/spaceship_br" scale = 2.0 action = "fade:40" time = 0.1] 
+
+
+
+
+[balloon id = "n" x=0 y=100 shape="009_17" scale = 1.0 action = "fadein" time = 2.0]
+[font color="#FFFFFF"]
+[font size = 30]
+　[r]
+　[r]
+　[r]
+　[r]
+　[r]
+　[r]
+　[r]
+復活したフリーザを[r]
+再び総帥として迎えた[r]
+新生フリーザ軍…[r]
+　[r]
+　[r]
+　[r]
+　[r]
+　[r]
+　[r]
+　[r]
+　[r]
+　[r]
+　[r]
+　[r]
+　[r]
+　[r]
+　[r]
+　[r]
+　[r]
+フリーザは[r]
+軍の再生のため[r]
+ひとりでも多くの戦闘員を[r]
+探してくるよう[r]
+部下たちに命じるのだった…[r]
+
+[balloon id = "kuro" x=0 y=0 shape="008_03" scale = 50.0]
+[wait time = 0.7]
+[fadeout target = "kuro" time = 2.0]
+
+
+[wait_anim target="kuro"]
+
+
+// 空のフキダシ（セリフがないコマを送るために使用）
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+//[stopbgm]

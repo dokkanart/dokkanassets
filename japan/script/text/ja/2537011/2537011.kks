@@ -1,0 +1,47 @@
+*start|スタート
+ 
+//エリア1 BOSS前
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+//[bgm storage = "012"]
+ 
+*001
+//-------------------------------------------------------------------------------
+//  ベジータ&孫悟空
+//-------------------------------------------------------------------------------
+[se storage = "3022"]
+[coma shape="S0001" bg = "bg_008_001"]
+ 
+
+
+[character id = "1" x = 170 y = 150 storage = "00282/card_02" scale = 1.1 action = "fadein" time = 0.1]
+[quake target ="1" power = 4 time = 0.2]
+
+[character id = "2" x = -50 y = -200 storage = "00003/card_11" scale = 1.1 action = "fadein" time = 0.1]
+
+
+
+ 
+[balloon x=-150 y=450 shape="002_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+ここで[r]
+終わらせてやる！
+[p]
+
+[quake target ="2" power = 4 time = 0.2]
+
+[balloon x=140 y=-350 shape="001_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+いっちょ[r]
+かましてみっか！
+[p]
+ 
+
+
+//-------------------------------------------------------------------------------
+//[stopbgm]

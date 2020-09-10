@@ -1,0 +1,149 @@
+//"ステージ１０ボス前"
+
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "007"]
+
+*001
+//-------------------------------------------------------------------------------
+//  ウイス
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0001R" bg = "bg_004_002"]
+
+[wait time = 0.7]
+
+[character id = "veg" x=240 y=-110 storage = "00243/idl_side_e_01" scale = 1.0 action = "fadein" time = 0.2]
+[quake target = "veg" power = 7 time = 0.4]
+
+[character id = "gok" x=120 y=-140 storage = "00242/idl_side_e_01" scale = 1.3 action = "fadein" time = 0.2]
+[quake target = "gok" power = 7 time = 0.4]
+
+[se storage = "3035"]
+
+//シュンッ
+[lwfobject id = "kaki2" storage="kakimoji:ef_012" in="04" x=110 y=-110 scale = 2.0]
+[quake target = "kaki2" power = 15 time = 0.2]
+
+[wait time = 0.7]
+
+[balloon x=-140 y=120 shape="001_02" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 40]
+//[quake target =".bln" power = 3 time = 0.2]
+こんにちは
+[p]
+
+*002
+//-------------------------------------------------------------------------------
+//  クリリン
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_004_002"]
+
+[character x = -180 y = -70 storage = "00009/idl_side_p_02" scale = 1.8 action = "fadein" time = 0.1]
+
+[balloon x=120 y=80 shape="001_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+ビ…ビルス様…[r]
+ウイスさん…！
+[p]
+
+*003
+//-------------------------------------------------------------------------------
+//  ビルス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0003R" bg = "bg_004_002"]
+
+[character x = 280 y = -80 storage = "00243/idl_side_e_01" scale = 0.6 action = "fadein" time = 0.1]
+
+[character x = 220 y = -130 storage = "00242/idl_side_e_01" scale = 0.6 action = "fadein" time = 0.1]
+
+[character x = -170 y = -120 storage = "00245/idl_side_e_01" scale = 2.0 action = "fadein" time = 0.1]
+
+[balloon x=120 y=120 shape="001_02" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+ベジータはやっぱり[r]
+いっしょに闘わないんだな
+[p]
+
+*004
+//-------------------------------------------------------------------------------
+//  ウイス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_004_002"]
+
+[character x = 180 y = -220 storage = "00243/idl_side_e_01" scale = 1.7 action = "fadein" time = 0.1]
+
+[balloon x=-100 y=120 shape="001_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+あの２人は絶対に[r]
+組みませんよ
+[p]
+
+[balloon x=-120 y=-90 shape="001_03" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+プライドが[r]
+高すぎるんです
+[p]
+
+*005
+//-------------------------------------------------------------------------------
+//  ビルス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_004_002"]
+
+[character id = "veg" x=240 y=-180 storage = "00243/idl_side_e_01" scale = 1.0 action = "fadein" time = 0.1]
+
+[character id = "gok" x=120 y=-240 storage = "00242/idl_side_e_01" scale = 1.3 action = "fadein" time = 0.1]
+
+[balloon x=-160 y=80 shape="001_01" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 40]
+[quake target =".bln" power = 3 time = 0.2]
+バカだね〜
+[p]
+
+[balloon x=140 y=-140 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+ほほほ…[r]
+あなたといっしょです
+[p]
+
+*006
+//-------------------------------------------------------------------------------
+//  "悟空（超サイヤ人ゴッドSS）"
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_004_002"]
+
+[character x=140 y=-150 storage = "00239/card_01" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x=-130 y=60 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+へへ…じゃあ[r]
+やってみっか…！
+[p]
+
+
+//-------------------------------------------------------------------------------
+
+[stopbgm]

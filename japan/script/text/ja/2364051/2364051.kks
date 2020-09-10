@@ -1,0 +1,178 @@
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  封印からの復活 ゴール
+//-------------------------------------------------------------------------------
+[bgm storage = "008"]
+
+*001
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+//[coma shape="N0004R" bg = "bg_000_014"]
+[coma id = "coma1" shape="S0001" bg = "bg_000_014"]
+
+[balloon x=0 y=120 shape="003_01" scale = 1.6 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 15]
+//[quake target =".bln" power = 3 time = 0.2]
+大会の異変を察知し[r]
+悟飯を助けに来た[r]
+ヤムチャと天津飯…[r]
+　[r]
+だが[r]
+ボージャックの[r]
+部下である3人[r]
+ブージン、ビドー、[r]
+ザンギャは[r]
+恐るべき強さで[r]
+ふたりを迎え撃ち…
+[p]
+
+//*002
+//-------------------------------------------------------------------------------
+//  ブージンたち
+//-------------------------------------------------------------------------------
+//[se storage = "50"]
+//[coma id = "coma1" shape="S0001" bg = "bg_000_019"]
+
+//[lwfobject id = "kaki1" storage="kakimoji:ef_008" in="04" x=-0 y=0 scale = 2.5]
+//[quake target = "kaki1" power = 15 time = 0.4]
+
+
+//[character x=-0 y=190 storage = "00294/atc_front_p_01" scale = 0.8 action = "fadein" time = 0.1]
+//[quake target =".chara" power = 7 time = 0.4]
+
+//[character x=-190 y=-120 storage = "00296/atc_front_e_01" scale = 1.2 action = "fadein" time = 0.1]
+//[quake target =".chara" power = 7 time = 0.4]
+
+//[character x=180 y=-90 storage = "00297/atc_front_p_01" scale = 0.9 action = "fadein" time = 0.1]
+//[quake target =".chara" power = 7 time = 0.4]
+
+//[balloon x = 0 y = 0 shape="002_01" scale = 0]
+//[p]
+
+*003
+//-------------------------------------------------------------------------------
+//  ブージンたち３人が、ヤムチャと天津飯に攻撃
+//-------------------------------------------------------------------------------
+[se storage = "3021"]
+[coma shape="N0002L" bg = "bg_000_019"]
+
+[lwfobject id = "kaki1" storage="kakimoji:ef_018" x=-120 y=190+130 scale = 2.5 action = "fadein" time = 0.1]
+[quake target = "kaki1" power = 15 time = 0.4]
+
+[character x=180 y=90+130 storage = "00212/dam_roll_e_01" scale = 0.9 action = "fadein" time = 0.1]
+[quake target =".chara" power = 7 time = 0.4]
+
+[character x=80 y=230+130 storage = "00297/atc_down_p_02" scale = 0.9 action = "fadein" time = 0.1]
+[quake target =".chara" power = 7 time = 0.4]
+
+[character x=100 y=-160+130 storage = "00011/dam_side_e_01" scale = 1.2 action = "fadein" time = 0.1]
+[quake target =".chara" power = 7 time = 0.4]
+
+[character x=-10 y=10+130 storage = "00294/atc_kick_p_01" scale = 0.85 action = "fadein" time = 0.1]
+[quake target =".chara" power = 7 time = 0.4]
+
+[character x=-190 y=-90+130 storage = "00296/dash_p_01" scale = 1.0 action = "fadein" time = 0.1]
+[quake target =".chara" power = 7 time = 0.4]
+
+[character x=-260 y=-60+130 storage = "99999/04_syougeki" scale = 0.9 action = "fadein" time = 0.1]
+[quake target =".chara" power = 7 time = 0.4]
+
+[character x=350 y=100+130 storage = "99999/04_syougeki" scale = 1.3 action = "fadein" time = 0.1]
+[quake target =".chara" power = 7 time = 0.4]
+
+[character x=190 y=-90+130 storage = "99999/04_syougeki" scale = 1.1 action = "fadein" time = 0.1]
+[quake target =".chara" power = 7 time = 0.4]
+
+[character x=50 y=60+130 storage = "99999/04_syougeki" scale = 0.8 action = "fadein" time = 0.1]
+[quake target =".chara" power = 7 time = 0.4]
+
+[character x=-250 y=60+130 storage = "99999/04_syougeki" scale = 0.5 action = "fadein" time = 0.1]
+[quake target =".chara" power = 7 time = 0.4]
+
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+*004
+//-------------------------------------------------------------------------------
+//  孫悟飯（少年期）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_019"]
+
+[character x=200 y=-125 storage = "00305/heapup_e_01" scale = 1.3 action = "fadein" time = 0.1]
+
+[balloon shape="006_01" x = -90 y = 40 scale = 0.8 action = "expand" time = 0.1]
+[font size = 32]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 7 time = 0.2]
+ヤムチャさん！！[r]
+天津飯さん！！
+[p]
+
+*005
+//-------------------------------------------------------------------------------
+//  ブージンたち
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_019"]
+
+[character x=-30 y=-140 storage = "00296/heapup_p_01" scale = 1.1 action = "fadein" time = 0.1]
+
+[character id = "zan2" x=-280 y=-145 storage = "00294/idl_side_p_01" scale = 1.1 action = "fadein" time = 0.1]
+
+[character x=-80 y=-180 storage = "00297/heapup_p_01" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon x=160 y=80 shape="002_02" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+//[quake target =".bln" power = 3 time = 0.2]
+ふっふっふ…
+[p]
+
+*006
+//-------------------------------------------------------------------------------
+//  孫悟飯（少年期）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_000_019"]
+
+[character x=170 y=-150 storage = "00305/heapup_e_01" scale = 1.4 action = "fadein" time = 0.1]
+
+[balloon shape="007_01" x = -150 y = 50 scale = 0.8 action = "expand" time = 0.1]
+[font size = 32]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 7 time = 0.2]
+…ゆるさない！！
+
+[wait time = 0.3]
+
+//超サイヤ人に変身
+[se storage = "50"]
+//点滅
+[balloon shape="008_02" x = 140 y = -30 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+
+[clear target = ".chara"]
+
+[lwfobject id = "kaki1" storage="kakimoji:ef_020" x=120 y=-230 scale = 2.0]
+[quake target = "kaki1" power = 15 time = 0.4]
+
+[character id = "super" x = 165 y = -200 storage = "99999/supersaiyan" scale = 1.0]
+[quake target ="super" power = 9 time = 0.4]
+[flip target ="super" h=1]
+
+[character x=170 y=-150 storage = "00306/heapup_e_01" scale = 1.4]
+[quake target = ".chara" power = 7 time = 0.4]
+
+[wait time = 0.2]
+
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+//-------------------------------------------------------------------------------
+[stopbgm]

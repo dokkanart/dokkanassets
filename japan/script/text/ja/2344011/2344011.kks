@@ -1,0 +1,150 @@
+*start|スタート
+//ステージ1ゴール
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "002"]
+
+*01
+//-------------------------------------------------------------------------------
+//  リブリアン
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0003L" bg = "bg_000_060"]
+
+[character x = -180 y = -130 storage = "00816/dam_side_p_03" angle = 20 scale = 1.3 action = "fadein" time = 0.1]
+[quake target =".chara" power = 5 time = 0.4]
+
+[balloon shape="004_02" x = 140 y = 110 scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+どうして！？[r]
+愛なき者の[r]
+どこにそんな力が！？
+[p]
+
+[se storage = "45"]
+[fadeout target = ".chara" time = 0.7]
+
+[wait_anim target=".chara"]
+
+// 空のフキダシ（セリフがないコマを送るために使用）
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+
+*02
+//-------------------------------------------------------------------------------
+//  18号
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_056"]
+
+[character x = 190 y = -180 storage = "00020/heapup_e_05" scale = 1.2 action = "fadein" time = 0.1]
+
+
+[balloon x=-80 y=70 shape="002_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+どうしてだ？[r]
+自分で考えろ！
+[p]
+
+
+
+*03
+//-------------------------------------------------------------------------------
+//  界王神
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_060"]
+
+[character x = -190 y = -150 storage = "00361/card_01" scale = 1.1 action = "fadein" time = 0.1]
+
+
+[balloon x=100 y=100 shape="001_02" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+愛の力ですね…[r]
+クリリンさんと18号さんの[r]
+愛の力が勝ったんですよ！
+[p]
+
+[balloon x=100 y=-105 shape="001_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+ラブラブで[r]
+うらやましいなあ！[r]
+にくいぞ おふたり！
+[p]
+
+
+*04
+//-------------------------------------------------------------------------------
+//  18号
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_056"]
+
+[character x = 190 y = -180 storage = "00020/heapup_e_05" scale = 1.2 action = "fadein" time = 0.1]
+
+
+[balloon x=-80 y=70 shape="002_01" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+//[quake target =".bln" power = 3 time = 0.2]
+殺すぞ…
+[p]
+
+
+*05
+//-------------------------------------------------------------------------------
+//  界王神
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_060"]
+
+[character x = -190 y = -150 storage = "00361/card_01" scale = 1.1 action = "fadein" time = 0.1]
+[character x = -230 y = 70 storage = "99999/ase" scale = 0.7 action = "fadein" time = 0.1]
+
+[balloon x=100 y=70 shape="004_04" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+すみません…[r]
+調子に乗りました…
+[p]
+
+*06
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0004R" bg = "bg_000_056"]
+
+//[character id = "tail" x=160 y=-30 storage = "99999/tail" scale = 1.8 angle = 50 action = "fadein" time = 0.1]
+//[character id = "goku" x=-50 y=30 storage = "00324/heapup_e_01" scale = 2.0 action = "fadein" time = 0.1]
+
+[balloon x=0 y=-30 shape="003_02" scale = 1.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 14]
+//[quake target =".bln" power = 7 time = 0.2]
+ひとり またひとりと[r]
+減っていく戦士たち…[r]
+はたして どの宇宙が[r]
+このサバイバルを制する[r]
+ことができるのか…[r]
+そして[r]
+超ドラゴンボールで[r]
+願いを叶えるのは誰なのか[r]
+　[r]
+力の大会 試合終了まで[r]
+残りあと15分…
+[p]
+
+//-------------------------------------------------------------------------------
+[stopbgm]

@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="44" height="30" tilewidth="40" tileheight="40" nextobjectid="61">
+ <properties>
+  <property name="charageki_bg_01" value="normal_008_001"/>
+ </properties>
+ <tileset firstgid="1" name="Path" tilewidth="40" tileheight="40" spacing="1" tilecount="32" columns="4">
+  <image source="image/common/mapchip-base.png" width="163" height="327"/>
+ </tileset>
+ <tileset firstgid="33" name="Attribute" tilewidth="40" tileheight="40" spacing="1" tilecount="32" columns="4">
+  <image source="image/common/mapchip-meta.png" width="163" height="327"/>
+ </tileset>
+ <tileset firstgid="65" name="brown_01" tilewidth="40" tileheight="40" spacing="1" tilecount="144" columns="12">
+  <image source="image/area_050/brown_01.png" width="491" height="491"/>
+ </tileset>
+ <tileset firstgid="209" name="brown_02" tilewidth="40" tileheight="40" spacing="1" tilecount="64" columns="8">
+  <image source="image/area_050/brown_02.png" width="327" height="327"/>
+ </tileset>
+ <tileset firstgid="273" name="green_01" tilewidth="40" tileheight="40" spacing="1" tilecount="144" columns="12">
+  <image source="image/area_050/green_01.png" width="491" height="491"/>
+ </tileset>
+ <tileset firstgid="417" name="green_02" tilewidth="40" tileheight="40" spacing="1" tilecount="144" columns="12">
+  <image source="image/area_050/green_02.png" width="491" height="491"/>
+ </tileset>
+ <tileset firstgid="561" name="lake_01" tilewidth="40" tileheight="40" spacing="1" tilecount="96" columns="12">
+  <image source="image/area_050/lake_01.png" width="491" height="327"/>
+ </tileset>
+ <tileset firstgid="657" name="lake_02" tilewidth="40" tileheight="40" spacing="1" tilecount="108" columns="12">
+  <image source="image/area_050/lake_02.png" width="491" height="368"/>
+ </tileset>
+ <tileset firstgid="765" name="object" tilewidth="40" tileheight="40" spacing="1" tilecount="72" columns="12">
+  <image source="image/area_050/object.png" width="491" height="245"/>
+ </tileset>
+ <tileset firstgid="837" name="rock_01" tilewidth="40" tileheight="40" spacing="1" tilecount="120" columns="12">
+  <image source="image/area_050/rock_01.png" width="491" height="409"/>
+ </tileset>
+ <tileset firstgid="957" name="rock_02" tilewidth="40" tileheight="40" spacing="1" tilecount="144" columns="12">
+  <image source="image/area_050/rock_02.png" width="491" height="491"/>
+ </tileset>
+ <layer name="bg" width="44" height="30">
+  <data encoding="base64" compression="zlib">
+   eJztwzENAAAMA6BORf07rYw9kNBLqqqqqqr6cH3Le8E=
+  </data>
+ </layer>
+ <layer name="green_tex" width="44" height="30">
+  <data encoding="base64" compression="zlib">
+   eJztlD1SxDAMhZ0j0Gy3zbbUsG127JSAgQpY4Co+Wo62SiI5LxrZu8NQ+s28kSf++6Qocc7WQ+f6R/KR7MlD5xxFN7DjEqfnfeDoIYbFI43HYXEf2bxvjOxpHMDyLK5703Q3zRX1RGeeyfvl/swYgZXPELa+xhQgD14zSj6aEfPgu5Mwl3Ta3o313PDyefO6GpPUh/NNYbl/jpF50MgbYX9Jqh8yq1HnOQZmrzDl9cyTOYOy8EajJ2q6p/m79Y7eG4ziQeWATNJPfl0/5zFADIXa8t5pXOSl2jqqrTvyemRU31tmvcYk53jIBeassVMxlfrhBLVCDj225ipMOT+spazDXta9hGdYon+Do3+D2wOH0Z/5Gda9xKR6KGFOyKT7GPOofW/C/Ux+Ue9/8iv5jXMKndnXub7Sw9grYa3Z7Nht+j1hP02W+2r6oPlP8hfXe0c+8Pib/NNtcwpGPjvICe0LUY/lnPcrrLcKczowH+bzq3LyBrswneEM65xbWP47J3xPwlZioj2J9qa/3tnU1NTU1NTU1NTU1FTTBTgP1ZU=
+  </data>
+ </layer>
+ <layer name="green_tex2" width="44" height="30">
+  <data encoding="base64" compression="zlib">
+   eJzVmM12gjAQheERXLjswiXare2WniRL22xt+zA+Go/WQWfizRD+1JY059wDQcBvJncCwZbFyZE8y3Df8n577IP0TjqQioXasSyKT5JnPgesyPhN+iLRuafjgrzSPOT2ifnWZVHnxIgNc1plxpZq6NO3f8CbSz1NaTuqN6mnpVmG2p44X0iv5ePvTfVZP+peyGlZObYUZ468Q5xUZw3NY83SjNi2V76a2GrNnDFvRzTnNiYz3uqSw9pfctuqER+0W5sRb+vdFfM64HUgnwnvjlkt5Je5Q35z8MPQfMA6MzrY/hVbm8Nn1oa14nlKuNivnfxKjn/Dv8K1Bm1gvFPy8Txw9i5z61ju4t0rNhxbo5SYn8JxD+qJ6fwOaW98z0HfuevY1VArRaIfcbo4jrC2ccDO14X1hLuRd9u9ZyST6JvEvmbiNVlvLOYOXnhGhrzh2Oq+nKNjtNdjEW9PLDfxVgkvOnVM902XL8TBMQU/uPj6sB6e64cJ8+UkJWoQvx9EsVjIr5/JW8H/6brW9T1S7+E3GXPhGopljh/k+T6Wuz5urzjRF5I7ZuuNZc58pt/1+vI6JR5dl7I+Z/XGMtUPklsZJ/0sSPliajzCC99BhmKZxLtVnHN4UnWmPaqffy4+72Rm+nfMC1o6prGx0PcWfvSv6AcOEvm8
+  </data>
+ </layer>
+ <layer name="green" width="44" height="30">
+  <data encoding="base64" compression="zlib">
+   eJztmLkSwjAMRJO/gB/krLhpuGm4qTh/lqWgyQQiaW3jYdDMqxhF62hlxySJPippklRBDdRBAzRTw4MCRAu62qADuqAH+mAAhhFqHkHTGEzAFMzAHCzAMkK9K2hagw3Ygh3YgwM4Rqj3GSfoOoMLuIIbuCu0hvK/tk4p5zfW/1INruaM9b9Ug7bOu/fA+l+qQVOnqBeM/zVrldZhel7kT3bWs1Eieq6dkTKhMxuW9+DrLPK1f/o4i7Q9y9uDP4Vrf8b0/SDps8ueMb7S9NlFz9jzMnSf2XqhvxOZeq8Zdj2b1rPqG/ctqz+ledI1SfdTiT/zniXJ83GHlPozq1mS52tvsM5DUd7/Dvmb/6Gwa7TmW/zPzjiTb/E/O+Nsvtb/1hl/ADTaBOs=
+  </data>
+ </layer>
+ <layer name="green" width="44" height="30">
+  <data encoding="base64" compression="zlib">
+   eJzt19duwyAYhmFz/1fRvZvuNt0r3Xvvvfe6gL45qIQqx4DB2JH8SY+Ug2D/KD8EgiBPnjxppUEEQSOa0IwWkXZF4SlQVxe60YNe9KEfAxmquUgtwxjBKMYwjglMYgrTmMFsBuouUcMc5rGARSxhGStYxRrWsZGBejepYQvb2MEu9rCPAxziCMc4UdTrq/fPeO45LnCJK1zjBre4U7xXt/dr+FyLOtSL8Pm1og3tGnN94TuveMM7PvAZMc609zvQKdTzG8RQyHsLlr+Xae/HXdvyOJuY9n7ctS2Ps41J78dd2/I4V9Hp/VOhN797PPwb+zfOZx553xOeReX5feEbP55rq4a43l+Tju3+qpuoPlb9t8lJ+uxUVIyJ+m8LS9Jnp5LjHnJ5dqr0/HJcnats9lfduLxT+Nhfq+FOIcdmXaSx39qsC1/7rZy4d4py0rirmt4p5KRxV/0FnWZGvQ==
+  </data>
+ </layer>
+ <layer name="hole" width="44" height="30">
+  <data encoding="base64" compression="zlib">
+   eJzt10kKgDAMBdD0LnVYOi2djubR/bgqIkiwNqnmwd8nxhAlMsbkwjvapGuIBb1QgZRIhdQufQ0r43k2qK9FOqRHBoF6OUbUNyEzsrij1+Q0zJjjbsba9k/DjA2PF9rDv4qxE9y9tz18LtU7G96oHIQ3SpurmYU3yhgpmm6gtu/IN9gN5Pva/9IZt78d0MgPEw==
+  </data>
+ </layer>
+ <layer name="lake2" width="44" height="30">
+  <data encoding="base64" compression="zlib">
+   eJzt1rlSVFEYReFTPPl+BSfEQBzAQBxxQibFCZxBRCFCBiNE4AEI/C5Rl4HS1Q03ObtqZdTeq4vu+k8pNTU1NTU1NSedBwOlPMSjgdPfthnb4ZB//d00txnM4hmeYw5ncBbncB4XevwMQzwuYhC6ojO6YyO2YjO2wyFcwinTf7nPc1jAW7zDe3zAR1zGMK7gKq716DtqewTXoSs6ozs2Yis2YzscwiWcwi3zHc7LHL5iBd/wHatYw02M4RZu406Pvvft3sNd6IrO6I6N2IrN2A6HcAmncMtyh+86hx/YwCa2sI2feIwnmMBTTPbhO938f6egKzqjOzZiKzZjOxzCJZzCLesdvjscfmEXv7GHfRzgBV7iFV7jTR9/g7qiM7pjI7ZiM7bDIVzCKdyy85/fX5NDbp/wGYtYwpc++uqKzuiOjdjK4TG8ampqTi9tvheOm27eC259cfOb218utfCZun0vuPXFzW9uf7nRgm+37wW3vrj5ze0v4y34dvtecOuPvj9tpa33Qr9z0u+FtvIHemXWQg==
+  </data>
+ </layer>
+ <layer name="obj" width="44" height="30">
+  <data encoding="base64" compression="zlib">
+   eJzt2CdPQ1EAhuELvYywFVuxFVuxHfNH9Y8xHdMxHdMxHSvlMSQETEXbE+B8yVPRXPGKk5ueJsnvXS7jI02SMsrJkLLq+zXW2WCTrUzY1hpdtdRRTwONNLGtbYdd9tjnIHBvs64WWmmjnQ46OdR2xDEnnHIWuLdLVzc99NJHPwOca7vgkiuuuQncO6hriGFGGGWMcW613XHPA488Be6d0DXJFNPMMMscz9peeOWN98Ctn5vXtsAiSyyzQgWVVFGdhq78Oe+qrHdWNp9nc3k+FxcXFxcXFxf3fV9/K8X9ncU7cvH23+/IxT5bhbwjl+JsFfKOXKqzVag7crH+f/kAiy9q6w==
+  </data>
+ </layer>
+ <layer name="obj" width="44" height="30">
+  <data encoding="base64" compression="zlib">
+   eJztl9dKA0EUhhd8NsuFXS/semUHGxawjVGvxNiVGLvEXoi9vJxfIAPDspOdrSrkhw92x9kz/856zpykSyzrAMJSilj7kM7Htd9LbXC9CVuwDTuwC3sOXuoYq4cGuISrEP1miHWhxLXfSx1yfQTHcAKncAbnDl7aGeuATniGlxD9Zon1pMS130tdc30Dt3AH9/AAjw5e+hjrh4EAPpcCvuMrz7/BO3zAJ3zBt0PcccYmYFL5G+uLRUjAAnhdv5RYZVAOFSF+Lyk8WQkl7joe1yAJqz78qjnR6NFvJfOrXJ7Bk5VU5pC7ghwW5LJI+fCr5kSXR79NzG92eUbWGSlyV5DDglwWGR9+1ZwYjOD/QdYZKXJXkMOCXBZZH37VnJhy8DvE2DCM+HwXWWfi0jRrzcBsTGuOss5YjO8XVHN4nf8nfot7W1RRheVWn03O7Cik6+vc6rPJmR2nqvFSA7V5T1H3e0HVgqdWaMt7C9LvuclkL9zmdDPWo4zr+j31G/iVyV543S9dv6d+A78y6X299se6fi/3DXoD+jXpfaPuj73Irfc1nVNIav3967UjJ7X+hlk74jiHgvxWtCuOc0iXC8uadVeU8d8413W5sGHgI+5z/QfvIIW9
+  </data>
+ </layer>
+ <layer name="obj" width="44" height="30">
+  <data encoding="base64" compression="zlib">
+   eJzt1qdOBVEURuEDdyiGYika0IAGHPWh9otRHdVRHdVRHS3hQ5AgIIFkAiP2SpaZM5n5zUlWKUmSJEmSJL+jvSqlxYrLrVJWuMo1rnOjVc9/Zn1/jvPV1+ddnnd/c/aZXu/0sZ+btm1xmzvc5V5Ne+ti0M4hDnPftgMe8ojHPGnY3hE7RznGU9vOeM4LXvKqYXvH7ZzgJK9tu+Et73jPh4btnbJzmjN8tO2Jz3zha8O2vrNg5yKX2MHO6ud3NUmSJEn+Gt0a+jV0bOjZ0LWhb0Pnht4N3Rtt/O+dH+jW0K+hY0PPhq4NfRs6N/Ru6N7oadBe3Rr6NXRs6NnQtaFvQ+eG3g3dGwN8A2YGQaE=
+  </data>
+ </layer>
+ <layer name="obj" width="44" height="30">
+  <data encoding="base64" compression="zlib">
+   eJztzrEJACAMAMGAoL0u7OhmBCslcAfffwQAAAC8NVrsnv3+uLXydRb6BajkAN4YAj8=
+  </data>
+ </layer>
+ <layer name="subobj2" width="44" height="30">
+  <data encoding="base64" compression="zlib">
+   eJztlksOwzAIRC31EF2nXTe5/+2qLlAtZMLwMXKkvGVkwB4m2K392R5N5XWyBolHeIJ5PsC6vVvD94fEI7yT8nCy9sc5lLyo/hJnHiF4LyLeieq/C/G9DrwXUm9G2vFvmv5IzhEeHUYxUT3ReKsOUownzw/S1RvvqRVh1pxBatH+Leeo0FWqRfuv1CzCUehFDWR+r4Q0v71k/KuVXMXjxAoe95D1vtXI8t+s9yNnNf9p82s1/2XOryqPZmH1qHY+9O6y3nFeXUfn62ujvbd6JPPfz75fr8b9HpjLrHl8920uFffoFzIhC4s=
+  </data>
+ </layer>
+ <layer name="Path" width="44" height="30">
+  <data encoding="base64" compression="zlib">
+   eJzt1EkKgDAMBdAgDuCAqFjvf1NTcFW0JTYdFv9BFkIwn6AhAgAAyG/jGrh2QX+XLo53bs91Ps+Ga6Lv3G5/LqG5bu5ac7ps7pnrSpboXex+Qt+Jppb09pMrt/acg2tRepdPbO5S/53dz0qye1vDfcC9jfPn3o6Cfk1NobkAAFCPGyQFBQk=
+  </data>
+ </layer>
+ <layer name="Attribute" width="44" height="30">
+  <data encoding="base64" compression="zlib">
+   eJztzjERACAMBLBq6coE/sXhgPWvXKIgVQAww0kHiOh0AD6w0gF42OkAAHEXALkAsQ==
+  </data>
+ </layer>
+ <objectgroup name="PathAttributes">
+  <object id="32" name="0" type="space" x="360" y="840" width="40" height="40">
+   <properties>
+    <property name="group" value="0"/>
+    <property name="next" value="1"/>
+   </properties>
+  </object>
+  <object id="33" name="1" type="space" x="440" y="800" width="40" height="40">
+   <properties>
+    <property name="group" value="0"/>
+    <property name="next" value="2"/>
+   </properties>
+  </object>
+  <object id="34" name="2" type="space" x="520" y="760" width="40" height="40">
+   <properties>
+    <property name="group" value="0"/>
+    <property name="next" value="3"/>
+   </properties>
+  </object>
+  <object id="35" name="3" type="space" x="600" y="720" width="40" height="40">
+   <properties>
+    <property name="group" value="0"/>
+    <property name="next" value="4"/>
+   </properties>
+  </object>
+  <object id="36" name="4" type="space" x="680" y="680" width="40" height="40">
+   <properties>
+    <property name="group" value="0"/>
+    <property name="next" value="5,19"/>
+   </properties>
+  </object>
+  <object id="37" name="5" type="space" x="760" y="720" width="40" height="40">
+   <properties>
+    <property name="group" value="1"/>
+    <property name="next" value="6"/>
+   </properties>
+  </object>
+  <object id="38" name="6" type="space" x="840" y="760" width="40" height="40">
+   <properties>
+    <property name="group" value="1"/>
+    <property name="next" value="7"/>
+   </properties>
+  </object>
+  <object id="39" name="7" type="space" x="920" y="800" width="40" height="40">
+   <properties>
+    <property name="group" value="1"/>
+    <property name="next" value="8"/>
+   </properties>
+  </object>
+  <object id="40" name="8" type="space" x="1000" y="760" width="40" height="40">
+   <properties>
+    <property name="group" value="1"/>
+    <property name="next" value="9"/>
+   </properties>
+  </object>
+  <object id="41" name="9" type="space" x="1080" y="720" width="40" height="40">
+   <properties>
+    <property name="group" value="1"/>
+    <property name="next" value="10"/>
+   </properties>
+  </object>
+  <object id="42" name="10" type="space" x="1160" y="680" width="40" height="40">
+   <properties>
+    <property name="group" value="1"/>
+    <property name="next" value="11"/>
+   </properties>
+  </object>
+  <object id="43" name="11" type="space" x="1240" y="640" width="40" height="40">
+   <properties>
+    <property name="group" value="1"/>
+    <property name="next" value="12"/>
+   </properties>
+  </object>
+  <object id="44" name="12" type="space" x="1320" y="600" width="40" height="40">
+   <properties>
+    <property name="group" value="1"/>
+    <property name="next" value="13"/>
+   </properties>
+  </object>
+  <object id="45" name="13" type="space" x="1240" y="560" width="40" height="40">
+   <properties>
+    <property name="group" value="1"/>
+    <property name="next" value="14"/>
+   </properties>
+  </object>
+  <object id="46" name="14" type="space" x="1160" y="520" width="40" height="40">
+   <properties>
+    <property name="group" value="1"/>
+    <property name="next" value="15"/>
+   </properties>
+  </object>
+  <object id="47" name="15" type="space" x="1080" y="480" width="40" height="40">
+   <properties>
+    <property name="group" value="1"/>
+    <property name="next" value="16"/>
+   </properties>
+  </object>
+  <object id="48" name="16" type="space" x="1160" y="440" width="40" height="40">
+   <properties>
+    <property name="group" value="1"/>
+    <property name="next" value="17"/>
+   </properties>
+  </object>
+  <object id="49" name="17" type="space" x="1240" y="400" width="40" height="40">
+   <properties>
+    <property name="group" value="1"/>
+    <property name="next" value="18"/>
+   </properties>
+  </object>
+  <object id="50" name="18" type="space" x="1320" y="360" width="40" height="40"/>
+  <object id="51" name="19" type="space" x="600" y="640" width="40" height="40">
+   <properties>
+    <property name="group" value="2"/>
+    <property name="next" value="20"/>
+   </properties>
+  </object>
+  <object id="52" name="20" type="space" x="520" y="600" width="40" height="40">
+   <properties>
+    <property name="group" value="2"/>
+    <property name="next" value="21"/>
+   </properties>
+  </object>
+  <object id="53" name="21" type="space" x="440" y="560" width="40" height="40">
+   <properties>
+    <property name="group" value="2"/>
+    <property name="next" value="22"/>
+   </properties>
+  </object>
+  <object id="54" name="22" type="space" x="520" y="520" width="40" height="40">
+   <properties>
+    <property name="group" value="2"/>
+    <property name="next" value="23"/>
+   </properties>
+  </object>
+  <object id="55" name="23" type="space" x="600" y="480" width="40" height="40">
+   <properties>
+    <property name="group" value="2"/>
+    <property name="next" value="24"/>
+   </properties>
+  </object>
+  <object id="56" name="24" type="space" x="680" y="440" width="40" height="40">
+   <properties>
+    <property name="group" value="2"/>
+    <property name="next" value="25"/>
+   </properties>
+  </object>
+  <object id="57" name="25" type="space" x="760" y="400" width="40" height="40">
+   <properties>
+    <property name="group" value="2"/>
+    <property name="next" value="26"/>
+   </properties>
+  </object>
+  <object id="58" name="26" type="space" x="840" y="360" width="40" height="40">
+   <properties>
+    <property name="group" value="2"/>
+    <property name="next" value="27"/>
+   </properties>
+  </object>
+  <object id="59" name="27" type="space" x="920" y="400" width="40" height="40">
+   <properties>
+    <property name="group" value="2"/>
+    <property name="next" value="28"/>
+   </properties>
+  </object>
+  <object id="60" name="28" type="space" x="1000" y="440" width="40" height="40">
+   <properties>
+    <property name="group" value="2"/>
+    <property name="next" value="15"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>

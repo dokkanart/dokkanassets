@@ -1,0 +1,285 @@
+
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "004"]
+
+
+//-------------------------------------------------------------------------------
+//  悟空とベジータがウイスと修業している
+//-------------------------------------------------------------------------------
+
+[coma shape="N0002R" bg = "bg_000_015"]
+
+[lwfobject id="syuutyuu1" storage="syucyu:ef_002" mask="inside" loop=1 priority=10 scale=1.0]
+
+//バババッ
+//[se storage = "3001"]
+//[lwfobject id = "kaki1" storage="kakimoji:ef_024" in="04" x=-20 y=145 scale = 2.5]
+//[quake target = "kaki1" power = 14 time = 0.2]
+//[lwfobject id = "syuutyuu1" storage="syucyu:ef_005" mask="inside" loop=1 priority=10 scale=0.9]
+
+
+//ガッ
+[lwfobject id = "kaki2" storage="kakimoji:ef_016" in="04" x=-130 y=320 scale = 2.5]
+[quake target = "kaki2" power = 12 time = 0.2]
+
+[lwfobject id = "kaki1" storage="kakimoji:ef_024" in="04" x=130 y=-130 scale = 2.5]
+[quake target = "kaki1" power = 12 time = 0.2]
+
+[se storage = "3019"]
+
+[character id = "wis" x=-50 y=0 storage = "00243/atc_kick_p_01" scale = 1.4 action = "fadein" time = 0.1]
+
+[character id = "veg" x=40 y=90 storage = "00245/atc_kick_e_01" scale = 1.4 action = "fadein" time = 0.1]
+
+[character id = "goku" x=20 y=-60 storage = "00244/atc_punch_e_04" scale = 1.5 action = "fadein" time = 0.1]
+
+[quake target = "veg" power = 10 time = 0.2]
+
+[quake target = "goku" power = 9 time = 0.2]
+
+[character id = "ki1" x=250 y=130 storage = "99999/04_syougeki" scale = 0.7 action = "fadein" time = 0.1]
+
+[wait time = 0.1]
+
+[character id = "ki2" x=100 y=-40 storage = "99999/04_syougeki" scale = 1.1 action = "fadein" time = 0.1]
+
+
+
+[character id = "ki3" x=-140 y=-0 storage = "99999/04_syougeki" scale = 0.6 action = "fadein" time = 0.1]
+
+//[quake target = "ki1" power = 7 time = 0.2]
+
+//[quake target = "ki2" power = 7 time = 0.2]
+
+//[quake target = "ki3" power = 7 time = 0.2]
+
+// 空のフキダシ
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+
+*coma2
+//-------------------------------------------------------------------------------
+//  孫悟空＆ベジータ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0004R" bg = "bg_000_015"]
+
+
+
+[character x=100 y=-120 storage = "00245/idl_side_e_01" scale = 1.0 action = "fadein" time = 0.1]
+
+[character x=240 y=-120 storage = "00244/heapup_e_01" scale = 1.2 action = "fadein" time = 0.1]
+
+
+[balloon x=-170 y=-60 shape="001_02" scale = 0.6 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][font size = 40]
+はあ…[r]
+はあ……
+[p]
+
+*coma3
+//-------------------------------------------------------------------------------
+//  ウイス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_015"]
+
+
+
+[character x=-195 y=-220 storage = "00243/idl_side_p_01" scale = 1.6 action = "fadein" time = 0.1]
+
+[balloon x = 100 y = 130 shape="001_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][font size = 28]
+
+ほっほっほ…[r]
+まだ全然スピードが[r]
+足りませんよ
+[p]
+
+
+[balloon x = 125 y = -80 shape="001_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][font size = 28]
+
+サインが[r]
+書けちゃいました
+[p]
+
+*coma4
+//-------------------------------------------------------------------------------
+//  サインのアップ
+//-------------------------------------------------------------------------------
+[se storage = "3039"]
+[coma shape="N0004R" bg = "bg_000_015"]
+
+
+
+[character x=-70 y=-50 storage = "00244/card_02" scale = 2 action = "fadein" time = 0.1]
+
+
+
+
+
+[balloon x=-130 y=10 shape="006_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target = ".bln" power = 3 time = 0.2]
+あっ！[r]
+いつのまに…！[p]
+
+
+*coma5
+//-------------------------------------------------------------------------------
+//  ウイス
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_015"]
+
+
+
+[character x=-195 y=-220 storage = "00243/idl_side_p_01" scale = 1.6 action = "fadein" time = 0.1]
+
+[balloon x = 100 y = 145 shape="001_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][font size = 28]
+
+まだふたりとも[r]
+頭で考えて[r]
+動いていますね
+[p]
+
+
+[balloon x = 125 y = -80 shape="001_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][font size = 28]
+
+まあそこは[r]
+ビルス様もまだ完璧[r]
+じゃありませんが…
+[p]
+
+
+*coma6
+//-------------------------------------------------------------------------------
+//  ビルス
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_015"]
+
+
+
+[character x=210 y=0 storage = "00242/atc_front_e_01" scale = 1 action = "fadein" time = 0.1]
+
+[balloon x = -30 y = 120 shape="001_03" scale = 0.6 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][font size = 44]
+
+ふん…
+[p]
+
+
+[balloon x = -120 y = -80 shape="001_01" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][font size = 24]
+
+じゃあボクも久しぶりに[r]
+ウイスに稽古を[r]
+つけてもらおうかな
+[p]
+
+*coma7
+//-------------------------------------------------------------------------------
+//  孫悟空
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_015"]
+
+[character x=220 y=-95 storage = "00244/idl_side_e_01" scale = 1.6 action = "fadein" time = 0.1]
+
+[balloon x=-130 y=50 shape="001_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target = ".bln" power = 3 time = 0.2]
+え！？[r]
+ビルス様もか？
+[p]
+
+
+*coma8
+//-------------------------------------------------------------------------------
+//  ウイス
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0003L" bg = "bg_000_015"]
+
+
+
+[character x=-195 y=-220 storage = "00243/idl_side_p_01" scale = 1.9 action = "fadein" time = 0.1]
+
+[balloon x = 120 y = 130 shape="001_03" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][font size = 24]
+
+ほほほ…けっこうですよ[r]
+悟空さん[r]
+ベジータさん…
+[p]
+
+
+[balloon x = 130 y = -80 shape="001_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][font size = 28]
+
+あなたたちも[r]
+遠慮せず乱入して[r]
+きてくださいね
+[p]
+
+*coma9
+//-------------------------------------------------------------------------------
+//  ベジータ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_000_015"]
+
+[character x = 170 y = -120 storage = "00245/idl_side_e_01" scale = 2.1 action = "fadein" time = 0.1]
+
+[balloon x = -110 y = 100 shape="002_02" scale = 0.6 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][font size = 44]
+[quake target = ".bln" power = 3 time = 0.2]
+チッ…
+[p]
+
+
+[balloon x = -120 y = -200 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][font size = 28]
+すぐにあんたにも[r]
+追いついてみせる[r]
+からな…！！
+[p]
+
+//フェードアウト
+//[balloon x=130 y=40 shape="008_03" scale = 50.0 action = "fadein" time = 1.5]
+
+//[wait time = 1.5]
+
+//空のフキダシ
+//[balloon x = 0 y = 0 shape="002_01" scale = 0]
+//[p]
+
+
+
+
+
+
+//説明
+//[balloon x = -0 y =250 shape="009_11" scale = 0.95 action = "fadein" time = 2]
+
+//[wait_anim target=".bln"]
+
+//[p]
+
+
+
+[stopbgm]

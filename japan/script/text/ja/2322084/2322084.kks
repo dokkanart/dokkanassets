@@ -1,0 +1,100 @@
+*start|スタート
+//究極のDB編_エリア８：ラウンド２
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+//[bgm storage = "012"]
+ 
+
+
+*001
+//-------------------------------------------------------------------------------
+//  孫悟空（GT)
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_081_005"]
+ 
+[character x=200 y=-50 storage = "00324/heapup_e_01" scale = 1.1 action = "fadein" time = 0.1]
+ 
+[balloon x=-90 y=120 shape="001_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+合体したのは[r]
+失敗だったな
+[p]
+
+[balloon x=-100 y=-80 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+そんなに図体がでけえと[r]
+オラのスピードに[r]
+ついてこれねえだろ
+[p]
+
+
+*002
+//-------------------------------------------------------------------------------
+//  スーパーΣ１
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_081_005"]
+
+
+[character x = -200 y = -120 storage = "00476/guard_p_01" scale = 0.9 action = "fadein" time = 0.1]
+
+[balloon x=120 y=140 shape="002_01" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+ならば こちらも[r]
+スピードアップするとしよう
+[p]
+
+[se storage = "40"]
+
+[balloon x=110 y=-80 shape="006_02" scale = 0.9 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 7 time = 0.2]
+フライング[r]
+フォーメーション！！
+[p]
+
+[se storage = "3025"]
+//点滅
+[balloon shape="008_02" x = 140 y = -30 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+[balloon shape="008_02" x = 140 y = -30 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+
+[wait_anim target=".bln"]
+
+
+*003
+//-------------------------------------------------------------------------------
+//  スーパーΣ2
+//-------------------------------------------------------------------------------
+[se storage = "20"]
+[coma shape="N0002L" bg = "bg_081_005"]
+
+[lwfobject id = "kaki1" storage="kakimoji:ef_023" in="04" x=-70 y=-180 scale = 2.0]
+[quake target = "kaki1" power = 15 time = 0.4]
+
+
+[character x = -90 y = -140 storage = "00339/heapup_p_01" scale = 1.1 action = "fadein" time = 0.1]
+[quake target = ".chara" power = 5 time = 0.4]
+
+[wait_anim target=".chara"]
+
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+
+//[stopbgm]

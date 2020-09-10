@@ -1,0 +1,62 @@
+*start|スタート
+//ステージ3 ボス前
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "027"]
+
+*01
+//-------------------------------------------------------------------------------
+//  超サイヤ人ベジータ
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_016"]
+
+[character x = 210 y = -200 storage = "00004/card_07" scale = 1.35 action = "fadein" time = 0.1]
+
+[balloon x=-150 y=180 shape="007_01" scale = 0.75 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+[quake target =".bln" power = 7 time = 0.2]
+破壊神だと！？
+[p]
+
+[quake target =".chara" power = 6 time = 0.3]
+
+[balloon x=-150 y=-60 shape="007_02" scale = 0.9 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 7 time = 0.2]
+ふざけるのも[r]
+いいかげんに[r]しやがれ！！
+[p]
+
+*02
+//-------------------------------------------------------------------------------
+//  ビルス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002L" bg = "bg_000_016"]
+
+[character x = -170 y = -130 storage = "00242/card_01" scale = 1.2 action = "fadein" time = 0.1]
+
+
+[balloon x=130 y=110 shape="001_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 7 time = 0.2]
+へえ…まだ[r]
+そんな力があったんだ
+[p]
+
+[balloon x=130 y=-150 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+もしかして それが[r]
+超サイヤ人ゴッド[r]
+なのかな？
+[p]
+
+//-------------------------------------------------------------------------------
+[stopbgm]

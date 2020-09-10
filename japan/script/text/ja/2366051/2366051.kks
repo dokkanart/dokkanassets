@@ -1,0 +1,225 @@
+*start|スタート
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "035"]
+
+*001
+//-------------------------------------------------------------------------------
+//  超サイヤ人ベジータ
+//-------------------------------------------------------------------------------
+[se storage = "3025"]
+[coma shape="S0001" bg = "bg_000_016"]
+
+[character id="veg" x = 20 y = 30 storage = "00002/card_01" scale = 0.9 action = "fadein" time = 0.1]
+//[quake target="veg" power=3 time=0.2]
+
+[character id="ss2" x = -150 y = 220 storage = "99999/04_syougeki" scale = 10.0 angle = -10 action = "fade:80" time = 0.1]
+[paint target="ss2" color="#000000"]
+//[rotate_to target="ss2" angle=90 time=0.1]
+
+[character id="ss1" x = -150 y = 220 storage = "00067/Images_ef_charge_ballpng" scale = 3.4 action = "fade:80" time = 0.1]
+[quake target="ss1" power=3 time=300]
+
+[balloon x = -120 y = -150 shape="006_02" scale = 1.0 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+[quake target =".bln" power = 7 time = 0.2]
+　くらえ！！[r]
+　こいつが超ベジータの[r]
+　ビッグ・バン・アタック[r]
+　だ！！
+[p]
+
+[se storage = "3029"]
+[quake target="veg" power=7 time=0.4]
+
+
+
+[character id="ss1" x = -150 y = 220 storage = "00067/Images_ef_charge_ballpng" angle = 20 scale = 3.4 action = "expand" time = 0.1]
+[quake target="ss1" power=3 time=300]
+
+//[wait time=0.3]
+
+//[se storage = "3025"]
+//点滅
+[balloon shape="008_02" x = 0 y = 0 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+[balloon shape="008_02" x = 0 y = 0 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+
+*002
+//-------------------------------------------------------------------------------
+//  ベジータが、人造人間19号を倒す
+//-------------------------------------------------------------------------------
+[se storage = "3016"]
+[coma shape="N0003R" bg = "bg_004_001"]
+
+//[character x = -185 y = -700 storage = "00018/idl_side_p_01" scale = 4.0 action = "fadein" time = 0.1]
+//[character id ="19" x = -50 y = -100 storage = "00018/dam_roll_p_01" scale = 0.8 action = "fadein" time = 0.1 mask="inside"]
+//[quake target="19" power=2 time=3000]
+
+//[character id = "tama1" x = 0 y = 0 storage = "99999/genkidama" scale = 2.0 action = "fade:40" time = 0.1 mask="inside"]
+
+//[character id="ss2" x = 500 y = -100 storage = "99999/04_syougeki" scale = 10.0 action = "expand" time = 0.7 mask="inside"]
+//[paint target="ss2" color="#000000"]
+
+//[character id = "tama2" x = 0 y = 0 storage = "99999/genkidama" scale = 2.0 action = "fade:100" time = 0.7 mask="inside"]
+
+//[wait_anim target="tama2"]
+//[wait time=0.3]
+
+//[se storage = "3016"]
+
+[lwfobject id = "kaki2" storage="kakimoji:ef_019" x=0 y=120 scale = 3.0 action = "expand" time = 0.1]
+[quake target = "kaki2" power = 15 time = 0.7]
+
+//[character id="ex3" x = 200 y = -100 storage = "99999/ef_sp_explosion" scale = 2.0 action = "fadein" time = 0.1]
+//[character id="ex2" x = -100 y = -100 storage = "99999/ef_sp_explosion" scale = 2.0 action = "fadein" time = 0.1]
+[character id="ex1" x = 0 y = -150 storage = "99999/ef_sp_explosion" scale = 2.7 angle = 70 action = "expand" time = 0.1]
+//[quake target= "ex3" power=10 time=0.7]
+//[quake target= "ex2" power=10 time=0.7]
+[quake target= "ex1" power=10 time=0.7]
+
+[wait_anim target="ex1"]
+
+//空のフキダシ
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+*003
+//-------------------------------------------------------------------------------
+//  超サイヤ人ベジータ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_004_001"]
+
+//[character x = 185 y = -120 storage = "00004/SSR_idl_side_e_02" scale = 1.2 action = "fadein" time = 0.1]
+[character x = 170 y = -220 storage = "00004/card_14" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon x = -90 y = 75 shape="002_01" scale = 0.65 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 44]
+//[quake target =".bln" power = 3 time = 0.2]
+へっ！
+[p]
+
+*004
+//-------------------------------------------------------------------------------
+//  人造人間20号（ドクター・ゲロ）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_004_001"]
+
+[character x = -200 y = -150 storage = "00019/gero_idl_side_p_01" scale = 1.1 action = "fadein" time = 0.1]
+
+[balloon x=105 y=80 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+ふふ…きさまが[r]
+いくら想像以上に[r]
+強くても…
+[p]
+
+[balloon x=110 y=-95 shape="002_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+その程度では[r]
+人造人間には絶対に[r]
+勝てんぞ……
+[p]
+
+*005
+//-------------------------------------------------------------------------------
+//  超サイヤ人ベジータ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_004_001"]
+
+//[character x = 185 y = -120 storage = "00004/SSR_idl_side_e_02" scale = 1.2 action = "fadein" time = 0.1]
+[character x = 170 y = -220 storage = "00004/card_14" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon x = -90 y = 65 shape="002_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+ふん…[r]
+負け惜しみか…
+[p]
+
+*006
+//-------------------------------------------------------------------------------
+//  人造人間20号（ドクター・ゲロ）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_004_001"]
+
+[character x = -200 y = -150 storage = "00019/gero_idl_side_p_01" scale = 1.1 action = "fadein" time = 0.1]
+
+[balloon id = "01" x = 85 y = 60 shape="004_02" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target = "01"]
+[font size = 54]
+//[quake target =".bln" power = 3 time = 0.2]
+………
+[p]
+
+
+[se storage = "3022"] 
+[move target =".chara" x=-400 time = 0.2]
+[fadeout target=".chara" time=0.3]
+
+[lwfobject id = "kaki2" storage="kakimoji:ef_023" x=-150 y=-10 scale = 1.2 angle = 20 action = "fadein" time = 0.1]
+[quake target = "kaki2" power = 11 time = 0.4]
+
+[wait_anim target=".chara"]
+
+[balloon id = "01" x = 100 y = 50 shape="004_02" scale = 0 action = "fadein" time = 0.1]
+[p]
+
+
+*007
+//-------------------------------------------------------------------------------
+//  クリリン
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_004_001"]
+
+[character x = 180 y = -100 storage = "00009/heapup_e_04" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon x = -105 y = 60 shape="006_02" scale = 0.7 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 40]
+[quake target =".bln" power = 7 time = 0.2]
+逃げたぞ！！
+[p]
+
+*008
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0003L" bg = "bg_000_024"]
+
+[balloon x=0 y=-30 shape="003_01" scale = 1.6 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 14]
+//[quake target =".bln" power = 3 time = 0.2]
+いとも簡単に[r]
+19号を破ったベジータ…[r]
+　[r]
+このままベジータの[r]
+快進撃が続くと思いきや[r]
+20号は闘いの場から[r]
+逃亡してしまう…！[r]
+　[r]
+はたして[r]
+人造人間との闘いの[r]
+行方は！？
+[p]
+
+//-------------------------------------------------------------------------------
+[stopbgm]

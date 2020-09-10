@@ -1,0 +1,155 @@
+//"エリア９ボス前"
+
+*start|スタート
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "007"]
+
+*001
+//-------------------------------------------------------------------------------
+//  ビルス
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_003"]
+
+[character x = 190 y = -0 storage = "00242/atc_front_e_01" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon x=-110 y=130 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+どうやら[r]
+気づいてないようだね
+[p]
+
+[balloon x=-130 y=-80 shape="001_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+超サイヤ人ゴッドは[r]
+とっくに時間切れだ
+[p]
+
+*002
+//-------------------------------------------------------------------------------
+//  超サイヤ人悟空
+//-------------------------------------------------------------------------------
+[se storage = "03"]
+[coma shape="N0001L" bg = "bg_000_003"]
+
+//！！
+[lwfobject id = "kaki1" storage="kakimoji:ef_001" in="04" x=40 y=90 scale = 2.5]
+[quake target = "kaki1" power = 15 time = 0.2]
+
+[character x = -170 y = -80 storage = "00003/card_03" scale = 0.9 action = "fadein" time = 0.1]
+
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+*003
+//-------------------------------------------------------------------------------
+//  ビルス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_003"]
+
+[character x = 190 y = -0 storage = "00242/atc_front_e_01" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon x=-115 y=110 shape="001_01" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+闘っているうちに[r]
+ゴッドの世界を体に吸収[r]
+させてしまったようだな…
+[p]
+
+[balloon x=-145 y=-100 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+たいしたもんだよ…[r]
+稀に見る天才と[r]
+言ってもいい…
+[p]
+
+*004
+//-------------------------------------------------------------------------------
+//  超サイヤ人悟空
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_003"]
+
+[character x = -170 y = -80 storage = "00003/card_03" scale = 0.9 action = "fadein" time = 0.1]
+
+[balloon x=145 y=50 shape="001_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+それがホントなら[r]
+うれしいけど…
+[p]
+
+*005
+//-------------------------------------------------------------------------------
+//  ビルス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_003"]
+
+[character x = 190 y = -0 storage = "00242/atc_front_e_01" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon x=-115 y=70 shape="001_01" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+だったら素直に喜べ…[r]
+それが望みだったんだろ？
+[p]
+
+*006
+//-------------------------------------------------------------------------------
+//  超サイヤ人悟空
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_003"]
+
+[character x = -170 y = -80 storage = "00003/card_03" scale = 0.9 action = "fadein" time = 0.1]
+
+[balloon x=145 y=110 shape="001_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+そうはいかねえ…
+[p]
+
+[balloon x=120 y=-100 shape="001_03" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+一番問題なのは[r]
+それでも力の差は[r]
+でっけえってことさ…
+[p]
+
+*007
+//-------------------------------------------------------------------------------
+//  ビルス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_000_003"]
+
+[character x = 180 y = -120 storage = "00242/card_01" scale = 1.1 action = "fadein" time = 0.1]
+[quake target =".chara" power = 9 time = 0.4]
+
+[balloon x=-145 y=-90 shape="006_02" scale = 0.9 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 7 time = 0.2]
+じゃあ[r]
+あきらめて降参しろ！
+[p]
+
+//-------------------------------------------------------------------------------
+[stopbgm]

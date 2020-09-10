@@ -1,0 +1,131 @@
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+//[bgm storage = "026"]
+
+*001
+//-------------------------------------------------------------------------------
+//  超サイヤ人孫悟飯
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0003L" bg = "bg_000_014"]
+
+[character id="gohan1" x = -90 y = -180 storage = "00199/card_07" scale = 1.4 action = "fadein" time = 0.1]
+
+
+[wait time = 0.3]
+
+[clear target = "gohan1"]
+
+[balloon id = "pt" x = 180 y = 40 shape="008_32" scale = 2.0 action = "fadein" time = 0.1]
+[quake target ="pt" power = 8 time = 0.4]
+
+[se storage = "03"]
+[character id = "beam" x = -200 y = -5 storage = "99999/beam_04" scale = 2.0 angle = 10 action = "fadein" time = 0.1 mask="inside"]
+[paint target="beam" color="#FE642E"]
+//[flip target ="beam" h=1]
+//[move target ="beam" x=-200 time = 0.3]
+
+[character id="gohan2" x = -90 y = -180 storage = "00199/card_07" scale = 1.4]
+[quake target ="gohan2" power = 6 time = 0.4]
+
+
+[wait time = 0.4]
+
+[clear target = "gohan2"]
+//[clear target = "beam"]
+
+
+[character id = "beam2" x = -200 y = -5 storage = "99999/beam_04" scale = 20.0 angle = 10 action = "expand" time = 0.5 mask="inside"]
+[paint target="beam2" color="#FE642E"]
+
+[character id="gohan3" x = -90 y = -180 storage = "00199/card_07" scale = 1.4]
+
+
+[wait time = 0.5]
+
+
+
+*002
+//-------------------------------------------------------------------------------
+//  超サイヤ人孫悟飯（少年期）
+//-------------------------------------------------------------------------------
+[se storage = "50"]
+[coma shape="N0002L" bg = "bg_000_014"]
+
+[character id = "beam2" x = -200 y = -5 storage = "99999/beam_04" scale = 20.0 angle = 10 mask="inside"]
+[paint target="beam2" color="#FE642E"]
+
+[character id = "gohan" x=-110 y=-180 storage = "00199/card_05" scale = 0.9 action = "fadein" time = 0.1] 
+[quake target ="gohan" power = 2 time = 300]
+
+[balloon x = 145 y = 60 shape="007_02" scale = 0.9 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 7 time = 0.4]
+うぉああああーっ！！
+[p]
+
+//[wait time = 0.4]
+
+
+[se storage = "3025"]
+//点滅
+[balloon shape="008_02" x = 0 y = 0 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+[balloon shape="008_02" x = 0 y = 0 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+
+//フェードアウト（フェードアウトするコマ）
+[balloon x=0 y=0 shape="008_02" scale = 50.0 action = "fadein" time = 0.5]
+[wait time = 0.7]
+
+
+
+*003
+//-------------------------------------------------------------------------------
+//  超サイヤ人２孫悟飯
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="S0001" bg = "bg_005_002"]
+
+[lwfobject id = "kaki2" storage="kakimoji:ef_009" x=-220 y=-280 scale = 1.5 action = "fadein" time = 0.1 angle=0 action = "fadein" time = 0.1]
+[quake target = "kaki2" power = 1 time = 300]
+
+[character id = "ss" x = 5 y = 10 storage = "99999/supersaiyan" scale = 1.2 action = "fade:60" time = 0.1]
+[quake target = "ss" power = 2 time = 300]
+
+[character id = "ss3" x = 0 y = -50 storage = "99999/supersaiyan2" scale = 1.0 angle = 5 action = "fadein" time = 0.1]
+//[flip target ="ss3" h=1]
+[quake target = "ss3" power = 2 time = 300]
+
+
+
+[character id = "gohan" x=0 y=-25 storage = "00203/card_03" scale = 1.0 action = "fadein" time = 0.1] 
+
+[character id = "ss2" x = 30 y = 90 storage = "99999/supersaiyan2" scale = 1.2 angle = 0 action = "fadein" time = 0.1]
+[flip target ="ss2" h=1]
+[quake target = "ss2" power = 2 time = 300]
+
+
+//フェードイン（フェードインするコマ）
+[balloon x=0 y=0 shape="008_02" scale = 50]
+[wait time = 1]
+[se storage = "3038"]
+[fadeout target = ".bln" time = 2]
+[wait_anim target=".bln"]
+
+
+[balloon x=0 y=470 shape="006_01" scale = 0.75 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+[quake target =".bln" power = 7 time = 0.2]
+ボクが[r]
+おまえを倒す！！
+[p]
+
+//[stopbgm]

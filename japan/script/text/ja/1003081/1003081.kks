@@ -1,0 +1,219 @@
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "002"]
+
+*01
+//-------------------------------------------------------------------------------
+//  天津飯
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0001R" bg = "bg_012_001"]
+
+[character x=170 y=-40 storage = "00257/idl_side_e_02" scale = 1.6 action = "fadein" time = 0.1]
+
+[balloon id = "01" x = -130 y = 70 shape="001_02" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target = "01"]
+//[quake target =".bln" power = 3 time = 0.2]
+[font size = 36]
+鶴仙人さま……[p]
+
+
+*02
+//-------------------------------------------------------------------------------
+//  鶴仙人
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002L" bg = "bg_012_001"]
+
+[character x = -200 y = -130 storage = "00065/heapup_p_01" scale = 2.0 action = "fadein" time = 0.1]
+
+[balloon id = "01" x = 140 y = 60 shape="004_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target = "01"]
+[quake target =".bln" power = 3 time = 0.2]
+[font size = 28]
+お…おのれ！きさまら[r]ろくな死にかたは[r]せんぞっ！！[p]
+
+[fadeout target = ".chara" time = 0.7]
+//[wait_anim target=".chara"]
+
+[wait time = 0.4]
+
+//フェードアウト（フェードアウトするコマ）
+[balloon x=130 y=40 shape="008_03" scale = 50.0 action = "fadein" time = 0.5]
+[wait time = 0.7] 
+
+*03
+//-------------------------------------------------------------------------------
+//  場面転換
+//-------------------------------------------------------------------------------
+[bgm storage = "12"]
+[coma id = "coma1" shape="S0001" bg = "bg_012_001"]
+
+//フェードイン（フェードインするコマ）
+[balloon x=130 y=40 shape="008_03" scale = 50]
+[wait time = 1]
+[fadeout target = ".bln" time = 2]
+[wait_anim target=".bln"]
+
+// 空のフキダシ
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+*04
+//-------------------------------------------------------------------------------
+//  天津飯
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_012_001"]
+
+
+[character id = "ch" x=-70 y=50 storage = "00012/idl_side_e_01" scale = 1.1 action = "fadein" time = 0.1]
+[flip target ="ch" h=1]
+
+[character id = "ten" x=-230 y=-40 storage = "00257/idl_side_e_02" scale = 1.6 action = "fadein" time = 0.1]
+[flip target ="ten" h=1]
+
+[balloon id = "01" x = 150 y = 130 shape="001_03" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target = "01"]
+
+[font size = 32]
+…すまなかった…[p]
+
+[balloon id = "01" x = 130 y = -90 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target = "01"]
+
+[font size = 28]
+おまえたちには[r]ずいぶんひどいことを[r]してしまった…[p]
+
+*05
+//-------------------------------------------------------------------------------
+//  トランクス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_012_001"]
+
+[character x = 210 y = -200 storage = "90000/wait_right_normal" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon id = "01" x = -90 y = 70 shape="001_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target = "01"]
+
+[font size = 28]
+気にしないでください[r]あの状況では[r]しかたありません[p]
+
+*06
+//-------------------------------------------------------------------------------
+//  天津飯
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_012_001"]
+
+[character id = "ch" x=-70 y=50 storage = "00012/idl_side_e_01" scale = 1.1 action = "fadein" time = 0.1]
+[flip target ="ch" h=1]
+
+[character id = "ten" x=-230 y=-40 storage = "00257/idl_side_e_02" scale = 1.6 action = "fadein" time = 0.1]
+[flip target ="ten" h=1]
+
+[balloon id = "01" x = 150 y = 120 shape="001_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target = "01"]
+[font size = 32]
+オレはこれから餃子と[r]修業の旅に出る…[p]
+
+[balloon id = "01" x = 140 y = -90 shape="001_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target = "01"]
+[font size = 28]
+そのセルという化物に[r]対抗する力を[r]身につけるつもりだ[p]
+
+*07
+//-------------------------------------------------------------------------------
+//  天津飯
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002L" bg = "bg_012_001"]
+
+//[character x = -50 y = -70 storage = "00257/heapup_p_01" scale = 1.5 action = "fadein" time = 0.1]
+//[character x = -220 y =60 storage = "00012/heapup_p_01" scale = 1.5 action = "fadein" time = 0.1]
+
+[character id = "ch" x=-40 y=60 storage = "00012/heapup_p_01" scale = 1.2 action = "fadein" time = 0.1]
+//[flip target ="ch" h=1]
+
+[character id = "ten" x=-170 y=-150 storage = "00257/ten_heapup_e_01" scale = 1.1 action = "fadein" time = 0.1]
+[flip target ="ten" h=1]
+
+
+
+[balloon id = "01" x = 180 y = 0 shape="001_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target = "01"]
+[font size = 32]
+雲行きが怪しくなっ[r]たら必ずかけつける[r]……じゃあな[p]
+
+[quake target = "ch" power = 5 time = 0.4]
+
+[balloon id = "01" x = 40 y = -200 shape="001_03" scale = 0.65 action = "fadein" time = 0.1]
+[wait_anim target = "01"]
+[quake target = "01" power = 3 time = 0.2]
+[font size = 44]
+バイバイ[p]
+
+//フェードアウト（フェードアウトするコマ）
+[balloon x=130 y=40 shape="008_03" scale = 50.0 action = "fadein" time = 0.5]
+[wait time = 0.7] 
+
+[stopbgm]
+
+*08
+//-------------------------------------------------------------------------------
+//  フリーザ
+//-------------------------------------------------------------------------------
+[coma shape="S0001" bg = "bg_000_003"]
+
+//[se storage = "3025"]
+
+[lwfobject id = "ゴゴゴゴ" storage="kakimoji:ef_009" x = -150 y=400 scale = 2.3 action = "fadein" time = 2]
+[quake target = "ゴゴゴゴ" power = 2 time = 600]
+
+[character x = 0 y = -85 storage = "99999/earth" scale = 0.3 action = "fadein" time = 2]
+
+[character id = "ship" x = 0 y = 350 storage = "90003/spaceship" scale = 2.5 action = "fadein" time = 2]
+[quake target = "ship" power = 1 time = 600]
+
+//フェードイン（フェードインするコマ）
+[balloon x=130 y=40 shape="008_03" scale = 50]
+[wait time = 1]
+[fadeout target = ".bln" time = 2]
+[wait_anim target=".bln"]
+
+
+
+
+
+// 空のフキダシ（セリフがないコマを送るために使用）
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+
+*09
+//-------------------------------------------------------------------------------
+//  
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002L" bg = "bg_000_014"]
+
+
+[character id = "f" x = -160 y = -100 storage = "00005/card_03" scale = 1.5 action = "fadein" time = 0.1]
+
+
+
+[balloon x = 150 y = 260 shape="002_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target = ".bln"]
+//[quake target =".bln" power = 3 time = 0.2]
+[font size = 32]
+あれが地球ですか…[p]
+
+//終わりのフェードアウト
+[balloon x=130 y=40 shape="008_03" scale = 50.0 action = "fadein" time = 0.5]
+[wait time = 2.5]
+
+[stopbgm]

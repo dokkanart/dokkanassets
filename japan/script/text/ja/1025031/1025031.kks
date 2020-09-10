@@ -1,0 +1,61 @@
+*start|スタート
+
+//"２5−３ゴール" 
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "008"]
+ 
+*001
+//-------------------------------------------------------------------------------
+//  合体アカ
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_004"]
+ 
+[character x = -210 y = -150 storage = "00652/heapup_p_01" scale = 1.2 action = "fadein" time = 0.1]
+
+ 
+[balloon x=100 y=130 shape="002_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+やるじゃねえか[r]
+小僧！
+[p]
+ 
+[balloon x=120 y=-80 shape="002_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+だが[r]
+まだまだだな！！
+[p]
+
+*002
+//-------------------------------------------------------------------------------
+//  トランクス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_000_004"]
+ 
+[character x=170 y=-325 storage = "90000/wait_right_anger_strong" scale = 1.4 action = "fadein" time = 0.1]
+ 
+[balloon x=-120 y=90 shape="001_03" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+//[quake target =".bln" power = 3 time = 0.2]
+なんてやつだ…
+[p]
+ 
+[balloon x=-110 y=-170 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+合体して[r]
+パワーも防御も[r]
+グンと上がった…！！
+[p]
+ 
+//-------------------------------------------------------------------------------
+[stopbgm]

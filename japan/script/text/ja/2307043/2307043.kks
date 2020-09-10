@@ -1,0 +1,53 @@
+//エリア4ボス前
+
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "008"]
+
+//-------------------------------------------------------------------------------
+//  サウザーたち
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_016"]
+
+[character x=-290 y=-130 storage = "00287/idl_side_p_01" scale = 1.0 action = "fadein" time = 0.1]
+
+[character x=-10 y=-120 storage = "00286/idl_side_p_01" scale = 0.7 action = "fadein" time = 0.1]
+
+
+[character x=-140 y=-150 storage = "00285/idl_side_p_01" scale = 1.0 action = "fadein" time = 0.1]
+
+
+[balloon x=140 y=160 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+見つけたぞ小僧…[r]
+やはり生きていたか！[p]
+
+*coma2
+
+//-------------------------------------------------------------------------------
+//  悟飯
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_000_016"]
+
+[character x=130 y=50 storage = "00007/okappa_right" scale = 0.65 action = "fadein" time = 0.1]
+
+[character x=180 y=-100 storage = "90003/hiredragon_fly_right" scale = 1.1 action = "fadein" time = 0.1]
+
+
+[balloon shape="006_01" x = -160 y = -90 scale = 0.75 action = "expand" time = 0.1]
+[font size = 36]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 7 time = 0.2]
+し…しまった！！[p]
+
+
+
+
+
+[stopbgm]

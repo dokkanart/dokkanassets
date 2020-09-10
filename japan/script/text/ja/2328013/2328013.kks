@@ -1,0 +1,162 @@
+
+
+*start|スタート
+//2328013 ステージ１ボス前
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "002"]
+
+*01
+//-------------------------------------------------------------------------------
+//  マイ
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+
+[coma shape="N0001R" bg = "bg_073_001"]
+
+[character x = 220 y = -150 storage = "00625/idl_side_e_01" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon shape="001_03" x = -110 y = 100 scale = 0.9 action = "fadein" time = 0.1]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+
+ブラックの気は[r]
+感じる？[p]
+
+*02
+//-------------------------------------------------------------------------------
+//  トランクス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+
+[coma shape="N0002R" bg = "bg_073_001"]
+
+[character x = 190 y = -200 storage = "00623/card_01" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon shape="001_01" x = -150 y = 90 scale = 0.65 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 44]
+//[quake target =".bln" power = 3 time = 0.2]
+いや…[p]
+
+[se storage = "3034"]
+
+//書き文字　！？
+[lwfobject id = "kaki2" storage="kakimoji:ef_002" in="04" angle = -10 x=-100 y=-160 scale = 3.0]
+[quake target = "kaki2" power = 15 time = 0.2]
+[p]
+
+
+*03
+//-------------------------------------------------------------------------------
+//  ゴクウブラックが現れる
+//-------------------------------------------------------------------------------
+[bgm storage = "003"]
+
+[coma shape="S0001" bg = "bg_073_001"]
+
+[wait time = 0.7]
+
+//点滅（白）
+[se storage = "3038"]
+//点滅
+[balloon shape="008_02" x = 140 y = -30 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+[balloon shape="008_02" x = 140 y = -30 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+
+//[wait time = 0.1]
+
+[character x = 0 y = 15 storage = "00621/card_01" scale = 0.9 action = "fadein" time = 1.2]
+[move target =".chara" y=0 time = 1.2]
+
+[wait_anim target=".chara"]
+
+[wait time = 0.3]
+
+
+// 空のフキダシ
+[balloon x = 0 y = 0 shape="002_01" scale = 0] [p]
+
+*04
+//-------------------------------------------------------------------------------
+//  トランクス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+
+[coma shape="N0001R" bg = "bg_073_001"]
+
+[character x = 230 y = -145 storage = "00623/heapup_e_01" scale = 1.3 action = "fadein" time = 0.1]
+
+[balloon shape="004_02" x = -100 y = 120 scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+[quake target =".bln" power = 3 time = 0.2]
+くっ…！！[p]
+
+[balloon shape="006_02" x = -130 y = -80 scale = 0.8 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 7 time = 0.2]
+
+マイ！[r]
+おまえは行け！！[p]
+
+*05
+//-------------------------------------------------------------------------------
+//  マイ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_073_001"]
+
+[character x = 220 y = -150 storage = "00625/idl_side_e_01" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon shape="006_01" x = -110 y = 100 scale = 0.9 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 7 time = 0.2]
+
+なに言ってんだい！[r]
+わたしが囮になる！[p]
+
+[balloon shape="006_02" x = -95 y = -115 scale = 0.9 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 7 time = 0.2]
+
+生き残らなきゃ[r]
+いけないのは[r]
+あんただよ！！[p]
+
+*06
+//-------------------------------------------------------------------------------
+//  ゴクウブラック
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+
+[coma shape="N0002L" bg = "bg_073_001"]
+
+[character x = -220 y = -175 storage = "00621/idl_side_p_01" scale = 1.25 action = "fadein" time = 0.1]
+
+[balloon shape="002_02" x = 150 y = 90 scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+//[quake target =".bln" power = 3 time = 0.2]
+
+いよいよだ…[p]
+
+[balloon shape="002_03" x = 150 y = -170 scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+
+今日こそおまえの[r]
+息の根が止まる日だ…[r]
+サイヤ人！！[p]
+
+
+//-------------------------------------------------------------------------------
+[stopbgm]

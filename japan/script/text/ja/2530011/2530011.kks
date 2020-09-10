@@ -1,0 +1,48 @@
+//スタート 2530011
+
+*start|スタート
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+
+[bgm storage = "032"]
+
+*001
+//-------------------------------------------------------------------------------
+//  ドクター・ゲロ
+//-------------------------------------------------------------------------------
+//[se storage = "08"]
+
+[coma shape="S0001" bg = "bg_015_001"]
+
+//17号
+[character x = 60 y = 80 storage = "00021/card_02" scale = 0.5 action = "fadein" time = 0.1]
+
+//ヘルファイター
+[character x = 200 y = 80 storage = "00021/card_03" scale = 0.5 action = "fadein" time = 0.1]
+
+//ゲロ
+[character x = -150 y = -80 storage = "00019/card_02" scale = 0.8 action = "fadein" time = 0.1]
+//[move target =".chara" y=0 time = 5]
+
+//ミュー
+[character x = 120 y = -180 storage = "00329/card_01" scale = 0.9 action = "fadein" time = 0.1]
+
+[wait_anim target=".chara"]
+
+[balloon x=-130 y=360 shape="002_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+どうやら[r]
+皆そろったようだな[p]
+
+[balloon x=0 y=-360 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target= ".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+それでは これより[r]
+すばらしいショーを[r]
+始めよう[p]
+//-------------------------------------------------------------------------------
+[stopbgm]

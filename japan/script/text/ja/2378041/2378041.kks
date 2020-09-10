@@ -1,0 +1,237 @@
+*start|スタート
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "002"]
+
+*001
+//-------------------------------------------------------------------------------
+//  魔人ブウ（善）
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_016"]
+
+[character x = -320 y = -120 storage = "00229/atc_sp01_p_02" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x=130 y=60 shape="006_01" scale = 0.7 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 40]
+[quake target =".bln" power = 7 time = 0.2]
+オレ[r]
+おこったぞ！
+[p]
+
+
+*002
+//-------------------------------------------------------------------------------
+//  ゴテンクス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_016"]
+
+[character x = 190 y = -85 storage = "00276/heapup_e_01" scale = 1.25 action = "fadein" time = 0.1]
+[character x = 190 y = 100 storage = "99999/ase" scale = 0.5 action = "fadein" time = 0.1]
+
+//[character x = 210 y = -140 storage = "00276/idl_side_p_01" scale = 1.0 action = "fade:70" time = 0.1]
+//[flip target =".chara" h=1]
+
+
+[balloon x = -120 y = 60 shape="001_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+だったら[r]
+どうするっていうんだ！
+[p]
+
+
+*003
+//-------------------------------------------------------------------------------
+//  魔人ブウ（善）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_016"]
+
+[character x = -200 y = -110-20 storage = "00229/energyball_p_02" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x=120 y=80 shape="002_03" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+へへ…[r]
+ころしちゃお！
+[p]
+
+
+*004
+//-------------------------------------------------------------------------------
+//  ゴテンクス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_016"]
+
+[character x = 190 y = -85 storage = "00276/heapup_e_01" scale = 1.25 action = "fadein" time = 0.1]
+[character x = 190 y = 100 storage = "99999/ase" scale = 0.5 action = "fadein" time = 0.1]
+
+
+[balloon x = -105 y = 65 shape="004_02" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 40]
+[quake target =".bln" power = 3 time = 0.2]
+なに！？
+[p]
+
+
+
+[se storage = "3024"]
+
+[balloon shape="008_02" x = 0 y = 0 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+
+//フェードアウト（フェードアウトするコマ）
+[balloon x=0 y=0 shape="008_02" scale = 50.0 action = "fadein" time = 0.5]
+[wait time = 0.7]
+
+
+*005
+//-------------------------------------------------------------------------------
+//  場面転換：神殿
+//-------------------------------------------------------------------------------
+[coma shape="S0001" bg = "bg_000_104"]
+
+//フェードイン（フェードインするコマ）
+[balloon x=0 y=0 shape="008_02" scale = 50]
+[wait time = 1]
+[fadeout target = ".bln" time = 2]
+[wait_anim target=".bln"]
+
+//空のフキダシ
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+
+*006
+//-------------------------------------------------------------------------------
+//  クリリン
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_104"]
+
+[character x = -210 y = -100 storage = "00412/idl_side_e_01" scale = 1.0 action = "fadein" time = 0.1]
+[flip target =".chara" h=1]
+
+[balloon x=100 y=50 shape="001_02" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+[quake target =".bln" power = 3 time = 0.2]
+あ！[r]
+もどってきた
+[p]
+
+
+*007
+//-------------------------------------------------------------------------------
+//  ゴテンクス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_104"]
+
+[wait time = 0.7]
+
+//[character x = 180 y = -130 storage = "00276/card_09" scale = 0.8 action = "fadein" time = 0.7]
+//[character x = 250 y = 30 storage = "99999/ase" scale = 0.6 action = "fadein" time = 0.7]
+
+[character x = 190 y = -85 storage = "00276/heapup_e_01" scale = 1.25 action = "fadein" time = 0.7]
+[character x = 190 y = 100 storage = "99999/ase" scale = 0.5 action = "fadein" time = 0.7]
+
+[wait time = 1.0]
+
+[balloon x = -120 y = 55 shape="004_04" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+ボコボコに[r]
+やられちゃったぜ……
+[p]
+
+
+*008
+//-------------------------------------------------------------------------------
+//  ピッコロ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_104"]
+
+
+[character x = -180 y = -120 storage = "00010/idl_side_e_02" scale = 1.5 action = "fadein" time = 0.1]
+[flip target =".chara" h=1]
+
+
+[balloon x=125 y=110 shape="002_01" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+[quake target =".bln" power = 3 time = 0.2]
+いいか 魔人ブウとの[r]
+勝負は１日後だ！[r]
+それまでにせいぜい[r]
+修業をしておけ！！
+[p]
+
+
+[balloon x=125 y=-95 shape="002_03" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+[quake target =".bln" power = 3 time = 0.2]
+すこしでも強くなってから[r]
+フュージョンをしたほうが[r]
+効果的なんだ わかったか[r]
+くそ坊主！！
+[p]
+
+
+*009
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002L" bg = "bg_000_014"]
+
+[balloon x=0 y=-20 shape="003_01" scale = 1.3 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 17]
+//[quake target =".bln" power = 3 time = 0.2]
+ついに成功した[r]フュージョン…[r]
+　[r]
+だが [r]その力はまだまだ[r]
+魔人ブウには[r]
+遠く及ばなかった…
+[p]
+
+
+*010
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_000_024"]
+
+[character x = 180 y = -110 storage = "00038/card_06" scale = 0.8 action = "fadein" time = 0.1]
+
+[balloon x=-165 y=-20 shape="003_02" scale = 1.4 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 16]
+//[quake target =".bln" power = 3 time = 0.2]
+時を同じくして[r]
+地上には[r]
+打倒魔人ブウのため[r]
+立ち上がる男がいた…[r]
+　[r]
+…その名は[r]
+地球の救世主[r]
+ミスター・サタン…！[r]
+地球の運命やいかに！？
+[p]
+
+//-------------------------------------------------------------------------------
+[stopbgm]

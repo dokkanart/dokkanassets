@@ -1,0 +1,87 @@
+*start|スタート
+
+//"２4－８ボス前" 
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "008"]
+ 
+*001
+//-------------------------------------------------------------------------------
+//  人造人間18号
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0001R" bg = "bg_029_001"]
+ 
+[character x = 200 y = -160 storage = "00020/18_heapup_e_01" scale = 1.1 action = "fadein" time = 0.1]
+ 
+[balloon x=-85 y=130 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+ドクター・ゲロなんかに[r]
+加担するなんて…！ 
+[p]
+ 
+[balloon x=-100 y=-90 shape="006_02" scale = 0.9 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 7 time = 0.2]
+あんたは もう[r]
+わたしの知っている[r]
+１７号じゃない…！！ 
+[p]
+
+*002
+//-------------------------------------------------------------------------------
+//  トランクス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_029_001"]
+ 
+[character x = 210 y = -200 storage = "90000/wait_right_anger_strong" scale = 1.2 action = "fadein" time = 0.1]
+ 
+[balloon x=-90 y=90 shape="001_03" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+気をつけるんだ[r]
+１８号…！
+[p]
+ 
+[balloon x=-80 y=-90 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+あの１７号のパワーは[r]
+セル以上だ！ 
+[p]
+
+*003
+//-------------------------------------------------------------------------------
+//  超１７号
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002L" bg = "bg_029_001"]
+ 
+[character x = -180 y = -180 storage = "00480/heapup_p_01" scale = 1.1 action = "fadein" time = 0.1]
+ 
+[balloon x=140 y=100 shape="002_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+ふん…[r]
+バカなやつらめ… 
+[p]
+ 
+[balloon x=140 y=-190 shape="006_01" scale = 0.9 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 7 time = 0.2]
+まとめて[r]
+地獄に送ってやる！！ 
+[p]
+
+ 
+//-------------------------------------------------------------------------------
+[stopbgm]

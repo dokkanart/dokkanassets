@@ -1,0 +1,45 @@
+*start|スタート
+//エイプリルフール：ボス前
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "006"]
+ 
+
+
+*001
+//-------------------------------------------------------------------------------
+//  
+//-------------------------------------------------------------------------------
+
+//[se storage = "04"]
+[coma shape="S0001" bg = "bg_000_021"]
+
+[wait time = 0.7] 
+ 
+[character x = -0 y = -20 storage = "00013/card_04" scale = 1.2 action = "fadein" time = 0.7]
+
+[wait_anim target=".chara"]
+ 
+[balloon x=-150 y=440 shape="001_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+オレに[r]
+やらせてくれ
+[p]
+
+
+[balloon x=120 y=-300 shape="001_03" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+ここらでおあそびは[r]
+いいかげんにしろって[r]
+とこをみせてやりたい
+[p]
+
+
+
+[stopbgm]

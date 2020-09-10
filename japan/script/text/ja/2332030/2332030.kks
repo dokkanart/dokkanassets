@@ -1,0 +1,151 @@
+*start|スタート
+//パオズ山の怪物
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "002"]
+
+*001
+//-------------------------------------------------------------------------------
+//  ナレーション 
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0003R" bg = "bg_081_013"]
+
+[wait time = 0.3]
+
+[balloon x=0 y=110 shape="003_02" scale = 1.6 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 15]
+//[quake target =".bln" power = 3 time = 0.2]
+悟空じいちゃんの家を[r]
+求めパオズ山を[r]
+歩き進む悟空…[r]
+　[r]
+その道中で[r]
+怪物に襲われている[r]
+子グマと[r]
+出会うのだった
+[p]
+
+*002
+//-------------------------------------------------------------------------------
+//  ゲットー
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_081_013"]
+
+[character x=-220 y=-150 storage = "00713/idl_side_p_01" scale = 1.2 angle = 0 action = "fadein" time = 0.1]
+
+[balloon x=110 y=120 shape="007_01" scale = 0.8 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 7 time = 0.2]
+逃げても[r]
+ムダじゃーっ！！
+[p]
+
+[balloon x=140 y=-90 shape="007_02" scale = 0.8 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 7 time = 0.2]
+おとなしく[r]
+オイラに食われろ！
+[p]
+
+*003
+//-------------------------------------------------------------------------------
+//  子グマ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_081_013"]
+
+[character id = "kokuma" x = 200 y = -100 storage = "90003/kuma_01" scale = 0.9 action = "fadein" time = 0.1]
+[character id = "ase" x=270 y=-20 storage = "99999/ase" scale = 0.6 action = "fadein" time = 0.1]
+//[quake target = "kokuma" power = 1 time = 300]
+//[quake target = "ase" power = 1 time = 300]
+
+[balloon x = -90 y =60 shape="004_03" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+[quake target = ".bln" power = 3 time = 0.2]
+ウウ〜ッ！！[p]
+
+
+*004
+//-------------------------------------------------------------------------------
+//  孫悟空Jr.
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_081_013"]
+
+[character id = "goku" x = 220 y = -70 storage = "00710/guard_e_01" scale = 1.1 action = "fadein" time = 0.1]
+[character id = "ase" x=240 y=60 storage = "99999/ase" scale = 0.7 action = "fadein" time = 0.1]
+[quake target = "goku" power = 5 time = 0.4]
+[quake target = "ase" power = 4 time = 0.4]
+
+[balloon x = -90 y =70 shape="007_02" scale = 0.75 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+[quake target = ".bln" power = 7 time = 0.2]
+うわーっ！[r]
+こわいよ〜！！
+[p]
+
+*005
+//-------------------------------------------------------------------------------
+//  ゲットー
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_081_013"]
+
+[character x=-220 y=-150 storage = "00713/idl_side_p_01" scale = 1.2 angle = 0 action = "fadein" time = 0.1]
+
+[balloon x=120 y=100 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+あーっ！[r]
+おまえ…マンバが[r]
+取り逃がしたガキ！
+[p]
+
+[balloon x=140 y=-90 shape="002_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+へへ…！[r]
+こっちのほうが[r]
+うまそうだ〜！！
+[p]
+
+
+*006
+//-------------------------------------------------------------------------------
+//  孫悟空Jr.
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_081_013"]
+
+[character x=170 y=-80 storage = "00710/heapup_e_01" scale = 1.3 action = "fadein" time = 0.1]
+
+[balloon x = -120 y =100 shape="001_03" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target = ".bln" power = 3 time = 0.2]
+逃げちゃダメだ…！
+[p]
+
+[balloon x = -110 y =-180 shape="001_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target = ".bln" power = 3 time = 0.2]
+こわくなんかない！[r]
+勇気を出すんだ…！！
+[p]
+
+
+
+
+//-------------------------------------------------------------------------------
+[stopbgm]

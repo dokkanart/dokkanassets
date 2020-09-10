@@ -1,0 +1,123 @@
+
+
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "005"]
+
+
+//-------------------------------------------------------------------------------
+//  test
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+
+[coma shape="S0001" bg = "bg_000_014"]
+
+[balloon shape="009_15" x = 50 y = 170 scale = 1.2 action = "fadein" time = 0.1]
+
+
+//19×7
+[balloon shape="009_16" x = 35 y = -200 scale = 0.95 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 27]
+
+ひとつの小さな出会いから始まった[r]
+ななつのドラゴンボールをめぐる物語…[r]
+　[r]
+圧倒的な強さを誇るフリーザは[r]
+クリリンを粉々に吹き飛ばしてしまう…[r]
+親友の死を目の当たりにし、[r]
+怒りが頂点を越えた悟空に変化が……！！[p]
+
+
+*01
+//-------------------------------------------------------------------------------
+//  フリーザ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_050_001"]
+
+[character x=-230 y=-150 storage = "00068/heapup_p_01" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x=90 y=130 shape="004_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target = ".bln" power = 3 time = 0.2]
+なっ なんだ！？[r]
+あいつの変化は……！！[p]
+
+[balloon x=120 y=-80 shape="004_01" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+[quake target = ".bln" power = 3 time = 0.2]
+サイヤ人は大猿にしか[r]
+変わらんはず…[r]
+…どういうことだ…！？[p]
+
+
+
+*02
+//-------------------------------------------------------------------------------
+//  悟空
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+
+
+[coma shape="N0002R" bg = "bg_050_001"]
+
+//[character x = 200 y = -110 storage = "00300/SR_idl_side_e_01" scale = 1.1 action = "fadein" time = 0.1]
+
+[balloon shape="008_24" x = 180 y = -120 scale = 1.2 action = "fadein" time = 0.1]
+[balloon shape="008_23" x = 180 y = -120 scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon shape="001_01" x = -130 y = 90 scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+
+いいかげんにしろ…[r]
+このクズやろう……[p]
+
+[balloon shape="001_02" x = -115 y = -220 scale = 1 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+
+罪のない者を次から次へと[r]
+殺しやがって……[r]
+ク…クリリンまで…[p]
+
+
+*03
+//-------------------------------------------------------------------------------
+//  悟空
+//-------------------------------------------------------------------------------
+[se storage = "50"]
+
+
+[coma shape="S0001" bg = "bg_050_001"]
+
+[character x = 90 y = -110 storage = "00300/card_03" scale = 1.7 action = "fadein" time = 0.1]
+
+
+[balloon shape="007_02" x = -0 y = 460 scale = 1.0 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 7 time = 0.2]
+
+オレは[r]
+怒ったぞー！！[p]
+
+[balloon shape="007_02" x = -0 y = -450 scale = 1.2 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 7 time = 0.2]
+
+フリーザーッ！！[p]
+
+
+
+
+[stopbgm]

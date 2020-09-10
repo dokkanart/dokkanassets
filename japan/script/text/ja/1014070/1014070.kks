@@ -1,0 +1,74 @@
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "008"]
+
+//-------------------------------------------------------------------------------
+//  ゲロ
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0001L" bg = "bg_023_004"]
+
+[character x = -170 y = -135 storage = "00019/gero_idl_side_p_01" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon x=120 y=130 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+きさまらのデータは[r]
+コンピューターに[r]
+インプットされている[p]
+
+[balloon x=130 y=-80 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+だから[r]
+動きもすべて[r]
+予測されているのだ[p]
+
+
+*001
+//-------------------------------------------------------------------------------
+//  ヤムチャ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_023_004"]
+
+[character x = 190 y = -50 storage = "00013/yam_heapup_e_01" scale = 1.0 action = "fadein" time = 0.1]
+
+
+[balloon shape="001_01" x = -90 y = 100 scale = 0.9 action = "fadein" time = 0.1]
+[font size = 28]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 3 time = 0.2]
+そ…そういうこと[r]
+だったのか…！
+[p]
+
+*002
+//-------------------------------------------------------------------------------
+//  トランクス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_023_004"]
+
+[character x=170 y=-325 storage = "90000/wait_right_anger_strong" scale = 1.4 action = "fadein" time = 0.1]
+
+[balloon shape="001_02" x = -90 y = 100 scale = 0.9 action = "fadein" time = 0.1]
+[font size = 28]
+[wait_anim target=".bln"]
+闘いはデータで[r]
+決まるわけじゃない…
+[p]
+
+[balloon shape="001_03" x = -120 y = -140 scale = 1 action = "fadein" time = 0.1]
+[font size = 25]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 3 time = 0.2]
+いきましょう！[r]
+[$player]さん！
+[p]
+
+
+[stopbgm]

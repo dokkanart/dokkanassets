@@ -1,0 +1,89 @@
+*start|スタート
+//"ステージ４ナッパ戦前"
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "008"]
+
+*001
+//-------------------------------------------------------------------------------
+//  ベジータ
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0001R" bg = "bg_015_001"]
+
+[character id="beji" x=190 y=-140 storage = "00328/idl_side_p_01" scale = 1.2 action = "fadein" time = 0.1]
+[flip target ="beji" h=1]
+
+
+[balloon x=-120 y=60 shape="002_03" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 7 time = 0.2]
+破壊するだけの[r]ノータリンは[r]
+地獄に行っても変わらん[r]ようだな ナッパ！
+[p]
+
+*002
+//-------------------------------------------------------------------------------
+//  ナッパ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_015_001"]
+
+[character x = -220 y = -100 storage = "00015/heapup_p_01" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x=110 y=90 shape="002_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+ベ…[r]
+ベジータ……！！
+[p]
+
+*003
+//-------------------------------------------------------------------------------
+//  ベジータ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_015_001"]
+
+[character id="beji" x=190 y=-140 storage = "00328/idl_side_p_01" scale = 1.2 action = "fadein" time = 0.1]
+[flip target ="beji" h=1]
+
+
+[balloon x=-90 y=100 shape="002_02" scale = 0.65 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 44]
+//[quake target =".bln" power = 7 time = 0.2]
+消えろ…
+[p]
+
+[balloon x=-120 y=-90 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 7 time = 0.2]
+また[r]
+このオレに殺されたく[r]なかったらな
+[p]
+
+*004
+//-------------------------------------------------------------------------------
+//  ナッパ
+//-------------------------------------------------------------------------------
+[se storage = "3024"]
+[coma shape="N0002L" bg = "bg_015_001"]
+
+[character x=-150 y=-50 storage = "00015/dash_p_01" scale = 1.5 action = "fadein" time = 0.1]
+[quake target =".chara" power = 9 time = 0.4]
+
+
+[balloon x=130 y=80 shape="007_02" scale = 0.8 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 7 time = 0.2]
+うおおぉぉーっ！！
+[p]
+
+//-------------------------------------------------------------------------------
+[stopbgm]

@@ -1,0 +1,36 @@
+*start|スタート
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+//[bgm storage = "026"]
+
+*001
+//-------------------------------------------------------------------------------
+//  超サイヤ人ゴテンクス&ゴースト
+//-------------------------------------------------------------------------------
+[se storage = "3008"]
+[coma shape="S0001" bg = "bg_014_004"]
+
+[character id = "0" x = 0 y = 0-50 storage = "99999/ef_sp_explosion" scale = 3.0 action = "expand" time = 0.1 angle=-90]
+
+[character id = "2" x = 0 y = 0-50 storage = "00457/card_10" scale = 1.0 action = "fadein" time = 0.1]
+//[quake target ="2" power = 4 time = 0.4]
+
+[character id = "1" x = 0 y = 0-50 storage = "00457/card_11" scale = 1.0 action = "fadein" time = 0.1]
+//[quake target ="1" power = 4 time = 0.4]
+
+[wait_anim target="0"]
+[quake target ="0" power = 4 time = 300]
+[fadeout target="0" time=0.7]
+[wait time=0.7]
+
+[balloon x=0 y=465-40 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+こどもの技だと思って[r]
+なめてると[r]
+イタイ目 見るぜ！？
+[p]
+
+//[stopbgm]

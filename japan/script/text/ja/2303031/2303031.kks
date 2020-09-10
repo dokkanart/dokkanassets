@@ -1,0 +1,265 @@
+
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "007"]
+
+//-------------------------------------------------------------------------------
+//  フリーザ兵
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_010"]
+
+[character x=-185 y=-100 storage = "00045/atc_energyball_p_02" scale = 1.0 action = "fadein" time = 0.1]
+[quake target =".chara" power = 5 time = 0.2]
+
+//[wait_anim target=".chara"]
+
+[balloon id="radhi1" x=150 y=80 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 3 time = 0.2]
+[font size = 28]
+そんなバカな…！[r]
+ヤツは最下級戦士の[r]
+はず…！
+[p]
+
+
+
+*002
+//-------------------------------------------------------------------------------
+//  バーダック
+//-------------------------------------------------------------------------------
+[se storage = "3029"]
+[coma shape="N0004R" bg = "bg_000_010"]
+
+//[wait time = 0.7]
+
+//バーダックスライド、悟空とベジータの闘いフェードインフェードアウト、バーダックアップ「！？」
+
+
+
+[character x=-600 y=-170 storage = "00067/atc_punch_e_03" scale = 1.5 action = "slide:right" time = 0.5]
+
+
+[balloon x=145 y=125 shape="006_01" scale = 0.9 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[quake target = ".bln" power = 7 time = 0.2]
+[font size = 34]
+だああぁぁーっ！！
+//[p]
+
+[fadeout target = ".bln" time = 0.4]
+
+//[se storage = "3034"]
+
+//悟空対ベジータ
+[balloon x=-0 y=80 shape="008_11" scale = 1.5 action = "fadein" time = 1.0]
+
+[wait time = 0.7]
+
+[fadeout target = ".bln" time = 1.0]
+
+[wait time = 0.5]
+
+[se storage = "03"]
+
+//!?
+[lwfobject id = "kaki2" storage="kakimoji:ef_002" in="04" x=70 y=0 scale = 2.5]
+[quake target = "kaki2" power = 12 time = 0.2]
+
+//アップ
+[character x=250 y=-260 storage = "00067/atc_punch_e_03" scale = 1.9 action = "fadein" time = 0.1]
+[quake target =".chara" power = 10 time = 0.2]
+
+// 空のフキダシ
+//[balloon x = 0 y = 0 shape="002_01" scale = 0]
+//[p]
+
+[wait time = 0.5]
+
+
+*005
+//-------------------------------------------------------------------------------
+//  バーダックがフリーザ兵の攻撃を受ける
+//-------------------------------------------------------------------------------
+[se storage = "3001"]
+[coma shape="N0002L" bg = "bg_000_010"]
+[lwfobject id="syuutyuu1" storage="syucyu:ef_002" mask="inside" loop=1 priority=10 scale=1.0]
+
+[lwfobject id = "ガッ" storage="kakimoji:ef_021" in="02" x = -140 y=-120 scale = 2 action = "fadein" time = 0.1]
+[quake target ="ガッ" power = 12 time = 0.2]
+
+[character id = "goku" x=80 y=-0 storage = "00067/dam_roll_e_01" scale = 1.1  action = "fadein" time = 0.1]
+[quake target ="goku" power = 13 time = 0.2]
+
+[character x=-0 y=-30 storage = "00045/atc_punch_p_04" scale = 1.0 action = "fadein" time = 0.1]
+[quake target ="rad" power = 9 time = 0.2]
+
+// 空のフキダシ
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+*006
+//-------------------------------------------------------------------------------
+//  バーダック
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_010"]
+
+[character x=250 y=-160 storage = "00067/idl_side_e_01" scale = 1.5 action = "fadein" time = 0.1]
+[quake target =".chara" power = 5 time = 0.2]
+
+[balloon x=-120 y=80 shape="002_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 3 time = 0.2]
+[font size = 32]
+…ま…まただ…！
+[p]
+
+[balloon x=-140 y=-100 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 3 time = 0.2]
+[font size = 28]
+くそ…！！[r]
+オレの頭の中は[r]
+どうしちまったんだ！？
+[p]
+
+*hei
+//-------------------------------------------------------------------------------
+//  フリーザ兵
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_010"]
+
+[character x=-185 y=-100 storage = "00045/atc_energyball_p_01" scale = 1.0 action = "fadein" time = 0.1]
+
+
+//[wait_anim target=".chara"]
+
+[balloon id="radhi1" x=160 y=90 shape="002_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+へっへっへっへ…
+[p]
+
+*bdk
+//-------------------------------------------------------------------------------
+//  バーダック
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0004R" bg = "bg_000_010"]
+
+//アップ
+[character x=250 y=-278 storage = "00067/idl_side_e_01" scale = 1.9 action = "fadein" time = 0.1]
+
+
+[balloon x=-140 y=15 shape="002_01" scale = 0.6 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 3 time = 0.2]
+[font size = 40]
+く…っ！！
+[p]
+
+
+*007
+//-------------------------------------------------------------------------------
+//  バーダックの攻撃
+//-------------------------------------------------------------------------------
+[se storage = "3029"]
+[coma shape="N0003R" bg = "bg_000_010"]
+
+[lwfobject id="syuutyuu1" storage="syucyu:ef_002" mask="inside" loop=1 priority=10 scale=1.0]
+
+
+[character x=220 y=-210 storage = "00067/atc_energyball_e_01" scale = 1.7 action = "fadein" time = 0.1]
+[quake target =".chara" power = 5 time = 0.2]
+
+[character x=-270 y=-0 storage = "00067/Images_ef_beam_head_01" scale = 2.9 action = "fadein" time = 0.1]
+[quake target =".chara" power = 9 time = 0.2]
+
+[balloon x=-20 y=110 shape="006_01" scale = 0.65 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[quake target = ".bln" power = 7 time = 0.2]
+[font size = 46]
+…はあっ！！
+//[p]
+
+
+
+*008
+//-------------------------------------------------------------------------------
+//  フリーザ兵を倒す
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0004L" bg = "bg_000_010"]
+
+[lwfobject id="syuutyuu1" storage="syucyu:ef_002" mask="inside" loop=1 priority=10 scale=1.0]
+
+[character x=-185 y=-100 storage = "00045/dam_side_p_01" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon id="radhi2" x=120 y=-70 shape="007_02" scale = 0.8 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[quake target = ".bln" power = 7 time = 0.2]
+[font size = 32]
+うわあああーっ！！
+//[p]
+
+[fadeout target = ".chara" time = 2.0]
+[fadeout target = ".bln" time = 1.0]
+
+
+[se storage = "3017"]
+
+
+
+[lwfobject id = "kaki2" storage="kakimoji:ef_013" in="04" x=0 y=50 scale = 3]
+[quake target = "kaki2" power = 15 time = 1]
+
+
+[character x=0 y=0 storage = "90000/bomb" scale = 0.9 action = "expand" time = 0.1]
+[quake target = ".chara" power = 10 time = 1]
+
+
+[balloon x=130 y=40 shape="008_02" scale = 50 action = "fadein" time = 0.5]
+
+[wait_anim target=".bln"]
+
+[fadeout target = ".bln" time = 1.5]
+
+[wait time = 1.5]
+
+
+//空のフキダシ
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+
+
+
+
+
+*009
+//-------------------------------------------------------------------------------
+//  バーダック
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_000_010"]
+
+[character x=220 y=-140 storage = "00067/heapup_e_01" scale = 1.5 action = "fadein" time = 0.1]
+
+[wait_anim target=".chara"]
+
+[balloon x=-155 y=65 shape="002_01" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+はあ…[r]
+はあ……
+[p]
+
+
+[stopbgm]
+

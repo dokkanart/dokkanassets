@@ -1,0 +1,230 @@
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "008"]
+
+*01
+//-------------------------------------------------------------------------------
+//  ベジータ
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0001L" bg = "bg_027_001"]
+
+[character x = -210 y = -130 storage = "00004/heapup_e_01" scale = 1.2 action = "fadein" time = 0.1]
+[flip target =".chara" h=1]
+
+
+[balloon x = 120 y = 90 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+どうしたカカロット…[r]そんな程度じゃ[r]ないだろう！！[p]
+
+*02
+//-------------------------------------------------------------------------------
+//  悟空
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_027_001"]
+
+[character x=250 y=-140 storage = "00003/idl_side_e_05" scale = 1.1 action = "fadein" time = 0.1]
+
+[balloon x = -100 y = 70 shape="001_03" scale = .7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][font size = 54]
+………[p]
+
+
+*03
+//-------------------------------------------------------------------------------
+//  悟空
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0003R" bg = "bg_027_001"]
+
+[character x = 190 y = -195 storage = "00003/heapup_e_06" scale = 1.5 action = "fadein" time = 0.1]
+
+[balloon x = -130 y = 105 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][font size = 28]
+[$player][r]…おめえたちは手を[r]出さないでくれねえか
+[p]
+
+
+
+[balloon x = -120 y = -110 shape="001_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 3 time = 0.2]
+[font size = 28]
+ベジータとは１対１で[r]勝負してえんだ…！！[p]
+
+//元シナリオ
+//わりいな…[r]おめえたちは手を[r]出さないでくれねえか？
+//オラ、ベジータとは[r]１対１で勝負[r]してえんだ…！！
+
+*04
+//-------------------------------------------------------------------------------
+//  クリリン
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_027_001"]
+
+[character x = 180 y = -100 storage = "00009/idl_side_e_03" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon x = -90 y = 80 shape="001_03" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][font size = 36]
+ご…[r]悟空…！！[p]
+
+*05
+//-------------------------------------------------------------------------------
+//  トランクス
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_027_001"]
+
+
+[character x=210 y=-200 storage = "90000/wait_right_surprise" scale = 1.2 action = "fadein" time = 0.1]
+
+
+[balloon x = -100 y = 80 shape="004_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][font size = 28]
+//……[r]
+…悟空さん…[r]オレに気をつかって[r]いるんじゃ…？[p]
+
+//[balloon x = -50 y = -100 shape="001_03" scale = 0.7 action = "fadein" time = 0.1]
+//[wait_anim target=".bln"][font size = 30]
+//オレに気をつかって[r]
+//いるんじゃ…？[p]
+
+*06
+//-------------------------------------------------------------------------------
+//  クリリン
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_027_001"]
+
+[character x = 180 y = -100 storage = "00009/heapup_e_03" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon x = -90 y = 90 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][font size = 28]
+いや… 悟空は[r]
+強いヤツとの闘いに[r]
+わくわくしている[r]だけだよ…
+[p]
+
+[balloon x = -90 y = -120 shape="001_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][font size = 32]
+まったく…[r]悟空らしいよな[p]
+
+
+//元シナリオ
+//いや…悟空は純粋に[r]強いヤツとの闘いに[r]わくわくしている[r]だけだよ…
+//まったく…[r]悟空らしいよな
+
+
+*07
+//-------------------------------------------------------------------------------
+//  界王
+//-------------------------------------------------------------------------------
+[bgm storage = "03"]
+[se storage = "3034"]
+[coma shape="N0003L" bg = "bg_000_016"]
+
+
+[balloon x = 0 y = 20 shape="005_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+[$player][r]
+トランクスよ…[r]
+たいへんじゃ！！[p]
+
+*08
+//-------------------------------------------------------------------------------
+//  トランクス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_027_001"]
+
+[character x = 210 y = -200 storage = "90000/wait_right_surprise" scale = 1.2 action = "fadein" time = 0.1]
+
+
+[balloon x = -100 y = 85 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][font size = 28]
+この声は……[r]界王さま！
+いったい[r]どうしたんですか！？[p]
+
+
+*09
+//-------------------------------------------------------------------------------
+//  界王
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_080_001"]
+
+[character x = -180 y = -40 storage = "90001/stand" scale = 0.5 action = "fadein" time = 0.1]
+[character x = -220 y = 60 storage = "99999/ase" scale = 0.7 action = "fadein" time = 0.1]
+
+[balloon x = 90 y = 120 shape="005_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+フリーザが特戦隊を[r]筆頭に全軍団を[r]集結させておる…！
+[p]
+
+[balloon x = 125 y = -100 shape="005_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 3 time = 0.2]
+[font size = 28]
+どうやら本格的に[r]地球の制圧に[r]乗り出したようじゃ！
+[p]
+
+
+//元シナリオ
+//フリーザが[r]ギニュー特戦隊を筆頭に[r]全軍団を集結させて[r]おる…！！
+//どうやら本格的に[r]地球の制圧に[r]乗り出したようじゃ！！
+
+*10
+//-------------------------------------------------------------------------------
+//  トランクス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_027_001"]
+
+
+[character x=210 y=-200 storage = "90000/wait_right_anger_strong" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x = -100 y = 80 shape="004_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 3 time = 0.2]
+[font size = 32]
+な…[r]なんだって……！？[p]
+
+
+
+*11
+//-------------------------------------------------------------------------------
+//  界王
+//-------------------------------------------------------------------------------
+//bg界王星
+[se storage = "04"]
+[coma shape="N0002L" bg = "bg_080_001"]
+
+[character x = -150 y = -60 storage = "90001/stand" scale = 0.7 action = "fadein" time = 0.1]
+
+[balloon x = 120 y = 100 shape="005_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 3 time = 0.2]
+[font size = 28]
+この場は悟空に任せて[r]今すぐフリーザのもとへ[r]向かうんじゃ！！
+[p]
+
+
+
+
+
+//元シナリオ
+//この場は悟空に任せて[r]おまえたちは今すぐ[r]フリーザのもとへ[r]向かうんじゃ！！[p]
+
+
+[stopbgm]

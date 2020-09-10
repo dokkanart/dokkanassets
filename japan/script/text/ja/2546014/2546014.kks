@@ -1,0 +1,76 @@
+//"エリア１スタート"
+
+*start|スタート
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+//[bgm storage = "013"]
+
+*001
+//-------------------------------------------------------------------------------
+//  クウラ
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="S0001" bg = "bg_000_014"]
+
+[wait time = 0.7]
+
+[se storage = "48"]
+[character x = 0 y = -0 storage = "00368/card_08" scale = 1.0 action = "fadein" time = 0.7]
+
+[wait_anim target=".chara"]
+
+[wait time = 0.3]
+
+
+[balloon x=-0 y=330 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+ふん…[r]
+オレ自身のパワーは[r]
+それほど落ちてはいない
+[p]
+
+[balloon x=0 y=-240 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+今のきさまごときに[r]
+これでじゅうぶんだ！！
+[p]
+
+[se storage = "3025"]
+//点滅
+[balloon shape="008_02" x = 0 y = 0 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+[balloon shape="008_02" x = 0 y = 0 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+
+*002
+//-------------------------------------------------------------------------------
+//  クウラ
+//-------------------------------------------------------------------------------
+[se storage = "3038"]
+[se storage = "3008"]
+[coma shape="S0001" bg = "bg_000_078"]
+
+[lwfobject id = "kaki1" storage="kakimoji:ef_017" x=-120 y=-200 scale = 2.5 angle = -25 action = "fadein" time = 0.1]
+[quake target = "kaki1" power = 15 time = 0.7]
+
+[character x = 0 y = -120 storage = "00368/card_11" scale = 1.2 action = "fadein" time = 0.1]
+[quake target =".chara" power = 10 time = 0.7]
+
+[balloon x=0 y=470 shape="007_02" scale = 0.9 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 7 time = 0.2]
+　おまえに[r]
+　このオレを倒すことなど[r]
+　ムリなんだ！！
+[p]
+
+//-------------------------------------------------------------------------------
+//[stopbgm]

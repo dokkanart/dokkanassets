@@ -1,0 +1,113 @@
+
+*start|スタート
+
+//"１３−３ZＨＡRDボス前"
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "004"]
+
+//-------------------------------------------------------------------------------
+//  パン（GT）
+//-------------------------------------------------------------------------------
+[coma shape="N0001L" bg = "bg_016_001"]
+
+[character x=-170 y=-150 storage = "00326/idl_side_p_01" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x=110 y=70 shape="001_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 34]
+[quake target =".bln" power = 3 time = 0.2]
+あ！[r]
+トランクス！
+[p]
+
+*coma2
+//-------------------------------------------------------------------------------
+//  トランクス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_016_001"]
+
+[character x = 210 y = -200 storage = "90000/wait_right_surprise" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon id = "01" x = -110 y = 100 shape="001_01" scale = 0.95 action = "fadein" time = 0.1]
+[wait_anim target = "01"]
+[font size = 27]
+え！？[r]
+オレの名前を[r]
+知っているキミは…
+[p]
+
+[balloon id = "01" x = -100 y = -90 shape="001_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target = "01"]
+[font size = 34]
+いったい[r]
+何者なんだい？
+[p]
+
+*coma3
+//-------------------------------------------------------------------------------
+//  パン（GT）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+
+[coma shape="N0001L" bg = "bg_016_001"]
+
+[character x=-220 y=-90 storage = "00326/atc_sp01_p_01" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x=90 y=110 shape="001_01" scale = 0.85 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 30]
+[quake target =".bln" power = 3 time = 0.2]
+なによ！[r]
+急によそよそしく[r]
+なっちゃって…
+[p]
+
+[balloon x=110 y=-90 shape="001_03" scale = 1.05 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+[quake target =".bln" power = 3 time = 0.2]
+わたしが子供だと思って[r]
+バカにしてるんでしょ！？
+[p]
+
+*coma4
+//-------------------------------------------------------------------------------
+//  トランクス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_016_001"]
+
+[character x = 210 y = -200 storage = "90000/wait_right_anger_strong" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon id = "01" x = -110 y = 80 shape="001_02" scale = 0.95 action = "fadein" time = 0.1]
+[wait_anim target = "01"]
+[font size = 27]
+キミ…[r]
+もしかして迷子とか…？
+[p]
+
+*coma5
+//-------------------------------------------------------------------------------
+//  パン（GT）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+
+[coma shape="N0002L" bg = "bg_016_001"]
+
+[character x=-170 y=-120 storage = "00326/heapup_p_01" scale = 1.2 action = "fadein" time = 0.1]
+
+
+[balloon x=120 y=90 shape="001_01" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 26]
+[quake target =".bln" power = 3 time = 0.2]
+もう！！[r]
+子供扱いしないでって[r]
+言ってるでしょ！？
+[p]
+
+[stopbgm]

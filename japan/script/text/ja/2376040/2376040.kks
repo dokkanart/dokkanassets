@@ -1,0 +1,216 @@
+*start|スタート
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "013"]
+
+*000
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+[coma shape="S0001" bg = "bg_000_014"]
+
+//黒
+//[balloon x=0 y=0 shape="008_03" scale = 50.0]
+[character id = "kuro2" x=0 y=0 storage = "99999/black" scale = 50 angle = 90 action = "fade:100"] 
+
+
+[character id = "roze" x=150 y=20 storage = "00654/card_03" scale = 1.0 angle = 0 action = "fade:40"]
+
+[character id = "zam" x=-160 y=0 storage = "00660/card_04" scale = 1.0 action = "fade:40"]
+
+
+[balloon id = "n" x=0 y=0 shape="009_17" scale = 1.0 action = "fadein" time = 2.0]
+[font color="#FFFFFF"]
+[font size = 30]
+悟空の体を奪い[r]
+最強の存在を目指す[r]
+ゴクウブラック…[r]
+　[r]
+超ドラゴンボールで[r]
+不死身の体を手にした[r]
+ザマス…[r]
+　[r]
+　[r]
+悟空とベジータは[r]
+ゴクウブラックと[r]
+ザマスを倒すため[r]
+タイムマシンで[r]
+再び未来の世界へと[r]
+やってくるのだった
+
+[balloon id = "kuro" x=0 y=0 shape="008_03" scale = 50.0]
+[wait time = 0.7]
+[fadeout target = "kuro" time = 1.0]
+
+
+[wait_anim target="kuro"]
+
+
+// 空のフキダシ（セリフがないコマを送るために使用）
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+
+//フェードアウト（フェードアウトするコマ）
+[balloon x=0 y=0 shape="008_03" scale = 50.0 action = "fadein" time = 0.5 priority=220]
+[wait time = 0.7] 
+
+
+
+*001
+//-------------------------------------------------------------------------------
+//  
+//-------------------------------------------------------------------------------
+//[se storage = "19"]
+[coma shape="S0001" bg = "bg_073_001"]
+
+
+[character id = "hikari" x= -10 y=200 storage = "99999/ef_aura_front" scale = 1.0 action = "fadein" time = 0.1]
+[quake target ="hikari" power = 2 time = 4.0]
+
+
+[character id = "tm" x= 0 y=200 storage = "90003/timemachine_2" scale = 0.5 action = "fadein" time = 0.1]
+
+
+
+
+//フェードイン（フェードインするコマ）
+
+[balloon x=0 y=0 shape="008_03" scale = 50]
+
+[wait time = 1]
+
+[se storage = "17"]
+
+[fadeout target = ".bln" time = 2]
+
+[wait_anim target=".bln"]
+
+[wait_anim target="hikari"]
+
+[se storage = "3006"]
+
+[move target ="hikari" y=10 time = 0.7]
+[fadeout target = "hikari" time = 0.2]
+[move target ="tm" y=10 time = 0.7]
+[fadeout target = "tm" time = 0.7]
+
+[wait_anim target="tm"]
+
+[balloon x=0 y=0 shape="002_01" scale = 0 action = "fadein" time = 0.1]
+[p]
+
+
+
+
+*002
+//-------------------------------------------------------------------------------
+//  ゴクウブラック（超サイヤ人ロゼ）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_073_001"]
+
+[character x=-80 y=-290 storage = "00660/sp01_heapup_p_02" scale = 0.9 action = "fadein" time = 0.1]
+
+
+[character x = -200-30 y = -255-20 storage = "00654/sp03_idl_side_p_01" scale = 1.1 action = "fadein" time = 0.1]
+
+
+[balloon x=110 y=75 shape="002_02" scale = 0.65 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 44]
+//[quake target =".bln" power = 3 time = 0.2]
+ふ…
+[p]
+
+
+*003
+//-------------------------------------------------------------------------------
+//  超サイヤ人ゴッドSS孫悟空
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_073_001"]
+
+[character x=245 y=-110 storage = "00239/idl_side_e_01" scale = 1.0 action = "fadein" time = 0.1]
+
+//[character x=250 y=-140 storage = "00003/none_idl_side_e_01" scale = 1.1 action = "fade:60" time = 0.1]
+
+
+//[character x = 200 y = -255 storage = "00654/sp03_idl_side_p_01" scale = 1.1 action = "fadein" time = 0.1]
+//[flip target =".chara" h=1]
+
+[balloon x = -90 y = 65 shape="001_03" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+ベジータ おめえ[r]
+どっちとやる？
+[p]
+
+
+*004
+//-------------------------------------------------------------------------------
+//  超サイヤ人ゴッドSSベジータ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_073_001"]
+
+[character  x = 220 y = -110 storage = "00240/idl_side_p_01" scale = 1.05 action = "fadein" time = 0.1]
+[flip target =".chara" h=1]
+
+//[character x = 180 y = -110 storage = "00004/idl_side_e_02" scale = 1.1 action = "fade:60" time = 0.1]
+
+[balloon x = -90 y = 65 shape="002_03" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+ふん[r]
+当然 きさまと[r]
+ソックリのほうだ
+[p]
+
+
+*005
+//-------------------------------------------------------------------------------
+//  超サイヤ人ゴッドSS孫悟空
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_073_001"]
+
+[character x=245 y=-110 storage = "00239/idl_side_e_01" scale = 1.0 action = "fadein" time = 0.1]
+
+
+
+[balloon x = -90 y = 65 shape="001_03" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+おめえ なんだか[r]
+自信ありそうだな
+[p]
+
+
+*006
+//-------------------------------------------------------------------------------
+//  超サイヤ人ゴッドSSベジータ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_073_001"]
+
+[character id = "vgt" x = 190 y = -190 storage = "00240/card_04" scale = 1.1 angle = 0 action = "fadein" time = 0.1]
+//[quake target = "vgt" power = 2 time = 0.4]
+
+[balloon x = -155 y = 80 shape="002_01" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+[quake target =".bln" power = 3 time = 0.2]
+本物のきさまに[r]勝るオレが[r]
+偽物に負けるはずが[r]
+ないだろう！
+[p]
+
+
+
+//-------------------------------------------------------------------------------
+[stopbgm]

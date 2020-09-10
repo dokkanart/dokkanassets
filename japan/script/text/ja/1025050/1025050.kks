@@ -1,0 +1,137 @@
+*start|スタート
+
+//"２5－５スタート" 
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "006"]
+ 
+*001
+//-------------------------------------------------------------------------------
+//  "アボ カド"
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_004"]
+ 
+[character x = -100 y = -80 storage = "00651/heapup_p_01" scale = 0.8 action = "fadein" time = 0.1]
+[character x = -240 y = -80 storage = "00650/heapup_p_01" scale = 0.9 action = "fadein" time = 0.1]
+ 
+[balloon x=120 y=100 shape="004_04" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+[quake target =".bln" power = 3 time = 0.2]
+く…くそっ！！
+[p]
+
+[balloon x=140 y=-100 shape="004_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+こんな辺境の惑星に[r]
+こんなやつらが[r]
+いるなんて……！！
+[p]
+
+*002
+//-------------------------------------------------------------------------------
+//  トランクス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_004"]
+ 
+[character x = 210 y = -200 storage = "90000/wait_right_anger_strong" scale = 1.2 action = "fadein" time = 0.1]
+ 
+[balloon x=-100 y=100 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+オレたちは[r]
+変身したフリーザとも[r]
+互角に渡り合ったんだ！
+[p]
+
+[balloon x=-100 y=-90 shape="001_03" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+おまえたちには[r]
+負けないぞ！
+[p]
+
+*003
+//-------------------------------------------------------------------------------
+//  クウラの声
+//-------------------------------------------------------------------------------
+[bgm storage = "013"]
+[se storage = "3034"]
+[coma shape="N0003L" bg = "bg_000_016"]
+ 
+//[character x = -260 y = -220 storage = "00380/idl_side_p_01" scale = 1.4 action = "fadein" time = 0.1]
+ 
+[balloon x=-140 y=80 shape="002_02" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 40]
+//[quake target =".bln" power = 3 time = 0.2]
+ほう…
+[p]
+ 
+[balloon x=130 y=-100 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+フリーザを追い詰めた[r]
+地球人とはおまえらか…
+[p]
+
+*004
+//-------------------------------------------------------------------------------
+//  トランクス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_004"]
+ 
+[character x = 210 y = -200 storage = "90000/wait_right_anger" scale = 1.2 action = "fadein" time = 0.1]
+ 
+[balloon x=-80 y=70 shape="001_01" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 44]
+[quake target =".bln" power = 3 time = 0.2]
+む！？
+[p]
+
+*005
+//-------------------------------------------------------------------------------
+//  クウラが現れる。
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="S0001" bg = "bg_000_016"]
+
+[wait time = 0.3]
+
+//フェードインで登場。 
+[character x = 0 y = 0 storage = "00283/idl_front_p_01" scale = 1.6 action = "fadein" time = 1.2]
+
+[wait_anim target=".chara"]
+ 
+// 空のフキダシ（セリフがないコマを送るために使用）
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+*006
+//-------------------------------------------------------------------------------
+//  トランクス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_000_004"]
+ 
+[character x=170 y=-325 storage = "90000/wait_right_surprise" scale = 1.4 action = "fadein" time = 0.1]
+ 
+[balloon x=-120 y=70 shape="004_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+フ…[r]
+フリーザ……！？
+[p] 
+//-------------------------------------------------------------------------------
+[stopbgm]

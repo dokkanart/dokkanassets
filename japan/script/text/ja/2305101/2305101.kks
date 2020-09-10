@@ -1,0 +1,196 @@
+//"ステージ１０ゴール"
+
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "007"]
+
+*001
+//-------------------------------------------------------------------------------
+//  ゴールデンフリーザ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_004_002"]
+
+[character x = -250 y = -140 storage = "00241/heapup_p_01" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x=120 y=120 shape="004_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+ハアッ…ハアッ…[r]
+ハアッ……！
+[p]
+
+*002
+//-------------------------------------------------------------------------------
+//  "悟空（超サイヤ人ゴッドSS）"
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_004_002"]
+
+[character x=170 y=-300 storage = "00239/card_02" scale = 1.1 action = "fadein" time = 0.1]
+
+[balloon x=-120 y=120 shape="001_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+悪いことは言わねえ…[r]
+おめえもう帰れ
+[p]
+
+[balloon x=-130 y=-90 shape="001_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+オラは必ず[r]
+また闘ってやる
+[p]
+
+*003
+//-------------------------------------------------------------------------------
+//  ゴールデンフリーザ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_004_002"]
+
+[character x = -250 y = -140 storage = "00241/heapup_p_01" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x=120 y=120 shape="004_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+ぐ…ぐぐぐ……[r]
+なぜだ…
+[p]
+
+[balloon x=130 y=-90 shape="004_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+そんなはずは[r]
+ないんだ……！！
+[p]
+
+*004
+//-------------------------------------------------------------------------------
+//  ソルベ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0003L" bg = "bg_004_002"]
+
+[wait time = 0.7]
+
+//"フェードインでソルベが登場。悟空に向けて光線銃を撃つ。"
+[character x = -270 y = -100 storage = "00247/atc_sp01_p_02" scale = 1.6 action = "fadein" time = 0.7]
+
+[wait_anim target=".chara"]
+
+[se storage = "3006"]
+
+[lwfobject id = "kaki1" storage="kakimoji:ef_025" in="04" x=180 y=90 scale = 1.5]
+[quake target = "kaki1" power = 15 time = 0.2]
+
+[character x = 290 y = -25 storage = "99999/eyebeam" scale = 2.0 action = "fadein" time = 0.1]
+
+[bgm storage = "013"]
+
+
+// 空のフキダシ（セリフがないコマを送るために使用）
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+
+
+*005
+//-------------------------------------------------------------------------------
+//  悟空 ※超サイヤ人からもとに戻る
+//-------------------------------------------------------------------------------
+[se storage = "3026"]
+[coma shape="N0003R" bg = "bg_004_002"]
+
+[character id = "goku" x = 120 y = -130 storage = "00244/dam_side_e_01" scale = 1.6 action = "fadein" time = 0.1]
+[quake target ="goku" power = 5 time = 0.5]
+
+
+[character id = "beam" x = 0 y = -20 storage = "99999/eyebeam" scale = 3.0 action = "fadein" time = 0.1]
+
+
+
+[balloon x=-120 y=120 shape="007_02" scale = 0.8 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 40]
+[quake target =".bln" power = 7 time = 0.2]
+ぐわあぁ！！
+//[p]
+
+[wait time = 0.3]
+
+[fadeout target = "beam" time = 0.5]
+
+[wait_anim target="beam"]
+
+// 空のフキダシ（セリフがないコマを送るために使用）
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+
+*006
+//-------------------------------------------------------------------------------
+//  ゴールデンフリーザ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0003L" bg = "bg_004_002"]
+
+[character x = -240 y = -100 storage = "00247/heapup_p_01" scale = 0.7 action = "fadein" time = 0.1]
+
+[character x = 200 y = -200 storage = "00241/idl_side_p_01" scale = 1.3 action = "fadein" time = 0.1]
+
+[balloon x=-30 y=140 shape="002_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+いい仕事でしたよ[r]
+ソルベ
+[p]
+
+[balloon x=0 y=-140 shape="002_01" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+[quake target =".bln" power = 3 time = 0.2]
+あ…[r]
+ありがとうございます！
+[p]
+
+*007
+//-------------------------------------------------------------------------------
+//  ゴールデンフリーザ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002L" bg = "bg_004_002"]
+
+[character x=-190 y=-420 storage = "00241/card_01" scale = 1.4 action = "fadein" time = 0.1]
+
+[balloon x=150 y=60 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+ほほほ…[r]
+やっぱり甘さが[r]
+弱点でしたね
+[p]
+
+[balloon x=80 y=-180 shape="002_02" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+強すぎるが故に[r]
+つい油断をしてしまう[r]
+悪いクセがあるんですよ
+[p]
+
+
+//-------------------------------------------------------------------------------
+[stopbgm]

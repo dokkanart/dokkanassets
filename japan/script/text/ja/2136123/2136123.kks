@@ -1,0 +1,171 @@
+
+
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "008"]
+
+
+*01
+//-------------------------------------------------------------------------------
+//  人造人間19号
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+
+
+[coma shape="N0001L" bg = "bg_004_001"]
+
+[character x = -185 y = -100 storage = "00018/idl_side_p_01" scale = 1.1 action = "fadein" time = 0.1]
+
+
+[balloon shape="002_02" x = 120 y = 100 scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+
+ベジータ[r]
+きさまの格闘技は すでに[r]
+知りつくしているのだ[p]
+
+
+*02
+//-------------------------------------------------------------------------------
+//  ベジータ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+
+
+[coma shape="N0001R" bg = "bg_004_001"]
+
+[character x = 180 y = -60 storage = "00004/idl_side_e_02" scale = 1.1 action = "fadein" time = 0.1]
+
+
+[balloon shape="002_01" x = -120 y = 100 scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+
+計算だけで[r]
+わかるもんじゃない[r]
+オレたちサイヤ人はな…[p]
+
+
+*03
+//-------------------------------------------------------------------------------
+//  人造人間19号
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+
+
+[coma shape="N0001L" bg = "bg_004_001"]
+
+[character x = -185 y = -100 storage = "00018/idl_side_p_01" scale = 1.1 action = "fadein" time = 0.1]
+
+
+[balloon shape="002_02" x = 110 y = 100 scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 40]
+//[quake target =".bln" power = 3 time = 0.2]
+
+ふん[p]
+
+
+*04
+//-------------------------------------------------------------------------------
+//  ベジータ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+
+
+[coma shape="N0001R" bg = "bg_004_001"]
+
+[character id = "veg1" x = 190 y = -100 storage = "00004/idl_side_e_02" scale = 1.1 action = "fadein" time = 0.1]
+
+
+[balloon shape="002_02" x = -140 y = 130 scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+
+知りたいもんだ…[p]
+
+
+[balloon shape="002_03" x = -135 y = -80 scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+
+人造人間でも[r]
+恐怖におびえるのか[r]
+どうか……[p]
+
+//超サイヤ人に変身
+[character id = "super" x = 200 y = -170 storage = "99999/supersaiyan" scale = 1.0 action = "expand" time = 0.1]
+
+[wait time = 0.1]
+
+//点滅（白）
+[se storage = "3025"]
+//点滅
+[balloon shape="008_02" x = 140 y = -30 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+[balloon shape="008_02" x = 140 y = -30 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+
+[balloon id = "white" shape="008_02" x = 140 y = -30 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = "veg1"]
+[clear target = "super"]
+[fadeout target = "white" time = 2.0]
+
+[lwfobject id = "kaki1" storage="kakimoji:ef_009" in="04" x=80 y=30 scale = 1.1]
+[quake target = "kaki1" power = 1 time = 300]
+
+[character id = "super" x = 220 y = -240 storage = "99999/supersaiyan" scale = 1.2 action = "fadein" time = 0.1]
+[character id = "veg2" x = 200 y = -150 storage = "00004/SSR_heapup_e_01" scale = 1.5 action = "fadein" time = 0.1]
+
+[wait_anim target="white"]
+
+// 空のフキダシ（セリフがないコマを送るために使用）
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+
+
+*05
+//-------------------------------------------------------------------------------
+//  ベジータ（超サイヤ人）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+
+
+[coma shape="N0002R" bg = "bg_004_001"]
+
+//[character x=180 y=-100 storage = "99999/supersaiyan" scale = 1.1 action = "fadein" time = 0.1]
+
+[character x=150 y=-130 storage = "00002/card_02" scale = 0.9 action = "fadein" time = 0.1]
+
+
+[balloon shape="002_02" x = -140 y = 120 scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+
+自分への怒りで[r]
+とつぜん[r]
+目覚めたんだ…[p]
+
+[balloon shape="002_01" x = -130 y = -130 scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+
+超サイヤ人がな！！[p]
+
+
+
+[stopbgm]

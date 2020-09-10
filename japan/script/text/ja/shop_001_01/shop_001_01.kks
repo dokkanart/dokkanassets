@@ -1,0 +1,302 @@
+
+
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+//[bgm storage = "012"]
+
+
+*001
+//-------------------------------------------------------------------------------
+//  おばけ
+//-------------------------------------------------------------------------------
+[se storage = "07"]
+[coma id = "coma1" shape="N0002R" bg = "bg_000_028"]
+//[wait time = 0.7]
+
+
+//右から左へスライドして、一度画面外へ
+[character id = "obake" x = -600 y = -50 storage = "90003/obake" scale = 1.2 action = "slide:right" time = 1.0]
+
+[wait time = 0.1]
+
+
+[balloon id = "1" x=0 y=140 shape="001_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+へっへっへ〜
+
+
+[wait_anim target="obake"]
+//[fadeout target = "1" time = 0.1]
+[clear target = "obake"]
+//[wait time = 0.3]
+
+
+
+//また右からスライドしてきて、画面右位置で停止
+[character id = "obake" x=200 y=-30 storage = "90003/obake" scale = 0.8 action = "slide:right" time = 1.2]
+[wait_anim target="obake"]
+
+[wait time = 0.3]
+
+[clear target = "1"]
+
+[balloon id = "2" x=-20 y=130 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+ようこそ[r]
+占いババ様の交換所へ
+[p]
+
+//※「[font color="#0000CD"]交換pt[font color="#141414"]」の文字色変える
+[balloon id = "3" x=80 y=-200 shape="001_03" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+[quake target =".bln" power = 3 time = 0.2]
+ここでは[font color="#0000CD"]交換pt[font color="#141414"]を使って[r]
+いろいろな商品を[r]
+手に入れられますよ〜
+[p]
+
+[clear target = "2"]
+[clear target = "3"]
+
+
+
+[balloon id = "4" x=0 y=200 shape="001_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+ふぉっふぉっふぉ…
+
+[wait time = 0.3]
+
+//フキダシのあとにキャラクターがフェードイン
+[character id = "baba" x=-170 y=-30 storage = "90003/uranai_baba" scale = 1.5 action = "fadein" time = 0.7]
+[wait time = 1.2]
+
+[balloon id = "5" x=-5 y=-220 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+いらないキャラクターや[r]
+アイテムはわしが[r]
+引き取ってやるぞい
+[p]
+
+
+[clear target = "4"]
+[clear target = "5"]
+
+
+[balloon id = "6" x=125 y=120 shape="001_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target ="obake" power = 3 time = 0.4]
+つまり[r]
+こういうことですね[r]
+占いババ様
+[p]
+
+[clear target = "6"]
+
+//フキダシのあとに説明画像を表示
+//【キャラクターやアイテムを[font color="#0000CD"]交換pt[font color="#141414"]に換えて新しいアイテムを獲得する図】
+[character id = "guide1" x=0 y=440 storage = "90003/trade01" scale = 1.1 action = "fadein" time = 0.5]
+
+[wait_anim target="guide1"]
+
+[balloon id = "7" x=150 y=120 shape="001_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target ="obake" power = 3 time = 0.2]
+いらないアイテムを[r]
+[font color="#0000CD"]交換pt[font color="#141414"]に換える
+[p]
+
+
+
+
+[balloon id = "8" x=90 y=-200 shape="001_03" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target ="obake" power = 3 time = 0.2]
+その[font color="#0000CD"]交換pt[font color="#141414"]を使って[r]
+ほしいアイテムと交換する
+[p]
+
+
+
+
+[clear target = "7"]
+[clear target = "8"]
+
+
+[balloon id = "1" x=50 y=110 shape="001_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+そういうことじゃ[r]
+便利じゃろう？
+[p]
+
+[clear target = "1"]
+
+[clear target = "guide1"]
+
+
+//フキダシと同時に説明画像を表示
+//【交換所の商品何個か】
+[character id = "guide2" x=0 y=440 storage = "90003/trade02" scale = 1.1]
+
+[balloon id = "2" x=0 y=-190 shape="001_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+見てのとおり[r]
+交換できる商品は[r]
+いろいろあるぞい
+[p]
+
+
+
+
+
+[clear target = "2"]
+
+
+
+[balloon id = "3" x=125 y=120 shape="001_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target ="obake" power = 3 time = 0.4]
+//貴重な覚醒メダルや[r]
+//サポートアイテムが[r]
+
+貴重なアイテムや[r]
+覚醒メダルが[r]
+手に入るんですね〜
+[p]
+
+
+
+[clear target = "3"]
+
+
+
+[balloon id = "4" x=65 y=120 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+…ただしじゃ[r]
+置いてある商品は[r]
+時間によって変化する
+[p]
+
+[balloon id = "5" x=5 y=-210 shape="001_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+ほしいものを[r]
+見逃さないように[r]
+注意するんじゃな
+[p]
+
+
+[clear target = "4"]
+[clear target = "5"]
+
+[balloon id = "1" x=65 y=120 shape="001_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+…ん？[r]
+鍵のかかっている[r]
+商品が気になるか？
+[p]
+
+[balloon id = "2" x=5 y=-200 shape="001_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+ひっひっひ…[r]
+あせるでない
+[p]
+
+
+
+[clear target = "1"]
+[clear target = "2"]
+
+
+[balloon id = "1" x=135 y=120 shape="001_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target ="obake" power = 3 time = 0.4]
+//[quake target =".bln" power = 3 time = 0.2]
+
+[font color="#0000CD"]交換pt[font color="#141414"]を使うことで[r]
+商品の枠が[r]
+解放されますよ〜
+[p]
+
+[clear target = "1"]
+
+
+
+[balloon id = "1" x=0 y=-210 shape="001_02" scale = 1.1 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 22]
+//[quake target =".bln" power = 3 time = 0.2]
+商品が増えれば[r]
+おぬしがほしいものも[r]
+手に入れやすくなるじゃろう
+[p]
+
+
+[clear target = "1"]
+
+[clear target = "guide2"]
+
+//フキダシと同時に説明画像を表示【「＋」ボタンの画像】
+[character id = "guide3" x=0 y=440 storage = "90003/trade03" scale = 1.1]
+
+[balloon id = "1" x=120 y=190 shape="001_03" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+いらないアイテムを[r]
+[font color="#0000CD"][font color="#0000CD"]交換pt[font color="#141414"][font color="#141414"]に換えるには[r]
+この「＋」マークを[r]
+押してください
+[p]
+
+#0000CD
+
+[clear target = "1"]
+
+
+
+[balloon id = "1" x=50 y=190 shape="001_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+ふぉっふぉっふぉ…
+[p]
+
+[balloon id = "2" x=0 y=-200 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+おぬしのアイテムや[r]
+キャラクターをわしに[r]
+見せてみるのじゃ
+[p]
+
+
+//[stopbgm]

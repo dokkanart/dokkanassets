@@ -1,0 +1,123 @@
+
+
+*start|スタート
+//2523020	 ステージ２スタート
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "003"]
+
+*01
+//-------------------------------------------------------------------------------
+//  合体ザマス
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+
+[coma shape="S0001" bg = "bg_073_001"]
+
+[character x = 0 y = 100 storage = "00661/card_02" scale = 1.2 action = "fadein" time = 0.1]
+[move target =".chara" y=70 time = 2]
+
+//[wait_anim target=".chara"]
+
+[wait time = 1]
+
+[balloon x= -130 y= 460 shape="002_02" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+//[quake target =".bln" power = 3 time = 0.2]
+感じるぞ…[p]
+
+[balloon x= 120 y= -300 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+わが身ひとつに[r]
+ふたつの力が[r]
+溶け合ってく…[p]
+
+*02
+//-------------------------------------------------------------------------------
+//  ゴワス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+
+[coma shape="N0001R" bg = "bg_073_001"]
+
+[character x=200 y=-300 storage = "90003/gowasu" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon x=-90 y=90 shape="001_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+この強大な力…[r]
+ザマスめ…[r]
+合体しおった…[p]
+
+[balloon x=-110 y=-100 shape="001_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+こうなったら[r]
+我が弟子だった[r]
+愚か者の最後を[r]
+見届けるぞ…[p]
+
+*03
+//-------------------------------------------------------------------------------
+//  界王神
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_073_001"]
+
+[character x = -210 y = -150 storage = "00361/card_02" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon x=110 y=110 shape="004_02" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target = ".bln" power = 3 time = 0.2]
+[font size = 24]
+ザマスは…[r]
+神としてのステージも[r]
+我々の常識を[r]
+はるかに超えています[p]
+
+[balloon x=125 y=-90 shape="004_04" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[quake target = ".bln" power = 3 time = 0.2]
+[font size = 24]
+不死身と最強…[r]
+ふたつの力を得た相手を[r]
+どうやって倒すと…[p]
+
+*04
+//-------------------------------------------------------------------------------
+//  ブルマ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+
+[coma shape="N0002R" bg = "bg_073_001"]
+
+[character x=180 y=-300 storage = "90003/bluma_hakui" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon x=-120 y=80 shape="006_02" scale = 1.0 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+[quake target =".bln" power = 7 time = 0.2]
+
+神様が なに弱気なこと[r]
+言ってんのよ！[r]
+なにがなんでも[r]
+あいつを倒すのよ！！[p]
+
+[balloon x=-100 y=-190 shape="006_01" scale = 0.9 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 7 time = 0.2]
+
+ベジータと[r]トランクスなら[r]
+絶対やってくれるわ！！[p]
+
+
+
+//-------------------------------------------------------------------------------
+[stopbgm]

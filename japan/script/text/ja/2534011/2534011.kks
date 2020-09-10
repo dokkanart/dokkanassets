@@ -1,0 +1,95 @@
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "032"]
+
+*001
+//-------------------------------------------------------------------------------
+//  時の狭間
+//-------------------------------------------------------------------------------
+[coma id = "coma1" shape="S0001" bg = "bg_015_001"]
+
+[wait time = 0.7]
+
+[se storage = "3038"]
+[quake target = "coma1" power = 2 time = 300]
+
+[lwfobject id = "kaki1" storage="kakimoji:ef_009" x=-120 y=290 scale = 2.5 action = "fadein" time = 0.7]
+[quake target = "kaki1" power = 3 time = 300]
+
+
+
+
+[wait time = 2.0]
+
+//点滅
+[se storage = "3025"]
+//点滅
+[balloon shape="008_02" x = 140 y = -30 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+[balloon shape="008_02" x = 140 y = -30 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+
+[balloon id = "uzu" x=0 y=-150 shape="010_19" scale = 10.0 action = "expand" time = 5.0]
+[quake target = "uzu" power = 1 time = 300]
+[wait time = 0.5] 
+
+//フェードアウト（フェードアウトするコマ）
+[balloon x=0 y=0 shape="008_03" scale = 50.0 action = "fadein" time = 1.0]
+[wait time = 1.5] 
+
+
+*002
+//-------------------------------------------------------------------------------
+//  バーダック
+//-------------------------------------------------------------------------------
+[coma id = "coma1" shape="S0001" bg = "bg_000_051"]
+
+
+//フェードイン（フェードインするコマ）
+[balloon x=0 y=0 shape="008_03" scale = 50]
+[wait time = 0.5]
+[fadeout target = ".bln" time = 2.0]
+[wait_anim target=".bln"]
+
+//[se storage = "50"]
+
+
+[character x = 0 y = 30 storage = "00067/card_02" scale = 1.0 action = "fadein" time = 0.7]
+
+[wait_anim target=".chara"]
+
+[balloon shape="002_02" x = -40 y = 460 scale = 0.9 action = "fadein" time = 0.1]
+[font size = 28]
+[wait_anim target=".bln"]
+//[quake target =".bln" power = 3 time = 300]
+ここなら誰のジャマも[r]
+入らねえだろ…
+[p]
+
+[balloon shape="002_03" x = -140 y = -220 scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+今回ばかりは[r]
+サイヤ人の運命も[r]
+カカロットの運命も[r]
+関係ねえ！！
+[p]
+
+[quake target =".chara" power = 6 time = 0.3] 
+ 
+[balloon shape="006_01" x = 140 y = -420 scale = 0.9 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 7 time = 0.2]
+さあ！！[r]
+かかってきやがれ！！
+[p]
+
+
+[stopbgm]

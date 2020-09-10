@@ -1,0 +1,669 @@
+*start|スタート
+
+//"エリア１ゴール"
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "012"]
+ 
+*001
+//-------------------------------------------------------------------------------
+//  18号
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0001R" bg = "bg_019_001"]
+ 
+[character x = 200 y = -160 storage = "00020/heapup_e_02" scale = 1.1 action = "fadein" time = 0.1]
+ 
+[balloon x=-80 y=70 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+さあ！[r]
+2000万ゼニー[r]
+さっさとよこしな！
+[p]
+
+*002
+//-------------------------------------------------------------------------------
+//  ミスター・サタン
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_019_001"]
+
+[character x=-210 y=-110 storage = "00038/idl_side_p_01" scale = 1.1 action = "fadein" time = 0.1]
+//立ち_01+あせ
+[character x=-180 y=110 storage = "99999/ase" scale = 0.6 action = "fadein" time = 0.1]
+ 
+[balloon x=120 y=100 shape="004_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+は はらいます！！[r]
+少しお待ちを！
+[p]
+ 
+[balloon x=130 y=-95 shape="001_03" scale = 0.6 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 44]
+//[quake target =".bln" power = 3 time = 0.2]
+…ん！？
+[p]
+
+*003
+//-------------------------------------------------------------------------------
+//  メンメンが現れる。
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_019_001"]
+
+[wait_anim target=".coma"]
+ 
+[se storage = "3010"]
+[character x = 185 y = -340 storage = "90003/menmen" scale = 1.2 action = "fadein" time = 0.7]
+
+[wait_anim target=".chara"]
+ 
+// 空のフキダシ（セリフがないコマを送るために使用）
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+*004
+//-------------------------------------------------------------------------------
+//  ミスター・サタン
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_019_001"]
+
+[character x=-210 y=-110 storage = "00038/idl_side_p_01" scale = 1.1 action = "fadein" time = 0.1]
+
+ 
+[balloon x=135 y=120 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+なんだ おまえは！？[r]
+秘書にアポを[r]
+とってきたのか？
+[p]
+ 
+[balloon x=120 y=-90 shape="001_03" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 7 time = 0.2]
+サインなら[r]
+あとからしてやるから！[r]
+今 取り込み中だからな！
+[p]
+
+*005
+//-------------------------------------------------------------------------------
+//  メンメン
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_019_001"]
+ 
+[character x = 185 y = -340 storage = "90003/menmen" scale = 1.2 action = "fadein" time = 0.1]
+ 
+[balloon x=-100 y=70 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+イトコから 
+挑戦状を[r]あずかってきとる
+[p]
+
+*006
+//-------------------------------------------------------------------------------
+//  ミスター・サタン
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_019_001"]
+
+[character x=-210 y=-110 storage = "00038/idl_side_p_01" scale = 1.1 action = "fadein" time = 0.1]
+
+ 
+[balloon x=120 y=120 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+挑戦状だと？[r]
+そんなもの秘書に渡せ！
+[p]
+ 
+[balloon x=130 y=-80 shape="001_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+毎日 何百通も[r]
+来ているんだからな！
+[p]
+
+*007
+//-------------------------------------------------------------------------------
+//  メンメン
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_019_001"]
+ 
+[character x = 185 y = -340 storage = "90003/menmen" scale = 1.2 action = "fadein" time = 0.1]
+ 
+[balloon x=-100 y=110 shape="001_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+ええ度胸やないか！
+[p]
+
+[balloon x=-120 y=-90 shape="001_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size =28]
+[quake target =".bln" power = 3 time = 0.2]
+小学校６年まで[r]
+オネショしとった[r]
+わりには！！
+[p]
+
+*008
+//-------------------------------------------------------------------------------
+//  ミスター・サタン
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_019_001"]
+
+[character x=-200 y=-110 storage = "00038/heapup_p_02" scale = 1.1 action = "fadein" time = 0.1]
+[character x=-210 y=125 storage = "99999/ase" scale = 0.5 action = "fadein" time = 0.1]
+ 
+[balloon x=120 y=70 shape="007_02" scale = 0.8 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 7 time = 0.2]
+オネショ！？[r]
+誰から聞いた！？
+[p]
+
+*009
+//-------------------------------------------------------------------------------
+//  メンメン
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_019_001"]
+ 
+[character x = 185 y = -340 storage = "90003/menmen" scale = 1.2 action = "fadein" time = 0.1]
+ 
+[balloon x=-80 y=70 shape="001_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+イトコや…！
+[p]
+
+*010
+//-------------------------------------------------------------------------------
+//  ミスター・サタン
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_019_001"]
+
+[character x=-200 y=-110 storage = "00038/heapup_p_02" scale = 1.1 action = "fadein" time = 0.1]
+[character x=-210 y=125 storage = "99999/ase" scale = 0.5 action = "fadein" time = 0.1]
+ 
+[balloon x=80 y=120 shape="004_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+そのことを[r]
+知っているのは…
+[p]
+ 
+[balloon x=120 y=-80 shape="006_02" scale = 0.75 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+[quake target =".bln" power = 7 time = 0.2]
+まさか[r]
+ジャガー！？
+[p]
+
+*011
+//-------------------------------------------------------------------------------
+//  メンメン
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_019_001"]
+ 
+[character x = 185 y = -340 storage = "90003/menmen" scale = 1.2 action = "fadein" time = 0.1]
+ 
+[balloon x=-100 y=110 shape="001_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+そうや[r]
+ジャガー・バッダや！
+[p]
+
+[balloon x=-100 y=-80 shape="001_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+知らんとは[r]
+言わさへんで！
+[p]
+
+*012
+//-------------------------------------------------------------------------------
+//  ミスター・サタン
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_019_001"]
+
+
+[character x=-200 y=-110 storage = "00038/heapup_p_02" scale = 1.1 action = "fadein" time = 0.1]
+
+ 
+[balloon x=105 y=120 shape="001_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+ジャガーなんかと[r]
+闘うヒマはないわ！
+[p]
+ 
+[balloon x=130 y=-90 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+わたしは[r]
+いそがしいんだ！[r]
+さあ 帰った帰った！
+[p]
+
+*013
+//-------------------------------------------------------------------------------
+//  メンメン
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_019_001"]
+ 
+[character x = 185 y = -340 storage = "90003/menmen" scale = 1.2 action = "fadein" time = 0.1]
+ 
+[balloon x=-80 y=130 shape="001_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+ジャガーが[r]
+伝えろと言うとった
+[p]
+
+[balloon x=-80 y=-80 shape="001_02" scale = 1.1 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 20]
+//[quake target =".bln" power = 3 time = 0.2]
+この挑戦状を拒否するようなら[r]
+世界チャンピオンベルトをいただき[r]
+そのうえ [r]おまえが小学校６年生の…
+[p]
+
+*014
+//-------------------------------------------------------------------------------
+//  ミスター・サタン
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_019_001"]
+
+[character x=-200 y=-110 storage = "00038/heapup_p_02" scale = 1.1 action = "fadein" time = 0.1]
+//タメ_01+あせ
+[character x=-210 y=125 storage = "99999/ase" scale = 0.5 action = "fadein" time = 0.1]
+ 
+[balloon x=120 y=85 shape="004_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+わ…わかった！！[r]
+ジャガーと闘えば[r]
+いいんだな！？
+[p]
+ 
+
+
+*015
+//-------------------------------------------------------------------------------
+//  メンメン
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_019_001"]
+ 
+[character x = 185 y = -340 storage = "90003/menmen" scale = 1.2 action = "fadein" time = 0.1]
+ 
+[balloon x=-80 y=70 shape="001_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+いや[r]
+ジャガーが養成した[r]
+バイオ戦士たちとや！
+[p]
+
+*017
+//-------------------------------------------------------------------------------
+//  ミスター・サタン
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_019_001"]
+
+[character x=-210 y=-110 storage = "00038/idl_side_p_01" scale = 1.1 action = "fadein" time = 0.1]
+//立ち_01+あせ
+[character x=-180 y=110 storage = "99999/ase" scale = 0.6 action = "fadein" time = 0.1]
+ 
+[balloon x=110 y=120 shape="001_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+バイオ戦士たちと！？
+[p]
+ 
+[balloon x=100 y=-90 shape="004_02" scale = 1.1 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 22]
+[quake target =".bln" power = 3 time = 0.2]
+…まさか その中に[r]
+髪の毛が金色で逆立っている[r]
+ようなやつはいないだろうな？
+[p]
+
+*018
+//-------------------------------------------------------------------------------
+//  メンメン
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_019_001"]
+ 
+[character x = 185 y = -340 storage = "90003/menmen" scale = 1.2 action = "fadein" time = 0.1]
+ 
+[balloon x=-80 y=70 shape="001_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+おるか！[r]
+そんなもん！！
+[p]
+
+*019
+//-------------------------------------------------------------------------------
+//  ミスター・サタン
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_019_001"]
+
+[character x=-200 y=-110 storage = "00038/heapup_p_02" scale = 1.1 action = "fadein" time = 0.1]
+
+[balloon x=80 y=120 shape="001_03" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+[quake target =".bln" power = 3 time = 0.2]
+わかった！
+[p]
+ 
+[balloon x=120 y=-80 shape="001_02" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+18号[r]
+かる〜く倒してくるから[r]
+ちょっと待っててくれ！
+[p]
+
+*020
+//-------------------------------------------------------------------------------
+//  18号
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_019_001"]
+ 
+[character x = 200 y = -160 storage = "00020/heapup_e_02" scale = 1.1 action = "fadein" time = 0.1]
+ 
+[balloon x=-100 y=100 shape="002_03" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+その手はくわないよ…[r]
+このまま逃げ出す気[r]なんだろう？[r]
+ヘタな芝居して！
+[p]
+
+[balloon x=-110 y=-90 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+わたしも[r]
+いっしょに行くよ！！
+[p]
+
+*021
+//-------------------------------------------------------------------------------
+//  トランクス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_019_001"]
+
+
+[character x=600 y=-110 storage = "00200/idl_side_e_01" scale = 1.2 action = "fadein" time = 0.1]
+[move target =".chara" x=230 time = 1]
+
+[wait_anim target=".chara"]
+ 
+[balloon x=-100 y=60 shape="001_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+バイオ戦士か〜！
+[p]
+
+*022
+//-------------------------------------------------------------------------------
+//  孫悟天
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_019_001"]
+
+[character x=-190 y=-120 storage = "00225/idl_side_p_01" scale = 1.2 action = "fadein" time = 0.1]
+ 
+[balloon x=125 y=50 shape="001_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+トランクスくん[r]
+バイオ戦士ってなに？
+[p]
+
+*023
+//-------------------------------------------------------------------------------
+//  トランクス
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0001R" bg = "bg_019_001"]
+ 
+[character x=230 y=-110 storage = "00200/idl_side_e_01" scale = 1.2 action = "fadein" time = 0.1]
+ 
+[balloon x=-110 y=70 shape="001_03" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+バイオテクノロジーで[r]
+造り出した戦士のことだろ
+[p]
+
+*024
+//-------------------------------------------------------------------------------
+//  孫悟天
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_019_001"]
+
+[character x=-190 y=-120 storage = "00225/idl_side_p_01" scale = 1.2 action = "fadein" time = 0.1]
+ 
+[balloon x=125 y=50 shape="001_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+バイオテクノロジーって[r]
+なに？
+[p]
+
+*025
+//-------------------------------------------------------------------------------
+//  トランクス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_019_001"]
+ 
+[character x=230 y=-110 storage = "00200/idl_side_e_01" scale = 1.2 action = "fadein" time = 0.1]
+ 
+[balloon x=-110 y=120 shape="001_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+おまえ[r]
+なんにも知らねえんだな
+[p]
+
+[balloon x=-100 y=-90 shape="001_02" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+遺伝子工学っていって[r]
+細胞から新しい生命を[r]
+誕生させることも[r]
+できるんだよ！
+[p]
+
+*026
+//-------------------------------------------------------------------------------
+//  孫悟天
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_019_001"]
+
+[character x=-190 y=-120 storage = "00225/idl_side_p_01" scale = 1.2 action = "fadein" time = 0.1]
+ 
+[balloon x=110 y=70 shape="001_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+わ〜！[r]
+トランクスくん[r]
+すごい！
+[p]
+
+*027
+//-------------------------------------------------------------------------------
+//  トランクス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_019_001"]
+ 
+[character x=230 y=-110 storage = "00200/idl_side_e_01" scale = 1.2 action = "fadein" time = 0.1]
+ 
+[balloon x=-100 y=110 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+ママもおじいちゃんも[r]
+科学者だからな
+[p]
+
+[balloon x=-80 y=-90 shape="001_03" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+このくらい常識さ！
+[p]
+
+*028
+//-------------------------------------------------------------------------------
+//  孫悟天
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_019_001"]
+
+[character x=-190 y=-120 storage = "00225/idl_side_p_01" scale = 1.2 action = "fadein" time = 0.1]
+ 
+[balloon x=110 y=70 shape="001_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+あのさ[r]
+遺伝子工学ってなに？
+[p]
+
+*029
+//-------------------------------------------------------------------------------
+//  トランクス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_019_001"]
+ 
+[character x=230 y=-110 storage = "00200/idl_side_e_01" scale = 1.2 action = "fadein" time = 0.1]
+[character x=205 y=90 storage = "99999/ase" scale = 0.7 action = "fadein" time = 0.1]
+ 
+[balloon x=-100 y=110 shape="004_01" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+[quake target =".bln" power = 3 time = 0.2]
+え…！？[r]
+い…遺伝子工学ってのは…[r]
+んー……
+[p]
+
+[balloon x=-100 y=-100 shape="004_02" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+[quake target =".bln" power = 3 time = 0.2]
+ハハハ バッカだなあ[r]
+バイオテクノロジーのことに[r]
+決まってるじゃねえか！
+[p]
+
+*030
+//-------------------------------------------------------------------------------
+//  孫悟天
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_019_001"]
+
+[character x=-190 y=-120 storage = "00225/idl_side_p_01" scale = 1.2 action = "fadein" time = 0.1]
+ 
+[balloon x=100 y=60 shape="001_01" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 40]
+[quake target =".bln" power = 3 time = 0.2]
+あっ！[r]
+そっか！
+[p]
+
+*031
+//-------------------------------------------------------------------------------
+//  トランクス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_019_001"]
+ 
+[character x=180 y=-110 storage = "00200/card_01" scale = 0.9 action = "fadein" time = 0.1]
+ 
+[balloon x=-150 y=70 shape="001_03" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 40]
+[quake target =".bln" power = 3 time = 0.2]
+よーし！
+[p]
+
+[balloon x=-110 y=-200 shape="001_02" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+[quake target =".bln" power = 3 time = 0.2]
+オレたちも[r]
+18号さんについていって[r]
+バイオ戦士たちと闘おうぜ！
+[p]
+ 
+//-------------------------------------------------------------------------------
+[stopbgm]

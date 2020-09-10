@@ -1,0 +1,127 @@
+*start|スタート
+
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "013"]
+
+
+*001
+//-------------------------------------------------------------------------------
+//  フリーザ：台詞（界王）
+//-------------------------------------------------------------------------------
+
+//[se storage = "04"]
+[coma shape="S0001" bg = "bg_050_001"]
+
+[character x=0 y=30 storage = "00072/card_1001600" scale = 1.7 action = "fadein" time = 0.1]
+
+[wait time = 0.7]
+
+[balloon x=-100 y=430 shape="005_01" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+[quake target =".bln" power = 3 time = 0.2]
+こ…今度ばかりは[r]
+相手が悪い…と…いうより[r]
+最悪なやつだ……
+[p]
+
+[balloon x=0 y=-270 shape="005_02" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+[quake target =".bln" power = 3 time = 0.2]
+な…なんでフリーザなんかに[r]
+手を出してしまったんじゃ…
+[p]
+
+
+*002
+//-------------------------------------------------------------------------------
+//  界王
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_080_001"]
+
+[character x = -180 y = -40 storage = "90001/stand" scale = 0.5 action = "fadein" time = 0.1]
+[character x = -220 y = 60 storage = "99999/ase" scale = 0.7 action = "fadein" time = 0.1]
+
+
+[balloon x=110 y=135 shape="004_02" scale = 1.05 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 22]
+[quake target =".bln" power = 3 time = 0.2]
+中途半端な攻撃をしかけて[r]
+ヤツの怒りを買えば[r]
+とんでもないことが起こるぞ…
+[p]
+
+[balloon x=120 y=-80 shape="001_02" scale = 1 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+[quake target =".bln" power = 3 time = 0.2]
+[font color="#FF0000"]カウントダウン[font color="#141414"]が始まったら[r]
+要注意じゃ！！
+[p]
+
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+
+*003
+//-------------------------------------------------------------------------------
+//  界王
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0003L" bg = "bg_080_001"]
+
+[character x = -180 y = -130 storage = "90001/stand" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon x=120 y=110 shape="001_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+…宇宙最強の[r]
+貫禄というやつかのう…
+[p]
+
+[balloon x=120 y=-90 shape="001_02" scale = 1 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+[quake target =".bln" power = 3 time = 0.2]
+フリーザに[font color="#FF0000"]威圧[font color="#141414"]されたら[r]
+攻撃順序を入れ替えることが[r]
+できなくなるぞ！！
+[p]
+
+
+
+
+*004
+//-------------------------------------------------------------------------------
+//  界王
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+
+[coma shape="N0002L" bg = "bg_080_001"]
+
+[character x = -150 y = -60 storage = "90001/stand" scale = 0.7 action = "fadein" time = 0.1]
+
+
+[balloon x=140 y=80 shape="001_03" scale = 1.1 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 20]
+…それでもフリーザとの[r]
+決着を望むというなら…[r]
+最後にひとつだけ言わせてくれ
+[p]
+
+[balloon x=110 y=-180 shape="006_01" scale = 1.0 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 22]
+[quake target =".bln" power = 7 time = 0.2]
+[font color="#FF0000"]必殺技でトドメ[font color="#141414"]をさすんじゃ！[r]
+よいな！？[r]
+必ず生きて帰るんだぞ！
+[p]
+
+
+[stopbgm]

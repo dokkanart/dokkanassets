@@ -1,0 +1,66 @@
+*start|スタート
+//ステージ3ボス前
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "002"]
+
+*01
+//-------------------------------------------------------------------------------
+//  キュイ
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0001L" bg = "bg_050_001"]
+
+
+[character x=-200 y=-80 storage = "00046/idl_side_p_02" scale = 1.7 action = "fadein" time = 0.1]
+
+//[character x=-230 y=-80 storage = "00046/atc_sp01_p_01" scale = 1.8 action = "fadein" time = 0.1]
+
+[balloon x=100 y=110 shape="002_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+くっくっく…[r]
+見つけたぞベジータ…
+[p]
+
+[balloon x=130 y=-100 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+フリーザさまの命令だ！[r]
+これで堂々ときさまを[r]
+殺せるわけだ！！
+[p]
+
+
+*02
+//-------------------------------------------------------------------------------
+//  ベジータ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_050_001"]
+
+[character x = 165 y = -115 storage = "00061/idl_side_e_02" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon shape="002_02" x = -130 y = 60 scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+//[quake target =".bln" power = 3 time = 0.2]
+笑わせるな[r]
+キュイ
+[p]
+
+//[quake target =".chara" power = 6 time = 0.3]
+
+[balloon shape="002_01" x = -130 y = -220 scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 7 time = 0.2]
+きさまに このオレが[r]
+殺せると思うのか？
+[p]
+
+//-------------------------------------------------------------------------------
+[stopbgm]

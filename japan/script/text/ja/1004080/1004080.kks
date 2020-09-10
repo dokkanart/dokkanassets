@@ -1,0 +1,183 @@
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "002"]
+
+
+*01
+//-------------------------------------------------------------------------------
+//  ザーボン
+//-------------------------------------------------------------------------------
+
+[coma shape="N0001L" bg = "bg_006_001"]
+
+//[character x=-200 y=-100 storage = "00016/heapup_p_01" scale = 1.3 action = "fadein" time = 0.1]
+
+//[character x = -160 y = -40 storage = "00016/heapup_p_01" scale = 1.5 action = "fadein" time = 0.1]
+
+//[character x = -170 y = -80 storage = "00016/guard_p_01" scale = 1.3 action = "fadein" time = 0.1]
+
+[character x = -180 y = -80 storage = "00016/heapup_p_01" scale = 1.3 action = "fadein" time = 0.1]
+
+[balloon x=120 y=110 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+ちっ…[r]
+地球人にこれほどの[r]戦闘力があるとは…！[p]
+
+[balloon x=130 y=-90 shape="002_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][quake target = ".bln" power = 3 time = 0.2]
+[font size = 32]
+…こうなったら……[p]
+
+
+
+*02
+//-------------------------------------------------------------------------------
+//  クリリン
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_006_001"]
+
+[character x = 180 y = -100 storage = "00009/idl_side_e_03" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon x=-80 y=70 shape="001_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][font size = 32]
+よーし！勝てるかも[r]しれないぞ！[p]
+
+
+*03
+//-------------------------------------------------------------------------------
+//  クリリン
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_006_001"]
+
+[character x = 180 y = -100 storage = "00009/heapup_e_03" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon x=-100 y=120 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][font size = 28][quake target = ".bln" power = 3 time = 0.2]
+すごいじゃないか…[r][$player][p]
+
+[balloon x=-110 y=-90 shape="001_03" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+闘うたびに強くなって[r]…まるで悟空を[r]見ているみたいだぜ…[p]
+
+*04
+//-------------------------------------------------------------------------------
+//  ドドリア
+//-------------------------------------------------------------------------------
+[se storage = "3024"]
+[coma shape="N0001L" bg = "bg_006_001"]
+
+[wait_anim target=".coma"]
+
+[lwfobject id = "kaki1" storage="kakimoji:ef_023" in="02" x=130 y=70 scale = 1.5 angle = 35 action = "fadein" time = 0.1]
+[quake target = "kaki1" power = 12 time = 0.3]
+
+[character x=-300 y=-110 storage = "00030/idl_side_p_02" scale = 1.2 action = "fadein" time = 0.1]
+
+[move target =".chara" x=-185 time = 0.1]
+
+[wait_anim target=".chara"]
+
+// 空のフキダシ（セリフがないコマを送るために使用）
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+*05
+//-------------------------------------------------------------------------------
+//  クリリン
+//-------------------------------------------------------------------------------
+[se storage = "03"]
+[coma shape="N0001R" bg = "bg_006_001"]
+
+[lwfobject id = "kaki1" storage="kakimoji:ef_001" x=20 y=110 scale = 2.5 angle = -8 action = "fadein" time = 0.1]
+[quake target = "kaki1" power = 10 time = 0.3]
+
+[character x = 180 y = -100 storage = "00009/idl_side_e_03" scale = 1.0 action = "fadein" time = 0.1]
+
+[wait_anim target="kaki1"]
+
+//[bgm storage = "007"]
+
+[balloon x=-130 y=-100 shape="006_01" scale = 0.75 action = "expand" time = 0.1]
+[wait_anim target=".bln"][font size = 36]
+[quake target = ".bln" power = 7 time = 0.2]
+ド…[r]ドドリア…！！[p]
+
+*06
+//-------------------------------------------------------------------------------
+//  ドドリア
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0003L" bg = "bg_006_001"]
+
+[character x=-280 y=-90 storage = "00016/idl_side_p_02" scale = 0.8 action = "fadein" time = 0.1]
+
+[character id = "dodo" x=-110 y=-70 storage = "00030/heapup_p_01" scale = 1 action = "fadein" time = 0.1]
+[quake target = "dodo" power = 5 time = 0.3]
+
+[balloon x=150 y=110 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][font size = 28]
+てめえら…この間は[r]ずいぶんとせこいマネ[r]してくれたな…！！[p]
+
+
+*07
+//-------------------------------------------------------------------------------
+//  ドドリア
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_006_001"]
+
+[character x=-185 y=-110 storage = "00030/idl_side_p_02" scale = 1.2 action = "fadein" time = 0.1]
+
+
+[balloon x=125 y=130 shape="002_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][font size = 28]
+くっくっく…[r]
+苦戦しているようだな[r]ザーボン[p]
+
+[balloon x=150 y=-90 shape="002_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][font size = 32]
+手をかしてやるぜ[p]
+
+*08
+//-------------------------------------------------------------------------------
+//  ザーボン
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_006_001"]
+
+[character x=-190 y=-90 storage = "00016/idl_side_p_02" scale = 1.3 action = "fadein" time = 0.1]
+
+[balloon x=110 y=110 shape="002_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+ふ…今回はありがたく[r]申し出を受けることに[r]しましょう[p]
+
+[balloon x=120 y=-100 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+…おかげで[r]変身する必要も[r]なくなりましたよ[p]
+
+
+*09
+//-------------------------------------------------------------------------------
+//  ドドリア
+//-------------------------------------------------------------------------------
+//[se storage = "3019"]
+[se storage = "04"]
+[coma shape="N0002L" bg = "bg_006_001"]
+
+[character x=-210 y=-90 storage = "00030/heapup_p_01" scale = 1.5 action = "fadein" time = 0.1]
+
+[balloon x=160 y=90 shape="002_03" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][font size = 32]
+[quake target = ".bln" power = 3 time = 0.2]
+ふへへへ…10秒で[r]片付けてやらあ…[p]
+
+[stopbgm]

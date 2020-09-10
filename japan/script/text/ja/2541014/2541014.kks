@@ -1,0 +1,44 @@
+*start|スタート
+
+//"ラウンド3開始"
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+//[bgm storage = "013"]
+
+*001
+//-------------------------------------------------------------------------------
+//  超サイヤ人孫悟飯（未来）
+//-------------------------------------------------------------------------------
+[se storage = "3022"]
+[coma shape="S0001" bg = "bg_000_021"]
+
+[lwfobject id = "kaki1" storage="kakimoji:ef_023" x=-190 y=150 scale = 1.5 angle = -10 action = "fadein" time = 0.1]
+[quake target = "kaki1" power = 15 time = 0.3]
+
+
+[character x=0 y=-120 storage = "00209/card_03" scale = 1.2 action = "fadein" time = 0.1]
+[quake target =".chara" power = 5 time = 0.3]
+
+[wait_anim target=".chara"]
+
+[balloon x=-120 y=460 shape="001_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+この世界の未来は[r]
+守り抜いてみせる！！
+[p]
+
+[balloon x=0 y=-430 shape="001_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+なにがあっても[r]
+希望はすてない！！
+[p]
+
+//-------------------------------------------------------------------------------
+
+//[stopbgm]
+

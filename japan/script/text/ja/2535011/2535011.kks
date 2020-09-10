@@ -1,0 +1,35 @@
+*start|スタート
+
+//豪炎と爆煙の幻魔人"ステージ１ボス前"
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+//[bgm storage = "032"]
+
+*001
+//-------------------------------------------------------------------------------
+//  タピオン
+//-------------------------------------------------------------------------------
+[coma id = "coma1" shape="S0001" bg = "bg_015_002"]
+
+[character x = 0 y = 0 storage = "00313/card_01" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon shape="004_04" x = 160 y = 390 scale = 0.75 action = "fadein" time = 0.1]
+[font size = 36]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 3 time = 0.2]
+う…！！[r]
+ううう……！！
+[p]
+
+[quake target =".chara" power = 6 time = 0.3]
+
+[balloon shape="007_02" x = 0 y = -380 scale = 0.8 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 7 time = 0.2]
+オレに近づくな！！
+[p]
+
+//[stopbgm]

@@ -1,0 +1,43 @@
+//エリア5スタート
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+//[bgm storage = "012"]
+
+
+*coma1
+//-------------------------------------------------------------------------------
+//  サイヤマン1号2号
+//-------------------------------------------------------------------------------
+//[se storage = "3022"]
+[se storage = "40"]
+[coma shape="S0001" bg = "bg_019_001"]
+
+[character x=10 y=-20 storage = "00366/card_10" scale = 1.0 action = "fadein" time = 0.1]
+
+[character x=-5 y=-110 storage = "00323/card_004" scale = 1.0 action = "fadein" time = 0.1]
+
+
+[balloon x=-0 y=410 shape="006_02" scale = 0.9 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 7 time = 0.2]
+グレートサイヤマン[r]
+１号！！
+[p]
+
+
+
+[balloon x=-40 y=-440 shape="006_02" scale = 0.9 action = "expand" time = 0.1]
+[wait_anim target=".bln"][font size = 28]
+[quake target =".bln" power = 7 time = 0.2]
+同じく２号！！[r]
+ご期待どおりに[r]
+ただいま参上！！
+[p]
+
+
+
+//[stopbgm]

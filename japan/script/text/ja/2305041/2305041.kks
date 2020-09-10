@@ -1,0 +1,68 @@
+
+
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "008"]
+
+*coma1
+//-------------------------------------------------------------------------------
+//  ベジータ
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0001R" bg = "bg_050_001"]
+
+
+
+[character x=210 y=-80 storage = "00004/idl_side_e_03" scale = 1.7 action = "fadein" time = 0.1]
+
+ //セリフ1
+[balloon shape="002_02" x = -120 y = 140 scale = 0.85 action = "fadein" time = 0.1]
+[font size = 30]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 3 time = 0.2]
+変身しろフリーザ！
+[p]
+
+
+
+
+ //セリフ２
+[balloon shape="002_03" x = -120 y = -70 scale = 0.95 action = "fadein" time = 0.1]
+[font size = 27]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 3 time = 0.2]
+どうせなら[r]
+今すぐ変身して[r]
+正体を見せたらどうだ！[p]
+
+*coma2
+//-------------------------------------------------------------------------------
+//  フリーザ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002L" bg = "bg_050_001"]
+
+
+[character x=-190 y=-90 storage = "00005/heapup_p_01" scale = 1.9 action = "fadein" time = 0.1]
+
+
+[balloon x=90 y=120 shape="002_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+いいだろう……！！[p]
+
+
+[balloon x=130 y=-130 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 30]
+[quake target =".bln" power = 3 time = 0.2]
+そこまで[r]
+死にたいのなら[r]
+見せてやる！！
+[p]
+
+
+[stopbgm]

@@ -1,0 +1,141 @@
+*start|スタート
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "013"]
+
+*001
+//-------------------------------------------------------------------------------
+//  ピッコロ
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_070"]
+
+[character x = 180 y = -100 storage = "00056/heapup_e_01" scale = 0.8 action = "fadein" time = 0.1]
+
+[balloon x = -125 y = 70 shape="002_02" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 40]
+//[quake target =".bln" power = 3 time = 0.2]
+ハア ハア[r]
+ハア…
+[p]
+
+*002
+//-------------------------------------------------------------------------------
+//  人造人間17号
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_070"]
+
+//[character x = -200 y = -180 storage = "00021/17_card_01" scale = 1.0 action = "fadein" time = 0.1]
+//[character id = "17" x = -190 y = -180 storage = "00021/idl_side_p_05" scale = 1.1 action = "fadein" time = 0.1]
+[character x = -170 y = -120 storage = "00021/idl_side_p_01" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon x=125 y=75 shape="002_03" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+ふふ…[r]
+パワーは互角でも[r]
+スタミナに差がつきはじめて[r]きたようだな…
+[p]
+
+[balloon x=130 y=-110 shape="002_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+オレのエネルギーは[r]
+永久に減らない…
+[p]
+
+*003
+//-------------------------------------------------------------------------------
+//  ピッコロ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_070"]
+
+[character x = 180 y = -100 storage = "00056/heapup_e_01" scale = 0.8 action = "fadein" time = 0.1]
+
+[balloon id = "01" x = -125 y = 70 shape="002_02" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target = "01"]
+[font size = 54]
+………
+[p]
+
+*004
+//-------------------------------------------------------------------------------
+//  
+//-------------------------------------------------------------------------------
+[se storage = "03"]
+[coma shape="N0004R" bg = "bg_000_014"]
+
+[character x = 360 y = -600 storage = "00056/card_04" scale = 2.5 action = "fadein" time = 0.1]
+[flip target =".chara" h=1]
+
+
+[lwfobject id = "kaki1" storage="kakimoji:ef_001" angle = -15 x=-180 y=50 scale = 3.0 action = "fadein" time = 0.1]
+[quake target = "kaki1" power = 9 time = 0.4]
+
+[balloon x=0 y=0 shape="004_01" scale = 0 action = "fadein" time = 0.1]
+[p]
+
+
+*005
+//-------------------------------------------------------------------------------
+//  セルが現れる
+//-------------------------------------------------------------------------------
+[se storage = "20"]
+[coma shape="S0001" bg = "bg_000_016"]
+
+//セルが現れる。
+//カード絵 
+[character x = -30 y = 30 storage = "00006/card_01" scale = 0.9 action = "fadein" time = 0.1]
+
+//空のフキダシ(セリフがないコマを送るために使用)
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+*006
+//-------------------------------------------------------------------------------
+//  ピッコロ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_070"]
+
+[character x = 180 y = -100 storage = "00056/heapup_e_01" scale = 0.8 action = "fadein" time = 0.1]
+//[character x=200 y=-140 storage = "00056/idl_side_e_01" scale = 1.5 action = "fadein" time = 0.1]
+
+[balloon x = -135 y = 60 shape="006_01" scale = 0.7 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 40]
+[quake target =".bln" power = 7 time = 0.2]
+セ…[r]セル…！！
+[p]
+
+*007
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0004L" bg = "bg_000_014"]
+
+[balloon x=0 y=-40 shape="003_01" scale = 1.6 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 14]
+//[quake target =".bln" power = 3 time = 0.2]
+ピッコロの[r]
+闘いの気を察知し[r]
+ついに セルが[r]
+17号と18号の前に[r]
+姿を現した…！[r]
+　[r]
+ピッコロは[r]
+セルと17号たちの合体を[r]
+防ぐことが[r]
+できるのだろうか…！？
+[p]
+
+//-------------------------------------------------------------------------------
+[stopbgm]

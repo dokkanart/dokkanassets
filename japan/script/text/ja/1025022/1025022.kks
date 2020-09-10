@@ -1,0 +1,99 @@
+*start|スタート
+
+//"２５−２ボス前" 
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "002"]
+ 
+*001
+//-------------------------------------------------------------------------------
+//  カド
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_004"]
+ 
+[character x = -220 y = -120 storage = "00651/atc_sp01_p_01" scale = 1.0 action = "fadein" time = 0.1]
+
+
+[balloon x=90 y=100 shape="002_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+ダメだ アボ[r]
+ぜんぜん見つからないぞ
+[p]
+
+[balloon x=110 y=-100 shape="002_01" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+向こうには[r]
+ロボットみたいなやつしか[r]
+いなかった…
+[p]
+
+*002
+//-------------------------------------------------------------------------------
+//  アボ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_004"]
+ 
+[character x = -180 y = -80 storage = "00650/heapup_p_01" scale = 0.9 action = "fadein" time = 0.1]
+ 
+[balloon x=130 y=70 shape="002_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+カド！[r]
+いいところに来た！
+[p]
+
+*003
+//-------------------------------------------------------------------------------
+//  トランクス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_004"]
+ 
+[character x = 210 y = -200 storage = "90000/wait_right_surprise" scale = 1.2 action = "fadein" time = 0.1]
+ 
+[balloon x=-80 y=70 shape="001_03" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+ん！？[r]
+仲間か…？
+[p]
+
+*004
+//-------------------------------------------------------------------------------
+//  "アボ カド"
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002L" bg = "bg_000_004"]
+
+[character x = 0 y = -90 storage = "00651/heapup_p_01" scale = 1.0 action = "fadein" time = 0.1]
+ 
+[character x = -190 y = -90 storage = "00650/heapup_p_01" scale = 1.2 action = "fadein" time = 0.1]
+ 
+[balloon x=150 y=140 shape="002_03" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+遊びは[r]
+おしまいだ！！
+[p]
+ 
+[balloon x=130 y=-200 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+オレたち兄弟の力を[r]
+思い知るがいい！！
+[p]
+
+
+//-------------------------------------------------------------------------------
+[stopbgm]

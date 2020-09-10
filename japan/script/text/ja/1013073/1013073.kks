@@ -1,0 +1,132 @@
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "007"]
+
+//-------------------------------------------------------------------------------
+//  ゲロ
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0001L" bg = "bg_016_001"]
+
+[character x = -210 y = -110 storage = "00019/gero_heapup_p_01" scale = 1.3 action = "fadein" time = 0.1]
+
+[balloon x=120 y=140 shape="002_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 34]
+なにが[r]
+サイヤ人だ…[p]
+
+[balloon id="tao2" x=130 y=-85 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+しょせんは[r]
+わたしたち人造人間に[r]
+かなうものではない！[p]
+
+*001
+//-------------------------------------------------------------------------------
+//  超サイヤ人ベジータ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_016_001"]
+
+[character id = "super" x = 180 y = -105 storage = "00004/SSR_heapup_e_01" scale = 1.3 action = "fadein" time = 0.1]
+
+
+[balloon shape="002_02" x = -100 y = 120 scale = 0.8 action = "fadein" time = 0.1]
+[font size = 34]
+[wait_anim target=".bln"]
+ただのサイヤ人[r]
+じゃないぜ…
+[p]
+
+[balloon shape="002_01" x = -130 y = -80 scale = 0.85 action = "fadein" time = 0.1]
+[font size = 36]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 3 time = 0.2]
+超サイヤ人だ！
+[p]
+
+*002
+//-------------------------------------------------------------------------------
+//  ゲロ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_016_001"]
+
+[character x = -170 y = -135 storage = "00019/gero_idl_side_p_01" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon x=120 y=80 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+スーパーサイヤ人[r]……！？[p]
+
+*003
+//-------------------------------------------------------------------------------
+//  超サイヤ人ベジータ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_016_001"]
+
+[character x = 195 y = -85 storage = "00004/SSR_idl_side_e_02" scale = 1.2 action = "fadein" time = 0.1]
+
+
+[balloon shape="002_01" x = -120 y = 110 scale = 0.9 action = "fadein" time = 0.1]
+[font size = 28]
+[wait_anim target=".bln"]
+超サイヤ人になると[r]
+ちょっと凶暴性が[r]
+増すんだ…
+[p]
+
+[balloon shape="002_02" x = -130 y = -70 scale = 0.8 action = "fadein" time = 0.1]
+[font size = 32]
+[wait_anim target=".bln"]
+かるい興奮状態に[r]
+なるんでな…
+[p]
+
+*004
+//-------------------------------------------------------------------------------
+//  １９号
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_016_001"]
+
+[character x = -175 y = -105 storage = "00018/idl_side_p_01" scale = 1.1 action = "fadein" time = 0.1]
+
+[balloon id = "01" x = 150 y = 25 shape="002_03" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target = "01"]
+[font size = 54]
+………
+[p]
+
+*005
+//-------------------------------------------------------------------------------
+//  超サイヤ人ベジータ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_016_001"]
+
+[character x = 180 y = -105 storage = "00004/SSR_idl_side_e_02" scale = 1.4 action = "fadein" time = 0.1]
+
+
+[balloon shape="002_03" x = -130 y = 100 scale = 0.95 action = "fadein" time = 0.1]
+[font size = 27]
+[wait_anim target=".bln"]
+きさまら[r]
+痛みを感じないんだろ？[p]
+
+[balloon shape="002_01" x = -140 y = -170 scale = 0.9 action = "fadein" time = 0.1]
+[font size = 28]
+[wait_anim target=".bln"]
+ラッキーだったな…！
+[p]
+
+
+[stopbgm]

@@ -1,0 +1,100 @@
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "013"]
+
+
+*001
+//-------------------------------------------------------------------------------
+//  パラガス
+//-------------------------------------------------------------------------------
+
+//[se storage = "04"]
+[coma shape="N0001L" bg = "bg_005_001"]
+
+[character x = -190 y = -200 storage = "00258/atc_sp01_p_01" scale = 1.1 action = "fadein" time = 0.1]
+
+[balloon x=100 y=130 shape="002_01" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 3 time = 0.2]
+[font size = 24]
+ふははは…！！[r]
+まずは北の銀河の[r]
+地球から制圧してやる！[p]
+
+[balloon x=120 y=-80 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 3 time = 0.2]
+[font size = 28]
+ブロリーよ！[r]
+思う存分[r]
+暴れるがいい！！[p]
+
+
+
+*002
+//-------------------------------------------------------------------------------
+//  ブロリー
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_005_001"]
+
+[character x = -200 y = -220 storage = "00254/idl_side_p_01" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x=80 y=80 shape="002_02" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target =".bln" power = 3 time = 0.2]
+[font size = 54]
+………[p]
+
+
+*003
+//-------------------------------------------------------------------------------
+//  トランクス
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_005_001"]
+
+[character x = 210 y = -200 storage = "90000/wait_right_surprise" scale = 1.2 action = "fadein" time = 0.1]
+
+
+
+[balloon x=-100 y=110 shape="004_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 3 time = 0.2]
+[font size = 32]
+サ…[r]
+サイヤ人…？[p]
+
+[balloon x=-100 y=-80 shape="001_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target =".bln" power = 3 time = 0.2]
+[font size = 28]
+…なにか[r]
+雰囲気がちがうが……[p]
+
+
+*004
+//-------------------------------------------------------------------------------
+//  トランクス
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_005_001"]
+
+[character x=170 y=-325 storage = "90000/wait_right_anger" scale = 1.4 action = "fadein" time = 0.1]
+
+
+[balloon x=-110 y=50 shape="001_01" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target =".bln" power = 3 time = 0.2]
+[font size = 24]
+[$player]さん[r]
+…どうやらオレたちに[r]
+休息はないようです[p]
+
+[stopbgm]

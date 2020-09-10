@@ -1,0 +1,123 @@
+*start|スタート
+
+//"２4－７ゴール" 
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "028"]
+ 
+*001
+//-------------------------------------------------------------------------------
+//  超１７号
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0001L" bg = "bg_029_001"]
+ 
+[character x = -200 y = -250 storage = "00480/idl_side_p_01" scale = 0.9 action = "fadein" time = 0.1]
+ 
+[balloon x=120 y=80 shape="002_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+ふん…[r]
+もうお終いか？ 
+[p]
+
+*002
+//-------------------------------------------------------------------------------
+//  トランクス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_029_001"]
+ 
+[character x = 210 y = -200 storage = "90000/wait_right_surprise" scale = 1.2 action = "fadein" time = 0.1]
+ 
+[balloon x=-90 y=110 shape="001_01" scale = 0.75 action = "fadein" time = 0.1]
+[font size = 36]
+[wait_anim target=".bln"]
+//[quake target =".bln" power = 3 time = 0.2]
+はあ…[r]
+はあ……[p]
+ 
+[balloon x=-80 y=-90 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+攻撃が…[r]
+効いていない…！？ 
+[p]
+
+*003
+//-------------------------------------------------------------------------------
+//  ドクター・ゲロ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_029_001"]
+ 
+[character x = -170 y = -135 storage = "00019/gero_idl_side_p_01" scale = 1.0 action = "fadein" time = 0.1]
+ 
+[balloon x=120 y=120 shape="002_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+いいぞ 超１７号…！ 
+[p]
+ 
+[balloon x=120 y=-80 shape="002_01" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+[quake target =".bln" power = 3 time = 0.2]
+やはり[r]
+おまえこそが最強にして[r]
+究極の人造人間だ！！ 
+[p]
+
+*004
+//-------------------------------------------------------------------------------
+//  超１７号
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_029_001"]
+ 
+[character x = -200 y = -250 storage = "00480/idl_side_p_01" scale = 0.9 action = "fadein" time = 0.1]
+ 
+[balloon x=120 y=80 shape="002_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+そろそろ[r]
+地獄に送ってやる…
+[p]
+
+*005
+//-------------------------------------------------------------------------------
+//  人造人間18号
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_029_001"]
+
+[balloon x=-140 y=90 shape="006_02" scale = 0.9 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 7 time = 0.2]
+待ちな！ １７号！！
+//[p]
+
+
+[se storage = "3022"]
+//セリフ後、スライドで登場。 
+[character x = 170 y = -150 storage = "00020/18_heapup_e_01" scale = 1.1 action = "slide:right" time = 0.3]
+
+[wait time = 0.2]
+
+[lwfobject id = "kaki1" storage="kakimoji:ef_023" in="04" x=-20 y=-160 scale = 2.0]
+[quake target = "kaki1" power = 15 time = 0.2]
+
+[wait_anim target=".chara"]
+
+// 空のフキダシ（セリフがないコマを送るために使用）
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+ 
+//-------------------------------------------------------------------------------
+[stopbgm]

@@ -1,0 +1,172 @@
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "007"]
+
+
+*001
+//-------------------------------------------------------------------------------
+//  トランクス
+//-------------------------------------------------------------------------------
+
+//[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_032"]
+
+[character x = 210 y = -200 storage = "90000/wait_right_normal" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x=-100 y=70 shape="001_03" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 3 time = 0.2]
+[font size = 24]
+この調子なら…[r]
+魔人ブウ復活も[r]
+阻止できそうですね！[p]
+
+
+
+*002
+//-------------------------------------------------------------------------------
+//  バビディ
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_014"]
+
+[character x = -230 y = -100 storage = "00238/guard_p_01" scale = 1.2 angle=20 action = "fadein" time = 0.1]
+
+[balloon x=100 y=100 shape="004_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 3 time = 0.2]
+[font size = 28]
+うう…！[r]
+なにやってんだよ[r]
+どいつもこいつも…！[p]
+
+[balloon x=120 y=-100 shape="004_02" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 3 time = 0.2]
+[font size = 24]
+ぜんぜん[r]
+魔人ブウのエネルギーが[r]
+集まらないじゃないか…！[p]
+
+
+*003
+//-------------------------------------------------------------------------------
+//  ダーブラ
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_014"]
+
+//[wait_anim target=".coma"]
+
+[balloon x=-100 y=80 shape="002_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 3 time = 0.2]
+[font size = 32]
+バビディさま
+
+[wait_anim target=".bln"]
+
+[character x = 395 y = -195 storage = "00233/idl_side_p_01" scale = 1.6 action = "fadein" time = 0.7]
+[flip target =".chara" h=1]
+
+
+[wait_anim target=".chara"]
+
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+
+
+*004
+//-------------------------------------------------------------------------------
+//  バビディ
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_014"]
+
+[character x = -210 y = -90 storage = "00238/idl_side_p_01" scale = 1.1 action = "fadein" time = 0.1]
+
+[balloon x=100 y=80 shape="002_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 3 time = 0.2]
+[font size = 32]
+ダーブラ…！[p]
+
+
+*005
+//-------------------------------------------------------------------------------
+//  ダーブラ
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_014"]
+
+[character x = 395 y = -195 storage = "00233/idl_side_p_01" scale = 1.6 action = "fadein" time = 0.1]
+[flip target =".chara" h=1]
+
+[balloon x=-120 y=80 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target =".bln" power = 3 time = 0.2]
+[font size = 28]
+あとは わたしに[r]
+おまかせください[p]
+
+
+*006
+//-------------------------------------------------------------------------------
+//  バビディ
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_014"]
+
+[character x = -210 y = -90 storage = "00238/idl_side_p_01" scale = 1.1 action = "fadein" time = 0.1]
+
+[balloon x=100 y=100 shape="002_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target =".bln" power = 3 time = 0.2]
+[font size = 28]
+ダーブラ…[r]
+大丈夫なんだろうね[p]
+
+[balloon x=100 y=-100 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 3 time = 0.2]
+[font size = 28]
+…切り札のおまえまで[r]
+やられてしまったら……[p]
+
+
+*007
+//-------------------------------------------------------------------------------
+//  ダーブラ
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_000_014"]
+
+[character x = 240 y = -200 storage = "00233/atc_sp01_e_01" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x=-140 y=100 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target =".bln" power = 3 time = 0.2]
+[font size = 28]
+ふっふっふ…[r]
+わたしは魔界の王[r]
+ダーブラなんですよ…[p]
+
+[balloon x=-140 y=-170 shape="002_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 3 time = 0.2]
+[font size = 28]
+わたしに勝る者など[r]
+全世界で存在しません…[p]
+
+
+[stopbgm]

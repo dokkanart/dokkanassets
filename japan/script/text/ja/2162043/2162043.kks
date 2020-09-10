@@ -1,0 +1,243 @@
+*start|スタート
+//"ステージ４ボス前"
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "013"]
+
+*01
+//-------------------------------------------------------------------------------
+//  クリリン
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_004"]
+
+[character x = 180 y = -100 storage = "00009/heapup_e_03" scale = 1.0 action = "fadein" time = 0.1]
+//[character x = 180 y = -100 storage = "00009/idl_side_e_03" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon x=-70 y=100 shape="001_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+やっぱりセルだ！[r]
+それと[r]
+倒れているのは…
+[p]
+
+
+[balloon x=-80 y=-100 shape="006_02" scale = 0.8 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 7 time = 0.2]
+18号さんッ！？
+[p]
+
+*02
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0003L" bg = "bg_000_014"]
+
+[character x = 70 y = -150 storage = "00020/dam_side_e_01" scale = 1.1 angle = 10 action = "fadein" time = 0.1]
+
+[character x = -270 y = -225 storage = "00205/idl_side_p_01" scale = 1.1 action = "fadein" time = 0.1]
+
+[balloon x=0 y=0 shape="003_02" scale = 1.5 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 16]
+//[quake target =".bln" power = 7 time = 0.2]
+そこには[r]
+復活したセルと[r]
+倒れている18号の[r]
+姿があった[r]
+　[r]
+そしてもうひとり…[r]
+18号を[r]守ろうとしている[r]
+謎の女性が……
+[p]
+
+*03
+//-------------------------------------------------------------------------------
+//  21号
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_004"]
+
+[character x = 250 y = -180 storage = "00850/atc_energyball_e_01" scale = 1.1 action = "fadein" time = 0.1]
+
+[balloon x=-80 y=110 shape="006_01" scale = 0.8 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 7 time = 0.2]
+お願い！[r]
+やめてください！
+[p]
+
+
+*04
+//-------------------------------------------------------------------------------
+//  孫悟空
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_004"]
+
+[character x=250 y=-140 storage = "00003/idl_side_e_06" scale = 1.1 action = "fadein" time = 0.1]
+
+[balloon x=-100 y=60 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+なんだ？[r]
+どういう状況なんだ？
+[p]
+
+*05
+//-------------------------------------------------------------------------------
+//  クリリン
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_004"]
+
+[character x = 180 y = -100 storage = "00009/heapup_e_03" scale = 1.0 action = "fadein" time = 0.1]
+//[character x = 180 y = -100 storage = "00009/idl_side_e_03" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon x=-80 y=115 shape="006_02" scale = 0.75 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+[quake target =".bln" power = 7 time = 0.2]
+このやろー！！[r]
+セル！！
+[p]
+
+
+[balloon x=-80 y=-90 shape="006_02" scale = 0.8 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 7 time = 0.2]
+よくも[r]
+オレのヨメさんを[r]！！
+[p]
+
+*06
+//-------------------------------------------------------------------------------
+//  セル
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_004"]
+
+[character x = -200 y = -220 storage = "00205/idl_side_p_01" scale = 1.1 action = "fadein" time = 0.1]
+
+[balloon x=120 y=60 shape="002_01" scale = 1 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 7 time = 0.2]
+ほう…[r]
+誰かと思えば[r]
+孫悟空とクリリン[r]
+じゃないか
+[p]
+
+*07
+//-------------------------------------------------------------------------------
+//  孫悟空
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_004"]
+
+[character x=250 y=-140 storage = "00003/idl_side_e_06" scale = 1.1 action = "fadein" time = 0.1]
+
+[balloon x=-100 y=60 shape="001_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+おめえ…[r]
+本当に復活したんだな…
+[p]
+
+*08
+//-------------------------------------------------------------------------------
+//  21号
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_004"]
+
+[character x = 220 y = -180 storage = "00850/idl_side_e_01" scale = 1.1 action = "fadein" time = 0.1]
+
+
+[balloon x=-80 y=90 shape="001_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 7 time = 0.2]
+あなたたちは[r]
+18号さんの知り合い[r]
+ですか？
+[p]
+
+
+[balloon x=-80 y=-100 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 7 time = 0.2]
+すみません…彼女は[r]
+わたしを守るために…
+[p]
+
+*09
+//-------------------------------------------------------------------------------
+//  クリリン
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_004"]
+
+[character x = 180 y = -100 storage = "00009/heapup_e_03" scale = 1.0 action = "fadein" time = 0.1]
+//[character x = 180 y = -100 storage = "00009/idl_side_e_03" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon x=-70 y=100 shape="004_03" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+ち…[r]
+ちきしょう……
+[p]
+
+
+[balloon x=-80 y=-85 shape="006_02" scale = 0.8 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 7 time = 0.2]
+セル！！[r]
+絶対に許さない！！
+[p]
+
+
+*10
+//-------------------------------------------------------------------------------
+//  セル
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002L" bg = "bg_000_004"]
+
+[character x=-200 y=-250 storage = "00205/heapup_p_01" scale = 1.2 action = "fadein" time = 0.1]
+
+
+[balloon shape="002_03" x = 130 y = 50 scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+ふん…[r]
+しらじらしい[r]
+芝居をする女め
+[p]
+
+[balloon shape="002_02" x = 135 y = -240 scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+まあいいだろう[r]
+全員まとめて倒せば[r]
+いいだけの話だ
+[p]
+
+//-------------------------------------------------------------------------------
+[stopbgm]

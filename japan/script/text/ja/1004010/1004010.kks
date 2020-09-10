@@ -1,0 +1,280 @@
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "008"]
+
+*01
+//-------------------------------------------------------------------------------
+//  フリーザ
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="S0001" bg = "bg_004_001"]
+[wait time = 0.7]
+
+[character x=-190 y=-90 storage = "00030/idl_front_p_01" scale = 0.6 action = "fadein" time = 0.7]
+
+[wait time = 0.4]
+
+[character x=190 y=-90 storage = "00016/idl_front_p_01" scale = 0.7 action = "fadein" time = 0.7]
+
+[wait time = 0.4]
+
+[character id = "f" x=0 y=100 storage = "00058/card_01" scale = 0.4 action = "fadein" time = 1.0]
+
+[wait_anim target="f"]
+
+
+[balloon x=0 y=330 shape="002_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][font size = 32]
+ここが地球ですか…[r]
+悪くない星ですね
+[p]
+
+*02
+//-------------------------------------------------------------------------------
+//  フリーザ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_004_001"]
+
+[character x=-190 y=-90 storage = "00058/idl_side_p_01" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon x=90 y=130 shape="002_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][font size = 32]
+なかなか高い値で[r]売れそうですよ[p]
+
+[balloon x=130 y=-80 shape="002_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][font size = 28]
+
+そう思いませんか？[r]
+ザーボンさん[r]ドドリアさん[p]
+
+*03
+//-------------------------------------------------------------------------------
+//  ザーボン
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_004_001"]
+
+[character x=-190 y=-90 storage = "00016/idl_side_p_02" scale = 1.3 action = "fadein" time = 0.1]
+
+[balloon x=100 y=100 shape="002_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][font size = 32]
+
+はい[r]フリーザさま[p]
+
+[balloon x=150 y=-80 shape="002_03" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][font size = 32]
+
+しかしかなり[r]たくさんの人間が[r]いるようですが…[p]
+
+
+*04
+//-------------------------------------------------------------------------------
+//  ドドリア
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002L" bg = "bg_004_001"]
+
+//[character x=-185 y=-110 storage = "00030/idl_side_p_02" scale = 1.2 action = "fadein" time = 0.1]
+
+[character x=-180 y=-100 storage = "00030/idl_side_p_02" scale = 1.4 action = "fadein" time = 0.1]
+
+[balloon x=130 y=100 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][font size = 28]
+
+なあに…オレたちなら[r]３時間もあれば[r]片付けられるぜ[p]
+
+[balloon x=130 y=-180 shape="002_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][font size = 28]
+
+キュイのヤツは[r]もう偵察を[r]はじめているしな
+[p]
+
+//フェードアウト（フェードアウトするコマ）
+[balloon x=130 y=40 shape="008_03" scale = 50.0 action = "fadein" time = 0.5]
+[wait time = 0.7] 
+
+
+*05
+//-------------------------------------------------------------------------------
+//  キュイ
+//-------------------------------------------------------------------------------
+//[bgm storage = "013"]
+[coma shape="S0001" bg = "bg_027_001"]
+
+
+[character x=-130 y=0 storage = "00046/idl_side_p_02" scale = 2.0 action = "fadein" time = 0.1]
+
+//フェードイン（フェードインするコマ）
+[balloon x=130 y=40 shape="008_03" scale = 50]
+[wait time = 1]
+[fadeout target = ".bln" time = 2]
+[wait_anim target=".bln"]
+
+
+
+
+
+
+[se storage = "3036"]
+
+[balloon x=130 y=300 shape="002_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][font size = 28]
+さてと…とりあえず[r]戦闘力の高いヤツから[r]片付けていくか…
+[p]
+
+
+[balloon x=140 y=-260 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][font size = 28]
+ザーボンとドドリアを[r]出し抜くチャンスだぜ
+[p]
+
+
+*06
+//-------------------------------------------------------------------------------
+//  ギュンッ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002L" bg = "bg_000_016"]
+
+[character id = "1" x=-300 y=-60 storage = "00046/dash_p_01" scale = 1.8 action = "fadein" time = 0.1]
+[move target ="1" x=-240 time = 1.0]
+
+[wait_anim target="1"]
+
+[se storage = "3024"]
+
+[move target ="1" x=900 time = 0.5]
+
+[lwfobject id = "kaki1" storage="kakimoji:ef_008" in="02" x=0 y=0 scale = 2.5 angle = 10 action = "fadein" time = 0.1]
+[quake target = "kaki1" power = 11 time = 0.5]
+
+
+// 空のフキダシ（セリフがないコマを送るために使用）
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+
+*07
+//-------------------------------------------------------------------------------
+//  場面転換
+//-------------------------------------------------------------------------------
+//[se storage = "03"]
+
+//[coma id = "coma1" shape="S0001" bg = "bg_006_001"]
+
+//[lwfobject id="syuutyuu1" storage="syucyu:ef_001" mask="inside" loop=1 priority=10 scale=0.8]
+
+
+//[lwfobject id = "kaki1" storage="kakimoji:ef_002" in="02" x=10 y=0 scale = 2.5]
+//[quake target = "kaki1" power = 9 time = 0.2]
+//[wait_anim target = "kaki1"]
+
+*08
+//-------------------------------------------------------------------------------
+//  トランクス
+//-------------------------------------------------------------------------------
+[se storage = "03"]
+[coma shape="N0003R" bg = "bg_006_001"]
+
+[character x = 170 y = -380 storage = "90000/wait_right_anger_strong" scale = 1.7 action = "fadein" time = 0.1]
+
+[lwfobject id = "kaki1" storage="kakimoji:ef_002" angle = -12 x=-40 y=90 scale = 2.3]
+[quake target = "kaki1" power = 9 time = 0.4]
+//[wait_anim target = "kaki1"]
+
+// 空のフキダシ（セリフがないコマを送るために使用）
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+
+
+[balloon x=-120 y=-80 shape="004_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+何者かがこっちにくる[r]……邪悪な気だ！！[r]気をつけて！！[p]
+
+*09
+//-------------------------------------------------------------------------------
+//  キュイ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002L" bg = "bg_000_016"]
+
+[wait time = 0.7]
+
+[character id = "kira" x=0 y=-50 storage = "99999/kirakira" scale = 0.3 angle = 0 action = "expand" time = 0.1]
+[wait time = 0.1]
+[fadeout target = "kira" time = 0.3]
+[wait time = 0.1]
+
+[se storage = "3040"]
+
+[character id = "kira" x=0 y=-50 storage = "99999/kirakira" scale = 0.5 angle = 45 action = "expand" time = 0.1]
+[wait time = 0.1]
+[fadeout target = "kira" time = 0.3]
+[wait time = 0.1]
+
+
+
+
+[lwfobject id = "kaki1" storage="kakimoji:ef_023" in="02" x=210 y=140 scale = 1.5 angle = 25 action = "fadein" time = 0.1]
+[quake target = "kaki1" power = 9 time = 0.3]
+
+[character id = "001" x=0 y=-50 storage = "00046/atc_front_p_01" scale = 1.7 angle = 30 action = "expand" time = 0.2]
+//[quake target = "001" power = 12 time = 0.2]
+
+[wait_anim target="001"]
+
+
+// 空のフキダシ（セリフがないコマを送るために使用）
+//[balloon x = 0 y = 0 shape="002_01" scale = 0]
+//[p]
+
+
+*10
+//-------------------------------------------------------------------------------
+//  トランクス
+//-------------------------------------------------------------------------------
+//[se storage = "03"]
+[coma shape="N0003R" bg = "bg_006_001"]
+
+[character x = 170 y = -380 storage = "90000/wait_right_surprise" scale = 1.7 action = "fadein" time = 0.1]
+
+[lwfobject id = "kaki1" storage="kakimoji:ef_001" angle = -12 x=-90 y=70 scale = 3.0 action = "fadein" time = 0.1]
+[quake target = "kaki1" power = 9 time = 0.4]
+//[wait_anim target = "kaki1"]
+
+// 空のフキダシ（セリフがないコマを送るために使用）
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+
+
+
+*11
+//-------------------------------------------------------------------------------
+//  キュイ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002L" bg = "bg_006_001"]
+
+[character x=-130 y=-30 storage = "00046/idl_side_p_02" scale = 2.0 action = "fadein" time = 0.1]
+
+
+
+[balloon x=150 y=150 shape="002_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][font size = 32]
+へっへっへ…[r]
+これが地球人か[p]
+
+[balloon x=130 y=-200 shape="002_03" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+どうやら[r]この星はあっさりと[r]制圧できそうだぜ[p]
+
+[stopbgm]
+

@@ -1,0 +1,662 @@
+*start|スタート
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "060"]
+
+
+*001
+//-------------------------------------------------------------------------------
+//  カーセラル
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_055"]
+
+[character x = 0 y = -100 storage = "99999/barrier" scale = 3.0 action = "fade:75" mask = "inside" time = 0.1]
+
+[character x = 200 y = -170 storage = "00820/card_01" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon x = -140 y = 60 shape="006_01" scale = 0.7 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 40]
+[quake target =".bln" power = 7 time = 0.2]
+とどめだ！！
+[p]
+
+
+*002
+//-------------------------------------------------------------------------------
+//  カリフラ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_055"]
+
+[character x = 0 y = -100 storage = "99999/barrier" scale = 3.0 action = "fade:75" mask = "inside" time = 0.1]
+
+[character x = -125 y = -120 storage = "00738/guard_p_01" scale = 1.1 action = "fadein" time = 0.1]
+
+[balloon x = 120 y = 65 shape="004_01" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 40]
+//[quake target =".bln" power = 3 time = 0.2]
+うう……
+[p]
+
+
+*003
+//-------------------------------------------------------------------------------
+//  ケール
+//-------------------------------------------------------------------------------
+[se storage = "3038"]
+[coma shape="N0002L" bg = "bg_000_055"]
+
+[lwfobject id = "ga" x = -260 y = 100 storage = "kakimoji:ef_009" scale = 1.0 angle = 20 action = "fadein" time = 0.1]
+[quake target = "ga" power = 1]
+
+[character x = 0 y = -100 storage = "99999/barrier" scale = 3.0 action = "fade:75" mask = "inside" time = 0.1]
+
+[character id = "kale" x = -210 y = -230 storage = "00737/heapup_back_p_01" scale = 1.5 action = "fadein" time = 0.1]
+[quake target ="kale" power = 2]
+
+
+
+[balloon x = 130 y = 50 shape="004_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+わたし…[r]
+あねさんに迷惑[r]かけてばかり…
+[p]
+
+
+
+[balloon x = 130 y = -200 shape="007_02" scale = 0.9 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 7 time = 0.2]
+わたし…こんな自分…[r]
+大キライだーっ！！
+[p]
+
+[se storage = "3025"]
+//点滅
+[balloon shape="008_02" x = 0 y = -0 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+//[balloon shape="008_02" x = 0 y = -0 scale = 50 action = "fadein" time = 0.1]
+//[wait time = 0.3]
+//[clear target = ".bln"]
+
+//フェードアウト（フェードアウトするコマ）
+[balloon x=0 y=0 shape="008_02" scale = 50.0 action = "fadein" time = 0.3]
+[wait time = 0.5]
+
+
+*004
+//-------------------------------------------------------------------------------
+//  ケールが超サイヤ人に変身する
+//-------------------------------------------------------------------------------
+//[se storage = "3029"]
+[coma shape="S0001" bg = "bg_000_055"]
+
+[character x = 0 y = -100 storage = "99999/barrier" scale = 3.0 action = "fade:75" mask = "inside" time = 0.1]
+
+
+[character x = 0 y = 0 storage = "00737/card_02" scale = 1.1 action = "fadein" time = 0.1]
+
+//フェードイン（フェードインするコマ）
+[balloon x=0 y=0 shape="008_02" scale = 50]
+[wait time = 0.5]
+[fadeout target = ".bln" time = 1.5]
+[wait_anim target=".bln"]
+
+[wait time = 0.7]
+
+[balloon x=0 y=470 shape="004_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+これ…わたし！？
+[p]
+
+
+*006
+//-------------------------------------------------------------------------------
+//  カリフラ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_055"]
+
+[character x = 0 y = -100 storage = "99999/barrier" scale = 3.0 action = "fade:75" mask = "inside" time = 0.1]
+
+[character x = -125 y = -120 storage = "00738/guard_p_01" scale = 1.1 action = "fadein" time = 0.1]
+
+[balloon x = 105 y = 100 shape="001_03" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+すげえぞ ケール！
+[p]
+
+[balloon x = 135 y = -90 shape="001_02" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+暴走しないで[r]
+完全に自分の意思で[r]
+気をコントロールしてる！
+[p]
+
+
+*007
+//-------------------------------------------------------------------------------
+//  カーセラル
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_055"]
+
+[character x = 0 y = -100 storage = "99999/barrier" scale = 3.0 action = "fade:75" mask = "inside" time = 0.1]
+
+[character x = 200 y = -170 storage = "00820/card_01" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon x = -120 y = 80 shape="001_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+ええい！ひるむな！[r]
+たかが髪の色が[r]
+変わっただけのこと！
+[p]
+
+[balloon x = -120 y = -110 shape="001_02" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+[quake target =".bln" power = 3 time = 0.2]
+同時攻撃を[r]
+かけるぞ！
+[p]
+
+
+*008
+//-------------------------------------------------------------------------------
+//  プライド・トルーパーズ
+//-------------------------------------------------------------------------------
+[se storage = "3022"]
+[coma shape="N0003R" bg = "bg_000_055"]
+
+[character x = 0 y = -100 storage = "99999/barrier" scale = 3.0 action = "fade:75" mask = "inside" time = 0.1]
+
+[character x = 0 y = -100 storage = "00820/atc_sp01_p_07" scale = 0.9 action = "fadein" time = 0.1]
+[character x = 130 y = -100 storage = "00820/atc_sp01_p_08" scale = 0.8 action = "fadein" time = 0.1]
+[character x = 170 y = -230 storage = "00820/atc_sp01_p_09" scale = 1.0 action = "fadein" time = 0.1]
+[character x = 280 y = -250 storage = "00820/atc_sp01_p_10" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon x = -175 y = 75 shape="006_02" scale = 0.8 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 7 time = 0.2]
+ユナイテッド[r]
+ジャスティス[r]
+ストリーム！！
+[p]
+
+[lwfobject id = "don" x = 205 y = 150 storage = "kakimoji:ef_020" scale = 1.5 angle = 40 action = "fadein" time = 0.1]
+[quake target = "don" power = 12 time = 0.4]
+
+[se storage = "3006"]
+
+[balloon shape="008_02" x = 0 y = -0 scale = 50 action = "fadein" time = 0.1]
+[wait_anim target = ".bln"]
+
+[character x = -460 y = -50 storage = "99999/gyariku_01" scale = 2.0 angle = 180 action = "fadein" time = 0.1]
+[paint target = ".chara" color = "#ffcc00"]
+[quake target = ".chara" power = 1]
+
+[wait time = 0.2]
+
+[clear target = ".bln"]
+[wait time = 0.4]
+
+
+//空のフキダシ
+[balloon x=0 y=0 shape="001_01" scale = 0]
+[p]
+
+
+
+
+*009
+//-------------------------------------------------------------------------------
+//  超サイヤ人カリフラ&超サイヤ人ケール
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_055"]
+
+[character x = 0 y = -100 storage = "99999/barrier" scale = 3.0 action = "fade:75" mask = "inside" time = 0.1]
+
+
+[character x = -90 y = -170 storage = "00738/atc_sp01_p_03" scale = 0.9 action = "fadein" time = 0.1]
+
+[character x = -220 y = -270 storage = "00737/atc_sp01_p_03" scale = 1.1 action = "fadein" time = 0.1]
+
+[balloon x = 140 y = 100 shape="006_02" scale = 0.7 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 40]
+[quake target =".bln" power = 7 time = 0.2]
+やるよ[r]
+ケール！
+[p]
+
+[balloon x = 160 y = -110 shape="006_01" scale = 0.65 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 44]
+[quake target =".bln" power = 7 time = 0.2]
+はい！！
+[p]
+
+
+[se storage = "3006"]
+[balloon shape="008_02" x = 0 y = 0 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+[balloon shape="008_02" x = 0 y = 0 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+
+
+
+//[balloon shape="008_02" x = 0 y = -0 scale = 50 action = "fadein" time = 0.1]
+//[wait time = 0.3]
+
+//[character id = "1" x = 220 y = -70 storage = "99999/gyariku_01" scale = 1.0 angle = 10 action = "fadein" time = 0.1]
+//[paint target = "1" color = "#ff3300"]
+//[quake target = "1" power = 1]
+
+//[character id = "2" x = 30 y = -70 storage = "99999/gyariku_01" scale = 1.0 angle = 10 action = "fadein" time = 0.1]
+//[paint target = "2" color = "#ffff00"]
+//[quake target = "2" power = 1]
+
+//[wait time = 0.2]
+
+//[clear target = ".bln"]
+//[wait time = 0.4]
+
+*010
+//-------------------------------------------------------------------------------
+//  気弾同士がぶつかる。
+//-------------------------------------------------------------------------------
+[se storage = "3038"]
+[coma shape="N0004R" bg = "bg_000_014"]
+
+[character id = "2" x = -350 y = -50 storage = "99999/nntya" scale = 2.0 angle = 180 action = "fadein" time = 0.1]
+//[paint target = "2" color = "#ff3300"]
+
+
+[character id = "3" x = -370 y = -270 storage = "99999/finalflash" scale = 1.2 angle = 0 action = "fadein" time = 0.1]
+//[paint target = "3" color = "#ffff00"]
+
+
+[character id = "1" x = 190 y = -50 storage = "99999/beam" scale = 1.5 angle = 180 action = "fadein" time = 0.1]
+[paint target = "1" color = "#ffcc00"]
+
+[quake target = "1" power = 3]
+[quake target = "2" power = 3]
+[quake target = "3" power = 3]
+
+[lwfobject id = "ga" x = 0 y = 50 storage = "kakimoji:ef_006" scale = 2.5 angle = 20 action = "fadein" time = 0.1]
+[quake target = "ga" power = 10 time = 0.4]
+
+[wait_anim target="ga"]
+
+//空のフキダシ
+[balloon x=0 y=0 shape="001_01" scale = 0]
+[p]
+
+
+*011
+//-------------------------------------------------------------------------------
+//  カーセラル
+//-------------------------------------------------------------------------------
+[se storage = "03"]
+[coma shape="N0004R" bg = "bg_000_055"]
+
+[character x = 0 y = -100 storage = "99999/barrier" scale = 3.0 action = "fade:75" mask = "inside" time = 0.1]
+
+//[character x = 200 y = -200 storage = "00820/atc_sp01_p_09" scale = 1.1 action = "fadein" time = 0.1]
+[character x = 190 y = -660 storage = "00820/atc_sp01_p_09" scale = 2.5 action = "fadein" time = 0.1]
+
+
+//[character x = 50 y = 30 storage = "99999/charge_ball" scale = 1.5 action = "fadein" time = 0.1]
+//[paint target = ".chara" color = "#ffff00"]
+//[quake target = ".chara" power = 1]
+
+[balloon x = -140 y = 50 shape="006_01" scale = 0.9 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 7 time = 0.2]
+プライド・トルーパーズ[r]
+マックスパワー！！
+[p]
+
+[se storage = "3012"]
+[balloon shape="008_02" x = 0 y = 0 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+
+
+*012
+//-------------------------------------------------------------------------------
+//  カリフラ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_055"]
+
+
+[character x = 0 y = -100 storage = "99999/barrier" scale = 3.0 action = "fade:75" mask = "inside" time = 0.1]
+
+
+
+
+[character x = -210 y = -200 storage = "00738/atc_sp01_p_03" scale = 1.1 action = "fadein" time = 0.1]
+//[character x = -110 y = -100 storage = "99999/charge_ball" scale = 1.2 action = "fadein" time = 0.1]
+//[paint target = ".chara" color = "#ff3333"]
+//[quake target = ".chara" power = 1]
+
+[balloon x = 105 y = 110 shape="006_02" scale = 0.9 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 7 time = 0.2]
+ケール！気張りな！[r]
+おめえは[r]
+あたしの仲間だ！
+[p]
+
+[balloon x = 105 y = -100 shape="006_01" scale = 0.8 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 7 time = 0.2]
+どこまでも[r]
+あたしについてこい！
+[p]
+
+
+*013
+//-------------------------------------------------------------------------------
+//  超サイヤ人ケール
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_055"]
+
+
+[character x = 0 y = -100 storage = "99999/barrier" scale = 3.0 action = "fade:75" mask = "inside" time = 0.1]
+
+
+
+[character id = "1" x = -205 y = -220 storage = "00737/card_03" scale = 1.0 action = "fadein" time = 0.1]
+[quake target = "1" power = 1]
+
+//[character x = -150 y = -100 storage = "99999/ef_beam_circle" scale = 1.2 action = "fade:80" time = 0.1 priority = 25]
+//[paint target = ".chara" color = "#ccff00"]
+//[quake target = ".chara" power = 1]
+
+[balloon x = 140 y = 50 shape="006_01" scale = 0.8 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 7 time = 0.2]
+はい！[r]
+はああああ…！！
+[p]
+
+//[quake target = "1" power = 1]
+[wait time = 0.4]
+
+[se storage = "3029"]
+
+[character id = "2" x = -185 y = -260 storage = "00737/card_04" scale = 1.05 action = "fadein" time = 0.1]
+[clear target = "1"]
+
+[quake target = "2" power = 9 time = 0.4]
+
+[lwfobject id = "don" x = -205 y = 130 storage = "kakimoji:ef_020" scale = 1.5 angle = 5 action = "fadein" time = 0.1]
+[quake target = "don" power = 12 time = 0.4]
+
+//空のフキダシ
+[balloon x=0 y=0 shape="001_01" scale = 0]
+[p]
+
+
+*014
+//-------------------------------------------------------------------------------
+//  カーセラル
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0004R" bg = "bg_000_055"]
+
+
+[character x = 0 y = -100 storage = "99999/barrier" scale = 3.0 action = "fade:75" mask = "inside" time = 0.1]
+
+[character x = 190 y = -660 storage = "00820/atc_sp01_p_09" scale = 2.5 action = "fadein" time = 0.1]
+
+
+[balloon x = -120 y = 30 shape="006_02" scale = 0.7 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 40]
+[quake target =".bln" power = 7 time = 0.2]
+なに！？
+[p]
+
+
+*015
+//-------------------------------------------------------------------------------
+//  カリフラ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0004L" bg = "bg_000_055"]
+
+[character x = 0 y = -100 storage = "99999/barrier" scale = 3.0 action = "fade:75" mask = "inside" time = 0.1]
+
+[character x = -0 y = -370 storage = "00738/card_01" scale = 1.9 angle = -10 action = "fadein" time = 0.1]
+
+//[character x = -200 y = -180 storage = "00738/atc_sp01_p_03" scale = 1.0 action = "fadein" time = 0.1]
+//[character x = -110 y = -100 storage = "99999/charge_ball" scale = 1.2 action = "fadein" time = 0.1]
+//[paint target = ".chara" color = "#ff3333"]
+//[quake target = ".chara" power = 1]
+
+[balloon x = 135 y = 70 shape="001_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+ふふ…[r]
+ウルトラスーパー[r]
+じゃねえか！
+[p]
+
+[balloon x = 140 y = -115 shape="006_01" scale = 0.75 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+[quake target =".bln" power = 7 time = 0.2]
+一気にいくぜ！！[r]
+はあああーっ！！
+[p]
+
+[se storage = "3025"]
+//点滅
+[balloon shape="008_02" x = 0 y = 0 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+[balloon shape="008_02" x = 0 y = 0 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+
+*016
+//-------------------------------------------------------------------------------
+//  カーセラル
+//-------------------------------------------------------------------------------
+[se storage = "3013"]
+[coma shape="N0003L" bg = "bg_000_059"]
+
+[character id = "2" x = -30 y = -110 storage = "99999/goku_freeza_03" scale = 1.1 angle = -15 action = "fade:40" time = 0.1]	
+[quake target ="2" power = 1]
+
+[character id = "k" x = 80 y = -170 storage = "00820/dam_side_e_01" scale = 1.1 angle = -10 action = "fadein" time = 0.1]
+[quake target ="k" power = 2]
+
+[character id = "1" x = -70 y = -100 storage = "99999/goku_freeza_03" scale = 1.1 angle = 10 action = "fade:70" time = 0.1]	
+[flip target ="1" h=1]
+[quake target ="1" power = 1]
+
+
+[balloon x = -120 y = 35 shape="007_02" scale = 0.75 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+[quake target =".bln" power = 7 time = 0.2]
+うわあああ！！
+[p]
+
+
+*017
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002L" bg = "bg_000_014"]
+
+
+[balloon x=0 y=0 shape="003_01" scale = 1.5 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 15]
+//[quake target =".bln" power = 3 time = 0.2]
+新たな力に[r]
+目覚めたケール…！[r]
+　[r]
+第６宇宙の[r]
+サイヤ人ふたりの[r]
+凄まじい[r]
+合体パワーによって[r]
+カーセラルたちは[r]
+場外へと吹き飛ばされ[r]
+脱落となってしまった…
+[p]
+
+
+*018
+//-------------------------------------------------------------------------------
+//  ベルモッド
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_059"]
+
+[character x = 190 y = -340+20 storage = "90003/vermouth" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x = -125 y = 35 shape="004_02" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+プライド・トルーパーズが[r]
+いっきに５人も…
+[p]
+
+
+*019
+//-------------------------------------------------------------------------------
+//  マルカリータ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_059"]
+
+[character x = 200 y = -245 storage = "90003/margarita" scale = 1.1 action = "fadein" time = 0.1]
+
+[balloon x = -140 y = 55 shape="001_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+第11宇宙[r]
+残りあと４人[r]
+ですますよ
+[p]
+
+
+*020
+//-------------------------------------------------------------------------------
+//  大神官
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_059"]
+
+[character x = -200 y = -260 storage = "90003/daishinkan" scale = 1.1 action = "fadein" time = 0.1]
+
+[balloon x=120 y=80 shape="001_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+序盤戦が終わり[r]
+これからは[r]強者たちの時間
+[p]
+
+
+[balloon x=120 y=-105 shape="001_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+さらに闘いは[r]
+激しくなるでしょう
+[p]
+
+
+*021
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002L" bg = "bg_000_054"]
+
+[balloon x=0 y=-20 shape="003_01" scale = 1.4 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 16]
+//[quake target =".bln" power = 3 time = 0.2]
+過酷なサバイバルの中[r]
+成長し高まっていく力を[r]
+見せつけたサイヤ人…[r]
+　[r]
+…そして[r]
+残り４人となって[r]
+しまった第11宇宙…
+[p]
+
+
+*022
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_000_024"]
+
+
+//[character id = "BG" x = 0 y = 0 storage = "99999/flare" scale = 20 action = "fadein" time = 0.1 mask="inside"]
+
+//[character x = 110 y = -100 storage = "00754/card_01" scale = 0.8 action = "fadein" time = 0.1]
+
+//[character x = 230 y = -140 storage = "00812/card_01" scale = 0.4 action = "fadein" time = 0.1]
+
+
+[balloon x=0 y=-30 shape="003_01" scale = 1.5 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 15]
+//[quake target =".bln" power = 3 time = 0.2]
+はたして[r]
+第11宇宙の[r]
+プライド・トルーパーズは[r]
+力の大会を勝ち抜き[r]
+優勝することが[r]
+できるのだろうか…！？
+[p]
+
+
+//終わりのフェードアウト
+[stopbgm fadeout = 1.0]
+[balloon x=130 y=40 shape="008_03" scale = 50.0 action = "fadein" time = 0.5]
+[wait time = 2.5]
+
+
+//-------------------------------------------------------------------------------
+[stopbgm]

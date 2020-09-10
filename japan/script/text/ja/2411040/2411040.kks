@@ -1,0 +1,41 @@
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "011"]
+
+*001
+//-------------------------------------------------------------------------------
+//  マイティマスク
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="S0001" bg = "bg_025_002"]
+
+[character x=180 y=-0 storage = "00214/card_01" scale = 1.6 action = "fadein" time = 0.1]
+[quake target =".chara" power = 5 time = 0.4]
+
+
+[balloon x=-50 y=400 shape="001_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+よーし！[r]
+これでオトナと[r]
+闘えるぞーっ！
+[p]
+
+[character id = "ase" x=35 y=-50 storage = "99999/ase" scale = 0.8 action = "fadein" time = 0.3]
+
+[move target ="ase" y=-70 time = 0.6]
+
+
+[balloon x=-150 y=-410 shape="004_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+バレないかなあ[r]
+これで……
+[p]
+
+[stopbgm]

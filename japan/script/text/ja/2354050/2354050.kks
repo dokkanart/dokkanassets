@@ -1,0 +1,86 @@
+*start|スタート
+//"ステージ5スタート"
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "007"]
+
+*001
+//-------------------------------------------------------------------------------
+//  鶴仙人
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_083"]
+
+[character x = -200 y = -100 storage = "00065/heapup_p_03" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon x=120 y=60 shape="004_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+天津飯…[r]
+よくも逆らいおったな！[r]
+情けないやつだ！
+[p]
+
+[balloon x=130 y=-120 shape="004_03" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+人の恩を[r]
+わすれおって！
+[p]
+
+*002
+//-------------------------------------------------------------------------------
+//  天津飯
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_083"]
+
+[character x = 200 y = -130 storage = "00954/idl_side_e_01" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon x=-120 y=60 shape="004_02" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 54]
+//[quake target =".bln" power = 3 time = 0.2]
+………
+[p]
+
+*003
+//-------------------------------------------------------------------------------
+//  鶴仙人
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_083"]
+
+[character x = -200 y = -100 storage = "00065/heapup_p_03" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon x=125 y=50 shape="007_02" scale = 0.9 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 7 time = 0.2]
+もうよい！！[r]
+皇帝は わしが[r]
+直々に殺してやる！！
+[p]
+
+*004
+//-------------------------------------------------------------------------------
+//  亀仙人
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_000_083"]
+
+[character x = 170 y = -160 storage = "90003/kamesennin_01" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x=-140 y=40 shape="007_01" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 40]
+[quake target =".bln" power = 7 time = 0.2]
+やめんか[r]
+鶴仙人！！
+[p]
+
+//-------------------------------------------------------------------------------
+[stopbgm]

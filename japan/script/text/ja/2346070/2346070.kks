@@ -1,0 +1,303 @@
+*start|スタート
+//"ステージ７スタート"
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "013"]
+
+*01
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0004R" bg = "bg_050_002"]
+
+
+[balloon x=0 y=110 shape="003_02" scale = 1.5 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 16]
+//[quake target =".bln" power = 7 time = 0.2]
+悟空の[r]
+圧倒的な強さを[r]
+見せつけられ[r]
+逃げ帰った[r]
+ジースだったが[r]
+ギニューと共に[r]
+再び悟空たちの前に[r]
+現れるのだった…
+[p]
+
+*02
+//-------------------------------------------------------------------------------
+//  ジース
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_050_001"]
+
+[character x=-170 y=-80 storage = "00034/heapup_p_01" scale = 1.5 action =  "fadein" time = 0.1]
+
+
+
+[balloon x=130 y=110 shape="002_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+さっきは よくも[r]
+なめたマネを[r]
+してくれたな！
+[p]
+
+[balloon x=130 y=-100 shape="002_03" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+ギニュー隊長みずからが[r]
+きさまに制裁をくわえて[r]
+くださるぞ……！
+[p]
+
+
+*03
+//-------------------------------------------------------------------------------
+//  ギニュー
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_050_001"]
+
+[character x=-200 y=-110 storage = "00017/idl_side_p_02" scale = 1.5 action = "fadein" time = 0.1]
+
+[balloon x=120 y=100 shape="002_01" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 7 time = 0.2]
+こいつは[r]
+かつてないほどの[r]
+おもしろい闘いに[r]
+なりそうだ…
+[p]
+
+[balloon x=120 y=-110 shape="002_03" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+このギニューさまの[r]
+真の力を見せるときが[r]
+まさかやってくるとは[r]
+思わなかったぞ
+[p]
+
+*04
+//-------------------------------------------------------------------------------
+//  孫悟空
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_050_001"]
+
+[character x=250 y=-140 storage = "00300/idl_side_e_01" scale = 1.1 action = "fadein" time = 0.1]
+
+
+[balloon shape="001_03" x = -100 y = 100 scale = 0.9 action = "fadein" time = 0.1]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+[wait_anim target=".bln"]
+あいつは[r]
+オラがくいとめる
+[p]
+
+
+[balloon shape="001_02" x = -120 y = -90 scale = 0.9 action = "fadein" time = 0.1]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+[wait_anim target=".bln"]
+クリリンたちは[r]
+ドラゴンレーダーで[r]
+ボールをさがしてくれ！
+[p]
+
+
+*05
+//-------------------------------------------------------------------------------
+//  クリリン 孫悟飯
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_050_001"]
+
+[character x = 100 y = -80 storage = "00007/idl_side_e_03" scale = 0.8 action = "fadein" time = 0.1]
+[character x = 240 y = -80 storage = "00009/idl_side_e_03" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon shape="001_01" x = 0 y = 120 scale = 0.8 action = "fadein" time = 0.1]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+[wait_anim target=".bln"]
+わかった…！[r]
+いくぞ 悟飯！！
+[p]
+
+
+[balloon shape="001_03" x = -130 y = -80 scale = 0.7 action = "fadein" time = 0.1]
+[font size = 40]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 3 time = 0.2]
+はい！！
+[p]
+
+*06
+//-------------------------------------------------------------------------------
+//  孫悟空
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_050_001"]
+
+[character x=250 y=-140 storage = "00300/idl_side_e_01" scale = 1.1 action = "fadein" time = 0.1]
+
+
+[balloon shape="001_02" x = -110 y = 100 scale = 0.9 action = "fadein" time = 0.1]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+[wait_anim target=".bln"]
+ベジータ おめえは[r]
+もうひとりのヤツを[r]
+倒してくれ
+[p]
+
+
+[balloon shape="001_01" x = -120 y = -100 scale = 0.9 action = "fadein" time = 0.1]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+[wait_anim target=".bln"]
+死にかけて全快してから[r]
+力がグンと増えたはずだ
+[p]
+
+
+
+*07
+//-------------------------------------------------------------------------------
+//  ベジータ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_050_001"]
+
+[character x = 180 y = -110 storage = "00061/idl_side_e_03" scale = 1.1 angle = 0 action = "fadein" time = 0.1]
+
+[balloon x=-110 y=60 shape="002_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+ち…[r]
+知ってやがったか…
+[p]
+
+*08
+//-------------------------------------------------------------------------------
+//  孫悟空 
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0003R" bg = "bg_050_001"]
+
+//となりにベジータもいる。
+[character x = 90 y = -110 storage = "00061/idl_side_e_03" scale = 0.8 angle = 0 action = "fadein" time = 0.1]
+[character x=250 y=-110 storage = "00300/idl_side_e_01" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x=-170 y=80 shape="006_02" scale = 0.8 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 7 time = 0.2]
+よし！ いくぞ[r]
+ベジータ！！
+[p]
+
+*09
+//-------------------------------------------------------------------------------
+//  ベジータ
+//-------------------------------------------------------------------------------
+[se storage = "48"]
+[coma shape="N0004R" bg = "bg_000_014"]
+
+[character x = 280 y = -430 storage = "00061/idl_side_e_03" scale = 3.0 angle = 0 action = "fadein" time = 0.1]
+
+[balloon x=-140 y=60 shape="002_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+……ふん…[r]
+あばよカカロット！！
+[p]
+
+
+
+*10
+//-------------------------------------------------------------------------------
+//  孫悟空 
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0003R" bg = "bg_050_001"]
+
+//となりにベジータもいる。
+[character id = "ve1" x = 140 y = -110 storage = "00061/idl_side_e_03" scale = 0.5 angle = 0 action = "fadein" time = 0.1]
+
+
+[character id = "gok" x=250 y=-110 storage = "00300/heapup_e_01" scale = 0.7 action = "fadein" time = 0.1]
+
+
+
+[character id = "gin" x=-250 y=-110 storage = "00017/heapup_back_p_01" scale = 1.4 action = "fadein" time = 0.1]
+
+
+[wait time = 0.3]
+
+[se storage = "50"]
+//点滅
+[balloon shape="008_02" x = 0 y = 0 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+[balloon shape="008_02" x = 0 y = 0 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+[clear target = "ve1"]
+[clear target = "gin"]
+
+
+
+[character id = "ve2" x = 80 y = 0 storage = "00061/atc_sp01_p_04" scale = 0.7 angle = -30]
+[flip target ="ve2" h=1]
+
+[character id = "gin" x=-250 y=-110 storage = "00017/heapup_back_p_01" scale = 1.4]
+
+[move target ="ve2" x=-600 time = 0.5]
+[move target ="ve2" y=400 time = 0.5]
+
+[wait time = 0.2]
+
+[balloon x=130 y=120 shape="006_02" scale = 0.75 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+[quake target =".bln" power = 7 time = 0.2]
+ベジータ！？
+[p]
+
+
+
+
+*11
+//-------------------------------------------------------------------------------
+//  ギニュー
+//-------------------------------------------------------------------------------
+[se storage = "03"]
+[coma shape="N0002L" bg = "bg_050_001"]
+
+//[lwfobject id = "kaki1" storage="kakimoji:ef_023" x=170 y=-200 scale = 1.7 angle = 30 action = "fadein" time = 0.1]
+//[quake target = "kaki1" power = 9 time = 0.4]
+
+[character x = 0 y = -70 storage = "00017/card_03" scale = 1.2 angle = -12 action = "fadein" time = 0.1]
+[quake target =".chara" power = 5 time = 0.4]
+
+[balloon x=140 y=100 shape="006_01" scale = 0.75 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+[quake target =".bln" power = 7 time = 0.2]
+スキありーっ！！
+[p]
+
+//-------------------------------------------------------------------------------
+[stopbgm]

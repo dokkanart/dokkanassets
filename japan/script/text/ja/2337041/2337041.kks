@@ -1,0 +1,124 @@
+*start|スタート
+//ステージ4 ゴール
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "011"]
+
+*01
+//-------------------------------------------------------------------------------
+//  ベジータ
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_015"]
+
+[character id = "1" x = 185 y = -130 storage = "00245/idl_side_e_01" scale = 1.8 action = "fadein" time = 0.1]
+
+[wait time = 0.7]
+
+[se storage = "3034"]
+
+[balloon shape="008_02" x = 0 y = 0 scale = 50 action = "fadein" time = 0.1]
+//[wait time = 0.3]
+
+
+[character id = "2" x = 185 y = -130 storage = "00240/idl_side_e_01" scale = 1.2 action = "fadein" time = 0.3]
+
+[wait time = 0.3]
+[clear target = ".bln"]
+[fadeout target = ".chara" time = 0.5]
+
+[wait_anim target="2"]
+
+[balloon shape="004_02" x = -100 y = 70 scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+こ…[r]
+この力は……！！
+[p]
+
+*02
+//-------------------------------------------------------------------------------
+//  ウイス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_015"]
+
+[character x = -210 y = -300 storage = "00243/idl_side_p_01" scale = 1.7 action = "fadein" time = 0.1]
+
+[balloon x=80 y=100 shape="001_03" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 7 time = 0.2]
+まさか[r]
+この短時間で[r]
+ここまで…
+[p]
+
+
+
+[balloon x=110 y=-90 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 7 time = 0.2]
+ビルスさまが[r]
+一目置いただけのことは[r]
+ありますねえ
+[p]
+
+*03
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0003L" bg = "bg_000_015"]
+ 
+//[character x = -120 y = -100 storage = "00025/atc_down_p_01" scale = 1.6 action = "fadein" time = 0.1]
+ 
+[balloon x=0 y=20 shape="003_02" scale = 1.5 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 16]
+//[quake target =".bln" power = 7 time = 0.2]
+新たな境地へと[r]
+足を踏み入れる[r]
+ベジータ…[r]
+　[r]
+神を超え…[r]
+ライバルを超え[r]
+頂点に立つため[r]
+ベジータの闘いは[r]
+まだまだ続くのだった…
+[p]
+
+*04
+//-------------------------------------------------------------------------------
+//  ベジータ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_000_024"]
+ 
+[character x = 140 y = -280 storage = "00245/card_01" scale = 1.5 action = "fadein" time = 0.1]
+ 
+[balloon x=-140 y=100 shape="002_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+オレは…己自身の力で[r]
+神の域を超えてみせる 
+[p]
+ 
+[balloon x=-140 y=-150 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+最後に[r]
+ナンバー１になるのは[r]
+このオレだ…！！ 
+[p]
+
+[balloon x=0 y=0 shape="008_03" scale = 50.0 action = "fadein" time = 0.5]
+[wait time = 2.5]
+
+//-------------------------------------------------------------------------------
+[stopbgm]

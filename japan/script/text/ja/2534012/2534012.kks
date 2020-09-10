@@ -1,0 +1,76 @@
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+//[bgm storage = "012"]
+
+*001
+//----------------------------------------------------------------------------
+// バーダック
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_000_051"]
+
+[character x = 140 y = -50 storage = "00067/card_02" scale = 1.0 action = "fadein" time = 0.1]
+ 
+ 
+[balloon shape="002_03" x = -140 y = 150 scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+まだまだ[r]
+こんなもんじゃないぞ！
+[p]
+
+[quake target =".chara" power = 6 time = 0.3]
+ 
+ 
+[balloon shape="006_01" x = -140 y = -190 scale = 0.8 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 7 time = 0.2]
+うおおおおーっ！！
+[p]
+
+[se storage = "3025"]
+//点滅
+[balloon shape="008_02" x = 0 y = 0 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+[balloon shape="008_02" x = 0 y = 0 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+
+//[clear target = "1"]
+
+
+//[character id = "super" x = 140 y = -210 storage = "99999/supersaiyan" scale = 1.4]
+//[quake target ="super" power = 5 time = 1.0]
+//[character id = "2" x = 140 y = -50 storage = "00067/card_02" scale = 1.0]
+
+//[wait time = 0.2]
+
+
+*002
+//-------------------------------------------------------------------------------
+//  バーダックが超サイヤ人に変身する。
+//-------------------------------------------------------------------------------
+[se storage = "3011"]
+[coma id = "coma1" shape="S0001" bg = "bg_000_051"]
+
+[lwfobject id = "kaki1" storage="kakimoji:ef_013" x=180 y=400 angle = 35 scale = 2.2 action = "fadein" time = 0.1]
+[quake target = "kaki1" power = 15 time = 0.3]
+
+[character id = "1" x = 0 y = 0 storage = "00081/card_02" scale = 1.3 action = "fadein" time = 0.1]
+[quake target ="1" power = 6 time = 0.3]
+
+[balloon shape="006_02" x = 120 y = -300 scale = 0.8 action = "expand" time = 0.1]
+[font size = 32]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 7 time = 0.2]
+覚悟しやがれ！！
+[p]
+
+
+//[stopbgm]

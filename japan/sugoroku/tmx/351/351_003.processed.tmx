@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" tiledversion="1.1.5" orientation="orthogonal" renderorder="right-down" width="45" height="37" tilewidth="40" tileheight="40" infinite="0" nextobjectid="182">
+ <tileset firstgid="1" name="Path" tilewidth="40" tileheight="40" spacing="1" tilecount="32" columns="4">
+  <image source="image/common/mapchip-base.png" width="163" height="327"/>
+  <tile id="6">
+   <properties>
+    <property name="charageki_bg_01" value="normal_009_001"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="33" name="Attribute" tilewidth="40" tileheight="40" spacing="1" tilecount="32" columns="4">
+  <image source="image/common/mapchip-meta.png" width="163" height="327"/>
+ </tileset>
+ <tileset firstgid="65" name="brown_01" tilewidth="40" tileheight="40" spacing="1" tilecount="144" columns="12">
+  <image source="image/area_005/brown_01.png" width="491" height="491"/>
+ </tileset>
+ <tileset firstgid="209" name="brown_02" tilewidth="40" tileheight="40" spacing="1" tilecount="64" columns="8">
+  <image source="image/area_005/brown_02.png" width="327" height="327"/>
+ </tileset>
+ <tileset firstgid="273" name="green_01" tilewidth="40" tileheight="40" spacing="1" tilecount="144" columns="12">
+  <image source="image/area_005/green_01.png" width="491" height="491"/>
+ </tileset>
+ <tileset firstgid="417" name="P_mountain1" tilewidth="40" tileheight="40" spacing="1" tilecount="48" columns="6">
+  <image source="../ishin_design/Resources/sugoroku/map/image/area_095/P_mountain1.png" width="245" height="327"/>
+ </tileset>
+ <tileset firstgid="465" name="P_mountain2" tilewidth="40" tileheight="40" spacing="1" tilecount="63" columns="7">
+  <image source="../ishin_design/Resources/sugoroku/map/image/area_095/P_mountain2.png" width="286" height="368"/>
+ </tileset>
+ <tileset firstgid="528" name="green" tilewidth="40" tileheight="40" spacing="1" tilecount="352" columns="22">
+  <image source="../ishin_design/Resources/sugoroku/map/image/common/green.png" width="901" height="655"/>
+ </tileset>
+ <tileset firstgid="880" name="tree" tilewidth="40" tileheight="40" spacing="1" tilecount="88" columns="11">
+  <image source="../ishin_design/Resources/sugoroku/map/image/area_034/tree.png" width="450" height="327"/>
+ </tileset>
+ <tileset firstgid="968" name="slope_01" tilewidth="40" tileheight="40" spacing="1" tilecount="144" columns="12">
+  <image source="../ishin_design/Resources/sugoroku/map/image/area_002/slope_01.png" width="491" height="491"/>
+ </tileset>
+ <layer name="bg" width="45" height="37">
+  <data encoding="base64" compression="zlib">
+   eJztwwEJAAAMA6A9xfo3XY+jYC+pqqqqqqqqrw4y85wZ
+  </data>
+ </layer>
+ <layer name="green" width="45" height="37">
+  <data encoding="base64" compression="zlib">
+   eJztwwEJAAAMA6DxFutfdD2Ogr2kqqqqqqqqvjowYK+c
+  </data>
+ </layer>
+ <layer name="green_tex" width="45" height="37" opacity="0.48">
+  <data encoding="base64" compression="zlib">
+   eJztWEkOw0AIq/redD4xH28PrYQsFpvh0EMOSF0mLMaYJK/n47E+dh3a/toKPl/f768/sdM6t+Mz+t2L28mZ8f+LgXlWPfb8LPhvN6yKYX0r2Gc4LDJmhbNS2+XEtmd+szDNSZVrEc7Z/HYwQu5E+UV+FX6yuOziGibnjAcdriEeFnPFZ8XT6nyXY1Zv1Pnp6gHG8big+p/YgafG9DHSG0Zb2Jnc4FflVoQzs7vwWkY/8NxELzw93CbeCR7eORUbz3D32Ny72mFzVXJU9ZDZ/4oudXSZ1Sw7R96ceHqk8k65B+lwZUqvOtbtdYQ1W+NE3WpvPB50sPH0aCXnFb1ncutwsJqBbL8xc7oglqJHXU3MdgODEdOTjAuVHtlrGa5U8fFZqqr5RBeUXmY2NXOTeqjE8OZhSo/UXjI+2Lqm7rEne2k5Hu37rl3wedKY51gGLw8/RgvZ5wPrr5MP5sBgHumjwqf73Rdfm6cF9sz97ivXBvSr8JPFBXd5pBkqN064hnjc775qPcA4HhdU/2/d+PA8
+  </data>
+ </layer>
+ <layer name="green_tex_02" width="45" height="37" opacity="0.52">
+  <data encoding="base64" compression="zlib">
+   eJy9WFtuxEAIizZ9HaHv3mD7PMO2979Ie4SSj5EixIANtJb42cmajHEYkuO6LM8SLxKvEm8S7xIfEhon+e1T4stYm+Ho8H8fluXnwP/Puh+Py1vzsOdfJc4kziUuJC4lrpQOI0+kk8eF5EFwLf+5kbiVuJO4l3iQeJR4AveDcEV5GHg1R/KsK8aFeAv1jFfzKM/Yk4bnH2sNrSVTc51n7HPsqQLUM1lvdT1DeyCeQa/T3vL2qZHpZZZnLB7GW8g+u+rQ1atm+xx9o6uXoTz6mULO4D3/hq5eFvHMaoDOBFbfqPSyiAepQaQLott/nX+RLno9m8eDp4euQaSLtY4A9VvGR5Eu1nrH2bKh6qPZeW2tM7yejl29B6kVyovqWOk90RkzeFDe7PPIeAadrVle9p0ws9dotq5oOIDUHp2jIpwaeJmZceAv5mKGNzvnMHtEkOFl55xKT7T0q/obyV3pid6ZkvluxOTeg+ldmbPKuyZ7hmc8g2iD6lfxK+IZVBtWv673h9ksitSl+rx3eibSxpsJGf2qvQjpBx2zGOqZ7Pfh7H1U9GP9rWfR6n2wvZytj55Fu+6DAauLnkU7wdab1WW7/hecSqv3
+  </data>
+ </layer>
+ <layer name="タイル・レイヤー 14" width="45" height="37">
+  <data encoding="base64" compression="zlib">
+   eJztzrcKAkEABuGF81FsDa2hNbSGhzYHMAcwBzCH3iltFq7aU/gHvn6MUUoppZRS34VDQR/4K8JnFDHE/+Q5wWcSKaQtzxXPmCpqqKOBJlpoo4Ou5+45w2cWOeQtzz1++hhgiBHGmGCKGeYOnwt8FlFC2fK84GeJFdbYYIsd9jjg6PDZTyd+zrjgihvueOCJF94/9qyUUkoppZRSQfYBEUgnrQ==
+  </data>
+ </layer>
+ <layer name="tree_05" width="45" height="37">
+  <data encoding="base64" compression="zlib">
+   eJztlsEKhDAMRAv9/z9Q9+iuR7f+n+mhEIqBbOnqRPNORXIYwySZEJwzGGIIY7xaxW/MpPdtTPNKer9M80Tvl7F/+JDexZjmRHo3Y5odxyqDMGvId2YWdCHfmVXQVd8Z53lIM4iMNIPI5FnzHPc/eG+Rcxy/bVZ6y28b7y2yn8tt4xrzu/QcWTv3RX6XniP7hfsixePvznPRZnqk7K/N9EjZX5vp0bK/dh/XdS1+6eUx7T6u61r80stj2n1c17X4Bc1jzn3ZAUGUQlI=
+  </data>
+ </layer>
+ <layer name="p_mountain_01" width="45" height="37">
+  <data encoding="base64" compression="zlib">
+   eJzt2LcNgFAAQ8HP/oNQsQxRxFnwCoiCoDvp9a5dCvxDXT294Lrmg5sBAAAAAO5qq1K61KchjWl6+V86Z9+S1rSlPR0v33wC7CYLgw==
+  </data>
+ </layer>
+ <layer name="p_mountain_02" width="45" height="37">
+  <data encoding="base64" compression="zlib">
+   eJzt2LkKwlAQheG5V3Ff3v+1FLSzs3MpXAoX9O9MocEUMTNyPjgQSCCH4QaGPJKZZbNEPhlwb0hGZEwmZFryfB229NyRPenw7i7p/bhDVUe6nsg5NTe3qq50vZF7arrJ9zIzbZG289kW9fPru5ox63lh3guul4HmL/WJeA5WATuvA3beBOx8CNj5ErBz2T7nlfd97h3v+5yIiIiIiIg3Ef6N/6sn01ATjw==
+  </data>
+ </layer>
+ <layer name="tree_03" width="45" height="37">
+  <data encoding="base64" compression="zlib">
+   eJzt0jEOgCAMRuEmvf8VYFQcEe9nExfTSSfyk/ctwPZoajbH5ma7P/cR5+WTQn7o0XimzhLvKtD+1qL3EGvOO7LC3BX+kOe+wu6oKILNTbB5CDYDAAAAAAAAX90N1RJV
+  </data>
+ </layer>
+ <layer name="tree_04" width="45" height="37">
+  <data encoding="base64" compression="zlib">
+   eJzt0j0KgDAMgNFA7n8HnRR00qHXMw6BtnYShES+B6VpoZCfinzrUJHTVtH27Px+sX3V5/soyiC3vpasJqthDl5Hn+Nm8a7juUThOWZW9z3DP7nVff/DDAAAAAAAAADgrQucJhMP
+  </data>
+ </layer>
+ <layer name="Path" width="45" height="37">
+  <data encoding="base64" compression="zlib">
+   eJztzrEJACEQAMFD8HMD+29VvwOTQ9QZ2HwjAADgLW1Wd08s+l+/Wd89ssBrDq85vOYpcc4rAMDtBgyfAWI=
+  </data>
+ </layer>
+ <layer name="Attribute" width="45" height="37">
+  <data encoding="base64" compression="zlib">
+   eJztzkERAAAEADCV6B/OTwV3bAkWAQAA/+R2AOCo2g4AADAa2PQAZA==
+  </data>
+ </layer>
+ <objectgroup name="PathAttributes">
+  <object id="173" name="0" type="space" x="1240" y="600" width="40" height="40">
+   <properties>
+    <property name="group" value="0"/>
+    <property name="next" value="1"/>
+   </properties>
+  </object>
+  <object id="174" name="1" type="space" x="1160" y="640" width="40" height="40">
+   <properties>
+    <property name="group" value="0"/>
+    <property name="next" value="2"/>
+   </properties>
+  </object>
+  <object id="175" name="2" type="space" x="1080" y="680" width="40" height="40">
+   <properties>
+    <property name="group" value="0"/>
+    <property name="next" value="3"/>
+   </properties>
+  </object>
+  <object id="176" name="3" type="space" x="1000" y="720" width="40" height="40">
+   <properties>
+    <property name="group" value="0"/>
+    <property name="next" value="4"/>
+   </properties>
+  </object>
+  <object id="177" name="4" type="space" x="920" y="760" width="40" height="40">
+   <properties>
+    <property name="group" value="0"/>
+    <property name="next" value="5"/>
+   </properties>
+  </object>
+  <object id="178" name="5" type="space" x="840" y="800" width="40" height="40">
+   <properties>
+    <property name="group" value="0"/>
+    <property name="next" value="6"/>
+   </properties>
+  </object>
+  <object id="179" name="6" type="space" x="760" y="840" width="40" height="40">
+   <properties>
+    <property name="group" value="0"/>
+    <property name="next" value="7"/>
+   </properties>
+  </object>
+  <object id="180" name="7" type="space" x="680" y="880" width="40" height="40">
+   <properties>
+    <property name="group" value="0"/>
+    <property name="next" value="8"/>
+   </properties>
+  </object>
+  <object id="181" name="8" type="space" x="600" y="920" width="40" height="40"/>
+ </objectgroup>
+</map>

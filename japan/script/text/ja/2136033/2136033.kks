@@ -1,0 +1,73 @@
+
+
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "002"]
+
+
+*01
+//-------------------------------------------------------------------------------
+//  ピッコロ大魔王
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+
+
+[coma shape="N0001L" bg = "bg_006_001"]
+
+[character x=-220 y=-70 storage = "00263/card_01" scale = 1 action = "fadein" time = 0.1]
+
+
+[balloon shape="007_01" x = 110 y = 170 scale = 0.8 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 7 time = 0.2]
+
+ガキが調子に[r]
+のりおって！！[p]
+
+[balloon shape="007_02" x = 110 y = -60 scale = 0.9 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 7 time = 0.2]
+
+本当のオレさまの[r]
+パワーを見たときが[r]
+きさまの最後だっ！！[p]
+
+
+
+*02
+//-------------------------------------------------------------------------------
+//  悟空
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+
+
+[coma shape="N0002R" bg = "bg_006_001"]
+
+[character x = 90 y = -110 storage = "00261/card_04" scale = 1.2 action = "fadein" time = 0.1]
+
+
+[balloon shape="001_02" x = -110 y = 100 scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+
+おめえは[r]
+オラの大事なものを[r]
+たくさん奪ってしまった…[p]
+
+[balloon shape="001_01" x = -130 y = -170 scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+
+…絶対に[r]
+ゆるせねえ……[p]
+
+
+
+[stopbgm]

@@ -1,0 +1,85 @@
+*start|スタート
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "008"]
+
+*001
+//-------------------------------------------------------------------------------
+//  魔人ブウ（善）
+//-------------------------------------------------------------------------------
+[coma shape="S0001" bg = "bg_000_103"]
+
+[character x= 125 y= -35 storage = "00229/card_006" scale = 1.0 action = "fadein" time = 0.1]
+[character x= -135 y= 35 storage = "00230/card_02" scale = 1.0 action = "fadein" time = 0.1]
+
+//魔人ブウ（善）
+[balloon x= 175 y= 380 shape="004_03" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+[quake target =".bln" power = 3 time = 0.2]
+なんだーっ！？[r]
+おまえは！！
+[p]
+
+//魔人ブウ（純粋悪）
+[balloon x= -150 y=-380 shape="002_02" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+[quake target =".bln" power = 3 time = 0.2]
+おまえこそ[r]
+なんだ！！
+[p]
+
+
+
+
+*002
+//-------------------------------------------------------------------------------
+//  魔人ブウ（善）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_103"]
+
+[character id="buu" x = 260 y = -50 storage = "00229/atc_sp01_p_04" scale = 1.0 action = "fadein" time = 0.1]
+[flip target =".chara" h=1]
+
+
+[balloon x = -135 y = 55 shape="006_01" scale = 0.7 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 40]
+[quake target =".bln" power = 7 time = 0.2]
+オレは[r]
+魔人ブウだ！！
+[p]
+
+
+*003
+//-------------------------------------------------------------------------------
+//  魔人ブウ（純粋悪）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002L" bg = "bg_000_103"]
+
+[character x = -265 y = -145 storage = "00230/card_05" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon x = 180 y = 55 shape="006_01" scale = 0.7 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 40]
+[quake target =".bln" power = 7 time = 0.2]
+オレこそ[r]
+魔人ブウだ！！
+[p]
+
+//[se storage = "3012"]
+//点滅
+//[balloon shape="008_02" x = 0 y = 0 scale = 50 action = "fadein" time = 0.1]
+//[wait time = 0.3]
+//[clear target = ".bln"]
+//[balloon shape="008_02" x = 0 y = 0 scale = 50 action = "fadein" time = 0.1]
+//[wait time = 0.3]
+//[clear target = ".bln"]
+
+
+//-------------------------------------------------------------------------------
+[stopbgm]

@@ -1,0 +1,93 @@
+*start|スタート
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "018"]
+
+*001
+//-------------------------------------------------------------------------------
+//  超サイヤ人トランクス（青年期）
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_021"]
+
+[character id = "ss" x = 170 y = -200 storage = "99999/supersaiyan" scale = 1.0 action = "fade:50" time = 0.1]
+[quake target ="ss" power = 1 time = 300]
+
+[character id ="1" x = 250 y = -90 storage = "00411/idl_side_e_04" scale = 1.15 action = "fade:100" time = 0.1]
+
+[wait time = 1.5]
+
+[se storage = "44"]
+[fadeout target="ss" time=0.4]
+[fadeout target = "1" time = 0.7]
+
+
+
+[character id = "2" x = 260 y = -130 storage = "00411/idl_side_e_02" scale = 1.2 action = "fade:100" time = 0.7]
+
+
+[wait time = 1.2]
+
+[balloon x = -105 y = 65 shape="001_01" scale = 0.65 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 44]
+//[quake target =".bln" power = 3 time = 0.2]
+ふう…
+[p]
+
+*002
+//-------------------------------------------------------------------------------
+//  トランクス（青年期）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0003R" bg = "bg_000_016"]
+
+[character x = 120 y = -188 storage = "00411/idl_back_e_02" angle = 15 scale = 1.5 action = "fadein" time = 0.1]
+
+
+
+[balloon x = -120 y = 65 shape="001_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+これですべてが[r]
+終わりましたよ……
+[p]
+
+[balloon x=-120 y=-115 shape="001_03" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+ありがとう[r]
+悟空さんたち……
+[p]
+
+*003
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002L" bg = "bg_014_001"]
+
+[balloon x=0 y=-40 shape="003_01" scale = 1.6 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 14]
+//[quake target =".bln" power = 3 time = 0.2]
+つらい未来を[r]
+生きてきたトランクス…[r]
+そしてブルマたちにやっと[r]
+真の平和がおとずれた[r]
+　[r]
+そしてその平和は今後も[r]
+大切にされていくだろう[r]
+トランクスがいるかぎり…
+[p]
+
+
+[stopbgm fadeout = 1.5]
+[balloon x=0 y=0 shape="008_03" scale = 50.0 action = "fadein" time = 0.5]
+[wait time = 2.5]
+
+//-------------------------------------------------------------------------------
+[stopbgm]

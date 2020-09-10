@@ -1,0 +1,91 @@
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+//[bgm storage = "003"]
+
+*01
+//-------------------------------------------------------------------------------
+//  超サイヤ人トランクス（未来）
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+
+[coma shape="S0001" bg = "bg_073_001"]
+
+[lwfobject id = "kaki1" storage="kakimoji:ef_009" in="04" x=-120 y=-150 scale = 2.5]
+[quake target = "kaki1" power = 2 time = 600]
+
+[character id = "tra1" x = 0 y = -50 storage = "00624/card_06" scale = 1.0 action = "fadein" time = 0.1]
+[quake target ="tra1" power = 1 time = 600]
+
+[wait time = 1]
+
+[se storage = "03"]
+
+
+[character id = "ki2" x = 220 y = 280 storage = "99999/04_syougeki" scale = 5.0 action = "expand" time = 0.5]
+[wait time = 0.2]
+[fadeout target = "ki2" time = 0.3]
+
+[wait time = 0.1]
+
+[character id = "ki1" x = 220 y = 280 storage = "00067/Images_ef_charge_ballpng" scale = 10.0 action = "expand" time = 0.7]
+
+[wait time = 0.3]
+
+//点滅（白）
+[se storage = "3025"]
+//点滅
+[balloon shape="008_02" x = 140 y = -30 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+[balloon shape="008_02" x = 140 y = -30 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+
+[wait_anim target=".bln"]
+
+//フェードアウト（フェードアウトするコマ）
+//[balloon x=130 y=40 shape="008_02" scale = 50.0 action = "fadein" time = 0.5]
+//[wait time = 0.7] 
+
+
+[se storage = "50"]
+[coma shape="S0001" bg = "bg_073_001"]
+
+[character x = 130 y = -80 storage = "00624/atc_sp01_p_03" scale = 1.8 angle = 50 action = "expand" time = 0.2]
+[quake target =".chara" power = 8 time = 0.6]
+[rotate_to target=".chara" angle=10 time=0.2]
+
+
+
+//フェードイン（フェードインするコマ）
+//[balloon x=130 y=40 shape="008_02" scale = 50]
+//[wait time = 1]
+//[fadeout target = ".bln" time = 2]
+//[wait_anim target=".bln"]
+
+
+[wait_anim target=".chara"]
+
+
+
+[balloon x=100 y=390 shape="001_03" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 7 time = 0.2]
+助けあって生きる…[r]
+それがオレたち人間だ！[p]
+
+[quake target =".chara" power = 5 time = 0.3]
+
+
+[balloon x=-120 y=-350 shape="006_01" scale = 0.9 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 7 time = 0.2]
+みんなの力を[r]
+オレにかしてくれ！！[p]
+//-------------------------------------------------------------------------------
+//[stopbgm]

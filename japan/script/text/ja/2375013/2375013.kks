@@ -1,0 +1,113 @@
+*start|スタート
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "005"]
+
+*001
+//-------------------------------------------------------------------------------
+//  パラガス
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0001R" bg = "bg_070_009"]
+
+[character x = 0 y = 0 storage = "99999/black" scale = 4.0 action = "fade:70" time = 0.1 mask = "inside"]
+
+//[character x = 190 y = -240 storage = "00943/card_03" scale = 1.0 action = "fadein" time = 0.1]
+[character x = 190 y = -220 storage = "00943/card_04" scale = 1.2 action = "fadein" time = 0.1]
+
+
+[balloon x = -105 y = 90 shape="004_01" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 40]
+//[quake target =".bln" power = 3 time = 0.2]
+お…[r]
+おお……
+[p]
+
+
+[balloon x=-120 y=-100 shape="006_02" scale = 0.7 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 40]
+[quake target =".bln" power = 7 time = 0.2]
+ブロリー！
+[p]
+
+
+*002
+//-------------------------------------------------------------------------------
+//  ブロリー（幼年期）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_070_009"]
+
+[character x = 0 y = 0 storage = "99999/black" scale = 4.0 action = "fade:70" time = 0.1 mask = "inside"]
+
+[character x = -245 y = -110 storage = "01058/idl_side_p_01" scale = 1.1 action = "fadein" time = 0.1]
+
+
+[balloon x=110 y=70 shape="002_02" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 40]
+//[quake target =".bln" power = 3 time = 0.2]
+ん…
+[p]
+
+
+*003
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0003R" bg = "bg_070_009"]
+
+[balloon x= 0 y=-10 shape="003_01" scale = 1.6 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 14]
+//[quake target =".bln" power = 3 time = 0.2]
+息子ブロリーを追い[r]
+小惑星バンパへと[r]
+やってきたパラガス…[r]
+　[r]
+なんとかブロリーを[r]
+発見することができた[r]
+パラガスだったが[r]
+宇宙船が壊れバンパを[r]
+脱出できなくなってしまう
+[p]
+
+
+*004
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002L" bg = "bg_000_006"]
+
+//[character x = 190 y = -220 storage = "00943/card_03" scale = 1.0 action = "fadein" time = 0.1]
+
+[character x = 0 y = 0 storage = "99999/flare" scale = 4.0 action = "fadein" time = 0.1 mask = "inside"]
+[paint target=".chara" color="#8000FF"]
+
+[balloon x= 0 y=-50 shape="003_02" scale = 1.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 13]
+//[quake target =".bln" power = 3 time = 0.2]
+過酷な星での[r]
+サバイバルを強いられる[r]
+ことになった[r]
+パラガスとブロリー[r]
+　[r]
+…しかし パラガスの[r]
+ベジータ王への怒りは[r]
+おさまることはなく[r]
+我が子を最強の戦士へと[r]
+育て上げるべく[r]
+ブロリーの戦闘訓練を[r]
+開始するのだった
+[p]
+
+
+
+//-------------------------------------------------------------------------------
+[stopbgm]

@@ -1,0 +1,44 @@
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+//[bgm storage = "012"]
+
+*001
+//-------------------------------------------------------------------------------
+//  超サイヤ人ゴッドSS孫悟空(界王拳)&超サイヤ人ゴッドSSベジータ(進化)
+//-------------------------------------------------------------------------------
+[se storage = "3029"]
+[coma shape="S0001" bg = "bg_000_056"]
+
+[character id = "veg" x = 170 y = -40 storage = "00240/card_10" scale = 1.0 action = "fadein" time = 0.1] 
+[character id = "gok" x = -205 y = 50 storage = "00239/card_14" scale = 1.0 action = "fadein" time = 0.1]
+[quake target = "gok" power = 6 time = 0.4]
+[quake target = "veg" power = 6 time = 0.4]
+
+[character id = "aura" x = 0 y = -30 storage = "99999/ef_aura_front" scale = 4.0 action = "expand" time = 0.5 ease = "in:1"]
+[wait time = 0.3]
+[fadeout target = "aura" time = 0.7]
+
+//悟空
+[balloon x= 0 y= 400 shape="006_01" scale = 0.9 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 7 time = 0.2]
+ここで引くわけには[r]
+いかねえんだ！[r]
+界王拳！！
+[p]
+
+//ベジータ
+[balloon x= 0 y= -400 shape="006_02" scale = 0.9 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 7 time = 0.2]
+　オレはきさまに[r]
+　勝たねばならんのだ！[r]
+　はああああ！！
+[p]
+
+//[stopbgm]

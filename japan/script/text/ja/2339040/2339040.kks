@@ -1,0 +1,348 @@
+*start|スタート
+//ステージ4スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "002"]
+
+*01
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0002R" bg = "bg_050_002"]
+
+[character x = -120 y = -100 storage = "00007/headup_e_01_okappa" scale = 1.2 action = "fadein" time = 0.1]
+
+[character x = 180 y = -90 storage = "00009/idl_side_e_03" scale = 1.3 action = "fadein" time = 0.1]
+
+
+
+[balloon x=-100 y=320 shape="003_02" scale = 1.6 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 14]
+//[quake target =".bln" power = 7 time = 0.2]
+ドラゴンボールの[r]
+ある場所へ向かって[r]
+謎の邪悪な気が[r]
+向かっているのを[r]
+発見したクリリンたち[r]
+　[r]
+クリリンと悟飯は[r]
+その気を追い[r]
+ナメック星人の村へ[r]
+たどりつくが[r]
+そこには……
+[p]
+
+*02
+//-------------------------------------------------------------------------------
+//  フリーザ
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="S0001" bg = "bg_050_001"]
+
+
+[wait time = 0.7]
+
+[character id = "dodo" x=-240 y=-90 storage = "00030/idl_front_p_01" scale = 0.6 action = "fadein" time = 0.7]
+
+[wait time = 0.4]
+
+[character id = "zab" x=270 y=-90 storage = "00016/idl_front_p_01" scale = 0.7 action = "fadein" time = 0.7]
+[flip target ="zab" h=1]
+
+[wait time = 0.4]
+
+[character id = "f" x=0 y=25 storage = "00058/card_01" scale = 0.8 action = "fadein" time = 1.0]
+
+[wait_anim target="f"]
+
+
+[balloon x=0 y=395 shape="002_03" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+わたしは[r]
+あなたたちのドラゴンボール[r]
+とやらを集めている[r]
+フリーザというものです
+[p]
+
+[balloon x=20 y=-270 shape="002_01" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+ドラゴンボールは[r]
+どこですか？[r]
+ここにもひとつ[r]
+あると思うのですが
+[p]
+
+
+*03
+//-------------------------------------------------------------------------------
+//  ムーリ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_050_001"]
+
+[character x = 150 y = -70 storage = "90003/muri" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon x=-110 y=70 shape="004_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+ド…ドラゴンボールを[r]
+集める目的は……？
+[p]
+
+*04
+//-------------------------------------------------------------------------------
+//  フリーザ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_050_001"]
+
+[character x=-190 y=-90 storage = "00058/idl_side_p_01" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon x=110 y=120 shape="002_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+なあに[r]
+つまらない願いですよ
+[p]
+
+[balloon x=120 y=-100 shape="002_01" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+わたしに[r]
+永遠の命をいただこうと[r]
+思ってます
+[p]
+
+*05
+//-------------------------------------------------------------------------------
+//  ムーリ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_050_001"]
+
+[character x = 150 y = -70 storage = "90003/muri" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon x=-110 y=70 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+おまえたちのような[r]
+やつには死んでも[r]
+ドラゴンボールは[r]
+渡せん…
+[p]
+
+
+*06
+//-------------------------------------------------------------------------------
+//  フリーザ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_050_001"]
+
+[character x=-190 y=-90 storage = "00058/idl_side_p_01" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon x=110 y=120 shape="002_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+ほっほっほっ
+[p]
+
+[balloon x=120 y=-90 shape="002_01" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+わたしに渡すぐらいなら[r]
+死を選ぶというわけですか…
+[p]
+
+[bgm storage = "013"]
+
+*07
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0004L" bg = "bg_000_014"]
+
+
+
+
+[balloon x=0 y=20 shape="003_02" scale = 1.5 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 16]
+//[quake target =".bln" power = 7 time = 0.2]
+その凶暴性に火がついた[r]
+フリーザたちは[r]
+ドラゴンボールを奪い[r]
+村のナメック星人たちを[r]
+次々と虐殺していく…！[r]
+　[r]
+そして…
+[p]
+
+*08
+//-------------------------------------------------------------------------------
+//  デンデ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_050_001"]
+
+[character x = 180 y = -90 storage = "00605/atc_energyball_p_01" scale = 1.3 action = "fadein" time = 0.1]
+[flip target =".chara" h=1]
+[character x = 230 y = 60 storage = "99999/ase" scale = 0.6 action = "fadein" time = 0.1]
+
+
+//[character x = -210 y = -120 storage = "00605/idl_side_p_01" scale = 1.3 action = "fadein" time = 0.1]
+//[character x = -230 y = 60 storage = "99999/ase" scale = 0.7 action = "fadein" time = 0.1]
+
+
+
+[balloon x=-80 y=70 shape="004_02" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 40]
+[quake target =".bln" power = 3 time = 0.2]
+あ……[r]
+あ……！
+[p]
+
+*09
+//-------------------------------------------------------------------------------
+//  ドドリア
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_050_001"]
+
+[character x=-185 y=-110 storage = "00030/idl_side_p_02" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x=120 y=70 shape="002_03" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+げへへへ…[r]
+次はおまえの番だ
+[p]
+
+*10
+//-------------------------------------------------------------------------------
+//  孫悟飯
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_050_002"]
+
+[character x = 200 y = -60 storage = "00007/headup_e_01_okappa" scale = 1.2 action = "fadein" time = 0.1]
+[quake target =".chara" power = 1 time = 300]
+
+
+[balloon x=-60 y=100 shape="004_01" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+[quake target =".bln" power = 3 time = 0.2]
+う…[r]
+ううう……！！
+[p]
+
+[balloon x=-90 y=-90 shape="004_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+あ…あいつら…[r]
+あいつら……！！
+[p]
+
+*11
+//-------------------------------------------------------------------------------
+//  クリリン
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_050_002"]
+
+[character x = 180 y = -100 storage = "00009/idl_side_e_03" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon x=-95 y=100 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+お おいっ！！[r]
+おさえろ悟飯…！！[r]
+おさえるんだ！！
+[p]
+
+[balloon x=-110 y=-100 shape="004_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+オレたちには[r]
+どうしようもないんだ[r]
+…！！
+[p]
+
+*12
+//-------------------------------------------------------------------------------
+//  ドドリア
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0003L" bg = "bg_050_001"]
+
+[character id = "dodo" x = -30 y = -70 storage = "00030/idl_front_p_01" scale = 1.0 action = "fadein" time = 0.1]
+
+[character x = 120 y = -150 storage = "00605/heapup_back_e_01" scale = 0.8 action = "fadein" time = 0.1]
+
+[wait time = 0.3]
+
+[balloon x=160 y=150 shape="002_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+こんなガキ[r]
+ぶっつぶしても[r]
+つまらねえがな！
+[p]
+
+//ゆらす
+[quake target ="dodo" power = 4 time = 0.3]
+
+[balloon x=-140 y=-110 shape="007_02" scale = 0.8 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 7 time = 0.2]
+まあ とりあえず[r]
+死ねえっ！！
+[p]
+
+
+*13
+//-------------------------------------------------------------------------------
+//  孫悟飯
+//-------------------------------------------------------------------------------
+[se storage = "3014"]
+[coma shape="N0002R" bg = "bg_050_002"]
+
+[lwfobject id = "kaki1" storage="kakimoji:ef_023" x=-20 y=-190 scale = 1.6 angle = -5 action = "fadein" time = 0.1]
+[quake target = "kaki1" power = 15 time = 0.4]
+
+[character x = 130 y = -40 storage = "00007/card_04" scale = 1.0 angle = 10 action = "fadein" time = 0.1]
+[quake target =".chara" power = 9 time = 0.4]
+
+
+[balloon x=-150 y=40 shape="006_02" scale = 0.9 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 7 time = 0.2]
+やめろぉぉーっ！！
+[p]
+
+//-------------------------------------------------------------------------------
+[stopbgm]

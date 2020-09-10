@@ -1,0 +1,596 @@
+*start|スタート
+//ステージ１スタート
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "004"]
+
+*00
+//-------------------------------------------------------------------------------
+//  タイトル
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="S0001" bg = "bg_000_015"]
+
+// 空のフキダシ（セリフがないコマを送るために使用）
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+*01
+//-------------------------------------------------------------------------------
+//  孫悟空
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+//場所：ビルスの星
+[coma shape="N0001R" bg = "bg_000_015"]
+
+[character x=250 y=-140 storage = "00003/idl_side_e_06" scale = 1.1 action = "fadein" time = 0.1]
+
+[balloon x=-100 y=130 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+最近 強えやつと[r]
+闘ってねえから[r]
+腕がなまっちまってよ
+[p]
+
+[balloon x=-120 y=-80 shape="001_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+ここに[r]
+鍛えなおしにきたんだ
+[p]
+
+*02
+//-------------------------------------------------------------------------------
+//  ビルス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_015"]
+
+[character x = -240 y = -280 storage = "00242/idl_side_p_01" scale = 1.4 action = "fadein" time = 0.1]
+
+[balloon x=100 y=110 shape="001_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+ふん おまえも[r]
+破壊神になるか？
+[p]
+
+[balloon x=120 y=-85 shape="001_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+闘いが少ないから[r]
+勘がにぶるんだ
+[p]
+
+*03
+//-------------------------------------------------------------------------------
+//  孫悟空
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_015"]
+
+[character x=250 y=-140 storage = "00003/idl_side_e_06" scale = 1.1 action = "fadein" time = 0.1]
+
+[balloon x=-100 y=110 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+闘いか…そうだ！[r]
+あれはどうなってんだ？
+[p]
+
+[balloon x=-120 y=-95 shape="001_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+全ちゃんが言ってた[r]
+全宇宙の武道大会！
+[p]
+
+*04
+//-------------------------------------------------------------------------------
+//  ビルス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_015"]
+
+[character x = -210 y = -280 storage = "00242/heapup_p_01" scale = 1.4 action = "fadein" time = 0.1]
+
+[balloon x=120 y=130 shape="001_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+「全ちゃん」…だと！？
+[p]
+
+[balloon x=120 y=-85 shape="007_02" scale = 0.9 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 7 time = 0.2]
+「全王さま」と呼べっ！！
+[p]
+
+*05
+//-------------------------------------------------------------------------------
+//  孫悟空
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_015"]
+
+[character x=250 y=-140 storage = "00003/idl_side_e_06" scale = 1.1 action = "fadein" time = 0.1]
+
+[balloon x=-110 y=70 shape="001_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+いいじゃねえか〜[r]
+こまけえなあ〜
+[p]
+
+*06
+//-------------------------------------------------------------------------------
+//  ビルス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_015"]
+
+[character x = -210 y = -280 storage = "00242/heapup_p_01" scale = 1.4 action = "fadein" time = 0.1]
+
+[balloon x=110 y=70 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+とにかく[r]
+武道大会のことは忘れろ
+[p]
+
+*07
+//-------------------------------------------------------------------------------
+//  孫悟空
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_015"]
+
+[character x=200 y=-150 storage = "00003/heapup_e_06" scale = 1.3 action = "fadein" time = 0.1]
+
+[balloon x=-100 y=110 shape="001_02" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+[quake target =".bln" power = 3 time = 0.2]
+ええ〜っ！？[r]
+めちゃめちゃ[r]
+おもしろそうじゃんか〜！
+[p]
+
+[balloon x=-120 y=-100 shape="001_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+全宇宙の中で[r]
+１番強えやつを[r]
+決めんだぜ？
+[p]
+
+*08
+//-------------------------------------------------------------------------------
+//  ビルス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_015"]
+
+[character x = -210 y = -280 storage = "00242/heapup_p_01" scale = 1.4 action = "fadein" time = 0.1]
+
+[balloon x=100 y=120 shape="001_03" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+悪いことは言わん
+[p]
+
+[balloon x=120 y=-90 shape="007_02" scale = 0.9 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 7 time = 0.2]
+全王さまとは[r]
+もう関わるな！！
+[p]
+
+*09
+//-------------------------------------------------------------------------------
+//  ウイス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_015"]
+
+[character x = -210 y = -300 storage = "00243/idl_side_p_01" scale = 1.7 action = "fadein" time = 0.1]
+
+[balloon x=80 y=95 shape="001_03" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+わたくしも[r]
+おすすめは[r]
+しませんねえ
+[p]
+
+[balloon x=100 y=-85 shape="001_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+何が起こるか[r]
+わかりませんから
+[p]
+
+*10
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0004R" bg = "bg_000_014"]
+
+//[character id = "tail" x=160 y=-30 storage = "99999/tail" scale = 1.8 angle = 50 action = "fadein" time = 0.1]
+//[character id = "goku" x=-50 y=30 storage = "00324/heapup_e_01" scale = 2.0 action = "fadein" time = 0.1]
+
+[balloon x=0 y=0 shape="003_02" scale = 1.5 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 16]
+//[quake target =".bln" power = 7 time = 0.2]
+しかし悟空は[r]
+ビルスとウイスの[r]
+言うことを聞かず[r]
+全王さまに会いに[r]
+いってしまい[r]
+武道大会の開催を[r]
+直談判するのだった…
+[p]
+
+*11
+//-------------------------------------------------------------------------------
+//  ふたりの全王さま
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_068_004"]
+
+[character id = "2" x = -90 y = -160 storage = "90003/zenoh" scale = 0.9 action = "fadein" time = 0.1]
+[flip target ="2" h=1]
+
+[character id = "1" x = -250 y = -160 storage = "90003/zenoh" scale = 1.1 action = "fadein" time = 0.1]
+[flip target ="1" h=1]
+
+[balloon x=90 y=110 shape="001_03" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+見たいね！[r]
+武道大会
+[p]
+
+[balloon x=160 y=-85 shape="001_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+うん！[r]
+見たいね武道大会
+[p]
+
+*12
+//-------------------------------------------------------------------------------
+//  孫悟空
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_068_004"]
+
+[character x=250 y=-140 storage = "00003/idl_side_e_06" scale = 1.1 action = "fadein" time = 0.1]
+
+[balloon x=-100 y=100 shape="001_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+そうこなくっちゃな〜
+[p]
+
+[balloon x=-120 y=-90 shape="001_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+やろうぜ！[r]
+武道大会！
+[p]
+
+*13
+//-------------------------------------------------------------------------------
+//  大神官
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_068_004"]
+
+[character x = -200 y = -260 storage = "90003/daishinkan" scale = 1.1 action = "fadein" time = 0.1]
+
+[balloon x=120 y=70 shape="001_02" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+詳しい日程や大会の内容は[r]
+決まり次第すぐに[r]
+それぞれの宇宙の界王神に[r]
+連絡をいたしましょう
+[p]
+
+*14
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0004L" bg = "bg_000_014"]
+
+//[character id = "tail" x=160 y=-30 storage = "99999/tail" scale = 1.8 angle = 50 action = "fadein" time = 0.1]
+//[character id = "goku" x=-50 y=30 storage = "00324/heapup_e_01" scale = 2.0 action = "fadein" time = 0.1]
+
+[balloon x=0 y=0 shape="003_02" scale = 1.5 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 16]
+//[quake target =".bln" power = 7 time = 0.2]
+…こうして[r]
+王歴31億の[r]35500603日[r]
+157時より[r]
+各宇宙より選ばれた[r]
+10人の選手たちが闘う[r]
+「力の大会」が[r]
+開催されることに[r]なった…
+[p]
+
+*15
+//-------------------------------------------------------------------------------
+//  孫悟空
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_023"]
+
+[character x=200 y=-150 storage = "00003/heapup_e_06" scale = 1.3 action = "fadein" time = 0.1]
+
+[balloon x=-100 y=100 shape="001_03" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+//[quake target =".bln" power = 3 time = 0.2]
+力の大会か〜
+[p]
+
+[balloon x=-120 y=-90 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+くぅ〜[r]
+わくわくしてきたぞ！！
+[p]
+
+*16
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0004L" bg = "bg_000_003"]
+
+//[character id = "tail" x=160 y=-30 storage = "99999/tail" scale = 1.8 angle = 50 action = "fadein" time = 0.1]
+//[character id = "goku" x=-50 y=30 storage = "00324/heapup_e_01" scale = 2.0 action = "fadein" time = 0.1]
+
+[balloon x=0 y=0 shape="003_02" scale = 1.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 13]
+//[quake target =".bln" power = 7 time = 0.2]
+力の大会が[r]
+開催される場所は無の界[r]
+　[r]
+試合は８つの宇宙の代表選手[r]
+80人によるバトルロイヤル[r]
+　[r]
+最優秀選手には[r]
+超ドラゴンボールが[r]
+与えられることになった[r]
+　[r]
+そして[r]
+敗退した宇宙は……
+[p]
+
+*17
+//-------------------------------------------------------------------------------
+//  大神官
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0004L" bg = "bg_000_014"]
+
+[character x = -160 y = -640 storage = "90003/daishinkan" scale = 2.5 action = "fadein" time = 0.1]
+
+[balloon x=130 y=90 shape="001_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+敗退した宇宙は…
+[p]
+
+[balloon x=130 y=-120 shape="001_03" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+全王さまが[r]
+消してしまわれるそうです
+[p]
+
+*18
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0003R" bg = "bg_000_024"]
+
+[balloon x=-0 y=-30 shape="003_02" scale = 1.5 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 16]
+//[quake target =".bln" power = 3 time = 0.2]
+かくして[r]
+開催されることに[r]
+なった力の大会！[r]
+　[r]
+新たな冒険の気配に[r]
+気づいている者[r]
+気づいていない者…[r]
+各々の物語は[r]
+動き出したのだった！
+[p]
+
+//フェードアウト（フェードアウトするコマ）
+[balloon x=0 y=0 shape="008_03" scale = 50.0 action = "fadein" time = 0.5]
+[wait time = 0.7] 
+
+*19
+//-------------------------------------------------------------------------------
+//  タイトル
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="S0001" bg = "bg_068_004"]
+
+//フェードイン
+[balloon x=130 y=40 shape="008_03" scale = 50]
+[wait time = 1]
+[fadeout target = ".bln" time = 1]
+
+[wait_anim target=".bln"]
+
+[se storage = "17"]
+
+[balloon x=-230 y=155 shape="010_01" scale = 1.4 action = "fadein" time = 0.7]
+
+[balloon x=-160 y=-150 shape="010_02" scale = 1.0 action = "fadein" time = 0.7]
+
+[balloon x=15 y=145 shape="010_03" scale = 0.9 action = "fadein" time = 0.7]
+
+[balloon x=260 y=-180 shape="010_04" scale = 2.0 action = "fadein" time = 0.7]
+
+[balloon x=-250 y=-165 shape="010_05" scale = 1.3 action = "fadein" time = 0.7]
+
+[balloon x=240 y=90 shape="010_06" scale = 1.5 action = "fadein" time = 0.7]
+
+[balloon x=70 y=-165 shape="010_07" scale = 1.2 action = "fadein" time = 0.7]
+
+
+[wait time = 0.5]
+
+[balloon x=0 y=0 shape="011_17" scale = 1.1 angle = 0 action = "fadein" time = 0.5]
+
+[wait time = 0.9]
+
+[p]
+
+[bgm storage = "005"]
+
+
+*20
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0004L" bg = "bg_068_005"]
+
+//[character id = "tail" x=160 y=-30 storage = "99999/tail" scale = 1.8 angle = 50 action = "fadein" time = 0.1]
+//[character id = "goku" x=-50 y=30 storage = "00324/heapup_e_01" scale = 2.0 action = "fadein" time = 0.1]
+
+[balloon x=0 y=160 shape="003_02" scale = 1.5 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 16]
+//[quake target =".bln" power = 7 time = 0.2]
+武道大会とは[r]
+どのようなものか[r]
+知りたいという[r]
+全王さまの要望により[r]
+力の大会本番の前に[r]
+全覧試合が行われる[r]
+ことになった
+[p]
+
+*21
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0003R" bg = "bg_068_004"]
+
+[character id="buu" x = 100 y = -70 storage = "00229/energyball_p_02" scale = 0.7 action = "fadein" time = 0.1]
+[flip target ="buu" h=1]
+
+[character x = 190 y = -110 storage = "00235/idl_side_e_02" scale = 0.7 action = "fadein" time = 0.1]
+
+[character x=280 y=-100 storage = "00003/heapup_e_06" scale = 0.8 action = "fadein" time = 0.1]
+
+[balloon x=-140 y=10 shape="003_02" scale = 1.6 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 14]
+//[quake target =".bln" power = 7 time = 0.2]
+出場者は[r]
+第7宇宙と第9宇宙の[r]
+代表者各３名[r]
+　[r]
+第7宇宙は[r]
+悟空、悟飯、魔人ブウの[r]
+3人が代表として[r]
+試合をすることになった…
+[p]
+
+*22
+//-------------------------------------------------------------------------------
+//  ふたりの全王さま
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_068_004"]
+
+[character id = "2" x = -90 y = -160 storage = "90003/zenoh" scale = 0.9 action = "fadein" time = 0.1]
+[flip target ="2" h=1]
+[character id = "1" x = -250 y = -160 storage = "90003/zenoh" scale = 1.1 action = "fadein" time = 0.1]
+[flip target ="1" h=1]
+
+[balloon x=100 y=110 shape="001_03" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+ねえ悟空[r]
+闘い見たい
+[p]
+
+[balloon x=150 y=-85 shape="001_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+はやく見せて！
+[p]
+
+*23
+//-------------------------------------------------------------------------------
+//  孫悟空
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_068_005"]
+
+[character x=170 y=-180 storage = "00003/heapup_e_06" scale = 1.4 action = "fadein" time = 0.1]
+//[character x=200 y=-150 storage = "00003/none_heapup_e_01" scale = 1.3 action = "fadein" time = 0.1]
+
+[balloon shape="001_03" x = -130 y = 90 scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+[quake target =".bln" power = 3 time = 0.2]
+わかった！
+[p]
+
+[balloon shape="001_02" x = -130 y = -200 scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+すげえの[r]
+見せてやっからな！
+[p]
+
+//-------------------------------------------------------------------------------
+[stopbgm]

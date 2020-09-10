@@ -1,0 +1,59 @@
+*start|スタート
+
+//豪炎と爆煙の幻魔人
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+//[bgm storage = "012"]
+
+*001
+//----------------------------------------------------------------------------
+// 苦しむヒルデガーン（完全体）
+//-------------------------------------------------------------------------------
+[se storage = "3024"]
+[coma id = "coma1" shape="S0001" bg = "bg_015_002"]
+
+[character x = 20 y = 0 storage = "00311/heapup_p_01" scale = 1.5 action = "fadein" time = 0.1]
+[flip target =".chara" h=1]
+[quake target = ".chara" power = 2 time = 300]
+
+//[wait time = 0.7]
+
+//[se storage = "3025"]
+//点滅
+[balloon shape="008_02" x = 0 y = 0 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+[balloon shape="008_02" x = 0 y = 0 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]	
+
+
+ 
+[balloon shape="004_03" x = -140 y = 450 scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+グオオオ〜ッ！！
+[p]
+
+*002
+//-------------------------------------------------------------------------------
+//  ホイ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_015_002"]
+
+[character id = "hoi" x = 200 y = -80 storage = "00312/card_01" scale = 1.0 action = "fadein" time = 0.1]
+
+
+[balloon shape="004_01" x = -140 y = 100 scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 40]
+[quake target =".bln" power = 3 time = 0.2]
+バ…[r]
+バカな！？
+[p]
+
+//[stopbgm]

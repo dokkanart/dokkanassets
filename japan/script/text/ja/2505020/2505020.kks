@@ -1,0 +1,63 @@
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "006"]
+
+*001
+//-------------------------------------------------------------------------------
+//  界王
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+
+[coma shape="N0001L" bg = "bg_080_001"]
+
+//天使の輪
+[character x = -172 y = 145 storage = "99999/ring" scale = 0.6 action = "fadein" time = 0.1]
+[character x = -180 y = -40 storage = "90001/stand" scale = 0.5 action = "fadein" time = 0.1]
+[character x = -220 y = 60 storage = "99999/ase" scale = 0.7 action = "fadein" time = 0.1]
+
+
+[balloon shape="001_01" x = 120 y = 100 scale = 0.9 action = "fadein" time = 0.1]
+[font size = 28]
+[wait_anim target=".bln"]
+//[quake target =".bln" power = 3 time = 0.2]
+悟空もベジータも[r]
+死人のくせに[r]
+よく暴れまわるのう…
+[p]
+
+
+*002
+//-------------------------------------------------------------------------------
+//  界王
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+
+[coma shape="N0002L" bg = "bg_080_001"]
+
+//天使の輪
+[character x = -135 y = 210 storage = "99999/ring" scale = 0.8 action = "fadein" time = 0.1]
+[character x = -150 y = -60 storage = "90001/stand" scale = 0.7 action = "fadein" time = 0.1]
+
+
+[balloon x=150 y=140 shape="006_02" scale = 1.0 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 23]
+[quake target =".bln" power = 7 time = 0.2]
+ふたりがフュージョンした[r]
+ゴジータは[r]
+とんでもない強さじゃぞ！
+[p]
+
+[balloon x=150 y=-150 shape="006_02" scale = 0.9 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 26]
+[quake target =".bln" power = 7 time = 0.2]
+有効なリンクスキルを[r]
+持った戦士たちで[r]
+挑むのだ〜！！
+[p]
+
+[stopbgm]

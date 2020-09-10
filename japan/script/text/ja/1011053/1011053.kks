@@ -1,0 +1,72 @@
+*start|スタート
+
+//１１−５ボス前
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "008"]
+
+//-------------------------------------------------------------------------------
+//  ヤムチャ
+//-------------------------------------------------------------------------------
+[coma shape="N0001R" bg = "bg_014_001"]
+
+[character x = 200 y = -50 storage = "00013/idl_side_e_02" scale = 1.4 action = "fadein" time = 0.1]
+
+[balloon id = "01" x = -130 y = 80 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target = "01"]
+[font size = 30]
+女と闘うのは[r]
+オレの主義に反する[r]
+んだがな…
+[p]
+
+*coma2
+//-------------------------------------------------------------------------------
+//  トランクス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_014_001"]
+
+[character x = 210 y = -200 storage = "90000/wait_right_anger_strong" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon id = "01" x = -100 y = 120 shape="001_01" scale = 0.85 action = "fadein" time = 0.1]
+[wait_anim target = "01"]
+[font size = 36]
+ヤムチャさん…
+[p]
+
+[balloon id = "01" x = -90 y = -80 shape="001_03" scale = 1 action = "fadein" time = 0.1]
+[wait_anim target = "01"]
+[quake target = ".bln" power = 3 time = 0.2]
+[font size = 27]
+今はそんなこと[r]
+言ってる場合じゃ[r]
+ありませんよ！
+[p]
+
+*coma3
+//-------------------------------------------------------------------------------
+//  セリパ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002L" bg = "bg_014_001"]
+
+[character x=-200 y=-150 storage = "00070/heapup_p_01" scale = 1.4 action = "fadein" time = 0.1]
+
+[balloon shape="002_03" x = 120 y = 80 scale = 0.85 action = "fadein" time = 0.1]
+[font size = 32]
+[wait_anim target=".bln"]
+なにブツブツ[r]
+言ってるんだい！
+[p]
+
+[balloon shape="002_01" x = 120 y = -165 scale = 0.85 action = "fadein" time = 0.1]
+[font size = 32]
+[wait_anim target=".bln"]
+[quake target = ".bln" power = 3 time = 0.2]
+覚悟はいいね！？
+[p]
+
+[stopbgm]

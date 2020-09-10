@@ -1,0 +1,69 @@
+//エリア３ゴール
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+//[bgm storage = "011"]
+
+
+*coma1
+//-------------------------------------------------------------------------------
+//  サイヤマン２号
+//-------------------------------------------------------------------------------
+[se storage = "3022"]
+[coma shape="S0001" bg = "bg_019_001"]
+
+[character x=185 y=0 storage = "00366/card_09" scale = 0.6 action = "fadein" time = 0.1]
+
+
+[character x=0 y=0 storage = "00323/card_004" scale = 1.2 action = "fadein" time = 0.1]
+
+
+[balloon x=-30 y=405 shape="001_01" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][font size = 36]
+[quake target =".bln" power = 3 time = 0.2]
+どう！？[r]
+悟飯くん！[p]
+
+[balloon x=-10 y=-350 shape="001_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+わたしも[r]
+強くなったでしょ！？[p]
+
+
+
+
+*coma2
+//-------------------------------------------------------------------------------
+//  サタン
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002L" bg = "bg_019_001"]
+
+[character x = -180 y = -100 storage = "00038/card_01" scale = 0.7 action = "fadein" time = 0.1]
+
+//[character x = -150 y = -100-20 storage = "00038/card_06" scale = 0.7 action = "fadein" time = 0.1]
+
+//[character x = -125 y = 110-20 storage = "99999/ase" scale = 0.35 action = "fadein" time = 0.1]
+
+
+[balloon shape="001_02" x = 140 y = 50 scale = 0.9 action = "fadein" time = 0.1]
+[font size = 28]
+[wait_anim target=".bln"]
+//[quake target =".bln" power = 3 time = 0.2]
+見事だビーデル…[r]
+さすが[r]
+このわたしの娘だ！！[p]
+
+[balloon shape="001_03" x = 140 y = -190 scale = 0.9 action = "fadein" time = 0.1]
+[font size = 28]
+[wait_anim target=".bln"]
+//[quake target =".bln" power = 3 time = 0.2]
+サタンシティは[r]しばらく[r]
+おまえに任せよう！
+[p]
+
+
+//[stopbgm]

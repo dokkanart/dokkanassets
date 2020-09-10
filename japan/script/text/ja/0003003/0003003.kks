@@ -1,0 +1,345 @@
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+//[bgm storage = "012"]
+
+
+*01
+//-------------------------------------------------------------------------------
+//  界王
+//-------------------------------------------------------------------------------
+
+//[se storage = "04"]
+[coma shape="S0001" bg = "bg_080_001"]
+
+
+
+[character x = -130 y = 0 storage = "90001/stand" scale = 0.7 action = "fadein" time = 0.1]
+
+[wait_anim target=".chara"]
+
+[balloon x=145 y=170 shape="001_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[quake target = ".bln" power = 3 time = 0.2]
+[font size = 32]
+おっほん…[r]
+またまた登場[r]
+界王じゃ！[p]
+
+[balloon x=145 y=-140 shape="001_02" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target = ".bln" power = 3 time = 0.2]
+[font size = 36]
+どうかな？[r]
+最近の調子は…[p]
+
+
+*02
+//-------------------------------------------------------------------------------
+//  界王
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_080_001"]
+
+[character x = -180 y = -50 storage = "90001/stand" scale = 0.6 action = "fadein" time = 0.1]
+
+[balloon x=105 y=150 shape="001_01" scale = 1 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target = ".bln" power = 3 time = 0.2]
+[font size = 24]
+そろそろ[r]
+『冒険』に出発しても[r]
+いい頃じゃないかと[r]
+思ってな…！[p]
+
+
+[balloon x=125 y=-80 shape="001_02" scale = 1 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target = ".bln" power = 3 time = 0.2]
+[font size = 24]
+『冒険』の最初のステージ[r]
+「武道会終了…そして…」の[r]
+クリアを目指すのじゃ！[p]
+
+
+//---------------------------------------------
+
+[if !$is_cleared]    
+// 達成済みか否かは $is_cleared 変数に入っているので、それを用いて if 分岐します。
+
+//---------------------------------------------
+
+*explain|任務内容詳細説明    // ラベルを付けておくと、テスターで見やすくなります。
+
+// ******************************************************
+//  ここには、
+//  まだ、このミッションを達成していない場合の展開を記述します。
+// ******************************************************
+
+
+*explain|任務内容詳細説明
+*03_mitatu
+//-------------------------------------------------------------------------------
+//  グレゴリー＆バブルス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_080_001"]
+
+[character x = 260 y = -100 storage = "90003/baburusu" scale = 0.5 angle = 9 action = "fadein" time = 0.1]
+[character x = 140 y = -20 storage = "90003/guregori" scale = 1.0 action = "fadein" time = 0.1]
+
+
+[balloon x=-125 y=100 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target = ".bln" power = 3 time = 0.2]
+[font size = 28]
+まずは[r]
+難易度NORMALで[r]
+挑戦してみましょう！[p]
+
+
+
+*04_mitatu
+//-------------------------------------------------------------------------------
+//  界王
+//-------------------------------------------------------------------------------
+
+
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_080_001"]
+
+[character x = -180 y = -50 storage = "90001/stand" scale = 0.6 action = "fadein" time = 0.1]
+
+[balloon x=125 y=120 shape="001_01" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target = ".bln" power = 3 time = 0.2]
+[font size = 24]
+そうじゃな[r]
+HARD、Z-HARDは[r]
+難易度が高い！[p]
+
+
+[balloon x=125 y=-85 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target = ".bln" power = 3 time = 0.2]
+[font size = 28]
+今は ムリして[r]
+挑戦しなくてもよいぞ[p]
+
+
+*05_mitatu
+//-------------------------------------------------------------------------------
+//  グレゴリー＆バブルス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_080_001"]
+
+[character x = 260 y = -100 storage = "90003/baburusu" scale = 0.5 angle = 9 action = "fadein" time = 0.1]
+[character x = 140 y = -20 storage = "90003/guregori" scale = 1.0 action = "fadein" time = 0.1]
+
+
+[balloon x=-125 y=-90 shape="001_02" scale = 1 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target = ".bln" power = 3 time = 0.2]
+[font size = 24]
+『冒険』ではクリアするごとに[r]
+[font color="#e59522"]龍石[font color="#141414"]が手に入るんですよね？[r]
+界王さま！[p]
+
+
+*06_mitatu
+//-------------------------------------------------------------------------------
+//  界王
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0002L" bg = "bg_080_001"]
+
+[character x = -150 y = -50 storage = "90001/stand" scale = 0.7 action = "fadein" time = 0.1]
+
+[balloon x=125 y=120 shape="001_03" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target = ".bln" power = 3 time = 0.2]
+[font size = 24]
+うむ！[r]
+クリアするごとに[r]
+ひとつ[font color="#e59522"]龍石[font color="#141414"]がもらえるぞ[p]
+
+
+[balloon x=140 y=-160 shape="001_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[quake target = ".bln" power = 3 time = 0.2]
+[font size = 28]
+[font color="#e59522"]龍石[font color="#141414"]を集めて[r]
+ガシャを引くのじゃ！[p]
+
+
+//---------------------------------------------
+[else]
+*has_been_cleared|すでに達成済み    // ラベルを付けておくと、テスターでチェックしやすくなります。
+
+// ******************************************************
+//  ここには、
+//  すでに、このミッションを達成している場合の展開を記述します。
+// ******************************************************
+
+
+*has_been_cleared|すでに達成済み
+*07
+//-------------------------------------------------------------------------------
+//  グレゴリー＆バブルス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_080_001"]
+
+[character x = 260 y = -100 storage = "90003/baburusu" scale = 0.5 angle = 9 action = "fadein" time = 0.1]
+[character x = 140 y = -20 storage = "90003/guregori" scale = 1.0 action = "fadein" time = 0.1]
+
+
+[balloon x=-100 y=-90 shape="001_02" scale = 1.05 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target = ".bln" power = 3 time = 0.2]
+[font size = 22]
+界王さま…[r]
+このひと もうクリア[r]
+しちゃってるみたいですよ？[p]
+
+
+*08
+//-------------------------------------------------------------------------------
+//  界王
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_080_001"]
+
+[character x = -180 y = -50 storage = "90001/stand" scale = 0.6 action = "fadein" time = 0.1]
+[character x = -220 y = 70 storage = "99999/ase" scale = 0.6 action = "fadein" time = 0.1]
+
+
+[balloon x=125 y=120 shape="004_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[quake target = ".bln" power = 3 time = 0.2]
+[font size = 28]
+なんだと！？[r]
+お…おまえ[r]
+ただもんじゃないな…！[p]
+
+
+[balloon x=130 y=-90 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[quake target = ".bln" power = 3 time = 0.2]
+[font size = 28]
+だが[r]
+ここで慢心しては[r]
+ならんぞ！？[p]
+
+
+*09
+//-------------------------------------------------------------------------------
+//  グレゴリー＆バブルス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_080_001"]
+
+[character x = 260 y = -100 storage = "90003/baburusu" scale = 0.5 angle = 9 action = "fadein" time = 0.1]
+[character x = 140 y = -20 storage = "90003/guregori" scale = 1.0 action = "fadein" time = 0.1]
+
+
+[balloon x=-125 y=120 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target = ".bln" power = 3 time = 0.2]
+[font size = 28]
+界王さまの[r]
+おっしゃるとおりです！[p]
+
+
+[balloon x=-125 y=-90 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target = ".bln" power = 3 time = 0.2]
+[font size = 28]
+まだ HARD、Z-HARD[r]
+という難易度が[r]
+控えていますからね！[p]
+
+
+*10
+//-------------------------------------------------------------------------------
+//  界王
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_080_001"]
+
+[character x = -180 y = -50 storage = "90001/stand" scale = 0.6 action = "fadein" time = 0.1]
+
+[balloon x=125 y=100 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target = ".bln" power = 3 time = 0.2]
+[font size = 28]
+だが高い難易度に[r]
+ムリに挑むことは[r]
+やめたほうがいいぞ[p]
+
+
+*11
+//-------------------------------------------------------------------------------
+//  グレゴリー＆バブルス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_080_001"]
+
+[character x = 260 y = -100 storage = "90003/baburusu" scale = 0.5 angle = 9 action = "fadein" time = 0.1]
+[character x = 140 y = -20 storage = "90003/guregori" scale = 1.0 action = "fadein" time = 0.1]
+
+
+[balloon x=-125 y=100 shape="001_02" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target = ".bln" power = 3 time = 0.2]
+[font size = 24]
+己の力量を見極めてから[r]
+挑戦しろということですね[r]
+界王さま！[p]
+
+
+*12
+//-------------------------------------------------------------------------------
+//  界王
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0002L" bg = "bg_080_001"]
+
+[character x = -150 y = -50 storage = "90001/stand" scale = 0.7 action = "fadein" time = 0.1]
+
+[balloon x=125 y=120 shape="001_02" scale = 1 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target = ".bln" power = 3 time = 0.2]
+[font size = 22]
+そういうことじゃ…[r]
+だが『冒険』をクリアするごとに[r]
+[font color="#e59522"]龍石[font color="#141414"]が手に入るぞ！[p]
+
+
+[balloon x=140 y=-160 shape="001_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[quake target = ".bln" power = 3 time = 0.2]
+[font size = 28]
+[font color="#e59522"]龍石[font color="#141414"]を集めて[r]
+ガシャを引くのじゃ！[p]
+
+
+
+
+
+[endif]
+*conclusion|結び
+
+//---------------------------------------------
+
+
+
+//[stopbgm]

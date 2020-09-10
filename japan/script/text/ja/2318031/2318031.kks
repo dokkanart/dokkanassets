@@ -1,0 +1,203 @@
+//"エリア３ゴール"
+
+*start|スタート
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "008"]
+
+*001
+//-------------------------------------------------------------------------------
+//  "超サイヤ人悟空　超サイヤ人ベジータ"
+//-------------------------------------------------------------------------------
+[se storage = "3024"]
+[coma shape="N0003R" bg = "bg_050_001"]
+
+[lwfobject id = "kaki1" storage="kakimoji:ef_023" in="04" x=-200 y=-100 scale = 1.5]
+[quake target = "kaki1" power = 15 time = 0.2]
+
+//悟空とベジータが気弾をうつ
+[character id = "veg" x = 20 y = -80 storage = "00004/SR_atc_energyball_e_01" scale = 1.2 action = "fadein" time = 0.1]
+
+[character id = "gok" x = 230 y = -50 storage = "00281/SR_atc_energyball_e_03" scale = 1.4 action = "fadein" time = 0.1]
+
+[quake target ="veg" power = 10 time = 0.4]
+
+[quake target ="gok" power = 10 time = 0.4]
+
+[balloon x=-150 y=200 shape="006_02" scale = 0.8 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 7 time = 0.2]
+消えて[r]なくなれーっ！！
+[p]
+
+*002
+//-------------------------------------------------------------------------------
+//  メタルクウラが気弾の中で消えていく→爆発
+//-------------------------------------------------------------------------------
+[se storage = "3025"]
+[coma shape="N0004L" bg = "bg_050_001"]
+
+[lwfobject id = "kaki1" storage="kakimoji:ef_015" in="04" x=-10 y=0 scale = 2.2]
+[quake target = "kaki1" power = 2 time = 300]
+
+[character id = "1" x = -0 y = -50 storage = "99999/beam_04" scale = 15.0 action = "fadein" time = 0.1]
+[quake target = "1" power = 2 time = 300]
+
+[character id = "4" x = -0 y = -40 storage = "99999/beam_04" scale = 1.2 action = "fadein" time = 0.1]
+[quake target = "4" power = 2 time = 300]
+
+[character id = "mc" x = -140 y = -220 storage = "00368/dam_roll_p_01" scale = 1.4 action = "fadein" time = 0.1]
+[quake target = "mc" power = 1 time = 300]
+
+[character id = "2" x = -0 y = -80 storage = "99999/beam_04" scale = 2.0 action = "fadein" time = 0.1]
+[quake target = "2" power = 2 time = 300]
+
+[character id = "3" x = -0 y = 30 storage = "99999/beam_04" scale = 1.5 action = "fadein" time = 0.1]
+[quake target = "3" power = 2 time = 300]
+
+[wait time = 2.0]
+
+[fadeout target = "kaki1" time = 0.5]
+
+[se storage = "3017"]
+//[coma shape="N0004L" bg = "bg_005_001"]
+[lwfobject id = "kaki2" storage="kakimoji:ef_013" in="04" x=-90 y=0 scale = 3 action = "expand" time = 0.3]
+[quake target = "kaki2" power = 15 time = 1]
+[character id = "bomb" x=-130 y=0 storage = "90000/bomb" scale = 1.5 action = "expand" time = 0.1]
+[quake target = "bomb" power = 10 time = 1]
+[balloon x=130 y=40 shape="008_02" scale = 50 action = "fadein" time = 0.5]
+[wait_anim target=".bln"]
+[fadeout target = ".bln" time = 1.5]
+[wait time = 1.0]
+
+[fadeout target = "kaki2" time = 0.9]
+
+[fadeout target = "1" time = 0.9]
+
+[fadeout target = "2" time = 0.9]
+
+[fadeout target = "3" time = 0.9]
+
+[fadeout target = "4" time = 0.9]
+
+[fadeout target = "bomb" time = 1.2]
+
+[fadeout target = "mc" time = 2.0]
+
+[wait time = 2.0]
+
+// 空のフキダシ（セリフがないコマを送るために使用）
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+*003
+//-------------------------------------------------------------------------------
+//  悟空※超サイヤ人からもどっている
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_050_001"]
+
+[character x = 190 y = -110 storage = "00281/heapup_e_01" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x=-120 y=120 shape="001_01" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 40]
+//[quake target =".bln" power = 3 time = 0.2]
+ハアッ…[r]
+ハアッ……
+[p]
+
+[balloon x=-130 y=-90 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+ふたりでやれば…[r]
+なんとかなるもんだな…[r]
+ベジータ…
+[p]
+
+*004
+//-------------------------------------------------------------------------------
+//  ベジータ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_050_001"]
+
+[character x = 220 y = -90 storage = "00004/idl_side_e_02" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x=-100 y=80 shape="002_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+ハアッ…ハアッ……[r]
+…ふん……
+[p]
+
+*005
+//-------------------------------------------------------------------------------
+//  悟空
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_050_001"]
+
+[character x = 190 y = -110 storage = "00281/heapup_e_01" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x=-120 y=120 shape="001_01" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 40]
+//[quake target =".bln" power = 3 time = 0.2]
+ハア…[r]
+ハア……
+[p]
+
+[balloon x=-130 y=-90 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+パワーのほとんどを[r]
+使い切っちまった……[r]
+…ん？…
+[p]
+
+*006
+//-------------------------------------------------------------------------------
+//  メタルクウラが再び現れる
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0003L" bg = "bg_050_001"]
+
+[wait time = 0.7]
+
+//[se storage = "03"]
+
+[character x = -130 y = -230 storage = "00368/idl_side_p_01" scale = 1.4 action = "fadein" time = 1.5]
+
+[wait time = 1.5]
+
+// 空のフキダシ（セリフがないコマを送るために使用）
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+*007
+//-------------------------------------------------------------------------------
+//  "悟空 ベジータ"
+//-------------------------------------------------------------------------------
+[se storage = "03"]
+[coma shape="N0002R" bg = "bg_050_001"]
+
+[character x = 0 y = -120 storage = "00004/idl_side_e_02" scale = 1.1 action = "fadein" time = 0.1]
+
+[character x = 220 y = -120 storage = "00281/heapup_e_01" scale = 1.4 action = "fadein" time = 0.1]
+
+//！？描き文字
+[lwfobject id = "kaki1" storage="kakimoji:ef_002" in="04" x=-180 y=90 scale = 2.5]
+[quake target = "kaki1" power = 15 time = 0.2]
+
+// 空のフキダシ（セリフがないコマを送るために使用）
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+//-------------------------------------------------------------------------------
+[stopbgm]

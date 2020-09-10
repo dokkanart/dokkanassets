@@ -1,0 +1,145 @@
+*start|スタート
+//ステージ11 ゴール
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "026"]
+
+*01
+//-------------------------------------------------------------------------------
+//  孫悟空
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0001R" bg = "bg_022_004"]
+
+[character x=200 y=-150 storage = "00003/heapup_e_06" scale = 1.3 action = "fadein" time = 0.1]
+
+[balloon x=-100 y=130 shape="001_02" scale = 1.1 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 22]
+//[quake target =".bln" power = 3 time = 0.2]
+おめえが地獄にいる間[r]
+オラ 他の宇宙の強えやつらと[r]
+闘い続けてきたんだ！[r]
+強くなったのは[r]おめえだけじゃねえ！
+[p]
+
+[balloon x=-110 y=-100 shape="001_03" scale = 1.05 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 22]
+[quake target =".bln" power = 3 time = 0.2]
+今度 関係ねえやつを[r]
+殺しやがったらゆるさねえぞ！[r]
+わかったな！！
+[p]
+
+
+
+*02
+//-------------------------------------------------------------------------------
+//  ゴールデンフリーザ（天使）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_022_004"]
+
+[character x = -270 y = -180 storage = "00241/heapup_p_01" scale = 1.2 action = "fadein" time = 0.1]
+
+//天使の輪
+[character x = -165 y = 150 storage = "99999/ring" scale = 0.8 action = "fadein" time = 0.1]
+
+[balloon x=100 y=110 shape="002_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+あなたの命令を[r]
+聞く気はありませんよ…
+[p]
+
+[balloon x=140 y=-100 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+これで…[r]
+終わりだと[r]
+思わないでください！！
+[p]
+
+
+*03
+//-------------------------------------------------------------------------------
+//  孫悟空
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_022_004"]
+
+[character x=200 y=-150 storage = "00003/heapup_e_06" scale = 1.3 action = "fadein" time = 0.1]
+
+[balloon x=-105 y=70 shape="001_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+ああ…[r]
+わかってるさ…！
+[p]
+
+
+*04
+//-------------------------------------------------------------------------------
+//  ビルス ウイス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_022_003"]
+
+[character x = -50 y = -230 storage = "00243/idl_side_p_01" scale = 1.0 action = "fadein" time = 0.1]
+
+[character x = -240 y = -280 storage = "00242/idl_side_p_01" scale = 1.4 action = "fadein" time = 0.1]
+
+[balloon x=100 y=130 shape="001_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+今の悟空と相討ちか…
+[p]
+
+[balloon x=150 y=-130 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+なかなか[r]
+フリーザさんも[r]
+いいじゃありませんか
+[p]
+
+
+*05
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0003R" bg = "bg_022_004"]
+
+//[character x=-190 y=-350 storage = "00241/card_04" scale = 1.4 action = "fadein" time = 0.1]
+
+[balloon shape="003_01" x = 0 y = -50 scale = 1.7 action = "fadein" time = 0.1]
+[font size = 13]
+//[quake target =".bln" power = 3 time = 0.2]
+[wait_anim target=".bln"]
+危険すぎる助っ人[r]
+フリーザを加え[r]
+第7宇宙はギリギリで[r]
+10人の戦士がそろった[r]
+　[r]
+８つの宇宙[r]
+それぞれの思いが交錯する中[r]
+いよいよ運命を決する[r]
+力の大会が[r]
+始まろうとしている…
+[p]
+
+//終わりのフェードアウト
+[balloon x=0 y=0 shape="008_03" scale = 50.0 action = "fadein" time = 0.5]
+[wait time = 2.5]
+
+//-------------------------------------------------------------------------------
+[stopbgm]

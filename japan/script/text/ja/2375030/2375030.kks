@@ -1,0 +1,183 @@
+*start|スタート
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "013"]
+
+*001
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0004L" bg = "bg_000_003"]
+
+//[character x = 0 y = -10 storage = "90003/spaceship_br" scale = 2.0 action = "fadein" time = 0.1]
+
+[balloon x=0 y=30 shape="003_01" scale = 1.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 13]
+//[quake target =".bln" power = 3 time = 0.2]
+フリーザから[r]
+サイヤ人に向けて発せられた[r]
+召集命令…[r]
+　[r]
+命令を受け[r]
+サイヤ人たちは続々と[r]
+母星である惑星ベジータへと[r]
+帰還していた[r]
+　[r]
+しかし[r]
+その突然の命令の裏には[r]
+フリーザの企みが…
+[p]
+
+
+*002
+//-------------------------------------------------------------------------------
+//  キコノ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_008"]
+
+[character x=200 y=-110 storage = "90003/kikono" scale = 1.0 action = "fadein" time = 0.1]
+
+
+[balloon x=-130 y=50 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+サイヤ人がいなくなると[r]
+兵力が[r]
+半減してしまいますが…
+[p]
+
+
+*003
+//-------------------------------------------------------------------------------
+//  フリーザ（第一形態）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_008"]
+
+[character x = -165 y = -140 storage = "00005/card_07" scale = 1.0 action = "fadein" time = 0.1]
+
+
+
+
+[balloon x = 140 y = 100 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+それくらい[r]
+なんとでもなりますよ
+[p]
+
+
+[balloon x=120 y=-90 shape="002_02" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+　[r]
+彼らはしかたなく[r]
+従順なふりをしていますが[r]
+いつ牙をむくとも限りません
+[p]
+
+
+*004
+//-------------------------------------------------------------------------------
+//  キコノ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_008"]
+
+[character x=200 y=-110 storage = "90003/kikono" scale = 1.0 action = "fadein" time = 0.1]
+
+
+[balloon x=-100 y=70 shape="002_02" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 40]
+[quake target =".bln" power = 3 time = 0.2]
+えっ！？
+[p]
+
+
+*005
+//-------------------------------------------------------------------------------
+//  フリーザ（第一形態）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_008"]
+
+[character x = -165 y = -140 storage = "00005/card_07" scale = 1.0 action = "fadein" time = 0.1]
+
+
+
+[balloon x = 140 y = 90 shape="002_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+なんといっても[r]
+戦闘民族ですからね…
+[p]
+
+
+[balloon x=135 y=-110 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+ホコリが舞い上がる前に[r]
+お掃除しておかねば…
+[p]
+
+
+
+*006
+//-------------------------------------------------------------------------------
+//  フリーザの宇宙船が惑星ベジータに近づいていく。
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0003L" bg = "bg_000_003"]
+
+[character x = 200 y = -300 storage = "99999/earth" scale = 2.0 action = "fadein" time = 0.1]
+[character id = "fune" x = -50 y = -70 storage = "90003/spaceship_br" scale = 1.0 action = "fadein" time = 0.1]
+
+[lwfobject id = "gogo" x = -230 y = 100 storage = "kakimoji:ef_009" scale = 1.2 action = "fadein" time = 0.1]
+[quake target = "gogo" power = 1]
+
+//空のフキダシ
+[balloon x = 0 y = 0 shape="001_01" scale = 0]
+[p]
+
+
+*007
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_000_014"]
+
+
+[character x = 200 y = -150 storage = "01062/card_04" scale = 1.0 angle = 20 action = "fadein" time = 0.1]
+
+
+
+[balloon x=-150 y=-30 shape="003_01" scale = 1.5 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 15]
+//[quake target =".bln" power = 3 time = 0.2]
+フリーザからの[r]
+突然の召集命令を[r]
+不審に思うバーダックの[r]
+“死の予感”は[r]
+当たっていた[r]
+　[r]
+フリーザの企みに[r]
+感づいたバーダックは[r]
+単身 戦いを挑むが…
+[p]
+
+
+
+//-------------------------------------------------------------------------------
+[stopbgm]

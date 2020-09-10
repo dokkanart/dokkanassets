@@ -1,0 +1,34 @@
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "008"]
+
+
+*001
+//-------------------------------------------------------------------------------
+//  ナッパ
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0002L" bg = "bg_006_001"]
+
+
+[character x = -140 y = -40 storage = "00015/heapup_p_01" scale = 1.5 action = "fadein" time = 0.1]
+
+[balloon x=150 y=200 shape="006_01" scale = 0.9 action = "expand" time = 0.1]
+[font size = 28]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 7 time = 0.2]
+なにトロトロ[r]
+やってやがるんだ[r]
+ラディッツ！！[p]
+
+[balloon x=140 y=-160 shape="006_02" scale = 0.9 action = "expand" time = 0.1]
+[font size = 28]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 7 time = 0.2]
+オレが[r]
+片付けてやる！！[p]
+
+[stopbgm]

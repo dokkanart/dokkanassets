@@ -1,0 +1,765 @@
+*start|スタート
+//ステージ１ゴール
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "005"]
+
+*01
+//-------------------------------------------------------------------------------
+//  人造人間16号
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_014_001"]
+ 
+[character x=-215 y=-180 storage = "00022/idl_side_p_02" scale = 1.5 action = "fadein" time = 0.1]
+ 
+
+[balloon x = 120 y = 80 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target = ".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+リンクして[r]
+間もないというのに[r]
+なかなかやるな
+[p]
+
+[balloon x = 100 y = -110 shape="002_02" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target = ".bln"]
+[font size = 40]
+[quake target =".bln" power = 3 time = 0.2]
+…ん！？
+[p]
+
+
+*02
+//-------------------------------------------------------------------------------
+//  ビルスとウイスが現れる。
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_014_001"]
+
+[wait time = 0.7]
+
+[character x = 50 y = -230 storage = "00243/idl_side_e_01" scale = 1.0 action = "fadein" time = 0.7]
+
+[character x = 240 y = -280 storage = "00242/idl_side_e_01" scale = 1.4 action = "fadein" time = 0.7]
+
+[wait_anim target=".chara"]
+
+[balloon x=-140 y=60 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+ん？ なんだおまえ？[r]
+どうやら人間じゃ[r]
+ないようだが……
+[p]
+
+*03
+//-------------------------------------------------------------------------------
+//  人造人間16号
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_014_001"]
+ 
+[character x=-215 y=-180 storage = "00022/idl_side_p_02" scale = 1.5 action = "fadein" time = 0.1]
+ 
+
+[balloon x = 120 y = 100 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target = ".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+…邪魔が入ったようだな[r]
+ここは出直したほうが[r]
+よさそうだ
+[p]
+
+[balloon x = 120 y = -100 shape="002_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target = ".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+孫悟空に[r]
+リンクしている者よ[r]
+また会おう
+[p]
+
+//16号が去っていく。
+[fadeout target = ".chara" time = 0.7]
+
+[wait_anim target = ".chara"]
+
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+
+*04
+//-------------------------------------------------------------------------------
+//  ビルス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_014_001"]
+ 
+//[character x = -240 y = -280 storage = "00242/idl_side_p_01" scale = 1.4 action = "fadein" time = 0.1]
+
+[character x = 210 y = -280 storage = "00242/heapup_e_01" scale = 1.4 action = "fadein" time = 0.1]
+
+
+[balloon x = -120 y = 100 shape="001_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target = ".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+ふん…さてと[r]
+孫悟空の中にいるヤツ[r]
+おまえは誰だ？
+[p]
+
+[balloon x = -110 y = -100 shape="001_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target = ".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+ボクの目は[r]
+ごまかせないぞ
+[p]
+
+*05
+//-------------------------------------------------------------------------------
+//  ウイス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_014_001"]
+ 
+//立ち_01
+//[character x = -210 y = -300 storage = "00243/idl_side_p_01" scale = 1.7 action = "fadein" time = 0.1]
+
+//指を立てる_01
+[character x = 180 y = -290 storage = "00243/atc_sp01_e_01" scale = 1.7 action = "fadein" time = 0.1]
+
+
+[balloon x = -125 y = 110 shape="001_03" scale = 1 action = "fadein" time = 0.1]
+[wait_anim target = ".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+悟空さんの体なんですが[r]
+本人の気は[r]
+わずかにしか感じません
+[p]
+
+[balloon x = -130 y = -100 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target = ".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+第三者が悟空さんの体を[r]
+乗っ取っている[r]
+というところですかね
+[p]
+
+*06
+//-------------------------------------------------------------------------------
+//  ブルマ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_014_001"]
+
+[character x=-180 y=-320 storage = "90003/bluma_f" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon x=100 y=100 shape="004_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+体を乗っ取っている！？[r]
+そんなことって…
+[p]
+
+[balloon x=120 y=-110 shape="006_02" scale = 0.9 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 7 time = 0.2]
+ちょっと あんた！[r]
+孫くんの体から[r]
+出て行きなさいよ！
+[p]
+
+*07
+//-------------------------------------------------------------------------------
+//  悟空にリンクしたプレイヤー
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_014_001"]
+
+
+
+[character x=250 y=-140 storage = "00003/idl_side_e_06" scale = 1.1 action = "fadein" time = 0.1]
+
+[character x=190 y=80 storage = "99999/ase" scale = 0.6 action = "fadein" time = 0.1]
+
+[balloon x=-100 y=70 shape="004_04" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 54]
+//[quake target =".bln" power = 3 time = 0.2]
+………
+[p]
+
+*08
+//-------------------------------------------------------------------------------
+//  ウイス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_014_001"]
+ 
+//立ち_01
+[character x = 210 y = -300 storage = "00243/idl_side_e_01" scale = 1.7 action = "fadein" time = 0.1]
+
+//指を立てる_01
+//[character x = -180 y = -290 storage = "00243/atc_sp01_p_03" scale = 1.7 action = "fadein" time = 0.1]
+
+
+[balloon x = -100 y = 110 shape="001_03" scale = 1 action = "fadein" time = 0.1]
+[wait_anim target = ".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+ブルマさん[r]
+そんなに困らせるものでは[r]
+ありませんよ
+[p]
+
+[balloon x = -110 y = -100 shape="001_02" scale = 1 action = "fadein" time = 0.1]
+[wait_anim target = ".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+この方も[r]
+意図せず悟空さんの体に[r]
+入ってしまったようですし
+[p]
+
+
+*09
+//-------------------------------------------------------------------------------
+//  ビルス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_014_001"]
+ 
+[character x = 240 y = -280 storage = "00242/idl_side_e_01" scale = 1.4 action = "fadein" time = 0.1]
+
+//[character x = -210 y = -280 storage = "00242/heapup_p_01" scale = 1.4 action = "fadein" time = 0.1]
+
+
+[balloon x = -110 y = 50 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target = ".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+それにしてもウイス[r]
+この妙な波動は[r]
+いったいなんだろうね？
+[p]
+
+*10
+//-------------------------------------------------------------------------------
+//  ウイス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_014_001"]
+ 
+//立ち_01
+[character x = 210 y = -300 storage = "00243/idl_side_e_01" scale = 1.7 action = "fadein" time = 0.1]
+
+//指を立てる_01
+//[character x = -180 y = -290 storage = "00243/atc_sp01_p_03" scale = 1.7 action = "fadein" time = 0.1]
+
+
+[balloon x = -90 y = 90 shape="001_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target = ".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+やはりビルスさまも[r]
+お気づきでしたか
+[p]
+
+[balloon x = -110 y = -110 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target = ".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+どうやら人の手で[r]
+作られたものの[r]
+ようですが…
+[p]
+
+*11
+//-------------------------------------------------------------------------------
+//  ブルマ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_014_001"]
+
+[character x=-180 y=-320 storage = "90003/bluma_f" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon x=90 y=60 shape="001_01" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+[quake target =".bln" power = 3 time = 0.2]
+波動？[r]
+なんの話？
+[p]
+
+
+*12
+//-------------------------------------------------------------------------------
+//  ビルス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_014_001"]
+ 
+[character x = 240 y = -280 storage = "00242/idl_side_e_01" scale = 1.4 action = "fadein" time = 0.1]
+
+[balloon x=-100 y=50 shape="001_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+なんだ おまえには[r]
+わからないのか[r]
+鈍いな
+[p]
+
+
+*13
+//-------------------------------------------------------------------------------
+//  ブルマ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_014_001"]
+
+[character x=-180 y=-320 storage = "90003/bluma_f" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon x=100 y=100 shape="001_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+鈍いとはなによ！[r]
+失礼ね！
+[p]
+
+[balloon x=120 y=-100 shape="001_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+普通の人間は[r]
+わからないわよ！
+[p]
+
+*14
+//-------------------------------------------------------------------------------
+//  ウイス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_014_001"]
+ 
+//立ち_01
+[character x = 210 y = -300 storage = "00243/idl_side_e_01" scale = 1.7 action = "fadein" time = 0.1]
+
+//指を立てる_01
+//[character x = -180 y = -290 storage = "00243/atc_sp01_p_03" scale = 1.7 action = "fadein" time = 0.1]
+
+
+[balloon x=-100 y=40 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+おや[r]
+この件について[r]
+お話があったわけでは[r]
+ないのですね？
+[p]
+
+*15
+//-------------------------------------------------------------------------------
+//  ブルマ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_014_001"]
+
+[character x=-180 y=-320 storage = "90003/bluma_f" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon x=100 y=120 shape="001_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+はっ！ そうよ！[r]
+今 世界中が大変なことに[r]
+なってるのよ！
+[p]
+
+[balloon x=120 y=-90 shape="001_02" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+みんなの偽物みたいなのが[r]
+暴れ出したりフリーザや[r]
+セルが復活したりで[r]
+大混乱なんだから！！
+[p]
+
+*16
+//-------------------------------------------------------------------------------
+//  ビルス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_014_001"]
+ 
+[character x = 240 y = -280 storage = "00242/idl_side_e_01" scale = 1.4 action = "fadein" time = 0.1]
+
+//[character x = -210 y = -280 storage = "00242/heapup_p_01" scale = 1.4 action = "fadein" time = 0.1]
+
+
+[balloon x=-90 y=60 shape="001_01" scale = 0.65 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 44]
+//[quake target =".bln" power = 3 time = 0.2]
+ふーん
+[p]
+
+*17
+//-------------------------------------------------------------------------------
+//  ブルマ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_014_001"]
+
+[character x=-180 y=-320 storage = "90003/bluma_f" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon x=100 y=120 shape="006_01" scale = 0.8 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 7 time = 0.2]
+ふーんじゃ[r]
+ないでしょっ！！
+[p]
+
+[balloon x=120 y=-90 shape="006_02" scale = 0.8 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+地球の[r]
+ピンチなのよっ！？
+[p]
+
+*18
+//-------------------------------------------------------------------------------
+//  ウイス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_014_001"]
+ 
+//立ち_01
+//[character x = -210 y = -300 storage = "00243/idl_side_p_01" scale = 1.7 action = "fadein" time = 0.1]
+
+//指を立てる_01
+[character x = 180 y = -290 storage = "00243/atc_sp01_e_01" scale = 1.7 action = "fadein" time = 0.1]
+
+
+[balloon x=-120 y=105 shape="001_03" scale = 1 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+とはいえ[r]
+この波動については[r]
+いささか気になりますね
+[p]
+
+[balloon x=-120 y=-105 shape="001_02" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+ひょっとすると[r]
+悟空さんがこうなったのは[r]
+この波動の影響かも[r]
+しれませんね
+[p]
+
+
+*19
+//-------------------------------------------------------------------------------
+//  ビルス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_014_001"]
+ 
+//[character x = -240 y = -280 storage = "00242/idl_side_p_01" scale = 1.4 action = "fadein" time = 0.1]
+
+[character x = 210 y = -280 storage = "00242/heapup_e_01" scale = 1.4 action = "fadein" time = 0.1]
+
+
+[balloon x=-120 y=85 shape="001_03" scale = 1 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+波動の力で気の量が制限され[r]
+反動で精神が体の奥底で[r]
+冬眠状態になった……
+[p]
+
+[balloon x=-120 y=-120 shape="001_02" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+気が多そうな連中は[r]
+全員 強制的に[r]
+眠らされているようだな
+[p]
+
+*20
+//-------------------------------------------------------------------------------
+//  ブルマ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_014_001"]
+
+[character x=-180 y=-320 storage = "90003/bluma_f" scale = 1.0 action = "fadein" time = 0.1]
+
+
+[balloon x=100 y=60 shape="001_03" scale = 1 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+だったら なんで[r]
+ビルスさまとウイスさんは[r]
+大丈夫なわけ？
+[p]
+
+*21
+//-------------------------------------------------------------------------------
+//  ビルス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_014_001"]
+ 
+[character x = 240 y = -280 storage = "00242/idl_side_e_01" scale = 1.4 action = "fadein" time = 0.1]
+
+//[character x = -210 y = -280 storage = "00242/heapup_p_01" scale = 1.4 action = "fadein" time = 0.1]
+
+
+[balloon x=-100 y=95 shape="001_01" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+//[quake target =".bln" power = 3 time = 0.2]
+決まってるだろ
+[p]
+
+[balloon x=-100 y=-100 shape="001_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+神は[r]
+そんな波動なんかの[r]
+影響は受けない
+[p]
+
+*22
+//-------------------------------------------------------------------------------
+//  ブルマ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_014_001"]
+
+[character x=-180 y=-320 storage = "90003/bluma_f" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon x=100 y=100 shape="001_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+…あっ！[r]
+ちょっと待って！
+[p]
+
+[balloon x=120 y=-100 shape="004_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+強い人が[r]
+眠っちゃうってことは[r]
+他のみんなも…
+[p]
+
+*23
+//-------------------------------------------------------------------------------
+//  ウイス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_014_001"]
+ 
+//立ち_01
+[character x = 210 y = -300 storage = "00243/idl_side_e_01" scale = 1.7 action = "fadein" time = 0.1]
+
+//指を立てる_01
+//[character x = -180 y = -290 storage = "00243/atc_sp01_p_03" scale = 1.7 action = "fadein" time = 0.1]
+
+
+[balloon x=-70 y=60 shape="001_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+動けなくなって[r]
+いるでしょうね[r]
+おそらく…
+[p]
+
+*24
+//-------------------------------------------------------------------------------
+//  ビルス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_014_001"]
+ 
+//[character x = -240 y = -280 storage = "00242/idl_side_p_01" scale = 1.4 action = "fadein" time = 0.1]
+
+[character x = 210 y = -280 storage = "00242/heapup_e_01" scale = 1.4 action = "fadein" time = 0.1]
+
+
+[balloon x=-110 y=50 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+もしくは誰かに[r]
+体を乗っ取られて[r]
+いるか…！
+[p]
+
+*25
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0004R" bg = "bg_000_014"]
+
+
+[balloon x=0 y=0 shape="003_02" scale = 1.6 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 15]
+//[quake target =".bln" power = 7 time = 0.2]
+戦士たちが[r]
+動けなくなってしまい[r]
+地球は大ピンチ…！[r]
+　[r]
+謎の波動を止めるために[r]
+まずは[r]
+今回の事件と[r]
+関与していると思われる[r]
+16号を捜索することに[r]
+なった…
+[p]
+
+*26
+//-------------------------------------------------------------------------------
+//  ブルマ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_014_001"]
+
+[character x=-180 y=-320 storage = "90003/bluma_f" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon x=100 y=60 shape="001_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+そうなると[r]
+強い人の助けが[r]
+いるんだけど…
+[p]
+
+*27
+//-------------------------------------------------------------------------------
+//  ビルス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_014_001"]
+ 
+[character x = 240 y = -280 storage = "00242/idl_side_e_01" scale = 1.4 action = "fadein" time = 0.1]
+
+//[character x = -210 y = -280 storage = "00242/heapup_p_01" scale = 1.4 action = "fadein" time = 0.1]
+
+
+[balloon x=-100 y=50 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+困っているなら[r]
+悟空の体に入っている[r]
+ヤツに頼めばいいだろ
+[p]
+
+*28
+//-------------------------------------------------------------------------------
+//  ブルマ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_014_001"]
+
+[character x=-180 y=-320 storage = "90003/bluma_f" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon x=80 y=60 shape="004_02" scale = 0.65 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 44]
+[quake target =".bln" power = 3 time = 0.2]
+へっ？
+[p]
+
+*29
+//-------------------------------------------------------------------------------
+//  ビルス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_014_001"]
+ 
+[character x = 240 y = -280 storage = "00242/idl_side_e_01" scale = 1.4 action = "fadein" time = 0.1]
+
+//[character x = -210 y = -280 storage = "00242/heapup_e_01" scale = 1.4 action = "fadein" time = 0.1]
+
+
+[balloon x=-100 y=95 shape="001_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+悟空の体を[r]
+動かせるんだろう？
+[p]
+
+[balloon x=-100 y=-100 shape="001_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+だったら[r]
+こいつも闘えるはずだ
+[p]
+
+
+*30
+//-------------------------------------------------------------------------------
+//  ブルマ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002L" bg = "bg_014_001"]
+
+[character x=-180 y=-390 storage = "90003/bluma_f" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon shape="001_02" x = 120 y = 70 scale = 1 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 7 time = 0.2]
+しかたないか…[r]
+まあ あんただって[r]
+もとの体にもどれないと[r]
+困るでしょ？
+[p]
+
+
+[balloon shape="001_03" x = 120 y = -200 scale = 1 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 7 time = 0.2]
+というわけで[r]
+わたしたちに協力してね！[r]
+よろしく！
+[p]
+
+//-------------------------------------------------------------------------------
+[stopbgm]

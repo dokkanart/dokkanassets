@@ -1,0 +1,125 @@
+*start|スタート
+//ステージ3ゴール
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "002"]
+
+*01
+//-------------------------------------------------------------------------------
+//  ピッコロ
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0001R" bg = "bg_080_001"]
+
+
+[character x = 180 y = -90 storage = "00010/idl_side_e_02" scale = 1.5 action = "fadein" time = 0.1]
+
+[character x = 130 y = 180 storage = "99999/ring" scale = 0.7 action = "fadein" time = 0.1]
+
+[balloon shape="002_02" x = -130 y = 70 scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+//[quake target =".bln" power = 3 time = 0.2]
+悟飯……[r]
+待ってろよ…
+[p]
+
+*02
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002L" bg = "bg_000_024"]
+
+
+//[character x=-180 y=-0 storage = "00003/card_05" scale = 1.1 action = "fadein" time = 0.7]
+
+
+
+
+[balloon x=0 y=-30 shape="003_02" scale = 1.6 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 15]
+//[quake target =".bln" power = 7 time = 0.2]
+あの世の界王星で[r]
+復活の時を待つ[r]
+ピッコロ…[r]
+　[r]
+…しかし その頃[r]
+ナメック星では[r]
+ギニュー特戦隊の猛威に[r]さらされた[r]
+悟飯たちに[r]
+死が近づいていた[r]
+……だが！
+[p]
+
+//フェードアウト（フェードアウトするコマ）
+
+[balloon x=0 y=0 shape="008_03" scale = 50.0 action = "fadein" time = 0.5]
+
+[wait time = 0.7] 
+
+*03
+//-------------------------------------------------------------------------------
+//  悟空の宇宙船が到着する。
+//-------------------------------------------------------------------------------
+
+[coma shape="S0001" bg = "bg_050_001"]
+
+[character x = 0 y = 0 storage = "90003/spaceship_goku_2" scale = 1.5 action = "fadein" time = 0.1]
+
+//フェードイン（フェードインするコマ）
+
+[balloon x=0 y=0 shape="008_03" scale = 50]
+
+[wait time = 1]
+
+[fadeout target = ".bln" time = 2]
+
+[se storage = "3038"]
+
+[wait_anim target=".bln"]
+
+[wait time = 0.3]
+
+
+[balloon shape="005_02" x = 0 y = 300 scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+[quake target =".bln" power = 3 time = 0.2]
+到着！[r]
+ナメック星ニ[r]
+到着シマシタ！
+[p]
+
+
+*04
+//-------------------------------------------------------------------------------
+//  孫悟空
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_050_001"]
+
+[character x = 170 y = -180 storage = "00003/card_01" scale = 1.2 action = "fadein" time = 0.1]
+
+
+[balloon shape="001_03" x = -140 y = 110 scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+悟飯…クリリン…[r]
+すぐいくぞ 待ってろ！
+[p]
+
+[balloon shape="001_02" x = -120 y = -190 scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+[quake target =".bln" power = 3 time = 0.2]
+今こそ[r]
+100倍の重力にも耐えた[r]
+修業の成果を見せてやる！！
+[p]
+
+//-------------------------------------------------------------------------------
+[stopbgm]

@@ -1,0 +1,345 @@
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "008"]
+
+*01
+//-------------------------------------------------------------------------------
+//  ピッコロ
+//-------------------------------------------------------------------------------
+
+//[se storage = "04"]
+[coma shape="N0003R" bg = "bg_000_034"]
+
+[character x = -190 y = -100 storage = "00320/heapup_p_01" scale = 0.7 action = "fadein" time = 0.1]
+
+
+[character x = 270 y = 40 storage = "00010/idl_back_e_01" scale = 0.9 action = "fadein" time = 0.1]
+
+[balloon x=-70 y=170 shape="007_01" scale = 0.8 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 7 time = 0.2]
+[font size = 32]
+とんでもない[r]
+破壊力だ…！！[p]
+
+[balloon x=130 y=-130 shape="007_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 7 time = 0.2]
+[font size = 28]
+これでは[r]
+サイヤ人が来る前に[r]
+地球は壊滅だ…！！[p]
+
+
+*02
+//-------------------------------------------------------------------------------
+//大猿悟飯
+//-------------------------------------------------------------------------------
+
+[se storage = "48"]
+[coma shape="N0004L" bg = "bg_000_003"]
+
+[character id = "moon" x = 0 y = -35 storage = "99999/fullmoon" scale = 1.4 action = "fadein" time = 0.1]
+
+[wait time = 0.7]
+
+[se storage = "3017"]
+//[coma shape="N0004L" bg = "bg_005_001"]
+[lwfobject id = "kaki2" storage="kakimoji:ef_013" in="04" x=0 y=0 scale = 3]
+[quake target = "kaki2" power = 15 time = 1]
+[character id = "baku" x=0 y=0 storage = "90000/bomb" scale = 0.9 action = "expand" time = 0.1]
+[quake target = "baku" power = 10 time = 1]
+[balloon x=130 y=40 shape="008_02" scale = 50 action = "fadein" time = 0.5]
+[wait_anim target=".bln"]
+[fadeout target = ".bln" time = 1.5]
+
+[clear target = "moon"]
+
+[wait time = 0.5]
+
+[fadeout target = "kaki2" time = 0.7]
+[fadeout target = "baku" time = 1.5]
+
+
+//爆煙の中から現れる
+ 
+[wait_anim target="baku"]
+[wait time = 0.3]
+
+
+[balloon x=-0 y=-30 shape="003_01" scale = 1.5 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target =".bln" power = 3 time = 0.2]
+[font size = 16]
+満月を見て変身して[r]
+しまった悟飯は[r]
+理性を失い大暴れする[r]
+　[r]
+機転を利かせた[r]
+ピッコロは月を破壊し[r]
+悟飯をもとの姿に[r]
+もどすのだった…[p]
+
+*03
+//-------------------------------------------------------------------------------
+//  ピッコロ
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_034"]
+
+
+[character x = 230 y = -130 storage = "00010/idl_side_e_02" scale = 1.6 action = "fadein" time = 0.1]
+
+[balloon x=-110 y=95 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target =".bln" power = 3 time = 0.2]
+[font size = 28]
+まさか[r]
+変身するとはな…[r]
+サイヤ人の血か…[p]
+
+[balloon x=-140 y=-110 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target =".bln" power = 3 time = 0.2]
+[font size = 28]
+こいつや孫悟空の[r]
+強さの秘密がわかった[r]
+ような気がするぜ…[p]
+
+//フェードアウト（フェードアウトするコマ）
+[balloon x=130 y=40 shape="008_03" scale = 50.0 action = "fadein" time = 0.5]
+[wait time = 0.7] 
+
+
+[bgm storage = "005"]
+
+*sinden
+//-------------------------------------------------------------------------------
+//  
+//-------------------------------------------------------------------------------
+[coma shape="S0001" bg = "bg_000_030"]
+
+//フェードイン（フェードインするコマ）
+[balloon x=130 y=40 shape="008_03" scale = 50]
+[wait time = 1]
+[fadeout target = ".bln" time = 2]
+[wait_anim target=".bln"]
+
+// 空のフキダシ（セリフがないコマを送るために使用）
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+*04
+//-------------------------------------------------------------------------------
+//  神様
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_030"]
+
+[character x = 180 y = -160 storage = "00433/idl_side_e_01" scale = 1.2 action = "fadein" time = 0.1]
+
+//沈黙セリフの平均サイズ（※フキダシの指定は例）
+[balloon id = "01" x = -90 y = 90 shape="001_02" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target = "01"]
+[font size = 54]
+………
+[p]
+
+
+
+*05
+//-------------------------------------------------------------------------------
+//  ポポ
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_030"]
+
+[character x = -190 y = -120 storage = "00357/idl_side_p_01" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x=110 y=80 shape="001_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target =".bln" power = 3 time = 0.2]
+[font size = 28]
+神様 ちょっとヘン…[r]
+どうかしましたか？[p]
+
+
+*06
+//-------------------------------------------------------------------------------
+//  神様
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_030"]
+
+[character x = 180 y = -160 storage = "00433/idl_side_e_01" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x=-130 y=80 shape="001_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target =".bln" power = 3 time = 0.2]
+[font size = 28]
+ピッコロのやつ…[r]
+やはり以前とは[r]
+どこか ちがうようだ…[p]
+
+
+*07
+//-------------------------------------------------------------------------------
+//  ポポ
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_030"]
+
+[character x = -190 y = -120 storage = "00357/idl_side_p_01" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x=80 y=100 shape="001_02" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target =".bln" power = 3 time = 0.2]
+[font size = 36]
+ポポも[r]
+それ 思う[p]
+
+[balloon x=110 y=-90 shape="001_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target =".bln" power = 3 time = 0.2]
+[font size = 28]
+昔の大魔王なら[r]
+孫悟空の息子[r]
+強くしない…[p]
+
+
+*08
+//-------------------------------------------------------------------------------
+//  神様
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_030"]
+
+[character x = 180 y = -160 storage = "00433/idl_side_e_01" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x=-120 y=110 shape="001_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target =".bln" power = 3 time = 0.2]
+[font size = 28]
+気づいて[r]
+おるのかもしれんな…[p]
+
+[balloon x=-120 y=-90 shape="001_02" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target =".bln" power = 3 time = 0.2]
+[font size = 24]
+わたしの命…[r]
+つまりピッコロの命も[r]
+あと１年しか[r]
+ないということを…[p]
+
+
+*09
+//-------------------------------------------------------------------------------
+//  ポポ
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_030"]
+
+[character x = -190 y = -120 storage = "00357/idl_side_p_01" scale = 1.2 action = "fadein" time = 0.1]
+[character x = -220 y = 40 storage = "99999/ase" scale = 0.5 action = "fadein" time = 0.1]
+
+[balloon x=70 y=100 shape="001_03" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target =".bln" power = 3 time = 0.2]
+[font size = 32]
+神様とピッコロは[r]
+もともと ひとつ…[p]
+
+[balloon x=110 y=-80 shape="001_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target =".bln" power = 3 time = 0.2]
+[font size = 28]
+ピッコロが死ねば[r]
+神様も死ぬ…[r]
+これ たいへん…[p]
+
+
+*10
+//-------------------------------------------------------------------------------
+//  神様
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_030"]
+
+[character x = 180 y = -160 storage = "00433/idl_side_e_01" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x=-110 y=100 shape="001_02" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target =".bln" power = 3 time = 0.2]
+[font size = 24]
+ピッコロも それを[r]
+感じとっているはずだ…[r]
+なにかを残したいとでも[r]
+思ったのだろう…[p]
+
+[balloon x=-135 y=-100 shape="001_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target =".bln" power = 3 time = 0.2]
+[font size = 28]
+たとえ それが[r]
+孫悟空の息子に[r]
+でもな…[p]
+
+
+*11
+//-------------------------------------------------------------------------------
+//  ポポ
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_030"]
+
+[character x = -190 y = -120 storage = "00357/idl_side_p_01" scale = 1.2 action = "fadein" time = 0.1]
+[character x = -220 y = 40 storage = "99999/ase" scale = 0.5 action = "fadein" time = 0.1]
+
+[balloon x=90 y=80 shape="001_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target =".bln" power = 3 time = 0.2]
+[font size = 28]
+では[r]
+ドラゴンボールを[r]
+使えるのも…[p]
+
+
+*12
+//-------------------------------------------------------------------------------
+//  神様
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_000_030"]
+
+[character x = 120 y = -210 storage = "00433/card_01" scale = 1.4 action = "fadein" time = 0.1]
+
+[balloon x=-160 y=140 shape="001_02" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target =".bln" power = 3 time = 0.2]
+[font size = 40]
+うむ…[r]
+あと１回…[p]
+
+[balloon x=-135 y=-190 shape="001_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target =".bln" power = 3 time = 0.2]
+[font size = 28]
+孫悟空を[r]
+生き返らせるのが[r]
+最後になろう…[p]
+
+[stopbgm]

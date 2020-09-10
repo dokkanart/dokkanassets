@@ -1,0 +1,51 @@
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+//[bgm storage = "026"]
+
+*001
+//-------------------------------------------------------------------------------
+//  パーフェクトセル
+//-------------------------------------------------------------------------------
+//[se storage = "3022"]
+[coma shape="S0001" bg = "bg_005_002"]
+
+[lwfobject id = "kaki2" storage="kakimoji:ef_009" x=-220 y=140 scale = 1.5 action = "fadein" time = 0.1 angle=0 action = "fadein" time = 0.1]
+[quake target = "kaki2" power = 1 time = 300]
+
+
+
+[character id = "ss" x = 10 y = 30 storage = "99999/supersaiyan" scale = 1.2 action = "fade:60" time = 0.1]
+[quake target = "ss" power = 2 time = 300]
+
+[character id = "ss3" x = 0 y = -50 storage = "99999/supersaiyan2" scale = 1.0 angle = 5 action = "fadein" time = 0.1]
+//[flip target ="ss3" h=1]
+[quake target = "ss3" power = 2 time = 300]
+
+[character id = "sell" x=-5 y=0 storage = "00205/card_12" scale = 1.0 action = "fadein" time = 0.1] 
+
+[character id = "ss2" x = 30 y = 140 storage = "99999/supersaiyan2" scale = 1.2 angle = 0 action = "fadein" time = 0.1]
+[flip target ="ss2" h=1]
+[quake target = "ss2" power = 2 time = 300]
+
+
+
+[balloon x=-0 y=490 shape="002_01" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+//[quake target =".bln" power = 3 time = 0.2]
+お遊びは[r]
+もう せんぞ…
+[p]
+
+[balloon x=0 y=-440 shape="002_03" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+//[quake target =".bln" power = 3 time = 0.2]
+すぐに[r]
+終わらせてやる…
+[p]
+
+//[stopbgm]

@@ -1,0 +1,114 @@
+*start|スタート
+
+//"エリア５スタート"
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "028"]
+ 
+
+*001
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="S0001" bg = "bg_070_005"]
+ 
+[character x = 130 y = -120 storage = "00200/card_05" scale = 0.7 action = "fadein" time = 0.1]
+
+[character x = -130 y = -120 storage = "00279/card_04" scale = 0.7 action = "fadein" time = 0.1]
+ 
+[balloon x=0 y=300 shape="003_01" scale = 1.6 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 15]
+//[quake target =".bln" power = 3 time = 0.2]
+培養液が[r]
+海水に弱いことに[r]
+気がついた悟天たちは[r]
+海面にかめはめ波を放ち[r]
+巨大な波を起こす[r]
+　[r]
+培養液は海水で固まり[r]
+世界の危機は[r]
+救われるのだった[r]
+…だが……
+[p]
+
+*002
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0004L" bg = "bg_000_014"]
+ 
+//[character x = -0 y = -100 storage = "00025/atc_down_p_01" scale = 1.6 action = "fadein" time = 0.1]
+ 
+[balloon x=0 y=100 shape="003_01" scale = 1.6 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 15]
+//[quake target =".bln" power = 3 time = 0.2]
+培養液の中に[r]
+消えたはずのブロリーが[r]
+最後の執念を燃やし[r]
+再び[r]
+立ちふさがるのだった！
+[p]
+
+*003
+//-------------------------------------------------------------------------------
+//  バイオブロリー
+//-------------------------------------------------------------------------------
+[se storage = "3020"]	
+[coma shape="N0003L" bg = "bg_070_005"]
+
+
+ 
+[character x = -120 y = -500 storage = "00453/card_02" scale = 1.4 action = "fadein" time = 0.1]
+ 
+[move target =".chara" y=-140 time = 2.0] 
+ 
+[balloon x=150 y=0 shape="006_02" scale = 0.9 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 7 time = 2.0]
+カカロット〜ッ！！
+//[p]
+
+[wait_anim target=".chara"]
+
+// 空のフキダシ（セリフがないコマを送るために使用）
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+*004
+//-------------------------------------------------------------------------------
+//  "トランクス 孫悟天"
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_070_005"]
+ 
+[character id = "goten1" x = 30 y = -90 storage = "00225/heapup_p_01" scale = 0.9 action = "fadein" time = 0.1]
+[flip target ="goten1" h=1]
+[character id = "tra1" x=240 y=-90 storage = "00200/heapup_e_01" scale = 1.1 action = "fadein" time = 0.1]
+
+[character x = 35 y = 30 storage = "99999/ase" scale = 0.5 action = "fadein" time = 0.1]
+[character x = 250 y = 50 storage = "99999/ase" scale = 0.6 action = "fadein" time = 0.1]
+ 
+[balloon x=-140 y=100 shape="004_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+うわあああっ！！ 
+[p]
+ 
+[balloon x=-135 y=-190 shape="004_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+な…[r]
+なんてやつだ！！ 
+[p]
+
+ 
+//-------------------------------------------------------------------------------
+[stopbgm]

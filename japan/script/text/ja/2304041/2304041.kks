@@ -1,0 +1,359 @@
+
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "012"]
+
+//-------------------------------------------------------------------------------
+//  クリリン
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0001R" bg = "bg_014_001"]
+
+[character x = 185 y = -100 storage = "00249/idl_side_e_01" scale = 1.1 action = "fadein" time = 0.1]
+
+[balloon x = -100 y = 120 shape="001_02" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][font size = 40]
+やれやれ…
+[p]
+
+
+[balloon x = -145 y = -110 shape="001_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][font size = 32]
+//[quake target = ".bln" power = 3 time = 0.2]
+あいかわらず[r]
+困ったやつらだな…
+[p]
+
+
+
+
+*coma3
+//-------------------------------------------------------------------------------
+//  ピラフマシン
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_014_001"]
+
+[character x = -160 y = -90 storage = "00025/support_item_31401" scale = 0.7 action = "fadein" time = 0.1]
+
+[balloon x = 140 y = 110 shape="004_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][font size = 28]
+[quake target = ".bln" power = 3 time = 0.2]
+お…おのれ〜…[r]
+いつもいつもジャマ[r]
+しおって…！
+[p]
+
+[bgm storage = "008"]
+
+
+[balloon x = 120 y = -100 shape="004_02" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][font size = 24]
+[quake target = ".bln" power = 3 time = 0.2]
+ヘンなやつらに[r]
+ドラゴンボールも[r]
+奪われるし…もう散々だ…！
+[p]
+
+
+
+*coma4
+//-------------------------------------------------------------------------------
+//  クリリン
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_014_001"]
+
+[character x = 185 y = -100 storage = "00249/idl_side_e_01" scale = 1.1 action = "fadein" time = 0.1]
+
+[balloon x = -130 y = 100 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][font size = 28]
+ヘンなやつらだって？
+[p]
+
+*coma5
+//-------------------------------------------------------------------------------
+//  ピラフマシン
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_014_001"]
+
+[character x = -160 y = -90 storage = "00025/support_item_31401" scale = 0.7 action = "fadein" time = 0.1]
+
+[balloon x = 140 y = 100 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][font size = 28]
+[quake target = ".bln" power = 3 time = 0.2]
+ヘンな格好して[r]
+目に妙な機械つけた[r]
+やつらだよ！
+[p]
+
+*coma6
+//-------------------------------------------------------------------------------
+//  クリリン
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_014_001"]
+
+[character x = 185 y = -100 storage = "00249/idl_side_e_01" scale = 1.1 action = "fadein" time = 0.1]
+
+[balloon x = -130 y = 120 shape="001_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][font size = 32]
+なんだって…！？[r]
+…まさか……
+[p]
+
+
+[balloon x = -120 y = -170 shape="001_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][font size = 28]
+//[quake target = ".bln" power = 3 time = 0.2]
+くそ…[r]
+イヤな予感がするぜ…
+[p]
+
+
+//-------------------------------------------------------------------------------
+//　フェード場面切り替え
+//-------------------------------------------------------------------------------
+[balloon x=130 y=40 shape="008_03" scale = 50.0 action = "fadein" time = 0.5] 
+[wait time = 0.7]
+
+*coma7
+//-------------------------------------------------------------------------------
+//  ドラゴンボール
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="S0001" bg = "bg_000_013"]
+
+[balloon x=130 y=40 shape="008_03" scale = 50]
+[wait time = 1]
+[fadeout target = ".bln" time = 2]
+[wait_anim target=".bln"]
+
+
+[balloon x=0 y=0 shape="010_01" scale = 1.4 action = "fadein" time = 0.7]
+
+[balloon x=-110 y=-90 shape="010_02" scale = 1.4 action = "fadein" time = 0.7]
+
+[balloon x=-45 y=100 shape="010_03" scale = 1.4 action = "fadein" time = 0.7]
+
+[balloon x=210 y=-30 shape="010_04" scale = 1.4 action = "fadein" time = 0.7]
+
+[balloon x=-205 y=15 shape="010_05" scale = 1.4 action = "fadein" time = 0.7]
+
+[balloon x=110 y=90 shape="010_06" scale = 1.4 action = "fadein" time = 0.7]
+
+[balloon x=90 y=-100 shape="010_07" scale = 1.4 action = "fadein" time = 0.7]
+
+[wait time = 1.5]
+
+[se storage = "3024"]
+
+[balloon id = "db1" x=0 y=0 shape="010_08" scale = 1.4 action = "fadein" time = 1.2]
+
+[balloon id = "db2" x=-110 y=-90 shape="010_08" scale = 1.4 action = "fadein" time = 1.2]
+
+[balloon id = "db3" x=-45 y=100 shape="010_08" scale = 1.4 action = "fadein" time = 1.2]
+
+[balloon id = "db4" x=210 y=-30 shape="010_08" scale = 1.4 action = "fadein" time = 1.2]
+
+[balloon id = "db5" x=-205 y=15 shape="010_08" scale = 1.4 action = "fadein" time = 1.2]
+
+[balloon id = "db6" x=110 y=90 shape="010_08" scale = 1.4 action = "fadein" time = 1.2]
+
+[balloon id = "db7" x=90 y=-100 shape="010_08" scale = 1.4 action = "fadein" time = 1.2]
+
+[wait time = 0.8]
+
+[fadeout target = "db1" time = 0.7]
+
+[fadeout target = "db2" time = 0.7]
+
+[fadeout target = "db3" time = 0.7]
+
+[fadeout target = "db4" time = 0.7]
+
+[fadeout target = "db5" time = 0.7]
+
+[fadeout target = "db6" time = 0.7]
+
+[fadeout target = "db7" time = 0.7]
+
+
+[wait time = 0.4]
+
+[balloon id = "db1" x=0 y=0 shape="010_08" scale = 1.4 action = "fadein" time = 1.2]
+
+[balloon id = "db2" x=-110 y=-90 shape="010_08" scale = 1.4 action = "fadein" time = 1.2]
+
+[balloon id = "db3" x=-45 y=100 shape="010_08" scale = 1.4 action = "fadein" time = 1.2]
+
+[balloon id = "db4" x=210 y=-30 shape="010_08" scale = 1.4 action = "fadein" time = 1.2]
+
+[balloon id = "db5" x=-205 y=15 shape="010_08" scale = 1.4 action = "fadein" time = 1.2]
+
+[balloon id = "db6" x=110 y=90 shape="010_08" scale = 1.4 action = "fadein" time = 1.2]
+
+[balloon id = "db7" x=90 y=-100 shape="010_08" scale = 1.4 action = "fadein" time = 1.2]
+
+[wait time = 1.3]
+
+[fadeout target = "db1" time = 0.7]
+
+[fadeout target = "db2" time = 0.7]
+
+[fadeout target = "db3" time = 0.7]
+
+[fadeout target = "db4" time = 0.7]
+
+[fadeout target = "db5" time = 0.7]
+
+[fadeout target = "db6" time = 0.7]
+
+[fadeout target = "db7" time = 0.7]
+
+[wait time = 1.0]
+
+[p]
+
+*coma8
+//-------------------------------------------------------------------------------
+//  ソルベ＆タゴマ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_004"]
+
+[character x = 170 y = -25 storage = "00248/atc_sp01_e_01" scale = 1.2 action = "fadein" time = 0.1]
+
+[character x = 90 y = -120 storage = "00247/idl_side_e_01" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x = -140 y = 120 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][font size = 28]
+[quake target = ".bln" power = 3 time = 0.2]
+ついにすべての[r]
+ドラゴンボールが[r]
+集まったぞ…！
+[p]
+
+[se storage = "3025"]
+//点滅
+[balloon shape="008_02" x = 140 y = -30 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+[balloon shape="008_02" x = 140 y = -30 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+
+[wait time = 0.3]
+
+
+
+*coma9
+//-------------------------------------------------------------------------------
+//  神龍
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0003L" bg = "bg_000_014"]
+
+[wait_anim target= ".coma"]
+
+[character x = 60 y = -130 storage = "90003/shenron" scale = 1.3 action = "fadein" time = 1.5]
+
+[wait_anim target= ".chara"]
+
+[balloon x = -190 y = 140 shape="001_02" scale = 0.65 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][font size = 40]
+さあ[r]
+願いをいえ
+[p]
+
+
+[balloon x = 180 y = -130 shape="001_01" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][font size = 36]
+どんな願いも[r]
+叶えてやろう
+[p]
+
+*coma10
+//-------------------------------------------------------------------------------
+//  ソルベ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0003R" bg = "bg_000_014"]
+
+[character x = 190 y = -80 storage = "00247/heapup_e_01" scale = 1.8 action = "fadein" time = 0.1]
+
+[balloon x = -150 y = 130 shape="006_01" scale = 0.85 action = "expand" time = 0.1]
+[wait_anim target=".bln"][font size = 36]
+[quake target = ".bln" power = 7 time = 0.2]
+フリーザ様を…
+[p]
+
+
+[balloon x = -110 y = -130 shape="006_01" scale = 1 action = "expand" time = 0.1]
+[wait_anim target=".bln"][font size = 30]
+[quake target = ".bln" power = 7 time = 0.2]
+甦らせるんだー！！
+[p]
+
+
+*coma11
+//-------------------------------------------------------------------------------
+//  神龍
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0004L" bg = "bg_000_014"]
+
+[character x = 110 y = -410 storage = "90003/shenron" scale = 2.6 action = "fadein" time = 0.1]
+
+[wait time = 0.7]
+
+[character id = "eye" x = 110 y = -410 storage = "90003/shenron_eye" scale = 2.6 action = "fadein" time = 1.5]
+
+[wait time = 1.3]
+
+[se storage = "3024"]
+
+//点滅
+[balloon shape="008_02" x = 140 y = -30 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+
+[fadeout target = "eye" time = 0.9]
+
+[wait time = 0.9]
+
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+
+
+//フェードアウト
+[balloon x=130 y=40 shape="008_03" scale = 50.0 action = "fadein" time = 1.5]
+
+[wait time = 1.5]
+
+//空のフキダシ
+//[balloon x = 0 y = 0 shape="002_01" scale = 0]
+//[p]
+
+
+
+
+
+
+//メカフリーザ
+[balloon x = -0 y =250 shape="008_18" scale = 1.6 action = "fadein" time = 1]
+
+[wait_anim target=".bln"]
+
+//[fadeout target = ".bln" time = 1.5]
+
+//[wait time = 1.5]
+
+[p]
+
+[stopbgm]

@@ -1,0 +1,61 @@
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "002"]
+
+
+*01
+//-------------------------------------------------------------------------------
+//  超サイヤ人２孫悟空
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+
+
+[coma shape="N0001R" bg = "bg_000_033"]
+
+[character id = "ana" x=260 y=-135 storage = "00066/card_02" scale = 0.9 action = "fadein" time = 0.1]
+[character x=125 y=190 storage = "99999/ring" scale = 0.9 action = "fadein" time = 0.1]
+
+
+[balloon x=-125 y=100 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target =".bln" power = 3 time = 0.2]
+[font size = 28]
+こりゃあ[r]
+はやく終わりそうには[r]
+ねえな……[p]
+
+
+
+*02
+//-------------------------------------------------------------------------------
+//  魔人ベジータ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+
+
+[coma shape="N0002L" bg = "bg_000_033"]
+
+//[character x=-150 y=-180 storage = "99999/supersaiyan" scale = 1.1 action = "fadein" time = 0.1]
+[character x=-120 y=-100 storage = "00228/card_01" scale = 1.1 angle = -5 action = "fadein" time = 0.1]
+
+
+[balloon x=140 y=100 shape="007_01" scale = 0.7 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 40]
+[quake target =".bln" power = 7 time = 0.2]
+いくぞ！！[p]
+
+[balloon x=140 y=-200 shape="007_02" scale = 0.8 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 7 time = 0.2]
+殺してやる[r]
+カカロット！！[p]
+
+
+
+
+[stopbgm]

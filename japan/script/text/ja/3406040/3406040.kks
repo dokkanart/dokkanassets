@@ -1,0 +1,34 @@
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "008"]
+
+*001
+//-------------------------------------------------------------------------------
+//  
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="S0001" bg = "bg_004_001"]
+
+[character x=-0 y=-30 storage = "00217/card_02" scale = 1.3 action = "fadein" time = 0.1]
+
+[balloon x=-160 y=400 shape="002_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 7 time = 0.2]
+すぐに[r]
+わからせてやる
+[p]
+
+[balloon x=-100 y=-380 shape="002_03" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+本当の宇宙一が[r]
+誰なのかを…
+[p]
+
+
+[stopbgm]

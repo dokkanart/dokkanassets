@@ -1,0 +1,118 @@
+*start|スタート
+
+//"２3－６スタート" 
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "008"]
+ 
+*001
+//-------------------------------------------------------------------------------
+//  セル（第二形態）
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_004"]
+ 
+[character x = -210 y = -155 storage = "00204/heapup_p_01" scale = 1.2 action = "fadein" time = 0.1]
+ 
+[balloon x=120 y=120 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+さあ おとなしく[r]
+わたしに吸収されるのだ[r]
+１８号！！
+[p]
+
+*002
+//-------------------------------------------------------------------------------
+//  人造人間18号
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_004"]
+ 
+[character x = 180 y = -130 storage = "00020/idl_side_e_01" scale = 1.1 action = "fadein" time = 0.1]
+ 
+[balloon x=-100 y=70 shape="002_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+誰が[r]
+おまえなんかに…！！
+[p]
+
+*003
+//-------------------------------------------------------------------------------
+//  トランクス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_004"]
+ 
+[character x = 210 y = -200 storage = "90000/wait_right_anger_strong" scale = 1.2 action = "fadein" time = 0.1]
+ 
+[balloon x=-120 y=120 shape="001_01" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+セルが完全体になれば[r]
+この世界にさらなる混乱を[r]
+招くことに…！ 
+[p]
+ 
+[balloon x=-100 y=-90 shape="001_02" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+[$player]さん…[r]
+１８号を連れて逃げることも[r]
+考えておいてください… 
+[p]
+
+*004
+//-------------------------------------------------------------------------------
+//  ベジータ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_000_004"]
+ 
+[character id = "vgt" x = 180 y = -90 storage = "00004/idl_side_e_02" scale = 1.2 action = "fadein" time = 0.1]
+ 
+[balloon x=-120 y=120 shape="002_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+ふん… この化物が[r]
+完全体とやらになって[r]
+この世は終わりか… 
+[p]
+
+//超サイヤ人に変身。
+[clear target = "vgt"]
+
+[se storage = "50"] 
+
+[lwfobject id = "kaki1" storage="kakimoji:ef_020" in="04" x=120 y=-90 scale = 2.0] 
+[quake target = "kaki1" power = 15 time = 0.4] 
+
+[character id = "ss" x = 170 y = -160 storage = "99999/supersaiyan" scale = 1.0]
+[quake target = "ss" power = 10 time = 0.4] 
+
+[character id = "vgt2" x = 160 y = -120 storage = "00004/SSR_heapup_e_01" scale = 1.4] 
+[quake target = "vgt2" power = 7 time = 0.4]
+[wait_anim target="vgt"] 
+
+[fadeout target = "kaki1" time = 0.7]
+
+[wait_anim target="kaki1"]
+ 
+[balloon x=-100 y=-180 shape="006_02" scale = 1.0 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+[quake target =".bln" power = 7 time = 0.2]
+そうは させんぞ[r]
+このオレは[r]
+あんなやつには負けん！！
+[p]
+ 
+//-------------------------------------------------------------------------------
+[stopbgm]

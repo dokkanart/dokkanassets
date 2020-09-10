@@ -1,0 +1,215 @@
+
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "002"]
+
+
+
+*01
+//-------------------------------------------------------------------------------
+//  悟空
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0001R" bg = "bg_068_002"]
+
+[character x = 190 y = -120 storage = "00244/heapup_e_01" scale = 1.7 action = "fadein" time = 0.1]
+
+[balloon x = -110 y = 100 shape="001_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][font size = 28]
+[quake target = ".bln" power = 3 time = 0.2]
+おめえ けっこう[r]
+いやらしいやつだなあ！[p]
+
+
+*02
+//-------------------------------------------------------------------------------
+//  フロスト
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_068_002"]
+
+[character x = -290 y = -140 storage = "00550/idl_side_p_01" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x=120 y=100 shape="002_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+いやらしいやつ？[p]
+
+
+*03
+//-------------------------------------------------------------------------------
+//  悟空
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_068_002"]
+
+[character x = 190 y = -120 storage = "00244/heapup_e_01" scale = 1.7 action = "fadein" time = 0.1]
+
+[balloon x = -110 y = 100 shape="001_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][font size = 28]
+//[quake target = ".bln" power = 3 time = 0.2]
+もう一段階くれえ[r]
+変身を隠してっだろ！[p]
+
+[balloon x = -110 y = -100 shape="001_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][font size = 28]
+//[quake target = ".bln" power = 3 time = 0.2]
+あとの試合を考えて[r]
+温存してんな？[p]
+
+
+*04
+//-------------------------------------------------------------------------------
+//  フロスト
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_068_002"]
+
+[character x = -290 y = -140 storage = "00550/idl_side_p_01" scale = 1.2 action = "fadein" time = 0.1]
+
+
+
+[balloon x=120 y=100 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+わたしが[r]
+本当の最終形態を[r]
+隠していたのは…[p]
+
+[balloon x=120 y=-100 shape="002_03" scale = 1 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+[quake target =".bln" power = 3 time = 0.2]
+あなたの言うように[r]
+温存だとか[r]
+そんな理由ではありません！[p]
+
+[se storage = "3025"]
+//点滅
+[balloon shape="008_02" x = 140 y = -30 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+//[balloon shape="008_02" x = 140 y = -30 scale = 50 action = "fadein" time = 0.1]
+//[wait time = 0.3]
+//[clear target = ".bln"]
+
+//フェードアウト（フェードアウトするコマ）
+[balloon x=130 y=40 shape="008_02" scale = 50.0 action = "fadein" time = 0.3]
+[wait time = 0.5]
+
+
+*05
+//-------------------------------------------------------------------------------
+//  フロスト（最終形態）
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="S0001" bg = "bg_068_001"]
+
+[character x = 0 y = 20 storage = "00551/card_01" scale = 1.4 action = "fadein" time = 0.1]
+
+//フェードイン（フェードインするコマ）
+[balloon x=130 y=40 shape="008_02" scale = 50]
+[wait time = 0.5]
+[fadeout target = ".bln" time = 1.5]
+[wait_anim target=".bln"]
+
+
+[balloon x=-120 y=450 shape="002_01" scale = 1 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+最終形態は[r]
+パワーの制御がむずかしい…[p]
+
+[balloon x=-85 y=-270 shape="002_03" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+悟空さん[r]
+あなたならこの形態さえも[r]
+受け止めてくれるような[r]
+気がします[p]
+
+
+
+*06
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0003L" bg = "bg_068_001"]
+
+
+[balloon shape="003_01" x = 0 y = 40 scale = 1.6 action = "fadein" time = 0.1]
+[font size = 14]
+//[quake target =".bln" power = 3 time = 0.2]
+[wait_anim target=".bln"]
+最終形態に変身した[r]
+フロストと悟空の闘い…[r]
+　[r]
+試合は悟空が優勢と[r]
+思われたが…[r]
+闘いの最中[r]
+突然 異変が起きた悟空は[r]
+フロストの攻撃を受け[r]
+なんと場外負けに[r]
+なってしまう…[p]
+
+*07
+//-------------------------------------------------------------------------------
+//  ウイス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_068_003"]
+
+[character x = 200 y = -240 storage = "00243/idl_side_e_01" scale = 1.7 action = "fadein" time = 0.1]
+
+[balloon x=-110 y=100 shape="001_02" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+あらら…[r]
+負けてしまいましたねえ[p]
+
+
+*08
+//-------------------------------------------------------------------------------
+//  ビルス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_068_003"]
+
+
+[character x = 210 y = -260 storage = "00242/heapup_e_01" scale = 1.4 action = "fadein" time = 0.1]
+
+[balloon x=-120 y=70 shape="004_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+なにやってるんだ…[r]
+あのバカモノが！！[p]
+
+
+*09
+//-------------------------------------------------------------------------------
+//  ベジータ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_068_001"]
+
+
+[character x = 170 y = -130 storage = "00245/idl_side_e_01" scale = 1.9 action = "fadein" time = 0.1]
+
+[balloon x = -130 y = 65 shape="002_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][font size = 28]
+//[quake target = ".bln" power = 3 time = 0.2]
+カカロットが……！？
+[p]
+
+//-------------------------------------------------------------------------------
+[stopbgm]

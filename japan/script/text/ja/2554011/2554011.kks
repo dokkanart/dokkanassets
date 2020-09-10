@@ -1,0 +1,32 @@
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+//[bgm storage = "026"]
+
+*001
+//-------------------------------------------------------------------------------
+//  ピッコロ
+//-------------------------------------------------------------------------------
+//[se storage = "3022"]
+[coma shape="S0001" bg = "bg_000_004"]
+
+[character id = "pico" x=-10 y=60 storage = "00010/card_09" scale = 0.95 action = "fadein" time = 0.1] 
+
+[balloon x=-140 y=485 shape="002_01" scale = 0.65 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 44]
+//[quake target =".bln" power = 3 time = 0.2]
+上等だ…！
+[p]
+
+[balloon x=120 y=-400 shape="002_03" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 40]
+//[quake target =".bln" power = 3 time = 0.2]
+相手に[r]
+なってやろう
+[p]
+
+//[stopbgm]

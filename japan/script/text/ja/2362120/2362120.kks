@@ -1,0 +1,143 @@
+*start|スタート
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "043"]
+
+*01
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0002R" bg = "bg_000_014"]
+
+[balloon x=0 y=0 shape="003_02" scale = 1.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 14]
+//[quake target =".bln" power = 3 time = 0.2]
+フリーザの限界を悟った[r]
+悟空は[r]
+闘いに見切りをつける[r]
+　[r]
+しかし [r]
+負けを認めない[r]
+フリーザは再び[r]
+悟空に攻撃を仕掛ける…！
+[p]
+
+*02
+//-------------------------------------------------------------------------------
+//  フリーザ（フルパワー）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_018"]
+
+[character x=-215 y=-170 storage = "00349/card_01" scale = 0.9 action = "fadein" time = 0.1]
+[quake target =".chara" power = 8 time = 0.4]
+
+[balloon x=120 y=50 shape="007_01" scale = 0.8 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 7 time = 0.2]
+オレが[r]
+負けるかーっ！！
+[p]
+
+*03
+//-------------------------------------------------------------------------------
+//  孫悟空
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0003R" bg = "bg_000_018"]
+
+
+
+[character x=-250 y=-120 storage = "00349/card_01" scale = 0.3 action = "fadein" time = 0.1]
+
+//悟空
+//[character x=200 y=-80 storage = "00281/heapup_back_e_01" scale = 1.2 angle = 0 action = "fadein" time = 0.1]
+[character id = "gok" x=240 y=-110 storage = "00003/heapup_back_p_03" scale = 1.2 angle = 0 action = "fadein" time = 0.1]
+[flip target ="gok" h=1]
+
+
+
+
+
+//[lwfobject id = "kaki1" storage="kakimoji:ef_020" in="04" x=180 y=-190 scale = 1.8]
+//[quake target = "kaki1" power = 15 time = 0.4]
+
+//[character id ="goku1" x=160 y=-290 storage = "00300/card_04" scale = 1.2 action = "fadein" time = 0.1]
+//[character id ="goku1" x=160 y=-350 storage = "00300/card_04" scale = 1.2 action = "fadein" time = 0.1]
+//[character id ="goku1" x=220 y=-110 storage = "00003/idl_side_e_08" scale = 1.2 action = "fadein" time = 0.1]
+
+//[character id = "kyabe01" x = 220 y = -200 storage = "00552/idl_side_p_01" scale = 1.2 action = "fadein" time = 0.1]
+//[flip target ="kyabe01" h=1]
+
+[balloon x=-100 y=80 shape="004_03" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+どうしようもねえ[r]
+バカなやつだ……
+[p]
+
+[balloon x=30 y=-95 shape="004_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+オラは[r]
+最後のチャンスを[r]
+あたえてやったんだぞ…
+[p]
+
+//[fadeout target = "goku1" time = 0.1]
+//[se storage = "50"]
+
+//[character id = "ss" x = 200 y = -180 storage = "99999/supersaiyan" scale = 0.8 action = "fadein" time = 0.1]
+//[quake target = "ss" power = 10 time = 0.4]
+
+//コメント：悟空・原作は上半身裸の超サイヤ人状態だが、画像がないので通常悟空溜めを使用
+//[character id = "gok2" x = 200 y = -140 storage = "00300/SR_idl_side_e_01" scale = 1.25 action = "fadein" time = 0.1]
+//[quake target = "gok2" power = 7 time = 0.4]
+
+//[lwfobject id = "kaki1" storage="kakimoji:ef_020" in="04" x=180 y=-190 scale = 1.8]
+//[quake target = "kaki1" power = 15 time = 0.4]
+
+// 空のフキダシ（セリフがないコマを送るために使用）
+//[balloon x = 0 y = 0 shape="002_01" scale = 0]
+//[p]
+
+[se storage = "3025"]
+//点滅
+[balloon shape="008_02" x = 0 y = 0 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+[balloon shape="008_02" x = 0 y = 0 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+
+
+*04
+//-------------------------------------------------------------------------------
+//  孫悟空
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_000_018"]
+
+[lwfobject id = "kaki1" storage="kakimoji:ef_020" x=0 y=-250 scale = 2.2 action = "fadein" time = 0.1]
+[quake target = "kaki1" power = 15 time = 0.4]
+
+[character id ="ss" x=0 y=-320 storage = "99999/supersaiyan" scale = 1.2 action = "expand" time = 0.1]
+[quake target = "ss" power = 12 time = 0.4]
+
+[character id ="goku1" x=30 y=-340 storage = "00300/card_04" scale = 1.2 action = "fadein" time = 0.1]
+[quake target = "goku1" power = 6 time = 0.4]
+
+
+// 空のフキダシ（セリフがないコマを送るために使用）
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+
+//-------------------------------------------------------------------------------
+[stopbgm]

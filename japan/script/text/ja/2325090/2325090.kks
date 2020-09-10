@@ -1,0 +1,106 @@
+
+
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "005"]
+
+
+*01
+//-------------------------------------------------------------------------------
+//  ビルス
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+
+
+[coma shape="S0001" bg = "bg_068_003"]
+
+[character x = -200 y = 130 storage = "00229/card_001" scale = 0.6 action = "fadein" time = 0.1]
+
+[character x = -60 y = 0 storage = "00010/card_04" scale = 0.6 action = "fadein" time = 0.1]
+
+[character x = -240 y = -30 storage = "00245/card_01" scale = 0.6 action = "fadein" time = 0.1]
+
+[character x = -90 y = -100 storage = "00244/card_01" scale = 0.8 action = "fadein" time = 0.1]
+
+[character x = 150 y = 0 storage = "00242/card_03" scale = 1.3 action = "fadein" time = 0.1]
+
+
+
+[wait time = 0.7]
+
+[balloon x=-130 y=430 shape="001_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+悟空…ベジータ…[r]
+ピッコロ…ブウ……[p]
+
+[balloon x=-120 y=-350 shape="001_03" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+[quake target =".bln" power = 3 time = 0.2]
+どうだ！[r]
+これがボクの第７宇宙の[r]
+最強の戦士たちだ！！[p]
+
+
+*02
+//-------------------------------------------------------------------------------
+//  悟空
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_068_001"]
+
+[character x = -230 y = -120 storage = "00244/idl_side_p_01" scale = 1.7 action = "fadein" time = 0.1]
+
+[balloon x = 130 y = 100 shape="001_03" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target = ".bln" power = 3 time = 0.2]
+あれ？[r]
+ビルスさま…[r]
+モナカはどうしたんだ？[p]
+
+[balloon x = 130 y = -100 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][font size = 28]
+//[quake target = ".bln" power = 3 time = 0.2]
+モナカがいねえと[r]
+最強とは言えねえんじゃ[r]
+ねえか？[p]
+
+
+*03
+//-------------------------------------------------------------------------------
+//  ビルス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_068_003"]
+
+[character x = 210 y = -370 storage = "00242/card_03" scale = 1.4 action = "fadein" time = 0.1]
+[character id = "ase1" x = 220 y = 60 storage = "99999/ase" scale = 0.6 action = "fadein" time = 0.5]
+[move target ="ase1" y=40 time = 0.7]
+
+
+[balloon x=-100 y=80 shape="004_01" scale = 1 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+[quake target =".bln" power = 3 time = 0.2]
+モ…モナカが闘えば[r]
+必要以上に相手を[r]
+傷つけてしまう恐れがある！[p]
+
+[balloon x=-130 y=-190 shape="004_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+こ…今回は[r]
+モナカが出るまでも[r]
+ないだろう…！[p]
+
+//-------------------------------------------------------------------------------
+[stopbgm]
+
+

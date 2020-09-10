@@ -1,0 +1,54 @@
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "003"]
+
+*001
+//-------------------------------------------------------------------------------
+//  ターレス
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_010"]
+
+[character x = -240 y = -200 storage = "00298/heapup_p_01" scale = 1.7 action = "fadein" time = 0.1]
+
+[balloon x=120 y=120 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+な…[r]
+なんだこいつは…！？
+[p]
+
+[balloon x=130 y=-90 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+戦闘力がどんどん[r]
+跳ね上がっていく…！
+[p]
+
+*002
+//-------------------------------------------------------------------------------
+//  ターレス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002L" bg = "bg_000_010"]
+
+[character x = -200 y = -140 storage = "00298/idl_side_p_01" scale = 1.6 action = "fadein" time = 0.1]
+
+[balloon x=145 y=90 shape="002_01" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+神精樹の実が熟れるまで[r]
+この星の制圧は後回しだ…
+[p]
+
+[balloon x=130 y=40 shape="008_03" scale = 50.0 action = "fadein" time = 0.5]
+[wait time = 3.5]
+
+//-------------------------------------------------------------------------------
+[stopbgm]

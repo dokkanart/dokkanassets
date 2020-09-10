@@ -1,0 +1,34 @@
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "012"]
+
+*001
+//-------------------------------------------------------------------------------
+//  孫悟空（少年期）
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+
+[coma shape="N0002L" bg = "bg_000_004"]
+
+[character x=-170 y=-25 storage = "00261/card_01" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon shape="001_03" x = 120 y = 240 scale = 0.9 action = "fadein" time = 0.1]
+[font size = 28]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 3 time = 0.2]
+オッス！[r]
+おめえ強そうだなあ
+[p]
+
+[balloon shape="001_01" x = 120 y = -150 scale = 0.9 action = "fadein" time = 0.1]
+[font size = 28]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 3 time = 0.2]
+オラと[r]
+闘ってくれねえか？
+[p]
+
+[stopbgm]

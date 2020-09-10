@@ -1,0 +1,291 @@
+*start|スタート
+//"ステージ1ゴール"
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "012"]
+
+*001
+//-------------------------------------------------------------------------------
+//  孫悟空(少年期)
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_016"]
+
+[character x = 200 y = -60 storage = "90003/gokou_03" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon shape="001_03" x = -120 y = 50 scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+どうだ？[r]
+クリリン！
+[p]
+
+*002
+//-------------------------------------------------------------------------------
+//  クリリン(少年期)
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_016"]
+
+//[character x = -200 y = -70 storage = "00270/heapup_e_02" scale = 1.0 action = "fadein" time = 0.1]
+[character x = -190 y = -70 storage = "00270/card_01" scale = 0.95 action = "fadein" time = 0.1]
+
+[balloon x=120 y=90 shape="001_02" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+あら〜…[r]
+オレたち いつのまにか[r]
+ものすごく[r]
+鍛えられてたんだな…
+[p]
+
+[balloon x=130 y=-110 shape="001_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+よ〜し[r]
+自信が出てきたぞ！
+[p]
+
+[bgm storage = "004"]
+
+*003
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0004R" bg = "bg_000_083"]
+
+
+
+[balloon x=0 y=0 shape="003_02" scale = 1.5 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 16]
+//[quake target =".bln" power = 3 time = 0.2]
+その頃[r]
+ミーファン帝国では…[r]
+　[r]
+幼き皇帝の餃子が[r]
+大切にしていた[r]
+ランランが[r]
+姿を消してしまう[r]
+という事件が[r]起きていた…
+[p]
+
+
+
+*004
+//-------------------------------------------------------------------------------
+//  鶴仙人
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_083"]
+
+//[character x = -200 y = -100 storage = "00065/idl_side_p_02" scale = 1.4 action = "fadein" time = 0.1]
+
+[character x = -175 y = -115 storage = "00065/side_p_03" scale = 1.1 action = "fadein" time = 0.1]
+
+[balloon x=110 y=120 shape="002_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+これほど探しても[r]
+見つからないところを[r]
+みますと…
+[p]
+
+[balloon x=120 y=-100 shape="002_03" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+ランランさまは もはや[r]
+我々の手の[r]届かないところへ[r]
+姿を隠されたのでは[r]ないかと…
+[p]
+
+*005
+//-------------------------------------------------------------------------------
+//  餃子
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_083"]
+
+[character x = 190 y = -70 storage = "90003/chaoz_01" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon shape="004_02" x = -120 y = 50 scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+いったい誰が…
+[p]
+
+*006
+//-------------------------------------------------------------------------------
+//  鶴仙人
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_083"]
+
+[character x = -175 y = -115 storage = "00065/side_p_03" scale = 1.1 action = "fadein" time = 0.1]
+
+[balloon x=120 y=60 shape="002_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+ひとつだけ[r]
+必ず捜しだせる[r]
+方法があります
+[p]
+
+*007
+//-------------------------------------------------------------------------------
+//  餃子
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_083"]
+
+[character x = 190 y = -70 storage = "90003/chaoz_01" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon shape="001_03" x = -100 y = 70 scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+え！？[r]
+どんな？
+[p]
+
+*008
+//-------------------------------------------------------------------------------
+//  鶴仙人
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_083"]
+
+[character x = -175 y = -115 storage = "00065/side_p_03" scale = 1.1 action = "fadein" time = 0.1]
+
+[balloon x=120 y=60 shape="002_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+神龍に頼むことです
+[p]
+
+*009
+//-------------------------------------------------------------------------------
+//  餃子
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_083"]
+
+[character x = 190 y = -70 storage = "90003/chaoz_01" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon shape="001_03" x = -100 y = 70 scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+シェンロン？
+[p]
+
+*010
+//-------------------------------------------------------------------------------
+//  鶴仙人
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_083"]
+
+[character x = -175 y = -115 storage = "00065/side_p_03" scale = 1.1 action = "fadein" time = 0.1]
+
+[balloon x=110 y=85 shape="002_03" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+この世にはななつの[r]
+ドラゴンボールという[r]球があって[r]
+それらを皆集めると神龍…
+[p]
+
+[balloon x=105 y=-110 shape="002_01" scale = 1.05 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 22]
+//[quake target =".bln" power = 3 time = 0.2]
+…つまり神様の龍が出てきて[r]
+どんな願いもひとつだけ[r]
+聞いてくれると[r]
+言い伝えられております
+[p]
+
+*011
+//-------------------------------------------------------------------------------
+//  餃子
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_083"]
+
+[character x = 190 y = -70 storage = "90003/chaoz_01" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon shape="001_03" x = -100 y = 90 scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+わぁ すごい！
+[p]
+
+[balloon x=-110 y=-100 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+じゃあ[r]
+ドラゴンボールを集めて[r]
+神龍にお願いすれば…
+[p]
+
+*012
+//-------------------------------------------------------------------------------
+//  鶴仙人
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_083"]
+
+[character x = -175 y = -115 storage = "00065/side_p_03" scale = 1.1 action = "fadein" time = 0.1]
+
+[balloon x=120 y=40 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+はい[r]
+ランランさまも[r]
+お戻りになられる[r]でしょう
+[p]
+
+*013
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_000_014"]
+
+//[character x = -120 y = -100 storage = "00025/atc_down_p_01" scale = 1.6 action = "fadein" time = 0.1]
+
+[balloon x=0 y=-30 shape="003_02" scale = 1.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 13]
+//[quake target =".bln" power = 3 time = 0.2]
+神龍に願いを[r]叶えてもらうことを[r]
+皇帝に進言する鶴仙人…[r]
+　[r]
+こうして[r]
+ミーファン帝国の軍隊は[r]
+世界各地に散らばった[r]
+ドラゴンボールを求めて[r]
+動き出した[r]
+　[r]
+…だが それは[r]
+鶴仙人たちの邪悪な野望の[r]
+第一歩だったのだ…
+[p]
+
+//-------------------------------------------------------------------------------
+[stopbgm]

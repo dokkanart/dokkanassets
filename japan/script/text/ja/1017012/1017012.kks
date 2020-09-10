@@ -1,0 +1,152 @@
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "013"]
+
+*001
+//-------------------------------------------------------------------------------
+//  フリーザ
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0003L" bg = "bg_004_001"]
+
+[character x = 250 y = -130 storage = "00247/heapup_p_01" scale = 0.5 action = "fadein" time = 0.1]
+
+
+[character x=150 y=-80 storage = "00016/idl_side_p_02" scale = 0.7 action =  "fadein" time = 0.1]
+
+
+//ギニュー
+[character x = -270 y = -60 storage = "00017/idl_side_p_02" scale = 1.0 action = "fadein" time = 0.1]
+
+//フリーザ
+[character x = -30 y = 0 storage = "00058/idl_side_p_01" scale = 0.9 action = "fadein" time = 0.1]
+
+[wait time = 0.7]
+
+[balloon x=160 y=250 shape="002_01" scale = 0.8 action = "fadein" time = 0.1]
+[font size = 32]
+[wait_anim target=".bln"]
+//[quake target =".bln" power = 3 time = 0.2]
+おやおや…
+[p]
+
+
+*002
+//-------------------------------------------------------------------------------
+//  トランクス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_004_001"]
+
+[character x = 210 y = -200 storage = "90000/wait_right_anger_strong" scale = 1.2 action = "fadein" time = 0.1]
+
+
+[balloon x=-100 y=100 shape="001_01" scale = 0.9 action = "fadein" time = 0.1]
+[font size = 28]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 3 time = 0.2]
+フ…フリーザ…！！[r]
+本当に生きていたのか…[p]
+
+
+*003
+//-------------------------------------------------------------------------------
+//  フリーザ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_004_001"]
+
+
+[character x=-190 y=-90 storage = "00058/idl_side_p_01" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon x=130 y=120 shape="002_02" scale = 0.9 action = "fadein" time = 0.1]
+[font size = 28]
+[wait_anim target=".bln"]
+//[quake target =".bln" power = 3 time = 0.2]
+ふふ…[r]
+あの程度でわたしが[r]
+死ぬと思ったんですか？
+[p]
+
+[balloon x=110 y=-90 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[font size = 28]
+[wait_anim target=".bln"]
+//[quake target =".bln" power = 3 time = 0.2]
+わざわざ こちらから[r]
+出向いてあげたんです…[r]
+感謝しなさいよ？[p]
+
+*004
+//-------------------------------------------------------------------------------
+//  トランクス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_004_001"]
+
+
+[character x = 260 y = -110 storage = "90000/stance_right_anger_strong" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x=-120 y=100 shape="006_01" scale = 0.8 action = "expand" time = 0.1]
+[font size = 32]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 7 time = 0.2]
+今度こそ[r]
+倒してやるぞ…！[r]
+フリーザ！！[p]
+
+
+*005
+//-------------------------------------------------------------------------------
+//  フリーザ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_004_001"]
+
+
+[character x=-190 y=-90 storage = "00058/idl_side_p_01" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon x=120 y=110 shape="002_02" scale = 0.9 action = "fadein" time = 0.1]
+[font size = 28]
+[wait_anim target=".bln"]
+//[quake target =".bln" power = 3 time = 0.2]
+ほっほっほ…[r]
+その大口がどこまで[r]
+続きますかねえ…[p]
+
+[balloon x=100 y=-90 shape="002_01" scale = 1.0 action = "fadein" time = 0.1]
+[font size = 24]
+[wait_anim target=".bln"]
+//[quake target =".bln" power = 3 time = 0.2]
+フリーザ軍も この前より[r]
+パワーアップしていますよ？[r]
+ねえ ソルベさん？[p]
+
+
+*006
+//-------------------------------------------------------------------------------
+//  ソルベ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002L" bg = "bg_004_001"]
+
+[character x = -180 y = -80 storage = "00247/heapup_p_01" scale = 1.6 action = "fadein" time = 0.1]
+
+[balloon x=130 y=100 shape="002_03" scale = 0.8 action = "fadein" time = 0.1]
+[font size = 32]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 3 time = 0.2]
+は…はい！[r]
+フリーザさま！[p]
+
+[balloon x=100 y=-170 shape="002_02" scale = 0.9 action = "fadein" time = 0.1]
+[font size = 28]
+[wait_anim target=".bln"]
+//[quake target =".bln" power = 3 time = 0.2]
+こ…ここで[r]
+フリーザさまのお役に[r]
+立たなければ…！[p]
+
+[stopbgm]

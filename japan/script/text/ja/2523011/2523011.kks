@@ -1,0 +1,130 @@
+
+
+*start|スタート
+//2523011	 ステージ1 ラウンド２開始
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+//[bgm storage = "03"]
+
+*01
+//----------------------------------------------------------
+//ブラック（超サイヤ人ロゼ）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+
+[coma shape="N0004R" bg = "bg_000_014"]
+
+[character x = -30 y = -470 storage = "00654/card_02" scale = 2.3 action = "fadein" time = 0.1]
+
+[balloon x=-120 y=100 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+無知ゆえに[r]
+神を冒とくし続ける[r]
+人間どもに…[p]
+
+[balloon x=-120 y=-90 shape="002_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+神の真の力を[r]
+見せるときだ[p]
+
+[se storage = "48"]
+
+[character id = "ki" x = 280 y = -48 storage = "99999/04_syougeki" scale = 0.8 angle = 0 action = "expand" time = 0.5]
+[wait time = 0.2]
+[fadeout target = "ki" time = 0.3]
+
+
+[wait_anim target="ki"]
+
+// 空のフキダシ（セリフがないコマを送るために使用）
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+*02
+//-------------------------------------------------------------------------------
+//  ザマス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+
+[coma shape="N0004L" bg = "bg_000_014"]
+
+[character x=-20 y=-395 storage = "00660/card_02" scale = 2.6 action = "fadein" time = 0.1]
+
+[balloon x=130 y=80 shape="002_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+機は熟した…[r]
+ということか[p]
+
+[se storage = "48"]
+
+[character id = "ki" x = 14 y = -80 storage = "99999/04_syougeki" scale = 0.8 angle = 0 action = "expand" time = 0.5]
+[wait time = 0.2]
+[fadeout target = "ki" time = 0.3]
+
+
+[wait_anim target="ki"]
+
+
+// 空のフキダシ（セリフがないコマを送るために使用）
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+
+[se storage = "3025"]
+//点滅
+[balloon shape="008_02" x = 140 y = -30 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+//[balloon shape="008_02" x = 140 y = -30 scale = 50 action = "fadein" time = 0.1]
+//[wait time = 0.3]
+//[clear target = ".bln"]
+
+//フェードアウト（フェードアウトするコマ）
+[balloon x=130 y=40 shape="008_02" scale = 50.0 action = "fadein" time = 0.5]
+[wait time = 0.7]
+
+*03
+//-------------------------------------------------------------------------------
+//  合体ザマス
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+
+[coma shape="S0001" bg = "bg_073_001"]
+
+[character x = 0 y = 30 storage = "00661/card_02" scale = 1.2 action = "fadein" time = 0.1]
+[move target =".chara" y=0 time = 5]
+
+
+//フェードイン（フェードインするコマ）
+[balloon x=130 y=40 shape="008_02" scale = 50]
+[wait time = 1]
+[fadeout target = ".bln" time = 2]
+[wait_anim target=".bln"]
+
+
+[balloon x=-130 y=450 shape="002_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+我が姿は正義…[r]
+我が姿は世界……[r]
+崇めよ！ 讚えよ！！[p]
+
+[balloon x= 120 y=-400 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".chara" power = 9 time = 0.2]
+[quake target =".bln" power = 3 time = 0.2]
+この気高くも美しい[r]
+不死にして最強の神…[r]
+ザマスを！！[p]
+
+//-------------------------------------------------------------------------------
+//[stopbgm]

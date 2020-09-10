@@ -1,0 +1,346 @@
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+//[bgm storage = "012"]
+
+
+*01
+//-------------------------------------------------------------------------------
+//  ミスター・ポポ
+//-------------------------------------------------------------------------------
+
+//[se storage = "04"]
+[coma shape="S0001" bg = "bg_000_031"]
+
+[character x = -130 y = 0 storage = "00357/card_01" scale = 1.1 action = "fadein" time = 0.1]
+
+[wait_anim target=".chara"]
+
+[balloon x=150 y=170 shape="001_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target = ".bln" power = 3 time = 0.2]
+[font size = 32]
+わたし[r]
+ミスター・ポポ[p]
+
+[balloon x=140 y=-190 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target = ".bln" power = 3 time = 0.2]
+[font size = 28]
+よく来たな[r]
+おまえに伝えること[r]
+ある[p]
+
+
+*02
+//-------------------------------------------------------------------------------
+//  ミスター・ポポ
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_030"]
+
+[character x = -190 y = -120 storage = "00357/card_01" scale = 0.9 action = "fadein" time = 0.1]
+
+[balloon x=80 y=130 shape="001_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target = ".bln" power = 3 time = 0.2]
+[font size = 28]
+強くなるためには[r]
+経験値 必要[p]
+
+[balloon x=135 y=-80 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target = ".bln" power = 3 time = 0.2]
+[font size = 28]
+「雲の上のすんげぇ稽古」[r]
+知っているか？[p]
+
+
+
+//---------------------------------------------
+
+[if !$is_cleared]    
+// 達成済みか否かは $is_cleared 変数に入っているので、それを用いて if 分岐します。
+
+//---------------------------------------------
+
+//*explain|任務内容詳細説明    // ラベルを付けておくと、テスターで見やすくなります。
+
+// ******************************************************
+//  ここには、
+//  まだ、このミッションを達成していない場合の展開を記述します。
+// ******************************************************
+
+*explain|任務内容詳細説明
+*03_mitatu
+//-------------------------------------------------------------------------------
+//  神様
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_030"]
+
+[character x = 180 y = -200 storage = "00433/card_01" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x=-130 y=60 shape="001_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target =".bln" power = 3 time = 0.2]
+[font size = 32]
+ミスター・ポポよ[p]
+
+
+
+*04_mitatu
+//-------------------------------------------------------------------------------
+//  ミスター・ポポ
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_030"]
+
+[character x = -190 y = -120 storage = "00357/card_01" scale = 0.9 action = "fadein" time = 0.1]
+
+[balloon x=60 y=120 shape="001_01" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[quake target = ".bln" power = 3 time = 0.2]
+[font size = 40]
+あっ 神様[p]
+
+[balloon x=130 y=-80 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target = ".bln" power = 3 time = 0.2]
+[font size = 28]
+おまえ ラッキー[r]
+神様が教えてくださる[p]
+
+
+*05_mitatu
+//-------------------------------------------------------------------------------
+//  神様
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_030"]
+
+[character x = 180 y = -200 storage = "00433/card_01" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x=-100 y=100 shape="001_02" scale = 1 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target =".bln" power = 3 time = 0.2]
+[font size = 23]
+イベントの[r]
+「雲の上のすんげぇ稽古」[r]
+のバトルに勝利すると[r]
+たくさんの経験値が手に入る[p]
+
+
+[balloon x=-130 y=-110 shape="001_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target =".bln" power = 3 time = 0.2]
+[font size = 28]
+キャラクターのLvを[r]
+上げるのに最適だぞ[p]
+
+*06_mitatu
+//-------------------------------------------------------------------------------
+//  ミスター・ポポ
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_030"]
+
+[character x = -190 y = -120 storage = "00357/card_01" scale = 0.9 action = "fadein" time = 0.1]
+
+[balloon x=110 y=105 shape="001_02" scale = 1 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target = ".bln" power = 3 time = 0.2]
+[font size = 24]
+ただし[r]
+「雲の上のすんげぇ稽古」[r]
+に挑戦できるのは１日１回[p]
+
+[balloon x=125 y=-100 shape="001_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target = ".bln" power = 3 time = 0.2]
+[font size = 28]
+だけど毎日続ければ[r]
+強くなれる[p]
+
+*07_mitatu
+//-------------------------------------------------------------------------------
+//  神様
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_030"]
+
+[character x = 180 y = -200 storage = "00433/card_01" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x=-90 y=120 shape="001_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target =".bln" power = 3 time = 0.2]
+[font size = 28]
+経験値だけではないぞ？[p]
+
+
+[balloon x=-110 y=-100 shape="001_02" scale = 1.05 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target =".bln" power = 3 time = 0.2]
+[font size = 22]
+修業アイテムや覚醒メダル[r]
+サポートアイテムなども[r]
+手に入れることができるのだ[p]
+
+
+*08_mitatu
+//-------------------------------------------------------------------------------
+//  ミスター・ポポ
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0002L" bg = "bg_000_030"]
+
+[character x = -130 y = -120 storage = "00357/card_01" scale = 1.1 action = "fadein" time = 0.1]
+
+[balloon x=145 y=100 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target = ".bln" power = 3 time = 0.2]
+[font size = 28]
+マップ上の[r]
+赤色のカプセルが[r]
+修業アイテム[p]
+
+[balloon x=140 y=-180 shape="001_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target = ".bln" power = 3 time = 0.2]
+[font size = 28]
+今回は[r]
+赤色のカプセルを[r]
+集めていくといい[p]
+
+
+//---------------------------------------------
+[else]
+//*has_been_cleared|すでに達成済み    // ラベルを付けておくと、テスターでチェックしやすくなります。
+
+// ******************************************************
+//  ここには、
+//  すでに、このミッションを達成している場合の展開を記述します。
+// ******************************************************
+
+*has_been_cleared|すでに達成済み
+
+*09
+//-------------------------------------------------------------------------------
+//  神様
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_030"]
+
+[character x = 180 y = -200 storage = "00433/card_01" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x=-100 y=100 shape="001_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target =".bln" power = 3 time = 0.2]
+[font size = 32]
+ミスター・ポポよ[p]
+
+
+[balloon x=-110 y=-100 shape="001_02" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target =".bln" power = 3 time = 0.2]
+[font size = 24]
+その者はすでに[r]
+「雲の上のすんげぇ稽古」[r]
+をクリアしているようだ[p]
+
+
+
+*10
+//-------------------------------------------------------------------------------
+//  ミスター・ポポ
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_030"]
+
+[character x = -190 y = -120 storage = "00357/card_01" scale = 0.9 action = "fadein" time = 0.1]
+
+[balloon x=60 y=120 shape="001_01" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[quake target = ".bln" power = 3 time = 0.2]
+[font size = 40]
+あっ 神様[p]
+
+[balloon x=125 y=-80 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target = ".bln" power = 3 time = 0.2]
+[font size = 28]
+神様[r]
+なんでも知っている[r]
+神様 えらい[p]
+
+
+*11
+//-------------------------------------------------------------------------------
+//  神様
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_030"]
+
+[character x = 180 y = -200 storage = "00433/card_01" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x=-100 y=100 shape="001_02" scale = 1 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target =".bln" power = 3 time = 0.2]
+[font size = 23]
+イベントの[r]
+「雲の上のすんげぇ稽古」では[r]
+たくさんの経験値や[r]
+アイテムが手に入る[p]
+
+
+[balloon x=-110 y=-110 shape="001_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target =".bln" power = 3 time = 0.2]
+[font size = 28]
+だが 挑戦できるのは[r]
+１日1回だけだぞ？[p]
+
+*12
+//-------------------------------------------------------------------------------
+//  ミスター・ポポ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002L" bg = "bg_000_030"]
+
+[character x = -130 y = -120 storage = "00357/card_01" scale = 1.1 action = "fadein" time = 0.1]
+
+[balloon x=125 y=120 shape="001_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target = ".bln" power = 3 time = 0.2]
+[font size = 32]
+毎日続ければ[r]
+強くなれる[p]
+
+[balloon x=150 y=-180 shape="001_01" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target = ".bln" power = 3 time = 0.2]
+[font size = 36]
+これ[r]
+大切なこと[p]
+
+
+[endif]
+*conclusion|結び
+
+//---------------------------------------------
+
+
+
+//[stopbgm]

@@ -1,0 +1,238 @@
+*start|スタート
+//"ステージ1ゴール"
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "004"]
+
+*001
+//-------------------------------------------------------------------------------
+//  グリール
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_084"]
+
+[character x = -220 y = -190 storage = "00937/idl_side_p_01" scale = 1.3 action = "fadein" time = 0.1]
+
+[balloon x=110 y=90 shape="002_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 7 time = 0.2]
+なんだ[r]
+こいつら…！
+[p]
+
+[balloon x=130 y=-100 shape="002_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+ここは[r]
+いったん退くか…
+[p]
+
+[fadeout target = ".chara" time = 0.7]
+[wait_anim target=".chara"]
+
+// 空のフキダシ（セリフがないコマを送るために使用）
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+*002
+//-------------------------------------------------------------------------------
+//  トランクス（幼年期）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_084"]
+
+[character x = 70 y = -80 storage = "00225/idl_side_e_02" scale = 0.85 action = "fadein" time = 0.1]
+
+[character x=260 y=-90 storage = "00200/idl_side_e_05" scale = 1.1 action = "fadein" time = 0.1]
+
+[balloon shape="001_03" x = -120 y = 80 scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+あ！[r]
+逃げんのか卑怯者！
+[p]
+
+*003
+//-------------------------------------------------------------------------------
+//  ポタージュ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_084"]
+
+[character x = -180 y = -100 storage = "90003/potaju" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon shape="001_02" x = 100 y = 80 scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+おふたりとも[r]
+お強いのですねえ
+[p]
+
+[balloon x=110 y=-110 shape="001_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+一瞬 息が[r]
+止まってしまいました
+[p]
+
+*004
+//-------------------------------------------------------------------------------
+//  トランクス（幼年期）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_084"]
+
+[character x = 70 y = -80 storage = "00225/idl_side_e_02" scale = 0.85 action = "fadein" time = 0.1]
+
+[character x=260 y=-90 storage = "00200/idl_side_e_05" scale = 1.1 action = "fadein" time = 0.1]
+
+[balloon shape="001_02" x = -100 y = 80 scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+あんなやつ[r]
+何百人まとめて[r]
+かかってきても[r]
+へっちゃらさ！
+[p]
+
+[balloon x=-110 y=-110 shape="001_03" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+…で[r]
+あいつは何者だ？
+[p]
+
+*005
+//-------------------------------------------------------------------------------
+//  ポタージュ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_084"]
+
+[character x = -180 y = -100 storage = "90003/potaju" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon shape="001_02" x = 130 y = 30 scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+やつは[r]
+この星に眠る力を[r]
+奪いにきた[r]
+悪党グリール…
+[p]
+
+*006
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_000_024"]
+
+
+
+[balloon x=0 y=0 shape="003_01" scale = 1.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 13]
+//[quake target =".bln" power = 3 time = 0.2]
+ポトフ星に眠る力…[r]
+その名も“超人水”[r]
+　[r]
+それは[r]
+飲めば力が[r]
+何百倍にもなる[r]
+奇跡の水だと[r]
+言い伝えられてきた[r]
+　[r]
+そしてポタージュは[r]
+長年 その封印を[r]
+守ってきたのだが…
+[p]
+
+*008
+//-------------------------------------------------------------------------------
+//  グリール
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_084"]
+
+[wait time = 0.3]
+
+[character x = -220 y = -190 storage = "00937/idl_side_p_01" scale = 1.3 action = "fadein" time = 0.7]
+
+[wait_anim target=".chara"]
+
+[balloon x=120 y=80 shape="002_02" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+これが超人水…[r]
+これで宇宙はオレのもの…[r]
+ふふふふ…
+[p]
+
+[balloon x=130 y=-115 shape="002_03" scale = 0.65 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 44]
+[quake target =".bln" power = 3 time = 0.2]
+…ん！？
+[p]
+
+[se storage = "3025"]
+//点滅
+[balloon shape="008_02" x = 0 y = 0 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+[balloon shape="008_02" x = 0 y = 0 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+
+*009
+//-------------------------------------------------------------------------------
+//  グリール
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0003L" bg = "bg_000_014"]
+
+//[character x = -220 y = -190 storage = "00937/idl_side_p_01" scale = 1.3 action = "fadein" time = 0.1]
+
+[balloon x=0 y=40 shape="007_02" scale = 0.75 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+[quake target =".bln" power = 7 time = 0.2]
+うわああぁぁ！！
+[p]
+
+*010
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_000_024"]
+
+
+
+[balloon x=0 y=0 shape="003_01" scale = 1.5 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 16]
+//[quake target =".bln" power = 3 time = 0.2]
+超人水による[r]
+パワーアップを[r]
+こころみるグリール[r]
+　[r]
+グリールは[r]
+まんまと封印を解き[r]
+超人水を手にするが[r]
+その瞬間[r]
+異変が起き……
+[p]
+
+//-------------------------------------------------------------------------------
+[stopbgm]

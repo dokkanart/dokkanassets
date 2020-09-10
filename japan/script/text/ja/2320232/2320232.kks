@@ -1,0 +1,52 @@
+*start|スタート
+
+//"エリア22ラウンド２開始"
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+//[bgm storage = "012"]
+
+*001
+//-------------------------------------------------------------------------------
+//"スーパーサイヤ人・孫悟空"
+//-------------------------------------------------------------------------------
+//描き文字：シュンッ
+//[se storage = "04"]
+[coma shape="S0001" bg = "bg_004_001"]
+
+//[character x = 230 y = -100 storage = "00008/idl_front_e_01" scale = 0.6 action = "fadein" time = 0.1]
+
+[wait time = 0.7]
+
+[character id = "veg" x=0 y=0 storage = "00003/card_1004340" scale = 1.8 action = "fadein" time = 0.2]
+[quake target = "veg" power = 7 time = 0.4]
+
+[se storage = "3035"]
+
+//シュンッ
+[lwfobject id = "kaki2" storage="kakimoji:ef_012" in="04" x=0 y=-50 scale = 2.5]
+[quake target = "kaki2" power = 15 time = 0.2]
+
+//文字フェードアウト
+[fadeout target = "kaki2" time = 0.7]
+
+[wait_anim target="kaki2"]
+
+[balloon x=-110 y=430 shape="006_01" scale = 0.9 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 7 time = 0.2]
+おめえたちが[r]
+持ってるパワーを[r]
+全部使いきるんだ！
+[p]
+
+[balloon x=140 y=-340 shape="006_02" scale = 0.8 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 7 time = 0.2]
+後はもう[r]
+ねえんだぞ！！
+[p]
+

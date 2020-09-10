@@ -1,0 +1,148 @@
+*start|スタート
+//復讐鬼ベビー編_エリア2：スタート
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "005"]
+
+
+*001
+//-------------------------------------------------------------------------------
+//  悟天：ベビー／ナレーション
+//-------------------------------------------------------------------------------
+//[se storage = "3017"]
+[coma shape="N0003L" bg = "bg_014_001"]
+
+[wait time = 0.7]
+
+[balloon x=0 y=130 shape="003_01" scale = 1.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 14]
+悟天に寄生した[r]
+ベビーは[r]
+ベジータの肉体を[r]
+手に入れるため[r]
+西の都の[r]
+カプセルコーポレーション[r]
+に現れた[r]
+　[r]
+そこでは…[p]
+
+
+*002
+//-------------------------------------------------------------------------------
+//  悟飯
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_014_001"]
+
+[character x = 220 y = -160 storage = "00507/idl_side_e_01" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x=-90 y=70 shape="001_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+よう 悟天[r]
+来てたのか[p]
+
+
+*003
+//-------------------------------------------------------------------------------
+//  悟天：ベビー
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_014_001"]
+
+[character x = -220 y = -170 storage = "00510/idl_side_p_01" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x=110 y=120 shape="002_02" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+おまえが悟飯か…[r]
+悟天より[r]
+強いパワーを感じる[p]
+
+[balloon x=120 y=-100 shape="002_03" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+ベジータの肉体を[r]
+手に入れるには[r]
+こいつに寄生しなおした[r]
+ほうがいいな…[p]
+
+
+*004
+//-------------------------------------------------------------------------------
+//  悟飯
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_014_001"]
+
+[character x = 210 y = -110 storage = "00507/heapup_e_01" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x=-70 y=100 shape="001_01" scale = 0.65 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 44]
+[quake target =".bln" power = 3 time = 0.2]
+なに！？[p]
+
+[balloon x=-130 y=-80 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+…おまえ…[r]
+悟天じゃないな！？[p]
+
+
+*005
+//-------------------------------------------------------------------------------
+//  悟天：ベビー
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_014_001"]
+
+[character x = -220 y = -170 storage = "00510/idl_side_p_01" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x=120 y=80 shape="002_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+そうさ…[r]
+オレは今までの[r]
+オレじゃねえ[p]
+
+
+*006
+//-------------------------------------------------------------------------------
+//  悟飯
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_014_001"]
+
+[character x = 210 y = -110 storage = "00507/heapup_e_01" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x=-90 y=80 shape="001_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+…場所を変えよう[p]
+
+
+*007
+//-------------------------------------------------------------------------------
+//  悟天：ベビー
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002L" bg = "bg_014_001"]
+
+[character x = -180 y = -160 storage = "00510/heapup_p_01" scale = 1.4 action = "fadein" time = 0.1]
+
+[balloon x=120 y=100 shape="002_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+のぞむところさ…！[p]
+
+[stopbgm]

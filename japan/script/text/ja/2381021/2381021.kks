@@ -1,0 +1,56 @@
+//エリア２ゴール
+
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+//[bgm storage = "011"]
+
+*coma1
+//-------------------------------------------------------------------------------
+//  サイヤマン１号
+//-------------------------------------------------------------------------------
+//[se storage = "3022"]
+[coma shape="S0001" bg = "bg_019_001"]
+
+[character x=-110 y=-10-15 storage = "00323/card_003" scale = 0.8 action = "fadein" time = 0.1]
+
+[character x=115 y=-10-15 storage = "00366/card_09" scale = 0.85 action = "fadein" time = 0.1]
+
+[balloon x=0 y=440 shape="006_01" scale = 0.9 action = "expand" time = 0.1]
+[wait_anim target=".bln"][font size = 28]
+[quake target =".bln" power = 7 time = 0.2]
+グレートサイヤマンが[r]
+いるかぎり…この世に[r]
+悪はさかえない！！[p]
+
+*coma2
+//-------------------------------------------------------------------------------
+//  サタン
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002L" bg = "bg_019_001"]
+
+
+[character x = -150 y = -100-20 storage = "00038/card_06" scale = 0.7 action = "fadein" time = 0.1]
+
+[character x = -125 y = 110-20 storage = "99999/ase" scale = 0.35 action = "fadein" time = 0.1]
+
+
+
+[balloon shape="004_03" x = 140 y = 60 scale = 0.9 action = "fadein" time = 0.1]
+[font size = 28]
+[wait_anim target=".bln"]
+や…やるではないか[r]
+グレートサイヤマン…
+[p]
+
+[balloon shape="004_02" x = 140 y = -210 scale = 0.9 action = "fadein" time = 0.1]
+[font size = 28]
+[wait_anim target=".bln"]
+まあ わたしには[r]
+まだまだ及ばないがな…
+[p]
+
+//[stopbgm]

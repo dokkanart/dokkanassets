@@ -1,0 +1,108 @@
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  
+//-------------------------------------------------------------------------------
+[bgm storage = "042"]
+
+*001
+//-------------------------------------------------------------------------------
+//  チルド
+//-------------------------------------------------------------------------------
+[coma shape="S0001" bg = "bg_000_101"]
+
+[character x=0 y=0 storage = "00083/card_01" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x=-130 y=430 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+今日からこの星は[r]
+このチルドさまの[r]
+ものだよ…！
+[p]
+
+[balloon x=130 y=-260 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+さあ[r]
+皆殺しの時間だ…！！
+[p]
+
+*002
+//-------------------------------------------------------------------------------
+//  バーダック
+//-------------------------------------------------------------------------------
+[se storage = "03"]
+[coma shape="N0001R" bg = "bg_000_101"]
+
+//[character x=240 y=-155 storage = "00067/idl_side_e_01" scale = 1.4 action = "fadein" time = 0.1]
+
+[character x=230 y=-130 storage = "00067/heapup_e_01" scale = 1.25 action = "fadein" time = 0.1]
+
+//描き文字：！！
+[lwfobject id = "kaki1" storage="kakimoji:ef_001" x=-10 y=90 scale = 2.5 angle = -10 action = "fadein" time = 0.1]
+[quake target = "kaki1" power = 10 time = 0.4]
+
+// 空のフキダシ（セリフがないコマを送るために使用）
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+*003
+//-------------------------------------------------------------------------------
+//  チルドの姿とフリーザがオーバーラップ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_101"]
+
+[character id = "ch1"x=-250 y=-120 storage = "00083/idl_side_p_01" scale = 1.4 action = "fadein" time = 0.1]
+
+[wait time = 0.3]
+
+//--------------------------------
+//old
+//[character id = "flz" x=-165 y=-165 storage = "00005/idl_side_p_02" scale = 2.2 action = "fadein" time = 1.2]
+
+//[wait time = 1.0]
+
+//[fadeout target = "flz" time = 1.2]
+
+//[wait_anim target="flz"]
+//--------------------------------
+
+[clear target = "ch2"]
+
+[se storage = "48"]
+//[se storage = "10"]
+
+[character id = "f"x=-140 y=-200 storage = "00005/atc_sp01_e_03" scale = 1.2 action = "fade:75" time = 0.3]
+[flip target ="f" h=1]
+[move target ="f" x=-40 time = 0.7 ease="Out:2.5"]
+
+[character id = "ch2"x=-250 y=-120 storage = "00083/idl_side_p_01" scale = 1.4]
+
+
+[wait_anim target="f"]
+
+// 空のフキダシ（セリフがないコマを送るために使用）
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+*004
+//-------------------------------------------------------------------------------
+//  バーダック
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_000_101"]
+
+[character x=195 y=-160 storage = "00067/idl_side_e_01" scale = 1.5 action = "fadein" time = 0.1]
+
+
+[balloon x=-150 y=70 shape="004_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+フリーザ……！？
+[p]
+
+[stopbgm]

@@ -1,0 +1,91 @@
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "008"]
+
+
+*01
+//-------------------------------------------------------------------------------
+//  セル
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0001L" bg = "bg_014_001"]
+
+[character x = -250 y = -80 storage = "00006/idl_side_p_02" scale = 1.5 action = "fadein" time = 0.1]
+
+
+[balloon x=130 y=110 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+なるほど…[r]
+たしかに素晴らしい[r]パワーだ…[p]
+
+[balloon x=150 y=-90 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//ますます
+さらに
+ほしくなったぞ[r]
+おまえたちの強力な[r]生体エネルギーを…！[p]
+
+*02
+//-------------------------------------------------------------------------------
+//  トランクス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_014_001"]
+
+[character x=210 y=-200 storage = "90000/wait_right_anger_strong" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x=-100 y=110 shape="004_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+吸収でここまで[r]パワーアップしている[r]なんて…！
+[p]
+
+[balloon x=-80 y=-100 shape="004_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+いったい何人の命を[r]犠牲にしたんだ…！！
+[p]
+
+//元シナリオ
+//す、すばやい[r]ヤツだ…！！
+//ここまでパワーアップ[r]しているなんて…！[r]
+//いったい何人の命を[r]犠牲にしたんだ…！！
+
+
+*03
+//-------------------------------------------------------------------------------
+//  セル
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002L" bg = "bg_014_001"]
+
+
+[character x = -180 y = -140 storage = "00006/heapup_p_01" scale = 1.8 action = "fadein" time = 0.1]
+
+[balloon x=140 y=100 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+尾を警戒して[r]
+思い切った攻撃が[r]
+できないようだな…[p]
+
+[quake target = ".chara" power = 6 time = 0.3]
+
+[balloon x=130 y=-200 shape="007_02" scale = 0.9 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[quake target = ".bln" power = 7 time = 0.2]
+[font size = 28]
+ではそろそろ[r]
+吸収させてもらうぞ！[p]
+
+
+
+
+
+
+[stopbgm]

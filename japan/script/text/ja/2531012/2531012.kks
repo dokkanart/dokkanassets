@@ -1,0 +1,92 @@
+*start|スタート
+
+////史上最凶の進化 ラウンド２開始
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+//[bgm storage = "012"]
+
+*001
+//-------------------------------------------------------------------------------
+//  超サイヤ人ブロリー
+//-------------------------------------------------------------------------------
+[se storage = "3024"]
+[coma shape="S0001" bg = "bg_070_001"]
+
+[lwfobject id = "kaki1" storage="kakimoji:ef_020" in="04" x=-0 y=-150 scale = 3.0 action = "fadein" time = 0.1]
+[quake target = "kaki1" power = 15 time = 0.4]
+
+[character id = "ss" x = -0 y = 80 storage = "99999/supersaiyan" scale = 1.5 action = "fadein" time = 0.1]
+[quake target = "ss" power = 5 time = 0.4]
+ 
+[character id = "blo" x = -0 y = -0 storage = "00255/card_01" scale = 1.5 action = "fadein" time = 0.1]
+[quake target = "blo" power = 5 time = 0.4]
+ 
+[balloon x=-160 y=480 shape="006_02" scale = 0.8 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 7 time = 0.2]
+カカロットォォ…！
+[p]
+
+*002
+//-------------------------------------------------------------------------------
+//  パラガス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_070_001"]
+ 
+[character x = -380 y = -150 storage = "00258/heapup_p_01" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x=120 y=50 shape="007_02" scale = 0.9 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 7 time = 0.2]
+[font size = 28]
+やめろブロリー！！[r]
+やめるんだ！！
+[p]
+
+*003
+//-------------------------------------------------------------------------------
+//  超サイヤ人ブロリー
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0004R" bg = "bg_070_001"]
+
+[lwfobject id = "kaki1" storage="kakimoji:ef_009" in="04" x=190 y=40 scale = 1.5 action = "fadein" time = 0.1]
+[quake target = "kaki1" power = 2 time = 300]
+ 
+[character id = "ss" x = -10 y = -570 storage = "99999/supersaiyan" scale = 1.8 action = "fadein" time = 0.1]
+[quake target ="ss" power = 5 time = 300]
+[character id = "blo1" x = -0 y = -540 storage = "00255/card_01" scale = 2.5 action = "fadein" time = 0.1]
+
+
+ 
+[balloon x=-140 y=120 shape="006_02" scale = 0.9 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 7 time = 0.2]
+うおおおおおお！！
+[p]
+
+*004
+//-------------------------------------------------------------------------------
+//  パラガス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002L" bg = "bg_070_001"]
+ 
+[character x = -380 y = -150 storage = "00258/heapup_p_01" scale = 1.4 action = "fadein" time = 0.1]
+ 
+[balloon x=135 y=130 shape="002_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+まさか…[r]
+オレのコントロールが[r]
+利いていないのか！？
+[p]
+
+
+//[stopbgm]

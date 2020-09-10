@@ -1,0 +1,143 @@
+
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "004"]
+
+//-------------------------------------------------------------------------------
+//  パンブーキン
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_009"]
+
+
+
+//トテッポ
+[character x=-280 y=-100 storage = "00078/idl_side_p_01" scale = 0.85 action = "fadein" time = 0.1]
+
+[character x=-130 y=-160 storage = "00079/idl_side_p_01" scale = 0.9 action = "fadein" time = 0.1]
+
+[wait time =0.7]
+
+[balloon id="radhi1" x=150 y=90 shape="002_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+ふう…[r]
+だいぶ体が[r]
+あったまったぜ
+[p]
+
+
+*001
+//-------------------------------------------------------------------------------
+//  トーマ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_009"]
+
+[character x=-230 y=-200 storage = "00077/idl_side_p_01" scale = 1.5 action = "fadein" time = 0.1]
+
+[balloon id="radhi1" x=150 y=-0 shape="002_03" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+よし…[r]
+じゃあいくか
+[p]
+
+*002
+//-------------------------------------------------------------------------------
+//  バーダック
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_009"]
+
+[character x=250 y=-160 storage = "00067/idl_side_e_01" scale = 1.5 action = "fadein" time = 0.1]
+
+[balloon x=-120 y=100 shape="002_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+…だがなんだって[r]
+フリーザ様は…
+[p]
+
+[balloon x=-155 y=-100 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+カナッサ星なんて[r]
+ちんけな星を欲しがって[r]
+らっしゃるんだ？
+[p]
+
+*003
+//-------------------------------------------------------------------------------
+//  トーマ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_009"]
+
+[character x=-240 y=-140 storage = "00077/atc_sp01_p_01" scale = 1.4 action = "fadein" time = 0.1]
+
+[balloon id="radhi1" x=125 y=100 shape="002_03" scale = 1.1 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+カナッサ星には[r]
+変な超能力を身につけられる[r]
+エネルギーがあるって[r]
+ウワサがあってな…
+[p]
+
+[balloon id="radhi2" x=120 y=-90 shape="002_01" scale = 1 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 26]
+フリーザ様は前々から[r]
+手に入れようと考えて[r]
+いたらしいんだ
+[p]
+
+*004
+//-------------------------------------------------------------------------------
+//  バーダック
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_009"]
+
+[character x=250 y=-160 storage = "00067/idl_side_e_01" scale = 1.5 action = "fadein" time = 0.1]
+
+
+[balloon id = "01" x = -110 y = 30 shape="002_02" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target = "01"]
+[font size = 54]
+………
+[p]
+
+
+
+
+*005
+//-------------------------------------------------------------------------------
+// トーマ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002L" bg = "bg_000_009"]
+
+[character x=-165 y=-90 storage = "00079/heapup_p_01" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon id="radhi1" x=150 y=120 shape="002_03" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+まあ行ってみれば[r]
+わかるさ
+[p]
+
+[balloon id="radhi2" x=120 y=-150 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 3 time = 0.2]
+[font size = 28]
+大暴れしてやろうぜ！
+[p]
+
+
+[stopbgm]
+

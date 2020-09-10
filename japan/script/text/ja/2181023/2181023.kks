@@ -1,0 +1,424 @@
+*start|スタート
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "007"]
+
+*001
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0002R" bg = "bg_000_024"]
+
+[character id = "noto1" x = -100 y = 270 storage = "90003/noto_01" scale = 0.9 action = "fadein" time = 0.1]
+[character id = "bito1" x = 100 y = 290 storage = "90003/bito_02" scale = 0.9 action = "fadein" time = 0.1]
+[paint target="noto1" color="#A4A4A4"]
+[paint target="bito1" color="#A4A4A4"]
+[character x = -230 y = 100 storage = "90003/noto_02" scale = 1.15 action = "fadein" time = 0.1]
+[character x = 230 y = 120 storage = "00969/card_01" scale = 0.9 action = "fadein" time = 0.1]
+
+[balloon x=0 y=-10 shape="003_02" scale = 1.6 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 15]
+//[quake target =".bln" power = 7 time = 0.2]
+ヒーロースイッチと[r]
+ゲームの世界に慣れるため[r]
+ラディッツを倒したあとの[r]
+ドラゴンボールの世界へと[r]
+やってきたビートとノート[r]
+　[r]
+しかし そこで[r]
+ふたりが見たものは……！
+[p]
+
+*002
+//-------------------------------------------------------------------------------
+//  ベジータ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_008_001"]
+
+//[character x=-190 y=-120 storage = "00218/idl_side_p_01" scale = 1.2 action = "fadein" time = 0.1]
+[character x = -180 y = -180 storage = "00061/card_02" scale = 1.2 action = "fadein" time = 0.1]
+
+
+[balloon x=120 y=60 shape="002_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+ガキがふたり…だと？[r]
+カカロットは[r]
+闘いを放棄したか
+[p]
+
+*003
+//-------------------------------------------------------------------------------
+//  ナッパ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_008_001"]
+
+//[character x = -220 y = -100 storage = "00015/heapup_p_01" scale = 1.2 action = "fadein" time = 0.1]
+[character x = -180 y = -240 storage = "00015/card_01" scale = 1.3 action = "fadein" time = 0.1]
+
+
+[balloon x=125 y=50 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+まさか[r]
+こんなガキがオレたちに[r]
+闘いを挑もうってのか？
+[p]
+
+*004
+//-------------------------------------------------------------------------------
+//  ビート（アバター状態）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_008_001"]
+
+[character x = 230 y = -90 storage = "00969/heapup_e_01" scale = 1.05 action = "fadein" time = 0.1]
+
+[balloon x = -105 y = 50 shape="004_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+ベジータにナッパ！？
+[p]
+
+*005
+//-------------------------------------------------------------------------------
+//  グレートサイヤマン3号
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_008"]
+
+[character x=270 y=-170 storage = "00971/idl_side_e_01" scale = 1.3 action = "fadein" time = 0.1]
+
+[balloon x = -115 y = 50 shape="005_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+あのふたりは！？[r]
+まさか もう[r]
+来てしまうなんて…！
+[p]
+
+*006
+//-------------------------------------------------------------------------------
+//  ビート（アバター状態）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_008_001"]
+
+[character x = 220 y = -110 storage = "00969/idl_side_e_01" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon x = -105 y = 50 shape="001_02" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+これがマスターが言ってた[r]
+ゲーム世界の異変って[r]
+やつ…？
+[p]
+
+*007
+//-------------------------------------------------------------------------------
+//  グレートサイヤマン3号
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_008"]
+
+[character x=270 y=-170 storage = "00971/idl_side_e_01" scale = 1.3 action = "fadein" time = 0.1]
+//[character x=260 y=-130 storage = "00971/idl_side_e_01" scale = 1.1 action = "fadein" time = 0.1]
+
+[balloon x = -110 y = 100 shape="005_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+ああ…ここ最近[r]
+本来ありえないような[r]
+出来事がゲーム世界で[r]起こっているんだ[r]
+　
+[p]
+
+[balloon x=-100 y=-110 shape="005_02" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+//[quake target =".bln" power = 3 time = 0.2]
+まるで[r]
+歴史を改変している[r]
+ような…
+[p]
+
+*008
+//-------------------------------------------------------------------------------
+//  ラディッツ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_008_001"]
+
+[character x=-190 y=-100 storage = "00014/idl_side_p_02" scale = 1.5 action = "fadein" time = 0.1]
+
+[balloon x=120 y=50 shape="002_03" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+ちっ オレたちも[r]
+なめられたもんだな
+[p]
+
+*009
+//-------------------------------------------------------------------------------
+//  ターレス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_008_001"]
+
+[character x = -230 y = -135 storage = "00298/idl_side_p_01" scale = 1.3 action = "fadein" time = 0.1]
+
+[balloon x=125 y=60 shape="002_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+どんなやつらが[r]
+いるかと思えば……[r]
+ザコが二匹とはな
+[p]
+
+*010
+//-------------------------------------------------------------------------------
+//  ノート（アバター状態）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_008_001"]
+
+[character x = 185 y = -210 storage = "90003/noto_02" scale = 1.4 action = "fadein" time = 0.1]
+
+[balloon x = -105 y = 50 shape="004_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+…ウソでしょ！？
+[p]
+
+*011
+//-------------------------------------------------------------------------------
+//  グレートサイヤマン3号
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_008"]
+
+[character x=270 y=-170 storage = "00971/idl_side_e_01" scale = 1.3 action = "fadein" time = 0.1]
+
+[balloon x = -115 y = 90 shape="005_02" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+[quake target =".bln" power = 3 time = 0.2]
+ラディッツに[r]
+ターレスだと！？
+[p]
+
+[balloon x=-120 y=-105 shape="005_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+ヤツらは そもそも[r]
+ここへやってこない[r]
+はずだが…
+[p]
+
+*012
+//-------------------------------------------------------------------------------
+//  ビート（アバター状態）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_008_001"]
+
+[character x = 220 y = -110 storage = "00969/idl_side_e_01" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon x = -105 y = 50 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+それにしてもすごい…[r]
+本物のベジータたちが[r]
+目の前にいる
+[p]
+
+*013
+//-------------------------------------------------------------------------------
+//  ノート（アバター状態）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_008_001"]
+
+[character x = 185 y = -210 storage = "90003/noto_02" scale = 1.4 action = "fadein" time = 0.1]
+
+[balloon x = -105 y = 50 shape="001_03" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+ええ[r]
+ゲーム世界だとはいっても[r]
+圧倒されるわ
+[p]
+
+*014
+//-------------------------------------------------------------------------------
+//  ビート（アバター状態）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_008_001"]
+
+[character x = 220 y = -110 storage = "00969/idl_side_e_01" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon x = -85 y = 75 shape="001_02" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+//[quake target =".bln" power = 3 time = 0.2]
+なんか[r]
+興奮してきたよ
+[p]
+
+[balloon x=-120 y=-105 shape="001_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+ずっと[r]
+彼らに会いたいと[r]
+思っていたから
+[p]
+
+*015
+//-------------------------------------------------------------------------------
+//  ノート（アバター状態）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_008_001"]
+
+[character x = 185 y = -210 storage = "90003/noto_04" scale = 1.4 action = "fadein" time = 0.1]
+
+[balloon x = -105 y = 40 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+わたしもよ[r]
+サインとかもらえたり[r]
+しないかしら
+[p]
+
+*016
+//-------------------------------------------------------------------------------
+//  グレートサイヤマン3号
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_008"]
+
+[character x=270 y=-90 storage = "00971/heapup_e_01" scale = 1.1 action = "fadein" time = 0.1]
+
+[balloon x = -95 y = 90 shape="005_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+キミたち！[r]
+喜んでいる場合じゃ[r]ないぞ
+[p]
+
+[balloon x=-110 y=-110 shape="005_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+今は[r]異変の解決が最優先だ！[r]
+ヤツらを[r]倒さないといけない
+[p]
+
+*017
+//-------------------------------------------------------------------------------
+//  ビート（アバター状態）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_008_001"]
+
+//[character x = 220 y = -110 storage = "00969/idl_side_e_01" scale = 1.0 action = "fadein" time = 0.1]
+[character x = 195 y = -110 storage = "00969/card_01" scale = 0.85 action = "fadein" time = 0.1]
+
+[balloon x = -105 y = 50 shape="001_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+…うん わかってる[r]
+ノート！[r]一緒に闘おう！
+[p]
+
+*018
+//-------------------------------------------------------------------------------
+//  ノート（アバター状態）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_008_001"]
+
+[character x = 185 y = -210 storage = "90003/noto_02" scale = 1.4 action = "fadein" time = 0.1]
+
+[balloon x = -105 y = 50 shape="001_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+ええ もちろん！！[r]
+準備ならとっくに[r]
+できてるわ！
+[p]
+
+*019
+//-------------------------------------------------------------------------------
+//  ナッパ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_008_001"]
+
+[character x = -220 y = -100 storage = "00015/heapup_p_01" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x=120 y=80 shape="002_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+へへへ[r]
+オレたちに[r]
+勝つ気でいるらしい
+[p]
+
+*020
+//-------------------------------------------------------------------------------
+//  ベジータ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002L" bg = "bg_008_001"]
+
+[character x = -170 y = -200 storage = "00061/card_02" scale = 1.3 action = "fadein" time = 0.1]
+
+[balloon x = 120 y = 60 shape="002_01" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 5 time = 0.2]
+いいだろう[r]
+順番に相手をしてやろうと[r]
+思っていたが……
+[p]
+
+//[quake target = ".chara" power = 5 time = 0.3] 
+
+[balloon x = 120 y = -200 shape="002_03" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 7 time = 0.2]
+全員で[r]
+やらせてもらうと[r]しよう
+[p]
+
+//-------------------------------------------------------------------------------
+[stopbgm]
+
+
+

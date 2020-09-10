@@ -1,0 +1,35 @@
+*start|スタート
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+
+//[bgm storage = "007"]
+
+*001
+//-------------------------------------------------------------------------------
+//  ベジット
+//-------------------------------------------------------------------------------
+[se storage = "50"]
+[coma shape="S0001" bg = "bg_073_001"]
+
+[character id = "vegetto" x = -10 y = 10-30 storage = "00275/card_06" scale = 1.1 action = "fadein" time = 0.1] 
+
+[character id = "sword" x = 685 y = -310-30 storage = "99999/dodonpa" scale = 3.0 angle = 217 action = "fade:80" time = 0.1]
+[quake target ="sword" power = 1]
+
+//点滅
+[balloon shape="008_02" x = 0 y = 0 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+
+[balloon x= 120 y= -380 shape="001_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+オレにも[r]
+これくらいは[r]
+できるんだぜ？
+[p]
+
+//-------------------------------------------------------------------------------
+//[stopbgm]

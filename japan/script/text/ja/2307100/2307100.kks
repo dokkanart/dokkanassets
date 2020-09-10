@@ -1,0 +1,114 @@
+//エリア7スタート
+
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "013"]
+
+//-------------------------------------------------------------------------------
+//  メカフリーザ
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0001R" bg = "bg_004_001"]
+
+[character x=160 y=-150 storage = "00217/atc_sp01_e_01" scale = 1.2 action = "fadein" time = 0.1]
+
+
+[balloon x=-110 y=100 shape="002_01" scale = 0.95 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 26]
+おやおや…久しぶりに[r]
+拝見しましたね…[r]
+あなたのその変身…[p]
+
+
+*coma2
+//-------------------------------------------------------------------------------
+//  クウラ最終形態
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_004_001"]
+
+[character x=-160 y=-180 storage = "00284/idl_side_p_01" scale = 1.3 action = "fadein" time = 0.1]
+
+
+[balloon x=100 y=120 shape="002_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 38]
+フリーザ…[p]
+
+[balloon x=120 y=-80 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+そういうおまえは[r]
+ずいぶんと惨めな[r]
+姿になったな[p]
+
+*coma3
+//-------------------------------------------------------------------------------
+//  メカフリーザ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_004_001"]
+
+[character x=240 y=-150 storage = "00217/heapup_e_01" scale = 1.2 action = "fadein" time = 0.1]
+
+
+[balloon x=-120 y=110 shape="002_01" scale = 0.95 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][font size = 26]
+ほっほっほ…[r]
+要は中身の問題でしょう[p]
+
+[balloon x=-135 y=-100 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+ボクのパワー…[r]
+あなたの体で[r]
+ためしてみますか？[p]
+
+*coma4
+//-------------------------------------------------------------------------------
+//  コルド
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_004_001"]
+
+[character x=-250 y=-230 storage = "00213/idl_side_p_01" scale = 1.8 action = "fadein" time = 0.1]
+
+
+[balloon x=140 y=120 shape="002_02" scale = 0.85 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][font size = 32]
+そう熱くなるな[r]
+フリーザ[p]
+
+[balloon x=130 y=-80 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][font size = 28]
+ひさしぶりに[r]
+我が一族が[r]
+そろったのだぞ[p]
+
+*coma5
+//-------------------------------------------------------------------------------
+//  コルド
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002L" bg = "bg_004_001"]
+
+[character x=-180 y=-160 storage = "00213/atc_sp01_p_01" scale = 1.5 action = "fadein" time = 0.1]
+
+
+[balloon x=190 y=40 shape="002_02" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][font size = 36]
+それに[r]
+どうやら…[p]
+
+[balloon x=100 y=-190 shape="002_03" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][font size = 24]
+[quake target =".bln" power = 3 time = 0.2]
+そのパワーを披露するのに[r]
+ちょうどいい相手が[r]
+やってきたようだぞ…！[p]
+
+[stopbgm]

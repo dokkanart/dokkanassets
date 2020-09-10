@@ -1,0 +1,41 @@
+//バリア(通常から)から→吸収 2529019
+
+*start|スタート
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+
+//[bgm storage = "028"]
+
+*001
+//-------------------------------------------------------------------------------
+//  17号
+//-------------------------------------------------------------------------------
+//[se storage = "3019"]
+[coma shape="S0001" bg = "bg_000_070"]
+
+//[lwfobject id = "kaki1" storage="kakimoji:ef_023" in="04" x=-0 y=70 scale = 2.2 action = "fadein" time = 0.1]
+//[quake target = "kaki1" power = 15 time = 0.4]
+
+//17号
+[character x = 0 y = -90 storage = "00021/card_05" scale = 1.1 angle = 10 action = "fadein" time = 0.1]
+//[quake target =".chara" power = 8 time = 0.4]
+
+[balloon x=-60 y=440 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+オレだって[r]
+ただのんびりと[r]
+過ごしていたわけじゃ[r]
+ないからな…[p]
+
+[balloon x=80 y=-410 shape="002_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+さて…[r]
+続きをやるか[p]
+
+//-------------------------------------------------------------------------------
+//[stopbgm]

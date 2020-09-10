@@ -1,0 +1,99 @@
+
+
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "008"]
+
+*coma1
+//-------------------------------------------------------------------------------
+//  トランクス（超サイヤ人）
+//-------------------------------------------------------------------------------
+[se storage = "3024"]
+[coma shape="N0003R" bg = "bg_004_003"]
+
+[lwfobject id = "kaki2" storage="kakimoji:ef_013" in="04" x=-110 y=-100 scale = 2.5]
+[quake target = "kaki2" power = 15 time = 0.2]
+
+[character x=170 y=-130 storage = "00069/card_01" scale = 1.4 action = "fadein" time = 0.1]
+
+
+[balloon shape="006_01" x = -135 y = 145 scale = 0.75 action = "expand" time = 0.1]
+[font size = 38]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 7 time = 0.2]
+くたばれ[r]
+フリーザ！！
+[p]
+
+*coma2
+//-------------------------------------------------------------------------------
+//  フリーザ
+//-------------------------------------------------------------------------------
+[se storage = "03"]
+[coma shape="N0004L" bg = "bg_004_003"]
+
+
+[character x=-190 y=-260 storage = "00217/atc_front_p_01" scale = 2.2 action = "fadein" time = 0.1]
+
+//!!
+[lwfobject id = "kaki2" storage="kakimoji:ef_001" in="04" x=160 y=20 scale = 3.0]
+[quake target = "kaki2" power = 15 time = 0.2]
+
+//[wait_anim target="kaki2"]
+
+[wait time = 0.2]
+
+//[se storage = "3025"]
+//点滅
+[balloon shape="008_02" x = 140 y = -30 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+[balloon shape="008_02" x = 140 y = -30 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+
+[wait time = 0.3]
+
+
+//フェードアウト
+[balloon x=130 y=40 shape="008_03" scale = 50.0 action = "fadein" time = 1.5]
+[wait time = 1.7]
+
+
+*coma3
+//-------------------------------------------------------------------------------
+//  フリーザ
+//-------------------------------------------------------------------------------
+[coma shape="S0001" bg = "bg_000_016"]
+
+//フェードイン
+[balloon x=130 y=40 shape="008_03" scale = 50]
+[wait time = 1]
+[fadeout target = ".bln" time = 2]
+//[wait_anim target=".bln"]
+
+
+[character x=-190 y=0 storage = "00058/idl_side_p_01" scale = 1.2 action = "fadein" time = 0.1]
+
+[wait time = 2.5]
+
+[balloon x=130 y=160 shape="002_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][font size = 34]
+…ようやく[r]
+きましたよ
+[p]
+
+[balloon x=120 y=-90 shape="002_01" scale = 1 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 27]
+[quake target =".bln" power = 3 time = 0.2]
+…わたしが[r]
+超サイヤ人への復讐を[r]
+果たすときが…！！
+[p]
+
+
+[stopbgm]

@@ -1,0 +1,39 @@
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+//[bgm storage = "012"]
+
+*001
+//-------------------------------------------------------------------------------
+//  超サイヤ人3ゴテンクス
+//-------------------------------------------------------------------------------
+[se storage = "3029"]
+[coma shape="S0001" bg = "bg_000_104"]
+
+
+[character x= 25 y= -90 storage = "00577/card_05" scale = 1.0 action = "fadein" time = 0.1]
+
+
+
+[character id = "ki" x = 0 y = -10 storage = "99999/supersaiyan2" scale = 1.6 angle = 0 action = "fadein" time = 0.1]
+[quake target = "ki" power = 2]
+[flip target ="ki" h=1]
+
+[character id = "aura" x = 0 y = 0 storage = "99999/ef_aura_front" scale = 4.0 action = "expand" time = 0.4]
+[paint target = "aura" color = "#ffff00"]
+[fadeout target = "aura" time = 0.4 ease = "in:2"]
+
+[wait time = 0.4]
+
+[balloon x=-0 y=445 shape="006_02" scale = 0.7 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 40]
+[quake target =".bln" power = 7 time = 0.2]
+かんっぜんに[r]
+おこった！！
+[p]
+
+
+//[stopbgm]

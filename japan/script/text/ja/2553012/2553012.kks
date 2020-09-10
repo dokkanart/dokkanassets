@@ -1,0 +1,38 @@
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+//[bgm storage = "003"]
+
+*001
+//-------------------------------------------------------------------------------
+//  孫悟空（界王拳）
+//-------------------------------------------------------------------------------
+[se storage = "50"]
+[coma shape="S0001" bg = "bg_050_001"]
+
+[lwfobject id = "kaki1" storage="kakimoji:ef_020" x=160 y=150 angle = 30 scale = 2.0 angle = 50 action = "fadein" time = 0.1]
+[quake target = "kaki1" power = 15 time = 0.4]
+
+
+[character x=0 y=0 storage = "00057/card_05" scale = 1.1 action = "fadein" time = 0.1]
+
+
+[balloon x=-0 y=420 shape="006_01" scale = 0.8 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 7 time = 0.2]
+オラ ぜったいに[r]
+負けられねえ！！
+[p]
+[quake target =".chara" power = 5 time = 0.3]
+
+[balloon x=0 y=-440 shape="006_02" scale = 0.8 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 7 time = 0.2]
+はああああっ！！
+[p]
+
+//[stopbgm]

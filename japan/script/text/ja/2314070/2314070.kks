@@ -1,0 +1,63 @@
+//"エリア７スタート"
+
+*start|スタート
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "008"]
+
+*001
+//-------------------------------------------------------------------------------
+//  ベジータ
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0001L" bg = "bg_014_001"]
+
+[character x = -220 y = -100 storage = "00004/idl_side_p_02" scale = 1.6 action = "fadein" time = 0.1]
+
+[balloon x=70 y=130 shape="002_01" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+破壊神ビルス…[r]
+とんでもないやつだとは[r]
+想像していたが…
+[p]
+
+[balloon x=120 y=-70 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+まさか[r]
+ここまでレベルが[r]
+ちがうとはな…
+[p]
+
+*002
+//-------------------------------------------------------------------------------
+//  ビルス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_014_001"]
+
+[character x = 180 y = -90 storage = "00242/card_01" scale = 1.1 action = "fadein" time = 0.1]
+
+[balloon x=-145 y=80 shape="004_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+プリンも品切れ…[r]
+超サイヤ人ゴッドも[r]
+いない…
+[p]
+
+[balloon x=-145 y=-170 shape="004_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+…もう[r]
+破壊ですかね…！
+[p]
+
+//-------------------------------------------------------------------------------
+[stopbgm]

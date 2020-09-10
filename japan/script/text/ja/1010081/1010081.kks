@@ -1,0 +1,220 @@
+
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  10−8ゴール
+//-------------------------------------------------------------------------------
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "008"]
+
+//-------------------------------------------------------------------------------
+//  １７号＆１８号
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+
+//研究所
+[coma shape="S0001" bg = "bg_023_002"]
+
+[character x=-100 y=80 storage = "00020/18_card_01" scale = 1.1 action = "fadein" time = 0.1]
+
+[character x=110 y=0 storage = "00021/17_card_01" scale = 1.1 action = "fadein" time = 0.1]
+
+[wait time = 0.7]
+
+[balloon x=145 y=-90 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 27]
+フン…わざわざ自分を[r]
+改造したのに[r]
+ムダだったようだな
+[p]
+
+[balloon x=-130 y=-260 shape="002_03" scale = 0.95 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 27]
+もうひとりの[r]
+１９号ってのも[r]
+たいしたことなかったね
+[p]
+
+*coma2
+//-------------------------------------------------------------------------------
+//  ヤムチャ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0004R" bg = "bg_023_002"]
+
+[character x = 250 y = -100 storage = "00013/yam_heapup_e_01" scale = 0.7 action = "fadein" time = 0.1]
+
+[character x=-440 y=-210 storage = "00021/17_atc_kick_e_02" scale = 1.6 action = "fadein" time = 0.1]
+
+[balloon shape="001_02" x = 140 y = 110 scale = 0.7 action = "fadein" time = 0.1]
+[font size = 38]
+[wait_anim target=".bln"]
+すまない…[r]
+助かったぜ
+[p]
+
+[balloon shape="001_03" x = 25 y = -135 scale = 1 action = "fadein" time = 0.1]
+[font size = 27]
+[wait_anim target=".bln"]
+…同じ人造人間でも[r]
+おまえたちは[r]
+イイやつだな
+[p]
+
+*coma3
+//-------------------------------------------------------------------------------
+//  17号
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_023_002"]
+
+[character x = -100 y = -110 storage = "00021/idl_side_p_02" scale = 1.5 action = "fadein" time = 0.1]
+
+[character x = -230 y = -120 storage = "00020/18_atc_sp03_p_01" scale = 0.9 action = "fadein" time = 0.1]
+
+[wait_anim target=".chara"]
+
+[balloon x=140 y=85 shape="002_02" scale = 0.95 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 27]
+勘違いするなよ？[r]
+これでおまえたちへの[r]
+借りは返した
+[p]
+
+[balloon x=0 y=-120 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+わたしたちは[r]
+また孫悟空をさがすわ
+[p]
+
+
+*coma5
+//-------------------------------------------------------------------------------
+//  トランクス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_023_002"]
+
+[character x = 210 y = -200 storage = "90000/wait_right_anger_strong" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon shape="001_02" x = -110 y = 60 scale = 0.95 action = "fadein" time = 0.1]
+[font size = 28]
+[wait_anim target=".bln"]
+…おまえたち…[r]
+まだ孫悟空さんと[r]
+闘うつもりなのか…
+[p]
+
+*coma6
+//-------------------------------------------------------------------------------
+//  17号&18号
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0003L" bg = "bg_023_002"]
+
+[character id = "18" x=-150 y=-130 storage = "00020/18_card_01" scale = 1.1 action = "fadein" time = 0.1]
+
+[character id = "17" x=160 y=-130 storage = "00021/17_card_01" scale = 1.1 action = "fadein" time = 0.1]
+
+[balloon x=0 y=-90 shape="002_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 34]
+そういうことだ[r]
+じゃあな
+[p]
+
+//１７号＆１８号フェードアウト
+[fadeout target = "17"  time = 0.7]
+[fadeout target = "18"  time = 0.7]
+
+// 空のフキダシ
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+
+*coma7
+//-------------------------------------------------------------------------------
+//  トランクス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_023_002"]
+
+[character x=170 y=-325 storage = "90000/wait_right_anger" scale = 1.4 action = "fadein" time = 0.1]
+
+[balloon shape="004_02" x = -140 y = 60 scale = 0.7 action = "fadein" time = 0.1]
+[font size = 50]
+[wait_anim target=".bln"]
+…………
+[p]
+
+//フェードアウト
+[balloon x=130 y=40 shape="008_03" scale = 50.0 action = "fadein" time = 0.5]
+[wait time = 0.7]
+[stopbgm]
+
+*coma8
+//-------------------------------------------------------------------------------
+//  場面転換
+//-------------------------------------------------------------------------------
+
+//ラディツ等着地点
+[coma shape="S0001" bg = "bg_027_003"]
+
+//フェードイン
+[balloon x=130 y=40 shape="008_03" scale = 50]
+[wait time = 1]
+[fadeout target = ".bln" time = 2]
+[wait_anim target=".bln"]
+
+
+[balloon shape="002_01" x = 0 y = 130 scale = 0.75 action = "fadein" time = 0.1]
+[font size = 34]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 3 time = 0.2]
+…ここは……[r]
+どこだ？
+[p]
+
+*coma9
+//-------------------------------------------------------------------------------
+//  トーマ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+
+//ラディツ等着地点
+[coma shape="N0002L" bg = "bg_027_001"]
+
+//トテッポ
+//[character x=-120 y=-115 storage = "00078/idl_side_p_01" scale = 1.0 action = "fadein" time = 0.1]
+
+//パンブーキン
+//[character x=-40 y=-130 storage = "00079/idl_side_p_01" scale = 1.0 action = "fadein" time = 0.1]
+
+//トーマ
+[character x=-240 y=-200 storage = "00077/idl_side_p_01" scale = 1.7 action = "fadein" time = 0.1]
+
+//セリパ
+//[character x=-200 y=-130 storage = "00070/idl_side_p_01" scale = 1.0 action = "fadein" time = 0.1]
+
+
+
+[balloon shape="002_03" x = 130 y = 230 scale = 1 action = "fadein" time = 0.1]
+[font size = 27]
+[wait_anim target=".bln"]
+オレたちは[r]
+惑星ミートに[r]
+向かっていたはず…
+[p]
+
+//フェードアウト
+[balloon x=130 y=40 shape="008_03" scale = 50.0 action = "fadein" time = 0.5]
+[wait time = 3.5]

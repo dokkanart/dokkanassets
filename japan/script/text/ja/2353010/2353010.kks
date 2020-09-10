@@ -1,0 +1,781 @@
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "004"]
+
+*01
+//-------------------------------------------------------------------------------
+//  タイトルロゴ
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="S0001" bg = "bg_000_068"]
+
+//[balloon x=130 y=40 shape="008_03" scale = 50]
+//[wait time = 1]
+//[fadeout target = ".bln" time = 2]
+//[wait_anim target=".bln"]
+
+[wait time = 0.7]
+
+[se storage = "48"]
+//[bgm storage = "004"]
+
+//[balloon x=-220 y=150 shape="010_01" scale = 1.7 action = "fadein" time = 0.7]
+
+//[balloon x=-110 y=-200 shape="010_02" scale = 1.2 action = "fadein" time = 0.7]
+
+//[balloon x=15 y=200 shape="010_03" scale = 1.2 action = "fadein" time = 0.7]
+
+//[balloon x=250 y=-175 shape="010_04" scale = 2.0 action = "fadein" time = 0.7]
+
+//[balloon x=-280 y=-0 shape="010_05" scale = 1.3 action = "fadein" time = 0.7]
+
+//[balloon x=230 y=90 shape="010_06" scale = 1.5 action = "fadein" time = 0.7]
+
+//[balloon x=70 y=-230 shape="010_07" scale = 1.5 action = "fadein" time = 0.7]
+
+//[bgm storage = "024"]
+
+//[wait time = 0.5]
+
+[balloon x=0 y=0 shape= "011_27" scale = 1.0 action = "fadein" time = 1.7]
+
+[wait time = 1.7]
+
+[p]
+
+
+
+
+*02
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0003R" bg = "bg_026_001"]
+
+
+[balloon shape="003_01" x = 0 y = 210 scale = 1.5 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 16]
+//[quake target =".bln" power = 3 time = 0.2]
+ドラゴンボール探しを[r]
+終えた悟空は[r]
+いったん仲間たちと別れ[r]
+さらに修業を積むため[r]
+亀仙人のもとを[r]
+訪れるのだった…
+[p]
+
+*03
+//-------------------------------------------------------------------------------
+//  亀仙人
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_026_001"]
+
+[character x = -180 y = -100 storage = "00023/card_04" scale = 0.8 action = "fadein" time = 0.1]
+
+[balloon x = 120 y = 60 shape="001_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target = ".bln"]
+[font size = 32]
+//[quake target = ".bln" power = 3 time = 0.2]
+なに？[r]
+修業をしたいって？
+[p]
+
+*04
+//-------------------------------------------------------------------------------
+//  孫悟空
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_026_001"]
+
+[character x = 220 y = -40 storage = "00261/idl_side_e_02" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon shape="001_03" x = -110 y = 60 scale = 0.65 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 44]
+//[quake target =".bln" power = 3 time = 0.2]
+うん！
+[p]
+
+
+*05
+//-------------------------------------------------------------------------------
+//  亀仙人
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_026_001"]
+
+[character x = -180 y = -100 storage = "00023/card_04" scale = 0.8 action = "fadein" time = 0.1]
+
+[balloon x = 120 y = 60 shape="001_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target = ".bln"]
+[font size = 32]
+//[quake target = ".bln" power = 3 time = 0.2]
+わしの修業は[r]
+ちーとキビシイぞ[r]
+[p]
+
+*06
+//-------------------------------------------------------------------------------
+//  孫悟空
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_026_001"]
+
+[character x = 220 y = -40 storage = "00261/idl_side_e_02" scale = 1.2 action = "fadein" time = 0.1]
+
+
+[balloon shape="001_03" x = -110 y = 100 scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+//[quake target =".bln" power = 3 time = 0.2]
+かまわねえよ！
+[p]
+
+[balloon shape="001_02" x = -110 y = -100 scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+オラ[r]
+亀仙人のじいちゃんより[r]
+強くなるんだ！
+[p]
+
+
+*07
+//-------------------------------------------------------------------------------
+//  亀仙人
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_026_001"]
+
+[character x = -180 y = -100 storage = "00023/card_04" scale = 0.8 action = "fadein" time = 0.1]
+
+[balloon x = 120 y = 90 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target = ".bln"]
+[font size = 28]
+//[quake target = ".bln" power = 3 time = 0.2]
+ホーッホッホ[r]
+なるほど[r]
+わしより強くなりたいか
+[p]
+
+[balloon x = 130 y = -110 shape="001_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target = ".bln"]
+[font size = 28]
+//[quake target = ".bln" power = 3 time = 0.2]
+じゃが タダでは[r]
+修業させんもんねー
+[p]
+
+*08
+//-------------------------------------------------------------------------------
+//  孫悟空
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_026_001"]
+
+[character x = 220 y = -40 storage = "00261/idl_side_e_02" scale = 1.2 action = "fadein" time = 0.1]
+
+
+[balloon shape="001_02" x = -110 y = 80 scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+あれ？[r]
+じいちゃん[r]
+あれなんだ？
+[p]
+
+[balloon shape="001_03" x = -80 y = -100 scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 40]
+//[quake target =".bln" power = 3 time = 0.2]
+誰か来たぞ
+[p]
+
+*09
+//-------------------------------------------------------------------------------
+//  亀仙人
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_026_001"]
+
+[character x = -180 y = -100 storage = "00023/card_04" scale = 0.8 action = "fadein" time = 0.1]
+
+[balloon x = 120 y = 60 shape="001_03" scale = 0.65 action = "fadein" time = 0.1]
+[wait_anim target = ".bln"]
+[font size = 44]
+//[quake target = ".bln" power = 3 time = 0.2]
+ん？[p]
+
+*10
+//-------------------------------------------------------------------------------
+//  クリリン
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_026_001"]
+
+//[wait_anim target=".coma"]
+[wait time = 0.3]
+
+[character x = 200 y = -70 storage = "00270/heapup_p_02" scale = 1.0 action = "fadein" time = 0.7]
+
+[wait_anim target=".chara"]
+
+[balloon shape="001_03" x = -110 y = 50 scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+あなたが[r]
+武天老師さまですね？
+[p]
+
+*11
+//-------------------------------------------------------------------------------
+//  亀仙人
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_026_001"]
+
+[character x = -180 y = -100 storage = "00023/card_04" scale = 0.8 action = "fadein" time = 0.1]
+
+[balloon x = 120 y = 60 shape="001_03" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target = ".bln"]
+[font size = 32]
+//[quake target = ".bln" power = 3 time = 0.2]
+いかにもそうじゃが[p]
+
+*12
+//-------------------------------------------------------------------------------
+//  クリリン
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_026_001"]
+
+[character x = 200 y = -70 storage = "00270/heapup_p_02" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon shape="001_02" x = -90 y = 75 scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+わたくし[r]
+はるばる東の村から[r]
+やってまいりました[r]
+クリリンと申します
+[p]
+
+[balloon shape="001_03" x = -90 y = -110 scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+ぜひ 弟子にして[r]
+くださいませ！
+[p]
+
+*13
+//-------------------------------------------------------------------------------
+//  亀仙人
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_026_001"]
+
+[character x = -180 y = -100 storage = "00023/card_04" scale = 0.8 action = "fadein" time = 0.1]
+
+[balloon x = 120 y = 40 shape="001_02" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target = ".bln"]
+[font size = 24]
+//[quake target = ".bln" power = 3 time = 0.2]
+わしのもとで修業をするには[r]
+ピチピチギャルを[r]
+連れてきてもらわねば[r]
+ならんのじゃが…
+[p]
+
+*14
+//-------------------------------------------------------------------------------
+//  孫悟空
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_026_001"]
+
+[character x = 220 y = -40 storage = "00261/idl_side_e_02" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon shape="001_02" x = -110 y = 50 scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+なんだ？[r]
+ビチビチギャグって
+[p]
+
+*15
+//-------------------------------------------------------------------------------
+//  亀仙人
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_026_001"]
+
+[character x = -180 y = -100 storage = "00023/card_04" scale = 0.8 action = "fadein" time = 0.1]
+
+[balloon x = 120 y = 90 shape="001_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target = ".bln"]
+[font size = 32]
+[quake target = ".bln" power = 3 time = 0.2]
+ピチピチギャル！
+[p]
+
+[balloon x = 130 y = -110 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target = ".bln"]
+[font size = 28]
+//[quake target = ".bln" power = 3 time = 0.2]
+かわいい[r]
+はつらつとした[r]
+女の子のことじゃ！！
+[p]
+
+*16
+//-------------------------------------------------------------------------------
+//  孫悟空
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_026_001"]
+
+[character x = 220 y = -40 storage = "00261/idl_side_e_02" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon shape="001_03" x = -110 y = 60 scale = 0.65 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 44]
+//[quake target =".bln" power = 3 time = 0.2]
+ふーん
+[p]
+
+*17
+//-------------------------------------------------------------------------------
+//  クリリン
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_026_001"]
+
+[character x = 200 y = -70 storage = "00270/heapup_p_02" scale = 1.0 action = "fadein" time = 0.1]
+
+
+[balloon shape="001_03" x = -90 y = 70 scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+おまかせください
+[p]
+
+[balloon shape="001_02" x = -95 y = -110 scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+すぐに[r]
+連れてまいります！
+[p]
+
+*18
+//-------------------------------------------------------------------------------
+//  亀仙人
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_026_001"]
+
+[character x = -180 y = -100 storage = "00023/card_04" scale = 0.8 action = "fadein" time = 0.1]
+
+[balloon x = 120 y = 90 shape="001_02" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target = ".bln"]
+[font size = 24]
+//[quake target = ".bln" power = 3 time = 0.2]
+まあ待て[r]
+おまえたちにまかせておいては[r]
+どんなのを選んでくるか[r]
+わかったものではないからな
+[p]
+
+[balloon x = 130 y = -110 shape="001_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target = ".bln"]
+[font size = 28]
+//[quake target = ".bln" power = 3 time = 0.2]
+わしが あらかじめ[r]
+連れてくる人を[r]
+決めておく
+[p]
+
+*19
+//-------------------------------------------------------------------------------
+//  クリリン
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_026_001"]
+
+[character x = 200 y = -70 storage = "00270/heapup_p_02" scale = 1.0 action = "fadein" time = 0.1]
+
+
+[balloon shape="001_01" x = -90 y = 50 scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+//[quake target =".bln" power = 3 time = 0.2]
+誰ですか[r]
+それは？
+[p]
+
+*20
+//-------------------------------------------------------------------------------
+//  亀仙人
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_026_001"]
+
+[character x = -180 y = -100 storage = "00023/card_04" scale = 0.8 action = "fadein" time = 0.1]
+
+[balloon x = 120 y = 50 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target = ".bln"]
+[font size = 28]
+[quake target = ".bln" power = 3 time = 0.2]
+それはな…[r]
+“魔神城のねむり姫”[r]
+という！
+[p]
+
+*21
+//-------------------------------------------------------------------------------
+//  孫悟空
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_026_001"]
+
+[character x = 220 y = -40 storage = "00261/idl_side_e_02" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon shape="001_03" x = -110 y = 60 scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+//[quake target =".bln" power = 3 time = 0.2]
+まじんじょう？
+[p]
+
+*22
+//-------------------------------------------------------------------------------
+//  クリリン
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_026_001"]
+
+[character x = 200 y = -70 storage = "00270/heapup_p_02" scale = 1.0 action = "fadein" time = 0.1]
+
+
+[balloon shape="001_01" x = -100 y = 50 scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+//[quake target =".bln" power = 3 time = 0.2]
+ねむり姫って？
+[p]
+
+*23
+//-------------------------------------------------------------------------------
+//  亀仙人
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_026_001"]
+
+[character x = -180 y = -100 storage = "00023/card_04" scale = 0.8 action = "fadein" time = 0.1]
+
+[balloon x = 120 y = 100 shape="001_03" scale = 1.05 action = "fadein" time = 0.1]
+[wait_anim target = ".bln"]
+[font size = 22]
+//[quake target = ".bln" power = 3 time = 0.2]
+大昔[r]
+スケベな悪魔にさらわれ[r]
+その城に閉じ込められたという[r]
+世にも美しき娘のことじゃ
+[p]
+
+[balloon x = 120 y = -105 shape="001_02" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target = ".bln"]
+[font size = 24]
+//[quake target = ".bln" power = 3 time = 0.2]
+気の毒に数千年ものあいだ[r]
+誰の助けもなく[r]暗い部屋の中で[r]
+ねむり続けておるそうな
+[p]
+
+
+*24
+//-------------------------------------------------------------------------------
+//  クリリン
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_026_001"]
+
+[character x = 200 y = -70 storage = "00270/heapup_p_02" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon shape="001_01" x = -100 y = 50 scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+ほんとに[r]
+美人なんですか？
+[p]
+
+*25
+//-------------------------------------------------------------------------------
+//  亀仙人
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_026_001"]
+
+[character x = -180 y = -100 storage = "00023/card_04" scale = 0.8 action = "fadein" time = 0.1]
+
+[balloon x = 105 y = 90 shape="001_03" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target = ".bln"]
+[font size = 32]
+[quake target = ".bln" power = 3 time = 0.2]
+あったりまえじゃ！
+[p]
+
+[balloon x = 110 y = -110 shape="001_02" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target = ".bln"]
+[font size = 24]
+//[quake target = ".bln" power = 3 time = 0.2]
+ひとめ その姿を見た者は[r]
+あまりの美しさに目がくらみ[r]
+腰をぬかすとさえ[r]言われておる
+[p]
+
+*26
+//-------------------------------------------------------------------------------
+//  クリリン
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_026_001"]
+
+[character x = 200 y = -70 storage = "00270/heapup_p_02" scale = 1.0 action = "fadein" time = 0.1]
+
+
+[balloon shape="001_01" x = -100 y = 50 scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+//[quake target =".bln" power = 3 time = 0.2]
+その人を[r]
+わたしたちが？
+[p]
+
+*27
+//-------------------------------------------------------------------------------
+//  亀仙人
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_026_001"]
+
+[character x = -180 y = -100 storage = "00023/card_04" scale = 0.8 action = "fadein" time = 0.1]
+
+[balloon x = 120 y = 90 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target = ".bln"]
+[font size = 28]
+//[quake target = ".bln" power = 3 time = 0.2]
+うむ！みごと城から[r]
+連れかえった者を[r]
+わしの弟子とする
+[p]
+
+[balloon x = 120 y = -110 shape="001_03" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target = ".bln"]
+[font size = 36]
+//[quake target = ".bln" power = 3 time = 0.2]
+どうじゃ[r]
+できるかな？
+[p]
+
+*28
+//-------------------------------------------------------------------------------
+//  クリリン
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_026_001"]
+
+[character x = 200 y = -70 storage = "00270/heapup_p_02" scale = 1.0 action = "fadein" time = 0.1]
+
+
+[balloon shape="001_03" x = -100 y = 50 scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+[quake target =".bln" power = 3 time = 0.2]
+できますとも！
+[p]
+
+*29
+//-------------------------------------------------------------------------------
+//  孫悟空
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_026_001"]
+
+[character x = 220 y = -40 storage = "00261/idl_side_e_02" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon shape="001_03" x = -100 y = 50 scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+[quake target =".bln" power = 3 time = 0.2]
+オラだって！
+[p]
+
+*30
+//-------------------------------------------------------------------------------
+//  クリリン
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_026_001"]
+
+[character x = 200 y = -70 storage = "00270/heapup_p_02" scale = 1.0 action = "fadein" time = 0.1]
+
+
+[balloon shape="001_02" x = -110 y = 50 scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+しかし[r]
+その魔神城というのは[r]
+どこにあるんで…？
+[p]
+
+*31
+//-------------------------------------------------------------------------------
+//  亀仙人
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_026_001"]
+
+[character x = -180 y = -100 storage = "00023/card_04" scale = 0.8 action = "fadein" time = 0.1]
+
+[balloon x = 120 y = 90 shape="001_02" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target = ".bln"]
+[font size = 24]
+//[quake target = ".bln" power = 3 time = 0.2]
+ここから[r]
+ずーっと西へ行った先に[r]
+悪魔の手と呼ばれる[r]
+つらなった5つの山が見える
+[p]
+
+[balloon x = 130 y = -110 shape="001_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target = ".bln"]
+[font size = 28]
+//[quake target = ".bln" power = 3 time = 0.2]
+魔神城は[r]
+その山のどこかに[r]
+あるとされている！
+[p]
+
+
+*32
+//-------------------------------------------------------------------------------
+//  孫悟空
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_026_001"]
+
+[character x = 220 y = -40 storage = "00261/idl_side_e_02" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon shape="001_02" x = -110 y = 50 scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+はは！ なんだか[r]
+おもしろそうだな！
+[p]
+
+*33
+//-------------------------------------------------------------------------------
+//  クリリン
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_026_001"]
+
+[character x = 200 y = -70 storage = "00270/heapup_p_02" scale = 1.0 action = "fadein" time = 0.1]
+
+
+[balloon shape="001_01" x = -100 y = 50 scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+こんなチビに[r]
+負けてたまるか…
+[p]
+
+*34
+//-------------------------------------------------------------------------------
+//  亀仙人
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_026_001"]
+
+[character x = -180 y = -100 storage = "00023/card_04" scale = 0.8 action = "fadein" time = 0.1]
+
+[balloon x = 120 y = 50 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target = ".bln"]
+[font size = 28]
+[quake target = ".bln" power = 3 time = 0.2]
+よし！[r]
+では さっそく[r]
+出発するのじゃ！
+[p]
+
+*35
+//-------------------------------------------------------------------------------
+//  クリリン
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_026_001"]
+
+[character x = 200 y = -70 storage = "00270/heapup_p_02" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon x = -95 y = 90 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target = ".bln"]
+[font size = 28]
+[quake target = ".bln" power = 3 time = 0.2]
+おい！ これは[r]
+ふたりの競争だからな！
+[p]
+
+[balloon x = -110 y = -105 shape="001_03" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target = ".bln"]
+[font size = 24]
+//[quake target = ".bln" power = 3 time = 0.2]
+おまえが[r]危ない目にあっても[r]
+オレは助けたりしないぞ！
+[p]
+
+
+
+*36
+//-------------------------------------------------------------------------------
+//  
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_026_001"]
+
+[character x = 190 y = -40 storage = "00261/idl_side_e_02" scale = 1.3 action = "fadein" time = 0.1]
+
+[balloon shape="001_03" x = -140 y = 50 scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+//[quake target =".bln" power = 3 time = 0.2]
+うん いいよ
+[p]
+
+[balloon shape="001_02" x = -120 y = -180 scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+オラ負けねえぞ！
+[p]
+
+
+//-------------------------------------------------------------------------------
+[stopbgm]

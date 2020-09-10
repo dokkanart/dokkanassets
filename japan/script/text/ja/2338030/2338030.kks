@@ -1,0 +1,297 @@
+*start|スタート
+
+//"エリア３スタート"
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "012"]
+ 
+*001
+//-------------------------------------------------------------------------------
+//  ブルマ
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0001R" bg = "bg_014_001"]
+ 
+[character id="beji" x = 200 y = -280 storage = "90003/bluma_majin" scale = 1.0 action = "fadein" time = 0.1]
+ 
+[balloon x=-100 y=80 shape="001_02" scale = 1.05 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 22]
+//[quake target =".bln" power = 3 time = 0.2]
+トランクスったら[r]
+ナイショであの勇者の子に[r]
+ご飯を運んでるみたいなのよ
+[p]
+ 
+*002
+//-------------------------------------------------------------------------------
+//  ビーデル
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_014_001"]
+ 
+[character x = -240 y = -190 storage = "00039/card_01" scale = 1.6 action = "fadein" time = 0.1]
+ 
+[balloon x=90 y=70 shape="001_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+へえ…[r]
+いいとこあるな[r]
+トランクスくん
+[p]
+ 
+*003
+//-------------------------------------------------------------------------------
+//  ブルマ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_014_001"]
+ 
+[character id="beji" x = 200 y = -280 storage = "90003/bluma_majin" scale = 1.0 action = "fadein" time = 0.1]
+ 
+[balloon x=-100 y=110 shape="001_02" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+いつも[r]
+お兄ちゃんがいる悟天くんが[r]
+うらやましいって[r]言ってたから…
+[p]
+ 
+[balloon x=-100 y=-100 shape="001_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+お兄ちゃんでも[r]
+できた気に[r]
+なってるのかしらね
+[p]
+
+*004
+//-------------------------------------------------------------------------------
+//  ビーデル
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_014_001"]
+ 
+[character x = -240 y = -190 storage = "00039/card_01" scale = 1.6 action = "fadein" time = 0.1]
+ 
+[balloon x=85 y=120 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+トランクスくんの気持ち[r]
+わかるな…
+[p]
+ 
+[balloon x=110 y=-90 shape="001_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+わたしも[r]
+ひとりっ子だから…
+[p]
+
+[bgm storage = "004"]
+
+//フェードアウト（フェードアウトするコマ）
+[balloon x=0 y=0 shape="008_03" scale = 50.0 action = "fadein" time = 0.5]
+[wait time = 0.7] 
+
+*tenkan
+//-------------------------------------------------------------------------------
+//  
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="S0001" bg = "bg_014_004"]
+
+[balloon x=130 y=40 shape="008_03" scale = 50]
+[wait time = 1]
+[fadeout target = ".bln" time = 2]
+[wait_anim target=".bln"]
+
+// 空のフキダシ（セリフがないコマを送るために使用）
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+*005
+//-------------------------------------------------------------------------------
+//  トランクス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_014_004"]
+ 
+[character x=230 y=-110 storage = "00200/idl_side_e_01" scale = 1.2 action = "fadein" time = 0.1]
+ 
+[balloon x=-75 y=130 shape="001_01" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 40]
+[quake target =".bln" power = 3 time = 0.2]
+お兄ちゃん！
+[p]
+ 
+[balloon x=-100 y=-80 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+夜の分のご飯[r]
+ここに置いとくからね！
+[p]
+
+*006
+//-------------------------------------------------------------------------------
+//  タピオン
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_014_004"]
+ 
+[character x = -180 y = -190 storage = "00313/idl_side_p_01" scale = 1.2 action = "fadein" time = 0.1]
+ 
+[balloon x=100 y=70 shape="001_03" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 54]
+//[quake target =".bln" power = 3 time = 0.2]
+………
+[p]
+ 
+*007
+//-------------------------------------------------------------------------------
+//  トランクス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_014_004"]
+ 
+[character x=230 y=-110 storage = "00200/idl_side_e_01" scale = 1.2 action = "fadein" time = 0.1]
+ 
+[balloon x=-90 y=100 shape="001_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+お兄ちゃんの[r]
+持ってる笛…[r]
+いい音だね！
+[p]
+
+[balloon x=-80 y=-100 shape="001_01" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 40]
+[quake target =".bln" power = 3 time = 0.2]
+もっと[r]
+吹いてよ！
+[p]
+
+*008
+//-------------------------------------------------------------------------------
+//  タピオン
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_014_004"]
+ 
+[character x = -180 y = -190 storage = "00313/idl_side_p_01" scale = 1.2 action = "fadein" time = 0.1]
+ 
+[balloon x=100 y=70 shape="001_03" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 54]
+//[quake target =".bln" power = 3 time = 0.2]
+………
+[p]
+ 
+*009
+//-------------------------------------------------------------------------------
+//  トランクス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_014_004"]
+ 
+[character x=230 y=-110 storage = "00200/idl_side_e_01" scale = 1.2 action = "fadein" time = 0.1]
+[character x=205 y=90 storage = "99999/ase" scale = 0.7 action = "fadein" time = 0.1]
+ 
+[balloon x=-90 y=70 shape="004_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+あ…はは…[r]
+やっぱりいいや…
+[p]
+
+[bgm storage = "008"]
+
+//[se storage = "03"]
+//点滅
+[balloon shape="008_02" x = 0 y = 0 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+ 
+*010
+//-------------------------------------------------------------------------------
+//  ホイが現れる
+//-------------------------------------------------------------------------------
+[se storage = "3014"]
+[coma shape="S0001" bg = "bg_014_004"]
+
+[lwfobject id = "kaki1" storage="kakimoji:ef_023" x=-90 y=370 scale = 2.2 angle = -12 action = "fadein" time = 0.1]
+[quake target = "kaki1" power = 15 time = 0.4]
+ 
+[character x = 0 y = 50 storage = "00312/atc_front_e_01" scale = 1.6 action = "fadein" time = 0.1]
+[quake target = ".chara" power = 9 time = 0.4]
+ 
+// 空のフキダシ（セリフがないコマを送るために使用）
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+*011
+//-------------------------------------------------------------------------------
+//  タピオン
+//-------------------------------------------------------------------------------
+[se storage = "03"]
+[coma shape="N0003R" bg = "bg_014_004"]
+ 
+[character x = 120 y = -100 storage = "00313/card_01" scale = 1.3 action = "fadein" time = 0.1]
+[quake target = ".chara" power = 4 time = 0.4]
+ 
+//！！
+[lwfobject id = "kaki1" storage="kakimoji:ef_001" x=-90 y=220 scale = 2.5 angle = -15 action = "fadein" time = 0.1]
+[quake target = "kaki1" power = 15 time = 0.4]
+
+// 空のフキダシ（セリフがないコマを送るために使用）
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+ 
+*012
+//-------------------------------------------------------------------------------
+//  ホイ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_014_004"]
+ 
+[character x = -240 y = -140 storage = "00312/heapup_p_01" scale = 1.2 action = "fadein" time = 0.1]
+ 
+[balloon x=120 y=70 shape="007_02" scale = 0.8 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 7 time = 0.2]
+笛をよこせっ！！
+[p]
+ 
+*013
+//-------------------------------------------------------------------------------
+//  トランクス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_014_004"]
+ 
+[character x=195 y=-120 storage = "00200/heapup_e_01" scale = 1.4 action = "fadein" time = 0.1]
+ 
+[balloon x=-120 y=70 shape="006_02" scale = 0.8 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 7 time = 0.2]
+お…[r]
+おまえは…！！
+[p]
+
+//-------------------------------------------------------------------------------
+[stopbgm]

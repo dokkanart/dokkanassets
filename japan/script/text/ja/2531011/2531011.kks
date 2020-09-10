@@ -1,0 +1,36 @@
+*start|スタート
+
+//史上最凶の進化 ボス前
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+//[bgm storage = "012"]
+
+*001
+//-------------------------------------------------------------------------------
+//  ブロリー
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002L" bg = "bg_070_001"]
+
+[character x = -165 y = -140 storage = "00254/heapup_p_01" scale = 1.5 action = "fadein" time = 0.1]
+[quake target =".chara" power = 1 time = 300]
+
+[balloon x=140 y=110 shape="004_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+うう…う……[r]
+カカロット…
+[p]
+
+[balloon x=130 y=-180 shape="004_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+カカロット……！
+[p]
+
+ 
+//[stopbgm]

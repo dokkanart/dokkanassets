@@ -1,0 +1,90 @@
+*start|スタート
+//"エリア４スタート"
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "017"]
+
+*001
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0002L" bg = "bg_000_043"]
+
+[character x = -180 y = 100 storage = "00652/heapup_p_01" scale = 1.3 action = "fadein" time = 0.1]
+
+[balloon x = 150 y =150 shape="003_02" scale = 1.5 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 15]
+//[quake target = ".bln" power = 3 time = 0.2]
+合体して[r]
+巨大化したアボとカドは[r]
+圧倒的パワーで[r]
+トランクスと悟天を[r]
+追いつめる！[r]
+　[r]
+負けじと[r]
+トランクスたちも[r]
+フュージョンで[r]
+対抗するのだった…[r]
+[p]
+
+*002
+//-------------------------------------------------------------------------------
+//  悟天とトランクス
+//-------------------------------------------------------------------------------
+[se storage = "3022"]
+
+[coma shape="N0002R" bg = "bg_000_043"]
+
+[balloon x= 0 y= 70 shape="006_01" scale = 0.75 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+[quake target =".bln" power = 7 time = 0.2]
+フュ〜…ジョン！[r]
+はっ！！
+[p]
+
+[se storage = "44"]
+
+//点滅
+//[se storage = "3025"]
+//点滅
+[balloon shape="008_02" x = 140 y = -30 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+//[balloon shape="008_02" x = 140 y = -30 scale = 50 action = "fadein" time = 0.1]
+//[wait time = 0.3]
+//[clear target = ".bln"]
+
+*003
+//-------------------------------------------------------------------------------
+//  ゴテンクス登場
+//-------------------------------------------------------------------------------
+[coma shape="S0001" bg = "bg_000_043"]
+
+[character x = 80 y = 0 storage = "00276/card_02" scale = 1.8 action = "fadein" time = 0.1]
+
+//フェードイン（フェードインするコマ）
+[balloon x=130 y=40 shape="008_02" scale = 50]
+[wait time = 0.5]
+[fadeout target = ".bln" time = 1.5]
+[wait_anim target=".bln"]
+
+[balloon x= 110 y= 400 shape="006_01" scale = 0.7 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+[quake target =".bln" power = 7 time = 0.2]
+パンパカパーン[p]
+
+[balloon x= -70 y= -410 shape="006_02" scale = 0.9 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 7 time = 0.2]
+ゴテンクスだー！！[p]
+
+
+
+//-------------------------------------------------------------------------------
+[stopbgm]

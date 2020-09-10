@@ -1,0 +1,585 @@
+*start|スタート
+//"ステージ１ゴール"
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "013"]
+
+*001
+//-------------------------------------------------------------------------------
+//  人造人間17号
+//-------------------------------------------------------------------------------
+//[se storage = "3029"]
+[coma shape="S0001" bg = "bg_000_016"]
+
+[lwfobject id = "kaki2" storage="kakimoji:ef_009" x=-100 y=-50 scale = 1 action = "fadein" time = 0.1]
+[quake target = "kaki2" power = 1 time = 300]
+
+[balloon x=100 y=50 shape="010_31" scale = 0.7 action = "fadein" time = 0.1]
+
+[character id = "17" x=-180 y=-0 storage = "00021/card_03" scale = 0.6 action = "fadein" time = 0.1]
+
+[wait time = 0.7]
+
+[balloon x=100 y=280 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+あれを見ろ[r]
+あの穴の向こう…[r]
+どこだか知っているか？
+[p]
+
+[balloon x=100 y=-170 shape="002_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+…地獄だよ！[r]
+ふふふふ……
+[p]
+
+*002
+//-------------------------------------------------------------------------------
+//  トランクス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_069"]
+
+[character x=240 y=-100 storage = "00325/heapup_e_01" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x=-90 y=100 shape="004_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+じ…[r]
+地獄だって…！？
+[p]
+
+*003
+//-------------------------------------------------------------------------------
+//  人造人間17号
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_016"]
+
+[character x = -170 y = -120 storage = "00021/idl_side_p_04" scale = 1.0 action = "fadein" time = 0.1]
+
+
+[balloon x=120 y=90 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+孫悟空に倒され[r]
+地獄に落とされた者が[r]
+次々と復活する！
+[p]
+
+[balloon x=120 y=-100 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+悟空に[r]
+復讐するためにな！
+[p]
+
+*004
+//-------------------------------------------------------------------------------
+//  トランクス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_069"]
+
+[character x=240 y=-100 storage = "00325/heapup_e_01" scale = 1.2 action = "fadein" time = 0.1]
+
+
+
+[balloon x=-90 y=70 shape="001_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+悟空さんに…[r]
+復讐する……！？
+[p]
+
+*005
+//-------------------------------------------------------------------------------
+//  人造人間17号
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_016"]
+
+[character x = -170 y = -120 storage = "00021/idl_side_p_04" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon x=100 y=110 shape="002_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+悟空に伝えろ！
+[p]
+
+[balloon x=120 y=-100 shape="002_03" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+もしオレたちと[r]
+闘う勇気があるなら[r]
+ひとりで地獄に来い[r]
+とな！
+[p]
+
+//セリフ後、フェードアウト。
+[fadeout target = ".chara" time = 0.7]
+[wait_anim target=".chara"]
+
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+
+*006
+//-------------------------------------------------------------------------------
+//  トランクス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_000_069"]
+
+[character x=200 y=-100 storage = "00325/heapup_e_01" scale = 1.3 action = "fadein" time = 0.1]
+
+[balloon x=-130 y=60 shape="001_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+い…いったいなにが[r]
+起きているんだ…！？
+[p]
+
+[balloon x=-120 y=-180 shape="001_02" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+とにかく急いで[r]
+悟空さんにこのことを[r]
+伝えないと…！！
+[p]
+
+
+//場面転換
+//フェードアウト（フェードアウトするコマ）
+[balloon x=0 y=0 shape="008_03" scale = 50.0 action = "fadein" time = 0.5]
+[wait time = 0.7]
+
+*007
+//-------------------------------------------------------------------------------
+//  
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="S0001" bg = "bg_081_016"]
+
+
+
+[balloon x=0 y=0 shape="008_03" scale = 50]
+[wait time = 1]
+[fadeout target = ".bln" time = 2]
+[wait_anim target=".bln"]
+
+[balloon x=-120 y=150 shape="002_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+作戦の第一段階は[r]
+成功だな
+[p]
+
+[balloon x=120 y=-130 shape="002_03" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+ふたりの17号が[r]
+共鳴するパワーで[r]
+見事にあの世とこの世が[r]
+くっつきおった
+[p]
+
+*008
+//-------------------------------------------------------------------------------
+//  ドクター・ミュー
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+//[coma shape="N0001R" bg = "bg_081_016"]
+
+///[character x = 210 y = -160 storage = "00329/idl_side_e_01" scale = 1.1 action = "fadein" time = 0.1]
+
+
+//[balloon x=-90 y=130 shape="002_02" scale = 0.9 action = "fadein" time = 0.1]
+//[wait_anim target=".bln"]
+//[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+//作戦の第一段階は[r]
+//成功だな
+//[p]
+
+//[balloon x=-90 y=-90 shape="002_03" scale = 1.0 action = "fadein" time = 0.1]
+//[wait_anim target=".bln"]
+//[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+//ふたりの17号が[r]
+//共鳴するパワーで[r]
+//見事にあの世とこの世が[r]
+//くっつきおった
+//[p]
+
+
+*009
+//-------------------------------------------------------------------------------
+//  ドクター・ゲロ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_081_016"]
+
+[character x = -170 y = -135 storage = "00019/gero_idl_side_p_01" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon x=100 y=100 shape="002_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+感謝するぞ[r]
+ドクター・ミュー
+[p]
+
+[balloon x=110 y=-110 shape="002_03" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+おぬしの[r]
+マシンミュータント理論が[r]
+なければ この17号を[r]完成させることは[r]できなかっただろう…
+[p]
+
+
+
+
+*010
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0004R" bg = "bg_000_014"]
+
+
+[character id ="hell" x = 240 y = -300 storage = "00021/card_03" scale = 0.9 action = "fadein" time = 0.1]
+
+
+[character id ="17" x = -240 y = -300 storage = "00021/card_02" scale = 0.9 action = "fadein" time = 0.1]
+
+[balloon x=0 y=-30 shape="003_01" scale = 1.6 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 14]
+ゲロとミューの手により[r]
+あの世で造られた[r]
+新しい17号…[r]
+…そして この世の17号[r]
+　[r]
+ふたりの17号の[r]
+パワーの共鳴で[r]
+あの世とこの世が[r]
+ひとつになってしまった[r]
+　[r]
+ゲロたちが企む作戦とは[r]
+いったい…！？
+[p]
+
+
+*011
+//-------------------------------------------------------------------------------
+//  ドクター・ゲロ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_081_016"]
+
+[character x = -170 y = -135 storage = "00019/gero_idl_side_p_01" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon x=100 y=90 shape="002_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+ふっふっふ…
+[p]
+
+[balloon x=110 y=-105 shape="002_03" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+これで[r]
+わしの長年の夢だった[r]
+究極の人造人間が[r]完成するぞ
+[p]
+
+
+
+
+
+*012
+//-------------------------------------------------------------------------------
+//  ドクター・ミュー
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_081_016"]
+
+[character x = 210 y = -160 storage = "00329/idl_side_e_01" scale = 1.1 action = "fadein" time = 0.1]
+
+
+[balloon x=-80 y=70 shape="002_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+究極の人造人間？
+[p]
+
+
+*013
+//-------------------------------------------------------------------------------
+//  ドクター・ゲロ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_081_016"]
+
+[character x = -170 y = -135 storage = "00019/gero_idl_side_p_01" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon x=110 y=110 shape="002_01" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+本来 17号は[r]
+あのセルをも[r]上回るパワーを[r]
+持っておったはずなのだ
+[p]
+
+[balloon x=120 y=-110 shape="002_03" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+だが[r]人間だったときの感情を[r]
+消し去ることができず[r]
+不完全な失敗作と[r]なってしまった
+[p]
+
+*014
+//-------------------------------------------------------------------------------
+//  ドクター・ミュー
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_081_016"]
+
+[character x = 210 y = -160 storage = "00329/idl_side_e_01" scale = 1.1 action = "fadein" time = 0.1]
+
+
+
+[balloon x=-100 y=40 shape="002_03" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+そのため[r]
+17号の潜在パワーは[r]
+眠ったままとなった[r]わけか
+[p]
+
+
+*015
+//-------------------------------------------------------------------------------
+//  ドクター・ゲロ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_081_016"]
+
+[character x = -170 y = -135 storage = "00019/gero_idl_side_p_01" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon x=110 y=110 shape="002_01" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+だが[r] 
+あの世とこの世の[r]
+２体の17号が[r]
+ひとつになったとき…
+[p]
+
+[balloon x=120 y=-100 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+かつてない[r]
+最強パワーを秘めた[r]
+最終兵器となるのだ！
+[p]
+
+
+
+
+*016
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0003R" bg = "bg_000_024"]
+
+
+[balloon x=0 y=0 shape="003_02" scale = 1.6 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 15]
+//[quake target =".bln" power = 3 time = 0.2]
+着々と進行する[r]
+ゲロとミューの[r]
+恐るべき復讐計画…！[r]
+　[r]
+一方[r]
+トランクスから[r]
+事の一部始終を[r]
+聞かされた悟空たちは…
+[p]
+
+*017
+//-------------------------------------------------------------------------------
+//  孫悟空
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_016"]
+
+
+[character x=320 y=-15 storage = "99999/tail" scale = 1.3 angle = -0 action = "fadein" time = 0.1]
+
+[character x=200 y=-50 storage = "00324/heapup_e_01" scale = 1.1 action = "fadein" time = 0.1]
+
+[balloon x=-100 y=70 shape="001_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+地獄に来い…か…
+[p]
+
+*018
+//-------------------------------------------------------------------------------
+//  孫悟飯
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_016"]
+
+
+[character x = -210 y = -110 storage = "00507/heapup_e_01" scale = 1.2 action = "fadein" time = 0.1]
+[flip target =".chara" h=1]
+
+[balloon x=100 y=100 shape="001_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+お父さん[r]
+たいへんです！
+[p]
+
+[balloon x=130 y=-100 shape="001_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+地球のあちこちで[r]
+地獄から蘇った敵が[r]
+暴れています！！
+[p]
+
+
+*019
+//-------------------------------------------------------------------------------
+//  パン
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_016"]
+
+
+[character x = -210 y = -70 storage = "00326/atc_sp01_p_01" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x=120 y=50 shape="001_02" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+もし[r]
+セルやフリーザまで[r]
+復活したらいったい[r]
+どうなっちゃうの！？
+[p]
+
+*020
+//-------------------------------------------------------------------------------
+//  孫悟空
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_016"]
+
+
+[character x=320 y=-15 storage = "99999/tail" scale = 1.3 angle = -0 action = "fadein" time = 0.1]
+
+[character x=200 y=-50 storage = "00324/heapup_e_01" scale = 1.1 action = "fadein" time = 0.1]
+
+[balloon x=-100 y=100 shape="001_03" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+やつらの狙いは[r]
+オラなんだろ？
+[p]
+
+[balloon x=-100 y=-90 shape="001_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+行ってやるぞ！[r]
+地獄でも[r]どこでもよぉ！
+[p]
+
+*021
+//-------------------------------------------------------------------------------
+//  トランクス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_016"]
+
+[character x=-250 y=-110 storage = "00325/idl_side_p_01" scale = 1.2 action = "fadein" time = 0.1]
+
+
+[balloon x=100 y=70 shape="004_02" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+[quake target =".bln" power = 3 time = 0.2]
+ご…[r]
+悟空さん！？
+[p]
+
+*022
+//-------------------------------------------------------------------------------
+//  孫悟空
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_000_016"]
+
+[character x=300 y=-70 storage = "99999/tail" scale = 1.3 angle = -0 action = "fadein" time = 0.1]
+
+[character x=170 y=-80 storage = "00324/heapup_e_01" scale = 1.3 action = "fadein" time = 0.1]
+
+
+
+[balloon x=-120 y=60 shape="001_02" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+おもしれえじゃねえか！[r]
+セルやフリーザが[r]
+どれくらい強くなったか[r]
+相手してやんのもよ！
+[p]
+
+[balloon x=-120 y=-180 shape="001_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+なんかオラ[r]
+わくわくしてきたぞ！
+[p]
+
+//-------------------------------------------------------------------------------
+[stopbgm]

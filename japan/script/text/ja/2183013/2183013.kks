@@ -1,0 +1,64 @@
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+//[bgm storage = "026"]
+
+*001
+//-------------------------------------------------------------------------------
+//  アナウンサーの声
+//-------------------------------------------------------------------------------
+[se storage = "39"]
+[coma shape="S0001" bg = "bg_005_004"]
+
+[character id = "stn" x=-40 y=45 storage = "00038/card_10" scale = 1.1 action = "fadein" time = 0.1] 
+
+[wait time = 0.7]
+
+[balloon x=-120 y=420 shape="005_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+すさまじいまでの[r]
+破壊力です！！[r]
+ミスター・サタン！！
+[p]
+
+[balloon x=50 y=-330 shape="005_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+さすがです！！[r]
+さすが格闘技の[r]
+世界チャンピオンです！！
+[p]
+
+*002
+//-------------------------------------------------------------------------------
+//  ミスター・サタン
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_005_004"]
+
+[character id = "stn" x=130 y=-195 storage = "00038/card_05" scale = 1.4 action = "fadein" time = 0.1]
+
+[balloon x = -140 y = 100 shape="001_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+これでわかっただろう[r]
+世界チャンピオンの[r]
+実力が…！
+[p]
+
+[balloon x = -140 y = -220 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+わかったら[r]
+シロウトはひっこんで[r]
+いるんだな
+[p]
+
+//[stopbgm]

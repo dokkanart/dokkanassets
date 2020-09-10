@@ -1,0 +1,422 @@
+*start|スタート
+
+////"エリア１BOSS前"
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+//[bgm storage = "005"]
+[stopbgm]
+ 
+*001
+//-------------------------------------------------------------------------------
+//  ななつのドラゴンボールが光る。
+//-------------------------------------------------------------------------------
+[coma shape="S0001" bg = "bg_000_041"]
+
+[balloon x=0 y=0 shape="010_01" scale = 1.4 action = "fadein" time = 0.05]
+[balloon x=-110 y=-90 shape="010_02" scale = 1.4 action = "fadein" time = 0.05]
+[balloon x=-45 y=100 shape="010_03" scale = 1.4 action = "fadein" time = 0.05]
+[balloon x=210 y=-30 shape="010_04" scale = 1.4 action = "fadein" time = 0.05]
+[balloon x=-205 y=15 shape="010_05" scale = 1.4 action = "fadein" time = 0.05]
+[balloon x=110 y=90 shape="010_06" scale = 1.4 action = "fadein" time = 0.05]
+[balloon x=90 y=-100 shape="010_07" scale = 1.4 action = "fadein" time = 0.05]
+
+[wait time = 0.7]
+
+[se storage = "3024"]
+
+[balloon id = "db1" x=0 y=0 shape="010_08" scale = 1.4 action = "fadein" time = 1.2]
+[balloon id = "db2" x=-110 y=-90 shape="010_08" scale = 1.4 action = "fadein" time = 1.2]
+[balloon id = "db3" x=-45 y=100 shape="010_08" scale = 1.4 action = "fadein" time = 1.2]
+[balloon id = "db4" x=210 y=-30 shape="010_08" scale = 1.4 action = "fadein" time = 1.2]
+[balloon id = "db5" x=-205 y=15 shape="010_08" scale = 1.4 action = "fadein" time = 1.2]
+[balloon id = "db6" x=110 y=90 shape="010_08" scale = 1.4 action = "fadein" time = 1.2]
+[balloon id = "db7" x=90 y=-100 shape="010_08" scale = 1.4 action = "fadein" time = 1.2]
+
+[wait time = 0.8]
+
+[fadeout target = "db1" time = 0.7]
+[fadeout target = "db2" time = 0.7]
+[fadeout target = "db3" time = 0.7]
+[fadeout target = "db4" time = 0.7]
+[fadeout target = "db5" time = 0.7]
+[fadeout target = "db6" time = 0.7]
+[fadeout target = "db7" time = 0.7]
+
+[wait time = 0.4]
+
+[balloon id = "db1" x=0 y=0 shape="010_08" scale = 1.4 action = "fadein" time = 1.2]
+[balloon id = "db2" x=-110 y=-90 shape="010_08" scale = 1.4 action = "fadein" time = 1.2]
+[balloon id = "db3" x=-45 y=100 shape="010_08" scale = 1.4 action = "fadein" time = 1.2]
+[balloon id = "db4" x=210 y=-30 shape="010_08" scale = 1.4 action = "fadein" time = 1.2]
+[balloon id = "db5" x=-205 y=15 shape="010_08" scale = 1.4 action = "fadein" time = 1.2]
+[balloon id = "db6" x=110 y=90 shape="010_08" scale = 1.4 action = "fadein" time = 1.2]
+[balloon id = "db7" x=90 y=-100 shape="010_08" scale = 1.4 action = "fadein" time = 1.2]
+
+[wait time = 1.3]
+
+[fadeout target = "db1" time = 0.7]
+[fadeout target = "db2" time = 0.7]
+[fadeout target = "db3" time = 0.7]
+[fadeout target = "db4" time = 0.7]
+[fadeout target = "db5" time = 0.7]
+[fadeout target = "db6" time = 0.7]
+[fadeout target = "db7" time = 0.7]
+
+[wait time = 1.0]
+
+*002
+//-------------------------------------------------------------------------------
+//  孫悟空
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_014_001"]
+ 
+[character x=200 y=-150 storage = "00003/none_heapup_e_01" scale = 1.3 action = "fadein" time = 0.1]
+ 
+[balloon x=-100 y=100 shape="001_02" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+[quake target =".bln" power = 3 time = 0.2]
+いでよ！[r]
+神龍！！
+[p]
+
+
+[se storage = "3025"]
+//点滅
+[balloon shape="008_02" x = 0 y = 0 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+[balloon shape="008_02" x = 0 y = 0 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+
+
+*003
+//-------------------------------------------------------------------------------
+//  神龍が現れる。
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0003L" bg = "bg_000_014"]
+
+[wait_anim target= ".coma"]
+
+[character x = 60 y = -130 storage = "90003/shenron" scale = 1.3 action = "fadein" time = 1.5]
+
+[wait_anim target= ".chara"]
+
+[bgm storage = "005"]
+
+[balloon x = -160 y = 150 shape="001_02" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+どんな願いも[r]
+叶えてやる…
+[p]
+
+
+[balloon x = 160 y = -130 shape="001_03" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+さあ 願いを言え
+[p]
+
+
+  
+*005
+//-------------------------------------------------------------------------------
+//  ホイ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0003R" bg = "bg_000_014"]
+ 
+[character x = 140 y = -100 storage = "00312/arm_02" scale = 1.1 action = "fadein" time = 0.1]
+[character x = 140 y = -100 storage = "00312/card_02" scale = 1.1 action = "fadein" time = 0.1]
+ 
+[balloon x=-140 y=60 shape="004_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+ゆ…勇者タピオンの[r]
+封印を解いて[r]
+ほしいんじゃ！
+[p]
+
+*006
+//-------------------------------------------------------------------------------
+//  神龍
+//-------------------------------------------------------------------------------
+[se storage = "04"] 
+[coma shape="N0003L" bg = "bg_000_014"]
+
+[character x = 60 y = -130 storage = "90003/shenron" scale = 1.3 action = "fadein" time = 0.1]
+
+
+[balloon x=-160 y=150 shape="001_03" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+//[quake target =".bln" power = 3 time = 0.2]
+たやすいことだ…
+[p]
+
+//[character id = "eye" x = 60 y = -130 storage = "90003/shenron_eye" scale = 1.3 action = "fadein" time = 1.5]
+
+//[wait time = 1.3]
+
+[se storage = "3034"]
+
+//点滅
+[balloon shape="008_02" x = 0 y = 0 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+[balloon x=0 y=0 shape="008_02" scale = 50.0 action = "fadein" time = 0.8]
+[wait time = 0.9] 
+[fadeout target = ".bln" time = 0.8]
+[wait_anim target=".bln"]
+
+//[fadeout target = "eye" time = 0.9]
+
+[wait time = 0.3]
+
+[balloon x=140 y=-160 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+願いは叶えてやった…[r]
+さらばだ
+[p]
+
+//"神龍フェードアウト"
+[fadeout target = ".chara" time = 0.7]
+[wait_anim target=".chara"]
+
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+
+*009
+//-------------------------------------------------------------------------------
+//  トランクス＆孫悟天
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_014_001"]
+ 
+[character x = 80 y = -110 storage = "00225/heapup_p_01" scale = 0.9 action = "fadein" time = 0.1]
+[flip target =".chara" h=1]
+[character x=240 y=-90 storage = "00200/heapup_e_01" scale = 1.1 action = "fadein" time = 0.1]
+ 
+[balloon x=-120 y=70 shape="001_02" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+[quake target =".bln" power = 3 time = 0.2]
+出るぞ[r]
+出るぞお〜っ！
+[p]
+
+[se storage = "3031"]
+//点滅
+[balloon shape="008_02" x = 0 y = 0 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+[balloon shape="008_02" x = 0 y = 0 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+ 
+*010
+//-------------------------------------------------------------------------------
+//  孫悟飯 孫悟空
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_014_001"]
+ 
+[character id = "gohan" x = 70 y = -170 storage = "00210/idl_side_e_01" scale = 0.9 action = "fadein" time = 0.1]
+
+[character x=200 y=-150 storage = "00003/none_heapup_e_01" scale = 1.3 action = "fadein" time = 0.1]
+
+[wait time = 0.3]
+ 
+[balloon x=-45 y=130 shape="004_01" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 40]
+[quake target =".bln" power = 3 time = 0.2]
+と…父さん…！
+[p]
+ 
+ 
+[balloon x=-120 y=-110 shape="001_02" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 40]
+[quake target =".bln" power = 3 time = 0.2]
+すげえ気だ！ 
+[p]
+
+
+
+*012
+//-------------------------------------------------------------------------------
+//  タピオン現る
+//-------------------------------------------------------------------------------
+[se storage = "50"]
+[coma shape="N0001L" bg = "bg_014_001"]
+
+//[wait_anim target=".coma"]
+ 
+[lwfobject id = "kaki1" storage="kakimoji:ef_009" x=-170 y=-50 angle = 0 scale = 1.5 action = "fadein" time = 0.1]
+[quake target = "kaki1" power = 1 time = 300]
+
+[wait time = 1.0]
+
+[fadeout target = "kaki1" time = 1.0]
+ 
+ 
+[character x = -120 y = -250 storage = "00313/card_05" scale = 1.0 action = "fadein" time = 1.5]
+
+[wait_anim target=".chara"]
+ 
+// 空のフキダシ（セリフがないコマを送るために使用）
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+ 
+*013
+//-------------------------------------------------------------------------------
+//  
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_014_001"]
+
+[character id = "gohan" x = 70 y = -170 storage = "00210/idl_side_e_01" scale = 0.9 action = "fadein" time = 0.1]
+
+[character x=200 y=-150 storage = "00003/none_heapup_e_01" scale = 1.3 action = "fadein" time = 0.1]
+ 
+[balloon x=-70 y=120 shape="001_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+じっちゃんが[r]
+言ってたのは…[r]
+ホントだったんだ…
+[p]
+ 
+*014
+//-------------------------------------------------------------------------------
+//  ブルマ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_014_001"]
+ 
+[character id="beji" x = 200 y = -280 storage = "90003/bluma_majin" scale = 1.0 action = "fadein" time = 0.1]
+ 
+[balloon x=-100 y=80 shape="001_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+いい男じゃない！
+[p]
+
+*015
+//-------------------------------------------------------------------------------
+//  トランクス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_014_001"]
+ 
+[character x = 80 y = -110 storage = "00225/heapup_p_01" scale = 0.9 action = "fadein" time = 0.1]
+[flip target =".chara" h=1]
+[character x=240 y=-90 storage = "00200/heapup_e_01" scale = 1.1 action = "fadein" time = 0.1]
+ 
+[balloon x=-120 y=80 shape="001_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+かっこいい〜っ！
+[p]
+
+*016
+//-------------------------------------------------------------------------------
+//  ホイ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_014_001"]
+ 
+[character x = 220 y = -100 storage = "00312/arm_01" scale = 1.1 action = "fadein" time = 0.1]
+[character x = 220 y = -100 storage = "00312/card_02" scale = 1.1 action = "fadein" time = 0.1]
+ 
+[balloon x=-100 y=70 shape="001_03" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 40]
+//[quake target =".bln" power = 3 time = 0.2]
+ホホホホ…
+[p]
+ 
+*017
+//-------------------------------------------------------------------------------
+//  タピオン
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_014_001"]
+ 
+[character x=-280 y=-200 storage = "00313/card_04" scale = 0.9 action = "fadein" time = 0.1]
+ 
+[balloon x=100 y=120 shape="007_02" scale = 0.65 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 44]
+[quake target =".bln" power = 7 time = 0.2]
+寄るな！！
+[p]
+
+
+[quake target =".chara" power = 4 time = 0.3]
+ 
+[balloon x=130 y=-90 shape="007_01" scale = 0.8 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 7 time = 0.2]
+おまえが[r]
+復活させたのか！？
+[p]
+
+*018
+//-------------------------------------------------------------------------------
+//  ホイ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_014_001"]
+ 
+[character x = 220 y = -100 storage = "00312/arm_01" scale = 1.1 action = "fadein" time = 0.1]
+[character x = 220 y = -100 storage = "00312/card_02" scale = 1.1 action = "fadein" time = 0.1]
+ 
+[balloon x=-100 y=70 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+千年ものあいだ[r]
+あんな狭いところで[r]
+ご苦労だったな
+[p]
+ 
+*019
+//-------------------------------------------------------------------------------
+//  タピオン
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002L" bg = "bg_014_001"]
+ 
+[character x=-280 y=-290 storage = "00313/card_04" scale = 1.1 action = "fadein" time = 0.1]
+
+[balloon x=120 y=100 shape="006_02" scale = 0.8 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 7 time = 0.2]
+よけいなことを…！
+[p]
+ 
+[balloon x=130 y=-190 shape="006_01" scale = 0.7 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 40]
+[quake target =".bln" power = 7 time = 0.2]
+元にもどせ！！
+[p]
+ 
+//-------------------------------------------------------------------------------
+[stopbgm]

@@ -1,0 +1,77 @@
+
+
+*start|スタート
+//2523023	 ステージ２ラウンド3開始
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+//[bgm storage = "03"]
+
+*01
+//-------------------------------------------------------------------------------
+//  合体ザマス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+
+[coma shape="N0004L" bg = "bg_000_014"]
+
+[character x=-240 y=-355 storage = "00662/atc_sp01_p_01" scale = 2.5 angle = -0 action = "fadein" time = 0.1]
+//[quake target =".chara" power = 1 time = 200]
+
+[balloon x=130 y=120 shape="007_02" scale = 0.8 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 7 time = 0.2]
+正義の光よ！[r]
+我を撃て！！[p]
+
+[balloon x=120 y=-130 shape="007_02" scale = 0.9 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 7 time = 0.2]
+悪を滅せぬ[r]
+弱き神は不要なり！！[p]
+
+
+[se storage = "3025"]
+//点滅
+[balloon shape="008_02" x = 140 y = -30 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+[balloon shape="008_02" x = 140 y = -30 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+
+//フェードアウト（フェードアウトするコマ）
+//[balloon x=130 y=40 shape="008_02" scale = 50.0 action = "fadein" time = 0.5]
+//[wait time = 0.7]
+
+*02
+//-------------------------------------------------------------------------------
+//  合体ザマス半身歪み
+//-------------------------------------------------------------------------------
+[se storage = "3038"]
+
+[coma shape="S0001" bg = "bg_073_001"]
+
+[character x = 0 y = -100 storage = "00662/card_01" scale = 1.2 action = "fadein" time = 0.1]
+
+
+//フェードイン（フェードインするコマ）
+//[balloon x=130 y=40 shape="008_02" scale = 50]
+//[wait time = 1]
+//[fadeout target = ".bln" time = 1]
+//[wait_anim target=".bln"]
+
+[quake target =".chara" power = 10 time = 0.4]
+
+[balloon x=0 y= 440 shape="007_02" scale = 1.0 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 7 time = 0.2]
+
+神に[r]
+敵うと思うなぁ！！[p]
+
+//-------------------------------------------------------------------------------
+//[stopbgm]

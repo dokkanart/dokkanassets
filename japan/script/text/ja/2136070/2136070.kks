@@ -1,0 +1,123 @@
+
+
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "005"]
+
+
+//-------------------------------------------------------------------------------
+//  test
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+
+[coma shape="S0001" bg = "bg_000_014"]
+
+[balloon shape="009_15" x = 50 y = 170 scale = 1.2 action = "fadein" time = 0.1]
+
+
+//19×7
+[balloon shape="009_16" x = 35 y = -200 scale = 0.95 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 27]
+
+ひとつの小さな出会いから始まった[r]
+ななつのドラゴンボールをめぐる物語…[r]
+　[r]
+サイヤ人の恐るべき戦闘力の前に[r]
+地球の戦士たちは次々と倒れていった…[r]
+仲間たちを失った悟空の怒りが爆発し[r]
+闘いはついにベジータとの一騎打ちへ…！[p]
+
+
+*01
+//-------------------------------------------------------------------------------
+//  ベジータ
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_008_001"]
+
+[character x = -220 y = -120 storage = "00061/idl_side_p_01" scale = 1.2 action = "fadein" time = 0.1]
+ 
+[balloon x=90 y=140 shape="002_02" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+サイヤ人は生まれてすぐ[r]
+戦士の素質を検査される… 
+[p]
+ 
+[balloon x=120 y=-70 shape="002_01" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 22]
+//[quake target =".bln" power = 3 time = 0.2]
+そのときの数値が低い[r]
+クズ野郎が きさまのように[r]
+たいした敵のいない星へ[r]
+送り込まれるのだ… 
+[p]
+
+
+*02
+//-------------------------------------------------------------------------------
+//  悟空
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+
+
+[coma shape="N0001R" bg = "bg_008_001"]
+
+[character x = 180 y = -80 storage = "00003/heapup_e_01" scale = 1.8 action = "fadein" time = 0.1]
+ 
+[balloon x=-120 y=120 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+そのおかげでオラは[r]
+この地球に来れたんだ[r]
+感謝しなきゃな 
+[p]
+ 
+[balloon x=-100 y=-90 shape="001_01" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+それによ…[r]
+落ちこぼれだって必死で[r]
+努力すりゃエリートを[r]
+超えることがあるかもよ 
+[p]
+
+*03
+//-------------------------------------------------------------------------------
+//  ベジータ
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0002L" bg = "bg_008_001"]
+
+[character x = -170 y = -190 storage = "00061/card_01" scale = 1.2 action = "fadein" time = 0.1]
+ 
+[balloon x=150 y=120 shape="002_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+くっくっく…[r]
+おもしろい冗談だ… 
+[p]
+ 
+[balloon x=130 y=-170 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+では 努力だけでは[r]
+どうやっても超えられぬ[r]
+壁を見せてやろう… 
+[p]
+
+//-------------------------------------------------------------------------------
+[stopbgm]
+

@@ -1,0 +1,40 @@
+
+
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "013"]
+
+
+//-------------------------------------------------------------------------------
+//  フリーザ兵
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0003L" bg = "bg_027_001"]
+[lwfobject id="syuutyuu1" storage="syucyu:ef_002" mask="inside" loop=1 priority=10 scale=1.0]
+
+[character x = -170 y = -50 storage = "00053/heapup_p_01" scale = 2 action = "fadein" time = 0.1]
+
+[balloon shape="002_01" x = 140 y = 110 scale = 1 action = "fadein" time = 0.1]
+[font size = 30]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 3 time = 0.2]
+一瞬で終わらせて[r]やるぜ…！[p]
+
+//-------------------------------------------------------------------------------
+//  トランクス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_027_001"]
+
+[character x=170 y=-325 storage = "90000/wait_right_anger" scale = 1.4 action = "fadein" time = 0.1]
+
+
+[balloon shape="001_01" x = -140 y = 60 scale = 0.8 action = "fadein" time = 0.1]
+[font size = 38]
+[wait_anim target=".bln"]
+闘うしかない[r]ようだな…[p]
+
+[stopbgm]

@@ -1,0 +1,152 @@
+*start|スタート
+//エリア2：スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "010"]
+
+*001
+//-------------------------------------------------------------------------------
+//  ミスター・サタンの声
+//-------------------------------------------------------------------------------
+//[se storage = "50"]
+
+//背景：スーパーゴージャスホテル
+[coma shape="S0001" bg = "bg_000_043"]
+
+[wait time = 0.7]
+
+
+[balloon x=-0 y=220 shape="001_02" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+[quake target =".bln" power = 3 time = 0.2]
+え〜[r]
+本日は遠路はるばる[r]
+ようこそおいで[r]くださいました
+[p]
+
+*002
+//-------------------------------------------------------------------------------
+//  ミスター・サタン
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+
+[coma shape="N0003L" bg = "bg_000_043"]
+
+
+[character id = "boo" x=20 y=-80 storage = "00229/energyball_p_02" scale = 1.0 action = "fadein" time = 0.1]
+[character x=-210 y=-80 storage = "00038/idl_side_p_01" scale = 1.1 action = "fadein" time = 0.1]
+
+
+[balloon x=75 y=250 shape="001_02" scale = 1.1 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 21]
+[quake target =".bln" power = 3 time = 0.2]
+ただいまから[r]
+共に悪い魔人ブウと闘った[r]
+みなさまをお招きして[r]
+感謝のパーティーを始めたいと[r]
+思います！
+[p]
+
+*003
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+
+[coma shape="N0004R" bg = "bg_000_003"]
+
+[character id = "1" x = -140 y = 40 storage = "99999/pod_01" scale = 1.2 action = "fadein" time = 0.1]
+//[quake target ="1" power = 1 time = 300]
+
+[character id = "2" x = -140 y = 40 storage = "99999/pod_02" scale = 1.2 action = "fadein" time = 0.1]
+//[quake target ="2" power = 1 time = 300]
+
+[character id = "3" x = 260 y = 40 storage = "99999/pod_01" scale = 0.7 action = "fadein" time = 0.1]
+[character id = "4" x = 260 y = 40 storage = "99999/pod_02" scale = 0.7 action = "fadein" time = 0.1]
+
+[balloon x=-0 y=20 shape="003_02" scale = 1.6 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 15]
+//[quake target =".bln" power = 3 time = 0.2]
+サタンに招待され[r]
+集まった超戦士たち…[r]
+　[r]
+ひさしぶりの再会を[r]
+楽しむ悟空たちだったが[r]
+時を同じくして[r]
+宇宙には地球に向かう[r]
+ふたつの宇宙船の[r]
+姿があった…
+[p]
+
+
+
+*004
+//-------------------------------------------------------------------------------
+//  ピッコロ
+//-------------------------------------------------------------------------------
+[se storage = "03"]
+[coma shape="N0001R" bg = "bg_000_043"]
+
+[character x = 180 y = -90 storage = "00010/idl_side_e_02" scale = 1.5 action = "fadein" time = 0.1]
+
+[balloon x=-90 y=70 shape="002_02" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 40]
+[quake target =".bln" power = 3 time = 0.2]
+む…！？
+[p]
+
+*005
+//-------------------------------------------------------------------------------
+//  クリリン 18号
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_043"]
+
+[character x = 70 y = -160 storage = "00020/idl_side_e_04" scale = 0.9 action = "fadein" time = 0.1]
+
+[character x = 230 y = -100 storage = "00412/idl_side_e_01" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x=-120 y=120 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+大きな戦闘力を[r]
+持った気が[r]
+近づいている…
+[p]
+
+[balloon x=-120 y=-80 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+また厄介なことに[r]
+ならなければいいが…
+[p]
+
+*006
+//-------------------------------------------------------------------------------
+//  ベジータ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_000_043"]
+
+
+[character x=170 y=-250 storage = "00004/card_01" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x=-140 y=70 shape="002_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+この気は……[r]
+…まさか！？
+[p]
+
+
+//-------------------------------------------------------------------------------
+[stopbgm]

@@ -1,0 +1,187 @@
+*start|スタート
+//ステージ２スタート
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "008"]
+
+*01
+//-------------------------------------------------------------------------------
+//  リクーム
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0001L" bg = "bg_050_001"]
+
+//[character x=-190 y=-105 storage = "00031/idl_side_p_02" scale = 1.2 action = "fadein" time = 0.1]
+
+[character x=-200 y=-150 storage = "00031/idl_side_p_02" scale = 1.4 action = "fadein" time = 0.1]
+
+[balloon x=100 y=100 shape="002_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+さあ[r]
+ベジータちゃん
+[p]
+
+
+[balloon x=120 y=-90 shape="002_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+今度は[r]
+オレたちの番だよ〜
+[p]
+
+*02
+//-------------------------------------------------------------------------------
+//  ベジータ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_050_001"]
+
+[character x = 180 y = -110 storage = "00061/idl_side_e_03" scale = 1.1 angle = 0 action = "fadein" time = 0.1]
+
+[balloon x=-110 y=60 shape="002_03" scale = 0.7 action = "fadein" time = 0.1]
+[font size = 40]
+[wait_anim target=".bln"]
+//[quake target =".bln" power = 3 time = 0.2]
+ち……
+[p]
+
+*03
+//-------------------------------------------------------------------------------
+//  リクーム
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_050_001"]
+
+//[character x=-190 y=-105 storage = "00031/idl_side_p_02" scale = 1.2 action = "fadein" time = 0.1]
+
+[character x=-200 y=-150 storage = "00031/idl_side_p_02" scale = 1.4 action = "fadein" time = 0.1]
+
+[balloon x=120 y=100 shape="002_03" scale = 1 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+2匹のチビちゃんたち[r]
+ベジータちゃんの[r]
+お手伝いをしても[r]いいからね
+[p]
+
+
+[balloon x=120 y=-100 shape="002_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+遠慮しないで どんどん[r]
+卑怯な手を使うんだよ
+[p]
+
+
+
+*04
+//-------------------------------------------------------------------------------
+//  ジース 隣にバータもいる。
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_050_001"]
+
+[character x=-150 y=-100 storage = "00033/bata_idl_front_p_01" scale = 1.1 action = "fadein" time = 0.1]
+
+[character x=-230 y=-160 storage = "00034/heapup_p_01" scale = 1.5 action = "fadein" time = 0.1]
+
+[balloon x=120 y=105 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+おい チビたちは[r]
+殺すんじゃないぞ！
+[p]
+
+
+[balloon x=120 y=-90 shape="002_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+オレたちが[r]
+殺すんだからな！！
+[p]
+
+
+*05
+//-------------------------------------------------------------------------------
+//  クリリン 隣に悟飯もいる。
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_050_001"]
+
+[character x = 100 y = -80 storage = "00007/idl_side_e_03" scale = 0.8 action = "fadein" time = 0.1]
+[character x = 240 y = -80 storage = "00009/idl_side_e_03" scale = 1.0 action = "fadein" time = 0.1]
+
+
+[balloon shape="004_02" x = -120 y = 70 scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+く…くそ…[r]
+な…[r]
+なめやがって……
+[p]
+
+*06
+//-------------------------------------------------------------------------------
+//  リクーム
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0003L" bg = "bg_050_001"]
+
+[character x=-20 y=-150 storage = "00031/card_02" scale = 1.4 action = "fadein" time = 0.1]
+
+
+[balloon x=-200 y=120 shape="006_02" scale = 0.8 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 7 time = 0.2]
+ギニュー特戦隊[r]
+リクーム！！
+[p]
+
+[se storage = "3022"]
+[quake target =".chara" power = 4 time = 0.3]
+
+[balloon x=190 y=-120 shape="006_01" scale = 0.65 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 44]
+[quake target =".bln" power = 7 time = 0.2]
+とうっ！！
+[p]
+
+*07
+//-------------------------------------------------------------------------------
+//  ベジータ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_050_001"]
+
+//[character x = 165 y = -115 storage = "00061/idl_side_e_03" scale = 1.2 action = "fadein" time = 0.1]
+ 
+[character x = 160 y = -190 storage = "00061/heapup_p_03" scale = 1.4 action = "fadein" time = 0.1]
+[flip target =".chara" h=1]
+
+[quake target =".chara" power = 4 time = 0.3]
+
+[balloon x=-130 y=80 shape="007_02" scale = 0.75 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+[quake target =".bln" power = 7 time = 0.2]
+はあああーっ！！
+[p]
+
+[se storage = "50"]
+//点滅
+[balloon shape="008_02" x = 0 y = 0 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+[balloon shape="008_02" x = 0 y = 0 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+
+//-------------------------------------------------------------------------------
+[stopbgm]

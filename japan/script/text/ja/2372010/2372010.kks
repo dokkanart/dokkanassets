@@ -1,0 +1,204 @@
+*start|スタート
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "003"]
+
+*001
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0003R" bg = "bg_000_014"]
+
+//[character id = "gero" x = 175 y = -75 storage = "00019/card_01" scale = 1.0 action = "fadein" time = 0.1 mask="inside"]
+[character id = "gero" x = 250 y = -230 storage = "00019/card_01" scale = 1.6 angle = -20 action = "fadein" time = 0.1]
+[paint target="gero" color="#F5A9A9"]
+
+
+[character x = 60 y = -100 storage = "00021/card_10" scale = 0.8 angle = 10 action = "fadein" time = 0.1]
+
+[balloon x= -175 y=-20 shape="003_02" scale = 1.3 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 18]
+//[quake target =".bln" power = 3 time = 0.2]
+ドクター・ゲロは[r]
+みずから造り出した[r]
+人造人間17号に[r]
+よって殺された[r]
+　[r]
+　[r]
+だが…
+[p]
+
+
+*002
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0004L" bg = "bg_000_014"]
+
+[character x = 0 y = -40 storage = "99999/beam_04" scale = 1.8 angle = 0 action = "fadein" time = 0.1]
+
+
+
+[balloon x= 0 y=-30 shape="003_01" scale = 1.3 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 18]
+//[quake target =".bln" power = 3 time = 0.2]
+ドクター・ゲロが[r]
+使っていた[r]
+コンピューターは[r]
+最強の人造人間を[r]
+造り出すため[r]そのまま[r]
+作動し続けていた…！
+[p]
+
+//フェードアウト（フェードアウトするコマ）
+[balloon x=130 y=40 shape="008_03" scale = 50.0 action = "fadein" time = 0.5]
+[wait time = 0.7] 
+
+
+*003
+//-------------------------------------------------------------------------------
+//  タイトル
+//-------------------------------------------------------------------------------
+//街背景
+[coma id = "coma1" shape="S0001" bg = "bg_014_006"]
+
+//[character id = "BG" x = 0 y = 0 storage = "99999/flare" scale = 20 action = "fadein" time = 0.1 mask="inside"]
+
+
+
+//フェードイン（フェードインするコマ）
+[balloon x=130 y=40 shape="008_03" scale = 50]
+[wait time = 1]
+[fadeout target = ".bln" time = 2]
+[wait_anim target=".bln"]
+
+
+[se storage = "40"]
+//[se storage = "17"]
+
+[balloon x= 0 y= 10 shape="011_34" scale = 1.2 action = "fadein" time = 2.0]
+
+[wait_anim target=".bln"]
+
+[p]
+
+
+*004
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+[bgm storage = "013"]
+
+[se storage = "04"]
+[coma shape="N0003R" bg = "bg_000_024"]
+
+[balloon x=0 y=90 shape="003_01" scale = 1.4 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 16]
+//[quake target =".bln" power = 3 time = 0.2]
+都で買い物をしながら[r]
+休日を楽しむ悟空たち…[r]
+　[r]
+しかし[r]
+そんな悟空たちの前に[r]
+突如 謎の二人組が[r]
+現れた…！
+[p]
+
+
+*005
+//-------------------------------------------------------------------------------
+//  人造人間14号&15号
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+//街背景
+[coma shape="N0001L" bg = "bg_014_006"]
+
+[character x=-220 y=-130 storage = "00290/idl_side_p_01" scale = 1.1 action = "fadein" time = 0.1]
+
+[character x=-120 y=-150 storage = "00291/idl_side_p_01" scale = 0.8 action = "fadein" time = 0.1]
+
+[balloon x=100 y=75 shape="002_02" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 40]
+[quake target =".bln" power = 3 time = 0.2]
+孫悟空！
+[p]
+
+
+*006
+//-------------------------------------------------------------------------------
+//  孫悟空
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_014_006"]
+
+[character x = 110 y = -120 storage = "00069/heapup_e_04" scale = 0.8 action = "fadein" time = 0.1]
+
+[character x=250+20 y=-140 storage = "00003/none_idl_side_e_01" scale = 1.1 action = "fadein" time = 0.1]
+
+[balloon x = -130 y = 70 shape="001_02" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+おめえたち[r]
+ぜんぜん気を[r]
+感じねえところをみると[r]
+人間じゃねえな
+[p]
+
+
+*007
+//-------------------------------------------------------------------------------
+//  人造人間14号&15号
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_014_006"]
+
+[character x=-220 y=-130 storage = "00290/idl_side_p_01" scale = 1.1 action = "fadein" time = 0.1]
+
+[character x=-120 y=-150 storage = "00291/idl_side_p_01" scale = 0.8 action = "fadein" time = 0.1]
+
+[balloon x=100 y=75 shape="002_02" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 54]
+//[quake target =".bln" power = 3 time = 0.2]
+………
+[p]
+
+
+*008
+//-------------------------------------------------------------------------------
+//  孫悟空
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_014_006"]
+
+[character x = 170 y = -180 storage = "00003/card_01" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x = -140 y = 60 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 26]
+//[quake target =".bln" power = 3 time = 0.2]
+そうか… おめえたちも[r]
+ドクター・ゲロが造った[r]
+人造人間てわけか
+[p]
+
+
+[balloon x=-145 y=-170 shape="001_03" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+執念ぶけえことだな
+[p]
+
+
+
+//-------------------------------------------------------------------------------
+[stopbgm]

@@ -1,0 +1,262 @@
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "017"]
+
+*001
+//-------------------------------------------------------------------------------
+//  爆煙の中からブロリーが現れる。
+//-------------------------------------------------------------------------------
+[se storage = "3038"]
+[coma shape="N0004L" bg = "bg_000_014"]
+
+[lwfobject id = "kaki2" storage="kakimoji:ef_009" in="02" x=-210 y=70 scale = 1.8] 
+[quake target ="kaki2" power = 1 time = 300]
+
+//[character id = "blo1" x = -0 y = -580 storage = "00255/card_02" scale = 2.0 action = "fadein" time = 0.1]
+[character x = 0 y = -138 storage = "00255/card_04" scale = 2.5 angle =15 action = "fadein" time = 0.1]
+//[paint target=".chara" color="#A4A4A4"]
+
+[character id = "kemuri4" x = 240 y = 30 storage = "99999/ef_sp_smoke" scale = 1.4 angle=80 action = "fadein" time = 0.1]
+[character id = "kemuri3" x = -140 y = -60 storage = "99999/ef_sp_smoke" scale = 1.4 angle=50 action = "fadein" time = 0.1]
+[character id = "kemuri1" x = 270 y = -170 storage = "99999/ef_sp_smoke" scale = 1.7 angle=-30 action = "fadein" time = 0.1]
+[character id = "kemuri2" x = -250 y = -190 storage = "99999/ef_sp_smoke" scale = 1.5 angle=-90 action = "fadein" time = 0.1]
+
+[quake target ="kemuri1" power = 3 time = 300]
+[quake target ="kemuri2" power = 3 time = 300]
+[quake target ="kemuri3" power = 3 time = 300]
+[quake target ="kemuri4" power = 3 time = 300]
+
+[wait time = 1.5]
+
+[fadeout target = "kemuri4" time = 2.5]
+[fadeout target = "kemuri3" time = 2.2]
+[fadeout target = "kemuri1" time = 1.3]
+[fadeout target = "kemuri2" time = 1.0]
+[fadeout target = "kaki2" time = 2.5]
+
+[wait time = 2.5]
+
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+*002
+//-------------------------------------------------------------------------------
+//  トランクス（幼年期） 孫悟天
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_070_003"]
+
+[character x = 80 y = -130 storage = "00225/idl_side_e_03" scale = 0.9 action = "fadein" time = 0.1]
+[character x=240 y=-90 storage = "00200/idl_side_e_02" scale = 1.0 action = "fadein" time = 0.1]
+[character x =215 y = -37 storage = "99999/ornament_trunks_idl" scale = 1.0 action = "fadein" time = 0.1]
+ 
+[balloon x=-70 y=100 shape="004_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+こんなやつが[r]
+地球にいたなんて…！ 
+[p]
+ 
+[balloon x=-145 y=-90 shape="001_02" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+//[quake target =".bln" power = 3 time = 0.2]
+上には上が[r]
+いるもんだね… 
+[p]
+
+*003
+//-------------------------------------------------------------------------------
+//  超サイヤ人ブロリー
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_070_003"]
+ 
+//[character x = -190 y = -190 storage = "00255/card_02" scale = 0.9 action = "fadein" time = 0.1]
+[character x = -190 y = -270 storage = "00255/card_02" scale = 1.1 action = "fadein" time = 0.1]
+
+[balloon x=150 y=60 shape="006_02" scale = 0.8 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 7 time = 0.2]
+カカロットォォ！！
+[p]
+
+*004
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002L" bg = "bg_000_013"]
+
+[balloon id = "ki-ra" x=180 y=-30 shape="010_04" scale = 2.0 angle = -30 action = "fadein" time = 0.1]
+
+[balloon x=-130 y=-10 shape="003_02" scale = 1.6 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 14]
+//[quake target =".bln" power = 3 time = 0.2]
+何も知らない[r]
+悟天とトランクスに[r]
+容赦なく襲いかかる[r]
+ブロリー！[r]
+　[r]
+その恐るべき強さに[r]
+圧倒されるふたりだったが[r]
+闘いの最中 [r]
+悟天が最後の１個の[r]
+ドラゴンボールを発見し…
+[p]
+
+*005
+//-------------------------------------------------------------------------------
+//  孫悟天
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_070_003"]
+ 
+[character x=200 y=-95 storage = "00225/heapup_e_03" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x=-100 y=80 shape="001_01" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 40]
+[quake target =".bln" power = 3 time = 0.2]
+四星球だっ！
+[p]
+ 
+[balloon x=-120 y=-100 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+あれさえあれば[r]
+神龍に頼んで あの怪物を[r]
+やっつけてもらえる！
+[p]
+
+*006
+//-------------------------------------------------------------------------------
+//  トランクス（幼年期）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_070_003"]
+ 
+[character x = 210 y = -130 storage = "00200/idl_side_e_02" scale = 1.2 action = "fadein" time = 0.1]
+[character x = 185 y = -67 storage = "99999/ornament_trunks_idl" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x=-100 y=80 shape="001_03" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 40]
+//[quake target =".bln" power = 3 time = 0.2]
+よし 悟天！
+[p]
+ 
+[balloon x=-110 y=-100 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+オレがあいつを[r]
+引きつけておくから[r]
+その間に！
+[p]
+
+*007
+//-------------------------------------------------------------------------------
+//  孫悟天
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_070_003"]
+ 
+[character x=200 y=-95 storage = "00225/heapup_e_03" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x = -105 y = 50 shape="001_03" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 40]
+[quake target =".bln" power = 3 time = 0.2]
+うん！
+[p]
+
+*008
+//-------------------------------------------------------------------------------
+//  超サイヤ人ブロリー
+//-------------------------------------------------------------------------------
+[se storage = "50"]
+[coma shape="S0001" bg = "bg_070_003"]
+ 
+[lwfobject id = "kaki2" storage="kakimoji:ef_008" x=-80 y=400 scale = 2.5 angle=-13 action = "fadein" time = 0.1]
+[quake target = "kaki2" power = 15 time = 0.4]
+ 
+[character x = 20 y = 0 storage = "00255/card_04" scale = 1.1 action = "expand" time = 0.1]
+[quake target = ".chara" power = 8 time = 0.4]
+
+
+ 
+[balloon x=120 y=-250 shape="007_02" scale = 0.7 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 40]
+[quake target =".bln" power = 7 time = 0.2]
+　うおおぉぉ！！
+[p]
+
+
+*009
+//-------------------------------------------------------------------------------
+//  超サイヤ人トランクス（幼年期）
+//-------------------------------------------------------------------------------
+[se storage = "3022"]
+[coma shape="N0002R" bg = "bg_070_003"]
+
+[lwfobject id = "kaki1" storage="kakimoji:ef_023" x=-30 y=100 angle=-27 scale = 1.2 action = "fadein" time = 0.1]
+[quake target = "kaki1" power = 10 time = 0.4] 
+
+
+[character id="tra2" x=170 y=-70 storage = "00200/atc_front_e_06" scale = 1.0 action = "fadein" time = 0.1]
+[quake target = "tra2" power = 5 time = 0.4]
+
+ 
+//[character id="tra1" x=210 y=-90 storage = "00200/heapup_e_02" scale = 1.2 action = "fadein" time = 0.1]
+//[character id="kubiwa" x = 192 y = -32 storage = "99999/trankubiwa_heapup" scale = 1.2 action = "fadein"time = 0.1]
+ 
+[balloon x = -150 y = -180 shape="006_02" scale = 0.7 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 40]
+[quake target =".bln" power = 7 time = 0.2]
+でやあぁ！！
+[p]
+
+//点滅
+//[balloon shape="008_02" x = 140 y = -30 scale = 50 action = "fadein" time = 0.1]
+//[wait time = 0.3]
+//[clear target = ".bln"]
+
+//[fadeout target="tra1" time=0.1]
+//[fadeout target="kubiwa" time=0.1]
+//[se storage = "50"]
+
+//[character id = "ss" x = 180 y = -140 storage = "99999/supersaiyan" scale = 0.8 action = "fadein" time = 0.1]
+//[quake target = "ss" power = 10 time = 0.4]
+
+//[character id="tra2" x=200 y=-90 storage = "00200/heapup_e_06" scale = 1.2 action = "fadein" time = 0.1]
+//[quake target = "tra2" power = 7 time = 0.4]
+
+//[lwfobject id = "kaki1" storage="kakimoji:ef_020" in="04" x=80 y=-200 angle=-5 scale = 1.8] 
+//[quake target = "kaki1" power = 15 time = 0.4] 
+
+//[wait_anim target="kaki1"]
+
+// 空のフキダシ（セリフがないコマを送るために使用）
+//[balloon x = 0 y = 0 shape="002_01" scale = 0]
+//[p]
+
+//点滅
+[balloon shape="008_02" x = 0 y = 0 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+[balloon shape="008_02" x = 0 y = 0 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+
+//-------------------------------------------------------------------------------
+[stopbgm]

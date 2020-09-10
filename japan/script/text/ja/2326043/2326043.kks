@@ -1,0 +1,121 @@
+*start|スタート
+
+//2326043
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "013"]
+
+*001
+//-------------------------------------------------------------------------------
+//  超サイヤ人孫悟空
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0003R" bg = "bg_070_001"]
+ 
+[character id = "goku" x = 30 y = -30 storage = "00300/SR_atc_front_e_01" angle = -15 scale = 1.2 action = "fadein" time = 0.1]
+ 
+[wait time = 0.7] 
+ 
+[balloon x=-150 y=200 shape="001_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+パワーをくれ…[r]
+こいつを倒せる… 
+[p]
+
+[quake target ="goku" power = 3 time = 0.4] 
+ 
+[balloon x=180 y=-150 shape="006_02" scale = 0.75 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+[quake target =".bln" power = 7 time = 0.2]
+パワーを[r]くれーっ！！ 
+[p]
+
+[se storage = "44"]
+
+[character id = "pi" x = -5 y = -140 storage = "00056/atc_front_p_01" angle = 15 scale = 1.0 action = "fadein" time = 0.3]
+
+[wait time = 0.3]
+
+[fadeout target = "pi" time = 0.4]
+
+[wait time = 0.4]
+
+[se storage = "44"]
+
+[character id = "gohan" x = -20 y = -10 storage = "00322/atc_front_p_01" angle = -0 scale = 1.0 action = "fadein" time = 0.3]
+
+[wait time = 0.3]
+
+[fadeout target = "gohan" time = 0.4]
+
+[wait time = 0.4]
+
+[se storage = "44"]
+
+[character id = "tr" x = 0 y = -0 storage = "00069/atc_front_p_01" angle = 20 scale = 1.0 action = "fadein" time = 0.3]
+
+[wait time = 0.3]
+
+[fadeout target = "tr" time = 0.4]
+
+[wait time = 0.4]
+
+[se storage = "44"]
+
+[character id = "vj" x = -5 y = -40 storage = "00004/atc_front_p_01" angle = 25 scale = 1.6 action = "fadein" time = 0.3]
+
+[wait time = 0.3]
+
+[fadeout target = "vj" time = 0.4]
+
+[wait time = 0.4]
+
+[wait_anim target="vj"]
+
+//点滅（白）
+[se storage = "3025"]
+//点滅
+[balloon shape="008_02" x = 140 y = -30 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+[balloon shape="008_02" x = 140 y = -30 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+
+[clear target = "goku"]
+[character id = "ss" x = 15 y = -100 storage = "99999/supersaiyan" angle = 0 scale = 1.2]
+[quake target ="ss" power = 7 time = 0.4]
+[character id = "goku" x = 30 y = -30 storage = "00300/SR_atc_front_e_01" angle = -15 scale = 1.2]
+[quake target ="goku" power = 3 time = 0.4]
+
+// 空のフキダシ（セリフがないコマを送るために使用）
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+*002
+//-------------------------------------------------------------------------------
+//  伝説の超サイヤ人ブロリー
+//-------------------------------------------------------------------------------
+[se storage = "3014"]
+[coma shape="N0002L" bg = "bg_070_001"]
+ 
+[character id = "blo1" x = -80 y = -70 storage = "00256/card_01" scale = 1.3 angle = 5 action = "fadein" time = 0.1]
+[quake target ="blo1" power = 10 time = 0.4] 
+ 
+[balloon x=130 y=-220 shape="007_02" scale = 1.0 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+[quake target =".bln" power = 7 time = 0.2]
+ザコのパワーを[r]
+いくら吸収したとて[r]
+このオレを超えることは[r]
+できぬ！！
+[p]
+
+//-------------------------------------------------------------------------------
+[stopbgm]

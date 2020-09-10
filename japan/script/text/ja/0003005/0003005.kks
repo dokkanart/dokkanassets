@@ -1,0 +1,302 @@
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+//[bgm storage = "012"]
+
+
+*01
+//-------------------------------------------------------------------------------
+//  亀仙人
+//-------------------------------------------------------------------------------
+
+//[se storage = "04"]
+[coma shape="S0001" bg = "bg_026_001"]
+
+
+[character x = -120 y = 0 storage = "00023/card_03" scale = 1.2 action = "fadein" time = 0.1]
+
+[wait_anim target=".chara"]
+
+
+[balloon x=125 y=280 shape="001_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[quake target = ".bln" power = 3 time = 0.2]
+[font size = 32]
+ハロ〜！[r]
+亀仙人じゃ！[p]
+
+[balloon x=125 y=-120 shape="001_02" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target = ".bln" power = 3 time = 0.2]
+[font size = 24]
+どうじゃ？[r]
+元気にやっておるかのう[p]
+
+
+*02
+//-------------------------------------------------------------------------------
+//  亀仙人
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_026_001"]
+
+[character x = -180 y = -100 storage = "00023/card_04" scale = 0.8 action = "fadein" time = 0.1]
+
+
+[balloon x=100 y=150 shape="001_02" scale = 1 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target = ".bln" power = 3 time = 0.2]
+[font size = 24]
+…ところで クリアすると[r]
+キャラクターが手に入る[r]
+イベントがあるんじゃ[p]
+
+[balloon x=110 y=-85 shape="001_03" scale = 1.1 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target = ".bln" power = 3 time = 0.2]
+[font size = 20]
+「まったなし！ 超本気の超決戦」[r]
+というイベントじゃ[r]
+知っておるか？[p]
+
+//---------------------------------------------
+
+[if !$is_cleared]    
+// 達成済みか否かは $is_cleared 変数に入っているので、それを用いて if 分岐します。
+
+//---------------------------------------------
+
+//*explain|任務内容詳細説明    // ラベルを付けておくと、テスターで見やすくなります。
+
+// ******************************************************
+//  ここには、
+//  まだ、このミッションを達成していない場合の展開を記述します。
+// ******************************************************
+
+*explain|任務内容詳細説明
+*03_mitatu
+//-------------------------------------------------------------------------------
+//  ブルマ
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_026_001"]
+
+[character x = 200 y = -340 storage = "90003/bluma_jinzou" scale = 1.3 action = "fadein" time = 0.1]
+
+[balloon x=-70 y=100 shape="001_01" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target = ".bln" power = 3 time = 0.2]
+[font size = 24]
+手に入ると言っても[r]
+キャラクタードロップ率[r]
+というのがあるの[p]
+
+
+[balloon x=-110 y=-110 shape="001_02" scale = 1 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target = ".bln" power = 3 time = 0.2]
+[font size = 24]
+高い難易度ほど[r]
+キャラクタードロップ率は[r]
+上がるのよ！[p]
+
+
+*04_mitatu
+//-------------------------------------------------------------------------------
+//  亀仙人
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_026_001"]
+
+[character x = -180 y = -100 storage = "00023/card_04" scale = 0.8 action = "fadein" time = 0.1]
+
+
+[balloon x=125 y=100 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target = ".bln" power = 3 time = 0.2]
+[font size = 28]
+今は難易度NORMALを[r]
+クリアできれば[r]大丈夫じゃぞ[p]
+
+[balloon x=125 y=-100 shape="001_01" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target = ".bln" power = 3 time = 0.2]
+[font size = 24]
+…だが いずれ[r]
+HARDやZ-HARDに[r]挑むときも[r]
+やってくるじゃろうな[p]
+
+*05_mitatu
+//-------------------------------------------------------------------------------
+//  ブルマ
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_026_001"]
+
+[character x = 200 y = -340 storage = "90003/bluma_jinzou" scale = 1.3 action = "fadein" time = 0.1]
+
+[balloon x=-100 y=0 shape="001_02" scale = 1 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target = ".bln" power = 3 time = 0.2]
+[font size = 24]
+そうね！[r]
+そのときのために[r]
+キャラクターを育てて[r]
+おかなきゃダメよ？[p]
+
+*06_mitatu
+//-------------------------------------------------------------------------------
+//  亀仙人
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0002L" bg = "bg_026_001"]
+
+
+[character x = -160 y = -110 storage = "00023/card_02" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x=140 y=110 shape="001_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target = ".bln" power = 3 time = 0.2]
+[font size = 28]
+そういうことじゃ！[p]
+
+[balloon x=125 y=-180 shape="001_03" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[quake target = ".bln" power = 3 time = 0.2]
+[font size = 24]
+なんにしても まずは[r]
+NORMALのクリアを[r]
+目指すのじゃ！[p]
+
+//---------------------------------------------
+[else]
+//*has_been_cleared|すでに達成済み    // ラベルを付けておくと、テスターでチェックしやすくなります。
+
+// ******************************************************
+//  ここには、
+//  すでに、このミッションを達成している場合の展開を記述します。
+// ******************************************************
+
+*has_been_cleared|すでに達成済み
+
+*07
+//-------------------------------------------------------------------------------
+//  ブルマ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_026_001"]
+
+[character x = 200 y = -340 storage = "90003/bluma_jinzou" scale = 1.3 action = "fadein" time = 0.1]
+
+[balloon x=-75 y=110 shape="001_01" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target = ".bln" power = 3 time = 0.2]
+[font size = 24]
+ちょっとちょっと！[r]
+あんまり甘く見ないほうが[r]
+いいんじゃない？[p]
+
+[balloon x=-100 y=-100 shape="001_03" scale = 1.1 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target = ".bln" power = 3 time = 0.2]
+[font size = 20]
+もう[r]
+「まったなし！ 超本気の超決戦」[r]
+の難易度NORMALは[r]
+クリアしてるみたいよ[p]
+
+*08
+//-------------------------------------------------------------------------------
+//  亀仙人
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_026_001"]
+
+[character x = -180 y = -100 storage = "00023/card_04" scale = 0.8 action = "fadein" time = 0.1]
+
+[balloon x=125 y=100 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target = ".bln" power = 3 time = 0.2]
+[font size = 28]
+なんじゃと！？[r]
+う〜む…[r]
+おぬし やるのう[p]
+
+[balloon x=125 y=-110 shape="001_03" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target = ".bln" power = 3 time = 0.2]
+[font size = 24]
+それなら いずれ[r]
+HARDや[r]
+Z-HARDに挑むときも[r]
+やってくるじゃろう[p]
+
+*09
+//-------------------------------------------------------------------------------
+//  ブルマ
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_026_001"]
+
+[character x = 200 y = -340 storage = "90003/bluma_jinzou" scale = 1.3 action = "fadein" time = 0.1]
+
+[balloon x=-100 y=100 shape="001_02" scale = 1 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target = ".bln" power = 3 time = 0.2]
+[font size = 26]
+高い難易度ほど[r]
+キャラクタードロップ率は[r]
+上がるのよ[p]
+
+[balloon x=-100 y=-110 shape="001_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target = ".bln" power = 3 time = 0.2]
+[font size = 32]
+覚えておいてね！[p]
+
+*10
+//-------------------------------------------------------------------------------
+//  亀仙人
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0002L" bg = "bg_026_001"]
+
+//[character x = -170 y = -220 storage = "00003/card_01" scale = 1.3 action = "fadein" time = 0.1]
+[character x = -160 y = -110 storage = "00023/card_02" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x=125 y=100 shape="001_02" scale = 1 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target = ".bln" power = 3 time = 0.2]
+[font size = 24]
+じゃが難易度が[r]
+高くなるということは[r]
+それだけ敵も強くなる[r]
+ということだ！[p]
+
+[balloon x=125 y=-180 shape="001_03" scale = 1 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[quake target = ".bln" power = 3 time = 0.2]
+[font size = 24]
+HARDやZ-HARDに[r]
+挑戦していくためにも[r]
+キャラクターは[r]
+育てておくのじゃぞ！[p]
+
+[endif]
+*conclusion|結び
+
+//---------------------------------------------
+
+
+
+//[stopbgm]

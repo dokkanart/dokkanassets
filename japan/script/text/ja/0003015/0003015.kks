@@ -1,0 +1,381 @@
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+//[bgm storage = "012"]
+
+
+*01
+//-------------------------------------------------------------------------------
+//  界王神
+//-------------------------------------------------------------------------------
+
+//[se storage = "04"]
+[coma shape="S0001" bg = "bg_000_023"]
+
+[character x = -150 y = -0 storage = "00361/card_01" scale = 1.3 action = "fadein" time = 0.1]
+
+[wait_anim target=".chara"]
+
+[balloon x=125 y=240 shape="001_01" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target = ".bln" power = 3 time = 0.2]
+[font size = 23]
+さて…[r]
+だいぶ「修業」のコツも[r]
+つかんできたようですね[r]
+でも まだまだ…[p]
+
+*02
+//-------------------------------------------------------------------------------
+//  老界王神
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_023"]
+
+[character x=170 y=-110 storage = "90003/oldkaiousin" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x=-110 y=100 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[quake target = ".bln" power = 3 time = 0.2]
+[font size = 28]
+な〜にを えらそうに[r]
+語っとるんじゃ！[r]
+若造のくせに！[p]
+
+
+*03
+//-------------------------------------------------------------------------------
+//  界王神
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_023"]
+
+[character x = -190 y = -150 storage = "00361/card_02" scale = 1.1 action = "fadein" time = 0.1]
+
+[character x = -190 y = 60 storage = "99999/ase" scale = 0.7 action = "fadein" time = 0.1]
+
+[balloon x=135 y=120 shape="004_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[quake target = ".bln" power = 3 time = 0.2]
+[font size = 28]
+ご…ご先祖さま！？[r]
+ジャマしないでください[p]
+
+[balloon x=125 y=-80 shape="004_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[quake target = ".bln" power = 3 time = 0.2]
+[font size = 28]
+わたしは これから[r]
+「Z覚醒」について[r]
+教えようと…[p]
+
+
+//---------------------------------------------
+
+[if !$is_cleared]    
+// 達成済みか否かは $is_cleared 変数に入っているので、それを用いて if 分岐します。
+
+//---------------------------------------------
+
+//*explain|任務内容詳細説明    // ラベルを付けておくと、テスターで見やすくなります。
+
+// ******************************************************
+//  ここには、
+//  まだ、このミッションを達成していない場合の展開を記述します。
+// ******************************************************
+
+*explain|任務内容詳細説明
+*04_mitatu
+//-------------------------------------------------------------------------------
+//  老界王神
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_023"]
+
+[character x=170 y=-110 storage = "90003/oldkaiousin" scale = 1.2 action = "fadein" time = 0.1]
+
+
+[balloon x=-125 y=70 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[quake target = ".bln" power = 3 time = 0.2]
+[font size = 28]
+「Z覚醒」じゃと？[r]
+そんなもん わしが[r]
+教えてやるわい！[p]
+
+*05_mitatu
+//-------------------------------------------------------------------------------
+//  界王神
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_023"]
+
+[character x = -190 y = -150 storage = "00361/card_02" scale = 1.1 action = "fadein" time = 0.1]
+
+[character x = -190 y = 60 storage = "99999/ase" scale = 0.7 action = "fadein" time = 0.1]
+
+[balloon x=125 y=70 shape="004_02" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[quake target = ".bln" power = 3 time = 0.2]
+[font size = 36]
+そ…[r]
+そんなあ…[p]
+
+
+*06_mitatu
+//-------------------------------------------------------------------------------
+//  老界王神
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_023"]
+
+//[character x = -150 y = -120 storage = "00003/card_01" scale = 1 action = "fadein" time = 0.1]
+[character x=170 y=-110 storage = "90003/oldkaiousin" scale = 1.2 action = "fadein" time = 0.1]
+
+
+[balloon x=-110 y=125 shape="001_03" scale = 1 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target = ".bln" power = 3 time = 0.2]
+[font size = 24]
+「Z覚醒」すると[r]
+レアリティが１つ上がり[r]
+さらにLvの上限も[r]
+あがるんじゃ[p]
+
+
+[balloon x=-125 y=-90 shape="001_02" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[quake target = ".bln" power = 3 time = 0.2]
+[font size = 24]
+属性にも[r]
+「超」や「極」が付いて[r]
+バトルが有利になるぞい！[p]
+
+
+*07_mitatu
+//-------------------------------------------------------------------------------
+//  界王神
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_023"]
+
+[character x = -190 y = -150 storage = "00361/card_01" scale = 1.1 action = "fadein" time = 0.1]
+
+
+[balloon x=125 y=110 shape="001_02" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target = ".bln" power = 3 time = 0.2]
+[font size = 24]
+あ…でも「Z覚醒」するには[r]
+まず キャラクターのLvを[r]
+Maxにしなくて[r]はいけませんよ[p]
+
+[balloon x=125 y=-110 shape="001_01" scale = 1 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target = ".bln" power = 3 time = 0.2]
+[font size = 24]
+さらに[r]
+キャラクターに応じた数の[r]
+覚醒メダルが必要なのです[p]
+
+
+*08_mitatu
+//-------------------------------------------------------------------------------
+//  老界王神
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_023"]
+
+//[character x = -150 y = -120 storage = "00003/card_01" scale = 1 action = "fadein" time = 0.1]
+[character x=170 y=-110 storage = "90003/oldkaiousin" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x=-125 y=100 shape="001_02" scale = 1 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target = ".bln" power = 3 time = 0.2]
+[font size = 24]
+覚醒メダルは 曜日クエストや[r]
+「雲の上のすんげぇ稽古」で[r]
+集めるといいぞい[p]
+
+[balloon x=-120 y=-110 shape="001_03" scale = 1 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[quake target = ".bln" power = 3 time = 0.2]
+[font size = 24]
+マップ上の紫のカプセルが[r]
+覚醒メダルじゃ！[p]
+
+*09_mitatu
+//-------------------------------------------------------------------------------
+//  界王神
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_023"]
+
+[character x = -190 y = -150 storage = "00361/card_01" scale = 1.1 action = "fadein" time = 0.1]
+
+
+[balloon x=105 y=60 shape="001_03" scale = 1.15 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target = ".bln" power = 3 time = 0.2]
+[font size = 19]
+手始めに[r]
+【あふれる闘争心】孫悟空【R】を[r]
+「Z覚醒」させてみては[r]
+いかがでしょうか？[p]
+
+
+*10_mitatu
+//-------------------------------------------------------------------------------
+//  老界王神
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_000_023"]
+
+
+[character x=150 y=-70 storage = "90003/oldkaiousin_2" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x=-125 y=-100 shape="001_02" scale = 1 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[quake target = ".bln" power = 3 time = 0.2]
+[font size = 24]
+必要な覚醒メダルが[r]
+そろっているか確認したら[r]
+さっそく「Z覚醒」じゃ！[p]
+
+
+//---------------------------------------------
+[else]
+//*has_been_cleared|すでに達成済み    // ラベルを付けておくと、テスターでチェックしやすくなります。
+
+// ******************************************************
+//  ここには、
+//  すでに、このミッションを達成している場合の展開を記述します。
+// ******************************************************
+
+*has_been_cleared|すでに達成済み
+
+*11
+//-------------------------------------------------------------------------------
+//  老界王神
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_023"]
+
+//[character x=260 y=-240 storage = "00010/card_01" scale = 0.9 action = "fadein" time = 0.1]
+[character x=170 y=-110 storage = "90003/oldkaiousin" scale = 1.2 action = "fadein" time = 0.1]
+
+
+[balloon x=-125 y=100 shape="001_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target = ".bln" power = 3 time = 0.2]
+[font size = 28]
+…おまえ[r]
+どこに目をつけて[r]
+おるんじゃ？[p]
+
+[balloon x=-125 y=-100 shape="001_01" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[quake target = ".bln" power = 3 time = 0.2]
+[font size = 24]
+こやつの仲間には[r]
+すでに「Z覚醒」した[r]
+キャラクターが[r]
+いるじゃろうが！[p]
+
+
+*12
+//-------------------------------------------------------------------------------
+//  界王神
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_023"]
+
+[character x = -190 y = -150 storage = "00361/card_01" scale = 1.1 action = "fadein" time = 0.1]
+
+
+[balloon x=105 y=100 shape="001_02" scale = 1.05 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target = ".bln" power = 3 time = 0.2]
+[font size = 22]
+あ… じゃ じゃあもう[r]
+「Z覚醒」のすごさは[r]
+わかっていただけましたか？[p]
+
+[balloon x=125 y=-120 shape="001_01" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[quake target = ".bln" power = 3 time = 0.2]
+[font size = 24]
+属性に[r]
+「超」や「極」が付いて[r]
+バトルが有利に[r]
+なったはずです！[p]
+
+*13
+//-------------------------------------------------------------------------------
+//  老界王神
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_023"]
+
+//[character x=260 y=-240 storage = "00010/card_01" scale = 0.9 action = "fadein" time = 0.1]
+[character x=170 y=-110 storage = "90003/oldkaiousin" scale = 1.2 action = "fadein" time = 0.1]
+
+
+[balloon x=-125 y=100 shape="001_02" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target = ".bln" power = 3 time = 0.2]
+[font size = 24]
+今後も[r]
+大勢のキャラクターを[r]
+「Z覚醒」させるじゃろう[p]
+
+[balloon x=-125 y=-100 shape="001_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target = ".bln" power = 3 time = 0.2]
+[font size = 27]
+そのためにも[r]
+覚醒メダルをたくさん[r]
+集めておくんじゃな[p]
+
+
+*14
+//-------------------------------------------------------------------------------
+//  界王神
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002L" bg = "bg_000_023"]
+
+[character x = -170 y = -190 storage = "00361/card_01" scale = 1.3 action = "fadein" time = 0.1]
+
+[balloon x=125 y=100 shape="001_02" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target = ".bln" power = 3 time = 0.2]
+[font size = 24]
+曜日クエストや[r]
+「雲の上のすんげぇ稽古」で[r]
+集めるといいですよ[p]
+
+[balloon x=125 y=-180 shape="001_03" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[quake target = ".bln" power = 3 time = 0.2]
+[font size = 24]
+マップ上の紫のカプセルが[r]
+覚醒メダルです！[p]
+
+[endif]
+*conclusion|結び
+
+//---------------------------------------------
+
+
+
+//[stopbgm]

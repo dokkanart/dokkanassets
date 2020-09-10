@@ -1,0 +1,575 @@
+*start|スタート
+//"ステージ４ゴール"
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "002"]
+
+*01
+//-------------------------------------------------------------------------------
+//  セル
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_004"]
+
+//[character x = -200 y = -220 storage = "00205/idl_side_p_01" scale = 1.1 action = "fadein" time = 0.1]
+
+[character x = -220 y = -220 storage = "00205/heapup_p_01" scale = 1.1 action = "fadein" time = 0.1]
+
+[balloon x=100 y=70 shape="004_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+クッ…妙な波動で[r]
+力をセーブされてさえ[r]
+いなければ……！！
+[p]
+
+*02
+//-------------------------------------------------------------------------------
+//  クリリン
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_004"]
+
+//[character x = 180 y = -100 storage = "00009/heapup_e_03" scale = 1.0 action = "fadein" time = 0.1]
+[character x = 180 y = -100 storage = "00009/idl_side_e_03" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon x=-90 y=60 shape="006_02" scale = 0.75 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+[quake target =".bln" power = 7 time = 0.2]
+セル！！[r]
+とどめだ！！
+[p]
+
+*03
+//-------------------------------------------------------------------------------
+//  セル
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_004"]
+
+//[character x = -200 y = -220 storage = "00205/idl_side_p_01" scale = 1.1 action = "fadein" time = 0.1]
+
+[character x = -220 y = -220 storage = "00205/heapup_p_01" scale = 1.1 action = "fadein" time = 0.1]
+
+[balloon x=110 y=95 shape="002_03" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+おまえたちはいずれ[r]
+自分がしたことの重大さを[r]
+身をもって知ることに[r]
+なるだろう
+[p]
+
+[balloon x=120 y=-100 shape="002_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+その時に[r]
+せいぜい後悔するが[r]
+いい
+[p]
+
+[se storage = "10"]
+//点滅
+[balloon shape="008_02" x = 0 y = 0 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+[balloon shape="008_02" x = 0 y = 0 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+
+
+*04
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0002L" bg = "bg_000_004"]
+
+//[character x = 165 y = -115 storage = "00004/idl_side_e_02" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x=0 y=0 shape="003_02" scale = 1.6 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 15]
+//[quake target =".bln" power = 7 time = 0.2]
+そう言うと[r]
+セルは太陽拳で[r]
+悟空たちの目を眩まし[r]
+逃げ去っていった[r]
+　[r]
+セルが残した[r]
+謎の言葉は[r]
+何を意味するのか…[r]
+そして[r]
+残された謎の女性との[r]
+関係は…！？
+[p]
+
+
+*05
+//-------------------------------------------------------------------------------
+//  孫悟空
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_004"]
+
+[character x=250 y=-140 storage = "00003/idl_side_e_06" scale = 1.1 action = "fadein" time = 0.1]
+
+[balloon x=-100 y=60 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+セルの気を感じねえ…[r]
+探すのは難しそうだな
+[p]
+
+
+*06
+//-------------------------------------------------------------------------------
+//  クリリン
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_004"]
+
+[character x = 180 y = -100 storage = "00009/heapup_e_03" scale = 1.0 action = "fadein" time = 0.1]
+//[character x = 180 y = -100 storage = "00009/idl_side_e_03" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon x=-80 y=75 shape="001_03" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+18号さん！[r]
+大丈夫ですか！？
+[p]
+
+
+*07
+//-------------------------------------------------------------------------------
+//  21号
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_004"]
+
+[character x = -220 y = -180 storage = "00850/idl_side_p_01" scale = 1.1 action = "fadein" time = 0.1]
+
+[balloon x=90 y=100 shape="001_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+たぶん[r]
+気を失っているだけ[r]
+だと思います
+[p]
+
+[balloon x=100 y=-100 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+お医者様に[r]
+診てもらわないと[r]
+わからないですけど…
+[p]
+
+*08
+//-------------------------------------------------------------------------------
+//  クリリン
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_004"]
+
+[character x = 180 y = -100 storage = "00009/heapup_e_03" scale = 1.0 action = "fadein" time = 0.1]
+//[character x = 180 y = -100 storage = "00009/idl_side_e_03" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon x=-80 y=100 shape="001_03" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+//[quake target =".bln" power = 3 time = 0.2]
+そうですか…
+[p]
+
+
+[balloon x=-80 y=-100 shape="001_02" scale = 1 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+あの…18号さんを[r]
+かばってくれて[r]
+ありがとうございました
+[p]
+
+*09
+//-------------------------------------------------------------------------------
+//  21号
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_004"]
+
+[character x = -220 y = -180 storage = "00850/idl_side_p_01" scale = 1.1 action = "fadein" time = 0.1]
+
+[balloon x=90 y=100 shape="001_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+こちらこそ助かりました[r]
+とてもお強いんですね
+[p]
+
+[balloon x=100 y=-100 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+まさか波動の影響下で[r]
+あそこまで力が[r]
+発揮できるとは……
+[p]
+
+*10
+//-------------------------------------------------------------------------------
+//  クリリン
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_004"]
+
+[character x = 180 y = -100 storage = "00009/heapup_e_03" scale = 1.0 action = "fadein" time = 0.1]
+//[character x = 180 y = -100 storage = "00009/idl_side_e_03" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon x=-80 y=90 shape="001_03" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 40]
+//[quake target =".bln" power = 3 time = 0.2]
+波動…？
+[p]
+
+
+[balloon x=-110 y=-100 shape="001_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+まさか あなた[r]
+レッドリボン軍の！
+[p]
+
+*11
+//-------------------------------------------------------------------------------
+//  孫悟空
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_004"]
+
+[character x=200 y=-150 storage = "00003/heapup_e_06" scale = 1.3 action = "fadein" time = 0.1]
+
+[balloon x=-110 y=60 shape="001_02" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+//[quake target =".bln" power = 3 time = 0.2]
+なにか[r]
+知ってんのか！？
+[p]
+
+*12
+//-------------------------------------------------------------------------------
+//  21号
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_004"]
+
+[character x = -220 y = -180 storage = "00850/idl_side_p_01" scale = 1.1 action = "fadein" time = 0.1]
+
+[balloon x=70 y=70 shape="001_03" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+//[quake target =".bln" power = 7 time = 0.2]
+あっ[r]
+えっと……
+[p]
+
+
+*13
+//-------------------------------------------------------------------------------
+//  クリリン
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_004"]
+
+[character x = 180 y = -100 storage = "00009/heapup_e_03" scale = 1.0 action = "fadein" time = 0.1]
+//[character x = 180 y = -100 storage = "00009/idl_side_e_03" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon x=-100 y=80 shape="001_02" scale = 1 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+もしよかったら[r]
+18号さんに[r]
+なにがあったのか[r]
+教えてもらえませんか？
+[p]
+
+
+*14
+//-------------------------------------------------------------------------------
+//  21号
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_004"]
+
+[character x = -220 y = -180 storage = "00850/idl_side_p_01" scale = 1.1 action = "fadein" time = 0.1]
+
+[balloon x=90 y=110 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+実はわたし[r]
+レッドリボン軍に[r]
+雇われていた[r]
+研究員なんです
+[p]
+
+[balloon x=110 y=-100 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+18号さんは波動で[r]意識を失ったところを[r]
+軍によってさらわれた[r]のだと思います
+[p]
+
+*15
+//-------------------------------------------------------------------------------
+//  クリリン
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_004"]
+
+[character x = 180 y = -100 storage = "00009/heapup_e_03" scale = 1.0 action = "fadein" time = 0.1]
+//[character x = 180 y = -100 storage = "00009/idl_side_e_03" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon x=-80 y=70 shape="001_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+もしかして[r]
+クローンが出現[r]
+したりした原因も…
+[p]
+
+
+*16
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002L" bg = "bg_000_024"]
+
+//[character x = 165 y = -115 storage = "00004/idl_side_e_02" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x=0 y=10 shape="003_02" scale = 1.5 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 16]
+//[quake target =".bln" power = 7 time = 0.2]
+レッドリボン軍の[r]研究員だったという[r]謎の女性…[r]
+　[r]
+彼女の話によると[r]
+レッドリボン軍は[r]
+波動によって[r]
+戦士の気を抑え[r]
+他の人間を憑依させる[r]
+研究をしていたらしい…
+[p]
+
+*17
+//-------------------------------------------------------------------------------
+//  21号
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_004"]
+
+[character x = -220 y = -180 storage = "00850/idl_side_p_01" scale = 1.1 action = "fadein" time = 0.1]
+
+[balloon x=100 y=110 shape="001_03" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 7 time = 0.2]
+これはリンク技術と[r]
+いうもので つい先日[r]
+完成したばかりなんです
+[p]
+
+[balloon x=110 y=-110 shape="001_02" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 7 time = 0.2]
+ですが軍の目的が[r]
+全宇宙の掌握だと知り[r]
+わたしはこわくなって[r]
+逃げ出しました
+[p]
+
+
+*18
+//-------------------------------------------------------------------------------
+//  孫悟空
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_004"]
+
+[character x=200 y=-150 storage = "00003/heapup_e_06" scale = 1.3 action = "fadein" time = 0.1]
+
+[balloon x=-110 y=90 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+つまり[r]レッドリボン軍が[r]
+悪さしようと[r]してるんだな？
+[p]
+
+
+[balloon x=-110 y=-110 shape="001_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+そんで おめえは[r]
+軍を辞めようとしたら[r]
+襲われたってことか？
+[p]
+
+*19
+//-------------------------------------------------------------------------------
+//  21号
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_004"]
+
+[character x = -220 y = -180 storage = "00850/idl_side_p_01" scale = 1.1 action = "fadein" time = 0.1]
+
+[balloon x=80 y=70 shape="001_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+お願いです！[r]
+レッドリボン軍を[r]
+止めてください！
+[p]
+
+*20
+//-------------------------------------------------------------------------------
+//  クリリン
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_004"]
+
+[character x = 180 y = -100 storage = "00009/heapup_e_03" scale = 1.0 action = "fadein" time = 0.1]
+//[character x = 180 y = -100 storage = "00009/idl_side_e_03" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon x=-90 y=100 shape="001_03" scale = 1 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+もちろんです！[r]
+二度と悪さをできないよう[r]
+壊滅させてやりますよ！
+[p]
+
+
+[balloon x=-115 y=-100 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+レッドリボン軍の基地が[r]
+どこにあるかは[r]わかりますか？
+[p]
+
+*21
+//-------------------------------------------------------------------------------
+//  21号
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_004"]
+
+[character x = -220 y = -180 storage = "00850/idl_side_p_01" scale = 1.1 action = "fadein" time = 0.1]
+
+[balloon x=100 y=80 shape="001_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 7 time = 0.2]
+すみません[r]
+基地の正確な場所は[r]
+わからないんです
+[p]
+
+[balloon x=90 y=-120 shape="001_03" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 7 time = 0.2]
+逃げるのに[r]
+必死だったので…
+[p]
+
+*22
+//-------------------------------------------------------------------------------
+//  クリリン
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_004"]
+
+[character x = 180 y = -100 storage = "00009/heapup_e_03" scale = 1.0 action = "fadein" time = 0.1]
+//[character x = 180 y = -100 storage = "00009/idl_side_e_03" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon x=-80 y=70 shape="001_01" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+//[quake target =".bln" power = 3 time = 0.2]
+そうですか……
+[p]
+
+*23
+//-------------------------------------------------------------------------------
+//  21号
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_004"]
+
+[character x = -220 y = -180 storage = "00850/idl_side_p_01" scale = 1.1 action = "fadein" time = 0.1]
+
+[balloon x=100 y=90 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 7 time = 0.2]
+わたしは[r]
+家族のことが心配なので[r]
+家に帰ろうと思います
+[p]
+
+[balloon x=110 y=-120 shape="001_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 7 time = 0.2]
+一刻も早く[r]
+レッドリボン軍の基地を[r]
+見つけてください！
+[p]
+
+
+*24
+//-------------------------------------------------------------------------------
+//  クリリン
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_000_004"]
+
+[character x = 160 y = -100 storage = "00009/heapup_e_03" scale = 1.3 action = "fadein" time = 0.1]
+
+//[character x = 180 y = -90 storage = "00009/idl_side_e_03" scale = 1.3 action = "fadein" time = 0.1]
+
+[balloon x=-120 y=80 shape="001_03" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+わかりました！
+[p]
+
+//-------------------------------------------------------------------------------
+[stopbgm]

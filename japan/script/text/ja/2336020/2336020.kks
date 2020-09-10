@@ -1,0 +1,147 @@
+*start|スタート
+//"エリア２スタート"
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "005"]
+
+*01
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="S0001" bg = "bg_000_014"]
+
+//[wait time = 0.3]
+
+//[character x=0 y=30 storage = "00003/card_05" scale = 1.1 action = "fadein" time = 0.7]
+
+//[wait_anim target=".chara"]
+
+
+[balloon x=0 y=130 shape="003_02" scale = 1.6 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 14]
+//[quake target =".bln" power = 7 time = 0.2]
+同じサイヤ人でありながら[r]
+ベジータとナッパに[r]
+圧倒的な実力差を[r]
+見せつけられたラディッツ[r]
+　[r]
+エリートと下級戦士…[r]
+大きな壁にぶち当たった[r]
+ラディッツは[r]
+ある夢を見ていた……
+[p]
+
+
+*02
+//-------------------------------------------------------------------------------
+//  ラディッツ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_009"]
+
+[character x=200 y=-110 storage = "00014/heapup_e_01" scale = 1.6 action = "fadein" time = 0.1]
+
+
+[balloon x=-110 y=130 shape="002_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+ここは…[r]
+…惑星ベジータ！？
+[p]
+
+[balloon x=-130 y=-90 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+いや…惑星ベジータは[r]
+消滅したはず…[r]
+これはいったい…！？
+[p]
+
+*03
+//-------------------------------------------------------------------------------
+//  バーダック
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_009"]
+
+[wait_anim target=".coma"]
+
+[se storage = "48"]
+
+//フェードインで登場
+[character x=-210 y=-120 storage = "00067/heapup_p_01" scale = 1.2 action = "fadein" time = 0.7]
+
+[wait_anim target=".chara"]
+
+[balloon x=130 y=110 shape="002_03" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+なさけねえツラ[r]
+しやがって…
+[p]
+
+[balloon x=135 y=-90 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+てめえも[r]
+戦闘民族サイヤ人なら[r]
+シャキッとしやがれ！
+[p]
+
+*04
+//-------------------------------------------------------------------------------
+//  ラディッツ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_009"]
+
+[character x=200 y=-110 storage = "00014/heapup_e_01" scale = 1.6 action = "fadein" time = 0.1]
+
+
+[balloon shape="002_03" x = -100 y = 90 scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 40]
+[quake target =".bln" power = 3 time = 0.2]
+オ…オヤジ！？
+[p]
+
+
+
+
+
+*05
+//-------------------------------------------------------------------------------
+//  バーダック
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002L" bg = "bg_000_009"]
+
+[character x=-200 y=-170 storage = "00067/heapup_p_01" scale = 1.4 action = "fadein" time = 0.1]
+
+[balloon x=135 y=100 shape="002_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+バカヤロウが…[r]
+それでもオレのガキか
+[p]
+
+[balloon x=130 y=-180 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+一戦相手してやるぜ…[r]
+来いラディッツ！！
+[p]
+
+
+//-------------------------------------------------------------------------------
+[stopbgm]

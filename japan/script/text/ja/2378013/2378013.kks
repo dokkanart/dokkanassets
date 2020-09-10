@@ -1,0 +1,83 @@
+*start|スタート
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "008"]
+
+*001
+//-------------------------------------------------------------------------------
+//  魔人ブウ（善）
+//-------------------------------------------------------------------------------
+[se storage = "3022"]
+[coma shape="S0001" bg = "bg_000_016"]
+
+[character id="buu" x = 0 y = 0 storage = "00229/atc_sp01_p_03" scale = 1.2 action = "fadein" time = 0.1]
+[quake target ="buu" power = 8 time = 0.4]
+
+[balloon x=0 y=350 shape="006_01" scale = 0.65 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 44]
+[quake target =".bln" power = 7 time = 0.2]
+バア！
+[p]
+
+
+*002
+//-------------------------------------------------------------------------------
+//  超サイヤ人孫悟飯（青年期）&界王神
+//-------------------------------------------------------------------------------
+[se storage = "03"]
+[coma shape="N0001R" bg = "bg_000_016"]
+
+[lwfobject id = "kaki1" x = -80 y = 100 storage = "kakimoji:ef_001" scale = 2.5 angle = -10 action = "fadein" time = 0.1]
+[quake target = "kaki1" power = 9 time = 0.4]
+
+
+[character x = 100 y = -90 storage = "00366/heapup_e_05" scale = 1.0 action = "fadein" time = 0.1]
+
+[character x = 270 y = -100 storage = "00361/heapup_e_01" scale = 1.0 action = "fadein" time = 0.1]
+
+
+//空のフキダシ
+[balloon x = -0 y = 0 shape="001_01" scale = 0]
+[p]
+
+
+[balloon x=-125 y=-100 shape="004_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+そ……そんな…！！[r]
+なんてスピードだ…！
+[p]
+
+
+*003
+//-------------------------------------------------------------------------------
+//  魔人ブウ（善）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002L" bg = "bg_000_016"]
+
+[character id="buu" x = -265 y = -115 storage = "00229/atc_sp01_p_02" scale = 1.2 angle = 0 action = "fadein" time = 0.1]
+//[flip target = "buu" h = 1]
+
+[balloon x=165 y= 40 shape="002_01" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+[quake target =".bln" power = 3 time = 0.2]
+死んじゃえ〜
+[p]
+
+[se storage = "3012"]
+//点滅
+[balloon shape="008_02" x = 0 y = 0 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+[balloon shape="008_02" x = 0 y = 0 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+
+
+//-------------------------------------------------------------------------------
+[stopbgm]

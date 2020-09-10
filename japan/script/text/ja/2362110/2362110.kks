@@ -1,0 +1,102 @@
+*start|スタート
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "045"]
+
+*01
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+//[coma shape="S0001" bg = "bg_000_014"]
+[coma shape="N0003L" bg = "bg_000_014"]
+
+[character x=-250 y=0 storage = "90003/porunga" scale = 0.7 action = "fadein" time = 0.1]
+
+[character x=270 y=-60 storage = "90003/shenron" scale = 0.6 angle = 0 action = "fadein" time = 0.1]
+
+[balloon x=0 y=20 shape="003_02" scale = 1.6 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 15]
+//[quake target =".bln" power = 3 time = 0.2]
+地球の神龍への願いで[r]
+フリーザたちに[r]
+殺された者たちは[r]
+生き返った…[r]
+　[r]
+そして ナメック星の[r]
+ポルンガへの願いで[r]
+悟空とフリーザを除いた[r]
+すべての者たちは[r]
+地球へと送られた
+[p]
+
+*02
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_000_018"]
+
+[balloon x=-0 y=0 shape="003_02" scale = 1.6 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 15]
+//[quake target =".bln" power = 3 time = 0.2]
+爆発寸前の[r]
+ナメック星に残された[r]
+悟空とフリーザ…[r]
+　[r]
+運命の時が迫る中[r]
+正真正銘の最終決戦が[r]
+始まろうとしていた…！
+[p]
+
+*03
+//-------------------------------------------------------------------------------
+//  フリーザ（フルパワー）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_018"]
+
+[character x=-215 y=-170 storage = "00349/card_01" scale = 0.9 action = "fadein" time = 0.1]
+
+
+[balloon x=100 y=90 shape="002_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+星が縮み始めた…[r]
+オレに殺されるのが先か[r]
+星の爆発が先か……
+[p]
+
+[balloon x=120 y=-100 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+どちらにしても[r]
+宇宙空間で生存できない[r]
+きさまには死しかない…
+[p]
+
+*04
+//-------------------------------------------------------------------------------
+//  超サイヤ人孫悟空
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_000_018"]
+
+//[character id = "gok" x = 200 y = -150 storage = "00003/none_idl_side_e_01" scale = 1.2 action = "fadein" time = 0.1]
+[character id = "gok" x = 200 y = -140 storage = "00300/SR_idl_side_e_01" scale = 1.25 action = "fadein" time = 0.1]
+
+
+[balloon shape="001_03" x = -125 y = 60 scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 40]
+//[quake target =".bln" power = 3 time = 0.2]
+かもな…
+[p]
+
+//-------------------------------------------------------------------------------
+[stopbgm]

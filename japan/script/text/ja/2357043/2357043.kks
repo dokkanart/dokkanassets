@@ -1,0 +1,94 @@
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "004"]
+
+
+*01
+//-------------------------------------------------------------------------------
+//  七星龍
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0001L" bg = "bg_069_001"]
+
+[character x = -160 y = -130 storage = "00522/card_01" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon x=120 y=90 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+オレが本気で怒ったら[r]
+こわいんだからな！
+[p]
+
+
+
+
+*02
+//-------------------------------------------------------------------------------
+//  パン(GT)
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_069_001"]
+
+[character x = 200 y = -120 storage = "00326/idl_side_e_01" scale = 1.1 action = "fadein" time = 0.1]
+
+[balloon x=-60 y=90 shape="001_01" scale = 0.65 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 44]
+[quake target =".bln" power = 3 time = 0.2]
+ねえ！
+[p]
+
+
+[balloon x=-95 y=-100 shape="001_03" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+あんたは いつの[r]
+ドラゴンボールのお願いで[r]
+生まれたの？
+[p]
+
+
+
+
+
+*03
+//-------------------------------------------------------------------------------
+//  七星龍
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002L" bg = "bg_069_001"]
+
+[character x = -155 y = -180 storage = "00522/card_01" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x=120 y=80 shape="002_02" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+オレはな…天下一武道会で[r]
+ベジータに殺されたみんなを[r]
+生き返らせたんだぞ！
+[p]
+
+
+[balloon x=130 y=-210 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+恩をアダで返すとは[r]
+おまえらみたいな[r]
+やつのことを言うんだ！
+[p]
+
+
+
+
+
+
+
+//-------------------------------------------------------------------------------
+[stopbgm]

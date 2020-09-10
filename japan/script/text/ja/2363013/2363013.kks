@@ -1,0 +1,120 @@
+*start|スタート
+//"ステージ1ボス前"
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "002"]
+
+*001
+//-------------------------------------------------------------------------------
+//  ヒット
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_085"]
+
+[character x = 210 y = -265 storage = "00556/idl_side_p_01" scale = 1.2 action = "fadein" time = 0.1]
+[flip target =".chara" h=1]
+
+[balloon shape="002_02" x = -120 y = 60 scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+ひさしぶりだな…
+[p]
+
+*002
+//-------------------------------------------------------------------------------
+//  フロスト（最終形態）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_085"]
+
+[character x = -260 y = -140 storage = "00551/heapup_p_01" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x=120 y=50 shape="006_01" scale = 0.7 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 40]
+[quake target =".bln" power = 7 time = 0.2]
+ヒット！
+[p]
+
+*003
+//-------------------------------------------------------------------------------
+//  ヒット
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_085"]
+
+[character x = 210 y = -265 storage = "00556/idl_side_p_01" scale = 1.2 action = "fadein" time = 0.1]
+[flip target =".chara" h=1]
+
+[balloon shape="002_02" x = -120 y = 60 scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+おちつけ[r]
+おまえに用がある
+[p]
+
+*004
+//-------------------------------------------------------------------------------
+//  フロスト（最終形態）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_085"]
+
+[character x = -260 y = -140 storage = "00551/heapup_p_01" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x=90 y=80 shape="004_01" scale = 0.65 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 44]
+[quake target =".bln" power = 3 time = 0.2]
+くっ…
+[p]
+
+[balloon x=130 y=-100 shape="004_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+わ…[r]
+わたしを処刑しに[r]
+きたのですか！？
+[p]
+
+*005
+//-------------------------------------------------------------------------------
+//  ヒット
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_085"]
+
+[character x = 210 y = -265 storage = "00556/idl_side_p_01" scale = 1.2 action = "fadein" time = 0.1]
+[flip target =".chara" h=1]
+
+[balloon shape="002_02" x = -120 y = 70 scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 54]
+//[quake target =".bln" power = 3 time = 0.2]
+………
+[p]
+
+*006
+//-------------------------------------------------------------------------------
+//  フロスト（最終形態）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002L" bg = "bg_000_085"]
+
+[character x = -230 y = -150 storage = "00551/heapup_p_01" scale = 1.4 action = "fadein" time = 0.1]
+[quake target =".chara" power = 4 time = 0.3]
+
+[balloon x=150 y=60 shape="007_02" scale = 0.75 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+[quake target =".bln" power = 7 time = 0.2]
+死んでたまる[r]
+かーっ！！
+[p]
+
+//-------------------------------------------------------------------------------
+[stopbgm]

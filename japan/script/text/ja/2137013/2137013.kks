@@ -1,0 +1,44 @@
+*start|スタート
+
+//2137013
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "005"]
+
+*001
+//-------------------------------------------------------------------------------
+//  バーロット
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="S0001" bg = "bg_000_021"]
+
+[character x = 0 y = 50 storage = "00629/card_01" scale = 1.0 action = "fadein" time = 0.1]
+[move target =".chara" y=0 time = 0.7]
+
+
+[balloon x=-140 y=440 shape="001_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+せっかく[r]
+融合したんだ…
+
+[wait_anim target=".chara"]
+
+[p]
+
+[quake target =".chara" power = 5 time = 0.3]
+
+[balloon x=120 y=-400 shape="006_02" scale = 0.8 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 7 time = 0.2]
+ハデに[r]
+やってやるぜ！！
+[p]
+
+
+//-------------------------------------------------------------------------------
+[stopbgm]

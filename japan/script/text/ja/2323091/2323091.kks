@@ -1,0 +1,427 @@
+*start|スタート
+ 
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "013"]
+ 
+*001
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="S0001" bg = "bg_008_001"]
+
+[wait tume = 0.7]
+ 
+[character id = "kuri" x = 200 y = -100 storage = "00009/card_01" scale = 0.7 action = "fadein" time = 0.7] 
+ 
+[character id = "genki" x = 180 y = 200 storage = "00067/Images_ef_charge_ballpng" scale = 1.3 action = "fadein" time = 0.7]
+[quake target ="genki" power = 1 time = 300]
+
+[wait time = 0.4]
+
+[character id = "saru" x = -170 y = 100 storage = "00261/card_02" scale = 1.3 action = "fadein" time = 0.7]
+
+[wait_anim target="saru"]
+ 
+[balloon x=0 y=-200 shape="003_01" scale = 1.4 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 16]
+//[quake target =".bln" power = 3 time = 0.2]
+地球じゅうの願いを[r]
+集めた元気玉[r]
+　[r]
+大猿に変身する悟飯…[r]
+　[r]
+満身創痍の戦士たちから[r]
+絞り出される攻撃は[r]
+ついに[r]
+ベジータを限界まで[r]
+追いこむのだった…！
+[p]
+
+*002
+//-------------------------------------------------------------------------------
+//  ベジータ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_008_001"]
+ 
+[character x = -200 y = -100 storage = "00061/guard_p_01" scale = 1.3 action = "fadein" time = 0.1]
+ 
+[balloon x=100 y=120 shape="004_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+ち…くしょう……
+[p]
+ 
+[balloon x=130 y=-80 shape="004_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+…このオレが…[r]
+まさか…引き返す[r]
+ことになるとは……
+[p]
+
+
+*003
+//-------------------------------------------------------------------------------
+//  クリリン
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_008_001"]
+ 
+[character x = 250 y = -100 storage = "00009/atc_sp01_e_02" scale = 1.9 action = "fadein" time = 0.1]
+ 
+[balloon x=-90 y=120 shape="004_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+ここまでやったんだ…[r]
+トドメを刺してやる…
+[p] 
+
+[quake target =".chara" power = 5 time = 0.2]
+
+[balloon x=-130 y=-90 shape="007_02" scale = 0.9 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 7 time = 0.2]
+こ…殺された…[r]
+みんなの…恨みだ…！[r]
+死ねええ〜っ！！
+[p] 
+
+
+*004
+//-------------------------------------------------------------------------------
+//  悟空の声
+//-------------------------------------------------------------------------------
+[se storage = "3034"]
+[coma shape="N0003L" bg = "bg_000_014"]
+ 
+//[character x = -200 y = -130 storage = "00061/heapup_p_01" scale = 1.2 action = "fadein" time = 0.1]
+
+
+ 
+[balloon x=0 y=30 shape="005_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+待ってくれーっ！！
+[p]
+
+
+
+*005
+//-------------------------------------------------------------------------------
+//  クリリン
+//-------------------------------------------------------------------------------
+[bgm storage = "014"]
+
+[se storage = "03"]
+[coma shape="N0001R" bg = "bg_008_001"]
+
+
+
+[character x = 180 y = -100 storage = "00009/idl_side_e_02" scale = 1.7 action = "fadein" time = 0.1]
+
+
+//描き文字：！？
+[lwfobject id = "kaki1" storage="kakimoji:ef_002" in="04" x=-0 y=130 scale = 2.5]
+[quake target = "kaki1" power = 10 time = 0.4]
+
+// 空のフキダシ（セリフがないコマを送るために使用）
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+[balloon x=-120 y=-80 shape="001_02" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+ご…悟空！？[r]
+今 オレの心の中に[r]
+話しかけてきたのは…[r]
+悟空…おまえなのか？
+[p]
+
+*006
+//-------------------------------------------------------------------------------
+//  悟空の声
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_014"]
+ 
+[character x = -200 y = -140 storage = "00370/heapup_p_01" scale = 1.3 action = "fadein" time = 0.1]
+ 
+[balloon x=120 y=120 shape="005_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+ク…クリリン…[r]
+すまねえが そいつを[r]
+行かせてやってくれ… 
+[p]
+ 
+[balloon x=90 y=-100 shape="005_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+た…たのむ…[r]
+オラのたった一度だけの[r]
+わがままだ…… 
+[p]
+ 
+*007
+//-------------------------------------------------------------------------------
+//  クリリン
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_008_001"]
+ 
+[character x = 180 y = -100 storage = "00009/idl_side_e_02" scale = 1.7 action = "fadein" time = 0.1]
+ 
+[balloon x=-80 y=110 shape="004_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+しょ…[r]
+正気かよ悟空…！ 
+[p]
+ 
+[balloon x=-120 y=-80 shape="004_02" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+[quake target =".bln" power = 3 time = 0.2]
+今 見逃したりしたら[r]
+また必ず体力を回復させて[r]
+やってくるぞ…！！ 
+[p]
+
+*008
+//-------------------------------------------------------------------------------
+//  悟空の声
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_014"]
+ 
+[character x = -200 y = -140 storage = "00370/heapup_p_01" scale = 1.3 action = "fadein" time = 0.1]
+ 
+[balloon x=120 y=120 shape="005_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+わかってる…[r]
+そのベジータってやつの[r]
+とんでもねえ強さもな… 
+[p]
+ 
+[balloon x=80 y=-95 shape="005_02" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+[quake target =".bln" power = 3 time = 0.2]
+でもよ…オラうまく言えねえけど[r]
+今 そいつが死にそうになってる[r]
+のを見て思っちまったんだ…… 
+[p]
+
+*009
+//-------------------------------------------------------------------------------
+//  悟空の声
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0003R" bg = "bg_008_001"]
+
+[character x = 220 y = -100 storage = "00009/heapup_e_01" scale = 0.7 action = "fadein" time = 0.1]
+ 
+[character x = -280 y = -240 storage = "00003/heapup_back_p_03" scale = 1.2 action = "fadein" time = 0.1]
+ 
+[balloon x=0 y=50 shape="005_01" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+[quake target =".bln" power = 3 time = 0.2]
+もったいねえ…[r]
+って……
+[p]
+
+*010
+//-------------------------------------------------------------------------------
+//  クリリン
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_008_001"]
+ 
+[character x = 180 y = -100 storage = "00009/idl_side_e_02" scale = 1.7 action = "fadein" time = 0.1]
+ 
+[balloon x=-100 y=100 shape="004_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+も…も…[r]
+もったいねえだと…！？
+[p]
+
+*011
+//-------------------------------------------------------------------------------
+//  悟空の声
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_014"]
+ 
+[character x = -200 y = -140 storage = "00370/heapup_p_01" scale = 1.3 action = "fadein" time = 0.1]
+ 
+[balloon x=120 y=140 shape="005_01" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+[quake target =".bln" power = 3 time = 0.2]
+こ…この次は絶対に[r]
+ベジータを超える実力を[r]
+身につけて倒してみせる…！ 
+[p]
+ 
+[balloon x=75 y=-90 shape="005_02" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+[quake target =".bln" power = 3 time = 0.2]
+間違ってるのはわかるが…[r]
+た…頼む…！ オラに…[r]
+オラひとりにやらせてくれ…！ 
+[p]
+
+*012
+//-------------------------------------------------------------------------------
+//  クリリン
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0003R" bg = "bg_008_001"]
+ 
+[character x = 220 y = -100 storage = "00009/heapup_e_01" scale = 0.7 action = "fadein" time = 0.1]
+ 
+[character x = -280 y = -240 storage = "00003/heapup_back_p_03" scale = 1.2 action = "fadein" time = 0.1]
+ 
+[balloon x=140 y=100 shape="001_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+………わかったよ…[r]
+おまえには わがままを[r]
+言う資格があるさ 
+[p]
+ 
+[balloon x=-0 y=-90 shape="001_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+今の地球があるのも[r]
+悟空のおかげだ…… 
+[p]
+
+*013
+//-------------------------------------------------------------------------------
+//  クリリン
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_008_001"]
+ 
+[character x = 180 y = -100 storage = "00009/heapup_e_01" scale = 1.7 action = "fadein" time = 0.1]
+ 
+[balloon x=-80 y=120 shape="001_01" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+//[quake target =".bln" power = 3 time = 0.2]
+だけど[r]
+いいな悟空…！ 
+[p]
+ 
+[balloon x=-100 y=-90 shape="001_02" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+[quake target =".bln" power = 3 time = 0.2]
+今度んときはちょいちょいっと[r]
+ぶっちぎりのパワーで[r]
+やっつけちまえよ！！ 
+[p]
+
+*014
+//-------------------------------------------------------------------------------
+//  悟空の声
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0003R" bg = "bg_008_001"]
+ 
+[character x = 220 y = -100 storage = "00009/heapup_e_01" scale = 0.7 action = "fadein" time = 0.1]
+ 
+[character x = -280 y = -240 storage = "00003/heapup_back_p_03" scale = 1.2 action = "fadein" time = 0.1]
+ 
+[balloon x=-0 y=70 shape="005_01" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 40]
+[quake target =".bln" power = 3 time = 0.2]
+ああ……！
+[p]
+
+*015
+//-------------------------------------------------------------------------------
+//  ベジータ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0004L" bg = "bg_000_014"]
+ 
+[character x = -230 y = -190 storage = "00061/card_1005680" scale = 2.2 action = "fadein" time = 0.1]
+ 
+[wait time = 0.7] 
+ 
+[balloon x=120 y=120 shape="002_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+よ…よく[r]
+おぼえておけよ[r]
+ゴミども…… 
+[p]
+ 
+[balloon x=130 y=-90 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+今度はきさまらに[r]
+奇跡はないぞ……[r]
+くっくくく…… 
+[p]
+
+*016
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_000_003"]
+ 
+[wait time = 0.7] 
+ 
+
+[balloon x=0 y=-30 shape="003_02" scale = 1.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 13]
+//[quake target =".bln" power = 3 time = 0.2]
+悟空たちの活躍により[r]
+サイヤ人の脅威は去った…[r]
+　[r]
+多大な犠牲を払うことにより[r]
+終わりを迎えた今回の闘い…[r]
+　[r]
+…しかし[r]
+それは終わりではなく[r]
+新たなる激闘の始まりに[r]
+すぎなかった……
+[p]
+ 
+//フェードアウト
+[balloon x=130 y=40 shape="008_03" scale = 50.0 action = "fadein" time = 0.5]
+[wait time = 2.5]
+ 
+//-------------------------------------------------------------------------------
+[stopbgm]
+

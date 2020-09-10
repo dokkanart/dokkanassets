@@ -1,0 +1,188 @@
+*start|スタート
+
+//"２4－６ゴール" 
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "028"]
+ 
+*001
+//-------------------------------------------------------------------------------
+//  ドクター・ゲロ
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0001L" bg = "bg_029_001"]
+ 
+[character x = -170 y = -135 storage = "00019/gero_idl_side_p_01" scale = 1.0 action = "fadein" time = 0.1]
+//[character x = -210 y = -110 storage = "00019/gero_heapup_p_01" scale = 1.3 action = "fadein" time = 0.1]
+ 
+[balloon x=100 y=130 shape="002_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+よく聞け！[r]
+２体の１７号が[r]
+ひとつになったとき… 
+[p]
+ 
+[balloon x=120 y=-80 shape="002_03" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+[quake target =".bln" power = 3 time = 0.2]
+体内のすべての組織は[r]
+完全なものとなり[r]
+最強にして究極の人造人間に[r]
+生まれ変わるのだ！！ 
+[p]
+
+*002
+//-------------------------------------------------------------------------------
+//  トランクス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_029_001"]
+ 
+[character x = 210 y = -200 storage = "90000/wait_right_anger_strong" scale = 1.2 action = "fadein" time = 0.1]
+ 
+[balloon x=-100 y=80 shape="001_03" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+なんだと！？
+[p]
+
+*003
+//-------------------------------------------------------------------------------
+//  ドクター・ゲロ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002L" bg = "bg_029_001"]
+ 
+[character x = -210 y = -135 storage = "00019/gero_heapup_p_01" scale = 1.4 action = "fadein" time = 0.1]
+[quake target =".chara" power = 5 time = 0.4]
+ 
+[balloon x=145 y=90 shape="007_02" scale = 0.9 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 7 time = 0.2]
+さあ 合体しろ！！[r]
+ふたりの１７号！！
+[p]
+
+*004
+//-------------------------------------------------------------------------------
+//  人造人間17号
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+
+[coma shape="S0001" bg = "bg_029_001"]
+
+[character id ="hell" x = 150 y = 0 storage = "00021/card_02" scale = 0.9 action = "fadein" time = 0.1]
+
+
+[character id ="17" x = -150 y = 0 storage = "00021/card_02" scale = 0.9 action = "fadein" time = 0.1]
+
+
+[wait time = 0.7]
+
+[balloon id= "17s"  x= 0 y=480 shape="002_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target="17s"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+おまえはオレ…[p]
+
+[balloon id = "hells" x= 0 y= -450 shape="002_03" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target="hells"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+オレはおまえ…[r]
+ひとつになるのだ…！[p]
+
+
+
+[move target ="17" x= 0 time = 0.8]
+[move target ="hell" x = 0 time = 0.8]
+[se storage = "3011"]
+[wait time = 0.9]
+[se storage = "10"]
+
+[fadeout target = "17s" time = 0.3]
+[fadeout target = "hells" time = 0.3]
+
+[character id = "hikari" x = 0 y = 0 storage = "99999/ef_beam_circle" scale = 6.0 action = "expand" time = 0.5]
+[spin target="hikari" velocity=500]
+[wait time = 0.5]
+//[fadeout target = "hikari" time = 0.2]
+
+//点滅
+[se storage = "3025"]
+//[balloon shape="008_02" x = 140 y = -30 scale = 50 action = "fadein" time = 0.1]
+//[wait time = 0.3]
+//[clear target = ".bln"]
+
+//フェードアウト（フェードアウトするコマ）
+[balloon x=0 y=0 shape="008_02" scale = 50.0 action = "fadein" time = 0.3]
+[wait time = 0.5]
+
+*005
+//-------------------------------------------------------------------------------
+//  超17号
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="S0001" bg = "bg_029_001"]
+
+//ゴゴゴゴ
+[lwfobject id = "kaki1" storage="kakimoji:ef_009" in="04" x=30 y=-35 scale = 3.0 angle = 0 action = "fadein" time = 0.1]
+[quake target = "kaki1" power = 2 time = 300]
+
+//超17号
+[character x =-30 y = 20 storage = "00480/card_02" scale = 1.2 angle = -2 action = "fadein" time = 0.1]
+
+//フェードイン（フェードインするコマ）
+[balloon x=0 y=0 shape="008_02" scale = 50]
+[wait time = 0.2]
+[fadeout target = ".bln" time = 1.5]
+[wait_anim target=".bln"]
+
+// 空のフキダシ（セリフがないコマを送るために使用）
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+
+*006
+//-------------------------------------------------------------------------------
+//  トランクス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_029_001"]
+ 
+[character x = 210 y = -200 storage = "90000/wait_right_surprise" scale = 1.2 action = "fadein" time = 0.1]
+ 
+[balloon x=-100 y=80 shape="004_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+が…[r]
+合体した…！？
+[p]
+
+*007
+//-------------------------------------------------------------------------------
+//  ドクター・ゲロ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002L" bg = "bg_029_001"]
+ 
+[character x = -190 y = -135 storage = "00019/gero_heapup_p_01" scale = 1.4 action = "fadein" time = 0.1]
+ 
+[balloon x=130 y=-170 shape="007_02" scale = 1.0 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+[quake target =".bln" power = 7 time = 0.2]
+成功だ！！[r]
+これぞ究極の人造人間…[r]
+超１７号の誕生だ！！
+[p]
+
+//-------------------------------------------------------------------------------
+[stopbgm]

@@ -1,0 +1,208 @@
+*start|スタート
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+//[bgm storage = "013"]
+
+*001
+//-------------------------------------------------------------------------------
+//  元気玉の元気が集まってくる。
+//-------------------------------------------------------------------------------
+//[se storage = "3038"]
+[coma shape="S0001" bg = "bg_000_014"]
+
+
+[lwfobject id = "kaki1" storage="kakimoji:ef_009" x=-190 y= -130 scale = 1.2 action = "fadein" time = 0.1]
+[quake target = "kaki1" power = 1]
+
+
+[character id = "genkidama" x = 0 y = 800 storage = "99999/genkidama" scale = 2.8 action = "fadein" time = 0.1]
+[quake target = "genkidama" power = 1]
+
+[character x = 0 y = -110 storage = "00300/card_15" scale = 0.5 action = "fadein" time = 0.1]
+
+
+[wait time = 0.7]
+
+
+//空のフキダシ
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+
+
+*002
+//-------------------------------------------------------------------------------
+//  合体13号
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_074"]
+
+
+
+[character x = -190 y = -220 storage = "00289/heapup_p_01" scale = 1.2 action = "fadein" time = 0.1]
+
+
+//[character x = -200 y = -240 storage = "00289/idl_side_p_01" scale = 1.15 action = "fade:50" time = 0.1]
+
+
+
+[balloon x=120 y=70 shape="004_02" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 40]
+[quake target =".bln" power = 3 time = 0.2]
+……！
+[p]
+
+
+*003
+//-------------------------------------------------------------------------------
+//  ピッコロ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_074"]
+
+[character x = 190 y = -110 storage = "00056/heapup_e_04" scale = 0.9 action = "fadein" time = 0.1]
+
+[balloon x = -155 y = 50 shape="006_02" scale = 0.9 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 7 time = 0.2]
+　孫ーッ！！[r]
+　超サイヤ人のパワーを[r]
+　見せてやれー！！
+[p]
+
+[bgm storage = "102"]
+
+//[se storage = "3025"]
+//点滅
+[balloon shape="008_02" x = 0 y = 0 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+
+
+*004
+//-------------------------------------------------------------------------------
+//  超サイヤ人になる
+//-------------------------------------------------------------------------------
+[se storage = "50"]
+[coma shape="N0002R" bg = "bg_000_024"]
+
+
+
+[lwfobject id = "kaki1" storage="kakimoji:ef_020" in="04" x=0 y=-300 angle = 10 scale = 2.5 action = "expand" time = 0.1]
+[quake target = "kaki1" power = 15 time = 0.4]
+
+[character id = "ss" x = 0 y = 200-450 storage = "99999/supersaiyan" scale = 1.0 angle = 0 action = "fade:80" time = 0.1]
+[quake target = "ss" power = 2]
+
+[character id = "goku" x=0 y=230-450 storage = "00300/card_18" scale = 1.0 action = "fadein" time = 0.1]
+//[quake target = "goku" power = 7 time = 0.4]
+
+
+
+[wait_anim target="kaki1"]
+
+
+
+//空のフキダシ
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+
+*005
+//-------------------------------------------------------------------------------
+//  元気玉を吸収
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="S0001" bg = "bg_000_074"]
+
+
+
+[lwfobject id = "kaki1" storage="kakimoji:ef_009" x=-190 y= -0 scale = 1.2 action = "fadein" time = 0.1]
+[quake target = "kaki1" power = 1]
+
+
+[character id = "ss" x = 0 y = 20 storage = "99999/supersaiyan" scale = 0.15 angle = 0 action = "fade:80" time = 0.1]
+[quake target = "ss" power = 1]
+
+
+[character id = "goku" x=0 y=0 storage = "00300/card_18" scale = 0.1 action = "fadein" time = 0.1]
+
+
+
+[character id = "genkidama" x = 0 y = 800 storage = "99999/genkidama" scale = 2.8 action = "fadein" time = 0.1]
+//[quake target = "genkidama" power = 1]
+
+
+[wait time = 2]
+
+[se storage = "1066"]
+//[se storage = "3038"]
+[move target = "genkidama" x = 0 y = 350 time = 3.0]
+[scale target = "genkidama" scale = 1.2 time = 3.0]
+
+[wait time = 2.2]
+
+[se storage = "3012"]
+//点滅
+[balloon shape="008_02" x = 0 y = 0 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+[balloon shape="008_02" x = 0 y = 0 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+
+
+//空のフキダシ
+//[balloon x = 0 y = 0 shape="002_01" scale = 0]
+//[p]
+
+*006
+//-------------------------------------------------------------------------------
+//  超サイヤ人孫悟空
+//-------------------------------------------------------------------------------
+[se storage = "50"]
+[coma shape="N0002R" bg = "bg_000_014"]
+
+//[character id = "BG" x = 0 y = 0 storage = "99999/flare" scale = 20 action = "fadein" time = 0.1 mask="inside"]
+[character id = "BG" x = 0 y = -500 storage = "99999/ring" scale = 30 action = "fadein" time = 0.1 mask="inside"]
+
+
+[lwfobject id = "kaki1" storage="kakimoji:ef_013" x=-200 y=310 scale = 2.0 angle = -20 action = "fadein" time = 0.1]
+[quake target = "kaki1" power = 2]
+
+//[character id="ss" x = 0 y =130 storage = "99999/supersaiyan" scale = 1.8 action = "fade:80" time = 0.1]
+//[quake target ="ss" power = 2 time = 300]
+
+
+[character id = "ki" x=0 y=120-300 storage = "99999/ef_aura_front" scale = 2.5 angle = -40 action = "fade:100" time = 0.1]
+[quake target="ki" power=2 time=300]
+[paint target="ki" color="#F4FA58"]
+
+[character id = "ki2" x=0 y=120-300 storage = "99999/ef_aura_front" scale = 2.5 angle = -40 action = "fade:100" time = 0.1]
+[quake target="ki2" power=2 time=300]
+[paint target="ki2" color="#F4FA58"]
+
+[character id = "goku" x= 0 y= 150-300 storage = "00300/card_16" scale = 1.2 action = "fadein" time = 0.1]
+[quake target ="goku" power = 9 time = 0.4]
+
+[character id = "ki3" x=350 y=70 storage = "99999/genki_ef_01" scale = 4.5 angle = -40 action = "fade:100" time = 0.1]
+[quake target="ki3" power=2 time=300]
+
+[character id = "ki4" x=-350 y=70 storage = "99999/genki_ef_01" scale = 4.5 angle = 40 action = "fade:100" time = 0.1]
+[quake target="ki4" power=2 time=300]
+[flip target ="ki4" h=1]
+
+[balloon x = 0 y = -230 shape="007_02" scale = 0.75 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+[quake target =".bln" power = 7 time = 0.2]
+　はああぁぁーっ！！
+[p]
+
+
+
+//-------------------------------------------------------------------------------
+[stopbgm]

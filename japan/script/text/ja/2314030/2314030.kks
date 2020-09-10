@@ -1,0 +1,161 @@
+//エリア３スタート
+
+*start|スタート
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "010"]
+
+*001
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0003R" bg = "bg_000_016"]
+
+[balloon x=-0 y=140 shape="003_01" scale = 1.5 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 16]
+//[quake target =".bln" power = 3 time = 0.2]
+超サイヤ人ゴッドを求め[r]
+地球にやってきた[r]
+ビルスとウイスは[r]
+ブルマの[r]
+誕生日パーティーに[r]
+乱入する
+[p]
+
+*002
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0003L" bg = "bg_014_001"]
+
+[balloon x=-0 y=65 shape="003_01" scale = 1.5 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 16]
+//[quake target =".bln" power = 3 time = 0.2]
+地球の食べ物に[r]
+興味をもった[r]
+ビルスたちを加えた[r]
+誕生日パーティーは[r]
+和やかなムードで[r]
+進行していた…[r]
+　[r]
+…しかし……
+[p]
+
+*003
+//-------------------------------------------------------------------------------
+//  ビルス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_014_001"]
+
+[character x = 240 y = -300 storage = "00242/idl_side_e_01" scale = 1.5 action = "fadein" time = 0.1]
+
+[balloon x=-120 y=110 shape="001_02" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+キミ[r]
+そこのプリンとかいう[r]
+デザートをよこしなさい
+[p]
+
+*004
+//-------------------------------------------------------------------------------
+//  ブウ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_014_001"]
+
+[character x = -320 y = -120 storage = "00229/atc_sp01_p_02" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x=95 y=120 shape="002_03" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+ブーッ！[r]
+やだね！！
+[p]
+
+[balloon x=145 y=-80 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+オレぜんぶ[r]
+食べるもん！！
+[p]
+
+*005
+//-------------------------------------------------------------------------------
+//  ビルス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_014_001"]
+
+[character x = 240 y = -330 storage = "00242/heapup_e_01" scale = 1.6 action = "fadein" time = 0.1]
+
+[balloon x=-110 y=70 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+そんなにあるのに！？
+[p]
+
+*006
+//-------------------------------------------------------------------------------
+//  ブウ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_014_001"]
+
+[character x = -320 y = -120 storage = "00229/atc_sp01_p_02" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x=115 y=110 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+ぜんぶ[r]
+オレのもんだ！！
+[p]
+
+*007
+//-------------------------------------------------------------------------------
+//  ビルス ブウ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0003R" bg = "bg_014_001"]
+
+[balloon x=170 y=130 shape="006_02" scale = 0.6 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 38]
+[quake target =".bln" power = 7 time = 0.2]
+よこせ！！
+[p]
+
+[balloon x=-145 y=100 shape="006_02" scale = 0.6 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 38]
+[quake target =".bln" power = 7 time = 0.2]
+ヤダッ！！
+[p]
+
+[balloon x=110 y=-40 shape="006_02" scale = 0.6 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 38]
+[quake target =".bln" power = 7 time = 0.2]
+よこせ！！
+[p]
+
+[balloon x=-160 y=-150 shape="006_02" scale = 0.6 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 38]
+[quake target =".bln" power = 7 time = 0.2]
+ヤダッ！！
+[p]
+
+//-------------------------------------------------------------------------------
+[stopbgm]

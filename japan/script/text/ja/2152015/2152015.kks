@@ -1,0 +1,43 @@
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+//[bgm storage = "003"]
+
+*001
+//-------------------------------------------------------------------------------
+//  ベジット(アメ玉)
+//-------------------------------------------------------------------------------
+[se storage = "37"]
+[coma shape="S0001" bg = "bg_000_016"]
+
+[character x=0 y=40 storage = "00535/ame" scale = 1.0 action = "fadein" time = 0.1]
+[move target =".chara" y=0 time = 1.5]
+
+[wait_anim target=".chara"]
+
+[balloon x=-120 y=210 shape="001_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+…たく……[r]
+ブウのヤロー[r]
+ムチャしやがって…
+[p]
+
+[quake target =".chara" power = 4 time = 0.3]
+
+[balloon x=120 y=-235 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+だが どうやら[r]
+アメ玉になっても[r]
+強さは変わってない[r]
+ようだな…
+[p]
+
+
+//[stopbgm]
+

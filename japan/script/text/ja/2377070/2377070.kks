@@ -1,0 +1,143 @@
+*start|スタート
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "060"]
+
+*001
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0003L" bg = "bg_000_024"]
+
+[balloon x=0 y=100 shape="003_01" scale = 1.5 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 15]
+//[quake target =".bln" power = 3 time = 0.2]
+仲間たちの力を借り[r]
+超サイヤ人ゴッドへと[r]
+変身した孫悟空…[r]
+　[r]
+念願の“強敵”と[r]
+ついに出会えた[r]
+ビルスの闘志も[r]
+ますます高揚し[r]
+神と神の闘いは[r]
+さらなるステージへ…！
+[p]
+
+
+*002
+//-------------------------------------------------------------------------------
+//  ビルス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_016"]
+
+[character x = 245 y = -255+30 storage = "00242/idl_side_e_02" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x = -105 y = 50 shape="001_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+言っておくがボクにも[r]
+不満はあるんだよ？
+[p]
+
+
+*003
+//-------------------------------------------------------------------------------
+//  超サイヤ人ゴッド孫悟空
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_016"]
+
+[character x = -190 y = -280 storage = "00350/card_02" scale = 1.05 action = "fadein" time = 0.1]
+
+[balloon x=100 y=50 shape="001_02" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 40]
+//[quake target =".bln" power = 3 time = 0.2]
+ん？[r]
+なんだよ？
+[p]
+
+
+*004
+//-------------------------------------------------------------------------------
+//  ビルス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_016"]
+
+[character x = 245 y = -255+30 storage = "00242/idl_side_e_02" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x = -105 y = 50 shape="001_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+ボクはまだ全然[r]
+本気で闘って[r]
+いなかったんだ
+[p]
+
+
+*005
+//-------------------------------------------------------------------------------
+//  超サイヤ人ゴッド孫悟空
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_016"]
+
+[character x = -190 y = -280 storage = "00350/card_02" scale = 1.05 action = "fadein" time = 0.1]
+
+[balloon x=100 y=75 shape="001_01" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 40]
+[quake target =".bln" power = 3 time = 0.2]
+え？[r]
+ホントか！？
+[p]
+
+
+[balloon x=125 y=-110 shape="001_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+オラ[r]
+８割くらい本気だった
+[p]
+
+
+*006
+//-------------------------------------------------------------------------------
+//  ビルス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_000_016"]
+
+[character id="bi" x = 160 y = -200 storage = "00242/card_11" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon x = -120 y = 60 shape="004_02" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 40]
+//[quake target =".bln" power = 3 time = 0.2]
+８割…！？
+[p]
+
+[quake target ="bi" power = 6 time = 0.3]
+
+[balloon x = -130 y = -235 shape="006_01" scale = 0.9 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 7 time = 0.2]
+…だったら…[r]
+このスピードに[r]
+ついてこれるかな！？
+[p]
+
+
+
+//-------------------------------------------------------------------------------
+[stopbgm]

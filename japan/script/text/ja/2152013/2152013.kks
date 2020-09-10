@@ -1,0 +1,47 @@
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+//[bgm storage = "026"]
+
+*001
+//-------------------------------------------------------------------------------
+//  魔人ブウ（善）
+//-------------------------------------------------------------------------------
+
+[coma shape="S0001" bg = "bg_019_001"]
+
+[wait time = 0.3]
+
+[se storage = "3022"]
+
+[character x = 30 y = -500 storage = "00229/card_002" scale = 1.2 angle = 21 action = "fadein" time = 0.1] 
+
+[move target =".chara" y=0 time = 0.1]
+
+[wait_anim target=".chara"]
+
+[quake target =".chara" power = 6 time = 0.4]
+
+//[wait time = 0.3]
+
+[balloon x=-0 y=440 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+おーい[r]
+オレとあそぼ！あそぼ！
+[p]
+
+[balloon x=0 y=-400 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+おまえ[r]
+どんなお菓子になって[r]
+くわれたいか？
+[p]
+
+//[stopbgm]
+

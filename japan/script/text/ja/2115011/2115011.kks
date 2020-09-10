@@ -1,0 +1,60 @@
+
+
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "012"]
+
+
+//-------------------------------------------------------------------------------
+//  サタン
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0003L" bg = "bg_019_001"]
+
+[character x = -180 y = -280 storage = "00038/card_01" scale = 1.4 action = "fadein" time = 0.1]
+
+[balloon shape="001_03" x = 150 y = 130 scale = 1 action = "fadein" time = 0.1 action = "fadein" time = 0.1]
+[font size = 26]
+[wait_anim target=".bln"]
+やるではないか…[r]キミの実力は[r]よくわかった[p]
+
+
+
+[balloon shape="001_02" x = 155 y = -120 scale = 0.9 action = "fadein" time = 0.1 action = "fadein" time = 0.1]
+[font size = 30]
+[wait_anim target=".bln"]
+さあ[r]賞金を受けとるがよい[p]
+
+
+
+
+
+
+//-------------------------------------------------------------------------------
+//  サタン
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_019_001"]
+
+[character x = -205 y = -100 storage = "00055/heapup_p_01" scale = 1 action = "fadein" time = 0.1]
+[quake target =".chara" power = 0.5 time = 300]
+
+[balloon shape="001_01" x = 50 y = 60 scale = 0.8 action = "fadein" time = 0.1 action = "fadein" time = 0.1]
+[font size = 30]
+[wait_anim target=".bln"]
+（い…いい気に[r]なるなよー！！）[p]
+
+
+
+
+
+[balloon shape="001_02" x = 110 y = -120 scale = 0.9 action = "fadein" time = 0.1 action = "fadein" time = 0.1]
+[font size = 26]
+[wait_anim target=".bln"]
+（いつかギッタギタに[r]ぶっとばしてやるぜ！）[p]
+
+
+[stopbgm]

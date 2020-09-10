@@ -1,0 +1,76 @@
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "008"]
+
+
+*001
+//-------------------------------------------------------------------------------
+//  フリーザ（第一形態）
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0001L" bg = "bg_004_001"]
+
+
+[character x = -160 y = -60 storage = "00005/idl_side_p_02" scale = 2.0 action = "fadein" time = 0.1]
+
+[balloon x=120 y=120 shape="002_01" scale = 0.8 action = "fadein" time = 0.1]
+[font size = 32]
+[wait_anim target=".bln"]
+//[quake target =".bln" power = 3 time = 0.2]
+ふふふ…[r]
+どうしました？[p]
+
+[balloon x=100 y=-80 shape="002_02" scale = 0.8 action = "fadein" time = 0.1]
+[font size = 32]
+[wait_anim target=".bln"]
+//[quake target =".bln" power = 3 time = 0.2]
+かかって[r]
+こないんですか？[p]
+
+
+*002
+//-------------------------------------------------------------------------------
+//  クリリン
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_004_001"]
+
+
+[character x = 180 y = -100 storage = "00009/idl_side_e_02" scale = 1.7 action = "fadein" time = 0.1]
+
+[balloon x=-120 y=80 shape="004_01" scale = 0.9 action = "fadein" time = 0.1]
+[font size = 28]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 3 time = 0.2]
+フリーザ……こうして[r]
+あらためて対面すると[r]
+やっぱ緊張するな…[p]
+
+*003
+//-------------------------------------------------------------------------------
+//  トランクス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_004_001"]
+
+[character x=170 y=-325 storage = "90000/wait_right_anger_strong" scale = 1.4 action = "fadein" time = 0.1]
+
+[balloon x=-120 y=100 shape="001_01" scale = 0.8 action = "fadein" time = 0.1]
+[font size = 32]
+[wait_anim target=".bln"]
+//[quake target =".bln" power = 3 time = 0.2]
+大丈夫です…！[p]
+
+[balloon x=-120 y=-170 shape="001_01" scale = 0.9 action = "fadein" time = 0.1]
+[font size = 28]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 3 time = 0.2]
+今のオレたちなら[r]
+勝てない相手では[r]
+ないはずです！
+[p]
+
+[stopbgm]

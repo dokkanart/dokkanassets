@@ -1,0 +1,96 @@
+
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  謎の惑星と宇宙海賊 ボス前
+//-------------------------------------------------------------------------------
+[bgm storage = "002"]
+
+*001
+//-------------------------------------------------------------------------------
+//  チルド
+//-------------------------------------------------------------------------------
+[coma shape="N0004L" bg = "bg_000_009"]
+
+//[wait_anim target=".coma"]
+
+[wait time = 0.7]
+
+[se storage = "10"]
+
+[lwfobject id = "kaki1" storage="kakimoji:ef_005" in="04" x=0 y=90 scale = 2.5]
+[quake target = "kaki1" power = 15 time = 0.2]
+
+[wait time = 0.05]
+
+[fadeout target = "kaki1" time = 0.6]
+
+//点滅
+[balloon shape="008_02" x = 140 y = -30 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+
+//[wait time = 0.05]
+
+[se storage = "3004"]
+
+[character x=500 y=-30 storage = "99999/beam" scale = 0.9 action = "slide:left" time = 0.3]
+
+[wait_anim target=".chara"]
+
+
+[se storage = "3016"]
+[lwfobject id = "kaki2" storage="kakimoji:ef_019" in="04" x=60 y=70 scale = 3]
+[quake target = "kaki2" power = 15 time = 1]
+
+[character x=150 y=-60 storage = "90000/bomb" scale = 0.8 action = "expand" time = 0.1]
+[quake target = ".chara" power = 10 time = 1]
+
+[wait time = 1.5]
+
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+
+
+*002
+//-------------------------------------------------------------------------------
+//  バーダック
+//-------------------------------------------------------------------------------
+[se storage = "03"]
+[coma shape="N0003R" bg = "bg_000_009"]
+
+[character x = -60 y = -190 storage = "90003/berry_smile_r" scale = 0.8 action = "fadein" time = 0.1]
+
+[character x=240 y=-180 storage = "00067/idl_side_e_01" scale = 1.9 action = "fadein" time = 0.1]
+
+//描き文字：！！
+[lwfobject id = "kaki1" storage="kakimoji:ef_002" in="04" x=-180 y=80 scale = 2.5]
+[quake target = "kaki1" power = 15 time = 0.2]
+
+// 空のフキダシ（セリフがないコマを送るために使用）
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+*003
+//-------------------------------------------------------------------------------
+//  バーダック
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_000_009"]
+
+[character x=220 y=-140 storage = "00067/heapup_e_01" scale = 1.5 action = "fadein" time = 0.1]
+//[quake target =".chara" power = 5 time = 0.2]
+
+
+
+[balloon x=-160 y=90 shape="002_03" scale = 0.85 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target =".bln" power = 3 time = 0.2]
+[font size = 30]
+ちっ…！[r]
+まだなにか[r]
+いやがるのか…！
+[p]
+
+[stopbgm]

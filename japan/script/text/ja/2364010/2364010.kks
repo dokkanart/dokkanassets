@@ -1,0 +1,184 @@
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  天下一大武道大会開催！ スタート
+//-------------------------------------------------------------------------------
+[bgm storage = "012"]
+
+*001
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0003R" bg = "bg_005_002"]
+
+//[character x = 180 y = -100 storage = "00205/card_02" scale = 1.0 action = "fadein" time = 0.1]
+
+[character id = "gok" x = 150 y = -50 storage = "00203/card_02" scale = 1.0 action = "fadein" time = 0.1]
+[paint target=".chara" color="#CEE3F6"]
+
+[character x = 150 y = -50 storage = "00203/card_01" scale = 1.0 action = "fadein" time = 0.1]
+
+
+[balloon x=-140 y=10 shape="003_01" scale = 1.6 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 14]
+//[quake target =".bln" power = 3 time = 0.2]
+悟空の死という[r]
+大きな悲しみを乗り越え[r]
+悟飯は強敵セルを[r]
+打ち倒した…[r]
+　[r]
+悟空は[r]
+界王さまと共に[r]
+あの世で暮らすことになり[r]
+平和がもどった地球でも[r]
+皆それぞれ新しい生活を[r]
+スタートさせるのだった
+[p]
+
+*002
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0004L" bg = "bg_000_016"]
+
+[balloon x=0 y=0 shape="003_01" scale = 1.6 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 15]
+//[quake target =".bln" power = 3 time = 0.2]
+時は少し流れ…[r]
+　[r]
+地球では[r]
+格闘技の強豪が[r]
+全世界から集まり[r]
+闘うという[r]
+天下一大武道大会が[r]
+開催されることになった
+[p]
+
+//フェードアウト（フェードアウトするコマ）
+[balloon x=0 y=0 shape="008_03" scale = 50.0 action = "fadein" time = 0.5]
+[wait time = 0.7] 
+
+
+*title
+//-------------------------------------------------------------------------------
+//  
+//-------------------------------------------------------------------------------
+[coma shape="S0001" bg = "bg_000_087"]
+
+//フェードイン
+[balloon x=0 y=0 shape="008_03" scale = 50]
+[wait time = 1]
+[fadeout target = ".bln" time = 1]
+
+[wait_anim target=".bln"]
+
+[se storage = "17"]
+
+//[balloon x=-230 y=155 shape="010_01" scale = 1.4 action = "fadein" time = 0.7]
+
+//[balloon x=-160 y=-150 shape="010_02" scale = 1.0 action = "fadein" time = 0.7]
+
+//[balloon x=15 y=145 shape="010_03" scale = 0.9 action = "fadein" time = 0.7]
+
+//[balloon x=260 y=-180 shape="010_04" scale = 2.0 action = "fadein" time = 0.7]
+
+//[balloon x=-250 y=-165 shape="010_05" scale = 1.3 action = "fadein" time = 0.7]
+
+//[balloon x=240 y=90 shape="010_06" scale = 1.5 action = "fadein" time = 0.7]
+
+//[balloon x=70 y=-165 shape="010_07" scale = 1.2 action = "fadein" time = 0.7]
+
+
+//[wait time = 0.5]
+
+[balloon x=0 y=0 shape="011_05" scale = 1.6 angle = 0 action = "fadein" time = 0.5]
+
+[wait time = 0.9]
+
+[p]
+
+
+
+
+
+
+
+
+*003
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0004L" bg = "bg_000_016"]
+
+[balloon x=0 y=130 shape="003_01" scale = 1.6 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 15]
+//[quake target =".bln" power = 3 time = 0.2]
+優勝者には[r]
+賞金と温泉旅行[r]
+…そして[r]
+ミスター・サタンへの[r]挑戦権が[r]
+あたえられるという[r]
+天下一大武道大会[r]
+　[r]
+その出場者の中には…
+[p]
+
+*004
+//-------------------------------------------------------------------------------
+//  クリリン
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_017"]
+
+[character x = 180 y = -100 storage = "00009/idl_side_e_04" scale = 1.0 action = "fadein" time = 0.1]
+[character x = 170 y = 60 storage = "99999/ase" scale = 0.6 action = "fadein" time = 0.1]
+
+[balloon x=-100 y=90 shape="004_02" scale = 1.0 action = "fadein" time = 0.1]
+[font size = 24]
+[wait_anim target=".bln"]
+あ〜あ…[r]
+まさか悟飯にトランクス…[r]
+ピッコロまで出てるなんて…
+[p]
+
+[balloon shape="001_01" x = -130 y = -110 scale = 0.8 action = "fadein" time = 0.1]
+[font size = 32]
+[wait_anim target=".bln"]
+//[quake target =".bln" power = 3 time = 0.2]
+温泉旅行が[r]
+遠のくぜ…
+[p]
+
+*005
+//-------------------------------------------------------------------------------
+//  悟飯
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_000_017"]
+
+[character x=200 y=-70 storage = "00305/card_01" scale = 1.1 action = "fadein" time = 0.1]
+
+[balloon shape="001_02" x = -120 y = 60 scale = 1.0 action = "fadein" time = 0.1]
+[font size = 24]
+[wait_anim target=".bln"]
+おとうさんも[r]
+天下一武道会に出場して[r]
+どんどん腕を[r]
+磨いていったんだ…
+[p]
+
+[balloon shape="001_03" x = -130 y = -190 scale = 0.8 action = "fadein" time = 0.1]
+[font size = 32]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 3 time = 0.2]
+…ボクだって！
+[p]
+
+//-------------------------------------------------------------------------------
+[stopbgm]

@@ -1,0 +1,56 @@
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+//[bgm storage = "003"]
+
+*001
+//-------------------------------------------------------------------------------
+//  超ベジータ
+//-------------------------------------------------------------------------------
+[se storage = "50"]
+[coma shape="S0001" bg = "bg_000_071"]
+
+
+[lwfobject id = "kaki1" storage="kakimoji:ef_020" x=0 y=-200 angle = 0 scale = 2.5 action = "fadein" time = 0.1]
+[quake target = "kaki1" power = 15 time = 0.4]
+
+[character id = "ss" x=0 y=210 storage = "99999/supersaiyan" scale = 1.8 action = "expand" time = 0.3]
+
+[character id = "veg" x = 0 y = -30 storage = "00004/card_15" scale = 1.1 action = "fadein" time = 0.1]
+
+
+
+//[se storage = "3025"]
+//点滅
+[balloon shape="008_02" x = 0 y = 0 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+//[balloon shape="008_02" x = 0 y = 0 scale = 50 action = "fadein" time = 0.1]
+//[wait time = 0.3]
+//[clear target = ".bln"]
+
+[fadeout target = "ss" time = 0.7]
+[fadeout target = "kaki1" time = 0.7]
+
+
+[wait_anim target="ss"]
+
+[balloon x=0 y=470 shape="002_02" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+//[quake target =".bln" power = 3 time = 0.2]
+その程度か？
+[p]
+
+[balloon x=0 y=-430 shape="002_03" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 7 time = 0.2]
+もうちょっと[r]
+強いのかと[r]
+思ったがな…
+[p]
+
+//[stopbgm]

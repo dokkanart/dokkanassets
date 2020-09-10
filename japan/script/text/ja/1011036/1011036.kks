@@ -1,0 +1,111 @@
+
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "005"]
+
+
+//-------------------------------------------------------------------------------
+//  ジャッキー・チュン
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0001L" bg = "bg_014_001"]
+
+[character x=-190 y=-100 storage = "00215/guard_p_01" scale = 1.0 action = "fadein" time = 0.1]
+
+
+[balloon shape="001_01" x = 130 y = 95 scale = 0.95 action = "fadein" time = 0.1]
+[font size = 27]
+[wait_anim target=".bln"]
+ん…？[r]
+おぬしら悟空を[r]
+さがしておるのか？
+[p]
+
+
+
+*coma02
+//-------------------------------------------------------------------------------
+//  ジャッキー・チュン
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_014_001"]
+
+[character x=-175 y=-100 storage = "00215/idl_side_p_01" scale = 1.0 action = "fadein" time = 0.1]
+
+
+[balloon x=130 y=110 shape="001_01" scale = 0.95 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 27]
+悟空なら[r]
+わしのもとを離れ[r]
+修業の旅に出たぞい
+[p]
+
+
+[balloon id="radhi1" x=120 y=-110 shape="001_02" scale = 1.05 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 25]
+第２２回天下一武道会で[r]
+再会するのが楽しみだわい
+[p]
+
+
+
+*coma03
+//-------------------------------------------------------------------------------
+//  トランクス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_014_001"]
+
+[character x = 210 y = -200 storage = "90000/wait_right_anger_strong" scale = 1.2 action = "fadein" time = 0.1]
+
+
+[balloon x=-100 y=0 shape="001_01" scale = 1 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+…やはり[r]
+あなたは武天老師さま…
+[p]
+
+
+*coma04
+//-------------------------------------------------------------------------------
+//  ジャッキー・チュン
+//-------------------------------------------------------------------------------
+[se storage = "03"]
+[coma shape="N0003L" bg = "bg_014_001"]
+
+[character x=-160 y=-60 storage = "00215/atc_front_e_01" scale = 1.3 action = "fadein" time = 0.1]
+[quake target =".chara" power = 9 time = 0.3]
+
+
+[balloon shape="001_01" x = 145 y = 110 scale = 0.9 action = "fadein" time = 0.1]
+[font size = 30]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 3 time = 0.2]
+ちがうと[r]
+言っておるだろ！！
+[p]
+
+
+
+*coma05
+//-------------------------------------------------------------------------------
+//  トランクス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_014_001"]
+
+[character x=170 y=-325 storage = "90000/wait_right_surprise" scale = 1.4 action = "fadein" time = 0.1]
+
+[balloon id = "01" x = -130 y = 40 shape="001_02" scale = 0.65 action = "fadein" time = 0.1]
+[wait_anim target = "01"]
+[font size = 54]
+………
+[p]
+
+[stopbgm]

@@ -1,0 +1,552 @@
+*start|スタート
+//"エリア４スタート"
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "005"]
+
+*01
+//-------------------------------------------------------------------------------
+//  ベジータ
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="S0001" bg = "bg_000_024"]
+
+[character x=150 y=70 storage = "00004/card_01" scale = 1.1 action = "fadein" time = 0.1]
+
+[balloon x=-150 y=50 shape="003_02" scale = 1.5 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 16]
+//[quake target =".bln" power = 7 time = 0.2]
+やつは超えた…[r]
+超サイヤ人ゴッドを…[r]
+神の域を…[r]
+ビルスと闘い[r]
+進化を遂げて…[r]
+　[r]
+カカロット…[r]
+必ずおまえを[r]
+超えてみせる……！！
+[p]
+
+*02
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002L" bg = "bg_000_016"]
+
+//[character x = -240 y = -190 storage = "00752/idl_side_p_01" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x=0 y=0 shape="003_02" scale = 1.5 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 16]
+//[quake target =".bln" power = 7 time = 0.2]
+破壊神ビルスとの[r]
+激しい闘い…[r]
+そして悟空の進化を[r]
+目の当たりにした[r]
+ベジータは[r]
+自らも神の域に[r]
+達するべく[r]
+修業を積んでいた[r]
+　[r]
+そんなある日……
+[p]
+
+*03
+//-------------------------------------------------------------------------------
+//  ベジータ
+//-------------------------------------------------------------------------------
+[se storage = "03"]
+[coma shape="N0001R" bg = "bg_014_001"]
+
+[character x = 180 y = -110 storage = "00004/idl_side_e_02" scale = 1.1 action = "fadein" time = 0.1]
+
+//！！
+[lwfobject id = "kaki1" storage="kakimoji:ef_001" x=0 y=90 scale = 2.5 angle = -10 action = "fadein" time = 0.1]
+[quake target = "kaki1" power = 15 time = 0.4]
+
+
+// 空のフキダシ（セリフがないコマを送るために使用）
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+[balloon x=-130 y=-90 shape="002_01" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+[quake target =".bln" power = 3 time = 0.2]
+ウイス！！
+[p]
+
+*04
+//-------------------------------------------------------------------------------
+//  ウイス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_014_001"]
+
+[character x = -210 y = -300 storage = "00243/idl_side_p_01" scale = 1.7 action = "fadein" time = 0.1]
+
+[balloon x=100 y=70 shape="001_03" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+ベジータさん[r]
+おひさしぶりです
+[p]
+
+*05
+//-------------------------------------------------------------------------------
+//  ベジータ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_014_001"]
+
+[character x = 180 y = -110 storage = "00004/idl_side_e_02" scale = 1.1 action = "fadein" time = 0.1]
+
+[balloon x=-100 y=100 shape="002_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 7 time = 0.2]
+ウイス…[r]
+きさま何者だ！？
+[p]
+
+[balloon x=-120 y=-90 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 7 time = 0.2]
+たんなる[r]
+ビルスの世話役[r]
+じゃないな！？
+[p]
+
+*06
+//-------------------------------------------------------------------------------
+//  ウイス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_014_001"]
+
+[character x = -210 y = -300 storage = "00243/idl_side_p_01" scale = 1.7 action = "fadein" time = 0.1]
+
+[balloon x=80 y=100 shape="001_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+あれ？[r]
+言ってません[r]
+でしたっけ？
+[p]
+
+[balloon x=100 y=-90 shape="001_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+わたし[r]
+ビルスさまの師匠[r]
+ですけど
+[p]
+
+*07
+//-------------------------------------------------------------------------------
+//  ベジータ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_014_001"]
+
+
+[character x = 180 y = -110 storage = "00004/idl_side_e_02" scale = 1.1 action = "fadein" time = 0.1]
+
+
+
+[balloon x=-100 y=70 shape="002_03" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+[quake target =".bln" power = 3 time = 0.2]
+し…師匠！？
+[p]
+
+*08
+//-------------------------------------------------------------------------------
+//  ウイス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_014_001"]
+ 
+[character x = -210 y = -300 storage = "00243/idl_side_p_01" scale = 1.7 action = "fadein" time = 0.1]
+
+ 
+[balloon x=100 y=120 shape="001_02" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+ベジータさん…[r]
+修業の成果でしょうか[r]
+かなりパワーを[r]
+上げられましたねえ 
+[p]
+ 
+[balloon x=130 y=-90 shape="001_03" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+でも そのやり方では[r]
+いつまでたっても[r]
+ビルスさまには[r]勝てませんよ 
+[p]
+
+*09
+//-------------------------------------------------------------------------------
+//  ウイス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_014_001"]
+ 
+[character x = -180 y = -290 storage = "00243/atc_sp01_p_03" scale = 1.7 action = "fadein" time = 0.1]
+ 
+[balloon x=140 y=100 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+もっと[r]
+気を制御する方法を[r]
+覚えなくては… 
+[p]
+ 
+[balloon x=130 y=-110 shape="001_03" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+それができれば[r]
+あの孫悟空とかいう[r]サイヤ人も[r]
+超えられるでしょうねえ 
+[p]
+
+*10
+//-------------------------------------------------------------------------------
+//  ベジータ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_014_001"]
+ 
+[character x = 180 y = -110 storage = "00004/idl_side_e_02" scale = 1.1 action = "fadein" time = 0.1]
+ 
+[balloon x=-100 y=70 shape="002_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+カカロットを…！？
+[p]
+
+*11
+//-------------------------------------------------------------------------------
+//  ウイス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_014_001"]
+ 
+[character x = -210 y = -300 storage = "00243/idl_side_p_01" scale = 1.7 action = "fadein" time = 0.1]
+
+ 
+[balloon x=90 y=70 shape="001_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+簡単なことでは[r]
+ありませんけど
+[p]
+
+*12
+//-------------------------------------------------------------------------------
+//  ベジータ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_014_001"]
+ 
+[character x = 180 y = -110 storage = "00004/idl_side_e_02" scale = 1.1 action = "fadein" time = 0.1]
+ 
+[balloon x=-100 y=110 shape="002_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+おまえには[r]
+教えられるのか？ 
+[p]
+ 
+[balloon x=-130 y=-90 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+その[r]
+気を制御する方法を… 
+[p]
+
+*13
+//-------------------------------------------------------------------------------
+//  ウイス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_014_001"]
+ 
+[character x = -210 y = -300 storage = "00243/idl_side_p_01" scale = 1.7 action = "fadein" time = 0.1]
+
+ 
+[balloon x=90 y=70 shape="001_03" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 54]
+//[quake target =".bln" power = 3 time = 0.2]
+………
+[p]
+
+*14
+//-------------------------------------------------------------------------------
+//  ベジータ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_014_001"]
+ 
+[character x = 180 y = -110 storage = "00004/idl_side_e_02" scale = 1.1 action = "fadein" time = 0.1]
+ 
+[balloon x=-100 y=70 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+おまえのもとで[r]
+修業させてくれ！！
+[p]
+
+*15
+//-------------------------------------------------------------------------------
+//  ウイス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_014_001"]
+ 
+[character x = -210 y = -300 storage = "00243/idl_side_p_01" scale = 1.7 action = "fadein" time = 0.1]
+
+ 
+[balloon x=70 y=100 shape="001_03" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 54]
+//[quake target =".bln" power = 3 time = 0.2]
+………
+[p]
+ 
+[balloon x=110 y=-90 shape="001_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+…いいですよ 
+[p]
+
+*16
+//-------------------------------------------------------------------------------
+//  ブルマ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_014_001"]
+ 
+[character x = -200 y = -300 storage = "90003/bluma_01" scale = 1.1 action = "fadein" time = 0.1]
+ 
+[balloon x=100 y=70 shape="001_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+ちょっと待って！
+[p]
+
+*17
+//-------------------------------------------------------------------------------
+//  ベジータ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_014_001"]
+ 
+[character id = "1" x = 180 y = -110 storage = "00004/idl_side_e_02" scale = 1.1 action = "fadein" time = 0.1]
+ 
+[balloon x=-100 y=70 shape="002_02" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+//[quake target =".bln" power = 3 time = 0.2]
+ブルマ…！？
+[p]
+
+[se storage = "48"]
+
+[fadeout target = "1" time = 0.7]
+
+[character id = "2" x = 185 y = -130 storage = "00245/idl_side_e_01" scale = 1.8 action = "fadein" time = 0.7]
+
+[wait_anim target="2"]
+
+// 空のフキダシ（セリフがないコマを送るために使用）
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+
+
+*19
+//-------------------------------------------------------------------------------
+//  ブルマ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_014_001"]
+ 
+[character x = -200 y = -300 storage = "90003/bluma_01" scale = 1.1 action = "fadein" time = 0.1]
+ 
+[balloon x=100 y=70 shape="001_02" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+[quake target =".bln" power = 3 time = 0.2]
+うん！[r]
+ピッタシ！ 
+[p]
+
+
+*20
+//-------------------------------------------------------------------------------
+//  ベジータ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_014_001"]
+ 
+[character id = "2" x = 185 y = -130 storage = "00245/idl_side_e_01" scale = 1.8 action = "fadein" time = 0.1]
+
+[balloon x=-100 y=70 shape="002_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+…これを[r]
+着て行けだと？
+[p]
+
+*21
+//-------------------------------------------------------------------------------
+//  ブルマ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_014_001"]
+ 
+[character x = -200 y = -300 storage = "90003/bluma_01" scale = 1.1 action = "fadein" time = 0.1]
+ 
+[balloon x=120 y=60 shape="001_02" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+旦那に[r]
+あんな汚い服で行かせたら[r]
+こっちが宇宙の笑いものよ
+[p]
+
+*22
+//-------------------------------------------------------------------------------
+//  ウイス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_014_001"]
+ 
+[character x = -210 y = -300 storage = "00243/idl_side_p_01" scale = 1.7 action = "fadein" time = 0.1]
+
+ 
+[balloon x=90 y=100 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+こんなステキな道着を[r]
+くれるなんて… 
+[p]
+ 
+[balloon x=110 y=-100 shape="001_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+やさしいとこ[r]
+あるじゃないですか 
+[p]
+
+*23
+//-------------------------------------------------------------------------------
+//  トランクス（幼年期）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_014_001"]
+ 
+[character x = -180 y = -150 storage = "00200/card_02" scale = 1.6 action = "fadein" time = 0.1]
+ 
+[balloon x=70 y=110 shape="001_03" scale = 0.65 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 44]
+[quake target =".bln" power = 3 time = 0.2]
+パパ！ 
+[p]
+ 
+[balloon x=130 y=-90 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+絶対に悟天のパパより[r]
+強くなってきてね！！ 
+[p]
+
+*24
+//-------------------------------------------------------------------------------
+//  ブルマ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_014_001"]
+ 
+[character x = -200 y = -300 storage = "90003/bluma_01" scale = 1.1 action = "fadein" time = 0.1]
+ 
+[balloon x=100 y=70 shape="001_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+ベジータ…[r]
+がんばってね！
+[p]
+
+*25
+//-------------------------------------------------------------------------------
+//  ベジータ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_014_001"]
+ 
+[character id = "2" x = 185 y = -130 storage = "00245/idl_side_e_01" scale = 1.8 action = "fadein" time = 0.1]
+ 
+[balloon x=-100 y=70 shape="002_02" scale = 0.65 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 44]
+//[quake target =".bln" power = 3 time = 0.2]
+ふん…！
+[p]
+
+*26
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002L" bg = "bg_000_015"]
+ 
+//[wait time = 0.3] 
+
+//[character x = -120 y = -100 storage = "00025/atc_down_p_01" scale = 1.6 action = "fadein" time = 0.1]
+ 
+[balloon x=0 y=-40 shape="003_02" scale = 1.5 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 16]
+//[quake target =".bln" power = 7 time = 0.2]
+ウイスに弟子入りし[r]
+ビルスの星へと[r]
+向かったベジータは[r]
+そこで新たな経験を積み[r]
+修業を続けるのだった[r]
+　[r]
+…そして[r]
+半年ほどの時が過ぎた…
+[p]
+
+//-------------------------------------------------------------------------------
+[stopbgm]

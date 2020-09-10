@@ -1,0 +1,68 @@
+
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "005"]
+
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0003R" bg = "bg_001_001"]
+
+//栽培マン
+[character x=-10 y=-120 storage = "00052/idl_side_p_01" scale = 0.4 action = "fadein" time = 0.1]
+
+[character x=-140 y=-120 storage = "00052/idl_side_p_01" scale = 0.5 action = "fadein" time = 0.1]
+
+[character x=-280 y=-120 storage = "00052/idl_side_p_01" scale = 0.6 action = "fadein" time = 0.1]
+
+//ベジータ
+[character x=425 y=-0 storage = "00059/atc_punch_e_03" scale = 1.4 action = "fadein" time = 0.1]
+
+
+[wait_anim target=".chara"]
+
+[balloon x=-130 y=180 shape="003_01" scale = 1.5 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 16]
+バーダックたちが[r]
+惑星ベジータから[r]
+カナッサ星へと[r]
+向かった頃…[r]
+　[r]
+惑星フリーザでは[r]
+サイヤ人の王子[r]ベジータの[r]
+トレーニングが[r]続いていた
+[p]
+
+
+
+*002
+//-------------------------------------------------------------------------------
+//  ベジータ（幼年期）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_001_001"]
+
+[character x=260 y=-70 storage = "00059/heapup_e_01" scale = 1.3 action = "fadein" time = 0.1]
+
+[balloon x=-165 y=80 shape="002_03" scale = 0.55 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 50]
+フン…
+[p]
+
+[balloon x=-165 y=-125 shape="002_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+これが[r]
+強化栽培マンか…
+[p]
+
+
+
+[stopbgm]
+

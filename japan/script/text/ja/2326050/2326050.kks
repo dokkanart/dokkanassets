@@ -1,0 +1,108 @@
+*start|スタート
+
+//2326050
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "005"]
+
+*001
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0002L" bg = "bg_070_003"]
+ 
+
+[wait time = 0.7] 
+ 
+[balloon x=0 y=160 shape="003_02" scale = 1.6 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 15]
+//[quake target =".bln" power = 3 time = 0.2]
+ブロリーとの闘いから[r]
+７年の時が過ぎた…[r]
+　[r]
+悟飯の弟・悟天、[r]
+トランクス、ビーデルの[r]
+３人はドラゴンボールを[r]
+さがしてナタデ村を[r]
+訪れるのだった…[r]
+[p]
+
+
+*002
+//-------------------------------------------------------------------------------
+//  孫悟天
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_070_003"]
+ 
+[character x=200 y=-110 storage = "00225/idl_side_p_01" scale = 1.2 action = "fadein" time = 0.1]
+[flip target =".chara" h=1]
+ 
+[balloon x=-120 y=120 shape="001_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+トランクスくん 
+[p]
+ 
+[balloon x=-130 y=-80 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+ドラゴンボールを[r]
+集めるって[r]
+案外カンタンだったね 
+[p]
+
+
+*003
+//-------------------------------------------------------------------------------
+//  トランクス（幼年期）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_070_003"]
+ 
+[character x = -210 y = -130 storage = "00200/idl_side_p_02" scale = 1.2 action = "fadein" time = 0.1]
+ 
+[balloon x=130 y=60 shape="001_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+おかあさんが造った[r]
+ドラゴンレーダーの[r]
+おかげだよ！
+[p]
+
+
+*004
+//-------------------------------------------------------------------------------
+//  ビーデル
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_070_003"]
+
+[character x = 220 y = -190 storage = "00417/idl_side_e_01" scale = 1.5 action = "fadein" time = 0.1]
+ 
+[balloon x=-120 y=120 shape="001_03" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 44]
+[quake target =".bln" power = 3 time = 0.2]
+さあ！ 
+[p]
+ 
+[balloon x=-130 y=-140 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+残りひとつの[r]
+ドラゴンボールを[r]
+見つけるわよ！ 
+[p]
+
+
+//-------------------------------------------------------------------------------
+[stopbgm]

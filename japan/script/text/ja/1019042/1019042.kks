@@ -1,0 +1,36 @@
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "011"]
+
+
+*001
+//-------------------------------------------------------------------------------
+//  孫悟空
+//-------------------------------------------------------------------------------
+
+//[se storage = "04"]
+[coma shape="N0002L" bg = "bg_012_001"]
+
+//悟空
+[character x = -150 y = -160 storage = "00003/card_01" scale = 1.4 action = "fadein" time = 0.1]
+
+[balloon x=140 y=120 shape="001_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target =".bln" power = 3 time = 0.2]
+[font size = 28]
+さて…と…[r]
+[$player]！[p]
+
+[balloon x=140 y=-160 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 3 time = 0.2]
+[font size = 28]
+おめえたちが[r]
+どれだけ腕上げたのか[r]
+見せてもらおっかな！[p]
+
+
+[stopbgm]

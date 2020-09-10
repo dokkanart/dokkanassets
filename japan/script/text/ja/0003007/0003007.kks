@@ -1,0 +1,258 @@
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+//[bgm storage = "012"]
+
+
+*01
+//-------------------------------------------------------------------------------
+//  亀仙人
+//-------------------------------------------------------------------------------
+
+[coma shape="S0001" bg = "bg_026_001"]
+
+
+[character x = 120 y = 0 storage = "00023/card_03" scale = 1.2 action = "fadein" time = 0.1]
+
+[wait_anim target=".chara"]
+
+
+
+[balloon x=-125 y=230 shape="001_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[quake target = ".bln" power = 3 time = 0.2]
+[font size = 28]
+ハロー！[r]
+わしが亀仙人じゃ！[p]
+
+[balloon x=-140 y=-130 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target = ".bln" power = 3 time = 0.2]
+[font size = 28]
+わしは武術の神様[r]
+“武天老師”とも[r]
+呼ばれておる！[p]
+
+
+*02
+//-------------------------------------------------------------------------------
+//  亀仙人
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_026_001"]
+
+[character x = 180 y = -100 storage = "00023/card_04" scale = 0.8 action = "fadein" time = 0.1]
+
+[balloon x=-95 y=150 shape="001_01" scale = 1 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target = ".bln" power = 3 time = 0.2]
+[font size = 24]
+わしより[r]
+強くなりたければ[r]
+「修業」を積むことじゃな[p]
+
+[balloon x=-125 y=-90 shape="001_02" scale = 1 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target = ".bln" power = 3 time = 0.2]
+[font size = 24]
+…というわけで[r]
+わしからは「修業」について[r]
+話をしてやろう！[p]
+
+
+
+//---------------------------------------------
+
+[if !$is_cleared]    
+// 達成済みか否かは $is_cleared 変数に入っているので、それを用いて if 分岐します。
+
+//---------------------------------------------
+
+//*explain|任務内容詳細説明    // ラベルを付けておくと、テスターで見やすくなります。
+
+// ******************************************************
+//  ここには、
+//  まだ、このミッションを達成していない場合の展開を記述します。
+// ******************************************************
+
+*explain|任務内容詳細説明
+*03_mitatu
+//-------------------------------------------------------------------------------
+//  ウミガメ
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_026_001"]
+
+[character x = -250 y = -100 storage = "90003/umigame" scale = 0.9 action = "fadein" time = 0.1]
+
+[balloon x=100 y=110 shape="001_02" scale = 1 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target = ".bln" power = 3 time = 0.2]
+[font size = 24]
+強いチームを目指したり[r]
+強敵に挑むにも[r]
+キャラクターのLvが[r]
+重要になってきます[p]
+
+
+[balloon x=120 y=-90 shape="001_03" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target = ".bln" power = 3 time = 0.2]
+[font size = 24]
+「修業」すれば[r]
+Lvがグンと上がりますよ[p]
+
+*04_mitatu
+
+//---------------------
+//  亀仙人
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_026_001"]
+
+[character x = 160 y = -110 storage = "00023/card_02" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x=-125 y=100 shape="001_01" scale = 1 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[quake target = ".bln" power = 3 time = 0.2]
+[font size = 24]
+まずは自分の好きな[r]
+キャラクターを[r]
+「修業」させてみるのじゃ！[p]
+
+[balloon x=-125 y=-170 shape="001_02" scale = 1 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[quake target = ".bln" power = 3 time = 0.2]
+[font size = 24]
+友情ガシャで手に入れた[r]
+キャラクターを修業相手に[r]
+するとよいぞ！[p]
+
+
+
+//---------------------------------------------
+[else]
+//*has_been_cleared|すでに達成済み    // ラベルを付けておくと、テスターでチェックしやすくなります。
+
+// ******************************************************
+//  ここには、
+//  すでに、このミッションを達成している場合の展開を記述します。
+// ******************************************************
+
+*has_been_cleared|すでに達成済み
+
+*05
+//-------------------------------------------------------------------------------
+//  ウミガメ
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_026_001"]
+
+[character x = -250 y = -100 storage = "90003/umigame" scale = 0.9 action = "fadein" time = 0.1]
+
+[balloon x=80 y=100 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target = ".bln" power = 3 time = 0.2]
+[font size = 28]
+亀仙人さま…[r]
+かっこつけて[r]
+らっしゃいますが…[p]
+
+
+[balloon x=110 y=-90 shape="001_03" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target = ".bln" power = 3 time = 0.2]
+[font size = 24]
+このかた すでに[r]
+「修業」について[r]
+ご存知のようですよ？[p]
+
+
+*06
+//-------------------------------------------------------------------------------
+//  亀仙人
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_026_001"]
+
+[character x = 180 y = -100 storage = "00023/card_04" scale = 0.8 action = "fadein" time = 0.1]
+
+
+
+[balloon x=-100 y=120 shape="001_01" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[quake target = ".bln" power = 3 time = 0.2]
+[font size = 40]
+なんと！？[p]
+
+[balloon x=-130 y=-80 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target = ".bln" power = 3 time = 0.2]
+[font size = 28]
+むう…こいつは[r]
+わしの想像以上だった[r]
+ようじゃな[p]
+
+
+*07
+//-------------------------------------------------------------------------------
+//  ウミガメ
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_026_001"]
+
+[character x = -250 y = -100 storage = "90003/umigame" scale = 0.9 action = "fadein" time = 0.1]
+
+[balloon x=110 y=60 shape="001_02" scale = 1 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target = ".bln" power = 3 time = 0.2]
+[font size = 24]
+強いチームを目指したり[r]
+強敵に挑むにも[r]
+キャラクターのLvが[r]
+重要になってきます[p]
+
+
+*08
+//---------------------
+//  亀仙人
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_026_001"]
+
+[character x = 160 y = -110 storage = "00023/card_02" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x=-125 y=100 shape="001_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[quake target = ".bln" power = 3 time = 0.2]
+[font size = 28]
+おまえには[r]
+未知の可能性が[r]
+ある！[p]
+
+[balloon x=-125 y=-180 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[quake target = ".bln" power = 3 time = 0.2]
+[font size = 28]
+「修業」で[r] 
+より強うなって[r]
+わしを驚かせてくれ！[p]
+
+
+[endif]
+*conclusion|結び
+
+//---------------------------------------------
+
+
+
+//[stopbgm]

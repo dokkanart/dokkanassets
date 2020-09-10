@@ -1,0 +1,119 @@
+*start|スタート
+//ステージ3 スタート
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "002"]
+
+*01
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0003L" bg = "bg_000_024"]
+
+
+//[wait time = 0.3]
+
+
+[balloon shape="003_01" x = 0 y = 80 scale = 1.5 action = "fadein" time = 0.1]
+[font size = 16]
+//[quake target =".bln" power = 3 time = 0.2]
+[wait_anim target=".bln"]
+地球での闘いで[r]
+大ダメージを負った[r]
+ベジータだったが[r]
+惑星フリーザへ帰還し[r]
+体力を回復させる
+[p]
+
+*02
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0003R" bg = "bg_000_003"]
+
+[character id = "2" x = -100 y = -20 storage = "99999/pod_02" scale = 0.6 angle = 10 action = "fadein" time = 0.1]
+//[flip target ="2" h=1]
+
+[character id = "1" x = -100 y = -20 storage = "99999/pod_01" scale = 0.6 angle = 10 action = "fadein" time = 0.1]
+//[flip target ="1" h=1]
+
+[balloon shape="003_01" x = 140 y = 0 scale = 1.5 action = "fadein" time = 0.1]
+[font size = 16]
+//[quake target =".bln" power = 3 time = 0.2]
+[wait_anim target=".bln"]
+そこで[r]
+フリーザが[r]
+ドラゴンボールを求め[r]
+ナメック星へと向かった[r]
+ことを聞かされた[r]
+ベジータは[r]
+急いでそのあとを[r]
+追うのだった…
+[p]
+
+
+
+*03
+//-------------------------------------------------------------------------------
+//  ベジータ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_050_001"]
+
+//[character x = 180 y = -110 storage = "00004/idl_side_e_02" scale = 1.1 action = "fadein" time = 0.1]
+
+[character x = 180 y = -130 storage = "00061/idl_front_e_01" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x=-110 y=100 shape="002_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+フリーザのやろうめ…
+[p]
+
+[balloon x=-110 y=-100 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+ドラゴンボール……[r]
+絶対に渡さんぞ…！！
+[p]
+
+
+*04
+//-------------------------------------------------------------------------------
+//  ベジータ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_050_001"]
+
+//[character x = 165 y = -115 storage = "00004/idl_side_e_02" scale = 1.2 action = "fadein" time = 0.1]
+
+[character x = 165 y = -115 storage = "00061/idl_side_e_02" scale = 1.2 action = "fadein" time = 0.1]
+
+
+[balloon shape="002_02" x = -130 y = 60 scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+オレの反逆は[r]
+とっくにバレている[r]
+はずだ……
+[p]
+
+//[quake target =".chara" power = 6 time = 0.3]
+
+[balloon shape="002_03" x = -130 y = -220 scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 7 time = 0.2]
+なんとしても うまく[r]
+ドラゴンボールを奪って[r]
+永遠の命を…
+[p]
+
+//-------------------------------------------------------------------------------
+[stopbgm]

@@ -1,0 +1,83 @@
+
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "001"]
+
+
+
+
+//-------------------------------------------------------------------------------
+//  ラディッツ
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0001L" bg = "bg_027_001"]
+
+[character x=-170 y=-90 storage = "00014/heapup_p_01" scale = 1.4 action = "fadein" time = 0.1]
+
+[balloon id="radhi1" x=120 y=120 shape="002_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+もうお遊びは[r]
+これまでだ…[r]
+[p]
+
+[balloon id="radhi1" x=140 y=-90 shape="002_03" scale = 0.85 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+さっさとくたばって[r]
+しまうがいい！[r]
+[p]
+
+
+*002
+//-------------------------------------------------------------------------------
+//  悟空
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_027_001"]
+
+[character x=250 y=-145 storage = "00003/atc_energyball_e_02" scale = 1.9 action = "fadein" time = 0.1]
+
+
+[balloon x=-140 y=20 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 30]
+オラがあいつの注意を[r]
+ひきつける…
+[p]
+
+
+
+
+*003
+//-------------------------------------------------------------------------------
+//  悟空
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_027_001"]
+
+[character x=170 y=-150 storage = "00003/card_01" scale = 1.2 action = "fadein" time = 0.1]
+
+
+[balloon x=-140 y=90 shape="001_01" scale = 0.85 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+あとは[r]
+[$player]…[r]
+[p]
+
+[balloon x=-140 y=-130 shape="001_03" scale = 0.95 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 3 time = 0.2]
+[font size = 27]
+おめえのとっておきの[r]
+必殺技で決めてくれ！[r]
+頼んだぞ！！
+[p]
+
+
+[stopbgm]

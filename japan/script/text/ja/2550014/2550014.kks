@@ -1,0 +1,67 @@
+*start|スタート
+
+
+//R4開始
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+//[bgm storage = "013"]
+ 
+ 
+ 
+ *001
+//-------------------------------------------------------------------------------
+//  孫悟空（少年期）
+//-------------------------------------------------------------------------------
+[se storage = "44"]
+[coma shape="S0001" bg = "bg_000_016"]
+
+
+[lwfobject id = "kaki1" storage="kakimoji:ef_020" x=-160 y=-90 scale = 2.0 angle = -20 action = "fadein" time = 0.1]
+[quake target = "kaki1" power = 10 time = 0.4]
+
+[character x = 0 y = 0 storage = "00261/card_06" scale = 1.6 action = "fadein" time = 0.1]
+
+[character id = "goku1" x = 0 y = 0 storage = "00261/card_05" scale = 1.6 action = "fadein" time = 0.1]
+
+[balloon id = "1" shape="006_01" x = 0 y = 440 scale = 0.8 action = "expand" time = 0.1]
+[font size = 32]
+[wait_anim target=".bln"]
+[quake target ="1" power = 7 time = 0.2]
+オラのすべてを[r]
+この拳にかける！！
+[p]
+
+[se storage = "50"]
+//点滅
+[balloon shape="008_02" x = 0 y = 0 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+[balloon shape="008_02" x = 0 y = 0 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+
+//[se storage = "3029"]
+
+//[move target ="1" x=-110 y=440 time = 0.4]
+
+//[clear target = "goku1"]
+
+//[character x = 0 y = 50 storage = "00261/card_06" scale = 1.6 action = "fadein" time = 0.4]
+
+//[character id = "goku2" x = 0 y = 50 storage = "00261/card_05" scale = 1.6]
+//[quake target ="goku2" power = 15 time = 0.4]
+
+
+//ないです
+//[balloon shape="006_02" x = 130 y = -370 scale = 0.9 action = "expand" time = 0.1]
+//[font size = 32]
+//[quake target =".bln" power = 7 time = 0.2]
+//[wait_anim target=".bln"]
+//つらぬけーっ！！[r]
+//はーっ！！[p]
+
+
+ 
+//-------------------------------------------------------------------------------
+//[stopbgm]

@@ -1,0 +1,58 @@
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+//[bgm storage = "012"]
+
+*001
+//-------------------------------------------------------------------------------
+//  時の狭間に異変があらわれる。
+//-------------------------------------------------------------------------------
+[se storage = "3038"]
+[coma id = "coma1" shape="S0001" bg = "bg_000_051"]
+
+
+[character x = 0 y = 30 storage = "00599/card_02" scale = 1.0 action = "fadein" time = 0.1]
+
+[quake target = "coma1" power = 10 time = 1.0]
+
+[wait_anim target="coma1"]
+
+[se storage = "09"]
+//点滅
+[balloon shape="008_02" x = 0 y = 0 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+[balloon shape="008_02" x = 0 y = 0 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+
+[quake target = ".chara" power = 1 time = 300]
+
+[lwfobject id = "kaki1" storage="kakimoji:ef_009" x=-120 y=0 scale = 2.5 action = "fadein" time = 0.7]
+[quake target = "kaki1" power = 2 time = 300]
+
+[wait time = 0.7]
+
+//[wait_anim target=".chara"]
+
+[balloon shape="002_02" x = 0 y = 420 scale = 1.0 action = "fadein" time = 0.1]
+[font size = 24]
+[wait_anim target=".bln"]
+//[quake target =".bln" power = 7 time = 0.2]
+超パワーの衝突で[r]
+この空間も もう[r]
+長くもちそうにねえな…
+[p]
+
+[balloon shape="002_01" x = 0 y = -350 scale = 1.0 action = "fadein" time = 0.1]
+[font size = 24]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 3 time = 0.2]
+時間がねえ！[r]
+後腐れのねえように[r]
+ケリをつけようぜ！！
+[p]
+
+//[stopbgm]

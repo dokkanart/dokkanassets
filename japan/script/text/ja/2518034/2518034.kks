@@ -1,0 +1,109 @@
+*start|スタート
+
+
+//"エリア２ R4開始"
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+//[bgm storage = "013"]
+ 
+*001
+//-------------------------------------------------------------------------------
+//  ゴクウブラック
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[se storage = "3038"]
+[coma shape="N0002R" bg = "bg_073_001"]
+
+//ゴゴゴゴ
+[lwfobject id = "kaki1" storage="kakimoji:ef_009" x=-170 y=-165 scale = 2.0 angle = 10 action = "fadein" time = 0.1]
+[quake target = "kaki1" power = 1 time = 300]
+ 
+//[character id = "ki" x = 0 y = -80 storage = "99999/ultra_instinct" scale = 5.3 action = "fade:100" time = 0.1]
+//[paint target="ki" color="#FF0080"] 
+
+[character id = "gb" x = 0 y = -80 storage = "00621/card_08" scale = 1.3 action = "fadein" time = 0.1]
+//[quake target ="gb" power = 1 time = 300]
+
+
+[wait time = 0.7] 
+
+[balloon x=0 y=550 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+人間の身で[r]よくぞそこまで…[r]
+褒美にいいものを[r]見せてやろう
+[p]
+
+[se storage = "3024"]
+ 
+[balloon x=150 y=-240 shape="004_02" scale = 0.75 action = "fadein" time = 0.1]
+[font size = 36]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 3 time = 0.2]
+はああああ…！！ 
+[p]
+
+[se storage = "3025"]
+
+[character id = "ki2" x = 0 y = -300 storage = "99999/ultra_instinct" scale = 5.3 action = "expand" time = 0.5]
+[paint target="ki2" color="#FF0080"]
+
+[move target ="ki2" y=-80 time = 0.5]
+
+[wait time = 0.3]
+ 
+//[se storage = "3025"]
+//点滅
+[balloon shape="008_02" x = 140 y = -30 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+//[balloon shape="008_02" x = 140 y = -30 scale = 50 action = "fadein" time = 0.1]
+//[wait time = 0.3]
+//[clear target = ".bln"]
+
+//フェードアウト（フェードアウトするコマ）
+[balloon x=130 y=40 shape="008_02" scale = 50.0 action = "fadein" time = 0.3]
+[wait time = 0.5]
+
+*002
+//-------------------------------------------------------------------------------
+//  ブラック（超サイヤ人ロゼ）
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="S0001" bg = "bg_073_001"]
+
+//ゴゴゴゴ
+//[lwfobject id = "kaki1" storage="kakimoji:ef_009" in="04" x=-170 y=-165 scale = 2.0 angle = 10 action = "fadein" time = 0.1]
+//[quake target = "kaki1" power = 2 time = 300]
+
+[character x = -40 y = -70 storage = "00654/card_05" scale = 1.3 action = "fadein" time = 0.1]
+
+
+//フェードイン（フェードインするコマ）
+[balloon x=130 y=40 shape="008_02" scale = 50]
+[wait time = 0.2]
+[fadeout target = ".bln" time = 1.5]
+[wait_anim target=".bln"]
+
+ 
+[balloon x=-120 y=490 shape="002_02" scale = 0.8 action = "fadein" time = 0.1]
+[font size = 32]
+[wait_anim target=".bln"]
+//[quake target =".bln" power = 3 time = 0.2]
+どうだ この色…[r]
+美しいだろう？
+[p]
+ 
+[balloon x=115 y=-450 shape="002_03" scale = 1.0 action = "fadein" time = 0.1]
+[font size = 24]
+[wait_anim target=".bln"]
+//[quake target =".bln" power = 3 time = 0.2]
+おまえらのセンスに合わせて[r]
+名付けるとしたら… “ロゼ”[r]
+そう…超サイヤ人ロゼ
+[p]
+ 
+//-------------------------------------------------------------------------------
+//[stopbgm]

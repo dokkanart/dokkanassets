@@ -1,0 +1,70 @@
+//"エリア１スタート"
+
+*start|スタート
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+
+[bgm storage = "003"]
+
+*001
+//-------------------------------------------------------------------------------
+//  ゴクウブラック（ロゼ）
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+
+[coma shape="S0001" bg = "bg_073_001"]
+
+[character x = 120 y = 30 storage = "00654/card_01" scale = 1.1 action = "fadein" time = 0.1]
+
+[wait time = 0.7]
+
+[balloon x=-150 y=350 shape="002_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+どうだ この色…[r]
+美しいだろう？
+[p]
+
+[balloon x=-120 y=-120 shape="002_03" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+おまえらのセンスに合わせて[r]
+名付けるとしたら… “ロゼ”[r]
+そう…超サイヤ人ロゼだ
+[p]
+
+
+*002
+//-------------------------------------------------------------------------------
+//  
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002L" bg = "bg_073_001"]
+
+[character x = 100 y = -150 storage = "00625/card_01" scale = 0.7 angle=0 action = "fadein" time = 0.1]
+[character x = -20 y = -100 storage = "00623/card_01" scale = 0.8 angle=0 action = "fadein" time = 0.1]
+
+[wait time = 0.7]
+
+[balloon x=160 y=220 shape="001_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+これ以上 勝手なこと[r]
+させないよ！！
+[p]
+
+[balloon x=-120 y=-220 shape="006_01" scale = 0.9 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 7 time = 0.2]
+ブラック…きさまは[r]
+オレたちの手で倒す！！
+[p]
+
+
+//-------------------------------------------------------------------------------
+[stopbgm]

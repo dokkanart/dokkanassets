@@ -1,0 +1,69 @@
+*start|スタート
+//究極のDB編_エリア８：ラウンド3
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+//[bgm storage = "012"]
+ 
+
+
+*001
+//-------------------------------------------------------------------------------
+//  スーパーΣ2
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_081_005"]
+
+
+[character x = -200 y = -140 storage = "00339/heapup_p_01" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon x=120 y=140 shape="002_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+もう少し[r]
+手応えがあると[r]
+思ったのだがな…
+[p]
+
+[balloon x=140 y=-80 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+では そろそろ[r]
+終わりにしてやるか！
+[p]
+
+[se storage = "3025"]
+//点滅
+[balloon shape="008_02" x = 140 y = -30 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+[balloon shape="008_02" x = 140 y = -30 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+
+[wait_anim target=".bln"]
+
+*003
+//-------------------------------------------------------------------------------
+//  スーパーΣ2
+//-------------------------------------------------------------------------------
+[se storage = "20"]
+[coma shape="N0002L" bg = "bg_081_005"]
+
+[lwfobject id = "kaki1" storage="kakimoji:ef_020" in="04" x=-70 y=-220 scale = 2.5]
+[quake target = "kaki1" power = 15 time = 0.4]
+
+[character x = -80 y = -155 storage = "00477/idl_front_p_01" scale = 1.1 action = "fadein" time = 0.1]
+[quake target = ".chara" power = 5 time = 0.4]
+
+[wait_anim target=".chara"]
+
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+
+//[stopbgm]

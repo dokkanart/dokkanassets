@@ -1,0 +1,67 @@
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+//[bgm storage = "026"]
+
+*001
+//-------------------------------------------------------------------------------
+//  超サイヤ人ゴッドSS孫悟空
+//-------------------------------------------------------------------------------
+[se storage = "50"]
+[coma shape="S0001" bg = "bg_000_072"]
+
+
+[lwfobject id = "kaki1" storage="kakimoji:ef_013" x=0 y=-100 angle = -13 scale = 2.8 action = "fadein" time = 0.1]
+[quake target = "kaki1" power = 15 time = 0.4]
+
+[character id = "ss" x=0 y=30 storage = "99999/supersaiyangodss" scale = 1.6 action = "expand" time = 0.3]
+
+[character id = "gohan" x = 0 y = -35 storage = "00239/card_08" scale = 1.2 action = "fadein" time = 0.1] 
+
+
+
+
+//[se storage = "3025"]
+//点滅
+[balloon shape="008_02" x = 0 y = 0 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+//[balloon shape="008_02" x = 0 y = 0 scale = 50 action = "fadein" time = 0.1]
+//[wait time = 0.3]
+//[clear target = ".bln"]
+
+[fadeout target = "ss" time = 0.7]
+[fadeout target = "kaki1" time = 0.7]
+
+
+
+[wait_anim target="ss"]
+
+
+
+
+
+[balloon x=-110 y=470 shape="001_03" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 7 time = 0.2]
+これ以上[r]
+出し惜しみしてると[r]
+なんだかやべえことに[r]
+なりそうだからな…
+[p]
+
+[balloon x=120 y=-430 shape="001_02" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+[quake target =".bln" power = 3 time = 0.2]
+こいつが超サイヤ人ゴッドの[r]
+パワーを持った[r]
+サイヤ人の超サイヤ人…[r]
+超サイヤ人ブルーだ！
+[p]
+
+//[stopbgm]
+

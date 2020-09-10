@@ -1,0 +1,50 @@
+*start|スタート
+
+//-------------------------------------------------------------------------------
+[bgm storage = "008"]
+//-------------------------------------------------------------------------------
+
+*coma1
+//----------------------------------------------------------
+//トランクス
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0001R" bg = "bg_008_001"]
+
+[character x = 190 y = -220 storage = "00411/card_01" scale = 1.2 action = "fadein" time = 0.1]
+
+
+
+[balloon x = -120 y = 90 shape="006_02" scale = 1.0 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 26]
+[quake target =".bln" power = 7 time = 0.4]
+絶対におまえを[r]
+過去には行かさん！！
+[p]
+
+
+*coma2
+//----------------------------------------------------------
+//セル
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002L" bg = "bg_008_001"]
+
+
+
+[character x = -120 y = -170 storage = "00006/atc_sp01_p_01" scale = 1.8 action = "fadein" time = 0.1]
+[quake target =".chara" power = 5 time = 0.4]
+
+[balloon x = 170 y = 100 shape="006_01" scale = 0.8 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 7 time = 0.4]
+ほざけ[r]
+青二才がっ！！
+[p]
+
+
+
+[stopbgm]
+

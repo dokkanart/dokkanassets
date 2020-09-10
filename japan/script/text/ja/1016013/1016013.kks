@@ -1,0 +1,38 @@
+*start|スタート
+
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "005"]
+
+
+*001
+//-------------------------------------------------------------------------------
+//  ピラフ
+//-------------------------------------------------------------------------------
+
+//[se storage = "04"]
+[coma shape="N0002L" bg = "bg_000_016"]
+
+[character x=-160 y=-110 storage = "00025/support_item_01602" scale = 1.2 action = "fadein" time = 0.1]
+[character x=-220 y=20 storage = "99999/ase" scale = 0.9 action = "fadein" time = 0.1]
+
+[balloon x=120 y=80 shape="004_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+お…おまえたち！[r]
+それ以上近寄るな！
+[p]
+
+[balloon x=120 y=-220 shape="001_02" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+[quake target =".bln" power = 3 time = 0.2]
+ここに埋まっている宝石は[r]
+我々がちょうだいするのだ！
+[p]
+
+
+[stopbgm]

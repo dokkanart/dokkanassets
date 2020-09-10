@@ -1,0 +1,232 @@
+*start|スタート
+//復讐鬼ベビー編_エリア５：ボス前
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "005"]
+ 
+*001
+//-------------------------------------------------------------------------------
+//  ギル
+//-------------------------------------------------------------------------------
+
+//[se storage = "04"]
+[coma shape="N0001R" bg = "bg_014_001"]
+ 
+[character x = 180 y = -50 storage = "90003/giru_R" scale = 1.2 action = "fadein" time = 0.1]
+[character x = 220 y = -0 storage = "99999/ase" scale = 0.8 action = "fadein" time = 0.1]
+ 
+[balloon x=-120 y=-50 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+ギルルルル…！！[r]
+キケン！キケン！[r]
+キケン！！
+[p]
+
+*002
+//-------------------------------------------------------------------------------
+//  トランクス（GT）
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_014_001"]
+ 
+[character x=270 y=-110 storage = "00325/idl_side_e_01" scale = 1.2 action = "fadein" time = 0.1]
+ 
+[balloon x=-90 y=120 shape="001_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+どうしたんだよギル…[r]
+なにが危険なんだ？
+[p]
+
+[balloon x=-100 y=-80 shape="001_03" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+ああ…そうか[r]
+ギルは父さんに会うの[r]
+初めてだもんな
+[p]
+
+*003
+//-------------------------------------------------------------------------------
+//  ベジータ（GT）
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_014_001"]
+ 
+[balloon x=80 y=90 shape="002_02" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 40]
+[quake target =".bln" power = 3 time = 0.2]
+遅いぞ
+//[p]
+
+[wait time = 0.5]
+
+//セリフのあと、キャラクターがフェードイン 
+[character x=-190 y=-140 storage = "00328/idl_side_p_01" scale = 1.2 action = "fadein" time = 0.7]
+
+[wait_anim target=".chara"]
+
+// 空のフキダシ（セリフがないコマを送るために使用）
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+*004
+//-------------------------------------------------------------------------------
+//  トランクス（GT）
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_014_001"]
+ 
+[character x=270 y=-110 storage = "00325/idl_side_e_01" scale = 1.2 action = "fadein" time = 0.1]
+ 
+[balloon x=-80 y=120 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+父さん！[r]
+ええ…思いのほか[r]
+手間取ってしまって…
+[p]
+
+[balloon x=-100 y=-80 shape="001_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+でも[r]
+ドラゴンボールは…
+[p]
+
+*005
+//-------------------------------------------------------------------------------
+//  ベジータ（GT）
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_014_001"]
+ 
+[character x=-190 y=-140 storage = "00328/idl_side_p_01" scale = 1.2 action = "fadein" time = 0.1]
+ 
+[balloon x=120 y=90 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+天界に[r]
+封印したんだろ？
+[p]
+
+*006
+//-------------------------------------------------------------------------------
+//  トランクス（GT）
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_014_001"]
+ 
+[character x=270 y=-110 storage = "00325/idl_side_e_01" scale = 1.2 action = "fadein" time = 0.1]
+ 
+[balloon x=-80 y=120 shape="001_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+はい…[r]
+そうです
+[p]
+
+[balloon x=-100 y=-80 shape="001_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+さすが父さん[r]
+ご存知だったんですね
+[p]
+
+*007
+//-------------------------------------------------------------------------------
+//  ベジータ（GT）
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_014_001"]
+ 
+[character id = "v1" x=-190 y=-140 storage = "00328/idl_side_p_01" scale = 1.2 action = "fadein" time = 0.1]
+ 
+[balloon x=100 y=120 shape="002_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+まあいい…
+[p]
+
+[balloon x=120 y=-80 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+…それにしても[r]
+ひさしぶりだな…[r]
+サイヤ人！！
+[p]
+
+//"セリフ後、ベジータベビーに変化"
+[se storage = "37"]
+
+[fadeout target = "v1" time = 0.7]
+[character id = "v2" x=-190 y=-140 storage = "00482/idl_side_p_01" scale = 1.2 action = "fadein" time = 0.7]
+
+[wait_anim target="v2"]
+
+// 空のフキダシ（セリフがないコマを送るために使用）
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+*008
+//-------------------------------------------------------------------------------
+//  トランクス（GT）
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_014_001"]
+ 
+[character x=240 y=-100 storage = "00325/heapup_e_01" scale = 1.2 action = "fadein" time = 0.1]
+ 
+[balloon x=-80 y=80 shape="004_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+と…[r]
+父さんじゃない！？
+[p]
+
+
+
+*009
+//-------------------------------------------------------------------------------
+//  ベジータベビー
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0002L" bg = "bg_014_001"]
+ 
+[character x = -190 y = -220 storage = "00482/idl_side_p_01" scale = 1.5 action = "fadein" time = 0.1]
+
+[balloon x=135 y=90 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+くっくっくっく…！[r]
+その節はどうも…
+[p]
+
+[stopbgm]
+
+
+

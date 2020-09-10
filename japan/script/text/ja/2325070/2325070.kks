@@ -1,0 +1,128 @@
+
+
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "002"]
+
+*01
+//-------------------------------------------------------------------------------
+//  
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0003R" bg = "bg_068_001"]
+
+
+
+[balloon x=-80 y=140 shape="005_01" scale = 1 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+[quake target =".bln" power = 3 time = 0.2]
+勝ちましたベジータ選手と[r]
+対戦する[r]
+第６宇宙の最後の選手は…[p]
+
+
+[balloon x=120 y=-120 shape="005_02" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+[quake target =".bln" power = 3 time = 0.2]
+ヒット選手～！[p]
+
+
+*02
+//-------------------------------------------------------------------------------
+//  ヴァドス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+
+[coma shape="N0001L" bg = "bg_068_003"]
+
+[character x = -200 y = -300 storage = "00583/idl_side_p_01" scale = 1.2 action = "fadein" time = 0.1]
+
+
+
+[balloon x=120 y=40 shape="001_01" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+こっちは[r]
+最後のひとりに[r]
+なってしまいましたねえ[p]
+
+
+
+*03
+//-------------------------------------------------------------------------------
+//  シャンパ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+
+[coma shape="N0001L" bg = "bg_068_003"]
+
+[character x = -170 y = -290 storage = "00582/card_01" scale = 1.3 action = "fadein" time = 0.1]
+
+
+[balloon x=110 y=110 shape="001_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+まあ 最後はヒットだ[r]
+あせることはない[p]
+
+[balloon x=120 y=-	110 shape="001_02" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+わが宇宙の生ける伝説[r]
+殺し屋ヒット…！[r]
+これでオレたちの勝ちは[r]
+決まったも同然だ！[p]
+
+*04
+//-------------------------------------------------------------------------------
+//  ヒット
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_068_002"]
+
+[character x = -220 y = -270 storage = "00556/idl_side_p_01" scale = 1.1 action = "fadein" time = 0.1]
+
+
+[balloon id = "01" x = 80 y = 40 shape="002_02" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target = "01"]
+[font size = 54]
+………
+[p]
+
+
+*05
+//-------------------------------------------------------------------------------
+//  ベジータ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_068_001"]
+
+
+[character x = 190 y = -130 storage = "00245/idl_side_e_01" scale = 1.9 action = "fadein" time = 0.1]
+
+[balloon x = -120 y = 80 shape="002_03" scale = 1 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target = ".bln" power = 3 time = 0.2]
+極限まで隠されているが…[r]
+針のように研ぎ澄まされた[r]
+気がわかるぜ…強いな……[p]
+
+[balloon x = -110 y = -210 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][font size = 28]
+//[quake target = ".bln" power = 3 time = 0.2]
+…どうあれ…[r]
+オレは絶対に[r]
+負けんがな…！[p]
+
+
+//-------------------------------------------------------------------------------
+[stopbgm]

@@ -1,0 +1,87 @@
+*start|スタート
+
+//"２6−２ボス前" 
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "008"]
+ 
+*001
+//-------------------------------------------------------------------------------
+//  ブラック参謀
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0001L" bg = "bg_023_004"]
+ 
+[character x = -235 y = -255 storage = "00422/card_01" scale = 1.0 action = "fadein" time = 0.1]
+ 
+[balloon x=120 y=130 shape="001_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+おい[r]
+ゲロのじいさんよ…
+[p]
+
+[balloon x=120 y=-90 shape="001_02" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+本当に[r]
+あんたの作戦どおりにすれば[r]
+うまくいくんだろうな？
+[p]
+
+*002
+//-------------------------------------------------------------------------------
+//  ドクター・ゲロ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_023_004"]
+ 
+[character x = -170 y = -135 storage = "00019/gero_idl_side_p_01" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon x=130 y=100 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+いいから黙って[r]
+言うことを聞いておけ
+[p]
+
+[balloon x=130 y=-85 shape="002_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+悪いようにはせん
+[p]
+
+*003
+//-------------------------------------------------------------------------------
+//  ブラック参謀
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002L" bg = "bg_023_004"]
+ 
+[character x = -210 y = -320 storage = "00422/card_01" scale = 1.2 action = "fadein" time = 0.1]
+ 
+[balloon x=130 y=80 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+ちっ…[r]
+あんたの頭がキレるのも[r]
+事実だからな
+[p]
+ 
+[balloon x=120 y=-180 shape="001_03" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+今回は[r]
+言うとおりにしてやるよ[r]
+[p]
+
+
+//-------------------------------------------------------------------------------
+[stopbgm]

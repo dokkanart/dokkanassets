@@ -1,0 +1,144 @@
+
+
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "013"]
+
+
+*01
+//-------------------------------------------------------------------------------
+//  フリーザ
+//-------------------------------------------------------------------------------
+//[se storage = "03"]
+[coma shape="N0001L" bg = "bg_000_018"]
+
+[character x=-230 y=-150 storage = "00068/heapup_p_01" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x=100 y=170 shape="007_02" scale = 1 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+[quake target = ".bln" power = 7 time = 0.2]
+こうなったら見せてやるぞ[r]
+100パーセントの力を！！[p]
+
+[balloon x=90 y=-80 shape="007_01" scale = 1 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+[quake target = ".bln" power = 7 time = 0.2]
+オレを[r]
+倒せるわけがないんだ！！[r]
+覚悟しろ！！[p]
+
+
+
+*02
+//-------------------------------------------------------------------------------
+//  悟空
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+
+
+[coma shape="N0001R" bg = "bg_000_018"]
+
+[character x = 210 y = -110 storage = "00300/SR_idl_side_e_01" scale = 1.1 action = "fadein" time = 0.1]
+
+
+[balloon shape="001_02" x = -120 y = 90 scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+
+フルパワーの[r]
+フリーザと闘い…[p]
+
+[balloon shape="001_01" x = -150 y = -100 scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 40]
+[quake target =".bln" power = 3 time = 0.2]
+
+そして…[r]
+勝つ！[p]
+
+
+
+*03
+//-------------------------------------------------------------------------------
+//  フリーザ_変身
+//-------------------------------------------------------------------------------
+
+[se storage = "3025"]
+[coma shape="S0001" bg = "bg_000_018"]
+
+[lwfobject id = "kaki1" storage="kakimoji:ef_020" in="04" x=-0 y=-200 scale = 3.5 action = "fadein" time = 0.1]
+[quake target = "kaki1" power = 15 time = 1.5]
+
+[character id = "ball1" x=0 y=0 storage = "99999/charge_ball" scale = 7.0 action = "fadein" time = 0.1]
+[quake target ="ball1" power = 1 time = 300]
+
+[character id = "f" x=0 y=0 storage = "00349/card_1003320" scale = 1.7 action = "fadein" time = 0.1]
+[quake target ="f" power = 1 time = 10]
+
+
+
+//フェードイン（フェードインするコマ）
+//[balloon x=130 y=40 shape="008_02" scale = 50]
+//[wait time = 0.5]
+//[fadeout target = ".bln" time = 1.0]
+//[wait_anim target=".bln"]
+
+
+[fadeout target = "ball1" time = 1.0]
+
+[wait time = 0.3]
+
+
+
+
+[character id = "ball2" x=0 y=0 storage = "99999/charge_ball" scale = 8.0 action = "expand" time = 0.5]
+
+[wait time = 0.3]
+
+[fadeout target = "ball2" time = 0.7]
+
+[wait time = 0.3]
+
+[fadeout target = "kaki1" time = 0.3]
+
+[character id = "ball3" x=0 y=0 storage = "99999/charge_ball" scale = 8.0 action = "expand" time = 0.5]
+
+[wait time = 0.3]
+
+[fadeout target = "ball3" time = 0.7]
+
+[wait time = 0.3]
+
+[character id = "ball4" x=0 y=0 storage = "99999/charge_ball" scale = 10.0 action = "expand" time = 0.5]
+//[quake target ="ball4" power = 1 time = 300]
+
+[wait_anim target="ball3"]
+
+[fadeout target = "ball3" time = 0.7]
+[fadeout target = "ball4" time = 0.3]
+
+[wait_anim target="ball4"]
+
+
+[balloon x=-140 y=380 shape="002_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target = ".bln" power = 7 time = 0.2]
+待たせたな……[p]
+
+
+[balloon x=140 y=-220 shape="002_03" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target = ".bln" power = 7 time = 0.2]
+こいつがお望みの[r]
+フルパワーだ[p]
+
+
+[stopbgm]

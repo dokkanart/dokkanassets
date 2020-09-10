@@ -1,0 +1,46 @@
+*start|スタート
+
+//崩壊のカウントダウン ラウンド4開始
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+//[bgm storage = "002"]
+
+*001
+//-------------------------------------------------------------------------------
+// 超一星龍
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="S0001" bg = "bg_069_001"]
+
+[lwfobject id = "kaki1" storage="kakimoji:ef_009" in="04" x=190 y=-90 scale = 2.0 angle = 30 action = "fadein" time = 0.8]
+[quake target = "kaki1" power = 2 time = 300]
+
+[character x = -85 y = -60 storage = "00523/card_03" scale = 1.4 action = "fadein" time = 0.1]
+
+[quake target =".chara" power = 3 time = 0.4]
+
+[balloon x=20 y=460 shape="007_01" scale = 0.8 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 7 time = 0.2]
+オレは[r]
+絶対に負けん！！
+[p]
+
+[se storage = "3022"]
+
+[quake target =".chara" power = 9 time = 0.3]
+
+[balloon x=40 y=-420 shape="007_02" scale = 0.9 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 7 time = 0.2]
+おまえら まとめて[r]
+地獄へ行けーっ！！
+[p]
+
+
+//-------------------------------------------------------------------------------
+//[stopbgm]

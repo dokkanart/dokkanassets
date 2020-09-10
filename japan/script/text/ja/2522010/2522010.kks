@@ -1,0 +1,78 @@
+//"エリア１スタート"
+
+*start|スタート
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+
+[bgm storage = "008"]
+
+*001
+//-------------------------------------------------------------------------------
+//  トランクス（未来）
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="S0001" bg = "bg_073_001"]
+
+
+
+[character x = -50 y = -40 storage = "00623/card_02" scale = 1.1 action = "fadein" time = 0.1]
+
+[wait time = 0.3]
+
+[balloon x=-0 y=470 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+やらなければ[r]
+いけないんだオレが…！
+[p]
+
+[quake target =".chara" power = 5 time = 0.3]
+
+[balloon x=140 y=-300 shape="006_02" scale = 0.9 action = "expnad" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 7 time = 0.2]
+この世界に生きる[r]
+人間として！！
+[p]
+
+*002
+//-------------------------------------------------------------------------------
+//  ゴクウブラック
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_073_001"]
+
+[character x = 180 y = -270 storage = "00621/card_01" scale = 1.0 action = "fadein" time = 0.1]
+
+
+[balloon x=-140 y=30 shape="002_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+人間が……！
+[p]
+
+*003
+//-------------------------------------------------------------------------------
+//  ザマス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002L" bg = "bg_073_001"]
+
+[character x=-90 y=-150 storage = "00660/card_02" scale = 1.0 action = "fadein" time = 0.1]
+
+
+
+[balloon x=130 y=90 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+悪あがきには…[r]
+戒めの罰をあたえよう
+[p]
+
+//-------------------------------------------------------------------------------
+[stopbgm]

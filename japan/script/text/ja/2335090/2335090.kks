@@ -1,0 +1,108 @@
+*start|スタート
+//ステージ9スタート
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "002"]
+
+*01
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0003R" bg = "bg_000_024"]
+
+[balloon x=-0 y=120 shape="003_02" scale = 1.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 14]
+//[quake target =".bln" power = 3 time = 0.2]
+悟空が[r]
+10人の代表選手集めで[r]
+地球を駆け巡っている頃…[r]
+悟飯は力の大会本番へ向け[r]
+ピッコロと修業をしていた[r]
+　[r]
+その修業の総仕上げのため[r]
+悟飯は悟空に[r]
+闘いを挑むのだった…
+[p]
+
+*02
+//-------------------------------------------------------------------------------
+//  孫悟飯
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_047"]
+
+//となりにピッコロもいる。
+[character id = "pcl" x=-40 y=-140 storage = "00056/idl_side_e_01" scale = 1.1 action = "fadein" time = 0.1]
+[flip target ="pcl" h=1]
+
+
+[character id = "gohan" x = -200 y = -130 storage = "00235/heapup_e_02" scale = 1.1 action = "fadein" time = 0.1]
+[flip target ="gohan" h=1]
+
+[balloon x=100 y=130 shape="001_02" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+[quake target =".bln" power = 3 time = 0.2]
+父さん！[r]
+天津飯さん！
+[p]
+
+[balloon x=135 y=-100 shape="001_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+ボクの今の力…[r]
+試させてください！
+[p]
+
+*03
+//-------------------------------------------------------------------------------
+//  天津飯
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_047"]
+
+[character x = 200 y = -130 storage = "00304/idl_side_e_01" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon x=-100 y=100 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+悟空…[r]
+お互い大事な大会を[r]
+控えた身だ
+[p]
+
+[balloon x=-120 y=-100 shape="001_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+ケガなど[r]
+させないように[r]
+気をつけよう
+[p]
+
+*04
+//-------------------------------------------------------------------------------
+//  孫悟空
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_000_047"]
+
+[character x=170 y=-180 storage = "00003/heapup_e_06" scale = 1.4 action = "fadein" time = 0.1]
+//[character x=200 y=-150 storage = "00003/none_heapup_e_01" scale = 1.3 action = "fadein" time = 0.1]
+
+[balloon shape="001_03" x = -130 y = 60 scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+…ケガの心配するのは[r]
+オラたちの方かも[r]
+しんねえぞ？
+[p]
+
+//-------------------------------------------------------------------------------
+[stopbgm]

@@ -1,0 +1,124 @@
+*start|スタート
+//ラウンド4開始
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+//[bgm storage = "03"]
+
+*01
+//-------------------------------------------------------------------------------
+//  超サイヤ人2孫悟空（天使）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_000_024"]
+
+[character id = "gok" x = 180 y = -90 storage = "00066/card_07" scale = 0.9 action = "fadein" time = 0.1]
+
+[character id = "wa" x = 10 y = 255 storage = "99999/ring" scale = 1.0 angle = -19 action = "fadein" time = 0.1]
+
+[character id = "ss2" x=150 y=0 storage = "99999/supersaiyan2" scale = 1.4 angle = -10 action = "fadein" time = 0.1]
+[flip target ="ss2" h=1]
+[quake target ="ss2" power = 3 time = 300]
+
+
+[wait time = 1.5]
+
+[balloon x=-150 y=180 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+じゃあ 超サイヤ人を[r]
+超えた超サイヤ人を[r]
+もうひとつ[r]超えてみるか…
+[p]
+
+[se storage = "3038"]
+
+[quake target ="gok" power = 1 time = 300]
+[quake target ="wa" power = 1 time = 300]
+
+[lwfobject id = "kaki2" storage="kakimoji:ef_009" x=-80 y=-10 scale = 1.2 action = "fadein" time = 0.1 angle=0 action = "fadein" time = 0.1]
+[quake target = "kaki2" power = 2 time = 300]
+
+[balloon x=-170 y=-195 shape="006_01" scale = 0.75 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+[quake target =".bln" power = 7 time = 0.2]
+はああああ…！！
+[p]
+
+
+[se storage = "3025"]
+//点滅
+[balloon shape="008_02" x = 0 y = 0 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+[balloon shape="008_02" x = 0 y = 0 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+
+//フェードアウト（フェードアウトするコマ）
+[balloon x=0 y=0 shape="008_02" scale = 50.0 action = "fadein" time = 0.5]
+[wait time = 0.7]
+
+
+
+
+
+*02
+//-------------------------------------------------------------------------------
+//  悟空が変身する。
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="S0001" bg = "bg_000_033"]
+
+//[lwfobject id = "kaki2" storage="kakimoji:ef_009" x=-220 y=-280 scale = 1.5 action = "fadein" time = 0.1 angle=0 action = "fadein" time = 0.1]
+//[quake target = "kaki2" power = 1 time = 300]
+
+//[character id = "ss" x = 5 y = 10 storage = "99999/supersaiyan" scale = 1.2 action = "fade:60" time = 0.1]
+//[quake target = "ss" power = 2 time = 300]
+
+[character id = "ss3" x = 0 y = -270-30 storage = "99999/supersaiyan2" scale = 1.0 angle = 110 action = "fadein" time = 0.1]
+//[flip target ="ss3" h=1]
+[quake target = "ss3" power = 2 time = 300]
+
+[character id = "wa" x = 40 y = 400 storage = "99999/ring" scale = 1.0 angle = 7 action = "fadein" time = 0.1]
+
+[character id = "goku" x=-70 y=-50-30 storage = "00227/card_07" scale = 1.0 action = "fadein" time = 0.1] 
+
+[character id = "ss2" x = 0 y = 120-30 storage = "99999/supersaiyan2" scale = 1.5 angle = -20 action = "fadein" time = 0.1]
+//[flip target ="ss2" h=1]
+[quake target = "ss2" power = 2 time = 300]
+
+
+//フェードイン（フェードインするコマ）
+[balloon x=0 y=0 shape="008_02" scale = 50]
+[wait time = 1]
+[se storage = "50"]
+[fadeout target = ".bln" time = 2]
+[wait_anim target=".bln"]
+
+
+[wait time = 0.7]
+
+[balloon x=-90 y=460 shape="001_03" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 7 time = 0.2]
+…これが[r]
+超サイヤ人３だ
+[p]
+
+
+[balloon x=150 y=-480 shape="001_02" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+//[quake target =".bln" power = 7 time = 0.2]
+楽しい勝負に[r]
+なりそうだな
+[p]
+
+
+//-------------------------------------------------------------------------------
+//[stopbgm]

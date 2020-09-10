@@ -1,0 +1,84 @@
+*start|スタート
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "008"]
+
+*001
+//-------------------------------------------------------------------------------
+//  カーセラル
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_055"]
+
+[character x = 0 y = -100 storage = "99999/barrier" scale = 3.0 action = "fade:75" mask = "inside" time = 0.1]
+
+[character x = 245 y = -150+20 storage = "00820/heapup_e_01" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x = -140 y = 60 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+本来このような闘いは[r]
+戦士としては[r]
+気が引けるが…[r]
+しかたあるまい
+[p]
+
+
+*002
+//-------------------------------------------------------------------------------
+//  ケール
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_055"]
+
+[character x = 0 y = -100 storage = "99999/barrier" scale = 3.0 action = "fade:75" mask = "inside" time = 0.1]
+
+[character x = -220 y = -170 storage = "00737/idl_side_p_04" scale = 1.2 action = "fadein" time = 0.1]
+
+
+
+
+[balloon x=110 y=60 shape="004_01" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+//[quake target =".bln" power = 3 time = 0.2]
+あねさん…！
+[p]
+
+
+*003
+//-------------------------------------------------------------------------------
+//  カリフラ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002L" bg = "bg_000_055"]
+
+[character x = 0 y = -100 storage = "99999/barrier" scale = 3.0 action = "fade:75" mask = "inside" time = 0.1]
+
+//[character x= -120 y=-120 storage = "00738/guard_p_01" scale = 1.3 action = "fadein" time = 0.1]
+
+[character x = -200 y = -200 storage = "00738/atc_sp01_p_02" scale = 1.3 action = "fadein" time = 0.1]
+//[quake target =".chara" power = 4 time = 0.4]
+
+
+
+[balloon x=155 y= 60 shape="001_03" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+ケール…[r]
+おまえは[r]あたしが守るぜ
+[p]
+
+[balloon x= 140 y=-220 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+おまえは[r]
+あたしの妹分だからな！
+[p]
+
+//-------------------------------------------------------------------------------
+[stopbgm]

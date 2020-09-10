@@ -1,0 +1,287 @@
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "008"]
+
+
+*01
+//-------------------------------------------------------------------------------
+//  激突
+//-------------------------------------------------------------------------------
+[coma id = "coma1" shape="S0001" bg = "bg_014_001"]
+
+//[scale target = "coma1" scale = 0.9]
+[quake target = "coma1" power = 8 time = 0.4]
+
+[se storage = "3001"]
+[lwfobject id = "kaki1" storage="kakimoji:ef_024" in="04" x=-90 y=145 angle = -10 scale = 2.5]
+[quake target = "kaki1" power = 10 time = 0.4]
+//[lwfobject id = "syuutyuu1" storage="syucyu:ef_005" mask="inside" loop=1 priority=10 scale=0.9]
+
+[wait_anim target="kaki1"]
+//[clear target = "syuutyuu1"]
+
+[wait time = 0.3]
+
+//[lwfobject id = "syuutyuu1" storage="syucyu:ef_001" mask="inside" loop=0 priority=10 scale=0.9]
+[quake target = ".coma" power = 14 time = 0.2]
+[se storage = "3000"]
+[lwfobject id = "kaki2" storage="kakimoji:ef_006" in="04" x=70 y=-180 angle = 20 scale = 2.7]
+[quake target = "kaki2" power = 17 time = 0.2]
+
+[wait_anim target="coma1"]
+
+//[balloon x = 0 y = 0 shape="002_01" scale = 0]
+//[p]
+
+*02
+//-------------------------------------------------------------------------------
+//  セル1
+//-------------------------------------------------------------------------------
+[se storage = "3018"]
+[coma shape="N0001L" bg = "bg_014_001"]
+
+[character x=-150 y=-100 storage = "00006/guard_p_01" scale = 1.3 action = "fadein" time = 0.1]
+[move target =".chara" x=-180 time = 0.3]
+
+[wait_anim target=".chara"]
+
+[quake target =".chara" power = 3 time = 0.4]
+
+//[wait_anim target=".chara"]
+
+[wait time = 0.2]
+
+[balloon x=130 y=80 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+ふふふ…なかなか[r]やるではないか…[p]
+
+
+*03
+//-------------------------------------------------------------------------------
+//  トランクス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_014_001"]
+
+[character x = 260 y = -110 storage = "90000/stance_right_anger_strong" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x=-120 y=20 shape="006_01" scale = 0.9 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target = ".bln" power = 7 time = 0.2]
+これ以上[r]
+パワーアップする前に[r]
+ここでおまえは倒す！[p]
+
+
+*04
+//-------------------------------------------------------------------------------
+//  セル1
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_014_001"]
+
+[character x = -250 y = -80 storage = "00006/idl_side_p_02" scale = 1.5 action = "fadein" time = 0.1]
+
+
+[balloon x=130 y=120 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+どうやら今のわたしが[r]おまえたちを吸収する[r]のは難しいようだな…
+[p]
+
+[balloon x=130 y=-90 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+だが…おまえたちには[r]まだ強力な仲間が[r]残っているはずだ…
+[p]
+//元シナリオ
+//…どうやら今のままでは[r]わたしがおまえたちを「吸収」[r]するのは難しいようだな…
+//だが、おまえたちには[r]まだ強力な仲間が[r]残っているはずだ…[r]
+//ちがうか？
+
+
+*05
+//-------------------------------------------------------------------------------
+//  トランクス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_014_001"]
+
+[character x = 260 y = -110 storage = "90000/stance_right_amaze" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x=-85 y=70 shape="001_03" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[quake target = ".bln" power = 3 time = 0.2]
+[font size = 40]
+なに！？[p]
+
+
+
+*06
+//-------------------------------------------------------------------------------
+//  セル1
+//-------------------------------------------------------------------------------
+[se storage = "03"]
+[coma shape="N0003L" bg = "bg_014_001"]
+
+[character id="cell" x=-200 y=-110 storage = "00006/heapup_p_01" scale = 1.6 action = "fadein" time = 0.1]
+[quake target = "cell" power = 9 time = 0.3]
+
+[balloon x=160 y=100 shape="006_01" scale = 0.7 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 40]
+[quake target = ".bln" power = 7 time = 0.2]
+太陽拳！！
+
+//[wait_anim target=".bln"]
+
+[wait time = 0.5]
+
+[se storage = "10"]
+
+[lwfobject id = "kaki1" storage="kakimoji:ef_005" in="04" x=-180 y=-50 scale = 2.0]
+[quake target = "kaki1" power = 10 time = 0.2]
+
+//点滅（白）
+//[se storage = "3025"]
+//点滅
+[balloon shape="008_02" x = 140 y = -30 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+//[balloon shape="008_02" x = 140 y = -30 scale = 50 action = "fadein" time = 0.1]
+//[wait time = 0.3]
+//[clear target = ".bln"]
+
+//フェードアウト（フェードアウトするコマ）
+[balloon x=130 y=40 shape="008_02" scale = 50.0 action = "fadein" time = 0.5]
+[wait time = 0.7] 
+
+*07
+//-------------------------------------------------------------------------------
+//  太陽拳
+//-------------------------------------------------------------------------------
+//[coma id = "coma1" shape="S0001" bg = "bg_014_001"]
+//[move target = ".coma" x = -355 y = 200]//中央コマの場合これ固定で
+
+//[scale target = ".coma" scale = 0.9]
+//[quake target = ".coma" power = 5 time = 1.75]
+
+//[lwfobject id = "kaki1" storage="kakimoji:ef_005" in="04" x=40 y=0 scale = 1.8]
+//[quake target = "kaki1" power = 6 time = 1.75]
+
+//[balloon x=130 y=40 shape="001_01" scale = 10.0 action = "fadein" time = 0.05]
+//[wait_anim target = ".bln"][fadeout target = ".bln" time = 1.0]
+
+//[lwfobject id="syuutyuu1" storage="syucyu:ef_001" mask="inside" loop=1 priority=10 scale=0.9]
+
+//[wait time = 1]
+
+//[p]
+
+
+
+
+*08
+//-------------------------------------------------------------------------------
+//  場面転換
+//-------------------------------------------------------------------------------
+//[bgm storage = "003"]
+[coma id = "coma1" shape="S0001" bg = "bg_014_001"]
+
+//フェードイン（フェードインするコマ）
+[balloon x=130 y=40 shape="008_02" scale = 50]
+[wait time = 1]
+[fadeout target = ".bln" time = 2]
+[wait_anim target=".bln"]
+
+// 空のフキダシ（セリフがないコマを送るために使用）
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+*09
+//-------------------------------------------------------------------------------
+//  トランクス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_014_001"]
+
+[character x=170 y=-325 storage = "90000/wait_right_anger_strong" scale = 1.4 action = "fadein" time = 0.1]
+
+[balloon x=-120 y=100 shape="004_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[quake target = ".bln" power = 3 time = 0.2]
+[font size = 28]
+ぐっ…しまった……！[r]
+逃げられた……！！[p]
+
+//フェードアウト（フェードアウトするコマ）
+[balloon x=130 y=40 shape="008_03" scale = 50.0 action = "fadein" time = 0.5]
+[wait time = 0.7] 
+
+
+
+*10
+//-------------------------------------------------------------------------------
+//  セル1
+//-------------------------------------------------------------------------------
+[coma id = "coma1" shape="S0001" bg = "bg_000_014"]
+
+[balloon x=130 y=40 shape="008_03" scale = 50]
+[wait time = 1]
+[fadeout target = ".bln" time = 2]
+[wait_anim target=".bln"]
+
+
+[balloon x=0 y=0 shape="002_03" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[quake target = ".bln" power = 3 time = 0.2]
+[font size = 36]
+くっくっく…！[r]
+あまかったな
+[p]
+
+*11
+//-------------------------------------------------------------------------------
+//  セル修正
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002L" bg = "bg_000_014"]
+
+
+[character x=-40 y=-120 storage = "00006/card_01" scale = 1.0]
+
+[wait time = 0.3]
+
+[balloon x=-130 y=400 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target = ".bln" power = 3 time = 0.2]
+あいつらの仲間の[r]
+エネルギーを吸収し[r]
+パワーをあげていく…
+[p]
+
+[balloon x=130 y=-220 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target = ".bln" power = 3 time = 0.2]
+完全体になるためには[r]
+まず“ヤツら”のパワーを[r]
+超えなくてはな…！！
+[p]
+
+
+//元シナリオ
+//あいつらの仲間の[r]強力な生体エネルギーを吸収し[r]パワーをあげていく…
+//わたしが「完全体」に[r]なるためには[r]まず「ヤツら」のパワーを[r]超えなくてはならんからな…！
+
+//フェードアウト
+[balloon x=130 y=40 shape="008_03" scale = 50.0 action = "fadein" time = 0.5]
+[wait time = 2.5]
+
+[stopbgm]

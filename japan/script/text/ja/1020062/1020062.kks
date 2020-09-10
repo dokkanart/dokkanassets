@@ -1,0 +1,65 @@
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "013"]
+
+
+*001
+//-------------------------------------------------------------------------------
+//  大界王神
+//-------------------------------------------------------------------------------
+
+//[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_032"]
+
+[character id="daikai" x = 250 y = -100 storage = "00413/heapup_p_01" scale = 1.2 action = "fadein" time = 0.1]
+[flip target ="daikai" h=1]
+
+[balloon x=-100 y=120 shape="001_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target =".bln" power = 3 time = 0.2]
+[font size = 28]
+バビディが[r]
+姿を現したことは[r]
+こちらには好都合だ[p]
+
+[balloon x=-100 y=-100 shape="001_02" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 3 time = 0.2]
+[font size = 24]
+バビディさえ倒せば[r]
+魔人ブウの玉に[r]
+エネルギーが送られるのを[r]
+防ぐことができる…！！[p]
+
+
+*002
+//-------------------------------------------------------------------------------
+//  バビディ
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0002L" bg = "bg_000_032"]
+
+[character x = -150 y = -120 storage = "00238/energyball_e_01" scale = 1.4 action = "fadein" time = 0.1]
+[flip target =".chara" h=1]
+
+[balloon x=120 y=100 shape="002_01" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target =".bln" power = 3 time = 0.2]
+[font size = 24]
+そう うまくいくかな…[r]
+こっちにはダーブラも[r]
+ついてるし…[p]
+
+[balloon x=140 y=-180 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 3 time = 0.2]
+[font size = 28]
+ボクの魔術をなめてると[r]
+痛い目見るよ…！？[p]
+
+
+[stopbgm]

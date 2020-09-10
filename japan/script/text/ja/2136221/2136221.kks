@@ -1,0 +1,138 @@
+*start|スタート
+//究極のDB編_エリア２：ゴール
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "015"]
+ 
+*001
+//-------------------------------------------------------------------------------
+//  孫悟空
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0001R" bg = "bg_081_001"]
+
+[character x=189 y=-47 storage = "00324/heapup_e_01" scale = 1.1 action = "fadein" time = 0.1]
+
+[wait_anim target="goku1"]
+
+[balloon x=-120 y=140 shape="001_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+おめえ修業したら[r]
+もっと強くなっぞ
+[p]
+ 
+[balloon x=-100 y=-80 shape="001_02" scale = 1.1 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 22]
+[quake target =".bln" power = 3 time = 0.2]
+オラも修業して[r]
+もっと強くなっから[r]
+そんときはもう１回やろうな！
+[p]
+
+
+
+*002
+//-------------------------------------------------------------------------------
+//  レジック
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_081_001"]
+ 
+[character x = -180 y = -200 storage = "00337/idl_side_p_01" scale = 1.4 action = "fadein" time = 0.1]
+ 
+[balloon x=120 y=120 shape="002_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+ふ…[r]
+変わったガキだな
+[p]
+ 
+
+
+
+*003
+//-------------------------------------------------------------------------------
+//  孫悟空（GT)
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_081_001"]
+ 
+[character x=200 y=-50 storage = "00324/idl_side_e_01" scale = 1.1 action = "fadein" time = 0.1]
+ 
+[balloon x=-100 y=80 shape="001_01" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+はは…オラ変わってるって[r]
+言われるけど[r]
+ホントはガキじゃねえぞ
+[p]
+ 
+
+
+
+*004
+//-------------------------------------------------------------------------------
+//  レジック
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_081_001"]
+ 
+[character x = -180 y = -200 storage = "00337/idl_side_p_01" scale = 1.4 action = "fadein" time = 0.1]
+ 
+[balloon x=100 y=120 shape="002_03" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+…よくわからんが[r]
+宇宙は広い…
+[p]
+ 
+[balloon x=130 y=-80 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+オレもまだまだ[r]
+未熟だということか…
+[p]
+
+
+//[balloon x = 0 y = 0 shape="002_01" scale = 0]
+//[p]
+
+
+*006
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0003R" bg = "bg_000_003"]
+ 
+
+ 
+[balloon x=-0 y=-40 shape="003_01" scale = 1.5 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 15]
+//[quake target =".bln" power = 3 time = 0.2]
+用心棒レジックを[r]
+撃退した悟空たちは[r]
+究極ドラゴンボールを[r]
+手に入れるべく[r]
+新たな星に旅立つ…[r]
+　[r]
+悟空たちの旅は[r]
+まだ始まったばかりだ…[p]
+
+
+[stopbgm]
+

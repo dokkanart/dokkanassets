@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="45" height="40" tilewidth="40" tileheight="40" nextobjectid="246">
+ <tileset firstgid="1" name="Path" tilewidth="40" tileheight="40" spacing="1" tilecount="32" columns="4">
+  <image source="image/common/mapchip-base.png" width="163" height="327"/>
+  <tile id="6">
+   <properties>
+    <property name="charageki_bg_01" value="normal_009_001"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="33" name="Attribute" tilewidth="40" tileheight="40" spacing="1" tilecount="32" columns="4">
+  <image source="image/common/mapchip-meta.png" width="163" height="327"/>
+ </tileset>
+ <tileset firstgid="65" name="green_01" tilewidth="40" tileheight="40" spacing="1" tilecount="144" columns="12">
+  <image source="image/area_005/green_01.png" width="491" height="491"/>
+ </tileset>
+ <tileset firstgid="209" name="blue_01" tilewidth="40" tileheight="40" spacing="1" tilecount="64" columns="8">
+  <image source="../ishin_design/Resources/sugoroku/map/image/area_034/blue_01.png" width="327" height="327"/>
+ </tileset>
+ <tileset firstgid="273" name="blue_02" tilewidth="40" tileheight="40" spacing="1" tilecount="64" columns="8">
+  <image source="../ishin_design/Resources/sugoroku/map/image/area_034/blue_02.png" width="327" height="327"/>
+ </tileset>
+ <tileset firstgid="337" name="blue_03" tilewidth="40" tileheight="40" spacing="1" tilecount="144" columns="12">
+  <image source="../ishin_design/Resources/sugoroku/map/image/area_034/blue_03.png" width="491" height="491"/>
+ </tileset>
+ <tileset firstgid="481" name="area_125_island1" tilewidth="40" tileheight="40" spacing="1" tilecount="576" columns="24">
+  <image source="../ishin_design/Resources/sugoroku/map/image/area_125/area_125_island1.png" width="983" height="983"/>
+ </tileset>
+ <layer name="bg" width="45" height="40">
+  <data encoding="base64" compression="zlib">
+   eJztwwENAAAMw6C6m39HF3JIWDVVVVVVVVX1xQPhr/NI
+  </data>
+ </layer>
+ <layer name="see1" width="45" height="40">
+  <data encoding="base64" compression="zlib">
+   eJzt1slOQkEUhOELKqgg8P5vhQMqyOAACioOOKDi8Lsnqd6dWnQl3+beVM6u0u2iKPZxgEMcoYNjnBQ67YD+Kbro4Qx9DDDEKOFmRP8cF7jEFcaY4Bo3CTcj+lPMcIs73GOOBzwm3IzoP+EZC7zgFW94xzLhZkT/A5/4wgrf+MHv/8+SvhnRL/G9jA1sYgsVVLGdcDOiv8P3XdRQxx4aaKKVcDO6vy4R+6v6Ko77reK43yqO+63iuN8qjvut4rjfKtH7u67vuL/5/ezRd9zf/H726Dvub34/e+y3iuN+qzjut4rjfqs47reK436rOO63SvT+5vdzXN9xf/P72aPvuL/5/ezR/wPT7mhg
+  </data>
+ </layer>
+ <layer name="see2" width="45" height="40">
+  <data encoding="base64" compression="zlib">
+   eJztlklSAgEQBIcniLiBAu4iqCCLCq64gaz/f435gAkqOBBdh8mIvHVdMzpJVrOVS5I8bmMBd3AX93A/J8Yb2isOuCliCQ/xCMtYwWrQXnHMzQme4hme4wVe4lXQXlHj5hrr2MAbvMU7bAbtFS1u7rGNHexiDx/wMWiveOKmjwN8xhd8xTd8D9orPrgZ4id+4Tf+4C+OgvaKMTd/OMEpznCOC1wG7R37q/aO/VV7x/6qvWN/1d6xv2rv2F+1d+yv2jv2d519Go79Vjj2W+HYb4VjvxWO/VY49lvh2G9FdH+z/zlu79jf7H/22Dv2N/uf/fZpOPZb4dhvhWO/FY79Vjj2W+HYb4VjvxXR/U3b/wO4CqsB
+  </data>
+ </layer>
+ <layer name="see3" width="45" height="40" opacity="0.55">
+  <data encoding="base64" compression="zlib">
+   eJzt2MduU2EQBtDJI9JDL6G30FsoQw29tyegw4IOCzos6LCgw7NwkGXJbGLLvrFvpDvSWaJMiO43n/7+vsgpTGYSE5nAeMYRPZibfRG3uM0d7nKP+zxgvr0GmMdc5jCbWczs0c6P7PWYJzzlGc95wUtW2WuQlaxgOctYypIe7fzaXm94yzve84GPfGKrvYbYwmY2sZENrO/Rzl/s9ZVvfOcHP/nFb/bba5h97GUPu9nFzhF2vuDfXuQSl7nCVa5xnRt9o/c7nbbXKU5yguMc4yhHRti52XfycBR3bneafSevSrhzs+/kcws7y9KQqSFbQ8aGrA2ZG7I3+pnKNKYzo4D/g2bfyZ8WfoYsDZkasjVkbMjakLkxUMvgWMBCFrG4JH83WRoyNWRryNiQtSFzY7CWwbGaNaxlXUl2lqUhU0O2howNWRsyN4ZqGRzb2M4OsiQ7y9KQqSFbQ8aGrA2ZG8O1DI4DHOQQh0uysywNmRqyNWRsyNqQuSF7/2VwnOEs5zhfkp2rqaas0+2bVsR086YV1SWLuGmt9tuiumQRN63VfltUlyziprXabzvpko1TxE1rtd920iWLniL6bTXVVFPNWJ7Guz5WpvGuj5VpvOv10WlTt00dN3Xd7C/ZW3rjXa+PTpu6beq4qetmp2/pRb+bNt71+ui0qdumjpu6bnb6lt6Nd1OdNnXb1HFT181O39K78W6q06Zumzpu6rrZ7lt6fYp4N202Om3qtqnjpq6b7b6l16fqlf/PX6fEWs0=
+  </data>
+ </layer>
+ <layer name="rock01" width="45" height="40">
+  <data encoding="base64" compression="zlib">
+   eJzt2ddPFFEYxuFxxnJt7/0vsLcre+ztCmvsAjZUNPYPsGGNXcCGWGIXsGGNXUBRrLEL2LDGLmD74d46Fztl92yyX/Lc7Tl5L97ZcyajafYmXde0DGTiCq4iC9dwXfdur2qGplVHDdRELdRGHdRFPdQ3bAZmcsiVizw8w3O8wEu88jJzQ/I0QmM0QVM0Q3O0QEu0ciBzAbkKUYSf+IXf+FOc18v9O/P7LuiKbuiOHuiJXuiNPg5kLsse5VAeFVARlVAZVbzcfwi/H4phGI4RGIlRCEUYwh3IbDZTLew9jTXTMQMzMQuzIYhCNGJczLzcwt4rWLMSq7Aaa7AW6xCHeCS4mHmnhb13sWY39mAv9mE/DiAZKUh1MfMZC3ufZc05nMcFXMQlXEY6MpCJ0TzfYzAW4zDey/8ns7lnIfN91jzAQzzCYzzBU+QgF3mYQ8a5mIf5WOBQ5o8WMn9izWd8wVd8w3f8QAEKUYT1ZNyAjdiEzQ5ldnMOkvEQDuMIjgZAZrt3BH+M3TuCP8buHcEfY/eOEBz/TCj9CkO47t555fREkSsaMbp755XTE0eueCTogXNeJZMrBal64JxXTr7T+mqcfKf11Tj5TuurcfKdNjjB+d+0pv9t0Bbt0B4d0FHR57h4QsjWF/3QHwMwEIMUzhxBtgmYiEmIxGRMUThzLNkWYhEWYwmWYpnCmRPJtgVJ2Ipt2I4dnl4L/RZ6LvRd6L3Qf/F35jSyHcNxnMBJnMJpT6+Ffgs9F/ou9F5CFMicTbYbuIlbuI07uOvptdBvoedC34XeS4QCmfPJ9hpv8Bbv8B4fPL0W+i30XOi70HuJVSBzCc55HQZKohRKo4zxr9dCv4WeC30Xei+JCmSuaph/X6HXQr+Fngt9F3ovaQpkbmCYf1+h10K/hZ4LfRd6L9kKZO5kmH9foddCv4WeC30Xei/5CmQebJh/X/kL0U3vPA==
+  </data>
+ </layer>
+ <layer name="Path" width="45" height="40">
+  <data encoding="base64" compression="zlib">
+   eJzt1ksKhEAMRdEg6kARUVH3v1OTaU3qgxgD98CbNXgROigCAADesukG74hC1jrqTu+QQr3u9o5ocOlm3e4d0iBy+6FbJUZ7+l/MvXfPO5O7G2m7552pfba1TxW/fxs37nuR2+3GLd4RhSJ9b0RqNZ3EaQUAAMD/PEPfA2k=
+  </data>
+ </layer>
+ <layer name="Attribute" width="45" height="40">
+  <data encoding="base64" compression="zlib">
+   eJzt1MEJACAMBMH0k5f2X1zAGpRDmKlgX1sFANy00wHA0emAh3wGgJUOAADgawM6zADB
+  </data>
+ </layer>
+<objectgroup name="PathAttributes" width="45" height="40"><object name="0" type="space" x="600" y="1000" width="40" height="40"><properties><property name="next" value="1"/><property name="group" value="0"/></properties></object><object name="1" type="space" x="680" y="960" width="40" height="40"><properties><property name="next" value="2"/><property name="group" value="0"/></properties></object><object name="2" type="space" x="760" y="920" width="40" height="40"><properties><property name="next" value="3"/><property name="group" value="0"/></properties></object><object name="3" type="space" x="840" y="880" width="40" height="40"><properties><property name="next" value="4"/><property name="group" value="0"/></properties></object><object name="4" type="space" x="760" y="840" width="40" height="40"><properties><property name="next" value="5"/><property name="group" value="0"/></properties></object><object name="5" type="space" x="680" y="800" width="40" height="40"><properties><property name="next" value="6"/><property name="group" value="0"/></properties></object><object name="6" type="space" x="600" y="760" width="40" height="40"><properties><property name="next" value="7"/><property name="group" value="0"/></properties></object><object name="7" type="space" x="680" y="720" width="40" height="40"><properties><property name="next" value="8"/><property name="group" value="0"/></properties></object><object name="8" type="space" x="760" y="680" width="40" height="40"><properties><property name="next" value="9"/><property name="group" value="0"/></properties></object><object name="9" type="space" x="840" y="640" width="40" height="40"><properties><property name="next" value="10"/><property name="group" value="0"/></properties></object><object name="10" type="space" x="920" y="600" width="40" height="40"><properties><property name="next" value="11,16"/><property name="group" value="0"/></properties></object><object name="11" type="space" x="1000" y="640" width="40" height="40"><properties><property name="next" value="12"/><property name="group" value="1"/></properties></object><object name="12" type="space" x="1080" y="680" width="40" height="40"><properties><property name="next" value="13"/><property name="group" value="1"/></properties></object><object name="13" type="space" x="1160" y="720" width="40" height="40"><properties><property name="next" value="14"/><property name="group" value="1"/></properties></object><object name="14" type="space" x="1240" y="680" width="40" height="40"><properties><property name="next" value="15"/><property name="group" value="1"/></properties></object><object name="15" type="space" x="1320" y="640" width="40" height="40"/><object name="16" type="space" x="840" y="560" width="40" height="40"><properties><property name="next" value="17"/><property name="group" value="2"/></properties></object><object name="17" type="space" x="760" y="520" width="40" height="40"><properties><property name="next" value="18"/><property name="group" value="2"/></properties></object><object name="18" type="space" x="680" y="480" width="40" height="40"><properties><property name="next" value="19"/><property name="group" value="2"/></properties></object><object name="19" type="space" x="760" y="440" width="40" height="40"><properties><property name="next" value="20"/><property name="group" value="2"/></properties></object><object name="20" type="space" x="840" y="400" width="40" height="40"/></objectgroup></map>

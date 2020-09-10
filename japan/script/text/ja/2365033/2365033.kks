@@ -1,0 +1,68 @@
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "028"]
+
+*001
+//-------------------------------------------------------------------------------
+//  超サイヤ人ブロリー
+//-------------------------------------------------------------------------------
+//[se storage = "3024"]
+[se storage = "50"]
+[coma shape="S0001" bg = "bg_070_001"]
+
+[lwfobject id = "kaki1" storage="kakimoji:ef_020" x=-0 y=-145 scale = 3.0 action = "fadein" time = 0.1]
+[quake target = "kaki1" power = 15 time = 0.4]
+
+[character id = "ss" x = -0 y = 80 storage = "99999/supersaiyan" scale = 1.5 action = "fade:70" time = 0.1]
+[quake target = "ss" power = 5 time = 0.4]
+ 
+[character id = "blo" x = -0 y = -0 storage = "00255/card_01" scale = 1.5 action = "fadein" time = 0.1]
+[quake target = "blo" power = 5 time = 0.4]
+ 
+[balloon x=0 y=500 shape="006_02" scale = 0.8 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 7 time = 0.2]
+カカロットォォ！！ 
+[p]
+
+*002
+//-------------------------------------------------------------------------------
+//  孫悟空
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_070_001"]
+ 
+[character x = 200 y = -110 storage = "00003/none_heapup_e_01" scale = 1.2 action = "fadein" time = 0.1]
+ 
+[balloon x=-120 y=60 shape="006_02" scale = 0.9 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 7 time = 0.2]
+カカロットじゃねえ！[r]
+オラ 孫悟空だ！！
+[p]
+
+*003
+//-------------------------------------------------------------------------------
+//  ベジータ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_070_001"]
+ 
+[character x = 165 y = -115 storage = "00004/idl_side_e_02" scale = 1.2 action = "fadein" time = 0.1]
+ 
+[balloon x=-130 y=60 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+くっ…！[r]
+伝説の超サイヤ人……
+[p]
+
+
+//-------------------------------------------------------------------------------
+[stopbgm]

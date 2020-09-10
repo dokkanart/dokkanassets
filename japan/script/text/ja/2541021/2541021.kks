@@ -1,0 +1,32 @@
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+//[bgm storage = "026"]
+
+*001
+//-------------------------------------------------------------------------------
+//  孫悟飯（未来）
+//-------------------------------------------------------------------------------
+//[se storage = "3022"]
+[coma shape="S0001" bg = "bg_015_001"]
+
+[character id = "gohan" x=-15 y=-30 storage = "00462/card_02" scale = 0.95 action = "fadein" time = 0.1] 
+
+[balloon x=0 y=475 shape="001_03" scale = 0.65 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 44]
+//[quake target =".bln" power = 3 time = 0.2]
+よし…！
+[p]
+
+[balloon x=0 y=-440 shape="001_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+修業の成果を[r]
+見せてやる！！
+[p]
+
+//[stopbgm]

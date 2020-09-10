@@ -1,0 +1,36 @@
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+//[bgm storage = "003"]
+
+*001
+//-------------------------------------------------------------------------------
+//  桃白白
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0002L" bg = "bg_012_001"]
+
+[character x=-40 y=-40 storage = "00062/card_1005710" scale = 1.4 action = "fadein" time = 0.1]
+
+[balloon x=130 y=250 shape="007_02" scale = 0.8 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 7 time = 0.2]
+命しらずの[r]
+おろか者め！！
+[p]
+
+[quake target =".chara" power = 5 time = 0.4]
+
+[balloon x=160 y=-150 shape="007_01" scale = 0.8 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 7 time = 0.2]
+地獄に行ってから[r]
+後悔せいっ！！
+[p]
+
+
+//[stopbgm]

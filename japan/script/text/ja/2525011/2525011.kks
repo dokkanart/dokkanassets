@@ -1,0 +1,99 @@
+//ボス前
+
+*start|スタート
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+
+[bgm storage = "006"]
+
+
+
+*001
+//-------------------------------------------------------------------------------
+//  孫悟空（GT）
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+
+[coma shape="N0002L" bg = "bg_081_008"]
+
+[character id = "tail" x=-270 y=-20 storage = "99999/tail" scale = 1.4 angle = 15 action = "fadein" time = 0.1]
+[flip target = "tail" h = 1]
+//[flip target = "tail" v=1]
+
+[character id = "goku" x=-130 y=-50 storage = "00324/heapup_e_01" scale = 1.5 action = "fadein" time = 0.1]
+[flip target = "goku" h = 1]
+
+
+[balloon x=150 y=220 shape="001_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+覚悟しろよ？[r]
+オラ おもいっきり[r]
+いくぞっ！！
+[p]
+
+[balloon x=135 y=-200 shape="006_01" scale = 0.8 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 7 time = 0.2]
+はああああ…！！
+[p]
+
+[se storage = "3024"]
+
+[clear target = "goku"]
+[clear target = "tail"]
+
+[character id = "ss" x=-130 y=-50 storage = "99999/supersaiyan" scale = 1.5 action = "expand" time = 0.1]
+[quake target ="ss" power = 5 time = 0.2]
+
+[character id = "tail2" x=-270 y=-20 storage = "99999/tail" scale = 1.4 angle = 15]
+[flip target = "tail2" h = 1]
+[quake target ="tail2" power = 4 time = 0.2]
+
+[character id = "goku2" x=-130 y=-50 storage = "00324/heapup_e_01" scale = 1.5]
+[flip target = "goku2" h = 1]
+[quake target ="goku2" power = 4 time = 0.2]
+
+[wait_anim target="ss"]
+
+//点滅（白）
+//[se storage = "3025"]
+//点滅
+[balloon shape="008_02" x = 140 y = -30 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+[balloon shape="008_02" x = 140 y = -30 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+
+*002
+//-------------------------------------------------------------------------------
+//  超サイヤ人３に変身
+//-------------------------------------------------------------------------------
+[se storage = "50"]
+[coma shape="S0001" bg = "bg_081_008"]
+
+
+
+ 
+[character x = 50 y = 80 storage = "00332/card_01" scale = 1.5 angle = -100 action = "expand" time = 0.2]
+[quake target =".chara" power = 8 time = 0.6]
+[rotate_to target=".chara" angle=20 time=0.2]
+
+[lwfobject id = "kaki1" storage="kakimoji:ef_020" in="04" x=-120 y=280 scale = 2.5 action = "fadein" time = 0.1]
+[quake target = "kaki1" power = 15 time = 0.4]
+ 
+[balloon x=0 y=-420 shape="006_02" scale = 0.8 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 7 time = 0.2]
+超サイヤ人３の力[r]
+見せてやる！！
+[p]
+
+
+//-------------------------------------------------------------------------------
+[stopbgm]

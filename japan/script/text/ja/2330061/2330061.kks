@@ -1,0 +1,238 @@
+*start|スタート
+//復讐鬼ベビー完結編_エリア6：ゴール
+//2330061
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "030"]
+
+*001
+//-------------------------------------------------------------------------------
+//  超サイヤ人４孫悟空
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0001R" bg = "bg_081_009"]
+
+[character x = 220 y = -190 storage = "00504/idl_side_e_01" scale = 1.4 action = "fadein" time = 0.1]
+
+[balloon x = -120 y =60 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target = ".bln" power = 3 time = 0.2]
+ベビー… おめえに[r]
+もう勝ち目はねえ[p]
+
+*002
+//-------------------------------------------------------------------------------
+//  大猿ベビー
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_081_009"]
+
+[character x=-260 y=-180 storage = "00532/guard_p_01" scale = 1.4 angle = 0 action = "fadein" time = 0.1]
+
+[balloon x=120 y=-80 shape="004_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+おまえ…[r]
+バケモノか！？
+[p]
+
+*003
+//-------------------------------------------------------------------------------
+//  超サイヤ人４孫悟空
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_081_009"]
+
+[character x = 200 y = -190 storage = "00504/heapup_e_01" scale = 1.4 action = "fadein" time = 0.1]
+
+[balloon x = -140 y =60 shape="006_01" scale = 0.9 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target = ".bln" power = 7 time = 0.2]
+おめえは[r]
+このオレの手で[r]
+消滅させてやる！！[p]
+
+*004
+//-------------------------------------------------------------------------------
+//  大猿ベビー
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_081_009"]
+
+[character x=-260 y=-180 storage = "00532/guard_p_01" scale = 1.4 angle = 0 action = "fadein" time = 0.1]
+[quake target =".chara" power = 5 time = 0.3]
+
+[balloon x=140 y=-40 shape="006_01" scale = 0.7 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 40]
+[quake target =".bln" power = 7 time = 0.2]
+なにィ！？
+[p]
+
+*005
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0003R" bg = "bg_081_008"]
+
+//[wait time = 0.7]
+
+[balloon x=0 y=-20 shape="003_02" scale = 1.6 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 15]
+//[quake target =".bln" power = 3 time = 0.2]
+大猿のシッポを切って[r]
+ベジータのカラダから[r]
+ベビーを[r]
+追い出した悟空！[r]
+　[r]
+最後の悪あがきをする[r]
+ベビーに[r]
+悟空のとどめの一撃が[r]
+炸裂する！！[p]
+
+*006
+//-------------------------------------------------------------------------------
+//  超サイヤ人４孫悟空
+//-------------------------------------------------------------------------------
+[se storage = "3022"]
+[coma shape="S0001" bg = "bg_081_008"]
+
+[character x=40 y=-50 storage = "00504/card_02" scale = 1.2 angle=0 action = "fadein" time = 0.1]
+
+
+[balloon x=-160 y=450 shape="006_02" scale = 0.8 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 7 time = 0.2]
+か…め…は…め…
+[p]
+
+
+
+
+
+[quake target = ".chara" power = 20 time = 0.3]
+
+[se storage = "3029"]
+
+[lwfobject id = "kaki1" storage="kakimoji:ef_013" in="04" x=150 y=-50 angle = 20 scale = 2.5]
+[quake target = "kaki1" power = 15 time = 0.4]
+
+[character id = "kame" x = -0 y = 100 storage = "00067/Images_ef_charge_ballpng" scale = 6.0 action = "expand" time = 0.5]
+
+
+
+
+[balloon x=0 y=-290 shape="006_02" scale = 1.0 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 56]
+[quake target =".bln" power = 7 time = 0.4]
+波ァァ！！//[p]
+[wait_anim target="kame"]
+
+//空のフキダシ
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+*007
+//-------------------------------------------------------------------------------
+//  悟空のかめはめ波でベビーが消滅する。
+//-------------------------------------------------------------------------------
+
+[bgm storage = "009"]
+
+[se storage = "3016"]
+[coma shape="N0004R" bg = "bg_000_014"]
+
+[lwfobject id = "kaki2" storage="kakimoji:ef_019" in="04" x=0 y=50 scale = 3]
+[quake target = "kaki2" power = 15 time = 1]
+
+[character x=-30 y=-50 storage = "99999/ef_explode_005" scale = 3.0 action = "expand" time = 0.1]
+[quake target = ".chara" power = 10 time = 1]
+
+[balloon x=130 y=40 shape="008_02" scale = 50 action = "fadein" time = 0.5]
+[wait_anim target=".bln"]
+[fadeout target = ".bln" time = 1.5]
+[wait time = 1.5]
+//空のフキダシ
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+*008
+//-------------------------------------------------------------------------------
+//  超サイヤ人４孫悟空
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_081_008"]
+
+[character x = 220 y = -390 storage = "00504/card_01" angle = 3 scale = 1.3 action = "fadein" time = 0.1]
+
+[balloon x = -130 y =50 shape="001_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target = ".bln" power = 3 time = 0.2]
+ベビーの気が消えた…[p]
+
+*009
+//-------------------------------------------------------------------------------
+//  パン(GT)
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_081_008"]
+
+[character x = -180 y = -100 storage = "00326/card_01" scale = 1.1 action = "fadein" time = 0.1]
+
+[balloon x=110 y=120 shape="001_02" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 40]
+[quake target =".bln" power = 3 time = 0.2]
+やったあ！
+[p]
+
+[balloon x=110 y=-80 shape="001_03" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+さすが[r]
+おじいちゃん！
+[p]
+
+*010
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0004R" bg = "bg_000_003"]
+
+[character x = -300 y = -370 storage = "99999/earth" scale = 2.0 action = "fadein" time = 0.1]
+
+[character x = 240 y = 0 storage = "99999/tuffle" scale = 0.3 action = "fadein" time = 0.1]
+
+[wait time = 0.7]
+
+[balloon x=0 y=-30 shape="003_02" scale = 1.6 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 15]
+//[quake target =".bln" power = 3 time = 0.2]
+ベビーは消滅した…[r]
+　[r]
+超神水の力で[r]
+ベビーに操られていた[r]
+地球人も元に戻り[r]
+長く苦しかった[r]
+ベビーとの闘いは[r]
+ついに終わりを[r]
+迎えるのだった[p]
+
+//終わりのフェードアウト
+[balloon x=130 y=40 shape="008_03" scale = 50.0 action = "fadein" time = 0.5]
+[wait time = 3.5]
+
+//-------------------------------------------------------------------------------
+[stopbgm]

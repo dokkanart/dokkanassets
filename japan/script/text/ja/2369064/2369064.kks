@@ -1,0 +1,103 @@
+*start|スタート
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+//[bgm storage = "042"]
+
+*001
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0003R" bg = "bg_000_024"]
+
+[balloon x=0 y=0 shape="003_01" scale = 1.5 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 16]
+//[quake target =".bln" power = 3 time = 0.2]
+真の力を[r]
+開放した悟飯は[r]
+またたく間に[r]
+セルジュニアたちを[r]粉砕し[r]
+その圧倒的な強さを[r]
+見せつけるのだった…！
+[p]
+
+*002
+//-------------------------------------------------------------------------------
+//  セル（完全体）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_005_005"]
+
+[character x = -210 y = -240 storage = "00205/heapup_p_01" scale = 1.15 action = "fadein" time = 0.1]
+
+[balloon x=115 y=90 shape="002_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+いい気になるなよ[r]
+小僧…
+[p]
+
+[balloon x=130 y=-100 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+まさか本気で[r]
+このわたしを倒せると[r]
+思っているんじゃ[r]
+ないだろうな…
+[p]
+
+*003
+//-------------------------------------------------------------------------------
+//  超サイヤ人2孫悟飯（少年期）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_005_005"]
+
+//[character id = "ss3" x = 0+150 y = -50-230 storage = "99999/supersaiyan2" scale = 0.9 angle = 5 action = "fadein" time = 0.1]
+
+[character x = 160 y = -180 storage = "00203/card_1004010" scale = 1.5 action = "fadein" time = 0.1]
+
+[character id = "ss2" x = 30+170 y = 140-180 storage = "99999/supersaiyan2" scale = 1.0 angle = 0 action = "fadein" time = 0.1]
+[flip target ="ss2" h=1]
+
+
+
+[balloon x = -105 y = 70 shape="001_03" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 40]
+//[quake target =".bln" power = 3 time = 0.2]
+倒せるさ
+[p]
+
+*004
+//-------------------------------------------------------------------------------
+//  セル（完全体）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002L" bg = "bg_005_005"]
+
+[character x = -135 y = -370 storage = "00205/card_15" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x = 140 y = 60 shape="002_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+…ふん…[r]
+大きく出たな……
+[p]
+
+[balloon x = 130 y = -200 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+では見せてやるぞ…！[r]
+このセルの恐ろしい[r]
+真のパワーを…！！
+[p]
+
+//-------------------------------------------------------------------------------
+//[stopbgm]

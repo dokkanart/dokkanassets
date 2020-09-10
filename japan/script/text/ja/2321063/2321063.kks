@@ -1,0 +1,50 @@
+*start|スタート
+
+//-------------------------------------------------------------------------------
+[bgm storage = "008"]
+//-------------------------------------------------------------------------------
+
+*coma1
+//-------------------------------------------------------------------------------
+//トランクス
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0001R" bg = "bg_015_001"]
+
+//超サイヤ人
+[character x = 220 y = -160 storage = "00069/card_1003280" scale = 1.6 action = "fadein" time = 0.1]
+
+[balloon x = -130 y = 100 shape="006_01" scale = 1.0 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+[quake target =".bln" power = 7 time = 0.2]
+人造人間！！[r]
+今日こそゆるさないぞ！！
+[p]
+
+*coma2
+//----------------------------------------------------------
+//18号
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0002L" bg = "bg_015_001"]
+
+[character x = -170 y = -40 storage = "00020/heapup_p_01" scale = 1.9 action = "fadein" time = 0.1]
+
+
+[balloon x = 140 y = 130 shape="002_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+ふん…ガキが！[r]
+こりないねえ
+[p]
+
+[balloon x = 140 y = -190 shape="006_01" scale = 0.9 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 7 time = 0.2]
+おまえたち[r]
+気に入らないんだよ！！
+[p]
+[stopbgm]

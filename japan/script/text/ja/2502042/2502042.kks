@@ -1,0 +1,45 @@
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+//[bgm storage = "026"]
+
+*001
+//-------------------------------------------------------------------------------
+//  セル（完全体）
+//-------------------------------------------------------------------------------
+//[se storage = "3022"]
+[coma shape="S0001" bg = "bg_005_005"]
+
+[character id = "sell2" x=5 y=0 storage = "00205/card_06" scale = 1.0 action = "fadein" time = 0.1] 
+
+[wait time = 0.7]
+
+[clear target = "sell2"]
+
+[character id = "sell1" x=-55 y=150 storage = "00205/card_07" scale = 1.0 action = "fadein" time = 0.7] 
+
+[character id = "sell4" x=5 y=0 storage = "00205/card_06" scale = 1.0] 
+
+[character id = "sell3" x=18 y=-70 storage = "00205/card_08" scale = 1.0 action = "fadein" time = 0.7] 
+
+[wait time = 1.0]
+
+[balloon x=-0 y=490 shape="002_01" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+//[quake target =".bln" power = 3 time = 0.2]
+なんでもやるさ…
+[p]
+
+[balloon x=0 y=-440 shape="002_03" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+きさまが[r]
+真の力とやらを[r]
+発揮するならな
+[p]
+
+//[stopbgm]

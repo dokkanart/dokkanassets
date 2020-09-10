@@ -1,0 +1,233 @@
+
+
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "008"]
+
+
+*001
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+[se storage = "37"]
+[coma shape="N0003L" bg = "bg_000_026"]
+
+[character x = -160 y = -40 storage = "00320/heapup_p_01" scale = 1.7 action = "fadein" time = 0.1]
+
+[quake target =".chara" power = 6 time = 0.4]
+
+[balloon x=140 y=140 shape="003_01" scale = 1.5 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 16]
+ターレスの[r]
+パワーボールによって[r]
+造り出された[r]
+満月によって[r]
+悟飯は大猿に[r]
+変身してしまった…
+[p]
+
+
+
+//-------------------------------------------------------------------------------
+
+*002
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0003R" bg = "bg_000_026"]
+
+[character x=180 y=0 storage = "90003/hiredragon_fly_right" scale = 0.6 action = "fadein" time = 0.1]
+
+[character x = 330 y = -0 storage = "00300/atc_energyball_e_02" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon x=-140 y=65 shape="003_01" scale = 1.5 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 16]
+大猿に変身し[r]
+理性を失った悟飯は[r]
+暴走を始めるが[r]
+親友ハイヤードラゴンと[r]
+悟空の機転により[r]
+危機を回避する…[r]
+　[r]
+そして……
+[p]
+
+
+
+//-------------------------------------------------------------------------------
+
+*003
+//-------------------------------------------------------------------------------
+//  悟飯
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_026"]
+
+[character x=-200 y=-135 storage = "00007/okappa_left" scale = 1.1 action = "fadein" time = 0.1]
+
+[balloon x=100 y=80 shape="004_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+…おとうさん…[r]
+地球を守って……
+[p]
+
+
+//-------------------------------------------------------------------------------
+
+*004
+//-------------------------------------------------------------------------------
+//  悟空
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_026"]
+
+[character x = 190 y = -150 storage = "00300/heapup_e_01" scale = 1.4 action = "fadein" time = 0.1]
+
+[balloon x=-125 y=110 shape="001_03" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+悟飯…[r]
+地球はわかんねえが…[r]
+おめえだけはオラが守る
+[p]
+
+[balloon x=-130 y=-100 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+そして…[r]
+あいつはオラが[r]
+絶対に倒してやる！！
+[p]
+
+//-------------------------------------------------------------------------------
+
+*005
+//-------------------------------------------------------------------------------
+//  ターレス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_026"]
+
+[character x = -240 y = -200 storage = "00298/heapup_p_01" scale = 1.7 action = "fadein" time = 0.1]
+
+[balloon x=145 y=110 shape="002_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+カカロット…[r]
+サイヤ人の面汚しめ！
+[p]
+
+//-------------------------------------------------------------------------------
+
+*006
+//-------------------------------------------------------------------------------
+//  悟空
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_026"]
+
+[character x = 190 y = -150 storage = "00300/heapup_e_01" scale = 1.4 action = "fadein" time = 0.1]
+
+
+[balloon shape="006_01" x = -145 y = 110 scale = 1.0 action = "expand" time = 0.1]
+[font size = 24]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 7 time = 0.2]
+オラは[r]
+カカロットじゃねえ！！
+[p]
+
+
+[balloon shape="006_02" x = -145 y = -100 scale = 0.75 action = "expand" time = 0.1]
+[font size = 36]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 7 time = 0.2]
+孫悟空だ！！
+[p]
+
+//-------------------------------------------------------------------------------
+
+*007
+//-------------------------------------------------------------------------------
+//  アモンドたち
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0003L" bg = "bg_000_026"]
+
+
+[balloon x=170 y=110 shape="002_01" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+[quake target =".bln" power = 3 time = 0.2]
+ターレス様…
+//[p]
+
+[wait time = 0.7]
+
+[balloon x=160 y=-80 shape="002_03" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+ここはオレたちに[r]
+お任せくだっせい
+//[p]
+
+[wait time = 0.7]
+
+[character x = -230 y = -110 storage = "00380/idl_side_p_01" scale = 1.0 action = "fadein" time = 0.7]
+
+[wait time = 0.2]
+
+[character x = -30 y = 80 storage = "00381/idl_side_p_01" scale = 0.65 action = "fadein" time = 0.7]
+
+[character x = -300 y = 90 storage = "00381/heapup_p_01" scale = 0.6 action = "fadein" time = 0.7]
+
+[wait time = 0.3]
+
+[character x = -290 y = -220 storage = "00384/idl_side_p_01" scale = 1.1 action = "fadein" time = 0.7]
+
+[wait time = 0.3]
+
+[character id = "cell" x = -130 y = -280 storage = "00386/idl_side_p_01" scale = 1.4 action = "fadein" time = 0.7]
+
+[wait_anim target="cell"]
+
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+//-------------------------------------------------------------------------------
+
+*008
+//-------------------------------------------------------------------------------
+//  悟空
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_000_026"]
+
+[character x = 190 y = -160 storage = "00300/heapup_e_01" scale = 1.4 action = "fadein" time = 0.1]
+
+
+[balloon shape="006_01" x = -130 y = 80 scale = 0.8 action = "expand" time = 0.1]
+[font size = 32]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 7 time = 0.2]
+おめえたちは[r]
+どいてろ！！
+[p]
+
+
+//-------------------------------------------------------------------------------
+
+
+[stopbgm]

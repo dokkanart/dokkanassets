@@ -1,0 +1,126 @@
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "008"]
+
+
+*01
+//-------------------------------------------------------------------------------
+//  ピッコロ
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+
+
+[coma shape="N0001R" bg = "bg_014_003"]
+
+[character x = 240 y = -160 storage = "00010/heapup_e_01" scale = 1.4 action = "fadein" time = 0.1]
+
+[balloon x=-140 y=100 shape="002_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+完全体とやらに[r]
+させるわけには[r]
+いかんぞ…[p]
+
+*02
+//-------------------------------------------------------------------------------
+//  セル1
+//-------------------------------------------------------------------------------
+[se storage = "03"]
+[coma shape="N0003L" bg = "bg_014_003"]
+
+[character id="cell" x=-200 y=-110 storage = "00006/heapup_p_01" scale = 1.6 action = "fadein" time = 0.1]
+
+[balloon x=160 y=130 shape="006_02" scale = 1.0 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+[quake target = ".bln" power = 7 time = 0.2]
+17号・18号は[r]
+かならず[r]
+手に入れてみせる！！[p]
+
+
+[balloon x=160 y=-100 shape="006_01" scale = 0.7 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 40]
+[quake target = ".bln" power = 7 time = 0.2]
+太陽拳！！
+
+//[wait_anim target=".bln"]
+
+[wait time = 0.5]
+
+[se storage = "10"]
+
+[lwfobject id = "kaki1" storage="kakimoji:ef_005" in="04" x=-180 y=-50 scale = 2.0]
+[quake target = "kaki1" power = 10 time = 0.2]
+
+//点滅（白）
+//[se storage = "3025"]
+//点滅
+[balloon shape="008_02" x = 140 y = -30 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+//[balloon shape="008_02" x = 140 y = -30 scale = 50 action = "fadein" time = 0.1]
+//[wait time = 0.3]
+//[clear target = ".bln"]
+
+
+[wait_anim target=".bln"]
+
+
+
+*03
+//-------------------------------------------------------------------------------
+//  ピッコロ
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+
+
+
+[coma shape="N0001R" bg = "bg_014_003"]
+
+[character x = 240 y = -160 storage = "00010/heapup_e_01" scale = 1.4 action = "fadein" time = 0.1]
+
+[lwfobject id = "kaki1" storage="kakimoji:ef_001" in="04" x=-50 y=100 angle = -10 scale = 2.5]
+[quake target = "kaki1" power = 10 time = 0.2]
+
+
+
+// 空のフキダシ（セリフがないコマを送るために使用）
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+
+*04
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+
+
+[coma shape="N0002L" bg = "bg_000_014"]
+
+
+[balloon shape="003_01" x = 0 y = -40 scale = 1.6 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 14]
+//[quake target =".bln" power = 3 time = 0.2]
+
+一瞬の隙を突き[r]
+逃亡したセルは[r]
+人造人間17号・18号を[r]
+吸収し完全体になるために[r]
+力をたくわえていく…！[r]
+　[r]
+はたして[r]
+セルの野望を打ち砕く[r]
+ことはできるのか…！？[p]
+
+
+
+[stopbgm]
+

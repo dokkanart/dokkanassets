@@ -1,0 +1,298 @@
+
+
+*start|スタート
+//2328023 ステージ2 ボス前
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "013"]
+
+
+*01
+//-------------------------------------------------------------------------------
+//  ゴクウブラック
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="S0001" bg = "bg_000_016"]
+
+[wait time = 0.7]
+
+//点滅（白）
+[se storage = "3025"]
+//点滅
+[balloon shape="008_02" x = 140 y = -30 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+[balloon shape="008_02" x = 140 y = -30 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+
+//[wait time = 0.1]
+
+[character x = 0 y = 15 storage = "00621/card_01" scale = 0.9 action = "fadein" time = 1.2]
+[move target =".chara" y=0 time = 1.2]
+
+[wait_anim target=".chara"]
+
+[wait time = 0.3]
+
+[balloon x=150 y=-180 shape="002_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+ん？[r]
+なんだここは…？[p]
+
+*02
+//-------------------------------------------------------------------------------
+//  トランクス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+
+[coma shape="N0001R" bg = "bg_014_001"]
+
+[character x = 230 y = -145 storage = "00623/heapup_e_01" scale = 1.3 action = "fadein" time = 0.1]
+
+[balloon shape="004_02" x = -80 y = 90 scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+[quake target =".bln" power = 3 time = 0.2]
+
+ブラック…！！[p]
+
+*03
+//-------------------------------------------------------------------------------
+//  ゴクウブラック
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+
+[coma shape="N0001L" bg = "bg_000_016"]
+
+[character x = -220 y = -175 storage = "00621/idl_side_p_01" scale = 1.25 action = "fadein" time = 0.1]
+
+[balloon x = 140 y = 120 shape="002_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target = ".bln"]
+[font size = 32]
+//[quake target = ".bln" power = 3 time = 0.2]
+
+トランクス…[r]
+こんなところに…[p]
+
+[balloon x = 140 y = -80 shape="002_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target = ".bln"]
+[font size = 32]
+[quake target = ".bln" power = 3 time = 0.2]
+
+…ん？[r]
+孫悟空か…[p]
+
+*04
+//-------------------------------------------------------------------------------
+//  悟空
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+
+[coma shape="N0001R" bg = "bg_014_001"]
+
+[character x = 220 y = -165 storage = "00300/idl_side_e_01" scale = 1.3 action = "fadein" time = 0.1]
+
+[balloon x=-120 y=100 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+
+おめえがブラックか[p]
+
+*05
+//-------------------------------------------------------------------------------
+//  ゴクウブラック
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+
+[coma shape="N0001L" bg = "bg_000_016"]
+
+[character x = -220 y = -175 storage = "00621/idl_side_p_01" scale = 1.25 action = "fadein" time = 0.1]
+
+[balloon x = 140 y = 80 shape="002_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target = ".bln"]
+[font size = 32]
+//[quake target = ".bln" power = 3 time = 0.2]
+
+そうか…[r]
+時を越えたか…[p]
+
+*06
+//-------------------------------------------------------------------------------
+//  トランクス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+
+[coma shape="N0001R" bg = "bg_014_001"]
+
+[character x = 230 y = -145 storage = "00623/heapup_e_01" scale = 1.3 action = "fadein" time = 0.1]
+
+[balloon shape="006_01" x = -100 y = 90 scale = 0.9 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 7 time = 0.2]
+
+きさま！[r]
+どうやって[r]
+ここまで来た！？[p]
+
+*07
+//-------------------------------------------------------------------------------
+//  ゴクウブラック
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+
+[coma shape="N0001L" bg = "bg_000_016"]
+
+[character x = -220 y = -175 storage = "00621/idl_side_p_01" scale = 1.25 action = "fadein" time = 0.1]
+
+[balloon x = 115 y = 125 shape="002_02" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target = ".bln"]
+[font size = 24]
+//[quake target = ".bln" power = 3 time = 0.2]
+
+どうやら[r]
+おまえが通った時空を[r]
+わたしも[r]
+通り抜けてきたようだ[p]
+
+[balloon x = 140 y = -80 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target = ".bln"]
+[font size = 28]
+//[quake target = ".bln" power = 3 time = 0.2]
+
+おまえが[r]
+わたしを呼んだのかな？[r]
+殺してほしいと…[p]
+
+*08
+//-------------------------------------------------------------------------------
+//  悟空
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+
+[coma shape="N0001R" bg = "bg_014_001"]
+
+[character x = 220 y = -165 storage = "00300/idl_side_e_01" scale = 1.3 action = "fadein" time = 0.1]
+
+[balloon x=-120 y=100 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+
+おめえ ホントに[r]
+オラソックリだなあ[p]
+
+*09
+//-------------------------------------------------------------------------------
+//  ゴクウブラック
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+
+[coma shape="N0001L" bg = "bg_000_016"]
+
+[character x = -220 y = -175 storage = "00621/idl_side_p_01" scale = 1.25 action = "fadein" time = 0.1]
+
+[balloon x = 140 y = 80 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target = ".bln"]
+[font size = 30]
+//[quake target = ".bln" power = 3 time = 0.2]
+
+ごきげんよう[r]
+孫悟空[p]
+
+*10
+//-------------------------------------------------------------------------------
+//  悟空
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+
+[coma shape="N0001R" bg = "bg_014_001"]
+
+[character x=200 y=-160 storage = "00300/heapup_e_01" scale = 1.4 action = "fadein" time = 0.1]
+
+[balloon x=-120 y=110 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+
+おめえが何者なのか[r]
+わかんねえけど…[r]
+まあいいや[p]
+
+[balloon x=-120 y=-100 shape="001_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+
+おめえ強えんだって？[r]
+相手してくれよ[p]
+
+*11
+//-------------------------------------------------------------------------------
+//  ゴクウブラック
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+
+[coma shape="N0001L" bg = "bg_000_016"]
+
+[character x = -220 y = -175 storage = "00621/idl_side_p_01" scale = 1.25 action = "fadein" time = 0.1]
+
+[balloon x = 140 y = 120 shape="002_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target = ".bln"]
+[font size = 32]
+//[quake target = ".bln" power = 3 time = 0.2]
+
+光栄ですね[p]
+
+[balloon x = 140 y = -80 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target = ".bln"]
+[font size = 28]
+//[quake target = ".bln" power = 3 time = 0.2]
+
+わたしもこのカラダで[r]
+キミと闘って[r]
+みたかったんです[p]
+
+*12
+//-------------------------------------------------------------------------------
+//  悟空
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+
+[coma shape="N0001R" bg = "bg_014_001"]
+
+[character x=200 y=-160 storage = "00300/heapup_e_01" scale = 1.4 action = "fadein" time = 0.1]
+
+[balloon x=-120 y=80 shape="001_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+
+どういうことだ？[p]
+
+*13
+//-------------------------------------------------------------------------------
+//  ゴクウブラック
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+
+[coma shape="N0002L" bg = "bg_000_016"]
+
+[character x = -220 y = -150 storage = "00621/idl_side_p_01" scale = 1.25 action = "fadein" time = 0.1]
+
+[balloon x = 130 y = 50 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target = ".bln"]
+[font size = 28]
+//[quake target = ".bln" power = 3 time = 0.2]
+
+キミが知る必要は[r]
+ありません[p]
+
+//-------------------------------------------------------------------------------
+[stopbgm]

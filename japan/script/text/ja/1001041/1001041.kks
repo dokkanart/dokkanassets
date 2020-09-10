@@ -1,0 +1,152 @@
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  場面転換
+//-------------------------------------------------------------------------------
+[bgm storage = "012"]
+
+*001
+//-------------------------------------------------------------------------------
+//  界王
+//-------------------------------------------------------------------------------
+[se storage = "3034"]
+//bg界王星
+[coma shape="N0001L" bg = "bg_080_001"]
+
+
+[character x = -180 y = -40 storage = "90001/stand" scale = 0.5 action = "fadein" time = 0.1]
+
+
+[balloon x = 120 y = 125 shape="005_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+ふむ…[r]
+先ほどからの闘いを[r]
+見ておると…
+[p]
+
+
+[balloon x = 145 y = -90 shape="005_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target =".bln" power = 3 time = 0.2]
+[font size = 32]
+どうもムダな動きが[r]
+多いようじゃのう
+[p]
+
+*002
+//-------------------------------------------------------------------------------
+//  界王
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+//bg界王星
+[coma shape="N0003L" bg = "bg_080_001"]
+
+[character x = -150 y = -50 storage = "90001/stand" scale = 0.7 action = "fadein" time = 0.1]
+
+
+
+//セリフ1
+[balloon x = 140 y = 25 shape="005_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target =".bln" power = 3 time = 0.2]
+[font size = 32]
+よいか？[r]
+気の玉の特徴を[r]
+よく考えるのじゃ
+[p]
+
+
+
+
+
+
+*003
+//-------------------------------------------------------------------------------
+//  界王
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+//bg界王星
+[coma shape="N0001L" bg = "bg_080_001"]
+
+
+[character x = -180 y = -40 storage = "90001/stand" scale = 0.5 action = "fadein" time = 0.1]
+
+
+[balloon x = 120 y = 135 shape="005_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+キャラクターと属性が[r]
+同じなら[font color="#FF0000"]通常の２倍[font color="#141414"]の[r]
+気が溜まる…！
+[p]
+
+
+[balloon x = 145 y = -80 shape="005_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target =".bln" power = 3 time = 0.2]
+[font size = 32]
+闇雲に気の玉を[r]
+集めていても[r]
+敵には勝てないぞ？
+[p]
+
+
+*004
+//-------------------------------------------------------------------------------
+//  界王
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+//bg界王星
+[coma shape="N0002L" bg = "bg_080_001"]
+
+
+[character x = -150 y = -70 storage = "90001/stand" scale = 0.7 action = "fadein" time = 0.1]
+
+
+[balloon x = 120 y = 100 shape="005_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target =".bln" power = 3 time = 0.2]
+[font size = 32]
+次の闘いでは[r]
+このことを意識して[r]
+闘うのじゃ！
+[p]
+
+
+[balloon x = 145 y = -150 shape="005_02" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target =".bln" power = 3 time = 0.2]
+[font size = 36]
+期待しておるぞ！
+[p]
+
+//以下説明画像
+//フェードアウト
+[balloon x=0 y=0 shape="008_03" scale = 50.0 action = "fadein" time = 1.5]
+
+[wait time = 1.5]
+
+//空のフキダシ
+//[balloon x = 0 y = 0 shape="002_01" scale = 0]
+//[p]
+
+
+
+
+
+
+//予告
+[balloon x = -0 y =250 shape="009_02" scale = 1.0 action = "fadein" time = 2]
+
+[wait_anim target=".bln"]
+
+[p]
+
+
+[stopbgm]
+
+
+

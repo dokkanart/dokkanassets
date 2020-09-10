@@ -1,0 +1,175 @@
+*start|スタート
+
+//"エリア２ゴール"
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "013"]
+ 
+*001
+//-------------------------------------------------------------------------------
+//  ビーデル（グレートサイヤマン2号）
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0001R" bg = "bg_015_003"]
+ 
+[character x=265 y=-160 storage = "00323/idl_side_e_01" scale = 1.3 action = "fadein" time = 0.1]
+ 
+[balloon x=-75 y=70 shape="001_03" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 40]
+[quake target =".bln" power = 3 time = 0.2]
+やったあ！
+[p]
+ 
+*002
+//-------------------------------------------------------------------------------
+//  孫悟飯（グレートサイヤマン）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_015_003"]
+ 
+[character x=255 y=-140 storage = "00366/heapup_e_03" scale = 1.3 action = "fadein" time = 0.1]
+ 
+[balloon x=-75 y=110 shape="001_01" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+//[quake target =".bln" power = 3 time = 0.2]
+いや…[r]
+まだだ…！ 
+[p]
+ 
+[balloon x=-130 y=-100 shape="001_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+…ん！？[r]
+このメロディは…！？
+[p]
+
+*003
+//-------------------------------------------------------------------------------
+//  ビーデル（グレートサイヤマン2号）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_015_003"]
+ 
+[character x=265 y=-160 storage = "00323/idl_side_e_01" scale = 1.3 action = "fadein" time = 0.1]
+ 
+[balloon x=-90 y=70 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+あれ！？[r]
+あのモンスター[r]
+消えちゃったわ…
+[p]
+ 
+*004
+//-------------------------------------------------------------------------------
+//  孫悟飯（グレートサイヤマン）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_015_003"]
+ 
+[character x=255 y=-140 storage = "00366/heapup_e_03" scale = 1.3 action = "fadein" time = 0.1]
+ 
+[balloon x=-70 y=70 shape="001_01" scale = 0.65 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 44]
+[quake target =".bln" power = 3 time = 0.2]
+む…！？
+[p]
+ 
+*005
+//-------------------------------------------------------------------------------
+//  タピオンが現れる。
+//-------------------------------------------------------------------------------
+[se storage = "3038"]
+[coma shape="N0003L" bg = "bg_015_003"]
+ 
+//[wait_anim target=".coma"]
+ 
+
+[character x = -120 y = -250 storage = "00313/card_05" scale = 1.0 action = "fadein" time = 1.5]
+
+//[character id = "kemuri4" x = 240 y = 30 storage = "99999/ef_sp_smoke" scale = 1.4 angle=80 action = "fadein" time = 0.1]
+[character id = "kemuri3" x = -190 y = -50 storage = "99999/ef_sp_smoke" scale = 1.4 angle=50 action = "fadein" time = 0.1]
+[character id = "kemuri1" x = 270 y = -170 storage = "99999/ef_sp_smoke" scale = 1.7 angle=-30 action = "fadein" time = 0.1]
+[character id = "kemuri2" x = -250 y = -190 storage = "99999/ef_sp_smoke" scale = 1.5 angle=-90 action = "fadein" time = 0.1]
+
+[quake target ="kemuri1" power = 3 time = 300]
+[quake target ="kemuri2" power = 3 time = 300]
+[quake target ="kemuri3" power = 3 time = 300]
+[quake target ="kemuri4" power = 3 time = 300]
+
+
+
+[wait time = 1.5]
+
+
+
+//[fadeout target = "kemuri4" time = 2.5]
+[fadeout target = "kemuri3" time = 2.2]
+[fadeout target = "kemuri1" time = 1.3]
+[fadeout target = "kemuri2" time = 1.0]
+
+[wait time = 2.5]
+
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+ 
+*006
+//-------------------------------------------------------------------------------
+//  孫悟飯（グレートサイヤマン）
+//-------------------------------------------------------------------------------
+[se storage = "03"]
+[coma shape="N0001R" bg = "bg_015_003"]
+ 
+[character x=255 y=-140 storage = "00366/heapup_e_03" scale = 1.3 action = "fadein" time = 0.1]
+ 
+//！！
+[lwfobject id = "kaki1" storage="kakimoji:ef_001" x=0 y=110 scale = 2.5 angle = -10 action = "fadein" time = 0.1]
+[quake target = "kaki1" power = 15 time = 0.4]
+
+
+// 空のフキダシ（セリフがないコマを送るために使用）
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+ 
+[balloon x=-140 y=-90 shape="004_02" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+[quake target =".bln" power = 3 time = 0.2]
+…タピオン…！？
+[p]
+
+*007
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002L" bg = "bg_015_003"]
+ 
+//[character x = -120 y = -100 storage = "00025/atc_down_p_01" scale = 1.6 action = "fadein" time = 0.1]
+ 
+[balloon x=0 y=-40 shape="003_01" scale = 1.6 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 15]
+//[quake target =".bln" power = 3 time = 0.2] 
+大きな謎を残したまま[r]
+怪物は消えてしまった[r]
+　[r]
+突如 現れた[r]
+足だけの怪物と[r]
+タピオン…[r]
+両者には なにか関係が[r]
+あるのだろうか…！? [r]
+[p]
+
+
+ 
+//-------------------------------------------------------------------------------
+[stopbgm]

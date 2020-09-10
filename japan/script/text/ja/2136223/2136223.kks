@@ -1,0 +1,126 @@
+
+
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "007"]
+
+
+
+*001
+//-------------------------------------------------------------------------------
+//  ギル
+//-------------------------------------------------------------------------------
+
+[se storage = "3036"]
+[coma shape="N0001R" bg = "bg_081_001"]
+ 
+[character x = 180 y = -50 storage = "90003/giru_R" scale = 1.2 action = "fadein" time = 0.1]
+ 
+[balloon x=-100 y=-50 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+エネルギー上昇！[r]
+上昇！！[p]
+
+
+
+
+*002
+//-------------------------------------------------------------------------------
+//  孫悟空（GT)
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_081_001"]
+
+[character id = "goku1" x=189 y=-47 storage = "00324/heapup_e_01" scale = 1.1 action = "fadein" time = 0.1]
+
+[balloon x=-90 y=90 shape="006_01" scale = 0.75 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+[quake target =".bln" power = 7 time = 0.2]
+はああああ！！
+[p]
+
+//超サイヤ人に変身
+[character id = "super" x = 180 y = -130 storage = "99999/supersaiyan" scale = 0.9 action = "expand" time = 0.1]
+
+[wait time = 0.1]
+//点滅（白）
+
+[se storage = "3025"]
+//点滅
+[balloon shape="008_02" x = 140 y = -30 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+[balloon shape="008_02" x = 140 y = -30 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+
+[balloon id = "white" shape="008_02" x = 140 y = -30 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = "goku1"]
+[clear target = "super"]
+[fadeout target = "white" time = 2.0]
+
+[lwfobject id = "kaki1" storage="kakimoji:ef_009" in="04" x=20 y=-90 scale = 1.1]
+[quake target = "kaki1" power = 1 time = 300]
+
+[character id = "super" x = 180 y = -130 storage = "99999/supersaiyan" scale = 0.9 action = "expand" time = 0.1]
+[character id = "goku2" x = 200 y = -50 storage = "00330/heapup_e_01" scale = 1.1 action = "fadein" time = 0.1]
+
+[wait_anim target="white"]
+
+// 空のフキダシ（セリフがないコマを送るために使用）
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+
+
+*003
+//-------------------------------------------------------------------------------
+//  レジック
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002L" bg = "bg_081_001"]
+
+[character x = -90 y = -150 storage = "00337/atc_sp01_p_01" scale = 1.6 action = "fadein" time = 0.1]
+
+
+[balloon x=140 y=70 shape="002_01" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 40]
+[quake target =".bln" power = 3 time = 0.2]
+なに！？[p]
+
+
+
+*004
+//-------------------------------------------------------------------------------
+//  孫悟空（GT)スーパーサイヤ人
+//-------------------------------------------------------------------------------
+[se storage = "3024"]
+[coma shape="S0001" bg = "bg_081_001"]
+
+[lwfobject id = "kaki1" storage="kakimoji:ef_008" in="04" x=160 y=350 scale = 2.5 angle = 40 action = "fadein" time = 0.1]
+[quake target = "kaki1" power = 15 time = 0.3]
+
+ 
+[character id = "goku1" x = 0 y = 0 storage = "00330/card_01" scale = 1.8 angle = 40 action = "expand" time = 0.2]
+[quake target = "goku1" power = 9 time = 0.3]
+[rotate_to target="goku1" angle=-10 time=0.2]
+
+
+[balloon x=0 y=-400 shape="006_01" scale = 0.9 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+[quake target =".bln" power = 7 time = 0.2]
+でやあああっ！！[p]
+
+
+
+
+[stopbgm]

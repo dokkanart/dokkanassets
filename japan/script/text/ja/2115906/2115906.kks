@@ -1,0 +1,32 @@
+
+
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "012"]
+
+
+//-------------------------------------------------------------------------------
+//  サタン
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0002L" bg = "bg_019_001"]
+
+[character x = -180 y = -350 storage = "00038/card_01" scale = 1.4 action = "fadein" time = 0.1]
+
+
+
+[balloon shape="001_01" x = 150 y = 130 scale = 0.9 action = "fadein" time = 0.1 action = "fadein" time = 0.1]
+[font size = 30]
+[wait_anim target=".bln"]
+わかったかね？[r]わたしとの実力の[r]差が…[p]
+
+[balloon shape="001_02" x = 160 y = -120 scale = 0.9 action = "fadein" time = 0.1 action = "fadein" time = 0.1]
+[font size = 30]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 3 time = 0.2]
+またいつでも[r]挑戦してきたまえ！！[p]
+
+[stopbgm]

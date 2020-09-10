@@ -1,0 +1,150 @@
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "012"]
+
+*001
+//-------------------------------------------------------------------------------
+//  キーラ(仮)
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0001L" bg = "bg_027_001"]
+
+[character x=-170 y=-140 storage = "00050/idl_side_p_01" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon x=125 y=120 shape="001_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+おまえたちも[r]かなりの達人の[r]ようだが…[p]
+
+[balloon x=125 y=-90 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+あの男も[r]恐ろしい強さだった…[p]
+
+*002
+//-------------------------------------------------------------------------------
+//  トランクス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_027_001"]
+
+[character x=210 y=-200 storage = "90000/wait_right_anger" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x=-100 y=80 shape="001_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+あの男だって？[p]
+
+*003
+//-------------------------------------------------------------------------------
+//  キーラ(仮)
+//-------------------------------------------------------------------------------
+//[bgm storage = "13"]
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_027_001"]
+
+[character x=-170 y=-140 storage = "00050/idl_side_p_01" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon x=120 y=110 shape="001_03" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target = ".bln" power = 3 time = 0.2]
+[font size = 32]
+「桃白白」だ[p]
+
+[balloon x=140 y=-80 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target = ".bln" power = 3 time = 0.2]
+武道の達人が襲われて[r]いるというウワサ…[r]あれは桃白白の仕業さ
+[p]
+
+
+*005
+//-------------------------------------------------------------------------------
+//  トランクス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_027_001"]
+
+[character x=210 y=-200 storage = "90000/wait_right_anger_strong" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x=-120 y=70 shape="001_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+桃白白…[r]そいつが一連の事件の[r]首謀者なのか…！[p]
+
+*006
+//-------------------------------------------------------------------------------
+//  キーラ(仮)
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_027_001"]
+
+[character x=-170 y=-140 storage = "00050/idl_side_p_01" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon x=100 y=80 shape="001_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+おまえたちも桃白白の[r]標的になるかもしれん[r]気をつけるんだな…
+[p]
+//元シナリオ
+//おまえたちほどの[r]実力の持ち主なら[r]
+//いつ桃白白の標的に[r]なってもおかしくない
+//気をつけるんだな…[p]
+
+*007
+//-------------------------------------------------------------------------------
+//  トランクス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_027_001"]
+
+[character x=210 y=-200 storage = "90000/wait_right_anger" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x=-100 y=80 shape="001_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+オレたちだけじゃない[r]世界中の武道の達人に[r]危険が迫っているんだ[p]
+//元シナリオ
+//オレたちだけ[r]じゃない…
+//世界中の武道の[r]達人たちに危険が[r]迫っているんだ[p]
+
+*008
+//-------------------------------------------------------------------------------
+//  トランクス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_027_001"]
+
+[character x=170 y=-325 storage = "90000/wait_right_anger_strong" scale = 1.4 action = "fadein" time = 0.1]
+
+
+
+[balloon x=-120 y=75 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[quake target = ".bln" power = 3 time = 0.2]
+[font size = 28]
+一刻も早く[r]桃白白の居場所を[r]つきとめなくては…！[p]
+
+//以下説明画像
+//フェードアウト
+[balloon x=0 y=0 shape="008_03" scale = 50.0 action = "fadein" time = 1.5]
+
+[wait time = 1.5]
+
+
+
+
+
+
+[balloon x = -0 y =250 shape="009_02" scale = 0.95 action = "fadein" time = 2]
+
+[wait_anim target=".bln"]
+
+[p]
+
+
+[stopbgm]

@@ -1,0 +1,403 @@
+*start|スタート
+
+//6＿スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "033"]
+
+*001
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0004R" bg = "bg_000_003"]
+
+[character x=-220 y=-120 storage = "99999/pod_02" scale = 0.9 angle = 0 angle = 180 action = "fadein" time = 0.1]
+[character x=-220 y=-120 storage = "99999/pod_01" scale = 0.9 angle = 0 angle = 180 action = "fadein" time = 0.1]
+
+[character x=220 y=30 storage = "99999/pod_02" scale = 0.9 angle = 0 action = "fadein" time = 0.1]
+[character x=220 y=30 storage = "99999/pod_01" scale = 0.9 angle = 0 action = "fadein" time = 0.1]
+
+
+[balloon x=0 y=190 shape="003_01" scale = 1.6 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 15]
+ドドリアの攻撃から[r]
+かろうじて生きのびた[r]
+バーダックは[r]
+惑星ベジータへ[r]
+帰還する途中[r]
+地球へ向けて飛び立った[r]
+息子カカロットの[r]
+宇宙ポッドと[r]すれちがう…
+[p]
+
+
+*002
+//-------------------------------------------------------------------------------
+//  赤ちゃん
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0004L" bg = "bg_000_024"]
+
+[character x=0 y=30 storage = "90003/goku_baby_02" scale = 1.0 action = "fadein" time = 0.1]
+
+[wait time = 0.3]
+
+[balloon x=0 y=110 shape="005_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 3 time = 0.2]
+[font size = 32]
+…カカロット…！！
+[p]
+
+
+*003
+//-------------------------------------------------------------------------------
+//  悟空の成長
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0004R" bg = "bg_000_003"]
+
+[character x=-180 y=-130 storage = "99999/earth" scale = 0.9 action = "fadein" time = 0.1]
+
+[character x=180 y=60 storage = "99999/pod_02" scale = 0.9 angle = 0 action = "fadein" time = 0.1]
+
+[character x=180 y=60 storage = "99999/pod_01" scale = 0.9 angle = 0 action = "fadein" time = 0.1]
+
+
+[character id = "kuro" x=180 y=60 storage = "99999/black" scale = 50 angle = 0]
+
+
+[se storage = "3034"]
+[character id = "1" x=600 y=-70 storage = "00261/card_03" scale = 0.8 action = "fadein" time = 0.1]
+[move target ="1" x=-800 time = 2.5 ease="Out:2.5"]
+
+[wait time = 0.7]
+
+[se storage = "3034"]
+[character id = "2" x=600 y=-70 storage = "00261/card_01" scale = 0.9 action = "fadein" time = 0.1]
+[move target ="2" x=-800 time = 2.5 ease="Out:2.5"]
+
+[wait time = 0.7]
+
+[se storage = "3034"]
+[character id = "3" x=600 y=-280 storage = "00003/card_10" scale = 1.1 action = "fadein" time = 0.1]
+[move target ="3" x=-800 time = 2.5 ease="Out:2.5"]
+
+[wait time = 0.7]
+
+[fadeout target = "kuro" time = 1.0]
+
+[wait_anim target="kuro"]
+
+
+//[balloon x=0 y=110 shape="005_01" scale = 0 action = "fadein" time = 0.1]
+//[p]
+
+*004
+//-------------------------------------------------------------------------------
+//  惑星ベジータ崩壊
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0004L" bg = "bg_000_003"]
+
+[character x=150 y=-130 storage = "99999/tuffle" scale = 0.8 action = "fadein" time = 0.1]
+
+[character x=-100 y=0 storage = "00058/balloon_008_15" scale = 0.9 action = "fadein" time = 0.1]
+
+[wait time = 0.2]
+
+
+//[balloon x=-130 y=30 shape="004_02" scale = 0 action = "fadein" time = 0.1]
+//[p]
+
+
+*005
+//-------------------------------------------------------------------------------
+//  じいちゃん
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0004R" bg = "bg_081_012"]
+[paint target=".coma" color="#D8D8D8"]
+
+[character x=-130 y=-200 storage = "00063/card_01" scale = 1.0 angle = 0 action = "fadein" time = 0.1]
+
+
+
+//[balloon x=-130 y=30 shape="004_02" scale = 0 action = "fadein" time = 0.1]
+//[p]
+
+[wait time = 0.2]
+
+
+
+
+
+
+*007
+//-------------------------------------------------------------------------------
+//  ブルマとの出会い
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0004L" bg = "bg_000_004"]
+[paint target=".coma" color="#D8D8D8"]
+
+[character x=-130 y=-70 storage = "00261/card_03" scale = 0.6 action = "fadein" time = 0.1]
+
+[character x=180 y=-400 storage = "00668/card_01" scale = 1.2 action = "fadein" time = 0.1]
+
+
+
+//[balloon x=-130 y=30 shape="004_02" scale = 0 action = "fadein" time = 0.1]
+//[p]
+
+[wait time = 0.2]
+
+
+*008
+//-------------------------------------------------------------------------------
+//  亀仙人修業
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0004R" bg = "bg_026_001"]
+[paint target=".coma" color="#E6E6E6"]
+
+[character x=-150 y=-130 storage = "00023/card_04" scale = 0.8 action = "fadein" time = 0.1]
+
+
+
+
+
+//[balloon x=-130 y=30 shape="004_02" scale = 0 action = "fadein" time = 0.1]
+//[p]
+
+[wait time = 0.2]
+
+*009
+//-------------------------------------------------------------------------------
+//  vs大魔王
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0004L" bg = "bg_006_001"]
+[paint target=".coma" color="#848484"]
+
+[character x=70 y=-470 storage = "00263/card_01" scale = 2.3 action = "fadein" time = 0.1]
+
+[character x=-180 y=-100 storage = "00261/card_04" scale = 0.7 action = "fadein" time = 0.1]
+
+
+
+//[balloon x=-130 y=30 shape="004_02" scale = 0 action = "fadein" time = 0.1]
+//[p]
+
+
+[wait time = 0.2]
+
+*010
+//-------------------------------------------------------------------------------
+//  ポポ
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0004R" bg = "bg_000_016"]
+
+[character id = "popo" x=180 y=-100 storage = "00357/idl_side_p_01" scale = 0.9 action = "fadein" time = 0.1]
+[flip target ="popo" h=1]
+
+
+[character id = "gok" x=-230 y=-255 storage = "00261/idl_back_e_01" scale = 1.2 action = "fadein" time = 0.1]
+[flip target ="gok" h=1]
+
+
+//[balloon x=-130 y=30 shape="004_02" scale = 0 action = "fadein" time = 0.1]
+//[p]
+
+
+[wait time = 0.2]
+
+
+*011
+//-------------------------------------------------------------------------------
+//  vsマジュニア
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0004L" bg = "bg_025_002"]
+
+
+[character id = "pic" x=-240 y=-200 storage = "00264/idl_side_p_01" scale = 0.9 action = "fadein" time = 0.1]
+
+[character id = "gok" x=230 y=-200 storage = "00003/idl_side_e_03" scale = 0.8 action = "fadein" time = 0.1]
+
+
+
+//[balloon x=-130 y=30 shape="004_02" scale = 0 action = "fadein" time = 0.1]
+//[p]
+
+[wait time = 0.2]
+
+
+*012
+//-------------------------------------------------------------------------------
+//  ナメック星
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0004R" bg = "bg_050_001"]
+
+
+
+//[balloon x=-130 y=30 shape="004_02" scale = 0 action = "fadein" time = 0.1]
+//[p]
+
+[wait time = 0.2]
+
+
+*013
+//-------------------------------------------------------------------------------
+//  
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0004L" bg = "bg_000_003"]
+
+[character x=0 y=-40 storage = "99999/earth" scale = 0.4 action = "fadein" time = 0.1]
+
+//[character x=180 y=60 storage = "99999/pod_02" scale = 0.9 angle = 0 action = "fadein" time = 0.1]
+
+//[character x=180 y=60 storage = "99999/pod_01" scale = 0.9 angle = 0 action = "fadein" time = 0.1]
+
+
+//[balloon x=-130 y=30 shape="004_02" scale = 0 action = "fadein" time = 0.1]
+//[p]
+
+[wait time = 0.7]
+
+[se storage = "48"]
+
+[balloon x=0 y=120 shape="005_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 3 time = 0.2]
+[font size = 28]
+そうか…[r]
+あの夢に出てきた星…[r]
+あ…あれは地球だ！
+[p]
+
+
+
+
+*014
+//-------------------------------------------------------------------------------
+//  バーダック
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_009"]
+
+//[character x=240 y=-155 storage = "00067/idl_side_e_03" scale = 1.4 action = "fadein" time = 0.1]
+
+//[character x=230 y=-130 storage = "00067/heapup_e_03" scale = 1.25 action = "fadein" time = 0.1]
+
+[character x=220 y=-140 storage = "00067/idl_front_e_03" scale = 1.2 action = "fadein" time = 0.1]
+
+
+[balloon x=-120 y=100 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target =".bln" power = 3 time = 0.2]
+[font size = 28]
+…今まで見てきた[r]
+夢は…すべて[r]
+本当の未来……！
+[p]
+
+[balloon x=-120 y=-100 shape="002_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target =".bln" power = 3 time = 0.2]
+[font size = 32]
+…ということは……！
+[p]
+
+*015
+//-------------------------------------------------------------------------------
+//  
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0004L" bg = "bg_000_014"]
+
+//[character x=150 y=-130 storage = "99999/tuffle" scale = 0.8 action = "fadein" time = 0.1]
+
+//[character x=-100 y=0 storage = "00058/balloon_008_15" scale = 0.9 action = "fadein" time = 0.1]
+
+[character x=20 y=-270 storage = "00005/card_04" scale = 1.7 action = "fadein" time = 0.1]
+[paint target=".chara" color="#BDBDBD"]
+
+[wait time = 0.7]
+
+
+
+[balloon x=0 y=100 shape="005_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 3 time = 0.2]
+[font size = 28]
+フリーザがオレたちを…[r]
+惑星ベジータを[r]
+消そうとしているんだ！！
+[p]
+
+[se storage = "3025"]
+
+//  惑星ベジータ崩壊
+[balloon id = "kuro" x=0 y=0 shape="008_03" scale = 50.0 action = "fadein" time = 0.3]
+[wait time = 0.3]
+
+
+[balloon id = "nova" x=0 y=200 shape="008_16" scale = 1.6 action = "fadein" time = 0.5]
+
+[wait time = 0.5]
+
+//[se storage = "3025"]
+//点滅
+[balloon shape="008_02" x = 0 y = 0 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+[balloon shape="008_02" x = 0 y = 0 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+
+
+[fadeout target = "nova" time = 0.7]
+
+[fadeout target = "kuro" time = 2.0]
+
+[wait time = 1.4]
+
+
+*053
+//-------------------------------------------------------------------------------
+//  バーダック
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_000_009"]
+
+
+
+[character x=190 y=-150 storage = "00067/heapup_e_03" scale = 1.3 action = "fadein" time = 0.1]
+
+[balloon x=-160 y=80 shape="002_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+…オレが……[r]
+このオレが…
+[p]
+
+[balloon x=-140 y=-190 shape="006_01" scale = 0.8 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[quake target = ".bln" power = 7 time = 0.2]
+[font size = 32]
+未来を[r]
+変えてみせる！！
+[p]
+
+
+
+[stopbgm]
+

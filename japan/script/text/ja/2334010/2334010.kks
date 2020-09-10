@@ -1,0 +1,355 @@
+*start|スタート
+//"エリア１スタート"
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "012"]
+//[stopbgm]
+
+*001
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+//[se storage = "3011"]
+[coma shape="N0002R" bg = "bg_000_023"]
+
+[character x=-200 y=0 storage = "00232/card_001" scale = 0.8 action = "fadein" time = 0.1]
+
+[character x=160 y=120 storage = "00003/card_08" scale = 0.8 action = "fadein" time = 0.1]
+
+[wait time = 0.7]
+
+[balloon x=-70 y=420 shape="003_02" scale = 1.4 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 18]
+//[quake target =".bln" power = 3 time = 0.2]
+魔人ブウとの[r]
+熾烈な闘いが[r]
+終わったあと…[r]
+地球には[r]
+長い平和な日々が[r]
+訪れていた
+[p]
+
+*002
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+//ぴよぴよ
+[se storage = "04"]
+[coma shape="N0003L" bg = "bg_014_001"]
+
+[balloon x=-0 y=0 shape="003_02" scale = 1.4 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 18]
+//[quake target =".bln" power = 3 time = 0.2]
+しかし[r]
+その闘いが終わった[r]
+ほぼ２年後に[r]
+小さな闘いが[r]
+あったことは[r]
+知られていない…
+[p]
+
+//フェードアウト（フェードアウトするコマ）
+[balloon x=0 y=0 shape="008_03" scale = 50.0 action = "fadein" time = 0.5]
+[wait time = 0.7] 
+
+
+*003
+//-------------------------------------------------------------------------------
+//  タイトル
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="S0001" bg = "bg_000_016"]
+
+//フェードイン
+[balloon x=130 y=40 shape="008_03" scale = 50]
+[wait time = 1]
+[fadeout target = ".bln" time = 1]
+
+[wait_anim target=".bln"]
+
+[se storage = "3010"]
+
+[balloon x=0 y=0 shape="011_16" scale = 1.1 action = "fadein" time = 0.7]
+
+
+[bgm storage = "012"]
+
+[wait time = 0.5]
+
+[balloon x=140 y=160 shape="010_01" scale = 1.2 action = "fadein" time = 0.5]
+
+[balloon x=-140 y=-240 shape="010_02" scale = 1.2 action = "fadein" time = 0.5]
+
+[balloon x=30 y=130 shape="010_03" scale = 1.5 action = "fadein" time = 0.5]
+
+[balloon x=70 y=-200 shape="010_04" scale = 2.3 action = "fadein" time = 0.5]
+
+[balloon x=-240 y=-200 shape="010_05" scale = 1.6 action = "fadein" time = 0.5]
+
+[balloon x=250 y=60 shape="010_06" scale = 1.7 action = "fadein" time = 0.5]
+
+[balloon x=260 y=-175 shape="010_07" scale = 1.3 action = "fadein" time = 0.5]
+
+[wait time = 0.5]
+
+[p]
+
+
+
+
+
+*004
+//-------------------------------------------------------------------------------
+//  孫悟空（農作業姿）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_042"]
+
+[character x=-250 y=-140 storage = "00003/idl_side_p_04" scale = 1.1 action = "fadein" time = 0.1]
+
+[balloon x=100 y=120 shape="001_03" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+//[quake target =".bln" power = 3 time = 0.2]
+なあ チチ
+[p]
+
+[balloon x=120 y=-90 shape="001_02" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+サタンが口止め料を[r]
+いっぱいくれたから[r]
+畑仕事なんてしなくても[r]
+いいんじゃねえか？
+[p]
+
+*005
+//-------------------------------------------------------------------------------
+//  チチ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_042"]
+
+[character x=185 y=-180 storage = "90003/chichi" scale = 0.9 action = "fadein" time = 0.1]
+
+[balloon x=-90 y=100 shape="001_03" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+悟空さったら[r]
+なに言ってるだ！
+[p]
+
+[balloon x=-100 y=-95 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+人間 元気なうちは[r]
+額に汗かいて働かなきゃ[r]
+いけねえんだぞ！？
+[p]
+
+*006
+//-------------------------------------------------------------------------------
+//  孫悟空（農作業姿）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_042"]
+
+[character x=-250 y=-140 storage = "00003/idl_side_p_04" scale = 1.1 action = "fadein" time = 0.1]
+
+[balloon x=115 y=100 shape="001_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+そんなこと言ってもよ[r]
+オラ 腕が[r]
+なまっちまって…
+[p]
+
+[balloon x=130 y=-100 shape="001_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+ああ…[r]
+修業してえなあ…
+[p]
+
+
+*007
+//-------------------------------------------------------------------------------
+//  チチ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_042"]
+
+[character x=185 y=-180 storage = "90003/chichi" scale = 0.9 action = "fadein" time = 0.1]
+
+
+[balloon x=-90 y=90 shape="001_01" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 40]
+[quake target =".bln" power = 3 time = 0.2]
+さあ！
+[p]
+
+[balloon x= -90 y=-100 shape="001_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+文句言ってねえで[r]
+ヨカッタネ大根さ[r]
+まくぞ
+[p]
+
+
+
+*008
+//-------------------------------------------------------------------------------
+//  孫悟空（農作業姿）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_042"]
+
+[character x=-250 y=-140 storage = "00003/idl_side_p_04" scale = 1.1 action = "fadein" time = 0.1]
+
+[balloon x=110 y=70 shape="001_03" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+ヨカッタネ大根？
+[p]
+
+*009
+//-------------------------------------------------------------------------------
+//  チチ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_042"]
+
+[character x=185 y=-180 storage = "90003/chichi" scale = 0.9 action = "fadein" time = 0.1]
+
+[balloon x=-110 y=100 shape="001_03" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+んだ！[r]
+このタネはよい芽が出て[r]
+あっというまに[r]
+よい作物ができっからな
+[p]
+
+[balloon x= -90 y=-110 shape="001_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+じゃあ[r]
+任せただぞ！
+[p]
+
+//セリフ後、フェードアウト
+[fadeout target = ".chara" time = 0.7]
+
+[wait_anim target=".chara"]
+
+// 空のフキダシ（セリフがないコマを送るために使用）
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+*010
+//-------------------------------------------------------------------------------
+//  孫悟空（農作業姿）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_042"]
+
+[character x=-250 y=-140 storage = "00003/idl_side_p_04" scale = 1.1 action = "fadein" time = 0.1]
+
+[balloon x=120 y=60 shape="001_02" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 40]
+//[quake target =".bln" power = 7 time = 0.2]
+う… うん
+[p]
+
+
+*011
+//-------------------------------------------------------------------------------
+//  孫悟天
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_042"]
+
+//スライドで登場。
+[character x = 175 y = -80 storage = "00225/idl_side_e_02" scale = 1.0 action = "slide:right" time = 0.3]
+
+[wait time = 0.2]
+
+[balloon x=-120 y=100 shape="001_03" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+[quake target =".bln" power = 3 time = 0.2]
+ねえねえ[r]
+おとうさん！
+[p]
+
+[balloon x= -135 y=-90 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+たまには[r]
+ボクと修業してよ！
+[p]
+
+*012
+//-------------------------------------------------------------------------------
+//  孫悟空（農作業姿）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_042"]
+
+
+//[character x=-200 y=-150 storage = "00003/heapup_p_04" scale = 1.3 action = "fadein" time = 0.1]
+[character x=-250 y=-140 storage = "00003/idl_side_p_04" scale = 1.1 action = "fadein" time = 0.1]
+
+
+[balloon x=120 y=95 shape="001_02" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+お！ 悟天！[r]
+そうだな…チチも家に[r]
+帰っちまったみてえだし…
+[p]
+
+[balloon x= 135 y=-110 shape="001_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+いっちょ やるか！
+[p]
+
+*013
+//-------------------------------------------------------------------------------
+//  孫悟天
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_000_042"]
+
+[character x=150 y=-120 storage = "00225/card_01" scale = 0.9 action = "fadein" time = 0.1]
+//[quake target =".chara" power = 5 time = 0.4]
+
+[balloon x=-140 y=70 shape="001_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+わーい！[r]
+よろしくお願い[r]しまーす！
+[p]
+
+//-------------------------------------------------------------------------------
+[stopbgm]

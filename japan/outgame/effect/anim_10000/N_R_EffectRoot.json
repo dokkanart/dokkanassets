@@ -1,0 +1,208 @@
+{
+  "Start": {
+    "action": "start",
+    "nexts": [
+      {
+        "state": "Presage_None",
+        "weight": 100
+      },
+      {
+        "state": "Presage_OneStar",
+        "weight": 252
+      },
+      {
+        "state": "Presage_TwoStar",
+        "weight": 189
+      },
+      {
+        "state": "Presage_ThreeStar",
+        "weight": 126
+      },
+      {
+        "state": "Presage_FourStar",
+        "weight": 63
+      },
+      {
+        "state": "Presage_FiveStar",
+        "weight": 0
+      },
+      {
+        "state": "Presage_Satan",
+        "weight": 243
+      },
+      {
+        "state": "Presage_Satan_Left",
+        "weight": 27
+      }
+    ]
+  },
+  "Presage_None": {
+    "action": "presageNone",
+    "nexts": [
+      {
+        "state": "Focus_Normal",
+        "weight": 100
+      }
+    ]
+  },
+  "Presage_OneStar": {
+    "action": "presageOneStar",
+    "nexts": [
+      {
+        "state": "Focus_Normal",
+        "weight": 100
+      }
+    ]
+  },
+  "Presage_TwoStar": {
+    "action": "presageTwoStar",
+    "nexts": [
+      {
+        "state": "Focus_Normal",
+        "weight": 100
+      }
+    ]
+  },
+  "Presage_ThreeStar": {
+    "action": "presageThreeStar",
+    "nexts": [
+      {
+        "state": "Focus_Normal",
+        "weight": 100
+      }
+    ]
+  },
+  "Presage_FourStar": {
+    "action": "presageFourStar",
+    "nexts": [
+      {
+        "state": "Focus_Normal",
+        "weight": 100
+      }
+    ]
+  },
+  "Presage_FiveStar": {
+    "action": "presageFiveStar",
+    "nexts": [
+      {
+        "state": "Focus_Normal",
+        "weight": 100
+      }
+    ]
+  },
+  "Presage_SixStar": {
+    "action": "presageSixStar",
+    "nexts": [
+      {
+        "state": "Focus_Normal",
+        "weight": 100
+      }
+    ]
+  },
+  "Presage_SevenStar": {
+    "action": "presageSevenStar",
+    "nexts": [
+      {
+        "state": "Focus_Normal",
+        "weight": 100
+      }
+    ]
+  },
+  "Presage_Shenlong": {
+    "action": "presageShenlong",
+    "nexts": [
+      {
+        "state": "Focus_Normal",
+        "weight": 100
+      }
+    ]
+  },
+  "Presage_Satan": {
+    "action": "presageSatan",
+    "nexts": [
+      {
+        "state": "Focus_Normal",
+        "weight": 100
+      }
+    ]
+  },
+  "Presage_Satan_Left": {
+    "action": "presageSatanLeft",
+    "nexts": [
+      {
+        "state": "Focus_Normal",
+        "weight": 100
+      }
+    ]
+  },
+  "Focus_Normal": {
+    "action": "focusNormal",
+    "nexts": [
+      {
+        "state": "TouchStart_Normal",
+        "weight": 100
+      }
+    ]
+  },
+  "TouchStart_Normal": {
+    "action": "touchStartNormal",
+    "nexts": [
+      {
+        "state": "swiped_NormalRainbow",
+        "weight": 0
+      },
+      {
+        "state": "swiped_Normal",
+        "weight": 100
+      }
+    ]
+  },
+  "swiped_NormalRainbow": {
+    "action": "swipedFontRainbow",
+    "nexts": [
+      {
+        "state": "Release_Normal",
+        "weight": 100
+      }
+    ]
+  },
+  "swiped_Normal": {
+    "action": "swipedFontDefault",
+    "nexts": [
+      {
+        "state": "Release_Normal",
+        "weight": 100
+      }
+    ]
+  },
+  "Release_Normal": {
+    "action": "releaseDefault",
+    "nexts": [
+      {
+        "state": "FireCutIn_Rank1",
+        "weight": 100
+      }
+    ]
+  },
+  "FireCutIn_Rank1": {
+    "action": "fireCutInRank1",
+    "nexts": [
+      {
+        "state": "BreakMoon_Rank1",
+        "weight": 100
+      }
+    ]
+  },
+  "BreakMoon_Rank1": {
+    "action": "breakMoon",
+    "nexts": [
+      {
+        "state": "Finish",
+        "weight": 100
+      }
+    ]
+  },
+  "Finish": {
+    "action": "finish"
+  }
+}

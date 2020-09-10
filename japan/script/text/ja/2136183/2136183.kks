@@ -1,0 +1,63 @@
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "002"]
+
+
+*01
+//-------------------------------------------------------------------------------
+//  ブウ（善）
+//-------------------------------------------------------------------------------
+
+//[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_032"]
+
+[character id="buu" x = -200 y = -120 storage = "00229/energyball_p_02" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x=100 y=110 shape="002_01" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target =".bln" power = 3 time = 0.2]
+[font size = 36]
+おまえ もう[r]
+おしまい[p]
+
+[balloon x=130 y=-85 shape="002_02" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target =".bln" power = 3 time = 0.2]
+[font size = 40]
+バイバイ[p]
+
+
+*02
+//-------------------------------------------------------------------------------
+//  魔人ベジータ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+
+
+[coma shape="N0002R" bg = "bg_000_033"]
+
+[character id = "beji" x=200 y=-150 storage = "00228/idl_side_p_01" scale = 1.2 action = "fadein" time = 0.1]
+[flip target ="beji" h=1]
+
+[balloon x=-110 y=90 shape="004_01" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+[quake target =".bln" power = 3 time = 0.2]
+ど……[r]
+どうする……[p]
+
+[balloon x=-140 y=-220 shape="004_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+どうしたら[r]
+この化物を[r]
+倒せるんだ……[p]
+
+
+
+
+[stopbgm]

@@ -1,0 +1,119 @@
+*start|スタート
+//究極のDB編_エリア５：スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "005"]
+ 
+*001
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+
+//[se storage = "04"]
+[coma shape="N0003R" bg = "bg_081_004"]
+
+[wait time = 0.7]
+ 
+[balloon x=0 y=120 shape="003_01" scale = 1.6 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 15]
+//[quake target =".bln" power = 3 time = 0.2]
+奪われた六星球を[r]
+取り返すべく[r]
+惑星ルードへと[r]
+やってきた悟空たち…[r]
+　[r]
+そこは[r]
+ルード教の教祖[r]
+ドルタッキーが支配する[r]
+怪しげな星だった…！
+[p]
+ 
+
+*002
+//-------------------------------------------------------------------------------
+//  ドルタッキー
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_081_004"]
+ 
+[character x = -140 y = -190 storage = "90003/dorutakki" scale = 1.3 action = "fadein" time = 0.1]
+
+[balloon x=120 y=140 shape="002_01" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+我こそは[r]
+ルードさまの代弁者にして[r]
+ルード教の教祖…
+[p]
+
+[balloon x=120 y=-80 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+ドルタッキーである！
+[p]
+
+
+
+
+*003
+//-------------------------------------------------------------------------------
+//  ムッチー・モッチー
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_081_004"]
+ 
+[character x = -200 y = -120 storage = "00472/idl_side_p_01" scale = 1.2 action = "fadein" time = 0.1]
+
+[wait_anim target=".chara"]
+
+[se storage = "10"]
+
+[balloon x=-100 y=60 shape="010_16" scale = 1.5 action = "fadein" time = 0.7]
+
+[wait_anim target=".bln"]
+
+[balloon x=120 y=120 shape="002_01" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+…そして わたしが[r]
+祈祷師ムッチー・モッチー
+[p]
+
+[balloon x=120 y=-80 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+ルードさまの復活こそ[r]
+我らの悲願！
+[p]
+
+
+
+
+*004
+//-------------------------------------------------------------------------------
+//  パン
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_081_004"]
+ 
+[character x=150 y=-160 storage = "00326/heapup_e_01" scale = 1.4 action = "fadein" time = 0.1]
+ 
+[balloon x=-120 y=70 shape="006_01" scale = 0.8 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 34]
+[quake target =".bln" power = 7 time = 0.2]
+あ！ 六星球！
+[p]
+
+
+[stopbgm]

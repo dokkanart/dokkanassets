@@ -1,0 +1,43 @@
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+//[bgm storage = "026"]
+
+*001
+//-------------------------------------------------------------------------------
+//  超サイヤ人孫悟飯（未来）
+//-------------------------------------------------------------------------------
+[se storage = "50"]
+[coma shape="S0001" bg = "bg_015_001"]
+
+//[character id = "ss" x = 0 y = 30 storage = "99999/supersaiyan" scale = 1.2 action = "fadein" time = 0.1]
+//[quake target = "ss" power = 10 time = 0.4]
+//[quake target = "ss" power = 2 time = 300]
+
+[character id = "gohan" x=0 y=-40 storage = "00209/card_05" scale = 1.0 action = "fadein" time = 0.1 angle=0]
+//[quake target = "gohan" power = 7 time = 0.4]
+
+//[character id = "tama" x = -150 y = 270 storage = "99999/powerball" scale = 1.2 action = "fadein" time = 0.1 angle=40]
+//[quake target = "tama" power = 2 time = 300]
+//[spin target="tama" velocity=200]
+
+[balloon x=-0 y=455 shape="001_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+たとえ…[r]
+この肉体は滅んでも！！
+[p]
+
+[balloon x=30 y=-440 shape="006_01" scale = 0.9 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 7 time = 0.2]
+オレの意志を継ぐ者が[r]
+必ず立ちあがる！！
+[p]
+
+
+//[stopbgm]

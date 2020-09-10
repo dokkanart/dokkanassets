@@ -1,0 +1,100 @@
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "012"]
+
+*001
+//-------------------------------------------------------------------------------
+//  孫悟空
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_004"]
+
+[character x = 170 y = -280 storage = "00271/card_01" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x=-120 y=140 shape="001_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+すげぇな〜[r]
+超サイヤ人にも[r]
+勝っちまうなんてよ！
+[p]
+
+[balloon x=-120 y=-70 shape="001_02" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+そうだ！この前の[r]
+[font color="#119100"]【あふれる闘争心】孫悟空[font color="#141414"]は[r]
+もうZ覚醒させたか？
+[p]
+
+*002
+//-------------------------------------------------------------------------------
+//  孫悟空
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0003R" bg = "bg_000_004"]
+
+[character x = 200 y = -440 storage = "00271/card_01" scale = 1.6 action = "fadein" time = 0.1]
+
+[balloon x=-120 y=120 shape="001_03" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+Z覚醒させるとすげぇ[r]
+パワーアップできるんだ！
+[p]
+
+[balloon x=-120 y=-90 shape="001_02" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+へへ〜でもよ[r]
+Z覚醒よりさらに上の[r]
+[font color="#cc0000"]ドッカン覚醒[font color="#141414"]もあるんだぞ
+[p]
+
+*003
+//-------------------------------------------------------------------------------
+//  カード画像と覚醒メダルが現れる
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_000_014"]
+
+[character x = 170 y = -280 storage = "00271/card_01" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon id = "card" x=-200 y=-90 shape="008_25" scale = 0.6 action = "fadein" time = 0.1]
+
+[balloon id = "medal" x=-55 y=-50 shape="008_26" scale = 0.6 action = "fadein" time = 0.1]
+
+[wait time = 0.7]
+
+
+[quake target ="card" power = 7 time = 0.3]
+
+[balloon x=-120 y=100 shape="001_01" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 23]
+[quake target =".bln" power = 3 time = 0.2]
+実はこの[r]
+[font color="#119100"]【あふれる闘争心】孫悟空[font color="#141414"]も[r]
+[font color="#cc0000"]ドッカン覚醒[font color="#141414"]できるんだ！
+[p]
+
+[quake target ="medal" power = 7 time = 0.3]
+
+[balloon x=-0 y=-220 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+覚醒メダルを集めて[r]
+超サイヤ人に[r]
+変身させてみてくれ！
+[p]
+
+//-------------------------------------------------------------------------------
+[stopbgm]

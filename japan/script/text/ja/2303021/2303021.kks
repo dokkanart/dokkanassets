@@ -1,0 +1,313 @@
+
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "005"]
+
+
+//-------------------------------------------------------------------------------
+//  ナッパ ベジータ（幼年期）
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0004L" bg = "bg_001_001"]
+
+[character x=222 y=-200 storage = "00059/atc_sp01_e_01" scale = 0.9 action = "fadein" time = 0.1]
+
+//ナッパ
+[character x=-150 y=-450 storage = "00015/atc_energyball_p_03" scale = 2.4 action = "fadein" time = 0.1]
+
+//[wait_anim target=".chara"]
+
+[balloon x=-120 y=110 shape="002_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+へっへっへっへ…[r]
+さすがですな
+[p]
+
+[balloon x=85 y=-165 shape="002_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+フン…くだらん[r]
+おべんちゃらはよせ
+[p]
+
+
+
+
+
+*003
+//-------------------------------------------------------------------------------
+//  ナッパ ベジータ（幼年期）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0003R" bg = "bg_001_001"]
+
+[character x=425 y=-90 storage = "00059/atc_punch_e_03" scale = 1.4 action = "fadein" time = 0.1]
+
+
+[balloon x=-140 y=65 shape="002_03" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+こんな星にいたんでは[r]
+ちっとも強くなれない
+[p]
+
+[balloon x=-60 y=-120 shape="002_01" scale = 1 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 26]
+フリーザ様に占領する[r]
+予定の星をもらえるよう[r]
+ねだってみるかな…
+[p]
+
+
+
+//フェードアウト
+[balloon x=130 y=40 shape="008_03" scale = 50.0 action = "fadein" time = 0.5]
+[wait time = 0.7]
+//[stopbgm]
+
+
+
+
+
+*004
+//-------------------------------------------------------------------------------
+//  ザーボン
+//-------------------------------------------------------------------------------
+[bgm storage = "003"]
+[coma shape="S0001" bg = "bg_000_008"]
+
+//フェードイン
+[balloon x=130 y=40 shape="008_03" scale = 50]
+[wait time = 1]
+[fadeout target = ".bln" time = 2]
+[wait_anim target=".bln"]
+
+//[character x=-165 y=-90 storage = "00016/idl_side_p_02" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon id="radhi1" x=-125 y=145 shape="002_02" scale = 0.6 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 42]
+フリーザ様
+[p]
+
+[balloon id="radhi2" x=110 y=-50 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+たった今カナッサ星を[r]
+占領したという[r]
+報告が入りました
+[p]
+
+
+
+*005
+//-------------------------------------------------------------------------------
+//  フリーザ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0003L" bg = "bg_000_008"]
+
+
+[character x=110 y=-135 storage = "00030/idl_side_e_01" scale = 0.4 action = "fadein" time = 0.1]
+
+[character x=200 y=-90 storage = "00058/idl_back_p_01" scale = 0.5 action = "fadein" time = 0.1]
+
+[character x=-370 y=-265 storage = "00016/idl_back_p_01" scale = 1.5 action = "fadein" time = 0.1]
+
+[wait_anim target=".chara"]
+
+[balloon id="radhi1" x=170 y=120 shape="002_01" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+……ほう…
+[p]
+
+
+*006
+//-------------------------------------------------------------------------------
+//  ドドリア
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_008"]
+
+[character x=180 y=-90 storage = "00030/idl_side_e_01" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon id="radhi1" x=-125 y=120 shape="002_01" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+誰なんだ？
+[p]
+
+[balloon id="radhi2" x=-120 y=-70 shape="002_03" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+そのカナッサ星を[r]
+攻め落としたって[r]
+やろうは…
+[p]
+
+
+
+*007
+//-------------------------------------------------------------------------------
+//  ザーボン
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_008"]
+
+[character x=-195 y=-140 storage = "00016/idl_front_p_01" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon id="radhi1" x=150 y=30 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+名もないサイヤ人の[r]
+下級戦士どもだ
+[p]
+
+
+*008
+//-------------------------------------------------------------------------------
+//  フリーザ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0004R" bg = "bg_000_008"]
+
+[character x=240 y=-625 storage = "00058/idl_side_e_01" scale = 3.6 action = "fadein" time = 0.1]
+[wait_anim target=".chara"]
+
+[balloon id="radhi1" x=-150 y=60 shape="002_01" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+…サイヤ人……
+[p]
+
+
+*009
+//-------------------------------------------------------------------------------
+//  ドドリア
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_008"]
+
+[character x=180 y=-90 storage = "00030/idl_side_e_01" scale = 1.0 action = "fadein" time = 0.1]
+
+
+[balloon id="radhi1" x=-150 y=70 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+最近のやつらは[r]
+よく働きやがるな
+[p]
+
+*010
+//-------------------------------------------------------------------------------
+//  ザーボン
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_008"]
+
+[character x=-195 y=-140 storage = "00016/idl_front_p_01" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon id="radhi1" x=125 y=120 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+たしかに[r]
+目覚ましいものがある
+[p]
+
+[balloon id="radhi2" x=120 y=-100 shape="002_03" scale = 1 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 26]
+王子のベジータのような[r]
+戦闘力を持ったやつらが[r]
+現れ徒党を組まれたら…
+[p]
+
+
+*011
+//-------------------------------------------------------------------------------
+//  フリーザ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0003L" bg = "bg_000_008"]
+
+
+[character x=110 y=-135 storage = "00030/idl_side_e_01" scale = 0.4 action = "fadein" time = 0.1]
+
+[character x=200 y=-90 storage = "00058/idl_back_p_01" scale = 0.5 action = "fadein" time = 0.1]
+
+[character x=-370 y=-265 storage = "00016/idl_back_p_01" scale = 1.5 action = "fadein" time = 0.1]
+
+[wait_anim target=".chara"]
+
+[balloon id="radhi1" x=120 y=120 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+ふ…[r]
+目障りになると[r]
+いうわけですね…
+[p]
+
+
+[balloon id="radhi1" x=-170 y=-145 shape="002_03" scale = 0.6 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 42]
+……はい…
+[p]
+
+
+//フェードアウト
+[balloon x=130 y=40 shape="008_03" scale = 50.0 action = "fadein" time = 0.5]
+[wait time = 0.7]
+[stopbgm]
+
+
+
+
+
+
+*013
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+
+[coma shape="S0001" bg = "bg_000_003"]
+
+
+//フェードイン
+[balloon x=130 y=40 shape="008_03" scale = 50]
+[wait time = 1]
+[fadeout target = ".bln" time = 2]
+[wait_anim target=".bln"]
+
+
+
+[balloon x=0 y=0 shape="003_01" scale = 2.2 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 12]
+一方…[r]
+
+カナッサ星を制圧した[r]
+バーダックたちだったが…[r]
+　[r]
+カナッサ星人の生き残り[r]
+トオロは未来を予知できる[r]
+「幻の拳」をバーダックに[r]
+放つ…[r]
+　[r]
+バーダックは[r]
+サイヤ人の…そして自らの[r]
+過酷な運命を知ることに[r]
+なるのだった……
+[p]
+
+//フェードアウト
+[balloon x=130 y=40 shape="008_03" scale = 50.0 action = "fadein" time = 0.5]
+[wait time = 3.5]
+
+

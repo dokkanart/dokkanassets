@@ -1,0 +1,41 @@
+*start|スタート
+
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "005"]
+ 
+
+
+*001
+//-------------------------------------------------------------------------------
+//  
+//-------------------------------------------------------------------------------
+
+[coma shape="S0001" bg = "bg_081_007"]
+ 
+ 
+[character id = "pan" x = 0 y = -70 storage = "00326/card_02" scale = 1.7 action = "fadein" time = 0.1]
+[character id = "ase" x = 40 y = 260 storage = "99999/ase" scale = 0.9 action = "fadein" time = 0.1]
+
+//[wait_anim target=".chara"]
+ 
+[balloon x=-130 y=425 shape="004_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+な…なに！？[r]
+なにか勘違いしてない？
+[p]
+
+[balloon x=135 y=-350 shape="004_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+こんな格好してるけど[r]
+わたし人間よ！？
+[p]
+
+
+[stopbgm]

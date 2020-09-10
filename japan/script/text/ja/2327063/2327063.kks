@@ -1,0 +1,56 @@
+
+
+*start|スタート
+//2327063 ステージ6ボス前 アラレちゃん大活躍！！
+スタート
+//ペンギン村
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "006"]
+
+*01
+//-------------------------------------------------------------------------------
+//  則巻アラレ
+//-------------------------------------------------------------------------------
+[se storage = "3024"]
+[coma shape="N0001R" bg = "bg_074_001"]
+
+[character  x=150 y=-45 storage = "00635/arare2_atc_front_p_01" scale = 1.1  action = "fadein" time = 0.1]
+[quake target =".chara" power = 7 time = 0.5]
+
+[balloon shape="001_02" x = -130 y = -60 scale = 0.8 action = "fadein" time = 0.1]
+[font size = 36]
+[quake target =".bln" power = 3 time = 0.2]
+[wait_anim target=".bln"]
+とつげきぃ〜っ！！[p]
+
+
+
+*02
+//----------------------------------------------------------------------------
+//  桃白白
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002L" bg = "bg_074_002"]
+
+[character  x=-185 y=-135 storage = "00024/tao_heapup_p_01" scale = 1.3  action = "fadein" time = 0.1]
+
+[balloon shape="004_01" x = 120 y = 100 scale = 0.9 action = "fadein" time = 0.1]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+[wait_anim target=".bln"]
+にくったらしい[r]
+くそガキめが…！[p]
+
+[quake target =".chara" power = 5 time = 0.3]
+
+[balloon shape="007_02" x = 110 y = -190 scale = 0.9 action = "expand" time = 0.1]
+[font size = 28]
+[quake target =".bln" power = 7 time = 0.2]
+[wait_anim target=".bln"]
+本気を出して[r]
+やってしまうぞ！！[p]
+
+//-------------------------------------------------------------------------------
+[stopbgm]

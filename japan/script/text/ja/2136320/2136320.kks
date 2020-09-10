@@ -1,0 +1,195 @@
+*start|スタート
+//エリア26スタート
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "005"]
+
+//-------------------------------------------------------------------------------
+//  test
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+
+[coma shape="S0001" bg = "bg_000_014"]
+
+[balloon shape="009_15" x = 50 y = 170 scale = 1.2 action = "fadein" time = 0.1]
+
+
+//19×7
+[balloon shape="009_16" x = 35 y = -200 scale = 0.95 action = "fadein" time = 0.1]
+[font size = 27]
+[wait_anim target=".bln"]
+ひとつの小さな出会いから始まった[r]
+ななつのドラゴンボールをめぐる物語…[r]
+　[r]
+ドラゴンボールのマイナスエネルギーから[r]
+生まれた邪悪龍を倒すため再び冒険に出た[r]
+悟空…　順調に邪悪龍を撃破する悟空たち[r]
+の前に、太陽の戦士・四星龍が現れた！！[p]
+
+*001
+//-------------------------------------------------------------------------------
+//  孫悟空（GT)
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_069_001"]
+[character x=320 y=-15 storage = "99999/tail" scale = 1.3 angle = -0 action = "fadein" time = 0.1]
+[character x=200 y=-50 storage = "00324/heapup_e_01" scale = 1.1 action = "fadein" time = 0.1]
+
+[balloon x=-100 y=80 shape="001_02" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+それが本当の[r]
+おめえの姿っちゅうわけか[p]
+
+
+*002
+//-------------------------------------------------------------------------------
+//  四星龍
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_069_001"]
+
+[character x = -300 y = -190 storage = "00518/heapup_e_01" scale = 1.1 action = "fadein" time = 0.1]
+[flip target = ".chara"  h=1]
+
+[balloon x=110 y=100 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 7 time = 0.2]
+では そちらも[r]
+なってもらおうか…
+[p]
+
+[balloon x=120 y=-80 shape="002_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 7 time = 0.2]
+わたしが[r]
+マジで闘える姿に…！
+[p]
+
+*003
+//-------------------------------------------------------------------------------
+//  孫悟空（GT）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_069_001"]
+
+[character id = "tail" x=300 y=-70 storage = "99999/tail" scale = 1.3  action = "fadein" time = 0.1]
+
+//[flip target = "tail" h = 1]
+//[flip target = "tail" v=1]
+[character id = "goku" x=170 y=-80 storage = "00324/heapup_e_01" scale = 1.3 action = "fadein" time = 0.1]
+//[flip target = "goku" h = 1]
+
+
+[balloon x=-130 y=120 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+ああ[r]
+なってやっぜ！[r]
+超サイヤ人４にな！
+[p]
+
+[balloon x=-135 y=-200 shape="006_01" scale = 0.8 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 7 time = 0.2]
+はああああ…！！
+[p]
+
+[se storage = "3024"]
+
+[clear target = "goku"]
+[clear target = "tail"]
+
+[character id = "ss" x=160 y=-270 storage = "99999/supersaiyan" scale = 1.2 action = "expand" time = 0.1]
+[quake target ="ss" power = 5 time = 0.2]
+
+[character id = "tail2" x=300 y=-70  storage = "99999/tail" scale = 1.4 ]
+//[flip target = "tail2" h = 1]
+[quake target ="tail2" power = 4 time = 0.2]
+
+[character id = "goku2" x=170 y=-80 storage = "00324/heapup_e_01" scale = 1.3]
+//[flip target = "goku2" h = 1]
+[quake target ="goku2" power = 4 time = 0.2]
+
+[wait_anim target="ss"]
+
+//点滅（白）
+[se storage = "3025"]
+//点滅
+[balloon shape="008_02" x = 140 y = -30 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+[balloon shape="008_02" x = 140 y = -30 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+
+//フェードアウト（フェードアウトするコマ）
+[balloon x=130 y=40 shape="008_02" scale = 50.0 action = "fadein" time = 0.3]
+[wait time = 0.5]
+
+*004
+//-------------------------------------------------------------------------------
+//  超サイヤ人4に変身
+//-------------------------------------------------------------------------------
+//[se storage = "50"]
+
+[coma shape="S0001" bg = "bg_069_001"]
+
+[character x = 110 y = 30 storage = "00504/idl_side_e_01" scale = 1.5 angle = -3 action = "fadein" time = 0.1]
+
+//フェードイン（フェードインするコマ）
+[balloon x=130 y=40 shape="008_02" scale = 50]
+[wait time = 0.5]
+[fadeout target = ".bln" time = 1.5]
+[wait_anim target=".bln"]
+
+
+// 空のフキダシ（セリフがないコマを送るために使用）
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+*005
+//-------------------------------------------------------------------------------
+//  四星龍
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_069_001"]
+
+[character x = -300 y = -190 storage = "00518/heapup_e_01" scale = 1.1 action = "fadein" time = 0.1]
+[flip target = ".chara"  h=1]
+
+[balloon x=110 y=65 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+それがウワサに聞いた[r]
+超サイヤ人４か…
+[p]
+
+*006
+//-------------------------------------------------------------------------------
+//  超サイヤ人４孫悟空
+//-------------------------------------------------------------------------------
+[se storage = "50"]
+[coma shape="N0002R" bg = "bg_069_001"]
+
+[lwfobject id = "kaki1" storage= "kakimoji:ef_020" in="04" x=-30 y=100 scale = 2.2 angle = -15 action = "fadein" time = 0.1]
+[quake target = "kaki1" power = 15 time = 0.4]
+
+[character x = 140 y = -25 storage = "00504/atc_front_e_01" scale = 1.2 angle = 20 action = "fadein" time = 0.1]
+[quake target = ".chara" power = 6 time = 0.4]
+
+[balloon x = -150 y = -190 shape="006_02" scale = 0.9 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target = ".bln" power = 7 time = 0.2]
+思う存分 闘ってやる…[r]
+…さあ こい！！[p]
+
+//-------------------------------------------------------------------------------
+[stopbgm]

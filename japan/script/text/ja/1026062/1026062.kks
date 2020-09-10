@@ -1,0 +1,40 @@
+*start|スタート
+
+//"２6−６ボス前" 
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "013"]
+ 
+*001
+//-------------------------------------------------------------------------------
+//  "ドクター・ゲロ ドクター・コーチン"
+//-------------------------------------------------------------------------------
+//[se storage = "3022"]
+
+[coma shape="N0002L" bg = "bg_023_004"]
+
+//[lwfobject id = "kaki1" storage="kakimoji:ef_023" in="04" angle=30 x=50 y=-160 scale = 1.5]
+//[quake target = "kaki1" power = 15 time = 0.4]
+ 
+[character x = -50 y = -130 storage = "00546/heapup_p_01" scale = 0.9 action = "fadein" time = 0.1]
+ 
+[character x = -230 y = -135 storage = "00019/gero_heapup_p_01" scale = 1.4 action = "fadein" time = 0.1]
+ 
+[balloon x=120 y=190 shape="002_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+おろかな人類め…！
+[p]
+
+[balloon x=140 y=-220 shape="007_02" scale = 0.9 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 7 time = 0.2]
+我々の科学力の前に[r]
+ひれ伏すがいい！！
+[p]
+ 
+//-------------------------------------------------------------------------------
+[stopbgm]

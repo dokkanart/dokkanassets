@@ -1,0 +1,162 @@
+*start|スタート
+//ステージ3ゴール
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "013"]
+
+*01
+//-------------------------------------------------------------------------------
+//  南の界王神
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_076"]
+
+[character x=-240 y=-140 storage = "00596/heapup_p_01" scale = 1.3 action = "fadein" time = 0.1]
+
+[balloon x=90 y=70 shape="004_02" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 40]
+//[quake target =".bln" power = 3 time = 0.2]
+はあ…[r]
+はあ……
+[p]
+
+
+
+*02
+//-------------------------------------------------------------------------------
+//  魔人ブウ（純粋）
+//-------------------------------------------------------------------------------
+[se storage = "03"]
+[coma shape="N0004R" bg = "bg_000_014"]
+
+[character id="boo" x=170 y=-70 storage = "00232/card_002" scale = 2.5 angle = 0 action = "fadein" time = 0.1]
+
+
+//[character x = 200 y = -60 storage = "00232/card_002" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x=-140 y=20 shape="006_01" scale = 0.7 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 40]
+[quake target =".bln" power = 7 time = 0.2]
+シャア〜ッ！！
+[p]
+
+//点滅
+[balloon shape="008_02" x = 0 y = 0 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+
+*03
+//-------------------------------------------------------------------------------
+//  ブウが、南の界王神を吸収する。
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0003R" bg = "bg_000_076"]
+
+[character id = "buu1" x = 280 y = -100 storage = "00232/idl_side_p_01" scale = 0.5 action = "fadein" time = 0.1]
+[flip target ="buu1" h=1]
+
+[character id = "minami" x=-200 y=-190 storage = "00596/heapup_back_p_01" scale = 1.5 action = "fadein" time = 0.1]
+
+[wait time = 0.7] 
+
+
+
+//吸収
+[se storage = "3020"]
+
+[character id = "buu2" x = -120 y = -200 storage = "00231/atc_sp01_p_03" scale = 3.5 angle = 15 action = "expand" time = 0.3]
+//[quake target ="buu2" power = 5 time = 0.4]
+
+//[wait_anim target="buu2"]
+
+[move target ="buu2" x=-160 time = 0.3]
+[move target ="buu2" y=50 time = 0.3]
+
+[wait time = 0.3]
+
+[quake target ="buu2" power = 9 time = 0.2]
+
+[wait time = 0.2]
+
+[se storage = "3014"]
+
+[fadeout target = "buu2" time = 0.2]
+[fadeout target = "minami" time = 0.2]
+
+[character id = "buu3" x = -150 y = -60 storage = "00231/atc_sp01_p_07" scale = 2.3 angle = 0 action = "fadein" time = 0.1]
+[quake target ="buu3" power = 2 time = 100]
+
+[wait time = 0.7]
+
+
+
+
+//[balloon x=-80 y=70 shape="001_02" scale = 0 action = "fadein" time = 0.1]
+//[p]
+
+
+[se storage = "3025"]
+//点滅
+[balloon shape="008_02" x = 0 y = 0 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+[balloon shape="008_02" x = 0 y = 0 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+[balloon x=0 y=0 shape="008_02" scale = 50.0 action = "fadein" time = 0.5]
+[wait time = 0.7] 
+
+
+*04
+//-------------------------------------------------------------------------------
+//  魔人ブウ
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="S0001" bg = "bg_000_076"]
+
+[character x = 0 y = -40 storage = "00594/card_001" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x=0 y=0 shape="008_02" scale = 50]
+
+[wait time = 1]
+
+[fadeout target = ".bln" time = 2]
+
+[wait_anim target=".bln"]
+
+
+
+[balloon x=-180 y=300 shape="002_01" scale = 0 action = "fadein" time = 0.1]
+[p]
+
+
+*05
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002L" bg = "bg_000_014"]
+
+
+
+[balloon x=0 y=-30 shape="003_02" scale = 1.6 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 15]
+//[quake target =".bln" power = 7 time = 0.2]
+界王神の中で一番[r]
+たくましく強かった[r]
+南の界王神は[r]
+なんとブウに吸収[r]
+されてしまった…！[r]
+　[r]
+さらなる強さを[r]
+手に入れた魔人ブウの[r]
+暴走は加速していく…！
+[p]
+
+
+//-------------------------------------------------------------------------------
+[stopbgm]

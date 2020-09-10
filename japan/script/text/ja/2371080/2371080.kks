@@ -1,0 +1,143 @@
+*start|スタート
+
+//-------------------------------------------------------------------------------
+[bgm storage = "003"]
+//-------------------------------------------------------------------------------
+
+
+
+*001
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="S0001" bg = "bg_000_014"]
+
+[character id="sell1" x = -10 y = 30 storage = "00205/card_04" scale = 1.0 action = "fadein" time = 0.1]
+
+
+//[wait time = 0.7]
+ 
+[balloon x=0 y=-180 shape="003_01" scale = 1.4 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 17]
+//[quake target =".bln" power = 3 time = 0.2]
+精神と時の部屋での[r]
+修業を終えた[r]ベジータ親子と[r]
+セルの闘いが始まった[r]
+　[r]
+しかし[r]
+その闘いの最中[r]
+セルは完全体へと[r]
+進化してしまう…
+[p]
+
+*002
+//-------------------------------------------------------------------------------
+//  セル完全体 
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_004"]
+ 
+[character x = -180 y = -290 storage = "00205/atc_sp01_p_01" scale = 1.2 action = "fadein" time = 0.1]
+
+
+ 
+[balloon x=140 y=50 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+どうしたのだ？[r]
+さっきまでの勢いは…[r]
+笑えよべジータ
+[p]
+
+*003
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_000_024"]
+ 
+
+ 
+[balloon x=0 y=-20 shape="003_02" scale = 1.5 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 16]
+//[quake target =".bln" power = 3 time = 0.2]
+完全体の[r]
+圧倒的なパワーで[r]
+ベジータを[r]
+追いつめるセル…[r]
+　[r]
+とどめを刺そうとする[r]
+セルの前に[r]
+パワーを全開にした[r]
+トランクスが[r]
+立ちふさがる
+[p]
+
+[se storage = "3025"]
+//点滅
+[balloon shape="008_02" x = 0 y = 0 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+//[balloon shape="008_02" x = 0 y = 0 scale = 50 action = "fadein" time = 0.1]
+//[wait time = 0.3]
+//[clear target = ".bln"]
+
+*004
+//-------------------------------------------------------------------------------
+//  超トランクス
+//-------------------------------------------------------------------------------
+[se storage = "50"]
+[coma shape="S0001" bg = "bg_000_024"]
+
+[lwfobject id = "kaki1" storage="kakimoji:ef_009" x=-210 y=430 scale = 1.5 angle = 10 action = "fadein" time = 0.1]
+[quake target = "kaki1" power = 1 time = 300]
+
+
+[character id = "ss" x=0 y=50 storage = "99999/ef_aura_front" scale = 2.7 angle = -20 action = "fadein" time = 0.1]
+[paint target="ss" color="#FFBF00"]
+[quake target ="ss" power = 2 time = 300]
+
+
+[character id = "tra" x = 0 y = 110 storage = "00208/card_01" scale = 0.9 action = "fadein" time = 0.1]
+[quake target ="tra" power = 1 time = 300]
+
+[wait time = 1]
+
+ 
+[balloon x = 0 y = -310 shape="001_03" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+おまえを殺すぞ[r]
+セル…！
+[p]
+
+
+ 
+ *005
+//-------------------------------------------------------------------------------
+//  セル完全体 
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002L" bg = "bg_000_004"]
+ 
+[character x = -145 y = -270 storage = "00205/atc_sp01_p_01" scale = 1.2 action = "fadein" time = 0.1]
+
+
+ 
+[balloon x=140 y=70 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+ふっ…[r]
+強気なセリフだな[r]
+トランクス…
+[p]
+
+
+//-------------------------------------------------------------------------------
+[stopbgm]

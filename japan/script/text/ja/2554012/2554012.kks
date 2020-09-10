@@ -1,0 +1,36 @@
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+//[bgm storage = "026"]
+
+*001
+//-------------------------------------------------------------------------------
+//  ピッコロ
+//-------------------------------------------------------------------------------
+//[se storage = "3022"]
+[coma shape="S0001" bg = "bg_000_004"]
+
+[se storage = "3022"]
+
+[character id = "pico" x=-10 y=-5 storage = "00010/card_10" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon x=-0 y=480 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+オレはもともと[r]
+神と別れた[r]
+悪の化身なんだ
+[p]
+
+[balloon x=0 y=-400 shape="002_03" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+[quake target =".bln" power = 3 time = 0.2]
+悟空のように[r]
+あまくはない！
+[p]
+
+//[stopbgm]

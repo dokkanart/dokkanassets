@@ -1,0 +1,94 @@
+
+*start|スタート
+
+//"１４−８ZHARDボス前"
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "013"]
+
+//-------------------------------------------------------------------------------
+//  トランクス
+//-------------------------------------------------------------------------------
+[coma shape="N0001R" bg = "bg_023_004"]
+
+[character x = 210 y = -200 storage = "90000/wait_right_surprise" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon id = "01" x = -100 y = 80 shape="004_01" scale = 0.85 action = "fadein" time = 0.1]
+[wait_anim target = "01"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+セ…セル…！？
+[p]
+
+*coma2
+//-------------------------------------------------------------------------------
+//  セル（完全体）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+
+[coma shape="N0001L" bg = "bg_023_004"]
+
+[character x=-200 y=-200 storage = "00205/idl_side_p_01" scale = 1.1 action = "fadein" time = 0.1]
+
+[balloon x=120 y=130 shape="002_01" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 25]
+トランクスじゃないか…[r]
+セルゲームまで[r]
+あと５日だぞ？
+[p]
+
+[balloon x=150 y=-70 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 30]
+いいのか？[r]
+こんなところにいて…
+[p]
+
+*coma3
+//-------------------------------------------------------------------------------
+//  トランクス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_023_004"]
+
+[character x = 210 y = -200 storage = "90000/wait_right_anger_strong" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon id = "01" x = -100 y = 80 shape="004_01" scale = 0.85 action = "fadein" time = 0.1]
+[wait_anim target = "01"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+な…なに！？
+[p]
+
+
+*coma4
+//-------------------------------------------------------------------------------
+//  セル（完全体）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+
+[coma shape="N0002L" bg = "bg_023_004"]
+
+[character x=-200 y=-200 storage = "00205/idl_side_p_01" scale = 1.1 action = "fadein" time = 0.1]
+
+[balloon x=125 y=100 shape="002_03" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+ここは[r]
+ドクター・ゲロの研究所…[r]
+ここでわたしは[r]
+生まれたわけだ
+[p]
+
+[balloon x=130 y=-140 shape="002_02" scale = 0.95 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 25]
+ふふふ…[r]
+わたしとしたことが[r]
+感傷的になってしまったな
+[p]
+
+[stopbgm]

@@ -1,0 +1,126 @@
+*start|スタート
+//"ステージ９ボス前"
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "032"]
+
+*01
+//-------------------------------------------------------------------------------
+//  超サイヤ人ブロリー
+//-------------------------------------------------------------------------------
+[se storage = "3025"]
+[coma shape="S0001" bg = "bg_070_010"]
+
+[lwfobject id = "kaki1" storage="kakimoji:ef_020" x=-60 y=-240 scale = 2.5 angle = -20 action = "fadein" time = 0.1]
+[quake target = "kaki1" power = 15 time = 0.4]
+
+
+[character id = "2" x = 60 y = 0 storage = "00860/card_02" scale = 1.1 action = "fadein" time = 0.1]
+[quake target = "2" power = 7 time = 0.4]
+
+[character id = "1" x = 60 y = 0 storage = "00860/card_01" scale = 1.1 action = "fadein" time = 0.1]
+[quake target = "1" power = 7 time = 0.4]
+
+[balloon x=0 y=445 shape="007_02" scale = 0.7 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 40]
+[quake target =".bln" power = 7 time = 0.2]
+があああ！！
+[p]
+
+*02
+//-------------------------------------------------------------------------------
+//  ベジータ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_070_010"]
+
+[wait_anim target=".coma"]
+
+[character x=230 y=-160 storage = "00946/atc_energyball_p_02" scale = 1.0 action = "slide:right" time = 0.3]
+[flip target =".chara" h=1]
+
+[wait time = 0.2]
+
+[se storage = "3022"]
+
+[balloon x=-115 y=90 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+なにを[r]
+ぐだぐだやっている！[r]
+バカめ！！
+[p]
+
+
+[balloon x=-115 y=-100 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+１対１に[r]
+こだわっている場合じゃ[r]
+ないだろ！！
+[p]
+
+*03
+//-------------------------------------------------------------------------------
+//  超サイヤ人ゴッドSS孫悟空
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_070_010"]
+
+[character x=230 y=-120 storage = "00928/idl_side_e_01" scale = 0.9 action = "fade:100" time = 0.1]
+//[character x=230 y=-120 storage = "00928/idl_side_e_02" scale = 0.9 action = "fade:100" time = 0.1]
+
+
+[balloon x=-125 y=50 shape="001_02" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+//[quake target =".bln" power = 3 time = 0.2]
+くやしいが…[r]
+そうらしいな…
+[p]
+
+
+
+*04
+//-------------------------------------------------------------------------------
+//  "超サイヤ人ゴッドSS孫悟空 超サイヤ人ゴッドSSベジータ"
+//-------------------------------------------------------------------------------
+[se storage = "50"]
+[coma shape="N0002R" bg = "bg_070_010"]
+
+
+//[lwfobject id = "kaki1" storage="kakimoji:ef_008" x=-140 y=-250 scale = 1.6 angle = 5 action = "fadein" time = 0.1]
+//[quake target = "kaki1" power = 15 time = 0.4]
+
+
+
+[character id = "ve" x=50 y=-210 storage = "00930/atc_sp01_p_01" scale = 1.2 angle = 0-3 action = "fadein" time = 0.1]
+[flip target ="ve" h=1]
+[quake target ="ve" power = 4 time = 0.4]
+
+[character id = "gok" x=220 y=-210 storage = "00928/heapup_e_01" scale = 1.2 action = "fadein" time = 0.1]
+[quake target ="gok" power = 4 time = 0.4]
+
+[balloon shape="006_01" x = -190 y = 120 scale = 0.65 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 44]
+[quake target =".bln" power = 7 time = 0.2]
+だああぁぁ！！
+[p]
+
+//[se storage = "3025"]
+//点滅
+[balloon shape="008_02" x = 0 y = 0 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+[balloon shape="008_02" x = 0 y = 0 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+
+
+//-------------------------------------------------------------------------------
+[stopbgm]

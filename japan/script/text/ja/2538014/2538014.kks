@@ -1,0 +1,90 @@
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+//[bgm storage = "012"]
+
+*001
+//----------------------------------------------------------------------------
+// 元気玉が悟空にはね返ってくる。
+//----------------------------------------------------------------------------
+[se storage = "3038"]
+[coma shape="S0001" bg = "bg_000_059"]
+
+ 
+[lwfobject id = "kaki1" storage="kakimoji:ef_009" x=-150 y=-100 scale = 1.5 action = "fadein" time = 0.1]
+[quake target = "kaki1" power = 1 time = 300]
+
+[character id = "genki" x=-100 y=-100 storage = "99999/genkidama" scale = 2.0 action = "fadein" time = 0.1]
+[spin target="genki" velocity=5]
+//[quake target ="genki" power = 2 time = 300]
+
+[character x = 150 y = 120 storage = "00281/heapup_back_e_01" scale = 0.9 angle = -5 action = "fadein" time = 0.1]
+
+//[wait time = 0.1]
+
+
+[move target ="genki" x=0 time = 3]
+[move target ="genki" y=0 time = 3]
+
+
+[wait time = 2]
+
+[se storage = "03"]
+[lwfobject id = "kaki1" storage="kakimoji:ef_001" x=-50 y=350 scale = 3.5 angle = -20 action = "fadein" time = 0.1]
+[quake target = "kaki1" power = 7 time = 2]
+
+[se storage = "3025"]
+//点滅
+[balloon shape="008_02" x = 0 y = 0 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+//フェードアウト（フェードアウトするコマ）
+[balloon x=0 y=0 shape="008_02" scale = 50.0 action = "fadein" time = 0.5]
+[wait time = 0.7] 
+
+
+
+*002
+//-------------------------------------------------------------------------------
+//  その光の中から、身勝手の極意“兆”の悟空が現れる。
+//-------------------------------------------------------------------------------
+[coma shape="S0001" bg = "bg_000_047"]
+
+
+[balloon x=0 y=0 shape="008_02" scale = 50]
+[wait time = 1]
+//[fadeout target = ".bln" time = 2]
+//[wait_anim target=".bln"]
+
+//[lwfobject id = "kaki1" storage="kakimoji:ef_009" in="04" x=-120 y=-170 scale = 2.2 action = "fadein" time = 2.0]
+//[quake target = "kaki1" power = 2 time = 300]
+
+//[se storage = "3038"]
+
+[balloon id = "iwa2" x=0 y=-100 shape="010_23" scale = 1.7 action = "fadein" time = 2.0]
+[move target ="iwa2" y=0 time = 30]
+
+[balloon id = "iwa1" x=0 y=-200 shape="010_22" scale = 1.5 action = "fadein" time = 2.0]
+[move target ="iwa1" y=0 time = 30]
+
+[wait time = 2]
+
+[balloon id = "gok" x=0 y=0 shape="010_24" scale = 1.1 action = "fadein" time = 4.0]
+
+[wait_anim target="gok"]
+
+// 空のフキダシ（セリフがないコマを送るために使用）
+//[balloon x = 0 y = 0 shape="002_01" scale = 0]
+//[p]
+
+[balloon shape="001_02" x = -130 y = 470 scale = 0.8 action = "fadein" time = 0.1]
+[font size = 32]
+[wait_anim target=".bln"]
+//[quake target =".bln" power = 3 time = 0.2]
+ここからが[r]
+本当の勝負だ…
+[p]
+
+//[stopbgm]

@@ -1,0 +1,79 @@
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "013"]
+
+
+*001
+//-------------------------------------------------------------------------------
+//  バビディ兵（仮）
+//-------------------------------------------------------------------------------
+
+//[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_032"]
+
+[character x = -200 y = -120 storage = "00047/idl_side_p_01" scale = 1.2 action = "fadein" time = 0.1]
+[quake target =".chara" power = 5 time = 0.4]
+
+[wait_anim target=".chara"]
+
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+
+*002
+//-------------------------------------------------------------------------------
+//  ピッコロ
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_032"]
+
+[character x = 220 y = -100 storage = "00010/idl_side_e_02" scale = 1.6 action = "fadein" time = 0.1]
+
+[balloon x=-100 y=120 shape="002_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target =".bln" power = 3 time = 0.2]
+[font size = 28]
+ちっ…[r]
+雑兵でオレたちを[r]
+とめるつもりか[p]
+
+[balloon x=-120 y=-80 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 3 time = 0.2]
+[font size = 28]
+こざかしいマネ[r]
+しやがって…！[p]
+
+
+*003
+//-------------------------------------------------------------------------------
+//  プイプイ（仮）
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0002L" bg = "bg_000_032"]
+
+[character x = -175 y = -140 storage = "00044/idl_side_p_01" scale = 1.5 action = "fadein" time = 0.1]
+
+[balloon x=140 y=110 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 3 time = 0.2]
+[font size = 28]
+くふふふ…[r]
+いいことを[r]
+教えてやろう！[p]
+
+[balloon x=110 y=-180 shape="002_03" scale = 1.1 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 3 time = 0.2]
+[font size = 22]
+おまえたちが受けた[r]
+ダメージはエネルギーとなって[r]
+魔人ブウさまの封印された玉に[r]
+いくようになっているのだ！[p]
+
+[stopbgm]

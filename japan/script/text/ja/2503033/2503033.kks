@@ -1,0 +1,77 @@
+//ラウンド3開始
+
+*start|スタート
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+
+//[bgm storage = "013"]
+
+*001
+//-------------------------------------------------------------------------------
+//  魔人ブウ（南の界王神吸収）
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma id = "coma1" shape="S0001" bg = "bg_000_032"]
+
+
+[character x = 0 y = -40 storage = "00594/card_001" scale = 1.2 action = "fadein" time = 0.1]
+[quake target =".chara" power = 1 time = 300]
+
+[balloon x=-80 y=400 shape="004_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+あぐっ……！！
+[p]
+
+[balloon x=-30 y=-420 shape="004_04" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+ご…[r]
+こおおおお……
+[p]
+
+//[wait time = 0.7]
+
+//点滅
+[se storage = "3025"]
+//点滅
+[balloon shape="008_02" x = 140 y = -30 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+//[balloon shape="008_02" x = 140 y = -30 scale = 50 action = "fadein" time = 0.1]
+//[wait time = 0.3]
+//[clear target = ".bln"]
+
+//フェードアウト（フェードアウトするコマ）
+[balloon x=130 y=40 shape="008_02" scale = 50.0 action = "fadein" time = 0.2]
+[wait time = 0.5] 
+
+*002
+//-------------------------------------------------------------------------------
+//  魔人ブウが、魔人ブウ（純粋）に変身する。
+//-------------------------------------------------------------------------------
+[coma id = "coma1" shape="S0001" bg = "bg_000_032"]
+
+[character x = -20 y = -80 storage = "00232/card_004" scale = 1.2 action = "fadein" time = 0.1]
+
+//フェードイン（フェードインするコマ）
+[balloon x=130 y=40 shape="008_02" scale = 50]
+[wait time = 0.5]
+[fadeout target = ".bln" time = 1.0]
+[wait_anim target=".bln"]
+
+//[quake target =".chara" power = 5 time = 0.3]
+
+[balloon x=150 y=400 shape="006_01" scale = 0.75 action = "expnad" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+[quake target =".bln" power = 7 time = 0.2]
+カカカカ……！！
+[p]
+
+
+//-------------------------------------------------------------------------------
+//[stopbgm]

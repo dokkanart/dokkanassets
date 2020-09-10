@@ -1,0 +1,71 @@
+*start|スタート
+
+//"２２－７ゴール" 
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "028"]
+ 
+*001
+//-------------------------------------------------------------------------------
+//  ターレス
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0001L" bg = "bg_006_001"]
+ 
+[character x = -230 y = -140 storage = "00298/idl_side_p_01" scale = 1.3 action = "fadein" time = 0.1]
+ 
+[balloon x=120 y=80 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+ほう…[r]
+こいつらを倒すとは…
+[p]
+
+
+*002
+//-------------------------------------------------------------------------------
+//  天津飯
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_006_001"]
+ 
+[character x=270 y=-100 storage = "00257/ten_atc_energyball_e_02" scale = 1.0 action = "fadein" time = 0.1]
+ 
+[balloon x=-110 y=130 shape="001_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+高見の見物も[r]
+ここまでだ…！ 
+[p]
+ 
+[balloon x=-110 y=-80 shape="006_02" scale = 0.9 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 7 time = 0.2]
+次は[r]
+きさまの番だぞ！！ 
+[p]
+
+*003
+//-------------------------------------------------------------------------------
+//  ターレス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002L" bg = "bg_006_001"]
+ 
+//[character x = -230 y = -140 storage = "00298/idl_side_p_01" scale = 1.3 action = "fadein" time = 0.1]
+[character x = -200 y = -90 storage = "00298/idl_side_p_01" scale = 1.3 action = "fadein" time = 0.1]
+ 
+[balloon x=130 y=70 shape="002_03" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+神精樹の実を[r]
+食べ続けてきたこのオレに[r]
+勝てると思うか…？
+[p] 
+//-------------------------------------------------------------------------------
+[stopbgm]

@@ -1,0 +1,66 @@
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "008"]
+
+
+*001
+//-------------------------------------------------------------------------------
+//  ギニュー
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0001L" bg = "bg_004_001"]
+
+
+[character x = -220 y = -80 storage = "00017/heapup_p_01" scale = 1.4 action = "fadein" time = 0.1]
+
+[balloon x=100 y=120 shape="006_01" scale = 0.9 action = "expand" time = 0.1]
+[font size = 28]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 7 time = 0.2]
+おまえたち！！[r]
+フリーザさまの前で[r]
+みっともない闘いは[r]
+するなよ！？[p]
+
+
+*002
+//-------------------------------------------------------------------------------
+//  ギニュー特戦隊
+//-------------------------------------------------------------------------------
+[se storage = "40"]
+[coma shape="N0002L" bg = "bg_004_001"]
+
+//リクーム
+
+[character x=210 y=0 storage = "00031/card_02" scale = 0.8 action = "fadein" time = 0.1]
+//[wait_anim target=".chara"]
+
+//バータ
+
+[character x=-220 y=10 storage = "00033/card_02" scale = 0.8 action = "fadein" time = 0.1]
+//[wait_anim target=".chara"]
+
+//ジース
+
+[character x=160 y=-100 storage = "00034/card_01" scale = 1.4 action = "fadein" time = 0.1]
+//[wait_anim target=".chara"]
+
+//グルド
+
+[character x=-100 y=-170 storage = "00032/card_01" scale = 0.8 action = "fadein" time = 0.1]
+//[wait_anim target=".chara"]
+
+
+
+
+[balloon x=-0 y=120 shape="006_01" scale = 0.7 action = "expand" time = 0.1]
+[font size = 44]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 7 time = 0.2]
+オーッ！！
+[p]
+
+[stopbgm]

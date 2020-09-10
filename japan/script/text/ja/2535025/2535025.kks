@@ -1,0 +1,52 @@
+*start|スタート
+
+//豪炎と爆煙の幻魔人
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+//[bgm storage = "012"]
+
+*001
+//----------------------------------------------------------------------------
+// ヒルデガーン（完全体）
+//-------------------------------------------------------------------------------
+[se storage = "50"]
+[coma id = "coma1" shape="S0001" bg = "bg_015_002"]
+
+
+
+
+[lwfobject id = "kaki1" storage="kakimoji:ef_013" x=0 y=-50 scale = 2.5 angle = 10 action = "fadein" time = 0.1]
+[quake target = "kaki1" power = 10 time = 0.5]
+
+[character x = 0 y = 30 storage = "00311/card_01" scale = 1.5 angle = -90 action = "fadein" time = 0.1]
+[quake target = ".chara" power = 13 time = 0.5]
+
+[balloon shape="006_01" x = -150 y = 450 scale = 0.8 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+[quake target =".bln" power = 7 time = 0.2]
+グオオオオッ！！
+[p]
+
+
+*002
+//-------------------------------------------------------------------------------
+//  ホイ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_015_002"]
+
+[character id = "hoi" x = 200 y = -80 storage = "00312/card_01" scale = 1.0 action = "fadein" time = 0.1]
+
+
+[balloon shape="002_03" x = -140 y = 70 scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+ヒーヒヒヒヒッ！[r]
+やってしまえーっ！
+[p]
+
+//[stopbgm]

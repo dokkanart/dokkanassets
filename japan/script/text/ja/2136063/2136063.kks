@@ -1,0 +1,62 @@
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "008"]
+
+*01
+//-------------------------------------------------------------------------------
+//  ナッパ
+//-------------------------------------------------------------------------------
+
+//[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_021"]
+
+[character x = -220 y = -100 storage = "00015/heapup_p_01" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x=110 y=120 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target =".bln" power = 3 time = 0.2]
+[font size = 28]
+ピッコロとかいう[r]
+ナメック星人だけは[r]
+虫の息ていどに[r]
+生かしておいてやる…[p]
+
+[balloon x=115 y=-90 shape="002_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target =".bln" power = 3 time = 0.2]
+[font size = 28]
+ドラゴンボールのことを[r]
+もっと聞き出さんとな…[p]
+
+
+*02
+//-------------------------------------------------------------------------------
+//  ピッコロ
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_000_021"]
+
+[character x = 120 y = -130 storage = "00056/heapup_e_01" scale = 0.9 action = "fadein" time = 0.1]
+
+[balloon x=-155 y=130 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target =".bln" power = 3 time = 0.2]
+[font size = 28]
+これほどまでの[r]
+怪物だとは[r]
+思わなかった…[p]
+
+[balloon x=-140 y=-180 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target =".bln" power = 3 time = 0.2]
+[font size = 28]
+この前に来た[r]
+サイヤ人をはるかに[r]
+上回ってやがる…[p]
+
+
+[stopbgm]

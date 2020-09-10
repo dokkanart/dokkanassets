@@ -1,0 +1,299 @@
+*start|スタート
+
+//"２3−４スタート" 
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "013"]
+ 
+*001
+//-------------------------------------------------------------------------------
+//  トランクス
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_004"]
+ 
+[character x = 210 y = -200 storage = "90000/wait_right_anger_strong" scale = 1.2 action = "fadein" time = 0.1]
+ 
+[balloon x=-90 y=90 shape="001_01" scale = 0.75 action = "fadein" time = 0.1]
+[font size = 36]
+[wait_anim target=".bln"]
+//[quake target =".bln" power = 3 time = 0.2]
+はあ…[r]
+はあ……[p]
+
+*002
+//-------------------------------------------------------------------------------
+//  人造人間18号
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_004"]
+ 
+[character x = -200 y = -190 storage = "00020/idl_side_p_03" scale = 1.2 action = "fadein" time = 0.1]
+ 
+[balloon x=120 y=80 shape="002_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+だいぶ 息が[r]
+あがっているようね
+[p]
+
+*003
+//-------------------------------------------------------------------------------
+//  人造人間17号
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_004"]
+ 
+[character x = -170 y = -120 storage = "00021/idl_side_p_01" scale = 1.0 action = "fadein" time = 0.1]
+ 
+[balloon x=120 y=120 shape="002_01" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+仲間と別れたのは[r]
+失敗だったんじゃないか？ 
+[p]
+ 
+[balloon x=130 y=-90 shape="002_03" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+[$player]…[r]
+といったか… あいつの[r]
+パワーがないとキツいだろ 
+[p]
+
+*004
+//-------------------------------------------------------------------------------
+//  トランクス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_004"]
+ 
+[character x = 210 y = -200 storage = "90000/wait_right_anger" scale = 1.2 action = "fadein" time = 0.1]
+ 
+[balloon x=-100 y=70 shape="001_02" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 23]
+//[quake target =".bln" power = 3 time = 0.2]
+…たしかにオレも[r]
+[$player]さんの[r]
+頼もしさに知らず知らず[r]
+甘えていたかもしれないな…
+[p]
+
+*005
+//-------------------------------------------------------------------------------
+//  人造人間17号
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_004"]
+ 
+[character x = -170 y = -120 storage = "00021/idl_side_p_01" scale = 1.0 action = "fadein" time = 0.1]
+ 
+[balloon x=120 y=80 shape="002_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+む！？[r]
+あいつは……
+[p]
+
+*006
+//-------------------------------------------------------------------------------
+//  トランクス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_000_004"]
+ 
+[character x=170 y=-325 storage = "90000/wait_right_surprise" scale = 1.4 action = "fadein" time = 0.1]
+ 
+[balloon x=-120 y=80 shape="006_02" scale = 0.8 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 7 time = 0.2]
+し…[r]
+しまった！！
+[p]
+
+*007
+//-------------------------------------------------------------------------------
+//  セルが現れる。
+//-------------------------------------------------------------------------------
+[se storage = "20"]
+[coma shape="S0001" bg = "bg_000_004"]
+
+//セルが現れる。
+//カード絵 
+[character x = -30 y = 30 storage = "00006/card_01" scale = 0.9 action = "fadein" time = 0.1]
+ 
+
+ 
+// 空のフキダシ（セリフがないコマを送るために使用）
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+
+*008
+//-------------------------------------------------------------------------------
+//  トランクス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_004"]
+ 
+[character x = 210 y = -200 storage = "90000/wait_right_anger_strong" scale = 1.2 action = "fadein" time = 0.1]
+ 
+[balloon x=-100 y=70 shape="004_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+セル……！！
+[p]
+
+*009
+//-------------------------------------------------------------------------------
+//  人造人間18号
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_004"]
+ 
+[character x = 180 y = -130 storage = "00020/idl_side_e_01" scale = 1.1 action = "fadein" time = 0.1]
+ 
+[balloon x=-120 y=70 shape="002_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+あいつは[r]
+あのときの化物…
+[p]
+
+*010
+//-------------------------------------------------------------------------------
+//  人造人間17号
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_004"]
+ 
+[character x = 170 y = -120 storage = "00021/idl_side_e_01" scale = 1.0 action = "fadein" time = 0.1]
+ 
+[balloon x=-120 y=70 shape="002_03" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+また あいつか…
+[p]
+
+*011
+//-------------------------------------------------------------------------------
+//  セル（第一形態）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_004"]
+ 
+[character x = -250 y = -80 storage = "00006/idl_side_p_02" scale = 1.5 action = "fadein" time = 0.1]
+ 
+[balloon x=130 y=80 shape="002_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+見つけたぞ…！[r]
+１７号…１８号…！！
+[p]
+
+*012
+//-------------------------------------------------------------------------------
+//  ベジータと[$player]が現れる。
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_004"]
+
+//ベジータと[$player]が現れる。 
+[se storage = "3022"]
+[character x = 500 y = -60 storage = "00004/idl_side_e_02" scale = 1.1 action = "fadein" time = 0.1]
+[move target =".chara" x=180 time = 0.3]
+
+[wait time = 0.1]
+
+[lwfobject id = "kaki1" storage="kakimoji:ef_023" in="04" x=-85 y=80 angle = -10 scale = 1.6]
+[quake target = "kaki1" power = 15 time = 0.2]
+
+[wait_anim target=".chara"]
+ 
+// 空のフキダシ（セリフがないコマを送るために使用）
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+
+*013
+//-------------------------------------------------------------------------------
+//  トランクス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_004"]
+ 
+[character x = 210 y = -200 storage = "90000/wait_right_surprise" scale = 1.2 action = "fadein" time = 0.1]
+ 
+[balloon x=-100 y=70 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+ベジータさん！[r]
+[$player]さん！
+[p]
+
+*014
+//-------------------------------------------------------------------------------
+//  人造人間17号
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_004"]
+ 
+[character x = 170 y = -120 storage = "00021/idl_side_e_01" scale = 1.0 action = "fadein" time = 0.1]
+ 
+[balloon x=-100 y=80 shape="002_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+ベジータ…
+[p]
+
+*015
+//-------------------------------------------------------------------------------
+//  ベジータ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_004"]
+ 
+[character x = 180 y = -60 storage = "00004/idl_side_e_02" scale = 1.1 action = "fadein" time = 0.1]
+ 
+[balloon x=-120 y=90 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+…このガキたちが[r]
+１７号と１８号って[r]
+やつか…？
+[p]
+
+*016
+//-------------------------------------------------------------------------------
+//  トランクス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_000_004"]
+ 
+[character x=170 y=-325 storage = "90000/wait_right_anger_strong" scale = 1.4 action = "fadein" time = 0.1]
+ 
+[balloon x=-120 y=70 shape="004_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+…くそ……[r]
+なにか この事態を[r]
+収拾させる方法は……
+[p]
+ 
+//-------------------------------------------------------------------------------
+[stopbgm]

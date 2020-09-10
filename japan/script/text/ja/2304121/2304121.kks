@@ -1,0 +1,134 @@
+
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "013"]
+
+*coma1
+//-------------------------------------------------------------------------------
+//  フリーザ（第一形態）
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_016"]
+
+[character x=-190 y=-90 storage = "00058/idl_side_p_01" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon x = 110 y = 100 shape="002_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][font size = 32]
+孫悟空は[r]
+まだですか？
+[p]
+
+*coma2
+//-------------------------------------------------------------------------------
+//  クリリン（第一形態）
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0001R" bg = "bg_004_001"]
+
+[character x = 240 y = -20 storage = "00010/idl_side_e_02" scale = 1.2 action = "fadein" time = 0.1]
+
+[character x = 130 y = -70 storage = "00009/idl_side_e_02" scale = 1.5 action = "fadein" time = 0.1]
+
+[balloon x = -120 y = 100 shape="004_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+も…もうすぐ来る！[r]
+待てよ…！
+[p]
+
+*coma3
+//-------------------------------------------------------------------------------
+//  フリーザ（第一形態）
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_016"]
+
+[character x=-190 y=-90 storage = "00058/idl_side_p_01" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon x = 120 y = 130 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][font size = 28]
+おや？　あなた…[r]
+たしか殺した覚えが[r]
+ありますよ
+[p]
+
+[balloon x = 120 y = -70 shape="002_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][font size = 28]
+あなたも[r]
+ドラゴンボールで[r]
+甦ったようですね
+[p]
+
+*coma4
+//-------------------------------------------------------------------------------
+//  フリーザ（第一形態）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_000_016"]
+
+//[lwfobject id = "kaki2" storage="kakimoji:ef_009" in="04" x=210 y=-180 scale = 2.2]
+//[quake target = "kaki2" power = 1 time = 300]
+
+[character x=-170 y=-90 storage = "00058/card_01" scale = 1.0 action = "fadein" time = 0.1]
+
+
+[balloon x = 120 y = 110 shape="002_01" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][font size = 24]
+まあいいでしょう…[r]
+この時が来るのを[r]
+長い間待ちましたからね
+[p]
+
+
+
+[balloon x = 70 y = -190 shape="002_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][font size = 28]
+あと少しくらい[r]
+待ってあげますか…
+[p]
+
+//終わりのフェードアウト
+[balloon x=130 y=40 shape="008_03" scale = 50.0 action = "fadein" time = 0.5]
+[wait time = 3.5]
+
+[stopbgm]
+
+
+//----------------------------------------------------------------------------------------------------
+
+//フェードアウト
+//[balloon x=130 y=40 shape="008_03" scale = 50.0 action = "fadein" time = 1.5]
+
+//[wait time = 1.5]
+
+//空のフキダシ
+//[balloon x = 0 y = 0 shape="002_01" scale = 0]
+//[p]
+
+
+
+
+
+
+//説明
+//[balloon x = -0 y =250 shape="008_17" scale = 0.95 action = "fadein" time = 2]
+
+//[wait_anim target=".bln"]
+
+//[se storage = "3034"]
+
+//[balloon x = -130 y = 650 shape="002_02" scale = 0.9 action = "fadein" time = 0.1]
+//[wait_anim target=".bln"][font size = 28]
+//お見せしましょう…
+//[p]
+
+
+
+//[balloon x = 125 y = -120 shape="002_01" scale = 1.0 action = "fadein" time = 0.1]
+//[wait_anim target=".bln"][font size = 24]
+//[quake target = ".bln" power = 3 time = 0.2]
+//わたしの更なる進化を！！
+//[p]

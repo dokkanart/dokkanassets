@@ -1,0 +1,111 @@
+*start|スタート
+
+//"２5−１ボス前" 
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "002"]
+ 
+*001
+//-------------------------------------------------------------------------------
+//  トランクス
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_004"]
+ 
+[character x = 210 y = -200 storage = "90000/wait_right_anger" scale = 1.2 action = "fadein" time = 0.1]
+ 
+[balloon x=-80 y=120 shape="001_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+か…感じない…[r]
+父さんの気も[r]
+ターレスの気も…
+[p]
+
+[balloon x=-70 y=-80 shape="001_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+もう闘いは[r]
+終わったのか…[r]
+それとも……
+[p]
+
+*002
+//-------------------------------------------------------------------------------
+//  アボ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_004"]
+
+[character x = -220 y = -120 storage = "00650/atc_sp01_p" scale = 1.0 action = "fadein" time = 0.1]
+ 
+[balloon x=100 y=90 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+お？[r]
+なんだ おまえたちは…
+[p]
+ 
+[balloon x=90 y=-90 shape="002_02" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+//[quake target =".bln" power = 3 time = 0.2]
+地球人か？
+[p]
+
+*003
+//-------------------------------------------------------------------------------
+//  トランクス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_004"]
+ 
+[character x = 210 y = -200 storage = "90000/wait_right_surprise" scale = 1.2 action = "fadein" time = 0.1]
+
+ 
+[balloon x=-100 y=100 shape="001_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+その戦闘服は[r]
+まさか…
+[p]
+ 
+[balloon x=-80 y=-90 shape="001_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+フリーザの手の者か！？
+[p]
+
+*004
+//-------------------------------------------------------------------------------
+//  アボ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002L" bg = "bg_000_004"]
+
+[character x = -150 y = -90 storage = "00650/heapup_p_01" scale = 1.2 action = "fadein" time = 0.1]
+ 
+[balloon x=130 y=100 shape="006_01" scale = 0.65 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 44]
+[quake target =".bln" power = 7 time = 0.2]
+なに！？
+[p]
+ 
+[balloon x=130 y=-190 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 7 time = 0.2]
+おまえたち[r]
+なんでフリーザさまの[r]
+名前を…！？
+[p]
+ 
+//-------------------------------------------------------------------------------
+[stopbgm]

@@ -1,0 +1,84 @@
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+//[bgm storage = "012"]
+
+*001
+//-------------------------------------------------------------------------------
+//  トランクス(幼年期)&孫悟天(幼年期)
+//-------------------------------------------------------------------------------
+[se storage = "40"]
+[coma shape="N0003R" bg = "bg_000_024"]
+
+[character x = 0 y = -90 storage = "00276/atc_sp01_p_01" scale = 1.0 action = "fadein" time = 0.1 priority=100]
+[quake target =".chara" power = 5 time = 0.4]
+
+[balloon x= 0 y=120 shape="006_01" scale = 0.75 action = "expand" time = 0.1 priority=110]
+[wait_anim target=".bln"]
+[font size = 36]
+[quake target =".bln" power = 7 time = 0.2]
+フュ〜…ジョン！[r]
+はっ！！
+//[p]
+
+[wait_anim target=".chara"]
+
+[character id = "ki" x = 0 y = -100 storage = "99999/ef_beam_circle" scale = 2.5 action = "expand" time = 0.5 mask = "inside" priority=80]
+[spin target="ki" velocity=150]
+//[paint target="ki" color="#aaffcc"]
+
+[character id = "ki2" x = 0 y = -100 storage = "99999/04_syougeki" scale = 2.5 action = "expand" time = 0.5 mask = "inside" priority=90]
+[spin target="ki2" velocity=-150]
+
+[wait time = 1.0]
+
+//点滅
+[se storage = "3025"]
+[balloon shape="008_02" x = 0 y = 0 scale = 50 action = "fadein" time = 0.1 priority=120]
+[wait time = 0.3]
+[clear target = ".bln"]
+[balloon shape="008_02" x = 0 y = 0 scale = 50 action = "fadein" time = 0.1 priority=120]
+[wait time = 0.3]
+[clear target = ".bln"]
+
+//フェードアウト（フェードアウトするコマ）
+[balloon x=0 y=0 shape="008_02" scale = 50.0 action = "fadein" time = 0.5 priority=120]
+[wait time = 0.7]
+
+
+*002
+//-------------------------------------------------------------------------------
+//  ゴテンクス
+//-------------------------------------------------------------------------------
+//[se storage = "3022"]
+[coma shape="S0001" bg = "bg_000_035"]
+
+[character x= 0 y= -10 storage = "00276/card_07" scale = 1.0 action = "fadein" time = 0.1]
+
+//フェードイン（フェードインするコマ）
+[balloon x=0 y=0 shape="008_02" scale = 50]
+[wait time = 1]
+[fadeout target = ".bln" time = 2]
+[wait_anim target=".bln"]
+
+[balloon x=-0 y=445 shape="001_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+へへ…わるいな[r]
+ムダ口たたいてるヒマ[r]
+ねえんだ
+[p]
+
+[balloon x=-0 y= -455 shape="001_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+てっとりばやく[r]
+かたづけさせて[r]もらうぜ！
+[p]
+
+
+//[stopbgm]

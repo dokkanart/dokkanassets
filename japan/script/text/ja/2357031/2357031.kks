@@ -1,0 +1,173 @@
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "011"]
+
+
+*01
+//-------------------------------------------------------------------------------
+//  六星龍
+//-------------------------------------------------------------------------------
+[se storage = "3029"]
+[coma shape="N0003R" bg = "bg_000_014"]
+
+[lwfobject id = "kaki1" storage="kakimoji:ef_013" x=60 y=-110 scale = 2.0 angle = 20 action = "fadein" time = 0.1]
+[quake target = "kaki1" power = 8 time = 0.4]
+
+[character id = "k2" x = -120 y = -100 storage = "99999/kamehameha_r" scale = 8.6 angle = 30 action = "fade:100" time = 0.1]
+[quake target ="ki2" power = 3 time = 300]
+
+[character id = "6" x = -120 y = -100 storage = "00520/dam_roll_p_01" scale = 1.6 action = "fadein" time = 0.1]
+[quake target ="6" power = 1 time = 300]
+
+[character id = "ki" x = -120 y = -100 storage = "99999/kamehameha_r" scale = 8.6 angle = 30 action = "fade:50" time = 0.1]
+[quake target ="ki" power = 3 time = 300]
+
+[balloon x=140 y=100 shape="007_02" scale = 0.8 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 7 time = 0.2]
+ぐわああぁぁ！！
+[p]
+
+
+
+//[se storage = "3025"]
+//点滅
+[balloon shape="008_02" x = 0 y = 0 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+//[fadeout target = "6" time = 0.7]
+[balloon shape="008_02" x = 0 y = 0 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+
+//[wait_anim target="6"]
+
+
+*02
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0003R" bg = "bg_000_016"]
+
+//[character x = -120 y = -100 storage = "00025/atc_down_p_01" scale = 1.6 action = "fadein" time = 0.1]
+
+[balloon x=0 y=0 shape="003_02" scale = 1.6 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 15]
+//[quake target =".bln" power = 3 time = 0.2]
+風と空気を操る[r]
+六星龍の攻撃には[r]
+さすがの悟空も大苦戦…[r]
+　[r]
+しかし[r]
+六星龍の弱点を見つけた[r]
+パンとの連携により[r]
+なんとか六星龍を[r]
+討ち倒すのだった！
+[p]
+
+
+
+
+*03
+//-------------------------------------------------------------------------------
+//  パン(GT)
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_016"]
+
+[character x = -180 y = -100 storage = "00326/card_01" scale = 1.1 action = "fadein" time = 0.1]
+
+[balloon x=120 y=-10 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+ねえ！ 見た見た？[r]
+わたしのかめはめ波！
+[p]
+
+
+
+*04
+//-------------------------------------------------------------------------------
+//  孫悟空（GT）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_016"]
+
+[character x=320 y=-15 storage = "99999/tail" scale = 1.3 angle = -0 action = "fadein" time = 0.1]
+[character x=200 y=-50 storage = "00324/idl_side_e_01" scale = 1.1 action = "fadein" time = 0.1]
+
+
+[balloon x=-120 y=50 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+おう！[r]
+今のはけっこう[r]
+サマになってたぞ！
+[p]
+
+
+
+*05
+//-------------------------------------------------------------------------------
+//  パン(GT)
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_016"]
+
+[character x = -180 y = -100 storage = "00326/card_01" scale = 1.1 action = "fadein" time = 0.1]
+
+[balloon x=130 y=90 shape="001_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+へへへ…[r]
+もうカンペキでしょ？
+[p]
+
+
+[balloon x=110 y=-100 shape="001_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+わたしだって[r]
+やるときには[r]
+やるのよ！？
+[p]
+
+
+
+*06
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_000_024"]
+
+[balloon x=-175 y=-30 shape="010_06" scale = 3.0 action = "fadein" time = 0.1]
+
+[balloon x=140 y=-20 shape="003_02" scale = 1.4 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 18]
+//[quake target =".bln" power = 3 time = 0.2]
+こうして３つ目の[r]
+ドラゴンボールも[r]
+手に入れた悟空たち[r]
+　[r]
+残る邪悪龍は[r]
+あと４匹だ…！
+[p]
+
+
+
+
+
+//-------------------------------------------------------------------------------
+[stopbgm]

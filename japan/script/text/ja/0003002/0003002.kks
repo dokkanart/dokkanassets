@@ -1,0 +1,328 @@
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+//[bgm storage = "012"]
+
+
+*01
+//-------------------------------------------------------------------------------
+// 亀仙人
+//-------------------------------------------------------------------------------
+
+//[se storage = "04"]
+[coma shape="S0001" bg = "bg_026_001"]
+
+
+[character x = -120 y = 0 storage = "00023/card_03" scale = 1.2 action = "fadein" time = 0.1]
+
+[wait_anim target=".chara"]
+
+[balloon x=140 y=290 shape="001_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[quake target = ".bln" power = 3 time = 0.2]
+[font size = 28]
+ハロー！[r]
+わしが亀仙人じゃ！[p]
+
+[balloon x=125 y=-120 shape="001_02" scale = 1 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target = ".bln" power = 3 time = 0.2]
+[font size = 24]
+「スタートダッシュガシャ」で[r]
+強い仲間と出会えたかのう？[p]
+
+
+*02
+//-------------------------------------------------------------------------------
+//  亀仙人
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_026_001"]
+
+[character x = -180 y = -100 storage = "00023/card_04" scale = 0.8 action = "fadein" time = 0.1]
+
+[balloon x=110 y=150 shape="001_02" scale = 1.1 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target = ".bln" power = 3 time = 0.2]
+[font size = 20]
+「スタートダッシュガシャ」で[r]
+仲間になったSSRキャラクターを[r]
+リーダーに編成してみるのじゃ！[p]
+
+[balloon x=135 y=-80 shape="001_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target = ".bln" power = 3 time = 0.2]
+[font size = 32]
+チームが[r]
+強化されるぞ！[p]
+
+
+//---------------------------------------------
+
+[if !$is_cleared]    
+// 達成済みか否かは $is_cleared 変数に入っているので、それを用いて if 分岐します。
+
+//---------------------------------------------
+
+*explain|任務内容詳細説明    // ラベルを付けておくと、テスターで見やすくなります。
+
+// ******************************************************
+//  ここには、
+//  まだ、このミッションを達成していない場合の展開を記述します。
+// ******************************************************
+
+*explain|任務内容詳細説明
+*03_mitatu
+//-------------------------------------------------------------------------------
+//  占いババ
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_026_001"]
+
+
+
+[character x = 190 y = -80 storage = "90003/uranai_baba" scale = 1.4 action = "fadein" time = 0.1]
+
+[balloon x=-100 y=110 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target = ".bln" power = 3 time = 0.2]
+[font size = 28]
+リーダーに編成された[r]
+キャラクターは[r]
+リーダースキルが[r]
+発動するんじゃ[p]
+
+[balloon x=-125 y=-100 shape="001_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target = ".bln" power = 3 time = 0.2]
+[font size = 28]
+リーダースキルは[r]
+チーム全体に効果が[r]
+あるのだぞ！[p]
+
+*04_mitatu
+//-------------------------------------------------------------------------------
+//  亀仙人
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_026_001"]
+
+[character x = -180 y = -100 storage = "00023/card_04" scale = 0.8 action = "fadein" time = 0.1]
+[character x = -220 y = 110 storage = "99999/ase" scale = 0.6 action = "fadein" time = 0.1]
+
+
+[balloon x=125 y=80 shape="004_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[quake target = ".bln" power = 3 time = 0.2]
+[font size = 28]
+姉ちゃん[r]
+どうしてここへ！？[p]
+
+
+*05_mitatu
+//-------------------------------------------------------------------------------
+//  占いババ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_026_001"]
+
+
+
+[character x = 190 y = -80 storage = "90003/uranai_baba" scale = 1.4 action = "fadein" time = 0.1]
+
+[balloon x=-90 y=110 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target = ".bln" power = 3 time = 0.2]
+[font size = 28]
+ひっひっひ…[r]
+ひさしぶりじゃのう[p]
+
+[balloon x=-125 y=-80 shape="001_03" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target = ".bln" power = 3 time = 0.2]
+[font size = 24]
+強い戦士がいるなら[r]
+スカウトしようと思ってな[p]
+
+*06_mitatu
+//-------------------------------------------------------------------------------
+//  亀仙人
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+
+[coma shape="N0002L" bg = "bg_026_001"]
+
+[character x = -150 y = -125 storage = "00023/card_04" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon x=140 y=120 shape="001_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target = ".bln" power = 3 time = 0.2]
+[font size = 28]
+あいかわらず[r]
+がめついのう[r]
+姉ちゃんは……[p]
+
+[balloon x=125 y=-160 shape="001_03" scale = 1.1 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[quake target = ".bln" power = 3 time = 0.2]
+[font size = 20]
+…まあ ともかく[r]
+リーダー編成をして[r]
+その力を確かめてみるのじゃ！[p]
+
+//---------------------------------------------
+[else]
+*has_been_cleared|すでに達成済み    // ラベルを付けておくと、テスターでチェックしやすくなります。
+
+// ******************************************************
+//  ここには、
+//  すでに、このミッションを達成している場合の展開を記述します。
+// ******************************************************
+
+
+*has_been_cleared|すでに達成済み    
+*07
+//-------------------------------------------------------------------------------
+// 占いババ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_026_001"]
+
+
+
+[character x = 190 y = -80 storage = "90003/uranai_baba" scale = 1.4 action = "fadein" time = 0.1]
+
+[balloon x=-100 y=100 shape="001_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target = ".bln" power = 3 time = 0.2]
+[font size = 28]
+まてまて[r]
+よく見てみるのじゃ[p]
+
+[balloon x=-120 y=-110 shape="001_02" scale = 1 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target = ".bln" power = 3 time = 0.2]
+[font size = 24]
+こやつ もう[r]
+SSRキャラクターを[r]
+リーダーに編成したことが[r]
+あるようじゃぞ？[p]
+
+*08
+//-------------------------------------------------------------------------------
+//  亀仙人
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_026_001"]
+
+[character x = -180 y = -100 storage = "00023/card_04" scale = 0.8 action = "fadein" time = 0.1]
+[character x = -220 y = 110 storage = "99999/ase" scale = 0.6 action = "fadein" time = 0.1]
+
+
+[balloon x=125 y=80 shape="004_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[quake target = ".bln" power = 3 time = 0.2]
+[font size = 28]
+姉ちゃん[r]
+どうしてここへ！？[p]
+
+*08
+//-------------------------------------------------------------------------------
+//  占いババ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_026_001"]
+
+
+
+[character x = 190 y = -80 storage = "90003/uranai_baba" scale = 1.4 action = "fadein" time = 0.1]
+
+
+[balloon x=-100 y=110 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target = ".bln" power = 3 time = 0.2]
+[font size = 28]
+ひっひっひ…[r]
+わしは なんでも[r]
+お見通しじゃ！[p]
+
+[balloon x=-125 y=-100 shape="001_03" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target = ".bln" power = 3 time = 0.2]
+[font size = 24]
+強い戦士がいるなら[r]
+スカウトしようと思ってな[p]
+
+*09
+//-------------------------------------------------------------------------------
+//  亀仙人
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_026_001"]
+
+[character x = -180 y = -100 storage = "00023/card_04" scale = 0.8 action = "fadein" time = 0.1]
+[character x = -220 y = 110 storage = "99999/ase" scale = 0.6 action = "fadein" time = 0.1]
+
+[balloon x=115 y=90 shape="001_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target = ".bln" power = 3 time = 0.2]
+[font size = 28]
+あいかわらず[r]
+がめついのう[r]
+姉ちゃんは……[p]
+
+*10
+//-------------------------------------------------------------------------------
+//  占いババ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_026_001"]
+
+
+
+[character x = 190 y = -80 storage = "90003/uranai_baba" scale = 1.4 action = "fadein" time = 0.1]
+
+[balloon x=-125 y=80 shape="001_02" scale = 1 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target = ".bln" power = 3 time = 0.2]
+[font size = 24]
+リーダーに編成された[r]
+キャラクターは[r]
+リーダースキルが[r]
+発動するぞ[p]
+
+*11
+//-------------------------------------------------------------------------------
+//  亀仙人
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0002L" bg = "bg_026_001"]
+
+
+
+[character x = -160 y = -110 storage = "00023/card_02" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x=125 y=100 shape="001_03" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[quake target = ".bln" power = 3 time = 0.2]
+[font size = 24]
+リーダースキルは[r]
+チーム全体に効果がある！[r]
+うまく活用するのじゃ！[p]
+
+[endif]
+*conclusion|結び
+
+//---------------------------------------------
+
+
+
+//[stopbgm]

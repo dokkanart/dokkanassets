@@ -1,0 +1,56 @@
+
+*start|スタート
+
+//"１５−１ゴール"
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "005"]
+
+//-------------------------------------------------------------------------------
+//  トランクス
+//-------------------------------------------------------------------------------
+[coma shape="N0001R" bg = "bg_005_001"]
+
+[character x = 210 y = -200 storage = "90000/wait_right_anger_strong" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon id = "01" x = -120 y = 120 shape="001_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target = "01"]
+[font size = 28]
+う…[r]
+動きにムダがない…！
+[p]
+
+[balloon id = "01" x = -90 y = -70 shape="001_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target = "01"]
+[font size = 28]
+そうとう[r]
+闘い慣れている…！
+[p]
+
+*coma2
+//-------------------------------------------------------------------------------
+//  バーダック
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+
+[coma shape="N0002L" bg = "bg_005_001"]
+
+[character x=-210 y=-140 storage = "00067/idl_front_p_01" scale = 1.3 action = "fadein" time = 0.1]
+
+[balloon x=130 y=100 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+痛みも[r]
+攻撃の感触もある…
+[p]
+
+[balloon x=165 y=-140 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+やはりオレは…[r]
+死んだわけじゃねえ…
+[p]
+
+[stopbgm]

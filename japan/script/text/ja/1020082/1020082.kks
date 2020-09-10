@@ -1,0 +1,52 @@
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "008"]
+
+
+*001
+//-------------------------------------------------------------------------------
+//  トランクス
+//-------------------------------------------------------------------------------
+
+//[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_032"]
+
+[character x = 210 y = -200 storage = "90000/wait_right_surprise" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x=-100 y=100 shape="004_02" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 3 time = 0.2]
+[font size = 24]
+だ…大界王神さまが[r]
+吸収されてしまうなんて…[r]
+どう闘えばいいんだ？[p]
+
+[balloon x=-100 y=-100 shape="004_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 3 time = 0.2]
+[font size = 28]
+もとにもどすことは[r]
+できるのか…！？[p]
+
+*002
+//-------------------------------------------------------------------------------
+//  ブウ（善）
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0002L" bg = "bg_000_032"]
+
+[character id ="buu"x = -230 y = -170 storage = "00229/atc_sp01_p_01" scale = 1.2 action = "fadein" time = 0.1]
+[quake target ="buu" power = 8 time = 0.4]
+
+[balloon x=155 y=80 shape="002_01" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 3 time = 0.2]
+[font size = 36]
+死んじゃえ〜！[p]
+
+
+[stopbgm]

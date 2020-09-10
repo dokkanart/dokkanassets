@@ -1,0 +1,86 @@
+
+
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "005"]
+
+
+*01
+//-------------------------------------------------------------------------------
+//  ビルス
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+
+
+[coma shape="N0001R" bg = "bg_068_003"]
+
+[character x = 210 y = -370 storage = "00242/card_03" scale = 1.5 action = "fadein" time = 0.1]
+
+
+[balloon x = -90 y = 130 shape="001_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target = ".bln" power = 3 time = 0.2]
+なかなか[r]
+やるじゃないか…[p]
+
+[balloon x = -110 y = -80 shape="001_03" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target = ".bln" power = 3 time = 0.2]
+今回は[r]
+勝ちをゆずることにしよう[p]
+
+
+*02
+//-------------------------------------------------------------------------------
+//  悟空
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_068_001"]
+
+[character x = -230 y = -120 storage = "00244/idl_side_p_01" scale = 1.7 action = "fadein" time = 0.1]
+
+[balloon x = 130 y = 120 shape="001_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target = ".bln" power = 3 time = 0.2]
+ビルスさま…[p]
+
+[balloon x = 130 y = -80 shape="001_03" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target = ".bln" power = 3 time = 0.2]
+やっぱモナカを[r]
+連れてきたほうが[r]
+よかったんじゃねえか？[p]
+
+
+*03
+//-------------------------------------------------------------------------------
+//  ビルス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_068_003"]
+
+[character x = 200 y = -440 storage = "00242/card_03" scale = 1.6 action = "fadein" time = 0.1]
+[character id = "ase1" x = 210 y = 40 storage = "99999/ase" scale = 0.6 action = "fadein" time = 0.1]
+
+[balloon x = -120 y = 70 shape="004_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][font size = 28]
+[quake target = ".bln" power = 3 time = 0.2]
+や…やかましい！[r]
+おまえはだまってろ！[p]
+
+//終わりのフェードアウト
+[balloon x=130 y=40 shape="008_03" scale = 50.0 action = "fadein" time = 0.5]
+[wait time = 2.5]
+
+
+//-------------------------------------------------------------------------------
+[stopbgm]
+
+

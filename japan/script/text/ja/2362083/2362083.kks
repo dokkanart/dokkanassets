@@ -1,0 +1,287 @@
+*start|スタート
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "032"]
+
+*00
+//-------------------------------------------------------------------------------
+//  孫悟空
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma id = "coma1" shape="S0001" bg = "bg_000_024"]
+
+//[character x=220 y=-300 storage = "00003/card_17" scale = 1.1 action = "fadein" time = 0.1]
+
+[balloon x=0 y=50 shape="003_02" scale = 1.3 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 18]
+//[quake target =".bln" power = 3 time = 0.2]
+悟空 最後の切り札[r]
+元気玉…[r]
+　[r]
+傷つきながらも[r]
+フリーザに[r]
+気づかれないよう[r]
+元気を集める[r]
+悟空だったが……
+[p]
+
+*01
+//-------------------------------------------------------------------------------
+//  
+//-------------------------------------------------------------------------------
+[se storage = "3038"]
+[coma shape="N0002R" bg = "bg_050_002"]
+
+[lwfobject id = "kaki1" storage="kakimoji:ef_009" x=-200 y=70 scale = 1.5 action = "fadein" time = 0.1]
+[quake target = "kaki1" power = 1 time = 300]
+
+[character id = "1" x = 0 y = 100 storage = "99999/genkidama" scale = 1.0 action = "fadein" time = 0.1]
+[spin target="1" velocity=3]
+
+
+
+[balloon x=0 y=0 shape="003_02" scale = 0 action = "fadein" time = 0.1]
+[p]
+
+*02
+//-------------------------------------------------------------------------------
+//  フリーザ（最終形態）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_050_001"]
+
+[character x=-230 y=-160 storage = "00068/heapup_p_01" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x=100 y=90 shape="004_01" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 10 time = 0.2]
+な…なんだ…！？[r]
+あれは！ まさか[r]
+エネルギーのかたまり…
+[p]
+
+[balloon x=120 y=-110 shape="004_02" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+あんなのを上空に[r]
+つくってやがったのか…！[r]
+どこに あんなパワーが[r]
+残っていたんだ……
+[p]
+
+*03
+//-------------------------------------------------------------------------------
+//  孫悟空
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_050_001"]
+
+[character x=200 y=-150 storage = "00300/heapup_e_03" scale = 1.3 action = "fadein" time = 0.1]
+
+[balloon shape="004_01" x = -105 y = 80 scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+もうダメだ…！！[r]
+今 元気玉を使っても[r]
+よけられちまう…
+[p]
+
+[balloon x=-120 y=-100 shape="004_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 7 time = 0.2]
+それにまだフリーザを[r]
+倒せるほどの玉じゃ……[r]
+ち…ちくしょう……！！
+[p]
+
+*04
+//-------------------------------------------------------------------------------
+//  フリーザ（最終形態）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_050_001"]
+
+//[character x=-170 y=-180 storage = "00068/idl_side_p_01" scale = 1.1 action = "fadein" time = 0.1]
+[character id = "f" x=-240 y=-200 storage = "00068/idl_back_p_01" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x=100 y=90 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+だましうちをする[r]
+つもりだったか…[r]
+なさけないヤツめ！
+[p]
+
+[balloon x=120 y=-100 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+だが せっかくの[r]苦肉の策も[r]
+ムダになって[r]しまったな…
+[p]
+
+*05
+//-------------------------------------------------------------------------------
+//  孫悟空
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_050_001"]
+
+[character x=200 y=-150 storage = "00300/heapup_e_03" scale = 1.3 action = "fadein" time = 0.1]
+
+[balloon shape="004_02" x = -105 y = 50 scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+[quake target =".bln" power = 3 time = 0.2]
+く…[r]
+くそ……！！
+[p]
+
+[se storage = "3012"]
+//点滅
+[balloon shape="008_02" x = 0 y = 0 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+//[balloon shape="008_02" x = 0 y = 0 scale = 50 action = "fadein" time = 0.1]
+//[wait time = 0.3]
+//[clear target = ".bln"]
+
+*06
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0003R" bg = "bg_050_002"]
+
+//[character x=160 y=-180 storage = "00056/card_03" scale = 1.05 action = "fadein" time = 0.1]
+
+[balloon x=0 y=0 shape="003_02" scale = 1.6 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 15]
+//[quake target =".bln" power = 3 time = 0.2]
+最後の切り札であった[r]
+元気玉の存在が[r]
+フリーザにバレてしまい[r]
+絶体絶命の悟空…！！[r]
+　[r]
+しかし そこへ[r]
+悟飯たちから[r]
+パワーをもらった[r]
+ピッコロが[r]
+援護にやってきた！！
+[p]
+
+*07
+//-------------------------------------------------------------------------------
+//  ピッコロ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_050_001"]
+
+//[character x=180 y=-140 storage = "00056/idl_front_e_01" scale = 1.05 action = "fadein" time = 0.1]
+//[character x=220 y=-120 storage = "00056/heapup_e_05" scale = 0.85 action = "fadein" time = 0.1]
+//[character x = 180 y = -100 storage = "00056/heapup_e_01" scale = 0.8 action = "fadein" time = 0.1]
+
+[character x=180 y=-110 storage = "00056/heapup_e_06" scale = 0.85 action = "fadein" time = 0.1]
+
+[balloon shape="006_01" x = -140 y = 40 scale = 0.9 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 5 time = 0.2]
+はやくしろ悟空！[r]
+さっさと元気玉とやらを[r]
+完成させちまえっ！！
+[p]
+
+*08
+//-------------------------------------------------------------------------------
+//  孫悟空
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_050_001"]
+
+[character x=200 y=-150 storage = "00300/heapup_e_03" scale = 1.3 action = "fadein" time = 0.1]
+
+[balloon shape="001_02" x = -105 y = 60 scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+ピッコロ…！！[r]
+す…すまねえ…！！
+[p]
+
+*09
+//-------------------------------------------------------------------------------
+//  フリーザ（最終形態）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_050_001"]
+
+[character x=-230 y=-160 storage = "00068/heapup_p_01" scale = 1.2 action = "fadein" time = 0.1]
+
+
+[balloon x=100 y=70 shape="002_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+死にぞこないのくせに[r]
+まだウロウロしていた[r]
+のか…！
+[p]
+
+*10
+//-------------------------------------------------------------------------------
+//  ピッコロ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_050_001"]
+
+[character x=180 y=-110 storage = "00056/heapup_e_06" scale = 0.85 action = "fadein" time = 0.1]
+
+[balloon shape="002_03" x = -145 y = 55 scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 7 time = 0.2]
+見せてやるさ…！[r]
+死にぞこないの[r]
+パワーをな！！
+[p]
+
+*11
+//-------------------------------------------------------------------------------
+//  フリーザ（最終形態）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002L" bg = "bg_050_001"]
+
+[character id="fri" x=-210 y=-150 storage = "00068/heapup_p_01" scale = 1.3 action = "fadein" time = 0.1]
+
+[balloon x=130 y=80 shape="004_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+どいつもこいつも[r]
+こそこそと動きまわり[r]
+やがって……！！
+[p]
+
+[quake target = "fri" power = 5 time = 0.3] 
+
+[balloon x=130 y=-200 shape="007_01" scale = 0.8 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+[quake target =".bln" power = 7 time = 0.2]
+うっとおしい[r]
+ハエどもが〜！！
+[p]
+
+//-------------------------------------------------------------------------------
+[stopbgm]
+

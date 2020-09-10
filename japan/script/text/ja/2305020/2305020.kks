@@ -1,0 +1,182 @@
+
+
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "007"]
+
+
+
+*coma1
+//-------------------------------------------------------------------------------
+//  亀仙人
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0003R" bg = "bg_004_001"]
+
+[character x=-250 y=80 storage = "00058/idl_side_p_01" scale = 0.3 action = "fadein" time = 0.1]
+
+[character x=255 y=-80 storage = "00250/idl_back_e_01" scale = 1 action = "fadein" time = 0.1]
+
+[character x=90 y=-150 storage = "00253/idl_back_e_01" scale = 1.0 action = "fadein" time = 0.1]
+
+
+
+
+[balloon shape="001_01" x = 45 y = 200 scale = 0.95 action = "fadein" time = 0.1]
+[font size = 28]
+[wait_anim target=".bln"]
+悟飯よ…[r]
+武術の鍛錬は[r]
+続けておったか？
+[p]
+
+[balloon shape="001_01" x = 130 y = -140 scale = 0.95 action = "fadein" time = 0.1]
+[font size = 27]
+[wait_anim target=".bln"]
+す…すみません[r]
+でも超サイヤ人には[r]
+まだなれますよ
+[p]
+
+
+
+*coma2
+//-------------------------------------------------------------------------------
+//  悟飯
+//-------------------------------------------------------------------------------
+[se storage = "3029"]
+[coma shape="S0001" bg = "bg_004_001"]
+
+//ドンッ
+[lwfobject id = "kaki2" storage="kakimoji:ef_020" in="04" x=0 y=-100 scale = 2.5]
+[quake target = "kaki2" power = 15 time = 0.2]
+
+[character x=0 y=100 storage = "00251/card_01" scale = 1.2 action = "fadein" time = 0.1]
+[quake target = ".chara" power = 9 time = 0.2]
+
+
+// 空のフキダシ
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+
+
+*coma3
+//-------------------------------------------------------------------------------
+//  フリーザ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0003L" bg = "bg_004_001"]
+
+[character x=300 y=-110 storage = "00009/idl_side_e_02" scale = 0.5 action = "fadein" time = 0.1]
+
+[character x=160 y=-100 storage = "00304/idl_side_e_01" scale = 0.3 action = "fadein" time = 0.1]
+
+[character x=230 y=-100 storage = "00251/heapup_e_01" scale = 0.5 action = "fadein" time = 0.1]
+
+[character x=-170 y=-50 storage = "00058/idl_back_p_01" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon x=140 y=135 shape="002_01" scale = 1 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 27]
+……[r]
+超サイヤ人ですか……
+[p]
+
+
+*coma4
+//-------------------------------------------------------------------------------
+//  フリーザ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_016"]
+
+
+[character x=-190 y=-90 storage = "00058/idl_side_p_01" scale = 1.0 action = "fadein" time = 0.1]
+
+
+[balloon x=90 y=120 shape="002_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][font size = 30]
+じわじわと[r]
+甦ってきましたよ
+[p]
+
+
+[balloon x=120 y=-70 shape="002_01" scale = 0.95 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 27]
+あのときの…[r]
+ナメック星のときの[r]
+記憶が……
+[p]
+
+[bgm storage = "008"]
+
+//フェードアウト
+[balloon x=130 y=40 shape="008_03" scale = 50.0 action = "fadein" time = 0.5]
+[wait time = 0.7]
+
+
+
+*coma5
+//-------------------------------------------------------------------------------
+//  フリーザ
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="S0001" bg = "bg_050_001"]
+
+//フェードイン
+[balloon x=130 y=40 shape="008_03" scale = 50]
+[wait time = 1]
+[fadeout target = ".bln" time = 2]
+[wait_anim target=".bln"]
+
+[wait time = 0.7]
+
+[character x=-190 y=-90 storage = "00030/idl_front_p_01" scale = 0.6 action = "fadein" time = 0.7]
+
+[wait time = 0.4]
+
+[character x=190 y=-90 storage = "00016/idl_front_p_01" scale = 0.7 action = "fadein" time = 0.7]
+
+[wait time = 0.4]
+
+[character id = "f" x=0 y=25 storage = "00058/card_01" scale = 0.3 action = "fadein" time = 1.0]
+
+[wait_anim target="f"]
+
+[balloon x=0 y=210 shape="002_01" scale = 1 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 27]
+ここがナメック星ですか…[p]
+
+*coma6
+//-------------------------------------------------------------------------------
+//  フリーザ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002L" bg = "bg_050_001"]
+
+[character x=-190 y=-90 storage = "00058/idl_side_p_01" scale = 1.2 action = "fadein" time = 0.1]
+
+
+[balloon x=110 y=190 shape="002_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][font size = 28]
+さあ[r]
+ドラゴンボールを[r]
+探しますよ
+[p]
+
+
+[balloon x=150 y=-125 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 30]
+ザーボンさん[r]
+ドドリアさん
+[p]
+
+
+[stopbgm]

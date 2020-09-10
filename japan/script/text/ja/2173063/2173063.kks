@@ -1,0 +1,66 @@
+*start|スタート
+//破壊王子復活ボス前"
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "002"]
+ 
+*01
+//-------------------------------------------------------------------------------
+//  超サイヤ人2孫悟空
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_033"]
+
+[character x = 180 y = -280 storage = "00066/card_03" scale = 1.1 action = "fadein" time = 0.1]
+[character id = "ring" x=220 y=220 storage = "99999/ring" scale = 0.9 action = "fadein" time = 0.1]
+
+[balloon x=-110 y=100 shape="001_02" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target =".bln" power = 3 time = 0.2]
+[font size = 24]
+おめえから[r]
+ダメージを受けて[r]
+魔人ブウのエネルギーには[r]
+したくねえ…
+[p]
+
+[balloon x=-120 y=-100 shape="001_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target =".bln" power = 3 time = 0.2]
+[font size = 28]
+最高の力で[r]
+はやく終わらせて[r]
+もらうぞ
+[p]
+
+
+
+*02
+//-------------------------------------------------------------------------------
+//  魔人ベジータ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002L" bg = "bg_000_033"]
+ 
+[character x = -120 y = -100 storage = "00228/card_01" scale = 1.1 angle = -5 action = "fadein" time = 0.1]
+
+ 
+[balloon x=140 y=90 shape="007_01" scale = 0.65 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 44]
+[quake target =".bln" power = 7 time = 0.2]
+いくぞ！！
+[p]
+ 
+[balloon x=140 y=-220 shape="007_02" scale = 0.75 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+[quake target =".bln" power = 7 time = 0.2]
+殺してやる[r]
+カカロット！！
+[p]
+
+//-------------------------------------------------------------------------------
+[stopbgm]

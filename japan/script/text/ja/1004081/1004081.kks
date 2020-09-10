@@ -1,0 +1,188 @@
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "001"]
+
+
+*01
+//-------------------------------------------------------------------------------
+//  ザーボン
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0001L" bg = "bg_006_001"]
+
+[character x = -180 y = -80 storage = "00016/heapup_p_01" scale = 1.3 action = "fadein" time = 0.1]
+
+
+[balloon x=120 y=75 shape="004_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][quake target = ".bln" power = 3 time = 0.2]
+[font size = 28]
+うぐっ…！[r]ま…まさか[r]これほどまでとは…！[p]
+
+
+*02
+//-------------------------------------------------------------------------------
+//  ドドリア
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_006_001"]
+
+[character id = "arare" x=-190 y=-100 storage = "00030/atc_front_e_01" scale = 1.3 action = "fadein" time = 0.1]
+
+[balloon x=100 y=70 shape="004_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][font size = 28]
+[quake target = ".bln" power = 3 time = 0.2]
+なんなんだ…こいつら[r]このあいだとは[r]まるで別人だ…！！[p]
+
+
+*03
+//-------------------------------------------------------------------------------
+//  クリリン
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_006_001"]
+
+[character x = 180 y = -100 storage = "00009/idl_side_e_03" scale = 1.0 action = "fadein" time = 0.1]
+
+
+[balloon x=-90 y=70 shape="001_02" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][font size = 36][quake target = ".bln" power = 3 time = 0.2]
+よし！[r]勝てるぞ！！[p]
+
+*04
+//-------------------------------------------------------------------------------
+//  クリリン
+//-------------------------------------------------------------------------------
+[se storage = "3022"]
+[coma shape="N0002R" bg = "bg_006_001"]
+
+
+[character x=120 y=-110 storage = "00009/card_01" scale = 1.1 action = "fadein" time = 0.1]
+
+[balloon x=-140 y=80 shape="001_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][font size = 28]
+このあいだの修業の[r]イメージトレーニング[r]を思い出すんだ…[p]
+
+[se storage = "3024"]
+[quake target = ".chara" power = 5 time = 0.3]
+
+[balloon x=-125 y=-190 shape="006_01" scale = 0.75 action = "expand" time = 0.1]
+[wait_anim target=".bln"][quake target = ".bln" power = 7 time = 0.2]
+[font size = 36]
+気を解放しろ！！[p]
+
+//点滅（白）
+[se storage = "3025"]
+//点滅
+[balloon shape="008_02" x = 140 y = -30 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+
+//フェードアウト（フェードアウトするコマ）
+[balloon x=130 y=40 shape="008_02" scale = 50.0 action = "fadein" time = 0.5]
+[wait time = 0.7] 
+
+
+*05
+//-------------------------------------------------------------------------------
+//  爆発
+//-------------------------------------------------------------------------------
+//[se storage = "3017"]
+//[coma shape="N0004L" bg = "bg_006_001"]
+//[lwfobject id="syuutyuu1" storage="syucyu:ef_001" mask="inside" loop=1 priority=10 scale=1]
+//[move target = "syuutyuu1" x = 0 y = -30]
+
+//[lwfobject id = "kaki2" storage="kakimoji:ef_013" in="04" x=0 y=50 scale = 3]
+//[quake target = "kaki2" power = 15 time = 1]
+
+
+//[character x=0 y=0 storage = "90000/bomb" scale = 0.9 action = "expand" time = 0.1]
+//[quake target = ".chara" power = 10 time = 1]
+
+//[wait time = 0.7]
+
+//[balloon shape="008_02" x = 140 y = -30 scale = 50 action = "fadein" time = 1.5]
+
+//[wait time = 2]
+
+//[stopbgm]
+
+//[bgm storage = "008"]
+
+[stopbgm]
+
+*06
+//-------------------------------------------------------------------------------
+//  
+//-------------------------------------------------------------------------------
+//[bgm storage = "008"]
+[coma id = "coma1" shape="S0001" bg = "bg_000_014"]
+
+//[character x=-190 y=0 storage = "00058/idl_back_p_01" scale = 1.0 action = "fadein" time = 0.1]
+
+//フェードイン（フェードインするコマ）
+[balloon x=130 y=40 shape="008_02" scale = 50]
+[wait time = 1]
+[fadeout target = ".bln" time = 2]
+[wait_anim target=".bln"]
+
+[wait time = 0.7]
+
+[balloon x=-130 y=150 shape="002_02" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][font size = 54]
+…………
+[p]
+
+[balloon x=90 y=-150 shape="002_03" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][font size = 24]
+…ザーボンさんと[r]ドドリアさんの[r]スカウター反応が[r]消えた…
+[p]
+
+
+*07
+//-------------------------------------------------------------------------------
+//  フリーザ
+//-------------------------------------------------------------------------------
+
+//[se storage = "04"]
+//[coma shape="N0001L" bg = "bg_004_001"]
+
+//[character x=-155 y=-60 storage = "00005/idl_side_p_02" scale = 1.5 action = "fadein" time = 0.1]
+
+//[balloon x=70 y=130 shape="002_02" scale = 0.6 action = "fadein" time = 0.1]
+//[wait_anim target=".bln"][font size = 44]
+//…………[p]
+
+//[balloon x=140 y=150 shape="002_01" scale = 1.1 action = "fadein" time = 0.1]
+//[wait_anim target=".bln"][font size = 24]
+//…ザーボンさんと[r]ドドリアさんの[r]スカウター反応が[r]消えた…
+//[p]
+
+
+*08
+//-------------------------------------------------------------------------------
+//  フリーザ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002L" bg = "bg_000_008"]
+
+[character x=-190 y=-90 storage = "00058/idl_side_p_01" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x=130 y=130 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][font size = 28]
+どうも[r]妙な予感がしますね…[p]
+
+[balloon x=130 y=-180 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][font size = 28]
+//[quake target = ".bln" power = 3 time = 0.2]
+ギニュー特戦隊に[r]地球に来るよう[r]連絡しなさい……[p]
+
+
+//フェードアウト
+[balloon x=130 y=40 shape="008_03" scale = 50.0 action = "fadein" time = 0.5]
+[wait time = 2.5]
+
+[stopbgm]
+

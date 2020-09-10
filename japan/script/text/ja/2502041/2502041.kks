@@ -1,0 +1,32 @@
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+//[bgm storage = "026"]
+
+*001
+//-------------------------------------------------------------------------------
+//  セル（完全体）
+//-------------------------------------------------------------------------------
+//[se storage = "3022"]
+[coma shape="S0001" bg = "bg_005_004"]
+
+[character id = "sell" x=-0 y=-20 storage = "00205/card_05" scale = 1.0 action = "fadein" time = 0.1] 
+
+[balloon x=-0 y=500 shape="002_01" scale = 0.65 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 44]
+//[quake target =".bln" power = 3 time = 0.2]
+さあ…！
+[p]
+
+[balloon x=0 y=-440 shape="002_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+はやくセルゲームを[r]
+始めるぞ
+[p]
+
+//[stopbgm]

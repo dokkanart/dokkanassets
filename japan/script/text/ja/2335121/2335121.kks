@@ -1,0 +1,129 @@
+*start|スタート
+//ステージ12ゴール
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "002"]
+
+*01
+//-------------------------------------------------------------------------------
+//  孫悟空
+//-------------------------------------------------------------------------------
+//-------------------------------------------------------------------------------
+//  ピッコロ
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0001R" bg = "bg_014_004"]
+
+[character x = 180 y = -90 storage = "00010/idl_side_e_02" scale = 1.5 action = "fadein" time = 0.1]
+
+
+[balloon x=-120 y=110 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+ふむ…[r]
+悟空もベジータも[r]
+やはりサイヤ人
+[p]
+
+[balloon x=-110 y=-90 shape="002_01" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+宇宙消滅の危機[r]だというのに[r]
+力の大会を楽しみに[r]しているようだ…
+[p]
+
+*02
+//-------------------------------------------------------------------------------
+//  孫悟飯
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_014_004"]
+
+[character x = 220 y = -130 storage = "00235/idl_side_e_02" scale = 1.1 action = "fadein" time = 0.1]
+//[flip target =".chara" h=1]
+
+[balloon id = "01" x = -100 y = 100 shape="001_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target = "01"]
+[font size = 32]
+わかってます[r]
+ピッコロさん
+[p]
+
+[balloon id = "01" x = -120 y = -100 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target = "01"]
+[font size = 28]
+ボクたちが中心になって[r]
+チームプレイを[r]
+していきましょう
+[p]
+
+*03
+//-------------------------------------------------------------------------------
+//  ウイス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_014_004"]
+
+[character x = -180 y = -290 storage = "00243/atc_sp01_p_03" scale = 1.7 action = "fadein" time = 0.1]
+
+[balloon x=140 y=70 shape="001_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+さあて[r]
+そろそろ時間ですよ
+[p]
+
+*04
+//-------------------------------------------------------------------------------
+//  孫悟空
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_014_004"]
+
+[character x=200 y=-150 storage = "00003/heapup_e_06" scale = 1.3 action = "fadein" time = 0.1]
+
+
+[balloon x=-120 y=70 shape="001_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+よぉ〜し！[r]
+みんな！いくぞ！！
+[p]
+
+*05
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0004L" bg = "bg_000_024"]
+[coma shape="N0002R" bg = "bg_000_014"]
+
+//[character id = "tail" x=160 y=-30 storage = "99999/tail" scale = 1.8 angle = 50 action = "fadein" time = 0.1]
+[character id = "koma" x=0 y=-40 storage = "99999/bubutai" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon x=0 y=400 shape="003_02" scale = 1.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 13]
+//[quake target =".bln" power = 7 time = 0.2]
+ついに集結した[r]
+第7宇宙最強の戦士たち！[r]
+　[r]
+一方その頃 無の界では[r]
+力の大会のステージとなる[r]
+武舞台が完成し[r]
+全ての宇宙の命運を[r]
+賭けた闘いが今まさに[r]
+始まろうとしていた……！！
+[p]
+
+//終わりのフェードアウト
+[balloon x=0 y=0 shape="008_03" scale = 50.0 action = "fadein" time = 0.5]
+[wait time = 2.5]
+
+//-------------------------------------------------------------------------------
+[stopbgm]

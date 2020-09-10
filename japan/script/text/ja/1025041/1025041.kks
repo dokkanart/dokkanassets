@@ -1,0 +1,98 @@
+*start|スタート
+
+//"２5−４ゴール" 
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "007"]
+ 
+*001
+//-------------------------------------------------------------------------------
+//  合体アカ
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_004"]
+ 
+[character x = -160 y = -130 storage = "00652/atc_sp01_p_02" scale = 1.1 action = "fadein" time = 0.1]
+[quake target =".chara" power = 8 time = 0.4]
+ 
+[balloon x=100 y=120 shape="007_02" scale = 0.8 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 7 time = 0.2]
+な…っ[r]
+なにぃぃ！？
+[p]
+
+//点滅（白）
+[se storage = "3012"]
+//点滅
+[balloon shape="008_02" x = 140 y = -30 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+[balloon shape="008_02" x = 140 y = -30 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+
+
+*002
+//-------------------------------------------------------------------------------
+//  アボとカドの合体が解ける。
+//-------------------------------------------------------------------------------
+[se storage = "43"]
+[coma shape="N0001L" bg = "bg_000_004"]
+
+[character id = "kado" x = -240 y = -80 storage = "00651/heapup_p_01" scale = 0.8 action = "fadein" time = 0.1]
+[character x = -240 y = -80 storage = "00650/heapup_p_01" scale = 0.9 action = "fadein" time = 0.1]
+
+//[wait time = 0.3]
+
+[move target ="kado" x=-100 time = 0.5]
+
+[wait_anim target="kado"]
+ 
+[balloon x=100 y=130 shape="004_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+バ…バカな…！！
+[p]
+
+[balloon x=140 y=-90 shape="004_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+おまえたちに[r]
+それほどの戦闘力は[r]
+なかったはず……！
+[p]
+
+*003
+//-------------------------------------------------------------------------------
+//  トランクス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_000_004"]
+ 
+[character x=170 y=-325 storage = "90000/wait_right_anger_strong" scale = 1.4 action = "fadein" time = 0.1]
+ 
+[balloon x=-120 y=90 shape="001_02" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+オレたちは[r]
+闘いのときに一気に[r]
+戦闘力を高めているんだ
+[p]
+ 
+[balloon x=-110 y=-190 shape="001_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+一瞬なので[r]
+そのスカウターでは[r]
+捉えられないようだな
+[p]
+ 
+//-------------------------------------------------------------------------------
+[stopbgm]

@@ -1,0 +1,123 @@
+//ラウンド3開始 2530013
+
+*start|スタート
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+
+//[bgm storage = "028"]
+
+*001
+//-------------------------------------------------------------------------------
+//  ドクター・ゲロ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_015_001"]
+
+[character x=-175 y=-150 storage = "00019/card_02" scale = 0.8 action = "fadein" time = 0.1]
+
+[balloon x=130 y=0 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+そろそろ[r]
+ふたりの17号のカラダも[r]
+あたたまってきた頃だ…[p]
+
+*002
+//-------------------------------------------------------------------------------
+//  ドクター・ミュー
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_015_001"]
+
+[character x=215 y=-150 storage = "00329/card_01" scale = 0.8 action = "fadein" time = 0.1]
+
+[balloon x=-120 y=100 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+いよいよ[r]
+最終段階のスタートだ！[p]
+
+*003
+//-------------------------------------------------------------------------------
+//  人造人間17号
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+
+[coma shape="S0001" bg = "bg_015_001"]
+
+[character id ="hell" x = 150 y = 0 storage = "00021/card_03" scale = 0.9 action = "fadein" time = 0.1]
+//[quake target =".chara" power = 5 time = 0.4]
+
+[character id ="17" x = -150 y = 0 storage = "00021/card_02" scale = 0.9 action = "fadein" time = 0.1]
+//[quake target =".chara" power = 5 time = 0.4]
+
+[wait time = 0.7]
+
+[balloon  x= 0 y=480 shape="002_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+おまえはオレ…[p]
+
+[balloon  x= 0 y= -450 shape="002_03" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+オレはおまえ…[r]
+ひとつになるのだ…！[p]
+
+
+[move target ="17" x= 0 time = 0.8]
+[move target ="hell" x = 0 time = 0.8]
+[se storage = "3011"]
+[wait time = 0.9]
+[se storage = "10"]
+
+[character id = "hikari" x = 0 y = 0 storage = "99999/ef_beam_circle" scale = 6.0 action = "expand" time = 0.5]
+[spin target="hikari" velocity=500]
+[wait time = 0.5]
+//[fadeout target = "hikari" time = 0.2]
+
+//点滅
+//[balloon shape="008_02" x = 140 y = -30 scale = 50 action = "fadein" time = 0.1]
+//[wait time = 0.3]
+//[clear target = ".bln"]
+
+//フェードアウト（フェードアウトするコマ）
+[balloon x=0 y=0 shape="008_02" scale = 50.0 action = "fadein" time = 0.3]
+[wait time = 0.5]
+
+*004
+//-------------------------------------------------------------------------------
+//  超17号
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="S0001" bg = "bg_015_001"]
+
+//ゴゴゴゴ
+[lwfobject id = "kaki1" storage="kakimoji:ef_009" in="04" x=-170 y=-345 scale = 2.0 angle = -20 action = "fadein" time = 0.1]
+[quake target = "kaki1" power = 2 time = 300]
+
+//超17号
+[character x = -10 y = -40 storage = "00480/card_01" scale = 1.1 action = "fadein" time = 0.1]
+
+//フェードイン（フェードインするコマ）
+[balloon x=0 y=0 shape="008_02" scale = 50]
+[wait time = 0.2]
+[fadeout target = ".bln" time = 1.5]
+[wait_anim target=".bln"]
+
+[balloon x=0 y=450 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+//[quake target =".chara" power = 4 time = 0.3]
+こんな星 早く片づけて[r]
+全ギャラクシー征服を[r]
+始めよう…[p]
+
+//-------------------------------------------------------------------------------
+//[stopbgm]

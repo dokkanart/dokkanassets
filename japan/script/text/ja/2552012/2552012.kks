@@ -1,0 +1,70 @@
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+//[bgm storage = "003"]
+
+*001
+//-------------------------------------------------------------------------------
+//  孫悟飯（青年期）
+//-------------------------------------------------------------------------------
+//[se storage = "3022"]
+//[coma shape="N0001R" bg = "bg_000_071"]
+[coma shape="S0001" bg = "bg_070_003"]
+
+[character x = 30 y = 0 storage = "00346/card_03" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon shape="001_03" x = 0 y = 480 scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+超サイヤ人の悟天に[r]
+勝つなんて…
+[p]
+
+*002
+//-------------------------------------------------------------------------------
+//  孫悟天（幼年期）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_070_003"]
+
+[character x = -200 y = -140 storage = "00225/card_03" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon x=140 y=60 shape="001_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+あっ！[r]
+にいちゃん！
+[p]
+
+*003
+//-------------------------------------------------------------------------------
+//  孫悟飯（青年期）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_070_003"]
+
+[character x = 140 y = -120 storage = "00346/card_01" scale = 0.9 action = "fadein" time = 0.1]
+
+[balloon shape="001_03" x = -130 y = 90 scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+悟天！[r]
+ひとりで[r]
+よくがんばったな
+[p]
+
+[balloon x=-140 y=-240 shape="001_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+にいちゃんが[r]
+来たから[r]
+もう大丈夫だぞ！
+[p]
+
+//[stopbgm]

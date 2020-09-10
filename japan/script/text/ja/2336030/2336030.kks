@@ -1,0 +1,64 @@
+*start|スタート
+//ステージ3 スタート
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "002"]
+
+*01
+//-------------------------------------------------------------------------------
+//  ラディッツ
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_010"]
+
+[character x=200 y=-110 storage = "00014/heapup_e_01" scale = 1.6 action = "fadein" time = 0.1]
+
+[balloon x=-120 y=120 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+訓練なんて[r]
+オレの性に合わんが…
+[p]
+
+[balloon x=-130 y=-100 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 7 time = 0.2]
+あいつらに[r]
+バカにされるのは[r]
+我慢ならねえ…！
+[p]
+
+*02
+//-------------------------------------------------------------------------------
+//  ラディッツ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_000_010"]
+
+[character x = 190 y = -180 storage = "00014/card_02" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon x=-120 y=80 shape="006_01" scale = 0.8 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 7 time = 0.2]
+オレも[r]
+強くなってやる！
+[p]
+
+[quake target =".chara" power = 6 time = 0.3]
+
+[balloon x=-140 y=-190 shape="006_02" scale = 0.8 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 7 time = 0.2]
+サイヤ人の意地を[r]
+見せてやるぜ！！
+[p]
+
+
+
+//-------------------------------------------------------------------------------
+[stopbgm]

@@ -1,0 +1,100 @@
+*start|スタート
+//ラウンド4開始
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+
+
+//*01
+//-------------------------------------------------------------------------------
+//  超サイヤ人ゴジータ
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+//[coma shape="N0002R" bg = "bg_070_010"]
+
+
+//[character id = "1" x = -20 y = -230 storage = "00931/card_05" scale = 1.0 action = "fadein" time = 0.1]
+//[quake target ="1" power = 1 time = 300]
+
+
+//[se storage = "3038"]
+//[lwfobject id = "kaki1" storage="kakimoji:ef_009" x=200 y=0 scale = 1.2 angle = 15 action = "fadein" time = 0.1]
+//[quake target = "kaki1" power = 1 time = 300]
+
+//[wait time = 1.0]
+
+//[se storage = "3025"]
+//点滅
+//[balloon shape="008_02" x = 0 y = 0 scale = 50 action = "fadein" time = 0.1]
+//[wait time = 0.3]
+//[clear target = ".bln"]
+//[balloon shape="008_02" x = 0 y = 0 scale = 50 action = "fadein" time = 0.1]
+//[wait time = 0.3]
+//[clear target = ".bln"]
+
+
+*02
+//-------------------------------------------------------------------------------
+//  超サイヤ人ゴッドSSゴジータ
+//-------------------------------------------------------------------------------
+[se storage = "3038"]
+[coma shape="S0001" bg = "bg_070_010"]
+
+
+[lwfobject id = "kaki1" storage="kakimoji:ef_009" x=-200 y=400 scale = 1.5 angle = 5 action = "fadein" time = 0.1]
+[quake target = "kaki1" power = 1 time = 300]
+
+
+[character id = "1" x = -40 y = -50 storage = "00931/card_05" scale = 1.0 action = "fadein" time = 0.1]
+[quake target ="1" power = 1 time = 300]
+
+[wait time = 1.0]
+
+[se storage = "3025"]
+//点滅
+[balloon shape="008_02" x = 0 y = 0 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+[balloon shape="008_02" x = 0 y = 0 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+[clear target = "1"]
+[clear target = "kaki1"]
+
+
+[se storage = "50"]
+
+
+[lwfobject id = "kaki2" storage="kakimoji:ef_013" x=0 y=-190 scale = 2.8 action = "fadein" time = 0.1]
+[quake target = "kaki2" power = 15 time = 0.4]
+
+[character id = "ki" x = -45 y = -20 storage = "00932/card_02" scale = 1.2]
+[quake target ="ki" power = 25 time = 0.4]
+
+[character id = "goz" x = -45 y = -20 storage = "00932/card_01" scale = 1.2]
+[quake target ="goz" power = 25 time = 0.4]
+
+[character id = "kiai" x =0 y = 0 storage = "99999/04_syougeki" scale = 10.0 action = "expand" time = 1.0]
+
+[balloon x=0 y=-440 shape="006_02" scale = 0.65 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 44]
+[quake target =".bln" power = 7 time = 0.2]
+　いっちょ[r]
+　いくぜ！！
+//[p]
+
+
+
+
+[wait tume = 0.5]
+[fadeout target = "kiai" time = 0.5]
+
+[wait_anim target="kiai"]
+
+// 空のフキダシ（セリフがないコマを送るために使用）
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+//-------------------------------------------------------------------------------
+//[stopbgm]

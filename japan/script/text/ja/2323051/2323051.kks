@@ -1,0 +1,99 @@
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "005"]
+
+*01
+//-------------------------------------------------------------------------------
+//  界王
+//-------------------------------------------------------------------------------
+
+//[se storage = "04"]
+[coma shape="N0001L" bg = "bg_080_001"]
+
+[character x = -180 y = -70 storage = "90001/stand" scale = 0.6 action = "fadein" time = 0.1]
+
+[balloon x=110 y=120 shape="001_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target =".bln" power = 3 time = 0.2]
+[font size = 32]
+むむむ…！[r]
+こいつは楽しみな[r]
+やつがきたぞい…！[p]
+
+[balloon x=135 y=-90 shape="001_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 3 time = 0.2]
+[font size = 32]
+こいつなら[r]
+極められるかも[r]
+しれん！[p]
+
+
+*02
+//-------------------------------------------------------------------------------
+//  界王
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0004L" bg = "bg_080_001"]
+
+[character x = -180 y = -275 storage = "90001/stand" scale = 1.5 action = "fadein" time = 0.1]
+
+[balloon x=135 y=110 shape="001_02" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target =".bln" power = 3 time = 0.2]
+[font size = 24]
+このわしが[r]
+夢に描きながらも[r]
+ついに極められなかった[r]
+界王拳を…！！[p]
+
+[balloon x=135 y=-120 shape="001_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 3 time = 0.2]
+[font size = 32]
+そして[r]
+あの必殺技を…！！[p]
+
+
+*03
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0004R" bg = "bg_000_003"]
+
+
+[character id = "1" x = -140 y = 40 storage = "99999/pod_01" scale = 1.2 action = "fadein" time = 0.1]
+//[quake target ="1" power = 1 time = 300]
+
+[character id = "2" x = -140 y = 40 storage = "99999/pod_02" scale = 1.2 action = "fadein" time = 0.1]
+//[quake target ="2" power = 1 time = 300]
+
+[character id = "3" x = 260 y = 40 storage = "99999/pod_01" scale = 0.7 action = "fadein" time = 0.1]
+[character id = "4" x = 260 y = 40 storage = "99999/pod_02" scale = 0.7 action = "fadein" time = 0.1]
+
+
+[wait time = 0.7]
+
+[balloon x=-0 y=-50 shape="003_01" scale = 1.6 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target =".bln" power = 3 time = 0.2]
+[font size = 15]
+刻一刻と迫る[r]
+決戦のとき…！[r]
+　[r]
+打倒サイヤ人を目指し[r]
+悟空たちの[r]
+厳しい修業は続いた…[r]
+　[r]
+そして…[r]
+…ついに地球は[r]
+運命の日を[r]
+迎えるのだった！！[p]
+
+[stopbgm]

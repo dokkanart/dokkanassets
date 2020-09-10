@@ -1,0 +1,232 @@
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "013"]
+
+*01
+//-------------------------------------------------------------------------------
+//  激突
+//-------------------------------------------------------------------------------
+[coma id = "coma1" shape="S0001" bg = "bg_012_001"]
+[quake target = "coma1" power = 8 time = 0.4]
+
+[se storage = "3001"]
+[lwfobject id = "kaki1" storage="kakimoji:ef_024" in="04" x=-90 y=145 angle = -10 scale = 2.5]
+[quake target = "kaki1" power = 10 time = 0.4]
+//[lwfobject id = "syuutyuu1" storage="syucyu:ef_005" mask="inside" loop=1 priority=10 scale=0.9]
+
+[wait_anim target="kaki1"]
+//[clear target = "syuutyuu1"]
+
+[wait time = 0.3]
+
+//[lwfobject id = "syuutyuu1" storage="syucyu:ef_001" mask="inside" loop=0 priority=10 scale=0.9]
+[quake target = ".coma" power = 14 time = 0.2]
+[se storage = "3000"]
+[lwfobject id = "kaki2" storage="kakimoji:ef_006" in="04" x=70 y=-180 angle = 20 scale = 2.7]
+[quake target = "kaki2" power = 17 time = 0.2]
+
+[wait_anim target="coma1"]
+
+
+
+*02
+//-------------------------------------------------------------------------------
+//  天津飯
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_012_001"]
+
+
+[character x=-150 y=-60 storage = "00257/guard_p_01" scale = 1.6 action = "fadein" time = 0.1]
+
+[move target =".chara" x=-180 time = 0.3]
+
+[wait_anim target=".chara"]
+
+[quake target =".chara" power = 3 time = 0.4]
+
+//[wait_anim target=".chara"]
+
+[wait time = 0.2]
+
+
+
+[balloon id = "01" x = 130 y = 135 shape="001_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target = "01"]
+[font size = 28]
+おまえらのような[r]ヤツがいたなんてな…[p]
+
+
+[balloon id = "01" x = 130 y = -90 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target = "01"]
+[font size = 28]
+こんな目に[r]あわせられたのは[r]はじめてだぜ…[p]
+
+
+
+//-------------------------------------------------------------------------------
+//  激突
+//-------------------------------------------------------------------------------
+
+//[coma shape="N0004L" bg = "bg_012_001"]
+//[lwfobject id="syuutyuu1" storage="syucyu:ef_002" mask="inside" loop=1 priority=10 scale=1.0]
+
+//正面突進の天津飯入れたい
+
+
+//[lwfobject id = "kaki1" storage="kakimoji:ef_023" in="02" x=-0 y=20 scale = 2]
+//[quake target = "kaki1" power =11 time = 0.2]
+
+//[wait time = 0.4]
+
+
+//-------------------------------------------------------------------------------
+//  激突
+//-------------------------------------------------------------------------------
+//[coma id = "coma1" shape="S0001" bg = "bg_012_001"]
+//[move target = "coma1" x = -320 y = 0]//中央コマの場合これ固定で
+
+//[scale target = "coma1" scale = 0.9]
+//[quake target = "coma1" power = 12 time = 0.8]
+
+//[lwfobject id = "kaki1" storage="kakimoji:ef_024" in="04" x=-20 y=145 scale = 2.5]
+//[quake target = "kaki1" power = 14 time = 0.8]
+//[lwfobject id = "syuutyuu1" storage="syucyu:ef_005" mask="inside" loop=1 priority=10 scale=0.9]
+
+//[wait_anim target="kaki1"]
+//[clear target = "syuutyuu1"]
+//[wait time = 0.5]
+
+//[lwfobject id = "syuutyuu1" storage="syucyu:ef_001" mask="inside" loop=0 priority=10 scale=0.9]
+//[quake target = ".coma" power = 14 time = 0.4]
+//[lwfobject id = "kaki2" storage="kakimoji:ef_006" in="04" x=100 y=-150 scale = 2.0]
+//[quake target = "kaki2" power = 17 time = 0.4]
+
+//[wait_anim target="coma1"]
+
+// 空のフキダシ
+//[balloon x = 0 y = 0 shape="002_01" scale = 0][p]
+
+
+
+*03
+//-------------------------------------------------------------------------------
+//  鶴仙人
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0004L" bg = "bg_012_001"]
+
+
+[character x = -200 y = -110 storage = "00065/idl_side_p_02" scale = 1 action = "fadein" time = 0.1]
+
+[character x = 260 y = -45 storage = "00257/idl_side_p_02" scale = 2.2 action = "fadein" time = 0.1]
+
+[wait_anim target=".chara"]
+
+//[wait time = 0.5]
+
+[balloon x = -130 y = 90 shape="004_04" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][quake target = ".bln" power = 3 time = 0.2]
+[font size = 28]
+え〜い[r]なにをやっとるんだ！[r]天津飯のヤツめ…！[p]
+
+*04
+//-------------------------------------------------------------------------------
+//  鶴仙人
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_012_001"]
+
+
+[character x = -200 y = -100 storage = "00065/heapup_p_01" scale = 1.4 action = "fadein" time = 0.1]
+
+[balloon x = 100 y = 60 shape="004_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][quake target = ".bln" power = 3 time = 0.2]
+[font size = 28]
+あんなガキども[r]さっさとかたづけて[r]しまわんか！！[p]
+
+
+//-------------------------------------------------------------------------------
+//  激突
+//-------------------------------------------------------------------------------
+
+//[coma shape="N0002R" bg = "normal_000_008"]
+//[move target = "coma1" x = -320 y = 0]
+//[lwfobject id="syuutyuu1" storage="syucyu:ef_002" mask="inside" loop=1 priority=10 scale=1.0]
+
+//[lwfobject id = "kaki1" storage="kakimoji:ef_006" in="02" x=-0 y=20 scale = 3 action = "expand" time = 0.1]
+//[quake target = "kaki1" power =13 time = 0.2]
+
+//[wait time = 0.5]
+
+
+
+//-------------------------------------------------------------------------------
+//  天津飯
+//-------------------------------------------------------------------------------
+//[coma shape="N0001L" bg = "bg_012_001"]
+
+
+//[character x = -180 y = -70 storage = "00257/guard_p_01" scale = 1.4 action = "fadein" time = 0.1]
+//[quake target = ".chara" power = 12 time = 0.4]
+
+//[wait_anim target=".chara"]
+
+
+//[balloon id = "01" x = 120 y = 30 shape="001_03" scale = 1 action = "fadein" time = 0.1]
+//[wait_anim target = "01"]
+
+//[font size = 28]
+//あきれた[r]タフなヤツらだぜ…[p]
+
+*05
+//-------------------------------------------------------------------------------
+//  天津飯
+//-------------------------------------------------------------------------------
+[se storage = "3022"]
+[coma shape="N0001L" bg = "bg_012_001"]
+
+
+[lwfobject id = "バッ" storage="kakimoji:ef_023" in="02" x = -180 y= -120 scale = 1.4 action = "fadein" time = 0.1]
+[quake target = "バッ" power = 9 time = 0.4]
+
+
+[character x=-270 y=-100 storage = "00257/ten_atc_energyball_e_02" scale = 1.0 action = "fadein" time = 0.1]
+[flip target =".chara" h=1]
+[quake target = ".chara" power = 6 time = 0.4]
+
+[balloon id = "01" x = 140 y = 110 shape="007_02" scale = 0.75 action = "expand" time = 0.1]
+[wait_anim target = "01"]
+[quake target = ".bln" power = 7 time = 0.2]
+[font size = 36]
+//だが
+…お遊びは[r]これまでだっ！！
+[p]
+
+[balloon id = "01" x = 140 y = -100 shape="007_01" scale = 0.75 action = "expand" time = 0.1]
+[wait_anim target = "01"]
+[quake target = ".bln" power = 7 time = 0.2]
+[font size = 36]
+勝負にカタを[r]つけてやるっ！！[p]
+
+*06
+//-------------------------------------------------------------------------------
+//  チャオズ
+//-------------------------------------------------------------------------------
+[se storage = "3024"]
+[coma shape="N0002R" bg = "bg_012_001"]
+//[lwfobject id="syuutyuu1" storage="syucyu:ef_002" mask="inside" loop=1 priority=10 scale=1.0]
+
+[character x = -140 y = -10 storage = "00012/dash_e_01" scale = 1.8 action = "fadein" time = 0.1 action = "slide:right" time = 0.4]
+
+[balloon id = "01" x = 110 y = -80 shape="006_02" scale = 0.75 action = "expand" time = 0.1]
+[wait_anim target = "01"]
+[quake target = ".bln" power = 7 time = 0.2]
+[font size = 36]
+天さん！！[r]まって！！
+[p]
+
+[stopbgm]

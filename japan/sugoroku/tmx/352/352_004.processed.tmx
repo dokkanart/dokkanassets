@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" tiledversion="1.1.5" orientation="orthogonal" renderorder="right-down" width="64" height="67" tilewidth="40" tileheight="40" infinite="0" nextobjectid="143">
+ <properties>
+  <property name="charageki_bg_01" value="normal_008_001"/>
+ </properties>
+ <tileset firstgid="1" name="green" tilewidth="40" tileheight="40" spacing="1" tilecount="352" columns="22">
+  <image source="image/common/green.png" width="901" height="655"/>
+ </tileset>
+ <tileset firstgid="353" name="obj" tilewidth="40" tileheight="40" spacing="1" tilecount="360" columns="20">
+  <image source="image/area_004/obj.png" width="819" height="737"/>
+ </tileset>
+ <tileset firstgid="713" name="Path" tilewidth="40" tileheight="40" spacing="1" tilecount="32" columns="4">
+  <image source="image/common/mapchip-base.png" width="163" height="327"/>
+ </tileset>
+ <tileset firstgid="745" name="Attribute" tilewidth="40" tileheight="40" spacing="1" tilecount="32" columns="4">
+  <image source="image/common/mapchip-meta.png" width="163" height="327"/>
+ </tileset>
+ <tileset firstgid="777" name="green_box" tilewidth="40" tileheight="40" spacing="1" tilecount="483" columns="23">
+  <image source="image/area_023/obj1.png" width="942" height="860"/>
+ </tileset>
+ <tileset firstgid="1260" name="green_box2" tilewidth="40" tileheight="40" spacing="1" tilecount="529" columns="23">
+  <image source="image/area_023/obj2.png" width="942" height="942"/>
+ </tileset>
+ <tileset firstgid="1789" name="kamehouse" tilewidth="40" tileheight="40" spacing="1" tilecount="63" columns="9">
+  <image source="image/area_100/kamehouse.png" width="368" height="286"/>
+ </tileset>
+ <tileset firstgid="1852" name="land" tilewidth="40" tileheight="40" spacing="1" tilecount="96" columns="12">
+  <image source="image/area_100/land.png" width="491" height="327"/>
+ </tileset>
+ <tileset firstgid="1948" name="sea" tilewidth="40" tileheight="40" spacing="1" tilecount="136" columns="8">
+  <image source="image/area_023/island_sea_04.png" width="327" height="696"/>
+ </tileset>
+ <tileset firstgid="2084" name="area_123_green_01" tilewidth="40" tileheight="40" spacing="1" tilecount="64" columns="8">
+  <image source="../ishin_design/Resources/sugoroku/map/image/area_123/area_123_green_01.png" width="327" height="327"/>
+ </tileset>
+ <layer name="bg" width="64" height="67">
+  <data encoding="base64" compression="zlib">
+   eJztwzENAAAMBKGb37/gyugCCaumqqqqqqqqqqqqqqqqqqqqqk8PGvKngQ==
+  </data>
+ </layer>
+ <layer name="obj" width="64" height="67">
+  <data encoding="base64" compression="zlib">
+   eJzt18VOBEEYReFGe3B3h9fG3R0G18HdbYu7u52XqKSmcxffplN32flzAq7jzGAWc5jHAhaxhFif48QhHglIRBKSkYJAkO+XebOCVaxhHRvYxBZSeZOGdGQgE1nIRo4H9tu82cEu9rCPAxziCLm8yUM+ClCIIhSjxAP7Y96c4BRnOMcFLnGFUpShHBWoRBWqUeMG//4aN7jFHe7xgEc8oRZ1qEcDGtGEZrR4YP+MF7ziDe/4wCe+0Io2tKMDnehCN3o8sP/GD37xB4d/IgShCEMv3/rQDz8GMIghDHtgH86bCETChQ9RiEYMRngzijGMYwKTmMK0B/a232fTe9vvs+m97ffZ9N72+2x6b/t9Nr23/T6b3tt+n03vbb/Ppve232f1v/pf/a/+V/+r/9X/6n/1v/pf/a/+V/+r/9X/6n/1v/pf/a/+V/+r/9X/6n/1v/pf/a/+V/+r/9X/6n/1v/pf/a/+V/+r/9X/6n/1v/pf/a/+V/+r/9X/9t9n9b/63+T+Hy0SSVc=
+  </data>
+ </layer>
+ <layer name="obj" width="64" height="67">
+  <data encoding="base64" compression="zlib">
+   eJztz1VOg1EABeH/rZvCrUCLa6nj7gWKu7vLZpk1EAjJzUzyvZ8TRWZmZmZmZmZmZmZmZmZmZn9TRSyKKlGFatSgFnWoRwMa0YR47L/X/n7NfGpBKxJIog3t6EAnutCNngD/9/KpD/0YwCBSGEIaGWSRQz7A/wU+FTGMEYxiDOOYwCSmMI2ZAP/P8mkO81jAIpawjBWsooQ1rAf4f4NPZWxiC9vYwS72sI8DHOIowP/HfDrBKc5wjgtc4grXuMEt7gL8f8+nBzziCc94wSve8I4PfOIrwP9mZmZmZmZmZmZmZmZmZj/pG8RWKvE=
+  </data>
+ </layer>
+ <layer name="obj" width="64" height="67">
+  <data encoding="base64" compression="zlib">
+   eJztz9tSgVEAQOGt4q8oSSJyqJBCjjm+/2OJZcYDuOlmz/pm1gOsECRJkiRJkiRJkiRJ/22XCeGP9hSSEFJ0QZd0RelTscrwltA13dAtZSlHd3Qf8ftRnr8HKtAjFemJSvRM5cj/K/y9UJVq9Ep1alCTWpH/v/H3Th/Upg516ZN69BX5/zd/fRrQkH5oRGOa0DTy/xl/c/qlBS1pRWva0Dbyf0mSJEmSJEmSJEmSznUAkocLpw==
+  </data>
+ </layer>
+ <layer name="Path" width="64" height="67">
+  <data encoding="base64" compression="zlib">
+   eJzt0DEKgDAQRcEl97+ZaKGVgp7FWNikEAuDkMzA9vt+BAAAAAAAAAAAUMOaIsb09xffGHLH9rLl6p7y7Y20347cszzs0Gp3qdyhl+7StcPcYTcAAAAAAADUcgKAIRKn
+  </data>
+ </layer>
+ <layer name="Attribute" width="64" height="67">
+  <data encoding="base64" compression="zlib">
+   eJztz8EJADAIADHp/gvryyUqlpJMcBcBAAAAAAAAAABMqbNdcEd+8gEAAAAAAADAmxooFwH4
+  </data>
+ </layer>
+ <objectgroup name="PathAttributes">
+  <object id="135" name="0" type="space" x="1040" y="1440" width="40" height="40">
+   <properties>
+    <property name="group" value="0"/>
+    <property name="next" value="1"/>
+   </properties>
+  </object>
+  <object id="136" name="1" type="space" x="1120" y="1480" width="40" height="40">
+   <properties>
+    <property name="group" value="0"/>
+    <property name="next" value="2"/>
+   </properties>
+  </object>
+  <object id="137" name="2" type="space" x="1200" y="1520" width="40" height="40">
+   <properties>
+    <property name="group" value="0"/>
+    <property name="next" value="3"/>
+   </properties>
+  </object>
+  <object id="138" name="3" type="space" x="1280" y="1560" width="40" height="40">
+   <properties>
+    <property name="group" value="0"/>
+    <property name="next" value="4"/>
+   </properties>
+  </object>
+  <object id="139" name="4" type="space" x="1360" y="1520" width="40" height="40">
+   <properties>
+    <property name="group" value="0"/>
+    <property name="next" value="5"/>
+   </properties>
+  </object>
+  <object id="140" name="5" type="space" x="1440" y="1480" width="40" height="40">
+   <properties>
+    <property name="group" value="0"/>
+    <property name="next" value="6"/>
+   </properties>
+  </object>
+  <object id="141" name="6" type="space" x="1520" y="1440" width="40" height="40">
+   <properties>
+    <property name="group" value="0"/>
+    <property name="next" value="7"/>
+   </properties>
+  </object>
+  <object id="142" name="7" type="space" x="1600" y="1400" width="40" height="40"/>
+ </objectgroup>
+</map>

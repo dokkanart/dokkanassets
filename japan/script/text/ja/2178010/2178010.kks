@@ -1,0 +1,87 @@
+*start|スタート
+//武道会開催！サタンの後継者は誰!?
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "001"]
+
+*01
+//-------------------------------------------------------------------------------
+//  アナウンサー
+//-------------------------------------------------------------------------------
+[se storage = "39"]
+[coma shape="S0001" bg = "bg_025_002"]
+
+[balloon x=-120 y=200 shape="005_01" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+[quake target =".bln" power = 3 time = 0.2]
+それでは 本日の[r]メインイベント！
+[p]
+
+[balloon x=120 y=-130 shape="005_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+チャンピオン[r]
+パパイヤマン選手が[r]
+ミスター・サタンに[r]
+挑戦です！
+[p]
+
+
+*02
+//----------------------------------------------------------
+//ミスター・サタン（GT）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_025_002"]
+
+[character x = 115 y = -120 storage = "00334/card_01" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon x=-120 y=100 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+パパイヤマンだと？[r]
+ふざけた名前[r]つけおって！
+[p]
+
+[balloon x=-120 y=-100 shape="001_03" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+[quake target =".bln" power = 3 time = 0.2]
+いっちょ[r]
+このミスター・サタンが[r]
+揉んでやるか！
+[p]
+
+
+*03
+//-------------------------------------------------------------------------------
+//  パパイヤマン（ウーブ）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002L" bg = "bg_025_002"]
+
+[character x=-160 y=-260 storage = "90003/papaiyaman" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x=130 y=80 shape="001_03" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+スーパー[r]世界チャンピオンの[r]
+あのミスター・サタンと[r]
+闘うんだ…！
+[p]
+
+[balloon x=150 y=-205 shape="001_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+悔いのない試合を[r]
+しなくちゃ！
+[p]
+
+//-------------------------------------------------------------------------------
+[stopbgm]

@@ -1,0 +1,262 @@
+*start|スタート
+//ステージ１スタート
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+//[bgm storage = "018"]
+
+*01
+//-------------------------------------------------------------------------------
+//  ブリアン
+//-------------------------------------------------------------------------------
+[se storage = "3022"]
+[coma shape="S0001" bg = "bg_000_054"]
+
+[lwfobject id = "kaki1" storage="kakimoji:ef_023" x=120 y=90 angle = 30 scale = 1.3 action = "fadein" time = 0.1]
+[quake target = "kaki1" power = 15 time = 0.4]
+
+
+[character x = 0 y = -15 storage = "00816/card_01" scale = 1.1 action = "fadein" time = 0.1]
+
+
+[balloon shape="001_03" x = -70 y = 460 scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+[quake target =".bln" power = 3 time = 0.2]
+私は第2宇宙の戦士[r]
+ブリアン・デ・シャトー！
+[p]
+
+[balloon shape="001_02" x = 145 y = -170 scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+咲かせましょう！[r]響かせましょう！[r]
+愛と勝利の歌を！[r]さあ 変身よ！
+[p]
+
+//[balloon shape="001_03" x = 80 y = -270 scale = 0.9 action = "fadein" time = 0.1]
+//[wait_anim target=".bln"]
+//[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+//フォーメーション！
+//[p]
+
+[bgm storage = "071"]
+
+*02
+//-------------------------------------------------------------------------------
+//  
+//-------------------------------------------------------------------------------
+[se storage = "18"]
+[coma shape="N0003R" bg = "bg_000_058"]
+
+[character x = 90 y = 0 storage = "00816/card_05" scale = 1.0 angle = 0 action = "fadein" time = 0.1]
+
+[balloon shape="006_02" x = -170 y = 70 scale = 0.8 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 7 time = 0.2]
+フォーメーション！
+[p]
+
+//[character x = 50 y = -650 storage = "00816/card_01" scale = 2.3 angle = 0 action = "fadein" time = 0.1]
+
+//[balloon shape="001_03" x = 0 y = 200 scale = 0.9 action = "fadein" time = 0.1]
+//[wait_anim target=".bln"]
+//[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+//フォーメーション！
+//[p]
+
+
+
+//[wait time = 0.7]
+
+[se storage = "3025"]
+//点滅
+[balloon id = "kira1" shape="010_21" x = 0 y = 200 scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon id = "kira2" shape="010_21" x = 0 y = 200 scale = 1.5 action = "fadein" time = 0.1]
+[flip target ="kira2" h=1]
+
+[balloon id = "kira3" shape="010_21" x = 0 y = -700 scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon id = "kira4" shape="010_21" x = 0 y = -700 scale = 1.5 action = "fadein" time = 0.1]
+[flip target ="kira4" h=1]
+
+[move target ="kira1" y=400 time = 3.0]
+[move target ="kira2" y=400 time = 3.0]
+[move target ="kira3" y=-500 time = 3.0]
+[move target ="kira4" y=-500 time = 3.0]
+
+
+[balloon id = "wh1" shape="008_02" x = 0 y = 0 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+[balloon id = "wh2" x=0 y=0 shape="008_02" scale = 50.0 action = "fadein" time = 0.5]
+[wait time = 0.6] 
+
+
+
+[fadeout target = "kira1" time = 1.5]
+[fadeout target = "kira2" time = 1.5]
+[fadeout target = "kira3" time = 1.5]
+[fadeout target = "kira4" time = 1.5]
+
+[fadeout target = "wh2" time = 0.5]
+[wait_anim target="wh2"]
+
+
+
+*03
+//-------------------------------------------------------------------------------
+//  リブリアン
+//-------------------------------------------------------------------------------
+//[se storage = "40"]
+[se storage = "46"]
+[coma shape="N0004R" bg = "bg_000_058"]
+
+[character x = 190 y = -500 storage = "00816/card_03" scale = 2.5 angle = 7 action = "fadein" time = 0.1]
+
+[balloon shape="001_03" x = -130 y = 70 scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+みんなの幸せ[r]
+愛をお届け！[r]
+リブリアン！
+[p]
+
+*04
+//-------------------------------------------------------------------------------
+//  カクンサ
+//-------------------------------------------------------------------------------
+[se storage = "46"]
+[coma shape="N0004L" bg = "bg_000_058"]
+
+[character x = -120 y = -600 storage = "00819/card_01" scale = 2.5 angle = -11 action = "fadein" time = 0.1]
+
+[balloon shape="001_03" x = 130 y = 70 scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+野生のとどろき[r]
+愛の雄叫び！[r]
+カクンサ！
+[p]
+
+*05
+//-------------------------------------------------------------------------------
+//  ロージィ
+//-------------------------------------------------------------------------------
+[se storage = "46"]
+[coma shape="N0004R" bg = "bg_000_058"]
+
+[character x = 350 y = -530 storage = "00818/card_01" scale = 2.5 angle = -15 action = "fadein" time = 0.1]
+
+[balloon shape="001_03" x = -130 y = 70 scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+夢と魔法で愛の一撃！[r]
+ロージィ！
+[p]
+
+
+
+*06
+//-------------------------------------------------------------------------------
+//  
+//-------------------------------------------------------------------------------
+[se storage = "16"]
+[coma shape="S0001" bg = "bg_000_058"]
+
+[balloon id = "kira1" shape="010_21" x = 300 y = 0 scale = 1.0 action = "fadein" time = 0.1]
+[flip target ="kira1" h=1]
+[flip target ="kira1" v=1]
+[balloon id = "kira2" shape="010_21" x = -340 y = 0 scale = 1.0 action = "fadein" time = 0.1]
+[flip target ="kira2" v=1]
+[flip target ="kira2" h=1]
+
+//カクンサ
+[character x = -220 y = 120 storage = "00819/card_01" scale = 0.7 angle = -20 action = "fadein" time = 0.1]
+
+//ロージィ
+[character x = 230 y = 80 storage = "00818/card_01" scale = 0.9 action = "fadein" time = 0.1]
+
+//リブリアン
+[character x = 0 y = 0 storage = "00816/card_03" scale = 1.0 angle = 0 action = "fadein" time = 0.1]
+
+
+[balloon id = "hato2" shape="010_20" x = 70 y = 140 scale = 3.6 action = "expand" time = 1.7]
+[balloon id = "hato" shape="010_20" x = 70 y = 140 scale = 4.0 action = "expand" time = 0.7]
+[wait time = 0.3]
+[fadeout target = "hato" time = 0.4]
+[fadeout target = "hato2" time = 0.6]
+
+
+
+[wait_anim target="hato"]
+
+[balloon shape="001_03" x = 0 y = 420 scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+[quake target =".bln" power = 3 time = 0.2]
+変身完了！！
+[p]
+
+*07
+//-------------------------------------------------------------------------------
+//  ヘレス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_058"]
+
+[character x = -210 y = -310 storage = "90003/heresu" scale = 1.1 action = "fadein" time = 0.1]
+
+[balloon shape="001_03" x = 120 y = 100 scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+愛こそ力！愛こそ希望！[r]
+愛こそ全て！
+[p]
+
+[balloon shape="001_01" x = 135 y = -100 scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+それを[r]
+愛なき宇宙の人間に[r]
+示してやるのです！
+[p]
+
+*08
+//-------------------------------------------------------------------------------
+//  リブリアン
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_000_057"]
+
+[character x = 140 y = -200 storage = "00816/card_03" scale = 1.2 angle = 0 action = "fadein" time = 0.1]
+
+[balloon shape="001_03" x = -150 y = 90 scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+はい！ヘレスさま！
+[p]
+
+//[quake target =".chara" power = 3 time = 0.2]
+
+[balloon shape="001_02" x = -140 y = -240 scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+この思い[r]
+キミたちに届け！[r]
+ラブ！！
+[p]
+//-------------------------------------------------------------------------------
+[stopbgm]

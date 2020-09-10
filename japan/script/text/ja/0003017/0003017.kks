@@ -1,0 +1,307 @@
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+//[bgm storage = "012"]
+
+
+*01
+//-------------------------------------------------------------------------------
+//  ウーロン
+//-------------------------------------------------------------------------------
+
+//[se storage = "04"]
+[coma shape="S0001" bg = "bg_014_001"]
+
+[character x = -160 y = -0 storage = "00344/card_01" scale = 1.2 action = "fadein" time = 0.1]
+
+[wait_anim target=".chara"]
+
+[balloon x=125 y=270 shape="001_02" scale = 1 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target = ".bln" power = 3 time = 0.2]
+[font size = 24]
+へへへ…[r]
+ドラゴンボールを[r]
+７つ全部集めたんだって？[p]
+
+[balloon x=140 y=-140 shape="001_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[quake target = ".bln" power = 3 time = 0.2]
+[font size = 28]
+ちょ…[r]
+ちょっとオレにも[r]
+見せてくれよ！[p]
+
+
+
+*02
+//-------------------------------------------------------------------------------
+//  ウーロン
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_014_001"]
+
+[character x = -180 y = -100 storage = "00344/card_01" scale = 1 action = "fadein" time = 0.1]
+
+[balloon x=100 y=130 shape="004_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[quake target = ".bln" power = 3 time = 0.2]
+[font size = 28]
+ん？[r]
+な…なんだよ！[p]
+
+[balloon x=135 y=-80 shape="004_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[quake target = ".bln" power = 3 time = 0.2]
+[font size = 28]
+その ひとを…[r]
+いやブタを疑うような[r]
+目は！[p]
+
+
+//---------------------------------------------
+
+[if !$is_cleared]    
+// 達成済みか否かは $is_cleared 変数に入っているので、それを用いて if 分岐します。
+
+//---------------------------------------------
+
+//*explain|任務内容詳細説明    // ラベルを付けておくと、テスターで見やすくなります。
+
+// ******************************************************
+//  ここには、
+//  まだ、このミッションを達成していない場合の展開を記述します。
+// ******************************************************
+
+
+*explain|任務内容詳細説明
+*03_mitatu
+//-------------------------------------------------------------------------------
+//  プーアル
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_014_001"]
+
+[character x=190 y=-30 storage = "90003/puaru_02" scale = 0.9 action = "fadein" time = 0.1]
+
+[balloon x=-125 y=110 shape="001_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target = ".bln" power = 3 time = 0.2]
+[font size = 28]
+ウーロン！[r]
+なにやってるんだよ[p]
+
+
+[balloon x=-125 y=-90 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target = ".bln" power = 3 time = 0.2]
+[font size = 28]
+どうせ[r]
+くだらないこと[r]
+企んでるんだろうけど…[p]
+
+
+*04_mitatu
+//-------------------------------------------------------------------------------
+//  ウーロン
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_014_001"]
+
+[character x = -180 y = -100 storage = "00344/card_01" scale = 1 action = "fadein" time = 0.1]
+
+[balloon x=115 y=100 shape="004_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[quake target = ".bln" power = 3 time = 0.2]
+[font size = 28]
+な なに言ってんだ[r]
+プーアル！[r]
+なにも企んでないよ！[p]
+
+[balloon x=125 y=-100 shape="004_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[quake target = ".bln" power = 3 time = 0.2]
+[font size = 28]
+オレは ただ[r]
+ちょっとアドバイスでも[r]
+してやろうと思って…[p]
+
+
+*05_mitatu
+//-------------------------------------------------------------------------------
+//  プーアル
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_014_001"]
+
+[character x=160 y=-10 storage = "90003/puaru_01" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x=-135 y=90 shape="001_01" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[quake target = ".bln" power = 3 time = 0.2]
+[font size = 36]
+さあさあ！[p]
+
+[balloon x=-125 y=-180 shape="001_02" scale = 1 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target = ".bln" power = 3 time = 0.2]
+[font size = 24]
+ウーロンなんか[r]
+ほっといて[r]
+早く神龍に願いを[r]
+叶えてもらいましょう！[p]
+
+
+//---------------------------------------------
+[else]
+//*has_been_cleared|すでに達成済み    // ラベルを付けておくと、テスターでチェックしやすくなります。
+
+// ******************************************************
+//  ここには、
+//  すでに、このミッションを達成している場合の展開を記述します。
+// ******************************************************
+
+
+*has_been_cleared|すでに達成済み
+*06
+//-------------------------------------------------------------------------------
+//  プーアル
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_014_001"]
+
+[character x=190 y=-30 storage = "90003/puaru_02" scale = 0.9 action = "fadein" time = 0.1]
+
+[balloon x=-125 y=110 shape="001_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target = ".bln" power = 3 time = 0.2]
+[font size = 28]
+ウーロン！[r]
+なにやってるんだよ[p]
+
+
+[balloon x=-125 y=-90 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target = ".bln" power = 3 time = 0.2]
+[font size = 28]
+どうせ[r]
+くだらないこと[r]
+企んでるんだろうけど…[p]
+
+
+*07
+//-------------------------------------------------------------------------------
+//  ウーロン
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_014_001"]
+
+[character x = -180 y = -100 storage = "00344/card_01" scale = 1 action = "fadein" time = 0.1]
+
+[balloon x=115 y=100 shape="004_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[quake target = ".bln" power = 3 time = 0.2]
+[font size = 28]
+な なに言ってんだ[r]
+プーアル！[r]
+なにも企んでないよ！[p]
+
+[balloon x=125 y=-100 shape="004_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[quake target = ".bln" power = 3 time = 0.2]
+[font size = 28]
+オレは ただ[r]
+ちょっとアドバイスでも[r]
+してやろうと思って…[p]
+
+
+*08
+//-------------------------------------------------------------------------------
+//  プーアル
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_014_001"]
+
+[character x=190 y=-20 storage = "90003/puaru_01" scale = 1 action = "fadein" time = 0.1]
+
+[balloon x=-100 y=50 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[quake target = ".bln" power = 3 time = 0.2]
+[font size = 28]
+残念でした！[r]
+もうドラゴンボールで[r]
+願いは叶えちゃった[r]
+みたいだよ！[p]
+
+
+*09
+//-------------------------------------------------------------------------------
+//  ウーロン
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_014_001"]
+
+[character x = -180 y = -100 storage = "00344/card_01" scale = 1 action = "fadein" time = 0.1]
+
+[balloon x=125 y=60 shape="004_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[quake target = ".bln" power = 3 time = 0.2]
+[font size = 28]
+そ…そんな～！[r]
+ギャ…ギャルのパンティ[r]
+の夢が……
+//[p]
+
+[wait_anim target=".bln"]
+[rotate_by target=".bln" angle=10 time=0.2] 
+[move target =".bln" y=0 time = 0.2]
+[wait_anim target=".bln"]
+// 空のフキダシ（セリフがないコマを送るために使用） 
+[balloon x = 0 y = 0 shape="002_01" scale = 0] 
+[p]
+
+
+*10
+//-------------------------------------------------------------------------------
+//  プーアル
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_014_001"]
+
+[character x=160 y=-10 storage = "90003/puaru_01" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x=-125 y=100 shape="001_03" scale = 1 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[quake target = ".bln" power = 3 time = 0.2]
+[font size = 24]
+ウーロンのことなんて[r]
+気にしなくて大丈夫ですよ！[p]
+
+[balloon x=-125 y=-180 shape="001_02" scale = 1 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[quake target = ".bln" power = 3 time = 0.2]
+[font size = 24]
+18号さ～ん！[r]
+あとは[r]よろしくお願いします～[p]
+
+
+
+[endif]
+*conclusion|結び
+
+//---------------------------------------------
+
+
+
+//[stopbgm]

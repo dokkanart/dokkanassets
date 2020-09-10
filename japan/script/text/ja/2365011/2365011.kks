@@ -1,0 +1,302 @@
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "004"]
+
+*001
+//-------------------------------------------------------------------------------
+//  孫悟飯
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0001R" bg = "bg_070_001"]
+ 
+[character id = "gohan" x = 220 y = -90 storage = "00322/idl_side_p_01" scale = 1.1 action = "fadein" time = 0.1] 
+[flip target ="gohan" h=1] 
+ 
+[balloon x=-80 y=70 shape="001_03" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 40]
+//[quake target =".bln" power = 3 time = 0.2]
+大丈夫？
+[p]
+
+*002
+//-------------------------------------------------------------------------------
+//  シャモ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_070_001"]
+ 
+[character x = -190 y = -70 storage = "90003/shamo" scale = 0.85 action = "fadein" time = 0.1]
+[flip target =".chara" h=1]
+ 
+[balloon x=100 y=50 shape="001_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+あ…[r]
+ありがとう…
+[p]
+
+*003
+//-------------------------------------------------------------------------------
+//  トランクス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_070_001"]
+ 
+[character x = 200 y = -120 storage = "00069/idl_back_e_01_long" scale = 1.3 action = "fadein" time = 0.1]
+ 
+[balloon x=-100 y=50 shape="001_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+…それにしても[r]
+この星はいったい…？
+[p]
+
+*004
+//-------------------------------------------------------------------------------
+//  悟空が瞬間移動で現れる
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_070_001"]
+
+[wait time = 0.7] 
+
+//悟空
+[character id = "gok" x = -210 y = -110 storage = "00003/none_idl_side_e_01" scale = 1.1 action = "fadein" time = 0.1] 
+[flip target ="gok" h=1]
+[quake target = "gok" power = 7 time = 0.4] 
+
+[se storage = "3035"]
+
+//シュンッ
+[lwfobject id = "kaki2" storage="kakimoji:ef_012" in="04" x=-50 y=-110 scale = 2.0]
+[quake target = "kaki2" power = 15 time = 0.2]
+
+[wait_anim target="gok"]
+
+// 空のフキダシ
+[balloon x = 0 y = 0 shape="002_01" scale = 0] 
+[p]
+
+*005
+//-------------------------------------------------------------------------------
+//  孫悟飯
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_070_001"]
+ 
+[character id = "gohan" x = 220 y = -90 storage = "00322/idl_side_p_01" scale = 1.1 action = "fadein" time = 0.1] 
+[flip target ="gohan" h=1] 
+ 
+[balloon x=-110 y=45 shape="001_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+おとうさん！[r]
+どうしてここに！？
+[p]
+
+*006
+//-------------------------------------------------------------------------------
+//  孫悟空
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_070_001"]
+ 
+[character id = "gok" x = -210 y = -110 storage = "00003/none_idl_side_e_01" scale = 1.1 action = "fadein" time = 0.1] 
+[flip target ="gok" h=1]
+ 
+[balloon x=140 y=80 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+オラにもわかんねえ[r]
+サイヤ人の気を追って… 
+[p]
+ 
+[balloon x=145 y=-100 shape="001_03" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+…おめえたちこそ[r]
+なんでここに？ 
+[p]
+
+*007
+//-------------------------------------------------------------------------------
+//  トランクス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_070_001"]
+ 
+[character x = 200 y = -120 storage = "00069/idl_back_e_01_long" scale = 1.3 action = "fadein" time = 0.1]
+ 
+[balloon x=-110 y=45 shape="001_01" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+父さんが[r]
+伝説の超サイヤ人を[r]
+倒してくれと頼まれて…
+[p]
+
+*008
+//-------------------------------------------------------------------------------
+//  孫悟空
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_070_001"]
+ 
+[character id = "gok" x = -210 y = -110 storage = "00003/none_idl_side_e_01" scale = 1.1 action = "fadein" time = 0.1] 
+[flip target ="gok" h=1]
+ 
+[balloon x=130 y=50 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+界王さま…[r]
+ベジータにも[r]
+頼んだのか？
+[p]
+
+*009
+//-------------------------------------------------------------------------------
+//  パラガス
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0001R" bg = "bg_070_001"]
+
+[wait time = 0.3]
+ 
+ [se storage = "3022"]
+[character x = 350 y = -130 storage = "00258/idl_side_e_01" scale = 1.2 action = "slide:right" time = 0.3]
+ 
+[wait_anim target=".chara"] 
+
+[wait time = 0.3]
+ 
+[balloon x=-120 y=90 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+よく来たな[r]
+カカロット…[r]
+…いや孫悟空
+[p]
+
+*010
+//-------------------------------------------------------------------------------
+//  孫悟空
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_070_001"]
+ 
+[character x = -200 y = -110 storage = "00003/none_heapup_e_01" scale = 1.2 action = "fadein" time = 0.1]
+[flip target =".chara" h=1]
+ 
+[balloon x=120 y=80 shape="001_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+どうして[r]
+オラのことを！？ 
+[p]
+ 
+[balloon x=130 y=-100 shape="001_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+おめえは[r]
+サイヤ人だな！？ 
+[p]
+
+*011
+//-------------------------------------------------------------------------------
+//  パラガス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_070_001"]
+ 
+[character x = 350 y = -130 storage = "00258/idl_side_e_01" scale = 1.2 action = "fadein" time = 0.1]
+ 
+[balloon x=-120 y=90 shape="002_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+バーダックの[r]
+せがれだろう？ 
+[p]
+ 
+[balloon x=-130 y=-100 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+ふっ…[r]
+夕食でもいかがかな？ 
+[p]
+
+*012
+//-------------------------------------------------------------------------------
+//  孫悟空
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_070_001"]
+ 
+[character id = "gok" x = -210 y = -110 storage = "00003/none_idl_side_e_01" scale = 1.1 action = "fadein" time = 0.1] 
+[flip target ="gok" h=1]
+ 
+[balloon x=135 y=50 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+そういや…オラ[r]
+ハラへっちまった…[r]
+ははは…
+[p]
+
+*013
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_070_001"]
+ 
+[balloon x=0 y=0 shape="003_02" scale = 1.6 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 15]
+//[quake target =".bln" power = 3 time = 0.2]
+それぞれの目的のため[r]
+新惑星ベジータへと[r]
+やってきた悟空たち[r]
+　[r]
+しかし そこには[r]荒廃した土地と[r]
+パラガスの命令で[r]働かされている[r]
+シャモ星人たちの姿しか[r]なかった…
+[p]
+
+
+*014
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002L" bg = "bg_000_024"]
+ 
+[balloon x=0 y=-40 shape="003_02" scale = 1.6 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 15]
+//[quake target =".bln" power = 3 time = 0.2]
+はたして[r]
+パラガスの考えとは…？[r]
+　[r]
+そして [r]伝説の超サイヤ人の[r]
+正体とはいったい…！？
+[p]
+
+//-------------------------------------------------------------------------------
+[stopbgm]

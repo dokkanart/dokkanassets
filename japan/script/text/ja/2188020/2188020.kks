@@ -1,0 +1,392 @@
+*start|スタート
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "005"]
+
+*001
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="S0001" bg = "bg_022_006"]
+
+[balloon x=0 y=280 shape="003_01" scale = 1.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 13]
+//[quake target =".bln" power = 3 time = 0.2]
+マイと自分の将来が[r]
+気になり[r]
+何をしていても上の空の[r]
+トランクス[r]
+　[r]
+悟空と悟飯の助言を[r]
+受けたトランクスは[r]
+悩みを解決するために[r]
+グレートサイヤマンの[r]
+衣装で正体を隠し[r]
+占いババの宮殿へと[r]
+向かうのだった…
+[p]
+
+
+*002
+//-------------------------------------------------------------------------------
+//  トランクス（幼年期）（グレートサイヤマン）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_022_006"]
+
+//[character x = 150 y = -100 storage = "00200/card_09" scale = 0.75 action = "fadein" time = 0.1]
+[character x = 280 y = -90 storage = "00200/heapup_e_07" scale = 1.0 action = "fadein" time = 0.1]
+
+
+[balloon x = -105 y = 50 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+あ…あの…[r]
+ここに占いババさんが[r]
+いるんだよね？
+[p]
+
+
+*003
+//-------------------------------------------------------------------------------
+//  おばけ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_022_006"]
+
+[character id = "obake" x=-180 y=0 storage = "90003/obake" scale = 0.9 time = 0.1]
+[flip target ="obake" h=1]
+
+[balloon x=120 y=80 shape="001_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+はい[r]
+そうですよ〜[r]
+どうぞどうぞ
+[p]
+
+
+[balloon x=120 y=-110 shape="001_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+占いババさま〜[r]
+お客さまですよ〜
+[p]
+
+
+*004
+//-------------------------------------------------------------------------------
+//  占いババ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_022_006"]
+
+[wait time=0.7]
+
+[se storage = "48"]
+[character x = -190 y = -80 storage = "90003/uranai_baba" scale = 1.4 action = "fadein" time = 0.7]
+
+[wait_anim target=".chara"]
+
+[wait time=0.3]
+
+[balloon x=120 y=60 shape="001_03" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 54]
+//[quake target =".bln" power = 3 time = 0.2]
+………
+[p]
+
+
+*005
+//-------------------------------------------------------------------------------
+//  トランクス（幼年期）（グレートサイヤマン）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_022_006"]
+
+[character x = 280 y = -90 storage = "00200/heapup_e_07" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon x = -95 y = 60 shape="004_02" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 54]
+//[quake target =".bln" power = 3 time = 0.2]
+………
+[p]
+
+
+*006
+//-------------------------------------------------------------------------------
+//  占いババ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_022_006"]
+
+[character x = -190 y = -80 storage = "90003/uranai_baba" scale = 1.4 action = "fadein" time = 0.1]
+
+[balloon x=120 y=50 shape="001_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+…こぞう[r]
+ブルマは元気か？
+[p]
+
+
+*007
+//-------------------------------------------------------------------------------
+//  トランクス（幼年期）（グレートサイヤマン）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_022_006"]
+
+[character x = 280 y = -90 storage = "00200/heapup_e_07" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon x = -105 y = 85 shape="001_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+え！？ ママ！？[r]
+ママなら元気だけど…
+[p]
+
+[character x = 240 y = 50 storage = "99999/ase" scale = 0.55 action = "fadein" time = 0.2]
+
+
+[balloon x=-110 y=-105 shape="004_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+…あ…いやいや！！[r]
+えっと…[r]
+ブ…ブルマさんなら[r]元気ですよ
+[p]
+
+
+*008
+//-------------------------------------------------------------------------------
+//  占いババ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_022_006"]
+
+[character x = -190 y = -80 storage = "90003/uranai_baba" scale = 1.4 action = "fadein" time = 0.1]
+
+[balloon x=100 y=95 shape="001_01" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+//[quake target =".bln" power = 3 time = 0.2]
+ふぉふぉふぉ…[r]
+そうかそうか
+[p]
+
+
+[balloon x=130 y=-100 shape="001_02" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+わしはな[r]
+魔人ブウとの闘いのとき[r]
+ベジータを復活させて[r]
+やったこともあるのだぞ
+[p]
+
+
+*009
+//-------------------------------------------------------------------------------
+//  トランクス（幼年期）（グレートサイヤマン）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_022_006"]
+
+[character x = 280 y = -90 storage = "00200/heapup_e_07" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon x = -80 y = 80 shape="001_03" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+//[quake target =".bln" power = 3 time = 0.2]
+へー…[r]
+パパを……
+[p]
+
+[character x = 240 y = 50 storage = "99999/ase" scale = 0.55 action = "fadein" time = 0.2]
+
+
+
+[balloon x=-100 y=-110 shape="004_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+…じゃなくて！！[r]
+ベジータさんを！[r]
+へえ〜っ
+[p]
+
+
+*010
+//-------------------------------------------------------------------------------
+//  占いババ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_022_006"]
+
+[character x = -190 y = -80 storage = "90003/uranai_baba" scale = 1.4 action = "fadein" time = 0.1]
+
+[balloon x=100 y=90 shape="001_03" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 54]
+//[quake target =".bln" power = 3 time = 0.2]
+………
+[p]
+
+
+[balloon x=130 y=-100 shape="001_02" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+…まあ よいわ[r]
+占ってほしいものが[r]
+あるなら[r]
+1000万ゼニーおだし
+[p]
+
+
+*011
+//-------------------------------------------------------------------------------
+//  トランクス（幼年期）（グレートサイヤマン）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_022_006"]
+
+[character x = 280 y = -90 storage = "00200/heapup_e_07" scale = 1.0 action = "fadein" time = 0.1]
+[character x = 240 y = 50 storage = "99999/ase" scale = 0.55 action = "fadein" time = 0.1]
+
+
+[balloon x = -90 y = 75 shape="004_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+1000万ゼニー！？
+[p]
+
+
+[balloon x=-100 y=-110 shape="004_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+そ…そんな大金[r]
+もってないよ！！
+[p]
+
+
+*012
+//-------------------------------------------------------------------------------
+//  占いババ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_022_006"]
+
+[character x = -190 y = -80 storage = "90003/uranai_baba" scale = 1.4 action = "fadein" time = 0.1]
+
+[balloon x=100 y=90 shape="001_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+まあ[r]
+そうじゃろうと[r]
+思ったがな
+[p]
+
+
+[balloon x=120 y=-100 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+では [r]
+こちらの代表選手と[r]
+試合をしてもらおう
+[p]
+
+
+*013
+//-------------------------------------------------------------------------------
+//  トランクス（幼年期）（グレートサイヤマン）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_022_006"]
+
+[character x = 280 y = -90 storage = "00200/heapup_e_07" scale = 1.0 action = "fadein" time = 0.1]
+//[character x = 240 y = 50 storage = "99999/ase" scale = 0.55 action = "fadein" time = 0.1]
+
+
+
+[balloon x = -85 y = 70 shape="001_01" scale = 0.65 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 44]
+[quake target =".bln" power = 3 time = 0.2]
+試合！？
+[p]
+
+
+*014
+//-------------------------------------------------------------------------------
+//  占いババ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_022_006"]
+
+[character x = -190 y = -80 storage = "90003/uranai_baba" scale = 1.4 action = "fadein" time = 0.1]
+
+[balloon x=100 y=90 shape="001_03" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 40]
+//[quake target =".bln" power = 3 time = 0.2]
+そうじゃ
+[p]
+
+
+[balloon x=120 y=-100 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+代表選手全員に[r]
+試合で勝てば[r]
+タダで占いを[r]してやるぞよ
+[p]
+
+
+*015
+//-------------------------------------------------------------------------------
+//  トランクス（幼年期）（グレートサイヤマン）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_022_006"]
+
+[character x = 140 y = -110 storage = "00200/card_09" scale = 0.8 action = "fadein" time = 0.1]
+
+[balloon x = -150 y = 50 shape="001_03" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+そういうことか…
+[p]
+
+
+[balloon x = -150 y = -200 shape="006_01" scale = 0.8 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 7 time = 0.2]
+よし！[r]
+やってやるぜ！！
+[p]
+
+
+
+//-------------------------------------------------------------------------------
+[stopbgm]

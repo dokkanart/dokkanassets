@@ -1,0 +1,174 @@
+*start|スタート
+//ステージ5ゴール
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "036"]
+
+*01
+//-------------------------------------------------------------------------------
+//  全王
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_059"]
+
+[character id = "2" x = -90 y = -160 storage = "90003/zenoh" scale = 0.9 action = "fadein" time = 0.1]
+[flip target ="2" h=1]
+[character id = "1" x = -250 y = -160 storage = "90003/zenoh" scale = 1.1 action = "fadein" time = 0.1]
+[flip target ="1" h=1]
+
+
+[balloon x=100 y=110 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+おお〜[r]
+悟空いきなり[r]強くなったね[r]
+なんでなんで？
+[p]
+
+[balloon x=150 y=-90 shape="001_03" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+どうしてどうして？
+[p]
+
+*02
+//-------------------------------------------------------------------------------
+//  大神官
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_059"]
+
+[character x = -200 y = -260 storage = "90003/daishinkan" scale = 1.1 action = "fadein" time = 0.1]
+
+
+[balloon x=85 y=60 shape="001_03" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+ふむ…[r]
+もしかしたら…
+[p]
+
+*03
+//-------------------------------------------------------------------------------
+//  ウイス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_059"]
+
+[character x = -180 y = -290 storage = "00243/atc_sp01_p_03" scale = 1.7 action = "fadein" time = 0.1]
+
+[balloon x=130 y=-70 shape="001_02" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 23]
+//[quake target =".bln" power = 3 time = 0.2]
+もしかしたら悟空さんに[r]
+と〜ってもすばらしいことが[r]
+起こってるかもしれませんよ
+[p]
+
+*04
+//-------------------------------------------------------------------------------
+//  ビルス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_059"]
+
+[character x = -210 y = -280 storage = "00242/heapup_p_01" scale = 1.4 action = "fadein" time = 0.1]
+
+[balloon x=85 y=90 shape="001_03" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 54]
+//[quake target =".bln" power = 3 time = 0.2]
+………
+[p]
+
+[balloon x=100 y=-100 shape="004_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+身勝手の極意…！！
+[p]
+
+*05
+//-------------------------------------------------------------------------------
+//  ジレン
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0004L" bg = "bg_000_014"]
+
+[character x = -180 y = -1070 storage = "00812/card_01" scale = 3.0 action = "fadein" time = 0.1]
+
+[balloon x=130 y=90 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+サイヤ人…[r]
+実に興味深い存在だ…[r]
+だが！
+[p]
+
+[balloon x=130 y=-105 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+この熱さ…[r]
+それがおまえの限界だ！
+[p]
+
+*06
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0004L" bg = "bg_000_060"]
+
+//[character id = "tail" x=160 y=-30 storage = "99999/tail" scale = 1.8 angle = 50 action = "fadein" time = 0.1]
+//[character id = "goku" x=-50 y=30 storage = "00324/heapup_e_01" scale = 2.0 action = "fadein" time = 0.1]
+
+[balloon x=0 y=-20 shape="003_02" scale = 1.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 13]
+//[quake target =".bln" power = 7 time = 0.2]
+極めればどんな危機も[r]
+回避できるという[r]
+身勝手の極意…[r]
+…しかしそれはまだ[r]
+完全なものではなかった[r]
+　[r]
+新たな力にカラダが[r]
+耐えられなかった悟空を[r]
+退けたジレンは瞑想を始め[r]
+ふたりの決着は[r]
+見送られることになった…
+[p]
+
+
+*07
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_000_014"]
+
+
+[character id = "goku" x=175 y=-280 storage = "00817/card_01" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon x=-135 y=-50 shape="003_02" scale = 1.6 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 15]
+//[quake target =".bln" power = 7 time = 0.2]
+悟空が見せた驚くべき力[r]
+身勝手の極意[r]
+　[r]
+神々すら恐れる[r]
+その領域に[r]
+悟空は再び届くことが[r]
+できるのだろうか…！？
+[p]
+
+//-------------------------------------------------------------------------------
+[stopbgm]

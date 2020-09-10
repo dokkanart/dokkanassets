@@ -1,0 +1,43 @@
+*start|スタート
+
+//１２−6ボス前
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "008"]
+
+//-------------------------------------------------------------------------------
+//  リクームトテッポ
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0002L" bg = "bg_015_001"]
+
+[character id = "ttp" x=120 y=-75 storage = "00078/idl_side_p_01" scale = 0.95 action = "fadein" time = 0.1]
+
+[character x = -120 y = -150 storage = "00031/rcm_atc_energyball_p_01" scale = 1.2 action = "fadein" time = 0.1]
+
+
+
+
+[balloon id = "01" x = 200 y = 230 shape="002_02" scale = 0.6 action = "fadein" time = 0.1]
+[wait_anim target = "01"]
+[font size = 54]
+………
+[p]
+
+[balloon x=-150 y=185 shape="002_03" scale = 0.85 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+無愛想なやつだな〜
+[p]
+
+[balloon x=-0 y=-225 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 27]
+こいつらを始末したら[r]
+美しいポーズをひとつ[r]
+教えてやろう
+[p]
+
+[stopbgm]

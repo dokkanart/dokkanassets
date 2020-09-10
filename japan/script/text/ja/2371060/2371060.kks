@@ -1,0 +1,162 @@
+*start|スタート
+
+[bgm storage = "005"]
+
+*001
+//----------------------------------------------------------
+//
+//-------------------------------------------------------------------------------
+[se storage = "48"]
+[coma shape="S0001" bg = "bg_000_024"]
+
+[character x = 30 y = 20 storage = "90003/timemachine_2" scale = 1.5 action = "fadein" time = 0.1]
+
+[character x = -200 y = 0 storage = "90003/bluma_future" scale = 1.0 action = "fadein" time = 0.1]
+
+[wait time = 0.7] 
+
+[balloon x = 45 y = 470 shape="001_03" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+[quake target =".bln" power = 3 time = 0.2]
+トランクス！
+[p]
+
+[balloon x = 140 y = -250 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+ついにタイムマシン[r]
+往復分のエネルギーが[r]
+チャージできたわよ！！
+[p]
+
+
+*003
+//-------------------------------------------------------------------------------
+//トランクス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_008"]
+
+[character x = 210 y = -200 storage = "90000/wait_right_anger" scale = 1.2 action = "fadein" time = 0.1]
+
+
+[balloon x = -100 y = 90 shape="001_02" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+……母さん…オレ[r]
+今の実力ならたぶん[r]
+人造人間たちを[r]倒せると思う
+[p]
+
+[balloon x = -90 y = -110 shape="001_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+わざわざ過去に行って[r]
+研究してこなくても…
+[p]
+
+
+*004
+//----------------------------------------------------------
+//ブルマ（未来）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_008"]
+
+[character x = -200 y = -300 storage = "90003/bluma_future" scale = 1.05 action = "fadein" time = 0.1]
+//[character x = -185 y = -300 storage = "90003/bluma_future2" scale = 1.05 action = "fadein" time = 0.1]
+
+
+[balloon x = 120 y = 90 shape="001_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+あんた甘いわよ！[r]
+たしかにものすごく[r]
+強くなったけど…
+[p]
+
+[balloon x = 130 y = -100 shape="001_03" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+３年前 [r]
+悟飯くんが殺されたこと[r]
+忘れたわけじゃ[r]ないでしょ？
+[p]
+
+
+*005
+//-------------------------------------------------------------------------------
+//トランクス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_008"]
+
+[character x = 210 y = -200 storage = "90000/wait_right_anger_strong" scale = 1.2 action = "fadein" time = 0.1]
+
+
+[balloon x = -120 y = 50 shape="006_02" scale = 0.9 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 7 time = 0.2]
+オレ行ってくる！[r]
+絶対[r]倒してみせるよ！！
+[p]
+
+
+*006
+//----------------------------------------------------------
+//ブルマ（未来）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_008"]
+
+[character x = -200 y = -300 storage = "90003/bluma_future" scale = 1.05 action = "fadein" time = 0.1]
+
+[balloon x = 130 y = 50 shape="004_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+ちょっと！！[r]トランクス[r]
+待ちなさい！！
+[p]
+
+
+*007
+//-------------------------------------------------------------------------------
+//トランクス
+//-------------------------------------------------------------------------------
+[se storage = "50"]
+[coma shape="S0001" bg = "bg_000_016"]
+
+
+[lwfobject id = "kaki2" storage="kakimoji:ef_020" x=-190 y=-100 scale = 1.7 angle =-20 action = "fadein" time = 0.1]
+[quake target = "kaki2" power = 12 time = 0.4]
+
+[character id = "ki" x=0 y=0 storage = "99999/ef_aura_front" scale = 2.6 action = "fade:50" time = 0.2]
+[quake target="ki" power=2 time=300]
+[paint target="ki" color="#F4FA58"]
+
+
+[character x = 0 y = 0 storage = "00069/card_03" scale = 1.2 angle =-10 action = "fadein" time = 0.1]
+[quake target =".chara" power = 10 time = 0.4]
+
+[balloon x = -140 y = 450 shape="006_01" scale = 0.9 action = "expand" time = 0.1]
+[wait_anim target=".bln"][font size = 28]
+[quake target =".bln" power = 7 time = 0.2]
+悟飯さん！[r]
+みんなのカタキ[r]
+今日こそ討ちます！！
+[p]
+
+[balloon x = 0 y = -430 shape="006_02" scale = 0.7 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 40]
+[quake target =".bln" power = 7 time = 0.2]
+待ってろよ！[r]
+人造人間！！
+[p]
+
+[stopbgm]

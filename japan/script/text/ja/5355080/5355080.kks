@@ -1,0 +1,92 @@
+*start|スタート
+//"ステージ８スタート"
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "032"]
+
+*01
+//-------------------------------------------------------------------------------
+//  超サイヤ人ゴッドSS孫悟空
+//-------------------------------------------------------------------------------
+[se storage = "50"]
+[coma shape="N0001R" bg = "bg_070_008"]
+
+[lwfobject id = "kaki1" storage="kakimoji:ef_009" x=240 y=180 scale = 1.2 action = "fadein" time = 0.1]
+[quake target = "kaki1" power = 1 time = 300]
+
+
+[character id ="ki" x=230 y=-300 storage = "00932/card_02" scale = 1.0 action = "fadein" time = 0.1]
+[flip target ="ki" h=1]
+[paint target="ki" color="#81DAF5"]
+[quake target ="ki" power = 1 time = 300]
+
+[character x=210 y=-130 storage = "00928/heapup_e_01" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon x=-115 y=60 shape="007_02" scale = 0.8 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 7 time = 0.2]
+りゃああああ！！
+[p]
+
+//点滅
+//[balloon shape="008_02" x = 0 y = 0 scale = 50 action = "fadein" time = 0.1]
+//[wait time = 0.3]
+//[clear target = ".bln"]
+
+//[wait_anim target=".bln"]
+
+// 空のフキダシ（セリフがないコマを送るために使用）
+//[balloon x = 0 y = 0 shape="002_01" scale = 0]
+//[p]
+
+*02
+//-------------------------------------------------------------------------------
+//  ブロリー
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_070_008"]
+
+//[character x = -190 y = -320 storage = "00870/heapup_p_01" scale = 1.3 action = "fadein" time = 0.1]
+
+[character x = -170 y = -312 storage = "00859/idl_side_p_01" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x=100 y=70 shape="002_02" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 54]
+//[quake target =".bln" power = 3 time = 0.2]
+………
+[p]
+
+
+
+*03
+//-------------------------------------------------------------------------------
+//  超サイヤ人ゴッドss孫悟空
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_070_008"]
+
+
+//[character x=210 y=-170 storage = "00003/idl_side_e_09" scale = 1.0 action = "fadein" time = 0.1]
+[character x=190 y=-210 storage = "00928/heapup_e_01" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon shape="006_01" x = -150 y = 20 scale = 0.75 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+[quake target =".bln" power = 7 time = 0.2]
+だりゃぁぁ！！
+[p]
+
+//[se storage = "3029"]
+//点滅
+[balloon shape="008_02" x = 0 y = 0 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+[balloon shape="008_02" x = 0 y = 0 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+
+//-------------------------------------------------------------------------------
+[stopbgm]

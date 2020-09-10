@@ -1,0 +1,69 @@
+*start|スタート
+//ボス前
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+//[bgm storage = "003"]
+
+*01
+//-------------------------------------------------------------------------------
+//  パラガス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0003R" bg = "bg_070_008"]
+
+[character x = -20 y = -240 storage = "00943/card_02" scale = 1.0 action = "fadein" time = 0.1]
+
+[wait time = 0.3]
+
+[balloon x=150 y=180 shape="002_02" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+[quake target =".bln" power = 3 time = 0.2]
+おまえのパワーを[r]
+見せてやれ！
+[p]
+
+[se storage = "3022"]
+[quake target =".chara" power = 4 time = 0.4]
+
+[balloon x=0 y=-100 shape="006_02" scale = 0.65 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 44]
+[quake target =".bln" power = 7 time = 0.2]
+やれ！！[r]
+ブロリー！！
+[p]
+
+[se storage = "3025"]
+//点滅
+[balloon shape="008_02" x = 0 y = 0 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+[balloon shape="008_02" x = 0 y = 0 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+
+
+
+*02
+//-------------------------------------------------------------------------------
+//  ブロリー
+//-------------------------------------------------------------------------------
+[se storage = "3024"]
+[coma shape="N0002R" bg = "bg_070_008"]
+
+
+[character x = -20 y = -260 storage = "00870/card_02" scale = 1.1 action = "fadein" time = 0.1]
+[quake target = ".chara" power = 17 time = 0.4]
+
+[balloon x=180 y=100 shape="007_02" scale = 0.65 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 44]
+[quake target =".bln" power = 7 time = 0.2]
+うおおお！！
+[p]
+
+
+//-------------------------------------------------------------------------------
+//[stopbgm]

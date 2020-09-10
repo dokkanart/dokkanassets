@@ -1,0 +1,735 @@
+*start|スタート
+//ステージ3 ボス前
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "002"]
+
+*01
+//-------------------------------------------------------------------------------
+//  ベリブル
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_008"]
+
+[character x=200 y=-100 storage = "90003/beriburu" scale = 1.1 action = "fadein" time = 0.1]
+
+[balloon x=-115 y=60 shape="002_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+お連れしましたよ[r]
+フリーザさま
+[p]
+
+*02
+//-------------------------------------------------------------------------------
+//  フリーザ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_008"]
+
+[character x = -230 y = -290 storage = "00878/card_01" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x=100 y=90 shape="002_02" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 40]
+//[quake target =".bln" power = 3 time = 0.2]
+ほお…
+[p]
+
+[balloon x=110 y=-90 shape="002_01" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+あなた[r] 
+本当にサイヤ人ですか？[r]
+シッポがないようですが…
+[p]
+
+*03
+//-------------------------------------------------------------------------------
+//  ブロリー
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_008"]
+
+[character x = 170 y = -320 storage = "00870/card_03" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon id = "01" x = -100 y = 70 shape="002_02" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target = "01"]
+[font size = 54]
+………
+[p]
+
+*04
+//-------------------------------------------------------------------------------
+//  パラガス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_008"]
+
+//[character x = -180 y = -320 storage = "00943/card_01" scale = 1.15 action = "fadein" time = 0.1]
+
+[character x = 180 y = -320 storage = "00943/card_01" scale = 1.15 action = "fadein" time = 0.1]
+
+[balloon x=-100 y=100 shape="002_03" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+はい[r]
+サイヤ人の特徴である[r]
+大猿に変身する影響で[r]
+我を失ったことが[r]ありまして…
+[p]
+
+[balloon x=-120 y=-100 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+それで[r]
+わたしがシッポを…
+[p]
+
+*05
+//-------------------------------------------------------------------------------
+//  フリーザ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_008"]
+
+[character x = -230 y = -290 storage = "00878/card_01" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x=115 y=70 shape="002_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+以後はありましたか？[r]
+我を失うことは…
+[p]
+
+*06
+//-------------------------------------------------------------------------------
+//  パラガス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_008"]
+
+[character x = 180 y = -320 storage = "00943/card_01" scale = 1.15 action = "fadein" time = 0.1]
+
+[balloon x=-100 y=70 shape="002_02" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 40]
+//[quake target =".bln" power = 3 time = 0.2]
+はい[r]
+滅多には…
+[p]
+
+*07
+//-------------------------------------------------------------------------------
+//  フリーザ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_008"]
+
+[character x = -230 y = -290 storage = "00878/card_01" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x=120 y=70 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+ということは[r]
+たまにあるのですか？
+[p]
+
+*08
+//-------------------------------------------------------------------------------
+//  パラガス
+//-------------------------------------------------------------------------------
+[se storage = "48"]
+[coma shape="N0002R" bg = "bg_000_024"]
+
+
+[character x = 190 y = 0 storage = "90003/controller" scale = 1.0 angle = 8 action = "fadein" time = 0.1]
+
+
+
+[balloon x=-105 y=90 shape="002_03" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+ご…ご安心ください[r]
+その場合はこのリモコンで[r]
+ブロリーの首につけている[r]
+装置に電流がながれます
+[p]
+
+[balloon x=-115 y=-110 shape="002_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+強い電流では[r]ありませんが[r]
+抑制はできます[r]
+[p]
+
+
+*09
+//-------------------------------------------------------------------------------
+//  フリーザ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_008"]
+
+[character x = -230 y = -290 storage = "00878/card_01" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x=100 y=80 shape="002_02" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+//[quake target =".bln" power = 3 time = 0.2]
+なるほど…
+[p]
+
+[balloon x=120 y=-100 shape="002_01" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+//[quake target =".bln" power = 3 time = 0.2]
+…あなた[r]
+お名前は？
+[p]
+
+*10
+//-------------------------------------------------------------------------------
+//  ブロリー
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_008"]
+
+[character x = 170 y = -320 storage = "00870/card_03" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon id = "01" x = -100 y = 70 shape="002_02" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target = "01"]
+[font size = 54]
+………
+[p]
+
+*11
+//-------------------------------------------------------------------------------
+//  パラガス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_008"]
+
+[character x = 180 y = -320 storage = "00943/card_01" scale = 1.15 action = "fadein" time = 0.1]
+
+[balloon x=-100 y=75 shape="002_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+ブロリーでございます
+[p]
+
+*12
+//-------------------------------------------------------------------------------
+//  フリーザ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_008"]
+
+[character x = -230 y = -290 storage = "00878/card_01" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x=120 y=70 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+まだ[r]
+とてつもない戦闘力を[r]
+秘めていますね…
+[p]
+
+*13
+//-------------------------------------------------------------------------------
+//  パラガス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_008"]
+
+[character x = 180 y = -320 storage = "00943/card_01" scale = 1.15 action = "fadein" time = 0.1]
+
+[balloon x=-110 y=80 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+必ずやフリーザさまの[r]
+お役に立てると[r]
+確信しております
+[p]
+
+*14
+//-------------------------------------------------------------------------------
+//  フリーザ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_008"]
+
+[character x = -230 y = -290 storage = "00878/card_01" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x=115 y=90 shape="002_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+これは[r]
+思いがけない収穫です
+[p]
+
+[balloon x=110 y=-105 shape="002_01" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+ベリブルさん[r]
+見つけたおふたりに[r]
+報奨金を[r]差し上げてください
+[p]
+
+*15
+//-------------------------------------------------------------------------------
+//  ベリブル
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_008"]
+
+[character x=200 y=-100 storage = "90003/beriburu" scale = 1.1 action = "fadein" time = 0.1]
+
+[balloon x=-100 y=70 shape="002_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+はい[r]
+フリーザさま
+[p]
+
+*16
+//-------------------------------------------------------------------------------
+//  レモ、チライ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_008"]
+
+[character x = 60 y = -290 storage = "90003/chirai" scale = 1.0 action = "fadein" time = 0.1]
+
+[character x=240 y=-250 storage = "90003/remo" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x=-120 y=100 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+ありがとうございます！
+[p]
+
+
+*17
+//-------------------------------------------------------------------------------
+//  フリーザ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_008"]
+
+[character x = -230 y = -290 storage = "00878/card_01" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x=120 y=50 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+永い間[r]
+何もないような星から[r]
+脱出できずに[r]
+いたそうですね
+[p]
+
+*18
+//-------------------------------------------------------------------------------
+//  パラガス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_008"]
+
+[character x = 180 y = -320 storage = "00943/card_01" scale = 1.15 action = "fadein" time = 0.1]
+
+[balloon x=-100 y=70 shape="002_02" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 40]
+//[quake target =".bln" power = 3 time = 0.2]
+はい…
+[p]
+
+
+*19
+//-------------------------------------------------------------------------------
+//  フリーザ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_008"]
+
+[character x = -230 y = -290 storage = "00878/card_01" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x=125 y=60 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+帰るべき惑星ベジータは[r]
+すでにもうないことは[r]
+ご存知ですか？
+[p]
+
+*20
+//-------------------------------------------------------------------------------
+//  パラガス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_008"]
+
+[character x = 180 y = -320 storage = "00943/card_01" scale = 1.15 action = "fadein" time = 0.1]
+
+[balloon x=-110 y=100 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+はい[r]
+ここに来る途中に[r]
+聞きました
+[p]
+
+[balloon x=-120 y=-100 shape="002_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+しかし…そんなことは[r]
+どうでもいいんです…[r]
+ただ……
+[p]
+
+
+*21
+//-------------------------------------------------------------------------------
+//  フリーザ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_008"]
+
+[character x = -230 y = -290 storage = "00878/card_01" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x=105 y=70 shape="002_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+復讐…ですね？
+[p]
+
+
+*22
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0004R" bg = "bg_000_068"]
+
+
+
+//[character id = "tail" x=160 y=-30 storage = "99999/tail" scale = 1.8 angle = 50 action = "fadein" time = 0.1]
+//[character id = "goku" x=-50 y=30 storage = "00324/heapup_e_01" scale = 2.0 action = "fadein" time = 0.1]
+
+[balloon x=0 y=0 shape="003_02" scale = 1.5 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 16]
+//[quake target =".bln" power = 7 time = 0.2]
+パラガスとブロリーが[r]
+永い間 バンパでの[r]
+過酷な暮らしを[r]
+強いられたのは[r]
+当時のベジータ王の[r]
+保身による計略に[r]
+端を発していた
+[p]
+
+
+*23
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0004L" bg = "bg_000_014"]
+
+//[character id = "tail" x=160 y=-30 storage = "99999/tail" scale = 1.8 angle = 50 action = "fadein" time = 0.1]
+//[character id = "goku" x=-50 y=30 storage = "00324/heapup_e_01" scale = 2.0 action = "fadein" time = 0.1]
+
+[balloon x=0 y=0 shape="003_02" scale = 1.6 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 15]
+//[quake target =".bln" power = 7 time = 0.2]
+ベジータ王の息子[r]
+ベジータが[r]
+まだ生きていることを[r]
+知り復讐に燃える[r]
+パラガス…[r]
+　[r]
+フリーザは[r]
+そんなパラガスを利用し[r]
+悟空たちへ復讐することを[r]
+考えるのだった
+[p]
+
+*24
+//-------------------------------------------------------------------------------
+//  フリーザ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_008"]
+
+[character x = -230 y = -290 storage = "00878/card_01" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x=100 y=90 shape="002_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+ベリブルさん
+[p]
+
+[balloon x=120 y=-110 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+おふたりに[r]
+戦闘服を用意して[r]
+あげてください
+[p]
+
+*25
+//-------------------------------------------------------------------------------
+//  ベリブル
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_008"]
+
+[character x=200 y=-100 storage = "90003/beriburu" scale = 1.1 action = "fadein" time = 0.1]
+
+[balloon x=-100 y=70 shape="002_02" scale = 0.65 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 44]
+//[quake target =".bln" power = 3 time = 0.2]
+はい
+[p]
+
+*26
+//-------------------------------------------------------------------------------
+//  フリーザ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002L" bg = "bg_000_008"]
+
+[character x = -200 y = -315 storage = "00878/card_01" scale = 1.3 action = "fadein" time = 0.1]
+
+[balloon x=135 y=60 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+今回は闘うつもりは[r]
+なかったんですがねえ…
+[p]
+
+[balloon x=140 y=-210 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+これは[r]
+おもしろくなって[r]
+きましたよ…
+[p]
+
+//フェードアウト（フェードアウトするコマ）
+[balloon x=0 y=0 shape="008_03" scale = 50.0 action = "fadein" time = 0.5]
+[wait time = 0.7] 
+
+
+
+*27
+//-------------------------------------------------------------------------------
+//  場面転換 ブロリー着替えて登場。
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="S0001" bg = "bg_000_008"]
+
+//フェードイン（フェードインするコマ）
+[balloon x=0 y=0 shape="008_03" scale = 50]
+[wait time = 1]
+[fadeout target = ".bln" time = 2]
+[wait_anim target=".bln"]
+
+[se storage = "48"]
+[character x = -65 y = 60 storage = "00870/card_01" scale = 1.2 action = "fadein" time = 0.7]
+
+[wait_anim target=".chara"]
+
+[balloon x=120 y=170 shape="007_01" scale = 0 action = "fadein" time = 0.1]
+[p]
+
+
+*28
+//-------------------------------------------------------------------------------
+//  チライ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_008"]
+
+//みぎ
+[character x = 160 y = -300 storage = "90003/chirai" scale = 1.3 action = "fadein" time = 0.1]
+
+[balloon x=-100 y=100 shape="002_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+よう！[r]
+似合うじゃないか
+[p]
+
+[balloon x=-100 y=-100 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+でも 腰の毛皮は[r]
+もう捨てちゃえよ！[r]
+汚れてるし臭いよ
+[p]
+
+*29
+//-------------------------------------------------------------------------------
+//  ブロリー
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_008"]
+
+//[character x = -200 y = -330 storage = "00870/card_01" scale = 1.3 action = "fadein" time = 0.1]
+
+[character x = -190 y = -320 storage = "00870/heapup_p_01" scale = 1.3 action = "fadein" time = 0.1]
+
+
+[balloon x=110 y=70 shape="007_02" scale = 0.65 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 44]
+[quake target =".bln" power = 7 time = 0.2]
+ダメだ！！
+[p]
+
+*30
+//-------------------------------------------------------------------------------
+//  チライ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_008"]
+
+//みぎ
+[character x = 160 y = -300 storage = "90003/chirai" scale = 1.3 action = "fadein" time = 0.1]
+
+[balloon x=-90 y=60 shape="004_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+そ…そうか[r]
+大事なもの[r]だったんだな…
+[p]
+
+
+*31
+//-------------------------------------------------------------------------------
+//  ブロリー
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_008"]
+
+[character x = -190 y = -320 storage = "00870/idl_front_p_01" scale = 1.3 action = "fadein" time = 0.1]
+
+[balloon x=120 y=60 shape="002_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+これは…オレの…[r]
+友達との思い出なんだ…
+[p]
+
+*32
+//-------------------------------------------------------------------------------
+//  パラガス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_008"]
+
+[character x = -200 y = -340 storage = "00943/idl_side_p_01" scale = 1.25 action = "fadein" time = 0.1]
+
+[balloon x=120 y=90 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+ブロリー！[r]
+ここには話をしに[r]
+来たんじゃないぞ
+[p]
+
+
+*33
+//-------------------------------------------------------------------------------
+//  チライ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_008"]
+
+//みぎ
+[character x = 160 y = -300 storage = "90003/chirai" scale = 1.3 action = "fadein" time = 0.1]
+
+[balloon x=-80 y=100 shape="002_02" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+//[quake target =".bln" power = 3 time = 0.2]
+あんたさあ
+[p]
+
+[balloon x=-100 y=-100 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+いいじゃないか[r]
+これぐらい！
+[p]
+
+*34
+//-------------------------------------------------------------------------------
+//  パラガス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_008"]
+
+[character x = -200 y = -340 storage = "00943/idl_side_p_01" scale = 1.25 action = "fadein" time = 0.1]
+
+[balloon x=100 y=110 shape="002_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+余計な口出しは[r]
+しないでくれ
+[p]
+
+*35
+//-------------------------------------------------------------------------------
+//  チライ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_000_008"]
+
+[character x = 130 y = -360 storage = "90003/chirai" scale = 1.5 action = "fadein" time = 0.1]
+
+[balloon shape="002_01" x = -130 y = 60 scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+…なんだってぇ！？
+[p]
+
+//-------------------------------------------------------------------------------
+[stopbgm]

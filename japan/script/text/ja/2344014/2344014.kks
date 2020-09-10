@@ -1,0 +1,211 @@
+*start|スタート
+//ステージ1R２開始
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+//[bgm storage = "002"]
+
+*01
+//-------------------------------------------------------------------------------
+//  大神官
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0003R" bg = "bg_000_060"]
+
+//[character x = 200 y = -260 storage = "90003/daishinkan" scale = 1.1 action = "fadein" time = 0.1]
+[character x = 170 y = -370 storage = "90003/daishinkan" scale = 1.5 action = "fadein" time = 0.1]
+
+
+[balloon x=-120 y=70 shape="001_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+第2宇宙 ロージィさん[r]
+脱落です
+[p]
+
+*02
+//-------------------------------------------------------------------------------
+//  リブリアン
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_056"]
+
+
+[character x = -220 y = -105 storage = "00816/heapup_e_01" scale = 1.2 action = "fadein" time = 0.1]
+[flip target =".chara" h=1]
+
+[balloon id = "01" x = 95 y = 110 shape="004_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target = "01"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+よくも[r]
+やってくれたわね…
+[p]
+
+[balloon id = "02" x = 110 y = -100 shape="006_02" scale = 0.8 action = "expand" time = 0.1]
+[wait_anim target = "02"]
+[font size = 32]
+[quake target =".bln" power = 7 time = 0.2]
+でもまだよ！[r]
+負けるもんですか！
+[p]
+
+*03
+//-------------------------------------------------------------------------------
+//  第２宇宙の声援
+//-------------------------------------------------------------------------------
+[se storage = "46"]
+//[se storage = "32"]
+[coma shape="N0003R" bg = "bg_000_058"]
+
+//[character x=-180 y=-300 storage = "90003/bluma_hakui" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon x=0 y=30 shape="006_02" scale = 0.8 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 7 time = 0.2]
+がんばれ〜！[r]
+リブリアン！
+[p]
+
+
+*04
+//-------------------------------------------------------------------------------
+//  リブリアン
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002L" bg = "bg_000_058"]
+
+[character x = -140 y = -200 storage = "00816/card_03" scale = 1.2 action = "fadein" time = 0.1]
+//[flip target =".chara" h=1]
+
+[balloon id = "01" x = 130 y = 100 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target = "01"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+ありがとう…[r]
+みんなの熱い愛が[r]
+伝わってくる！
+[p]
+
+[balloon id = "02" x = 130 y = -220 shape="001_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target = "02"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+愛って…[r]
+ステキ！！
+[p]
+
+[se storage = "3025"]
+//点滅
+[balloon shape="008_02" x = 0 y = -0 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+//[balloon shape="008_02" x = 0 y = -0 scale = 50 action = "fadein" time = 0.1]
+//[wait time = 0.3]
+//[clear target = ".bln"]
+
+//フェードアウト（フェードアウトするコマ）
+[balloon x=0 y=0 shape="008_02" scale = 50.0 action = "fadein" time = 0.3]
+[wait time = 0.5] 
+
+*05
+//-------------------------------------------------------------------------------
+//  リブリアンが巨大化する。
+//-------------------------------------------------------------------------------
+[coma shape="S0001" bg = "bg_000_058"]
+
+
+
+[character x = 0 y = -50 storage = "00816/card_04" scale = 1.5 action = "expand" time = 3.0 ease="Out:2"]
+[move target =".chara" y=60 time = 3.0]
+
+
+//フェードイン（フェードインするコマ）
+[balloon x=0 y=0 shape="008_02" scale = 50]
+[wait time = 1.0]
+[fadeout target = ".bln" time = 2.5]
+//[wait_anim target=".bln"]
+[wait time = 1.0]
+
+
+
+[se storage = "46"]
+
+[balloon id = "hato2" shape="010_20" x = 0 y = 50 scale = 3.6 action = "expand" time = 1.7]
+[balloon id = "hato" shape="010_20" x = 0 y = 50 scale = 4.0 action = "expand" time = 0.7]
+[wait time = 0.3]
+[fadeout target = "hato" time = 0.4]
+[fadeout target = "hato2" time = 0.6]
+
+[wait_anim target=".chara"]
+
+[balloon shape="001_02" x = 0 y = 460 scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+ラブリーラブラブ[r]
+リブリアン！！
+[p]
+
+*06
+//-------------------------------------------------------------------------------
+//  ヘレス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_058"]
+
+[character x = -210 y = -310 storage = "90003/heresu" scale = 1.1 action = "fadein" time = 0.1]
+
+[balloon x=110 y=100 shape="001_03" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 40]
+[quake target =".bln" power = 3 time = 0.2]
+美しい…！
+[p]
+
+
+[balloon x=135 y=-90 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+この宇宙に[r]
+これほど美しいものが[r]
+存在したとは…
+[p]
+
+
+
+*07
+//-------------------------------------------------------------------------------
+//  リブリアン
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002L" bg = "bg_000_058"]
+
+[character x=50 y=-320 storage = "00816/atc_sp01_p_03" scale = 1.5 action = "fadein" time = 0.1]
+
+
+
+[balloon shape="001_02" x = -140 y = 120 scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+この世に愛がある限り[r]
+私は闘える…[r]
+愛のために闘える！
+[p]
+
+[quake target =".chara" power = 4 time = 0.3]
+
+[balloon shape="001_03" x = 140 y = -250 scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+愛は宇宙を救うのよ！[r]
+これで終わりよ！！
+[p]
+
+//-------------------------------------------------------------------------------
+//[stopbgm]

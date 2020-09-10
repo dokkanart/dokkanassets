@@ -1,0 +1,176 @@
+*start|スタート
+//"ステージ1スタート"
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "012"]
+
+*001
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0002L" bg = "bg_000_016"]
+
+
+
+[balloon x=0 y=10 shape="003_02" scale = 1.6 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 15]
+//[quake target =".bln" power = 3 time = 0.2]
+平和な日々が続く地球…[r]
+　[r]
+そんなある日[r]
+カプセル[r]コーポレーションに[r]
+悟空一家が[r]
+遊びにやってきた…
+[p]
+
+*kikai
+//-------------------------------------------------------------------------------
+//  
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_000_024"]
+
+[wait time = 0.3]
+
+
+[se storage = "48"]
+[character x = 0 y = 0 storage = "99999/game" scale = 1.0 action = "fadein" time = 0.7]
+
+
+[wait_anim target=".chara"]
+
+// 空のフキダシ（セリフがないコマを送るために使用）
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+
+*002
+//-------------------------------------------------------------------------------
+//  孫悟天(幼年期)
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_014_001"]
+
+[character x = -175 y = -80 storage = "00225/idl_side_p_02" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon x=120 y=60 shape="001_03" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+ん？[r]
+なにこれ[r]
+トランクスくん
+[p]
+
+*003
+//-------------------------------------------------------------------------------
+//  トランクス(幼年期)
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_014_001"]
+
+[character x = 230 y = -110 storage = "00200/idl_side_e_05" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon shape="001_02" x = -110 y = 80 scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+たぶんゲーム機だよ[r]
+それもけっこう[r]
+昔のやつみたいだな…[r]
+[p]
+
+[balloon x=-120 y=-110 shape="001_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+きっと[r]
+ママたちが若い頃の[r]
+やつだぜ
+[p]
+
+*004
+//-------------------------------------------------------------------------------
+//  孫悟天(幼年期)
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_014_001"]
+
+[character x = -175 y = -80 storage = "00225/idl_side_p_02" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon x=120 y=40 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+へえ〜[r]
+昔のオモチャって[r]
+こんなのだったんだね
+[p]
+
+*005
+//-------------------------------------------------------------------------------
+//  トランクス(幼年期)
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_014_001"]
+
+[character x = 230 y = -110 storage = "00200/idl_side_e_05" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon shape="001_02" x = -110 y = 80 scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+まだ動くと思うぜ[r]
+ちょっとテレビに[r]
+つなげてみるか！
+[p]
+
+[balloon x=-110 y=-110 shape="001_03" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+電源も入れて…と
+[p]
+
+
+
+[se storage = "34"]
+
+
+//[bgm storage = "084"]
+
+//フェードアウト（フェードアウトするコマ）
+[balloon x=0 y=0 shape="008_03" scale = 50.0 action = "fadein" time = 0.5]
+[wait time = 0.7] 
+
+*006
+//-------------------------------------------------------------------------------
+//  トランクス(幼年期)
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="s0001" bg = "bg_000_014"]
+
+[balloon x=0 y=0 shape="010_39" scale = 1.0 action = "fadein" time = 0.1]
+
+[bgm storage = "084"]
+
+//フェードイン（フェードインするコマ）
+[balloon x=0 y=0 shape="008_03" scale = 50]
+[wait time = 1]
+[fadeout target = ".bln" time = 2]
+[wait_anim target=".bln"]
+
+
+[balloon shape="001_01" x = -0 y = -390 scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+[quake target =".bln" power = 3 time = 0.2]
+お！[r]
+始まったぞ！
+[p]
+
+//-------------------------------------------------------------------------------
+//[stopbgm]

@@ -1,0 +1,142 @@
+
+
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "005"]
+
+*01
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+
+
+[coma shape="N0003L" bg = "bg_068_001"]
+
+
+[balloon x=-100 y=110 shape="005_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+それでは[r]
+勝ちましたヒット選手の[r]
+次の相手は…[p]
+
+[balloon x=120 y=-110 shape="005_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+第７宇宙チーム[r]
+孫悟空選手で～す！[p]
+
+
+
+*02
+//-------------------------------------------------------------------------------
+//  悟空
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_068_002"]
+
+[character x = 190 y = -120 storage = "00244/heapup_e_01" scale = 1.7 action = "fadein" time = 0.1]
+
+[balloon x = -110 y = 60 shape="001_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target = ".bln" power = 3 time = 0.2]
+とりあえず[r]
+始めてみっか…[r]
+よろしくな！[p]
+
+
+
+
+
+*03
+//-------------------------------------------------------------------------------
+//  ヒット
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+
+[coma shape="N0001L" bg = "bg_068_002"]
+
+[character x = -220 y = -270 storage = "00556/idl_side_p_01" scale = 1.1 action = "fadein" time = 0.1]
+
+[balloon x=110 y=90 shape="002_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+変身するのを[r]
+わすれているぞ[p]
+
+*04
+//-------------------------------------------------------------------------------
+//  悟空
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_068_002"]
+
+[character x = 190 y = -120 storage = "00244/heapup_e_01" scale = 1.7 action = "fadein" time = 0.1]
+
+[balloon x = -110 y = 120 shape="001_03" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target = ".bln" power = 3 time = 0.2]
+あれは[r]
+体力の消耗が激しいから[r]
+もっとあとにな！[p]
+
+[balloon x = -110 y = -100 shape="001_02" scale = 1 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target = ".bln" power = 3 time = 0.2]
+まだ おめえを倒す方法が[r]
+見つかんねえからさ…[r]
+できるだけ[r]
+時間かせぎてえんだ[p]
+
+
+*05
+//-------------------------------------------------------------------------------
+//  ヒット
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+
+[coma shape="N0001L" bg = "bg_068_002"]
+
+[character x = -220 y = -270 storage = "00556/idl_side_p_01" scale = 1.1 action = "fadein" time = 0.1]
+
+
+[balloon x=100 y=90 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+手の内を明かすとは…[r]
+…若いな…[p]
+
+
+
+*06
+//-------------------------------------------------------------------------------
+//  悟空
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_068_001"]
+
+[character x = 170 y = -130 storage = "00244/heapup_e_01" scale = 1.9 action = "fadein" time = 0.1]
+
+[balloon x = -130 y = 80 shape="001_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][font size = 28]
+[quake target = ".bln" power = 3 time = 0.2]
+じゃあ いくぞ！！[p]
+
+
+
+
+
+
+//-------------------------------------------------------------------------------
+[stopbgm]

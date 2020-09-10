@@ -1,0 +1,280 @@
+
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[stopbgm]
+
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0003L" bg = "bg_000_003"]
+
+//キャラがいないと吹き出しの出かたが変だよ
+//[wait_anim target=".chara"]
+
+[wait time = 0.7]
+
+[balloon x=0 y=130 shape="003_01" scale = 1.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 14]
+トオロに「幻の拳」を受け[r]
+気絶したバーダックは[r]
+惑星ベジータへ戻り[r]
+治療を受ける…[r]
+　[r]
+一方…[r]
+トーマたちは治療中の[r]
+バーダックを残し[r]
+惑星ミートの[r]制圧へと向かうのだった[r]
+　[r]
+しかし…
+[p]
+
+*002
+//-------------------------------------------------------------------------------
+//  トーマ
+//-------------------------------------------------------------------------------
+[bgm storage = "013"]
+[coma shape="N0001R" bg = "bg_000_010"]
+
+[character x=455 y=-160 storage = "00077/atc_punch_e_03" scale = 1.7 action = "fadein" time = 0.1]
+[quake target =".chara" power = 5 time = 0.2]
+
+[balloon x=-120 y=40 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 3 time = 0.2]
+[font size = 28]
+な…なぜだ……[r]
+…なぜ[r]
+あんたたちが…！？
+[p]
+
+
+*003
+//-------------------------------------------------------------------------------
+//  フリーザ兵
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_010"]
+
+//[character x=-165 y=-90 storage = "00053/zako_5_atc_punch_p_02" scale = 1.2 action = "fadein" time = 0.1]
+
+//[character x=-165 y=-90 storage = "00053/zako_4_idl_side_p_01" scale = 1.2 action = "fadein" time = 0.1]
+
+[character x=-0 y=-150 storage = "00053/zako_2_1030_idl_side_p_01" scale = 0.6 action = "fadein" time = 0.1]
+
+[character x=-230 y=-110 storage = "00053/zako_1_idl_side_p_01" scale = 0.6 action = "fadein" time = 0.1]
+
+
+
+[character x=-300 y=-110 storage = "00045/atc_energyball_p_02" scale = 0.7 action = "fadein" time = 0.1]
+
+[character x=-30 y=-90 storage = "00053/atc_energyball_p_01" scale = 1.1 action = "fadein" time = 0.1]
+
+
+[balloon id="radhi1" x=160 y=90 shape="002_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+へっへっへっへ…
+[p]
+
+
+*004
+//-------------------------------------------------------------------------------
+//  フリーザ兵の攻撃
+//-------------------------------------------------------------------------------
+[se storage = "3029"]
+
+[stopbgm]
+
+[coma shape="N0004L" bg = "bg_000_010"]
+//[lwfobject id="syuutyuu1" storage="syucyu:ef_001" mask="inside" loop=1 priority=10 scale=1]
+//[move target = "syuutyuu1" x = 0 y = -30]
+
+
+[lwfobject id = "kaki2" storage="kakimoji:ef_015" in="04" x=0 y=0 scale = 3]
+[quake target = "kaki2" power = 15 time = 1]
+
+
+[character x=0 y=0 storage = "90000/bomb" scale = 0.9 action = "expand" time = 0.1]
+[quake target = ".chara" power = 10 time = 1]
+
+
+[balloon x=130 y=40 shape="008_02" scale = 50 action = "fadein" time = 0.5]
+
+[wait_anim target=".bln"]
+
+[fadeout target = ".bln" time = 1.5]
+
+
+//[fadeout target = "kaki2" time = 1.5]
+
+//[fadeout target = ".chara" time = 1.5]
+
+
+
+
+
+[wait time = 1]
+
+//フェードアウト
+[balloon x=130 y=40 shape="008_03" scale = 50.0 action = "fadein" time = 0.5]
+[wait time = 0.7]
+//[stopbgm]
+
+[wait time = 2.5]
+
+//亀仙人
+[balloon x=-0 y=260 shape="008_08" scale = 1.0 action = "fadein" time = 1.5]
+
+[wait time = 1.0]
+
+[fadeout target = ".bln" time = 1.5]
+
+[wait time = 2.0]
+
+
+//ピッコロ大魔王
+[balloon x=-0 y=260 shape="008_09" scale = 1.0 action = "fadein" time = 1.5]
+
+[wait time = 1.0]
+
+[fadeout target = ".bln" time = 1.5]
+
+[wait time = 2.0]
+
+
+//ポポ
+[balloon x=-0 y=260 shape="008_10" scale = 1.0 action = "fadein" time = 1.5]
+
+[wait time = 1.0]
+
+[fadeout target = ".bln" time = 1.5]
+
+[wait time = 2.0]
+
+//悟空対マジュニア
+[balloon x=-0 y=250 shape="008_07" scale = 1.0 action = "fadein" time = 1.5]
+
+[wait time = 1.0]
+
+[fadeout target = ".bln" time = 1.5]
+
+[wait time = 3.5]
+
+
+[se storage = "3034"]
+
+[balloon x=-80 y=400 shape="002_02" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 3 time = 0.2]
+[font size = 27]
+おまえら一族には[r]
+呪われた未来しかない[r]
+ぞ…！
+[p]
+
+[balloon x=90 y=200 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 30]
+その姿を見て[r]
+せいぜい[r]
+苦しむがいい…！
+[p]
+
+[balloon x=0 y=-60 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 3 time = 0.2]
+[font size = 32]
+ふはははは……！！
+[p]
+
+//フェードアウト
+[balloon x=130 y=40 shape="008_03" scale = 50.0 action = "fadein" time = 0.5]
+[wait time = 0.7]
+
+*008
+//-------------------------------------------------------------------------------
+//  バーダック
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="S0001" bg = "bg_000_009"]
+
+//フェードイン
+[balloon x=130 y=40 shape="008_03" scale = 50]
+[wait time = 1]
+[fadeout target = ".bln" time = 2]
+[wait_anim target=".bln"]
+
+//[character x=220 y=-140 storage = "00003/idl_side_e_02" scale = 1.5 action = "fadein" time = 0.1]
+
+
+[balloon x=0 y=60 shape="002_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 3 time = 0.2]
+[font size = 32]
+…う…[r]
+……うう……
+[p]
+
+
+
+*009
+//-------------------------------------------------------------------------------
+//  バーダック
+//-------------------------------------------------------------------------------
+[bgm storage = "005"]
+
+[coma shape="N0001R" bg = "bg_000_009"]
+
+[character x=250 y=-160 storage = "00067/idl_side_e_01" scale = 1.5 action = "fadein" time = 0.1]
+
+[balloon x=-120 y=80 shape="002_03" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 3 time = 0.2]
+[font size = 32]
+チ…ッ[r]
+変な夢見ちまったぜ…
+[p]
+
+[balloon x=-155 y=-100 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+なんだったんだ…？[r]
+ありゃ…
+[p]
+
+
+
+*010
+//-------------------------------------------------------------------------------
+//  バーダック
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_000_009"]
+
+[character x=220 y=-140 storage = "00067/heapup_e_01" scale = 1.5 action = "fadein" time = 0.1]
+//[quake target =".chara" power = 5 time = 0.2]
+
+[balloon x=-130 y=110 shape="002_02" scale = 1 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 26]
+まあいい…[r]
+オレもさっさと[r]
+惑星ミートに向かうか…
+[p]
+
+[balloon x=-170 y=-100 shape="002_01" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 3 time = 0.2]
+[font size = 48]
+よおし！！
+[p]
+
+
+
+[stopbgm]
+

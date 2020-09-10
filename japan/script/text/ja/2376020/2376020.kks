@@ -1,0 +1,135 @@
+*start|スタート
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "002"]
+
+*001
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0003R" bg = "bg_000_100"]
+
+[balloon x=0 y=190 shape="003_01" scale = 1.5 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 15]
+//[quake target =".bln" power = 3 time = 0.2]
+悟空と闘い[r]
+ますます人間への疑念を[r]
+深めるザマス…[r]
+　[r]
+そんなある日[r]
+ザマスはゴワスと共に[r]
+時間を自由に移動できる[r]
+“時の指輪”を使い[r]
+ババリ星の人間の様子を[r]
+見にいくことになった…
+[p]
+
+
+*002
+//-------------------------------------------------------------------------------
+//  ババリ星人たちが殴り合っている
+//-------------------------------------------------------------------------------
+//[se storage = "3021"]
+[coma shape="N0003L" bg = "bg_000_100"]
+
+[character id = "babari1" x = 150 y = -100 storage = "01056/atc_punch_e_01" scale = 1.0 angle = 10 action = "fadein" time = 0.1]
+[character id = "babari2" x = -80 y = -120 storage = "01056/atc_punch_p_04" scala = 1.2 action = "fadein" time = 0.1]
+
+[move target = "babari1" x = 80 time = 0.1]
+[wait_anim target = "babari1"]
+
+[move target = "babari2" x = -120 time = 0.1]
+
+[se storage = "3018"]
+[quake target = ".coma" power = 7 time = 0.3]
+
+[lwfobject id = "kaki1" x = -100 y = 200 storage = "kakimoji:ef_006" scale = 1.3 angle = -10 action = "fadein" time = 0.1]
+[quake target = "kaki1" power = 7 time = 0.4]
+
+[character id = "shougeki1" x = -90 y = 30 storage = "99999/04_syougeki" scale = 1.0 action = "fade:80" time = 0.1]
+[scale target = "shougeki1" scale = 2.0 time = 0.4]
+[wait time = 0.1]
+[fadeout target = "shougeki1" time = 0.4]
+[fadeout target = "kaki1" time = 0.4]
+
+[wait time = 0.4]
+
+[move target = "babari2" x = -80 time = 0.1]
+
+[wait time = 0.1]
+
+[move target = "babari1" x = 120 time = 0.1]
+
+[se storage = "3021"]
+[quake target = ".coma" power = 7 time = 0.3]
+
+[lwfobject id = "kaki2" x = 150 y = 130 storage = "kakimoji:ef_021" scale = 1.2 angle = 25 action = "fadein" time = 0.1]
+[quake target = "kaki2" power = 7 time = 0.4]
+
+[character id = "shougeki2" x = 140 y = -50 storage = "99999/04_syougeki" scale = 1.0 action = "fade:80" time = 0.1]
+[scale target = "shougeki2" scale = 2.0 time = 0.4]
+[wait time = 0.1]
+[fadeout target = "shougeki2" time = 0.4]
+[fadeout target = "kaki2" time = 0.4]
+
+[wait time = 0.4]
+//[fadeout target = "shougeki1" time = 0.4]
+
+[move target = "babari2" x = -100 time = 0.1]
+[move target = "babari1" x = 100 time = 0.1]
+[wait time = 0.1]
+
+[quake target = "babari1" power = 2]
+[quake target = "babari2" power = 2]
+
+[wait time = 1.0]
+
+//空のフキダシ
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+
+*003
+//-------------------------------------------------------------------------------
+//  ゴワス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_100"]
+
+//[character x= 200 y= -190 storage = "00974/idl_front_e_01" scale = 1.0 action = "fadein" time = 0.1]
+[character x=200 y=-300+20 storage = "90003/gowasu_02" scale = 1.0 action = "fadein" time = 0.1]
+
+
+
+[balloon x = -90 y = 70 shape="001_03" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 40]
+//[quake target =".bln" power = 3 time = 0.2]
+う〜む…
+[p]
+
+
+*004
+//-------------------------------------------------------------------------------
+//  ザマス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_000_100"]
+
+[character x=110 y=-270 storage = "00660/card_06" scale = 1.1 action = "fadein" time = 0.1]
+
+[balloon x = -135 y = 40 shape="004_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+人間が存在するかぎり…[r]
+宇宙に平和は訪れない…！
+[p]
+
+
+
+//-------------------------------------------------------------------------------
+[stopbgm]

@@ -1,0 +1,357 @@
+*start|スタート
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "017"]
+
+*001
+//-------------------------------------------------------------------------------
+//  マイティマスク
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_016"]
+
+[character x = -230 y = -90 storage = "00214/guard_e_01" scale = 0.9 action = "fadein" time = 0.1]
+[flip target = ".chara" h = 1]
+
+//[character x = -280 y = -60-20 storage = "00214/heapup_e_01" scale = 0.9 action = "fade:50" time = 0.1]
+//[flip target =".chara" h=1]
+
+[balloon x = 110 y = 80 shape="004_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+くそ〜！！[r]
+こんなんじゃ[r]
+勝てないぞ！！
+[p]
+
+
+[balloon x= 130 y=-105 shape="001_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+超サイヤ人になろうよ[r]
+トランクスくん！！
+[p]
+
+
+*002
+//-------------------------------------------------------------------------------
+//  人造人間18号
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_016"]
+
+[character x = 180 y = -130 storage = "00020/idl_side_e_04" scale = 1.1 action = "fadein" time = 0.1]
+
+[balloon x= -115 y=80 shape="002_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+へんなヤロウだな…
+[p]
+
+
+[balloon x= -120 y=-100 shape="002_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+動きが読めない…
+[p]
+
+
+*003
+//-------------------------------------------------------------------------------
+//  マイティマスク
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_016"]
+
+[character id = "mighty" x = -280 y = -60-20 storage = "00214/heapup_e_01" scale = 0.9 action = "fade:100" time = 0.1]
+[flip target ="mighty" h=1]
+
+
+
+[balloon x = 120 y = 70 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+そ…そうだな[r]
+これ着てりゃ[r]
+バレやしないもんな…[r]
+よし！ なるか
+[p]
+
+
+[balloon x= 110 y=-125 shape="001_03" scale = 0.65 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 44]
+[quake target =".bln" power = 3 time = 0.2]
+うん！
+[p]
+
+//[se storage = "3025"]
+//点滅
+[balloon shape="008_02" x = 0 y = 0 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+
+[se storage = "3029"]
+[fadeout target = "mighty" time = 0.1]
+
+[character id = "ss" x= -250 y= -260 storage = "99999/supersaiyan" angle = 10 scale = 1.0 action = "fade:80" time = 0.1]
+[quake target = "ss" power = 1]
+
+[character id = "m2" x = -280 y = -60-20 storage = "00214/heapup_e_02" angle = 0 scale = 0.9 action = "fadein" time = 0.1]
+[flip target = "m2" h = 1]
+[quake target = "m2" power = 4 time = 0.3]
+
+[lwfobject id = "kaki1" storage="kakimoji:ef_020" in="04" x= -160 y= -160 scale = 1.3 angle = 10 action = "fadein" time = 0.1]
+[quake target = "kaki1" power = 10 time = 0.3]
+
+
+
+//空のフキダシ
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+
+
+
+
+*005
+//-------------------------------------------------------------------------------
+//  人造人間18号
+//-------------------------------------------------------------------------------
+[se storage = "03"]
+[coma shape="N0001R" bg = "bg_000_016"]
+
+[character x = 180 y = -130 storage = "00020/idl_side_e_04" scale = 1.1 action = "fadein" time = 0.1]
+
+[lwfobject id = "kaki1" storage="kakimoji:ef_001" in="04" x= 0 y= 110 scale = 2.2 angle = -10 action = "fadein" time = 0.1]
+[quake target = "kaki1" power = 9 time = 0.4]
+
+//空のフキダシ
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+
+[balloon x= -120 y=-90 shape="002_03" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+なるほど…超サイヤ人か…[r]
+やっと正体がわかったよ[r]
+ボクちゃんたち…
+[p]
+
+
+*006
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+[se storage = "48"]
+[coma shape="N0004R" bg = "bg_000_014"]
+
+
+[character x = -130 y = -50 storage = "00214/card_02" scale = 0.9 action = "fadein" time = 0.1]
+[character x = 0 y = -45 storage = "99999/beam_04" scale = 1.5 action = "fadein" time = 0.1]
+
+[balloon x= 160 y= 0 shape="003_01" scale = 1.3 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 17]
+//[quake target =".bln" power = 3 time = 0.2]
+覆面の下の[r]
+正体に勘づき[r]
+マイティマスクの服を[r]
+切り裂く18号…[r]
+　[r]
+そこから現れたのは…[r]
+なんとトランクスと[r]
+悟天のふたりだった！
+[p]
+
+
+*007
+//-------------------------------------------------------------------------------
+//  超サイヤ人トランクス（幼年期）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_016"]
+
+[character x = -80 y = -85 storage = "00279/idl_side_p_01" scale = 0.9] 
+//[character x=130 y=-100 storage = "00279/idl_side_e_01" scale = 1.0 action = "fadein" time = 0.1]
+[character x = -80 y = 40 storage = "99999/ase" scale = 0.5 action = "fadein" time = 0.1]
+
+[character x= -240 y=-95 storage = "00200/heapup_p_03" scale = 1.1]
+//[character x=250 y=-90 storage = "00200/heapup_e_03" scale = 1.1 action = "fadein" time = 0.1]
+[character x = -260 y = 50 storage = "99999/ase" scale = 0.6 action = "fadein" time = 0.1]
+
+[balloon x = 140 y = 70 shape="004_01" scale = 0.65 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 44]
+//[quake target =".bln" power = 3 time = 0.2]
+ヤバイ…！
+[p]
+
+
+*008
+//-------------------------------------------------------------------------------
+//  審判
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_025_004"]
+
+[character x=220 y=-190 storage = "90003/shout_2" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x = -120 y = 50 shape="005_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+ふたりで試合をしては[r]
+いけません！！[r]
+マイティマスク選手[r]
+失格ー！！
+[p]
+
+
+*009
+//-------------------------------------------------------------------------------
+//  超サイヤ人トランクス（幼年期）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_016"]
+
+[character id = "goten" x = -80 y = -85 storage = "00279/idl_side_p_01" scale = 0.9 action = "fadein" time = 0.1]
+[character id = "a1" x = -80 y = 40 storage = "99999/ase" scale = 0.5 action = "fadein" time = 0.1]
+
+[character id = "tora" x= -240 y=-95 storage = "00200/heapup_p_03" scale = 1.1 action = "fadein" time = 0.1]
+[character id = "a2" x = -260 y = 50 storage = "99999/ase" scale = 0.6 action = "fadein" time = 0.1]
+
+
+
+[balloon x = 160 y = 60 shape="004_02" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+[quake target =".bln" power = 3 time = 0.2]
+に…[r]
+逃げろっ！！
+[p]
+
+[se storage = "07"]
+
+[fadeout target = "a1" time = 0.1]
+[fadeout target = "a2" time = 0.1]
+
+//[move target = "tora" x = -210 y = -125 time = 0.1 ]
+//[move target = "goten" x = -50 y = -115 time = 0.1 ]
+//[wait time = 0.2]
+
+[move target = "tora" x = -1000 y = 100 time = 0.4 ease = "in:02"]
+[move target = "goten" x = -1000 y = 100 time = 0.4 ease = "in:02"]
+[wait time = 0.1]
+
+[fadeout target = "tora" time = 0.3]
+[fadeout target = "goten" time = 0.3]
+
+//空のフキダシ
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+
+*010
+//-------------------------------------------------------------------------------
+//  人造人間18号
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_016"]
+
+[character x = 180 y = -130 storage = "00020/idl_side_e_04" scale = 1.1 action = "fadein" time = 0.1]
+
+[balloon x= -100 y=70 shape="002_02" scale = 0.65 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 44]
+//[quake target =".bln" power = 3 time = 0.2]
+ふう…
+[p]
+
+
+*011
+//-------------------------------------------------------------------------------
+//  審判
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_025_004"]
+
+[character x=230 y=-190 storage = "90003/shout_1" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x = -120 y = 100 shape="005_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+これで残るは[r]
+ミスター・サタンと[r]
+18号選手だけと[r]
+なりました！！
+[p]
+
+
+[balloon x=-110 y=-110 shape="005_01" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+[quake target =".bln" power = 3 time = 0.2]
+勝ったほうの[r]
+どちらかが優勝[r]ですー！！
+[p]
+
+
+*012
+//-------------------------------------------------------------------------------
+//  ミスター・サタン
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0004L" bg = "bg_000_024"]
+
+[character x=0 y=0 storage = "99999/black" scale = 2.0 action = "fade:70" time = 0.1]
+
+[character id = "satan" x= -180 y=-300 storage = "00038/dam_roll_p_01" scale = 1.4 action = "fadein" time = 0.1]
+[flip target ="satan" h=1]
+//[quake target = "satan" power = 1]
+
+[balloon x = 160 y = 30 shape="004_01" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+//[quake target =".bln" power = 3 time = 0.2]
+し…[r]
+…死んでしまう…
+[p]
+
+
+*013
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0004R" bg = "bg_025_004"]
+
+[balloon x=0 y=-30 shape="003_01" scale = 1.4 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 16]
+//[quake target =".bln" power = 3 time = 0.2]
+天下一武道会 決勝戦[r]
+バトルロイヤル…[r]
+　[r]
+いよいよ残る選手は[r]
+チャンピオン[r]
+ミスター・サタンと[r]
+18号のふたりとなった[r]
+　[r]
+はたして[r]
+優勝の行方は！？
+[p]
+
+
+
+//-------------------------------------------------------------------------------
+[stopbgm]

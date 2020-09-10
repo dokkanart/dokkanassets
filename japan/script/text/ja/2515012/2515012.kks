@@ -1,0 +1,109 @@
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+//[bgm storage = "013"]
+
+*01
+//-------------------------------------------------------------------------------
+//  魔人ブウ(ピッコロ吸収)
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_008_001"]
+
+[character x=-250 y=-150 storage = "00363/SR_atc_sp01_p_01" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x=110 y=80 shape="002_01" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+…もしものときのために[r]
+保険をかけておいて[r]
+よかったよ…[p]
+
+*02
+//-------------------------------------------------------------------------------
+//  アルティメット孫悟飯
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_008_001"]
+
+[character x = 210 y = -140 storage = "00235/card_02" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon x=-120 y=100 shape="001_02" scale = 0.65 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 44]
+[quake target =".bln" power = 3 time = 0.2]
+え！？
+[p]
+
+*03
+//-------------------------------------------------------------------------------
+//  魔人ブウ(ピッコロ吸収)
+//-------------------------------------------------------------------------------
+[se storage = "03"]
+[coma shape="N0004L" bg = "bg_000_014"]
+
+[character x=-440 y=-700 storage = "00363/SR_atc_sp01_p_01" scale = 3.5 action = "fadein" time = 0.1]
+
+[balloon x=140 y=70 shape="006_01" scale = 0.65 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 44]
+[quake target =".bln" power = 7 time = 0.2]
+はあっ！！
+[p]
+
+
+*04
+//-------------------------------------------------------------------------------
+//  アルティメット孫悟飯
+//-------------------------------------------------------------------------------
+//[se storage = "3014"]
+[coma shape="N0004R" bg = "bg_000_014"]
+
+[character x = 180 y = -330 storage = "00235/card_01" scale = 2.4 angle = -20 action = "fadein" time = 0.1]
+
+[wait time = 0.2]
+
+[character x = 0 y = 0 storage = "99999/pink" scale = 10 action = "fadein" time = 0.2]
+
+[wait time = 0.2]
+
+[se storage = "3025"]
+//点滅
+[balloon shape="008_02" x = 140 y = -30 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+//[balloon shape="008_02" x = 140 y = -30 scale = 50 action = "fadein" time = 0.1]
+//[wait time = 0.3]
+//[clear target = ".bln"]
+
+//フェードアウト（フェードアウトするコマ）
+[balloon x=130 y=40 shape="008_02" scale = 50.0 action = "fadein" time = 0.3]
+[wait time = 0.5] 
+
+*05
+//-------------------------------------------------------------------------------
+//  魔人ブウ(アルティメット孫悟飯吸収)
+//-------------------------------------------------------------------------------
+[coma shape="S0001" bg = "bg_008_001"]
+
+[character x = -40 y = -70 storage = "00364/card_02" scale = 1.2 action = "fadein" time = 0.1]
+
+//フェードイン（フェードインするコマ）
+[balloon x=130 y=40 shape="008_02" scale = 50]
+[wait time = 0.5]
+[fadeout target = ".bln" time = 1.5]
+[wait_anim target=".bln"]
+
+[balloon x=100 y=-290 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+ふ…[r]
+ふはははは…！！[r]
+これは いい！！[p]
+
+//-------------------------------------------------------------------------------
+//[stopbgm]

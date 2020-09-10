@@ -1,0 +1,134 @@
+*start|スタート
+//"ステージ3ゴール"
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "002"]
+
+*001
+//-------------------------------------------------------------------------------
+//  複製ベジータ
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_084"]
+
+[character x = -165 y = -270 storage = "00939/card_01" scale = 1.3 action = "fadein" time = 0.1]
+
+[balloon x=120 y=50 shape="002_03" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+それでも[r]
+攻撃している[r]つもりか！
+[p]
+
+*002
+//-------------------------------------------------------------------------------
+//  ゴテンクス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_000_084"]
+
+[character x = 160 y = -120 storage = "00276/heapup_e_01" scale = 1.4 angle = -5 action = "fadein" time = 0.1]
+
+[balloon shape="001_02" x = -140 y = 60 scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+…やっぱり[r]
+通じないか…[r]
+なら…
+[p]
+
+[quake target =".chara" power = 4 time = 0.3]
+
+[balloon x=-130 y=-200 shape="006_02" scale = 0.75 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+[quake target =".bln" power = 7 time = 0.2]
+はああああ！！
+[p]
+
+
+[se storage = "3025"]
+//点滅
+[balloon shape="008_02" x = 140 y = -30 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+[balloon shape="008_02" x = 140 y = -30 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+
+
+*004
+//-------------------------------------------------------------------------------
+//  超サイヤ人３ゴテンクス
+//-------------------------------------------------------------------------------
+[coma shape="S0001" bg = "bg_000_084"]
+
+[character id = "hikari" x = -0 y = 0 storage = "00058/ef_uniBall" scale = 14.0 action = "expand" time = 0.7]
+[wait time = 0.4]
+[fadeout target = "hikari" time = 0.3]
+
+[character id = "gzt" x = -30 y = 50 storage = "00577/card_04" scale = 1.2 action = "fadein" time = 0.1]
+
+[wait_anim target="gzt"]
+
+[se storage = "3029"]
+
+[balloon shape="006_01" x = 0 y = -240 scale = 0.75 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+[quake target =".bln" power = 7 time = 0.2]
+超ゴテンクス３[r]
+登場！！
+[p]
+
+*005
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002L" bg = "bg_080_001"]
+
+
+
+[balloon x=0 y=0 shape="003_01" scale = 1.6 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 16]
+//[quake target =".bln" power = 3 time = 0.2]
+その頃…[r]
+界王星で[r]
+修業していた悟空は[r]
+ポトフ星の闘いの気を[r]
+察知し…
+[p]
+
+*006
+//-------------------------------------------------------------------------------
+//  孫悟空
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_080_001"]
+
+[character x=200 y=-150 storage = "00003/idl_side_e_06" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon shape="001_02" x = -130 y = 60 scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+ゴテンクス…！？[r]
+…あれ？[r]
+ベジータの気もあるぞ
+[p]
+
+[balloon x=-140 y=-195 shape="001_03" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+この気…[r]
+闘ってんのか？
+[p]
+
+//-------------------------------------------------------------------------------
+[stopbgm]

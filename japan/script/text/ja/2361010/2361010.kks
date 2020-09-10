@@ -1,0 +1,123 @@
+*start|スタート
+//"ステージ1スタート"
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "012"]
+
+*001
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0002L" bg = "bg_000_084"]
+
+
+
+[balloon x=0 y=160 shape="003_01" scale = 1.6 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 15]
+//[quake target =".bln" power = 3 time = 0.2]
+地球を訪れたモナカの[r]
+宅配宇宙船に[r]
+ひょんなことから[r]
+もぐりこんでしまった[r]
+トランクスと悟天…[r]
+　[r]
+ふたりは地球を飛び出し[r]
+見知らぬ星へと[r]
+降り立つのだった…
+[p]
+
+*002
+//-------------------------------------------------------------------------------
+//  トランクス(幼年期)
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_084"]
+
+[character x = 70 y = -80 storage = "00225/idl_side_e_02" scale = 0.85 action = "fadein" time = 0.1]
+
+[character x=260 y=-90 storage = "00200/idl_side_e_05" scale = 1.1 action = "fadein" time = 0.1]
+
+[balloon shape="001_01" x = -130 y = 70 scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+//[quake target =".bln" power = 3 time = 0.2]
+どこだ？[r]
+ここ…
+[p]
+
+*003
+//-------------------------------------------------------------------------------
+//  モナカ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_084"]
+
+[character x = -180 y = -120 storage = "00557/card_01" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon x=110 y=50 shape="001_02" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+//[quake target =".bln" power = 3 time = 0.2]
+ポトフ星です
+[p]
+
+*004
+//-------------------------------------------------------------------------------
+//  トランクス(幼年期)
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_084"]
+
+[character x = 70 y = -80 storage = "00225/idl_side_e_02" scale = 0.85 action = "fadein" time = 0.1]
+
+[character x=260 y=-90 storage = "00200/idl_side_e_05" scale = 1.1 action = "fadein" time = 0.1]
+
+[balloon shape="001_02" x = -140 y = 60 scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+ポトフ星？[r]
+聞いたことないな…
+[p]
+
+*005
+//-------------------------------------------------------------------------------
+//  モナカ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_084"]
+
+[character x = -180 y = -120 storage = "00557/card_01" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon x=110 y=50 shape="001_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+それでは わたしは[r]配達があるので…
+[p]
+
+*006
+//-------------------------------------------------------------------------------
+//  トランクス(幼年期)
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_000_084"]
+
+[character x = 20 y = -50 storage = "00225/card_01" scale = 0.65 action = "fadein" time = 0.1]
+
+[character x = 210 y = -50 storage = "00200/card_02" scale = 1.4 angle = 7 action = "fadein" time = 0.1]
+
+[balloon shape="001_03" x = -120 y = -150 scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+[quake target =".bln" power = 3 time = 0.2]
+せっかくだから[r]
+オレたちも付き合うよ！[r]
+モナカさん
+[p]
+
+//-------------------------------------------------------------------------------
+[stopbgm]

@@ -1,0 +1,208 @@
+
+
+*start|スタート
+//2327021 愛の真剣勝負！？
+//ペンギン村（千兵衛宅前
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "012"]
+
+*01
+//----------------------------------------------------------------------------
+//  オボッチャマン
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0001L" bg = "bg_074_001"]
+
+[character  x=-135 y=-95 storage = "00642/obocha_atc_kick_p_02" scale = 1.1 angle= 5  action = "fadein" time = 0.1]
+
+[balloon shape="004_02" x = 115 y = 0 scale = 1.0 action = "fadein" time = 0.1]
+[font size = 24]
+[quake target =".bln" power = 3 time = 0.2]
+[wait_anim target=".bln"]
+な…なるほど…[r]
+たしかに とんでもない[r]
+パワーをお持ちの[r]
+ようですね…[p]
+
+*02
+//-------------------------------------------------------------------------------
+//  孫悟空
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_074_001"]
+[character x = 220 y = -40 storage = "00261/idl_side_e_01" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon shape="001_01" x = -130 y = 110 scale = 0.9 action = "fadein" time = 0.1]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+[wait_anim target=".bln"]
+ひゃあ〜！ おめえも[r]
+めちゃくちゃ強えなあ！[p]
+
+[balloon shape="001_02" x = -100 y = -90 scale = 0.9 action = "fadein" time = 0.1]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+[wait_anim target=".bln"]
+こんな強えやつらと[r]
+毎日 組み手できるなんて[r]
+うらやましいぞ！[p]
+
+*03
+//-------------------------------------------------------------------------------
+//  則巻アラレ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_074_001"]
+
+[character id = "gaji_1" x=100 y=130 storage = "00635/gattyan_05_guard_p_01" scale = 0.7  action = "fadein" time = 0.1]
+[flip target ="gaji_1" h=1]
+[character id = "gaji_2" x=265 y=130 storage = "00635/gattyan_06_guard_p_01" scale = 0.7 action = "fadein" time = 0.1]
+[flip target ="gaji_2" h=1]
+[character  x=175 y=-95 storage = "00635/arare2_idl_side_e_01" scale = 1.1  action = "fadein" time = 0.1]
+
+[balloon shape="001_03" x = -130 y = 120 scale = 0.9 action = "fadein" time = 0.1]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+[wait_anim target=".bln"]
+悟空くんも[r]
+ペンギン村に住めば？
+[p]
+
+[move target ="gaji_1"  y= 150 time = 0.2]
+[wait time = 0.1]
+[move target ="gaji_1"  y= 130 time = 0.2]
+
+[move target ="gaji_2"  y= 150 time = 0.3]
+[wait time = 0.2]
+[move target ="gaji_2"  y= 130 time = 0.3]
+
+[balloon shape="001_01" x = -100 y = -80 scale = 0.6 action = "fadein" time = 0.1]
+[font size = 50]
+[quake target =".bln" power = 3 time = 0.2]
+[wait_anim target=".bln"]
+クピ！
+[p]
+
+*04
+//-------------------------------------------------------------------------------
+//  孫悟空
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_074_001"]
+[character x = 220 y = -40 storage = "00261/idl_side_e_01" scale = 1.2 action = "fadein" time = 0.1]
+[balloon shape="001_03" x = -130 y = 00 scale = 0.9 action = "fadein" time = 0.1]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+[wait_anim target=".bln"]
+オラはダメだよ[r]
+じいちゃんの形見の[r]
+ボールを探さなきゃ！[p]
+
+*05
+//----------------------------------------------------------------------------
+//  オボッチャマン
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_074_001"]
+
+[character  x=-200 y=-95 storage = "00642/obocha_idl_side_p_01" scale = 1.1  action = "fadein" time = 0.1]
+//汗をかく
+[character x = -240 y = 40 storage = "99999/ase" scale = 0.6 action = "fadein" time = 0.1]
+
+[balloon shape="004_01" x = 80 y = 90 scale = 0.8 action = "fadein" time = 0.1]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+[wait_anim target=".bln"]
+へ！？[r]
+あ…あの…[r]
+あなたは……[p]
+
+[balloon shape="004_02" x = 110 y = -100 scale = 0.9 action = "fadein" time = 0.1]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+[wait_anim target=".bln"]
+
+アラレさんとの交際の[r]
+ためにペンギン村に[r]
+来られたわけでは…[p]
+
+*06
+//-------------------------------------------------------------------------------
+//  孫悟空
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_074_001"]
+[character x = 220 y = -20 storage = "00261/idl_side_e_01" scale = 1.2 action = "fadein" time = 0.1]
+[balloon shape="001_03" x = -130 y = 110 scale = 0.8 action = "fadein" time = 0.1]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+[wait_anim target=".bln"]
+なんのことだ？[p]
+
+[balloon shape="001_02" x = -100 y = -90 scale = 0.9 action = "fadein" time = 0.1]
+[font size = 27]
+//[quake target =".bln" power = 3 time = 0.2]
+[wait_anim target=".bln"]
+オラ[r]
+ドラゴンボール探しの[r]途中で[r]
+たまたま来ただけだぞ[p]
+
+*07
+//----------------------------------------------------------------------------
+//  オボッチャマン
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_074_001"]
+
+[character  x=-200 y=-95 storage = "00642/obocha_idl_side_p_01" scale = 1.1  action = "fadein" time = 0.1]
+//汗をかく
+//[character x = -220 y = 40 storage = "99999/ase" scale = 0.6 action = "fadein" time = 0.1]
+
+[balloon shape="001_01" x = 100 y =90 scale = 0.9 action = "fadein" time = 0.1]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+[wait_anim target=".bln"]
+な…な〜んだ！[r]
+そうだったのですね！[r]
+はははは…[p]
+
+[balloon shape="001_03" x = 110 y = -100 scale = 0.9 action = "fadein" time = 0.1]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+[wait_anim target=".bln"]
+
+わたしの[r]
+早とちりでした！[r]
+申し訳ありません…[p]
+
+*08
+//-------------------------------------------------------------------------------
+//  マシリト
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_074_001"]
+[character x = 180 y = -40 storage = "90003/masirito" scale = 0.9 action = "fadein" time = 0.1]
+//汗をかく
+[character x = 240 y = 80 storage = "99999/ase" scale = 0.8 action = "fadein" time = 0.1]
+
+[balloon shape="004_01" x = -120 y = 100 scale = 0.9 action = "fadein" time = 0.1]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+[wait_anim target=".bln"]
+
+お…おのれ〜…[r]
+またしても[r]
+作戦失敗か……！[p]
+
+[balloon shape="004_02" x = -120 y = -180 scale = 0.9 action = "fadein" time = 0.1]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+[wait_anim target=".bln"]
+だが わたしは[r]
+まだ あきらめんぞ…[r]
+つ…次こそは…！[p]
+
+//-------------------------------------------------------------------------------
+[stopbgm]

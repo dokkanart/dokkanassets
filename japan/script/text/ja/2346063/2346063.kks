@@ -1,0 +1,89 @@
+*start|スタート
+//"エリア６ボス前
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "003"]
+
+*01
+//-------------------------------------------------------------------------------
+//  フリーザ
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0001L" bg = "bg_050_001"]
+
+[character x = -200 y = -130 storage = "00005/idl_side_e_01" scale = 0.9 action = "fadein" time = 0.1]
+[flip target =".chara" h=1]
+
+[balloon x=120 y=50 shape="002_03" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 7 time = 0.2]
+どうも[r]
+この星のかたたちは[r]
+死にたがりやが[r]
+多いようですね
+[p]
+
+*02
+//-------------------------------------------------------------------------------
+//  ネイル
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_050_001"]
+
+[character x = 190 y = -290 storage = "00036/card_01" scale = 1.3 action = "fadein" time = 0.1]
+
+[balloon x=-100 y=70 shape="002_02" scale = 0.7 action = "fadein" time = 0.1]
+[font size = 54]
+[wait_anim target=".bln"]
+//[quake target =".bln" power = 3 time = 0.2]
+………
+[p]
+
+*03
+//-------------------------------------------------------------------------------
+//  フリーザ
+//-------------------------------------------------------------------------------
+[se storage = "48"]
+[coma shape="N0004L" bg = "bg_000_014"]
+
+[character x = -150 y = -550 storage = "00005/card_05" scale = 2.0 action = "fadein" time = 0.1]
+
+[balloon x=140 y=100 shape="002_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+わたしの戦闘力は[r]
+53万です
+[p]
+
+[balloon x=130 y=-100 shape="002_03" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+ですが もちろん[r]
+フルパワーであなたと[r]
+闘う気はありませんから[r]
+ご心配なく…
+[p]
+
+*04
+//-------------------------------------------------------------------------------
+//  ネイル
+//-------------------------------------------------------------------------------
+[se storage = "3022"]
+[coma shape="N0002R" bg = "bg_050_001"]
+
+[character x = 200 y = -170 storage = "00036/card_02" scale = 1.2 action = "fadein" time = 0.1]
+[quake target =".chara" power = 5 time = 0.4]
+
+[balloon x=-140 y=-170 shape="007_02" scale = 0.75 action = "expand" time = 0.1]
+[font size = 36]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 7 time = 0.2]
+ほざけーっ！！
+[p]
+
+//-------------------------------------------------------------------------------
+[stopbgm]

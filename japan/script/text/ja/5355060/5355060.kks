@@ -1,0 +1,103 @@
+*start|スタート
+//ステージ6スタート
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "027"]
+
+*01
+//-------------------------------------------------------------------------------
+//  ブロリー（怒り）
+//-------------------------------------------------------------------------------
+[se storage = "50"]
+[se storage = "3038"]
+[coma shape="S0001" bg = "bg_070_008"]
+
+[lwfobject id = "kaki1" storage="kakimoji:ef_020" x=0 y=-190 scale = 2.8 action = "fadein" time = 0.1]
+[quake target = "kaki1" power = 15 time = 0.4]
+
+
+[character id = "br" x = 0 y = 50 storage = "00859/card_01" scale = 1.2 action = "fadein" time = 0.1]
+[quake target ="br" power = 16 time = 0.4]
+
+[character id = "ki" x =0 y = 0 storage = "99999/04_syougeki" scale = 10.0 action = "expand" time = 1.0]
+
+[balloon x=0 y=480 shape="007_02" scale = 0.7 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 40]
+[quake target =".bln" power = 7 time = 0.2]
+うおおお！！
+//[p]
+
+
+
+
+[wait time = 0.5]
+[fadeout target = "ki" time = 0.5]
+
+[wait_anim target="ki"]
+
+// 空のフキダシ（セリフがないコマを送るために使用）
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+
+
+*02
+//-------------------------------------------------------------------------------
+//  悟空の声
+//-------------------------------------------------------------------------------
+[se storage = "03"]
+[coma shape="N0004R" bg = "bg_070_008"]
+
+
+
+[balloon x=0 y=60 shape="006_01" scale = 0.75 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+[quake target =".bln" power = 7 time = 0.2]
+おい！ おまえ！
+[p]
+
+
+
+
+*03
+//-------------------------------------------------------------------------------
+//  ブロリー（怒り）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_070_008"]
+
+[character x = -180 y = -220 storage = "00859/heapup_p_01" scale = 1.0 action = "fadein" time = 0.1]
+[quake target =".chara" power = 9 time = 0.4]
+
+//！！
+[lwfobject id = "kaki1" storage="kakimoji:ef_001" x=70 y=110 scale = 2.7 angle = 13 action = "fadein" time = 0.1]
+[quake target = "kaki1" power = 15 time = 0.4]
+
+[balloon x=110 y=-90 shape="006_01" scale = 0 action = "expand" time = 0.1]
+[p]
+
+
+*04
+//-------------------------------------------------------------------------------
+//  孫悟空
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_070_008"]
+
+//[character x=160 y=-210 storage = "00927/card_01" scale = 1.1 action = "fadein" time = 0.1]
+//[character x=180 y=-285 storage = "00003/card_21" scale = 1.1 action = "fadein" time = 0.1]
+[character x=210 y=-170 storage = "00003/idl_side_e_09" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon shape="001_03" x = -165 y = 40 scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+//[quake target =".bln" power = 3 time = 0.2]
+そろそろ[r]
+オラとやろうぜ
+[p]
+
+//-------------------------------------------------------------------------------
+[stopbgm]

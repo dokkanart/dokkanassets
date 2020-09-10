@@ -1,0 +1,39 @@
+//"エリア１スタート"
+
+*start|スタート
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+
+//[bgm storage = "013"]
+
+
+
+*001
+//-------------------------------------------------------------------------------
+//  ベジット
+//-------------------------------------------------------------------------------
+//[se storage = "3024"]
+
+[coma shape="S0001" bg = "bg_073_001"]
+
+[character id = "beji" x = -0 y = -35 storage = "00653/card_02" angle = 0 scale = 1.2 action = "fadein" time = 0.1] 
+[wait time = 0.7]
+
+[balloon x=-150 y=485 shape="001_03" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+正直[r]
+おどろいたぜ[p]
+
+[se storage = "3012"]
+[quake target =".chara" power = 5 time = 0.4]
+
+[balloon x=120 y=-440 shape="006_01" scale = 1.0 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+[quake target =".bln" power = 7 time = 0.2]
+…それじゃあ[r]
+こっちも全開でいくか！！
+[p]

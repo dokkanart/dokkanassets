@@ -1,0 +1,32 @@
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+//[bgm storage = "026"]
+
+*001
+//-------------------------------------------------------------------------------
+//  セル（第一形態）
+//-------------------------------------------------------------------------------
+//[se storage = "3022"]
+[coma shape="S0001" bg = "bg_014_003"]
+
+[character id = "sell" x=25 y=-30 storage = "00006/card_02" scale = 1.0 action = "fadein" time = 0.1] 
+
+[balloon x=-120 y=475 shape="002_01" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+//[quake target =".bln" power = 3 time = 0.2]
+ほっほっほ…
+[p]
+
+[balloon x=120 y=-400 shape="002_03" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+//[quake target =".bln" power = 3 time = 0.2]
+このわたしを[r]
+殺すつもりか？
+[p]
+
+//[stopbgm]

@@ -1,0 +1,144 @@
+*start|スタート
+
+//"ラウンド4開始"
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+//[bgm storage = "013"]
+
+*001
+//-------------------------------------------------------------------------------
+//  孫悟空
+//-------------------------------------------------------------------------------
+//[se storage = "03"]
+
+[coma shape="N0004L" bg = "bg_000_024"]
+
+[character x = 45 y = -500 storage = "00003/card_11" scale = 2.3 action = "fadein" time = 0.1] 
+[character x = -55 y = -93 storage = "99999/potara_gok" scale = 2.3 action = "fadein" time = 0.1]
+
+
+
+
+*002
+//-------------------------------------------------------------------------------
+//  ベジータ
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0004R" bg = "bg_000_024"]
+
+[character x = 370 y = -440 storage = "00282/card_02" scale = 2.3 action = "fadein" time = 0.1]
+
+[character x = 92 y = -54 storage = "99999/potara_veg" scale = 2.3 action = "fadein" time = 0.1]
+
+[wait time = 0.3]
+
+
+[se storage = "3034"]
+[balloon id = "potara" x=0 y=170 shape="011_12" scale = 1.2 angle=15 action = "fadein" time = 0.1]
+[quake target ="potara" power = 5 time = 0.4]
+
+[wait_anim target="potara"]
+
+[balloon x=120 y=520 shape="001_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+ベジータ[r]
+こいつを右の耳に[r]
+つけてくれ！！[p]
+
+[balloon x=180 y=240 shape="001_02" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 40]
+[quake target =".bln" power = 3 time = 0.2]
+たのむ！！[p]
+
+
+
+[balloon x=-160 y=-80 shape="007_02" scale = 0.75 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+[quake target =".bln" power = 7 time = 0.2]
+いいんだろ[r]
+これで！！[p]
+
+
+
+
+*003
+//-------------------------------------------------------------------------------
+//  合体
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002L" bg = "bg_008_001"]
+
+[wait time = 0.3]
+
+[se storage = "03"]
+
+[character x = 50 y = -30 storage = "00282/atc_sp01_p_01" scale = 0.8 action = "slide:right" time = 0.3]
+
+[character x = -30 y = -50 storage = "00003/atc_sp01_e_03" scale = 0.8  action = "slide:left" time = 0.3]
+
+[wait time = 0.3]
+
+[character id = "v2" x = 50 y = -30 storage = "00282/atc_sp01_p_01" scale = 0.8]
+[quake target ="v2" power = 8 time = 0.3]
+
+[character id = "g2" x = -30 y = -50 storage = "00003/atc_sp01_e_03" scale = 0.8]
+[quake target ="g2" power = 8 time = 0.3]
+
+
+
+
+[character id = "ki" x = 0 y = -30 storage = "99999/04_syougeki" scale = 4.0 action = "expand" time = 0.8]
+
+[wait time = 0.2]
+
+
+
+//点滅
+[se storage = "3025"]
+//点滅
+[balloon shape="008_02" x = 140 y = -30 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+[balloon shape="008_02" x = 140 y = -30 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+
+
+
+*004
+//-------------------------------------------------------------------------------
+// ベジット
+//-------------------------------------------------------------------------------
+[se storage = "50"]
+[coma shape="S0001" bg = "bg_008_001"]
+
+//[lwfobject id = "kaki1" storage="kakimoji:ef_013" in="04" x=-90 y=-100 scale = 3 angle = -21 action = "fadein" time = 0.1] 
+//[quake target = "kaki1" power = 15 time = 0.4]
+
+//[character id = "ss" x = 0 y = 30 storage = "99999/supersaiyan" scale = 1.5 action = "fadein" time = 0.1] 
+//[quake target = "ss" power = 1 time = 300]
+
+[character id = "beji" x = 0 y = 0 storage = "00535/card_05" scale = 1.2 action = "fadein" time = 0.1] 
+//[quake target = "beji" power = 10 time = 0.4]
+
+[character id = "ball2" x=0 y=0 storage = "99999/final_hope_01" scale = 8.0 action = "expand" time = 0.5]
+[wait time = 0.3]
+[fadeout target = "ball2" time = 0.7]
+
+[wait_anim target="ball2"]
+
+[balloon x=0 y=-400 shape="006_01" scale = 0.8 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 7 time = 0.2]
+こいつが[r]
+超ベジット！！[p]
+
+
+//-------------------------------------------------------------------------------
+//[stopbgm]

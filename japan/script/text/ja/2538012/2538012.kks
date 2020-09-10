@@ -1,0 +1,89 @@
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+//[bgm storage = "012"]
+
+*001
+//----------------------------------------------------------------------------
+// 孫悟空
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_055"]
+
+[character id = "gok" x=200 y=-150 storage = "00003/heapup_e_06" scale = 1.3 action = "fadein" time = 0.1]
+ 
+ 
+[balloon shape="001_02" x = -110 y = 120 scale = 1 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+こんなんじゃ[r]
+おめえ本気出せねえよな[r]
+…それじゃあいくぜ！！
+[p]
+
+//[quake target =".chara" power = 6 time = 0.3]
+ 
+ 
+[balloon shape="006_01" x = -120 y = -120 scale = 0.8 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 7 time = 0.2]
+はああああ…！！
+[p]
+
+//ブルーに変身
+[lwfobject id = "kaki1" storage="kakimoji:ef_020" x=200 y=-120 scale = 1.6 action = "fadein" time = 0.1]
+[quake target = "kaki1" power = 15 time = 0.2]
+
+
+[character id = "super" x = 200 y = -170 storage = "99999/supersaiyangodss" scale = 1.0 action = "expand" time = 0.1]
+
+[wait time = 0.1]
+
+
+
+//点滅（白）
+[se storage = "3029"]
+//点滅
+[balloon shape="008_02" x = 0 y = 0 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+//[balloon shape="008_02" x = 0 y = 0 scale = 50 action = "fadein" time = 0.1]
+//[wait time = 0.3]
+//[clear target = ".bln"]
+
+[fadeout target = "kaki1" time = 0.3]
+
+[balloon id = "white" shape="008_02" x = 0 y = 0 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = "gok"]
+[clear target = "super"]
+[fadeout target = "white" time = 0.7]
+
+
+*002
+//-------------------------------------------------------------------------------
+//  超サイヤ人ゴッドSS孫悟空
+//-------------------------------------------------------------------------------
+//[se storage = "3011"]
+[coma id = "coma1" shape="S0001" bg = "bg_000_055"]
+
+//[lwfobject id = "kaki1" storage="kakimoji:ef_013" x=180 y=400 angle = 35 scale = 2.2 action = "fadein" time = 0.1]
+//[quake target = "kaki1" power = 15 time = 0.3]
+
+[character id = "1" x = 0 y = 0 storage = "00239/card_07" scale = 1.3 action = "fadein" time = 0.1]
+[quake target ="1" power = 6 time = 0.3]
+
+[balloon shape="006_02" x = -70 y = -380 scale = 0.9 action = "expand" time = 0.1]
+[font size = 28]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 7 time = 0.2]
+じゃあ第２ラウンド[r]
+いってみっか！
+[p]
+
+
+//[stopbgm]

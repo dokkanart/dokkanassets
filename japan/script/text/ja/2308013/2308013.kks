@@ -1,0 +1,35 @@
+//	エリア１ボス前
+
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "003"]
+
+
+//-------------------------------------------------------------------------------
+//  ピラフマシン
+//-------------------------------------------------------------------------------
+[coma shape="N0002L" bg = "bg_019_001"]
+
+[character x = -120 y = -100 storage = "00025/atc_down_p_01" scale = 1.6 action = "fadein" time = 0.1]
+
+
+[balloon x = 140 y = 70 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][font size = 28]
+[quake target = ".bln" power = 3 time = 0.2]
+ドラゴンボールは[r]
+この街にあるはずだ！[p]
+
+[quake target = ".chara" power = 5 time = 0.2]
+
+[balloon x = 130 y = -190 shape="006_01" scale = 0.85 action = "expand" time = 0.1]
+[wait_anim target=".bln"][font size = 32]
+[quake target = ".bln" power = 7 time = 0.2]
+さがせ！[r]
+さがすのだ！！[p]
+
+
+
+[stopbgm]

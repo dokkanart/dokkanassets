@@ -1,0 +1,269 @@
+*start|スタート
+//究極のDB編_エリア２：スタート
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "005"]
+
+
+*001
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0002R" bg = "bg_000_003"]
+
+[wait time = 0.7]
+
+[character x=240 y=130 storage = "00325/card_01" scale = 0.5 action = "fadein" time = 0.7]
+
+[wait time = 0.4]
+
+[character x=60 y=60 storage = "00326/card_01" scale = 0.6 action = "fadein" time = 0.7]
+
+
+[wait time = 0.4]
+
+[character x=160 y=-60 storage = "00324/card_01" scale = 0.8 action = "fadein" time = 1.0]
+
+[wait_anim target=".chara"]
+
+[balloon x=-160 y=0 shape="003_01" scale = 1.3 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 16]
+
+あと１年で地球が[r]
+消滅してしまう…[r]
+　[r]
+宇宙に飛び散った[r]
+究極ドラゴンボールを[r]
+探すため[r]
+悟空、トランクス、[r]
+パンの３人は[r]
+宇宙へと旅立った
+[p]
+
+
+*002
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002L" bg = "bg_000_003"]
+
+[character x=-150 y=-0 storage = "90003/gt_ship" scale = 1.0 action = "fadein" time = 0.1]
+
+[wait time = 0.7]
+
+
+[se storage = "3037"]
+[character id = "baku" x=-100 y=-90 storage = "99999/ef_sp_smoke" scale = 0.5 action = "expand" time = 0.3]
+
+[wait time = 0.3]
+
+[fadeout target = "baku" time = 0.3]
+
+[se storage = "3023"]
+[character id = "baku" x=-150 y=-80 storage = "99999/ef_sp_explosion" scale = 0.8 action = "expand" time = 0.3]
+
+[wait time = 0.3]
+
+[fadeout target = "baku" time = 0.3]
+
+[balloon x=150 y=-40 shape="003_01" scale = 1.3 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 18]
+…ところが[r]
+出発早々[r]
+宇宙船の故障により[r]
+惑星イメッガに[r]
+不時着してしまう…[r]
+[p]
+
+
+*003
+//-------------------------------------------------------------------------------
+//  悟空
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_081_001"]
+
+[character x=200 y=-50 storage = "00324/heapup_e_01" scale = 1.1 action = "fadein" time = 0.1]
+
+[balloon x=-100 y=80 shape="001_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+なんか ここ[r]
+様子がヘンだぞ
+[p]
+
+
+*004
+//-------------------------------------------------------------------------------
+//  トランクス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_081_001"]
+
+[character x=-270 y=-110 storage = "00325/idl_side_p_01" scale = 1.2 action = "fadein" time = 0.1]
+[character x=-200 y=120 storage = "99999/ase" scale = 0.7 action = "fadein" time = 0.1]
+
+[balloon x=110 y=120 shape="004_02" scale = 1.1 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 20]
+[quake target =".bln" power = 3 time = 0.2]
+住人は押し売りのような人[r]ばっかりだし[r]
+どこ行っても[r]レンタルの料金がかかるし…[p]
+
+[balloon x=90 y=-80 shape="004_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 3 time = 0.2]
+[font size = 32]
+こんな星にいたら[r]
+破産ですよ！
+[p]
+
+*005
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0003L" bg = "bg_081_001"]
+
+[character x = -150 y = -20 storage = "90003/giru_L" scale = 1.1 action = "fadein" time = 0.1]
+
+[balloon x=160 y=20 shape="003_01" scale = 1.2 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 18]
+そんな悟空たちに[r]
+さらに[r]
+トラブルは続く[r]
+　[r]
+突然現れた[r]
+謎のロボットに[r]
+ドラゴンレーダーを[r]
+食べられ…
+[p]
+
+[quake target =".chara" power = 5 time = 0.4]
+
+[balloon x=-150 y=150 shape="002_01" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 40]
+[quake target =".bln" power = 3 time = 0.2]
+ギルルルルッ
+[p]
+
+[character id = "radar" x = -150 y = -20 storage = "90003/dragon_radar" scale = 0.8 action = "fadein" time = 0.1]
+
+[wait_anim target="radar"]
+
+[fadeout target = "radar" time = 0.7]
+
+[se storage = "38"]
+
+[wait_anim target="radar"]
+
+// 空のフキダシ（セリフがないコマを送るために使用）
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+
+
+*007
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0003R" bg = "bg_081_001"]
+
+
+[balloon x=0 y=60 shape="003_01" scale = 1.4 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 16]
+なんと[r]
+惑星イメッガの国王[r]
+ドン・キアーに[r]
+宇宙船まで[r]
+奪われてしまった[r]
+　[r]
+悟空たちは[r]
+瞬間移動で[r]
+追いかけようと[r]
+試みるが…
+[p]
+
+
+*008
+//-------------------------------------------------------------------------------
+//  悟空
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_081_001"]
+
+[character x=200 y=-50 storage = "00324/heapup_e_01" scale = 1.1 action = "fadein" time = 0.1]
+
+[balloon x=-100 y=90 shape="001_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+どうなってんだ？[r]
+瞬間移動が[r]
+できねえ…
+[p]
+
+
+*009
+//-------------------------------------------------------------------------------
+//  トランクス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_081_001"]
+
+[character x=-270 y=-110 storage = "00325/idl_side_p_01" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x=100 y=120 shape="001_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+ドラゴンボールで[r]
+若返った影響で…
+[p]
+
+[balloon x=110 y=-80 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+瞬間移動が[r]
+できなくなって[r]
+しまったんだ…！[p]
+
+
+
+*010
+//-------------------------------------------------------------------------------
+//  パン
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_081_001"]
+
+//パン
+[character x=150 y=-160 storage = "00326/heapup_e_01" scale = 1.4 action = "fadein" time = 0.1]
+
+[balloon x=-120 y=100 shape="001_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+もう…！[r]
+船を見失っちゃうわ
+[p]
+
+[balloon x=-130 y=-210 shape="001_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+とにかく[r]
+追いかけるのよ！
+[p]
+
+
+[stopbgm]

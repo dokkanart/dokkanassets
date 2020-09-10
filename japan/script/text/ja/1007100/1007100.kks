@@ -1,0 +1,151 @@
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "036"]
+
+*01
+//-------------------------------------------------------------------------------
+//  ラディッツ
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0001L" bg = "bg_027_001"]
+
+[character x = -15 y = -65 storage = "00014/guard_p_01" scale = 1 action = "fadein" time = 0.1]
+
+//[character x = -260 y = -100 storage = "00015/heapup_p_01" scale = 1.1 action = "fadein" time = 0.1]
+[character x = -250 y = -100 storage = "00015/heapup_p_01" scale = 1.2 action = "fadein" time = 0.1]
+
+
+[balloon x = 150 y =100 shape="004_04" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][font size = 40]
+[quake target = ".bln" power = 3 time = 0.2]
+あ…[r]うう……[p]
+
+[balloon x = 140 y = -100 shape="004_03" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][font size = 32]
+[quake target = ".bln" power = 3 time = 0.2]
+ち…[r]ちくしょう……！[p]
+
+*02
+//-------------------------------------------------------------------------------
+//  悟空
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_027_001"]
+
+[character x=250 y=-140 storage = "00003/idl_side_e_05" scale = 1.1 action = "fadein" time = 0.1]
+
+[balloon x = -100 y = 80 shape="001_03" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][font size = 32]
+もう[r]
+闘えないはずだ…
+[p]
+
+*03
+//-------------------------------------------------------------------------------
+//  ベジータ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_027_001"]
+
+[character x = -180 y = -110 storage = "00004/idl_side_e_02" scale = 1.1 action = "fadein" time = 0.1]
+[flip target =".chara" h=1]
+
+[balloon x = 120 y = 80 shape="002_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][font size = 28]
+なさけないヤツらだ…[r]
+このオレがわざわざ[r]
+動くことになるとはな[p]
+
+
+
+
+//[balloon x = 130 y = -65 shape="002_01" scale = 0.8 action = "fadein" time = 0.1]
+//[wait_anim target=".bln"][font size = 27]
+//このオレがわざわざ[r]動くことに[r]なるとはな……[p]
+
+*04
+//-------------------------------------------------------------------------------
+//  トランクス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_027_001"]
+
+
+[character x = 210 y = -200 storage = "90000/wait_right_surprise" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x = -100 y = 120 shape="004_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][font size = 28]
+…この歪んだ次元でも[r]
+父さんと悟空さんが[r]
+闘うことになるなんて[p]
+
+[balloon x = -90 y = -100 shape="004_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][font size = 28]
+//[quake target = ".bln" power = 3 time = 0.2]
+これは[r]避けることのできない[r]宿命なのか…！？[p]
+
+
+*05
+//-------------------------------------------------------------------------------
+//  悟空
+//-------------------------------------------------------------------------------
+[se storage = "3031"]
+//[se storage = "3041"]
+[coma shape="N0004R" bg = "bg_000_014"]
+
+[character x = 200 y = -270 storage = "00003/card_01" scale = 1.7 action = "fadein" time = 0.1]
+
+
+
+
+
+*06
+//-------------------------------------------------------------------------------
+//  ベジータ
+//-------------------------------------------------------------------------------
+
+[coma shape="N0004L" bg = "bg_000_014"]
+
+
+[character x = -120 y = -490 storage = "00004/card_02" scale = 1.8 action = "fadein" time = 0.1]
+[wait_anim target=".chara"]
+
+
+[wait time = 0.3]
+
+[balloon x = -140 y =440 shape="001_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][font size = 28]
+ベジータ…[r]…どうしてもか？[p]
+
+
+
+
+[balloon x = 120 y = 100 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][font size = 28]
+//[quake target = ".bln" power = 3 time = 0.2]
+きさまには超えられぬ[r]超エリートの壁を[r]見せてやるぞ…！[p]
+
+
+
+[balloon x = 130 y = -90 shape="002_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][font size = 32]
+//[quake target = ".bln" power = 3 time = 0.2]
+カカロット…！！[p]
+
+//点滅（白）
+[se storage = "40"]
+//点滅
+[balloon shape="008_02" x = 140 y = -30 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+[balloon shape="008_02" x = 140 y = -30 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+
+
+
+
+[stopbgm]

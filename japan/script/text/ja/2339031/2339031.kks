@@ -1,0 +1,218 @@
+*start|スタート
+//ステージ3ゴール
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "027"]
+
+*01
+//-------------------------------------------------------------------------------
+//  キュイ
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0001L" bg = "bg_050_001"]
+
+[character x=-250 y=-80 storage = "00046/atc_sp01_p_02" scale = 1.7 action = "fadein" time = 0.1]
+
+[balloon x=120 y=100 shape="004_02" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+[quake target =".bln" power = 3 time = 0.2]
+バ…[r]
+バカな……！！
+[p]
+
+[balloon x=140 y=-110 shape="004_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+も…もともと[r]
+オレとおまえは[r]
+互角の強さのはず…！！
+[p]
+
+*02
+//-------------------------------------------------------------------------------
+//  ベジータ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_050_001"]
+
+//[character x = 180 y = -110 storage = "00004/idl_side_e_02" scale = 1.1 action = "fadein" time = 0.1]
+
+[character x = 160 y = -140 storage = "00061/heapup_e_02" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x=-120 y=110 shape="002_01" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+このオレは絶えず実戦で[r]
+闘っていたんだ！！[r]
+地球じゃ死にかけたほどの[r]
+闘いだった！！
+[p]
+
+[balloon x=-130 y=-180 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+フリーザのところで[r]
+ぬくぬくとしていた[r]
+きさまといつまでも[r]
+互角だと思うか！！
+[p]
+
+[se storage = "40"]
+//点滅
+[balloon shape="008_02" x = 0 y = 0 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+
+*03
+//-------------------------------------------------------------------------------
+//  ベジータがキュイを倒す。
+//-------------------------------------------------------------------------------
+[se storage = "3016"]
+
+[coma shape="S0001" bg = "bg_050_002"]
+
+[lwfobject id = "kaki2" storage="kakimoji:ef_028" in="04" x=0 y=250 scale = 3.0 action = "fadein" time = 0.1]
+
+[quake target = "kaki2" power = 15 time = 1]
+
+[character x=0 y=20 storage = "99999/ef_explode_005" scale = 3.0 angle = -20 action = "expand" time = 0.1]
+
+[quake target = ".chara" power = 10 time = 1]
+
+[balloon x=0 y=0 shape="008_02" scale = 50 action = "fadein" time = 0.5]
+
+[wait_anim target=".bln"]
+
+[fadeout target = ".bln" time = 1.5]
+
+[wait time = 0.3]
+
+[fadeout target = "kaki2" time = 0.8]
+
+[fadeout target = ".chara" time = 1.2]
+
+[wait time = 0.1]
+
+[character id = "veg" x = 0 y = 0 storage = "00061/card_04" scale = 1.3 action = "fadein" time = 0.5]
+
+[wait_anim target="veg"]
+
+[wait time = 0.3]
+
+[balloon x=60 y=400 shape="002_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+へっ！[r]
+きたねえ花火だ
+[p]
+
+*04
+//-------------------------------------------------------------------------------
+//  ベジータ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_050_001"]
+
+[character x = 180 y = -110 storage = "00061/idl_side_e_02" scale = 1.1 action = "fadein" time = 0.1]
+
+[balloon x=-120 y=140 shape="002_01" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+…ドラゴンボールが[r]
+すべてそろえば[r]
+オレに永遠の命が[r]
+手に入る
+[p]
+
+[balloon x=-110 y=-90 shape="002_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+そうなれば[r]
+フリーザを倒すのも[r]
+夢じゃない…！
+[p]
+
+*05
+//-------------------------------------------------------------------------------
+//  ベジータ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_050_001"]
+
+//[character x = 210 y = -130 storage = "00004/heapup_e_01" scale = 1.2 action = "fadein" time = 0.1]
+
+[character x = 190 y = -140 storage = "00061/heapup_e_02" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x=-110 y=110 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+やつさえ消えれば[r]
+オレがナンバー１だ！！
+[p]
+
+[balloon x=-110 y=-95 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+全宇宙は[r]
+サイヤ人のベジータさま[r]
+が支配する！！
+[p]
+
+
+*06
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002L" bg = "bg_000_016"]
+
+//[character x = 165 y = -115 storage = "00004/idl_side_e_02" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x=0 y=0 shape="003_02" scale = 1.5 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 16]
+//[quake target =".bln" power = 7 time = 0.2]
+野望に燃えるベジータ！[r]
+　[r]
+その頃 地球では…[r]
+仙豆で復活した悟空が[r]
+ついにナメック星へ[r]
+向かって[r]
+飛び立つのだった！！
+[p]
+
+*07
+//-------------------------------------------------------------------------------
+//  孫悟空
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_014_001"]
+
+[character x = -170 y = -40 storage = "90003/spaceship_goku_2" scale = 1.7 action = "fadein" time = 0.1]
+
+[character x = 170 y = -180 storage = "00003/card_01" scale = 1.2 action = "fadein" time = 0.1]
+
+[wait time = 0.7]
+
+
+[balloon x=-110 y=-100 shape="001_03" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+悟飯…みんな…！[r]
+待ってろよ！！
+[p]
+
+//-------------------------------------------------------------------------------
+[stopbgm]

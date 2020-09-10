@@ -1,0 +1,135 @@
+*start|スタート
+//エリア２７スタート
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "005"]
+
+//-------------------------------------------------------------------------------
+//  test
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="S0001" bg = "bg_000_014"]
+
+[balloon shape="009_15" x = 50 y = 170 scale = 1.2 action = "fadein" time = 0.1]
+
+
+//19×7
+[balloon shape="009_16" x = 35 y = -200 scale = 0.95 action = "fadein" time = 0.1]
+[font size = 27]
+[wait_anim target=".bln"]
+ひとつの小さな出会いから始まった[r]
+ななつのドラゴンボールをめぐる物語…[r]
+　[r]
+最強にして最後の邪悪龍・一星龍に、[r]
+超サイヤ人４のフルパワーで挑む悟空！[r]
+強烈な一撃で一度は勝利を収めたと思われ[r]
+たが…一星龍には奥の手が残されていた！[p]
+
+*001
+//-------------------------------------------------------------------------------
+//  一星龍がドラゴンボールを飲み込み、超一星龍に変身する。
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0004L" bg = "bg_000_014"]
+
+[character x = 65 y = -910 storage = "00515/card_01" scale = 2.5 action = "fadein" time = 0.1]
+
+[wait time = 0.7]
+
+[se storage = "10"]
+
+[balloon id = "db2" x=-160 y=-170 shape="010_02" scale = 1.4 action = "fadein" time = 0.6]
+[move target ="db2"  x=-110 y=-120 time = 0.7]
+
+[balloon id = "db3" x=-70 y=120 shape="010_03" scale = 1.4 action = "fadein" time = 0.6]
+[move target ="db3"  x=-50 y=70 time = 0.7]
+
+
+[balloon id = "db4" x=235 y=-25 shape="010_04" scale = 1.4 action = "fadein" time = 0.6]
+[move target ="db4"  x=185 y=-30 time = 0.7]
+
+[balloon id = "db5" x=-230 y=10 shape="010_05" scale = 1.4 action = "fadein" time = 0.6]
+[move target ="db5"  x=-180 y=0 time = 0.7]
+
+[balloon id = "db6" x=170 y=85 shape="010_06" scale = 1.4 action = "fadein" time = 0.6]
+[move target ="db6"  x=120 y=55 time = 0.7]
+
+[balloon id = "db7" x=155 y=-180 shape="010_07" scale = 1.4 action = "fadein" time = 0.6]
+[move target ="db7"  x=115 y=-130 time = 0.7]
+
+
+[wait time = 0.7]
+
+//[p]
+
+[se storage = "3025"]
+//点滅
+[balloon shape="008_02" x = 140 y = -30 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+[balloon shape="008_02" x = 140 y = -30 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+
+//フェードアウト（フェードアウトするコマ）
+[balloon x=130 y=40 shape="008_02" scale = 50.0 action = "fadein" time = 0.3]
+[wait time = 0.5]
+
+*002
+//-------------------------------------------------------------------------------
+//  超一星龍
+//-------------------------------------------------------------------------------
+[coma shape="S0001" bg = "bg_069_001"]
+
+[character id = "beji" x = 0 y = 0 storage = "00523/card_02" scale = 1.0 action = "fadein" time = 0.1]
+
+//フェードイン（フェードインするコマ）
+[balloon x=130 y=40 shape="008_02" scale = 50]
+[wait time = 0.2]
+[fadeout target = ".bln" time = 1.5]
+[wait_anim target=".bln"]
+
+
+//[lwfobject id = "kaki1" storage="kakimoji:ef_020" in="04" x=0 y=-300 scale = 3]
+//[quake target = "kaki1" power = 15 time = 0.4]
+
+[quake target =".chara" power = 3 time = 0.4]
+
+[balloon x=-130 y=460 shape="006_01" scale = 0.65 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 52]
+[quake target =".bln" power = 7 time = 0.2]
+見よ！[p]
+
+[quake target =".chara" power = 9 time = 0.3]
+
+[balloon x=0 y=-270 shape="006_01" scale = 1.0 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+[quake target =".bln" power = 7 time = 0.2]
+これが[r]
+全ての邪悪龍の頂点に立つ[r]
+オレさまの真の姿！！[p]
+
+*003
+//-------------------------------------------------------------------------------
+//  超サイヤ人４孫悟空
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_069_001"]
+
+[character x = 140 y = -25 storage = "00504/atc_front_e_01" scale = 1.2 angle = 20 action = "fadein" time = 0.1]
+[quake target = ".chara" power = 6 time = 0.4]
+
+[balloon x = -145 y = 70 shape="006_02" scale = 0.9 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target = ".bln" power = 7 time = 0.2]
+オレは[r]
+負けるわけには[r]
+いかねえっ！！[p]
+
+
+//-------------------------------------------------------------------------------
+[stopbgm]

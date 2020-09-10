@@ -1,0 +1,412 @@
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "002"]
+
+*01
+//-------------------------------------------------------------------------------
+//  悟空
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0001R" bg = "bg_068_002"]
+
+//[character x=185 y=-380 storage = "00239/card_02" scale = 1.5 action = "fadein" time = 0.1]
+//[character x = 190 y = -240 storage = "00239/card_02" scale = 1.0 action = "fadein" time = 0.1]
+[character x = 180 y = -350 storage = "00239/card_04" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x = -120 y = 110 shape="001_02" scale = 1 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target = ".bln" power = 3 time = 0.2]
+第６宇宙チーム…[r]
+どいつもこいつも[r]
+手強いやつばっかだった[p]
+
+[balloon x = -120 y = -105 shape="001_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target = ".bln" power = 3 time = 0.2]
+うれしいぜ…[r]
+そん中の１番と[r]闘えてよ！[p]
+
+
+*02
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+
+[coma shape="N0003L" bg = "bg_068_001"]
+
+
+[balloon shape="003_01" x = -0 y = -0 scale = 1.6 action = "fadein" time = 0.1]
+[font size = 14]
+//[quake target =".bln" power = 3 time = 0.2]
+[wait_anim target=".bln"]
+殺してはいけないという[r]
+ルールがあり[r]
+殺し屋のヒットは全力を[r]
+出せないのでは…[r]
+　[r]
+そう考えた悟空は[r]
+なんと自ら舞台を降り[r]
+場外負けとなるのだった…[p]
+
+
+*03
+//-------------------------------------------------------------------------------
+//  悟空
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_068_001"]
+
+[character x = 230 y = -120 storage = "00244/idl_side_e_01" scale = 1.7 action = "fadein" time = 0.1]
+
+[balloon x = -110 y = 60 shape="001_02" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target = ".bln" power = 3 time = 0.2]
+じゃ また今度[r]
+ジャマが入らねえところで[r]
+おもいっきりやろうぜ！[p]
+
+
+*04
+//-------------------------------------------------------------------------------
+//  ヒット
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+
+[coma shape="N0001L" bg = "bg_068_002"]
+
+[character x = -220 y = -270 storage = "00556/idl_side_p_01" scale = 1.1 action = "fadein" time = 0.1]
+
+[balloon x = 70 y = 80 shape="002_02" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 54]
+………
+[p]
+
+*05
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0003R" bg = "bg_068_003"]
+
+
+[balloon shape="003_01" x = -0 y = -0 scale = 1.6 action = "fadein" time = 0.1]
+[font size = 14]
+//[quake target =".bln" power = 3 time = 0.2]
+[wait_anim target=".bln"]
+悟空が敗れ[r]
+第7宇宙の残りの選手は[r]
+モナカひとりとなった[r]
+　[r]
+モナカの本当の実力では[r]
+ヒットに敵うはずもない…[r]
+ビルスのウソも[r]
+とうとうバレるときが[r]
+やってきた…！？[p]
+
+
+*06
+//-------------------------------------------------------------------------------
+//  悟空
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_068_003"]
+
+[character x = 190 y = -120 storage = "00244/heapup_e_01" scale = 1.7 action = "fadein" time = 0.1]
+
+[balloon x = -110 y = 70 shape="001_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target = ".bln" power = 3 time = 0.2]
+頼むぞモナカ！[r]
+がんばれよ！！
+[p]
+
+*07
+//-------------------------------------------------------------------------------
+//  ビルス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_068_003"]
+
+[character x = -210 y = -280 storage = "00242/heapup_p_01" scale = 1.4 action = "fadein" time = 0.1]
+
+//怒り_01＋あせ
+[character x = -220 y = 40 storage = "99999/ase" scale = 0.6 action = "fadein" time = 0.1]
+
+[balloon x=90 y=70 shape="004_03" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 40]
+//[quake target =".bln" power = 3 time = 0.2]
+くっ…
+[p]
+
+*08
+//-------------------------------------------------------------------------------
+//  モナカ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_068_002"]
+
+
+[character id = "monaka" x = 180 y = -150 storage = "00557/card_02" scale = 0.7 action = "fadein" time = 0.1]
+[quake target = "monaka" power = 1 time = 300]
+
+
+
+//old
+//-----------------------------------------------------------------------------------------------------------------
+//[character id = "monaka" x = 180 y = -120 storage = "00557/card_01" scale = 1.0 action = "fadein" time = 0.1]
+//[quake target = "monaka" power = 1 time = 300]
+
+//
+//[character id = "ase1" x = 220 y = 110 storage = "99999/ase" scale = 0.5 action = "fadein" time = 0.1]
+//[move target ="ase1" y=90 time = 0.7]
+//[wait time = 0.3]
+//[fadeout target = "ase1" time = 0.5]
+
+//
+//[character id = "ase2" x = 140 y = 110 storage = "99999/ase" scale = 0.5 action = "fadein" time = 0.1]
+//[move target ="ase2" y=90 time = 0.7]
+//[wait time = 0.3]
+//[fadeout target = "ase2" time = 0.5]
+
+//
+//[character id = "ase3" x = 200 y = 110 storage = "99999/ase" scale = 0.5 action = "fadein" time = 0.1]
+//[move target ="ase3" y=90 time = 0.7]
+//[wait time = 0.3]
+//[fadeout target = "ase3" time = 0.5]
+
+//
+//[character id = "ase4" x = 130 y = 110 storage = "99999/ase" scale = 0.5 action = "fadein" time = 0.1]
+//[move target ="ase4" y=90 time = 0.7]
+//[wait time = 0.3]
+//[fadeout target = "ase4" time = 0.5]
+//-----------------------------------------------------------------------------------------------------------------
+
+
+[balloon x = -110 y = 70 shape="004_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target = ".bln" power = 3 time = 0.2]
+うううう…[p]
+
+
+*09
+//-------------------------------------------------------------------------------
+//  ヒット
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+
+[coma shape="N0001L" bg = "bg_068_002"]
+
+[character x = -220 y = -270 storage = "00556/idl_side_p_01" scale = 1.1 action = "fadein" time = 0.1]
+
+
+[balloon x=100 y=80 shape="002_02" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+//[quake target =".bln" power = 3 time = 0.2]
+なるほどな…[p]
+
+
+*10
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+
+[coma shape="N0003R" bg = "bg_000_024"]
+
+
+[balloon shape="003_01" x = 0 y = 0 scale = 1.4 action = "fadein" time = 0.1]
+[font size = 16]
+//[quake target =".bln" power = 3 time = 0.2]
+[wait_anim target=".bln"]
+…しかし[r]
+モナカの[r]
+本当の実力を悟った[r]
+ヒットは[r]
+悟空への借りを返す[r]
+意味も込めて[r]
+わざと試合に[r]
+負けるのだった…[p]
+
+
+
+*11
+//-------------------------------------------------------------------------------
+//  ヒット
+//-------------------------------------------------------------------------------
+[se storage = "3000"]
+[coma shape="N0003L" bg = "bg_068_003"]
+
+[character x = 0 y = -150 storage = "00556/dam_back_p_01" scale = 1.1 angle = -15 action = "fadein" time = 0.1]
+[flip target =".chara" h=1]
+//[quake target =".chara" power = 10 time = 0.3]
+
+[balloon x=0 y=80 shape="007_02" scale = 0.75 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+[quake target =".bln" power = 7 time = 0.2]
+うおあぁぁ〜！！
+
+//[wait time = 0.2]
+
+[move target =".chara" x=-300 time = 0.7]
+[move target =".chara" y=-400 time = 0.7]
+
+[wait time = 0.4]
+
+[se storage = "3023"]
+[quake target =".coma" power = 10 time = 0.4]
+
+[wait_anim target=".coma"]
+
+
+// 空のフキダシ（セリフがないコマを送るために使用）
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+*12
+//-------------------------------------------------------------------------------
+//  モナカ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_068_002"]
+
+[character id = "monaka" x = 180 y = -150 storage = "00557/card_02" scale = 0.7 action = "fadein" time = 0.1]
+
+//[character id = "ase4" x = 130 y = 90 storage = "99999/ase" scale = 0.5 action = "fadein" time = 0.1]
+
+
+[balloon x = -110 y = 70 shape="004_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target = ".bln" power = 3 time = 0.2]
+？？？？[r]
+…え……！？[p]
+
+*13
+//-------------------------------------------------------------------------------
+//  審判の声
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0003L" bg = "bg_068_001"]
+
+
+[balloon x=0 y=50 shape="005_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+じょ…場外！！[r]
+モナカ選手の勝利〜！！[p]
+
+
+*14
+//-------------------------------------------------------------------------------
+//  悟空
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_068_003"]
+
+[character x = 190 y = -120 storage = "00244/heapup_e_01" scale = 1.7 action = "fadein" time = 0.1]
+
+[balloon x = -110 y = 115 shape="001_01" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+[quake target = ".bln" power = 3 time = 0.2]
+す…[r]すげ〜っ！！
+[p]
+
+[balloon x = -110 y = -90 shape="001_02" scale = 1 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target = ".bln" power = 3 time = 0.2]
+なあビルスさま！[r]
+ちょっとだけでいいから[r]
+モナカと手合わせ[r]
+させてくれよ
+[p]
+
+
+*15
+//-------------------------------------------------------------------------------
+//  ビルス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_068_003"]
+
+[character x = -210 y = -280 storage = "00242/heapup_p_01" scale = 1.4 action = "fadein" time = 0.1]
+
+[balloon x=110 y=110 shape="007_01" scale = 0.7 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 40]
+[quake target =".bln" power = 7 time = 0.2]
+ええい[r]
+しつこいぞ！
+[p]
+
+[balloon x=115 y=-100 shape="001_02" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+モナカも[r]
+疲れているだろうから[r]
+今日は帰れ[r]
+近いうちに闘わせてやる
+[p]
+
+*16
+//-------------------------------------------------------------------------------
+//  悟空
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_068_003"]
+
+[character x = 230 y = -120 storage = "00244/idl_side_e_01" scale = 1.7 action = "fadein" time = 0.1]
+
+[balloon x = -110 y = 60 shape="001_01" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 40]
+//[quake target = ".bln" power = 3 time = 0.2]
+ちぇっ…[r]
+絶対だぞ
+[p]
+
+*17
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+
+[coma shape="N0003L" bg = "bg_000_024"]
+
+
+[balloon shape="003_01" x = 0 y = -30 scale = 1.7 action = "fadein" time = 0.1]
+[font size = 14]
+//[quake target =".bln" power = 3 time = 0.2]
+[wait_anim target=".bln"]
+かくして格闘試合は[r]
+悟空たち第7宇宙の[r]
+勝利で終わった[r]
+　[r]
+悟空は[r]
+宇宙一のモナカと[r]
+いつか闘える日を夢見て[r]
+再び修業の日々へと[r]
+もどっていくのだった…
+[p]
+
+[balloon x=0 y=0 shape="008_03" scale = 50.0 action = "fadein" time = 0.5]
+[wait time = 2.5]
+
+//-------------------------------------------------------------------------------
+[stopbgm]

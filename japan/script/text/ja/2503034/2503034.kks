@@ -1,0 +1,116 @@
+//ラウンド4開始
+
+*start|スタート
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+
+//[bgm storage = "013"]
+
+*001
+//-------------------------------------------------------------------------------
+//  魔人ブウ（純粋）
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma id = "coma1" shape="S0001" bg = "bg_000_014"]
+
+
+[character id = "boo_1" x = 0 y = 0 storage = "00232/atc_energyball_p_01" scale = 1.2 angle = 0 action = "fadein" time = 0.1]
+[move target ="boo_1" x=30 y=20 time = 2]
+
+[character id = "boo_2" x = 0 y = 0 storage = "00232/atc_energyball_p_01" scale = 1.2 angle = 0 action = "fadein" time = 0.1]
+[flip target ="boo_2" v=1]
+[move target ="boo_2" x=-30 y=-20 time = 2]
+
+[wait_anim target="boo_2"]
+
+[move target ="boo_2" x=1000 y=1000 time = 0.5]
+[move target ="boo_1" x=1000 y=1000 time = 1.0]
+
+
+
+
+// 空のフキダシ（セリフがないコマを送るために使用）
+//[balloon x = 0 y = 0 shape="002_01" scale = 0]
+//[p]
+
+//点滅
+[se storage = "50"]
+//点滅
+[balloon shape="008_02" x = 140 y = -30 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+//[balloon shape="008_02" x = 140 y = -30 scale = 50 action = "fadein" time = 0.1]
+//[wait time = 0.3]
+//[clear target = ".bln"]
+
+//フェードアウト（フェードアウトするコマ）
+//[balloon x=130 y=40 shape="008_02" scale = 50.0 action = "fadein" time = 0.2]
+//[wait time = 0.5] 
+
+
+*002
+//-------------------------------------------------------------------------------
+//  魔人ブウ（純粋）
+//-------------------------------------------------------------------------------
+[coma id = "coma1" shape="S0001" bg = "bg_000_016"]
+
+[lwfobject id = "kaki1" storage="kakimoji:ef_009" in="04" x=-120 y=350 scale = 2.5]
+[quake target = "kaki1" power = 2 time = 300]
+
+
+
+[character id = "core" x = 30 y = 0 storage = "00232/atc_energyball_p_02" scale = 1.5 action = "fadein" time = 0.1]	
+[spin target="core" velocity=5]
+
+[character id = "boo_1" x = 0 y = 0 storage = "00232/atc_energyball_p_01" scale = 1.2 angle = 0 action = "fadein" time = 0.1]
+[spin target="boo_1" velocity=-500]
+
+[character id = "boo_2" x = 0 y = 0 storage = "00232/atc_energyball_p_01" scale = 2.0 angle = 0 action = "fadein" time = 0.1]
+[spin target="boo_2" velocity=500]
+
+
+
+[wait time = 1.0]
+
+//点滅
+[se storage = "3025"]
+//点滅
+[balloon shape="008_02" x = 140 y = -30 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+//[balloon shape="008_02" x = 140 y = -30 scale = 50 action = "fadein" time = 0.1]
+//[wait time = 0.3]
+//[clear target = ".bln"]
+
+//フェードアウト（フェードアウトするコマ）
+[balloon x=130 y=40 shape="008_02" scale = 50.0 action = "fadein" time = 0.2]
+[wait time = 0.5] 
+
+
+*003
+//-------------------------------------------------------------------------------
+//  魔人ブウ（純粋）
+//-------------------------------------------------------------------------------
+[coma id = "coma1" shape="S0001" bg = "bg_000_032"]
+
+[character x = -50 y = -60 storage = "00232/card_005" scale = 1.1 action = "fadein" time = 0.1]
+
+//フェードイン（フェードインするコマ）
+[balloon x=130 y=40 shape="008_02" scale = 50]
+[wait time = 0.5]
+[fadeout target = ".bln" time = 1.0]
+[wait_anim target=".bln"]
+
+[quake target =".chara" power = 10 time = 0.3]
+
+[balloon x=150 y=400 shape="006_01" scale = 0.75 action = "expnad" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 40]
+[quake target =".bln" power = 7 time = 0.2]
+ガアアア！！
+[p]
+
+
+//-------------------------------------------------------------------------------
+//[stopbgm]

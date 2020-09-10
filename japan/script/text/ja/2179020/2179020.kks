@@ -1,0 +1,153 @@
+*start|スタート
+//"ステージ2スタート"
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "012"]
+
+*001
+//-------------------------------------------------------------------------------
+//  孫悟空
+//-------------------------------------------------------------------------------¥
+//[se storage = "04"]
+[coma shape="N0001L" bg = "bg_014_001"]
+
+//[character x = -180 y = -210 storage = "00003/card_10" scale = 1.0 action = "fadein" time = 0.1]
+//[character x = -250 y = -140 storage = "00003/idl_side_p_06" scale = 1.1 action = "fadein" time = 0.1]
+[character x=-200 y=-150 storage = "00003/heapup_p_06" scale = 1.3 action = "fadein" time = 0.1]
+
+
+
+[balloon x=120 y=40 shape="001_02" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+はは！[r]
+ベジータ おめえ[r]
+ダンスはうめえけど[r]
+ゲームはヘタなんだなあ
+[p]
+
+*002
+//-------------------------------------------------------------------------------
+//  ベジータ
+//-------------------------------------------------------------------------------¥
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_014_001"]
+
+[character x = 210 y = -130 storage = "00004/heapup_e_01" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon shape="006_01" x = -100 y = 50 scale = 0.9 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 7 time = 0.2]
+じゃあ[r]
+きさまはどうなんだ[r]
+カカロット！！
+[p]
+
+*003
+//-------------------------------------------------------------------------------
+//  孫悟空
+//-------------------------------------------------------------------------------¥
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_014_001"]
+
+[character x=-200 y=-150 storage = "00003/heapup_p_06" scale = 1.3 action = "fadein" time = 0.1]
+
+[balloon x=120 y=30 shape="004_02" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+[quake target =".bln" power = 3 time = 0.2]
+え！[r]
+オラか！？
+[p]
+
+*004
+//-------------------------------------------------------------------------------
+//  ベジータ
+//-------------------------------------------------------------------------------¥
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_014_001"]
+
+[character x = 210 y = -130 storage = "00004/heapup_e_01" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon shape="002_02" x = -100 y = 110 scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+たとえ[r]
+テレビゲーム[r]だろうと…
+[p]
+
+[balloon x=-110 y=-90 shape="006_02" scale = 0.8 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 7 time = 0.2]
+カカロット！[r]
+きさまにだけは[r]負けん！！
+[p]
+
+*005
+//-------------------------------------------------------------------------------
+//  トランクス(幼年期)
+//-------------------------------------------------------------------------------¥
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_014_001"]
+
+[character x = 230 y = -110 storage = "00200/idl_side_e_05" scale = 1.2 action = "fadein" time = 0.1]
+[character x=200 y=100 storage = "99999/ase" scale = 0.6 action = "fadein" time = 0.1]
+
+[balloon shape="004_02" x = -110 y = 50 scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+あ〜あ…やっぱり[r]
+こうなっちゃった…
+[p]
+
+*006
+//-------------------------------------------------------------------------------
+//  孫悟空
+//-------------------------------------------------------------------------------¥
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_014_001"]
+
+[character x=-200 y=-150 storage = "00003/heapup_p_06" scale = 1.3 action = "fadein" time = 0.1]
+
+[balloon x=130 y=70 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+挑まれた勝負は[r]
+受けねえわけには[r]
+いかねえな…
+[p]
+
+[balloon x=130 y=-120 shape="001_03" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+いっちょ[r]
+やってみっか！
+[p]
+
+*007
+//-------------------------------------------------------------------------------
+//  ベジータ
+//-------------------------------------------------------------------------------¥
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_014_001"]
+
+[character x = 165 y = -115 storage = "00004/idl_side_e_02" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon shape="006_01" x = -130 y = 45 scale = 0.75 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+[quake target =".bln" power = 7 time = 0.2]
+勝負だ！！[r]
+カカロット！！
+[p]
+
+//-------------------------------------------------------------------------------
+[stopbgm]

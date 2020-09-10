@@ -1,0 +1,41 @@
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+
+
+
+*01
+//-------------------------------------------------------------------------------
+//  ビルス
+//-------------------------------------------------------------------------------
+
+//[se storage = "3032"]
+[coma shape="S0001" bg = "bg_000_015"]
+
+[lwfobject id = "kaki1" storage="kakimoji:ef_009" in="04" x=-180 y=30 scale = 2.0 angle = 15 action = "fadein" time = 0.5]
+[quake target = "kaki1" power = 1 time = 300]
+
+
+[character id="beji" x = -0 y = -40 storage = "00242/card_03" scale = 1.2 action = "fadein" time = 0.1]
+
+[wait time = 0.7]
+
+[balloon x=-160 y=460 shape="001_03" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 3 time = 0.2]
+[font size = 32]
+どうした？[r]
+それで本気か？[p]
+
+[balloon x=120 y=-320 shape="001_02" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 7 time = 0.2]
+ボクはまだまだ[r]
+ぜんぜん本気で闘って[r]
+いなかったんだけどね…[p]
+
+//[stopbgm]
+

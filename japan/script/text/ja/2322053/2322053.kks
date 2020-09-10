@@ -1,0 +1,71 @@
+*start|スタート
+//究極のDB編_エリア５：ボス前
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "007"]
+ 
+*001
+//-------------------------------------------------------------------------------
+//  パン
+//-------------------------------------------------------------------------------
+
+//[se storage = "04"]
+[coma shape="N0001R" bg = "bg_081_004"]
+ 
+[character x=180 y=-140 storage = "00326/heapup_e_01" scale = 1.2 action = "fadein" time = 0.1]
+ 
+[balloon x=-80 y=140 shape="001_01" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+[quake target =".bln" power = 3 time = 0.2]
+その六星球は わたしたちが[r]
+ケルボの人たちから[r]
+もらったものよ！
+[p]
+
+[balloon x=-100 y=-80 shape="001_03" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+それを横取りするなんて！[r]
+いい大人がそんなことして[r]
+恥ずかしいと思わない！？
+[p]
+
+
+
+
+
+*002
+//-------------------------------------------------------------------------------
+//  ムッチー・モッチー
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0002L" bg = "bg_081_004"]
+ 
+[character x = -170 y = -180 storage = "00472/idl_side_p_01" scale = 1.4 action = "fadein" time = 0.1]
+
+[balloon x=130 y=120 shape="002_01" scale = 1.1 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 20]
+//[quake target =".bln" power = 3 time = 0.2]
+ならば おまえが持っている[r]
+もうひとつのドラゴンボールも[r]
+渡してもらおうか…！
+[p]
+
+[balloon x=140 y=-160 shape="002_03" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+４つの星が入った[r]
+ドラゴンボールだ！
+[p]
+
+[stopbgm]
+
+
+

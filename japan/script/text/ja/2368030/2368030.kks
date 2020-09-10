@@ -1,0 +1,388 @@
+*start|スタート
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "004"]
+
+*001
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0004R" bg = "bg_000_031"]
+
+[balloon x=-150 y=0 shape="003_01" scale = 1.5 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 15]
+//[quake target =".bln" power = 3 time = 0.2]
+１日で[r]
+１年分の修業ができる[r]
+「精神と時の部屋」[r]
+　[r]
+病から復活した悟空は[r]
+悟飯、ベジータ、[r]
+トランクスをつれて[r]
+精神と時の部屋がある[r]
+神様の神殿へと[r]
+やってきたのだった
+[p]
+
+*002
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002L" bg = "bg_000_091"]
+
+//[character x = -220 y = -210 storage = "00004/card_01" scale = 1.0 action = "fadein" time = 0.1]
+
+//[character x = 250 y = -270 storage = "00008/card_03" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon x=0 y=-40 shape="003_02" scale = 1.6 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 14]
+//[quake target =".bln" power = 3 time = 0.2]
+まずは[r]
+ベジータとトランクスが[r]
+部屋に入ることになり[r]
+閉塞された空間での[r]
+ふたりきりの修業が[r]
+始まった[r]
+　[r]
+はたしてベジータたちは[r]
+超サイヤ人を超える力を[r]
+手に入れることは[r]
+できるのだろうか…！？
+[p]
+
+
+//フェードアウト
+[balloon x=0 y=0 shape="008_03" scale = 50.0 action = "fadein" time = 0.5]
+[wait time = 0.7] 
+
+*003
+//-------------------------------------------------------------------------------
+//  トランクス（青年期）
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="S0001" bg = "bg_000_035"]
+
+[balloon x=0 y=0 shape="008_03" scale = 50]
+[wait time = 1]
+[fadeout target = ".bln" time = 2]
+[wait_anim target=".bln"]
+
+[balloon x = -105 y = 180 shape="004_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+な…なにもない…！[r]
+ただの[r]
+まっ白な空間だ…！
+[p]
+
+[balloon x=120 y=-180 shape="004_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+…空気も うすいし…[r]
+重力も何倍もある…
+[p]
+
+*004
+//-------------------------------------------------------------------------------
+//  ベジータ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_035"]
+
+[character x = 190 y = -80 storage = "00004/idl_side_e_02" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon x = -105 y = 70 shape="002_01" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+//[quake target =".bln" power = 3 time = 0.2]
+　…なるほど…[r]
+　これでいい……
+[p]
+
+*005
+//-------------------------------------------------------------------------------
+//  トランクス（青年期）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_035"]
+
+[character x = 260 y = -140 storage = "00069/idl_side_e_06" scale = 1.2 action = "fadein" time = 0.1]
+//[character x = 190 y = 80 storage = "99999/ase" scale = 0.6 action = "fadein" time = 0.1]
+//[character x = 210 y = -200 storage = "90000/wait_right_surprise" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x = -105 y = 50 shape="004_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+こ…こんなとこで[r]
+父さんと１年間も……
+[p]
+
+*006
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+[bgm storage = "013"]
+[se storage = "04"]
+[coma shape="N0004L" bg = "bg_000_016"]
+
+[balloon x=0 y=-20 shape="003_01" scale = 1.4 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 17]
+//[quake target =".bln" power = 3 time = 0.2]
+そして[r]
+ベジータたちが[r]
+精神と時の部屋に[r]
+入って[r]
+まもなく まる１日が[r]
+たとうという頃…
+[p]
+
+*007
+//-------------------------------------------------------------------------------
+//  人造人間17号
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_026_001"]
+
+[wait time = 0.7]
+
+[se storage = "48"]
+
+[character id = "16" x = -270 y = -95 storage = "00022/idl_side_p_01" angle = -10 scale = 0.9 action = "fadein" time = 0.7]
+
+[character id = "18" x = -270 y = -180 storage = "00020/idl_side_p_08" scale = 0.9 action = "fadein" time = 0.7]
+
+[character id = "17" x = -130 y = -180 storage = "00021/idl_side_p_05" scale = 1.1 action = "fadein" time = 0.7]
+
+
+[wait time = 1.0]
+
+[balloon x=130 y=50 shape="002_03" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+//[quake target =".bln" power = 3 time = 0.2]
+よう[r]
+孫悟空は[r]
+いるかな？
+[p]
+
+*008
+//-------------------------------------------------------------------------------
+//  ピッコロ
+//-------------------------------------------------------------------------------
+[se storage = "03"]
+[coma shape="N0001R" bg = "bg_026_001"]
+
+//[character x = 230 y = -100 storage = "00010/heapup_e_01" scale = 1.2 action = "fadein" time = 0.1]
+
+[character x = 180 y = -90 storage = "00010/idl_side_e_02" scale = 1.5 action = "fadein" time = 0.1]
+
+//[character x = 180 y = -150 storage = "00020/idl_side_e_08" scale = 1.1 action = "fadein" time = 0.1]
+
+
+[lwfobject id = "kaki1" storage="kakimoji:ef_001" angle = -12 x=-20 y=110 scale = 2.4 action = "fadein" time = 0.1]
+[quake target = "kaki1" power = 9 time = 0.4]
+
+[balloon x=0 y=0 shape="004_01" scale = 0 action = "fadein" time = 0.1]
+[p]
+
+
+[balloon x=-125 y=-105 shape="004_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+く…くそ……[r]
+タイミングがいいのか[r]
+わるいのか……
+[p]
+
+*009
+//-------------------------------------------------------------------------------
+//  人造人間16号
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_026_001"]
+
+//[character x=-200 y=-265 storage = "00022/card_04" scale = 1.1 action = "fadein" time = 0.1]
+//[character x=-215 y=-180 storage = "00022/idl_side_p_02" scale = 1.5 action = "fadein" time = 0.1]
+[character x=-215 y=-190 storage = "00022/idl_side_p_01" scale = 1.1 angle = -10 action = "fadein" time = 0.1]
+
+
+
+
+[balloon x=100 y=60 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+孫悟空は[r]
+ここにはいないようだ
+[p]
+
+*010
+//-------------------------------------------------------------------------------
+//  人造人間17号
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_026_001"]
+
+//[character x = -180 y = -180 storage = "00020/idl_side_p_07" scale = 1.1 action = "fadein" time = 0.1]
+
+[character id = "17" x = -190 y = -180 storage = "00021/idl_side_p_05" scale = 1.1 action = "fadein" time = 0.1]
+
+
+[balloon x=80 y=80 shape="002_02" scale = 0.65 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 44]
+//[quake target =".bln" power = 3 time = 0.2]
+そうか…
+[p]
+
+*011
+//-------------------------------------------------------------------------------
+//  ピッコロ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_026_001"]
+
+[character x = 180 y = -90 storage = "00010/idl_side_e_02" scale = 1.5 action = "fadein" time = 0.1]
+
+[balloon x = -120 y = 65 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+とっとと帰るんだな[r]
+孫悟空は[r]
+ここにはいない！
+[p]
+
+*012
+//-------------------------------------------------------------------------------
+//  人造人間17号
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_026_001"]
+
+//[character x = -200 y = -180 storage = "00021/17_card_01" scale = 1.0 action = "fadein" time = 0.1]
+[character id = "17" x = -190 y = -180 storage = "00021/idl_side_p_05" scale = 1.1 action = "fadein" time = 0.1]
+
+
+[balloon x=100 y=60 shape="002_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+らしいな…[r]
+では どこにいるのか[r]
+教えてもらおうか
+[p]
+
+*013
+//-------------------------------------------------------------------------------
+//  ピッコロ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_026_001"]
+
+[character x = 180 y = -90 storage = "00010/idl_side_e_02" scale = 1.5 action = "fadein" time = 0.1]
+
+[balloon x = -130 y = 65 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+オレたちが[r]
+素直に教えると思うか？
+[p]
+
+*014
+//-------------------------------------------------------------------------------
+//  人造人間17号
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_026_001"]
+
+//[character x = -200 y = -180 storage = "00021/17_card_01" scale = 1.0 action = "fadein" time = 0.1]
+[character id = "17" x = -190 y = -180 storage = "00021/idl_side_p_05" scale = 1.1 action = "fadein" time = 0.1]
+
+
+[balloon x=100 y=35 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+さあ どうかな…[r]
+教えなければ無理にでも[r]
+吐かせるつもりだが
+[p]
+
+*015
+//-------------------------------------------------------------------------------
+//  ピッコロ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_026_001"]
+
+[character x = 180 y = -90 storage = "00010/idl_side_e_02" scale = 1.5 action = "fadein" time = 0.1]
+
+[balloon x = -120 y = 90 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+なるほど…[r]
+ではやってみるんだな
+[p]
+
+[balloon x=-125 y=-95 shape="002_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+むこうに[r]
+誰もいない島がある[r]
+そこでやろう…
+[p]
+
+*016
+//-------------------------------------------------------------------------------
+//  人造人間17号
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_026_001"]
+
+//[character x = -200 y = -180 storage = "00021/17_card_01" scale = 1.0 action = "fadein" time = 0.1]
+[character id = "17" x = -190 y = -180 storage = "00021/idl_side_p_05" scale = 1.1 action = "fadein" time = 0.1]
+
+
+[balloon x=100 y=60 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+…やれやれ…[r]
+こりないやつらだ…
+[p]
+
+*017
+//-------------------------------------------------------------------------------
+//  ピッコロ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_026_001"]
+
+[character x = 95 y = -280 storage = "00010/card_11" scale = 1.0 action = "fadein" time = 0.1]
+//[character x = 230 y = -100 storage = "00010/heapup_e_01" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x = -145 y = 60 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+ふん…[r]
+前のように[r]
+簡単にはいかんぞ…！
+[p]
+
+//-------------------------------------------------------------------------------
+[stopbgm]

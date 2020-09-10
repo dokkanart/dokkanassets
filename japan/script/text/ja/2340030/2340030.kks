@@ -1,0 +1,99 @@
+*start|スタート
+
+
+//"エリア３スタート"
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "008"]
+
+*000
+//-------------------------------------------------------------------------------
+//  パイクーハン
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0001R" bg = "bg_080_002"]
+
+[character x=280 y=-110 storage = "00080/atc_energyball_e_02" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x=-100 y=60 shape="001_03" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 54]
+//[quake target =".bln" power = 3 time = 0.2] 
+………
+[p]
+ 
+
+*001
+//-------------------------------------------------------------------------------
+//  パーフェクトセル(天使)
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_080_002"]
+ 
+[character x=-240 y=-230 storage = "00205/heapup_p_01" scale = 1.1 action = "fadein" time = 0.1]
+[character x = -190 y = 200 storage = "99999/ring" scale = 0.7 action = "fadein" time = 0.1]
+ 
+[balloon x=90 y=100 shape="002_02" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+//[quake target =".bln" power = 3 time = 0.2]
+ん…？[r]
+なんだ きさまは…
+[p]
+
+[balloon x=120 y=-100 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+このわたしを[r]
+倒せると[r]思っているんじゃ[r]
+ないだろうな…
+[p]
+ 
+*002
+//-------------------------------------------------------------------------------
+//  孫悟空(天使
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_080_002"]
+ 
+[character x=200 y=-150 storage = "00003/none_heapup_e_01" scale = 1.3 action = "fadein" time = 0.1]
+[character x = 170 y = 165 storage = "99999/ring" scale = 0.8 action = "fadein" time = 0.1]
+
+[balloon x=-110 y=110 shape="001_01" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+[quake target =".bln" power = 3 time = 0.2]
+待て[r]
+パイクーハン！
+[p]
+ 
+[balloon x=-130 y=-90 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+セルは[r]
+他のやつらとは[r]
+ケタちがいの[r]強さだぞ！？
+[p]
+
+*003
+//-------------------------------------------------------------------------------
+//  パイクーハン
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_080_002"]
+
+[character x=60 y=-240 storage = "00080/card_02" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x=-150 y=-160 shape="001_03" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+オレひとりで[r]
+じゅうぶんだ…
+[p]
+
+//-------------------------------------------------------------------------------
+[stopbgm]

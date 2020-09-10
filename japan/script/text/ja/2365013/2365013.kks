@@ -1,0 +1,253 @@
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "004"]
+
+*001
+//-------------------------------------------------------------------------------
+//  トランクス
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0001R" bg = "bg_070_001"]
+ 
+[character x = 200 y = -120 storage = "00069/idl_back_e_01_long" scale = 1.3 action = "fadein" time = 0.1]
+ 
+[balloon x=-100 y=100 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+父さんが連れてこられた[r]
+宮殿のまわり以外は[r]
+廃墟ですね… 
+[p]
+ 
+[balloon x=-90 y=-100 shape="001_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+どう見ても[r]
+たいしたことない[r]
+星だと思いますが… 
+[p]
+
+*002
+//-------------------------------------------------------------------------------
+//  孫悟飯
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_070_001"]
+ 
+[character id = "gohan" x = 220 y = -90 storage = "00322/idl_side_p_01" scale = 1.1 action = "fadein" time = 0.1] 
+[flip target ="gohan" h=1] 
+ 
+[balloon x=-120 y=70 shape="001_02" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+パラガスって人は[r]
+どうしてこんな星に[r]
+サイヤ人の国を[r]
+造ろうとするんだろう 
+[p]
+ 
+[balloon x=-100 y=-115 shape="001_03" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+//[quake target =".bln" power = 3 time = 0.2]
+ん？[r]
+あれは…… 
+[p]
+
+*003
+//-------------------------------------------------------------------------------
+//  シャモ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_070_001"]
+ 
+[character x = -190 y = -70 storage = "90003/shamo" scale = 0.85 action = "fadein" time = 0.1]
+[flip target =".chara" h=1]
+
+[character x = -230 y = 45 storage = "99999/ase" scale = 0.7 action = "fadein" time = 0.1]
+ 
+//[se storage = "13"]
+//描き文字：！？
+[lwfobject id = "kaki1" storage="kakimoji:ef_002" x=30 y=95 angle = 15 scale = 2.5 action = "fadein" time = 0.1]
+[quake target = "kaki1" power = 9 time = 0.4]
+
+// 空のフキダシ（セリフがないコマを送るために使用）
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+[balloon x=120 y=-110 shape="004_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+オ…オレたち[r]
+さぼってるわけじゃ[r]
+ねえぞ！ 
+[p]
+
+*004
+//-------------------------------------------------------------------------------
+//  孫悟飯
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_070_001"]
+ 
+[character id = "gohan" x = 220 y = -90 storage = "00322/idl_side_p_01" scale = 1.1 action = "fadein" time = 0.1] 
+[flip target ="gohan" h=1] 
+ 
+[balloon x=-100 y=100 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+大丈夫だよ！[r]
+ボクたち見張りでも[r]
+なんでもないからね
+[p]
+ 
+[balloon x=-120 y=-100 shape="001_01" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+…でも[r]
+こんな荒れ果てた星に[r]
+国を造るなんてムリですよ
+[p]
+
+*005
+//-------------------------------------------------------------------------------
+//  シャモ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_070_001"]
+ 
+[character x = -190 y = -70 storage = "90003/shamo" scale = 0.85 action = "fadein" time = 0.1]
+[flip target =".chara" h=1]
+ 
+[balloon x=120 y=100 shape="001_03" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+[quake target =".bln" power = 3 time = 0.2]
+そんなこと知るか！[r]
+オレたちは超サイヤ人に[r]
+星を荒らされ ここへ[r]
+連れてこられたんだ！
+[p]
+ 
+[balloon x=130 y=-100 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+食べ物もろくに[r]
+くれねえんだぜ！[r]
+サイヤ人なんて[r]
+宇宙の悪魔さ！ 
+[p]
+
+*006
+//-------------------------------------------------------------------------------
+//  "孫悟飯 トランクス"
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_070_001"]
+
+[character x = 170 y = -90 storage = "00069/idl_side_e_01" scale = 0.9 action = "fadein" time = 0.1]
+ 
+[character id = "gohan" x = 250 y = -140 storage = "00322/idl_side_p_01" scale = 1.0 action = "fadein" time = 0.1] 
+[flip target ="gohan" h=1] 
+ 
+[balloon x=-120 y=30 shape="001_03" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 54]
+//[quake target =".bln" power = 3 time = 0.2]
+………
+[p]
+
+*007
+//-------------------------------------------------------------------------------
+//  アンゴル
+//-------------------------------------------------------------------------------
+[se storage = "3014"]
+[coma shape="N0001R" bg = "bg_070_001"]
+ 
+[character x = 230 y = -140 storage = "00404/idl_side_e_01" scale = 1.3 action = "slide:right" time = 0.3]
+ 
+[balloon x=-130 y=50 shape="007_02" scale = 0.9 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 7 time = 0.2]
+小僧！！[r]
+さぼるんじゃない！！
+[p]
+
+*008
+//-------------------------------------------------------------------------------
+//  シャモ
+//-------------------------------------------------------------------------------
+[se storage = "03"]
+[coma shape="N0004L" bg = "bg_000_014"]
+ 
+[character x = -190 y = -140 storage = "90003/shamo" scale = 1.5 action = "fadein" time = 0.1]
+[flip target =".chara" h=1]
+ 
+//描き文字：！！
+[lwfobject id = "kaki1" storage="kakimoji:ef_001" in="04" x=70 y=60 angle = 10 scale = 3.0]
+[quake target = "kaki1" power = 15 time = 0.2]
+
+// 空のフキダシ（セリフがないコマを送るために使用）
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+*009
+//-------------------------------------------------------------------------------
+//  アンゴルがシャモを痛めつける
+//-------------------------------------------------------------------------------
+[se storage = "3000"]
+[coma shape="N0001R" bg = "bg_070_001"]
+ 
+[character x = 100 y = -140 storage = "00404/atc_punch_e_02" scale = 1.3 action = "fadein" time = 0.1]
+[quake target = ".chara" power = 10 time = 0.5] 
+ 
+//[wait time = 0.2] 
+ 
+//点滅
+[balloon shape="008_02" x = 140 y = -30 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+
+[lwfobject id = "kaki1" storage="kakimoji:ef_021" in="04" x=-170 y=115 angle = -15 scale = 1.6]
+[quake target = "kaki1" power = 15 time = 0.2]
+
+[wait_anim target=".chara"]
+ 
+// 空のフキダシ（セリフがないコマを送るために使用）
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+*010
+//-------------------------------------------------------------------------------
+//  孫悟飯
+//-------------------------------------------------------------------------------
+[se storage = "3022"]
+[coma shape="N0002R" bg = "bg_070_001"]
+
+[lwfobject id = "kaki1" storage="kakimoji:ef_023" in="04" x=-180 y=-200 angle = -15 scale = 1.6]
+[quake target = "kaki1" power = 15 time = 0.2]
+ 
+[character x = 0 y = -40 storage = "00322/card_01" scale = 1.2 action = "fadein" time = 0.1]
+[quake target =".chara" power = 5 time = 0.4]
+ 
+[balloon x=160 y=140 shape="006_02" scale = 0.8 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+[quake target =".bln" power = 7 time = 0.2]
+やめろーっ！！
+[p]
+
+
+//-------------------------------------------------------------------------------
+[stopbgm]

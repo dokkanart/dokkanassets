@@ -1,0 +1,82 @@
+*start|スタート
+//エリア１ゴール
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "002"]
+
+*01
+//-------------------------------------------------------------------------------
+//  ナッパ
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_010"]
+
+[character x = -180 y = -240 storage = "00015/card_01" scale = 1.3 action = "fadein" time = 0.1]
+
+[balloon x=120 y=120 shape="002_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+やっぱり おまえは[r]
+よわむしラディッツ[r]
+ってわけだ
+[p]
+
+*02
+//-------------------------------------------------------------------------------
+//  ベジータ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_010"]
+
+
+[character x = -180 y = -180 storage = "00061/card_02" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x=100 y=110 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+今度のターゲットは[r]
+シャーツ星なんかより[r]
+はるかに手強い星だ
+[p]
+
+[balloon x=120 y=-90 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+きさまでは[r]
+オレたちの足手まとい[r]
+にしかならん！
+[p]
+
+
+*03
+//-------------------------------------------------------------------------------
+//  ラディッツ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_000_010"]
+
+[character x=170 y=-140 storage = "00014/heapup_e_01" scale = 1.8 action = "fadein" time = 0.1]
+
+[balloon shape="004_02" x = -130 y = 60 scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 40]
+[quake target =".bln" power = 3 time = 0.2]
+く…くそ…！
+[p]
+
+//[quake target =".chara" power = 6 time = 0.3]
+
+[balloon shape="004_01" x = -130 y = -200 scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 7 time = 0.2]
+オレの力は…[r]
+こんなものなのか…！？
+[p]
+
+//-------------------------------------------------------------------------------
+[stopbgm]

@@ -1,0 +1,242 @@
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  封印からの復活　ボス前
+//-------------------------------------------------------------------------------
+[bgm storage = "008"]
+
+*001
+//-------------------------------------------------------------------------------
+//  ヤムチャ＆天津飯
+//-------------------------------------------------------------------------------
+[se storage = "50"]
+[coma shape="S0001" bg = "bg_000_019"]
+
+[lwfobject id = "kaki1" storage="kakimoji:ef_008" x=0 y=-250 scale = 2.5 action = "fadein" time = 0.1]
+[quake target = "kaki1" power = 15 time = 0.4]
+
+
+[character id = "ten" x=150 y=-0 storage = "00011/R_atc_front_p_01" angle = 0 scale = 1.4 action = "fadein" time = 0.1]
+[quake target = "ten" power = 6 time = 0.4]
+
+[character id = "yam" x=-100 y=80 storage = "00212/atc_front_p_01" angle = -20 scale = 1.6 action = "fadein" time = 0.1]
+[quake target = "yam" power = 6 time = 0.4]
+
+
+[balloon x=130 y=340 shape="006_02" scale = 0.75 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+[quake target =".bln" power = 7 time = 0.2]
+悟飯ーっ！！
+[p]
+
+*002
+//-------------------------------------------------------------------------------
+//  ヤムチャと天津飯が悟飯のもとへ駆けつける
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0003R" bg = "bg_000_019"]
+
+[character x=60 y=-80 storage = "00305/idl_side_e_01" scale = 0.7 action = "fadein" time = 0.1]
+
+
+[wait time = 0.5]
+
+[se storage = "3014"]
+
+[lwfobject id = "kaki1" storage="kakimoji:ef_024" in="04" x=-120 y=-120 scale = 2.0 action = "fadein" time = 0.1]
+[quake target = "kaki1" power = 15 time = 0.4]
+
+[character x=195 y=-120 storage = "00011/heapup_e_01" scale = 1.3 action = "fadein" time = 0.1]
+[quake target =".chara" power = 7 time = 0.4]
+
+[character x=-195 y=-85 storage = "00212/heapup_e_01" scale = 1.0 action = "fadein" time = 0.1]
+[quake target =".chara" power = 7 time = 0.4]
+
+
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+*003
+//-------------------------------------------------------------------------------
+//  ボージャック
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0003L" bg = "bg_000_019"]
+
+[character x=130 y=-140 storage = "00296/heapup_p_01" scale = 0.8 action = "fadein" time = 0.1]
+
+[character id = "zan2" x=-0 y=-145 storage = "00294/idl_side_p_01" scale = 0.8 action = "fadein" time = 0.1]
+
+[character x=140 y=-180 storage = "00297/heapup_p_01" scale = 0.75 action = "fadein" time = 0.1]
+
+[character x=-165 y=-255 storage = "00292/idl_side_p_01" scale = 1.4 action = "fadein" time = 0.1]
+
+[balloon x=150 y=120 shape="002_02" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+ふっふっふ…
+[p]
+
+*004
+//-------------------------------------------------------------------------------
+//  天津飯
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_019"]
+
+//[character x=180 y=-110 storage = "00257/ten_heapup_e_01" scale = 1.0 action = "fadein" time = 0.1]
+[character x=180 y=-110 storage = "00011/heapup_e_01" scale = 1.3 action = "fadein" time = 0.1]
+
+
+[balloon x=-125 y=85 shape="004_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 7 time = 0.2]
+こ…こいつらが[r]
+銀河の戦士4人を[r]
+殺したのか…
+[p]
+
+
+*005
+//-------------------------------------------------------------------------------
+//  ブージン
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_019"]
+
+[character x=-170 y=-170 storage = "00297/heapup_p_01" scale = 1.3 action = "fadein" time = 0.1]
+
+[balloon id="radhi1" x=120 y=50 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+たった今からこの星は[r]
+ボージャックさまの[r]
+ものになる
+[p]
+
+*006
+//-------------------------------------------------------------------------------
+//  
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_019"]
+
+[character x=200 y=-125 storage = "00305/heapup_e_01" scale = 1.3 action = "fadein" time = 0.1]
+
+[balloon shape="001_03" x = -100 y = 60 scale = 0.7 action = "fadein" time = 0.1]
+[font size = 40]
+//[quake target =".bln" power = 3 time = 0.2]
+[wait_anim target=".bln"]
+バカな…！
+[p]
+
+
+
+
+*007
+//-------------------------------------------------------------------------------
+//  
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_019"]
+
+//[character x = -190 y = -50 storage = "00013/heapup_p_01" scale = 1.5 action = "fadein" time = 0.1]
+
+[character x=195 y=-85 storage = "00212/heapup_e_01" scale = 1.4 action = "fadein" time = 0.1]
+
+
+[balloon shape="006_01" x = -115 y = 80 scale = 0.75 action = "expand" time = 0.1]
+[font size = 36]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 7 time = 0.2]
+勝手なこと[r]
+させてたまるか！
+[p]
+
+*008
+//-------------------------------------------------------------------------------
+//  ビドー
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_019"]
+
+[character x=-150 y=-180 storage = "00296/heapup_p_01" scale = 1.4 action = "fadein" time = 0.1]
+
+[balloon id="radhi1" x=140 y=55 shape="002_03" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+ボージャックさまは[r]
+銀河で敵なし…
+[p]
+
+*009
+//-------------------------------------------------------------------------------
+//  ザンギャ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_019"]
+
+[character x=-190 y=-130 storage = "00294/atc_sp01_p_01" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon id="radhi1" x=100 y=80 shape="002_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+もっとも美しい[r]
+北の銀河…
+[p]
+
+[balloon id="radhi1" x=105 y=-100 shape="002_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+その中でも[r]
+最高の地球を…
+[p]
+
+*010
+//-------------------------------------------------------------------------------
+//  ブージン
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_019"]
+
+[character x=-170 y=-170 storage = "00297/heapup_p_01" scale = 1.3 action = "fadein" time = 0.1]
+
+[balloon id="radhi1" x=100 y=80 shape="002_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+支配するに一番[r]
+ふさわしいおかた…
+[p]
+
+[balloon id="radhi1" x=120 y=-115 shape="002_03" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+…逆らうやつは…[r]
+……殺す！
+[p]
+
+*011
+//-------------------------------------------------------------------------------
+//  ヤムチャ＆天津飯
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_000_019"]
+
+[character x=-70 y=-110 storage = "00212/heapup_e_01" scale = 1.0 action = "fadein" time = 0.1]
+//[quake target =".chara" power = 4 time = 0.2]
+
+[character x=190 y=-110 storage = "00011/heapup_e_01" scale = 1.2 action = "fadein" time = 0.1]
+//[quake target =".chara" power = 4 time = 0.2]
+
+[balloon x=-100 y=-200 shape="006_02" scale = 0.75 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+[quake target =".bln" power = 7 time = 0.2]
+オレたちを…[r]
+なめるなよ！！
+[p]
+
+[stopbgm]

@@ -1,0 +1,117 @@
+*start|スタート
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+//[bgm storage = "007"]
+
+
+*001
+//-------------------------------------------------------------------------------
+//  ベジット
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0002R" bg = "bg_073_001"]
+
+//[wait_anim target=".coma"]
+[wait time = 0.3]
+
+[se storage = "3022"]
+
+[character id = "veg1" x = 0 y = -1300 storage = "00275/card_07" scale = 1.0 action = "fadein" time = 0.1]
+[move target ="veg1" y=200 time = 0.7 ease="Out:20"]
+
+[wait_anim target="veg1"]
+//[wait time = 0.3]
+
+[fadeout target = "veg1" time = 0.1]
+
+[se storage = "3038"]
+
+[character id ="ki1" x = -210 y = 0 storage = "99999/final_hope_02" scale = 3.0 action = "fade:70" time = 0.5]
+
+[character id ="ki2" x = 210 y = 0 storage = "99999/final_hope_02" scale = 3.0 action = "fade:70" time = 0.5]
+[flip target ="ki2" h=1]
+
+
+[character id = "veg2" x = 0 y = 200 storage = "00275/card_07" scale = 1.0]
+
+[quake target =".coma" power = 10 time = 0.5]
+
+[balloon x=0 y= -200 shape="007_02" scale = 1.0 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3]
+だああぁぁーっ！！
+
+[wait time = 0.3]
+
+
+
+[scale target = "veg2" scale = 3.5 time = 0.1]
+[move target ="veg2" y=-800 time = 0.1]
+
+
+//[wait time = 0.1]
+[se storage = "44"]
+
+[character id ="2" x = 0 y = -1300 storage = "00275/card_07" scale = 5.0 action = "fade:70" time = 0.3]
+
+
+
+
+
+[wait time = 0.2]
+[fadeout target = "2" time = 0.5]
+
+
+
+
+[wait time = 0.5]
+
+
+[se storage = "3025"]
+//点滅
+[balloon shape="008_02" x = 0 y = 0 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+[balloon shape="008_02" x = 0 y = 0 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+
+//フェードアウト（フェードアウトするコマ）
+[balloon x=0 y=0 shape="008_02" scale = 50.0 action = "fadein" time = 0.3]
+[wait time = 0.5] 
+
+
+
+*002
+//-------------------------------------------------------------------------------
+//  SSGSSベジット
+//-------------------------------------------------------------------------------
+[coma shape="S0001" bg = "bg_073_001"]
+
+
+[character id = "aura" x= 0 y= -40 storage = "00653/card_07" scale = 1.2 action = "fadein" time = 0.1]
+[quake target = "aura" power = 1]
+
+[character id = "vegetto" x = 0 y = -70 storage = "00653/card_03" scale = 1.1 action = "fadein" time = 0.1] 
+
+//フェードイン（フェードインするコマ）
+[balloon x=0 y=0 shape="008_02" scale = 50]
+[wait time = 0.5]
+[fadeout target = ".bln" time = 1.5]
+[wait_anim target=".bln"]
+
+
+[balloon x = 0 y = 470 shape = "006_01" scale = 0.9 action = "expand" time = 0.1]
+[wait_anim target = ".bln"]
+[font size = 28]
+[quake target =".bln" power = 7 time = 0.2]
+これが[r]
+ベジットブルーだ！！
+[p]
+
+
+
+//-------------------------------------------------------------------------------
+//[stopbgm]

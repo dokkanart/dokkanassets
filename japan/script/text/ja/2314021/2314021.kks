@@ -1,0 +1,120 @@
+//エリア２ゴール
+
+*start|スタート
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "010"]
+
+*001
+//-------------------------------------------------------------------------------
+//  ビルス
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0001R" bg = "bg_080_001"]
+
+[character x = 240 y = -300 storage = "00242/idl_side_e_01" scale = 1.5 action = "fadein" time = 0.1]
+
+[balloon x=-120 y=120 shape="001_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+どうやらこいつは[r]
+超サイヤ人ゴッドでは[r]
+ないらしいね…
+[p]
+
+[balloon x=-90 y=-90 shape="001_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+とんだ[r]
+期待はずれだよ
+[p]
+
+*002
+//-------------------------------------------------------------------------------
+//  悟空
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_080_001"]
+
+[character x = -190 y = -180 storage = "00003/none_heapup_p_01" scale = 1.4 action = "fadein" time = 0.1]
+
+[balloon x=120 y=70 shape="004_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+ぐ…[r]
+うう……
+[p]
+
+*003
+//-------------------------------------------------------------------------------
+//  ビルス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0003R" bg = "bg_080_001"]
+
+[character x = 70 y = -250 storage = "00242/idl_side_e_01" scale = 1.2 action = "fadein" time = 0.1]
+
+[character id = "uis" x = 200 y = -160 storage = "00243/idl_side_e_01" scale = 0.8 action = "fadein" time = 0.1]
+
+[balloon x=-160 y=125 shape="001_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+しかたない…[r]
+他のサイヤ人がいる[r]
+地球に行くぞ
+[p]
+
+[balloon x=180 y=-130 shape="001_02" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 44]
+[quake target =".bln" power = 3 time = 0.2]
+はいはい！
+[p]
+
+*005
+//-------------------------------------------------------------------------------
+//  界王
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_080_001"]
+
+//天使の輪
+[character x = -172 y = 145 storage = "99999/ring" scale = 0.6 action = "fadein" time = 0.1]
+[character x = -180 y = -40 storage = "90001/stand" scale = 0.5 action = "fadein" time = 0.1]
+[character x = -220 y = 60 storage = "99999/ase" scale = 0.7 action = "fadein" time = 0.1]
+
+[balloon x=105 y=70 shape="004_02" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 54]
+//[quake target =".bln" power = 3 time = 0.2]
+………
+[p]
+
+*006
+//-------------------------------------------------------------------------------
+//  ビルス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_080_001"]
+
+[character x = 200 y = -240 storage = "00242/idl_side_e_01" scale = 1.3 action = "fadein" time = 0.1]
+
+[balloon x=-145 y=70 shape="001_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+またね[r]
+北の界王
+[p]
+
+//フェードアウト
+[balloon x=130 y=40 shape="008_03" scale = 50.0 action = "fadein" time = 0.5]
+[wait time = 3.5]
+
+//-------------------------------------------------------------------------------
+[stopbgm]

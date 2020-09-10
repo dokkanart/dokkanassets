@@ -1,0 +1,168 @@
+*start|スタート
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "022"]
+
+*001
+//-------------------------------------------------------------------------------
+//  審判
+//-------------------------------------------------------------------------------
+[se storage = "39"]
+[coma shape="N0001R" bg = "bg_025_004"]
+
+[character x=210 y=-190 storage = "90003/shout_1" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x = -130 y = 70 shape="005_01" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+[quake target =".bln" power = 3 time = 0.2]
+はい場外っ！！[r]
+クリリン選手の[r]
+勝ちです！！
+[p]
+
+
+*002
+//-------------------------------------------------------------------------------
+//  クリリン
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_025_004"]
+
+[character x = 210 y = -100+20 storage = "00412/idl_side_e_01" scale = 1.0 action = "fade:100" time = 0.1]
+
+[balloon x = -105 y = 50 shape="001_01" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+//[quake target =".bln" power = 3 time = 0.2]
+へへへへ…[r]
+チョロいもんさ
+[p]
+
+
+*003
+//-------------------------------------------------------------------------------
+//  審判
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_025_004"]
+
+[character x=210 y=-190 storage = "90003/shout_1" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x = -110 y = 90 shape="001_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+やっぱりさすがだ！！
+[p]
+
+
+[balloon x=-130 y=-100 shape="001_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+待ってましたよ[r]
+天下一武道会は[r]
+こうでなくちゃ！
+[p]
+
+
+*004
+//-------------------------------------------------------------------------------
+//  
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0003R" bg = "bg_025_004"]
+
+
+[balloon x = -140 y = 70 shape="005_01" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 40]
+[quake target =".bln" power = 3 time = 0.2]
+続いて[r]
+第２試合です！
+[p]
+
+
+[balloon x= 130 y=-100 shape="005_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+シン選手 対[r]
+マジュニア選手戦を[r]
+おこないます！
+[p]
+
+
+*005
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0003L" bg = "bg_025_003"]
+
+[balloon x=0 y=-20 shape="003_01" scale = 1.6 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 14]
+//[quake target =".bln" power = 3 time = 0.2]
+さすがの強さを見せつけ[r]
+初戦を突破した[r]
+クリリン…[r]
+　[r]
+続く第２試合は[r]
+謎の選手シンとピッコロの[r]
+闘い…[r]
+　[r]
+ピッコロはこの試合で[r]
+シンの正体を[r]
+つかむことができるのか！？
+[p]
+
+
+*006
+//-------------------------------------------------------------------------------
+//  ピッコロ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_025_004"]
+
+[character x = 200 y = -260 storage = "00010/card_06" scale = 1.15 action = "fadein" time = 0.1]
+
+[balloon x = -120 y = 70 shape="002_02" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 54]
+//[quake target =".bln" power = 3 time = 0.2]
+………
+[p]
+
+
+*007
+//-------------------------------------------------------------------------------
+//  シン
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002L" bg = "bg_025_004"]
+
+[character x = -170 y = -190 storage = "00361/card_01" scale = 1.3 action = "fadein" time = 0.1]
+
+[balloon x=120 y=70 shape="001_03" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 40]
+//[quake target =".bln" power = 3 time = 0.2]
+なるほど…
+[p]
+
+
+[balloon x = 140 y = -180 shape="001_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+これは楽しそうな[r]
+大会ですね
+[p]
+
+
+
+//-------------------------------------------------------------------------------
+[stopbgm]

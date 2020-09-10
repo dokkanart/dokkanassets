@@ -1,0 +1,283 @@
+*start|スタート
+//ステージ4 ゴール
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "027"]
+
+*01
+//-------------------------------------------------------------------------------
+//  孫悟空
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_056"]
+
+//[character x = 200 y = -150 storage = "00281/heapup_e_01" scale = 1.3 action = "fadein" time = 0.1]
+//[character x=200 y=-110 storage = "00239/heapup_e_01" scale = 1.2 action = "fadein" time = 0.1]
+[character x = 200 y = -110 storage = "00239/heapup_e_02" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x=-120 y=110 shape="001_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target =".bln" power = 3 time = 0.2]
+[font size = 28]
+やっぱすげえな[r]
+ジレン…おめえは…！
+[p]
+
+[balloon x=-120 y=-90 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target =".bln" power = 3 time = 0.2]
+[font size = 28]
+けどよう…[r]
+ここで退くわけには[r]
+いかねえんだ！
+[p]
+
+*02
+//-------------------------------------------------------------------------------
+//  ベジータ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_056"]
+
+//[character x = 180 y = -110 storage = "00004/idl_side_e_02" scale = 1.1 action = "fadein" time = 0.1]
+[character id = "veg" x = 200 y = -135 storage = "00240/heapup_p_01" scale = 1.1 action = "fadein" time = 0.1]
+[flip target ="veg" h=1]
+
+[balloon x=-85 y=115 shape="002_02" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 7 time = 0.2]
+カカロットの[r]言うとおりだ！[r]
+きさまが強いことは[r]
+じゅうぶんにわかった…
+[p]
+
+
+[balloon x=-110 y=-115 shape="002_03" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 23]
+//[quake target =".bln" power = 7 time = 0.2]
+　それでもオレは[r]
+　きさまに勝たねばならんのだ！[r]
+　超ドラゴンボールを[r]
+　手に入れるためにな！
+[p]
+
+*03
+//-------------------------------------------------------------------------------
+//  ジレン
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_056"]
+
+[character x = -210 y = -180 storage = "00812/idl_side_p_01" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x=90 y=45 shape="002_01" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 54]
+//[quake target =".bln" power = 3 time = 0.2]
+………
+[p]
+
+*04
+//-------------------------------------------------------------------------------
+//  ベジータ
+//-------------------------------------------------------------------------------
+[se storage = "3038"]
+[coma shape="N0002R" bg = "bg_000_056"]
+
+[lwfobject id = "kaki1" storage="kakimoji:ef_009" x=150 y=-180 scale = 1.4 action = "fadein" time = 0.7]
+[quake target = "kaki1" power = 2 time = 300]
+
+
+[character id = "veg1" x = 190 y = -190 storage = "00240/card_04" scale = 1.1 action = "fadein" time = 0.1]
+[quake target = "veg1" power = 1 time = 300]
+
+[balloon x=-134 y=70 shape="006_01" scale = 0.7 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+[quake target =".bln" power = 7 time = 0.2]
+オレのやり方で[r]
+限界なんぞ[r]超えてやる！
+[p]
+
+
+
+[balloon x=-130 y=-240 shape="006_02" scale = 0.8 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 7 time = 0.2]
+そしてジレン！[r]
+きさまに勝つ！！
+[p]
+
+[clear target = "veg1"]
+
+[character id = "SS" x = 160 y = -330 storage = "99999/supersaiyangodss" scale = 2.0 action = "expand" time = 0.2]
+
+[character id = "veg2" x = 190 y = -190 storage = "00240/card_04" scale = 1.1]
+
+
+
+[se storage = "3025"]
+//点滅
+[balloon shape="008_02" x = 0 y = -0 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+//[balloon shape="008_02" x = 0 y = -0 scale = 50 action = "fadein" time = 0.1]
+//[wait time = 0.3]
+//[clear target = ".bln"]
+
+//フェードアウト（フェードアウトするコマ）
+[balloon x=0 y=0 shape="008_02" scale = 50.0 action = "fadein" time = 0.3]
+[wait time = 0.5] 
+
+*05
+//-------------------------------------------------------------------------------
+//  ベジータがパワーアップする。
+//-------------------------------------------------------------------------------
+
+[coma shape="S0001" bg = "bg_000_014"]
+
+[lwfobject id = "kaki1" storage="kakimoji:ef_009" x=-190 y=400 scale = 2.0 angle = 20 action = "fadein" time = 0.7]
+[quake target = "kaki1" power = 2 time = 300]
+
+[character id = "ss" x = 0 y = 140 storage = "99999/supersaiyangodss2" scale = 4.0 action = "fadein" time = 0.1]
+[quake target ="ss" power = 1 time = 300]
+
+
+[character x = 0 y = 40 storage = "00240/card_05" scale = 1.2 action = "fadein" time = 0.1]
+
+
+//フェードイン（フェードインするコマ）
+[balloon x=0 y=0 shape="008_02" scale = 50]
+[wait time = 0.5]
+
+[se storage = "10"]
+
+[fadeout target = ".bln" time = 1.5]
+[wait_anim target=".bln"]
+
+//[quake target =".chara" power = 4 time = 0.3]
+
+
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+
+*06
+//-------------------------------------------------------------------------------
+//  クリリン
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_060"]
+
+[character x = 180 y = -100 storage = "00009/heapup_e_03" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon x=-90 y=50 shape="004_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 7 time = 0.2]
+あ…あれが…[r]
+ベジータの[r]
+限界を超えた力…！
+[p]
+
+*07
+//-------------------------------------------------------------------------------
+//  大神官
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_060"]
+
+[character x = -200 y = -260 storage = "90003/daishinkan" scale = 1.1 action = "fadein" time = 0.1]
+
+[balloon x=115 y=105 shape="001_03" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+ベジータさんも[r]
+殻をやぶったようですね
+[p]
+
+[balloon x=115 y=-105 shape="001_02" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+今までの超サイヤ人ブルーを[r]
+はるかに凌駕する力を[r]
+我が身に集約させたのです
+[p]
+
+*08
+//-------------------------------------------------------------------------------
+//  ベジータ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_056"]
+
+[character id = "veg" x = 200 y = -135 storage = "00240/heapup_e_02" scale = 1.1 action = "fadein" time = 0.1]
+//[character id = "veg" x = 200 y = -135 storage = "00240/heapup_p_01" scale = 1.1 action = "fadein" time = 0.1]
+[flip target ="veg" h=1]
+
+
+
+
+[balloon x=-120 y=60 shape="006_02" scale = 0.8 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 7 time = 0.2]
+これが[r]オレの全てだ！！[r]
+ジレン！！
+[p]
+
+
+*09
+//-------------------------------------------------------------------------------
+//  ジレン
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_056"]
+
+//[character x = -210 y = -180 storage = "00812/idl_side_p_01" scale = 1.2 action = "fadein" time = 0.1]
+[character x = -230 y = -160 storage = "00812/heapup_p_01" scale = 1.3 action = "fadein" time = 0.1]
+
+
+
+[balloon x=100 y=75 shape="002_01" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 40]
+[quake target =".bln" power = 3 time = 0.2]
+……来い！！
+[p]
+
+
+*10
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0003R" bg = "bg_000_060"]
+
+
+[balloon x=0 y=-40 shape="003_02" scale = 1.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 13]
+//[quake target =".bln" power = 7 time = 0.2]
+ジレンへの[r]反撃が始まった！[r]
+　[r]
+正面から挑む悟空…[r]
+全ての力をまとった[r]
+ベジータ…[r]
+限界を超えたふたりの力は[r]
+ジレンを倒すことが[r]
+できるのだろうか…？[r]
+　[r]
+力の大会 試合終了まで[r]
+残りあと7分…
+[p]
+
+
+//-------------------------------------------------------------------------------
+[stopbgm]

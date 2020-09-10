@@ -1,0 +1,86 @@
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "013"]
+
+//-------------------------------------------------------------------------------
+//  ゲロ
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0001L" bg = "bg_016_001"]
+
+[character x = -170 y = -135 storage = "00019/gero_idl_side_p_01" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon x=110 y=40 shape="002_02" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 44]
+ふふふ…[p]
+
+*001
+//-------------------------------------------------------------------------------
+//  ヤムチャ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_016_001"]
+
+[character x = 190 y = -50 storage = "00013/yam_heapup_e_01" scale = 1.0 action = "fadein" time = 0.1]
+
+
+[balloon shape="001_02" x = -90 y = 120 scale = 0.8 action = "fadein" time = 0.1]
+[font size = 36]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 3 time = 0.2]
+あのやろう…！
+[p]
+
+[balloon shape="001_03" x = -120 y = -95 scale = 1.15 action = "fadein" time = 0.1]
+[font size = 22]
+[wait_anim target=".bln"]
+このあいだより[r]
+パワーアップしてると[r]
+感じるのはオレだけか…？
+[p]
+
+*002
+//-------------------------------------------------------------------------------
+//  トランクス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_016_001"]
+
+[character x = 210 y = -200 storage = "90000/wait_right_anger" scale = 1.2 action = "fadein" time = 0.1]
+
+
+[balloon shape="001_02" x = -90 y = 50 scale = 0.9 action = "fadein" time = 0.1]
+[font size = 28]
+[wait_anim target=".bln"]
+気を探れない相手[r]
+というのはやはり[r]
+闘いづらいですね…
+[p]
+
+*003
+//-------------------------------------------------------------------------------
+//  ゲロ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002L" bg = "bg_016_001"]
+
+[character x = -190 y = -135 storage = "00019/gero_heapup_p_01" scale = 1.4 action = "fadein" time = 0.1]
+
+[balloon x=150 y=120 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+これからさらに[r]
+パワーアップして[r]
+いってやるぞ…！[p]
+
+[balloon id="tao2" x=75 y=-180 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 30]
+[quake target =".bln" power = 3 time = 0.2]
+覚悟するがいい…！[p]
+
+[stopbgm]

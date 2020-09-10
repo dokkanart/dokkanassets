@@ -1,0 +1,172 @@
+*start|スタート
+//復讐鬼ベビー完結編_エリア6：スタート
+//2330060
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "028"]
+
+*001
+//-------------------------------------------------------------------------------
+//  大猿ベビー
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0001L" bg = "bg_081_009"]
+
+[character id = "saru" x=-240 y=-120 storage = "00532/idl_side_p_01" scale = 1.2 angle = -0 action = "fadein" time = 0.1]
+
+[balloon x=140 y=120 shape="007_02" scale = 0.9 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 7 time = 0.2]
+今度は確実に[r]
+おまえを殺してやる！！
+[p]
+
+*002
+//-------------------------------------------------------------------------------
+//  超サイヤ人４孫悟空
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_081_008"]
+
+[character x = 200 y = -190 storage = "00504/heapup_e_01" scale = 1.4 action = "fadein" time = 0.1]
+
+[balloon x = -120 y = 80 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target = ".bln" power = 3 time = 0.2]
+やべえ…！[r]
+もうパワーなんて[r]
+ほとんど残ってねえ[p]
+
+*003
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0003L" bg = "bg_081_008"]
+
+//[wait time = 0.7]
+
+[balloon x=0 y=0 shape="003_02" scale = 1.5 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 17]
+//[quake target =".bln" power = 3 time = 0.2]
+力を使い切った悟空は[r]
+大猿ベビーに[r]
+追い詰められる…！[r]
+　[r]
+しかし そこに[r]
+トランクスたちが[r]
+かけつけた！[p]
+
+*004
+//-------------------------------------------------------------------------------
+//  トランクス（GT）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_081_008"]
+
+//孫悟飯
+[character id = "gohan" x = -40 y = -160 storage = "00507/idl_side_e_01" scale = 0.9 angle = 0 action = "fadein" time = 0.1]
+[flip target = "gohan" h = 1]
+//孫悟天
+[character id = "goten"x = -180 y = -150 storage = "00390/idl_side_e_01" scale = 1.0 action = "fadein" time = 0.1]
+[flip target = "goten" h = 1]
+
+//トランクス
+[character id = "tra" x=-320 y=-110 storage = "00325/idl_side_p_01" scale = 1.2 action = "fadein" time = 0.1]
+[quake target ="tra" power = 3 time = 0.4]
+
+[balloon x=-20 y=140 shape="001_02" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 40]
+[quake target =".bln" power = 3 time = 0.2]
+悟空さん！
+[p]
+
+[quake target ="gohan" power = 3 time = 0.2]
+[quake target ="goten" power = 4 time = 0.2]
+
+[balloon x=180 y=-10 shape="001_01" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 40]
+[quake target =".bln" power = 3 time = 0.2]
+父さん！
+[p]
+
+*005
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0003L" bg = "bg_081_009"]
+
+[wait time = 0.7]
+
+[character id = "ss" x=0 y=-300 storage = "99999/supersaiyan" scale = 1.1 angle = 0 action = "expand" time = 0.1]
+[move target ="ss" y=-100 time = 0.2]
+[quake target ="ss" power = 30 time = 0.2]
+
+[wait time = 0.1]
+
+//[wait_anim target="ss"]
+
+//点滅（白）
+[se storage = "3029"]
+//点滅
+[balloon shape="008_02" x = 140 y = -30 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+//[balloon shape="008_02" x = 140 y = -30 scale = 50 action = "fadein" time = 0.1]
+//[wait time = 0.3]
+//[clear target = ".bln"]
+
+[wait_anim target=".bln"]
+
+[balloon x=0 y=20 shape="003_02" scale = 1.6 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 15]
+//[quake target =".bln" power = 3 time = 0.2]
+超神水のおかげで[r]
+元の心を取り戻した[r]
+トランクスたちは[r]
+悟空に[r]
+サイヤパワーを[r]
+送り込んで[r]
+フルパワーの[r]
+超サイヤ人４を[r]
+復活させるのだった！[p]
+
+
+
+
+
+*006
+//-------------------------------------------------------------------------------
+//  超サイヤ人4孫悟空
+//-------------------------------------------------------------------------------
+[coma shape="N0002R" bg = "bg_081_008"]
+
+[character id = "ss" x=130 y=-190 storage = "99999/supersaiyan" scale = 1.1 angle = 0 action = "fadein" time = 0.1]
+[quake target ="ss" power = 2 time = 300]
+
+[character x = 190 y = -260 storage = "00504/idl_side_e_01" scale = 1.5 angle = 0 action = "fadein" time = 0.1]
+//[flip target = ".chara" h = 1]
+
+[balloon x=-140 y=120 shape="001_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+ありがとな…！[p]
+
+[balloon x=-130 y=-200 shape="006_01" scale = 0.8 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 7 time = 0.2]
+ぜってえ[r]
+勝ってみせるぞ！！
+[p]
+//-------------------------------------------------------------------------------
+[stopbgm]

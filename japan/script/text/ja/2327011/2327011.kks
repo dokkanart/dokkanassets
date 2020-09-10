@@ -1,0 +1,131 @@
+
+
+*start|スタート
+//2327011
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "012"]
+
+*01
+//-------------------------------------------------------------------------------
+//  則巻アラレ
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0001L" bg = "bg_074_001"]
+
+[character id = "gaji_1" x=-100 y=130 storage = "00635/gattyan_05_guard_p_01" scale = 0.7  action = "fadein" time = 0.1]
+[character id = "gaji_2" x=-265 y=130 storage = "00635/gattyan_06_guard_p_01" scale = 0.7  action = "fadein" time = 0.1]
+[character  x=-175 y=-95 storage = "00635/arare2_heapup_p_01" scale = 1.1  action = "fadein" time = 0.1]
+
+[balloon shape="001_03" x = 110 y = 0 scale = 0.9 action = "fadein" time = 0.1]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+[wait_anim target=".bln"]
+きょほほ！[r]
+悟空くん[r]
+つおいつおい！[p]
+
+*02
+//-------------------------------------------------------------------------------
+//  孫悟空
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_074_001"]
+[character x = 220 y = -40 storage = "00261/idl_side_e_01" scale = 1.2 action = "fadein" time = 0.1]
+[balloon shape="001_03" x = -130 y = 110 scale = 0.9 action = "fadein" time = 0.1]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+[wait_anim target=".bln"]
+やっぱ おめえ[r]
+とんでもなく強えなあ…[p]
+
+[balloon shape="001_02" x = -100 y = -80 scale = 0.9 action = "fadein" time = 0.1]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+[wait_anim target=".bln"]
+いったい[r]
+どんな修業したんだ？[p]
+
+*03
+//-------------------------------------------------------------------------------
+//  則巻アラレ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_074_001"]
+[character x=-100 y=130 storage = "00635/gattyan_05_guard_p_01" scale = 0.7  action = "fadein" time = 0.1]
+[character x=-265 y=130 storage = "00635/gattyan_06_guard_p_01" scale = 0.7  action = "fadein" time = 0.1]
+[character  x=-160 y=-95 storage = "00635/arare2_atc_kick_p_02" scale = 1.1 angle = -5  action = "fadein" time = 0.1]
+
+[balloon shape="001_02" x = 120 y = 20 scale = 1.0 action = "fadein" time = 0.1]
+[font size = 24]
+[quake target =".bln" power = 3 time = 0.2]
+[wait_anim target=".bln"]
+へへへ～[r]
+お友達のオボッチマンくんも[r]
+つおいんだよ！[p]
+
+*04
+//-------------------------------------------------------------------------------
+//  孫悟空
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_074_001"]
+[character x = 130 y = -65 storage = "00261/card_01" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon shape="001_01" x = -130 y = 110 scale = 0.9 action = "fadein" time = 0.1]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+[wait_anim target=".bln"]
+ふえ～[r]
+オラより強いやつって[r]
+いっぱい いるんだな…[p]
+
+[balloon shape="001_02" x = -150 y = -160 scale = 0.8 action = "fadein" time = 0.1]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+[wait_anim target=".bln"]
+もっともっと[r]
+修業しなきゃな！[p]
+
+
+
+//場面転換フェードアウト→フェードイン
+//フェードアウト（フェードアウトするコマ）
+[balloon x=130 y=40 shape="008_03" scale = 50.0 action = "fadein" time = 0.5]
+[wait time = 0.7]
+
+
+*05
+//-------------------------------------------------------------------------------
+//  マシリト
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="S0001" bg = "bg_074_001"]
+[character  x=20 y= 0 storage = "90003/masirito" scale = 1.1  action = "fadein" time = 0.1]
+//フェードイン（フェードインするコマ）
+[balloon x=130 y=40 shape="008_03" scale = 50]
+[wait time = 1]
+[fadeout target = ".bln" time = 0.7]
+
+[wait_anim target=".bln"]
+
+[balloon shape="004_02" x = -120 y = 370 scale = 1.0 action = "fadein" time = 0.1]
+[font size = 24]
+[quake target =".bln" power = 3 time = 0.2]
+[wait_anim target=".bln"]
+
+な…なんということだ[r]
+則巻アラレのほかにも[r]
+あんな強い小僧がいたとは…[p]
+
+[balloon shape="001_03" x = 125 y = -390 scale = 1.0 action = "fadein" time = 0.1]
+[font size = 24]
+[quake target =".bln" power = 3 time = 0.2]
+[wait_anim target=".bln"]
+…そうだ！[r]
+いいことを思いついたぞ…[r]
+ひっひっひ…[p]
+
+//-------------------------------------------------------------------------------
+[stopbgm]

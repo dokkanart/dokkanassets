@@ -1,0 +1,75 @@
+*start|スタート
+//"ステージ７スタート
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "026"]
+
+
+*01
+//-------------------------------------------------------------------------------
+//  悟空が、超サイヤ人ゴッドに変身する。
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0003R" bg = "bg_070_008"]
+
+[lwfobject id = "kaki1" storage="kakimoji:ef_009" x=-190 y=320 scale = 1.5 action = "fadein" time = 0.1]
+[quake target = "kaki1" power = 1 time = 300]
+
+[character id = "1" x = 0 y = 0 storage = "00924/card_04" scale = 1.4 action = "fadein" time = 0.1]
+[quake target ="1" power = 1 time = 300]
+[character id = "2" x = 0 y = 0 storage = "00924/card_03" scale = 1.4 action = "fadein" time = 0.1]
+[quake target ="2" power = 1 time = 300]
+
+//点滅（白）
+[se storage = "3025"]
+//点滅
+[balloon shape="008_02" x = 0 y = 0 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+//[balloon shape="008_02" x = 0 y = 0 scale = 50 action = "fadein" time = 0.1]
+//[wait time = 0.3]
+//[clear target = ".bln"]
+
+
+[wait_anim target="white"]
+
+// 空のフキダシ（セリフがないコマを送るために使用）
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+*02
+//-------------------------------------------------------------------------------
+//  ブロリー（怒り）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_070_008"]
+
+[character x = -180 y = -220 storage = "00859/heapup_p_01" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon x=110 y=70 shape="007_02" scale = 0.7 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 40]
+[quake target =".bln" power = 7 time = 0.2]
+がああああ！！
+[p]
+
+*03
+//-------------------------------------------------------------------------------
+//  超サイヤ人ゴッド孫悟空
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_070_008"]
+
+[character id = "2" x = 160 y = -260 storage = "00924/card_05" scale = 1.05 action = "fadein" time = 0.1]
+
+[balloon shape="006_02" x = -150 y = 0 scale = 0.7 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 40]
+[quake target =".bln" power = 7 time = 0.2]
+おい！[r]
+おちつけ！
+[p]
+
+//-------------------------------------------------------------------------------
+[stopbgm]

@@ -1,0 +1,113 @@
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "008"]
+
+
+*001
+//-------------------------------------------------------------------------------
+//  ターレス
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0001L" bg = "bg_006_001"]
+
+
+[character x = -230 y = -140 storage = "00298/idl_side_p_01" scale = 1.3 action = "fadein" time = 0.1]
+
+[balloon x=130 y=100 shape="002_03" scale = 1.0 action = "fadein" time = 0.1]
+[font size = 24]
+[wait_anim target=".bln"]
+//[quake target =".bln" power = 3 time = 0.2]
+少しはやるな…[r]
+…おまえら戦闘力を[r]
+コントロールできるようだな[p]
+
+
+*002
+//-------------------------------------------------------------------------------
+//  クリリン
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_006_001"]
+
+[character x = 180 y = -100 storage = "00009/idl_side_e_02" scale = 1.7 action = "fadein" time = 0.1]
+
+[balloon x=-100 y=80 shape="004_01" scale = 0.9 action = "fadein" time = 0.1]
+[font size = 28]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 3 time = 0.2]
+イヤな感じだぜ…[r]
+悟空と同じ顔のやつと[r]
+闘うなんてよ…[p]
+
+
+*003
+//-------------------------------------------------------------------------------
+//  ターレス
+//-------------------------------------------------------------------------------
+[se storage = "3036"]
+[coma shape="N0001L" bg = "bg_006_001"]
+
+
+[character x = -230 y = -140 storage = "00298/heapup_p_01" scale = 1.3 action = "fadein" time = 0.1]
+
+[balloon x=130 y=40 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[font size = 28]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 3 time = 0.2]
+む？…[r]
+なにか…来る！
+[p]
+
+
+*004
+//-------------------------------------------------------------------------------
+//  トランクス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_006_001"]
+
+[character x = 210 y = -200 storage = "90000/wait_right_surprise" scale = 1.2 action = "fadein" time = 0.1]
+
+
+
+[balloon x=-100 y=100 shape="001_01" scale = 0.8 action = "fadein" time = 0.1]
+[font size = 32]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 3 time = 0.2]
+この気は……[p]
+
+
+*005
+//-------------------------------------------------------------------------------
+//  悟空ギニュー
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002L" bg = "bg_006_001"]
+[wait time = 0.7]
+
+
+[character x = -190 y = -100 storage = "00074/heapup_p_01" scale = 1.3 action = "fadein" time = 0.7]
+
+[wait_anim target=".chara"]
+
+[balloon x=120 y=120 shape="002_01" scale = 1.0 action = "fadein" time = 0.1]
+[font size = 24]
+[wait_anim target=".bln"]
+//[quake target =".bln" power = 3 time = 0.2]
+スカウターから[r]
+サル共の言い争いが[r]
+聞こえてきたから[r]
+来てみれば…[p]
+
+[balloon x=100 y=-170 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[font size = 28]
+[wait_anim target=".bln"]
+//[quake target =".bln" power = 3 time = 0.2]
+…なんで[r]
+あの地球人たちも[r]
+いるんだ？[p]
+
+[stopbgm]

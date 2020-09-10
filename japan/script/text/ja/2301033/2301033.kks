@@ -1,0 +1,140 @@
+
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "008"]
+
+//-------------------------------------------------------------------------------
+//  ラディッツ
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+
+[coma shape="N0001L" bg = "bg_027_001"]
+
+[character x=-150 y=-90 storage = "00014/atc_sp01_p_01" scale = 1.1 action = "fadein" time = 0.1]
+
+[balloon id="radhi1" x=150 y=120 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+きさまらの[r]
+未完成の戦闘力では[r]
+これが限界のようだな
+[p]
+
+[balloon id="radhi1" x=100 y=-90 shape="002_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 34]
+ではそろそろ[r]
+楽にしてやろう[r]
+[p]
+
+
+*002
+//-------------------------------------------------------------------------------
+//  ラディッツの攻撃
+//-------------------------------------------------------------------------------
+[se storage = "3001"]
+[coma shape="N0002L" bg = "bg_027_001"]
+[lwfobject id="syuutyuu1" storage="syucyu:ef_002" mask="inside" loop=1 priority=10 scale=1.0]
+
+[lwfobject id = "ガッ" storage="kakimoji:ef_022" in="02" x = -150 y=-70 scale = 2 action = "fadein" time = 0.1]
+[quake target ="ガッ" power = 12 time = 0.2]
+
+[character id = "goku" x=250 y=0 storage = "00003/dam_side_e_01" scale = 1.5  action = "fadein" time = 0.1]
+[quake target ="goku" power = 13 time = 0.2]
+
+[character id = "rad" x=-30 y=-40 storage = "00014/atc_punch_p_03" scale = 1.5 action = "fadein" time = 0.1]
+[quake target ="rad" power = 9 time = 0.2]
+
+[balloon x=170 y=-140 shape="007_01" scale = 0.7 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 7 time = 0.2]
+[font size = 50]
+ぐわぁっ！！
+[p]
+
+
+
+
+*003
+//-------------------------------------------------------------------------------
+//  痛めつける
+//-------------------------------------------------------------------------------
+[se storage = "3000"]
+[coma shape="N0004R" bg = "bg_027_001"]
+
+[character x=-60 y=-55 storage = "00014/idl_back_p_03" scale = 0.7 action = "fadein" time = 0.1]
+[quake target =".chara" power = 5 time = 0.2]
+
+[balloon x=-175 y=110 shape="002_03" scale = 0.85 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 3 time = 0.2]
+[font size = 32]
+そらそら[r]
+もっと苦しめ！[r]
+死は近いぞ！[r]
+[p]
+
+[se storage = "3000"]
+
+[balloon x=190 y=60 shape="007_01" scale = 0.6 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 7 time = 0.2]
+[font size = 40]
+うぐっ…！！[r]
+あっ…！！
+[p]
+
+[se storage = "3001"]
+
+[balloon x=150 y=-120 shape="007_01" scale = 0.6 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 7 time = 0.2]
+[font size = 36]
+ぎゃああ〜っ！！
+[p]
+
+*004
+//-------------------------------------------------------------------------------
+//  ラディッツ
+//-------------------------------------------------------------------------------
+
+[se storage = "3036"]
+[coma shape="N0004R" bg = "bg_027_001"]
+[lwfobject id="syuutyuu1" storage="syucyu:ef_002" mask="inside" loop=1 priority=10 scale=1.0]
+
+[character x=-250 y=-160 storage = "00014/atc_front_e_01" scale = 3 action = "fadein" time = 0.1]
+
+[lwfobject id = "kaki1" storage="kakimoji:ef_002" in="02" x=100 y=50 scale = 2.5]
+[quake target ="kaki1" power = 7 time = 0.2]
+[wait_anim target = "kaki1"]
+
+[balloon id="tora1" x=130 y=-120 shape="002_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target="tora1"]
+[font size = 34]
+なんだ…！？[r]
+この戦闘力は……
+[p]
+
+*005
+//-------------------------------------------------------------------------------
+//  ラディッツ
+//-------------------------------------------------------------------------------
+[se storage = "3026"]
+[coma shape="B0001" bg = "bg_027_002"]
+[lwfobject id="syuutyuu1" storage="syucyu:ef_001" mask="inside" loop=1 priority=10 scale=1.2]
+
+[character x=0 y=85 storage = "00060/card_01" scale = 1.7 action = "expand" time = 0.15]
+[quake target =".chara" power = 9 time = 0.5]
+
+[lwfobject id = "kaki1" storage="kakimoji:ef_020" in="02" x=0 y=-270 scale = 3 action = "expand" time = 0.2]
+
+[quake target = "kaki1" power = 12 time = 0.3]
+
+// 空のフキダシ
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+[stopbgm]

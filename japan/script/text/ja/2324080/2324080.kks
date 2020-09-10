@@ -1,0 +1,68 @@
+*start|スタート
+//復讐鬼ベビー編_エリア８：スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "007"]
+ 
+
+
+*001
+//-------------------------------------------------------------------------------
+//  スーパーベビー2
+//-------------------------------------------------------------------------------
+
+//[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_037"]
+
+[character x=-210 y=-180 storage = "00484/heapup_p_01" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x=120 y=140 shape="002_03" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+[quake target =".bln" power = 3 time = 0.2]
+他の者たちは[r]
+栄光あるツフル人に[r]
+してやったが[r]
+おまえだけは別だ！
+[p]
+
+[balloon x=120 y=-80 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+憎いサイヤ人め…[r]
+きさまだけは[r]
+この手で殺す！！
+[p]
+
+
+*002
+//-------------------------------------------------------------------------------
+//  孫悟空（GT)
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_000_037"]
+ 
+[character x=170 y=-80 storage = "00324/heapup_e_01" scale = 1.3 action = "fadein" time = 0.1]
+ 
+[balloon x=-130 y=80 shape="006_01" scale = 0.8 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 7 time = 0.2]
+オラも[r]
+そのほうがいいぞ！
+[p]
+
+[balloon x=-140 y=-180 shape="006_02" scale = 0.9 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 7 time = 0.2]
+おめえの手下に[r]
+なるぐれえなら[r]
+オラ死んだほうが[r]マシだ！
+[p]
+
+[stopbgm]

@@ -1,0 +1,181 @@
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  場面転換
+//-------------------------------------------------------------------------------
+[bgm storage = "012"]
+
+*01
+//-------------------------------------------------------------------------------
+//  界王
+//-------------------------------------------------------------------------------
+[se storage = "3034"]
+//bg界王星
+[coma shape="N0001L" bg = "bg_080_001"]
+
+
+[character x = -180 y = -40 storage = "90001/stand" scale = 0.5 action = "fadein" time = 0.1]
+
+
+[balloon x = 120 y = 130 shape="005_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+
+[font size = 28]
+
+こんなところで[r]
+時間を取られるわけ[r]
+にはいかんのう…
+[p]
+
+
+[balloon x = 100 y = -90 shape="005_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[quake target = ".bln" power = 3 time = 0.2]
+[font size = 28]
+今度の敵は[r]
+[font color="#FF0000"]必殺技[font color="#141414"]を使って一気に[r]
+突破するのじゃ！！[r]
+[p]
+
+
+*02
+//-------------------------------------------------------------------------------
+//  界王
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+//bg界王星
+[coma shape="N0003L" bg = "bg_080_001"]
+
+[character x = -150 y = -50 storage = "90001/stand" scale = 0.7 action = "fadein" time = 0.1]
+
+//セリフ1
+[balloon x = 120 y = 80 shape="005_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+
+[font size = 28]
+[font color="#FF0000"]必殺技[font color="#141414"]は通常攻撃の[r]
+何倍もの威力を持った[r]
+とっておきの技じゃ！
+[p]
+
+
+
+//セリフ2
+[balloon x = 140 y = -125 shape="005_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+
+[font size = 32]
+気力を十分に[r]
+集めることで発動[r]
+できるぞ！！
+[p]
+
+
+
+
+*03
+//-------------------------------------------------------------------------------
+//  界王
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+//bg界王星
+[coma shape="N0001L" bg = "bg_080_001"]
+
+
+[character x = -180 y = -40 storage = "90001/stand" scale = 0.5 action = "fadein" time = 0.1]
+
+
+//セリフ1
+[balloon x = 100 y = 75 shape="005_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+
+[font size = 28]
+発動に必要な気力の数[r]
+は各々ちがうので[r]
+気をつけるのじゃぞ？[r]
+[p]
+
+//セリフ2
+[balloon x = 145 y = -125 shape="005_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+
+[font size = 32]
+キャラクター詳細で[r]
+確認するといい
+[p]
+
+*04
+//-------------------------------------------------------------------------------
+//  界王
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+//bg界王星
+[coma shape="N0003L" bg = "bg_080_001"]
+
+[character x = -150 y = -50 storage = "90001/stand" scale = 0.7 action = "fadein" time = 0.1]
+
+
+//セリフ1
+[balloon x = 130 y = 30 shape="005_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+
+[font size = 32]
+このまえ教えた[r]
+属性の特性は[r]
+覚えておるか？
+[p]
+
+
+*05
+//-------------------------------------------------------------------------------
+//  界王
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+//bg界王星
+[coma shape="N0001L" bg = "bg_080_001"]
+
+
+[character x = -180 y = -40 storage = "90001/stand" scale = 0.5 action = "fadein" time = 0.1]
+
+
+//セリフ1
+[balloon x = 100 y = 110 shape="005_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+
+[font size = 32]
+同じ属性なら２倍の[r]
+気力が溜まる…！
+[p]
+
+//セリフ2
+[balloon x = 120 y = -100 shape="005_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[quake target = ".bln" power = 3 time = 0.2]
+[font size = 32]
+それだけ[font color="#FF0000"]必殺技[font color="#141414"]も[r]
+発動しやすくなると[r]
+いうことじゃ！
+[p]
+
+
+
+*06
+//-------------------------------------------------------------------------------
+//  界王
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+//bg界王星
+[coma shape="N0002L" bg = "bg_080_001"]
+
+[character x = -150 y = -60 storage = "90001/stand" scale = 0.7 action = "fadein" time = 0.1]
+
+
+[balloon x = 140 y = 70 shape="005_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[quake target = ".bln" power = 3 time = 0.2]
+[font size = 32]
+さあ！さっそく[r]
+ためしてみるがよい！
+[p]
+
+[stopbgm]

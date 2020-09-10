@@ -1,0 +1,137 @@
+*start|スタート
+//"ステージ９ゴール"
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "013"]
+
+*01
+//-------------------------------------------------------------------------------
+// @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+//  
+//-------------------------------------------------------------------------------
+[se storage = "50"]
+[se storage = "3038"]
+[coma shape="S0001" bg = "bg_070_010"]
+
+[lwfobject id = "kaki1" storage="kakimoji:ef_020" x=-60 y=-240 scale = 2.5 angle = -20 action = "fadein" time = 0.1]
+[quake target = "kaki1" power = 15 time = 0.4]
+
+
+[character id = "2" x = 60 y = 0 storage = "00860/card_02" scale = 1.1 action = "fadein" time = 0.1]
+[quake target = "2" power = 7 time = 0.4]
+
+[character id = "1" x = 60 y = 0 storage = "00860/card_01" scale = 1.1 action = "fadein" time = 0.1]
+[quake target = "1" power = 7 time = 0.4]
+
+[balloon x=0 y=445 shape="007_02" scale = 0.7 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 40]
+[quake target =".bln" power = 7 time = 0.2]
+があああ！！
+//[p]
+
+
+
+
+[wait tume = 0.5]
+[fadeout target = "ki" time = 0.5]
+
+[wait_anim target="ki"]
+
+// 空のフキダシ（セリフがないコマを送るために使用）
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+
+*02
+//-------------------------------------------------------------------------------
+//  超サイヤ人ゴッドSS孫悟空
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_070_010"]
+
+//[character x=240 y=-130 storage = "00003/idl_side_e_09" scale = 0.9 action = "fadein" time = 0.1]
+[character x=230 y=-120 storage = "00928/idl_side_e_02" scale = 0.9 action = "fade:100" time = 0.1]
+
+[balloon x=-125 y=40 shape="001_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+ベジータ！[r]
+今だ！ こっちに！！
+[p]
+
+
+*03
+//-------------------------------------------------------------------------------
+//  ベジータ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_070_010"]
+
+[character x=300 y=-160 storage = "00930/atc_sp01_p_06" scale = 1.2 action = "fadein" time = 0.1]
+[flip target =".chara" h=1]
+
+
+[balloon x=-80 y=70 shape="002_02" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 40]
+[quake target =".bln" power = 3 time = 0.2]
+な…なんだ！？
+[p]
+
+*04
+//-------------------------------------------------------------------------------
+//  超サイヤ人ゴッドSS孫悟空
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0004R" bg = "bg_070_010"]
+
+[character x=330 y=-470 storage = "00928/idl_side_e_02" scale = 2.5 action = "fadein" time = 0.1]
+
+[balloon x=-160 y=50 shape="006_01" scale = 0.75 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+[quake target =".bln" power = 7 time = 0.2]
+　瞬間移動する！！
+[p]
+
+
+[se storage = "3035"]
+[lwfobject id = "kaki1" storage="kakimoji:ef_012" x=160 y=-50 scale = 2.0 action = "fadein" time = 0.1]
+[quake target = "kaki1" power = 15 time = 0.4]
+
+[wait time = 0.1]
+
+[clear target = ".chara"]
+
+[wait_anim target="kaki1"]
+
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+
+
+
+*05
+//-------------------------------------------------------------------------------
+//  超サイヤ人ブロリー
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002L" bg = "bg_070_010"]
+
+[character id = "1" x = -160 y = -290 storage = "00860/card_04" scale = 1.1 action = "fadein" time = 0.1]
+[quake target = "1" power = 7 time = 0.4]
+
+
+
+[balloon x=150 y=50 shape="007_02" scale = 0.75 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+[quake target =".bln" power = 7 time = 0.2]
+があああああ！！
+[p]
+
+//-------------------------------------------------------------------------------
+[stopbgm]

@@ -1,0 +1,78 @@
+//エリア4ボス前
+
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+//[bgm storage = "008"]
+
+*coma1
+//-------------------------------------------------------------------------------
+//  １７号（未来）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_019_001"]
+
+[character id = "17" x = -170 y = -250 storage = "00021/card_09" scale = 0.9 action = "fadein" time = 0.1]
+
+
+
+[balloon x=130 y=80 shape="002_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+サタンシティ…？[p]
+
+[balloon x=130 y=-110 shape="002_03" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+こんな町[r]
+あったかな？[p]
+
+*coma2
+//-------------------------------------------------------------------------------
+//  １８号（未来）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_019_001"]
+
+[character x=-170 y=-260 storage = "00020/card_04" scale = 0.9 action = "fadein" time = 0.1]
+//[character id = "17" x = -170 y = -250 storage = "00021/card_09" scale = 0.9 action = "fade:60" time = 0.1]
+
+[balloon x=130 y=80 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+どうでもいいよ[r]
+町の名前なんて…[p]
+
+
+[balloon x=130 y=-110 shape="002_03" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+さっさと[r]
+ぶっ壊しちゃおうよ[p]
+
+*coma3
+//-------------------------------------------------------------------------------
+//  １７号（未来）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002L" bg = "bg_019_001"]
+
+
+[character x=-130 y=-140 storage = "00021/card_10" scale = 0.9 action = "fadein" time = 0.1]
+
+
+[balloon x=180 y=30 shape="002_02" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][font size = 36]
+そんなに[r]
+あせるなよ[p]
+
+[balloon x=170 y=-180 shape="002_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][font size = 32]
+もっと[r]
+ジックリやろうぜ[p]
+
+
+//[stopbgm]

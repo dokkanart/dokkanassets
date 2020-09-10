@@ -1,0 +1,646 @@
+*start|スタート
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "004"]
+
+*001
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0003R" bg = "bg_000_024"]
+
+[character id = "wa" x = 0 y = 0 storage = "99999/pink" scale = 20 angle = 0 action = "fade:50" time = 0.1 mask="inside"]
+
+[character id = "wa" x = -200 y = -250 storage = "99999/ryuseki" scale = 45 angle = -160 action = "fade:70" time = 0.1 mask="inside"]
+
+[character x=200 y=-50 storage = "00038/card_12" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon x=-140 y=10 shape="003_01" scale = 1.6 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 14]
+//[quake target =".bln" power = 3 time = 0.2]
+打倒魔人ブウのために[r]
+出撃した[r]
+英雄ミスター・サタン…[r]
+　[r]
+しかし [r]
+傷ついた犬を[r]
+力を合わせ助けたことから[r]
+サタンと魔人ブウは[r]
+仲良くなり[r]
+心を通わせるのだった…
+[p]
+
+
+*002
+//-------------------------------------------------------------------------------
+//  ミスター・サタン
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_103"]
+
+[character x=-180 y=-120 storage = "00038/card_13" scale = 0.9 action = "fadein" time = 0.1]
+//[character x=-225 y=80 storage = "99999/ase" scale = 0.4 action = "fadein" time = 0.1]
+
+
+[balloon x=130 y=70 shape="004_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+あ…あの…[r]
+魔人ブウさま…
+[p]
+
+
+[balloon x=140 y=-110 shape="004_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+ひ…ひとつ[r]
+お聞きしても[r]
+いいですか？
+[p]
+
+
+*003
+//-------------------------------------------------------------------------------
+//  魔人ブウ（善）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_103"]
+
+[character id="buu" x = 210 y = -100 storage = "00229/energyball_p_02" scale = 1.2 action = "fadein" time = 0.1]
+[flip target =".chara" h=1]
+
+[balloon x = -105 y = 100 shape="002_01" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 40]
+//[quake target =".bln" power = 3 time = 0.2]
+なにが？
+[p]
+
+
+*004
+//-------------------------------------------------------------------------------
+//  ミスター・サタン
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_103"]
+
+[character x=-180 y=-120 storage = "00038/card_13" scale = 0.9 action = "fadein" time = 0.1]
+//[character x=-225 y=80 storage = "99999/ase" scale = 0.4 action = "fadein" time = 0.1]
+
+[balloon x=130 y=50 shape="004_01" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+な…なんで[r]
+に…人間を殺したり…[r]
+家をこわしたり[r]
+するんですか…？
+[p]
+
+
+*005
+//-------------------------------------------------------------------------------
+//  魔人ブウ（善）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_103"]
+
+[character id="buu" x = 210 y = -100 storage = "00229/energyball_p_02" scale = 1.2 action = "fadein" time = 0.1]
+[flip target =".chara" h=1]
+
+[balloon x = -105 y = 100 shape="002_02" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 40]
+//[quake target =".bln" power = 3 time = 0.2]
+たのしいから
+[p]
+
+
+*006
+//-------------------------------------------------------------------------------
+//  ミスター・サタン
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_103"]
+
+[character x=-180 y=-120 storage = "00038/card_13" scale = 0.9 action = "fadein" time = 0.1]
+[character x=-225 y=80 storage = "99999/ase" scale = 0.4 action = "fadein" time = 0.1]
+
+[balloon x=120 y=60 shape="004_02" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+[quake target =".bln" power = 3 time = 0.2]
+そ…[r]
+それだけ！？
+[p]
+
+
+*007
+//-------------------------------------------------------------------------------
+//  魔人ブウ（善）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_103"]
+
+[character id="buu" x = 210 y = -100 storage = "00229/energyball_p_02" scale = 1.2 action = "fadein" time = 0.1]
+[flip target =".chara" h=1]
+
+[balloon x = -110 y = 100 shape="002_03" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+そうやって[r]
+あそぶっていってた
+[p]
+
+
+[balloon x=-120 y=-110 shape="002_02" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+//[quake target =".bln" power = 3 time = 0.2]
+ビビディも[r]
+バビディも	
+[p]
+
+
+*008
+//-------------------------------------------------------------------------------
+//  ミスター・サタン
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_103"]
+
+[character x=-180 y=-120 storage = "00038/card_13" scale = 0.9 action = "fadein" time = 0.1]
+//[character x=-225 y=80 storage = "99999/ase" scale = 0.4 action = "fadein" time = 0.1]
+
+[balloon x=120 y=60 shape="004_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+だ…[r]
+誰でしたっけ[r]
+それ……
+[p]
+
+
+*009
+//-------------------------------------------------------------------------------
+//  魔人ブウ（善）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_103"]
+
+[character id="buu" x = 210 y = -100 storage = "00229/energyball_p_02" scale = 1.2 action = "fadein" time = 0.1]
+[flip target =".chara" h=1]
+
+[balloon x = -105 y = 105 shape="002_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+オレをつくった[r]
+イヤなヤツたち
+[p]
+
+
+*010
+//-------------------------------------------------------------------------------
+//  ミスター・サタン
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_103"]
+
+[character x=-180 y=-120 storage = "00038/card_13" scale = 0.9 action = "fadein" time = 0.1]
+//[character x=-225 y=80 storage = "99999/ase" scale = 0.4 action = "fadein" time = 0.1]
+
+[balloon x=130 y=85 shape="004_02" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+そ…そんなイヤなヤツの[r]
+言ったことをき…聞いちゃ[r]
+いけませんよ…
+[p]
+
+
+[balloon x=130 y=-115 shape="004_01" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+ダ……ダ……[r]
+ダメですよ…やっぱし…[r]
+殺したり[r]こわしたりしちゃ……
+[p]
+
+
+*011
+//-------------------------------------------------------------------------------
+//  魔人ブウ（善）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_103"]
+
+[character id="buu" x = 210 y = -100 storage = "00229/energyball_p_02" scale = 1.2 action = "fadein" time = 0.1]
+[flip target =".chara" h=1]
+
+[balloon x = -105 y = 90 shape="004_02" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 54]
+//[quake target =".bln" power = 3 time = 0.2]
+………
+[p]
+
+
+*012
+//-------------------------------------------------------------------------------
+//  ミスター・サタン
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_103"]
+
+[character x=-180 y=-120 storage = "00038/card_13" scale = 0.9 action = "fadein" time = 0.1]
+[character x=-225 y=80 storage = "99999/ase" scale = 0.4 action = "fadein" time = 0.1]
+
+
+[balloon x=90 y=80 shape="004_03" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 40]
+[quake target =".bln" power = 3 time = 0.2]
+あ…！！
+[p]
+
+
+[balloon x = 125 y = -110 shape="004_04" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+[quake target =".bln" power = 3 time = 0.2]
+け…けっこうです！！[r]
+けっこうなんですよ！！[r]
+たのしいんでしたら！！
+[p]
+
+
+*014
+//-------------------------------------------------------------------------------
+//  魔人ブウ（善）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_103"]
+
+[character id="buu" x = 210 y = -100 storage = "00229/energyball_p_02" scale = 1.2 action = "fadein" time = 0.1]
+[flip target =".chara" h=1]
+
+[balloon x = -115 y = 110 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+おまえは[r]
+やっちゃいけないと[r]
+おもうか？
+[p]
+
+
+*015
+//-------------------------------------------------------------------------------
+//  ミスター・サタン
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_103"]
+
+[character x=-180 y=-120 storage = "00038/card_13" scale = 0.9 action = "fadein" time = 0.1]
+[character x=-225 y=80 storage = "99999/ase" scale = 0.4 action = "fadein" time = 0.1]
+
+
+[balloon x=100 y=70 shape="004_01" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 40]
+[quake target =".bln" power = 3 time = 0.2]
+え…！？
+[p]
+
+
+[balloon x = 120 y = -120 shape="004_02" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+//[quake target =".bln" power = 3 time = 0.2]
+え…ええ[r]
+まあ…
+[p]
+
+
+*017
+//-------------------------------------------------------------------------------
+//  魔人ブウ（善）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_103"]
+
+[character id="buu" x = 210 y = -100 storage = "00229/energyball_p_02" scale = 1.2 action = "fadein" time = 0.1]
+[flip target =".chara" h=1]
+
+[balloon x = -100 y = 100 shape="002_02" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 40]
+//[quake target =".bln" power = 3 time = 0.2]
+じゃあ やめた
+[p]
+
+
+*018
+//-------------------------------------------------------------------------------
+//  ミスター・サタン
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_103"]
+
+[character x=-180 y=-120 storage = "00038/card_13" scale = 0.9 action = "fadein" time = 0.1]
+//[character x=-225 y=80 storage = "99999/ase" scale = 0.4 action = "fadein" time = 0.1]
+
+[balloon x=100 y=80 shape="001_03" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 40]
+[quake target =".bln" power = 3 time = 0.2]
+へ！？
+[p]
+
+
+[balloon x = 120 y = -115 shape="004_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+…も…もう[r]
+誰も殺さないの？
+[p]
+
+
+*020
+//-------------------------------------------------------------------------------
+//  魔人ブウ（善）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_103"]
+
+[character id="buu" x = 210 y = -100 storage = "00229/energyball_p_02" scale = 1.2 action = "fadein" time = 0.1]
+[flip target =".chara" h=1]
+
+[balloon x = -100 y = 100 shape="002_02" scale = 0.65 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 44]
+//[quake target =".bln" power = 3 time = 0.2]
+うん
+[p]
+
+
+*021
+//-------------------------------------------------------------------------------
+//  ミスター・サタン
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_103"]
+
+[character x=-180 y=-120 storage = "00038/card_13" scale = 0.9 action = "fadein" time = 0.1]
+//[character x=-225 y=80 storage = "99999/ase" scale = 0.4 action = "fadein" time = 0.1]
+
+
+[balloon x=110 y=50 shape="001_03" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+どこも[r]
+こわさない……？
+[p]
+
+
+*022
+//-------------------------------------------------------------------------------
+//  魔人ブウ（善）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_103"]
+
+[character id="buu" x = 210 y = -100 storage = "00229/energyball_p_02" scale = 1.2 action = "fadein" time = 0.1]
+[flip target =".chara" h=1]
+
+[balloon x = -100 y = 100 shape="002_02" scale = 0.65 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 44]
+//[quake target =".bln" power = 3 time = 0.2]
+うん
+[p]
+
+
+
+*023
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002L" bg = "bg_000_024"]
+
+[balloon x=0 y=10 shape="003_01" scale = 1.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 13]
+//[quake target =".bln" power = 3 time = 0.2]
+なんと 魔人ブウ[r]
+突然のよいこ宣言…！[r]
+　[r]
+これで地球滅亡の危機は[r]
+回避されると思われた[r]
+そのとき[r]
+悪意を持った人間たちが[r]
+サタンと犬を銃撃し[r]
+改心しかけた[r]
+魔人ブウの心は凍結…[r]
+怒りの感情を[r]
+こらえきれなくなり…
+[p]
+
+[stopbgm fadeout = 0.7]
+//フェードアウト（フェードアウトするコマ）
+//[balloon x=0 y=0 shape="008_03" scale = 50.0 action = "fadein" time = 0.5]
+//[wait time = 0.7]
+
+
+*024
+//-------------------------------------------------------------------------------
+//  魔人ブウ（善）
+//-------------------------------------------------------------------------------
+
+[se storage = "09"]
+[coma shape="N0003R" bg = "bg_000_014"]
+
+[balloon id = "kaki" x = 10 y = 200-160 shape = "008_34" scale = 2.0 angle = 10 action = "fadein" time = 0.1]
+[quake target = "kaki" power = 15 time = 0.4]
+
+[character id = "buu" x= 0 y= -130-115 storage = "00229/card_005" scale = 1.2 action = "fadein" time = 0.1]
+
+
+
+[character id = "5"  x = 135 y = 210-115 storage = "99999/smoke_buu_1" scale = 0.6 action = "fade:100" time = 0.1]
+
+[character id = "6"  x = -115 y = 210-115 storage = "99999/smoke_buu_1" scale = 0.6 action = "fade:100" time = 0.1]
+[flip target ="6" h=1]
+
+
+
+[character id = "3" x = -135 y = 205-115 storage = "99999/smoke_buu_1" scale = 0.8 action = "fade:100" time = 0.1]
+[flip target ="3" h=1]
+
+
+
+[character id = "4" x = 155 y = 205-115 storage = "99999/smoke_buu_1" scale = 0.8 action = "fade:100" time = 0.1]
+//[paint target = ".chara" color = "#bbffff"]
+//[scale target = ".chara" scale = 1.5 time = 0.4]
+
+
+[wait_anim target="kaki"]
+
+
+
+//空のフキダシ
+[balloon x= 0 y= 0 shape="001_01" scale = 0]
+[p]
+
+
+[se storage = "3025"]
+//点滅
+[balloon shape="008_02" x = 0 y = 0 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+[balloon shape="008_02" x = 0 y = 0 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+
+
+//フェードアウト（フェードアウトするコマ）
+[balloon x=0 y=0 shape="008_02" scale = 50.0 action = "fadein" time = 0.5]
+[wait time = 0.7]
+
+
+
+
+
+
+
+
+*025
+//-------------------------------------------------------------------------------
+//  魔人ブウ（善）から出た煙から、魔人ブウ（純粋悪）が生まれる。
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="S0001" bg = "bg_000_016"]
+
+[character id = "buu2" x = 0 y = 0+120 storage = "00230/card_01" scale = 1.0 action = "fade:0" time = 0.1]
+[character id = "kemuri" x = -20 y = 0+120 storage = "99999/smoke_buu_2" scale = 2.4 angle = -15 action = "fadein" time = 0.1]
+[quake target = "kemuri" power = 1]
+
+//フェードイン（フェードインするコマ）
+[balloon x=0 y=0 shape="008_02" scale = 50]
+[wait time = 1]
+[fadeout target = ".bln" time = 2]
+[wait_anim target=".bln"]
+
+[wait time = 1.5]
+[se storage = "48"]
+[bgm storage = "047"]
+[fadeout target = "kemuri" time = 1.0]
+[fadein target = "buu2" time = 1.0]
+[wait_anim target = "buu2"]
+
+//空のフキダシ
+//[balloon x = 0 y = 0 shape="002_01" scale = 0]
+//[p]
+
+[wait time = 1]
+
+
+
+[balloon x=0 y=-220 shape="003_02" scale = 1.6 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 14]
+//[quake target =".bln" power = 3 time = 0.2]
+魔人ブウの強い怒りによって[r]
+内に持っていた邪悪な部分が[r]
+大きくふくれあがり[r]
+もうひとりの[r]魔人ブウとなって[r]
+とびだした…[r]
+　[r]
+つまり [r]
+純粋悪の魔人ブウと[r]
+無邪気な魔人ブウとに[r]
+別れてしまったのである……
+[p]
+
+
+
+
+
+*027
+//-------------------------------------------------------------------------------
+//  ミスター・サタン
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_103"]
+
+[character x=200 y=-110 storage = "00038/heapup_e_02" scale = 1.1 action = "fadein" time = 0.1]
+[character x=210 y=125 storage = "99999/ase" scale = 0.5 action = "fadein" time = 0.1]
+
+
+
+
+[balloon x = -110 y = 75 shape="004_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+な…[r]
+なんなんだ…！？
+[p]
+
+
+*028
+//-------------------------------------------------------------------------------
+//  魔人ブウ（純粋悪）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_016"]
+
+//[character x = -230 y = -180 storage = "00230/idl_side_p_01" scale = 1.2 action = "fadein" time = 0.1]
+
+[character x = -195 y = -280 storage = "00230/atc_sp01_p_01" scale = 1.2 action = "fadein" time = 0.1]
+[flip target =".chara" h=1]
+
+[balloon x=110 y=80 shape="002_02" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 54]
+//[quake target =".bln" power = 3 time = 0.2]
+………
+[p]
+
+
+*029
+//-------------------------------------------------------------------------------
+//  魔人ブウ（善）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_000_103"]
+
+
+[character id="buu" x = 230 y = -100 storage = "00229/atc_sp01_p_04" scale = 1.2 action = "fadein" time = 0.1]
+[flip target =".chara" h=1]
+
+
+[balloon x = -160 y = 50 shape="004_01" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 40]
+//[quake target =".bln" power = 3 time = 0.2]
+ううう…
+[p]
+
+
+
+//-------------------------------------------------------------------------------
+[stopbgm]

@@ -1,0 +1,152 @@
+*start|スタート
+//復讐鬼ベビー編_エリア３
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "008"]
+
+
+*001
+//-------------------------------------------------------------------------------
+//  悟飯：ベビー
+//-------------------------------------------------------------------------------
+//[se storage = "3017"]
+[coma shape="N0001L" bg = "bg_004_001"]
+
+[character id="g1" x = -220 y = -160 storage = "00509/idl_side_p_01" scale = 1.2 action = "fadein" time = 0.1]
+
+
+[balloon x=120 y=80 shape="002_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+最強のナメック星人も[r]
+この程度か…[r]
+たいしたことはない[p]
+
+//点滅（白）
+[se storage = "3025"] 
+//点滅 
+[balloon shape="008_02" x = 140 y = -30 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"] 
+
+[balloon id = "white" shape="008_02" x = 140 y = -30 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[fadeout target = "white" time = 2.0]
+
+[clear target = "g1"] 
+
+[character id = "super" x = -190 y = -240 storage = "99999/supersaiyan" scale = 1]
+[character id="g2"x=-200 y=-140 storage = "00512/heapup_p_01" scale = 1.2 action = "fadein" time = 0.1]
+
+[quake target ="super" power = 1 time = 300] 
+
+[wait_anim target=".bln"]
+
+// 空のフキダシ（セリフがないコマを送るために使用）
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+
+*002
+//-------------------------------------------------------------------------------
+//  ピッコロ
+//-------------------------------------------------------------------------------
+[se storage = "03"]
+[coma shape="N0001R" bg = "bg_004_001"]
+
+
+[character x = 220 y = -110 storage = "00010/heapup_e_01" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x=-120 y=80 shape="002_01" scale = 0.7 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 44]
+[quake target =".bln" power = 3 time = 0.2]
+なに！？[p]
+
+
+*003
+//-------------------------------------------------------------------------------
+//  悟飯：ベビー
+//-------------------------------------------------------------------------------
+[se storage = "3029"]
+[coma shape="N0003L" bg = "bg_004_001"]
+
+
+[lwfobject id = "kaki1" storage="kakimoji:ef_013" in="04" x=130 y=-90 scale = 2]
+[quake target = "kaki1" power = 15 time = 0.4]
+
+
+[character id="goten" x=-300 y=-190 storage = "00341/atc_sp01_p_02" scale = 1.5 action = "fadein" time = 0.1]
+
+[character id = "ha" x=710 y=-30 storage = "99999/kamehameha_r" scale = 1.9 action = "fadein" time = 0.1]
+[flip target ="ha" h=1]
+[quake target ="ha" power = 1 time = 300]
+
+[balloon x=150 y=140 shape="006_02" scale = 0.8 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 7 time = 0.2]
+かめはめ…[r]
+波ァァー！！
+[p]
+
+
+
+*004
+//-------------------------------------------------------------------------------
+//  ピッコロ
+//-------------------------------------------------------------------------------
+[se storage = "3017"]
+[coma shape="N0003L" bg = "bg_004_001"]
+
+[lwfobject id = "kaki2" storage="kakimoji:ef_019" in="04" x=0 y=-50 scale = 3]
+[quake target = "kaki2" power = 15 time = 1]
+
+[character id="piko" x=170 y=-180 storage = "00010/dam_side_p_01" scale = 1 action = "fadein" time = 0.1]
+[flip target ="piko" h=1]
+[quake target = "piko" power = 8 time = 1]
+
+[character id="baku" x=0 y=-200 storage = "90000/bomb" scale = 1.5 action = "expand" time = 0.1]
+[quake target = "baku" power = 10 time = 1]
+
+[balloon x=120 y=140 shape="006_01" scale = 0.75 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 7 time = 0.2]
+ぐわああぁぁ…！！
+
+
+[balloon x=130 y=40 shape="008_02" scale = 50 action = "fadein" time = 0.5]
+[wait_anim target=".bln"]
+[fadeout target = ".bln" time = 1.5]
+//[wait time = 1.5]
+
+[fadeout target = "piko" time = 0.7]
+
+[wait_anim target=".bln"]
+
+//空のフキダシ
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+
+*005
+//-------------------------------------------------------------------------------
+//  悟飯：ベビー
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002L" bg = "bg_004_001"]
+
+[character x = -210 y = -160 storage = "00509/idl_side_p_01" scale = 1.4 action = "fadein" time = 0.1]
+
+
+[balloon x=120 y=60 shape="002_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+この星で目指すのは[r]
+ベジータだけだ…！！[p]
+
+[stopbgm]

@@ -1,0 +1,108 @@
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+//[bgm storage = "026"]
+
+*001
+//-------------------------------------------------------------------------------
+//  人造人間13号
+//-------------------------------------------------------------------------------
+[se storage = "3022"]
+[coma shape="N0002R" bg = "bg_000_074"]
+
+[character x=0 y=-220 storage = "00288/card_04" scale = 1.1 action = "fadein" time = 0.1]
+[quake target =".chara" power = 6 time = 0.4]
+
+[wait time = 0.7]
+
+[balloon x=0 y=365 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+ふふふ…[r]
+これで終わりだと[r]
+思うなよ！？
+[p]
+
+[se storage = "08"]
+
+[character id = "chip1" x= -500 y= 250 storage = "90003/chip" scale = 1.0 angle = -210 action = "fadein" time = 0.1]
+[scale target = "chip1" scale = 0.25 time = 1.0]
+[move target ="chip1" x = -60 y=220 time = 1.0 ease="Out:5"]
+
+
+[character id = "chip2" x= 500 y= 250 storage = "90003/chip" scale = 1.0 angle = -180 action = "fadein" time = 0.1]
+[scale target = "chip2" scale = 0.25 time = 1.0]
+[move target ="chip2" x = 60 y=220 time = 1.0 ease="Out:5"]
+
+
+[character id = "core1" x= -500 y= -400 storage = "90003/core" scale = 0.4 action = "fadein" time = 0.1]
+[scale target = "core1" scale = 0.4 time = 1.5]
+[move target ="core1" x = -100 y=100 time = 1.5 ease="Out:5"]
+
+
+
+[character id = "core2" x= 500 y= -400 storage = "90003/core" scale = 0.4 angle = 30 action = "fadein" time = 0.1]
+[scale target = "core2" scale = 0.4 time = 1.5]
+[move target ="core2" x = 100 y=100 time = 1.5 ease="Out:5"]
+
+
+[wait time = 0.7]
+[se storage = "43"]
+[fadeout target = "chip1" time = 0.7]
+[fadeout target = "chip2" time = 0.7]
+
+
+[wait time = 0.2]
+//[se storage = "43"]
+[fadeout target = "core1" time = 0.7]
+[fadeout target = "core2" time = 0.7]
+
+[wait_anim target="core2"]
+
+[se storage = "3025"]
+//点滅
+[balloon shape="008_02" x = 0 y = 0 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+[balloon shape="008_02" x = 0 y = 0 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+
+
+*002
+//-------------------------------------------------------------------------------
+//  合体13号
+//-------------------------------------------------------------------------------
+[se storage = "3029"]
+[coma shape="S0001" bg = "bg_000_074"]
+
+
+[lwfobject id = "kaki1" storage="kakimoji:ef_013" x=-80 y=-250 scale = 2.5 angle = -10 action = "fadein" time = 0.1]
+[quake target ="kaki1" power = 15 time = 0.4]
+
+
+[character id = "13gou" x = -20 y = 20 storage = "00289/card_02" scale = 1.4 action = "fadein" time = 0.1]
+[quake target ="13gou" power = 11 time = 0.4]
+
+[character id = "ki" x= 0 y= -20 storage = "99999/04_syougeki" scale = 7.0 action = "expand" time = 0.3]
+
+
+[balloon x = 0 y = 480 shape="006_01" scale = 0.65 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 44]
+[quake target =".bln" power = 7 time = 0.2]
+ハアアッ！！
+
+[wait time = 0.1]
+[fadeout target = "ki" time = 0.3]
+
+[wait_anim target="ki"]
+
+//空のフキダシ
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+//[stopbgm]

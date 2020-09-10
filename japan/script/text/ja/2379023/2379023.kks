@@ -1,0 +1,134 @@
+*start|スタート
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "029"]
+
+*001
+//-------------------------------------------------------------------------------
+//  カーセラル
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_055"]
+
+[character x = 255 y = -180+30 storage = "00820/idl_side_e_01" scale = 1.1 action = "fadein" time = 0.1]
+
+[balloon x = -105 y = 40 shape="001_02" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+たかだか３人を相手に[r]
+我らプライド・トルーパーズが[r]
+５人がかりとは[r]
+ムダが過ぎたかな？
+[p]
+
+
+*002
+//-------------------------------------------------------------------------------
+//  人造人間１７号
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_055"]
+
+//[character x = -245 y = -150 storage = "00820/heapup_p_01" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x=140 y=70 shape="002_01" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+//[quake target =".bln" power = 3 time = 0.2]
+なにが[r]
+おかしい？
+[p]
+
+[se storage = "48"]
+
+//[character x = -200 y = -190 storage = "00020/idl_side_p_04" scale = 1.2 action = "fadein" time = 0.1]
+[character x = -120 y = -180 storage = "00020/idl_side_p_04" scale = 1.0 action = "fadein" time = 0.7]
+
+//[character x = -170 y = -180 storage = "00021/idl_side_p_03" scale = 1.2 action = "fadein" time = 0.1]
+[character x = -245 y = -180 storage = "00021/idl_side_p_03" scale = 1.2 action = "fadein" time = 0.7]
+
+
+[wait time = 1.0]
+
+//空のフキダシ
+[balloon x=0 y=0 shape="001_01" scale = 0]
+[p]
+
+
+*003
+//-------------------------------------------------------------------------------
+//  カーセラル
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_055"]
+
+[character x = 245 y = -150+20 storage = "00820/heapup_e_01" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x = -120 y = 70 shape="001_03" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 40]
+//[quake target =".bln" power = 3 time = 0.2]
+うん？
+[p]
+
+
+*004
+//-------------------------------------------------------------------------------
+//  人造人間１７号
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_055"]
+
+[character x = -120 y = -180 storage = "00020/idl_side_p_04" scale = 1.0 action = "fadein" time = 0.1]
+
+[character x = -245 y = -180 storage = "00021/idl_side_p_03" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x=135 y= 100 shape="002_02" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+//[quake target =".bln" power = 3 time = 0.2]
+これで５対５…
+[p]
+
+[balloon x= 140 y = -100 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+条件は対等…[r]
+これでかたづけられても[r]
+言い訳できないよ
+[p]
+
+
+*005
+//-------------------------------------------------------------------------------
+//  カーセラル
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_000_055"]
+
+[character x = 190 y = -200 storage = "00820/card_01" scale = 1.1 action = "fadein" time = 0.1]
+
+
+[balloon x = -140 y = 50 shape="001_03" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 40]
+//[quake target =".bln" power = 3 time = 0.2]
+かたづける？
+[p]
+
+
+[balloon x = -130 y = -200 shape="001_01" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+//[quake target =".bln" power = 3 time = 0.2]
+ほう…[r]
+おもしろい
+[p]
+
+
+
+//-------------------------------------------------------------------------------
+[stopbgm]

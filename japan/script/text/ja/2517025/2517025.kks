@@ -1,0 +1,43 @@
+*start|スタート
+
+//2517025
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "008"]
+
+*001
+//-------------------------------------------------------------------------------
+//  "四星龍 三星龍"
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="S0001" bg = "bg_069_001"]
+
+[character x = 230 y = -190 storage = "00517/atc_front_p_01" scale = 1.1 angle = 25 action = "fadein" time = 0.1]
+
+[character id = "4" x = -210 y = 280 storage = "00518/atc_front_e_01" scale = 1.4 angle = -15 action = "fadein" time = 0.1]
+
+//[wait time = 0.7]
+
+[quake target ="4" power = 5 time = 0.3]
+
+[balloon x=140 y=370 shape="006_02" scale = 0.9 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 7 time = 0.2]
+オレは自分の技で！[r]
+自分の実力で勝つ！！
+[p]
+
+[balloon x=-120 y=-300 shape="002_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+どんなに[r]
+汚い手を使おうと…[r]
+勝ちゃいいんですよ
+[p]
+
+//-------------------------------------------------------------------------------
+[stopbgm]

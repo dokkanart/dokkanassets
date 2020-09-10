@@ -1,0 +1,163 @@
+
+
+*start|スタート
+//2327010 家なし
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "012"]
+
+*01
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+
+[coma shape="N0003R" bg = "bg_000_016"]
+
+[wait time = 0.7]
+
+[balloon shape="003_01" x = 0 y = 110 scale = 1.7 action = "fadein" time = 0.1]
+[font size = 13]
+//[quake target =".bln" power = 3 time = 0.2]
+[wait_anim target=".bln"]
+祖父の形見の[r]
+ドラゴンボールを求め[r]
+孫悟空は[r]
+再び冒険の旅に出る…[r]
+　[r]
+そこには[r]
+同じくドラゴンボールを狙う[r]
+悪の組織レッドリボン軍との[r]
+戦いが待ち受けていた！[p]
+
+*02
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+
+[coma shape="N0003L" bg = "bg_074_001"]
+
+[wait time = 0.7]
+
+[balloon shape="003_01" x = 0 y = 20 scale = 1.6 action = "fadein" time = 0.1]
+[font size = 14]
+//[quake target =".bln" power = 3 time = 0.2]
+[wait_anim target=".bln"]
+戦いの最中[r]
+レッドリボン軍の[r]
+ブルー将軍に[r]
+ドラゴンボールを[r]
+奪われてしまった悟空…[r]
+　[r]
+ブルー将軍を追い[r]
+悟空がたどり着いたのは[r]
+なんと…！？[p]
+
+*03
+//-------------------------------------------------------------------------------
+//  孫悟空
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_074_001"]
+
+[character x = 220 y = -40 storage = "00261/idl_side_e_01" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon shape="001_03" x = -110 y = 100 scale = 1.0 action = "fadein" time = 0.1]
+[font size = 24]
+[quake target =".bln" power = 3 time = 0.2]
+[wait_anim target=".bln"]
+ありゃ！？ ここって…[r]
+ペンギン村じゃねえか！[p]
+
+[balloon shape="001_02" x = -100 y = -100 scale = 0.9 action = "fadein" time = 0.1]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+[wait_anim target=".bln"]
+夢中で追いかけてたら[r]
+ずいぶん遠くまで[r]
+来ちまったなあ…[p]
+
+*04
+//-------------------------------------------------------------------------------
+//  ドラゴンレーダー
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_074_001"]
+
+[character x=150 y=15 storage = "90003/dragon_radar" scale = 1.7  action = "fadein" time = 0.1]
+
+
+[wait_anim target=".chara"]
+
+[balloon shape="001_01" x = -130 y = 100 scale = 0.8 action = "fadein" time = 0.1]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+[wait_anim target=".bln"]
+ま いいや[r]
+はやく あいつを[r]
+見つけないと…[p]
+
+//se
+//レーダー音
+[se storage = "35"]
+//[wait time = 0.6]
+//[se storage = "35"]
+
+//レーダーが点滅
+[balloon id = "01" shape="010_08" x = 140 y = 70 scale = 0.3 action = "fadein" time = 0.1]
+[balloon id = "02" shape="010_08" x = 200 y = 30 scale = 0.3 action = "fadein" time = 0.1]
+[wait time = 0.1]
+[fadeout target = "01" time = 0.3]
+[fadeout target = "02" time = 0.3]
+[wait time = 0.4]
+[se storage = "35"]
+
+[balloon id = "03" shape="010_08" x = 140 y = 70 scale = 0.3 action = "fadein" time = 0.4]
+[balloon id = "04" shape="010_08" x = 200 y = 30 scale = 0.3 action = "fadein" time = 0.4]
+//[wait time = 0.4]
+//[fadeout target = "03" time = 0.3]
+//[fadeout target = "04" time = 0.3]
+
+//[balloon id = "05" shape="010_08" x = -140 y = 70 scale = 0.3 action = "fadein" time = 0.7]
+//[balloon id = "06" shape="010_08" x = -90 y = 30 scale = 0.3 action = "fadein" time = 0.7]
+
+
+[balloon shape="001_03" x = -120 y = -90 scale = 1.0 action = "fadein" time = 0.1]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+[wait_anim target=".bln"]
+へへへ…[r]
+ドラゴンレーダーがあれば[r]
+あいつの居場所もバッチリ[r]
+わかるぞ…あれ？[p]
+
+
+*05
+//-------------------------------------------------------------------------------
+//  孫悟空
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+
+[coma shape="N0002R" bg = "bg_074_001"]
+
+[character x = 130 y = -65 storage = "00261/card_01" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon shape="001_03" x = -150 y = 90 scale = 0.9 action = "fadein" time = 0.1]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+[wait_anim target=".bln"]
+ドラゴンボールの[r]
+反応がふたつあるぞ…[p]
+
+[balloon shape="001_02" x = -130 y = -180 scale = 0.9 action = "fadein" time = 0.1]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+[wait_anim target=".bln"]
+う～ん…[r]
+じゃあ とりあえず[r]
+こっちに行ってみっか[p]
+
+//-------------------------------------------------------------------------------
+[stopbgm]

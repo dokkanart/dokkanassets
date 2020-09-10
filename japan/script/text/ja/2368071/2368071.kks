@@ -1,0 +1,134 @@
+*start|スタート
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+//[bgm storage = "028"]
+[bgm storage = "048"]
+
+*001
+//-------------------------------------------------------------------------------
+//  超ベジータ
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_004"]
+
+[character x = 220 y = -140 storage = "00004/card_18" scale = 0.7 action = "fadein" time = 0.1]
+
+[balloon x = -90 y = 70 shape="002_02" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+//[quake target =".bln" power = 3 time = 0.2]
+手応え[r]
+あったぜ…
+[p]
+
+[balloon x=-90 y=-110 shape="002_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+ざまあみやがれ…！！
+[p]
+
+*002
+//-------------------------------------------------------------------------------
+//  セル（完全体）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_004"]
+
+[character x=-260 y=-250 storage = "00205/dam_side_p_01" angle=70 scale = 1.15 action = "fadein" time = 0.1]
+
+[quake target = ".chara" power = 1 time = 300] 
+
+[balloon x=80 y=90 shape="004_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+こ…こんなことが…[r]
+まさか完全体の[r]
+わたしが……！！
+[p]
+
+[quake target = ".chara" power = 8 time = 0.3] 
+
+[balloon x=100 y=-115 shape="007_02" scale = 0.8 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 7 time = 0.2]
+　ち……[r]
+　ちくしょおおお…！！
+[p]
+
+*003
+//-------------------------------------------------------------------------------
+//  超ベジータ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_004"]
+
+[character x = 220 y = -140 storage = "00004/card_18" scale = 0.7 action = "fadein" time = 0.1]
+
+[balloon x = -105 y = 50 shape="006_01" scale = 0.75 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+[quake target =".bln" power = 7 time = 0.2]
+はーっはっはっ[r]
+はっは！！
+[p]
+
+*004
+//-------------------------------------------------------------------------------
+//  セル（完全体）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_004"]
+
+[character x = -210 y = -240 storage = "00205/idl_side_p_01" scale = 1.15 action = "fadein" time = 0.1]
+
+[balloon x=95 y=70 shape="002_01" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+[quake target =".bln" power = 3 time = 0.2]
+なんちゃって！
+[p]
+
+*005
+//-------------------------------------------------------------------------------
+//  超ベジータ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_004"]
+
+[character x = 220 y = -140 storage = "00004/card_18" scale = 0.7 action = "fadein" time = 0.1]
+
+[balloon x = -105 y = 70 shape="004_02" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 40]
+//[quake target =".bln" power = 3 time = 0.2]
+は……
+[p]
+
+*006
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0004L" bg = "bg_000_014"]
+
+[balloon x=0 y=-40 shape="003_01" scale = 1.5 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 15]
+//[quake target =".bln" power = 3 time = 0.2]
+ベジータの放った[r]
+渾身の一撃も[r]
+セルには通じなかった…[r]
+　[r]
+完全体となったセルの[r]
+想像を絶する[r]
+圧倒的パワー！[r]
+ベジータに[r]
+最大の危機が迫る！
+[p]
+
+//-------------------------------------------------------------------------------
+[stopbgm]

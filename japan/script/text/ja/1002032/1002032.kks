@@ -1,0 +1,249 @@
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "003"]
+
+*01
+//-------------------------------------------------------------------------------
+//  サタン
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0001L" bg = "bg_014_001"]
+
+[character x=-210 y=-110 storage = "00038/idl_side_p_01" scale = 1.1 action = "fadein" time = 0.1]
+
+[balloon x=130 y=110 shape="001_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+ハアッ…ハアッ…！[r]
+//た…
+他愛もない連中だな…
+[p]
+
+[character x=-180 y=110 storage = "99999/ase" scale = 0.6 action = "fadein" time = 0.3]
+
+[balloon x=120 y=-90 shape="004_04" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 3 time = 0.2]
+[font size = 28]
+（ひええ〜ん！！[r]　もう体力が[r]　限界だよ〜ん）
+[p]
+
+//元シナリオ
+//（ひィ、ひええ〜ん！！[r]
+//もうそろそろ体力が[r]限界だよ〜ん）
+
+*02
+//-------------------------------------------------------------------------------
+//  トランクス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_014_001"]
+
+[character x=210 y=-200 storage = "90000/wait_right_anger" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x=-110 y=110 shape="001_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+よし…！ 確実に[r]近づいてきているぞ…[p]
+
+[balloon x=-85 y=-90 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+しかし何者なんだ…？[r]この謎の気の正体は…
+[p]
+
+
+//元シナリオ
+//それにしても[r]何者なんだ…？[r]
+//この謎の気の持ち主の[r]正体は……
+
+
+*03
+//-------------------------------------------------------------------------------
+//  トランクス
+//-------------------------------------------------------------------------------
+[se storage = "03"]
+//[bgm storage = "003"]
+[coma shape="N0003R" bg = "bg_014_001"]
+//[lwfobject id="syuutyuu1" storage="syucyu:ef_002" mask="inside" loop=1 priority=10 scale=1.0]
+
+//[character x = 190 y = -380 storage = "90000/wait_right_surprise" scale = 1.7 action = "fadein" time = 0.1]
+[character x = 170 y = -380 storage = "90000/wait_right_surprise" scale = 1.7 action = "fadein" time = 0.1]
+
+[lwfobject id = "kaki1" storage="kakimoji:ef_001" in="02" x=-50 y=100 scale = 2.7 angle = -13 action = "fadein" time = 0.1]
+[quake target ="kaki1" power = 7 time = 0.4]
+[wait_anim target = "kaki1"]
+
+// 空のフキダシ（セリフがないコマを送るために使用）
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+
+[balloon x=-140 y=-100 shape="004_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+//こ、
+この気は……[r]…ご…悟空さん…！？[r]そんなバカな…！！[p]
+
+//[balloon x=-95 y=-100 shape="006_01" scale = 0.8 action = "expand" time = 0.1]
+//[wait_anim target=".bln"][font size = 26]
+//[quake target =".bln" power = 7 time = 0.4]
+//…ご…悟空さん……！？[r]
+//そ、そんなバカな…！！[p]
+
+*04
+//-------------------------------------------------------------------------------
+//  サタン
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_014_001"]
+
+[character x=-210 y=-110 storage = "00038/idl_side_p_01" scale = 1.1 action = "fadein" time = 0.1]
+
+[balloon x=130 y=70 shape="001_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+おい…どうした？[r]顔色が悪いぞ？[p]
+
+*05
+//-------------------------------------------------------------------------------
+//  トランクス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_014_001"]
+
+[character x=210 y=-200 storage = "90000/wait_right_anger" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x=-100 y=110 shape="001_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+…サタンさん[r]やはりあなたは[r]
+//もう
+帰ったほうがいい…[p]
+
+[balloon x=-80 y=-90 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+状況は想像より[r]ずっとやばそうです[p]
+
+
+*06
+//-------------------------------------------------------------------------------
+//  サタン
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_014_001"]
+
+//立ち_01
+[character x=-210 y=-110 storage = "00038/idl_side_p_01" scale = 1.1 action = "fadein" time = 0.1]
+//立ち_01+あせ
+[character x=-180 y=110 storage = "99999/ase" scale = 0.6 action = "fadein" time = 0.1]
+
+[balloon x=120 y=110 shape="004_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 3 time = 0.2]
+[font size = 32]
+え！？[r]
+//…そ、
+…そうなの？
+[p]
+
+[balloon x=140 y=-100 shape="001_03" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 54]
+…………[p]
+
+*07
+//-------------------------------------------------------------------------------
+//  サタン
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_014_001"]
+
+[character x=-200 y=-110 storage = "00038/heapup_p_02" scale = 1.1 action = "fadein" time = 0.1]
+//タメ_01+あせ
+[character x=-210 y=125 storage = "99999/ase" scale = 0.5 action = "fadein" time = 0.1]
+
+[balloon x=120 y=100 shape="004_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 3 time = 0.2]
+[font size = 28]
+そうだな！わたしには[r]次の武道会にむけての[r]特訓もあるからな！
+[p]
+
+[balloon x=150 y=-90 shape="004_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 3 time = 0.2]
+[font size = 32]
+うむ！ここは[r]若い武道家たちに[r]まかせよう！！[p]
+
+//元シナリオ
+//…そ、そうだな！！[r]
+//チャンピオンのワシが[r]いつまでもこんなところに[r]いても仕方ないし…
+//次の天下一武道会にむけての[r]トレーニングもしなくては[r]ならんしな！！
+
+
+*08
+//-------------------------------------------------------------------------------
+//  サタン
+//-------------------------------------------------------------------------------
+[se storage = "07"]
+[coma shape="N0003L" bg = "bg_014_001"]
+
+[character x = 900 y = -90 storage = "00038/card_03" scale = 0.8 action = "fadein" time = 0.1 action = "slide:left" time = 1.0]
+
+//[character x = 150 y = -90 storage = "00038/card_03" scale = 0.8 action = "fadein" time = 0.1 action = "slide:left" time = 0.3]
+
+[lwfobject id = "kaki1" storage="kakimoji:ef_023" in="02" x=-150 y=90 scale = 1.7]
+[quake target ="kaki1" power = 9 time = 0.2]
+
+[balloon x=145 y=-110 shape="006_01" scale = 0.9 action = "expand" time = 0.1]
+[wait_anim target=".bln"][quake target =".bln" power = 7 time = 0.4]
+[font size = 28]
+//では[r]
+わたしのあとを継いで[r]しっかりやるんだぞ！[r]だはははは…！！[p]
+
+*09
+//-------------------------------------------------------------------------------
+//  トランクス
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+//[coma shape="N0001R" bg = "bg_014_001"]
+
+//[character x=190 y=-200 storage = "90000/wait_right_anger" action = "fadein" time = 0.1]
+
+//[balloon x=-70 y=40 shape="001_03" scale = 0.6 action = "fadein" time = 0.1]
+//[wait_anim target=".bln"][font size = 40]
+//…………[p]
+
+
+*10
+//-------------------------------------------------------------------------------
+//  トランクス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_014_001"]
+
+[character x=170 y=-325 storage = "90000/wait_right_anger_strong" scale = 1.4 action = "fadein" time = 0.1]
+
+[balloon x=-130 y=70 shape="001_03" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+…………[r]
+…悟空さん……[p]
+
+[balloon x=-120 y=-200 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+悟空さんが凶悪な気の[r]正体だなんて…何かの[r]間違いですよね……
+[p]
+
+//元シナリオ
+//悟空さんが武道家たちを[r]襲っているなんて…[r]
+//なにかの間違いですよね……
+
+[stopbgm]

@@ -1,0 +1,154 @@
+
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "008"]
+
+//-------------------------------------------------------------------------------
+//  悟空
+//-------------------------------------------------------------------------------
+[se storage = "3024"]
+
+[coma shape="N0003R" bg = "bg_027_001" scale = 10]
+[lwfobject id="syuutyuu1" storage="syucyu:ef_002" mask="inside" loop=1 priority=10 scale=1.0]
+
+[character x=195 y=-100 storage = "00003/atc_sp01_e_01" scale = 1.8 action = "fadein" time = 0.1]
+
+[balloon x=-200 y=20 shape="007_01" scale = 0.8 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 7 time = 0.2]
+[font size = 44]
+かめはめ…
+[p]
+
+
+*002
+//-------------------------------------------------------------------------------
+//  ラディッツ
+//-------------------------------------------------------------------------------
+[se storage = "3036"]
+[coma shape="N0004R" bg = "bg_027_001"]
+[lwfobject id="syuutyuu1" storage="syucyu:ef_002" mask="inside" loop=1 priority=10 scale=1.0]
+
+[character x=-250 y=-160 storage = "00014/atc_front_e_01" scale = 3 action = "fadein" time = 0.1]
+
+
+
+//[lwfobject id = "kaki1" storage="kakimoji:ef_001" in="02" x=260 y=160 scale = 2]
+//[quake target ="kaki1" power = 7 time = 0.2]
+//[wait_anim target = "kaki1"]
+
+[balloon id="radhi1" x=150 y=-0 shape="006_02" scale = 0.9 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 7 time = 0.2]
+戦闘力が[r]
+あがっていく！！
+[p]
+
+
+
+*003
+//-------------------------------------------------------------------------------
+//  悟空
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+
+
+[coma shape="N0003R" bg = "bg_027_001" scale = 10]
+[lwfobject id="syuutyuu1" storage="syucyu:ef_002" mask="inside" loop=1 priority=10 scale=1.0]
+
+[character x=250 y=-140 storage = "00003/atc_sp01_e_02" scale = 2.1 action = "fadein" time = 0.1]
+
+[balloon x=-150 y=155 shape="007_01" scale = 0.8 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 7 time = 0.2]
+[font size = 56]
+波ーっ！！
+//[p]
+
+//[wait time = 0.5]
+
+
+*004baku
+//-------------------------------------------------------------------------------
+//  爆発
+//-------------------------------------------------------------------------------
+[se storage = "3017"]
+
+[coma shape="N0004L" bg = "bg_027_001"]
+//[lwfobject id="syuutyuu1" storage="syucyu:ef_001" mask="inside" loop=1 priority=10 scale=1]
+//[move target = "syuutyuu1" x = 0 y = -30]
+
+
+[lwfobject id = "kaki2" storage="kakimoji:ef_013" in="04" x=0 y=50 scale = 3]
+[quake target = "kaki2" power = 15 time = 1]
+
+
+[character x=0 y=0 storage = "90000/bomb" scale = 0.9 action = "expand" time = 0.1]
+[quake target = ".chara" power = 10 time = 1]
+
+
+[balloon x=130 y=40 shape="008_02" scale = 50 action = "fadein" time = 0.5]
+
+[wait_anim target=".bln"]
+
+[fadeout target = ".bln" time = 1.5]
+
+
+[fadeout target = "kaki2" time = 1.5]
+
+[fadeout target = ".chara" time = 1.5]
+
+
+[character x=-250 y=-120 storage = "00014/atc_sp01_p_02" scale = 1.5 action = "fadein" time = 1.5]
+
+
+
+[wait time = 1.5]
+
+
+//空のフキダシ
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+
+//[wait time = 0.7]
+
+
+//[balloon shape="008_02" x = 140 y = -30 scale = 50 action = "fadein" time = 1.5]
+
+
+
+//[wait time = 2]
+
+*005
+//-------------------------------------------------------------------------------
+//  悟空
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_027_001"]
+
+[character x=195 y=-60 storage = "00003/heapup_e_01" scale = 1.9 action = "fadein" time = 0.1]
+
+
+[balloon x=-130 y=100 shape="004_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 3 time = 0.2]
+[font size = 30]
+う…[r]
+受け止めやがった…
+[p]
+
+[balloon x=-150 y=-90 shape="004_02" scale = 0.85 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 3 time = 0.2]
+[font size = 32]
+なんてやつだ……
+[p]
+
+
+
+[stopbgm]

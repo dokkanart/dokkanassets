@@ -1,0 +1,85 @@
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+//[bgm storage = "008"]
+
+
+*001
+//-------------------------------------------------------------------------------
+//  バビディ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_015_001"]
+
+[character x = 170 y = -40 storage = "00238/energyball_e_01" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x=-100 y=170 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+うひひひひ…！[r]
+使わせてもらうぞ[r]
+きさまを！[p]
+
+
+[balloon x=-100 y=-100 shape="002_03" scale = 1 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+[quake target =".bln" power = 3 time = 0.2]
+ついでに[r]
+秘めているパワーを[r]
+限界を超えて[r]
+ひきだしてあげよう！！[p]
+
+
+*002
+//-------------------------------------------------------------------------------
+//  ベジータ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0004L" bg = "bg_015_001"]
+
+[character x = -130 y = -340 storage = "00282/idl_front_p_01" scale = 2.5 action = "fadein" time = 0.1]
+
+[lwfobject id = "kaki2" storage="kakimoji:ef_001" in="04" x=100 y=40 scale = 3.5 action = "fadein" time = 0.1]
+[quake target = "kaki2" power = 7 time = 0.4]
+
+[wait time = 0.7]
+
+[se storage = "10"]
+//点滅
+[balloon shape="008_02" x = 140 y = -30 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+[balloon shape="008_02" x = 140 y = -30 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+
+
+*003
+//-------------------------------------------------------------------------------
+// ベジータ
+//-------------------------------------------------------------------------------
+[se storage = "20"]
+[coma shape="N0002L" bg = "bg_015_001"]
+
+[lwfobject id = "kaki2" storage="kakimoji:ef_009" in="04" x=-190 y=-190 scale = 1.6 action = "fadein" time = 0.1]
+[quake target = "kaki2" power = 1 time = 300]
+
+[character id = "super" x=-180 y=-290 storage = "99999/supersaiyan" scale = 1.3 action = "fadein" time = 0.1]
+[quake target ="super" power = 2 time = 300]
+
+[character x=-120 y=-200 storage = "00228/heapup_p_01" scale = 1.6 action = "fadein" time = 0.1]
+
+[balloon x=120 y=140 shape="004_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 1 time = 300]
+[font size = 28]
+うおおおおお…っ！！
+[p]
+
+
+
+//[stopbgm]

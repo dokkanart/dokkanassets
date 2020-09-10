@@ -1,0 +1,179 @@
+
+
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "005"]
+
+
+//-------------------------------------------------------------------------------
+//  test
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+
+[coma shape="S0001" bg = "bg_000_014"]
+
+[balloon shape="009_15" x = 50 y = 170 scale = 1.2 action = "fadein" time = 0.1]
+
+
+//19×7
+[balloon shape="009_16" x = 35 y = -200 scale = 0.95 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 27]
+
+ひとつの小さな出会いから始まった[r]
+ななつのドラゴンボールをめぐる物語…[r]
+　[r]
+失われたドラゴンボールを求めて[r]
+やってきたナメック星には[r]
+新たな敵フリーザの陰謀が渦巻いていた…[p]
+
+
+*01
+//-------------------------------------------------------------------------------
+//  フリーザ
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+
+[coma shape="N0001R" bg = "bg_050_001"]
+
+[character x=170 y=-70 storage = "00058/idl_side_e_01" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon x=-120 y=150 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+やっと到着しましたね[r]
+ギニュー特戦隊…！[r]
+待っていましたよ[p]
+
+
+
+*02
+//-------------------------------------------------------------------------------
+//  リクーム
+//-------------------------------------------------------------------------------
+[se storage = "03"]
+[coma shape="N0004L" bg = "bg_050_001"]
+
+[character x=-260 y=-280 storage = "00031/card_02" scale = 2 action = "fadein" time = 0.1]
+
+[balloon x=180 y=10 shape="006_02" scale = 0.7 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 40]
+[quake target = ".bln" power = 7 time = 0.2]
+リクーム！！[p]
+
+*bata
+//-------------------------------------------------------------------------------
+//  バータ
+//-------------------------------------------------------------------------------
+[se storage = "03"]
+[coma shape="N0004L" bg = "bg_050_001"]
+
+[character x=-120 y=-240 storage = "00033/card_02" scale = 2.0 action = "fadein" time = 0.1]
+
+[balloon x=180 y=10 shape="006_02" scale = 0.7 action = "expand" time = 0.1]
+[wait_anim target=".bln"][font size = 40]
+[quake target = ".bln" power = 7 time = 0.2]
+バータ！！[p]
+
+*jisu
+//-------------------------------------------------------------------------------
+//  ジース
+//-------------------------------------------------------------------------------
+[se storage = "03"]
+[coma shape="N0004L" bg = "bg_050_001"]
+
+[character x=-180 y=-200 storage = "00034/card_02" scale = 2.0 action = "fadein" time = 0.1]
+
+[balloon x=180 y=10 shape="006_02" scale = 0.7 action = "expand" time = 0.1]
+[wait_anim target=".bln"][font size = 40]
+[quake target = ".bln" power = 7 time = 0.2]
+ジース！！[p]
+
+*gulud
+//-------------------------------------------------------------------------------
+//  グルド
+//-------------------------------------------------------------------------------
+[se storage = "03"]
+[coma shape="N0004L" bg = "bg_050_001"]
+
+[character x=-180 y=-150 storage = "00032/card_02" scale = 2 action = "fadein" time = 0.1]
+
+[balloon x=180 y=10 shape="006_02" scale = 0.7 action = "expand" time = 0.1]
+[wait_anim target=".bln"][font size = 40]
+[quake target = ".bln" power = 7 time = 0.2]
+グルド！！[p]
+
+*ginyu
+//-------------------------------------------------------------------------------
+//  ギニュー
+//-------------------------------------------------------------------------------
+[se storage = "03"]
+[coma shape="N0004L" bg = "bg_050_001"]
+
+
+[character x=-170 y=-20 storage = "00017/card_01" scale = 2.1 action = "fadein" time = 0.1]
+
+[balloon x=180 y=10 shape="006_02" scale = 0.7 action = "expand" time = 0.1]
+[wait_anim target=".bln"][font size = 40]
+[quake target = ".bln" power = 7 time = 0.2]
+ギニュー！！[p]
+
+*coma3
+//-------------------------------------------------------------------------------
+//  ギニュー特戦隊
+//-------------------------------------------------------------------------------
+[coma id = "coma1" shape="S0001" bg = "bg_050_001"]
+
+[wait time = 0.7]
+
+//リクーム
+[se storage = "3022"]
+[character x=210 y=0 storage = "00031/card_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".chara"]
+
+//バータ
+[se storage = "3022"]
+[character x=-230 y=-10 storage = "00033/card_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".chara"]
+
+//ジース
+[se storage = "3022"]
+[character x=200 y=-100 storage = "00034/card_03" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".chara"]
+
+//グルド
+[se storage = "3022"]
+[character x=-200 y=-150 storage = "00032/card_01" scale = 0.6 action = "fadein" time = 0.1]
+[wait_anim target=".chara"]
+
+[se storage = "40"]
+[character x=-0 y=-190 storage = "00017/card_02" scale = 0.8 action = "fadein" time = 0.3]
+[wait_anim target=".chara"]
+
+
+
+//[se storage = "46"]
+
+//[lwfobject id = "kaki1" storage="kakimoji:ef_020" in="02" x=0 y=-170 scale = 2.0 action = "fadein" time = 0.1]
+//[quake target = "kaki1" power = 9 time = 0.4]
+
+[balloon x=0 y=240 shape="006_01" scale = 0.8 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[quake target = ".bln" power = 7 time = 0.2]
+[font size = 32]
+みんな そろって
+[p]
+
+[balloon x=0 y=-400 shape="006_02" scale = 0.9 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[quake target = ".bln" power = 7 time = 0.2]
+[font size = 32]
+ギニュー特戦隊！！
+[p]
+
+[stopbgm]

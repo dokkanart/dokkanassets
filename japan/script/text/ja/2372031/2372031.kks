@@ -1,0 +1,377 @@
+*start|スタート
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "027"]
+
+*001
+//-------------------------------------------------------------------------------
+//  人造人間13号
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="S0001" bg = "bg_000_074"]
+
+[character x= 0 y=-10 storage = "00288/card_01" scale = 1.0 action = "fadein" time = 0.1]
+
+
+
+[balloon x=0 y=490 shape="002_02" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 40]
+//[quake target =".bln" power = 3 time = 0.2]
+さすがだな[r]
+孫悟空！
+[p]
+
+
+[balloon x=0 y=-300 shape="006_02" scale = 0.8 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 7 time = 0.2]
+だが[r]
+これならどうだ！
+[p]
+
+[se storage = "3012"]
+
+[lwfobject id = "kaki1" storage="kakimoji:ef_009" x=-200 y=340 scale = 1.0 action = "fadein" time = 0.3]
+[quake target = "kaki1" power = 1]
+
+
+[character id = "2" x= 0 y=195 storage = "99999/barrier" scale = 0.6 action = "fade:75" time = 0.3]
+[paint target="2" color="#B40404"]
+[quake target ="2" power = 3 time = 300]
+
+
+[wait time = 1]
+
+[balloon x = 0 y = 0 shape="002_02" scale = 0 action = "fadein" time = 0.1]
+[p]
+
+
+[se storage = "3025"]
+//点滅
+[balloon shape="008_02" x = 0 y = 0 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+
+
+//[balloon id = "1" x=0 y=0 shape="010_09" scale = 0.7 action = "fadein" time = 0.1]
+//[paint target="1" color="#DF0101"]
+
+
+*002
+//-------------------------------------------------------------------------------
+//  13号が、S・Sデッドリィボンバーを撃つ。
+//-------------------------------------------------------------------------------
+[se storage = "44"]
+[coma shape="N0004L" bg = "bg_000_014"]
+
+
+[lwfobject id = "kaki1" storage="kakimoji:ef_013" x=-195 y=0 angle = -7 scale = 1.5 action = "fadein" time = 0.1] 
+[quake target = "kaki1" power = 9 time = 0.4]
+
+
+[character id = "2" x= 0 y=-30 storage = "99999/barrier" scale = 2.3 action = "fade:100" time = 0.1]
+[paint target="2" color="#B40404"]
+[quake target ="2" power = 5 time = 300]
+
+[balloon id = "1" x=0 y=-30 shape="010_09" scale = 2.5 action = "fade:80" time = 0.1]
+[paint target="1" color="#DF0101"]
+[quake target ="1" power = 5 time = 300]
+
+[wait_anim target="kaki1"]
+
+//空のフキダシ
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+
+
+*003
+//-------------------------------------------------------------------------------
+//  孫悟空
+//-------------------------------------------------------------------------------
+[se storage = "03"]
+[coma shape="N0001R" bg = "bg_000_074"]
+
+[character id = "2" x= 60 y=-30 storage = "99999/barrier" scale = 2.3 action = "fade:80" time = 0.1 mask="inside"]
+[paint target="2" color="#B40404"]
+
+
+[character id = "gok" x=200 y=-150 storage = "00003/none_heapup_e_01" scale = 1.3 action = "fadein" time = 0.1]
+[paint target="gok" color="#F6CECE"]
+
+[lwfobject id = "kaki1" storage="kakimoji:ef_001" x=-30 y=100 angle = -10 scale = 2.5 action = "fadein" time = 0.1] 
+[quake target = "kaki1" power = 9 time = 0.4]
+
+
+// 空のフキダシ（セリフがないコマを送るために使用）
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+
+
+*004
+//-------------------------------------------------------------------------------
+//  S・Sデッドリィボンバーがベジータの気弾にはじかれる。
+//-------------------------------------------------------------------------------
+[se storage = "3038"]
+[coma shape="N0004L" bg = "bg_000_074"]
+
+[lwfobject id = "kaki1" storage="kakimoji:ef_009" x=-230 y=0 scale = 1.0 action = "fadein" time = 0.1]
+[quake target = "kaki1" power = 1]
+
+
+[character id = "kuro" x= -80 y=100 storage = "99999/black" scale = 5 action = "fade:50" time = 0.1]
+
+
+
+[character id = "2" x= -200 y=200 storage = "99999/barrier" scale = 1.5 action = "fade:100" time = 0.1]
+[paint target="2" color="#B40404"]
+//[quake target ="2" power = 3 time = 300]
+[move target = "2" x = 0 y = 80 time = 1.0]
+
+
+//[character id = "1" x= -80 y=100 storage = "99999/barrier" scale = 0.7 action = "fade:100" time = 0.1]
+//[paint target="1" color="#B40404"]
+
+
+[wait time = 1]
+
+
+[se storage = "3002"]
+//点滅
+[balloon shape="008_02" x = 0 y = 0 scale = 50 action = "fadein" time = 0.1]
+
+[clear target = "kaki1"]
+
+
+
+
+[character id = "veg" x= 90 y=-60 storage = "00067/Images_ef_beam_head_01" angle = 30 scale = 2.0 action = "fade:100"]
+
+[move target = "2" x = -200 time = 0.7]
+[move target = "2" y = 150 time = 0.7]
+[quake target ="veg" power = 7 time = 0.7]
+
+
+[character id = "ki" x= -80 y=50 storage = "99999/04_syougeki" angle = 60 scale = 1.5 action = "fade:70"]
+[quake target ="ki" power = 9 time = 0.7]
+
+[lwfobject id = "kaki2" storage="kakimoji:ef_006" x=180 y=30 scale = 1.8 angle = 25 action = "fadein" time = 0.1]
+[quake target = "kaki2" power = 10 time = 0.7]
+
+
+[wait time = 0.3]
+[clear target = ".bln"]
+
+
+
+
+
+
+
+
+
+//[lwfobject id = "kaki1" storage="kakimoji:ef_006" x=30 y=70 angle = 10 scale = 2.4 action = "fadein" time = 0.1] 
+//[quake target = "kaki1" power = 9 time = 0.4]
+
+//[character id = "shougeki" x= -25 y= 50 storage = "99999/04_syougeki" scale = 1.0 action = "fadein" time = 0.1]
+
+//[scale target = "shougeki" scale = 2.0 time = 0.5]
+
+//[spin target = "shougeki" velocity = 360]
+
+//[move target = "bomber" x = -25 y = 50 time = 0.2]
+
+
+//空のフキダシ
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+
+
+*005
+//-------------------------------------------------------------------------------
+//  人造人間13号
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_074"]
+
+[character x=-185 y=-220 storage = "00288/idl_front_p_02" scale = 1.1 action = "fadein" time = 0.1]
+
+//[character x=-185 y=-210 storage = "00288/idl_front_p_01" scale = 1.1 action = "fade:50" time = 0.1]
+
+
+
+[balloon x=120 y=75 shape="002_01" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 40]
+[quake target =".bln" power = 3 time = 0.2]
+なに！？
+[p]
+
+
+
+*006
+//-------------------------------------------------------------------------------
+//  ベジータ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_074"]
+
+[wait time = 0.3]
+
+[se storage = "48"]
+[character x = 180 y = -110 storage = "00004/idl_side_e_02" scale = 1.1 action = "fadein" time = 0.7]
+
+[wait_anim target=".chara"]
+
+//空のフキダシ
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+
+
+*007
+//-------------------------------------------------------------------------------
+//  孫悟空
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_074"]
+
+[character x=200 y=-150 storage = "00003/none_heapup_e_01" scale = 1.3 action = "fadein" time = 0.1]
+
+[balloon x= -120 y=70 shape="001_01" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+[quake target =".bln" power = 3 time = 0.2]
+ベジータ！
+[p]
+
+
+*008
+//-------------------------------------------------------------------------------
+//  ベジータ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_074"]
+
+[character x = 180 y = -110 storage = "00004/idl_side_e_02" scale = 1.1 action = "fadein" time = 0.1]
+
+
+[balloon x = -120 y = 90 shape="002_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+かんちがいするな[r]
+カカロット…
+[p]
+
+
+[balloon x=-140 y=-100 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+オレは きさまを[r]
+助けにきたわけではない
+[p]
+
+
+*009
+//-------------------------------------------------------------------------------
+//  トランクス（青年期）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_074"]
+
+[character x = 230 y = -120 storage = "00069/heapup_e_04" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x= -100 y=70 shape="001_03" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 40]
+//[quake target =".bln" power = 3 time = 0.2]
+父さん…！
+[p]
+
+
+*010
+//-------------------------------------------------------------------------------
+//  ベジータ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_074"]
+
+[character x = 180 y = -110 storage = "00004/idl_side_e_02" scale = 1.1 action = "fadein" time = 0.1]
+
+
+[balloon x = -135 y = 80 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+カカロットは[r]
+サイヤ人の王子[r]
+このベジータさまの[r]
+手で始末する！
+[p]
+
+
+[balloon x=-140 y=-105 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+カラクリ人形に[r]
+トドメを横取りされて[r]
+たまるか！
+[p]
+
+
+*011
+//-------------------------------------------------------------------------------
+//  人造人間13号
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_074"]
+
+[character x=-185 y=-220 storage = "00288/idl_front_p_02" scale = 1.1 action = "fadein" time = 0.1]
+
+[balloon x=120 y=50 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+ふ…孫悟空の[r]
+あの世への道連れが[r]
+また増えたな
+[p]
+
+
+*012
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0004R" bg = "bg_000_024"]
+
+[character id = "BG" x = 0 y = 0 storage = "99999/flare" scale = 20 action = "fadein" time = 0.1 mask="inside"]
+
+
+
+
+[balloon x=0 y=-30 shape="003_01" scale = 1.4 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 16]
+//[quake target =".bln" power = 3 time = 0.2]
+人造人間13号と闘う[r]
+悟空のピンチに[r]
+ベジータが現れた…！[r]
+　[r]
+3体の人造人間たちと[r]
+3人のサイヤ人たちとの[r]
+闘いが始まる！
+[p]
+
+
+
+//-------------------------------------------------------------------------------
+[stopbgm]

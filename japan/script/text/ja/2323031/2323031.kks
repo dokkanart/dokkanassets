@@ -1,0 +1,241 @@
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "007"]
+
+*01
+//-------------------------------------------------------------------------------
+//  ラディッツ
+//-------------------------------------------------------------------------------
+
+//[se storage = "04"]
+[coma shape="N0001L" bg = "bg_027_001"]
+
+
+[character x = -190 y = -100 storage = "00014/heapup_p_01" scale = 1.6 action = "fadein" time = 0.1]
+
+
+[balloon x=115 y=120 shape="004_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 3 time = 0.2]
+[font size = 32]
+く…[r]
+くそ〜っ！！[p]
+
+[balloon x=135 y=-90 shape="004_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 3 time = 0.2]
+[font size = 28]
+さ…さっきの[r]
+ガキの一撃で[r]
+パワーが落ちている…[p]
+
+
+*02
+//-------------------------------------------------------------------------------
+//  ナレーション（悟飯）
+//-------------------------------------------------------------------------------
+[se storage = "3001"]
+[coma shape="B0001" bg = "bg_027_002"]
+
+
+[character id = "rad" x=130 y=-0 storage = "00014/dam_side_e_01" scale = 1.5 action = "fadein" time = 0.1]
+[quake target ="rad" power = 15 time = 0.4]
+
+[character id = "gohan" x=-80 y=150 storage = "00060/atc_sp01_p_02" scale = 1.5 action = "fadein" time = 0.1]
+[quake target ="gohan" power = 12 time = 0.4]
+
+[wait time = 0.7]
+
+[balloon x=0 y=-180 shape="003_01" scale = 1.5 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target =".bln" power = 3 time = 0.2]
+[font size = 16]
+父・悟空の危機に[r]
+悟飯は怒りのパワーを[r]
+爆発させる…！[r]
+　[r]
+悟飯の一撃は[r]
+ラディッツに[r]
+大ダメージを与え[r]
+戦局は大きく[r]
+変わろうとしていた[p]
+
+
+*03
+//-------------------------------------------------------------------------------
+//  ピッコロ
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0003R" bg = "bg_027_001"]
+
+
+[character x = 220 y = -140 storage = "00056/card_01" scale = 1.4 action = "fadein" time = 0.1]
+//[flip target =".chara" h=1]
+
+
+[balloon x=-120 y=165 shape="002_01" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target =".bln" power = 3 time = 0.2]
+[font size = 24]
+孫悟空…[r]
+きさまもいっしょに[r]
+消えてもらえりゃ[r]
+オレには最高だ！[p]
+
+[balloon x=-115 y=-60 shape="002_03" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target =".bln" power = 3 time = 0.2]
+[font size = 24]
+…もっとも きさまだけは[r]
+仲間がドラゴンボールで[r]
+生き返らせて[r]
+しまうだろうがな…[p]
+
+
+*04
+//-------------------------------------------------------------------------------
+//  ピッコロ
+//-------------------------------------------------------------------------------
+
+[se storage = "3006"]
+[coma shape="N0004R" bg = "bg_027_001"]
+
+[lwfobject id = "kaki1" storage="kakimoji:ef_017" in="04" x=-120 y=-110 scale = 2.0]
+[quake target = "kaki1" power = 15 time = 0.4]
+
+
+[character id = "ma" x=-80 y=-30 storage = "99999/makank" scale = 0.9 action = "slide:right" time = 0.3]
+
+[balloon x=0 y=95 shape="006_01" scale = 0.8 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 7 time = 0.4]
+[font size = 36]
+魔貫光殺砲！！[p]
+
+
+
+*05
+//-------------------------------------------------------------------------------
+//  悟空＆ラディッツ
+//-------------------------------------------------------------------------------
+
+[se storage = "3007"]
+[coma shape="N0002L" bg = "bg_000_014"]
+
+[character id = "goku"x=120 y=60 storage = "00003/dam_back_p_01" scale = 1.0 action = "fadein" time = 0.1]
+[quake target ="goku" power = 1 time = 300]
+
+[character id = "radi" x = -80 y = -0 storage = "00014/dam_back_p_01" scale = 1.4 action = "fadein" time = 0.1]
+[quake target ="radi" power = 1 time = 300]
+
+[wait time =2.0]
+
+[fadeout target = "radi" time = 1.0]
+
+[wait time =0.5]
+
+[fadeout target = "goku" time = 1.5]
+
+[wait time =2.0]
+
+
+[balloon x=-0 y=0 shape="003_01" scale = 1.5 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target =".bln" power = 3 time = 0.2]
+[font size = 16]
+悟空の捨て身の戦法と[r]
+ピッコロの新必殺技[r]
+魔貫光殺砲によって[r]
+ラディッツは倒れた…[r]
+　[r]
+…そして悟空も[r]
+ドラゴンボールによる[r]
+復活に望みを託し[r]
+息絶えるのだった[p]
+
+[bgm storage = "008"]
+
+*06
+//-------------------------------------------------------------------------------
+//  悟空＆ラディッツ
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0003R" bg = "bg_000_003"]
+
+[wait time = 0.7]
+
+[balloon x=0 y=0 shape="003_01" scale = 1.6 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target =".bln" power = 3 time = 0.2]
+[font size = 14]
+…時を同じくして[r]
+はるか彼方の[r]
+宇宙では…[r]
+　[r]
+ラディッツの死と[r]
+ドラゴンボールの[r]
+存在を知った[r]
+残りふたりのサイヤ人が[r]
+地球へ向かって[r]
+飛び立とうとしていた！！[p]
+
+
+*07
+//-------------------------------------------------------------------------------
+//  ベジータ
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0003L" bg = "bg_000_010"]
+
+[character x = -30 y = -190 storage = "00015/card_01" scale = 0.7 action = "fadein" time = 0.1]
+
+[character x = -190 y = -140 storage = "00061/card_02" scale = 1.1 action = "fadein" time = 0.1]
+
+
+[balloon x=140 y=110 shape="002_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target =".bln" power = 3 time = 0.2]
+[font size = 28]
+オレたちがこのまま[r]
+年老いもせず永遠の命を[r]
+…ってのはどうだ？[p]
+
+[balloon x=140 y=-110 shape="002_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target =".bln" power = 3 time = 0.2]
+[font size = 32]
+永久的に[r]
+戦闘を楽しめるぞ[p]
+
+
+
+*08
+//-------------------------------------------------------------------------------
+//  地球
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0003R" bg = "bg_000_003"]
+
+[character x = -160 y = -30 storage = "99999/earth" scale = 0.4 action = "fadein" time = 0.1]
+
+[balloon x=130 y=0 shape="003_01" scale = 1.5 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target =".bln" power = 3 time = 0.2]
+[font size = 16]
+最強のサイヤ人[r]
+地球到着まで[r]
+あと１年！！[r]
+　[r]
+かつてない強敵を[r]
+迎え撃つべく[r]
+地球の戦士たちの[r]
+厳しい試練が[r]
+始まろうとしていた！[p]
+
+[stopbgm]

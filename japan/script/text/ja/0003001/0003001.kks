@@ -1,0 +1,248 @@
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+//[bgm storage = "012"]
+
+
+*01
+//-------------------------------------------------------------------------------
+// 界王
+//-------------------------------------------------------------------------------
+
+//[se storage = "04"]
+[coma shape="S0001" bg = "bg_080_001"]
+
+
+
+[character x = -130 y = 0 storage = "90001/stand" scale = 0.7 action = "fadein" time = 0.1]
+
+[wait_anim target=".chara"]
+
+
+[balloon x=150 y=160 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[quake target = ".bln" power = 3 time = 0.2]
+[font size = 28]
+おっほん！[r]
+わしが宇宙で[r] 
+一番えらい界王じゃ！[p]
+
+*02
+//-------------------------------------------------------------------------------
+//  界王
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_080_001"]
+
+[character x = -180 y = -50 storage = "90001/stand" scale = 0.6 action = "fadein" time = 0.1]
+
+[balloon x=125 y=160 shape="001_02" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target = ".bln" power = 3 time = 0.2]
+[font size = 24]
+「スタートダッシュガシャ」は[r]
+もう引いたかのう？[p]
+
+[balloon x=110 y=-80 shape="001_03" scale = 1.1 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[quake target = ".bln" power = 3 time = 0.2]
+[font size = 22]
+「スタートダッシュガシャ」は[r]
+強力なSSRキャラクターを[r]
+仲間にできるのだぞ！[p]
+
+
+//---------------------------------------------
+
+[if !$is_cleared]    
+// 達成済みか否かは $is_cleared 変数に入っているので、それを用いて if 分岐します。
+
+//---------------------------------------------
+
+//*explain|任務内容詳細説明    // ラベルを付けておくと、テスターで見やすくなります。
+
+// ******************************************************
+//  ここには、
+//  まだ、このミッションを達成していない場合の展開を記述します。
+// ******************************************************
+
+
+*explain|任務内容詳細説明
+*03_mitatu
+//-------------------------------------------------------------------------------
+//  グレゴリー（後ろにバブルスもいる）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_080_001"]
+
+[character x = 260 y = -100 storage = "90003/baburusu" scale = 0.5 angle = 9 action = "fadein" time = 0.1]
+[character x = 140 y = -20 storage = "90003/guregori" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon x=-120 y=120 shape="001_02" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target = ".bln" power = 3 time = 0.2]
+[font size = 24]
+ガシャは[font color="#e59522"]龍石[font color="#141414"]で[r]
+引くことができるんです！[p]
+
+
+[balloon x=-150 y=-80 shape="001_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target = ".bln" power = 3 time = 0.2]
+[font size = 32]
+覚えておいて[r]
+くださいね[p]
+
+
+*04_mitatu
+//-------------------------------------------------------------------------------
+//  界王
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0002L" bg = "bg_080_001"]
+
+
+
+[character x = -150 y = -50 storage = "90001/stand" scale = 0.7 action = "fadein" time = 0.1]
+
+[balloon x=135 y=110 shape="001_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[quake target = ".bln" power = 3 time = 0.2]
+[font size = 28]
+ガシャを引くと[r]
+いっしょに闘う仲間も[r]
+増えていくんじゃ！[p]
+
+[balloon x=130 y=-150 shape="001_03" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target = ".bln" power = 3 time = 0.2]
+[font size = 24]
+と～っても強い[r]
+SSRキャラクターに[r]
+出会えるといいのう[p]
+
+//---------------------------------------------
+[else]
+//*has_been_cleared|すでに達成済み    // ラベルを付けておくと、テスターでチェックしやすくなります。
+
+// ******************************************************
+//  ここには、
+//  すでに、このミッションを達成している場合の展開を記述します。
+// ******************************************************
+
+*has_been_cleared|すでに達成済み 
+*05
+//-------------------------------------------------------------------------------
+//  グレゴリー（後ろにバブルスもいる）
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_080_001"]
+
+[character x = 260 y = -100 storage = "90003/baburusu" scale = 0.5 angle = 9 action = "fadein" time = 0.1]
+[character x = 140 y = -20 storage = "90003/guregori" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon x=-100 y=-85 shape="001_03" scale = 1.1 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target = ".bln" power = 3 time = 0.2]
+[font size = 20]
+界王さま[r]
+どうやら すでに[r]
+「スタートダッシュガシャ」を[r]
+引いているみたいですよ？[p]
+
+*06
+//-------------------------------------------------------------------------------
+//  界王
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_080_001"]
+
+
+
+[character x = -180 y = -50 storage = "90001/stand" scale = 0.6 action = "fadein" time = 0.1]
+
+[balloon x=110 y=110 shape="001_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target = ".bln" power = 3 time = 0.2]
+[font size = 32]
+なんじゃ[r]
+そうだったのか…[p]
+
+[balloon x=125 y=-90 shape="001_03" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target = ".bln" power = 3 time = 0.2]
+[font size = 24]
+ガシャは[font color="#e59522"]龍石[font color="#141414"]で[r]
+引くことができるんじゃ[r]
+覚えておくのだぞ？[p]
+
+
+*07
+//-------------------------------------------------------------------------------
+//  グレゴリー（後ろにバブルスもいる）
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_080_001"]
+
+[character x = 260 y = -100 storage = "90003/baburusu" scale = 0.5 angle = 9 action = "fadein" time = 0.1]
+[character x = 140 y = -20 storage = "90003/guregori" scale = 1.0 action = "fadein" time = 0.1]
+
+
+[balloon x=-125 y=110 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target = ".bln" power = 3 time = 0.2]
+[font size = 28]
+ガシャを引けば[r]
+いっしょに闘う仲間も[r]
+増えていきます！[p]
+
+[balloon x=-125 y=-90 shape="001_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target = ".bln" power = 3 time = 0.2]
+[font size = 28]
+強い仲間を[r]
+集めてくださいね！[p]
+
+*08
+//-------------------------------------------------------------------------------
+//  界王
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0002L" bg = "bg_080_001"]
+
+
+
+[character x = -150 y = -50 storage = "90001/stand" scale = 0.7 action = "fadein" time = 0.1]
+
+[balloon x=140 y=100 shape="001_03" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[quake target = ".bln" power = 3 time = 0.2]
+[font size = 24]
+中でも[r]
+SSRのキャラクターは[r]
+とっても強いんじゃ！[p]
+
+[balloon x=135 y=-170 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target = ".bln" power = 3 time = 0.2]
+[font size = 28]
+たくさん出会えると[r]
+いいのう[p]
+
+
+[endif]
+*conclusion|結び
+
+//---------------------------------------------
+
+
+
+//[stopbgm]

@@ -1,0 +1,145 @@
+
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "007"]
+
+//-------------------------------------------------------------------------------
+//  リクーム
+//-------------------------------------------------------------------------------
+[se storage = "03"]
+[coma shape="N0004L" bg = "bg_000_012"]
+
+[lwfobject id="syuutyuu1" storage="syucyu:ef_002" mask="inside" loop=1 priority=10 scale=0.8]
+
+[character x=-180 y=-510 storage = "00031/atc_sp01_p_01" scale = 3 action = "fadein" time = 0.1]
+
+//[lwfobject id = "kaki1" storage="kakimoji:ef_023" in="02" x=-40 y=106 scale = 1.0 action = "fadein" time = 0.1]
+//[quake target = "kaki1" power = 7 time = 0.2]
+
+[balloon x=180 y=10 shape="006_02" scale = 0.75 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 38]
+[quake target = ".bln" power = 7 time = 0.2]
+リクーム！！[p]
+
+*bata
+//-------------------------------------------------------------------------------
+//  バータ
+//-------------------------------------------------------------------------------
+[se storage = "03"]
+[coma shape="N0004L" bg = "bg_000_012"]
+
+[lwfobject id="syuutyuu1" storage="syucyu:ef_002" mask="inside" loop=1 priority=10 scale=0.8]
+
+[character x=-320 y=-430 storage = "00033/idl_side_p_02" scale = 2.5 action = "fadein" time = 0.1]
+
+
+
+//[lwfobject id = "kaki1" storage="kakimoji:ef_023" in="02" x=10 y=106 scale = 1.0 action = "fadein" time = 0.1]
+//[quake target = "kaki1" power = 7 time = 0.4]
+
+[balloon x=180 y=10 shape="006_02" scale = 0.7 action = "expand" time = 0.1]
+[wait_anim target=".bln"][font size = 40]
+[quake target = ".bln" power = 7 time = 0.2]
+バータ！！[p]
+
+*jisu
+//-------------------------------------------------------------------------------
+//  ジース
+//-------------------------------------------------------------------------------
+[se storage = "03"]
+[coma shape="N0004L" bg = "bg_000_012"]
+
+[lwfobject id="syuutyuu1" storage="syucyu:ef_002" mask="inside" loop=1 priority=10 scale=0.8]
+
+[character x=-230 y=-270 storage = "00034/heapup_p_01" scale = 3 action = "fadein" time = 0.1]
+
+
+//[lwfobject id = "kaki1" storage="kakimoji:ef_023" in="02" x=-40 y=106 scale = 1.0 action = "fadein" time = 0.1]
+//[quake target = "kaki1" power = 7 time = 0.4]
+
+[balloon x=180 y=10 shape="006_02" scale = 0.7 action = "expand" time = 0.1]
+[wait_anim target=".bln"][font size = 40]
+[quake target = ".bln" power = 7 time = 0.2]
+ジース！！[p]
+
+*gulud
+//-------------------------------------------------------------------------------
+//  グルド
+//-------------------------------------------------------------------------------
+[se storage = "03"]
+[coma shape="N0004L" bg = "bg_000_012"]
+
+[lwfobject id="syuutyuu1" storage="syucyu:ef_002" mask="inside" loop=1 priority=10 scale=0.8]
+
+[character x=-220 y=-180 storage = "00032/atc_sp01_p_01" scale = 3 action = "fadein" time = 0.1]
+
+
+
+//[lwfobject id = "kaki1" storage="kakimoji:ef_023" in="02" x=-40 y=106 scale = 1.0 action = "fadein" time = 0.1]
+//[quake target = "kaki1" power = 7 time = 0.4]
+
+[balloon x=180 y=10 shape="006_02" scale = 0.7 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 40]
+[quake target = ".bln" power = 7 time = 0.2]
+グルド！！[p]
+
+
+*coma5
+//-------------------------------------------------------------------------------
+//  ４人
+//-------------------------------------------------------------------------------
+//[se storage = "46"]
+
+
+[coma id = "coma1" shape="S0001" bg = "bg_000_012"]
+
+
+//ジース
+[se storage = "3022"]
+[character x=160 y=190 storage = "00034/card_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".chara"]
+
+
+
+
+//バータ
+[se storage = "3022"]
+[character x=-150 y=-15 storage = "00033/card_01" scale = 1 action = "fadein" time = 0.1]
+[wait_anim target=".chara"]
+
+
+
+
+
+//リクーム
+[se storage = "3022"]
+[character x=190 y=-120 storage = "00031/card_01" scale = 1.2 action = "fadein" time = 0.1]
+[wait_anim target=".chara"]
+
+//グルド
+[se storage = "3022"]
+[character x=-150 y=-230 storage = "00032/card_01" scale = 1.1 action = "fadein" time = 0.1]
+[wait_anim target=".chara"]
+
+
+
+[balloon x = -160 y = 250 shape="002_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][font size = 32]
+へっへっへっへ…
+[p]
+
+
+[balloon x = 150 y = -310 shape="006_02" scale = 1 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][font size = 26]
+[quake target = ".bln" power = 3 time = 0.2]
+あの世もオレたち[r]
+ギニュー特戦隊で[r]
+制圧だーっ！！
+[p]
+
+[stopbgm]

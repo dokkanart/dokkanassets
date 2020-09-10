@@ -1,0 +1,135 @@
+
+
+*start|スタート
+//2327041 対決ペンギン村！
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "002"]
+
+*01
+//----------------------------------------------------------------------------
+//  ブルー将軍
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0001L" bg = "bg_074_002"]
+
+[character  x=-185 y=-175 storage = "00267/buru_heapup_p_01" scale = 1.3  action = "fadein" time = 0.1]
+
+[balloon shape="004_01" x = 110 y = 10 scale = 0.9 action = "fadein" time = 0.1]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+[wait_anim target=".bln"]
+ほ…ほほ…[r]
+す 少しはやるようね…[p]
+
+*02
+//----------------------------------------------------------------------------
+//  孫悟空（少年期）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_074_002"]
+[character x = 220 y = -40 storage = "00261/idl_side_e_01" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon shape="001_02" x = -130 y = 20 scale = 0.9 action = "fadein" time = 0.1]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+[wait_anim target=".bln"]
+へへっ！[r]
+たいしたことねえや！[p]
+
+*03
+//-------------------------------------------------------------------------------
+//  則巻アラレ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_074_001"]
+
+[character id = "gaji_1" x=100 y=130 storage = "00635/gattyan_05_guard_p_01" scale = 0.7  action = "fadein" time = 0.1]
+[flip target ="gaji_1" h=1]
+[character id = "gaji_2" x=265 y=130 storage = "00635/gattyan_06_guard_p_01" scale = 0.7 action = "fadein" time = 0.1]
+[flip target ="gaji_2" h=1]
+[character  x=175 y=-95 storage = "00635/arare2_idl_side_e_01" scale = 1.1  action = "fadein" time = 0.1]
+
+[balloon shape="001_03" x = -130 y = 120 scale = 0.8 action = "fadein" time = 0.1]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+[wait_anim target=".bln"]
+すごいね[r]
+ガッちゃん！[p]
+
+[move target ="gaji_1"  y= 150 time = 0.2]
+[wait time = 0.1]
+[move target ="gaji_1"  y= 130 time = 0.2]
+[move target ="gaji_2"  y= 150 time = 0.3]
+[wait time = 0.2]
+[move target ="gaji_2"  y= 130 time = 0.3]
+
+
+[balloon shape="001_02" x = -90 y = -80 scale = 0.7 action = "fadein" time = 0.1]
+[font size = 40]
+[quake target =".bln" power = 3 time = 0.2]
+[wait_anim target=".bln"]
+クピポ！！[p]
+
+*04
+//----------------------------------------------------------------------------
+//  ブルー将軍
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_074_001"]
+
+[character  x=-185 y=-175 storage = "00267/buru_heapup_p_01" scale = 1.3  action = "fadein" time = 0.1]
+
+[balloon shape="004_04" x = 120 y = 20 scale = 0.9 action = "fadein" time = 0.1]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+[wait_anim target=".bln"]
+ゆ…ゆるせない…[r]
+ぜったい[r]
+ゆるせないわ！！[p]
+
+*05
+//-------------------------------------------------------------------------------
+//  則巻アラレ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0003R" bg = "bg_000_016"]
+
+[character x=180 y=-90 storage = "00635/arare2_idl_back_e_01" scale = 1.1  action = "fadein" time = 0.1]
+
+[character id ="momo"  x=-240 y= 50 storage = "00024/card_05" scale = 0.05 angle = 30 action = "fadein" time = 0.1 ]
+[quake target ="momo" power = 1 time = 300]
+
+[wait time = 0.7]
+
+[balloon shape="001_02" x = -45 y = 90 scale = 0.75 action = "fadein" time = 0.1]
+[font size = 36]
+[quake target =".bln" power = 3 time = 0.2]
+[wait_anim target=".bln"]
+ほよ？[r]
+なんだありゃ？[p]
+
+*06
+//-------------------------------------------------------------------------------
+//  桃白白が柱に乗って飛んでくる
+//-------------------------------------------------------------------------------
+[se storage = "3024"]
+[coma shape="S0001" bg = "bg_000_016"]
+
+
+[lwfobject id = "kaki1" storage="kakimoji:ef_008" in="04" x=-30 y=-260 scale = 3.0 angle = 10 action = "fadein" time = 0.1]
+[quake target = "kaki1" power = 10 time = 0.4]
+
+
+[character id ="momo"  x=20 y= 70 storage = "00024/card_05" scale = 1.0  action = "fadein" time = 0.1 ]
+[quake target = "momo" power = 1 time = 300]
+[se storage = "3035"]
+
+
+// 空のフキダシ（セリフがないコマを送るために使用）
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+//-------------------------------------------------------------------------------
+[stopbgm]

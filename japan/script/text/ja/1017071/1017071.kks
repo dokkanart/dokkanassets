@@ -1,0 +1,51 @@
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "008"]
+
+*001
+//-------------------------------------------------------------------------------
+//  トランクス
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0001R" bg = "bg_004_001"]
+
+
+[character x = 210 y = -200 storage = "90000/wait_right_anger_strong" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x=-100 y=90 shape="001_01" scale = 0.8 action = "fadein" time = 0.1]
+[font size = 32]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 3 time = 0.2]
+はあ…[r]
+はあ……！[p]
+
+
+*002
+//-------------------------------------------------------------------------------
+//  フリーザ（第二形態）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002L" bg = "bg_004_001"]
+
+
+[character x=-200 y=-60 storage = "00071/heapup_p_01" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x=140 y=140 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[font size = 28]
+[wait_anim target=".bln"]
+//[quake target =".bln" power = 3 time = 0.2]
+そう[r]
+あわてるなよ…[p]
+
+[balloon x=100 y=-160 shape="002_02" scale = 0.9 action = "fadein" time = 0.1]
+[font size = 28]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 3 time = 0.2]
+たっぷりと[r]
+遊んでやるって！
+[p]
+
+[stopbgm]

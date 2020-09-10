@@ -1,0 +1,88 @@
+
+
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "008"]
+
+
+*001
+//-------------------------------------------------------------------------------
+//  ピッコロ
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0003R" bg = "bg_000_026"]
+
+[character x=100 y=-80 storage = "00010/idl_side_e_02" scale = 1.4 action = "fadein" time = 0.1]
+[character x=260 y=-75 storage = "00007/okappa_right" scale = 0.7 action = "fadein" time = 0.1]
+
+[balloon x=-155 y=90 shape="002_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+大丈夫か[r]
+悟飯
+[p]
+
+
+[balloon x=0 y=-110 shape="001_03" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+は…はい！
+[p]
+
+
+//-------------------------------------------------------------------------------
+
+*003
+//-------------------------------------------------------------------------------
+//  ターレス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_026"]
+
+[character x = -240 y = -200 storage = "00298/heapup_p_01" scale = 1.7 action = "fadein" time = 0.1]
+
+[balloon x=120 y=110 shape="002_02" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+小僧…[r]
+サイヤ人にはサイヤ人に[r]
+ふさわしい生き方をしろ！
+[p]
+
+[balloon x=145 y=-100 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+でなければ[r]
+その立派なシッポが[r]
+泣くぞ！
+[p]
+
+//-------------------------------------------------------------------------------
+
+*004
+//-------------------------------------------------------------------------------
+//  ターレス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002L" bg = "bg_000_026"]
+
+[character x = -200 y = -140 storage = "00298/idl_side_p_01" scale = 1.6 action = "fadein" time = 0.1]
+
+[balloon x=145 y=100 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+その正しい使い道を[r]
+教えてやろう…！！
+[p]
+
+
+
+[stopbgm]

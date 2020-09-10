@@ -1,0 +1,76 @@
+*start|スタート
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "027"]
+
+*001
+//-------------------------------------------------------------------------------
+//  超サイヤ人トランクス（青年期）
+//-------------------------------------------------------------------------------
+[se storage = "50"]
+[coma shape="S0001" bg = "bg_000_069"]
+
+[lwfobject id = "kaki2" storage="kakimoji:ef_023" x=-210 y=-5 scale = 1.4 angle =-20 action = "fadein" time = 0.1]
+[quake target = "kaki2" power = 12 time = 0.4]
+
+
+[character x = 0 y = 0 storage = "00069/card_03" scale = 1.2 angle =-10 action = "fadein" time = 0.1]
+[quake target =".chara" power = 10 time = 0.4]
+
+[balloon x = 0 y =480 shape="007_02" scale = 0.8 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 40]
+[quake target =".bln" power = 7 time = 0.2]
+父さーん！！
+[p]
+
+*002
+//-------------------------------------------------------------------------------
+//  ピッコロ・天津飯・クリリン
+//-------------------------------------------------------------------------------
+[se storage = "3022"] 
+[coma shape="N0003R" bg = "bg_000_069"]
+
+[lwfobject id = "kaki2" storage="kakimoji:ef_023" x=230 y=130 scale = 1.1 angle = 25 action = "fadein" time = 0.1]
+[quake target = "kaki2" power = 12 time = 0.4]
+
+[character x = 290 y = -100 storage = "00009/heapup_e_04" scale = 0.5 action = "fadein" time = 0.1]
+
+
+[character id="ten" x=-100 y=-139 storage = "00011/heapup_e_01" scale = 0.7 angle = -10 action = "fadein" time = 0.1]
+[quake target ="ten" power = 5 time = 0.4]
+
+[character id="pico" x = 112 y = -80 storage = "00056/dash_e_01" scale = 1.5 action = "fadein" time = 0.1]
+[quake target ="pico" power = 5 time = 0.4]
+
+
+[balloon x = -150 y = 100 shape="006_01" scale = 0.65 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 44]
+[quake target =".bln" power = 7 time = 0.2]
+くそっ！！
+[p]
+
+
+
+
+*003
+//-------------------------------------------------------------------------------
+//  人造人間17号
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002L" bg = "bg_000_069"]
+
+[character x = -170 y = -140 storage = "00021/idl_side_p_01" scale = 1.1 action = "fadein" time = 0.1]
+//[character x = -170 y = -140 storage = "00021/idl_front_p_01" scale = 1.1 action = "fadein" time = 0.1]
+
+[balloon id = "01" x = 100 y = 50 shape="002_01" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target = "01"]
+[font size = 54]
+//[quake target =".bln" power = 3 time = 0.2]
+………
+[p]
+
+//-------------------------------------------------------------------------------
+[stopbgm]

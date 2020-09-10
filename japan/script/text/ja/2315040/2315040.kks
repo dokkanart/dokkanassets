@@ -1,0 +1,60 @@
+
+
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "008"]
+
+
+*001
+//-------------------------------------------------------------------------------
+//  ダイーズ
+//-------------------------------------------------------------------------------
+[se storage = "3014"]
+[coma shape="N0003L" bg = "bg_000_026"]
+
+[lwfobject id = "kaki1" storage="kakimoji:ef_023" in="04" x=-40 y=-90 scale = 1.5]
+[quake target = "kaki1" power = 15 time = 0.2]
+
+[character x = -150 y = -0 storage = "00386/card_01" scale = 1.1 action = "fadein" time = 0.1]
+
+[quake target =".chara" power = 5 time = 0.4]
+
+[balloon x=145 y=130 shape="006_02" scale = 0.9 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 7 time = 0.2]
+おまえの相手は[r]
+このオレだぁ！！
+[p]
+
+
+*002
+//-------------------------------------------------------------------------------
+//  悟空
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_000_026"]
+
+[character x = 190 y = -160 storage = "00300/heapup_e_01" scale = 1.4 action = "fadein" time = 0.1]
+
+[balloon shape="006_01" x = -130 y = 90 scale = 0.9 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 7 time = 0.2]
+地球をめちゃくちゃに[r]
+しやがって…
+[p]
+
+[balloon shape="006_01" x = -130 y = -180 scale = 0.8 action = "expand" time = 0.1]
+[font size = 32]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 7 time = 0.2]
+ゆるさねえぞ！！
+[p]
+
+//-------------------------------------------------------------------------------
+
+[stopbgm]

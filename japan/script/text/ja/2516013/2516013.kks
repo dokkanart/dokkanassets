@@ -1,0 +1,97 @@
+
+
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+//[bgm storage = "012"]
+
+*001
+//-------------------------------------------------------------------------------
+//  フリーザ（第一形態）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+
+[coma shape="N0001L" bg = "bg_004_001"]
+
+//ためポーズに変更
+[character id = "f1" x = -190 y = -100 storage = "00005/heapup_p_01" scale = 2.2 action = "fadein" time = 0.1]
+
+[balloon x= 90 y= 110 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+わたしの力をちゃんと[r]
+お見せしなければ[r]
+いけませんねえ[p]
+
+
+[balloon x= 130 y= -100 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+今度は一気に[r]
+最終形態になりますよ？[p]
+
+//フリーザを消す
+[clear target = "f1"]
+//紫のオーラを出す
+[character id = "aur" x = -190 y = -160 storage = "99999/aura_purple" scale = 1.1]
+
+//オーラを揺らす
+[quake target ="aur" power = 12 time = 0.2]
+//フリーザを出す
+[character id = "f2" x = -190 y = -100 storage = "00005/heapup_p_01" scale = 2.2]
+//フリーザを揺らす
+[quake target ="f2" power = 8 time = 0.2]
+
+//[wait_anim target = "f2"]
+
+[wait time = 0.1]
+
+[se storage = "3025"]
+//点滅
+[balloon shape="008_02" x = 140 y = -30 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+//[balloon shape="008_02" x = 140 y = -30 scale = 50 action = "fadein" time = 0.1]
+//[wait time = 0.3]
+//[clear target = ".bln"]
+
+//フェードアウト（フェードアウトするコマ）
+[balloon x=130 y=40 shape="008_02" scale = 50.0 action = "fadein" time = 0.3]
+[wait time = 0.5]
+
+*002
+//-------------------------------------------------------------------------------
+//  フリーザ（最終形態）
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+
+[coma shape="S0001" bg = "bg_004_001"]
+
+[character x = 0 y = -70 storage = "00068/card_02" scale = 1.1 action = "fadein" time = 0.1]
+
+
+//フェードイン（フェードインするコマ）
+[balloon x=130 y=40 shape="008_02" scale = 50]
+[wait time = 0.2]
+[fadeout target = ".bln" time = 1.5]
+[wait_anim target=".bln"]
+
+
+
+//少し間を置く
+//[wait time = 0.7]
+
+[balloon x= 0 y= 440 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.6]
+ふっふっふっふ…[r]
+お待たせいたしました[p]
+
+//[quake target =".chara" power = 6 time = 0.3]
+//-------------------------------------------------------------------------------
+//[stopbgm]

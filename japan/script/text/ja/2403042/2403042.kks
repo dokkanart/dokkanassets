@@ -1,0 +1,92 @@
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "012"]
+
+*001
+//-------------------------------------------------------------------------------
+//  孫悟空
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_004"]
+
+[character x = 170 y = -280 storage = "00271/card_01" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x=-120 y=120 shape="001_01" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 44]
+[quake target =".bln" power = 3 time = 0.2]
+やるな！
+[p]
+
+[balloon x=-130 y=-90 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+そうだ！[r]
+おめぇに[r]
+いいものやろう！
+[p]
+
+*002
+//-------------------------------------------------------------------------------
+//  カード画像が現れる
+//-------------------------------------------------------------------------------
+//kakimoji:ef_020 ドンッ
+
+[se storage = "04"]
+[coma shape="N0004R" bg = "bg_000_004"]
+
+[wait time = 0.7]
+
+[se storage = "3039"]
+
+[character x = 0 y = 0 storage = "99999/04_syougeki" scale = 2.5]
+
+
+
+[balloon x=0 y=0 shape="008_25" scale = 0.9]
+[quake target =".bln" power = 5 time = 0.3]
+
+//[lwfobject id = "kaki1" storage="kakimoji:ef_020" in="04" x=0 y=-40 scale = 2.5]
+//[quake target ="kaki1" power = 7 time = 0.2]
+
+[wait time = 0.3]
+
+
+
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+*003
+//-------------------------------------------------------------------------------
+//  孫悟空
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_000_004"]
+
+[character x = 170 y = -280 storage = "00271/card_01" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x=-140 y=-100 shape="008_25" scale = 0.6 action = "fadein" time = 0.1]
+
+[balloon x=-120 y=120 shape="001_02" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+[font color="#119100"]【あふれる闘争心】孫悟空[font color="#141414"]だ！[r]
+おめぇのチームに入れて[r]
+修業させてやってくれ！
+[p]
+
+[balloon x=130 y=-170 shape="001_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+どこまで強くなれるか[r]
+わくわくするな！
+[p]
+
+//-------------------------------------------------------------------------------
+[stopbgm]

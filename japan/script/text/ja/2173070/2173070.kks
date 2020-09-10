@@ -1,0 +1,102 @@
+*start|スタート
+//魔人ブウ最終決戦 スタート" 
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "005"]
+ 
+
+*01
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0003L" bg = "bg_000_023"]
+ 
+//[wait_anim target=".coma"]
+ 
+[balloon x=0 y=150 shape="003_01" scale = 1.6 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 15]
+//[quake target =".bln" power = 3 time = 0.2]
+全宇宙の運命を賭け[r]
+魔人ブウとの最終決戦が[r]
+始まった！！[r]
+　[r]
+その最中[r]
+サタンと対面したブウは[r]
+突然 苦しみだし[r]
+よいこのブウを体外に[r]
+吐き出すのだった…
+[p] 
+ 
+ 
+ *02
+//-------------------------------------------------------------------------------
+//  ミスター・サタン
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0003R" bg = "bg_000_023"]
+
+[character id = "satan" x=210 y=-100 storage = "00038/heapup_p_02" scale = 0.6 action = "fadein" time = 0.1]
+[flip target ="satan" h=1]
+
+[character id = "boo" x = -90 y = -90 storage = "00229/guard_p_01" scale = 1.1 angle =-15 action = "fadein" time = 0.1]
+[flip target ="boo" h=1]
+
+
+[balloon x=155 y=130 shape="001_03" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+……ブウ…！！
+[p]
+ 
+ 
+  
+*03
+//-------------------------------------------------------------------------------
+//  魔人ブウ（純粋）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_023"]
+ 
+[character x = -200 y = -170 storage = "00232/card_003" scale = 0.9 action = "fadein" time = 0.1]
+ 
+[balloon x=140 y=70 shape="002_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+カッカカカカ…！！
+[p]
+ 
+ 
+ 
+*04
+//-------------------------------------------------------------------------------
+//  魔人ブウ（善）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_000_023"]
+ 
+[character x=100 y=-150 storage = "00229/card_003" scale = 1.3 action = "fadein" time = 0.1]
+ 
+[balloon x=-160 y=70 shape="002_01" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+//[quake target =".bln" power = 3 time = 0.2]
+おまえ[r]
+キライだ
+[p]
+
+[balloon x=-150 y=-220 shape="002_02" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+//[quake target =".bln" power = 3 time = 0.2]
+サタン[r]
+いじめるな
+[p]
+ 
+//-------------------------------------------------------------------------------
+[stopbgm]

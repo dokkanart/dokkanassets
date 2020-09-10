@@ -1,0 +1,33 @@
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "007"]
+
+*001
+//-------------------------------------------------------------------------------
+パイクーハン
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma id = "coma1" shape="S0001" bg = "bg_000_012"]
+
+[character x = -0 y = -40 storage = "00080/card_01" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon x = 40 y = 400 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+初めて会った頃より[r]
+はるかにパワーが[r]
+上がっている[p]
+
+[balloon x = -140 y = -300 shape="001_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+やるな…！[r]
+試合が楽しみだ！
+[p]
+
+[stopbgm]

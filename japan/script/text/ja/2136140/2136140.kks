@@ -1,0 +1,253 @@
+
+
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "005"]
+
+
+//-------------------------------------------------------------------------------
+//  test
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+
+[coma shape="S0001" bg = "bg_000_014"]
+
+[balloon shape="009_15" x = 50 y = 170 scale = 1.2 action = "fadein" time = 0.1]
+
+
+//19×7
+[balloon shape="009_16" x = 35 y = -200 scale = 0.95 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 27]
+
+ひとつの小さな出会いから始まった[r]
+ななつのドラゴンボールをめぐる物語…[r]
+　[r]
+地球の運命を決める武道大会[r]
+セルゲームが始まった！[r]
+悟空のあとを継ぎ、完全体セルと闘う悟飯[r]
+だったが、真の力をコントロールできず…[p]
+
+
+*01
+//-------------------------------------------------------------------------------
+//  人造人間16号
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+
+
+[coma shape="N0001L" bg = "bg_005_002"]
+
+[character x=-215 y=-180 storage = "00022/idl_side_p_02" scale = 1.5 action = "fadein" time = 0.1]
+
+
+[balloon x=120 y=130 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target =".bln" power = 3 time = 0.2]
+[font size = 28]
+そ…孫悟飯……[r]
+正しいことのために[r]
+た…闘うことは[r]
+罪ではない…[p]
+
+[balloon x=130 y=-70 shape="002_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target =".bln" power = 3 time = 0.2]
+[font size = 28]
+せ…精神を怒りのまま[r]
+自由に開放してやれ……[p]
+
+
+
+*02
+//-------------------------------------------------------------------------------
+//  超サイヤ人・悟飯
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+
+
+[coma shape="N0001R" bg = "bg_005_002"]
+
+[character id="gohan" x = 220 y = -100 storage = "00199/idl_side_p_01" scale = 1 action = "fadein" time = 0.1]
+[flip target ="gohan" h=1]
+
+
+[balloon x=-70 y=70 shape="001_01" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 40]
+[quake target =".bln" power = 3 time = 0.2]
+16号……[p]
+
+
+
+*03
+//-------------------------------------------------------------------------------
+//  人造人間16号
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+
+
+[coma shape="N0001L" bg = "bg_005_002"]
+
+[character id = "16" x=-215 y=-180 storage = "00022/idl_side_p_02" scale = 1.5 action = "fadein" time = 0.1]
+
+
+[balloon x=130 y=120 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target =".bln" power = 3 time = 0.2]
+[font size = 28]
+オ…オレの好きだった[r]
+自然や動物たちを……
+[p]
+
+[balloon x=130 y=-70 shape="002_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target =".bln" power = 3 time = 0.2]
+[font size = 28]
+ま……[r]
+守ってやってくれ…
+[p]
+
+
+//点滅
+[se storage = "3017"]
+//点滅
+[balloon shape="008_02" x = 140 y = -30 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+//[balloon shape="008_02" x = 140 y = -30 scale = 50 action = "fadein" time = 0.1]
+//[wait time = 0.3]
+//[clear target = ".bln"]
+
+[lwfobject id = "kaki1" storage="kakimoji:ef_019" in="04" x=-180 y=90 scale = 2.0 action = "fadein" time = 0.1]
+[quake target = "kaki1" power = 15 time = 0.2]
+
+[character id ="baku"x = -160 y = -0 storage = "99999/ef_explode_005" scale = 2.5 action = "expand" time = 0.3]
+[quake target ="baku" power = 10 time = 0.7]
+
+[wait time = 0.2]
+
+[fadeout target = "16" time = 0.1]
+[fadeout target = "baku" time = 2.0]
+[fadeout target = "kaki1" time = 1.0]
+
+[wait_anim target="baku"]
+
+// 空のフキダシ（セリフがないコマを送るために使用）
+//[balloon x = 0 y = 0 shape="002_01" scale = 0]
+//[p]
+
+*04
+//-------------------------------------------------------------------------------
+//  セル
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0003L" bg = "bg_005_002"]
+
+[character x=-200 y=-200 storage = "00205/idl_side_p_01" scale = 1.1 action = "fadein" time = 0.1]
+
+[balloon x=120 y=80 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+よけいなおせわだ[r]
+できそこないめ[p]
+
+
+*05
+//-------------------------------------------------------------------------------
+//  超サイヤ人・悟飯
+//-------------------------------------------------------------------------------
+[se storage = "03"]
+
+
+[coma shape="N0004R" bg = "bg_000_014"]
+
+[lwfobject id = "kaki1" storage="kakimoji:ef_001" in="04" x=-180 y=50 angle = -10 scale = 3.5]
+[quake target = "kaki1" power = 15 time = 0.4]
+
+[character id="gohan" x = 220 y = -300 storage = "00199/heapup_p_01" scale = 3 action = "fadein" time = 0.1]
+[flip target ="gohan" h=1]
+
+
+// 空のフキダシ（セリフがないコマを送るために使用）
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+
+*06
+//-------------------------------------------------------------------------------
+//  超サイヤ人・悟飯
+//-------------------------------------------------------------------------------
+[se storage = "3022"]
+
+
+[coma shape="N0002R" bg = "bg_005_002"]
+
+[character id="gohan" x = 200 y = -100 storage = "00199/heapup_p_01" scale = 1.5 action = "fadein" time = 0.1]
+[flip target ="gohan" h=1]
+
+
+[balloon x=-140 y=130 shape="007_01" scale = 0.9 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 7 time = 0.2]
+うぉああああーっ！！
+//[p]
+
+[wait time = 0.4]
+
+//点滅
+[se storage = "3025"]
+//点滅
+[balloon shape="008_02" x = 140 y = -30 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+[balloon shape="008_02" x = 140 y = -30 scale = 50 action = "fadein" time = 0.1]
+//[wait time = 0.3]
+
+//フェードアウト（フェードアウトするコマ）
+[balloon x=130 y=40 shape="008_02" scale = 50.0 action = "fadein" time = 0.3]
+[wait time = 0.5] 
+
+
+*07
+//-------------------------------------------------------------------------------
+//  超サイヤ人２・悟飯
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="S0001" bg = "bg_005_002"]
+
+[lwfobject id = "kaki1" storage="kakimoji:ef_009" in="04" x=-140 y=-300 scale = 3] 
+[quake target = "kaki1" power = 1 time = 300]
+
+//[character x=180 y=-100 storage = "99999/supersaiyan" scale = 1.0 action = "fadein" time = 0.1]
+[character x = 0 y = -30 storage = "00203/card_1004010" scale = 2.0 action = "fadein" time = 0.1]
+
+//フェードイン（フェードインするコマ）
+[balloon x=130 y=40 shape="008_02" scale = 50]
+[wait time = 0.5]
+[fadeout target = ".bln" time = 1.5]
+[wait_anim target=".bln"]
+
+[wait time = 0.7]
+
+[balloon x=-160 y=460 shape="001_01" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+//[quake target =".bln" power = 3 time = 0.2]
+もう[r]
+ゆるさないぞ
+[p]
+
+[balloon x=170 y=-250 shape="001_03" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 40]
+//[quake target =".bln" power = 3 time = 0.2]
+おまえたち……
+[p]
+
+[stopbgm]

@@ -1,0 +1,180 @@
+
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  １０−２スタート
+//-------------------------------------------------------------------------------
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "006"]
+
+//-------------------------------------------------------------------------------
+//  ヤムチャがRR軍兵を攻撃
+//-------------------------------------------------------------------------------
+[se storage = "3001"]
+[coma shape="S0001" bg = "bg_023_002"]
+
+//バゴォッ
+[lwfobject id = "kaki2" storage="kakimoji:ef_022" in="04" x=-110 y=-170 scale = 2.5]
+[quake target = "kaki2" power = 12 time = 0.2]
+
+[character id = "rr" x = -100 y = 5 storage = "00054/dam_side_p_01" scale = 1.5 action = "fadein" time = 0.1]
+
+[character id = "yam" x = 70 y = -40 storage = "00013/yam_atc_punch_e_04" scale = 1 action = "fadein" time = 0.1]
+
+[quake target = "rr" power = 9 time = 0.2]
+
+[quake target = "yam" power = 10 time = 0.2]
+
+[balloon shape="006_01" x = 0 y = 300 scale = 0.85 action = "expand" time = 0.1]
+[font size = 42]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 7 time = 0.2]
+はいーっ！！
+[p]
+
+*coma2
+//-------------------------------------------------------------------------------
+//  トランクス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0003R" bg = "bg_023_002"]
+
+[character x = 170 y = -380 storage = "90000/wait_right_surprise" scale = 1.7 action = "fadein" time = 0.1]
+
+[balloon shape="001_02" x = -125 y = 110 scale = 0.85 action = "fadein" time = 0.1]
+[font size = 36]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 3 time = 0.2]
+ヤ…[r]
+ヤムチャさん！
+[p]
+
+*coma3
+//-------------------------------------------------------------------------------
+//  ヤムチャ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_023_002"]
+
+[character x = -190 y = -50 storage = "00013/heapup_p_01" scale = 1.5 action = "fadein" time = 0.1]
+
+[balloon x=130 y=85 shape="001_01" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 30]
+[quake target =".bln" power = 3 time = 0.2]
+お！？[r]
+[$player][r]
+じゃないか
+[p]
+
+[balloon x=165 y=-120 shape="001_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+え…と[r]
+そっちは…？
+[p]
+
+*coma4
+//-------------------------------------------------------------------------------
+//  トランクス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_023_002"]
+
+[character x = 210 y = -200 storage = "90000/wait_right_normal" scale = 1 action = "fadein" time = 0.1]
+
+[balloon shape="001_02" x = -110 y = 50 scale = 1 action = "fadein" time = 0.1]
+[font size = 30]
+[wait_anim target=".bln"]
+トランクスといいます
+[p]
+
+*coma5
+//-------------------------------------------------------------------------------
+//  ヤムチャ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_023_002"]
+
+[character x = -200 y = -50 storage = "00013/idl_side_p_02" scale = 1.4 action = "fadein" time = 0.1]
+
+[balloon x=140 y=85 shape="001_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 30]
+そうか[r]
+[$player]の[r]
+仲間か
+[p]
+
+[balloon x=165 y=-120 shape="001_03" scale = 0.95 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+それにしても[r]
+いいところに[r]
+現れてくれたぜ
+[p]
+
+*coma6
+//-------------------------------------------------------------------------------
+//  トランクス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_023_002"]
+
+[character x = 210 y = -200 storage = "90000/wait_right_surprise" scale = 1 action = "fadein" time = 0.1]
+
+[balloon shape="001_02" x = -110 y = 50 scale = 0.95 action = "fadein" time = 0.1]
+[font size = 30]
+[wait_anim target=".bln"]
+どういうことですか？
+[p]
+
+*coma7
+//-------------------------------------------------------------------------------
+//  ヤムチャ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_023_002"]
+
+[character x = -190 y = -50 storage = "00013/heapup_p_01" scale = 1.4 action = "fadein" time = 0.1]
+
+[balloon x=135 y=105 shape="001_01" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 26]
+最近また[r]
+レッドリボン軍の残党が[r]
+悪さしてるみたいでな…
+[p]
+
+[balloon x=165 y=-100 shape="001_02" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 26]
+オレもこうやって[r]
+ときどき見回ってるって[r]
+わけさ
+[p]
+
+
+*coma8
+//-------------------------------------------------------------------------------
+//  ヤムチャ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+
+//研究所
+[coma shape="N0002L" bg = "bg_023_002"]
+
+[character x = -190 y = -250 storage = "00013/card_01" scale = 1.5 action = "fadein" time = 0.1]
+
+[balloon shape="001_03" x = 130 y = 55 scale = 1.1 action = "fadein" time = 0.1]
+[font size = 25]
+[wait_anim target=".bln"]
+…というわけで[r]
+[$player]たちも[r]
+協力してくれ！
+[p]
+
+[stopbgm]

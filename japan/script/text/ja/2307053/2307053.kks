@@ -1,0 +1,100 @@
+//	エリア5ボス前
+
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "013"]
+
+//-------------------------------------------------------------------------------
+//  クウラの声
+//-------------------------------------------------------------------------------
+[se storage = "03"]
+[coma shape="N0003L" bg = "bg_000_016"]
+
+
+
+[balloon shape="006_01" x = 145 y = 120 scale = 0.85 action = "expand" time = 0.1]
+[font size = 30]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 7 time = 0.2]
+なにをしている！！[p]
+
+[balloon shape="006_01" x = 145 y = -100 scale = 0.8 action = "expand" time = 0.1]
+[font size = 32]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 7 time = 0.2]
+サウザー！！[r]
+ドーレ！！[r]
+ネイズ！！
+[p]
+
+
+[character x=-125 y=-250 storage = "00283/idl_side_p_01" scale = 1.7 action = "fadein" time = 0.7]
+[wait time = 0.7]
+
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+
+
+
+*coma2
+//-------------------------------------------------------------------------------
+//  サウザーたち
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_016"]
+
+[character x=40 y=-160 storage = "00287/idl_side_e_01" scale = 0.8 action = "fadein" time = 0.1]
+[character x=250 y=-140 storage = "00286/idl_side_e_01" scale = 0.8 action = "fadein" time = 0.1]
+[character x=140 y=-190 storage = "00285/idl_side_e_01" scale = 1.0 action = "fadein" time = 0.1]
+
+
+[balloon x=-120 y=120 shape="002_02" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][font size = 36]
+[quake target =".bln" power = 3 time = 0.2]
+クウラ様…！！[p]
+
+[balloon x=-140 y=-130 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+も…[r]
+申し訳ありません！！[p]
+
+
+*coma3
+//-------------------------------------------------------------------------------
+//  ピッコロ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_016"]
+[character x=300 y=-140 storage = "00056/atc_punch_e_03" scale = 1.7 action = "fadein" time = 0.1]
+
+[balloon x=-135 y=20 shape="004_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+フ……[r]
+フリーザ！？[p]
+
+*coma4
+//-------------------------------------------------------------------------------
+//  クウラ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002L" bg = "bg_000_016"]
+
+[character x=-120 y=-270 storage = "00283/idl_side_p_01" scale = 1.7 action = "fadein" time = 0.1]
+
+
+[balloon x=120 y=120 shape="002_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][font size = 32]
+ナメック星人…[p]
+
+[balloon x=130 y=-120 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][font size = 28]
+きさまも[r]
+あのサルの仲間か…[p]
+
+[stopbgm]

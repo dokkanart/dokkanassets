@@ -1,0 +1,292 @@
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+//[bgm storage = "026"]
+
+*01
+//-------------------------------------------------------------------------------
+//  ビルス（モナカスーツ）
+//-------------------------------------------------------------------------------
+[se storage = "50"]
+[coma shape="N0001L" bg = "bg_000_016"]
+
+[character x = -220 y = -120 storage = "00242/card_08" scale = 0.8 action = "fadein" time = 0.1]
+[quake target =".chara" power = 5 time = 0.4]
+
+[balloon x=120 y=50 shape="007_02" scale = 0.75 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+[quake target =".bln" power = 7 time = 0.2]
+図に…[r]
+乗るなぁ！！
+[p]
+
+*02
+//-------------------------------------------------------------------------------
+//  孫悟空
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_016"]
+
+[character x=200 y=-150 storage = "00003/heapup_e_06" scale = 1.3 action = "fadein" time = 0.1]
+
+
+[balloon x=-120 y=90 shape="001_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+へへっ…すげえ！[r]
+すげえよモナカ！[p]
+
+
+[balloon x=-120 y=-90 shape="001_03" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+さあ[r]
+もっと気合入れて[r]
+いくぞ！！
+[p]
+
+*03
+//-------------------------------------------------------------------------------
+//  ふたりの掛け声
+//-------------------------------------------------------------------------------
+[se storage = "3014"]
+[coma shape="N0002L" bg = "bg_000_016"]
+
+
+
+[balloon x=0 y=40 shape="007_02" scale = 0.8 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 40]
+[quake target =".bln" power = 7 time = 0.2]
+はあーっ！！
+[p]
+
+[se storage = "3024"]
+//点滅
+[balloon shape="008_02" x = 0 y = 0 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+[balloon shape="008_02" x = 0 y = 0 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+
+*04
+//-------------------------------------------------------------------------------
+//  ウイス
+//-------------------------------------------------------------------------------
+[se storage = "03"]
+[coma shape="N0002R" bg = "bg_000_014"]
+
+
+
+[balloon x=0 y=30 shape="006_02" scale = 0.75 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+[quake target =".bln" power = 7 time = 0.2]
+そこまでです！
+[p]
+
+
+[bgm storage = "012"]
+
+*05
+//-------------------------------------------------------------------------------
+//  ウイス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_016"]
+
+[wait time = 0.3]
+
+[character x = 210 y = -300 storage = "00243/idl_side_e_01" scale = 1.7 action = "fadein" time = 0.7]
+
+[wait_anim target=".chara"]
+
+[balloon x=-75 y=90 shape="001_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 7 time = 0.2]
+おふたりとも[r]
+地球を破壊する[r]
+おつもりですか？
+[p]
+
+[balloon x=-100 y=-90 shape="001_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 7 time = 0.2]
+…さあ[r]
+祝勝会を始めましょう
+[p]
+
+
+*06
+//-------------------------------------------------------------------------------
+//  孫悟空
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_016"]
+
+[character x=200 y=-150 storage = "00003/heapup_e_06" scale = 1.3 action = "fadein" time = 0.1]
+
+
+[balloon x=-100 y=80 shape="001_02" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+モナカ また今度な！[r]
+オラもっともっと[r]
+修業して強くなんねえとな[p]
+
+
+
+[balloon x=-135 y=-115 shape="001_03" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+あ〜動いたから[r]
+ハラへっちまったよ
+[p]
+
+[fadeout target = ".chara" time = 0.7]
+[wait_anim target=".chara"]
+
+// 空のフキダシ（セリフがないコマを送るために使用）
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+*07
+//-------------------------------------------------------------------------------
+//  ウイス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_016"]
+
+[character x = 210 y = -300 storage = "00243/idl_side_e_01" scale = 1.7 action = "fadein" time = 0.1]
+
+
+
+[balloon x=-90 y=60 shape="001_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 7 time = 0.2]
+ビルスさま[r]
+ごくろうさまでした
+[p]
+
+
+*08
+//-------------------------------------------------------------------------------
+//  ビルス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_016"]
+
+//モナカスーツからフェードイン
+[character id = "1" x = -220 y = -120 storage = "00242/card_08" scale = 0.8 action = "fadein" time = 0.1]
+
+[wait time = 0.3]
+
+[fadeout target = ".chara" time = 0.7]
+
+[character x = -210 y = -280 storage = "00242/heapup_p_01" scale = 1.4 action = "fadein" time = 0.7]
+
+//怒り_01＋あせ
+[character x = -220 y = 40 storage = "99999/ase" scale = 0.6 action = "fadein" time = 0.7]
+
+
+[wait_anim target=".chara"]
+
+[balloon x=110 y=90 shape="004_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+はあ…やれやれ[r]
+とんだ茶番だ…
+[p]
+
+[balloon x=120 y=-100 shape="004_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+ウソは[r]
+つくもんじゃないな…
+[p]
+
+*09
+//-------------------------------------------------------------------------------
+//  ウイス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_016"]
+
+[character x = 180 y = -290 storage = "00243/atc_sp01_e_01" scale = 1.7 action = "fadein" time = 0.1]
+
+[balloon x=-120 y=50 shape="001_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 7 time = 0.2]
+ええ[r]
+正直が一番です
+[p]
+
+*10
+//-------------------------------------------------------------------------------
+//  ビルス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_016"]
+
+[character x = -240 y = -280 storage = "00242/idl_side_p_01" scale = 1.4 action = "fadein" time = 0.1]
+
+[balloon x=95 y=85 shape="001_03" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 40]
+//[quake target =".bln" power = 3 time = 0.2]
+ふん…
+[p]
+
+[balloon x=100 y=-105 shape="001_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+よ〜し！[r]
+ボクも食うぞ！[p]
+
+
+*11
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_000_024"]
+
+
+[balloon x=0 y=-30 shape="003_02" scale = 1.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 14]
+//[quake target =".bln" power = 7 time = 0.2]
+ビルスの[r]
+涙ぐましい活躍により[r]
+宇宙最強モナカの秘密は[r]
+かろうじて守られた…[r]
+　[r]
+…そしてまた悟空も[r]
+今回の手合わせで[r]
+さらなる強さを目指すため[r]
+あらためて[r]
+闘志を燃やすのだった…
+[p]
+
+[balloon x=0 y=0 shape="008_03" scale = 50.0 action = "fadein" time = 0.5]
+
+[wait time = 2.5]
+
+
+//-------------------------------------------------------------------------------
+[stopbgm]

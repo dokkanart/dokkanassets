@@ -1,0 +1,106 @@
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  場面転換
+//-------------------------------------------------------------------------------
+[bgm storage = "012"]
+
+*01
+//-------------------------------------------------------------------------------
+//  界王
+//-------------------------------------------------------------------------------
+[se storage = "3034"]
+//bg界王星
+[coma shape="N0001L" bg = "bg_080_001"]
+
+
+[character x = -180 y = -40 storage = "90001/stand" scale = 0.5 action = "fadein" time = 0.1]
+
+
+[balloon x = 120 y = 130 shape="005_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+
+[font size = 28]
+
+パワーアップマスに[r]
+止まったことはあるかのう？
+[p]
+
+
+[balloon x = 110 y = -100 shape="005_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+
+[font size = 28]
+パワーアップマスとは[r]
+仲間の誰かの気力が[r]
+ググッと上がるマスじゃ！
+[p]
+
+
+*02
+//-------------------------------------------------------------------------------
+//  界王
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+//bg界王星
+[coma shape="N0003L" bg = "bg_080_001"]
+
+[character x = -150 y = -50 storage = "90001/stand" scale = 0.7 action = "fadein" time = 0.1]
+
+
+//セリフ1
+[balloon x = 130 y = 90 shape="005_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+
+[font size = 32]
+効果はこのステージ中[r]
+だけじゃが…
+[p]
+
+
+
+//セリフ2
+[balloon x = 120 y = -120 shape="005_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+
+[font size = 28]
+バトル中も効果は継続[r]
+するので強い攻撃も[r]
+出やすくなるぞ！
+[p]
+
+
+
+
+
+*03
+//-------------------------------------------------------------------------------
+//  界王
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+//bg界王星
+[coma shape="N0002L" bg = "bg_080_001"]
+
+[character x = -150 y = -60 storage = "90001/stand" scale = 0.7 action = "fadein" time = 0.1]
+
+//セリフ1
+[balloon x = 125 y = 60 shape="005_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+
+[font size = 32]
+他にもマスの効果は[r]
+いろいろある
+[p]
+
+
+
+//セリフ2
+[balloon x = 120 y = -190 shape="005_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[quake target = ".bln" power = 3 time = 0.2]
+[font size = 32]
+自分なりの攻略法を[r]
+見つけるのじゃ！
+[p]
+
+[stopbgm]

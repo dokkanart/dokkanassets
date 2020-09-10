@@ -1,0 +1,42 @@
+*start|スタート
+//ボス前
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+//[bgm storage = "026"]
+
+*01
+//----------------------------------------------------------
+// 超サイヤ人2孫悟空（天使）
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="S0001" bg = "bg_000_033"]
+
+[character id = "wa" x = 20 y = 355 storage = "99999/ring" scale = 1.2 angle = 0 action = "fadein" time = 0.1]
+
+[character id = "gok" x = 0 y = -20-50 storage = "00066/card_05" scale = 1.1 action = "fadein" time = 0.1]
+
+[character id = "ss2" x=40 y=55-50 storage = "99999/supersaiyan2" scale = 1.5 angle = 0 action = "fadein" time = 0.1]
+[flip target ="ss2" h=1]
+[quake target ="ss2" power = 1 time = 300]
+
+
+[balloon x=0 y=470 shape="001_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+信じられねえ…[r]
+まったくの[r]互角なんてよ！
+[p]
+
+[balloon x=100 y=-460 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+おめえも[r]
+修業を[r]続けていたんだな！
+[p]
+
+
+//-------------------------------------------------------------------------------
+//[stopbgm]

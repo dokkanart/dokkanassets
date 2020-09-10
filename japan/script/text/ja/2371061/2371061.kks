@@ -1,0 +1,418 @@
+*start|スタート
+
+//-------------------------------------------------------------------------------
+[bgm storage = "028"]
+//-------------------------------------------------------------------------------
+
+*001
+//-------------------------------------------------------------------------------
+// 爆発
+//-------------------------------------------------------------------------------
+[se storage = "3017"]
+[coma shape="S0001" bg = "bg_015_001"]
+
+[lwfobject id = "kaki2" storage="kakimoji:ef_019" x=0 y=350 scale = 3.5 action = "fadein" time = 0.1]
+[quake target = "kaki2" power = 15 time = 1]
+
+
+
+[character x=0 y=20 storage = "99999/ef_explode_005" scale = 3.0 angle = -20 action = "expand" time = 0.1]
+[quake target = ".chara" power = 10 time = 1]
+
+[balloon x=0 y=0 shape="008_02" scale = 50 action = "fadein" time = 0.5]
+
+[wait_anim target=".bln"]
+
+[fadeout target = ".bln" time = 1.5]
+
+[wait time = 0.3]
+
+//[fadeout target = "kaki2" time = 0.8]
+
+//[fadeout target = ".chara" time = 1.2]
+
+[wait time = 2.0]
+
+//空のフキダシ
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+
+
+*002
+//-------------------------------------------------------------------------------
+//トランクス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_015_001"]
+
+[character x = 220 y = -310 storage = "00069/card_05" scale = 1.05 action = "fadein" time = 0.1]
+
+
+
+[balloon x = -120 y = 70 shape="001_03" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+[quake target =".bln" power = 3 time = 0.2]
+やったぞっ！！
+[p]
+
+
+*003
+//----------------------------------------------------------
+//18号
+//-------------------------------------------------------------------------------
+[se storage = "3038"]
+[coma shape="N0001L" bg = "bg_015_001"]
+
+[character x = -200 y = -190 storage = "00020/18_card_01" scale = 1.0 action = "fadein" time = 0.1]
+
+[character id = "kemuri1" x = -180 y = -110 storage = "99999/ef_sp_smoke" angle = -10 scale = 1.7 action = "fadein" time = 0.1]
+[quake target ="kemuri1" power = 2 time = 300]
+
+[wait time = 1.0]
+
+[fadeout target = "kemuri1" time = 2.0]
+
+[wait time = 2.3]
+
+
+[balloon x = 110 y = 70 shape="002_02" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 40]
+ふふ……
+[p]
+
+
+*004
+//-------------------------------------------------------------------------------
+//トランクス
+//-------------------------------------------------------------------------------
+[se storage = "03"]
+[coma shape="N0001R" bg = "bg_015_001"]
+
+[character x = 220 y = -310 storage = "00069/card_05" scale = 1.05 action = "fadein" time = 0.1]
+
+[lwfobject id = "kaki1" storage="kakimoji:ef_001" in="04" x=-30 y=110 scale = 2.5 action = "fadein" time = 0.1 angle =-9]
+[quake target = "kaki1" power = 8 time = 0.4]
+
+// 空のフキダシ（セリフがないコマを送るために使用）
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+
+[balloon x = -120 y = -105 shape="004_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+かわされている…[r]
+オレのエネルギーが[r]
+紙一重のところで…！
+[p]
+
+
+*005
+//----------------------------------------------------------
+//18号
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_015_001"]
+
+[character x = -200 y = -190 storage = "00020/18_card_01" scale = 1.0 action = "fadein" time = 0.1]
+
+
+[balloon x = 110 y = 70 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+戦意を[r]
+失っちゃったみたいね
+[p]
+
+
+*006
+//----------------------------------------------------------
+//17号
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_015_001"]
+
+
+[character id = "17" x = -170 y = -250 storage = "00021/card_09" scale = 0.9 action = "fadein" time = 0.1]
+
+
+[wait time = 0.7]
+
+[se storage = "44"]
+
+[character id = "ki" x = -290 y = -330 storage = "99999/dodonpa" scale = 1.3 angle = 90 action = "fade:60" time = 0.7]
+[quake target ="ki" power = 1 time = 300]
+
+[wait time = 1.0]
+
+[balloon x = 120 y = 75 shape="002_01" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 40]
+[quake target =".bln" power = 3 time = 0.2]
+とどめだ！
+[p]
+
+*007
+//----------------------------------------------------------
+//18号
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002L" bg = "bg_015_001"]
+
+[character id = "18" x = -150 y = -350 storage = "00020/card_04" scale = 1.1 action = "fadein" time = 0.1]
+
+//[wait_anim target="18"]
+
+[balloon x = 145 y = 60 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+待って…[r]
+とどめはわたしが[r]
+刺すよ！
+[p]
+
+[lwfobject id = "kaki1" storage="kakimoji:ef_005" in="04" x=-0 y=-170 scale = 2.3 action = "expand" time = 0.1]
+[quake target = "kaki1" power = 10 time = 0.7]
+
+[se storage = "10"]
+//点滅
+[balloon shape="008_02" x = 0 y = 0 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+//[balloon shape="008_02" x = 0 y = 0 scale = 50 action = "fadein" time = 0.1]
+//[wait time = 0.3]
+//[clear target = ".bln"]
+
+[balloon x=0 y=0 shape="008_02" scale = 50.0 action = "fadein" time = 2.0]
+
+[wait time = 1.0] 
+
+
+//フェードアウト（フェードアウトするコマ）
+[stopbgm fadeout = 1.5]
+[balloon x=0 y=0 shape="008_03" scale = 50.0 action = "fadein" time = 0.5]
+[wait time = 0.7]
+
+
+
+
+*008
+//-------------------------------------------------------------------------------
+//
+//-------------------------------------------------------------------------------
+[coma shape="S0001" bg = "bg_014_001"]
+
+[balloon x=0 y=0 shape="008_03" scale = 50]
+
+[wait time = 1]
+
+[fadeout target = ".bln" time = 2]
+
+[wait_anim target=".bln"]
+
+// 空のフキダシ（セリフがないコマを送るために使用）
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+*009
+//----------------------------------------------------------
+//
+//-------------------------------------------------------------------------------
+[bgm storage = "005"]
+
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_014_001"]
+
+[character x = 210 y = -200 storage = "90000/wait_right_anger" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x = -120 y = 100 shape="001_02" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+母さんの言ったとおりだ…[r]
+まだまだ人造人間との[r]
+差はでかかったよ…
+[p]
+
+[balloon x = -120 y = -105 shape="001_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+…ケガが治ったら[r]
+さっそくタイムマシンに[r]
+乗るよ
+[p]
+
+
+*010
+//----------------------------------------------------------
+//ブルマ（未来）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_014_001"]
+
+[character x = -185 y = -300 storage = "90003/bluma_future2" scale = 1.05 action = "fadein" time = 0.1]
+
+
+[balloon x = 110 y = 95 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+まずは１７年前に行って[r]
+悟飯くんのお父さんに[r]
+薬をわたして…
+[p]
+
+[balloon x = 130 y = -105 shape="001_03" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+彼さえ死んでいなかったら[r]
+こんな世の中にはなって[r]
+いなかったと思うの…
+[p]
+
+
+*011
+//-------------------------------------------------------------------------------
+//トランクス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_014_001"]
+
+//[character x = 210 y = -200 storage = "90000/think_right_think" scale = 1.2 action = "fadein" time = 0.1]
+[character x = 210 y = -200 storage = "90000/wait_right_anger" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x = -110 y = 60 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+それほどまで[r]
+強い人だったのですか？
+[p]
+
+
+*012
+//----------------------------------------------------------
+//ブルマ（未来）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_014_001"]
+
+[character x = -185 y = -300 storage = "90003/bluma_future2" scale = 1.05 action = "fadein" time = 0.1]
+
+
+
+[balloon x = 110 y = 50 shape="001_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+たしかに[r]
+強いことも[r]あるんだけど…
+[p]
+
+
+*013
+//----------------------------------------------------------
+//悟空（イメージ）
+//-------------------------------------------------------------------------------
+[se storage = "48"]
+[coma shape="N0004L" bg = "bg_000_014"]
+
+
+[character id = "gok2" x = 160 y = -330 storage = "00003/card_10" scale = 1.1 action = "fadein" time = 0.1 mask="inside"]
+[paint target="gok2" color="#F5D0A9"]
+
+
+[character x = -200-30 y = -820 storage = "90003/bluma_future" scale = 2.5 action = "fadein" time = 0.1]
+
+
+
+[balloon x = -0 y = 100 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+どんなにとんでもない[r]
+ことが起きても必ず[r]
+なんとかして[r]くれそうな…
+[p]
+
+[balloon x =15 y = -165 shape="001_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+そんな[r]
+不思議な気持ちに[r]
+させてくれる人なの…
+[p]
+
+
+*014
+//-------------------------------------------------------------------------------
+//トランクス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_014_001"]
+
+[character x = 210 y = -200 storage = "90000/wait_right_normal" scale = 1.2 action = "fadein" time = 0.1]
+
+
+[balloon x = -120 y = 45 shape="001_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+……オレは[r]
+自分の父さんに[r]
+会えるのが楽しみだな
+[p]
+
+*015
+//----------------------------------------------------------
+//ブルマ（未来）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_014_001"]
+
+[character x = -185 y = -300 storage = "90003/bluma_future2" scale = 1.05 action = "fadein" time = 0.1]
+
+
+
+[balloon x = 130 y = 50 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+…あんまり[r]
+期待しないほうが[r]
+いいかもよ…
+[p]
+
+
+*016
+//----------------------------------------------------------
+//タイムマシン
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_000_001"]
+
+
+
+[character id = "tm" x = 125 y = 20 storage = "90003/timemachine_2" scale = 0.6 angle = -10 action = "fadein" time = 0.1]
+[paint target="tm" color="#D8D8D8"]
+
+[character x = 230 y = -150 storage = "90000/wait_right_normal" scale = 0.8 action = "fadein" time = 0.1]
+
+
+[balloon x = -160 y = -30 shape="003_02" scale = 1.4 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 16]
+…そして[r]
+トランクスは[r]
+タイムマシンに乗り込み[r]
+過去の時代へと[r]
+向かった…[r]
+　[r]
+そこには[r]
+新たな闘いが[r]
+待っていたのである
+[p]
+
+//終わりのフェードアウト
+[stopbgm fadeout = 1.5]
+[balloon x=0 y=0 shape="008_03" scale = 50.0 action = "fadein" time = 0.5]
+[wait time = 2.5]
+

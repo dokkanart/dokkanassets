@@ -1,0 +1,236 @@
+*start|スタート
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "013"]
+
+*001
+//-------------------------------------------------------------------------------
+//  カーセラル
+//-------------------------------------------------------------------------------
+[se storage = "3022"]
+[coma shape="S0001" bg = "bg_000_055"]
+
+[character x = 0 y = -50 storage = "00820/card_03" scale = 0.95 action = "fadein" time = 0.1]
+[quake target =".chara" power = 5 time = 0.4]
+
+[balloon x = 0 y = 450 shape="006_02" scale = 0.75 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+[quake target =".bln" power = 7 time = 0.2]
+ジャスティス[r]
+サーベル！！
+[p]
+
+
+
+[se storage = "3012"]
+//点滅
+[balloon shape="008_02" x = 0 y = 0 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+
+
+//[se storage = "3012"]
+[character id = "sword2" x = 85 y = 280 storage = "99999/beam_03" scale = 1.0 angle = -115 action = "fade:50" time = 0.4]
+[paint target = "sword2" color = "#ddff33"]
+[quake target = "sword2" power = 1]
+[character id = "sword1" x = -255 y = 175 storage = "99999/beam_03" scale = 1.0 angle = -180 action = "fade:50" time = 0.4]
+[paint target = "sword1" color = "#ddff33"]
+[quake target = "sword1" power = 1]
+
+
+[wait time = 0.4]
+
+//空のフキダシ
+[balloon x=0 y=0 shape="001_01" scale = 0]
+[p]
+
+
+*002
+//-------------------------------------------------------------------------------
+//  ベルモッド
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_059"]
+
+[character x = 190 y = -340+20 storage = "90003/vermouth" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x = -120 y = 120 shape="001_03" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+ふっふっふっふ…[r]
+カーセラルは多くの惑星を[r]
+攻略した戦闘のプロ
+[p]
+
+
+[balloon x=-120 y=-90 shape="001_02" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+エネルギーを集中させ[r]
+武器となる形を作り[r]
+変幻自在に使いこなすのだ
+[p]
+
+
+*003
+//-------------------------------------------------------------------------------
+//  人造人間１７号
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_055"]
+
+[character x = -170 y = -180 storage = "00021/idl_side_p_03" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x=100 y=70 shape="002_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+ふん…[r]
+くだらない技だ
+[p]
+
+
+*004
+//-------------------------------------------------------------------------------
+//  ゾイレー
+//-------------------------------------------------------------------------------
+[se storage = "3022"]
+[coma shape="N0001R" bg = "bg_000_055"]
+
+[character id = "1" x = 190 y = -120 storage = "90003/zoire" scale = 0.9 action = "slide" time = 0.1]
+[character id = "2" x = 240 y = 25 storage = "99999/ase" scale = 0.5 action = "slide" time = 0.1]
+
+
+[wait_anim target = "1"]
+[quake target = "1" power = 5 time = 0.2]
+[quake target = "2" power = 5 time = 0.2]
+
+
+
+
+[wait time = 0.4]
+
+[balloon x = -120 y = 75 shape="006_01" scale = 0.7 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 40]
+[quake target =".bln" power = 7 time = 0.2]
+将軍！
+[p]
+
+
+[balloon x=-130 y=-120 shape="004_01" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+[quake target =".bln" power = 3 time = 0.2]
+タッパーが[r]
+やられました！
+[p]
+
+
+*005
+//-------------------------------------------------------------------------------
+//  カーセラル
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_055"]
+
+[character x = 245 y = -150+20 storage = "00820/heapup_e_01" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x = -105 y = 65 shape="004_02" scale = 0.65 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 44]
+//[quake target =".bln" power = 3 time = 0.2]
+……！
+[p]
+
+
+*006
+//-------------------------------------------------------------------------------
+//  人造人間１７号
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_055"]
+
+[character x = -170 y = -180 storage = "00021/idl_side_p_03" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x=120 y=70 shape="002_02" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 40]
+//[quake target =".bln" power = 3 time = 0.2]
+どうした？
+[p]
+
+
+*007
+//-------------------------------------------------------------------------------
+//  カーセラル
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_055"]
+
+[character x = 245 y = -150+20 storage = "00820/heapup_e_01" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x = -130 y = 65 shape="001_03" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+…勝負は[r]
+あずける！
+[p]
+
+[fadeout target = ".chara" time = 0.7]
+[wait_anim target = ".chara"]
+
+//空のフキダシ
+[balloon x=0 y=0 shape="001_01" scale = 0]
+[p]
+
+
+*008
+//-------------------------------------------------------------------------------
+//  人造人間１７号
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_055"]
+
+[character x = -170 y = -180 storage = "00021/idl_side_p_03" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x=100 y=55 shape="002_03" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 40]
+//[quake target =".bln" power = 3 time = 0.2]
+…逃げたか…
+[p]
+
+
+
+*009
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_000_059"]
+
+
+[balloon x = 0 y = -30 shape="003_01" scale = 1.6 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 14]
+//[quake target =".bln" power = 3 time = 0.2]
+プライド・トルーパーズの[r]
+仲間であるタッパーが[r]
+第７宇宙の18号との闘いで[r]
+脱落してしまった…[r]
+　[r]
+はたして[r]
+プライド・トルーパーズに[r]
+逆転の策はあるのか！？
+[p]
+
+
+
+//-------------------------------------------------------------------------------
+[stopbgm]

@@ -1,0 +1,66 @@
+
+
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+//[bgm storage = "005"]
+
+*001
+//-------------------------------------------------------------------------------
+//  悟空
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+
+[coma shape="N0001L" bg = "bg_068_003"]
+
+[character x = -190 y = -120 storage = "00244/heapup_p_01" scale = 1.7 action = "fadein" time = 0.1]
+
+[balloon x = 90 y = 120 shape="006_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][font size = 32]
+[quake target =".bln" power = 7 time = 0.2]
+はあああ…！！[p]
+
+[se storage = "44"]
+
+//点滅
+[balloon shape="008_02" x = 140 y = -30 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+
+//フェードアウト
+[balloon x= 0 y= 0 shape="008_02" scale = 50.0 action = "fadein" time = 0.3]
+[wait time = 0.5]
+
+*002
+//-------------------------------------------------------------------------------
+//  超サイヤ人悟空
+//-------------------------------------------------------------------------------
+[coma shape="S0001" bg = "bg_068_001"]
+
+[character x = 0 y = 0 storage = "00619/card_01" scale = 1.2 action = "fadein" time = 0.1]
+
+//フェードイン（フェードインするコマ）
+[balloon x=130 y=40 shape="008_02" scale = 50]
+[wait time = 0.5]
+[fadeout target = ".bln" time = 1.5]
+[wait_anim target=".bln"]
+
+[balloon x= 80 y= 400 shape="001_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+おかげでやっと[r]
+気合が入るぜ！[p]
+
+[balloon x= 140 y= -160 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+オラ [r]
+スロースターターでな…[r]
+サンキュー！[p]
+
+//-------------------------------------------------------------------------------
+//[stopbgm]

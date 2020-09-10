@@ -1,0 +1,83 @@
+*start|スタート
+
+//３＿スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "002"]
+
+
+*001
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0003R" bg = "bg_000_009"]
+
+
+
+[balloon x=0 y=120 shape="003_01" scale = 1.5 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 16]
+バーダックたちが[r]
+カナッサ星制圧へと[r]
+向かった頃…[r]
+[r]
+惑星フリーザでは[r]
+サイヤ人の王子[r]
+ベジータが[r]
+栽培マンとの[r]
+戦闘訓練を続けていた
+[p]
+
+*002
+//-------------------------------------------------------------------------------
+//  栽培マン
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_009"]
+
+[character x=-65 y=-135 storage = "00052/dash_p_01" scale = 1.0 action = "fadein" time = 0.1]
+
+
+[character x=-100 y=-90 storage = "00052/atc_punch_p_03" scale = 0.5 action = "fadein" time = 0.1]
+
+
+[character x=-240 y=-70 storage = "00052/heapup_p_01" scale = 0.8 action = "fadein" time = 0.1]
+
+
+[balloon id="radhi1" x=110 y=80 shape="002_01" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 3 time = 0.2]
+[font size = 40]
+ギギッ！！
+[p]
+
+
+*003
+//-------------------------------------------------------------------------------
+//  ベジータ（幼年期）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_000_009"]
+
+[character x=160 y=-110 storage = "00059/card_01" scale = 1.0 angle = 22 action = "fadein" time = 0.1]
+
+[balloon x=-155 y=65 shape="002_02" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 40]
+フン…
+[p]
+
+[balloon x=-135 y=-240 shape="002_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+これが[r]
+強化栽培マンか…
+[p]
+
+
+
+[stopbgm]
+

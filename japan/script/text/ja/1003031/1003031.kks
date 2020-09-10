@@ -1,0 +1,60 @@
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "012"]
+
+*01
+//-------------------------------------------------------------------------------
+//  チャオズ
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0001L" bg = "bg_012_001"]
+
+[character x=-190 y=-100 storage = "00012/idl_side_p_02" scale = 1.8 action = "fadein" time = 0.1]
+
+[balloon id = "02" x = 100 y = 120 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target = "02"]
+[font size = 28]
+…え？[r]こんなことやってる[r]場合じゃない？[p]
+
+[balloon id = "01" x = 100 y = -90 shape="001_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target = "01"]
+[quake target = ".bln" power = 3 time = 0.2]
+[font size = 32]
+…人造人間セル？[p]
+
+*02
+//-------------------------------------------------------------------------------
+//  チャオズ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_012_001"]
+
+[character x = -200 y = -35 storage = "00012/heapup_p_01" scale = 1.6 action = "fadein" time = 0.1]
+
+
+[balloon x = 100 y = 60 shape = "004_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target = ".bln"]
+[quake target = ".bln" power = 3 time = 0.2]
+[font size = 28]
+たいへんだ！！[r]天さんにもはやく[r]知らせてあげないと…[p]
+
+*03
+//-------------------------------------------------------------------------------
+//  チャオズ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002L" bg = "bg_012_001"]
+
+[character x = -170 y = -80 storage = "00012/idl_side_p_02" scale = 2.0 action = "fadein" time = 0.1]
+//[quake target = ".chara" power = 9 time = 0.2]
+
+[balloon x = 120 y = 70 shape = "001_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target = ".bln"]
+[quake target = ".bln" power = 3 time = 0.2]
+[font size = 28]
+教えてくれて[r]どうもありがとう！[p]
+
+[stopbgm]

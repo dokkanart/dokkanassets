@@ -1,0 +1,40 @@
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+//[bgm storage = "026"]
+
+*001
+//-------------------------------------------------------------------------------
+//  超サイヤ人孫悟空
+//-------------------------------------------------------------------------------
+//[se storage = "3022"]
+[coma shape="S0001" bg = "bg_000_071"]
+
+
+
+
+[character id = "gohan" x = 0 y = 0 storage = "00003/card_18" scale = 1.1 action = "fadein" time = 0.1] 
+//[quake target =".chara" power = 6 time = 0.4]
+
+
+[balloon x=-140 y=470 shape="001_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 7 time = 0.2]
+さあ…！[r]
+ここなら遠慮は[r]いらねえぞ
+[p]
+
+[balloon x=140 y=-430 shape="001_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+どっちかが[r]
+ぶっ倒れるまで[r]
+とことんやろうぜ…！
+[p]
+
+//[stopbgm]
+

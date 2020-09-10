@@ -1,0 +1,45 @@
+*start|スタート
+//ボス前
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+//[bgm storage = "003"]
+
+*01
+//----------------------------------------------------------
+//超サイヤ人ベジータ
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="S0001" bg = "bg_070_008"]
+
+[character id = "2" x=120 y=-50 storage = "00925/card_01" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon shape="002_03" x = -130 y = 320 scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+まずは[r]
+オレが相手してやる！
+[p]
+
+//[quake target ="2" power = 3 time = 0.4]
+
+[balloon shape="006_01" x = -130 y = -200 scale = 0.65 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 44]
+[quake target =".bln" power = 7 time = 0.2]
+はあああ！！
+[p]
+
+
+
+//点滅
+[balloon shape="008_02" x = 0 y = 0 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+[balloon shape="008_02" x = 0 y = 0 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+
+//-------------------------------------------------------------------------------
+//[stopbgm]

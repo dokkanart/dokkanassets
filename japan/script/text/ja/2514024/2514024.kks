@@ -1,0 +1,43 @@
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+//[bgm storage = "004"]
+
+
+*001
+//-------------------------------------------------------------------------------
+//  悟空
+//-------------------------------------------------------------------------------
+[se storage = "3029"]
+[coma shape="S0001" bg = "bg_000_055"]
+
+[lwfobject id = "kaki2" storage="kakimoji:ef_009" x=-210 y=270 scale = 1.2 action = "fadein" time = 0.1]
+[quake target = "kaki2" power = 2 time = 300]
+
+
+[character x = 0 y = 180 storage = "00239/card_10" scale = 1.7 action = "fadein" time = 0.1]
+
+[character id = "ki" x = -120 y = 70 storage = "99999/04_syougeki" scale = 1.6 angle = -20 action = "fade:70" time = 0.1]
+[quake target = "ki" power = 3 time = 300]
+
+[balloon x = 0 y = 400 shape="001_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target = ".bln" power = 3 time = 0.2]
+へへ… オラ[r]
+こんなすげえヤツを[r]
+待ってたんだ！[p]
+
+[balloon x = 0 y = -450 shape="006_01" scale = 0.8 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target = ".bln" power = 7 time = 0.2]
+オラのとっておきを[r]
+見せてやるぜ！！[p]
+
+
+
+//-------------------------------------------------------------------------------
+//[stopbgm]

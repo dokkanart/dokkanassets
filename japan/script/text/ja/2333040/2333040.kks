@@ -1,0 +1,91 @@
+*start|スタート
+
+//"エリア４スタート"
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "027"]
+ 
+*001
+//-------------------------------------------------------------------------------
+//  バイオブロリー
+//-------------------------------------------------------------------------------
+[se storage = "3029"]
+[coma shape="N0003L" bg = "bg_070_006"]
+ 
+[character x = -180 y = -350 storage = "00453/card_01" scale = 1.4 action = "fadein" time = 0.1]
+[quake target =".chara" power = 10 time = 0.4]
+ 
+[balloon x=130 y=170 shape="006_02" scale = 0.9 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 7 time = 0.2]
+ウォオオオッ！！
+[p]
+
+*002
+//-------------------------------------------------------------------------------
+//  超サイヤ人トランクス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_070_006"]
+ 
+[character x=210 y=-90 storage = "00200/heapup_e_03" scale = 1.3 action = "fadein" time = 0.1]
+ 
+[balloon x=-95 y=110 shape="001_03" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+やれるぞ悟天！！ 
+[p]
+ 
+[balloon x=-130 y=-80 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+オレには[r]
+あいつの動きが[r]
+見えてきた！！ 
+[p]
+
+*003
+//-------------------------------------------------------------------------------
+//  超サイヤ人孫悟天
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_070_006"]
+ 
+[character x=230 y=-70 storage = "00279/heapup_e_01" scale = 1.1 action = "fadein" time = 0.1]
+ 
+[balloon x=-100 y=60 shape="001_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+ボクも[r]
+見えてきたよ！
+[p]
+
+*004
+//-------------------------------------------------------------------------------
+//  超サイヤ人トランクス 超サイヤ人孫悟天
+//-------------------------------------------------------------------------------
+[se storage = "3029"]
+[coma shape="N0002R" bg = "bg_070_006"]
+
+//前に向かって突進。カード絵
+[character id = "1" x = -160 y = -0 storage = "00279/card_03" scale = 0.9 angle = -5 action = "fadein" time = 0.1]
+[quake target = "1" power = 8 time = 0.4]
+
+[character id = "2" x = 200 y = 40 storage = "00200/card_04" scale = 1.1 angle = 50 action = "fadein" time = 0.1]
+[quake target = "2" power = 8 time = 0.4]
+ 
+[balloon x=50 y=-210 shape="006_02" scale = 0.8 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 7 time = 0.2]
+だあああっ！！
+[p]
+
+ 
+//-------------------------------------------------------------------------------
+[stopbgm]

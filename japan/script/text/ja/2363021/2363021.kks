@@ -1,0 +1,121 @@
+*start|スタート
+//"ステージ2ゴール"
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "002"]
+
+*001
+//-------------------------------------------------------------------------------
+//  サオネル
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0001R" bg = "bg_050_001"]
+
+[character x = 240 y = -140 storage = "00832/heapup_e_01" scale = 1.1 action = "fadein" time = 0.1]
+
+[balloon shape="002_03" x = -110 y = 50 scale = 1 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+…どうも まだ[r]
+カラダがパワーに[r]
+ついていけてない[r]気がするな
+[p]
+
+*002
+//-------------------------------------------------------------------------------
+//  ピリナ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_050_001"]
+
+[character x = -210 y = -170 storage = "00833/idl_side_p_01" scale = 1.3 action = "fadein" time = 0.1]
+
+[balloon x=110 y=110 shape="002_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+あれだけの人数と[r]
+同化したのだ…
+[p]
+
+[balloon x=120 y=-95 shape="002_01" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+カラダが安定するまで[r]
+時間がかかるのかもしれん
+[p]
+
+*003
+//-------------------------------------------------------------------------------
+//  サオネル
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_050_001"]
+
+[character x = 240 y = -140 storage = "00832/heapup_e_01" scale = 1.1 action = "fadein" time = 0.1]
+
+[balloon shape="002_03" x = -110 y = 50 scale = 1.05 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 22]
+//[quake target =".bln" power = 3 time = 0.2]
+大会前半は[r]
+ハデな戦闘は避け[r]
+後半に一気に[r]爆発させたほうが[r]
+いいかもしれないな
+[p]
+
+*004
+//-------------------------------------------------------------------------------
+//  ピリナ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_050_001"]
+
+[character x = -210 y = -170 storage = "00833/idl_side_p_01" scale = 1.3 action = "fadein" time = 0.1]
+
+[balloon x=100 y=80 shape="002_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+ああ[r]
+その作戦でいこう
+[p]
+
+[balloon x=120 y=-100 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+生き残りをかけた[r]
+ナメック星の覚悟を[r]
+見せてやる！！
+[p]
+
+*005
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0003R" bg = "bg_000_003"]
+
+//[character x = -120 y = -100 storage = "00025/atc_down_p_01" scale = 1.6 action = "fadein" time = 0.1]
+
+[balloon x=0 y=-30 shape="003_02" scale = 1.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 14]
+//[quake target =".bln" power = 3 time = 0.2]
+宇宙の運命が決まる[r]
+力の大会まで[r]
+残り時間は あとわずか…[r]
+　[r]
+同化した[r]
+同胞たちの想いを背負い[r]
+サオネルとピリナは[r]
+大会に向け[r]
+闘志を燃やすのだった…！
+[p]
+
+//-------------------------------------------------------------------------------
+[stopbgm]

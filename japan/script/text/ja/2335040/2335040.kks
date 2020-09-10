@@ -1,0 +1,128 @@
+*start|スタート
+//ステージ4 スタート
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "002"]
+
+*01
+//-------------------------------------------------------------------------------
+//  トッポ
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0001L" bg = "bg_068_005"]
+
+[character x = -100 y = -130 storage = "00754/atc_punch_p_01" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x=-20 y=280 shape="006_02" scale = 1.1 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 20]
+[quake target =".bln" power = 7 time = 0.2]
+　我が名は[r]
+　勇ましく美しい第11宇宙[r]
+　プライド・トルーパーズの[r]
+　リーダー[r]
+　自由の戦士トッポ！！
+[p]
+
+[balloon x=140 y=-100 shape="006_01" scale = 0.75 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+[quake target =".bln" power = 7 time = 0.2]
+孫悟空よ[r]
+わたしと闘え！！
+[p]
+
+*02
+//-------------------------------------------------------------------------------
+//  大神官
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_068_004"]
+
+[character x = -200 y = -260 storage = "90003/daishinkan" scale = 1.1 action = "fadein" time = 0.1]
+
+[balloon x = 110 y = 90 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target = ".bln"]
+[font size = 28]
+//[quake target = ".bln" power = 3 time = 0.2]
+全王さまから[r]
+お許しをいただきました
+[p]
+
+[balloon x = 100 y = -110 shape="001_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target = ".bln"]
+[font size = 32]
+//[quake target = ".bln" power = 3 time = 0.2]
+存分に[r]
+お願いいたします
+[p]
+
+*03
+//-------------------------------------------------------------------------------
+//  孫悟空
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_068_005"]
+
+[character x=250 y=-140 storage = "00003/idl_side_e_06" scale = 1.1 action = "fadein" time = 0.1]
+
+[balloon x=-100 y=70 shape="001_03" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+やっていいってよ
+[p]
+
+*04
+//-------------------------------------------------------------------------------
+//  トッポ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_068_005"]
+
+[character x = -220 y = -120 storage = "00754/heapup_p_01" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x=120 y=110 shape="001_02" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+我らの宇宙に[r]
+危機をもたらしたおまえを[r]
+わたしは許さない
+[p]
+
+[balloon x=130 y=-110 shape="001_03" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+消えてなくなるのは[r]孫悟空[r]
+おまえひとりで充分だ
+[p]
+
+*05
+//-------------------------------------------------------------------------------
+//  孫悟空
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_068_005"]
+
+[character x=170 y=-180 storage = "00003/heapup_e_06" scale = 1.4 action = "fadein" time = 0.1]
+
+[balloon shape="001_02" x = -150 y = 90 scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+すげえ[r]
+威圧感だな…
+[p]
+
+[balloon shape="001_03" x = -130 y = -190 scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+肌がビリビリするぞ
+[p]
+
+//-------------------------------------------------------------------------------
+[stopbgm]

@@ -1,0 +1,110 @@
+//	エリア１ボス前
+
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "010"]
+
+
+//-------------------------------------------------------------------------------
+//  悟飯
+//-------------------------------------------------------------------------------
+[coma shape="N0001R" bg = "bg_000_022"]
+
+[character x=140 y=-135 storage = "00007/okappa_right" scale = 1.1 action = "fadein" time = 0.1]
+
+
+[balloon x=-120 y=80 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+はい！[r]
+クリリンさん[r]
+薪とってきました！[p]
+
+*coma2
+//-------------------------------------------------------------------------------
+//  クリリン
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_022"]
+
+[character x=-200 y=-100 storage = "00009/idl_side_p_02" scale = 1.9 action = "fadein" time = 0.1]
+
+
+[balloon x=120 y=110 shape="001_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][font size = 28]
+ああ[r]
+そこに置いといてくれ[r]
+…ん？[p]
+
+[bgm storage = "013"]
+
+[balloon x=120 y=-90 shape="001_02" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 34]
+[quake target =".bln" power = 3 time = 0.2]
+なんだ…！？[r]
+この気は……[p]
+
+*coma3
+//-------------------------------------------------------------------------------
+//  サウザーたちが登場
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0003L" bg = "bg_000_022"]
+
+[wait_anim target=".coma"]
+
+[character x=-290 y=-130 storage = "00287/idl_side_p_01" scale = 1.0 action = "fadein" time = 0.4]
+[wait time = 0.2]
+
+[character x=40 y=-120 storage = "00286/idl_side_p_01" scale = 0.7 action = "fadein" time = 0.4]
+[wait time = 0.2]
+
+[se storage = "03"]
+
+[character x=-80 y=-150 storage = "00285/idl_side_p_01" scale = 1.0 action = "fadein" time = 0.7]
+[wait time = 0.7]
+
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+*coma4
+//-------------------------------------------------------------------------------
+//  悟飯
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_022"]
+
+[character x=110 y=-120 storage = "00007/okappa_right" scale = 0.9 action = "fadein" time = 0.1]
+
+
+[balloon x=-120 y=100 shape="004_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][font size = 28][quake target =".bln" power = 3 time = 0.2]
+な…なんだ！？[r]
+おまえたちは……[p]
+
+*coma5
+//-------------------------------------------------------------------------------
+//  ドーレ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002L" bg = "bg_000_022"]
+
+[character x=-190 y=-130 storage = "00286/idl_side_p_01" scale = 1.2 action = "fadein" time = 0.1]
+
+
+[balloon x=145 y=130 shape="002_01" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][font size = 40]
+[quake target =".bln" power = 3 time = 0.2]
+シッポ…[p]
+
+[balloon x=90 y=-150 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][font size = 28]
+…おまえが[r]
+フリーザ様を倒した[r]
+超サイヤ人か？[p]
+
+
+[stopbgm]

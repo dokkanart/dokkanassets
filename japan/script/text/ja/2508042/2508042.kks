@@ -1,0 +1,60 @@
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+//[bgm storage = "012"]
+
+*001
+//-------------------------------------------------------------------------------
+//  孫悟飯(青年期)
+//-------------------------------------------------------------------------------
+[se storage = "50"]
+[coma shape="S0001" bg = "bg_000_023"]
+
+[balloon id = "wh" shape="008_02" x = 0 y = 0 scale = 50 action = "fade:50" time = 0.1 priority=110]
+
+[lwfobject id = "kaki2" storage="kakimoji:ef_013" x=-100 y=410 scale = 2.0 angle=-10 action = "expand" time = 0.2 priority=140]
+[quake target = "kaki2" power = 5]
+
+
+[character id = "gohan" x = -20 y = -20 storage = "00420/card_05" scale = 0.9 action = "fadein" time = 0.1 priority=120] 
+
+
+[character id = "aura" x = -20 y = -20 storage = "99999/ef_aura_front" scale = 2.7 angle = 15 action = "expand" time = 0.2 priority=130]
+[quake target = "aura" powe = 2]
+
+
+
+[wait time = 1]
+
+[fadeout target = "wh" time = 0.3 ease = "in:2"]
+[fadeout target = "kaki2" time = 0.7 ease = "in:2"]
+[fadeout target = "aura" time = 0.7 ease = "in:2"]
+
+[wait_anim target="aura"]
+
+
+
+[wait time = 0.3]
+
+
+[balloon x= 10 y= 440 shape="004_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+なんだ…！？[r]
+この湧きあがるような[r]
+パワーは…
+[p]
+
+[balloon x= 10 y= -440 shape="004_02" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 35]
+//[quake target =".bln" power = 3 time = 0.2]
+こ…これが[r]
+ボクか……！？
+[p]
+
+
+//[stopbgm]

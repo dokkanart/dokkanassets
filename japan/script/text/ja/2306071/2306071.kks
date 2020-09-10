@@ -1,0 +1,169 @@
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  強敵ボージャック！！ ゴール
+//-------------------------------------------------------------------------------
+[bgm storage = "008"]
+
+
+//-------------------------------------------------------------------------------
+//  超サイヤ人ベジータ
+//-------------------------------------------------------------------------------
+[se storage = "3024"]
+[coma shape="N0003R" bg = "bg_000_019"]
+
+
+[character x = 100 y = -190 storage = "00002/card_01" scale = 0.9 action = "fadein" time = 0.2]
+
+
+
+
+
+*002
+//-------------------------------------------------------------------------------
+//  ボージャック
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0003L" bg = "bg_000_019"]
+
+[lwfobject id = "kaki1" storage="kakimoji:ef_009" in="04" x=150 y=180 scale = 2.5]
+[quake target = "kaki1" power = 2 time = 300]
+
+//ボージャック
+[character x=-200 y=-170 storage = "00292/atc_sp01_p_01" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon shape="006_02" x = -130 y = 630 scale = 0.8 action = "expand" time = 0.1]
+[font size = 34]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 7 time = 0.2]
+とどめだ！！[r]
+はあああ…！！
+//[p]
+
+[wait time = 0.3]
+
+[balloon id="radhi1" x=130 y=-65 shape="002_03" scale = 0.65 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 48]
+//[quake target =".bln" power = 3 time = 0.2]
+ふふ…
+[p]
+
+
+
+//点滅（白）
+[se storage = "3025"]
+//点滅
+[balloon shape="008_02" x = 140 y = -30 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+[balloon shape="008_02" x = 140 y = -30 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+
+*003
+//-------------------------------------------------------------------------------
+//  ボージャック変身
+//-------------------------------------------------------------------------------
+[se storage = "50"]
+[coma shape="N0003L" bg = "bg_000_019"]
+
+[lwfobject id = "kaki1" storage="kakimoji:ef_020" in="04" x=-170 y=-80 scale = 2.0]
+[quake target = "kaki1" power = 15 time = 0.4]
+
+[character x=-200 y=-120 storage = "00293/heapup_p_01" scale = 1.5 action = "fadein" time = 0.1]
+[quake target = ".chara" power = 7 time = 0.4]
+
+[balloon x=170 y=140 shape="006_01" scale = 0.8 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+[quake target =".bln" power = 7 time = 0.4]
+はああーっ！！
+[p]
+
+
+*004
+//-------------------------------------------------------------------------------
+//  フルパワーボージャック
+//-------------------------------------------------------------------------------
+[se storage = "3012"]
+[coma shape="N0003L" bg = "bg_000_019"]
+
+[lwfobject id = "kaki1" storage="kakimoji:ef_023" in="04" x=-190 y=-100 scale = 1.5]
+[quake target = "kaki1" power = 15 time = 0.4]
+
+[character x=-100 y=-220 storage = "00293/atc_energyball_p_03" scale = 1.4 action = "fadein" time = 0.1]
+[quake target = ".chara" power = 7 time = 0.4]
+
+
+[balloon x=135 y=-105 shape="006_01" scale = 0.7 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 40]
+[quake target =".bln" power = 7 time = 0.4]
+くらえい！！
+//[p]
+
+*005
+//-------------------------------------------------------------------------------
+//  ベジータとトランクス
+//-------------------------------------------------------------------------------
+//[se storage = "03"]
+[coma shape="N0003R" bg = "bg_000_019"]
+
+[lwfobject id = "kaki1" storage="kakimoji:ef_001" in="04" x=-210 y=60 angle = -10 scale = 2.5]
+[quake target = "kaki1" power = 15 time = 0.4]
+
+
+
+[character x = 210 y = 40 storage = "00069/idl_back_e_01_long" scale = 0.5 action = "fadein" time = 0.1]
+[quake target = ".chara" power = 7 time = 0.4]
+
+[character x = 0 y = -90 storage = "00004/SSR_idl_back_e_03" scale = 1.2 action = "fadein" time = 0.1]
+[quake target = ".chara" power = 7 time = 0.4]
+
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+*006
+//-------------------------------------------------------------------------------
+//  ボージャックがベジータとトランクスを攻撃
+//-------------------------------------------------------------------------------
+[se storage = "3008"]
+
+//爆発どごおん
+[coma shape="N0004L" bg = "bg_000_019"]
+//[lwfobject id="syuutyuu1" storage="syucyu:ef_001" mask="inside" loop=1 priority=10 scale=1]
+//[move target = "syuutyuu1" x = 0 y = -30]
+
+[lwfobject id = "kaki2" storage="kakimoji:ef_019" in="04" x=0 y=70 scale = 3]
+[quake target = "kaki2" power = 15 time = 1]
+
+[character x=0 y=-30 storage = "99999/ef_explode_005" scale = 2.4 action = "expand" time = 0.1]
+[quake target = ".chara" power = 10 time = 1]
+
+[wait time = 1.5]
+
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+*007
+//-------------------------------------------------------------------------------
+//  悟飯
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_000_019"]
+
+[character x=160 y=-120 storage = "00306/card_01" scale = 1.0 action = "fadein" time = 0.1]
+
+
+[balloon shape="007_01" x = -140 y = 80 scale = 0.9 action = "expand" time = 0.1]
+[font size = 30]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 7 time = 0.2]
+ベジータさん！！[r]
+トランクスさん！！
+[p]
+
+
+
+[stopbgm]

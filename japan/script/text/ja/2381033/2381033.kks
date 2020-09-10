@@ -1,0 +1,49 @@
+//エリア3ボス前
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+//[bgm storage = "003"]
+
+
+*coma1
+//-------------------------------------------------------------------------------
+//  ラディッツ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_019_001"]
+
+[character x=-200 y=-175 storage = "00014/card_01" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x=140 y=40 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+この町に[r]
+この星で一番強いヤツが[r]
+いるって話だ…[p]
+
+*coma2
+//-------------------------------------------------------------------------------
+//  ナッパ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002L" bg = "bg_019_001"]
+
+[character x=-150 y=-190 storage = "00015/card_01" scale = 1.2 action = "fadein" time = 0.1]
+
+
+[balloon x=165 y=80 shape="002_02" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][font size = 36]
+おもしれえ…！[p]
+
+[balloon shape="002_01" x = 145 y = -175 scale = 0.9 action = "fadein" time = 0.1]
+[font size = 28]
+[wait_anim target=".bln"]
+//[quake target =".bln" power = 3 time = 0.2]
+ちょいと[r]
+遊んでやるか…！！[p]
+
+
+
+//[stopbgm]

@@ -1,0 +1,402 @@
+*start|スタート
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "013"]
+
+*001
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0004R" bg = "bg_000_014"]
+
+
+[character x = 390+55 y = -560 storage = "00010/card_08" scale = 2.5 action = "fadein" time = 0.1]
+
+
+
+[balloon x=-140 y=0 shape="003_01" scale = 1.6 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 14]
+//[quake target =".bln" power = 3 time = 0.2]
+次々と奇抜な技をくりだす[r]
+ゴテンクスだったが[r]
+魔人ブウを消滅させることは[r]
+できなかった…[r]
+　[r]
+敗北を悟ったピッコロは[r]
+魔人ブウを[r]
+外界と隔離するため[r]
+なんと 精神と時の部屋の[r]
+出入り口を破壊するという[r]
+最後の作戦を決行する…
+[p]
+
+
+*002
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0003L" bg = "bg_000_024"]
+
+[character x = -130 y = -270 storage = "00231/kick_p_03" scale = 2.0 action = "fadein" time = 0.1]
+
+[balloon x=130 y=0 shape="003_01" scale = 1.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 13]
+//[quake target =".bln" power = 3 time = 0.2]
+しかし[r]
+これに怒った魔人ブウは[r]
+巨大パワーの怒号で[r]
+異次元を突き破り[r]
+精神と時の部屋から[r]
+脱出してしまう…！[r]
+　[r]
+精神と時の部屋に[r]
+取り残され 異次元世界に[r]
+閉じ込められてしまった[r]
+ゴテンクスとピッコロは…！？
+[p]
+
+
+*003
+//-------------------------------------------------------------------------------
+//  超サイヤ人ゴテンクス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_035"]
+
+[character id = "1" x = 190 y = -100 storage = "00457/card_02" scale = 1.2 action = "fadein" time = 0.1]
+//[character id = "2" x = 230 y = 80 storage = "99999/ase" scale = 0.8 action = "fadein" time = 0.1]
+
+
+
+
+[balloon x = -105 y = 90 shape="001_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+ちぇ…[r]
+しょうがねえな…[r]
+あれ つかうか……！
+[p]
+
+
+[balloon x=-110 y=-110 shape="001_03" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+もうちょっと[r]
+かっこいい場面で[r]
+なろうと思ってたのにな
+[p]
+
+
+*004
+//-------------------------------------------------------------------------------
+//  ピッコロ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_035"]
+
+[character x = 250 y = -250 storage = "00010/card_04" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon x = -130 y = 60 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+な……[r]
+なんだというのだ…！？
+[p]
+
+
+*005
+//-------------------------------------------------------------------------------
+//  超サイヤ人ゴテンクス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_035"]
+
+[character id = "1" x = 190 y = -100 storage = "00457/card_02" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x = -105 y = 50 shape="001_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+ひっひっひ…[r]
+なんだと思う〜！？
+[p]
+
+
+*006
+//-------------------------------------------------------------------------------
+//  超サイヤ人ゴテンクス
+//-------------------------------------------------------------------------------
+[se storage = "3038"]
+[coma shape="N0002R" bg = "bg_000_024"]
+
+[character id = "BG" x = 0 y = 0 storage = "99999/flare" scale = 20 action = "fadein" time = 0.1 mask="inside"]
+
+
+[lwfobject id = "gogo" x = -140 y = 50 storage = "kakimoji:ef_009" scale = 1.6 action = "fadein" time = 0.1]
+[quake target = "gogo" power = 2]
+
+
+
+//[character id = "ki" x=0 y=0 storage = "99999/ef_aura_front" scale = 2.6 action = "expand" time = 0.2]
+//[quake target="ki" power=2 time=300]
+//[paint target="ki" color="#F4FA58"]
+
+[character x = 190 y = -120 storage = "00457/card_13" scale = 0.9 action = "fadein" time = 0.1]
+[quake target = ".chara" power = 1]
+
+// 空のフキダシ（セリフがないコマを送るために使用）
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+
+
+[balloon x = -170 y = -200 shape="007_02" scale = 0.75 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+[quake target =".bln" power = 7 time = 0.2]
+はああああ[r]
+あああ…！！
+[p]
+
+[se storage = "3025"]
+//点滅
+[balloon shape="008_02" x = 0 y = 0 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+[balloon shape="008_02" x = 0 y = 0 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+
+//フェードアウト（フェードアウトするコマ）
+[balloon x=0 y=0 shape="008_02" scale = 50.0 action = "fadein" time = 0.5]
+[wait time = 0.7]
+
+
+*007
+//-------------------------------------------------------------------------------
+//  ゴテンクスが超サイヤ人３に変身する。
+//-------------------------------------------------------------------------------
+[bgm storage = "017"]
+//[se storage = "04"]
+[coma shape="S0001" bg = "bg_000_035"]
+
+[character x =20 y = 0 storage = "00577/card_03" scale = 1.1 action = "fadein" time = 0.1]
+[character id = "ki" x = 0 y = 40 storage = "99999/supersaiyan2" scale = 1.6 angle = -10 action = "fadein" time = 0.1]
+[quake target = "ki" power = 1]
+[flip target ="ki" h=1]
+
+
+
+
+
+//フェードイン（フェードインするコマ）
+[balloon x=0 y=0 shape="008_02" scale = 50]
+[wait time = 1]
+[fadeout target = ".bln" time = 2]
+[wait_anim target=".bln"]
+
+[se storage = "10"]
+[balloon x = 0 y = 440 shape="006_01" scale = 0.7 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 40]
+[quake target =".bln" power = 7 time = 0.2]
+イエーイ！！
+[p]
+
+
+
+
+
+*009
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0003L" bg = "bg_000_024"]
+
+[balloon x=0 y=10 shape="003_01" scale = 1.5 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 15]
+//[quake target =".bln" power = 3 time = 0.2]
+なんと超サイヤ人３に[r]
+変身してしまった[r]
+ゴテンクス！[r]
+　[r]
+その超パワーで[r]
+次元に穴をあけ[r]
+ゴテンクスとピッコロも[r]
+精神と時の部屋から[r]
+元の世界へと[r]
+もどってくるのだった…
+[p]
+
+
+*010
+//-------------------------------------------------------------------------------
+//  超サイヤ人３ゴテンクス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_104"]
+
+[character x = 220 y = -100 storage = "00577/card_03" scale = 0.9 action = "fadein" time = 0.1]
+[character id = "2" x = 180 y = -80 storage = "99999/supersaiyan2" scale = 1.0 angle = 0 action = "fadein" time = 0.1]
+[flip target ="2" h=1]
+ 
+
+[balloon x = -140 y = 60 shape="006_01" scale = 0.75 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+[quake target =".bln" power = 7 time = 0.2]
+オラオラオラ[r]
+魔人ブウ！！
+[p]
+
+
+*011
+//-------------------------------------------------------------------------------
+//  魔人ブウ（悪）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_104"]
+
+[character x = -200 y = -310 storage = "00231/card_002" scale = 1.05 action = "fadein" time = 0.1]
+
+[balloon x=120 y=65 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+あれ？[r]
+おまえ ちょっと[r]
+かわったか？
+[p]
+
+
+*012
+//-------------------------------------------------------------------------------
+//  超サイヤ人３ゴテンクス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_104"]
+
+[character x = 220 y = -100 storage = "00577/card_03" scale = 0.9 action = "fadein" time = 0.1]
+[character id = "2" x = 180 y = -80 storage = "99999/supersaiyan2" scale = 1.0 angle = 0 action = "fadein" time = 0.1]
+[flip target ="2" h=1]
+
+[balloon x = -130 y = 90 shape="001_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+バーカ！[r]
+ちょっとどころの[r]
+さわぎじゃないぜ！
+[p]
+
+
+[balloon x=-130 y=-105 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+すっごいすっごい[r]
+すっご〜い強くなって[r]
+しまったのだ！！
+[p]
+
+
+*013
+//-------------------------------------------------------------------------------
+//  ピッコロ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_104"]
+
+[character x = 250 y = -250 storage = "00010/card_04" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon x = -130 y = 55 shape="004_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+き…きさま[r]
+宮殿にいた連中を[r]
+どうした！？
+[p]
+
+
+*014
+//-------------------------------------------------------------------------------
+//  超サイヤ人３ゴテンクス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_104"]
+
+[character x = 220 y = -100 storage = "00577/card_03" scale = 0.9 action = "fadein" time = 0.1]
+[character id = "2" x = 180 y = -80 storage = "99999/supersaiyan2" scale = 1.0 angle = 0 action = "fadein" time = 0.1]
+[flip target ="2" h=1]
+
+[balloon x = -130 y = 55 shape="004_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+ま…まさか…[r]
+たっ…[r]
+食べちまったのか！？
+[p]
+
+
+*015
+//-------------------------------------------------------------------------------
+//  魔人ブウ（悪）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_104"]
+
+[character x = -200 y = -310 storage = "00231/card_002" scale = 1.05 action = "fadein" time = 0.1]
+
+[balloon x=120 y=50 shape="002_03" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+//[quake target =".bln" power = 3 time = 0.2]
+ヒヒヒ…[r]
+チョコにしてな
+[p]
+
+
+*016
+//-------------------------------------------------------------------------------
+//  超サイヤ人３ゴテンクス
+//-------------------------------------------------------------------------------
+[se storage = "3029"]
+[coma shape="N0002R" bg = "bg_000_104"]
+
+[character id = "aura" x = 0+160 y = -70-180 storage = "99999/ef_aura_front" scale = 2.4 angle = 10 action = "fade:80" time = 0.1]
+[paint target = "aura" color = "#ffff00"]
+[quake target = "aura" power = 1]
+//[fadeout target = "aura" time = 0.4 ease = "in:2"]
+
+[character x= 25+160 y= -90-180 storage = "00577/card_05" scale = 1.0 action = "fadein" time = 0.1]
+
+[character id = "ki" x = 0+160 y = -10-180 storage = "99999/supersaiyan2" scale = 1.6 angle = 0 action = "fadein" time = 0.1]
+[quake target = "ki" power = 2]
+[flip target ="ki" h=1]
+
+
+
+
+
+[balloon x = -160 y = 50 shape="006_02" scale = 0.75 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+[quake target =".bln" power = 7 time = 0.2]
+かんっぜんに[r]
+おこった！！
+[p]
+
+//-------------------------------------------------------------------------------
+[stopbgm]

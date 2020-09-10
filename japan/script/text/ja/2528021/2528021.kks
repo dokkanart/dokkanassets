@@ -1,0 +1,42 @@
+*start|スタート
+//ボス前
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+//[bgm storage = "026"]
+
+*01
+//----------------------------------------------------------
+// 超サイヤ人孫悟空（天使）
+//-------------------------------------------------------------------------------
+//[se storage = "3022"]
+[coma shape="S0001" bg = "bg_000_033"]
+
+[character id = "wa" x = -100 y = 460 storage = "99999/ring" scale = 1.2 angle = 10 action = "fadein" time = 0.1]
+//[quake target ="wa" power = 4 time = 0.3]
+
+[character id = "goku" x = 0 y = 0 storage = "00003/card_07" scale = 1.2 angle = 0 action = "fadein" time = 0.1]
+//[quake target ="goku" power = 4 time = 0.3]
+
+
+
+[balloon x=180 y=360 shape="001_03" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+オラが[r]
+おめえの相手だ！
+[p]
+
+[balloon x=-100 y=-380 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+遠慮なんか[r]
+すんじゃねえぞ？[r]
+おもいっきりこい！
+[p]
+
+
+//-------------------------------------------------------------------------------
+//[stopbgm]

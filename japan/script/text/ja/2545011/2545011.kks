@@ -1,0 +1,43 @@
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+//[bgm storage = "003"]
+
+*001
+//-------------------------------------------------------------------------------
+//  フリーザ（第一形態）
+//-------------------------------------------------------------------------------
+//[se storage = "3029"]
+[coma shape="S0001" bg = "bg_000_071"]
+
+//[lwfobject id = "kaki1" storage="kakimoji:ef_009" in="04" x=-120 y=-170 scale = 2.2]
+//[quake target = "kaki1" power = 2 time = 300]
+
+[character id = "vgt" x = 0 y = -90 storage = "00005/card_05" scale = 1.1 angle = 0 action = "fadein" time = 0.1] 
+
+
+
+[balloon x=-120 y=450 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+まさか このわたしに[r]
+闘いを挑もうとする[r]
+おろか者がいたとは…
+[p]
+
+
+[balloon x=120 y=-440 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 7 time = 0.2]
+まさに[r]
+身のほど知らずも[r]
+はなはだしいと[r]
+いうやつですね…
+[p]
+
+//[stopbgm]
+

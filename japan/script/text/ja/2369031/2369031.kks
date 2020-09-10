@@ -1,0 +1,654 @@
+*start|スタート
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "046"]
+
+*000
+//-------------------------------------------------------------------------------
+// バリヤー
+//-------------------------------------------------------------------------------
+[se storage = "09"]
+[coma shape="S0001" bg = "bg_000_016"]
+
+//ズオ
+[lwfobject id = "kaki1" storage="kakimoji:ef_013" in="04" x=-0 y=-65 scale = 2.7 action = "expand" time = 0.1]
+[quake target = "kaki1" power = 10 time = 0.5]
+
+
+
+[character id = "seru" x = -110 y = 0 storage = "00205/atc_sp01_p_07" scale = 0.9 action = "fadein" time = 0.1]
+
+
+[character id = "bari" x = 0 y = 0 storage = "99999/barrier" scale = 4.4 action = "fade:80" time = 0.1]
+[quake target ="bari" power = 3 time = 300]
+
+[character id = "kemuri_4" x = 350 y = 50 storage = "99999/ef_sp_smoke" scale = 0.8 angle = 70 action = "fade:90" time = 0.1]
+[quake target ="kemuri_4" power = 2 time = 300]
+
+[character id = "kemuri_5" x = 400 y = 150 storage = "99999/ef_sp_smoke" scale = 0.8 angle = 0 action = "fade:90" time = 0.1]
+[quake target ="kemuri_5" power = 2 time = 300]
+
+[character id = "kemuri_3" x = 350 y = -190 storage = "99999/ef_sp_smoke" scale = 1.1 angle = 0 action = "fade:90" time = 0.1]
+[quake target ="kemuri_3" power = 2 time = 300]
+
+[character id = "kemuri_1" x = 330 y = 320 storage = "99999/ef_sp_smoke" scale = 0.9 angle = 30 action = "fade:90" time = 0.1]
+[quake target ="kemuri_1" power = 2 time = 300]
+
+[character id = "kemuri_2" x = 290 y = 80 storage = "99999/ef_sp_smoke" scale = 0.8 angle = 70 action = "fade:90" time = 0.1]
+[quake target ="kemuri_2" power = 2 time = 300]
+
+[wait time = 0.3]
+
+[fadeout target = "kaki1" time = 0.7]
+
+[wait time = 1.0]
+
+[fadeout target = "kemuri_1" time = 0.7]
+[fadeout target = "kemuri_2" time = 0.7]
+[fadeout target = "kemuri_3" time = 0.7]
+[fadeout target = "kemuri_4" time = 0.7]
+[fadeout target = "kemuri_5" time = 0.7]
+
+[wait time = 0.7]
+
+
+[fadeout target = "bari" time = 0.7]
+
+[wait time = 0.7]
+
+[balloon x=0 y=0 shape="002_03" scale = 0 action = "fadein" time = 0.1]
+[p]
+
+*001
+//-------------------------------------------------------------------------------
+//  セル（完全体）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_016"]
+
+//[character x = -190 y = -220 storage = "99999/supersaiyan" scale = 1.0 action = "fadein" time = 0.1]
+[character x = -210 y = -240 storage = "00205/heapup_p_01" scale = 1.15 action = "fadein" time = 0.1]
+//[character x = -210 y = -240 storage = "00205/idl_side_p_01" scale = 1.15 action = "fadein" time = 0.1]
+
+[balloon x=125 y=90 shape="002_03" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+ハアッ ハアッ[r]
+このわたしにバリヤーを[r]
+張らせた きさまの攻撃は[r]
+評価に値する…
+[p]
+
+[balloon x=120 y=-100 shape="002_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+おもいのほか[r]
+ダメージは[r]
+大きかったぞ…
+[p]
+
+*002
+//-------------------------------------------------------------------------------
+//  超サイヤ人孫悟空
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_005_005"]
+
+[character id = "ss" x = 190 y = -200 storage = "99999/supersaiyan" scale = 0.9 action = "fade:60" time = 0.1]
+[quake target ="ss" power = 1 time = 300]
+
+
+[character id = "gok" x=180 y=-180 storage = "00003/SSR_idl_side_p_01" scale = 1.05 action = "fade:100" time = 0.1]
+[flip target ="gok" h=1]
+
+[balloon x = -105 y = 60 shape="001_01" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+//[quake target =".bln" power = 3 time = 0.2]
+はあっ はあっ[r]
+はあっ
+[p]
+
+*003
+//-------------------------------------------------------------------------------
+//  セル（完全体）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_016"]
+
+//[character x = -190 y = -220 storage = "99999/supersaiyan" scale = 1.0 action = "fadein" time = 0.1]
+[character x = -210 y = -240 storage = "00205/idl_side_p_01" scale = 1.15 action = "fadein" time = 0.1]
+
+[balloon x=115 y=100 shape="002_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+そうとうに体力が[r]低下してしまった[r]
+ようだな…
+[p]
+
+[balloon x=125 y=-100 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+仙豆とやらを食うがいい[r]
+孫悟空…[r]
+さらに すばらしい試合に[r]
+なるはずだぞ
+[p]
+
+*004
+//-------------------------------------------------------------------------------
+//  超サイヤ人孫悟空
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_005_005"]
+
+[character id = "ss" x = 190 y = -200 storage = "99999/supersaiyan" scale = 0.9 action = "fade:60" time = 0.1]
+[quake target ="ss" power = 1 time = 300]
+
+
+[character id = "gok" x=180 y=-180 storage = "00003/SSR_idl_side_p_01" scale = 1.05 action = "fade:100" time = 0.1]
+[flip target ="gok" h=1]
+
+
+[balloon id = "01" x = -105 y = 70 shape="001_03" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target = "01"]
+[font size = 54]
+………
+[p]
+
+*005
+//-------------------------------------------------------------------------------
+//  トランクス（青年期）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_005_005"]
+
+//[character x = 190 y = -220 storage = "00411/card_04" scale = 1.2 action = "fadein" time = 0.1]
+[character x = 260 y = -120 storage = "00411/idl_side_p_03" scale = 1.1 action = "fadein" time = 0.1]
+[flip target =".chara" h=1]
+
+
+
+[balloon x = -90 y = 90 shape="001_03" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+セルの[r]
+言うとおりだ！！
+[p]
+
+[balloon x=-120 y=-100 shape="001_02" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+悟空さんに仙豆をあげて[r]
+全員でかかれば[r]今のセルなら[r]
+きっと倒せる！！
+[p]
+
+*006
+//-------------------------------------------------------------------------------
+//  ベジータ
+//-------------------------------------------------------------------------------
+[se storage = "03"]
+[coma shape="N0004R" bg = "bg_000_016"]
+
+
+
+[balloon x = 0 y = 10 shape="006_01" scale = 0.75 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+[quake target =".bln" power = 7 time = 0.2]
+だまってろ[r]
+トランクス！！
+[p]
+
+*007
+//-------------------------------------------------------------------------------
+//  ベジータ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_005_005"]
+
+[character x = 190 y = -80 storage = "00004/idl_side_e_02" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon x = -110 y = 100 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+てめえには[r]
+サイヤ人の誇りが[r]
+ないらしいな
+[p]
+
+[balloon x=-120 y=-100 shape="002_03" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+そんな勝ちかたを[r]
+するぐらいなら[r]
+あいつは死を選んだほうが[r]
+マシだと思うだろうぜ…
+[p]
+
+*008
+//-------------------------------------------------------------------------------
+//  トランクス（青年期）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_005_005"]
+
+//[character x = 190 y = -220 storage = "00411/card_04" scale = 1.2 action = "fadein" time = 0.1]
+[character x = 260 y = -120 storage = "00411/idl_side_p_03" scale = 1.1 action = "fadein" time = 0.1]
+[flip target =".chara" h=1]
+
+
+[balloon id = "01" x = -85 y = 80 shape="004_01" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target = "01"]
+[font size = 54]
+//[quake target =".bln" power = 3 time = 0.2]
+………
+[p]
+
+[balloon x=-95 y=-110 shape="004_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+し…しかし[r]
+このままでは…
+[p]
+
+*009
+//-------------------------------------------------------------------------------
+//  ベジータ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_005_005"]
+
+[character x = 190 y = -80 storage = "00004/idl_side_e_02" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon x = -105 y = 65 shape="002_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+やられるだろうな[r]
+確実に…
+[p]
+
+*010
+//-------------------------------------------------------------------------------
+//  トランクス（青年期）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_005_005"]
+
+//[character x = 190 y = -220 storage = "00411/card_04" scale = 1.2 action = "fadein" time = 0.1]
+
+[character x = 260 y = -120 storage = "00411/idl_side_p_03" scale = 1.1 action = "fadein" time = 0.1]
+[flip target =".chara" h=1]
+
+[balloon id = "01" x = -85 y = 70 shape="004_01" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target = "01"]
+[font size = 54]
+//[quake target =".bln" power = 3 time = 0.2]
+………
+[p]
+
+*011
+//-------------------------------------------------------------------------------
+//  ベジータ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_005_005"]
+
+[character x = 190 y = -80 storage = "00004/idl_side_e_02" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon x = -115 y = 100 shape="004_02" scale = 1.1 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 20]
+//[quake target =".bln" power = 3 time = 0.2]
+ア…アタマにくるが認めてやる…[r]
+…オレは あれだけ特訓したが[r]
+カカロットを超えられなかった…[r]
+あ…あのヤロウは天才だ……
+[p]
+
+[balloon x=-120 y=-110 shape="004_03" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+…だが セルは[r]
+そんなカカロットを[r]
+1歩も2歩も さらに[r]上回ってやがるんだ……
+[p]
+
+*012
+//-------------------------------------------------------------------------------
+//  トランクス（青年期）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_005_005"]
+
+//[character x = 190 y = -220 storage = "00411/card_04" scale = 1.2 action = "fadein" time = 0.1]
+[character x = 260 y = -120 storage = "00411/idl_side_p_03" scale = 1.1 action = "fadein" time = 0.1]
+[flip target =".chara" h=1]
+
+
+[balloon x = -100 y = 75 shape="004_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+だったらどうしろと[r]
+いうんですか…！？
+[p]
+
+[balloon x=-100 y=-110 shape="004_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+だまって[r]
+見ていろと…！？
+[p]
+
+*013
+//-------------------------------------------------------------------------------
+//  ベジータ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_005_005"]
+
+[character x = 190 y = -80 storage = "00004/idl_side_e_02" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon x = -105 y = 70 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+てめえも言ってただろ！[r]
+あいつには なにかきっと[r]
+作戦があるはずだと
+[p]
+
+[balloon x=-120 y=-110 shape="002_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+そいつに[r]
+期待するんだな……
+[p]
+
+*014
+//-------------------------------------------------------------------------------
+//  トランクス（青年期）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_005_005"]
+
+//[character x = 190 y = -220 storage = "00411/card_04" scale = 1.2 action = "fadein" time = 0.1]
+[character x = 260 y = -120 storage = "00411/idl_side_p_03" scale = 1.1 action = "fadein" time = 0.1]
+[flip target =".chara" h=1]
+
+
+[balloon id = "01" x = -85 y = 70 shape="004_01" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target = "01"]
+[font size = 54]
+//[quake target =".bln" power = 3 time = 0.2]
+………
+[p]
+
+*015
+//-------------------------------------------------------------------------------
+//  セル（完全体）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_016"]
+
+//[character x = -190 y = -220 storage = "99999/supersaiyan" scale = 1.0 action = "fadein" time = 0.1]
+[character x = -210 y = -240 storage = "00205/idl_side_p_01" scale = 1.15 action = "fadein" time = 0.1]
+
+[balloon x=100 y=110 shape="002_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+ふふん…どうした？[r]
+プライドがジャマをして[r]
+仙豆が食えんのか？
+[p]
+
+[balloon x=120 y=-90 shape="002_03" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+きさまがフルパワーになれば[r]
+勝てる可能性がほんのわずか[r]
+増すことになるんだぞ
+[p]
+
+*016
+//-------------------------------------------------------------------------------
+//  超サイヤ人孫悟空
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_005_005"]
+
+[character id = "ss" x = 190 y = -200 storage = "99999/supersaiyan" scale = 0.9 action = "fade:60" time = 0.1]
+[quake target ="ss" power = 1 time = 300]
+
+
+[character id = "gok" x=180 y=-180 storage = "00003/SSR_idl_side_p_01" scale = 1.05 action = "fade:100" time = 0.1]
+[flip target ="gok" h=1]
+
+
+[balloon id = "01" x = -105 y = 70 shape="001_03" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target = "01"]
+[font size = 54]
+………
+[p]
+
+[se storage = "44"]
+[fadeout target="ss" time=0.4]
+[wait time = 1.0]
+
+
+[balloon x=-120 y=-120 shape="001_02" scale = 0.65 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 44]
+[quake target =".bln" power = 3 time = 0.2]
+まいった！
+[p]
+
+*017
+//-------------------------------------------------------------------------------
+//  セル（完全体）
+//-------------------------------------------------------------------------------
+[se storage = "03"]
+[coma shape="N0001L" bg = "bg_000_016"]
+
+//[character x = -210 y = -240 storage = "00205/idl_side_p_01" scale = 1.15 action = "fadein" time = 0.1]
+[character x = -210 y = -240 storage = "00205/heapup_p_01" scale = 1.15 action = "fadein" time = 0.1]
+
+
+[lwfobject id = "kaki1" storage="kakimoji:ef_002" x=20 y=80 scale = 2.3 angle = 14 action = "fadein" time = 0.1]
+[quake target = "kaki1" power = 9 time = 0.4]
+
+//空のフキダシ
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+*018
+//-------------------------------------------------------------------------------
+//  超サイヤ人孫悟空
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_005_005"]
+
+//[character x=210 y=-110 storage = "00003/SR_idl_side_e_02" scale = 1.1 action = "fadein" time = 0.1]
+
+[character id = "gok" x=180 y=-180 storage = "00003/SSR_idl_side_p_01" scale = 1.05 action = "fade:100" time = 0.1]
+[flip target ="gok" h=1]
+
+[balloon x = -80 y = 90 shape="001_01" scale = 0.65 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 44]
+//[quake target =".bln" power = 3 time = 0.2]
+降参だ！
+[p]
+
+[balloon x=-140 y=-100 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+おめえの強さは[r]
+よーくわかった！[r]
+オラはもうやめとく
+[p]
+
+*019
+//-------------------------------------------------------------------------------
+//  セル（完全体）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_016"]
+
+//[character x = -210 y = -240 storage = "00205/idl_side_p_01" scale = 1.15 action = "fadein" time = 0.1]
+[character x = -210 y = -240 storage = "00205/heapup_p_01" scale = 1.15 action = "fadein" time = 0.1]
+
+[balloon x=100 y=95 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+…孫悟空…[r]
+そのコトバの意味する[r]
+ことがわかるか？…
+[p]
+
+[balloon x=120 y=-100 shape="002_03" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+セルゲームで闘う者が[r]
+いなくなれば この地球の[r]
+人間どもはひとり残らず[r]
+死ぬことになるんだぞ
+[p]
+
+*020
+//-------------------------------------------------------------------------------
+//  超サイヤ人孫悟空
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_005_005"]
+
+//[character x=210 y=-110 storage = "00003/SR_idl_side_e_02" scale = 1.1 action = "fadein" time = 0.1]
+[character id = "gok" x=180 y=-180 storage = "00003/SSR_idl_side_p_01" scale = 1.05 action = "fade:100" time = 0.1]
+[flip target ="gok" h=1]
+
+
+[balloon x = -80 y = 90 shape="001_03" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+//[quake target =".bln" power = 3 time = 0.2]
+かんちがい[r]
+すんな
+[p]
+
+[balloon x=-140 y=-100 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+闘うヤツが[r]
+いなくなったわけじゃ[r]
+ねえだろ
+[p]
+
+*021
+//-------------------------------------------------------------------------------
+//  セル（完全体）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_016"]
+
+//[character x = -210 y = -240 storage = "00205/idl_side_p_01" scale = 1.15 action = "fadein" time = 0.1]
+[character x = -210 y = -240 storage = "00205/heapup_p_01" scale = 1.15 action = "fadein" time = 0.1]
+
+[balloon x=90 y=95 shape="002_02" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 40]
+//[quake target =".bln" power = 3 time = 0.2]
+同じことだ
+[p]
+
+[balloon x=120 y=-100 shape="002_03" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+ベジータやトランクスでは[r]
+力を上げたとはいえ[r]
+きさまより劣っているはず…
+[p]
+
+*022
+//-------------------------------------------------------------------------------
+//  超サイヤ人孫悟空
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_005_005"]
+
+//[character x=210 y=-110 storage = "00003/SR_idl_side_e_02" scale = 1.1 action = "fadein" time = 0.1]
+[character id = "gok" x=180 y=-180 storage = "00003/SSR_idl_side_p_01" scale = 1.05 action = "fade:100" time = 0.1]
+[flip target ="gok" h=1]
+
+
+[balloon x = -120 y = 50 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+じゃあ[r]
+次に闘うヤツを[r]
+オラが[r]指名してもいいか？
+[p]
+
+*023
+//-------------------------------------------------------------------------------
+//  セル（完全体）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_016"]
+
+//[character x = -210 y = -240 storage = "00205/idl_side_p_01" scale = 1.15 action = "fadein" time = 0.1]
+[character x = -210 y = -240 storage = "00205/heapup_p_01" scale = 1.15 action = "fadein" time = 0.1]
+
+[balloon x=120 y=45 shape="004_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+きさま[r]
+本当に降参する気[r]か……！
+[p]
+
+*024
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0003R" bg = "bg_000_024"]
+
+[balloon x=0 y=-20 shape="003_01" scale = 1.5 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 15]
+//[quake target =".bln" power = 3 time = 0.2]
+悟空が負けた…！？[r]
+　[r]
+はたして[r]
+地球の運命は…！[r]
+そして[r]
+悟空が指名する人物とは[r]
+いったい誰なのか……
+[p]
+
+//-------------------------------------------------------------------------------
+[stopbgm]

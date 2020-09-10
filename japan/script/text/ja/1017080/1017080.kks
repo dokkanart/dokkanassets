@@ -1,0 +1,117 @@
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "008"]
+
+
+*001
+//-------------------------------------------------------------------------------
+//  フリーザ（第二形態）
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0001L" bg = "bg_004_001"]
+
+[character x=-210 y=-100 storage = "00071/heapup_p_01" scale = 1.1 action = "fadein" time = 0.1]
+
+[balloon x=130 y=120 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[font size = 28]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 3 time = 0.2]
+では[r]
+さらに絶望感を[r]
+あたえてやろうか…！
+[p]
+
+[lwfobject id = "kaki2" storage="kakimoji:ef_009" in="02" x=-200 y=-80 scale = 1.5 action = "fadein" time = 0.7]
+[quake target ="kaki2" power = 1 time = 300]
+
+[wait time = 1.5]
+
+//点滅
+[se storage = "3025"]
+//点滅
+[balloon shape="008_02" x = 140 y = -30 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+//[balloon shape="008_02" x = 140 y = -30 scale = 50 action = "fadein" time = 0.1]
+//[wait time = 0.3]
+//[clear target = ".bln"]
+
+//フェードアウト（フェードアウトするコマ）
+[balloon x=130 y=40 shape="008_02" scale = 50.0 action = "fadein" time = 0.2]
+[wait time = 0.5] 
+
+
+*002
+//-------------------------------------------------------------------------------
+//  フリーザ（第三形態）
+//-------------------------------------------------------------------------------
+[coma shape="S0001" bg = "bg_004_001"]
+
+[character x=-150 y=0 storage = "00072/heapup_p_01" scale = 1.6 action = "fadein" time = 0.1]
+
+//[se storage = "3008"]
+
+//フェードイン（フェードインするコマ）
+[balloon x=130 y=40 shape="008_02" scale = 50]
+[wait time = 0.5]
+[fadeout target = ".bln" time = 1.0]
+[wait_anim target=".bln"]
+
+[balloon x=130 y=300 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+さあて…[r]
+はじめますか……！[p]
+
+
+
+*003
+//-------------------------------------------------------------------------------
+//  クリリン
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_004_001"]
+
+
+[character x = 180 y = -100 storage = "00009/idl_side_e_02" scale = 1.7 action = "fadein" time = 0.1]
+
+[balloon x=-80 y=120 shape="004_02" scale = 0.8 action = "fadein" time = 0.1]
+[font size = 32]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 3 time = 0.2]
+バ…[r]
+バケモノめ……！[p]
+
+
+*004
+//-------------------------------------------------------------------------------
+//  トランクス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_004_001"]
+
+[character x=170 y=-325 storage = "90000/wait_right_anger_strong" scale = 1.4 action = "fadein" time = 0.1]
+ 
+
+[balloon x=-120 y=110 shape="001_01" scale = 0.9 action = "fadein" time = 0.1]
+[font size = 28]
+[wait_anim target=".bln"]
+//[quake target =".bln" power = 3 time = 0.2]
+これまで与えた[r]
+ダメージも[r]
+なくなっている…！[p]
+
+[balloon x=-120 y=-160 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[font size = 28]
+[wait_anim target=".bln"]
+//[quake target =".bln" power = 3 time = 0.2]
+…ここからが[r]
+本当の闘いと[r]
+いうわけか……！
+[p]
+
+[stopbgm]

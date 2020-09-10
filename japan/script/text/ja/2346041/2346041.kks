@@ -1,0 +1,210 @@
+*start|スタート
+//ステージ４ゴール
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "013"]
+
+*01
+//-------------------------------------------------------------------------------
+//  孫悟空
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0001R" bg = "bg_050_001"]
+
+[character x=250 y=-140 storage = "00300/idl_side_e_01" scale = 1.1 action = "fadein" time = 0.1]
+
+[balloon x=-90 y=100 shape="001_03" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+//[quake target =".bln" power = 7 time = 0.2]
+わりいな
+[p]
+
+[balloon x=-100 y=-90 shape="001_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 7 time = 0.2]
+スキだらけ[r]
+だったもんだから[r]
+つい…
+[p]
+
+
+*02
+//-------------------------------------------------------------------------------
+//  リクーム
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_050_001"]
+
+
+[character x=-210 y=-120 storage = "00031/rcm_idl_front_p_01" scale = 1.1 action = "fadein" time = 0.1]
+[quake target =".chara" power = 5 time = 0.4]
+
+[balloon x=90 y=70 shape="004_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+こっ…こっ……[r]
+この…ヤ…ヤロ……
+//[p]
+
+[wait_anim target=".bln"]
+
+
+//セリフ後、沈んでいく。
+[move target =".chara" y=-430 time = 1.5 ease="In:2.5"]
+
+[wait time = 1.4]
+
+[se storage = "3023"]
+[quake target =".coma" power = 5 time = 0.5]
+
+[wait_anim target=".coma"]
+
+// 空のフキダシ（セリフがないコマを送るために使用）
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+
+*03
+//-------------------------------------------------------------------------------
+//  孫悟飯
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_050_001"]
+
+//[character x = 200 y = -60 storage = "00007/headup_e_01_okappa" scale = 1.2 action = "fadein" time = 0.1]
+[character x = 220 y = -80 storage = "00007/idl_side_e_03" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x=-100 y=60 shape="004_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 7 time = 0.2]
+…え……？[r]
+お…おとうさん…[r]
+倒したの……？
+[p]
+
+
+*04
+//-------------------------------------------------------------------------------
+//  クリリン
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_050_001"]
+
+[character x = 180 y = -100 storage = "00009/heapup_e_03" scale = 1.0 action = "fadein" time = 0.1]
+
+
+[balloon x=-80 y=60 shape="001_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 7 time = 0.2]
+ま…まさか……[r]
+う…うそだろ…？
+[p]
+
+*05
+//-------------------------------------------------------------------------------
+//  ジース バータ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_050_001"]
+
+[character x=-150 y=-100 storage = "00033/bata_idl_front_p_01" scale = 1.1 action = "fadein" time = 0.1]
+
+[character x=-230 y=-160 storage = "00034/heapup_p_01" scale = 1.5 action = "fadein" time = 0.1]
+
+[balloon x=100 y=120 shape="004_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 7 time = 0.2]
+ど…[r]
+どういうことだ…[r]
+リ…リクームが……
+[p]
+
+[balloon x=120 y=-100 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 7 time = 0.2]
+な…[r]
+なんでもない攻撃[r]
+だったはず……
+[p]
+
+*06
+//-------------------------------------------------------------------------------
+//  ベジータ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_050_001"]
+
+[character x = 180 y = -110 storage = "00061/idl_side_e_03" scale = 1.1 angle = 0 action = "fadein" time = 0.1]
+
+[balloon shape="004_02" x = -120 y = 90 scale = 1.0 action = "fadein" time = 0.1]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+[wait_anim target=".bln"]
+サ…[r]サイヤ人の戦闘レベルを[r]
+あきらかに[r]こ…超えている…
+[p]
+
+
+[balloon shape="002_01" x = -120 y = -100 scale = 0.9 action = "fadein" time = 0.1]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+[wait_anim target=".bln"]
+で…伝説は[r]
+本当だったのか…！？
+[p]
+
+*07
+//-------------------------------------------------------------------------------
+//  ベジータ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0004R" bg = "bg_000_014"]
+
+[character x = 280 y = -430 storage = "00061/idl_side_e_03" scale = 3.0 angle = 0 action = "fadein" time = 0.1]
+
+
+[balloon shape="004_02" x = -140 y = 20 scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+やつは…[r]
+カカロットは……[r]
+超サイヤ人なのか…！？
+[p]
+
+
+*08
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002L" bg = "bg_000_024"]
+
+
+
+[balloon x=0 y=-20 shape="003_02" scale = 1.6 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 14]
+//[quake target =".bln" power = 7 time = 0.2]
+ベジータすらも[r]
+畏怖する伝説の戦士[r]
+超サイヤ人……[r]
+　[r]
+超サイヤ人とは[r]
+いったい何者なのか！？[r]
+悟空こそが[r]
+伝説の超サイヤ人なのか[r]
+…！？
+[p]
+
+//-------------------------------------------------------------------------------
+[stopbgm]

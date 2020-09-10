@@ -1,0 +1,165 @@
+*start|スタート
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "002"]
+
+*001
+//-------------------------------------------------------------------------------
+// 
+//-------------------------------------------------------------------------------
+[se storage = "3028"]
+[se storage = "17"]
+//[se storage = "3006"]
+[coma shape="S0001" bg = "bg_000_024"]
+
+[lwfobject id = "kaki1" storage="kakimoji:ef_011" x=180 y=-120 scale = 2.0 angle = 25 action = "fadein" time = 0.1]
+[quake target = "kaki1" power = 25 time = 0.4]
+
+
+[character x = 0 y = 70 storage = "00069/card_07" scale = 1.1 action = "fadein" time = 0.1]
+
+//点滅
+[balloon shape="008_02" x = 0 y = 0 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+//[balloon shape="008_02" x = 0 y = 0 scale = 50 action = "fadein" time = 0.1]
+//[wait time = 0.3]
+//[clear target = ".bln"]
+
+[balloon x = -105 y = 50 shape="004_02" scale = 0 action = "fadein" time = 0.1]
+[p]
+
+*001-2
+//-------------------------------------------------------------------------------
+//   ナレーション
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002L" bg = "bg_000_014"]
+
+
+[balloon x=0 y=-10 shape="003_01" scale = 1.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 13]
+//[quake target =".bln" power = 3 time = 0.2]
+突然 [r]
+フリーザたちの前に現れた[r]
+謎の少年は[r]
+なんと超サイヤ人に変身し[r]
+パワーアップしたフリーザと[r]
+コルド大王を[r]
+いともカンタンに[r]
+倒してしまうのだった…[r]
+　[r]
+いったい[r]
+この少年は何者なのか…！？
+[p]
+
+*002
+//-------------------------------------------------------------------------------
+//  ベジータ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_004_001"]
+
+[character x = 200 y = -110 storage = "00733/idl_side_e_01" scale = 1.1 angle = 0 action = "fadein" time = 0.1]
+//[character x = 210 y = -200 storage = "90000/wait_right_shout" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x = -105 y = 50 shape="004_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+ス…[r]
+超サイヤ人…！？[r]
+バカな……！
+[p]
+
+*003
+//-------------------------------------------------------------------------------
+//  謎の少年（トランクス）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_004_001"]
+
+[character x = -210 y = -230 storage = "90000/wait_left_shout" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x=90 y=80 shape="001_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+これから孫悟空さんを[r]
+出むかえに行きます！
+[p]
+
+[balloon x=80 y=-110 shape="001_03" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+//[quake target =".bln" power = 3 time = 0.2]
+いっしょに[r]
+行きませんか？
+[p]
+
+*004
+//-------------------------------------------------------------------------------
+//  ピッコロ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_004_001"]
+
+[character x = 180 y = -90 storage = "00010/idl_side_e_02" scale = 1.5 action = "fadein" time = 0.1]
+
+[balloon x = -105 y = 70 shape="002_01" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 40]
+[quake target =".bln" power = 3 time = 0.2]
+なに！？
+[p]
+
+*005
+//-------------------------------------------------------------------------------
+//  孫悟飯（幼年期）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_004_001"]
+
+[character x = 200 y = -85 storage = "00075/idl_side_e_02" scale = 1.15 action = "fadein" time = 0.1]
+
+[balloon x = -90 y = 60 shape="004_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+な…なんで[r]
+おとうさんの[r]
+ことを…
+[p]
+
+*006
+//-------------------------------------------------------------------------------
+//  ベジータ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_004_001"]
+
+[character x = 200 y = -110 storage = "00733/idl_side_e_01" scale = 1.2 angle = 0 action = "fadein" time = 0.1]
+//[character x = 305 y = -110 storage = "00733/energyball_p_01" scale = 1.5 angle = 0 action = "fadein" time = 0.1]
+
+[balloon x = -110 y = 65 shape="004_02" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+//[quake target =".bln" power = 3 time = 0.2]
+な…[r]
+何者だヤツは…
+[p]
+
+[balloon x = -120 y = -210 shape="004_03" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+超サイヤ人だと…？[r]
+ふざけるな…[r]
+サイヤ人はオレたち以外[r]
+もう いるわけないんだ…
+[p]
+
+//-------------------------------------------------------------------------------
+[stopbgm]

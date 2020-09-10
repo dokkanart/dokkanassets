@@ -1,0 +1,236 @@
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "012"]
+
+
+*01
+//-------------------------------------------------------------------------------
+//  ブルマ
+//-------------------------------------------------------------------------------
+[coma shape="S0001" bg = "bg_027_001"]
+
+[wait time = 0.3]
+
+[character x = -150 y = 20 storage = "90003/stand" scale = 1 action = "fadein" time = 0.7]
+
+[wait_anim target=".chara"]
+
+[balloon shape="001_02" x = 140 y = 240 scale = 0.7 action = "fadein" time = 0.1]
+[font size = 40]
+[wait_anim target=".bln"]
+え……と[p]
+
+[se storage = "35"]
+[wait time = 0.5]
+[se storage = "35"]
+
+[balloon shape="001_03" x = 145 y = -140 scale = 0.9 action = "fadein" time = 0.1]
+[font size = 28]
+[wait_anim target=".bln"]
+ここが今いる[r]ところだから…[r]南西に５０か…
+[p]
+
+
+*02
+//-------------------------------------------------------------------------------
+//  トランクス
+//-------------------------------------------------------------------------------
+//[se storage = "3039"]
+[se storage = "48"]
+
+[coma shape="N0001R" bg = "bg_027_001"]
+
+[character x=210 y=-200 storage = "90000/wait_right_surprise" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon shape="004_02" x = -100 y = 70 scale = 0.8 action = "fadein" time = 0.1]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+[wait_anim target=".bln"]…か…母さん！？[p]
+
+
+*03
+//-------------------------------------------------------------------------------
+//  ブルマ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_027_001"]
+
+[character x = -180 y = -180 storage = "90003/stand" scale = 0.8 action = "fadein" time = 0.1]
+
+[balloon shape="001_02" x = 120 y = 70 scale = 0.8 action = "fadein" time = 0.1]
+[font size = 32]
+[wait_anim target=".bln"]
+ん？ なんなの？[r]
+あんたたち[p]
+
+
+*04
+//-------------------------------------------------------------------------------
+//  トランクス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_027_001"]
+
+[character x=210 y=-200 storage = "90000/think_right_think" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon shape="001_02" x = -100 y = 110 scale = 0.7 action = "fadein" time = 0.1]
+[font size = 40]
+[wait_anim target=".bln"]
+（…そうか…）[p]
+
+[balloon shape="001_02" x = -90 y = -90 scale = 0.9 action = "fadein" time = 0.1]
+[font size = 28]
+[wait_anim target=".bln"]
+（この次元の母さんは[r]オレのことをまだ[r]知らないんだ……）[p]
+
+
+
+*05
+//-------------------------------------------------------------------------------
+//  ブルマ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_027_001"]
+
+[character x = -180 y = -180 storage = "90003/stand" scale = 0.8 action = "fadein" time = 0.1]
+
+[balloon shape="001_02" x = 120 y = 90 scale = 1.0 action = "fadein" time = 0.1]
+[font size = 24]
+[wait_anim target=".bln"]
+あれ？…ねえ…それ[r]カプセルコーポレーション[r]のマークじゃない！？[p]
+
+[balloon shape="001_03" x = 120 y = -110 scale = 0.75 action = "fadein" time = 0.1]
+[font size = 36]
+[wait_anim target=".bln"]
+うちの社員？[p]
+
+
+
+*06
+//-------------------------------------------------------------------------------
+//  トランクス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_027_001"]
+
+[character x=210 y=-200 storage = "90000/wait_right_normal" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon shape="001_02" x = -100 y =100 scale = 0.8 action = "fadein" time = 0.1]
+[font size = 32]
+[wait_anim target=".bln"]いや…まあその…[r]それよりも[r]ブルマさん…[p]
+
+[balloon shape="001_03" x = -90 y = -100 scale = 1.0 action = "fadein" time = 0.1]
+[font size = 24]
+[wait_anim target=".bln"]その手に[r]持っているものは[r]ドラゴンレーダーでは？[p]
+
+*07
+//-------------------------------------------------------------------------------
+//  ブルマ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_027_001"]
+
+[character x = -180 y = -180 storage = "90003/stand" scale = 0.8 action = "fadein" time = 0.1]
+
+[balloon shape="001_02" x = 100 y = 100 scale = 0.8 action = "fadein" time = 0.1]
+[font size = 32]
+[wait_anim target=".bln"]あんた[r]よく知ってるわね[r]…そうよ！[p]
+
+//[se storage = "46"]
+
+
+
+[balloon shape="001_02" x = 100 y = -90 scale = 0.8 action = "fadein" time = 0.1]
+[font size = 32]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 3 time = 0.2]
+ドラゴンボールで[r]ステキな恋人を[r]お願いするの！[p]
+
+//ドラゴンボールを[r]全部集めて[r]ステキな恋人を[r]お願いするの！[p]
+
+//[balloon shape="001_03" x = 80 y = -170 scale = 0.7 action = "fadein" time = 0.3]
+//[font size = 32]
+//[wait_anim target=".bln"]食べきれないほどの[r]イチゴっていうのも[r]すてがたいけど…[p]
+
+*08
+//-------------------------------------------------------------------------------
+//  トランクス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_027_001"]
+
+[character x=210 y=-200 storage = "90000/wait_right_surprise" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon shape="004_01" x = -80 y = 100 scale = 0.7 action = "fadein" time = 0.1]
+[font size = 40]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 3 time = 0.2]
+こ…[r]恋人……！？[p]
+
+[balloon shape="004_02" x = -80 y = -90 scale = 0.9 action = "fadein" time = 0.1]
+[font size = 28]
+[wait_anim target=".bln"]ヤ…ヤムチャさんは[r]いいんですか…！？[p]
+
+*09
+//-------------------------------------------------------------------------------
+//  ブルマ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_027_001"]
+
+[character x = -180 y = -180 storage = "90003/stand" scale = 0.8 action = "fadein" time = 0.1]
+
+[balloon shape="001_02" x = 110 y = 100 scale = 0.9 action = "fadein" time = 0.1]
+[font size = 28]
+[wait_anim target=".bln"]
+なによ！？ あんたたち[r]
+ヤムチャの知り合い！？[p]
+
+[balloon shape="001_03" x = 120 y = -100 scale = 0.9 action = "fadein" time = 0.1]
+[font size = 28]
+[wait_anim target=".bln"][quake target =".bln" power = 3 time = 0.2]
+アッタマきたから[r]別れてやったわよ！[r]あんなヤツ！！[p]
+
+
+*10
+//-------------------------------------------------------------------------------
+//  トランクス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_027_001"]
+
+[character x = 210 y = -200 storage = "90000/wait_right_surprise" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon shape="001_02" x = -100 y = 60 scale = 0.9 action = "fadein" time = 0.1]
+[font size = 28]
+[wait_anim target=".bln"]（…この頃の母さんも[r]性格はキツイな…）[p]
+
+
+*11
+//-------------------------------------------------------------------------------
+//  ブルマ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002L" bg = "bg_027_001"]
+
+[character x = -170 y = -290 storage = "90003/stand" scale = 1.1 action = "fadein" time = 0.1]
+
+[balloon shape="001_02" x = 120 y = 70 scale = 1 action = "fadein" time = 0.1]
+[font size = 24]
+[wait_anim target=".bln"]でも…ヤムチャの[r]知り合いだってことは[r]悪いヤツではなさそうね[p]
+
+//[se storage = "46"]
+
+[balloon shape="001_03" x = 120 y = -220 scale = 1 action = "fadein" time = 0.1]
+[font size = 24]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 3 time = 0.2]
+//わたしのボディガードに[r]ピッタシだわ！[r]
+あんたたちも[r]ドラゴンボール探しを[r]手伝ってよ！[p]
+
+
+[stopbgm]
+

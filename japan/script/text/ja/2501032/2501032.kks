@@ -1,0 +1,84 @@
+//"エリア１スタート"
+
+*start|スタート
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+
+//[bgm storage = "010"]
+
+*001
+//-------------------------------------------------------------------------------
+//  ブロリー
+//-------------------------------------------------------------------------------
+[se storage = "3038"]
+
+
+[coma shape="N0004L" bg = "bg_000_014"]
+
+[lwfobject id = "kaki2" storage="kakimoji:ef_009" in="02" x=-210 y=70 scale = 1.8] 
+[quake target ="kaki2" power = 1 time = 300]
+
+[character x = 180 y = -320 storage = "00256/card_03" scale = 3.4 action = "fadein" time = 1]
+
+[character id = "kemuri4" x = 240 y = 30 storage = "99999/ef_sp_smoke" scale = 1.4 angle=80 action = "fadein" time = 0.1]
+[character id = "kemuri3" x = -140 y = -60 storage = "99999/ef_sp_smoke" scale = 1.4 angle=50 action = "fadein" time = 0.1]
+[character id = "kemuri1" x = 270 y = -170 storage = "99999/ef_sp_smoke" scale = 1.7 angle=-30 action = "fadein" time = 0.1]
+[character id = "kemuri2" x = -250 y = -190 storage = "99999/ef_sp_smoke" scale = 1.5 angle=-90 action = "fadein" time = 0.1]
+
+[quake target ="kemuri1" power = 3 time = 300]
+[quake target ="kemuri2" power = 3 time = 300]
+[quake target ="kemuri3" power = 3 time = 300]
+[quake target ="kemuri4" power = 3 time = 300]
+
+//[character id = "tama" x = 0 y = -90 storage = "99999/majin_tama" scale = 1.2 action = "fadein" time = 0.1]
+
+//[character id = "hikari" x = 0 y = -20 storage = "99999/charge_ball" scale = 3 action = "fadein" time = 1.2]
+
+//[wait time = 0.8]
+
+//[fadeout target = "hikari" time = 1.0]
+
+//[wait time = 0.5]
+
+//[character id = "hikari" x = 0 y = -20 storage = "99999/charge_ball" scale = 3 action = "fadein" time = 1.2]
+//[wait time = 0.8]
+//[fadeout target = "hikari" time = 1.5]
+
+
+[wait time = 1.5]
+
+
+
+[fadeout target = "kemuri4" time = 2.5]
+[fadeout target = "kemuri3" time = 2.2]
+[fadeout target = "kemuri1" time = 1.3]
+[fadeout target = "kemuri2" time = 1.0]
+
+[wait time = 2.5]
+
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+
+
+
+*002
+//-------------------------------------------------------------------------------
+//  ブロリー
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002L" bg = "bg_008_001"]
+
+[character x = 50 y = -100 storage = "00256/card_03" scale = 1.4 action = "fadein" time = 0.1]
+
+[balloon x=-160 y=-200 shape="002_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+…なんなんだ？[r]
+今のは…！[p]
+
+
+//-------------------------------------------------------------------------------
+//[stopbgm]

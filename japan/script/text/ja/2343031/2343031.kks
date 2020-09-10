@@ -1,0 +1,357 @@
+*start|スタート
+//ステージ3 ゴール
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "008"]
+
+*01
+//-------------------------------------------------------------------------------
+//  メダマッチャ
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_066"]
+
+[character x = -220 y = -100 storage = "00790/idl_side_p_01" scale = 1.4 action = "fadein" time = 0.1]
+
+[balloon x=70 y=90 shape="002_01" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+//[quake target =".bln" power = 3 time = 0.2]
+さすがに[r]
+しぶといな！
+[p]
+
+[balloon x=110 y=-100 shape="002_03" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+だが おまえの動きは[r]
+全て見切ったぜ！！
+[p]
+
+*02
+//-------------------------------------------------------------------------------
+//  孫悟飯
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_066"]
+
+[character x = 200 y = -60 storage = "00007/headup_e_01_okappa" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x=-90 y=45 shape="006_01" scale = 0.65 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 44]
+[quake target =".bln" power = 7 time = 0.2]
+なに！？
+[p]
+
+
+*03
+//-------------------------------------------------------------------------------
+//  メダマッチャの分身が悟飯に襲いかかる。
+//-------------------------------------------------------------------------------
+[se storage = "3022"]
+[coma shape="N0003L" bg = "bg_000_066"]
+
+[lwfobject id = "kaki1" storage="kakimoji:ef_024" x=0 y=150 scale = 2.0 action = "fadein" time = 0.1]
+[quake target = "kaki1" power = 15 time = 0.4]
+
+[character id = "1" x = 10 y = -60 storage = "00790/card_01" scale = 0.8 action = "fadein" time = 0.1]
+
+[character id = "2" x = 220 y = 100 storage = "00790/card_02" scale = 0.8 action = "fadein" time = 0.1]
+[quake target = "2" power = 5 time = 0.4]
+
+[character id = "3" x = -220 y = 100 storage = "00790/card_03" scale = 0.8 action = "fadein" time = 0.1]
+[quake target = "3" power = 5 time = 0.4]
+
+[character id = "4" x = 250 y = -90 storage = "00790/card_04" scale = 0.8 action = "fadein" time = 0.1]
+[quake target = "4" power = 5 time = 0.4]
+
+[character id = "5" x = -250 y = -50 storage = "00790/card_05" scale = 0.8 action = "fadein" time = 0.1]
+[quake target = "5" power = 5 time = 0.4]
+
+[balloon x=0 y=-110 shape="006_01" scale = 0.65 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 44]
+[quake target =".bln" power = 7 time = 0.2]
+これでも[r]くらえ！！
+
+
+[wait time = 0.4]
+
+*04
+//-------------------------------------------------------------------------------
+//  孫悟飯
+//-------------------------------------------------------------------------------
+[se storage = "3014"]
+[coma shape="N0003L" bg = "bg_000_014"]
+
+
+[lwfobject id = "kaki1" storage="kakimoji:ef_016" x=-160 y=120 scale = 1.8 angle = -8 action = "fadein" time = 0.1]
+[quake target = "kaki1" power = 3 time = 30]
+
+
+
+[character id = "2" x = -500 y = 0 storage = "00790/card_02" scale = 0.8 action = "fadein" time = 0.1]
+[move target ="2" x=500 time = 0.5]
+
+[wait time = 0.3]
+
+[se storage = "3014"]
+
+[character id = "3" x = -500 y = 100 storage = "00790/card_03" scale = 0.8 action = "fadein" time = 0.1]
+[move target ="3" x=500 time = 0.5]
+[flip target ="3" h=1]
+
+[wait time = 0.2]
+
+[se storage = "3014"]
+
+[character id = "4" x = -500 y = -10 storage = "00790/card_04" scale = 0.8 action = "fadein" time = 0.1]
+[move target ="4" x=700 time = 0.5]
+
+[wait time = 0.2]
+
+[se storage = "3014"]
+
+[character id = "5" x = -500 y = -50 storage = "00790/card_05" scale = 0.8 action = "fadein" time = 0.1]
+[move target ="5" x=1000 time = 0.5]
+[flip target ="5" h=1]
+
+
+[wait time = 0.4]
+
+[se storage = "3012"]
+//点滅
+[balloon shape="008_02" x = 0 y = 0 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = "kaki1"]
+[clear target = ".bln"]
+[balloon shape="008_02" x = 0 y = 0 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+
+[character id = "5a" x = -150 y = -30 storage = "00790/card_05" scale = 0.6 angle = -35 action = "fadein" time = 0.1]
+[flip target ="5a" h=1]
+
+[character id = "2a" x = 180 y = 120 storage = "00790/card_02" scale = 0.8 action = "fadein" time = 0.1]
+
+[character id = "4a" x = 20 y = 120 storage = "00790/card_04" scale = 0.8 angle = -35 action = "fadein" time = 0.1]
+
+
+[character id = "gohan" x = 200 y = 0 storage = "00007/dam_front_e_02" scale = 1.2 action = "fadein" time = 0.1]
+[quake target ="gohan" power = 6 time = 0.4]
+
+[character id = "3a" x = 0 y = -80 storage = "00790/card_03" scale = 0.8 angle = -35 action = "fadein" time = 0.1]
+[flip target ="3a" h=1]
+
+
+
+[balloon x=-140 y=50 shape="007_01" scale = 0.8 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 7 time = 0.2]
+うわあああ〜っ！！
+[p]
+
+
+*05
+//-------------------------------------------------------------------------------
+//  ピッコロ
+//-------------------------------------------------------------------------------
+[se storage = "3014"]
+[coma shape="N0001R" bg = "bg_000_066"]
+
+
+[lwfobject id = "kaki1" storage="kakimoji:ef_023" x=180 y=-100 scale = 1.2 action = "fadein" time = 0.1]
+[quake target = "kaki1" power = 15 time = 0.4]
+
+
+[character x=250 y=0 storage = "00010/dash_e_01" scale = 1.1 action = "fadein" time = 0.1]
+[quake target = ".chara" power = 5 time = 0.4]
+
+
+[balloon x=-100 y=100 shape="006_01" scale = 0.65 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 44]
+[quake target =".bln" power = 7 time = 0.2]
+悟飯！！
+[p]
+
+
+*06
+//-------------------------------------------------------------------------------
+//  アンギラ
+//-------------------------------------------------------------------------------
+[se storage = "3022"]
+[coma shape="N0001L" bg = "bg_000_066"]
+
+[character x = -260 y = -130 storage = "00788/idl_side_p_01" scale = 1.2 action = "slide:left" time = 0.3]
+
+[balloon x=125 y=60 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+おっと！[r]
+きさまの相手は[r]
+このオレだぜ！！
+[p]
+
+*07
+//-------------------------------------------------------------------------------
+//  ピッコロ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_066"]
+
+[character x = 240 y = -160 storage = "00010/heapup_e_01" scale = 1.4 action = "fadein" time = 0.1]
+
+
+[balloon x=-120 y=70 shape="002_02" scale = 0.65 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 44]
+//[quake target =".bln" power = 3 time = 0.2]
+くっ…！
+[p]
+
+*08
+//-------------------------------------------------------------------------------
+//  アンギラ メダマッチャ
+//-------------------------------------------------------------------------------
+[se storage = "3024"]
+[coma shape="N0003L" bg = "bg_000_066"]
+
+[lwfobject id = "kaki1" storage="kakimoji:ef_013" x=160 y=-30 scale = 1.5 action = "fadein" time = 0.1]
+[quake target = "kaki1" power = 15 time = 0.4]
+
+
+
+[character id = "1" x = -50 y = -180 storage = "00790/atc_energyball_p_03" scale = 1.1 action = "fadein" time = 0.1]
+[quake target = "1" power = 4 time = 0.4]
+
+[character id = "ki1" x = 400 y = -80 storage = "99999/masenko" scale = 0.9 action = "fadein" time = 0.1]
+[flip target ="ki1" h=1]
+[quake target = "ki1" power = 6 time = 0.4]
+
+
+[character id = "2" x = -270 y = -140 storage = "00788/atc_energyball_p_01" scale = 1.2 action = "fadein" time = 0.1]
+[quake target = "2" power = 4 time = 0.4]
+
+[character id = "ki2" x = 310 y = 40 storage = "99999/masenko" scale = 0.9 action = "fadein" time = 0.1]
+[flip target ="ki2" h=1]
+[quake target = "ki2" power = 6 time = 0.4]
+
+
+[balloon x=20 y=140 shape="006_01" scale = 0.7 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+[quake target =".bln" power = 7 time = 0.2]
+はああーっ！！
+//[p]
+
+[wait time = 0.2]
+
+*09
+//-------------------------------------------------------------------------------
+//  アンギラとメダマッチャの攻撃で、悟飯とピッコロが倒れる。
+//-------------------------------------------------------------------------------
+[se storage = "3017"]
+[coma shape="N0003L" bg = "bg_000_066"]
+
+
+[lwfobject id = "kaki2" storage="kakimoji:ef_019" x=0 y=0 scale = 3.5 action = "fadein" time = 0.1]
+
+[quake target = "kaki2" power = 15 time = 1]
+
+[character x=0 y=-120 storage = "99999/ef_explode_005" scale = 2.5 angle = -20 action = "expand" time = 0.1]
+
+[quake target = ".chara" power = 10 time = 1]
+
+[balloon x=0 y=0 shape="008_02" scale = 50 action = "fadein" time = 0.5]
+
+[wait_anim target=".bln"]
+
+[fadeout target = ".bln" time = 1.5]
+
+//[wait time = 0.3]
+
+//[fadeout target = "kaki2" time = 0.8]
+
+//[fadeout target = ".chara" time = 1.2]
+
+//[wait time = 2.0]
+
+[wait_anim target=".bln"]
+
+
+[balloon x=-120 y=135 shape="001_03" scale = 0 action = "fadein" time = 0.1]
+[p]
+
+
+*10
+//-------------------------------------------------------------------------------
+//  アンギラ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_066"]
+
+[character x = -260 y = -130 storage = "00788/idl_side_p_01" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x=125 y=60 shape="002_01" scale = 1 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 7 time = 0.2]
+こんなやつを倒すのに[r]
+こんなに汚れちまって[r]
+今日はついてないぜ
+[p]
+
+*11
+//-------------------------------------------------------------------------------
+//  メダマッチャ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_066"]
+
+[character x = -220 y = -100 storage = "00790/idl_side_p_01" scale = 1.4 action = "fadein" time = 0.1]
+
+[balloon x=100 y=100 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+小僧にもとどめだ！[r]
+仲良くあの世に行け！
+[p]
+
+[balloon x=100 y=-100 shape="002_02" scale = 0.65 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 44]
+//[quake target =".bln" power = 3 time = 0.2]
+……ん！？
+[p]
+
+
+
+*12
+//-------------------------------------------------------------------------------
+//  悟空とクリリンが現れる。
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_000_066"]
+
+[wait time = 0.3]
+
+[se storage = "3034"]
+[character id = "kuri" x = -80 y = -190 storage = "00009/idl_side_e_03" scale = 0.9 action = "fadein" time = 0.7]
+
+[character id = "gok" x = 200 y = -150 storage = "00300/idl_side_e_01" scale = 1.2 action = "fadein" time = 0.7]
+
+
+[wait_anim target="gok"]
+
+[balloon shape="006_01" x = -135 y = 70 scale = 0 action = "expand" time = 0.1]
+[p]
+
+//-------------------------------------------------------------------------------
+[stopbgm]

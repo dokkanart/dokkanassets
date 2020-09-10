@@ -1,0 +1,90 @@
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+//[stopbgm]
+
+
+*01
+//-------------------------------------------------------------------------------
+//  スーパーサイヤ人２：ベジータ
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0004L" bg = "bg_000_014"]
+
+[character id="beji" x = -90 y = 60 storage = "00335/card_01" scale = 2.0 action = "fadein" time = 0.1]
+
+
+[balloon x=140 y=50 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target =".bln" power = 3 time = 0.2]
+[font size = 28]
+…ふん…どうやら[r]
+オレが強くなりすぎて[r]
+しまったようだな…[p]
+
+
+
+*02
+//-------------------------------------------------------------------------------
+//  スーパーサイヤ人２：ベジータ
+//-------------------------------------------------------------------------------
+[se storage = "3022"]
+[coma shape="S0001" bg = "bg_000_033"]
+
+[character id = "beji" x = -90 y = 90 storage = "00335/card_03" scale = 1.3 action = "fadein" time = 0.1] 
+[quake target ="beji" power = 10 time = 0.4]
+
+
+[balloon x=170 y=370 shape="006_01" scale = 0.75 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+[quake target =".bln" power = 7 time = 0.2]
+お遊びは[r]
+ここまでだ！！[p]
+
+[quake target ="beji" power = 15 time = 0.2]
+
+[balloon x=-140 y=-330 shape="006_01" scale = 0.75 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 42]
+[quake target =".bln" power = 7 time = 0.2]
+消えろーっ！！[p]
+
+//点滅（白）
+[se storage = "3025"]
+//点滅
+[balloon shape="008_02" x = 140 y = -30 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+[balloon shape="008_02" x = 140 y = -30 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+
+[lwfobject id = "kaki1" storage="kakimoji:ef_013" in="04" x=-0 y=-90 scale = 3.5]
+[quake target = "kaki1" power = 15 time = 0.5]
+
+
+//[character id = "ki" x=100 y=-200 storage = "99999/ef_buwa" scale = 10 action = "expand" time = 0.5]
+
+[character id = "ki" x=0 y=-100 storage = "00030/ef_core_glow" scale = 10 action = "expand" time = 0.3]
+
+
+[flip target ="ki" h=1]
+[move target ="ki" x=300 y=-500 time = 0.3]
+[wait time =0.1]
+
+//[character id = "ki" x=0 y=-0 storage = "99999/ef_explode_005" scale = 8 action = "expand" time = 0.7]
+
+//[wait time =0.5]
+
+[balloon x=130 y=40 shape="008_03" scale = 50.0 action = "fadein" time = 0.5]
+[wait time = 2.5]
+
+
+
+
+//[stopbgm]
+

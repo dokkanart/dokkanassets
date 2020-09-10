@@ -1,0 +1,174 @@
+*start|スタート
+//復讐鬼ベビー編_エリア７：ボス前
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+//[bgm storage = "005"]
+ 
+*001
+//-------------------------------------------------------------------------------
+//  ベジータベビー
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_004"]
+ 
+[character x=-190 y=-140 storage = "00482/idl_side_p_01" scale = 1.2 action = "fadein" time = 0.1]
+ 
+[balloon x=120 y=120 shape="002_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+死ぬ前に[r]
+見せてやるぞ… 
+[p]
+ 
+[balloon x=130 y=-90 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+原始的なサイヤ人と[r]
+進化したツフル人の[r]
+パワーのちがいをな 
+[p]
+
+*002
+//-------------------------------------------------------------------------------
+//  ベジータベビー
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0003L" bg = "bg_000_004"]
+ 
+[character id = "tr" x = 300 y = -180 storage = "00511/idl_side_e_01" scale = 1.0 action = "fadein" time = 0.1]
+
+[character x = -150 y = -170 storage = "00510/idl_side_p_01" scale = 0.8 action = "fadein" time = 0.1]
+
+[character x = -280 y = -160 storage = "00509/idl_side_p_01" scale = 1.2 action = "fadein" time = 0.1]
+ 
+[wait time = 0.7]
+ 
+[balloon x=0 y=120 shape="005_02" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 40]
+[quake target =".bln" power = 3 time = 0.2]
+さあ[r]
+しもべたちよ！ 
+[p]
+ 
+[balloon x=50 y=-150 shape="005_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+このベビーさまに[r]
+サイヤパワーを[r]
+送り込むのだ！！
+[p]
+
+//点滅（白）
+[se storage = "3025"]
+//点滅
+[balloon shape="008_02" x = 140 y = -30 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+[balloon shape="008_02" x = 140 y = -30 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+
+//フェードアウト（フェードアウトするコマ）
+[balloon x=130 y=40 shape="008_02" scale = 50.0 action = "fadein" time = 0.3]
+[wait time = 0.5] 
+
+*003
+//-------------------------------------------------------------------------------
+//  スーパーベビー1に変身
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="S0001" bg = "bg_000_037"]
+ 
+[character x=-170 y=-10 storage = "00483/idl_side_p_01" scale = 1.4 action = "fadein" time = 0.1]
+ 
+//フェードイン（フェードインするコマ）
+[balloon x=130 y=40 shape="008_02" scale = 50]
+[wait time = 0.5]
+[fadeout target = ".bln" time = 1]
+[wait_anim target=".bln"]
+ 
+[balloon x=150 y=180 shape="007_02" scale = 0.75 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 40]
+[quake target =".bln" power = 7 time = 0.2]
+ふははは…！！ 
+[p]
+ 
+[balloon x=130 y=-190 shape="007_01" scale = 0.9 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 7 time = 0.2]
+オレは今[r]
+最強のサイヤ人パワーを[r]
+身につけたのだ！！ 
+[p]
+
+*005
+//-------------------------------------------------------------------------------
+//  孫悟空（GT）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_037"]
+ 
+[character x=200 y=-50 storage = "00324/heapup_e_01" scale = 1.1 action = "fadein" time = 0.1]
+ 
+[balloon x=-90 y=150 shape="001_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+すげえパワーだ… 
+[p]
+ 
+[balloon x=-90 y=-60 shape="001_03" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+[quake target =".bln" power = 3 time = 0.2]
+やつに対抗するには…[r]
+超サイヤ人３しかねえ！！ 
+[p]
+
+//点滅（白）
+//[se storage = "3025"]
+//点滅
+[balloon shape="008_02" x = 140 y = -30 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+[balloon shape="008_02" x = 140 y = -30 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+
+
+
+*007
+//-------------------------------------------------------------------------------
+//  超サイヤ人３に変身
+//-------------------------------------------------------------------------------
+[se storage = "50"]
+[coma shape="S0001" bg = "bg_000_037"]
+
+
+
+ 
+[character x = 50 y = 80 storage = "00332/card_01" scale = 1.5 angle = -100 action = "expand" time = 0.2]
+[quake target =".chara" power = 8 time = 0.6]
+[rotate_to target=".chara" angle=20 time=0.2]
+
+[lwfobject id = "kaki1" storage="kakimoji:ef_020" in="04" x=-120 y=280 scale = 2.5 action = "fadein" time = 0.1]
+[quake target = "kaki1" power = 15 time = 0.4]
+ 
+[balloon x=0 y=-440 shape="006_02" scale = 1.0 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 30]
+[quake target =".bln" power = 7 time = 0.2]
+だああああーっ！！
+[p]
+
+//[stopbgm]
+
+

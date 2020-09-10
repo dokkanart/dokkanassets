@@ -1,0 +1,81 @@
+*start|スタート
+//ステージ１ゴール
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "011"]
+
+*01
+//-------------------------------------------------------------------------------
+//  ふたりの全王さま
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0001L" bg = "bg_068_004"]
+
+[character id = "2" x = -90 y = -160 storage = "90003/zenoh" scale = 0.9 action = "fadein" time = 0.1]
+[flip target ="2" h=1]
+[character id = "1" x = -250 y = -160 storage = "90003/zenoh" scale = 1.1 action = "fadein" time = 0.1]
+[flip target ="1" h=1]
+
+[balloon x=100 y=90 shape="001_03" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+[quake target =".bln" power = 3 time = 0.2]
+おお〜っ！[r]
+たのし〜
+[p]
+
+[balloon x=150 y=-85 shape="001_02" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+//[quake target =".bln" power = 3 time = 0.2]
+楽しかったね〜
+[p]
+
+*02
+//-------------------------------------------------------------------------------
+//  大神官
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_068_004"]
+
+[character x = -200 y = -260 storage = "90003/daishinkan" scale = 1.1 action = "fadein" time = 0.1]
+
+[balloon x=100 y=110 shape="001_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+全王さまの[r]
+喜びのお言葉を[r]
+いただきました
+[p]
+
+[balloon x=120 y=-95 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+第１試合 決着とします[r]
+勝者は[r]
+第７宇宙の魔人ブウ！
+[p]
+
+*03
+//-------------------------------------------------------------------------------
+//  魔人ブウ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_068_005"]
+
+[character x=220 y=-160 storage = "00229/atc_sp01_p_01" scale = 1.2 action = "fadein" time = 0.1]
+[flip target =".chara" h=1]
+
+[balloon shape="002_03" x = -160 y = 50 scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+サタ〜ン！[r]
+勝ったぞぉ〜！
+[p]
+
+//-------------------------------------------------------------------------------
+[stopbgm]

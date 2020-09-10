@@ -1,0 +1,62 @@
+*start|スタート
+
+//"バトル終了"
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+//[bgm storage = "013"]
+
+*001
+//-------------------------------------------------------------------------------
+//  ジレン
+//-------------------------------------------------------------------------------
+[se storage = "3038"]
+[coma shape="N0003R" bg = "bg_000_060"]
+
+[lwfobject id = "kaki2" storage="kakimoji:ef_009" in="02" x=-210 y=70 scale = 1.8] 
+[quake target ="kaki2" power = 1 time = 300]
+
+[character x=0 y=-280 storage = "00812/card_01" scale = 1.4 action = "fadein" time = 0.1]
+
+[character id = "kemuri4" x = 240 y = 80 storage = "99999/ef_sp_smoke" scale = 1.6 angle=80 action = "fadein" time = 0.1]
+[character id = "kemuri3" x = -140 y = 20 storage = "99999/ef_sp_smoke" scale = 1.7 angle=50 action = "fadein" time = 0.1]
+[character id = "kemuri1" x = 270 y = -90 storage = "99999/ef_sp_smoke" scale = 1.7 angle=-30 action = "fadein" time = 0.1]
+[character id = "kemuri2" x = -250 y = -140 storage = "99999/ef_sp_smoke" scale = 1.7 angle=-90 action = "fadein" time = 0.1]
+
+[quake target ="kemuri1" power = 3 time = 300]
+[quake target ="kemuri2" power = 3 time = 300]
+[quake target ="kemuri3" power = 3 time = 300]
+[quake target ="kemuri4" power = 3 time = 300]
+
+
+
+
+[wait time = 1.5]
+
+[fadeout target = "kaki2" time = 1.0]
+
+[fadeout target = "kemuri4" time = 2.5]
+[fadeout target = "kemuri3" time = 2.2]
+[fadeout target = "kemuri1" time = 1.3]
+[fadeout target = "kemuri2" time = 1.0]
+
+[wait time = 2.5]
+
+
+[balloon x=-20 y=420 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+今の威力は…[r]
+なかなかのものだった[r]
+[p]
+
+[balloon x=115 y=-150 shape="002_03" scale = 1 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+オレを倒すために[r]
+ここまで高めたその熱さ…[r]
+おまえを戦士と認めよう
+[p]
+//-------------------------------------------------------------------------------
+
+//[stopbgm]

@@ -1,0 +1,66 @@
+//"エリア５スタート"
+
+*start|スタート
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "008"]
+
+*001
+//-------------------------------------------------------------------------------
+//  ピッコロ
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0001L" bg = "bg_014_001"]
+
+[character x = -140 y = -250 storage = "00010/dam_side_p_01" scale = 1.1 action = "fadein" time = 0.1]
+[quake target =".chara" power = 5 time = 0.4]
+
+[balloon x=0 y=110 shape="004_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+ぐ…[r]
+…ぐあぁ……
+[p]
+
+*002
+//-------------------------------------------------------------------------------
+//  アルティメット悟飯
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_014_001"]
+
+[character x = -180 y = -120 storage = "00235/heapup_p_01" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x=120 y=110 shape="004_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+ピ…[r]
+ピッコロさん！！
+[p]
+
+*003
+//-------------------------------------------------------------------------------
+//  悟飯とびかかる
+//-------------------------------------------------------------------------------
+[se storage = "3014"]
+[coma shape="N0002L" bg = "bg_014_001"]
+
+[lwfobject id = "kaki1" storage="kakimoji:ef_023" in="04" x=-120 y=-180 scale = 1.8]
+[quake target = "kaki1" power = 15 time = 0.2]
+
+[character x = -130 y = -100 storage = "00235/card_01" scale = 1.0 action = "fadein" time = 0.1]
+[quake target =".chara" power = 5 time = 0.3]
+
+[balloon x=145 y=90 shape="007_02" scale = 0.8 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 7 time = 0.2]
+く…[r]
+くそーっ！！
+[p]
+
+//-------------------------------------------------------------------------------
+[stopbgm]

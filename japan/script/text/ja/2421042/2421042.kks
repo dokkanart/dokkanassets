@@ -1,0 +1,42 @@
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+//[bgm storage = "003"]
+
+*001
+//-------------------------------------------------------------------------------
+//  ベジータ（幼年期）
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="S0001" bg = "bg_000_009"]
+
+[character x=-50 y=-30 storage = "00059/card_02" scale = 1.2 action = "slide:left" time = 0.3]
+
+[wait_anim target=".chara"]
+
+[quake target =".chara" power = 2 time = 0.2]
+
+//[wait_anim target=".chara"]
+
+[balloon x=-120 y=340 shape="002_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 7 time = 0.2]
+その程度で[r]
+オレの戦闘力を[r]
+上回ったつもりか…？
+[p]
+
+
+[balloon x=140 y=-350 shape="002_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+とんだ[r]
+期待ハズレだ！！
+[p]
+
+
+//[stopbgm]

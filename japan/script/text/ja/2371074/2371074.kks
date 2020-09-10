@@ -1,0 +1,55 @@
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//[bgm storage = "001"]
+//-------------------------------------------------------------------------------
+
+*001
+//----------------------------------------------------------
+//ベジータ
+//-------------------------------------------------------------------------------
+//[se storage = "3038"]
+[coma shape="S0001" bg = "bg_000_035"]
+
+[character id = "veg" x=-15 y=-40 storage = "00004/card_21" scale = 0.9 action = "fadein" time = 0.1]
+
+[wait time = 0.7]
+
+
+[paint target="veg" color="#585858"]
+
+[se storage = "50"]
+[character id = "ki" x=0 y=-10 storage = "99999/ef_aura_front" scale = 2.6 action = "expand" time = 0.2]
+[quake target="ki" power=2 time=300]
+[paint target="ki" color="#F4FA58"]
+
+[wait time = 0.1]
+
+[clear target = "veg"]
+
+[character id = "veg2" x=-15 y=-40 storage = "00004/card_21" scale = 0.9]
+[quake target="veg2" power=9 time=0.3]
+
+
+
+
+
+
+[balloon x = 0 y = 460 shape="006_01" scale = 0.7 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 40]
+[quake target =".bln" power = 7 time = 0.2]
+はああああ[r]……！！
+[p]
+
+//[se storage = "50"]
+//点滅
+[balloon shape="008_02" x = 0 y = 0 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+[balloon shape="008_02" x = 0 y = 0 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+
+
+//[stopbgm]

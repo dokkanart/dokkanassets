@@ -1,0 +1,96 @@
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "013"]
+
+*01
+//-------------------------------------------------------------------------------
+//  ナッパ
+//-------------------------------------------------------------------------------
+
+//[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_021"]
+
+[character x = -220 y = -100 storage = "00015/heapup_p_01" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x=110 y=120 shape="004_03" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 3 time = 0.2]
+[font size = 32]
+や…[r]
+やろ〜！！[p]
+
+
+*02
+//-------------------------------------------------------------------------------
+//  ベジータ
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_021"]
+
+//[character x = -200 y = -40 storage = "00015/idl_side_p_02" scale = 0.9 action = "fadein" time = 0.1]
+[character x = -180 y = -180 storage = "00061/card_02" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x=120 y=90 shape="002_01" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 3 time = 0.2]
+[font size = 24]
+はーっはっはっはっは！！[r]
+手こずっているようだな[r]
+ナッパよ！[p]
+
+
+*03
+//-------------------------------------------------------------------------------
+//  ピッコロ
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_021"]
+
+[character x = 150 y = -100 storage = "00056/heapup_e_01" scale = 0.8 action = "fadein" time = 0.1]
+
+[balloon x=-140 y=120 shape="004_01" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 3 time = 0.2]
+[font size = 36]
+地球を…[p]
+
+[balloon x=-150 y=-90 shape="004_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 3 time = 0.2]
+[font size = 32]
+なめるなよ……！！[p]
+
+
+*04
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+
+
+[coma shape="N0002L" bg = "bg_000_021"]
+
+
+
+[balloon shape="003_01" x = 0 y = -40 scale = 1.5 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 15]
+//[quake target =".bln" power = 3 time = 0.2]
+
+猛威を振るうサイヤ人に[r]
+抵抗を続ける戦士たち…[r]
+　[r]
+…しかし ついに[r]
+ピッコロが倒されてしまう[r]
+　[r]
+神様も死に[r]
+ドラゴンボールも[r]
+なくなってしまった……[p]
+
+
+[stopbgm]

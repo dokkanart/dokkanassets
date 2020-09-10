@@ -1,0 +1,114 @@
+*start|スタート
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "023"]
+
+*001
+//-------------------------------------------------------------------------------
+//  審判
+//-------------------------------------------------------------------------------
+[se storage = "39"]
+[coma shape="N0001R" bg = "bg_025_004"]
+
+[character x=210 y=-190 storage = "90003/shout_1" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x = -105 y = 120 shape="005_01" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+[quake target =".bln" power = 3 time = 0.2]
+さあー[r]
+残った選手は３人！！
+[p]
+
+
+[balloon x=-105 y=-100 shape="005_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+はたして[r]
+この３選手の中で[r]
+誰が残って優勝するので[r]
+ありましょうか！！
+[p]
+
+
+*002
+//-------------------------------------------------------------------------------
+//  ミスター・サタン
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_025_004"]
+
+[character x= 200 y= -110+20 storage = "00038/heapup_e_02" scale = 1.1 action = "fadein" time = 0.1]
+
+//[character x = 280 y = -60 storage = "00214/heapup_e_01" scale = 0.9 action = "fadein" time = 0.1]
+//[flip target =".chara" h=1]
+
+
+[balloon x=-140 y=90 shape="001_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+くっくっく……[r]
+わたしの優勝は[r]
+もう まちがいない
+[p]
+
+
+[balloon x=-140 y=-110 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+ふたりとも[r]
+かかってこい！！[r]
+まとめて[r]
+かたづけてやる！！
+[p]
+
+
+*003
+//-------------------------------------------------------------------------------
+//  マイティマスク
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_025_004"]
+
+[character x = -280 y = -60-20 storage = "00214/heapup_e_01" scale = 0.9 action = "fadein" time = 0.1]
+[flip target =".chara" h=1]
+
+
+[balloon x = 120 y = 50 shape="001_03" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+あんなの無視……
+[p]
+
+
+*004
+//-------------------------------------------------------------------------------
+//  人造人間18号
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_025_004"]
+
+//[character x = -170 y = -150 storage = "00020/idl_side_p_09" scale = 1.2 action = "fadein" time = 0.1]
+//[character x = 170 y = -150 storage = "00020/idl_side_e_04" scale = 1.2 action = "fadein" time = 0.1]
+[character x = 170 y = -170 storage = "00020/heapup_e_02" scale = 1.2 action = "fadein" time = 0.1]
+
+
+
+[balloon x = -140 y = 60 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+…あの妙な胴長野郎[r]
+ただものじゃない…
+[p]
+
+
+
+
+//-------------------------------------------------------------------------------
+[stopbgm]

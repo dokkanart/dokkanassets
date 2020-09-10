@@ -1,0 +1,60 @@
+*start|スタート
+
+//"２２−４ゴール" 
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "013"]
+ 
+*001
+//-------------------------------------------------------------------------------
+//  レズン
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0001L" bg = "bg_006_001"]
+ 
+[character x = -220 y = -110 storage = "00381/idl_side_p_01" scale = 1.4 action = "fadein" time = 0.1]
+ 
+[balloon x=100 y=120 shape="002_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+おまえらも[r] 
+なかなかやるようだが… 
+[p]
+ 
+[balloon x=120 y=-80 shape="002_01" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+まだまだ[r]
+オレたちの敵じゃねえな…[r]
+へへへ… 
+[p]
+
+*002
+//-------------------------------------------------------------------------------
+//  トランクス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_006_001"]
+ 
+[character x=170 y=-325 storage = "90000/wait_right_anger_strong" scale = 1.4 action = "fadein" time = 0.1]
+ 
+[balloon x=-120 y=90 shape="001_01" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 44]
+//[quake target =".bln" power = 3 time = 0.2]
+強い…！ 
+[p]
+ 
+[balloon x=-110 y=-190 shape="001_02" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+これが神精樹の実…[r]
+…というやつの力なのか？ 
+[p]
+ 
+//-------------------------------------------------------------------------------
+[stopbgm]

@@ -1,0 +1,77 @@
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "002"]
+
+
+*01
+//-------------------------------------------------------------------------------
+//  ベジータ
+//-------------------------------------------------------------------------------
+
+//[se storage = "04"]
+[coma shape="N0004L" bg = "bg_000_023"]
+
+[character x = -140 y = -520 storage = "00282/card_01" scale = 2.4 angle=-23 action = "fadein" time = 0.1]
+
+[balloon x=150 y=100 shape="002_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target =".bln" power = 3 time = 0.2]
+[font size = 32]
+がんばれ[r]
+カカロット…[p]
+
+[balloon x=150 y=-110 shape="002_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 3 time = 0.2]
+[font size = 32]
+おまえが[r]
+ナンバー１だ！！[p]
+
+
+*02
+//-------------------------------------------------------------------------------
+//  ブウvs悟空
+//-------------------------------------------------------------------------------
+[se storage = "44"]
+
+[coma shape="N0003R" bg = "bg_000_023"]
+
+[character id="goku3" x=230 y=60 storage = "00227/card_03" scale = 1.2 angle = 14 action = "fadein" time = 0.1]
+[quake target ="goku3" power = 8 time = 0.4]
+
+[coma shape="N0002L" bg = "bg_000_023"]
+
+[character id="boo" x=-170 y=-70 storage = "00232/card_002" scale = 1.5 angle = 0 action = "fadein" time = 0.1]
+[quake target ="boo" power = 8 time = 0.4]
+
+[wait time = 0.2]
+
+[se storage = "3002"]
+
+[character id="1" x=-0 y=240 storage = "99999/04_syougeki" scale = 7.0 angle = 0 action = "expand" time = 0.7]
+[quake target ="1" power = 20 time = 0.7]
+[rotate_to target="1" angle=90 time = 0.7]
+
+[wait time = 0.4]
+
+[fadeout target = "1" time = 0.2]
+
+[wait time = 0.3]
+
+//[se storage = "3028"]
+
+//点滅
+[balloon shape="008_02" x = 140 y = -30 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+
+[balloon shape="008_02" x = 140 y = -30 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+
+[wait time = 0.3]
+
+[stopbgm]

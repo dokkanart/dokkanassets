@@ -1,0 +1,41 @@
+*start|スタート
+//2502031 エリア３ラウンド２開始
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+//[bgm storage = "012"]
+
+
+*01
+//-------------------------------------------------------------------------------
+//  パーフェクトセル
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+
+
+[se storage = "3022"]
+[coma shape="S0001" bg = "bg_008_001"]
+
+[character x = 150 y = 70 storage = "00205/card_01" scale = 1.5 action = "fadein" time = 0.1]
+[quake target =".chara" power = 7 time = 0.4]
+
+[wait_anim target=".chara"]
+
+[balloon shape="002_02" x = -120 y = 450 scale = 0.8 action = "fadein" time = 0.1]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+[wait_anim target=".bln"]
+では[r]
+見せてやるぞ……！[p]
+
+
+[balloon shape="002_03" x = -100 y = -370 scale = 0.9 action = "fadein" time = 0.1]
+[font size = 28]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 3 time = 0.2]
+このセルの[r]
+恐ろしい[r]
+真のパワーを…！！[p]
+
+//---------------------------------------------
+//[stopbgm]

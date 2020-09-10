@@ -1,0 +1,32 @@
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "013"]
+
+*001
+//-------------------------------------------------------------------------------
+//  トランクス
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0002R" bg = "bg_004_001"]
+
+
+[character x=170 y=-325 storage = "90000/wait_right_anger" scale = 1.4 action = "fadein" time = 0.1]
+
+[balloon x=-130 y=100 shape="001_01" scale = 0.9 action = "fadein" time = 0.1]
+[font size = 28]
+[wait_anim target=".bln"]
+//[quake target =".bln" power = 3 time = 0.2]
+フリーザ軍の力は[r]
+未知数です…[p]
+
+[balloon x=-120 y=-170 shape="001_03" scale = 1.0 action = "fadein" time = 0.1]
+[font size = 24]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 3 time = 0.2]
+油断は禁物ですよ[r]
+[$player]さん！[p]
+
+[stopbgm]

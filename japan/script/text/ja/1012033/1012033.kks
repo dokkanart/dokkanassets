@@ -1,0 +1,33 @@
+
+*start|スタート
+
+//１２−３ボス前
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "008"]
+
+//-------------------------------------------------------------------------------
+//  トーマ
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0002L" bg = "bg_015_001"]
+
+[character id = "ttp" x=70 y=-135 storage = "00078/idl_side_p_01" scale = 1.0 action = "fadein" time = 0.1]
+
+[character x=-160 y=-130 storage = "00077/atc_sp01_p_01" scale = 1.4 action = "fadein" time = 0.1]
+
+[balloon x=160 y=200 shape="002_02" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 3 time = 0.2]
+[font size = 36]
+……倒す……！[p]
+
+[balloon x=-40 y=-210 shape="002_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+ハデに[r]
+ぶっ潰してやるか[p]
+
+[stopbgm]

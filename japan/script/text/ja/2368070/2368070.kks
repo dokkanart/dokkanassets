@@ -1,0 +1,536 @@
+*start|スタート
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "013"]
+
+*001
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0003L" bg = "bg_000_024"]
+
+[character x = -270 y = -260 storage = "00204/card_02" scale = 1.1 angle = -7 action = "fadein" time = 0.1]
+
+[character x = 240 y = -80 storage = "00004/card_15" scale = 0.8 action = "fadein" time = 0.1]
+
+[balloon x=0 y=10 shape="003_01" scale = 1.6 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 13]
+//[quake target =".bln" power = 3 time = 0.2]
+精神と時の部屋での[r]
+修業を終え[r]
+パワーアップした[r]ベジータは[r]
+セルを圧倒し追いつめる[r]
+　[r]
+だが[r]
+プライドを刺激された[r]
+ベジータは[r]
+セルを逃し[r]
+完全体になるように[r]
+促すのだった…
+[p]
+
+*002
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_000_014"]
+
+[character x = 180 y = 20 storage = "99999/stopcontroller" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon x=-140 y=0 shape="003_02" scale = 1.6 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 14]
+//[quake target =".bln" power = 3 time = 0.2]
+一方その頃[r]
+ブルマが作り上げた[r]
+緊急停止コントローラーを[r]
+受け取ったクリリンは[r]
+人造人間18号を見つけ[r]
+接近を図るが…
+[p]
+
+*003
+//-------------------------------------------------------------------------------
+//  クリリン
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_004"]
+
+[character x = 180 y = -100 storage = "00009/idl_side_e_04" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon x = -105 y = 70 shape="001_02" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+このコントローラーで[r]
+18号を停止させて[r]
+破壊すればセルが完全体に[r]
+なるのは防げる……
+[p]
+
+[balloon id = "01" x = -120 y = -120 shape="004_02" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target = "01"]
+[font size = 54]
+………
+[p]
+
+*004
+//-------------------------------------------------------------------------------
+//  クリリン、18号にキスされたときを思い出す
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0003R" bg = "bg_000_014"]
+
+[character id = "kuri" x = 270 y = -170 storage = "00009/idl_side_e_04" scale = 1.5 action = "fadein" time = 0.1]
+
+[wait time = 0.7]
+
+[clear target = "kuri"]
+
+[se storage = "31"]
+[character id = "kiss" x = -30 y = -280 storage = "00020/card_03" scale = 1.0 action = "fadein" time = 2.0 mask="inside"]
+[paint target="kiss" color="#F5D0A9"]
+
+[character id = "kuri3" x = 270 y = -170 storage = "00009/idl_side_e_04" scale = 1.5]
+
+[character id = "kuri2" x = 270 y = -170 storage = "00009/idl_side_e_04" scale = 1.5 action = "fadein" time = 1.5]
+[paint target="kuri2" color="#848484"]
+
+[wait_anim target = "kiss"]
+
+
+//空のフキダシ
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+*005
+//-------------------------------------------------------------------------------
+//  クリリン
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_004"]
+
+//[character x = 180 y = -70 storage = "00009/heapup_e_04" scale = 1.0 action = "fadein" time = 0.1]
+
+[character x = 190 y = -120 storage = "00009/atc_sp01_e_01" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon id = "01" x = -90 y = 60 shape="004_01" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target = "01"]
+[font size = 54]
+………
+[p]
+
+*006
+//-------------------------------------------------------------------------------
+//  人造人間18号
+//-------------------------------------------------------------------------------
+[se storage = "03"]
+[coma shape="N0001L" bg = "bg_000_004"]
+
+[character x = -180 y = -180 storage = "00020/idl_side_p_08" scale = 1.1 action = "fadein" time = 0.1]
+
+[lwfobject id = "kaki1" storage="kakimoji:ef_002" angle = 12 x=-0 y=80 scale = 2.2 action = "fadein" time = 0.1]
+[quake target = "kaki1" power = 9 time = 0.4]
+
+[balloon x=0 y=0 shape="004_01" scale = 0 action = "fadein" time = 0.1]
+[p]
+
+
+[balloon x=100 y=-90 shape="002_02" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+//[quake target =".bln" power = 3 time = 0.2]
+おまえは……！
+[p]
+
+*007
+//-------------------------------------------------------------------------------
+//  18号、緊急停止コントローラーに気づく
+//-------------------------------------------------------------------------------
+[se storage = "48"]
+[coma shape="N0004R" bg = "bg_000_014"]
+
+
+
+[character id = "beam2" x = 100 y = -15 storage = "99999/beam_04" scale = 2.0 action = "fadein" time = 0.1]
+
+
+[character x = 0 y = 20 storage = "99999/stopcontroller" scale = 1.0 action = "fadein" time = 0.1 mask="none"]
+
+//空のフキダシ
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+*008
+//-------------------------------------------------------------------------------
+//  人造人間18号
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_004"]
+
+
+//[character x = -180 y = -180 storage = "00020/idl_side_p_08" scale = 1.1 action = "fadein" time = 0.1]
+
+[character x = -200 y = -160 storage = "00020/heapup_p_08" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon x=110 y=70 shape="004_01" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+[quake target =".bln" power = 3 time = 0.2]
+あ…あれは まさか[r]
+緊急停止コントローラー…
+[p]
+
+[balloon x=115 y=-115 shape="004_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+な…なぜ[r]
+あいつが……！？
+[p]
+
+*009
+//-------------------------------------------------------------------------------
+//  クリリン
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_004"]
+
+//[character x = 180 y = -70 storage = "00009/heapup_e_04" scale = 1.0 action = "fadein" time = 0.1]
+
+[character x = 190 y = -120 storage = "00009/atc_sp01_e_01" scale = 1.0 action = "fadein" time = 0.1]
+
+
+[balloon x = -80 y = 80 shape="001_03" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+[quake target =".bln" power = 3 time = 0.2]
+…うまく[r]
+逃げるんだ！！
+[p]
+
+[balloon x=-120 y=-105 shape="001_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+絶対 セルに[r]
+吸収されないでくれ[r]
+頼む！！
+[p]
+
+*010
+//-------------------------------------------------------------------------------
+//  人造人間18号
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_004"]
+
+[character x = -200 y = -160 storage = "00020/heapup_p_08" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon x=110 y=70 shape="002_03" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+なぜだ…！？[r]
+なぜ そのコントローラーを[r]
+使わない…！？
+[p]
+
+[balloon x=110 y=-110 shape="002_02" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+//[quake target =".bln" power = 3 time = 0.2]
+チャンスだった[r]
+はずだろ…
+[p]
+
+*011
+//-------------------------------------------------------------------------------
+//  クリリン
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_004"]
+
+//[character x = 180 y = -100 storage = "00009/idl_side_e_04" scale = 1.0 action = "fadein" time = 0.1]
+
+[character x = 190 y = -120 storage = "00009/atc_sp01_e_01" scale = 1.0 action = "fadein" time = 0.1]
+
+[character x = 240 y = 90 storage = "99999/ase" scale = 0.3 action = "fadein" time = 0.1]
+
+
+[balloon x = -90 y = 55 shape="004_01" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+//[quake target =".bln" power = 3 time = 0.2]
+そ…[r]
+そいつは……
+[p]
+
+*012
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+[bgm storage = "043"]
+[se storage = "04"]
+[coma shape="N0004R" bg = "bg_000_014"]
+
+[balloon x=0 y=0 shape="003_01" scale = 1.6 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 14]
+//[quake target =".bln" power = 3 time = 0.2]
+緊急停止コントローラーを[r]
+壊し 18号を逃すことを[r]
+選んだクリリン…[r]
+　 [r]
+しかし そのとき[r]
+18号がセルに[r]
+見つかってしまい…
+[p]
+
+*013
+//-------------------------------------------------------------------------------
+//  セル（第二形態）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_016"]
+
+[character x = -210 y = -155 storage = "00204/heapup_p_01" scale = 1.2 action = "fadein" time = 0.1]
+//[character x = -200 y = -160 storage = "00020/heapup_p_08" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon x=120 y=90 shape="002_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+見つけたぞ[r]
+18号……！！
+[p]
+
+*014
+//-------------------------------------------------------------------------------
+//  人造人間18号
+//-------------------------------------------------------------------------------
+[se storage = "03"]
+[coma shape="N0001R" bg = "bg_000_004"]
+
+[character x = 200 y = -140 storage = "00020/heapup_e_08" scale = 1.0 action = "fadein" time = 0.1]
+
+
+[lwfobject id = "kaki1" storage="kakimoji:ef_001" angle = -10 x= 30 y=100 scale = 2.4 action = "fadein" time = 0.1]
+[quake target = "kaki1" power = 9 time = 0.4]
+
+
+//空のフキダシ
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+*015
+//-------------------------------------------------------------------------------
+//  クリリン
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_004"]
+
+[character x = 180 y = -70 storage = "00009/heapup_e_04" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon x = -120 y = 50 shape="007_01" scale = 0.8 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 5 time = 0.2]
+し…[r]
+しまったぁーっ！！
+[p]
+
+*016
+//-------------------------------------------------------------------------------
+//  トランクス（青年期）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_016"]
+
+[character x = 230 y = -130 storage = "00411/heapup_e_01" scale = 1.3 action = "fadein" time = 0.1]
+
+[balloon x = -105 y = 50 shape="006_02" scale = 0.75 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+[quake target =".bln" power = 7 time = 0.2]
+完全体には[r]
+させんぞっ！！
+[p]
+
+*017
+//-------------------------------------------------------------------------------
+//  セル（第二形態）
+//-------------------------------------------------------------------------------
+
+[se storage = "3022"]
+[coma shape="N0004L" bg = "bg_000_014"]
+
+[character x=-70 y=-850 storage = "00204/card_02" scale = 2.5 angle=-7 action = "fadein" time = 0.1]
+//[character x = 0 y = -380 storage = "00006/card_05" scale = 1.4 action = "fadein" time = 0.1]
+
+[balloon x=0 y=125 shape="006_01" scale = 0.65 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 44]
+[quake target =".bln" power = 7 time = 0.2]
+太陽拳！！
+[p]
+
+[se storage = "3012"]
+[lwfobject id = "kaki1" storage="kakimoji:ef_005" x=0 y=10 scale = 3.2 action = "expand" time = 0.1]
+[quake target = "kaki1" power = 9 time = 0.4]
+
+[wait time = 0.2]
+
+
+//点滅
+[balloon shape="008_02" x = 0 y = 0 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+[balloon shape="008_02" x = 0 y = 0 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+
+
+*018
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0004L" bg = "bg_000_014"]
+
+[balloon x=0 y=-20 shape="003_01" scale = 1.5 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 16]
+//[quake target =".bln" power = 3 time = 0.2]
+太陽拳で[r]
+目をくらましたセルは[r]
+その隙をついて[r]
+18号を[r]吸収してしまう…[r]
+　[r]
+ついに[r]
+セルの完全体[r]
+完成か！？
+[p]
+
+*019
+//-------------------------------------------------------------------------------
+//  超ベジータ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_004"]
+
+[character x = 220 y = -140 storage = "00004/card_18" scale = 0.7 action = "fadein" time = 0.1]
+
+[balloon x = -105 y = 80 shape="002_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+いよいよ[r]
+完全体に変身か…
+[p]
+
+[balloon x = -120 y = -95 shape="002_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+今度こそ[r]
+ガッカリさせるなよ…
+[p]
+
+[se storage = "3025"]
+//点滅
+[balloon shape="008_02" x = 140 y = -30 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+//フェードアウト（フェードアウトするコマ）※白フェード
+[balloon x=0 y=0 shape="008_02" scale = 50.0 action = "fadein" time = 0.5]
+[wait time = 0.7]
+
+
+
+*020
+//-------------------------------------------------------------------------------
+//  セルが完全体に変化する
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="S0001" bg = "bg_000_004"]
+
+[character id="sell1" x = -10 y = 60 storage = "00205/card_04" scale = 1.0 action = "fadein" time = 0.1]
+
+//フェードイン（フェードインするコマ）
+[balloon x=0 y=0 shape="008_02" scale = 50]
+[wait time = 1.0]
+[fadeout target = ".bln" time = 3]
+[wait_anim target=".bln"]
+
+//空のフキダシ
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+*021
+//-------------------------------------------------------------------------------
+//  超ベジータ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_004"]
+
+[character x = 220 y = -140 storage = "00004/card_18" scale = 0.7 action = "fadein" time = 0.1]
+
+[balloon x = -105 y = 50 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+やはり[r]
+完全体といっても[r]
+たいしたことは[r]
+なさそうだ
+[p]
+
+*022
+//-------------------------------------------------------------------------------
+//  セル（完全体）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_004"]
+
+[character x = -200 y = -330 storage = "00205/card_04" scale = 1.1 action = "fadein" time = 0.1]
+
+[balloon x=100 y=60 shape="002_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+ではキミが わたしの[r]
+ウォーミングアップを[r]
+手伝ってくれるかな？
+[p]
+
+*023
+//-------------------------------------------------------------------------------
+//  超ベジータ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_000_004"]
+
+[character x = 150 y = -170 storage = "00004/card_15" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon x = -140 y = 50 shape="002_02" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 40]
+//[quake target =".bln" power = 3 time = 0.2]
+いいとも…
+[p]
+
+[balloon x = -140 y = -245 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+ウォーミングアップで[r]
+おしまいにしてやるぜ
+[p]
+
+//-------------------------------------------------------------------------------
+[stopbgm]

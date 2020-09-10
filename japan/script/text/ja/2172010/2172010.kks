@@ -1,0 +1,104 @@
+*start|スタート
+//"ステージ１スタート"
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+//[bgm storage = "005"]
+
+*001
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="S0001" bg = "bg_000_014"]
+
+//黒
+[balloon x=0 y=0 shape="008_03" scale = 50.0]
+
+
+
+[balloon id = "n" x=0 y=0 shape="009_17" scale = 1.0 action = "fadein" time = 2.0]
+[font color="#FFFFFF"]
+[font size = 30]
+度重なる[r]
+ドラゴンボールの使用により[r]
+蓄積された[r]
+マイナスエネルギーが[r]
+あふれ出し[r]
+７匹の邪悪龍が[r]
+誕生してしまった…！[r]
+　[r]
+このままでは[r]
+邪悪龍たちによって[r]
+地球は滅ぼされてしまう…[r]
+　[r]
+この地球最大の危機を[r]
+乗り越えるには[r]
+すべての邪悪龍を[r]
+討ち倒すしかない！！
+//[p]
+
+[balloon id = "kuro" x=0 y=0 shape="008_03" scale = 50.0]
+[wait time = 0.7]
+[fadeout target = "kuro" time = 2.0]
+
+
+[wait time = 1.0]
+
+[balloon x=20 y=350 shape="010_01" scale = 2.0 action = "fadein" time = 1.0]
+[wait time = 0.4]
+
+[balloon x=-110 y=-400 shape="010_02" scale = 1.7 action = "fadein" time = 1.0]
+[wait time = 0.4]
+
+[balloon x=-190 y=420 shape="010_03" scale = 1.7 action = "fadein" time = 1.0]
+[wait time = 0.4]
+
+[balloon x=230 y=-30 shape="010_04" scale = 1.8 action = "fadein" time = 1.0]
+[wait time = 0.4]
+
+[balloon x=-260 y=-150 shape="010_05" scale = 1.4 action = "fadein" time = 1.0]
+[wait time = 0.4]
+
+[balloon x=190 y=420 shape="010_06" scale = 1.9 action = "fadein" time = 1.0]
+[wait time = 0.4]
+
+[balloon x=130 y=-400 shape="010_07" scale = 2.5 action = "fadein" time = 1.0]
+
+[wait time = 2.0]
+
+
+[se storage = "22"]
+//点滅
+[balloon shape="008_02" x = 140 y = -30 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+
+
+//ヒビ
+[balloon id = "db1" x=20 y=350 shape="010_18" scale = 2.0 angle=180]
+[flip target ="db1" v=1]
+
+[balloon id = "db2" x=-110 y=-400 shape="010_18" scale = 1.7 angle=80]
+
+
+[balloon id = "db3" x=-190 y=420 shape="010_18" scale = 1.7 angle=20]
+[flip target ="db3" v=1 h=1]
+
+[balloon id = "db4" x=230 y=-30 shape="010_18" scale = 1.8 angle=-10]
+
+
+[balloon id = "db5" x=-260 y=-150 shape="010_18" scale = 1.4 angle=85]
+[flip target ="db5" v=1 h=1]
+
+[balloon id = "db6" x=190 y=420 shape="010_18" scale = 1.9 angle=-70]
+
+
+[balloon id = "db7" x=130 y=-400 shape="010_18" scale = 2.5 angle=40]
+[flip target ="db7" v=1 h=1]
+
+[p]
+
+//-------------------------------------------------------------------------------
+//[stopbgm]

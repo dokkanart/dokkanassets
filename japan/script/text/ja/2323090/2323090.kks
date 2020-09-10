@@ -1,0 +1,60 @@
+*start|スタート
+ 
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "007"]
+ 
+*001
+//-------------------------------------------------------------------------------
+//  ベジータ
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0001L" bg = "bg_008_001"]
+ 
+[character x = -170 y = -100 storage = "00061/card_01" scale = 1.0 action = "fadein" time = 0.1]
+ 
+[balloon x=120 y=160 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+このオレが[r]
+きさまの死にみやげに[r]
+見せてやろう… 
+[p]
+ 
+[balloon x=130 y=-80 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+超エリートサイヤ人の[r]
+圧倒的パワーを…！ 
+[p]
+ 
+*002
+//-------------------------------------------------------------------------------
+//  孫悟空
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_008_001"]
+ 
+[character x = 160 y = -70 storage = "00003/heapup_e_01" scale = 1.8 action = "fadein" time = 0.1]
+ 
+[balloon x=-130 y=90 shape="001_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+カラダが[r]
+ぶっこわれても[r]
+死ぬよかいいや！ 
+[p]
+ 
+[balloon x=-130 y=-170 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+界王拳を３倍まで[r]
+上げるしかねえ…！！ 
+[p] 
+//-------------------------------------------------------------------------------
+[stopbgm]

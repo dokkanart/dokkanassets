@@ -1,0 +1,445 @@
+*start|スタート
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "027"]
+
+*001
+//-------------------------------------------------------------------------------
+//  
+//-------------------------------------------------------------------------------
+[se storage = "3021"]
+[coma shape="N0003R" bg = "bg_025_004"]
+
+[lwfobject storage = "kakimoji:ef_020" id = "kaki1" x = -180 y = -100 angle = 0 scale = 1.7 action = "fadein" time = 0.1]
+[quake target = "kaki1" power = 9 time = 0.4]
+
+
+[character id = "supopo" x = -50 y = -100 storage = "00041/dam_side_p_01" scale = 1.2 angle = 10 action = "fadein" time = 0.1]
+[quake target = "supopo" power =11 time = 0.4]
+
+
+[character id = "shougeki" x = 0 y = 40 storage = "99999/04_syougeki" scale = 1.5 action = "fade:70" time = 0.1]
+[quake target = "shougeki" power = 7 time = 0.4]
+
+
+[character id = "bidel" x= 120 y= -40 storage = "00039/atc_sp01_e_03" angle = 0 scale = 1.0 action = "fadein" time = 0.1]
+[quake target = "bidel" power = 8 time = 0.4]
+
+
+//[wait_anim target="bidel"]
+
+[wait time = 0.7]
+
+
+[se storage = "39"]
+[balloon x = 20 y = 300 shape="005_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+きまったー！！[r]
+さすが天才少女です！！
+[p]
+
+
+*002
+//-------------------------------------------------------------------------------
+//  ビーデル
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_025_004"]
+
+[character x=200 y=-190 storage = "00039/heapup_e_02" angle = 0 scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x = -70 y = 70 shape="004_02" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 40]
+//[quake target =".bln" power = 3 time = 0.2]
+はあっ[r]
+はあっ…
+[p]
+
+
+
+*003
+//-------------------------------------------------------------------------------
+//  スポポビッチ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_025_004"]
+
+[character id = "supopo" x= -200 y= -390 storage = "00041/idl_side_p_02" scale = 1.2 action = "fadein" time = 0.1]
+[quake target ="supopo" power = 1 time = 0.7]
+
+[wait_anim target="supopo"]
+
+[se storage = "3022"]
+[move target ="supopo" y=-130 time = 0.5 ease="Out:5"]
+
+[wait time = 0.7]
+
+
+//空のフキダシ
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+
+*004
+//-------------------------------------------------------------------------------
+//  審判
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_025_004"]
+
+[character x=210 y=-190 storage = "90003/shout_2" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x = -105 y = 90 shape="005_02" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+[quake target =".bln" power = 3 time = 0.2]
+スポポビッチ選手[r]
+立ち上がりました！
+[p]
+
+
+[balloon x=-120 y=-105 shape="005_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+なんという[r]
+タフさでしょうか…！！
+[p]
+
+
+*005
+//-------------------------------------------------------------------------------
+//  孫悟飯（青年期）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_025_004"]
+
+[character x= 250 y=-130 storage = "00366/heapup_e_02" scale = 1.2 action = "fadein" time = 0.1]
+//[character x= -250 y=-130-20 storage = "00366/heapup_p_02" scale = 1.2 action = "fadein" time = 0.1]
+
+
+[balloon x = -105 y = 60 shape="004_02" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 40]
+//[quake target =".bln" power = 3 time = 0.2]
+そ……[r]
+そんな……！！
+[p]
+
+
+*006
+//-------------------------------------------------------------------------------
+//  孫悟空（天使）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_025_004"]
+
+[character x = 170 y = 165 storage = "99999/ring" scale = 0.8 action = "fadein" time = 0.1]
+[character x=250 y=-140 storage = "00003/none_idl_side_e_01" scale = 1.1 action = "fadein" time = 0.1]
+
+[balloon x = -105 y = 90 shape="001_03" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size =  54]
+//[quake target =".bln" power = 3 time = 0.2]
+………
+[p]
+
+
+[balloon x=-120 y=-100 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+試合を棄権したほうが[r]
+いい……！ あいつ[r]
+なにか変だぞ……！！
+[p]
+
+
+*007
+//-------------------------------------------------------------------------------
+//  孫悟飯（青年期）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_025_004"]
+
+[character x= 250 y=-130 storage = "00366/heapup_e_02" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x = -105 y = 70 shape="004_02" scale = 0.65 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 44]
+//[quake target =".bln" power = 3 time = 0.2]
+え？
+[p]
+
+
+*008
+//-------------------------------------------------------------------------------
+//  孫悟空（天使）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_025_004"]
+
+[character x = 170 y = 165 storage = "99999/ring" scale = 0.8 action = "fadein" time = 0.1]
+[character x=250 y=-140 storage = "00003/none_idl_side_e_01" scale = 1.1 action = "fadein" time = 0.1]
+
+[balloon x = -105 y = 80 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+ヤツは自分の能力を[r]
+はるかに超えた力を[r]
+持ってしまっている[r]らしい…
+[p]
+
+
+[balloon x=-120 y=-110 shape="001_03" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size =  32]
+//[quake target =".bln" power = 3 time = 0.2]
+…わからねえ……[r]
+どういうことだ……
+[p]
+
+
+*009
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0003L" bg = "bg_000_014"]
+
+[character id = "BG" x = 0 y = 0 storage = "99999/flare" scale = 20 action = "fadein" time = 0.1 mask="inside"]
+
+[balloon x=0 y=0 shape="003_01" scale = 1.4 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 16]
+//[quake target =".bln" power = 3 time = 0.2]
+不気味な強さを見せる[r]
+スポポビッチ…[r]
+　[r]
+残忍な[r]
+スポポビッチの攻撃に[r]
+苦しむビーデルを[r]
+目の当たりにし[r]
+悟飯の怒りが[r]爆発した…！
+[p]
+
+
+[se storage = "3025"]
+//点滅
+[balloon shape="008_02" x = 0 y = 0 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+[balloon shape="008_02" x = 0 y = 0 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+
+
+*010
+//-------------------------------------------------------------------------------
+//  超サイヤ人孫悟飯（青年期）
+//-------------------------------------------------------------------------------
+[se storage = "3029"]
+[coma shape="N0001R" bg = "bg_025_004"]
+
+[lwfobject id = "kaki1" storage="kakimoji:ef_009" x = -50 y = -120 action = "fadein" scale = 1.1 time = 0.1]
+[quake target = "kaki1" power = 1 time = 300]
+
+[character id = "ss" x= 200 y= -185 storage = "99999/supersaiyan" scale = 0.9 action = "fade:60" time = 0.1]
+[quake target = "ss" power = 1]
+[character x = 300 y = -260 storage = "00366/card_04" scale = 1.1 action = "fadein" time = 0.1]
+
+[balloon x = -105 y = 80 shape="007_02" scale = 0.8 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size =  32]
+[quake target =".bln" power = 7 time = 0.2]
+　お…おのれ……[r]
+　もうゆるさんぞ[r]
+　あのくそ野郎…！！
+[p]
+
+[stopbgm]
+
+*011
+//-------------------------------------------------------------------------------
+//  ヤムー
+//-------------------------------------------------------------------------------
+[se storage = "03"]
+[coma shape="N0003R" bg = "bg_000_016"]
+
+
+[balloon x= 0 y= 40 shape="006_01" scale = 0.9 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 7 time = 0.2]
+お遊びは[r]
+そこまでにしろ！！[r]
+スポポビッチ！！
+[p]
+
+
+*012
+//-------------------------------------------------------------------------------
+//  超サイヤ人孫悟飯（青年期）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_025_004"]
+
+[character id = "ss" x= 200 y= -185 storage = "99999/supersaiyan" scale = 0.9 action = "fade:60" time = 0.1]
+[quake target = "ss" power = 1]
+[character x = 300 y = -260 storage = "00366/card_04" scale = 1.1 action = "fadein" time = 0.1]
+
+
+[lwfobject id = "kaki2" storage="kakimoji:ef_002" angle = -12 in="04" x=0 y=100 scale = 2.1 action = "fadein" time = 0.1]
+[quake target = "kaki2" power = 9 time = 0.4]
+
+
+
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+
+*013
+//-------------------------------------------------------------------------------
+//  スポポビッチ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_025_004"]
+
+[character x = -200 y = -130 storage = "00041/idl_side_p_02" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x=140 y=75 shape="004_02" scale = 0.65 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 44]
+//[quake target =".bln" power = 3 time = 0.2]
+……！
+[p]
+
+
+*014
+//-------------------------------------------------------------------------------
+//  ヤムー
+//-------------------------------------------------------------------------------
+[bgm storage = "013"]
+
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_025_004"]
+
+[wait time = 0.7]
+
+[se storage = "48"]
+[character x = 185 y = -110 storage = "00042/idl_side_p_01" scale = 1.1 action = "fadein" time = 0.7]
+[flip target =".chara" h=1]
+
+
+[wait time = 1.0]
+
+[balloon x=-150 y=80 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+我々のするべきことは[r]
+こんなことではないはずだ
+[p]
+
+
+[balloon x=-130 y=-100 shape="002_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+さっさと[r]
+勝ってしまえ
+[p]
+
+
+*015
+//-------------------------------------------------------------------------------
+//  スポポビッチ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_025_004"]
+
+[character x = -190 y = -115 storage = "00041/idl_side_p_02" scale = 1.1 action = "fadein" time = 0.1]
+
+[balloon x=140 y=90 shape="002_02" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size =  40]
+//[quake target =".bln" power = 3 time = 0.2]
+あ…[r]
+ああ…
+[p]
+
+
+[se storage = "3002"]
+//点滅
+[balloon shape="008_02" x = 0 y = 0 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+
+
+*016
+//-------------------------------------------------------------------------------
+//  審判
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0003R" bg = "bg_025_004"]
+
+
+
+[balloon x = 0 y = 50 shape="005_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+じょ…場外…！！[r]
+スポポビッチ選手の[r]
+勝ちです…！！
+[p]
+
+
+*017
+//-------------------------------------------------------------------------------
+//  超サイヤ人孫悟飯（青年期）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_025_004"]
+
+[character x = 300 y = -260 storage = "00366/card_04" scale = 1.1 action = "fadein" time = 0.1]
+
+[balloon x = -90 y = 60 shape="004_02" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 54]
+//[quake target =".bln" power = 3 time = 0.2]
+………
+[p]
+
+
+*018
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0004L" bg = "bg_000_024"]
+
+[balloon x=0 y=-30 shape="003_01" scale = 1.4 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 16]
+//[quake target =".bln" power = 3 time = 0.2]
+不吉な予感…！[r]
+　[r]
+ヤムーとスポポビッチが[r]
+するべきこととは[r]
+いったい何なのか？[r]
+　[r]
+天下一武道会の裏側で[r]
+何かが[r]
+うごめいている…！
+[p]
+
+
+
+//-------------------------------------------------------------------------------
+[stopbgm]

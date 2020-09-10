@@ -1,0 +1,37 @@
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "011"]
+
+
+*001
+//-------------------------------------------------------------------------------
+//  悟飯（少年期）
+//-------------------------------------------------------------------------------
+
+//[se storage = "04"]
+[coma shape="N0002L" bg = "bg_012_001"]
+
+[character id = "goha"x = -190 y = -90 storage = "00322/heapup_p_01" scale = 1.4 action = "fadein" time = 0.1]
+[flip target ="goha" h=1]
+
+[balloon x=140 y=100 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 3 time = 0.2]
+[font size = 28]
+ボクだって[r]
+ピッコロさんとの修業で[r]
+成長したんだ！[p]
+
+[balloon x=120 y=-180 shape="001_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 3 time = 0.2]
+[font size = 28]
+[$player]さん！[r]
+大界王神さま！[r]
+見ててください！！[p]
+
+
+[stopbgm]

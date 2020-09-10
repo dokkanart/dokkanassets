@@ -1,0 +1,84 @@
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "028"]
+
+*001
+//-------------------------------------------------------------------------------
+//  ビーデル
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0001R" bg = "bg_070_003"]
+ 
+[character x = 220 y = -170 storage = "00417/heapup_e_01" scale = 1.4 action = "fadein" time = 0.1]
+ 
+[balloon x = -80 y = 105 shape="001_02" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+[quake target =".bln" power = 3 time = 0.2]
+いきなり[r]
+何するのよ！
+[p]
+
+[balloon x=-80 y=-100 shape="006_01" scale = 0.8 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 7 time = 0.2]
+もう[r]
+ゆるさないわよ！
+[p]
+
+*002
+//-------------------------------------------------------------------------------
+//  超サイヤ人ブロリー
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0004L" bg = "bg_000_014"]
+
+//描き文字：ゴゴゴゴ
+[lwfobject id = "kaki1" storage="kakimoji:ef_009" angle = 10 x=-240 y=-50 scale = 1.5 action = "fadein" time = 0.1]
+[quake target = "kaki1" power = 1 time = 300]
+
+//[character x = -100 y = -50 storage = "00255/card_04" mask="none" scale = 0.9 action = "fadein" time = 0.1]
+
+[character x = 0 y = -138 storage = "00255/card_04" scale = 2.5 angle =15 action = "fadein" time = 0.1]
+[paint target=".chara" color="#A4A4A4"]
+ 
+[balloon x=130 y=90 shape="002_02" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+//[quake target =".bln" power = 7 time = 0.2]
+…カカロット……
+[p]
+
+
+*003
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_000_014"]
+
+[balloon x=0 y=-40 shape="003_02" scale = 1.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 13]
+//[quake target =".bln" power = 3 time = 0.2]
+なんと…！[r]
+ブロリーは生きていた…！[r]
+　[r]
+悟空に敗れ[r]
+新惑星ベジータを脱出した[r]
+ブロリーは地球に漂着し[r]
+閉ざされた氷の中で７年間も[r]
+ねむり続けていたのだ…[r]
+　[r]
+今 再び[r]
+伝説の超サイヤ人の恐怖が[r]
+始まろうとしている…！
+[p]
+
+
+//-------------------------------------------------------------------------------
+[stopbgm]

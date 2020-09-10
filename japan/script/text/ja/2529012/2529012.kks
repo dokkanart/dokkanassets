@@ -1,0 +1,52 @@
+//スタート 2529012
+
+*start|スタート
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+
+//[bgm storage = "028"]
+
+*001
+//-------------------------------------------------------------------------------
+//  仮面のサイヤ人
+//-------------------------------------------------------------------------------
+
+[coma shape="S0001" bg = "bg_085_001"]
+
+[character id = "kamen" x = 0 y = -40 storage = "00704/card_01" scale = 0.4 action = "fadein" time = 0.1]
+
+[wait time = 0.7]
+[se storage = "17"]
+
+[character id = "towa" x = -220 y = -30 storage = "00434/card_01" scale = 1.1 action = "fadein" time = 0.7]
+[move target ="towa" y=-50 time = 1.2]
+
+[wait time = 0.2]
+
+
+[character id = "mira" x = 180 y = 20 storage = "00435/card_01" scale = 1.1 action = "fadein" time = 0.7]
+[move target ="mira" y=0 time = 1.0]
+
+//[wait_anim target="mira"]
+//[se storage = "31"]
+[wait time = 1.6]
+
+[balloon x=-120 y=420 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+おまえのエネルギーも[r]
+暗黒魔界の復活に[r]
+使わせてもらうわ[p]
+
+[balloon x=120 y=-280 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+おまえを倒し[r]
+オレは さらに[r]
+強くなってみせる！！[p]
+
+//-------------------------------------------------------------------------------
+//[stopbgm]

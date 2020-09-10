@@ -1,0 +1,86 @@
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+//[bgm storage = "012"]
+
+*001
+//-------------------------------------------------------------------------------
+//  夜の背景に満月が浮かぶ。
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma id = "coma1" shape="N0003L" bg = "bg_000_014"]
+ 
+[character x = -0 y = -40 storage = "99999/fullmoon" scale = 1.2 action = "fadein" time = 0.1]
+
+[wait_anim target=".chara"]
+
+// 空のフキダシ（セリフがないコマを送るために使用）
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+*002
+//-------------------------------------------------------------------------------
+//  孫悟空
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma id = "coma1" shape="N0004L" bg = "bg_000_034"]
+
+[character x = -150 y = 30 storage = "99999/fullmoon" scale = 0.8 action = "fadein" time = 0.1]
+
+[character x = 200 y = -200 storage = "00261/idl_back_e_01" scale = 1.0 action = "fadein" time = 0.1]
+
+//描き文字：ゴゴゴゴ
+[lwfobject id = "kaki1" storage="kakimoji:ef_009" in="04" x=-20 y=-100 scale = 1.2 action = "fadein" time = 0.1]
+[quake target = "kaki1" power = 1 time = 300]
+
+[wait time = 1.0]
+
+//点滅
+[se storage = "44"]
+//点滅
+[balloon shape="008_02" x = 140 y = -30 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+
+[balloon shape="008_02" x = 140 y = -30 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+
+//[fadeout target = "kaki1" time = 0.3]
+
+//フェードアウト（フェードアウトするコマ）
+//[balloon x=130 y=40 shape="008_02" scale = 50.0 action = "fadein" time = 0.2]
+//[wait time = 0.2] 
+
+
+*003
+//-------------------------------------------------------------------------------
+//  大猿に変身する。
+//-------------------------------------------------------------------------------
+[se storage = "50"]
+
+[se storage = "3038"]
+
+[coma shape="N0002L" bg = "bg_000_034"]
+
+[lwfobject id = "kaki1" storage="kakimoji:ef_020" in="04" x=-80 y=0 scale = 3.0]
+[quake target = "kaki1" power = 30 time = 0.7]
+
+ 
+[character x = -30 y = 110 storage = "00261/card_02" scale = 1.6 action = "expand" time = 0.3]
+
+[wait time = 1.0]
+
+
+
+//[wait_anim target=".chara"]
+
+// 空のフキダシ（セリフがないコマを送るために使用）
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+ 
+ 
+//-------------------------------------------------------------------------------
+

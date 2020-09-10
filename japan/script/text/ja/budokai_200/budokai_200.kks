@@ -1,0 +1,144 @@
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "006"]
+
+//-------------------------------------------------------------------------------
+//  審判のおっちゃん
+//-------------------------------------------------------------------------------
+[se storage = "39"]
+
+[coma shape="N0002R" bg = "bg_025_002"]
+[character id = "ana1" x=210 y=-200 storage = "90003/shout_1" scale = 1.3 action = "fadein" time = 0.1]
+
+
+[balloon id = "1" shape="005_01" x = -120 y = 145 scale = 0.95 action = "fadein" time = 0.1]
+[font size = 25]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 3 time = 0.2]
+さあ！ ではここで[r]
+今回から追加される[r]
+新要素について[r]
+説明させていただきます!![p]
+
+
+[clear target = "1"]
+
+[character id = "guide1" x=0 y=430 storage = "90003/budokai_25" scale = 1.0]
+[character id = "ana2" x=210 y=-200 storage = "90003/shout_1" scale = 1.3 ]
+
+[balloon id = "1" shape="005_01" x = -130 y = 60 scale = 0.9 action = "fadein" time = 0.1]
+[font size = 27]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 3 time = 0.2]
+なんと！ 今回から[r]
+[font size = 36]連覇達成ボーナス[font size = 27]が[r]
+追加されました！！[p]
+
+[balloon id = "2" shape="005_02" x = -90 y = -205 scale = 0.95 ]
+[font size = 25]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 3 time = 0.2]
+連覇すると獲得できる[r]
+武道会ptが多くなりますので[r]
+どんどん連続優勝を[r]
+狙っていきましょう！[p]
+
+[clear target = "ana1"]
+[clear target = "guide1"]
+[clear target = "1"]
+[clear target = "2"]
+
+//親
+[character id = "guide1" x=0 y=430 storage = "90003/budokai_26" scale = 1.0]
+[character id = "ana3" x=210 y=-200 storage = "90003/shout_1" scale = 1.3 ]
+
+[balloon id = "1" shape="005_01" x = -140 y = 70 scale = 0.95 action = "fadein" time = 0.1]
+[font size = 25]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 3 time = 0.2]
+さらに！[r]
+対戦相手の強さを選択できる[r]
+[font color="#d02d00"]意気込み選択システム[font color="#141414"]が[r]
+新登場です！！[p]
+
+[clear target = "guide1"]
+[clear target = "ana2"]
+
+
+[character id = "guide2" x=0 y=430 storage = "90003/budokai_27" scale = 1.0]
+[character id = "ana4" x=210 y=-200 storage = "90003/shout_1" scale = 1.3]
+
+[balloon id = "2" shape="005_02" x = -110 y = -200 scale = 0.9 action = "fadein" time = 0.1]
+[font size = 27]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 3 time = 0.2]
+強い対戦相手に勝利すると[r]
+通常よりもたくさんの[r]
+武道会ptを獲得できます！[r]
+ぜひ挑戦してください！
+[p]
+
+
+[clear target = "ana3"]
+[clear target = "ana4"]
+[clear target = "guide2"]
+[clear target = "1"]
+[clear target = "2"]
+
+
+
+[character id = "guide1" x=0 y=430 storage = "90003/budokai_28" scale = 1.0]
+[character id = "ana" x=180 y=-135 storage = "90003/count" scale = 1.3]
+
+[balloon id = "1" shape="005_01" x = -130 y = 60 scale = 0.9 action = "fadein" time = 0.1]
+[font size = 27]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 3 time = 0.2]
+さらに さらに！[r]
+[font color="#d02d00"]ローカルランキング[font color="#141414"]と[r]
+[font color="#d02d00"]ローカルランキング報酬[r]
+[font color="#141414"]が追加されました！！[p]
+
+[clear target = "guide1"]
+[clear target = "ana"]
+
+[character id = "guide2" x=0 y=430 storage = "90003/budokai_29" scale = 1.0]
+[character id = "ana" x=180 y=-135 storage = "90003/count" scale = 1.3]
+
+[balloon id = "2" shape="005_02" x = -110 y = -200 scale = 0.9 action = "fadein" time = 0.1]
+[font size = 27]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 3 time = 0.2]
+少人数のランキングですので[r]
+ぜひとも入賞目指して[r]
+がんばってくださいね！[p]
+
+[clear target = "guide2"]
+[clear target = "ana"]
+[clear target = "1"]
+[clear target = "2"]
+
+
+[character id = "guide" x=0 y=430 storage = "90003/budokai_30" scale = 1.0]
+[character id = "ana" x=210 y=-200 storage = "90003/shout_1" scale = 1.3 ]
+
+[balloon id = "1" shape="005_01" x = -130 y = 80 scale = 0.9 action = "fadein" time = 0.1]
+[font size = 28]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 3 time = 0.2]
+そして！[r]
+ミッションの内容も[r]
+変更されております！！
+[p]
+
+[balloon id = "2" shape="005_02" x = -110 y = -200 scale = 0.9 action = "fadein" time = 0.1]
+[font size = 28]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 3 time = 0.2]
+豪華報酬を目指して[r]
+がんばってくださいー！！[p]
+
+[stopbgm]

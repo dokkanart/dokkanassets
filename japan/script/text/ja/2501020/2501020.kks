@@ -1,0 +1,139 @@
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "013"]
+
+*001
+//-------------------------------------------------------------------------------
+//  界王
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0001L" bg = "bg_080_001"]
+
+[character x = -180 y = -40 storage = "90001/stand" scale = 0.5 action = "fadein" time = 0.1]
+[character x = -220 y = 60 storage = "99999/ase" scale = 0.7 action = "fadein" time = 0.1]
+
+//[wait time = 0.7]
+
+[balloon x=120 y=120 shape="001_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+あわわわ…！！
+[p]
+
+[balloon x=130 y=-90 shape="001_01" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+ブロリーが[r]
+南の銀河を破壊した[r]
+超サイヤ人だったのか…
+[p]
+
+*002
+//-------------------------------------------------------------------------------
+//  界王
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0003L" bg = "bg_080_001"]
+
+[character x = -180 y = -130 storage = "90001/stand" scale = 1.0 action = "fadein" time = 0.1]
+[character x = -250 y = 60 storage = "99999/ase" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon x=140 y=60 shape="001_03" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+[quake target =".bln" power = 3 time = 0.2]
+このままでは[r]
+この北の銀河まで[r]
+破壊されてしまう…！
+[p]
+
+*003
+//-------------------------------------------------------------------------------
+//  "界王は声だけ。ブロリーの画像を出す"
+//-------------------------------------------------------------------------------
+[se storage = "10"]
+[coma shape="S0001" bg = "bg_008_001"]
+
+[character x = 0 y = 0 storage = "00256/card_01" scale = 1.5 action = "fadein" time = 0.1]
+[quake target =".chara" power = 7 time = 0.4]
+
+[wait_anim target=".chara"]
+
+[balloon x=120 y=350 shape="005_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+伝説の超サイヤ人に[r]
+なったブロリーは…
+[p]
+
+[balloon x=-90 y=-340 shape="005_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+[font color="#FF0000"]全体攻撃[font color="#141414"]をしてくる[r]
+とんでもないバケモノ[r]
+じゃ！！
+[p]
+
+*004
+//-------------------------------------------------------------------------------
+//  界王
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_080_001"]
+
+[character x = -180 y = -40 storage = "90001/stand" scale = 0.5 action = "fadein" time = 0.1]
+[character x = -220 y = 60 storage = "99999/ase" scale = 0.7 action = "fadein" time = 0.1]
+
+[balloon x=120 y=90 shape="001_02" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+[quake target =".bln" power = 3 time = 0.2]
+さらに[font color="#FF0000"]自分のステータスを[r]
+上昇[font color="#141414"]させるスキルを持った[r]
+本当の悪魔じゃ…！！
+[p]
+
+[balloon x=130 y=-100 shape="001_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+…だが[r]
+あきらめるでないぞ！
+[p]
+
+*005
+//-------------------------------------------------------------------------------
+//  界王
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0003L" bg = "bg_080_001"]
+
+[character x = -180 y = -130 storage = "90001/stand" scale = 1.0 action = "fadein" time = 0.1]
+//[character x = -250 y = 60 storage = "99999/ase" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon x=125 y=90 shape="001_02" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+[quake target =".bln" power = 3 time = 0.2]
+ブロリーのスキルを[r]
+無効化できるスキルを[r]
+持った戦士もいるのだ！！
+[p]
+
+[balloon x=140 y=-130 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+チャンスを生かし[r]
+勝利を掴むのじゃぞ！！
+[p]
+
+//-------------------------------------------------------------------------------
+[stopbgm]

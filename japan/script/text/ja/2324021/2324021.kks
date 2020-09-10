@@ -1,0 +1,113 @@
+*start|スタート
+//復讐鬼ベビー編_エリア2：ゴール
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "008"]
+
+
+*001
+//-------------------------------------------------------------------------------
+//  悟飯
+//-------------------------------------------------------------------------------
+[se storage = "50"]
+[coma shape="N0001R" bg = "bg_004_001"]
+
+
+[lwfobject id = "kaki1" storage="kakimoji:ef_020" in="04" x=80 y=180 scale = 2 angle = -20] 
+[quake target = "kaki1" power = 15 time = 0.4] 
+
+[character id = "ss" x = 200 y = -100 storage = "99999/supersaiyan" scale = 1.0 action = "fadein" time = 0.1]
+[quake target = "ss" power = 1 time = 300] 
+
+[character x = 210 y = -110 storage = "00341/heapup_e_01" scale = 1.2 action = "fadein" time = 0.1]
+
+
+[balloon x = -140 y = -80 shape="006_01" scale = 0.8 action = "expnad" time = 0.1] 
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 7 time = 0.4]
+はああああ…！！[p]
+
+
+*002
+//-------------------------------------------------------------------------------
+//  悟天：ベビー
+//-------------------------------------------------------------------------------
+[se storage = "03"]
+[coma shape="N0003L" bg = "bg_004_001"]
+
+[character id = "gtnb" x = -220 y = -170 storage = "00510/idl_side_p_01" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x=120 y=100 shape="007_02" scale = 0.8 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 7 time = 0.2]
+気を発散したな…！[r]
+今だ！！[p]
+
+
+
+[fadeout target = "gtnb" time = 0.7]
+
+[character id = "gtn" x = -220 y = -170 storage = "00390/idl_side_e_01" scale = 1.2 action = "fadein" time = 0.7]
+[flip target ="gtn" h=1]
+
+[character id="BB"x=0 y=-40 storage = "00481/dash_p_01" scale = 0.9 action = "fadein" time = 0.7]
+
+[wait time = 0.7]
+
+[se storage = "3014"]
+
+[move target ="BB" x=700 time = 0.5]
+
+[wait_anim target="BB"]
+
+//点滅（白）
+[se storage = "3025"]
+//点滅
+[balloon shape="008_02" x = 140 y = -30 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+[balloon shape="008_02" x = 140 y = -30 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+
+[wait_anim target=".bln"]
+
+*003
+//-------------------------------------------------------------------------------
+//  悟飯：ベビー
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_004_001"]
+
+[character id = "gohan" x = 180 y = -160 storage = "00509/heapup_p_01" scale = 1.4 action = "fadein" time = 0.1]
+[flip target ="gohan" h=1]
+
+[wait time = 0.7]
+
+[character id = "bb" x=180 y=-120 storage = "00481/heapup_p_01" scale = 1.3 action = "fadein" time = 1.0]
+[flip target ="bb" h=1]
+
+[wait time = 0.5]
+
+[fadeout target = "bb" time = 0.7]
+
+[wait_anim target="bb"]
+
+[balloon x=-90 y=90 shape="006_02" scale = 0.6 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 44]
+[quake target =".bln" power = 7 time = 0.2]
+これだ！！[p]
+
+[balloon x=-120 y=-180 shape="006_01" scale = 1.0 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+[quake target =".bln" power = 7 time = 0.2]
+この強力な[r]
+サイヤパワーこそ[r]
+オレが[r]求めていたものだ！！[p]
+
+[stopbgm]

@@ -1,0 +1,91 @@
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+//[bgm storage = "03"]
+
+*001
+//-------------------------------------------------------------------------------
+//  合体ザマス
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0003R" bg = "bg_000_014"]
+
+[wait time = 0.3]
+
+[se storage = "3022"]
+[character x=100 y=-200 storage = "00662/card_03" scale = 1.2 angle = -0 action = "fadein" time = 0.2]
+[move target =".chara" y=0 time = 0.7 ease="Out:2"]	
+[move target =".chara" x=50 time = 0.7 ease="Out:2"]
+
+[wait_anim target=".chara"]
+
+[se storage = "03"]
+
+[balloon x=0 y=350 shape="007_02" scale = 0.8 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 7 time = 0.2]
+正義の光よ！[r]
+我を撃て！！
+[p]
+
+[quake target =".chara" power = 5 time = 0.4]
+
+[balloon x=0 y=-180 shape="007_02" scale = 0.9 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 7 time = 0.2]
+　悪を滅せぬ[r]
+　弱き神は不要なり！！
+[p]
+
+[se storage = "3025"]
+//点滅
+[balloon shape="008_02" x = 0 y = 0 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+[balloon shape="008_02" x = 0 y = 0 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+
+//フェードアウト（フェードアウトするコマ）
+[balloon x=0 y=0 shape="008_02" scale = 50.0 action = "fadein" time = 0.5]
+[wait time = 0.7]
+
+*002
+//-------------------------------------------------------------------------------
+//  合体ザマス半身歪み
+//-------------------------------------------------------------------------------
+[coma shape="S0001" bg = "bg_073_001"]
+
+[lwfobject id = "kaki1" storage="kakimoji:ef_009" x=-200 y=-260 scale = 1.5 action = "fadein" time = 0.1]
+[quake target = "kaki1" power = 1 time = 300]
+
+[character x = 40 y = -60 storage = "00662/card_02" scale = 1.2 action = "fadein" time = 0.1]
+
+
+//フェードイン（フェードインするコマ）
+[balloon x=0 y=0 shape="008_02" scale = 50]
+[wait time = 1]
+
+[se storage = "3038"]
+
+[fadeout target = ".bln" time = 1]
+[wait_anim target=".bln"]
+
+[wait time = 0.3]
+
+//[quake target =".chara" power = 10 time = 0.4]
+
+[balloon x=0 y= 480 shape="006_02" scale = 0.75 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+[quake target =".bln" power = 7 time = 0.2]
+終わりだな[r]
+人間！！
+[p]
+
+//-------------------------------------------------------------------------------
+//[stopbgm]

@@ -1,0 +1,90 @@
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+//[bgm storage = "012"]
+
+*001
+//----------------------------------------------------------------------------
+// ターレスが神精樹の実を食べてパワーアップする。
+//----------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0003R" bg = "bg_000_014"]
+
+[character x = 110 y = -400 storage = "00298/card_04" scale = 1.8 angle = 0 action = "fadein" time = 0.1]
+
+
+[wait time = 0.7]
+
+
+[balloon shape="002_02" x = -130 y = 300 scale = 0.8 action = "fadein" time = 0.1]
+[font size = 32]
+[wait_anim target=".bln"]
+//[quake target =".bln" power = 3 time = 0.2]
+…オレの勝ちだな
+[p]
+
+[se storage = "13"]
+
+[character id = "arm" x = -80 y = -250 storage = "00298/card_05" scale = 1.8 angle = 10 action = "fadein" time = 0.1]
+[move target ="arm" x=-60 time = 1.3]
+[move target ="arm" y=-170 time = 1.3]
+
+[wait_anim target="arm"]
+
+
+
+[se storage = "3025"]
+//点滅
+[balloon shape="008_02" x = 0 y = 0 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+[balloon shape="008_02" x = 0 y = 0 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+
+
+
+//フェードアウト（フェードアウトするコマ）
+//[balloon x=0 y=0 shape="008_02" scale = 50.0 action = "fadein" time = 0.5]
+//[wait time = 0.7] 
+
+
+
+*002
+//-------------------------------------------------------------------------------
+//  ターレス
+//-------------------------------------------------------------------------------
+[se storage = "50"]
+[coma shape="S0001" bg = "bg_000_026"]
+
+
+[lwfobject id = "kaki1" storage="kakimoji:ef_020" in="04" x=-0 y=-0 scale = 3.0 action = "expand" time = 0.1]
+[quake target = "kaki1" power = 10 time = 0.7]
+
+
+[character x = 0 y = 0 storage = "00298/card_06" scale = 1.2 angle = 0 action = "fadein" time = 0.1]
+[quake target =".chara" power = 7 time = 0.4]
+
+
+[character id = "hato2" storage = "99999/04_syougeki" x = 0 y = 100 scale = 6.0 action = "expand" time = 0.7]
+//[character id = "hato" storage = "00298/card_06" x = 0 y = 0 scale = 3.5 action = "expand" time = 0.5]
+[wait time = 0.3]
+//[fadeout target = "hato" time = 0.3]
+[fadeout target = "hato2" time = 0.4]
+
+
+
+[wait_anim target="hato"]
+
+
+[balloon shape="006_02" x = 0 y = -400 scale = 1 action = "expand" time = 0.1]
+[font size = 24]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 7 time = 0.2]
+神精樹の実で全宇宙を[r]
+ひざまずかせてみせる！！
+[p]
+
+//[stopbgm]

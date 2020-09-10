@@ -1,0 +1,198 @@
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "012"]
+
+*01
+//-------------------------------------------------------------------------------
+//  クリリン
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0001R" bg = "bg_006_001"]
+
+[character x = 180 y = -100 storage = "00009/idl_side_e_03" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon x=-120 y=90 shape="001_02" scale = 1 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+[$player][r]…悟飯とピッコロには[r]会ってないんだっけ？
+[p]
+
+
+*02
+//-------------------------------------------------------------------------------
+//  クリリン
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_006_001"]
+
+[character x = 160 y = -100 storage = "00009/heapup_e_03" scale = 1.3 action = "fadein" time = 0.1]
+
+[balloon x=-120 y=100 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][font size = 28]
+これからもっと[r]ヤバい敵が増えそうだ[p]
+
+[balloon x=-125 y=-180 shape="001_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][font size = 28]
+こっちも[r]強い仲間が必要だぜ[p]
+
+//フェードアウト（フェードアウトするコマ）
+[balloon x=130 y=40 shape="008_03" scale = 50.0 action = "fadein" time = 0.5]
+[wait time = 0.7] 
+
+
+
+*03
+//-------------------------------------------------------------------------------
+//  場面転換
+//-------------------------------------------------------------------------------
+[coma id = "coma1" shape="S0001" bg = "bg_001_001"]
+
+//フェードイン（フェードインするコマ）
+[balloon x=130 y=40 shape="008_03" scale = 50]
+[wait time = 1]
+[fadeout target = ".bln" time = 2]
+[wait_anim target=".bln"]
+
+// 空のフキダシ（セリフがないコマを送るために使用）
+//[balloon x = 0 y = 0 shape="002_01" scale = 0]
+//[p]
+
+[character x=-220 y=-75 storage = "00007/heapup_back_e_01" scale = 1.0 action = "fadein" time = 0.7]
+[flip target =".chara" h=1]
+
+[wait_anim target=".chara"]
+
+[balloon x=0 y=140 shape="001_03" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[quake target = ".bln" power = 3 time = 0.2]
+[font size = 32]
+な…なにかが来る！[r]この気は……
+[p]
+
+*04
+//-------------------------------------------------------------------------------
+//  孫悟飯
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+//[coma shape="N0003L" bg = "bg_001_001"]
+
+
+//[character x=-220 y=-75 storage = "00007/heapup_back_e_01" scale = 2.5 action = "fadein" time = 0.1]
+
+//[se storage = "3034"]
+
+//[balloon x=100 y=80 shape="006_01" scale = 0.8 action = "expand" time = 0.1]
+//[wait_anim target=".bln"][quake target = ".bln" power = 7 time = 0.2]
+//[font size = 33]
+//な…なにかが来る！[r]この気は……
+//[p]
+
+
+*05
+//-------------------------------------------------------------------------------
+//  クリリン
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_001_001"]
+
+[balloon x=-80 y=100 shape="006_01" scale = 0.65 action = "expand" time = 0.1]
+[wait_anim target=".bln"][quake target = ".bln" power = 7 time = 0.2]
+[font size = 44]
+悟飯ー！！
+
+[wait time = 0.2]
+
+[se storage = "3022"]
+
+[character x = 180 y = -100 storage = "00009/heapup_e_03" scale = 1.0 action = "slide:right" time = 0.3]
+
+
+[wait_anim target=".chara"]
+
+// 空のフキダシ
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+
+
+*06
+//-------------------------------------------------------------------------------
+//  孫悟飯
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_001_001"]
+
+[character x = -200 y = -60 storage = "00007/heapup_e_02" scale = 1.2 action = "fadein" time = 0.1]
+[flip target =".chara" h=1]
+
+[balloon x=100 y=70 shape="001_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target = ".bln" power = 3 time = 0.2]
+クリリンさん！[r]おひさしぶりです！[p]
+
+
+*07
+//-------------------------------------------------------------------------------
+//  クリリン
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_001_001"]
+
+[character x = 180 y = -100 storage = "00009/heapup_e_03" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon x=-100 y=80 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][font size = 28]
+しっかり修業している[r]ようだな…悟飯！[r]みちがえたぜ…！！[p]
+
+*08
+//-------------------------------------------------------------------------------
+//  孫悟飯
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_001_001"]
+
+[character x = -200 y = -60 storage = "00007/heapup_e_02" scale = 1.2 action = "fadein" time = 0.1]
+[flip target =".chara" h=1]
+
+[balloon x=110 y=30 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][font size = 28]
+ボクも早くお父さんや[r]ピッコロさんみたいに[r]強くならなきゃ！[p]
+
+
+*09
+//-------------------------------------------------------------------------------
+//  クリリン
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_001_001"]
+
+[character x = 180 y = -100 storage = "00009/heapup_e_03" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon x=-90 y=80 shape="001_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][font size = 28]
+その修業の成果…[r]ちょっとオレたちに[r]見せてもらえないかな
+[p]
+
+
+*10
+//-------------------------------------------------------------------------------
+//  
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0002L" bg = "bg_001_001"]
+
+[character x = -160 y = -80 storage = "00007/heapup_e_02" scale = 1.6 action = "fadein" time = 0.1]
+[flip target =".chara" h=1]
+//[quake target = ".chara" power = 10 time = 0.2]
+
+[balloon x=140 y=80 shape="001_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][font size = 28]
+[quake target = ".bln" power = 3 time = 0.2]
+もちろんです！[r]よろしくお願いします！[p]
+
+[stopbgm]

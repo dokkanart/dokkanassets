@@ -1,0 +1,166 @@
+*start|スタート
+//"エリア8ボス前"
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "008"]
+
+*01
+//-------------------------------------------------------------------------------
+//  クリリン
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0001R" bg = "bg_050_002"]
+
+[character x = 180 y = -100 storage = "00009/idl_side_e_03" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon x = -100 y = 70 shape="007_02" scale = 0.75 action = "expand" time = 0.1]
+[wait_anim target = ".bln"]
+[font size = 36]
+[quake target = ".bln" power = 7 time = 0.2]
+べ…[r]
+ベジータ！！
+[p]
+
+
+*02
+//-------------------------------------------------------------------------------
+//  ベジータ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_050_002"]
+
+[character x = -180 y = -110 storage = "00061/idl_side_e_03" scale = 1.1 angle = 0 action = "fadein" time = 0.1]
+[flip target =".chara" h=1]
+
+[balloon x=110 y=75 shape="002_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 7 time = 0.2]
+今度こそは[r]
+ゆるさんぞ…！！
+[p]
+
+*03
+//-------------------------------------------------------------------------------
+//  クリリン
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_050_002"]
+
+[character x = 180 y = -100 storage = "00009/heapup_e_03" scale = 1.0 action = "fadein" time = 0.1]
+
+
+
+[balloon x=-90 y=108 shape="007_01" scale = 0.75 action = "expand" time = 0.1]
+[font size = 36]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 7 time = 0.2]
+悟飯っ！！[r]
+ここはオレが[r]
+時間をかせぐ！！
+[p]
+
+[balloon x=-140 y=-105 shape="007_02" scale = 0.8 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 7 time = 0.2]
+おまえは[r]
+最長老のところに[r]
+行け！！
+[p]
+
+
+
+*04
+//-------------------------------------------------------------------------------
+//  孫悟飯
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_050_002"]
+
+[character x = 200 y = -60 storage = "00007/headup_e_01_okappa" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x = -90 y = 70 shape="006_01" scale = 0.7 action = "expand" time = 0.1]
+[wait_anim target = ".bln"]
+[font size = 40]
+[quake target = ".bln" power = 7 time = 0.2]
+でっ[r]
+でもっ…！！
+[p]
+
+*05
+//-------------------------------------------------------------------------------
+//  クリリン
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_050_002"]
+
+[character x = 180 y = -100 storage = "00009/heapup_e_03" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon x=-100 y=80 shape="007_02" scale = 0.8 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 7 time = 0.2]
+はやくしろ！！[r]
+強くしてもらって[r]
+こい！！
+[p]
+
+*06
+//-------------------------------------------------------------------------------
+//  孫悟飯
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_050_002"]
+
+[character x = 200 y = -60 storage = "00007/headup_e_01_okappa" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x = -100 y = 70 shape="006_01" scale = 0.7 action = "expand" time = 0.1]
+[wait_anim target = ".bln"]
+[font size = 40]
+[quake target = ".bln" power = 7 time = 0.2]
+はいっ！！
+[p]
+
+[fadeout target = ".chara" time = 0.7]
+
+[wait_anim target=".chara"]
+
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+
+
+
+*07
+//-------------------------------------------------------------------------------
+//  ベジータ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002L" bg = "bg_050_002"]
+
+[character x = -165 y = -115 storage = "00061/idl_side_e_03" scale = 1.2 action = "fadein" time = 0.1]
+[flip target =".chara" h=1]
+
+
+[balloon shape="002_03" x = 140 y = 90 scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+さあ 返してもらおうか…[r]
+オレの隠しておいた[r]
+星の4つあるドラゴンボール[r]
+持っていっただろう…
+[p]
+
+[balloon shape="002_02" x = 130 y = -190 scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+なめたマネ[r]
+しやがって……
+[p]
+
+//-------------------------------------------------------------------------------
+[stopbgm]

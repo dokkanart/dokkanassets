@@ -1,0 +1,56 @@
+*start|スタート
+
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "005"]
+
+*001
+//-------------------------------------------------------------------------------
+//  
+//-------------------------------------------------------------------------------
+[coma shape="N0002L" bg = "bg_081_007"]
+
+[character id = "pan" x = 0 y = -70 storage = "00326/card_02" scale = 1.7 action = "fadein" time = 0.1]
+[character id = "ase" x = 40 y = 260 storage = "99999/ase" scale = 0.9 action = "fadein" time = 0.1]
+
+
+ 
+[balloon x=-120 y=450 shape="004_02" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+[quake target =".bln" power = 3 time = 0.2]
+も〜っ！[r]
+あんたたちに[r]
+付き合ってるヒマはないの！
+[p]
+
+
+
+
+//[clear target = "ase"]
+[fadeout target = "ase" time = 0.1]
+
+//ゆらす
+//[quake target ="pan" power = 7 time = 0.2]
+//[wait_anim target="pan"]
+
+
+[move target ="pan" x=-130 y=-200 time = 0.2]
+[wait_anim target="pan"]
+
+
+[se storage = "07"]	
+[move target ="pan" x=1500 y=1500 time = 1.5]
+ 
+
+[balloon x=135 y=-200 shape="006_01" scale = 0.7 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 40]
+[quake target =".bln" power = 7 time = 0.2]
+じゃあね！
+[p]
+
+[stopbgm]
+

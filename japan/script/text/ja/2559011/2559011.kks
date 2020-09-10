@@ -1,0 +1,36 @@
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+//[bgm storage = "012"]
+
+*001
+//-------------------------------------------------------------------------------
+//  超サイヤ人2カリフラ&超サイヤ人2ケール
+//-------------------------------------------------------------------------------
+//[se storage = "3022"]
+[coma shape="S0001" bg = "bg_000_056"]
+
+[character x = -150 y = 30 storage = "00737/card_02" scale = 1.0 action = "fadein" time = 0.1]
+[character x = 170 y = -20 storage = "00738/card_01" scale = 0.7 action = "fadein" time = 0.1] 
+
+//超サイヤ人2カリフラ
+[balloon x= 120 y= 420 shape="001_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+あたしらふたりが[r]
+ガッチリ組んだら…
+[p]
+
+//超サイヤ人2ケール
+[balloon x= -50 y= -440 shape="001_02" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+[quake target =".bln" power = 3 time = 0.2]
+全宇宙で[r]
+最強です！！
+[p]
+
+//[stopbgm]

@@ -1,0 +1,42 @@
+*start|スタート
+//2502032 エリア３ラウンド3開始
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+//[bgm storage = "012"]
+
+
+*01
+//-------------------------------------------------------------------------------
+//  パーフェクトセル
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+
+[coma shape="S0001" bg = "bg_008_001"]
+
+[lwfobject id = "kaki1" storage="kakimoji:ef_009" in="04" x=-130 y=30 scale = 2.0]
+[quake target = "kaki1" power = 1 time = 300]
+
+
+[character x = 8 y = -90 storage = "00205/card_03" scale = 1.3  action = "fadein" time = 0.1]
+
+//[wait_anim target=".chara"]
+
+[wait time = 0.7]
+
+[balloon shape="002_02" x = -160 y = 480 scale = 0.8 action = "fadein" time = 0.1]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+[wait_anim target=".bln"]
+お遊びは[r]
+もう せんぞ…[p]
+
+[balloon shape="002_03" x = 0 y = -370 scale = 0.8 action = "fadein" time = 0.1]
+[font size = 32]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 3 time = 0.2]
+すぐに[r]
+終わらせてやる…[p]
+
+//---------------------------------------------
+//[stopbgm]

@@ -1,0 +1,100 @@
+
+
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+//[bgm storage = "012"]
+
+
+*001
+//-------------------------------------------------------------------------------
+//  おばけ
+//-------------------------------------------------------------------------------
+[se storage = "07"]
+[coma id = "coma1" shape="N0002R" bg = "bg_000_028"]
+//[wait time = 0.7]
+
+
+//右から左へスライドして、一度画面外へ
+[character id = "obake" x = -600 y = -50 storage = "90003/obake" scale = 1.2 action = "slide:right" time = 1.0]
+
+[wait time = 0.1]
+
+
+[balloon id = "1" x=0 y=140 shape="001_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+はいはいはい〜
+
+
+[wait_anim target="obake"]
+//[fadeout target = "1" time = 0.1]
+[clear target = "obake"]
+//[wait time = 0.3]
+
+
+
+//また右からスライドしてきて、画面右位置で停止
+[character id = "obake" x=200 y=-30 storage = "90003/obake" scale = 0.8 action = "slide:right" time = 1.2]
+[wait_anim target="obake"]
+
+[wait time = 0.3]
+
+[clear target = "1"]
+
+[balloon id = "2" x=-60 y=100 shape="001_02" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+こちらは[r]
+ゼニーで交換できる[r]
+商品の一覧になります〜
+[p]
+
+
+[clear target = "2"]
+
+[character id = "baba" x=-170 y=-30 storage = "90003/uranai_baba" scale = 1.5 action = "fadein" time = 0.7]
+[wait time = 1.2]
+
+//フェードイン後にフキダシ
+//フキダシと同時に説明画像を表示【時間経過で再出現】
+[character id = "guide1" x=0 y=440 storage = "90003/trade04" scale = 1.1 action = "fadein" time = 0.5]
+
+[wait_anim target="guide1"]
+
+[balloon id = "1" x=-0 y=-200 shape="001_02" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+売り切れになった商品も[r]
+一定時間が経過すれば[r]
+また買えるようになるぞい
+[p]
+
+[clear target = "1"]
+
+[balloon id = "2" x=70 y=120 shape="001_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+よく使うアイテムは[r]
+たくさん持って[r]
+おきたいじゃろう
+[p]
+
+
+
+[balloon id = "3" x=0 y=-200 shape="001_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+うまく活用するんじゃ[r]
+…わしへの感謝も[r]
+わすれんようにな
+[p]
+
+//[stopbgm]

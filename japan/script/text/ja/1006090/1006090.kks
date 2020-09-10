@@ -1,0 +1,199 @@
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "003"]
+
+
+*01
+//-------------------------------------------------------------------------------
+//  セル1
+//-------------------------------------------------------------------------------
+[se storage = "20"]
+[coma shape="S0001" bg = "bg_000_016"]
+
+//セルが現れる。
+//カード絵 
+[character x = -30 y = 30 storage = "00006/card_01" scale = 0.9 action = "fadein" time = 0.1]
+
+[wait time = 0.7]
+
+[balloon x=-150 y=470 shape="002_02" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][font size = 36]
+くっくっく…[p]
+
+
+*02
+//-------------------------------------------------------------------------------
+//  トランクス
+//-------------------------------------------------------------------------------
+[se storage = "03"]
+[coma shape="N0001R" bg = "bg_023_001"]
+
+[character x=210 y=-200 storage = "90000/wait_right_surprise" scale = 1.2 action = "fadein" time = 0.1]
+
+[lwfobject id = "kaki1" storage="kakimoji:ef_001" in="02" x=20 y=110 scale = 2.7 angle = -13 action = "fadein" time = 0.1]
+[quake target ="kaki1" power = 7 time = 0.4]
+[wait_anim target = "kaki1"]
+
+// 空のフキダシ（セリフがないコマを送るために使用）
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+
+
+//[balloon x=-150 y=70 shape="006_02" scale = 0.75 action = "expand" time = 0.1]
+//[wait_anim target=".bln"][font size = 42]
+//[quake target = ".bln" power = 7 time = 0.2]
+//セ…[r]セル…！！[p]
+
+[balloon x=-100 y=-100 shape="004_02" scale = 1 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+セ…セル…！！ しまった…[r]
+闘いに気をとられて[r]
+接近に気がつかなかった…！
+[p]
+
+//元シナリオ
+//しまった…[r]闘いに気をとられて[r]接近に気がつか[r]なかった…！！
+
+
+*03
+//-------------------------------------------------------------------------------
+//  クリリン
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_023_001"]
+
+[character x = 180 y = -100 storage = "00009/idl_side_e_03" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon x=-110 y=70 shape="004_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target = ".bln" power = 3 time = 0.2]
+こ…こいつがセルって[r]やつなのか…！！[p]
+
+
+*04
+//-------------------------------------------------------------------------------
+//  人造人間１７号
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_023_001"]
+
+[character x = 170 y = -120 storage = "00021/idl_side_e_01" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon x=-100 y=80 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+なんだ？[r]…この変なヤツは…[p]
+
+
+*05
+//-------------------------------------------------------------------------------
+//  セル1
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_023_001"]
+
+[character x = -250 y = -80 storage = "00006/idl_side_p_02" scale = 1.5 action = "fadein" time = 0.1]
+
+[balloon x=100 y=130 shape="002_02" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 40]
+１７号…[r]
+１８号よ！[p]
+
+[balloon x=120 y=-90 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][font size = 28]
+[quake target = ".bln" power = 3 time = 0.2]
+わたしに吸収される[r]ためにおまえたちは[r]造り出されたのだ…！
+[p]
+//元シナリオ
+//おまえたちは[r]わたしに吸収される[r]この日のために[r]造り出されたのだ…！
+
+
+
+*06
+//-------------------------------------------------------------------------------
+//  人造人間１８号
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_023_001"]
+
+//[character x = 200 y = -190 storage = "00020/idl_side_p_03" scale = 1.2 action = "fadein" time = 0.1]
+//[flip target =".chara" h=1]
+
+[character x=180 y=-180 storage = "00020/18_atc_sp03_p_01" scale = 1.0 action = "fadein" time = 0.1]
+[flip target =".chara" h=1]
+
+[balloon x=-90 y=80 shape="002_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][font size = 32]
+なんだって…！？[p]
+
+
+
+*07
+//-------------------------------------------------------------------------------
+//  セル1
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_023_001"]
+
+[character x = -250 y = -80 storage = "00006/idl_side_p_02" scale = 1.5 action = "fadein" time = 0.1]
+
+[balloon x=130 y=70 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][font size = 28]
+[quake target = ".bln" power = 3 time = 0.2]
+さあ…共に完全体を[r]造り上げよう[r]ではないか！！[p]
+
+//[balloon x=172 y=-90 shape="002_03" scale = 0.75 action = "fadein" time = 0.1]
+//[wait_anim target=".bln"][font size = 28]
+//それこそが[r]ドクター・ゲロが[r]長年追い求めていた[r]究極の戦士なのだ！！[p]
+
+
+*08
+//-------------------------------------------------------------------------------
+//  人造人間１７号
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_023_001"]
+
+[character x = 170 y = -120 storage = "00021/idl_side_e_01" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon x=-90 y=120 shape="002_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][font size = 32]
+ふざけるのも[r]いいかげんにしろ…[p]
+
+[balloon x=-125 y=-90 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][font size = 28]
+[quake target = ".bln" power = 3 time = 0.2]
+だれがきさまなんかに[r]吸収されるものか！[p]
+
+
+*09
+//-------------------------------------------------------------------------------
+//  セル1
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002L" bg = "bg_023_001"]
+
+[character x = -180 y = -140 storage = "00006/heapup_p_01" scale = 1.8 action = "fadein" time = 0.1]
+
+[balloon x=150 y=120 shape="002_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][font size = 32]
+おまえの意思など[r]どうでもいい…[p]
+
+
+[quake target = ".chara" power = 5 time = 0.3]
+
+[balloon x=120 y=-200 shape="007_01" scale = 0.9 action = "expand" time = 0.1]
+[wait_anim target=".bln"][font size = 28]
+[quake target = ".bln" power = 7 time = 0.2]
+吸収されることは[r]もう決まっているのだ
+[p]
+
+
+[stopbgm]

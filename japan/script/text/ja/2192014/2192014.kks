@@ -1,0 +1,42 @@
+*start|スタート
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+//[bgm storage = "012"]
+
+*001
+//-------------------------------------------------------------------------------
+//  フリーザ
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="S0001" bg = "bg_000_064"]
+
+[character x = -30 y = -20 storage = "00878/card_01" scale = 1.0 action = "fadein" time = 0.1]
+//[character x = -180 y = 15 storage = "00878/card_01" scale = 1.1 action = "fadein" time = 0.1]
+
+
+[balloon x = 0 y = 465 shape="002_02" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+[quake target =".bln" power = 3 time = 0.2]
+これはすごい…！[r]
+想像以上でしたよ[r]
+[p]
+
+[balloon x = 0 y = -470 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+あなたなら[r]いい仕事を[r]
+してくれそうですね[r]
+ふふふふ…[r]
+[p]
+
+//終わりのフェードアウト
+//[stopbgm fadeout = 1.5]
+[balloon x=130 y=40 shape="008_03" scale = 50.0 action = "fadein" time = 0.5]
+[wait time = 2.5]
+
+
+//-------------------------------------------------------------------------------
+//[stopbgm]

@@ -1,0 +1,361 @@
+*start|スタート
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "017"]
+
+*000
+//-------------------------------------------------------------------------------
+//  めったうち
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0003R" bg = "bg_005_004"]
+
+
+//[se storage = "3000"]
+//[lwfobject id = "ガッ" storage="kakimoji:ef_006" in="02" x = -130 y=170 angle = -10 scale = 2 action = "fadein" time = 0.1]
+//[quake target ="ガッ" power = 12 time = 0.4] 
+
+[character id = "seru" x = -170 y = -220 storage = "00205/idl_side_p_01" scale = 0.9 action = "fadein" time = 0.1]
+
+//[character id = "ki1" x = -130 y = 10 storage = "99999/04_syougeki" scale = 0.8 action = "expand" time = 0.1]
+
+//[character id = "satan" x = 110 y =-100 storage = "00038/atc_punch_e_04" angle = -10 scale = 1.1 action = "fadein" time = 0.1]
+//[quake target ="satan" power = 5 time = 0.4]
+
+//[wait time = 0.3] 
+//[fadeout target = "ガッ" time = 0.3] 
+//[fadeout target = "ki1" time = 0.3]
+
+
+[clear target = "satan"]
+
+[se storage = "3001"]
+[lwfobject id = "baki" storage="kakimoji:ef_021" in="02" x = -130 y=170 scale = 2 action = "fadein" time = 0.1] 
+[quake target ="baki" power = 12 time = 0.4] 
+
+
+[character id = "ki2" x = -130 y = 10 storage = "99999/04_syougeki" scale = 0.9 action = "expand" time = 0.2]
+[quake target ="ki2" power = 3 time = 0.4]
+
+[character id = "satan2" x = 110 y =-100 storage = "00038/atc_punch_e_04" angle = -10 scale = 1.1]
+[quake target ="satan2" power = 9 time = 0.4]
+
+
+
+
+
+[balloon x = 0 y = 0 shape="005_02" scale = 0 action = "fadein" time = 0.1]
+[p]
+
+*001
+//-------------------------------------------------------------------------------
+//  アナウンサー
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_005_005"]
+
+[character x = 190 y =-200 storage = "90003/announcer" scale = 1.1 action = "fadein" time = 0.1]
+
+[balloon x = -90 y = 100 shape="005_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+サタン選手[r]
+いきなり大技だーっ！！[r]
+めったうちです！！[r]
+セルめったうち！！
+[p]
+
+[balloon x=-120 y=-110 shape="005_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+強い！！[r]
+強すぎます！！[r]
+さすがチャンピオン[r]
+サタンです！！
+[p]
+
+*002
+//-------------------------------------------------------------------------------
+//  ミスター・サタン
+//-------------------------------------------------------------------------------
+[se storage = "3022"]
+[coma shape="N0002R" bg = "bg_005_004"]
+
+
+[character x=140 y=-120 storage = "00038/atc_punch_e_01" scale = 1.2 action = "fadein" time = 0.1]
+[quake target = ".chara" power = 5 time = 0.4] 
+
+
+[balloon x = -150 y = -140 shape="006_01" scale = 0.7 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 40]
+[quake target =".bln" power = 7 time = 0.2]
+だはははは[r]
+はーっ！！
+[p]
+
+*003
+//-------------------------------------------------------------------------------
+//  セル（完全体）
+//-------------------------------------------------------------------------------
+[stopbgm]
+
+[se storage = "3000"]
+[coma shape="S0001" bg = "bg_005_005"]
+
+
+
+//[character id = "ef" x = -170 y = 250 storage = "99999/04_syougeki" scale = 1.1 action = "expand" time = 0.1 action ="fade:50"]
+//[quake target = "ef" power = 3 time = 0.4] 
+
+[character x = 110 y = 0 storage = "00205/card_10" scale = 0.9 action = "fadein" time = 0.1]
+//[quake target = ".chara" power = 5 time = 0.3]
+
+[character id = "satan" x = -215 y = 380 storage = "00205/card_11" scale = 0.8 action = "fadein" time = 0.1]
+[quake target = "satan" power = 8 time = 0.5] 
+
+
+[balloon shape="008_02" x = 0 y = 0 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+
+
+[balloon x=0 y=480 shape="002_01" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 40]
+//[quake target =".bln" power = 3 time = 0.2]
+うるさい！
+//[p]
+
+[wait time = 0.3]
+
+//[se storage = "45"]
+[move target ="satan" y=-100 time = 0.7 ease="Out:3"]
+
+[wait time = 0.5]
+
+[fadeout target = "satan" time = 0.7]
+
+[wait time = 0.7]
+
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+
+
+*004
+//-------------------------------------------------------------------------------
+//  し〜ん
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0002R" bg = "bg_000_016"]
+
+[wait time = 0.7]
+
+[character x = 0 y = -40 storage = "99999/silent" scale = 1.4 action = "fadein" time = 0.7]
+
+[wait time = 0.7]
+
+//空のフキダシ
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+*005
+//-------------------------------------------------------------------------------
+//  アナウンサー
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_005_005"]
+
+//[character x = 190 y =-200 storage = "90003/announcer" scale = 1.1 action = "fadein" time = 0.1]
+[character x = -190 y =-230 storage = "90003/announcer" scale = 1.1 action = "fadein" time = 0.1]
+[character x = -220 y = 90 storage = "99999/ase" scale = 0.4 action = "fadein" time = 0.1]
+
+[balloon x = 80 y = 80 shape="005_01" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+//[quake target =".bln" power = 3 time = 0.2]
+リ…リング外に[r]
+落ちてしまった……
+[p]
+
+[balloon x=120 y=-110 shape="005_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+あ…あの……[r]
+サ…サタン選手……[r]
+負けてしまいました…
+[p]
+
+*006
+//-------------------------------------------------------------------------------
+//  ミスター・サタン
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_005_005"]
+
+[character id = "satan" x=210 y=-340 storage = "00038/idl_side_e_01" scale = 1.2 action = "fadein" time = 0.1]
+[quake target ="satan" power = 2 time = 1.0]
+
+//[wait time = 1.0]
+[wait_anim target="satan"]
+
+[se storage = "3022"]
+[move target ="satan" y=-110 time = 0.3 ease="Out:7"]
+
+[wait time = 0.7]
+
+//[character x=160 y=140 storage = "99999/ase" scale = 0.6 action = "fadein" time = 0.1]
+
+[bgm storage = "002"]
+
+
+[balloon x = -120 y = 50 shape="001_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+ちょっと[r]
+足をふみはずして[r]
+しまったのだ…
+[p]
+
+*007
+//-------------------------------------------------------------------------------
+//  アナウンサー
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_005_005"]
+
+[character x = -190 y =-230 storage = "90003/announcer" scale = 1.1 action = "fadein" time = 0.1]
+[character x = -220 y = 90 storage = "99999/ase" scale = 0.4 action = "fadein" time = 0.1]
+
+
+[balloon x = 90 y = 50 shape="004_02" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+//[quake target =".bln" power = 3 time = 0.2]
+ふっとんだように[r]
+みえましたが……
+[p]
+
+*008
+//-------------------------------------------------------------------------------
+//  ミスター・サタン
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_005_005"]
+
+//[character x=210 y=-110 storage = "00038/idl_side_e_01" scale = 1.2 action = "fadein" time = 0.1]
+//[character x=160 y=140 storage = "99999/ase" scale = 0.6 action = "fadein" time = 0.1]
+
+[character x=200 y=-110 storage = "00038/heapup_e_02" scale = 1.1 action = "fadein" time = 0.1]
+
+[balloon x = -130 y = 80 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+心配せんでもいいぞ…[r]
+ちょっと休憩したら[r]
+今度は本気で[r]やってやる…！
+[p]
+
+*009
+//-------------------------------------------------------------------------------
+//  ベジータ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_005_005"]
+
+[character x = 190 y = -80 storage = "00004/idl_side_e_02" scale = 1.0 action = "fadein" time = 0.1]
+
+[character x=180 y=100 storage = "99999/ase" scale = 0.4 action = "fadein" time = 0.1]
+
+
+
+[balloon x = -105 y = 75 shape="004_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+あ…あいつ[r]
+まだレベルのちがいに[r]
+気づいていないのか…
+[p]
+
+[balloon x=-120 y=-110 shape="002_03" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+バカの[r]世界チャンピオン[r]
+だ……！
+[p]
+
+*010
+//-------------------------------------------------------------------------------
+//  セル（完全体）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_005_004"]
+
+[character x = -200 y = -330 storage = "00205/card_04" scale = 1.1 action = "fadein" time = 0.1]
+
+[balloon x=100 y=80 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+さあ[r]
+はやくセルゲームを[r]
+始めるぞ
+[p]
+
+[balloon x=120 y=-100 shape="002_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+どいつからやるんだ[r]
+やはり孫悟空[r]
+おまえからやるのか
+[p]
+
+*011
+//-------------------------------------------------------------------------------
+//  超サイヤ人孫悟空
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_005_004"]
+
+[character x=200 y=-280 storage = "00003/card_30" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon x = -105 y = 70 shape="001_03" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 40]
+//[quake target =".bln" power = 3 time = 0.2]
+ああ[r]
+そうだ
+[p]
+
+*012
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0003L" bg = "bg_000_024"]
+
+[balloon x=0 y=-40 shape="003_01" scale = 1.3 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 18]
+//[quake target =".bln" power = 3 time = 0.2]
+ついに相まみえる[r]
+悟空とセル[r]
+　[r]
+ここからが[r]
+本当のセルゲーム…[r]
+究極決戦の[r]
+幕が上がる！！
+[p]
+
+//-------------------------------------------------------------------------------
+[stopbgm]

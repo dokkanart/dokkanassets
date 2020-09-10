@@ -1,0 +1,32 @@
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+//[bgm storage = "003"]
+
+*001
+//-------------------------------------------------------------------------------
+//  アルティメット悟飯
+//-------------------------------------------------------------------------------
+[se storage = "3019"]
+
+[coma shape="b0001" bg = "bg_008_002"]
+
+[lwfobject id = "kaki1" storage="kakimoji:ef_023" in="04" x=-0 y=-250 scale = 2.2]
+[quake target = "kaki1" power = 15 time = 0.4]
+
+[character id = "vgt" x = 0 y = -80 storage = "00235/card_03" scale = 1.3 action = "fadein" time = 0.1] 
+
+[wait_anim target="kaki1"] 
+
+[balloon x=120 y=340 shape="001_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+それじゃあ[r]
+そろそろ本気出すか…！
+[p]
+
+//[stopbgm]
+

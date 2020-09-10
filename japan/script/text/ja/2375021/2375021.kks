@@ -1,0 +1,475 @@
+*start|スタート
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "005"]
+
+*001
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0003R" bg = "bg_070_017"]
+
+//[character x = 230 y = -100 storage = "01064/card_01" scale = 1.0 action = "fadein" time = 0.1]
+//[character x = -160 y = -60 storage = "01057/card_02" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon x=0 y= 100 shape="003_01" scale = 1.4 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 16]
+//[quake target =".bln" power = 3 time = 0.2]
+フリーザの集合命令を[r]
+無視し[r]
+星の侵略を続ける[r]
+ベジータとラディッツ[r]
+　[r]
+一方その頃…[r]
+ふたりの故郷である[r]
+惑星ベジータでは……
+[p]
+
+//フェードアウト（フェードアウトするコマ）
+[balloon x=0 y=0 shape="008_03" scale = 50.0 action = "fadein" time = 0.5]
+[wait time = 0.7]
+
+
+*002
+//-------------------------------------------------------------------------------
+//  場面転換
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="S0001" bg = "bg_070_018"]
+
+
+[character x = -175+175 y = -100+100 storage = "99999/pod_back" scale = 1.0 action = "fadein" time = 0.1]
+[character x = -190+175 y = -85+100 storage = "90003/kakarot" scale = 0.9 action = "fadein" time = 0.1]
+[character x = -175+175 y = -100+100 storage = "99999/pod_front" scale = 1.0 action = "fadein" time = 0.1]
+
+//フェードイン（フェードインするコマ）
+[balloon x=0 y=0 shape="008_03" scale = 50]
+[wait time = 0.5]
+[fadeout target = ".bln" time = 1]
+[wait_anim target=".bln"]
+
+//空のフキダシ
+[balloon x = 0 y = 0 shape="001_01" scale = 0]
+[p]
+
+
+*003
+//-------------------------------------------------------------------------------
+//  ギネ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_070_018"]
+
+[character x = -130 y = -270 storage = "90003/gine_01" scale = 1.1 action = "fadein" time = 0.1]
+
+[balloon x = 130 y = 60 shape="004_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+やっぱりよそうよ[r]
+こんなこと…
+[p]
+
+
+*004
+//-------------------------------------------------------------------------------
+//  バーダック
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_070_018"]
+
+
+
+[character x = 185 y = -240 storage = "01062/card_01" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon x = -125 y = 75 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+心配するな[r]
+オレの勘違いだったら[r]
+すぐ助けに行ってやる
+[p]
+
+
+*005
+//-------------------------------------------------------------------------------
+//  ギネ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_070_018"]
+
+
+[character x = -130 y = -270 storage = "90003/gine_01" scale = 1.1 action = "fadein" time = 0.1]
+
+[balloon x = 130 y = 50 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+だったらさ[r]
+カカロットと３人で[r]
+どこかに逃げようよ
+[p]
+
+
+*006
+//-------------------------------------------------------------------------------
+//  バーダック
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_070_018"]
+
+
+[character x = 185 y = -240 storage = "01062/card_01" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon x = -130 y = 70 shape="002_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+だめだ…[r]
+オレたちはスカウターで[r]
+すぐ見つかってしまう
+[p]
+
+
+*007
+//-------------------------------------------------------------------------------
+//  ギネ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_070_018"]
+
+
+[character x = -130 y = -270 storage = "90003/gine_01" scale = 1.1 action = "fadein" time = 0.1]
+
+[balloon x = 120 y = 90 shape="002_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+…でも なんで[r]
+そこまでして？
+[p]
+
+
+[balloon x=120 y=-95 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+男が[r]
+子供の心配をするなんて[r]
+サイヤ人らしくないよ
+[p]
+
+
+*008
+//-------------------------------------------------------------------------------
+//  バーダック
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_070_018"]
+
+
+[character x = 185 y = -240 storage = "01062/card_01" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon x = -120 y = 95 shape="002_03" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+いつも戦いの中にいて[r]
+気まぐれでなにかを[r]
+救いたくなったのかもな…
+[p]
+
+
+[balloon x=-135 y=-105 shape="002_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+…特に[r]
+下級戦士と判定された[r]
+我が子を…
+[p]
+
+
+*009
+//-------------------------------------------------------------------------------
+//  カカロット（幼年期）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_070_018"]
+
+
+[character x = -175 y = -100 storage = "99999/pod_back" scale = 1.0 action = "fadein" time = 0.1]
+[character x = -185 y = -85 storage = "90003/kakarot" scale = 1.0 action = "fadein" time = 0.1]
+[character x = -175 y = -100 storage = "99999/pod_front" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon x=130 y=60 shape="004_01" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 54]
+//[quake target =".bln" power = 3 time = 0.2]
+………
+[p]
+
+
+*010
+//-------------------------------------------------------------------------------
+//  バーダック
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_070_018"]
+
+
+[character x = 185 y = -240 storage = "01062/card_01" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon x = -130 y = 70 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+地球という遠い星を[r]
+プログラムしておいた
+[p]
+
+
+*011
+//-------------------------------------------------------------------------------
+//  カカロット（幼年期）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_070_018"]
+
+
+[character x = -175 y = -100 storage = "99999/pod_back" scale = 1.0 action = "fadein" time = 0.1]
+[character x = -185 y = -85 storage = "90003/kakarot" scale = 1.0 action = "fadein" time = 0.1]
+[character x = -175 y = -100 storage = "99999/pod_front" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon x=130 y=60 shape="004_01" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 54]
+//[quake target =".bln" power = 3 time = 0.2]
+………
+[p]
+
+
+*012
+//-------------------------------------------------------------------------------
+//  バーダック
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_070_018"]
+
+
+[character x = 185 y = -240 storage = "01062/card_01" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon x = -120 y = 105 shape="002_01" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+技術力も戦闘レベルも[r]
+低い人間のいる星だ…[r]
+おまえでも[r]
+生きていけると思う
+[p]
+
+
+[balloon x=-135 y=-100 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+それに[r]
+たいした価値がないので[r]
+フリーザ軍に狙われる[r]
+可能性も低い
+[p]
+
+
+*013
+//-------------------------------------------------------------------------------
+//  ギネ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_070_018"]
+
+[character x = 235 y = -250 storage = "90003/gine_01" scale = 1.1 action = "fadein" time = 0.1]
+
+[balloon x = -125 y = 50 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+バーダックの[r]
+考えすぎだったら[r]
+すぐに迎えにいくからね
+[p]
+
+
+*014
+//-------------------------------------------------------------------------------
+//  バーダック
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_070_018"]
+
+
+[character x = 185 y = -240 storage = "01062/card_01" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon x = -130 y = 70 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+いいか[r]
+絶対生きのびるんだぞ！
+[p]
+
+
+*015
+//-------------------------------------------------------------------------------
+//  ギネ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_070_018"]
+
+[character x = 235 y = -250 storage = "90003/gine_01" scale = 1.1 action = "fadein" time = 0.1]
+
+[balloon x = -105 y = 70 shape="002_01" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 40]
+//[quake target =".bln" power = 3 time = 0.2]
+また会おうね
+[p]
+
+
+*016
+//-------------------------------------------------------------------------------
+//  カカロット（幼年期）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_070_018"]
+
+[character x = -175 y = -100 storage = "99999/pod_back" scale = 1.0 action = "fadein" time = 0.1]
+[character x = -185 y = -85 storage = "90003/kakarot" scale = 1.0 action = "fadein" time = 0.1]
+[character x = -175 y = -100 storage = "99999/pod_front" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon x=130 y=60 shape="004_01" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 54]
+//[quake target =".bln" power = 3 time = 0.2]
+………
+[p]
+
+
+*017
+//-------------------------------------------------------------------------------
+//  バーダック
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_070_018"]
+
+
+[character x = 185 y = -240 storage = "01062/card_01" scale = 1.0 action = "fadein" time = 0.1]
+
+
+[balloon x = -120 y = 70 shape="002_02" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 40]
+//[quake target =".bln" power = 3 time = 0.2]
+じゃあな！
+[p]
+
+
+
+*018
+//-------------------------------------------------------------------------------
+//  カカロットのポッドが飛んでいく。
+//-------------------------------------------------------------------------------
+[se storage = "44"]
+[coma shape="S0001" bg = "bg_000_003"]
+[character id = "aura" x = 0 y = -50 storage = "00067/Images_ef_beam_head_01" scale = 1.0 angle = 90 action = "fade:0" time = 0.1]
+[character id = "pod" x = 5 y = -310 storage = "99999/pod_01" scale = 1.5 angle = 132 action = "fadein" time = 0.1]
+//[wait time = 0.4]
+[move target = "pod" x = 2 y = -25 time = 1.5 ease = "in:2"]
+[scale target = "pod" scale = 0.3 time = 1.5]
+[character id = "hikari" x = 0 y = -210 storage = "99999/powerball" scale = 0.7 action = "fade:90" time = 1.5 ease = "in:5"]
+[move target = "hikari" y = 0 time = 1.5 ease = "in:2"]
+[wait time = 1.5]
+//[fadeout target = "hikari" time = 1.0]
+[fadeout target = "pod" time = 0.7]
+//[fade target = "aura" to = 70 time = 0.7]
+[quake target = "aura" power = 1 time = 1.2]
+[quake target = "hikari" power = 1 time = 1.2]
+[wait time = 1.2]
+[fade target = "aura" to = 70 time = 0.1]
+[se storage = "09"]
+[move target = "aura" y = -60 time = 0.1 ease = "out:1"]
+[move target = "hikari" y = -10 time = 0.1 ease = "out:1"]
+[wait time = 0.1]
+[move target = "aura" y = 2000 time = 0.5 ease = "in:1"]
+[move target = "hikari" y = 2000 time = 0.5 ease = "in:1"]
+[wait time = 0.7]
+[character id = "oya" x = 20 y = 0 storage = "01062/card_03" scale = 1.0 action = "fadein" time = 0.7]
+[wait time = 1.5]
+[balloon x = 0 y = 440 shape="007_01" scale = 0.8 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 7 time = 0.2]
+カカロットォー！！
+[p]
+
+
+
+*019
+//-------------------------------------------------------------------------------
+//  ギネ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0003R" bg = "bg_070_018"]
+
+[balloon x=0 y=0 shape="003_01" scale = 1.4 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 16]
+//[quake target =".bln" power = 3 time = 0.2]
+フリーザの不審な動きに[r]
+死の予感を感じた[r]
+バーダックは[r]
+ギネと共に[r]
+息子のカカロットを[r]
+惑星ベジータから[r]
+脱出させるのだった
+[p]
+
+*020
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0003L" bg = "bg_000_003"]
+
+[character x=-220+20 y=-120 storage = "99999/pod_02" scale = 0.9 angle = 0 angle = 180 action = "fadein" time = 0.1]
+[character x=-220+20 y=-120 storage = "99999/pod_01" scale = 0.9 angle = 0 angle = 180 action = "fadein" time = 0.1]
+
+//[character x=220 y=30 storage = "99999/pod_02" scale = 0.9 angle = 0 action = "fadein" time = 0.1]
+//[character x=220 y=30 storage = "99999/pod_01" scale = 0.9 angle = 0 action = "fadein" time = 0.1]
+
+
+[balloon x=140 y=-30 shape="003_01" scale = 1.3 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 17]
+//[quake target =".bln" power = 3 time = 0.2]
+こうして[r]
+地球へと[r]
+送られることになった[r]
+カカロット…[r]
+運命は今[r]
+大きく動きだそうと[r]していた…
+[p]
+
+
+//終わりのフェードアウト
+[stopbgm fadeout = 1.5]
+[balloon x=0 y=0 shape="008_03" scale = 50.0 action = "fadein" time = 0.5]
+[wait time = 2.5]
+
+
+//-------------------------------------------------------------------------------
+[stopbgm]

@@ -1,0 +1,386 @@
+{
+  "Start": {
+    "action": "start",
+    "nexts": [
+      {
+        "state": "Presage_None",
+        "weight": 1000
+      },
+      {
+        "state": "Presage_OneStar",
+        "weight": 630
+      },
+      {
+        "state": "Presage_TwoStar",
+        "weight": 1260
+      },
+      {
+        "state": "Presage_ThreeStar",
+        "weight": 1260
+      },
+      {
+        "state": "Presage_FourStar",
+        "weight": 1570
+      },
+      {
+        "state": "Presage_FiveStar",
+        "weight": 1580
+      },
+      {
+        "state": "Presage_SixStar",
+        "weight": 700
+      },
+      {
+        "state": "Presage_SevenStar",
+        "weight": 300
+      },
+      {
+        "state": "Presage_Shenlong",
+        "weight": 12
+      },
+      {
+        "state": "Presage_Satan",
+        "weight": 1350
+      },
+      {
+        "state": "Presage_Satan_Left",
+        "weight": 1350
+      }
+    ]
+  },
+  "Presage_None": {
+    "action": "presageNone",
+    "nexts": [
+      {
+        "state": "Focus_Normal",
+        "weight": 100
+      }
+    ]
+  },
+  "Presage_OneStar": {
+    "action": "presageOneStar",
+    "nexts": [
+      {
+        "state": "Focus_Normal",
+        "weight": 100
+      }
+    ]
+  },
+  "Presage_TwoStar": {
+    "action": "presageTwoStar",
+    "nexts": [
+      {
+        "state": "Focus_Normal",
+        "weight": 100
+      }
+    ]
+  },
+  "Presage_ThreeStar": {
+    "action": "presageThreeStar",
+    "nexts": [
+      {
+        "state": "Focus_Normal",
+        "weight": 100
+      }
+    ]
+  },
+  "Presage_FourStar": {
+    "action": "presageFourStar",
+    "nexts": [
+      {
+        "state": "Focus_Normal",
+        "weight": 100
+      }
+    ]
+  },
+  "Presage_FiveStar": {
+    "action": "presageFiveStar",
+    "nexts": [
+      {
+        "state": "Focus_Normal",
+        "weight": 100
+      }
+    ]
+  },
+  "Presage_SixStar": {
+    "action": "presageSixStar",
+    "nexts": [
+      {
+        "state": "Focus_Normal",
+        "weight": 100
+      }
+    ]
+  },
+  "Presage_SevenStar": {
+    "action": "presageSevenStar",
+    "nexts": [
+      {
+        "state": "Focus_Normal",
+        "weight": 100
+      }
+    ]
+  },
+  "Presage_Shenlong": {
+    "action": "presageShenlong",
+    "nexts": [
+      {
+        "state": "Focus_Normal",
+        "weight": 100
+      }
+    ]
+  },
+  "Presage_Satan": {
+    "action": "presageSatan",
+    "nexts": [
+      {
+        "state": "Focus_Normal",
+        "weight": 100
+      }
+    ]
+  },
+  "Presage_Satan_Left": {
+    "action": "presageSatanLeft",
+    "nexts": [
+      {
+        "state": "Focus_Normal",
+        "weight": 100
+      }
+    ]
+  },
+  "Focus_Normal": {
+    "action": "focusNormal",
+    "nexts": [
+      {
+        "state": "TouchStart_Super",
+        "weight": 20
+      },
+      {
+        "state": "TouchStart_Normal",
+        "weight": 80
+      }
+    ]
+  },
+  "TouchStart_Super": {
+    "action": "touchStartSuper",
+    "nexts": [
+      {
+        "state": "swiped_SuperRainbow",
+        "weight": 30
+      },
+      {
+        "state": "swiped_Super",
+        "weight": 70
+      }
+    ]
+  },
+  "TouchStart_Normal": {
+    "action": "touchStartNormal",
+    "nexts": [
+      {
+        "state": "swiped_NormalRainbow",
+        "weight": 30
+      },
+      {
+        "state": "swiped_Normal",
+        "weight": 70
+      }
+    ]
+  },
+  "swiped_SuperRainbow": {
+    "action": "swipedFontRainbow",
+    "nexts": [
+      {
+        "state": "Release_CutIn",
+        "weight": 100
+      }
+    ]
+  },
+  "swiped_Super": {
+    "action": "swipedFontDefault",
+    "nexts": [
+      {
+        "state": "Release_CutIn",
+        "weight": 100
+      }
+    ]
+  },
+  "swiped_NormalRainbow": {
+    "action": "swipedFontRainbow",
+    "nexts": [
+      {
+        "state": "TransForm_Super",
+        "weight": 75
+      },
+      {
+        "state": "Release_Normal",
+        "weight": 25
+      }
+    ]
+  },
+  "swiped_Normal": {
+    "action": "swipedFontDefault",
+    "nexts": [
+      {
+        "state": "TransForm_Super",
+        "weight": 75
+      },
+      {
+        "state": "Release_Normal",
+        "weight": 25
+      }
+    ]
+  },
+  "TransForm_Super": {
+    "action": "transFormSuper",
+    "nexts": [
+      {
+        "state": "Release_CutIn",
+        "weight": 100
+      }
+    ]
+  },
+  "Release_CutIn": {
+    "action": "releaseCutIn",
+    "nexts": [
+      {
+        "state": "FireCutIn_Rank2",
+        "weight": 22
+      },
+      {
+        "state": "FireCutIn_Rank3",
+        "weight": 978
+      }
+    ]
+  },
+  "Release_Normal": {
+    "action": "releaseDefault",
+    "nexts": [
+      {
+        "state": "FireCutIn_Rank1",
+        "weight": 100
+      }
+    ]
+  },
+  "FireCutIn_Rank1": {
+    "action": "fireCutInRank1",
+    "nexts": [
+      {
+        "state": "BreakMoon_Rank1",
+        "weight": 100
+      }
+    ]
+  },
+  "BreakMoon_Rank1": {
+    "action": "breakMoon",
+    "nexts": [
+      {
+        "state": "Famous_Rank1",
+        "weight": 100
+      },
+      {
+        "state": "Famous_Rank2",
+        "weight": 100
+      },
+      {
+        "state": "Famous_Rank3",
+        "weight": 100
+      }
+    ]
+  },
+  "FireCutIn_Rank2": {
+    "action": "fireCutInRank2",
+    "nexts": [
+      {
+        "state": "BreakMoon_Rank2",
+        "weight": 100
+      }
+    ]
+  },
+  "BreakMoon_Rank2": {
+    "action": "breakMoon",
+    "nexts": [
+      {
+        "state": "Famous_Rank1",
+        "weight": 100
+      },
+      {
+        "state": "Famous_Rank2",
+        "weight": 100
+      },
+      {
+        "state": "Famous_Rank3",
+        "weight": 100
+      }
+    ]
+  },
+  "FireCutIn_Rank3": {
+    "action": "fireCutInRank3",
+    "nexts": [
+      {
+        "state": "BreakMoon_Rank3",
+        "weight": 87
+      },
+      {
+        "state": "FireCutIn_Rank4",
+        "weight": 13
+      }
+    ]
+  },
+  "BreakMoon_Rank3": {
+    "action": "breakMoon",
+    "nexts": [
+      {
+        "state": "Finish",
+        "weight": 100
+      }
+    ]
+  },
+  "FireCutIn_Rank4": {
+    "action": "fireCutInRank4",
+    "nexts": [
+      {
+        "state": "BreakMoon_Rank4",
+        "weight": 100
+      }
+    ]
+  },
+  "BreakMoon_Rank4": {
+    "action": "breakMoon",
+    "nexts": [
+      {
+        "state": "Finish",
+        "weight": 100
+      }
+    ]
+  },
+  "Famous_Rank1": {
+    "action": "famousRank1",
+    "nexts": [
+      {
+        "state": "Finish",
+        "weight": 100
+      }
+    ]
+  },
+  "Famous_Rank2": {
+    "action": "famousRank2",
+    "nexts": [
+      {
+        "state": "Finish",
+        "weight": 100
+      }
+    ]
+  },
+  "Famous_Rank3": {
+    "action": "famousRank3",
+    "nexts": [
+      {
+        "state": "Finish",
+        "weight": 100
+      }
+    ]
+  },
+  "Finish": {
+    "action": "finish"
+  }
+}

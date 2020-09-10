@@ -1,0 +1,284 @@
+*start|スタート
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+//[bgm storage = "008"]
+
+*001
+//-------------------------------------------------------------------------------
+//  超サイヤ人ベジータ
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0002R" bg = "bg_000_016"]
+
+[se storage = "3002"]
+//点滅
+[balloon shape="008_02" x = 0 y = 0 scale = 50 action = "fadein" time = 0.1]
+
+
+
+
+[se storage = "3008"]
+[lwfobject id = "ga" x = -50 y = 250 storage = "kakimoji:ef_021" scale = 1.5 angle = 0 action = "fadein" time = 0.1]
+[quake target ="ga" power = 15 time = 0.4]
+
+
+
+
+[character id = "veg" x = -170 y = 0 storage = "00004/SSR_dam_side_e_03" scale = 0.7 angle= 30 action = "fadein" time = 0.1]
+[flip target = "veg" h = 1]
+[quake target = "veg" power = 9 time = 0.4]
+
+
+[character id = "birus" x = 80 y = 50 storage = "00242/atc_kick_e_03" scale = 1.0 action = "fadein" time = 0.1]
+[quake target = "birus" power = 7 time = 0.4]
+
+
+
+
+[wait time = 0.3]
+[clear target = ".bln"]
+
+
+[balloon x=-160 y=-100 shape="007_02" scale = 0.7 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 40]
+[quake target =".bln" power = 7 time = 0.2]
+うわあああ！！
+[p]
+
+
+
+//[move target = "veg" y = -300 time = 0.7 ease = "in:2"]
+//[fadeout target = "veg" time = 0.7 ease = "in:2"]
+//[p]
+
+
+*002
+//-------------------------------------------------------------------------------
+//  ビルス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_016"]
+
+[character x = 245 y = -255+30 storage = "00242/idl_side_e_02" scale = 1.2 action = "fadein" time = 0.1]
+
+//[character id = "tora2" x=210 y=-85 storage = "00200/heapup_e_01" scale = 1.1 action = "fadein" time = 0.7]
+
+
+[balloon x= -100 y=50 shape="001_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+闘いのセンスだけは[r]
+なかなかのもんだよ
+[p]
+
+
+*003
+//-------------------------------------------------------------------------------
+//  トランクス（幼年期）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_016"]
+
+
+[character id = "tora2" x=-210 y=-85-30 storage = "00200/heapup_p_01" scale = 1.1 action = "fadein" time = 0.1]
+
+
+[balloon x=85 y= 90 shape="006_02" scale = 0.65 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 44]
+[quake target =".bln" power = 7 time = 0.2]
+パパ！！
+[p]
+
+[balloon x=120 y= -110 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+くっそ〜！[r]
+悟天！こうなったら[r]
+フュージョンだ！！
+[p]
+
+
+*004
+//-------------------------------------------------------------------------------
+//  孫悟天（幼年期）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_016"]
+
+
+[character x=-205 y=-100 storage = "00225/heapup_p_01" scale = 1.05 action = "fadein" time = 0.1]
+
+
+[balloon x = 120 y = 60 shape="001_01" scale = 0.65 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 44]
+[quake target =".bln" power = 3 time = 0.2]
+うん！
+[p]
+
+
+*005
+//-------------------------------------------------------------------------------
+//  トランクス（幼年期）&孫悟天（幼年期）
+//-------------------------------------------------------------------------------
+[se storage = "40"]
+[coma shape="N0003L" bg = "bg_000_024"]
+
+
+
+[character x = 0 y = -90 storage = "00276/atc_sp01_p_01" scale = 1.0 action = "fadein" time = 0.1 priority=100]
+[quake target =".chara" power = 5 time = 0.4]
+
+
+[balloon x= 0 y=120 shape="006_01" scale = 0.8 action = "expand" time = 0.1 priority=110]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 7 time = 0.2]
+フュ〜…ジョン！！[r]
+はっ！！
+//[p]
+
+[wait_anim target=".chara"]
+
+
+[character id = "ki" x = 0 y = -100 storage = "99999/ef_beam_circle" scale = 2.5 action = "expand" time = 0.2 mask = "inside" priority=80]
+[spin target="ki" velocity=150]
+[paint target="ki" color="#aaffcc"]
+
+[character id = "ki2" x = 0 y = -100 storage = "99999/04_syougeki" scale = 2.5 action = "expand" time = 0.2 mask = "inside" priority=90]
+[spin target="ki2" velocity=-150]
+
+
+
+[wait time = 1.0]
+
+//[balloon x = 0 y = 0 shape="002_01" scale = 0]
+//[p]
+
+
+[se storage = "3025"]
+//点滅
+[balloon shape="008_02" x = 0 y = 0 scale = 50 action = "fadein" time = 0.1 priority=120]
+[wait time = 0.3]
+[clear target = ".bln"]
+[balloon shape="008_02" x = 0 y = 0 scale = 50 action = "fadein" time = 0.1 priority=120]
+[wait time = 0.3]
+[clear target = ".bln"]
+
+//フェードアウト（フェードアウトするコマ）
+[balloon x=0 y=0 shape="008_02" scale = 50.0 action = "fadein" time = 0.5 priority=120]
+[wait time = 0.7]
+
+
+*006
+//-------------------------------------------------------------------------------
+//  ゴテンクスが登場する
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+//[bgm storage = "17"]
+[coma shape="S0001" bg = "bg_000_016"]
+
+[character x = -30 y = 0 storage = "00457/card_01" scale = 1.3 action = "fadein" time = 0.1]
+
+//フェードイン（フェードインするコマ）
+[balloon x=0 y=0 shape="008_02" scale = 50]
+[wait time = 1]
+[fadeout target = ".bln" time = 2]
+[wait_anim target=".bln"]
+
+
+[balloon x=0 y=460 shape="006_01" scale = 0.75 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+[quake target =".bln" power = 7 time = 0.2]
+おい！[r]
+そこのネコ人間！
+[p]
+
+[balloon x=0 y=-320 shape="006_02" scale = 0.9 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 7 time = 0.2]
+プリンぐらいで[r]
+大暴れしやがって！
+[p]
+
+
+
+
+*008
+//-------------------------------------------------------------------------------
+//  ビルス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_016"]
+
+[character x = 245 y = -255+30 storage = "00242/idl_side_e_02" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x=-75 y=65 shape="001_03" scale = 0.65 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 44]
+//[quake target =".bln" power = 3 time = 0.2]
+ん？
+[p]
+
+
+*009
+//-------------------------------------------------------------------------------
+//  超サイヤ人ゴテンクス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_016"]
+
+[character x = -190 y = -110 storage = "00457/card_02" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x=130 y= 40 shape="001_02" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+[quake target =".bln" power = 3 time = 0.2]
+そんな[r]
+マナー違反なやつは[r]
+このゴテンクスさまが[r]
+ぶっとばしてやるぜ！
+[p]
+
+
+*010
+//-------------------------------------------------------------------------------
+//  ビルス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_000_016"]
+
+[character id="bi" x = 160 y = -200 storage = "00242/card_11" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon x=-140 y=65 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+なんだと？[r]
+おまえたち地球人は[r]
+食べ慣れているかも[r]
+しれないが…
+[p]
+
+[quake target ="bi" power = 6 time = 0.3]
+
+[balloon x=-135 y=-230 shape="007_01" scale = 0.9 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 7 time = 0.2]
+ボクには[r]
+味の想像もつかない[r]
+未知の食べ物だ！！[r]
+プリン〜！！
+[p]
+
+
+//-------------------------------------------------------------------------------
+//[stopbgm]

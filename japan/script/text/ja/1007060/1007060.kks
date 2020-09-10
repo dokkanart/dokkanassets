@@ -1,0 +1,136 @@
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "028"]
+
+
+*01
+//-------------------------------------------------------------------------------
+//  トランクス
+//-------------------------------------------------------------------------------
+[se storage = "03"]
+[coma shape="N0001R" bg = "bg_027_001"]
+
+
+[character x=210 y=-200 storage = "90000/wait_right_surprise" scale = 1.2 action = "fadein" time = 0.1]
+
+
+
+[lwfobject id = "kaki1" storage="kakimoji:ef_001" angle = -12 x=-0 y=110 scale = 3.0 action = "fadein" time = 0.1]
+[quake target = "kaki1" power = 9 time = 0.4]
+[wait_anim target = "kaki1"]
+
+// 空のフキダシ（セリフがないコマを送るために使用）
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+
+[balloon x = -70 y = -90 shape="004_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target = ".bln" power = 3 time = 0.2]
+…と…[r]父さん……！！[p]
+
+*02
+//-------------------------------------------------------------------------------
+//  ベジータ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_027_001"]
+
+[character x = -180 y = -110 storage = "00004/idl_side_e_02" scale = 1.1 action = "fadein" time = 0.1]
+[flip target =".chara" h=1]
+
+[balloon x = 110 y = 125 shape="002_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][font size = 28]
+フリーザと闘うには[r]カカロット…[r]きさまの力が必要だ[p]
+
+[balloon x = 130 y = -65 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][font size = 28]
+オレたちといっしょに[r]来てもらおうか[p]
+
+*03
+//-------------------------------------------------------------------------------
+//  ラディッツ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_027_001"]
+
+[character x=-190 y=-100 storage = "00014/idl_side_p_02" scale = 1.5 action = "fadein" time = 0.1]
+
+[balloon x = 140 y = 80 shape="002_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][font size = 28]
+カカロットよ…[r]きさまにもいろいろと[r]働いてもらうぞ[p]
+
+*04
+//-------------------------------------------------------------------------------
+//  ナッパ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_027_001"]
+
+//[character x = -140 y = -40 storage = "00015/heapup_p_01" scale = 1.5 action = "fadein" time = 0.1]
+[character x = -220 y = -100 storage = "00015/heapup_p_01" scale = 1.2 action = "fadein" time = 0.1]
+
+
+
+
+[balloon x = 120 y = 90 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][font size = 28]
+オレたちのような[r]エリートの仲間に[r]してやるんだ…[r]ありがたく思え
+[p]
+
+//[balloon x = 120 y = -90 shape="002_02" scale = 0.75 action = "fadein" time = 0.1]
+//[wait_anim target=".bln"][font size = 40]
+//ありがたく思え[p]
+
+//元シナリオ
+//オレたちのような[r]エリートのサイヤ人戦士の[r]仲間にしてやるんだ…
+//ありがたく思え[p]
+
+*05
+//-------------------------------------------------------------------------------
+//  悟空
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_027_001"]
+
+[character x=250 y=-140 storage = "00003/idl_side_e_05" scale = 1.1 action = "fadein" time = 0.1]
+
+[balloon x = -100 y = 120 shape="001_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][font size = 28]
+フリーザと闘うのは[r]かまわねえが…[p]
+
+[balloon x = -90 y = -90 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][quake target = ".bln" power = 3 time = 0.2]
+[font size = 28]
+オラは悪者の[r]仲間なんかには[r]なりたくねえ！！[p]
+
+*06
+//-------------------------------------------------------------------------------
+//  ベジータ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002L" bg = "bg_027_001"]
+
+[character x = -165 y = -115 storage = "00004/idl_side_e_02" scale = 1.2 action = "fadein" time = 0.1]
+[flip target =".chara" h=1]
+
+[balloon x = 140 y = 90 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][font size = 28]
+ふん…[r]きさまらしい答えだな[r]カカロット…[p]
+
+
+//[quake target = ".chara" power = 11 time = 0.2]
+
+[balloon x = 130 y = -200 shape="002_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target = ".bln" power = 3 time = 0.2]
+[font size = 28]
+では力ずくで[r]言うことを[r]きいてもらおうか[p]
+
+
+
+[stopbgm]

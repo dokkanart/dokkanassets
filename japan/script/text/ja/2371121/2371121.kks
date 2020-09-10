@@ -1,0 +1,78 @@
+*start|スタート
+
+//-------------------------------------------------------------------------------
+[bgm storage = "010"]
+//-------------------------------------------------------------------------------
+
+*001
+//----------------------------------------------------------
+//トランクス
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_021"]
+
+[character x = 230 y = -120 storage = "00069/idl_side_e_03" scale = 1.4 action = "fadein" time = 0.1]
+
+
+[balloon x = -130 y = 90 shape="001_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+こうしてまた悟飯さんと[r]
+修業できるなんて…
+[p]
+
+
+[balloon x = -130 y = -110 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+こっちの悟飯さんは[r]
+やっぱり悟空さんの[r]
+闘い方に近いかな…
+[p]
+
+
+*002
+//----------------------------------------------------------
+//悟飯・悟空道着
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_021"]
+
+[character x=-200 y=-130 storage = "00305/idl_side_p_01" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x = 115 y = 90 shape="001_03" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+トランクスさん！
+[p]
+
+[balloon x = 120 y = -95 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+もし大会で[r]
+闘うことになっても [r]
+お互い手加減は[r]なしですよ
+[p]
+
+
+*003
+//----------------------------------------------------------
+//トランクス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_000_021"]
+
+[character x = 160 y = -320 storage = "00069/card_08" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x = -150 y = 60 shape="001_02" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+[quake target =".bln" power = 3 time = 0.2]
+はい！[r]
+もちろんです！
+[p]
+
+[stopbgm fadeout = 1.5]
+[balloon x=0 y=0 shape="008_03" scale = 50.0 action = "fadein" time = 0.5]
+[wait time = 2.5]
+

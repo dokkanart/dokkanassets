@@ -1,0 +1,146 @@
+*start|スタート
+
+//"エリア４ゴール"
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "032"]
+ 
+*001
+//-------------------------------------------------------------------------------
+//  バイオブロリー
+//-------------------------------------------------------------------------------
+[se storage = "3029"]
+[coma shape="N0003L" bg = "bg_070_006"]
+ 
+[character x = -180 y = -350 storage = "00453/card_01" scale = 1.4 action = "fadein" time = 0.1]
+[quake target =".chara" power = 10 time = 0.4]
+ 
+[balloon x=130 y=170 shape="006_02" scale = 0.9 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 7 time = 0.2]
+ウォオオオッ！！
+[p]
+
+*002
+//-------------------------------------------------------------------------------
+//  "超サイヤ人トランクス超サイヤ人孫悟天"
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_070_006"]
+ 
+[character id = "goten"x = 80 y = -130 storage = "00279/heapup_e_01" scale = 0.9 action = "fadein" time = 0.1]
+[character x=240 y=-90 storage = "00200/heapup_e_03" scale = 1.1 action = "fadein" time = 0.1]
+ 
+[balloon x=-0 y=120 shape="001_02" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+[quake target =".bln" power = 3 time = 0.2]
+悟天！[r]
+やれるぞ！！ 
+[p]
+ 
+[balloon x=-160 y=-80 shape="001_03" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 40]
+[quake target =".bln" power = 3 time = 0.2]
+うん！！ 
+[p]
+
+*003
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0003R" bg = "bg_070_006"]
+ 
+[character x = -180 y = -350 storage = "00453/card_01" scale = 1.4 action = "fadein" time = 0.1]
+
+
+ 
+[balloon x=130 y=20 shape="003_01" scale = 1.6 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 15]
+//[quake target =".bln" power = 3 time = 0.2]
+トランクスの[r]
+頭脳プレイにより[r]
+培養液を全身に浴びた[r]
+ブロリーは その肉体を[r]
+維持できなくなり[r]
+溶けて消えて[r]
+いくのだった…
+[p]
+
+[se storage = "38"]
+
+[fadeout target = ".chara" time = 0.7]
+
+[wait time = 0.4]
+
+//フェードアウト（フェードアウトするコマ）
+[balloon x=130 y=40 shape="008_03" scale = 50.0 action = "fadein" time = 0.5]
+[wait time = 0.7] 
+
+*004
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="S0001" bg = "bg_070_007"]
+ 
+//フェードイン（フェードインするコマ）
+[balloon x=130 y=40 shape="008_03" scale = 50]
+[wait time = 1]
+[fadeout target = ".bln" time = 2]
+[wait_anim target=".bln"]
+ 
+[balloon x=0 y=370 shape="003_01" scale = 1.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 13]
+//[quake target =".bln" power = 3 time = 0.2]
+…しかし[r]
+ブロリーを倒した喜びに[r]
+浸る間もなく[r]
+新たな危機がおとずれる！[r]
+　[r]
+ブロリーの細胞を取り込み[r]
+異常なパワーを[r]
+得てしまった培養液の[r]
+増殖が止まらなくなって[r]
+しまったのだ…！！
+[p]
+
+*005
+//-------------------------------------------------------------------------------
+//  "トランクス孫悟天"
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_070_005"]
+ 
+[character id = "kuri" x = -50 y = -20 storage = "00412/heapup_e_01" scale = 0.8 action = "fadein" time = 0.1] 
+
+[character x = 80 y = -30 storage = "00225/idl_side_p_01" scale = 1.0 action = "fadein" time = 0.1]
+[flip target =".chara" h=1]
+[character x=240 y=10 storage = "00200/idl_side_e_01" scale = 1.0 action = "fadein" time = 0.1]
+ 
+[balloon x=-60 y=230 shape="004_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+そ…[r]
+そんな…！！ 
+[p]
+ 
+[balloon x=-135 y=-190 shape="004_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+あの液[r]
+なんとかする方法は[r]
+ないのか！？ 
+[p]
+
+ 
+//-------------------------------------------------------------------------------
+[stopbgm]

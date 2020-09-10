@@ -1,0 +1,295 @@
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  フルパワー最終決戦！ ゴール
+//-------------------------------------------------------------------------------
+[bgm storage = "030"]
+
+*001
+//-------------------------------------------------------------------------------
+//  フルパワーボージャック
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_019"]
+
+[character id = "2" x=-200 y=-150 storage = "00293/heapup_p_01" scale = 1.3 action = "fadein" time = 0.1]
+
+[balloon x=120 y=140 shape="006_01" scale = 0.8 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 7 time = 0.2]
+くそおぉぉーっ！！
+[p]
+
+[balloon id="radhi1" x=130 y=-75 shape="006_01" scale = 0.9 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 7 time = 0.2]
+このオレが[r]
+おまえのようなガキに…
+[p]
+
+*002
+//-------------------------------------------------------------------------------
+//  超サイヤ人２悟飯
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_019"]
+
+[character x=230 y=-100 storage = "00307/heapup_e_01" scale = 1.3 action = "fadein" time = 0.1]
+
+[balloon x=-110 y=50 shape="001_03" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 7 time = 0.2]
+…そして…[r]
+ボクに甘ったれるなって[r]
+言ってた！！
+[p]
+
+[se storage = "10"]
+//点滅
+[balloon shape="008_02" x = 0 y = 0 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+[balloon shape="008_02" x = 0 y = 0 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+
+
+
+*todome
+//-------------------------------------------------------------------------------
+// 
+//-------------------------------------------------------------------------------
+[se storage = "03"]
+[coma shape="N0004R" bg = "bg_000_014"]
+
+[character id = "hikari" x=0 y=-20 storage = "99999/beam_04" scale = 4 angle = 0 action = "fadein" time = 0.1]
+
+[wait time = 0.3]
+
+//フェードアウト（フェードアウトするコマ）
+[balloon x=0 y=0 shape="008_02" scale = 50.0 action = "fadein" time = 0.5]
+[wait time = 0.7] 
+
+*003
+//-------------------------------------------------------------------------------
+//  悟飯がボージャックにとどめを刺す
+//-------------------------------------------------------------------------------
+[se storage = "3038"]
+[coma shape="S0001" bg = "bg_000_024"]
+//[coma shape="N0002R" bg = "bg_000_014"]
+
+
+//[se storage = "3008"]
+
+//描き文字：ドンッ
+[lwfobject id = "kaki1" storage="kakimoji:ef_020" x=-75 y=350 scale = 2.7 angle = 0]
+[quake target = "kaki1" power = 15 time = 0.4]
+
+[character id = "baku" x=0 y=0 storage = "99999/ef_explode_005" scale = 2.5]
+
+[character id = "bjk" x=40 y=-0 storage = "00293/dam_back_p_01" scale = 1.2]
+[paint target="bjk" color="#000000"]
+[quake target = "bjk" power = 7 time = 0.4]
+
+[character id = "bjk" x=40 y=-0 storage = "99999/dam_back_p_01" scale = 1.2]
+
+[character id = "iwa1" x=0 y=0 storage = "99999/rock_02" scale = 0.5]
+[paint target="iwa1" color="#000000"]
+[character id = "iwa2" x=180 y=80 storage = "99999/rock_02" scale = 0.5]
+[paint target="iwa2" color="#000000"]
+[character id = "iwa3" x=180 y=-180 storage = "99999/rock_02" scale = 0.5]
+[paint target="iwa3" color="#000000"]
+[character id = "iwa4" x=-180 y=0 storage = "99999/rock_02" scale = 0.5]
+[paint target="iwa4" color="#000000"]
+[character id = "iwa5" x=0 y=380 storage = "99999/rock_02" scale = 0.5]
+[paint target="iwa5" color="#000000"]
+[character id = "iwa6" x=80 y=480 storage = "99999/rock_02" scale = 0.5]
+[paint target="iwa6" color="#000000"]
+
+//[wait time = 0.3]
+
+//[fadeout target = "kaki1" time = 2.0]
+
+//[clear target = "bjk"]
+//[character id = "bjk" x=40 y=-0 storage = "00293/dam_back_p_01" scale = 0.8 action = "fadein" time = 0.1]
+//[wait time = 0.3]
+//[clear target = "bjk"]
+
+//[character id = "bjk" x=40 y=-0 storage = "00293/dam_back_p_01" scale = 0.8 action = "fadein" time = 0.1]
+//[wait time = 0.3]
+//[clear target = "bjk"]
+
+//[character id = "bjk" x=40 y=-0 storage = "00293/dam_back_p_01" scale = 0.8 action = "fadein" time = 0.1]
+//[wait time = 0.3]
+//[fadeout target = "bjk" time = 1.5]
+
+[character id = "gohan" x=50 y=0 storage = "00307/card_01" scale = 1.7 ]
+[quake target = "gohan" power = 5 time = 0.4]
+
+
+//[wait_anim target="gohan"]
+
+//[wait time = 0.9]
+
+// 空のフキダシ（セリフがないコマを送るために使用）
+//[balloon x = 0 y = 0 shape="002_01" scale = 0]
+//[p]
+
+
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+*004
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0004R" bg = "bg_000_016"]
+
+[balloon x=0 y=0 shape="003_01" scale = 1.5 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 16]
+//[quake target =".bln" power = 3 time = 0.2]
+悟空の激励により[r]
+覚醒した悟飯！[r]
+　[r]
+真の力を発揮した[r]
+悟飯の[r]
+強烈な一撃によって[r]
+ついにボージャックは[r]
+消滅するのだった…！
+[p]
+
+*005
+//-------------------------------------------------------------------------------
+//  孫悟空
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_012"]
+
+//天使の輪
+[character x = 170 y = 165 storage = "99999/ring" scale = 0.8 action = "fadein" time = 0.1]
+
+[character x=200 y=-150 storage = "00003/none_heapup_e_01" scale = 1.3 action = "fadein" time = 0.1]
+
+[balloon x=-130 y=50 shape="001_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+悟飯！[r]
+よくやったぞ！[r]
+[p]
+
+*006
+//-------------------------------------------------------------------------------
+//  界王
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_012"]
+
+//天使の輪
+[character x = -172 y = 145 storage = "99999/ring" scale = 0.6 action = "fadein" time = 0.1]//
+[character x = -180 y = -40 storage = "90001/stand" scale = 0.5 action = "fadein" time = 0.1]
+//[character x = -215 y = 60 storage = "99999/ase" scale = 0.5 action = "fadein" time = 0.1]
+
+[balloon x = 140 y = 55 shape="001_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+悟空…[r]
+それにしても おまえ[r]
+ムチャするなあ
+[p]
+
+*007
+//-------------------------------------------------------------------------------
+//  孫悟空
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_012"]
+
+//天使の輪
+[character x = 170 y = 165 storage = "99999/ring" scale = 0.8 action = "fadein" time = 0.1]
+
+[character x=200 y=-150 storage = "00003/none_heapup_e_01" scale = 1.3 action = "fadein" time = 0.1]
+
+[balloon x=-130 y=55 shape="001_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+えっ？[r]
+オラなにかやったか？
+[p]
+
+*008
+//-------------------------------------------------------------------------------
+//  界王
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+//bg界王星
+[coma shape="N0001L" bg = "bg_000_012"]
+
+//天使の輪
+[character x = -172 y = 145 storage = "99999/ring" scale = 0.6 action = "fadein" time = 0.1]
+[character x = -180 y = -40 storage = "90001/stand" scale = 0.5 action = "fadein" time = 0.1]
+//[character x = -215 y = 60 storage = "99999/ase" scale = 0.5 action = "fadein" time = 0.1]
+
+[balloon x = 130 y = 35 shape="001_02" scale = 1 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+いや[r]
+わしもまばたきしてたんで[r]
+よくわからんかった
+[p]
+
+*009
+//-------------------------------------------------------------------------------
+//  孫悟空
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_012"]
+
+//天使の輪
+[character x = 170 y = 165 storage = "99999/ring" scale = 0.8 action = "fadein" time = 0.1]
+
+[character x=200 y=-150 storage = "00003/none_heapup_e_01" scale = 1.3 action = "fadein" time = 0.1]
+
+[balloon x=-130 y=50 shape="001_01" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 40]
+//[quake target =".bln" power = 3 time = 0.2]
+はははは…！
+[p]
+
+*010
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0004L" bg = "bg_000_024"]
+
+[balloon x=0 y=-30 shape="003_01" scale = 1.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 14]
+//[quake target =".bln" power = 3 time = 0.2]
+こうして[r]
+ボージャックたちの野望は[r]
+打ち砕かれ[r]
+地球の危機は救われた[r]
+　[r]
+これからも[r]
+地球の平和は[r]
+悟飯たちの力によって[r]
+守られていくだろう…
+[p]
+
+[balloon x=0 y=0 shape="008_03" scale = 50.0 action = "fadein" time = 0.5]
+
+[wait time = 2.5]
+
+//-------------------------------------------------------------------------------
+[stopbgm]

@@ -1,0 +1,129 @@
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[stopbgm]
+
+
+*01
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+
+[se storage = "3032"]
+[coma shape="N0002R" bg = "bg_000_016"]
+
+//S0001
+
+[wait time = 0.7]
+
+
+[balloon x=0 y=95 shape="003_01" scale = 1.4 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target =".bln" power = 3 time = 0.2]
+[font size = 17]
+世界征服という[r]
+ピッコロの野望も[r]
+孫悟空の活躍によって[r]
+打ち砕かれ[r]
+５年あまりの[r]
+月日が過ぎた…[r]
+　[r]
+毎日 世界は[r]
+平和そのものであった[p]
+
+[se storage = "3032"]
+
+//フェードアウト
+[balloon x=130 y=40 shape="008_03" scale = 50.0 action = "fadein" time = 0.5]
+
+[wait time = 0.7]
+
+
+
+*title
+//-------------------------------------------------------------------------------
+//  title
+//-------------------------------------------------------------------------------
+
+
+[coma id = "coma1" shape="S0001" bg = "bg_000_003"]
+
+
+
+//フェードイン
+[balloon x=130 y=40 shape="008_03" scale = 50]
+[wait time = 1]
+[fadeout target = ".bln" time = 1]
+
+[wait_anim target=".bln"]
+
+[se storage = "41"]
+
+[balloon x=-180 y=115 shape="010_01" scale = 1.4 action = "fadein" time = 0.7]
+
+[balloon x=-110 y=-90 shape="010_02" scale = 0.9 action = "fadein" time = 0.7]
+
+[balloon x=15 y=125 shape="010_03" scale = 0.9 action = "fadein" time = 0.7]
+
+[balloon x=240 y=-90 shape="010_04" scale = 2.0 action = "fadein" time = 0.7]
+
+[balloon x=-250 y=-85 shape="010_05" scale = 1.3 action = "fadein" time = 0.7]
+
+[balloon x=230 y=90 shape="010_06" scale = 1.5 action = "fadein" time = 0.7]
+
+[balloon x=70 y=-115 shape="010_07" scale = 1.0 action = "fadein" time = 0.7]
+
+
+[wait time = 0.5]
+
+[balloon x=0 y=0 shape="011_01" scale = 1.1 action = "fadein" time = 0.5]
+
+[wait time = 0.5]
+
+[p]
+
+
+[bgm storage = "010"]
+
+
+*03
+//-------------------------------------------------------------------------------
+//  悟空
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_004"]
+
+[character x = 180 y = -80 storage = "00003/heapup_e_01" scale = 1.8 action = "fadein" time = 0.1]
+
+[balloon x=-120 y=135 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 3 time = 0.2]
+[font size = 28]
+よし悟飯！ 今日は[r]
+亀仙人のじっちゃんちに[r]
+つれてってやるからな！[p]
+
+
+*04
+//-------------------------------------------------------------------------------
+//  悟飯
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0002L" bg = "bg_000_004"]
+
+[character x=-0 y=-130 storage = "99999/tail" scale = 1.7 action = "fadein" time = 0.1]
+
+[character x=-160 y=-110 storage = "00060/card_02" scale = 1.4 action = "fadein" time = 0.1]
+
+[balloon x=140 y=95 shape="001_03" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 3 time = 0.2]
+[font size = 44]
+はいっ！[p]
+
+//-------------------------------------------------------------------------------
+[stopbgm]

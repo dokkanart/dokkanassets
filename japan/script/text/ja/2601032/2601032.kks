@@ -1,0 +1,39 @@
+
+
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "007"]
+
+
+*01
+//-------------------------------------------------------------------------------
+//  超サイヤ人・孫悟空
+//-------------------------------------------------------------------------------
+[coma shape="S0001" bg = "bg_000_018"]
+
+[character x=-0 y=-0 storage = "00003/card_04" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x=-120 y=350 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][font size = 28]
+//[quake target = ".bln" power = 7 time = 0.2]
+この闘いでは[r]
+もう力を出し惜しみ[r]
+したりしねえ…！[p]
+
+[se storage = "50"]
+
+
+[quake target = ".chara" power = 9 time = 0.2]
+
+[balloon x=0 y=-330 shape="006_01" scale = 0.8 action = "expand" time = 0.1]
+[wait_anim target=".bln"][font size = 32]
+[quake target = ".bln" power = 7 time = 0.2]
+いくぞ！！[r]
+ついてこい！！[p]
+
+
+
+[stopbgm]

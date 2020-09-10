@@ -1,0 +1,701 @@
+
+
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "013"]
+
+*001
+//-------------------------------------------------------------------------------
+//  アモンド
+//-------------------------------------------------------------------------------
+[se storage = "3025"]
+[coma id = "coma1" shape="S0001" bg = "bg_000_003"]
+
+[lwfobject id = "kaki1" storage="kakimoji:ef_009" in="04" x=-180 y=90 scale = 2.0]
+[quake target = "kaki1" power = 1 time = 300]
+
+
+
+[character x = 0 y = 0 storage = "99999/earth" scale = 0.5 action = "expand" time = 4.0]
+
+[wait_anim target=".chara"]
+
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_003"]
+
+[character x = 240 y = -180 storage = "00380/idl_side_e_01" scale = 1.3 action = "fadein" time = 0.1]
+
+[balloon x=-145 y=150 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+ターレス様…[r]
+地球に生命反応が[r]
+あります
+[p]
+
+
+*002
+//-------------------------------------------------------------------------------
+//  ターレス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0004L" bg = "bg_000_003"]
+
+[character x = -220 y = -200 storage = "00298/idl_front_p_01" scale = 2.2 action = "fadein" time = 0.1]
+
+[balloon x=145 y=110 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+まさか…地球はたしか[r]
+カカロットが送られた[r]
+星のはず…とっくに…
+[p]
+
+[balloon x=145 y=-100 shape="002_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+…それにしては[r]
+美しすぎるな…
+[p]
+
+
+*003
+//-------------------------------------------------------------------------------
+//  アモンド
+//-------------------------------------------------------------------------------
+[se storage = "3036"]
+[coma shape="N0001R" bg = "bg_000_003"]
+
+[character x = 240 y = -180 storage = "00380/idl_side_e_01" scale = 1.3 action = "fadein" time = 0.1]
+
+[wait time = 0.7]
+
+[balloon x=-145 y=120 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+ターレス様[r]
+お喜びください
+[p]
+
+[balloon x=-125 y=-80 shape="002_02" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+地球の土壌は[r]
+神精樹を栽培するのに[r]
+適しているようでっせい
+[p]
+
+*004
+//-------------------------------------------------------------------------------
+//  ターレス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0004L" bg = "bg_000_003"]
+
+[character x = -220 y = -200 storage = "00298/idl_front_p_01" scale = 2.2 action = "fadein" time = 0.1]
+
+[balloon x=110 y=110 shape="002_01" scale = 1.1 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 22]
+//[quake target =".bln" power = 3 time = 0.2]
+ふふ…[r]
+地球が神精樹の実を育てるのに[r]
+もってこいの星だったとは…
+[p]
+
+[balloon x=120 y=-100 shape="002_03" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+これもカカロットが[r]
+地球を無傷で残しておいて[r]
+くれたおかげだ…
+[p]
+
+//フェードアウト（フェードアウトするコマ）
+[balloon x=130 y=40 shape="008_03" scale = 50.0 action = "fadein" time = 0.5]
+[wait time = 0.7] 
+
+*title
+//-------------------------------------------------------------------------------
+//  タイトルロゴ
+//-------------------------------------------------------------------------------
+[coma id = "coma1" shape="S0001" bg = "bg_000_026"]
+//[character x = 0 y = 0 storage = "99999/earth" scale = 0.8 action = "fadein" time = 0.1]
+
+//フェードイン（フェードインするコマ）
+[balloon x=130 y=40 shape="008_03" scale = 50]
+[wait time = 1]
+[fadeout target = ".bln" time = 2]
+[wait_anim target=".bln"]
+
+[wait time = 0.7]
+
+//[se storage = "17"]
+
+[balloon x=0 y=0 shape="011_08" scale = 1.4 action = "fadein" time = 2.0]
+
+[wait_anim target=".bln"]
+
+[p]
+
+*005
+//-------------------------------------------------------------------------------
+//  神精樹を植え付けられた地球
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+//[coma shape="N0004L" bg = "bg_000_026"]
+
+//[wait time =0.7]
+
+
+//空のフキダシ
+//[balloon x = 0 y = 0 shape="002_01" scale = 0]
+//[p]
+
+
+*006
+//-------------------------------------------------------------------------------
+//  アモンド
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_026"]
+
+[character x = 240 y = -180 storage = "00380/idl_side_e_01" scale = 1.3 action = "fadein" time = 0.1]
+
+[balloon x=-145 y=130 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+もう少しで[r]
+実が熟れまっせい
+[p]
+
+
+*007
+//-------------------------------------------------------------------------------
+//  ダイーズ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_026"]
+
+[character x = 240 y = -165 storage = "00386/idl_side_e_01" scale = 1.4 action = "fadein" time = 0.1]
+
+[balloon x=-125 y=120 shape="002_02" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+これだけ[r]
+地球のエネルギーを吸った[r]
+あの実を食えば…
+[p]
+
+[balloon x=-125 y=-100 shape="002_03" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+またオレたちのパワーが[r]
+アップするというわけだ
+[p]
+
+
+*008
+//-------------------------------------------------------------------------------
+//  レズン
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_026"]
+
+[character x = 140 y = -80 storage = "00381/idl_side_e_01" scale = 1.1 action = "fadein" time = 0.1]
+[character x = 280 y = -100 storage = "00381/heapup_e_01" scale = 1.1 action = "fadein" time = 0.1]
+
+[balloon x=-125 y=110 shape="002_01" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+宇宙一の壊し屋[r]
+ターレス軍団は[r]
+向かう所敵なしですぜ
+[p]
+
+
+[balloon x=-135 y=-95 shape="002_03" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+あのフリーザだって[r]
+ちょろいもんよ…[r]
+ターレス様が大宇宙の[r]
+帝王ということだ
+[p]
+
+
+*010
+//-------------------------------------------------------------------------------
+//  カカオ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_026"]
+
+[character x = 230 y = -140 storage = "00384/heapup_e_01" scale = 1.3 action = "fadein" time = 0.1]
+
+[balloon x=-145 y=100 shape="002_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+ンダッ！
+[p]
+
+
+*011
+//-------------------------------------------------------------------------------
+//  アモンド
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_026"]
+
+[character x = 240 y = -180 storage = "00380/idl_side_e_01" scale = 1.3 action = "fadein" time = 0.1]
+
+[balloon x=-145 y=110 shape="002_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+みんな[r]
+神精樹の実の[r]
+おかげでっせい…
+[p]
+
+
+*012
+//-------------------------------------------------------------------------------
+//  ターレス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0004L" bg = "bg_000_026"]
+
+[character x = -220 y = -200 storage = "00298/idl_front_p_01" scale = 2.2 action = "fadein" time = 0.1]
+
+[balloon x=120 y=90 shape="002_01" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+いや…[r]
+…マヌケなカカロットの[r]
+おかげだ…！
+[p]
+
+//フェードアウト
+[balloon x=130 y=40 shape="008_03" scale = 50.0 action = "fadein" time = 0.5]
+[wait time = 0.7] 
+
+*013
+//-------------------------------------------------------------------------------
+//  場面転換
+//-------------------------------------------------------------------------------
+
+[coma shape="S0001" bg = "bg_000_004"]
+
+[balloon x=130 y=40 shape="008_03" scale = 50]
+[wait time = 1]
+[fadeout target = ".bln" time = 2]
+[wait_anim target=".bln"]
+
+[wait time = 0.7]
+
+[se storage = "3034"]
+
+[balloon x=0 y=160 shape="005_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+悟空よ…[r]
+大変なことになったぞい
+[p]
+
+
+
+
+*015
+//-------------------------------------------------------------------------------
+//  悟空
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_004"]
+
+[character x=210 y=-160 storage = "00300/idl_side_e_01" scale = 1.3 action = "fadein" time = 0.1]
+
+[balloon x=-145 y=110 shape="001_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+界王様！？
+[p]
+
+*016
+//-------------------------------------------------------------------------------
+//  界王
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_080_001"]
+
+[character x = -180 y = -40 storage = "90001/stand" scale = 0.5 action = "fadein" time = 0.1]
+
+[balloon x=120 y=90 shape="005_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+神精樹という厄介な木が[r]
+地球にまるごと[r]
+根付いてしまった…！
+[p]
+
+
+*017
+//-------------------------------------------------------------------------------
+//  悟空
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_004"]
+
+[character x=210 y=-160 storage = "00300/idl_side_e_01" scale = 1.3 action = "fadein" time = 0.1]
+
+[balloon x=-145 y=110 shape="001_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+神精樹！？
+[p]
+
+
+*018
+//-------------------------------------------------------------------------------
+//  界王
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_080_001"]
+
+[character x = -180 y = -40 storage = "90001/stand" scale = 0.5 action = "fadein" time = 0.1]
+
+[balloon x=120 y=90 shape="005_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+その実は本来[r]
+神様だけが食べることを[r]
+ゆるされた木だ…
+[p]
+
+
+*019
+//-------------------------------------------------------------------------------
+//  界王
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0003L" bg = "bg_000_026"]
+
+[wait time = 0.7]
+
+//[character x = -180 y = -140 storage = "90001/stand" scale = 0.4 action = "fadein" time = 0.1]
+
+[balloon x=0 y=0 shape="003_02" scale = 1.6 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 15]
+//[quake target =".bln" power = 3 time = 0.2]
+神精樹は一度根付くと[r]
+大地の滋養をすべて[r]
+吸収してしまうまで[r]
+実を生らせ[r]
+まわりの植物を枯らし[r]
+その星を[r]
+荒れ果てた砂漠とかして[r]
+その後数百年は[r]
+草一本その土地に[r]
+生えないという…
+[p]
+
+
+*020
+//-------------------------------------------------------------------------------
+//  悟空
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_004"]
+
+[character x = 190 y = -150 storage = "00300/heapup_e_01" scale = 1.4 action = "fadein" time = 0.1]
+
+[balloon x=-145 y=80 shape="001_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+どういうことだ！？
+[p]
+
+
+*021
+//-------------------------------------------------------------------------------
+//  界王
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_080_001"]
+
+[character x = -180 y = -40 storage = "90001/stand" scale = 0.5 action = "fadein" time = 0.1]
+
+[balloon x=145 y=120 shape="005_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+すなわち一度根付くと[r]
+もはや手遅れで…
+[p]
+
+[balloon x=105 y=-90 shape="005_02" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+その実が地球の栄養を[r]
+全部吸ってしまい最後には[r]
+砂漠にしてしまうわけだ…
+[p]
+
+
+*022
+//-------------------------------------------------------------------------------
+//  悟空
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_004"]
+
+[character x = 190 y = -150 storage = "00300/heapup_e_01" scale = 1.4 action = "fadein" time = 0.1]
+
+[balloon x=-145 y=80 shape="001_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+じゃあ[r]
+オラたちの地球は…
+[p]
+
+
+*023
+//-------------------------------------------------------------------------------
+//  界王
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0003L" bg = "bg_080_001"]
+
+[character x = -150 y = -50 storage = "90001/stand" scale = 0.7 action = "fadein" time = 0.1]
+
+[balloon x=145 y=90 shape="005_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+残念ながら手遅れだ
+[p]
+
+
+*024
+//-------------------------------------------------------------------------------
+//  悟空
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_004"]
+
+[character x = 190 y = -150 storage = "00300/heapup_e_01" scale = 1.4 action = "fadein" time = 0.1]
+
+[balloon x=-145 y=80 shape="004_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+……！！[r]
+オラそんなこと[r]
+信じられねえ！！
+[p]
+
+
+*025
+//-------------------------------------------------------------------------------
+//  クリリン
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_004"]
+
+[character x=-220 y=-90 storage = "00009/idl_side_p_02" scale = 2.0 action = "fadein" time = 0.1]
+
+[balloon x=125 y=110 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+…木も全部[r]
+枯れちまうのか！？
+[p]
+
+
+*026
+//-------------------------------------------------------------------------------
+//  ヤムチャ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_004"]
+
+[character x=-230 y=-85 storage = "00013/idl_side_p_02" scale = 1.8 action = "fadein" time = 0.1]
+
+[balloon x=125 y=90 shape="001_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+水もなくなって[r]
+しまうのか…
+[p]
+
+
+*027
+//-------------------------------------------------------------------------------
+//  悟空
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_004"]
+
+[character x=210 y=-160 storage = "00300/idl_side_e_01" scale = 1.3 action = "fadein" time = 0.1]
+
+[balloon x=-145 y=80 shape="001_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+オラには[r]
+わかんねえ…
+[p]
+
+
+*028
+//-------------------------------------------------------------------------------
+//  餃子
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_004"]
+
+[character x=-190 y=-100 storage = "00012/idl_side_p_02" scale = 1.8 action = "fadein" time = 0.1]
+
+[balloon x=100 y=80 shape="004_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+でも一度[r]
+根がついちゃったら[r]
+手遅れだって…
+[p]
+
+
+*029
+//-------------------------------------------------------------------------------
+//  悟空
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_004"]
+
+[character x = 190 y = -150 storage = "00300/heapup_e_01" scale = 1.4 action = "fadein" time = 0.1]
+
+[balloon x=-145 y=110 shape="001_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+オラたちのパワーが[r]
+集まれば…
+[p]
+
+[balloon x=-120 y=-90 shape="001_03" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+[quake target =".bln" power = 3 time = 0.2]
+そんな木は根っこごと[r]
+吹き飛ばせるはずだ！！
+[p]
+
+
+*030
+//-------------------------------------------------------------------------------
+//  クリリン
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_004"]
+
+[character x=-220 y=-100 storage = "00009/heapup_p_01" scale = 2.0 action = "fadein" time = 0.1]
+
+[balloon x=125 y=90 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+そうだとも…[r]
+やろうぜ！みんな！
+[p]
+
+
+*031
+//-------------------------------------------------------------------------------
+//  餃子
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_004"]
+
+[character x=-80 y=40 storage = "00012/idl_side_p_02" scale = 1.1 action = "fadein" time = 0.1]
+[character x=-240 y=-40 storage = "00011/idl_side_p_02" scale = 1.6 action = "fadein" time = 0.1]
+
+[balloon x=130 y=110 shape="001_02" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 44]
+[quake target =".bln" power = 3 time = 0.2]
+うん！
+[p]
+
+
+
+[balloon x=80 y=-90 shape="001_01" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 44]
+[quake target =".bln" power = 3 time = 0.2]
+よし！
+[p]
+
+
+*033
+//-------------------------------------------------------------------------------
+//  悟空たち
+//-------------------------------------------------------------------------------
+[se storage = "3022"]
+[coma shape="N0002R" bg = "bg_000_004"]
+
+[character x=-120 y=-0 storage = "00011/heapup_e_01" scale = 0.7 action = "fadein" time = 0.1]
+
+[character x=-235 y=110 storage = "00012/idl_side_e_01" scale = 0.8 action = "fadein" time = 0.1]
+
+[character x=-30 y=-40 storage = "00009/heapup_e_01" scale = 1.1 action = "fadein" time = 0.1]
+
+[character x = 90 y = -50 storage = "00013/yam_heapup_e_01" scale = 0.75 action = "fadein" time = 0.1]
+
+[character x = 220 y = -80 storage = "00300/heapup_e_01" scale = 1.1 action = "fadein" time = 0.1]
+
+[balloon shape="006_01" x = -190 y = -90 scale = 0.65 action = "expand" time = 0.1]
+[font size = 42]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 7 time = 0.2]
+いくぜ！！
+[p]
+
+[balloon shape="006_02" x = 110 y = -160 scale = 0.65 action = "expand" time = 0.1]
+[font size = 42]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 7 time = 0.2]
+おう！！
+[p]
+
+[stopbgm]

@@ -1,0 +1,59 @@
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+//[bgm storage = "003"]
+
+*001
+//-------------------------------------------------------------------------------
+//  ゴールデンフリーザ
+//-------------------------------------------------------------------------------
+[se storage = "3025"]
+[coma shape="S0001" bg = "bg_000_072"]
+
+[lwfobject id = "kaki1" storage="kakimoji:ef_013" x=0 y=-100 angle = -13 scale = 2.8 action = "fadein" time = 0.1]
+[quake target = "kaki1" power = 15 time = 0.4]
+
+[character id = "ss" x=0 y=0 storage = "99999/gekirin" scale = 5.0 action = "expand" time = 0.3]
+
+[character id = "gohan" x = -20 y = -70 storage = "00241/card_06" scale = 1.1 action = "fadein" time = 0.1]
+
+
+
+
+
+//[se storage = "3025"]
+//点滅
+[balloon shape="008_02" x = 0 y = 0 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+//[balloon shape="008_02" x = 0 y = 0 scale = 50 action = "fadein" time = 0.1]
+//[wait time = 0.3]
+//[clear target = ".bln"]
+
+[fadeout target = "ss" time = 0.7]
+[fadeout target = "kaki1" time = 0.7]
+
+[wait_anim target="ss"]
+
+[balloon x=-110 y=470 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+わかりやすく[r]
+金色にしてみましたが[r]
+単純すぎましたかね…
+[p]
+
+[balloon x=140 y=-440 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 7 time = 0.2]
+でも ただ色が[r]
+変わっただけでないのは[r]
+わかっていますよね？
+[p]
+
+//[stopbgm]
+

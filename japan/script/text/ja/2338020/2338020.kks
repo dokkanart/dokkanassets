@@ -1,0 +1,163 @@
+*start|スタート
+
+
+//"エリア２スタート"
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "003"]
+
+*000
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_000_014"]
+
+[balloon x=0 y=150 shape="003_01" scale = 1.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 14]
+//[quake target =".bln" power = 3 time = 0.2] 
+勇者タピオンは[r]
+永き眠りから目を覚ました[r]
+…しかし 様々な疑念を[r]
+払拭できないまま[r]
+タピオンは行方を眩ます[r]
+　[r]
+そして その夜…[r]
+街に巨大な怪物が現れた！[r]
+悟飯とビーデルは急いで[r]
+現場に駆けつけるが…
+[p]
+ 
+*001
+//-------------------------------------------------------------------------------
+//  
+//-------------------------------------------------------------------------------
+
+[coma shape="S0001" bg = "bg_015_003"]
+
+
+[lwfobject id = "kaki1" storage="kakimoji:ef_009" x=-170 y=20 angle = 0 scale = 1.7 action = "fadein" time = 0.5]
+[quake target = "kaki1" power = 2 time = 300]
+
+[wait time = 1.0]
+
+[se storage = "3038"]
+
+[character x = -0 y = 0 storage = "00308/card_02" scale = 1.2 action = "fadein" time = 2.0]
+ 
+[wait_anim target=".chara"]
+
+// 空のフキダシ（セリフがないコマを送るために使用）
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+
+*002
+//-------------------------------------------------------------------------------
+//  ビーデル（グレートサイヤマン2号）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_015_003"]
+ 
+[character x=260 y=-170 storage = "00323/heapup_e_01" scale = 1.2 action = "fadein" time = 0.1]
+ 
+[balloon x=-80 y=70 shape="004_02" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+[quake target =".bln" power = 3 time = 0.2]
+な…なんなの[r]
+こいつ！？
+[p]
+ 
+*003
+//-------------------------------------------------------------------------------
+//  孫悟飯（グレートサイヤマン）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_015_003"]
+ 
+[character x=255 y=-120 storage = "00366/heapup_e_02" scale = 1.2 action = "fadein" time = 0.1]
+ 
+[balloon x=-110 y=110 shape="004_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+足のある幽霊…！？[r]
+いや 足だけの[r]
+モンスターだ！！
+[p]
+ 
+[balloon x=-130 y=-110 shape="004_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+あのおじいさんが[r]
+言ってた巨大な悪って[r]
+こいつなのかも…！？
+[p]
+
+*004
+//-------------------------------------------------------------------------------
+//  ヒルデガーン(下半身)が街を壊す
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0003L" bg = "bg_015_003"]
+
+//[character x = -120 y = -100 storage = "00308/idl_front_p_01" scale = 1.6 action = "fadein" time = 0.1]
+
+
+[wait time = 0.3]
+
+[se storage = "3026"]
+[character id = "baku1" x = -160 y = -150 storage = "99999/ef_explode_005" scale = 1.5 action = "expand" time = 0.2]
+[flip target ="baku1" h=1]
+[quake target = "baku1" power = 18 time = 0.6]
+
+[wait time = 0.1]
+
+
+[lwfobject id = "kaki2" storage="kakimoji:ef_019" x=0 y=50 scale = 2.5 action = "fadein" time = 0.1]
+[quake target = "kaki2" power = 15 time = 0.6]
+
+[se storage = "3013"]
+[character id = "baku2" x = 140 y = -150 storage = "99999/ef_explode_005" scale = 2.5 action = "expand" time = 0.2]
+[quake target = "baku2" power = 18 time = 0.6]
+
+[wait_anim target="baku2"]
+  
+// 空のフキダシ（セリフがないコマを送るために使用）
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+*005
+//-------------------------------------------------------------------------------
+//  孫悟飯（グレートサイヤマン）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_015_003"]
+ 
+
+[character x=240 y=-140 storage = "00366/heapup_e_02" scale = 1.4 action = "fadein" time = 0.1]
+
+[balloon x=-120 y=120 shape="004_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+くそ…！！[r]
+街をメチャクチャに[r]
+しやがって…！
+[p]
+
+[quake target =".chara" power = 5 time = 0.3]
+
+[balloon x=-130 y=-190 shape="006_01" scale = 0.75 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+[quake target =".bln" power = 7 time = 0.2]
+ゆるさないぞ！！
+[p]
+
+//-------------------------------------------------------------------------------
+[stopbgm]

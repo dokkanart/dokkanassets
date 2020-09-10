@@ -1,0 +1,902 @@
+*start|スタート
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "047"]
+
+*000
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0003L" bg = "bg_000_032"]
+
+[balloon x=0 y=35 shape="003_01" scale = 1.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 13]
+//[quake target =".bln" power = 3 time = 0.2]
+かつて[r]
+全宇宙で破壊と殺戮を[r]
+くりかえしていたという[r]
+恐怖の存在“魔人ブウ”の[r]
+復活を企むバビディ…[r]
+　[r]
+バビディの野望を[r]
+打ち砕くため[r]
+界王神と共に[r]
+闘いを挑んだ悟空たちは[r]
+待ち構える戦士たちを[r]
+次々と撃破していくのだった
+[p]
+
+
+
+*001
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0003R" bg = "bg_000_024"]
+
+[character x= 170+70 y= 190-30 storage = "99999/ring" scale = 0.9 angle = 0 action = "fadein" time = 0.1]
+[character x = 230+70 y = -200-30 storage = "00066/card_06" scale = 0.95 action = "fadein" time = 0.1]
+
+
+[character x= -240 y=-50 storage = "00228/card_06" scale = 0.55 angle = 0 action = "fadein" time = 0.1]
+
+
+
+[balloon x=0 y=0 shape="003_02" scale = 1.6 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 14]
+//[quake target =".bln" power = 3 time = 0.2]
+しかし[r]
+バビディの策略に[r]
+わざとはまったベジータと[r]
+悟空の闘いによって[r]
+魔人ブウの[r]
+復活エネルギーが[r]
+フルパワーになってしまう…[r]
+　[r]
+地球に[r]
+最大の危機が迫る！！
+[p]
+
+
+
+*002
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002L" bg = "bg_000_014"]
+
+[lwfobject id = "kaki2" storage="kakimoji:ef_009" in="02" x=-245 y=50 scale = 1.0 angle = 10 action = "fadein" time = 0.1] 
+[quake target ="kaki2" power = 1]
+
+
+//ブウの玉
+[balloon x=0 y=-50 shape="008_21" scale = 1.0 action = "fadein" time = 0.1]
+
+[wait time = 1.0]
+
+
+[se storage = "10"]
+//光
+[balloon id = "db1" x=0 y= 0 shape="010_08" scale = 6.5 action = "fade:50" time = 2.0]
+
+[wait time = 2.0]
+
+//[balloon x=0 y=0 shape="003_02" scale = 0 action = "fadein" time = 0.1]
+//[p]
+
+
+
+
+[se storage = "3025"]
+//点滅
+[balloon shape="008_02" x = 0 y = 0 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+[balloon shape="008_02" x = 0 y = 0 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+
+
+//フェードアウト（フェードアウトするコマ）
+[balloon x=0 y=0 shape="008_02" scale = 50.0 action = "fadein" time = 0.5]
+[wait time = 0.7]
+
+
+
+
+*003
+//-------------------------------------------------------------------------------
+//  魔人ブウ（善）
+//-------------------------------------------------------------------------------
+//[bgm storage = "013"]
+//[se storage = "04"]
+[coma shape="S0001" bg = "bg_000_016"]
+
+//[character id="buu" x = 0 y = 20 storage = "00229/card_002" scale = 1.1 action = "fadein" time = 0.1]
+//[quake target ="buu" power = 8 time = 0.4]
+
+
+
+//フェードイン（フェードインするコマ）
+[balloon x=0 y=0 shape="008_02" scale = 50]
+[wait time = 1]
+[fadeout target = ".bln" time = 0.7]
+//[wait_anim target=".bln"]
+
+
+
+
+[character id="buu" x = 0 y = 20 storage = "00229/card_002" scale = 50 action = "fadein" time = 0.1]
+
+[wait time = 0.1]
+
+[scale target = "buu" scale = 1.1 time = 0.3]
+
+[wait time = 0.1]
+
+[se storage = "20"]
+[quake target = "buu" power = 8 time = 0.5]
+
+
+
+[wait time = 0.2]
+
+
+[balloon x = 0 y = 450 shape="006_02" scale = 0.75 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+[quake target =".bln" power = 7 time = 0.2]
+ブウーッ！！
+[p]
+
+
+*004
+//-------------------------------------------------------------------------------
+//  超サイヤ人孫悟飯（青年期）&界王神
+//-------------------------------------------------------------------------------
+[se storage = "03"]
+[coma shape="N0001R" bg = "bg_000_032"]
+
+
+
+[lwfobject id = "kaki1" x = -80 y = 100 storage = "kakimoji:ef_001" scale = 2.5 angle = -10 action = "fadein" time = 0.1]
+[quake target = "kaki1" power = 9 time = 0.4]
+
+
+
+
+[character x = 100 y = -90 storage = "00366/heapup_e_05" scale = 1.0 action = "fadein" time = 0.1]
+
+[character x = 270 y = -100 storage = "00361/heapup_e_01" scale = 1.0 action = "fadein" time = 0.1]
+
+
+
+
+
+
+
+//空のフキダシ
+[balloon x = -0 y = 0 shape="001_01" scale = 0]
+[p]
+
+
+*005
+//-------------------------------------------------------------------------------
+//  バビディ&ダーブラ
+//-------------------------------------------------------------------------------
+[se storage = "03"]
+[coma shape="N0001L" bg = "bg_000_032"]
+
+//[character x = -270 y = -60 storage = "00233/idl_side_p_01" scale = 1.0 action = "fadein" time = 0.1]
+//[character x = -120 y = -150 storage = "00238/guard_p_01" scale = 0.9 angle = 20 action = "fadein" time = 0.1]
+
+
+
+
+//[character x=-100 y= -120 storage = "00238/idl_side_p_01" priority=100 scale = 1.0 action = "fadein" time = 0.1]
+
+
+[character id = "1" x = -260 y = -130 storage = "00233/atc_sp01_p_02" scale = 1.0 action = "fadein" time = 0.1]
+
+[character x = -140 y = -105 storage = "00238/guard_p_01" scale = 1.05 angle=20 action = "fade:100" time = 0.1]
+
+
+[lwfobject id = "kaki2" x = 80 y = 80 storage = "kakimoji:ef_002" scale = 2.2 angle = 12 action = "fadein" time = 0.1]
+[quake target = "kaki2" power = 9 time = 0.4]
+
+//空のフキダシ
+[balloon x=100 y=50 shape="002_01" scale = 0]
+[p]
+
+
+*006
+//-------------------------------------------------------------------------------
+//  超サイヤ人孫悟飯（青年期）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_032"]
+
+[character x = 190 y = -130 storage = "00366/heapup_e_05" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x = -120 y = 70 shape="001_03" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+界王神さま…[r]
+あいつが[r]
+魔人ブウなのですか…？
+[p]
+
+
+*007
+//-------------------------------------------------------------------------------
+//  界王神
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_032"]
+
+[character x = 230 y = -100 storage = "00361/heapup_e_01" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x = -120 y = 50 shape="004_01" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+そ…そうです…[r]
+わ…わすれはしませんよ…[r]
+あのおそろしい顔は……
+[p]
+
+
+*008
+//-------------------------------------------------------------------------------
+//  バビディ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_032"]
+
+[character x = -230 y = -100 storage = "00238/guard_p_01" scale = 1.2 angle=20 action = "fadein" time = 0.1]
+
+[balloon x=130 y=40 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+おいっ[r]
+やっぱりあいつが[r]
+魔人ブウらしいぞっ！！
+[p]
+
+
+*009
+//-------------------------------------------------------------------------------
+//  ダーブラ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_032"]
+
+[character x = -230 y = -240 storage = "00233/atc_sp01_p_04" scale = 1.3 action = "fadein" time = 0.1]
+
+[balloon x=120 y=60 shape="004_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+あ……[r]
+あんなヤツが……
+[p]
+
+
+*010
+//-------------------------------------------------------------------------------
+//  界王神
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_032"]
+
+[character x = 230 y = -100 storage = "00361/heapup_e_01" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x = -120 y = 60 shape="004_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+も…もうダメです…[r]
+逃げられない……
+[p]
+
+
+*011
+//-------------------------------------------------------------------------------
+//  ダーブラ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_032"]
+
+[character x = -230 y = -240 storage = "00233/atc_sp01_p_04" scale = 1.3 action = "fadein" time = 0.1]
+
+[balloon x=120 y=90 shape="002_03" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+バビディさま…[r]
+なぜかはわかりませんが[r]
+魔人ブウの復活は[r]
+失敗してしまった[r]ようですね…
+[p]
+
+
+[balloon x=130 y=-100 shape="002_01" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+やっと現れたと思ったら[r]
+アタマもパワーもない[r]
+マヌケ面の生ゴミだ…
+[p]
+
+
+*012
+//-------------------------------------------------------------------------------
+//  魔人ブウ（善）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_032"]
+
+[character x = 230 y = -100 storage = "00229/energyball_p_01" scale = 1.1 action = "fadein" time = 0.1]
+[flip target =".chara" h=1]
+
+//[character x = 200 y = -120 storage = "00229/energyball_p_02" scale = 1.2 action = "fadein" time = 0.1]
+//[flip target =".chara" h=1]
+
+
+
+[balloon x = -140 y = 100 shape="006_02" scale = 0.65 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 44]
+[quake target =".bln" power = 7 time = 0.2]
+カチーン
+[p]
+
+
+*013
+//-------------------------------------------------------------------------------
+//  ダーブラ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_032"]
+
+[character x = -375 y = -160 storage = "00233/idl_side_p_01" scale = 1.3 action = "fadein" time = 0.1]
+
+//[character x = -320 y = -160 storage = "00233/idl_side_p_01" scale = 1.3 action = "fadein" time = 0.1]
+
+
+
+[balloon x=130 y=90 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+なんだ？[r]
+このダーブラさまと[r]
+やろうってのか？
+[p]
+
+
+[balloon x=140 y=-90 shape="002_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+身のほど知らずが…[r]
+だからバカだと[r]
+いうのだ……
+[p]
+
+
+
+[se storage = "3012"]
+//点滅
+[balloon shape="008_02" x = 0 y = 0 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+[balloon shape="008_02" x = 0 y = 0 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+
+
+
+*014
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0004R" bg = "bg_000_014"]
+
+[character id = "wa" x = 0 y = 0 storage = "99999/flare" scale = 4.0 action = "fadein" time = 0.1]
+[paint target="wa" color="#8000FF"]
+
+[balloon x=0 y=0 shape="003_01" scale = 1.6 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 14]
+//[quake target =".bln" power = 3 time = 0.2]
+魔人ブウに闘いを挑む[r]
+ダーブラだったが[r]
+その攻撃は[r]
+まったく通用せず[r]
+一瞬のうちに[r]
+倒されてしまう…[r]
+　[r]
+これが[r]
+太古より恐れられてきた[r]
+魔人ブウのパワー[r]
+なのだろうか…！！
+[p]
+
+
+*015
+//-------------------------------------------------------------------------------
+//  魔人ブウ（善）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_032"]
+
+//[character x = 200 y = -120 storage = "00229/energyball_p_02" scale = 1.2 action = "fadein" time = 0.1]
+//[flip target =".chara" h=1]
+
+[character x=240 y=-160 storage = "00229/atc_sp01_p_01" scale = 1.1 action = "fadein" time = 0.1]
+[flip target =".chara" h=1]
+
+[balloon x=-135 y=85 shape="002_01" scale = 0.65 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 44]
+[quake target =".bln" power = 3 time = 0.2]
+はぁ〜
+[p]
+
+
+*016
+//-------------------------------------------------------------------------------
+//  バビディ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_032"]
+
+[character x = -220 y = -90 storage = "00238/atc_sp01_p_01" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon x=130 y=90 shape="002_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+すばらしい！！[r]
+まったくすばらしいよ[r]
+魔人ブウ！！
+[p]
+
+
+[balloon x=135 y=-105 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+あのダーブラを[r]
+カンタンに[r]
+倒しちゃうなんて！！
+[p]
+
+
+*017
+//-------------------------------------------------------------------------------
+//  超サイヤ人孫悟飯（青年期）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_032"]
+
+[character x = 190 y = -130 storage = "00366/heapup_e_05" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x = -120 y = 85 shape="004_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+魔人ブウの気が[r]
+ば…爆発的にあがった…
+[p]
+
+
+[balloon x=-130 y=-105 shape="004_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+つ…強い…[r]
+強すぎる…[r]
+…信じられない……
+[p]
+
+
+*018
+//-------------------------------------------------------------------------------
+//  バビディ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_032"]
+
+//[character x = -230 y = -100 storage = "00238/guard_p_01" scale = 1.2 angle=20 action = "fadein" time = 0.1]
+[character x = -210 y = -90 storage = "00238/idl_side_p_01" scale = 1.1 action = "fadein" time = 0.1]
+
+
+[balloon x=120 y=80 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+さあ 魔人ブウよ！[r]
+ボクのいうことをきけ！[r]
+いいな！
+[p]
+
+
+[balloon x=120 y=-100 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+ボクがおまえの[r]
+新しい主人なんだ！
+[p]
+
+
+*019
+//-------------------------------------------------------------------------------
+//  魔人ブウ（善）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_032"]
+
+//[character id="buu" x = -210 y = -100 storage = "00229/energyball_p_02" scale = 1.2 action = "fadein" time = 0.1]
+
+[character x = 200 y = -110 storage = "00229/energyball_p_02" scale = 1.2 action = "fadein" time = 0.1]
+[flip target =".chara" h=1]
+
+[balloon x=-130 y=85 shape="002_02" scale = 0.65 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 44]
+//[quake target =".bln" power = 3 time = 0.2]
+べー
+[p]
+
+
+*020
+//-------------------------------------------------------------------------------
+//  バビディ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_032"]
+
+[character x = -210 y = -90 storage = "00238/idl_side_p_01" scale = 1.1 action = "fadein" time = 0.1]
+
+[balloon x=120 y=90 shape="002_01" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+さからってもいいのか？[r]
+ボクはパパのノートを見て[r]
+知っているんだぞ……
+[p]
+
+
+[balloon x=120 y=-95 shape="002_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+おまえを[r]
+玉に封じ込めてしまう[r]
+呪文を…
+[p]
+
+
+*021
+//-------------------------------------------------------------------------------
+//  魔人ブウ（善）
+//-------------------------------------------------------------------------------
+[se storage = "03"]
+[coma shape="N0001R" bg = "bg_000_032"]
+
+
+[lwfobject id = "kaki1" x = -50 y = 100 storage = "kakimoji:ef_001" scale = 2.5 angle = -10 action = "fadein" time = 0.1]
+[quake target = "kaki1" power = 9 time = 0.4]
+
+
+[character x = 200 y = -110 storage = "00229/energyball_p_02" scale = 1.2 action = "fadein" time = 0.1]
+[flip target =".chara" h=1]
+
+
+[character x = 180 y = 90 storage = "99999/ase" scale = 0.4 action = "fadein" time = 0.1]
+
+
+//空のフキダシ
+[balloon x=100 y=50 shape="002_01" scale = 0]
+[p]
+
+
+*022
+//-------------------------------------------------------------------------------
+//  バビディ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_032"]
+
+[character x = -210 y = -90 storage = "00238/idl_side_p_01" scale = 1.1 action = "fadein" time = 0.1]
+
+[balloon x=125 y=40 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+また あの中に[r]
+入りたくはないだろ？[r]
+え？
+[p]
+
+
+*023
+//-------------------------------------------------------------------------------
+//  魔人ブウ（善）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_032"]
+
+[character x = 200 y = -110 storage = "00229/energyball_p_02" scale = 1.2 action = "fadein" time = 0.1]
+[flip target =".chara" h=1]
+
+
+[character x = 180 y = 90 storage = "99999/ase" scale = 0.4 action = "fadein" time = 0.1]
+
+
+[balloon x=-130 y=90 shape="002_02" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 54]
+//[quake target =".bln" power = 3 time = 0.2]
+………
+[p]
+
+
+*024
+//-------------------------------------------------------------------------------
+//  超サイヤ人孫悟飯（青年期）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_032"]
+
+//[character x = 220 y = -130 storage = "00366/idl_side_e_05" scale = 1.2 action = "fadein" time = 0.1]
+[character x = 190 y = -130 storage = "00366/heapup_e_05" scale = 1.2 action = "fadein" time = 0.1]
+
+
+
+[balloon x = -115 y = 110 shape="001_03" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+…界王神さま[r]
+魔人ブウは まだ[r]
+子供みたいなもんじゃ[r]
+ありませんか……
+[p]
+
+
+[balloon x=-120 y=-100 shape="001_02" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+あのバビディを[r]
+倒してしまえば[r]
+そうムチャなことは[r]
+しないんじゃないですか？
+[p]
+
+
+*025
+//-------------------------------------------------------------------------------
+//  界王神
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_032"]
+
+[character x = 230 y = -100 storage = "00361/heapup_e_01" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x = -115 y = 40 shape="004_02" scale = 1.1 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 20]
+//[quake target =".bln" power = 3 time = 0.2]
+…ダ…ダメです！[r]
+バビディがいなくなったら[r]
+魔人ブウを再び封じ込めることは[r]
+できなくなってしまいます…！！
+[p]
+
+
+*026
+//-------------------------------------------------------------------------------
+//  超サイヤ人孫悟飯（青年期）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_032"]
+
+[character x = 190 y = -130 storage = "00366/heapup_e_05" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x = -105 y = 70 shape="001_03" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 54]
+//[quake target =".bln" power = 3 time = 0.2]
+………
+[p]
+
+
+*027
+//-------------------------------------------------------------------------------
+//  界王神
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_032"]
+
+[character x = 230 y = -100 storage = "00361/heapup_e_01" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x = -120 y = 65 shape="004_02" scale = 1.1 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 20]
+//[quake target =".bln" power = 3 time = 0.2]
+…こ…こんなことなら…[r]
+あなたたちのように人間で[r]
+ありながら これほどまで [r]
+わたしの力を大きく超えて[r]
+いることがわかっていたなら…
+[p]
+
+
+[balloon x=-90 y=-120 shape="004_01" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+//[quake target =".bln" power = 3 time = 0.2]
+あ…あの方法も[r]
+あったのに……
+[p]
+
+
+*028
+//-------------------------------------------------------------------------------
+//  超サイヤ人孫悟飯（青年期）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_032"]
+
+[character x = 190 y = -130 storage = "00366/heapup_e_05" scale = 1.2 action = "fadein" time = 0.1]
+
+
+[balloon x = -120 y = 55 shape="001_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+え…！？[r]
+…あ…あの方法…って
+[p]
+
+
+*029
+//-------------------------------------------------------------------------------
+//  界王神
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_032"]
+
+[character x = 230 y = -100 storage = "00361/heapup_e_01" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x = -115 y = 85 shape="004_02" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+…いえ …もう遅い…[r]
+わたしたちは[r]
+もう魔人ブウから[r]
+逃げられません…
+[p]
+
+
+[balloon x=-100 y=-105 shape="004_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+ふたりとも[r]
+生きてはいられない[r]
+でしょう……
+[p]
+
+
+*030
+//-------------------------------------------------------------------------------
+//  超サイヤ人孫悟飯（青年期）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_032"]
+
+[character x = 190 y = -130 storage = "00366/heapup_e_05" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x = -105 y = 60 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+なにを[r]
+言ってるんですか！[r]
+逃げることぐらいは[r]
+なんとか…！！
+[p]
+
+
+*031
+//-------------------------------------------------------------------------------
+//  バビディ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_032"]
+
+[character x = -210 y = -90 storage = "00238/idl_side_p_01" scale = 1.1 action = "fadein" time = 0.1]
+
+[balloon x=125 y=70 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+さあ 魔人ブウ！！[r]
+最初の命令だ！！
+[p]
+
+[balloon x = 120 y = -105 shape="002_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+あのふたりを[r]
+殺すんだよ！！
+[p]
+
+
+*032
+//-------------------------------------------------------------------------------
+//  魔人ブウ（善）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_032"]
+
+[character x=-240 y=-180 storage = "00229/atc_sp01_p_01" scale = 1.1 action = "fadein" time = 0.1]
+
+
+[balloon x=155 y=60 shape="006_01" scale = 0.65 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 44]
+[quake target =".bln" power = 7 time = 0.2]
+ブウーッ！
+[p]
+
+
+*033
+//-------------------------------------------------------------------------------
+//  超サイヤ人孫悟飯（青年期）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_000_032"]
+
+[character x = 190 y = -160 storage = "00366/heapup_e_05" scale = 1.3 action = "fadein" time = 0.1]
+
+[balloon x = -140 y = 65 shape="006_02" scale = 0.8 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 7 time = 0.2]
+くっ！！[r]
+逃げましょう[r]
+界王神さま！！
+[p]
+
+
+[balloon x=-140 y=-220 shape="006_01" scale = 0.8 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 7 time = 0.2]
+大丈夫！！[r]
+スピードには自信が[r]あるんですよ！！
+[p]
+
+
+//-------------------------------------------------------------------------------
+[stopbgm]

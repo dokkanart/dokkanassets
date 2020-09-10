@@ -1,0 +1,118 @@
+
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  １０−５ボス前
+//-------------------------------------------------------------------------------
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "002"]
+
+//-------------------------------------------------------------------------------
+//  トランクス
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0001R" bg = "bg_023_002"]
+
+[character x = 210 y = -200 storage = "90000/wait_right_anger_strong" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon shape="001_02" x = -130 y = 110 scale = 0.9 action = "fadein" time = 0.1]
+[font size = 30]
+[wait_anim target=".bln"]
+ヤムチャさん…[r]
+気をつけてください
+[p]
+
+[balloon shape="001_03" x = -90 y = -100 scale = 1.1 action = "fadein" time = 0.1]
+[font size = 24]
+[wait_anim target=".bln"]
+おそらくゲロは[r]
+あなたたちの戦闘データを[r]
+得ています
+[p]
+
+*coma2
+//-------------------------------------------------------------------------------
+//  ヤムチャ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_023_002"]
+
+[character x = 190 y = -80 storage = "00013/yam_guard_e_01" scale = 1.1 action = "fadein" time = 0.1]
+
+[balloon shape="004_02" x = -140 y = 80 scale = 0.85 action = "fadein" time = 0.1]
+[font size = 34]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 3 time = 0.2]
+なんだって…！？
+[p]
+
+*coma3
+//-------------------------------------------------------------------------------
+//  トランクス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_023_002"]
+
+[character x = 210 y = -200 storage = "90000/wait_right_anger" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon shape="001_02" x = -110 y = 110 scale = 0.85 action = "fadein" time = 0.1]
+[font size = 34]
+[wait_anim target=".bln"]
+軍が滅びたあと…
+[p]
+
+[balloon shape="001_03" x = -90 y = -100 scale = 1.05 action = "fadein" time = 0.1]
+[font size = 25]
+[wait_anim target=".bln"]
+孫悟空さんの周囲を[r]
+スパイロボットが偵察[r]
+していたらしいのです
+[p]
+
+*coma4
+//-------------------------------------------------------------------------------
+//  ヤムチャ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_023_002"]
+
+[character x = 200 y = -50 storage = "00013/idl_side_e_02" scale = 1.4 action = "fadein" time = 0.1]
+
+[balloon shape="001_02" x = -120 y = 65 scale = 0.85 action = "fadein" time = 0.1]
+[font size = 34]
+[wait_anim target=".bln"]
+なるほど…[r]
+そういうことか…
+[p]
+
+
+*coma5
+//-------------------------------------------------------------------------------
+//  ヤムチャ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+
+//研究所
+[coma shape="N0002R" bg = "bg_023_002"]
+
+[character x = 170 y = -50 storage = "00013/yam_heapup_e_01" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon shape="001_03" x = -120 y = 120 scale = 0.85 action = "fadein" time = 0.1]
+[font size = 32]
+[wait_anim target=".bln"]
+それなら[r]
+見せてやるぜ…！
+[p]
+
+[balloon shape="006_02" x = -120 y = -165 scale = 1.1 action = "expand" time = 0.1]
+[font size = 26]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 7 time = 0.2]
+データにはない[r]
+オレの修業の成果を！！
+[p]
+
+[stopbgm]

@@ -1,0 +1,84 @@
+*start|スタート
+
+//"２5－７ゴール" 
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "002"]
+ 
+*001
+//-------------------------------------------------------------------------------
+//  "アボ カド"
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_004"]
+ 
+[character id = "1" x = -100 y = -80 storage = "00651/heapup_p_01" scale = 0.8 action = "fadein" time = 0.1]
+[character id = "2"x = -240 y = -80 storage = "00650/heapup_p_01" scale = 0.9 action = "fadein" time = 0.1]
+//タメ_01＋カド＋あせ
+[character id = "3" x = -100 y = 30 storage = "99999/ase" scale = 0.5 action = "fadein" time = 0.1]
+[character id = "4" x = -240 y = 50 storage = "99999/ase" scale = 0.6 action = "fadein" time = 0.1]
+
+ 
+[balloon x=145 y=120 shape="007_02" scale = 0.9 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 7 time = 0.2]
+くそーっ！！[r]
+もうゆるさんぞ！！
+[p]
+
+//…フリーザさまが…！！　小さくする？
+[balloon x=125 y=-110 shape="004_02" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+[quake target =".bln" power = 3 time = 0.2]
+そのうち必ず[r]
+おまえたちを八つ裂きに[r]
+してやるぞ！[r]
+[font size = 20]…フリーザさまが…！！
+[p]
+
+//逃げる音
+[se storage = "07"]
+
+//アボとカドが逃げる。
+[fadeout target = "3" time = 0.4]
+[fadeout target = "4" time = 0.4]
+[fadeout target = "1" time = 0.7]
+[fadeout target = "2" time = 0.7]
+
+[wait_anim target=".chara"]
+
+// 空のフキダシ（セリフがないコマを送るために使用）
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+
+*002
+//-------------------------------------------------------------------------------
+//  トランクス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_000_004"]
+ 
+[character x=170 y=-325 storage = "90000/wait_right_anger" scale = 1.4 action = "fadein" time = 0.1]
+ 
+[balloon x=-130 y=80 shape="001_01" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 40]
+[quake target =".bln" power = 3 time = 0.2]
+あ！！
+[p]
+
+[balloon x=-130 y=-180 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+…やれやれ…[r]
+また妙な敵が[r]
+増えてしまったな……
+[p]
+
+//-------------------------------------------------------------------------------
+[stopbgm]

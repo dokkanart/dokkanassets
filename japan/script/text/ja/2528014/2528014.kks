@@ -1,0 +1,58 @@
+//ラウンド３開始
+
+*start|スタート
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+
+//[bgm storage = "013"]
+
+*001
+//-------------------------------------------------------------------------------
+//  超サイヤ人3孫悟空（天使）
+//-------------------------------------------------------------------------------
+[se storage = "3024"]
+[coma shape="S0001" bg = "bg_025_002"]
+
+[character id = "ki" x = -10 y = -40 storage = "99999/supersaiyan" scale = 1.6 angle = 0 action = "fadein" time = 0.1]
+
+
+
+[character x = -100 y = -30 storage = "00227/card_04" scale = 1.2 angle = 0 action = "fadein" time = 0.1]
+
+[character id = "wa" x = 110 y = 520 storage = "99999/ring" scale = 1.2 angle = 7 action = "fadein" time = 0.1]
+
+
+[quake target ="ki" power = 8 time = 0.8]
+
+//[wait_anim target="ki"]
+
+[wait time = 0.5]
+
+[fadeout target = "ki" time = 0.3]
+
+[wait_anim target="ki"]
+
+//[lwfobject id = "kaki1" storage="kakimoji:ef_020" in="04" x=-120 y=280 scale = 2.5 action = "fadein" time = 0.1]
+//[quake target = "kaki1" power = 15 time = 0.4]
+ 
+[balloon x=-150 y=450 shape="001_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+これが[r]
+超サイヤ人３だ…！
+[p]
+
+[balloon x=130 y=-350 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+オラを[r]
+ここまでさせた相手は[r]
+ひさしぶりだぞ！
+[p]
+
+
+//-------------------------------------------------------------------------------
+//[stopbgm]

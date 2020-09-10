@@ -1,0 +1,359 @@
+*start|スタート
+//ステージ５ボス前
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "004"]
+
+*01
+//-------------------------------------------------------------------------------
+//  レモ
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0001R" bg = "bg_070_009"]
+
+[character x = 60 y = -290 storage = "90003/chirai" scale = 1.0 action = "fadein" time = 0.1]
+
+[character x=240 y=-250 storage = "90003/remo" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x=-100 y=120 shape="002_02" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+//[quake target =".bln" power = 3 time = 0.2]
+誰もいない…？
+[p]
+
+
+
+[balloon x=-130 y=-100 shape="002_01" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 40]
+[quake target =".bln" power = 3 time = 0.2]
+……あ！？
+[p]
+
+*02
+//-------------------------------------------------------------------------------
+//  パラガス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_070_009"]
+
+[wait time = 0.3]
+
+//[se storage = "48"]
+[character x = -180 y = -320 storage = "00943/card_01" scale = 1.15 action = "fadein" time = 0.7]
+
+
+[wait_anim target=".chara"]
+
+[balloon x=125 y=80 shape="002_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+フリーザ軍か！？
+[p]
+
+
+*ex
+//-------------------------------------------------------------------------------
+//  パラガス
+//-------------------------------------------------------------------------------
+[se storage = "48"]
+[coma shape="N0004L" bg = "bg_000_024"]
+
+[character x = 0 y = -70 storage = "99999/tail" scale = 2.0 angle = 90 action = "fadein" time = 0.1]
+[flip target =".chara" h=1]
+
+// 空のフキダシ（セリフがないコマを送るために使用）
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+
+
+*03
+//-------------------------------------------------------------------------------
+//  レモ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_070_009"]
+
+[character x = 60 y = -290 storage = "90003/chirai" scale = 1.0 action = "fadein" time = 0.1]
+
+[character x=240 y=-250 storage = "90003/remo" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x=-100 y=120 shape="002_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+あ！[r]
+…それシッポか？
+[p]
+
+
+
+[balloon x=-130 y=-90 shape="002_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+あんた！[r]
+まさかサイヤ人か？
+[p]
+
+*04
+//-------------------------------------------------------------------------------
+//  パラガス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_070_009"]
+
+[character x = -180 y = -320 storage = "00943/card_01" scale = 1.15 action = "fadein" time = 0.1]
+
+[balloon x=110 y=110 shape="002_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+ああ…[r]
+オレはパラガス
+[p]
+
+
+[balloon x=120 y=-90 shape="002_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+フリーザ軍の[r]
+サイヤ人だ
+[p]
+
+
+*05
+//-------------------------------------------------------------------------------
+//  レモ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_070_009"]
+
+[character x = 60 y = -290 storage = "90003/chirai" scale = 1.0 action = "fadein" time = 0.1]
+
+[character x=240 y=-250 storage = "90003/remo" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x=-130 y=65 shape="002_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+救難信号はあんたか？
+[p]
+
+*06
+//-------------------------------------------------------------------------------
+//  パラガス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_070_009"]
+
+[character x = -180 y = -320 storage = "00943/card_01" scale = 1.15 action = "fadein" time = 0.1]
+
+[balloon x=100 y=110 shape="002_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+ああ オレだ[r]
+宇宙船が故障したんだ
+[p]
+
+
+[balloon x=100 y=-110 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+信じられないほど[r]
+永く待ったぞ…[r]
+やっと…助かった…
+[p]
+
+
+*07
+//-------------------------------------------------------------------------------
+//  レモ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_070_009"]
+
+[character x = 60 y = -290 storage = "90003/chirai" scale = 1.0 action = "fadein" time = 0.1]
+
+[character x=240 y=-250 storage = "90003/remo" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x=-110 y=65 shape="002_02" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+//[quake target =".bln" power = 3 time = 0.2]
+あんた[r]
+ひとりか？
+[p]
+
+
+*08
+//-------------------------------------------------------------------------------
+//  パラガス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_070_009"]
+
+[character x = -180 y = -320 storage = "00943/card_01" scale = 1.15 action = "fadein" time = 0.1]
+
+[balloon x=100 y=70 shape="002_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+いや[r]
+もうひとり…
+[p]
+
+
+*09
+//-------------------------------------------------------------------------------
+//  そこへ大ダニが現れる。
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0003L" bg = "bg_070_009"]
+//[wait_anim target=".coma"]
+
+[wait time = 0.3]
+
+[se storage = "3022"]
+[lwfobject id = "kaki1" storage="kakimoji:ef_023" x=-100 y=0 scale = 2.0 angle = 20 action = "fadein" time = 0.1]
+[quake target = "kaki1" power = 15 time = 0.4]
+
+
+[character id = "1" x = -260 y = -300 storage = "00942/atc_down_p_01" scale = 1.0 action = "fadein" time = 0.1]
+[move target ="1" x=-140 time = 0.2]
+[move target ="1" y=250 time = 0.2]
+
+[wait time = 0.3]
+[clear target = "1"]
+[fadeout target = "kaki1" time = 0.1]
+
+[se storage = "19"]
+[lwfobject id = "kaki1" storage="kakimoji:ef_014" x=-130 y=60 scale = 2.0 angle = -45]
+[quake target = "kaki1" power = 15 time = 0.4]
+
+[character id = "2" x = 0 y = 0 storage = "00942/idl_front_p_01" scale = 1.4]
+[quake target ="2" power = 6 time = 0.6]
+
+
+[wait_anim target="2"]
+
+
+//[balloon x=100 y=110 shape="001_02" scale = 0 action = "fadein" time = 0.1]
+//[p]
+
+
+
+*10
+//-------------------------------------------------------------------------------
+//  レモ、チライ
+//-------------------------------------------------------------------------------
+//[se storage = "03"]
+[coma shape="N0003L" bg = "bg_070_009"]
+
+//[character id = "remo" x=220 y=-130 storage = "90003/remo" scale = 0.2 action = "fadein" time = 0.1]
+//[quake target ="remo" power = 5 time = 0.4]
+
+//[character id = "chirai" x=140 y=-140 storage = "90003/chirai" scale = 0.18 action = "fadein" time = 0.1]
+//[quake target ="chirai" power = 5 time = 0.4]
+
+
+[character id = "chirai" x=230 y=-140 storage = "90003/chirai_05" scale = 0.18 angle = 9 action = "fadein" time = 0.1]
+[quake target ="chirai" power = 5 time = 0.4]
+
+
+[character id = "remo" x=260 y=-155 storage = "90003/remo" scale = 0.18 angle = 9 action = "fadein" time = 0.1]
+[quake target ="remo" power = 5 time = 0.4]
+
+
+
+
+
+[character id = "1" x = -100 y = -100 storage = "00942/heapup_back_p_01" scale = 1.2 action = "fadein" time = 0.1]
+[paint target="1" color="#BDBDBD"]
+
+
+
+
+
+[balloon x=140 y=80 shape="007_01" scale = 0.7 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 40]
+[quake target =".bln" power = 7 time = 0.2]
+うわああ！！
+[p]
+
+
+*11
+//-------------------------------------------------------------------------------
+//  パラガス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_070_009"]
+
+[character x = -180 y = -320 storage = "00943/card_01" scale = 1.15 action = "fadein" time = 0.1]
+
+[balloon x=100 y=80 shape="006_01" scale = 0.7 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 40]
+[quake target =".bln" power = 7 time = 0.2]
+ブロリー！！
+[p]
+
+
+
+
+
+*12
+//-------------------------------------------------------------------------------
+//  ブロリー
+//-------------------------------------------------------------------------------
+[se storage = "03"]
+[coma shape="N0004R" bg = "bg_000_014"]
+
+[character x = 20 y = -1460 storage = "00870/card_03" scale = 4.5 action = "fadein" time = 0.1]
+[paint target=".chara" color="#848484"]
+
+//[balloon shape="003_01" x = 0 y = 160 scale = 0 action = "fadein" time = 0.1]
+//[p]
+
+[wait time = 0.5]
+
+
+[se storage = "3040"]
+//点滅
+[balloon shape="008_02" x = 0 y = 0 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+//[balloon shape="008_02" x = 0 y = 0 scale = 50 action = "fadein" time = 0.1]
+//[wait time = 0.3]
+//[clear target = ".bln"]
+
+
+*13
+//-------------------------------------------------------------------------------
+//  パラガスの声に気づいたブロリーが駆けつける。
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0002R" bg = "bg_070_009"]
+
+[se storage = "3022"]
+[lwfobject id = "kaki1" storage="kakimoji:ef_023" x=200 y=200 scale = 1.2 angle = 25 action = "fadein" time = 0.1]
+[quake target = "kaki1" power = 15 time = 0.4]
+
+[character x = 0 y = -30 storage = "00870/card_07" scale = 1.0 action = "fadein" time = 0.1]
+[quake target = ".chara" power = 9 time = 0.4]
+
+[wait_anim target=".chara"]
+
+[balloon shape="001_03" x = -130 y = 60 scale = 0 action = "fadein" time = 0.1]
+[p]
+
+//-------------------------------------------------------------------------------
+[stopbgm]

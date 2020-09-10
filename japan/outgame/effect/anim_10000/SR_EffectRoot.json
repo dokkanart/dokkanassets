@@ -1,0 +1,77 @@
+{
+  "Start": {
+    "action": "start",
+    "nexts": [
+      {
+        "state": "Presage_ThreeStar",
+        "weight": 100
+      }
+    ]
+  },
+  "Presage_ThreeStar": {
+    "action": "presageThreeStar",
+    "nexts": [
+      {
+        "state": "Focus_Normal",
+        "weight": 100
+      }
+    ]
+  },
+  "Focus_Normal": {
+    "action": "focusNormal",
+    "nexts": [
+      {
+        "state": "TouchStart_Super",
+        "weight": 100
+      }
+    ]
+  },
+  "TouchStart_Super": {
+    "action": "touchStartSuper",
+    "nexts": [
+        {
+        "state": "swiped_Super",
+        "weight": 100
+      }
+    ]
+  },
+  "swiped_Super": {
+    "action": "swipedFontDefault",
+    "nexts": [
+      {
+        "state": "Release_CutIn",
+        "weight": 100
+      }
+    ]
+  },
+  "Release_CutIn": {
+    "action": "releaseCutIn",
+    "nexts": [
+      {
+        "state": "FireCutIn_Rank2",
+        "weight": 100
+      }
+    ]
+  },
+  "FireCutIn_Rank2": {
+    "action": "fireCutInRank2",
+    "nexts": [
+      {
+        "state": "BreakMoon_Rank2",
+        "weight": 100
+      }
+    ]
+  },
+  "BreakMoon_Rank2": {
+    "action": "breakMoon",
+    "nexts": [
+      {
+        "state": "Finish",
+        "weight": 100
+      }
+    ]
+  },
+  "Finish": {
+    "action": "finish"
+  }
+}

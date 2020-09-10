@@ -1,0 +1,102 @@
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "012"]
+
+
+*01
+//-------------------------------------------------------------------------------
+//  亀仙人
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma id = "coma1" shape="S0001" bg = "bg_012_001"]
+
+[character x = -120 y = -10 storage = "00023/card_04" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon x = 140 y = 280 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+はて？[r]
+おまえさん[r]
+いったい何者じゃ？
+[p]
+
+
+*02
+//-------------------------------------------------------------------------------
+//  亀仙人
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_012_001"]
+
+[character x = -180 y = -100 storage = "00023/idl_side_p_02" scale = 1.7 action = "fadein" time = 0.1]
+
+
+[balloon x = 110 y = 120 shape="001_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][font size = 28]
+ふむ…武道の達人が[r]襲われている[r]というウワサ？[p]
+
+[balloon x = 130 y = -90 shape="001_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][font size = 28]
+聞いたことがないのう[r]わしは俗世間から離れ[r]暮らしておるからな
+[p]
+
+
+//元シナリオ
+//聞いたことがないのう[r]
+//このとおり[r]わしは俗世間から[r]離れて暮らしておるからな
+
+
+
+*03
+//-------------------------------------------------------------------------------
+//  亀仙人
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_012_001"]
+
+[character x = -210 y = -100 storage = "00023/heapup_p_01" scale = 1.7 action = "fadein" time = 0.1]
+
+[balloon x = 100 y = 100 shape="001_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+おまえさんの[r]言うことが正しいか[r]確かめたいんじゃが…[p]
+
+[balloon x = 120 y = -100 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+あいにく今は[r]筋斗雲もなくてのう…[p]
+
+
+
+*04
+//-------------------------------------------------------------------------------
+//  亀仙人
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002L" bg = "bg_012_001"]
+
+[character x = -140 y = -140 storage = "00023/idl_front_p_03" scale = 2.0]
+
+//[quake target = ".chara" power = 7 time = 0.2]
+
+//[lwfobject id = "kaki1" storage="kakimoji:ef_023" in="02" x=-170 y=-150 scale = 1.4 action = "expand" time = 0.1]
+//[quake target = "kaki1" power = 9 time = 0.2]
+
+[balloon x = 130 y = 70 shape="001_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target = ".bln" power = 3 time = 0.2]
+代わりにおまえさんの[r]
+拳に込められたものを[r]
+見せてもらおうか
+[p]
+
+//元シナリオ
+//おまえさんの拳に[r]込められたものを[r]見せてもらうことに[r]しようか
+
+
+
+[stopbgm]

@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="75" height="50" tilewidth="40" tileheight="40" nextobjectid="36">
+ <properties>
+  <property name="charageki_bg_01" value="normal_002_001"/>
+ </properties>
+ <tileset firstgid="1" name="Attribute" tilewidth="40" tileheight="40" spacing="1" tilecount="32">
+  <image source="image/common/mapchip-meta.png" width="163" height="327"/>
+ </tileset>
+ <tileset firstgid="33" name="Path" tilewidth="40" tileheight="40" spacing="1" tilecount="32">
+  <image source="image/common/mapchip-base.png" width="163" height="327"/>
+ </tileset>
+ <tileset firstgid="65" name="green" tilewidth="40" tileheight="40" spacing="1" tilecount="352">
+  <image source="image/common/green.png" width="901" height="655"/>
+ </tileset>
+ <tileset firstgid="417" name="house_left" tilewidth="40" tileheight="40" spacing="1" tilecount="264">
+  <image source="image/area_014/house_left.png" width="901" height="491"/>
+ </tileset>
+ <tileset firstgid="681" name="house_right" tilewidth="40" tileheight="40" spacing="1" tilecount="264">
+  <image source="image/area_014/house_right.png" width="901" height="491"/>
+ </tileset>
+ <tileset firstgid="945" name="tree" tilewidth="40" tileheight="40" spacing="1" tilecount="189">
+  <image source="image/common/tree.png" width="860" height="368"/>
+ </tileset>
+ <tileset firstgid="1134" name="bill" tilewidth="40" tileheight="40" spacing="1" tilecount="460">
+  <image source="image/common/bill.png" width="942" height="819"/>
+ </tileset>
+ <tileset firstgid="1594" name="dome" tilewidth="40" tileheight="40" spacing="1" tilecount="156">
+  <image source="image/common/dome.png" width="491" height="532"/>
+ </tileset>
+ <tileset firstgid="1750" name="concrete" tilewidth="40" tileheight="40" spacing="1" tilecount="240">
+  <image source="image/common/concrete.png" width="819" height="491"/>
+ </tileset>
+ <tileset firstgid="1990" name="housing" tilewidth="40" tileheight="40" spacing="1" tilecount="418">
+  <image source="image/common/housing_01.png" width="778" height="901"/>
+ </tileset>
+ <tileset firstgid="2408" name="aircraft" tilewidth="40" tileheight="40" spacing="1" tilecount="30">
+  <image source="image/common/aircraft.png" width="245" height="204"/>
+ </tileset>
+ <tileset firstgid="2438" name="cars" tilewidth="40" tileheight="40" spacing="1" tilecount="24">
+  <image source="image/common/cars.png" width="245" height="163"/>
+ </tileset>
+ <layer name="bg" width="75" height="50">
+  <data encoding="base64" compression="zlib">
+   eJzt0EENwDAAxLC+xh9sARTGZZIjhYDvd86NX2ntwIoVq/6V1g6sWLHqX2ntwIoVq/6V1g6sWLHqX2ntwIoVq/6V1g6sWLHqX2ntwIoVq/6V1g6sWLHqX2ntwIoVq/6V1g6sWLHqX2ntwIoVq/6V1g6sWLHqX2nt8CerB/kZ0l4=
+  </data>
+ </layer>
+ <layer name="bg1" width="75" height="50">
+  <data encoding="base64" compression="zlib">
+   eJzt0MEJADAMgMC8uv+wHSAz9HUUFBxAZyz3/KNG9/eqV1qN7u9Vr7Qa3d+rXmk1ur9XvdJqdH+veqXV6P5e9Uqr0f296pVWo/t71SutRvf3qldaje7vVa+0Gt3fq15pNbq/V73SanR/r3ql1ej+XvVKq9H9veqVVqP7e9UrrUb3v7h98zQV
+  </data>
+ </layer>
+ <layer name="whiteLine" width="75" height="50">
+  <data encoding="base64" compression="zlib">
+   eJztmEFuAjEMAHOCS3kE/IG+j7ei9gt0j3ilRkJI4N2NY4/TjrTXJJuMYzuHfbl8yFcG5rorl8Mf+M8WJtmjH/luu/89ekUvj2TcYejtkYxbZPx5nrR430cyT5H5UnkWfR9l8IyW14ieRXukQfCM5pFGhGd0jzQ8PMvmkUYPz7J7pGHhGd2juj6r8apna6B7RFlfBo+o6yNA8OgosXlaGZ+ekDw6yz59AveK4BEdkkdL8e41CR5dN87t1WsSPLI6J+se4FvW8yUfxaMe52Tp2SgeaRDfzpYSFe+Et7OlEOJ9Zkuv6QUhb7yD0AdQPNKI6AOm3z2he6TRMwc87k0GjzQsc0BrbVbPTcaYx3JhSy9gVWu0xJhn7ra4Mwm1Rs8a8fnOrLHQMiah1rA8tyy5t5UWz6Jyb3RttsazaI8ob7Ta/UCt4TL26FEQ8mYUW99pM78FrcXqLhzZsx612cxInnnl1OpZRqJqs0wxGV2bZYhJ2vsa8e6P9kiD4BnNI40Iz+geaXh4ls0jjR6eZfPoDkmPGz8=
+  </data>
+ </layer>
+ <layer name="whiteLine" width="75" height="50">
+  <data encoding="base64" compression="zlib">
+   eJzt101OAkEAROHezamBAk6ACJyAH/UEisrVeBuWREnITDe8L6n11NSi012KJEmSJEmqwagrZUwmJGTaDd2oXgu2eSFL8kpWZE02bnbVnm0O5I28kw+3+tMPG/0+6U6eR//neXQ7z6PbPfN5JEmSVJuW3kvzrmRG6Bi6hs6he/iH9PH9lt5LdArdQsfQNXQO3bPoaauLFt5LdArdQsfQNXTOjmx73uqi5vfSiU3oFjrmmxzJF/kcaCtJekQt3c2G1tLdrBYt3M1qU/PdTJIkSdL9nQE9Kk9d
+  </data>
+ </layer>
+ <layer name="whiteLine" width="75" height="50">
+  <data encoding="base64" compression="zlib">
+   eJzt1ssNglAURdE3o2oUSvCDlCBoDVqbpwGDJCRAXCvZ85szuqUAAAAAAADA8uqqlEM6pia11doXbdcp25zTJV1Tl26pt9lX92wzpDE90tNWk17Z6G0ngL/mP/ud/2w+/9l8/jMAAAAA9uoD8XAXqQ==
+  </data>
+ </layer>
+ <layer name="green" width="75" height="50">
+  <data encoding="base64" compression="zlib">
+   eJzlllGOwjAMRDlavnsqjtaj7bIiSxocZxKP41IsjfgAxS+vNnC79WtrZ0diOB/qB1wBqt+zkhbjHVY6eus346PBoTrSXM3OD9FRed5qR0134F2+addKhq4r4W5XniPNVU7XVdHjynOEuBrm+bY5eubASmS71BxJrnIMbJCL4Dkq2aT3Nea9OmPa2aAruqMnA3PXDp8R7nmvM8ELuaLIefX02DWRs5qHN1+TzqIdmfZN6dl1ZXU2Z6N55uwMdV0BvWFXs84YVTDS922CAXa10tkmp7VbiKscK0vLS2ZY4qzhp3Yl7RbiisGlzdASV4Cj3m5prlhsvX0TXRnbSxwWV6UzD0eIp9LVX4ztWxwsV/9xYINdWXoDHDRXjmw9T6beAxxmVwvYmp4svSc4pl0tZPskRwdXAWzZUbL0JnDACWRLxvYSR9qU/2NCzu6IVpL/QVeqMzLbWRxJrpIS1ZkTW7SjvYrmp+vKiXGpI4WjdoU6ozsCWJc4UjhariBnC1DDHAkcPVeiswDUMEd1oc4IfcLvy2LwdhSxR1vx6sHg7WiFs5Hf0MhZH+Vk8jbOfnzP3pGQMBDO3PNjXXnPWa/vCXYwu0pKXNlGnlPUd8T2et0bcX2eA3slskRWwxG8owN9RrMzHHm4nnXVc9Zxoc327jm/jKpcJSWqM8UrdJ6RHw6jOs9dm4ecKVcGXlMYJXhAPOXZhGPgo4ZRRFeH+SLwuIRRiqs6p9y1YGeteTv1rq10JdxBnS/C+R/vqriT6Mpw3iniWVdxlPMDGz0WQQ==
+  </data>
+ </layer>
+ <layer name="green_tex" width="75" height="50">
+  <data encoding="base64" compression="zlib">
+   eJzNmk1y2zAMhXk0X6nTC2iTZtKcQTKukFZNt9p2eqlSiZ79DIH6I0EVMxjbskTSnx4BElYI6/YU/Vv05+jdgl/p9Vf09+i/d7Y/XtuTd9PrVb3uaX+rfVHjaKPL9Nru/A0WE/a9v0G3z5zwHn3iuDcj7k+Ub/kNEuacvHQUfRid+6jBSML9d0JHEtZZvUX/Ef0nXWfxKakjxWmoxYjnGXTM8499yf6EO7OpnQb6zGEkweZDnIbacw16ghbE8C0GncXxN0cZSZjHZ47bZ8+11vgsYT8rWBx/c1RHfM+sPFeLkZ5nFh/NCWP8WnBsWkcpDTGr/ykeWc7jfIn+PeQxS+nIygW1dHQkHmlvaZx/w51vDjOvvLnVSsUjvr/MCAbWODeHWam8udVKxyMeJzOCaVa4voTO9ubNreYVj1KMYJNWGw9mW/PmVvOOR2vGOtXxBe2NryVywFGrFY/WjPvU+z1LbzWZcX5lHXnFozUjLptYoX8wez3Q55rpdZqE+T219rfWMZybwwjGfDSv2FeDMfD6UYJPXkut06yYbdVMtOfqSI/NilO6ZoR++f545jVLQxyzsX+UkOZWkhHHAebDjvvJfXsxYt0yJ3y2+HB8yonZllkatzjFvi8yeS0dQT+6FtrScWbGLEvPtaV6NrtEPiOrGLsvMXZfPHXEnDrjs9Y4z7WSMXs0zciqQ2pOYBTXBJfM7m8W22q0jrR+LF7WOTV1xHVIIVZejGKbzcu09mAWFp8lXcFr6gicRo9jG7wZyd1ncXiJjebnGbPX6tnx3CFeM3gzSq1nmZUV0z3jEd2vYeIz0xEzinF2yOz+ZppRu+wP3HS9q8Zck3C7X2A101GJvtlSOhLlS6wwbu+YzX3092MfMfvqqKNXg1FncwKP2THvPVOqVuu5NrNsrEu9f9bxPn5/P7nM+cy41NgzsXGtlv9DLxkLtxgzaydtgVub0JHnnmnJWGc1GWljZr1iVuN/wD026uwMRtosZh6Mxr3SGfVZtjGvxXE0ue0ws9KMkNtq17SfplfO/c+fe7dizEoz0nHPmxmvPTj3c5wpyeyoWYz0ulWCT03bWp8JcYK3JzPT9S21fjxtfSaPOeuW668nMEvVSVOMaq/PeH2UYtY7M1uqJadqpmesz0J4zFuYhzV0lopHvH/rgr1fPGt9BkutKbEml0I6W5tr0JHQsRKM0G/JvKmZYa+Xq7M1HWGeSSirI93v2H7ptYbeI6d0tsZsq45K7xf1s/3o01pr1NaZNTfP1tHS87zWMweeOpOVuWkxqqEj/X86r/fRJ9ezUDM9k1ltHek8Cu109B0z0msRXFsrntWqX+nnssCGmaBP/cwvjmNsHMe4De945l2/0oz4Pwe9JmOd4TzWEM9HUW0w85eM8VrmXb/S+VQ/rwbNSHjUBn/m63qjHUt/4OVhpetXOq9pfUh4/K06JuJ7Phff6/9tOV9yP33G+LdYbv1KzzU9tyQsa4a1wRysfNwa3wm1N77/B3IzWNU=
+  </data>
+ </layer>
+ <layer name="road" width="75" height="50">
+  <data encoding="base64" compression="zlib">
+   eJztmd9tAjEMxsMLrNCuAExQULkN+kC7z41Jd2irdoM6opEiN38c27lLOD4pb3fJxw8n9jnGxHXcmPEA4wnGC4zEo/90WRvzDuMDxieMLxirzbTzU8XxAeuP3He9OciMth0yctrD87uKv6HnOMIa4L0TjGcY4Gt0cZbSUuIopDPMAX5G8DWCvyizpcVRSqsIsyXH0THjAzNbchzBfAbmJTPzfwPOm7cWRyHBvGRmvmrnTapqM7I+D2jeUmZ+3gRuRitvUjUVI+czpBJmLm+err5NjFlvjHYeozPBp2O2+2OQ0irCrDdGh0JGWNw4y+VNqlqMo5xKmNk4e4BnHjdtM5LGUU4hZpfI2cfRLTDCKjnPKGp5rx0FftyZDfWCgbPJ1g9sAZeBW6dRJIkj//8rXTeU17gxbBmBhwG8DOBp4M0SlxajOevsKRhJ9tqdUVpLYtT7XjtePVRl9LPun1HLuX8pjLj5V+qtV0YlPjUY+TF8ZxReW/IdpHHXSvXJZbRXYMTNF9hHrW8RrXMT92qp0u7LcO5ac9LMLU6hXm1MNXsO1LvWnGowwgr1ap1K95qk5xS7a829p8HoFZ5/K3gHM9PYa6UefB8ad/o5+TmFc0fn9oTt1ZYycv0rqQcryZ0+xWcot3HvNblra3soudMv8ZnKuzWYhdau5SF0py/xSZH1uxX2tKV10RSxbqXxXSvtaWvVRbWYaX/7S2ukWF3EYafFrJX+SEz47JXUlFxmczGy635fa9Aiv44Zt6b0RWU2JyN/3dL/GNfsNZm1wojq1187JW1mLTJK+eWcv1rMWmYU8js3M4rmZITVKrOWGGG1wqxlRliOGVdz9K+mZqStKfpXvTPCqtG/ao2Rdt9Ao3/VGiOnX9+oMJs=
+  </data>
+ </layer>
+ <layer name="right_bottom" width="75" height="50">
+  <data encoding="base64" compression="zlib">
+   eJztmUsSgyAQBVOVi3tCcwg9SHSRKhZEYJxPg/Ta4IvTOoO+XnXs78oDBViu3Yoky8cwv+XarWhkmR7FMJpHlpBqR8pyQqodKUsOUu1IWU5ItfPKcpxnkfyOVDuvLLvwWkVCcVrqmSfaHq3ye0v0O0usPdqU/jPBM4pHJSI868WjEh6ekXrsHSw8o/S1HhjFo6cxHa9nOv6f0T3SnI+iPSLPRzSPomt1RXQ2Wq1SaNmia3VFazbtvSKtVil3s2nvFakeHU6Ee9QLm6CGXu8c6KyZa/dUj0rkPJseTX6kvS3qnTa596ekvc3jnXbuuuT6K+FbREsNLfLWzh2Eb14tM5Jm3lzfbMHDM8qzQDKfpXh4Rt4H3EHDM4pHJQieeXpEmDdazh/pkfe8cUXN+aM8qjh2MQtSnyGMqHlDCtWjirUWvdV4aNaF4Jkmnvf36J5p0ptnvcytBKj7HwI0j8jPLJpHX8RPfLA=
+  </data>
+ </layer>
+ <layer name="house1" width="75" height="50">
+  <data encoding="base64" compression="zlib">
+   eJzt0MENgkAARNG9bHeCRSgUAVqEaBEqTTIV7BVI3kv+fTKlAAAAAAAAZ3WppXSpT9e695pju+WfexrS6KumKf/M6ZGevmp65Z8lvdPHV03f/PNL/7T6CgAAAAAAAOC0No2kCgs=
+  </data>
+ </layer>
+ <layer name="housing0" width="75" height="50">
+  <data encoding="base64" compression="zlib">
+   eJztmklKA0EYRv9dKg7JATLnApmOkGHl0r1mo9fI7ZxQcVi5FIcTOGbjC4gIJqYdurqL/h48Amkoqj9q8X90mf2ckjMrYwWrWMM6NrDpfrGg5/V902LPbexgF3v//A5xr++bPvsf4BBHMbxL3OsLEZU9zt8+HuAhHr2fx2N+T/BU5/ODqyVZXCuryDwoKy9Mc0nvIBwKnMmizmUkQp2Fxd/ZyH//fHPJ8yyxRRbbOJ6TyQ7/7SorIYQQQojMcJmzyQWe4xkmvZ80c08+d3iLN8pqIVOyecUXfMYnfFReXyg6mxRwHddwFVcwj84pr880yaOBdaxhFStYxpKymkuPXLrYwTa2lNNCRmQzxAH2lZMQIkMw+xsdwOgCs06QCKF0EWZ/owMYXWDWCRIhhC7CzG/M/kYHMLqA0Qm8fwsOoYsw6xszvzH7Gx3A6AJGJ/D6LTiULpKGe5EhdZG03IsMpYuk4V6kuogQQgghhBBCZIs3MhhvUQ==
+  </data>
+ </layer>
+ <layer name="housing1" width="75" height="50">
+  <data encoding="base64" compression="zlib">
+   eJzt2bdRxEAUgGFlLL4APAXgKQBPSgV4CsCTkeApAHNAAdzhCsAT4ykATwF4An4pupthMDfS6la8f+YLGeneBrxZWdb3DSlreBAD6EcfetGDbvzw579KxzN0NM27TmESExjHGEYx4tLv0PEMHS3xrotYQAjzmMMsZlz6HTqeoaMN3nUda1jFCiIIY9ml3+HVMw6TLOsIxzjBKc5wjoskN948tgPedR972MUOtrGFTZdm5dUzLpnHFa5xg1vc4R4PHszK5B6ZxxOe8YJXvOEdHzKrmJSyrGSkIBVpSEcGMpXfb5dYZTGPbOQgF3nIRwEK45xVk0H/a/5SEfMoRglKUYZyVKAyjll1MqcOtKMNrWhBcwDmV8U8qlGDWtShHg1ojGNWQdiXdRWEfVlXQdiXdeX1Th6kvN7JJUmSJEmSJCkRa5L7ti9rZi4taEUb2tGhnDshq0tmFlM38+hBL/rQjwHl3AnZ31KlqEaYxyjGMI4JTCrnTsj+lipFNcM8ZjGHeYSwoJw7IftbqhTVMvMII4IVrGJNOXdC9rdUKapN5rGFbexgF3vKuROyv6VKkpTAyc76dabvrDrP1aSd1e9zNWln9ftcTdpZ/T5Xk3ZWv8/VpJ3VpHP1O5POVZIkSZIkSZL+S5/mtf34
+  </data>
+ </layer>
+ <layer name="housing2.5" width="75" height="50">
+  <data encoding="base64" compression="zlib">
+   eJzt1LcNAkEYBeFLrjs8JeApAU8JeErA0yKTXHArnYgQoJ1Pmnz19GuTRJIkSZIkSZIkSZIkSZIkSfqsUpokZapQNf32a35bi33a1KGuW+XU2KNODWrSiMY0oalb5fTYo08DGtKK1rShbSRbhfeSCf+jGc1pQUs60ZkudI1kq/BeMuF/tKM9HegYyTah8F4y4X90ozs96BnpVkX3EuN/9E7RvcT4H0mS/sMLSxUoyQ==
+  </data>
+ </layer>
+ <layer name="housing2" width="75" height="50">
+  <data encoding="base64" compression="zlib">
+   eJzt1FtOwlAYReGD0DoAhKAoY2VWXIIoDgAwCugAEMLVAXhbr21MfTEpSdeXrPeTPzsnBEmSJEmSJEmSJEmSJEmSJP23uyiEexrRQ5T3a07bnPss6IVevVVCekd7OtCR3r1VQnpHlTiEiGI6j/N+Xb463KNLPer/sqMm97mmG2oV/FZj7jGhKT26o4T0jpb0Ritau6OE9I4+6JO+6LuAf/cwCu1bGtBfO6qynQuqUb2AO5pxo2d6IneUbceNtrQhd5StHIf2GZXIHWW74kaX1CB3JGX7AaRDUPE=
+  </data>
+ </layer>
+ <layer name="housing3" width="75" height="50">
+  <data encoding="base64" compression="zlib">
+   eJzt2MdPVFEYhvGLoAwgAqGqSO8dVBAUhIS2oOueosCfStcVG6qwoCyQHhEw8dkwIWSGuQzx3nPxfZLfek6+OcnNdyxLBeqXz7LO8BvnuPC5e55Fl3//tmJjLCsOTxGPZzHunGOLGW1jB7sGziuTubxCFrKRg1yHZxXoXl/ij2HzqmYuNahFHV7jjcOzCnSvE5CIJIfOMsX/Mo0ZzGIO81jAN3y/9r+1c6YOdKLLwVkFu9d5yEcBCh04zxKzWMYKVrGGdfzABjYNuOPB7vVb1KMB7xyY1R6z+Il9HOAQRzjGCU4NmNVVN+91t9PfF34vAo8QiSg8xhNEw+fS987EkplFClKRhnRk4Dle4KVm5a+IWRSjBKUoQzkqUIkqzcpfI7Nownt8QDNa8BGtaNOs/PUwi170oR8DGMQQPuHzPWZl8h4STsPMYgSjGMMXfMU4JjAZxqxM30NMyCt7iAmZsId4IVP2EC9kyh7ipVzfQ5RSSimP99D2yH+R9sjQaY+0n/ZIe2mPtJ/2yLunPVIppZRS6v9MbyCh0xtI6PQGYj+9gdhLbyD20xvI3dMbiFJKqUD9Bb9mdYo=
+  </data>
+ </layer>
+ <layer name="capsulehouse" width="75" height="50">
+  <data encoding="base64" compression="zlib">
+   eJzt0EVulQEYhtE/Le6WIMXd3d3dPcEdyhTXDeBsAVlBYQlFV4DLAnAfcCYwIDBsSu59n+TMv+8tipRSSiml8q2moihucbuivi/5/6q1yR3uco/7POBhtvrdI1s85glPecZzXvCSV7zOXsUbG7zlHe/5wEc+8ZkvfOUb3/lRhps1qCyKhjSiMU1oSjOa04KWtKI1bWhLO9rTobK+P6jbOvqvE53pQhVd6UZ3etCTXvSmD33pR38GMJBBDGYIQ0t0s2H+Gs4IRjKK0YxhLOMYzwQmMonJTGEq05jODGYyi9klutUcf81lHvNZwEIWsZglLGUZy1nBSlaxmjWsZR3r2cDGEt3qV5v8t5ktbGUb29nBTnaxmz3sZR/7OUA1B0t8n391yN+HOcJRjnGcE5zkFKc5w9ky3ejPztnhPBe4yCUuc4Wr2eivXbPLdW5wMxullFJKKaWUUkoppZRSSimllFJKKaWU6rifBB1BCg==
+  </data>
+ </layer>
+ <layer name="housing4" width="75" height="50">
+  <data encoding="base64" compression="zlib">
+   eJztmrdOA1EQRVdEk0Em55xNTiIXpIr4B2D+Yz6QlpJQETqSRJY4S4kQ7JLe4J0jHcmhsHV1Lb2ZZ8+LNnsxT1x/B8MwDMMwDMMwognziPEJB2R0iEd4bHl9yAX5XOIVXuON5fUuaTmel44ZmIlZmI2xnL//LnRbDhTuJeJkUYplWI4VWIlVWI01DrKi23KhMKt2sujATuzCbuzBXkxgn4Os6LbQcaHr8vef/jGT5DGF0ziDsziH8w5y8qHbQseFrgudl7iyzFbJZQ3XcQM3cctRVnRb6LjQdaHz0q4sK59tstnBJO46ysmHbgsdF7oukwpz0gTdFjouqxHK6avnf7ot2xHJyc7/wbHzfzA0nf+1ovH8rxWN53/NaDv/a0fT+f8/oOX8bxhGeJ4V7vg0UsIMWByROfA7tJFRK7ZYVp8yQUbjOPaNrOx/lsE4Jqcj1HoHpIUbsrnGK9R6B6SBGL/ZbMzCTNR8B+SaGjKpxiqsRO13QC7/K9JHFgnsxR7Uegf0lV3x/i/kOk8ecziLWu+AwuyKT3jvFM/w/Ifz2iKTTdxAjXdAQXfFt+Ryh/f4gI/4FHudZX6UXbJJoqY7oLC74lye52E+FmAhFiGzjD/TpDRhdsW1PK7DemzARmzCZmSW8Zhp/NkmpQm6K+7n+QAO4hAO4wiOIrOMx0zjzzYpT5hd8QKvL+ISLuNKBPJ5i+2K3fMCspWS3A==
+  </data>
+ </layer>
+ <layer name="housing5" width="75" height="50">
+  <data encoding="base64" compression="zlib">
+   eJzt2UdPVFEAhuEr7d6hG+x0EEFEOmosIEr7CegSdQXsUEgUcGeNdWVP1KX9FwBuSQQUd5ZI31FUqglvjAucDDOzGJk7zvcmTzIkZHLOl8DmGIZSSimllFJKKaWUCsbemYbRh34M4D0+YBAfTX+fzl59Y48hDGMEoxjDOCZcbNVgGcYJnMQpa+3P689+sMdPzGIO81jAIpactmphm9M4g1a0BdlWFvd1IBJRiEYMYhHntMUFfr6IS7iMK7gaRHslctckJCMFqUhDOjJW7HCHz3dxD/fxAA/xyIdbDdp893zOV4BCFKEYJShF2YqzP+Pzc7zAS7zCa7zxwf1G+Y4xjGPCxntVcrYjOIoqVKMGtahzOncXP3ejB299cKdZvmMO81jAIpbwy8Z7+atIB/8jEY0YxCIO8Vjv8Pfp7FMSWyQjBalIQzoykIntyNJevytgh0IUoRglKEUZ9mAv9mmrv6pij2rUoBZ12kcppZRSSimllFJKKWXzevXm4rFPbPQZX/D1H+1l97dVb5vkHlOYxgy+e3Gven7nGI57+N1AeVv1phCHYYQiDOGIgAnLw7tCI/duQvMq9/+f3lYT2GIDNmITNmMLtmIbEl1sdZZ7nkM7OtCJ86vc3d3baqC1gzNnIwc7kYtdyMNu5Lu40zV2uY4buIlbuP1nqymTv2HMmJ7fVgOx/Zz7AA7iEMpRgcNu7vOYbZ7gKdYhBKEIQzgiYFru31aXAbHBbmY=
+  </data>
+ </layer>
+ <layer name="house" width="75" height="50">
+  <data encoding="base64" compression="zlib">
+   eJzt0DlSQlEABdEX8pkxRiYhlkkgZmb/6goUYQUgQxVdpJD/F/Sp6vzWDUGSJEmSJEmSFIvPTAhf9J1Je0mcfvjll7b0Rzva+9VTB3450j+d6EwXuvrXg2wSQo7yVKAilahMFXpJ0l4Yhyo/vFKN6tSgJrXojdrU8au7d37oUo/6NKAhfdCIxjTxq7spP8xoTgta0orWtPEjSZIkSZIkSZIkSYrSDQ1qFnw=
+  </data>
+ </layer>
+ <layer name="housing6" width="75" height="50">
+  <data encoding="base64" compression="zlib">
+   eJzt2rcNAlEUBdGH3cVVgO0AVwKmf0wJmBiQcBFTwEKEBIg50uRPN/0/QpIkSZIkSdIvWiQRS1rROvn0Nd9twz5b2tHerZ46s82FrnSju1tlStOIClWpRnVqpJ++6js12aVFbepQl3pu9VSfbQY0pBGN3eqlCftMaUZzt5IkSZIkSZIkSZKkv3NIIo508o9LplwakacCFalEZUre8Mb+AM+FEvI=
+  </data>
+ </layer>
+ <layer name="housing7" width="75" height="50">
+  <data encoding="base64" compression="zlib">
+   eJzt0LENACAMA8GUGRFYAdi/JVuE4k763nIEAAAAAAAAAAAAAAAAAECPkRGzWtm95H+7PjrVbfzqAc76AoA=
+  </data>
+ </layer>
+ <layer name="bill" width="75" height="50">
+  <data encoding="base64" compression="zlib">
+   eJzt18lKQmEchvGzsCtugoYbqAwaaFhmCqmoLZuggbJlptCA1TKre8h6XLoQzkL8vgPPD571+fOe1ZckGtjJJcku7dF+LvQ1cVlgj0VaomWqUZ0adOxWQzbYY5O2aJtu6Y6adD+Brab5xgzN0hzNR/x/jritTBWqUpfe6J0+JnD3Ct9YpTXK03rEW11y2xVd002AOw/4ZoEOqUiliLd64rZneqHXAHee8M1TOqNzuoh4q9Ae2KZFj9SmjluN9Mk2Pfqib/pxq5F+2aZPf4ONpkJfI0lSnLLwXoxBVt6LoWXpvRia78X0fC+m53sxPd+LkiRJkiRJkiRJkiRJ4/UPh+RH3g==
+  </data>
+ </layer>
+ <layer name="bill" width="75" height="50">
+  <data encoding="base64" compression="zlib">
+   eJzt1sdOgkEYheFZACsVlUuwXJ4NhSuwYbkCe9mriH2vYgF1r2LXvYqd1y2J40KHf0jOmzwrksmXgzEYo5SqVG0hY9rRgU50hYK+yN962aYP/RjAoLb6sTG2GccEJjHlcKs4b3ejBwkkPfxe4pab0ny2jAxWsOrw/hRvD2EYIxj1cKuU5aYsn+1hHwc4dHj/NG/PYBZzmPdwK1sF7r3AJa5w7fD+Nd5exwY2sVVlWxW59wWveMO7w/tzvJ3HEY5xEsBWtv9HvxUNG1OPBjQiFv6/u8q74c5b3OEeD1X2d1XJPtjmE1/fGzn8TpRSSimllPpLC/xWXcQS0vrdam2bfXawi6y2snbKPmc4R0FbWXtknyc8o6itrNVEjKlFHaKRoK/xuyb2aUYLWrWVUkoppZRSSimllFJKKaWUUsqDSjmyQbQ=
+  </data>
+ </layer>
+ <layer name="bill" width="75" height="50">
+  <data encoding="base64" compression="zlib">
+   eJzt2MtNw2AQhdEh+DcthFeKSEgREEpOaAJoIuGRErgV2AIJ2YtzpG8/usupAv7TvlUd0kub+pL5e81Gb+ndVqOO2eiUPmw16qKvWqTLfupL5m+Zja7Tja0AAAAA4M8+u6qv9J3O3dTXzFvXqlrq05V/96Db7HOX7tPKVoPW2WeTHtLWVoMes89T2qVnWwEAAAAAAPALP+BuDrE=
+  </data>
+ </layer>
+ <layer name="right_top" width="75" height="50">
+  <data encoding="base64" compression="zlib">
+   eJzt2EsOgzAMRdFI3TgrbBdRFgJDBkTPCbHx550xiiK4iiNa07d/2hZ5fU0/5b1rr2+pWkfntxt5dlPbiMH6T+0D76paR8i1s+odIdfO2NF7ondkyXNHX4W9eZqbK/0V9uppbkZjOTejs5ybREQIz2w5ntl97EiOHfWxIzl21MeO5NgREZFM1tky8s9YKutsGfln3JO1I2Sms6wdIZLOqnaE3HVWtSNkxXlGRDFYzQyNO6U1q5kR8Qz2cveI0JmXu4fHzrx0hHjozEtHyBudRekIsegsSkeIRmdZOkJWdJalI2SmsyodIZLOqnSE3HXGjuSydHQAQsdaig==
+  </data>
+ </layer>
+ <layer name="car" width="75" height="50">
+  <data encoding="base64" compression="zlib">
+   eJzt2csKwjAQheHZ5q2zqlVr1arg5WU9m4CL2oQ2RUn+D2ZZCIdAZqZmAJBm58z27ten+G+N8tmoTqozWY1qlctW1akOZDSpVz5HMgIAZBDeX3wXel3e3zh6XQAAAKAc7P3j2PtP+7xD7P3H1XCHbs78VTX3+5r+Hb2U01N1UQ0zMqtxd/VQTvcF9wsAAABYm+YZ39KzJtE84/sCs2LHFhdm/5L3I7nUOPsDwBJNgb3FWjplRe+artTeNbc3jm8vrQ==
+  </data>
+ </layer>
+ <layer name="Path" width="75" height="50">
+  <data encoding="base64" compression="zlib">
+   eJzt2U0KwjAQgNGcRVAUVwrq/W9msituJuLPJO17MOuGjzYJtBQAAGDpUmefvYjBtUaHOrfshQxMo5hGMY1iGvXZFY0A99wezpWYRjGNYhrFNIppFNMo1hod6zyyFzKw1/foXudc55q2ovFE35pm7+9HW2z26Z69hWbfPtfW2OzXZ/8amv37fjRjs+w7ZGt2Snp2r+xGM9Coj383AAAAzO4JiU4SVw==
+  </data>
+ </layer>
+ <layer name="Attribute" width="75" height="50">
+  <data encoding="base64" compression="zlib">
+   eJzt1TERACAQBLEvMAD494oIimOeRMF2WwUAAABAZzsdADxjpQNowVcA6GSkAwAAgC/NdAAAAABcOsTzAE4=
+  </data>
+ </layer>
+ <objectgroup name="PathAttributes">
+  <object id="1" name="0" type="space" x="960" y="1480" width="40" height="40">
+   <properties>
+    <property name="group" value="0"/>
+    <property name="next" value="1"/>
+   </properties>
+  </object>
+  <object id="2" name="1" type="space" x="1040" y="1440" width="40" height="40">
+   <properties>
+    <property name="group" value="0"/>
+    <property name="next" value="2"/>
+   </properties>
+  </object>
+  <object id="3" name="2" type="space" x="1120" y="1400" width="40" height="40">
+   <properties>
+    <property name="group" value="0"/>
+    <property name="next" value="3"/>
+   </properties>
+  </object>
+  <object id="4" name="3" type="space" x="1200" y="1360" width="40" height="40">
+   <properties>
+    <property name="group" value="0"/>
+    <property name="next" value="4"/>
+   </properties>
+  </object>
+  <object id="5" name="4" type="space" x="1280" y="1320" width="40" height="40">
+   <properties>
+    <property name="group" value="0"/>
+    <property name="next" value="5"/>
+   </properties>
+  </object>
+  <object id="6" name="5" type="space" x="1360" y="1280" width="40" height="40">
+   <properties>
+    <property name="group" value="0"/>
+    <property name="next" value="6"/>
+   </properties>
+  </object>
+  <object id="7" name="6" type="space" x="1440" y="1240" width="40" height="40">
+   <properties>
+    <property name="group" value="0"/>
+    <property name="next" value="7"/>
+   </properties>
+  </object>
+  <object id="8" name="7" type="space" x="1520" y="1200" width="40" height="40">
+   <properties>
+    <property name="group" value="0"/>
+    <property name="next" value="8"/>
+   </properties>
+  </object>
+  <object id="9" name="8" type="space" x="1600" y="1160" width="40" height="40">
+   <properties>
+    <property name="group" value="0"/>
+    <property name="next" value="9"/>
+   </properties>
+  </object>
+  <object id="10" name="9" type="space" x="1680" y="1120" width="40" height="40">
+   <properties>
+    <property name="group" value="0"/>
+    <property name="next" value="10"/>
+   </properties>
+  </object>
+  <object id="11" name="10" type="space" x="1760" y="1080" width="40" height="40">
+   <properties>
+    <property name="group" value="0"/>
+    <property name="next" value="11"/>
+   </properties>
+  </object>
+  <object id="12" name="11" type="space" x="1840" y="1040" width="40" height="40">
+   <properties>
+    <property name="group" value="0"/>
+    <property name="next" value="12,20"/>
+   </properties>
+  </object>
+  <object id="13" name="12" type="space" x="1920" y="1000" width="40" height="40">
+   <properties>
+    <property name="group" value="1"/>
+    <property name="next" value="13"/>
+   </properties>
+  </object>
+  <object id="14" name="13" type="space" x="2000" y="960" width="40" height="40">
+   <properties>
+    <property name="group" value="1"/>
+    <property name="next" value="14"/>
+   </properties>
+  </object>
+  <object id="15" name="14" type="space" x="2080" y="920" width="40" height="40">
+   <properties>
+    <property name="group" value="1"/>
+    <property name="next" value="15"/>
+   </properties>
+  </object>
+  <object id="16" name="15" type="space" x="2160" y="880" width="40" height="40">
+   <properties>
+    <property name="group" value="1"/>
+    <property name="next" value="16"/>
+   </properties>
+  </object>
+  <object id="17" name="16" type="space" x="2240" y="840" width="40" height="40">
+   <properties>
+    <property name="group" value="1"/>
+    <property name="next" value="17"/>
+   </properties>
+  </object>
+  <object id="18" name="17" type="space" x="2320" y="800" width="40" height="40">
+   <properties>
+    <property name="group" value="1"/>
+    <property name="next" value="18"/>
+   </properties>
+  </object>
+  <object id="19" name="18" type="space" x="2400" y="760" width="40" height="40">
+   <properties>
+    <property name="group" value="1"/>
+    <property name="next" value="19"/>
+   </properties>
+  </object>
+  <object id="20" name="19" type="space" x="2480" y="720" width="40" height="40"/>
+  <object id="21" name="20" type="space" x="1920" y="1080" width="40" height="40">
+   <properties>
+    <property name="group" value="2"/>
+    <property name="next" value="21"/>
+   </properties>
+  </object>
+  <object id="22" name="21" type="space" x="2000" y="1120" width="40" height="40">
+   <properties>
+    <property name="group" value="2"/>
+    <property name="next" value="22"/>
+   </properties>
+  </object>
+  <object id="23" name="22" type="space" x="2080" y="1160" width="40" height="40">
+   <properties>
+    <property name="group" value="2"/>
+    <property name="next" value="23"/>
+   </properties>
+  </object>
+  <object id="24" name="23" type="space" x="2160" y="1200" width="40" height="40">
+   <properties>
+    <property name="group" value="2"/>
+    <property name="next" value="24"/>
+   </properties>
+  </object>
+  <object id="25" name="24" type="space" x="2240" y="1240" width="40" height="40">
+   <properties>
+    <property name="group" value="2"/>
+    <property name="next" value="25"/>
+   </properties>
+  </object>
+  <object id="26" name="25" type="space" x="2320" y="1280" width="40" height="40">
+   <properties>
+    <property name="group" value="2"/>
+    <property name="next" value="26"/>
+   </properties>
+  </object>
+  <object id="27" name="26" type="space" x="2400" y="1320" width="40" height="40">
+   <properties>
+    <property name="group" value="2"/>
+    <property name="next" value="27"/>
+   </properties>
+  </object>
+  <object id="28" name="27" type="space" x="2480" y="1360" width="40" height="40"/>
+  <object id="29" name="28" type="space" x="1080" y="600" width="40" height="40">
+   <properties>
+    <property name="group" value="3"/>
+    <property name="next" value="29"/>
+   </properties>
+  </object>
+  <object id="30" name="29" type="space" x="1160" y="560" width="40" height="40">
+   <properties>
+    <property name="group" value="3"/>
+    <property name="next" value="30"/>
+   </properties>
+  </object>
+  <object id="31" name="30" type="space" x="1240" y="520" width="40" height="40">
+   <properties>
+    <property name="group" value="3"/>
+    <property name="next" value="31"/>
+   </properties>
+  </object>
+  <object id="32" name="31" type="space" x="1320" y="480" width="40" height="40">
+   <properties>
+    <property name="group" value="3"/>
+    <property name="next" value="32"/>
+   </properties>
+  </object>
+  <object id="33" name="32" type="space" x="1400" y="440" width="40" height="40">
+   <properties>
+    <property name="group" value="3"/>
+    <property name="next" value="33"/>
+   </properties>
+  </object>
+  <object id="34" name="33" type="space" x="1480" y="400" width="40" height="40">
+   <properties>
+    <property name="group" value="3"/>
+    <property name="next" value="34"/>
+   </properties>
+  </object>
+  <object id="35" name="34" type="space" x="1560" y="360" width="40" height="40"/>
+ </objectgroup>
+</map>

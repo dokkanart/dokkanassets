@@ -1,0 +1,110 @@
+*start|スタート
+//究極のDB編_エリア6：ゴール
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "012"]
+ 
+*001
+//-------------------------------------------------------------------------------
+//  ギル
+//-------------------------------------------------------------------------------
+
+//[se storage = "04"]
+[coma shape="N0001L" bg = "bg_081_004"]
+ 
+[character x = -180 y = -50 storage = "90003/giru_L" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x=120 y=20 shape="002_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+キケンカイヒ！[r]
+キケンカイヒ！
+[p]
+ 
+
+
+*002
+//-------------------------------------------------------------------------------
+//  パン
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_081_004"]
+ 
+[character x=180 y=-140 storage = "00326/heapup_e_01" scale = 1.2 action = "fadein" time = 0.1]
+ 
+[balloon x=-70 y=80 shape="001_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+あんた！[r]
+今頃おそいわよ！
+[p]
+
+
+*003
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0003L" bg = "bg_000_003"]
+ 
+
+[balloon x=0 y=20 shape="003_01" scale = 1.5 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 15]
+//[quake target =".bln" power = 3 time = 0.2]
+なんとか[r]
+ルードを倒し[r]
+ドラゴンボールも[r]
+取り返すことができた[r]
+悟空たち[r]
+　[r]
+しかし 謎の人物[r]
+ドクター・ミューは[r]
+悟空たちに[r]
+目をつけてしまった…
+[p]
+ 
+//[balloon x = 0 y = 0 shape="002_01" scale = 0]
+//[p]
+
+
+*004
+//-------------------------------------------------------------------------------
+//  ドクターミュー
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0002L" bg = "bg_081_006"]
+ 
+[character x = -190 y = -180 storage = "00329/idl_side_p_01" scale = 1.4 action = "fadein" time = 0.1]
+
+[balloon x=130 y=90 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+この者たちのパワーには[r]
+目を見張るものがある…
+[p]
+
+[balloon x=70 y=-170 shape="002_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+現在おこなっている[r]
+研究に役立つはずだ…！
+[p]
+ 
+//終わりのフェードアウト
+[balloon x=130 y=40 shape="008_03" scale = 50.0 action = "fadein" time = 0.5]
+[wait time = 2.5]
+
+
+
+[stopbgm]
+

@@ -1,0 +1,40 @@
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+//[bgm storage = "026"]
+
+*001
+//-------------------------------------------------------------------------------
+//  トランクス（未来）
+//-------------------------------------------------------------------------------
+[se storage = "3022"]
+[coma shape="S0001" bg = "bg_073_001"]
+
+[character x = 140 y = -110 storage = "00625/card_01" scale = 0.9 action = "fadein" time = 0.1]
+
+[character x = -120 y = -20 storage = "00623/card_02" scale = 1.1 action = "fadein" time = 0.1]
+
+//[wait time = 0.3]
+
+[balloon x=-0 y=470 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+ここは[r]
+オレたちが生きていく[r]
+世界なんだ…
+[p]
+
+//[quake target =".chara" power = 5 time = 0.3]
+
+[balloon x=0 y=-440 shape="001_03" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+オレたちの手で[r]
+守る！！
+[p]
+
+//[stopbgm]

@@ -1,0 +1,134 @@
+//	"エリア６スタート"
+
+*start|スタート
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "008"]
+
+*001
+//-------------------------------------------------------------------------------
+//  ゴテンクス
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0001L" bg = "bg_014_001"]
+
+[character x = -190 y = -200 storage = "00276/idl_side_p_01" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x=100 y=180 shape="006_02" scale = 0.9 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 7 time = 0.2]
+おい！[r]
+そこのネコ人間！
+[p]
+
+[balloon x=145 y=-70 shape="006_02" scale = 0.9 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 7 time = 0.2]
+プリンぐらいで[r]
+大暴れしやがって！
+[p]
+
+*002
+//-------------------------------------------------------------------------------
+//  ビルス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_014_001"]
+
+[character x = 240 y = -300 storage = "00242/idl_side_e_01" scale = 1.5 action = "fadein" time = 0.1]
+
+[balloon x=-65 y=40 shape="001_02" scale = 0.6 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 54]
+//[quake target =".bln" power = 3 time = 0.2]
+ん？
+[p]
+
+*003
+//-------------------------------------------------------------------------------
+//  ゴテンクス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_014_001"]
+
+[character x = -230 y = -50 storage = "00276/atc_front_e_01" scale = 1.1 action = "fadein" time = 0.1]
+
+[balloon x=145 y=155 shape="001_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+そんな[r]
+マナー違反なやつは…
+[p]
+
+[quake target =".chara" power = 5 time = 0.2]
+
+[balloon x=145 y=-70 shape="006_02" scale = 1.0 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+[quake target =".bln" power = 7 time = 0.2]
+このゴテンクス様が[r]
+ぶっとばしてやるぜ！！
+[p]
+
+*004
+//-------------------------------------------------------------------------------
+//  ビルス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_014_001"]
+
+[character x = 240 y = -320 storage = "00242/idl_side_e_01" scale = 1.5 action = "fadein" time = 0.1]
+
+[balloon x=-125 y=110 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+おまえたち地球人は[r]
+食べ慣れているかも[r]
+しれないが…
+[p]
+
+[balloon x=-90 y=-85 shape="001_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+ボクには[r]
+味の想像もつかない[r]
+未知の食べ物だ！！
+[p]
+
+*005
+//-------------------------------------------------------------------------------
+//  ビルス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_014_001"]
+
+[character x = 160 y = -240 storage = "00242/heapup_e_01" scale = 1.3 action = "fadein" time = 0.1]
+
+[quake target =".chara" power = 9 time = 0.2]
+
+[balloon x=-145 y=120 shape="007_01" scale = 0.8 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 7 time = 0.2]
+プリン〜！！
+[p]
+
+[quake target =".chara" power =11 time = 0.2]
+
+[balloon x=-145 y=-130 shape="007_01" scale = 0.9 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 7 time = 0.2]
+なんとも美味そうな[r]
+ネーミングじゃない[r]
+か〜！！
+[p]
+
+//-------------------------------------------------------------------------------
+[stopbgm]

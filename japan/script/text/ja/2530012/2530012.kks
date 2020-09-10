@@ -1,0 +1,39 @@
+//ラウンド２開始 2530012
+
+*start|スタート
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+
+//[bgm storage = "028"]
+
+*001
+//-------------------------------------------------------------------------------
+//  人造人間17号
+//-------------------------------------------------------------------------------
+//[se storage = "3040"]
+
+[coma shape="S0001" bg = "bg_015_001"]
+
+[character x = -150 y = 0 storage = "00021/card_02" scale = 0.9 action = "fadein" time = 0.1]
+//[quake target =".chara" power = 5 time = 0.4]
+
+[character x = 150 y = 0 storage = "00021/card_03" scale = 0.9 action = "fadein" time = 0.1]
+//[quake target =".chara" power = 5 time = 0.4]
+[wait time = 0.7]
+
+[balloon x= 0 y=490 shape="002_01" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+もうすぐ人類は全滅し…[r]
+地球はオレたちのものになる[p]
+
+[balloon x=0 y=-400 shape="002_03" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+おまえたちも[r]
+地獄へ送ってやる！[p]
+//-------------------------------------------------------------------------------
+//[stopbgm]

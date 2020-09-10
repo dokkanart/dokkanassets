@@ -1,0 +1,104 @@
+
+
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "005"]
+
+
+//-------------------------------------------------------------------------------
+//  test
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+
+[coma shape="S0001" bg = "bg_000_014"]
+
+[balloon shape="009_15" x = 50 y = 170 scale = 1.2 action = "fadein" time = 0.1]
+
+
+//19×7
+[balloon shape="009_16" x = 35 y = -200 scale = 0.95 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 26]
+
+ひとつの小さな出会いから始まった[r]
+ななつのドラゴンボールをめぐる物語…[r]
+　[r]
+復活した魔人ブウの恐ろしいパワーの前に[r]
+為す術がない戦士たち…[r]
+絶望的な状況の中、決死の覚悟のベジータが[r]
+ひとり、魔人ブウに立ち向かう…！[p]
+
+
+*01
+//-------------------------------------------------------------------------------
+//  魔人ベジータ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+
+
+[coma shape="N0001R" bg = "bg_000_032"]
+
+//[character x=-150 y=-180 storage = "99999/supersaiyan" scale = 1.1 action = "fadein" time = 0.1]
+[character id = "beji" x=240 y=-150 storage = "00228/idl_side_p_01" scale = 1.1 action = "fadein" time = 0.1]
+[flip target ="beji" h=1]
+
+[balloon x=-90 y=100 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+その不細工なマヌケ面が[r]
+魔人ブウか…[p]
+
+
+
+
+*02
+//-------------------------------------------------------------------------------
+//  ブウ（善）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_032"]
+
+[character id="buu" x = -310 y = -120 storage = "00229/atc_sp01_p_02" scale = 1.1 action = "fadein" time = 0.1]
+
+[balloon x=130 y=70 shape="006_01" scale = 0.9 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 7 time = 0.2]
+[font size = 28]
+おこっちゃったもーん！[r]
+殺しちゃおー！！[p]
+
+
+
+*03
+//-------------------------------------------------------------------------------
+//  魔人ベジータ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+
+
+[coma shape="N0002R" bg = "bg_000_032"]
+
+[character id = "beji" x=200 y=-150 storage = "00228/idl_side_p_01" scale = 1.2 action = "fadein" time = 0.1]
+[flip target ="beji" h=1]
+
+[balloon x=-130 y=100 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+オレひとり[r]
+地獄にはいかん……[p]
+
+[balloon x=-140 y=-220 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+てめえら みんな[r]
+道連れにしてやる[p]
+
+
+
+[stopbgm]

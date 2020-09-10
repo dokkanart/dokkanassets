@@ -1,0 +1,222 @@
+
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "004"]
+
+
+//-------------------------------------------------------------------------------
+//  閻魔大王
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_011"]
+
+[character x = -170 y = -15 storage = "90003/enma" scale = 1.2 action = "fadein" time = 0.1]
+
+//[wait_anim target=".chara"]
+
+[balloon x = 130 y = -90 shape="001_02" scale = 1.1 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][font size = 24]
+わざわざ危険をおかしてまで[r]
+蛇の道を通り界王さまに[r]
+会いに行くというのか？
+[p]
+
+
+
+*coma2
+//-------------------------------------------------------------------------------
+//  閻魔大王
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0003L" bg = "bg_000_011"]
+
+[character x = -180 y = -140 storage = "90003/enma" scale = 1.5 action = "fadein" time = 0.1]
+
+[balloon x = 165 y = 80 shape="001_02" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 38]
+…よかろう！
+[p]
+
+
+[balloon x = 165 y = -110 shape="001_01" scale = 1 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 26]
+そんなに行きたければ[r]
+界王さまのところに[r]
+行くがよい
+[p]
+
+//フェードアウト
+[balloon x=130 y=40 shape="008_03" scale = 50.0 action = "fadein" time = 0.5]
+
+[wait time = 0.7]
+
+*title
+//-------------------------------------------------------------------------------
+//  title
+//-------------------------------------------------------------------------------
+[bgm storage = "012"]
+
+[coma id = "coma1" shape="S0001" bg = "bg_000_012"]
+
+
+
+//フェードイン
+[balloon x=130 y=40 shape="008_03" scale = 50]
+[wait time = 1]
+[fadeout target = ".bln" time = 1]
+
+[wait_anim target=".bln"]
+
+[balloon x=-180 y=115 shape="010_01" scale = 1.4 action = "fadein" time = 0.1]
+
+[balloon x=-110 y=-90 shape="010_02" scale = 0.9 action = "fadein" time = 0.1]
+
+[balloon x=15 y=125 shape="010_03" scale = 0.9 action = "fadein" time = 0.1]
+
+[balloon x=240 y=-90 shape="010_04" scale = 2.0 action = "fadein" time = 0.1]
+
+[balloon x=-250 y=-85 shape="010_05" scale = 1.3 action = "fadein" time = 0.1]
+
+[balloon x=230 y=90 shape="010_06" scale = 1.5 action = "fadein" time = 0.1]
+
+[balloon x=70 y=-115 shape="010_07" scale = 1.0 action = "fadein" time = 0.1]
+
+
+[wait time = 0.5]
+
+[balloon x=0 y=0 shape="011_03" scale = 1.3 action = "fadein" time = 0.5]
+
+[p]
+
+
+*coma4
+//-------------------------------------------------------------------------------
+//  悟空
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+
+
+
+
+[coma shape="N0001R" bg = "bg_000_012"]
+
+[character x = 185 y = -190 storage = "00003/card_01" scale = 1.1 action = "fadein" time = 0.1]
+
+[balloon x = -150 y = 30 shape="001_02" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+[quake target = ".bln" power = 3 time = 0.2]
+オッス！[r]
+オラ悟空だ！
+[p]
+
+
+
+
+*coma5
+//-------------------------------------------------------------------------------
+//  悟空
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_012"]
+
+[character x = 185 y = -190 storage = "00003/card_01" scale = 1.1 action = "fadein" time = 0.1]
+
+[balloon x = -140 y = 100 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+閻魔のおっちゃんから[r]
+聞いたかもしれねえ[r]
+けど…
+[p]
+
+
+[balloon x = -135 y = -110 shape="001_01" scale =  0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target = ".bln" power = 3 time = 0.2]
+蛇の道のシッポの先に[r]
+界王さまの家は[r]
+あるんだ
+[p]
+
+*coma6
+//-------------------------------------------------------------------------------
+//  悟空
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_012"]
+
+[character x = 185 y = -190 storage = "00003/card_01" scale = 1.1 action = "fadein" time = 0.1]
+
+[balloon x = -150 y = 100 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][font size = 28]
+蛇の道の下は[r]
+地獄になってるから[r]
+落っこちたら大変だ
+[p]
+
+
+[balloon x = -130 y = -110 shape="001_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][font size = 28]
+//[quake target = ".bln" power = 3 time = 0.2]
+今回は[r]
+オラもいっしょに[r]
+ついていくぞ！
+[p]
+
+*coma7
+//-------------------------------------------------------------------------------
+//  悟空
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_000_012"]
+
+[character x = 185 y = -160 storage = "00003/card_01" scale = 1.3 action = "fadein" time = 0.1]
+
+[balloon x = -150 y = 100 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+蛇の道をこえるのは[r]
+大変だと思うけど…
+[p]
+
+
+[balloon x = -130 y = -110 shape="001_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target = ".bln" power = 3 time = 0.2]
+その分[r]
+鍛えられるはずだ！[r]
+がんばろうぜ！
+[p]
+
+//フェードアウト
+[balloon x=130 y=40 shape="008_03" scale = 50.0 action = "fadein" time = 1.5]
+
+[wait time = 1.5]
+
+//空のフキダシ
+//[balloon x = 0 y = 0 shape="002_01" scale = 0]
+//[p]
+
+
+
+
+
+
+//説明
+[balloon x = -0 y =250 shape="009_11" scale = 0.95 action = "fadein" time = 2]
+
+[wait_anim target=".bln"]
+
+[p]
+
+
+
+[stopbgm]

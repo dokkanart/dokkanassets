@@ -1,0 +1,74 @@
+
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "002"]
+
+//-------------------------------------------------------------------------------
+//  桃白白
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0003L" bg = "bg_016_001"]
+
+[character x = 70 y = -120 storage = "00035/idl_side_p_01" scale = 0.7 action = "fadein" time = 0.1]
+
+[character x = -160 y = -110 storage = "00074/heapup_p_01" scale = 1.4 action = "fadein" time = 0.1]
+
+[balloon x=130 y=110 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+よし…おまえ…[r]
+ヤジロベー…だったな[p]
+
+[balloon x=-135 y=-130 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 30]
+[quake target =".bln" power = 3 time = 0.2]
+あいつらを倒すんだ！
+[p]
+
+*001
+//-------------------------------------------------------------------------------
+//  ヤジロベー
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_016_001"]
+
+[character x = -180 y = -60 storage = "00035/idl_side_p_01" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x=120 y=80 shape="004_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+ええ！？[r]
+あいつらをか！？
+[p]
+
+*002
+//-------------------------------------------------------------------------------
+//  ヤジロベー
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002L" bg = "bg_016_001"]
+
+[character x = -250 y = -60 storage = "00035/atc_sp01_p_01" scale = 1.6 action = "fadein" time = 0.1]
+
+[balloon x=165 y=100 shape="001_01" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+いいけどよ…
+[p]
+
+[balloon x=80 y=-200 shape="001_03" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 25]
+ごちそう食わせるって[r]
+約束は忘れるなよ？[r]
+悟空…
+[p]
+
+
+
+[stopbgm]

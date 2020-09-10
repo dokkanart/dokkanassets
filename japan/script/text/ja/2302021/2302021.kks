@@ -1,0 +1,160 @@
+
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "007"]
+
+
+*001
+//-------------------------------------------------------------------------------
+//  ピッコロ
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0001R" bg = "bg_008_001"]
+
+[character x=195 y=-140 storage = "00056/idl_side_e_01" scale = 1.8 action = "fadein" time = 0.1]
+
+[balloon x=-150 y=115 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 30]
+やつは攻撃に移る[r]
+わずかな一瞬に[r]
+スキがある…
+[p]
+
+[balloon x=-150 y=-90 shape="002_03" scale = 0.85 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 3 time = 0.2]
+[font size = 32]
+そのときを狙うぞ…
+[p]
+
+
+*002
+//-------------------------------------------------------------------------------
+//  ベジータ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_008_001"]
+
+[character x=-195 y=-110 storage = "00218/idl_side_p_01" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x=130 y=80 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 30]
+いい作戦だ[r]
+健闘を祈るぞ
+[p]
+
+
+*003
+//-------------------------------------------------------------------------------
+//  ピッコロ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_008_001"]
+
+[character x=220 y=-140 storage = "00056/idl_side_e_01" scale = 1.5 action = "fadein" time = 0.1]
+
+[balloon x=-120 y=100 shape="002_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 34]
+…余裕だな……
+[p]
+
+[balloon x=-150 y=-90 shape="002_03" scale = 0.95 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+しかしそうやって[r]
+いられるのも[r]
+孫悟空が来るまでだ…！[r]
+[p]
+
+
+*004
+//-------------------------------------------------------------------------------
+//  ナッパ
+//-------------------------------------------------------------------------------
+[se storage = "3029"]
+[coma shape="N0003L" bg = "bg_008_001"]
+
+[character x=-190 y=-90 storage = "00015/heapup_p_01" scale = 1.4 action = "fadein" time = 0.1]
+[quake target = ".chara" power = 2 time = 300]
+
+
+[lwfobject id = "ゴゴゴゴ" storage="kakimoji:ef_009" in="02" x = -230 y = -100 scale = 1.6]
+[quake target = "ゴゴゴゴ" power = 3 time = 300]
+
+[balloon x=160 y=120 shape="006_01" scale = 0.9 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[quake target = ".bln" power = 7 time = 0.2]
+[font size = 34]
+はああああ……！！[p]
+
+
+*005
+//-------------------------------------------------------------------------------
+//  ピッコロ
+//-------------------------------------------------------------------------------
+[se storage = "03"]
+[coma shape="N0004R" bg = "bg_008_001"]
+
+[character x=220 y=-390 storage = "00056/idl_side_e_01" scale = 2.5 action = "fadein" time = 0.1]
+
+[lwfobject id = "!!" storage="kakimoji:ef_001" in="02" x = -40 y = 80 scale = 2.5]
+[quake target = "!!" power = 7 time = 0.2]
+[wait time = 0.3]
+
+[balloon x=-150 y=-90 shape="006_02" scale = 0.75 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[quake target = ".bln" power = 7 time = 0.2]
+[font size = 48]
+来るぞ！！
+[p]
+
+
+*006
+//-------------------------------------------------------------------------------
+//  クリリン
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+//[coma shape="N0001R" bg = "bg_008_001"]
+
+//[character x=180 y=-110 storage = "00009/guard_e_01" scale = 1.8 action = "fadein" time = 0.1]
+
+
+//[balloon x=-130 y=100 shape="001_03" scale = 0.9 action = "fadein" time = 0.1]
+//[wait_anim target=".bln"]
+//[font size = 30]
+//構えろ！！
+//[p]
+
+//[balloon x=-150 y=-90 shape="001_03" scale = 0.9 action = "fadein" time = 0.1]
+//[wait_anim target=".bln"]
+//[font size = 30]
+//[$player]！[r]
+//悟飯！
+//[p]
+
+
+*007
+//-------------------------------------------------------------------------------
+//  ベジータ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_008_001"]
+
+[character x=-190 y=-110 storage = "00015/heapup_p_01" scale = 1.5 action = "fadein" time = 0.1]
+
+[balloon x=160 y=110 shape="006_01" scale = 0.8 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[quake target = ".bln" power = 7 time = 0.2]
+[font size = 38]
+くたばっち[r]まえいっ！！
+[p]
+
+
+[stopbgm]
+

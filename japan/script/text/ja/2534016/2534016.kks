@@ -1,0 +1,90 @@
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+//[bgm storage = "012"]
+
+*001
+//----------------------------------------------------------------------------
+// 時の狭間が大きく揺れる。
+//-------------------------------------------------------------------------------
+[se storage = "3038"]
+
+[coma id = "coma1" shape="S0001" bg = "bg_000_051"]
+[quake target = "coma1" power = 80 time = 0.9]
+
+
+//点滅
+[balloon shape="008_02" x = 0 y = 0 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+
+
+
+[wait_anim target="coma1"]
+ 
+
+[lwfobject id = "kaki1" storage="kakimoji:ef_009" x=160 y=180 scale = 2.0 angle = 25 action = "fadein" time = 0.7]
+[quake target = "kaki1" power = 1 time = 300]
+
+
+ 
+[balloon shape="002_03" x = -120 y = 160 scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+ちっ…！[r]
+ここまでか……
+[p]
+ 
+ 
+[balloon shape="002_01" x = 120 y = -190 scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+久々に[r]
+おもしれえ闘い[r]
+だったのによお…
+[p]
+
+*002
+//-------------------------------------------------------------------------------
+//  超サイヤ人3バーダック
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_000_051"]
+
+[character id = "1" x = 150 y = -150 storage = "00599/card_03" scale = 1.2 angle = 0 action = "fadein" time = 0.1]
+
+
+[balloon shape="002_03" x = -145 y = 150 scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+まあ縁があれば また…[r]
+オレとてめえの運命が[r]
+交わる時も来るだろう
+[p]
+
+[balloon shape="002_02" x = -150 y = -190 scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+そのときを[r]
+楽しみにしてるぜ…！[r]
+あばよ！
+[p]
+
+[se storage = "09"]
+
+[fadeout target = "1" time = 1.0]
+
+[wait time = 0.7]
+
+[se storage = "3031"]
+
+[balloon x=0 y=0 shape="008_03" scale = 50.0 action = "fadein" time = 0.5]
+[wait time = 2.5]
+
+//[stopbgm]

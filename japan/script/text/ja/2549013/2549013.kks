@@ -1,0 +1,81 @@
+*start|スタート
+//ラウンド３開始
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+//[bgm storage = "013"]
+
+*01
+//-------------------------------------------------------------------------------
+//  
+//-------------------------------------------------------------------------------
+[se storage = "40"]
+[coma shape="N0004R" bg = "bg_000_024"]
+
+//[wait_anim target=".coma"]
+
+[character x = -100 y = 0 storage = "00003/atc_sp01_e_04" scale = 3.8 angle = -1 action = "fadein" time = 0.1]
+[flip target =".chara" h=1]
+[flip target =".chara" v=1]
+[quake target =".chara" power = 15 time = 0.4]
+
+[balloon x=0 y=140 shape="006_02" scale = 0.8 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 7 time = 0.2]
+　フュー…ジョン！！[r]
+　はっ！！
+[p]
+
+
+
+
+[se storage = "3025"]
+//点滅
+[balloon shape="008_02" x = 0 y = 0 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+[balloon shape="008_02" x = 0 y = 0 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+
+*02
+//-------------------------------------------------------------------------------
+//  ゴジータが登場する。
+//-------------------------------------------------------------------------------
+[se storage = "50"]
+[coma id = "coma1" shape="S0001" bg = "bg_070_010"]
+
+[lwfobject id = "kaki1" storage="kakimoji:ef_020" x=-80 y=-240 scale = 2.5 angle = -20 action = "fadein" time = 0.1]
+[quake target = "kaki1" power = 15 time = 0.4]
+
+[character id = "hikari" x = 20 y = 60 storage = "00931/card_04" scale = 1.6 action = "fadein" time = 0.1]
+[quake target ="hikari" power = 1 time = 300]
+
+
+[character id = "gzt"  x = 20 y = 60 storage = "00931/card_03" scale = 1.6 angle =0 action = "fadein" time = 0.1]
+
+
+
+[balloon shape="006_01" x = 0 y = 480 scale = 0.7 action = "expand" time = 0.1]
+[font size = 40]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 7 time = 0.2]
+オレは[r]
+ゴジータ！！
+[p]
+
+[quake target ="gzt" power = 6 time = 0.4]
+[quake target ="hikari" power = 6 time = 0.4]
+
+[balloon shape="006_02" x = 150 y = -450 scale = 0.65 action = "expand" time = 0.1]
+[font size = 44]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 7 time = 0.2]
+さあ来い！！
+[p]
+
+
+
+//-------------------------------------------------------------------------------
+//[stopbgm]

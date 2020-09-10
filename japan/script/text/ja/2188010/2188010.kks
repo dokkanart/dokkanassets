@@ -1,0 +1,366 @@
+*start|スタート
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "004"]
+
+*001
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="S0001" bg = "bg_000_014"]
+
+
+[character id = "zamas" x = -90 y = -630 storage = "00662/card_02" scale = 2.5 action = "fade:70" time = 0.1 mask="inside"]
+[paint target="zamas" color="#6E6E6E"]
+
+[character x = 200 y = -30 storage = "00625/card_01" scale = 0.35 action = "fadein" time = 0.1]
+
+[character x = 40 y = -30 storage = "00623/card_02" scale = 0.5 action = "fadein" time = 0.1]
+
+[balloon x=0 y=360 shape="003_01" scale = 1.6 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 14]
+//[quake target =".bln" power = 3 time = 0.2]
+ザマスとの闘いを終え[r]
+未来のトランクスとマイは[r]
+ふたりで新たな世界へと[r]
+旅立っていった[r]
+　[r]
+一方…[r]
+いくつもの[r]並行世界と未来が[r]
+あることを知った[r]
+現代のトランクスは…
+[p]
+
+
+*002
+//-------------------------------------------------------------------------------
+//  
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0003R" bg = "bg_000_058"]
+
+
+[character x = 40 y = -110 storage = "00623/card_03" scale = 1.0 angle = 10 action = "fadein" time = 0.1]
+//[paint target=".chara" color="#F5D0A9"]
+
+[character x = 190 y = -300 storage = "00623/card_04" scale = 1.0 angle =10 action = "fadein" time = 0.1]
+//[paint target=".chara" color="#F5D0A9"]
+
+
+[wait time =0.7]
+
+[balloon x=-140 y=150 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+大きい方のオレと[r]
+マイちゃんは[r]
+なんかいい雰囲気[r]
+だったけど
+[p]
+
+
+[balloon x=130 y=-150 shape="001_03" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+ザマスが[r]
+ビルスさまに破壊されて[r]
+未来は[r]変わったわけだから…
+[p]
+
+
+*003
+//-------------------------------------------------------------------------------
+//  トランクス（幼年期）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0004R" bg = "bg_000_014"]
+
+[character x = 180 y = -175 storage = "00200/atc_down_e_05" scale = 2.0 action = "fadein" time = 0.1]
+//[paint target=".chara" color="#BDBDBD"]
+
+[balloon x = -115 y = 10 shape="004_02" scale = 1.05 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 22]
+//[quake target =".bln" power = 3 time = 0.2]
+…この世界の[r]
+オレとマイちゃんは[r]
+あのふたりみたいにうまくいく[r]とは限らないんだよな…
+[p]
+
+
+*004
+//-------------------------------------------------------------------------------
+//  孫悟天（幼年期）の声
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[se storage = "3034"]
+[coma shape="N0004L" bg = "bg_000_016"]
+
+[balloon x=0 y=30 shape="006_01" scale = 0.8 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 7 time = 0.2]
+あぶない[r]
+トランクスくん！！
+[p]
+
+
+*005
+//-------------------------------------------------------------------------------
+//  トランクス（幼年期）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_016"]
+
+//[character x = 250 y = -100 storage = "00200/idl_side_e_05" scale = 1.15 action = "fadein" time = 0.1]
+[character x = 230 y = -95 storage = "00200/heapup_e_05" scale = 1.1 action = "fadein" time = 0.1]
+[quake target =".chara" power = 5 time = 0.4]
+
+[balloon x = -100 y = 70 shape="006_02" scale = 0.65 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 44]
+[quake target =".bln" power = 7 time = 0.2]
+はっ！！
+[p]
+
+
+
+
+[balloon shape="008_02" x = 0 y = 0 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+
+*006
+//-------------------------------------------------------------------------------
+//  悟空の攻撃がトランクスに当たる。
+//-------------------------------------------------------------------------------
+[stopbgm]
+
+//[se storage = "04"]
+[coma shape="N0003L" bg = "bg_000_016"]
+
+[character id="tra" x = 120 y = -80 storage = "00200/dam_side_e_05" scale = 0.85 action = "fadein" time = 0.1]
+[quake target = ".chara" power = 11 time = 0.4] 
+
+[character id="goku" x = -100 y = -130 storage = "00003/atc_punch_p_05" scale = 1.2 action = "fadein" time = 0.1]
+[quake target = ".chara" power = 7 time = 0.4] 
+
+[se storage = "3000"]
+//バキッ
+[lwfobject id = "kaki2" storage="kakimoji:ef_021" in="04" x=90 y=-140 scale = 1.5 action = "fadein" time = 0.1]
+[quake target = "kaki2" power = 15 time = 0.4]
+//[wait time=0.1]
+[character id="eff" x = 70 y = 0 storage = "99999/04_syougeki" scale = 1.2 action = "fade:80" time = 0.1]
+[quake target = ".chara" power = 9 time = 0.4] 
+
+//空のフキダシ
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+*007
+//-------------------------------------------------------------------------------
+//  トランクス（幼年期）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_042"]
+
+//[character x = 190 y = -100 storage = "00200/atc_down_e_05" scale = 1.15 action = "fadein" time = 0.1]
+
+
+
+[character id = "satan" x=190 y=-240 storage = "00200/atc_down_e_05" scale = 1.15 action = "fadein" time = 0.1]
+[quake target ="satan" power = 2 time = 1.0]
+
+//[wait time = 1.0]
+[wait_anim target="satan"]
+
+[se storage = "3022"]
+[move target ="satan" y=-100 time = 0.3 ease="Out:7"]
+
+[wait time = 0.7]
+
+[bgm storage = "005"]
+
+[character x = 230 y = 50 storage = "99999/ase" scale = 0.5 action = "fadein" time = 0.2]
+
+[balloon x = -80 y = 60 shape="004_03" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+//[quake target =".bln" power = 3 time = 0.2]
+い……[r]
+いちちち…
+[p]
+
+
+*008
+//-------------------------------------------------------------------------------
+//  孫悟空
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_042"]
+
+[character x=-250 y=-140 storage = "00003/idl_side_p_04" scale = 1.1 action = "fadein" time = 0.1]
+
+[balloon x=130 y=90 shape="001_03" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+おいおい 大丈夫か[r]
+トランクス…
+[p]
+
+
+[balloon x=140 y=-100 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+よけられねえ[r]
+攻撃じゃなかったはず[r]
+だぞ？
+[p]
+
+
+*009
+//-------------------------------------------------------------------------------
+//  トランクス（幼年期）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_042"]
+
+[character x = 210 y = -130 storage = "00200/guard_e_05" scale = 1.0 action = "fadein" time = 0.1]
+
+[character x = 240 y = 90 storage = "99999/ase" scale = 0.5 action = "fadein" time = 0.1]
+
+[balloon x = -90 y = 70 shape="004_02" scale = 0.65 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 44]
+//[quake target =".bln" power = 3 time = 0.2]
+あ……
+[p]
+
+
+*010
+//-------------------------------------------------------------------------------
+//  孫悟天（幼年期）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_042"]
+
+[character x = 200 y = -80 storage = "00225/idl_side_e_02" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon x = -105 y = 70 shape="001_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+なにやってんの[r]
+トランクスくん！
+[p]
+
+
+[balloon x=-100 y=-120 shape="001_03" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+//[quake target =".bln" power = 3 time = 0.2]
+ボーっとして…
+[p]
+
+
+*011
+//-------------------------------------------------------------------------------
+//  トランクス（幼年期）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_042"]
+
+[character x = 210 y = -130 storage = "00200/guard_e_05" scale = 1.0 action = "fadein" time = 0.1]
+
+[character x = 240 y = 90 storage = "99999/ase" scale = 0.5 action = "fadein" time = 0.1]
+
+
+
+[balloon x = -90 y = 90 shape="004_02" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+//[quake target =".bln" power = 3 time = 0.2]
+あ…いやその…[r]
+わるいわるい
+[p]
+
+
+[balloon x=-120 y=-100 shape="001_02" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+そ…そうだ[r]
+悟天といっしょに[r]
+悟空さんの修業の手伝い[r]
+してたんだっけ
+[p]
+
+
+*012
+//-------------------------------------------------------------------------------
+//  孫悟空
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_042"]
+
+//[character x=-250 y=-140 storage = "00003/idl_side_p_04" scale = 1.1 action = "fadein" time = 0.1]
+[character x=-200 y=-150 storage = "00003/heapup_p_04" scale = 1.2 action = "fadein" time = 0.1]
+
+
+[balloon x=120 y=85 shape="001_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+しょうがねえなあ…[r]
+トランクス！[r]
+悟天！
+[p]
+
+
+[balloon x=140 y=-100 shape="001_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+ふたり [r]
+いっしょでいいから[r]
+かかってこいよ！
+[p]
+
+
+*013
+//-------------------------------------------------------------------------------
+//  トランクス（幼年期）
+//-------------------------------------------------------------------------------
+[se storage = "3022"]
+[coma shape="N0002R" bg = "bg_000_042"]
+
+
+//[character x = 50 y = -150 storage = "00225/idl_side_e_02" scale = 1.0 action = "fadein" time = 0.1]
+//[character x = 250 y = -130 storage = "00200/idl_side_e_05" scale = 1.2 action = "fadein" time = 0.1]
+
+[character id = "goten" x = -60 y = -100 storage = "00225/atc_sp01_p_04" scale = 0.7 action = "fadein" time = 0.1]
+[quake target ="goten" power = 3 time = 0.4]
+
+[character id = "tra" x = 170 y = -60 storage = "00200/atc_sp01_e_03" scale = 1.0 action = "fadein" time = 0.1]
+
+[quake target ="tra" power = 4 time = 0.4]
+
+[balloon x = -130 y = 80 shape="004_02" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+[quake target =".bln" power = 3 time = 0.2]
+よ…よ〜し！[r]
+いくぞっ！！
+[p]
+
+
+
+//-------------------------------------------------------------------------------
+[stopbgm]

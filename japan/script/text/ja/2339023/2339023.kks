@@ -1,0 +1,321 @@
+*start|スタート
+//ステージ2ボス前
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "013"]
+
+*01
+//-------------------------------------------------------------------------------
+//  フリーザ兵１
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0001L" bg = "bg_050_001"]
+
+[character x=-220 y=-110 storage = "00053/zako_2_1030_idl_side_p_01" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x=100 y=50 shape="002_03" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+ぬ！？[r]
+なんだ！？ ありゃ
+[p]
+
+*02
+//-------------------------------------------------------------------------------
+//  ブルマ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_050_001"]
+
+//[character x = -200 y = -330 storage = "90003/bluma_03" scale = 1.2 action = "fadein" time = 0.1]
+//[character x=-165 y=105 storage = "99999/ase" scale = 0.7 action = "fadein" time = 0.1]
+
+
+[character id = "ss" x = 10 y = -120 storage = "90003/spaceship_kamisama_1" scale = 0.4 action = "fadein" time = 0.1]
+
+[character x = 200 y = -330 storage = "90003/bluma_03" scale = 1.2 action = "fadein" time = 0.1]
+[character x=235 y=105 storage = "99999/ase" scale = 0.7 action = "fadein" time = 0.1]
+
+
+[balloon x=-70 y=70 shape="004_01" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+[quake target =".bln" power = 3 time = 0.2]
+ナメック星人[r]
+じゃないわ！！
+[p]
+
+*03
+//-------------------------------------------------------------------------------
+//  フリーザ兵２
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_050_001"]
+
+[character x=-170 y=-90 storage = "00053/atc_energyball_p_01" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x=100 y=100 shape="002_03" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+ナメック星人じゃ[r]
+ねえみてえだぜ[r]
+なにもんだ？
+[p]
+
+*04
+//-------------------------------------------------------------------------------
+//  フリーザ兵1
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_050_001"]
+
+[character x=-220 y=-110 storage = "00053/zako_2_1030_idl_side_p_01" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x=100 y=100 shape="002_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+ヘッヘッヘッ[r]
+そんなこた[r]
+どうでもいいんだ
+[p]
+
+[balloon x=100 y=-100 shape="002_01" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+とにかく[r]
+この星にいるやつらどもは[r]
+皆殺しにしろって[r]命令だぜ…
+[p]
+
+*05
+//-------------------------------------------------------------------------------
+//  クリリン
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_050_001"]
+
+[character id = "ss" x = 10 y = -120 storage = "90003/spaceship_kamisama_1" scale = 0.4 action = "fadein" time = 0.1]
+
+//[character x = 180 y = -100 storage = "00009/heapup_e_03" scale = 1.0 action = "fadein" time = 0.1]
+[character x = 180 y = -100 storage = "00009/idl_side_e_03" scale = 1.0 action = "fadein" time = 0.1]
+
+
+[balloon shape="001_02" x = -100 y = 90 scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+あの格好…[r]
+サイヤ人が着てたのと[r]
+そっくりだ…[r]
+…だがサイヤ人じゃない…
+[p]
+
+[balloon shape="001_03" x = -120 y = -110 scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+どういうことか[r]
+さっぱりわからねえが…[r]
+イヤな予感が……
+[p]
+
+*06
+//-------------------------------------------------------------------------------
+//  フリーザ兵２
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_050_001"]
+
+[character x=-170 y=-90 storage = "00053/atc_energyball_p_01" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x=90 y=100 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+こいつら 戦闘力なんぞ[r]
+ほとんどねえゴミだぜ[r]
+ただの旅行者か…
+[p]
+
+*07
+//-------------------------------------------------------------------------------
+//  フリーザ兵1
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_050_001"]
+
+[character x=-220 y=-110 storage = "00053/zako_2_1030_idl_side_p_01" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x=90 y=100 shape="002_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+逃げられちゃ[r]
+楽しみがなくなる
+[p]
+
+[balloon x=130 y=-80 shape="002_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+とりあえず[r]
+あの宇宙船をやれ
+[p]
+
+*08
+//-------------------------------------------------------------------------------
+//  宇宙船が破壊される。
+//-------------------------------------------------------------------------------
+//[se storage = "3004"]
+
+//[se storage = "3005"]
+
+[se storage = "3006"]
+
+
+
+[coma shape="N0003L" bg = "bg_050_002"]
+
+[character id = "tao" x=-180 y=-85 storage = "00053/atc_energyball_p_01" scale = 1.4 action = "fadein" time = 0.1]
+
+[lwfobject id = "kaki1" storage="kakimoji:ef_025" in="04" x=-0 y=-110 scale = 1.2 action = "fadein" time = 0.1]
+[quake target = "kaki1" power = 15 time = 0.4]
+
+
+[character id = "dodo" x=360 y=-10 storage = "99999/dodonpa" scale = 1.2 action = "fadein" time = 0.1]
+
+[quake target ="tao" power = 7 time = 0.3]
+[quake target ="dodo" power = 5 time = 0.3]
+
+
+[wait time = 0.3]
+
+[fadeout target = "kaki1" time = 0.3]
+
+
+
+[move target ="tao" x=-500 time = 0.5]
+[move target ="dodo" x=-500 time = 0.5]
+
+[fadeout target = "tao" time = 0.2]
+[fadeout target = "dodo" time = 0.2]
+
+
+[character id = "dod2" x=-190 y=-15 storage = "99999/dodonpa" scale = 2.0 action = "fadein" time = 0.2]
+[quake target ="dod2" power = 8 time = 0.4]
+
+[wait time = 0.4]
+
+
+
+[move target ="dod2" x=-400 time = 0.3]
+
+[character id = "ss" x = 210 y = -60 storage = "90003/spaceship_kamisama_1" scale = 1.0 action = "slide:right" time = 0.2]
+
+[wait time = 0.1]
+
+[lwfobject id = "kaki2" storage="kakimoji:ef_019" in="04" x=100 y=0 scale = 2.5 action = "fadein" time = 0.1]
+[quake target = "kaki2" power = 15 time = 1]
+
+[se storage = "3008"]
+[character id = "bom" x=0 y=-20 storage = "99999/ef_explode_005" scale = 2.0 angle = 0 action = "expand" time = 0.1]
+[quake target = "bom" power = 15 time = 1]
+
+[balloon x=130 y=40 shape="008_02" scale = 50 action = "fadein" time = 0.5]
+
+[wait_anim target=".bln"]
+
+[fadeout target = ".bln" time = 1.5]
+
+[wait time = 1.0]
+
+
+
+//[wait_anim target="kaki2"]
+
+
+
+*09
+//-------------------------------------------------------------------------------
+//  クリリン
+//-------------------------------------------------------------------------------
+[se storage = "03"]
+[coma shape="N0001R" bg = "bg_050_001"]
+
+//[character x = 180 y = -100 storage = "00009/heapup_e_03" scale = 1.0 action = "fadein" time = 0.1]
+[character x = 180 y = -100 storage = "00009/idl_side_e_03" scale = 1.0 action = "fadein" time = 0.1]
+
+
+
+[balloon shape="007_01" x = -85 y = 85 scale = 0.7 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 40]
+[quake target =".bln" power = 7 time = 0.2]
+あっ！！[r]
+宇宙船がっ！！
+[p]
+
+*10
+//-------------------------------------------------------------------------------
+//  フリーザ兵２
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_050_001"]
+
+[character x=-170 y=-90 storage = "00053/atc_energyball_p_01" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x=90 y=100 shape="002_03" scale = 1 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+[quake target =".bln" power = 3 time = 0.2]
+運の悪いやつらだぜ！[r]
+こんなときに[r]
+こんなところへ来るとはよ！
+[p]
+
+
+*11
+//-------------------------------------------------------------------------------
+//  クリリン
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_050_001"]
+
+[character x = 180 y = -100 storage = "00009/heapup_e_03" scale = 1.0 action = "fadein" time = 0.1]
+//[character x = 180 y = -100 storage = "00009/idl_side_e_03" scale = 1.0 action = "fadein" time = 0.1]
+
+
+
+[balloon shape="001_02" x = -85 y = 85 scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+悟飯…気を開放しろ…！[r]
+こいつら[r]
+たいしたヤツじゃない！
+[p]
+
+*12
+//-------------------------------------------------------------------------------
+//  孫悟飯
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_050_001"]
+
+[character x = 160 y = -80 storage = "00007/headup_e_01_okappa" scale = 1.6 action = "fadein" time = 0.1]
+
+
+[balloon shape="006_02" x = -140 y = 70 scale = 0.65 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 44]
+[quake target =".bln" power = 7 time = 0.2]
+はいっ！！
+[p]
+
+//-------------------------------------------------------------------------------
+[stopbgm]

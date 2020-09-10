@@ -1,0 +1,113 @@
+*start|スタート
+//ステージ5 ゴール
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "002"]
+
+*01
+//-------------------------------------------------------------------------------
+//  孫悟空
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_079"]
+
+[character x = 220 y = -40 storage = "00261/idl_side_e_02" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x=-100 y=80 shape="001_03" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+[quake target =".bln" power = 3 time = 0.2]
+へへーん！[p]
+
+[balloon x=-100 y=-100 shape="001_02" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+//[quake target =".bln" power = 3 time = 0.2]
+どうだ！[r]
+まいったか！[p]
+
+*02
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0003R" bg = "bg_000_024"]
+
+
+[balloon shape="003_01" x = 0 y = 0 scale = 1.5 action = "fadein" time = 0.1]
+[font size = 16]
+//[quake target =".bln" power = 3 time = 0.2]
+[wait_anim target=".bln"]
+軍隊の猛攻をくぐりぬけ[r]
+ブルマたちや[r]
+追跡してきたヤムチャと[r]
+合流した悟空…[r]
+　[r]
+そして 悟空たちは[r]
+グルメス王のもとへと[r]
+たどりつくが[r]
+そこには……
+[p]
+
+*03
+//-------------------------------------------------------------------------------
+//  グルメス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0003L" bg = "bg_000_014"]
+
+[character x = 0 y = -230 storage = "00895/card_03" scale = 1.4 action = "fadein" time = 0.1]
+[quake target = ".chara" power = 1 time = 300]
+
+[wait time = 1.0]
+
+[balloon x = -140 y = 120 shape="004_03" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target = ".bln"]
+[font size = 32]
+[quake target = ".bln" power = 3 time = 0.2]
+うう…苦しい…！！[r]
+が…我慢できん…！
+[p]
+
+[balloon x = 160 y = -180 shape="007_02" scale = 0.75 action = "expand" time = 0.1]
+[wait_anim target = ".bln"]
+[font size = 36]
+[quake target = ".bln" power = 7 time = 0.2]
+ぐああぁぁ！！
+[p]
+
+[se storage = "3025"]
+//点滅
+[balloon shape="008_02" x = 0 y = 0 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+[balloon shape="008_02" x = 0 y = 0 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+
+*04
+//-------------------------------------------------------------------------------
+//  グルメス王が巨大化する。
+//-------------------------------------------------------------------------------
+//[se storage = "50"]
+[se storage = "3038"]
+[coma shape="S0001" bg = "bg_000_014"]
+
+[character x = -0 y = -500 storage = "00895/card_02" scale = 1.5 action = "expand" time = 0.3]
+[move target =".chara" y=0 time = 0.3]
+
+[wait time = 0.1]
+
+[lwfobject id = "kaki1" storage="kakimoji:ef_014" x=0 y=-160 scale = 3.5 action = "fadein" time = 0.1]
+[quake target = "kaki1" power = 15 time = 0.7]
+
+[wait_anim target = "kaki1"]
+
+[balloon x=120 y=135 shape="002_02" scale = 0 action = "fadein" time = 0.1]
+[p]
+
+
+
+//-------------------------------------------------------------------------------
+[stopbgm]

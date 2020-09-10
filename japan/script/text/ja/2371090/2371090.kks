@@ -1,0 +1,406 @@
+*start|スタート
+
+//-------------------------------------------------------------------------------
+[bgm storage = "002"]
+//-------------------------------------------------------------------------------
+
+*000
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+[coma shape="S0001" bg = "bg_005_001"]
+
+//[wait time = 1.0]
+
+[balloon x=0 y=180 shape="003_02" scale = 1.2 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 20]
+//[quake target =".bln" power = 3 time = 0.2]
+人類の運命を[r]
+決める武道大会[r]
+セルゲームの日が[r]やってきた
+[p]
+
+*001
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0003L" bg = "bg_000_024"]
+ 
+[character x=-170 y=-220 storage = "00003/card_32" scale = 1.0 angle =2 action = "fadein" time = 0.1]
+
+ 
+[balloon x=140 y=-15 shape="003_01" scale = 1.3 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 17]
+//[quake target =".bln" power = 3 time = 0.2]
+１番手でセルと闘う[r]
+悟空だったが[r]
+まさかの降参宣言[r]
+　[r]
+悟空は[r]
+次にセルと闘う[r]戦士として[r]
+息子・悟飯を[r]
+指名するのだった…
+[p]
+
+*002
+//-------------------------------------------------------------------------------
+//  超サイヤ人２孫悟飯
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_005_005"]
+ 
+[character x = 160 y = -180 storage = "00203/card_1004010" scale = 1.5 action = "fadein" time = 0.1]
+
+[character id = "ss2" x = 30+170 y = 140-180 storage = "99999/supersaiyan2" scale = 1.0 angle = 0 action = "fadein" time = 0.1]
+[flip target ="ss2" h=1]
+
+ 
+[balloon x=-130 y=50 shape="001_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+もうゆるさないぞ[r]
+おまえたち…
+[p]
+
+*003
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0003L" bg = "bg_000_014"]
+
+//[character id = "gohan" x=180 y=-455 storage = "00203/card_03" scale = 2.0 action = "fadein" time = 0.1]
+
+[character x=-225 y=-100 storage = "00204/atc_sp02_p_01" scale = 1.0 action = "fadein" time = 0.1]
+
+ 
+[balloon x=150 y=0 shape="003_02" scale = 1.5 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 15]
+//[quake target =".bln" power = 3 time = 0.2]
+怒りを爆発させ[r]
+真の力を解放した悟飯は[r]
+セルを圧倒する[r]
+　[r]
+追いこまれたセルは[r]
+地球を巻き添えに[r]
+自爆しようとするのだった[r]
+　[r]
+すべての終わりかと[r]
+思われたそのとき…
+[p]
+
+//フェードアウト（フェードアウトするコマ）
+[balloon x=0 y=0 shape="008_03" scale = 50.0 action = "fadein" time = 0.5]
+
+[wait time = 0.7] 
+
+
+
+*004
+//-------------------------------------------------------------------------------
+//  超サイヤ人孫悟空
+//-------------------------------------------------------------------------------
+[coma shape="S0001" bg = "bg_005_002"]
+
+
+[character x=40+90 y=0 storage = "00003/itenms_05021" scale = 0.9 action = "fadein" time = 0.1]
+
+
+[balloon x=0 y=0 shape="008_03" scale = 50]
+[wait time = 1]
+[fadeout target = ".bln" time = 2]
+[wait_anim target=".bln"]
+
+
+
+[balloon x=-140 y=370 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+やっぱどう考えても[r]これしか…[r]
+地球が助かる道は[r]
+思い浮かばなかった… 
+[p] 
+
+
+[balloon x=-140 y=-130 shape="001_03" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 40]
+//[quake target =".bln" power = 3 time = 0.2]
+バイバイ[r]みんな… 
+[p]
+
+*005
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0003R" bg = "bg_005_005"]
+ 
+ 
+[balloon x=0 y=5 shape="003_02" scale = 1.3 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 17]
+//[quake target =".bln" power = 3 time = 0.2]
+爆発寸前のセルを連れ[r]
+瞬間移動する悟空…[r]
+　[r]
+悟空の命と引き換えに[r]
+地球の危機は救われ[r]
+セルは死んだと[r]
+思われたが…
+[p]
+
+*015-1
+//-------------------------------------------------------------------------------
+//  セルのビームにトランクスが撃ち抜かれる。
+//-------------------------------------------------------------------------------
+[stopbgm]
+
+//[se storage = "04"]
+[coma shape="N0004L" bg = "bg_000_014"]
+
+
+[character id="bm" x = -950 y = -40 storage = "99999/beam_04" scale = 2.0 action = "fadein" time = 0.1 angle=180]
+
+[wait time=0.1]
+[se storage = "3006"]
+[move target="bm" x=30 time=0.1]
+//ビッ
+[lwfobject id = "kaki2" storage="kakimoji:ef_025" in="04" x=0 y=85 scale = 1.3 action = "fadein" time = 0.1 angle=20]
+[quake target = "kaki2" power = 15 time = 0.3]
+
+[wait_anim target="bm"]
+[quake target="bm" power=1 time=300]
+
+[wait time=0.3]
+
+*015-2
+//-------------------------------------------------------------------------------
+//  セルのビームにトランクスが撃ち抜かれる。
+//-------------------------------------------------------------------------------
+[se storage = "3005"]
+[coma shape="N0003L" bg = "bg_005_002"]
+
+[lwfobject id = "kaki2" storage="kakimoji:ef_017" in="04" x=-80 y=120 scale = 2.0 action = "fadein" time = 0.1 angle=-15]
+[quake target = "kaki2" power = 15 time = 0.4]
+
+
+[character id="bk" x = 0 y = 0 storage = "99999/black" scale = 2.0 action = "fade:65" time = 0.1 mask="inside"]
+
+[character id="bm1" x = 350 y = -10 storage = "99999/beam_04" scale = 1.4 action = "fadein" time = 0.1]
+
+[character id="tra" x = 140 y = -150 storage = "00411/dam_side_p_03" scale = 1.6 action = "fadein" time = 0.1 angle=-40]
+[flip target="tra" h=1]
+
+[character id="bm2" x = -280 y = -10 storage = "99999/beam_04" scale = 1.4 action = "fadein" time = 0.1 angle=180]
+
+[quake target="bm1" power=1 time=300]
+[quake target="bm2" power=1 time=300]
+[quake target = "tra" power = 5 time = 0.4] 
+
+
+
+[wait time=0.7]
+
+
+//空のフキダシ
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+
+
+*016
+//-------------------------------------------------------------------------------
+//  ベジータ
+//-------------------------------------------------------------------------------
+[se storage = "03"]
+[coma shape="N0004R" bg = "bg_000_014"]
+
+[lwfobject id = "kaki1" storage="kakimoji:ef_001" in="04" x=-130 y=50 angle = -12 scale = 2.8 action = "fadein" time = 0.1]
+[quake target = "kaki1" power = 12 time = 0.4]
+
+
+//[character id="veg" x=250 y=-700 storage = "00004/card_01" scale =2.5 angle = -5 action = "fadein" time = 0.1]
+[character id="veg" x=290 y=-660 storage = "00004/card_02" scale =2.5 angle = -5 action = "fadein" time = 0.1]
+
+
+//[character x = 80 y = -40 storage = "00004/card_16" scale = 1.9 action = "fadein" time = 0.1]
+//[character x = 140 y = -60 storage = "00004/atc_front_p_01" scale = 2.2 action = "fadein" time = 0.1 angle=30]
+
+
+
+//空のフキダシ
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+//フェードアウト（フェードアウトするコマ）
+
+[balloon x=0 y=0 shape="008_03" scale = 50.0 action = "fadein" time = 0.5]
+
+[wait time = 0.7] 
+
+
+
+*017
+//-------------------------------------------------------------------------------
+//  パーフェクトセル
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="S0001" bg = "bg_005_002"]
+
+
+[lwfobject id = "kaki2" storage="kakimoji:ef_009" x=-220 y=-80 scale = 1.5 action = "fadein" time = 0.1 angle=0 action = "fadein" time = 0.1]
+[quake target = "kaki2" power = 1 time = 300]
+
+
+
+[character id = "ss" x = 0 y = 210 storage = "99999/supersaiyan" scale = 1.6 action = "fade:50" time = 0.1]
+[quake target = "ss" power = 2 time = 300]
+
+[character id = "ss3" x = 0 y = -50 storage = "99999/supersaiyan2" scale = 1.0 angle = 5 action = "fadein" time = 0.1]
+//[flip target ="ss3" h=1]
+[quake target = "ss3" power = 2 time = 300]
+
+
+//[character x = 0 y = 0 storage = "00205/card_02" scale = 1.0 action = "fadein" time = 0.1]
+[character x = -2 y = 10 storage = "00205/card_12" scale = 1.0 action = "fadein" time = 0.1]
+
+[character id = "ss2" x = 30 y = 140 storage = "99999/supersaiyan2" scale = 1.2 angle = 0 action = "fadein" time = 0.1]
+[flip target ="ss2" h=1]
+[quake target = "ss2" power = 2 time = 300]
+
+
+[balloon id = "kuro" x=0 y=0 shape="008_03" scale = 50]
+[wait time = 1]
+
+[balloon x=-140 y=470 shape="002_03" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+くっくっく…[r]
+当たったのは誰だ？
+[p]
+
+[balloon x=150 y=-220 shape="002_02" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+//[quake target =".bln" power = 3 time = 0.2]
+…トランクスか
+[p]
+
+[bgm storage = "028"]
+
+[fadeout target = "kuro" time = 3]
+[wait_anim target="kuro"]
+
+
+
+[balloon x=0 y=0 shape="002_02" scale = 0 action = "fadein" time = 0.1]
+[p]
+
+
+
+
+*008
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0003L" bg = "bg_005_002"]
+ 
+[balloon x=-0 y=-20 shape="003_02" scale = 1.4 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 16]
+//[quake target =".bln" power = 3 time = 0.2]
+自爆後に[r]
+残った核から再生し[r]
+復活したセル…[r]
+　[r]
+より完璧になって[r]
+帰ってきたセルは[r]
+トランクスを殺し[r]
+今度は[r]
+人類も地球も[r]
+すべて滅ぼそうとする…
+[p]
+
+*023
+//-------------------------------------------------------------------------------
+//  ベジータ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0004R" bg = "bg_000_014"]
+
+[character id="bm1" x = 350-290 y = -10-90 storage = "99999/beam_04" scale = 1.4 action = "fade:100" time = 0.1]
+[paint target="bm1" color="#424242"]
+
+
+[character id="tra" x = 140-290 y = -150-90 storage = "00411/dam_side_p_03" scale = 1.6 action = "fade:100" time = 0.1 angle=-40]
+[flip target="tra" h=1]
+[paint target="tra" color="#424242"]
+
+
+[character id="bm2" x = -280-290 y = -10-90 storage = "99999/beam_04" scale = 1.4 action = "fade:100" time = 0.1 angle=180]
+[paint target="bm2" color="#424242"]
+
+
+
+//[character id="veg" x=250 y=-700 storage = "00004/card_01" scale =2.5 angle = -5 action = "fadein" time = 0.1]
+[character id="veg" x=290 y=-660 storage = "00004/card_02" scale =2.5 angle = -5 action = "fadein" time = 0.1]
+
+
+[balloon x = -150 y = 100 shape="004_03" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+ト……[r]
+トランクス……
+[p]
+
+//点滅
+[se storage = "50"]
+[balloon shape="008_02" x = 0 y = 0 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+
+*023-2
+//-------------------------------------------------------------------------------
+//  ベジータ
+//-------------------------------------------------------------------------------
+//[se storage = "50"]
+[coma shape="N0002R" bg = "bg_005_002"]
+
+
+
+[lwfobject id = "kaki1" storage="kakimoji:ef_020" in="04" x=-80 y=90 angle = -10 scale = 1.8 action = "fadein" time = 0.1] 
+[quake target = "kaki1" power = 11 time = 0.4] 
+
+
+[character id = "ki" x=130 y=-140 storage = "99999/ef_aura_front" scale = 1.8 action = "fadein" time = 0.1]
+[quake target="ki" power=2 time=300]
+[paint target="ki" color="#F4FA58"]
+[character id = "ki2" x=130 y=-140 storage = "99999/ef_aura_front" scale = 1.8 action = "fadein" time = 0.1]
+[quake target="ki2" power=2 time=300]
+[paint target="ki2" color="#F4FA58"]
+
+
+[character id="veg1" x = 150 y = -150 storage = "00002/card_02" scale = 0.8 action = "fadein" time = 0.1]
+[quake target = "veg1" power = 5 time = 0.4] 
+
+
+[balloon x = -150 y = -180 shape="007_02" scale = 0.75 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+[quake target =".bln" power = 7 time = 0.2]
+くっそおーっ！！
+[p]
+
+
+
+[stopbgm]

@@ -1,0 +1,142 @@
+*start|スタート
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "013"]
+
+*001
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0003L" bg = "bg_000_016"]
+
+[balloon x=0 y=0 shape="003_01" scale = 1.5 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 15]
+//[quake target =".bln" power = 3 time = 0.2]
+未来の世界で[r]
+トランクスが[r]
+人造人間17号・18号を[r]
+倒してから[r]
+３年余りの月日が[r]
+流れた…
+[p]
+
+*002
+//-------------------------------------------------------------------------------
+//  トランクス（青年期）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_014_001"]
+
+//[character x = 190 y = -220 storage = "00411/card_01" scale = 1.2 action = "fadein" time = 0.1]
+[character x = 260 y = -130 storage = "00411/idl_side_e_02" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x = -120 y = 60 shape="001_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+そこにいるのは[r]
+わかっているぞ[r]
+セル！
+[p]
+
+*003
+//-------------------------------------------------------------------------------
+//  セル（第一形態）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_014_001"]
+
+[wait time = 0.7]
+
+[se storage = "48"]
+[character x = -250 y = -80 storage = "00006/idl_side_p_02" scale = 1.4 action = "fadein" time = 0.7]
+
+[wait time = 1.0]
+
+[balloon id = "01" x = 100 y = 80 shape="002_02" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target = "01"]
+[font size = 54]
+………
+[p]
+
+*004
+//-------------------------------------------------------------------------------
+//  トランクス（青年期）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_014_001"]
+
+//[character x = 190 y = -220 storage = "00411/card_01" scale = 1.2 action = "fadein" time = 0.1]
+[character x = 260 y = -130 storage = "00411/idl_side_e_02" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x = -125 y = 90 shape="001_02" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+オレを殺しタイムマシンを奪い[r]
+過去へ行って[r]１７号と１８号を吸収する[r]つもりなんだろ？
+[p]
+
+[balloon x = -120 y = -110 shape="001_03" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+完全体に[r]
+なるために……
+[p]
+
+*005
+//-------------------------------------------------------------------------------
+//  セル（第一形態）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_014_001"]
+
+[character x = -250 y = -80 storage = "00006/idl_side_p_02" scale = 1.4 action = "fadein" time = 0.1]
+
+[balloon x=100 y=85 shape="002_01" scale = 0.65 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 44]
+[quake target =".bln" power = 3 time = 0.2]
+なに！？
+[p]
+
+[balloon x=130 y=-100 shape="002_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+な…なぜ[r]
+そのことを……！！
+[p]
+
+*006
+//-------------------------------------------------------------------------------
+//  トランクス（青年期）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_014_001"]
+
+
+[character x = 165 y = -250 storage = "00411/card_02" scale = 1.1 action = "fadein" time = 0.1]
+
+
+[balloon x = -160 y = 70 shape="001_03" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+その計画は失敗だ
+[p]
+
+[balloon x = -140 y = -190 shape="001_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+そしてこれで[r]
+すべてが終わる！
+[p]
+
+//-------------------------------------------------------------------------------
+[stopbgm]

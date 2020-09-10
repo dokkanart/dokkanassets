@@ -1,0 +1,208 @@
+*start|スタート
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+//[bgm storage = "046"]
+
+*001
+//-------------------------------------------------------------------------------
+//  セル（完全体）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_016"]
+
+//[character x = -210 y = -240 storage = "00205/idl_side_p_01" scale = 1.15 action = "fadein" time = 0.1]
+[character x = -200 y = -330 storage = "00205/card_04" scale = 1.1 action = "fadein" time = 0.1]
+
+
+[balloon x=100 y=90 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+やるじゃないか[r]
+ほんとに…[r]
+ここまで楽しめるとは[r]
+正直 思わなかったぞ
+[p]
+
+[balloon x=120 y=-100 shape="002_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+この闘いを[r]
+場外負けなどで[r]
+終わらせるのは惜しい…
+[p]
+
+*002
+//-------------------------------------------------------------------------------
+//  超サイヤ人孫悟空
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_016"]
+
+//[character x=210 y=-110 storage = "00003/SR_idl_side_e_02" scale = 1.1 action = "fadein" time = 0.1]
+[character x = 250 y = -120 storage = "00003/card_07" scale = 0.85 action = "fadein" time = 0.1]
+
+
+[balloon x = -105 y = 80 shape="001_03" scale = 0.65 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 44]
+//[quake target =".bln" power = 3 time = 0.2]
+え？
+[p]
+
+*003
+//-------------------------------------------------------------------------------
+//  セル（完全体）
+//-------------------------------------------------------------------------------
+[se storage = "3014"]
+[coma shape="N0004L" bg = "bg_000_014"]
+
+[wait time = 0.1]
+
+[character x = -800 y = -100 storage = "00205/atc_energyball_p_01" scale = 1.4 angle = 15 action = "fadein" time = 0.1]
+[move target =".chara" x=-530 time = 1.0 ease="Out:10"]
+[move target =".chara" y=-230 time = 1.0 ease="Out:10"]
+
+[wait time = 1.5]
+
+[balloon x=130 y=70 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+場外負けというのは……[r]
+ルールからはずそう
+[p]
+
+[balloon x=130 y=-110 shape="002_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+わたしたちには[r]
+なんの意味もない
+[p]
+
+[se storage = "3024"]
+//点滅
+[balloon shape="008_02" x = 0 y = 0 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+
+
+
+*004
+//-------------------------------------------------------------------------------
+//  セルがリングを破壊する。
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0003R" bg = "bg_005_001"]
+
+[wait time=0.3]
+
+[lwfobject id = "kaki2" storage="kakimoji:ef_019" x=0 y=30 scale = 3.2 action = "fadein" time = 0.1]
+[quake target = "kaki2" power = 15 time = 1.0]
+
+[character x = 50 y = -200 storage = "99999/ef_sp_explosion" scale = 2.5 action = "expand" time = 0.1]
+//[quake target =".chara" power = 12 time = 1.0]
+
+[se storage = "3013"]
+[quake target =".coma" power = 5 time = 1.0]
+
+[wait_anim target="kaki2"]
+
+//空のフキダシ
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+*005
+//-------------------------------------------------------------------------------
+//  セル（完全体）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0003L" bg = "bg_005_005"]
+
+[wait time=0.7]
+
+//[se storage = "3035"]
+//[se storage = "3022"]
+//[character x = -210 y = -240 storage = "00205/idl_side_p_01" scale = 1.15 action = "fadein" time = 0.1]
+//[quake target = ".chara" power = 2 time = 0.3]
+
+[character x = -200 y = -330 storage = "00205/card_04" scale = 1.1 action = "fadein" time = 0.7]
+
+[wait time=1.0]
+
+[balloon x = 120 y = 90 shape="002_03" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+これで[r]
+大地すべてが[r]
+リングになった
+[p]
+
+[balloon x=140 y=-80 shape="002_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+勝敗は[r]
+降参するか[r]
+死ぬかだけで決まる…
+[p]
+
+*006
+//-------------------------------------------------------------------------------
+//  超サイヤ人孫悟空
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_005_005"]
+
+[character x = 250 y = -120 storage = "00003/card_07" scale = 0.85 action = "fadein" time = 0.1]
+
+[balloon x = -105 y = 80 shape="001_03" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 40]
+//[quake target =".bln" power = 3 time = 0.2]
+なるほど…
+[p]
+
+[balloon x=-110 y=-110 shape="001_02" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+//[quake target =".bln" power = 3 time = 0.2]
+とことん[r]
+やりたいって[r]
+ことか…
+[p]
+
+*007
+//-------------------------------------------------------------------------------
+//  セル（完全体）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002L" bg = "bg_005_005"]
+
+//[character x = -145 y = -270 storage = "00205/atc_sp01_p_01" scale = 1.2 action = "fadein" time = 0.1]
+//[character x = -180 y = -380 storage = "00205/card_04" scale = 1.2 action = "fadein" time = 0.1]
+
+[character x = -135 y = -370 storage = "00205/card_15" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x=120 y=65 shape="002_01" scale = 0.65 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 44]
+//[quake target =".bln" power = 3 time = 0.2]
+さて…
+[p]
+
+[balloon x = 155 y = -180 shape="002_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+さっそく[r]
+広さをぞんぶんに[r]
+使わせてもらうか
+[p]
+
+//-------------------------------------------------------------------------------
+//[stopbgm]

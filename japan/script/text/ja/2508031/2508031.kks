@@ -1,0 +1,39 @@
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "026"]
+
+*001
+//-------------------------------------------------------------------------------
+//  悟飯（青年期）
+//-------------------------------------------------------------------------------
+[se storage = "3022"]
+[coma shape="b0001" bg = "bg_008_002"]
+
+
+[character id = "gohan" x = -120 y = -35 storage = "00420/card_02" scale = 1.4 action = "fadein" time = 0.1] 
+[quake target =".chara" power = 6 time = 0.4]
+
+
+[balloon x=-130 y=430 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 7 time = 0.2]
+お父さんは[r]
+あの世に行っても[r]
+がんばって修業を[r]
+続けていたんだ…
+[p]
+
+[balloon x=140 y=-430 shape="001_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+少しでも…[r]
+少しでも近づかなきゃ[r]…！
+[p]
+
+[stopbgm]
+

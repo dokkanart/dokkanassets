@@ -1,0 +1,71 @@
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+//[bgm storage = "012"]
+
+*001
+//-------------------------------------------------------------------------------
+//  悟空、身勝手の極意が完成する。
+//-------------------------------------------------------------------------------
+[se storage = "3038"]
+[coma id = "coma1" shape="S0001" bg = "bg_000_059"]
+
+[lwfobject id = "kaki1" storage="kakimoji:ef_009" x=0 y=0 scale = 3.5 action = "fadein" time = 0.1]
+[quake target = "kaki1" power = 1 time = 300]
+
+[quake target = "coma1" power = 10 time = 1.0]
+
+[wait_anim target="coma1"]
+
+[se storage = "03"]
+[balloon id = "gok" shape="010_25" x = 0 y = -420 scale = 3.0 action = "fadein" time = 0.1]
+[move target ="gok" y=180 time = 1.0]
+
+
+
+[se storage = "3025"]
+//点滅
+[balloon shape="008_02" x = 0 y = 0 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+//フェードアウト（フェードアウトするコマ）
+[balloon x=0 y=0 shape="008_02" scale = 50.0 action = "fadein" time = 0.5]
+[wait time = 0.7] 
+
+
+
+
+*002
+//-------------------------------------------------------------------------------
+//  その光の中から、身勝手の極意“兆”の悟空が現れる。
+//-------------------------------------------------------------------------------
+[coma shape="S0001" bg = "bg_000_047"]
+
+
+[balloon x=0 y=0 shape="008_02" scale = 50]
+[wait time = 1]
+
+
+//[se storage = "3038"]
+
+//[balloon id = "iwa2" x=0 y=-100 shape="010_23" scale = 1.7 action = "fadein" time = 2.0]
+//[move target ="iwa2" y=0 time = 30]
+
+//[balloon id = "iwa1" x=0 y=-200 shape="010_22" scale = 1.5 action = "fadein" time = 2.0]
+//[move target ="iwa1" y=0 time = 30]
+
+//[wait time = 2]
+
+[balloon id = "gok" x=25 y=0 shape="010_26" scale = 1.2 action = "fadein" time = 3.0]
+
+[wait_anim target="gok"]
+
+// 空のフキダシ（セリフがないコマを送るために使用）
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+
+
+//[stopbgm]

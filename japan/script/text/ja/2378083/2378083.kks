@@ -1,0 +1,377 @@
+*start|スタート
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "076"]
+
+*001
+//-------------------------------------------------------------------------------
+//  悟飯が飛んでくる。
+//-------------------------------------------------------------------------------
+[se storage = "09"]
+[coma shape="S0001" bg = "bg_000_016"]
+
+
+[lwfobject id = "kaki1" storage="kakimoji:ef_008" x=100 y=380 scale = 2.0 angle = 35 action = "fadein" time = 0.1]
+[quake target = "kaki1" power = 15 time = 0.4]
+
+
+
+[character id = "gohan" x = 0 y = 15 storage = "00235/card_07" scale = 1.1 angle = -15 action = "expand" time = 0.2]
+[quake target = "gohan" power = 3 time = 0.4]
+
+[character id = "aura" x = 0 y = 35 storage = "99999/ef_aura_front" scale = 2.0 angle = -60 action = "expand" time = 0.2]
+[quake target = "aura" power = 1]
+
+//空のフキダシ
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+
+
+*002
+//-------------------------------------------------------------------------------
+//  魔人ブウ（悪）
+//-------------------------------------------------------------------------------
+[se storage = "03"]
+[coma shape="N0001L" bg = "bg_004_001"]
+
+[character x = -190 y = -270 storage = "00231/card_004" scale = 1.2 action = "fadein" time = 0.1]
+
+
+
+[lwfobject id = "kaki2" x = 80 y = 80 storage = "kakimoji:ef_002" scale = 2.2 angle = 12 action = "fadein" time = 0.1]
+[quake target = "kaki2" power = 9 time = 0.4]
+
+
+//空のフキダシ
+[balloon x = 0 y = 0 shape = "001_01" scale = 0]
+[p]
+
+
+[balloon x=120 y=-110 shape="002_02" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 40]
+//[quake target =".bln" power = 3 time = 0.2]
+ガウ…！！
+[p]
+
+
+*003
+//-------------------------------------------------------------------------------
+//  トランクス（幼年期）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_004_001"]
+
+[character x=210 y=-85 storage = "00200/heapup_e_01" scale = 1.1 action = "fadein" time = 0.1]
+
+
+
+[balloon x = -105 y = 50 shape="001_01" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+[quake target =".bln" power = 3 time = 0.2]
+悟飯さん！！
+[p]
+
+
+
+*004
+//-------------------------------------------------------------------------------
+//  孫悟天（幼年期）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_004_001"]
+
+[character x=200 y=-95 storage = "00225/idl_side_e_01" scale = 1.1 action = "fadein" time = 0.1]
+
+
+[balloon x = -120 y = 50 shape="001_03" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+[quake target =".bln" power = 3 time = 0.2]
+にいちゃん！！[r]よかった！！[r]死んだんじゃ[r]なかったんだね！！
+[p]
+
+
+*005
+//-------------------------------------------------------------------------------
+//  アルティメット孫悟飯
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_004_001"]
+
+[character x = 210 y = -140 storage = "00235/idl_side_e_01" scale = 1.2 action = "fadein" time = 0.1]
+
+//[character x=210 y=-140 storage = "00420/idl_side_e_01" scale = 1.2 action = "fade:70" time = 0.1]
+
+
+
+
+[balloon x = -130 y = 90 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+あぶないところを[r]
+助けられたんだ[r]
+界王神さまに…
+[p]
+
+
+[balloon x=-130 y=-110 shape="001_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+今まで[r]
+界王神さまのところに[r]
+いた…
+[p]
+
+
+*006
+//-------------------------------------------------------------------------------
+//  ピッコロ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_004_001"]
+
+[character x = 180 y = -90 storage = "00010/idl_side_e_02" scale = 1.5 action = "fadein" time = 0.1]
+
+
+[balloon x = -120 y = 90 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+あ…あれが[r]
+悟飯なのか…！？
+[p]
+
+
+[balloon x=-130 y=-100 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+…以前とは[r]
+気の種類がちがう…[r]
+……あ…あまさも[r]
+消えている……
+[p]
+
+
+*007
+//-------------------------------------------------------------------------------
+//  アルティメット孫悟飯
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_004_001"]
+
+[character x = 210 y = -140 storage = "00235/idl_side_e_01" scale = 1.2 action = "fadein" time = 0.1]
+
+
+[balloon x = -120 y = 50 shape="001_02" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+//[quake target =".bln" power = 3 time = 0.2]
+ほかの[r]
+みんなは？
+[p]
+
+
+*008
+//-------------------------------------------------------------------------------
+//  トランクス（幼年期）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_004_001"]
+
+[character x=210 y=-85 storage = "00200/heapup_e_01" scale = 1.1 action = "fadein" time = 0.1]
+
+
+[balloon x = -105 y = 50 shape="004_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+殺されちゃったよ[r]
+魔人ブウに…！！
+[p]
+
+
+*009
+//-------------------------------------------------------------------------------
+//  アルティメット孫悟飯
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_004_001"]
+
+[character x = 210 y = -140 storage = "00235/idl_side_e_01" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x = -130 y = 55 shape="001_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+なに！？ 母さんや[r]
+デンデたちもか…！？
+[p]
+
+
+*010
+//-------------------------------------------------------------------------------
+//  孫悟天（幼年期）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_004_001"]
+
+
+
+[character x=205 y=-100+20 storage = "00225/heapup_e_01" scale = 1.05 action = "fadein" time = 0.1]
+
+
+[balloon x = -120 y = 50 shape="001_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+そうだよ！！[r]
+ボクたち以外[r]
+みんなだよ！！
+[p]
+
+
+*011
+//-------------------------------------------------------------------------------
+//  アルティメット孫悟飯
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_004_001"]
+
+[character x = 210 y = -140 storage = "00235/idl_side_e_01" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x = -130 y = 90 shape="004_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+し…しまった…！！[r]
+デンデまで殺されて[r]
+いたとは……！！
+[p]
+
+
+[balloon x=-120 y=-100 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+な…なんてことだ！！[r]
+…頼みの綱の[r]
+ドラゴンボールが[r]
+消えちまった…！！
+[p]
+
+
+*012
+//-------------------------------------------------------------------------------
+//  魔人ブウ（悪）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_004_001"]
+
+[character x = -200 y = -310 storage = "00231/card_002" scale = 1.05 action = "fadein" time = 0.1]
+
+[balloon x=110 y=80 shape="002_03" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+//[quake target =".bln" power = 3 time = 0.2]
+へっへっへ…[r]
+おいしかったぞ
+[p]
+
+
+[balloon x=130 y=-100 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+みーんな[r]
+たべちゃったんだ[r]
+オレがチョコにしてな
+[p]
+
+
+*013
+//-------------------------------------------------------------------------------
+//  アルティメット孫悟飯
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_004_001"]
+
+//[character x = 0 y = -40 storage = "99999/beam_04" scale = 1.5 action = "fadein" time = 0.1]
+//[character x = 200 y = 40 storage = "00235/card_07" scale = 1.2 angle = -45 action = "fadein" time = 0.1]
+
+[character x = 210 y = -140 storage = "00235/idl_side_e_01" scale = 1.2 action = "fadein" time = 0.1]
+
+
+[balloon x = -130 y = 50 shape="001_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+…いや…ちがう…[r]
+…感じるぞ…[r]
+かすかな気を…
+[p]
+
+
+*014
+//-------------------------------------------------------------------------------
+//  魔人ブウ（悪）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_004_001"]
+
+[character x = -200 y = -310 storage = "00231/card_002" scale = 1.05 action = "fadein" time = 0.1]
+
+[balloon x=130 y=80 shape="002_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+キッキッキ…[r]
+おい おまえ…
+[p]
+
+
+[balloon x=130 y=-110 shape="002_03" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+オレと[r]
+たたかうつもりか？
+[p]
+
+
+*015
+//-------------------------------------------------------------------------------
+//  アルティメット孫悟飯
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_004_001"]
+
+[character x = 130 y = -140 storage = "00235/card_01" scale = 1.0 action = "fadein" time = 0.1]
+//[character x = -130 y = -100 storage = "00235/card_01" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon x = -160 y = 60 shape="001_03" scale = 0.65 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 44]
+//[quake target =".bln" power = 3 time = 0.2]
+ちがう
+[p]
+
+
+[balloon x=-160 y=-190 shape="001_02" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+//[quake target =".bln" power = 3 time = 0.2]
+きさまを[r]
+殺すつもりだ
+[p]
+
+
+
+//-------------------------------------------------------------------------------
+[stopbgm]

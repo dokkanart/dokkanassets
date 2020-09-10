@@ -1,0 +1,332 @@
+
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "003"]
+
+//-------------------------------------------------------------------------------
+//  ドゴオオン（フリーザ復活の音）
+//-------------------------------------------------------------------------------
+//[se storage = "3037"]
+[coma shape="N0002R" bg = "bg_000_003"]
+
+
+
+//バババッ
+//[se storage = "3001"]
+//[lwfobject id = "kaki1" storage="kakimoji:ef_024" in="04" x=-20 y=145 scale = 2.5]
+//[quake target = "kaki1" power = 14 time = 0.2]
+//[lwfobject id = "syuutyuu1" storage="syucyu:ef_005" mask="inside" loop=1 priority=10 scale=0.9]
+
+
+
+
+[character id = "pcl" x=0 y=-30 storage = "90003/spaceship" scale = 0.65 action = "fadein" time = 0.1]
+
+[wait time = 1.5]
+
+//ガッ
+[lwfobject id = "kaki2" storage="kakimoji:ef_019" in="04" x=0 y=150 scale = 3.0]
+[quake target = "kaki2" power = 12 time = 0.5]
+
+[se storage = "3017"]
+
+[quake target = "pcl" power = 10 time = 0.8]
+
+[wait time = 0.8]
+
+
+// 空のフキダシ
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+
+
+
+
+*coma2
+//-------------------------------------------------------------------------------
+//  フェードインでフリーザ登場
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0003R" bg = "bg_000_008"]
+
+[wait time = 0.7]
+
+[se storage = "3025"]
+
+[character x = 170 y = -90 storage = "00005/idl_side_e_01" scale = 1.0 action = "fadein" time = 1.5]
+
+[wait time = 1.5]
+
+
+
+// 空のフキダシ
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+*coma3
+//-------------------------------------------------------------------------------
+//  ソルベタゴマシサミ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_008"]
+
+[character x = -250 y = -90 storage = "00248/atc_sp01_p_01" scale = 0.8 action = "fadein" time = 0.1]
+
+[character x = -120 y = -90 storage = "00303/atc_sp01_p_01" scale = 0.9 action = "fadein" time = 0.1]
+
+[character x = -170 y = -140 storage = "00247/idl_side_p_01" scale = 1.0 action = "fadein" time = 0.1]
+
+
+[balloon x = 140 y = 100 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][font size = 28]
+お…[r]
+おかえりなさいませ
+[p]
+
+
+[balloon x = 150 y = -110 shape="002_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][font size = 36]
+
+フリーザ様…
+[p]
+
+*coma4
+//-------------------------------------------------------------------------------
+//  フリーザ（第一形態）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_008"]
+
+[character x = 190 y = -190 storage = "00005/idl_front_e_01" scale = 1.1 action = "fadein" time = 0.1]
+
+[balloon x = -130 y = 100 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][font size = 28]
+…どうやら本当に[r]
+生き返ったようですね
+[p]
+
+*coma5
+//-------------------------------------------------------------------------------
+//  ソルベ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_008"]
+
+
+
+[character x = -190 y = -130 storage = "00247/idl_side_p_01" scale = 1.8 action = "fadein" time = 0.1]
+
+
+[balloon x = 150 y = 120 shape="002_02" scale = 0.65 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][font size = 50]
+はい
+[p]
+
+
+[balloon x = 130 y = -90 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][font size = 28]
+
+ドラゴンボールと[r]
+新型の再生装置で…
+[p]
+
+*coma6
+//-------------------------------------------------------------------------------
+//  フリーザ（第一形態）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_008"]
+
+[character x = 190 y = -130 storage = "00005/idl_side_e_01" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon x = -140 y = 100 shape="002_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][font size = 32]
+それは[r]
+ごくろうさま
+[p]
+
+
+
+*coma7
+//-------------------------------------------------------------------------------
+//  フリーザ（第一形態）
+//-------------------------------------------------------------------------------
+//[se storage = "3015"]
+[se storage = "04"]
+
+[coma shape="N0002R" bg = "bg_000_003"]
+
+//[lwfobject id = "kaki2" storage="kakimoji:ef_009" in="04" x=-210 y=-80 scale = 1.5]
+//[quake target = "kaki2" power = 2 time = 300]
+
+[character id = "pcl" x=0 y=-30 storage = "90003/spaceship" scale = 0.65 action = "fadein" time = 0.1]
+
+[wait time = 0.4]
+
+[balloon x = -140 y = 130 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][font size = 28]
+さあ[r]
+地球へ[r]
+向かいなさい
+[p]
+
+
+
+[balloon x = 140 y = -120 shape="002_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][font size = 28]
+[quake target = ".bln" power = 3 time = 0.2]
+はじめますよ[r]
+超サイヤ人への[r]
+復讐を…！！
+[p]
+
+
+*coma8
+//-------------------------------------------------------------------------------
+//  ソルベ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_008"]
+
+
+
+[character x = -190 y = -130 storage = "00247/heapup_p_01" scale = 1.8 action = "fadein" time = 0.1]
+
+
+[balloon x = 140 y = 90 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][font size = 28]
+[quake target = ".bln" power = 3 time = 0.2]
+ふ…復讐ですか？[r]
+…申し上げにくいの[r]
+ですが…
+[p]
+
+
+[balloon x = 130 y = -90 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][font size = 28]
+あの孫悟空という[r]
+サイヤ人は…[r]
+そ…その後さらに…
+[p]
+
+*coma9
+//-------------------------------------------------------------------------------
+//  フリーザ（第一形態）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_008"]
+
+[character x = 190 y = -130 storage = "00005/idl_side_e_01" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon x=-120 y=120 shape="002_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+さらに強くなっている[r]
+ということですか？
+[p]
+
+[balloon x=-110 y=-90 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+おもしろいじゃ[r]
+ありませんか…
+[p]
+
+*coma10
+//-------------------------------------------------------------------------------
+//  フリーザ（第一形態）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0003R" bg = "bg_000_008"]
+
+[lwfobject id = "kaki2" storage="kakimoji:ef_009" in="04" x=210 y=-130 scale = 1.5]
+[quake target = "kaki2" power = 2 time = 300]
+
+[character x = 220 y = -290 storage = "00005/card_01" scale = 1.6 action = "fadein" time = 0.1]
+
+[balloon x=-120 y=120 shape="002_02" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+このわたしが[r]
+トレーニングをして[r]
+潜在能力を引き出せば…
+[p]
+
+[balloon x=-100 y=-90 shape="002_03" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+[quake target =".bln" power = 3 time = 0.2]
+あの孫悟空でも[r]
+あっという間に[r]
+ひねり潰せるでしょう…！
+[p]
+
+//フェードアウト（フェードアウトするコマ）
+[balloon x=130 y=40 shape="008_03" scale = 50.0 action = "fadein" time = 0.5]
+[wait time = 0.7] 
+
+*tikyu
+//-------------------------------------------------------------------------------
+//  タイトルロゴ
+//-------------------------------------------------------------------------------
+
+
+[coma id = "coma1" shape="S0001" bg = "bg_000_003"]
+
+//フェードイン（フェードインするコマ）
+[balloon x=130 y=40 shape="008_03" scale = 50]
+[wait time = 1]
+[fadeout target = ".bln" time = 2]
+[wait_anim target=".bln"]
+
+[wait time = 0.7]
+
+[balloon x=0 y=90 shape="003_01" scale = 1.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 15]
+//[quake target =".bln" power = 3 time = 0.2]
+最凶の帝王[r]
+フリーザの復活……！[r]
+　[r]
+トレーニングを終えた[r]
+フリーザは[r]
+１０００人の兵士を[r]
+引き連れ地球へと[r]
+向かうのだった[r]
+[p]
+
+*coma12
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0004L" bg = "bg_000_003"]
+
+[character id = "earth" x=230 y=20 storage = "99999/earth" scale = 0.3 action = "fadein" time = 0.1]
+
+[character id = "pcl" x=-120 y=-80 storage = "90003/spaceship" scale = 0.65 action = "fadein" time = 0.1]
+[quake target = "pcl" power = 0.5 time = 300]
+
+[balloon x=0 y=190 shape="003_01" scale = 1.5 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 18]
+//[quake target =".bln" power = 3 time = 0.2]
+最大の絶望が[r]
+訪れようと[r]していることを[r]
+悟空もベジータも[r]
+地球の戦士たちも[r]
+まだ知らない…！
+[p]
+
+//終わりのフェードアウト
+[balloon x=130 y=40 shape="008_03" scale = 50.0 action = "fadein" time = 0.5]
+[wait time = 3.5]
+
+[stopbgm]

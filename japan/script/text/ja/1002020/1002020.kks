@@ -1,0 +1,164 @@
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  場面転換
+//-------------------------------------------------------------------------------
+[bgm storage = "012"]
+
+
+*001
+//-------------------------------------------------------------------------------
+//  界王
+//-------------------------------------------------------------------------------
+[se storage = "3034"]
+//bg界王星
+[coma shape="N0001L" bg = "bg_080_001"]
+
+[character x = -180 y = -40 storage = "90001/stand" scale = 0.5 action = "fadein" time = 0.1]
+
+ //セリフ1
+[balloon x = 100 y =110 shape="005_01" scale = 0.8 action = "fadein" time = 0.1]
+ [wait_anim target=".bln"]
+
+ [font size = 32]
+ これからさらに[r]
+凶悪で手強い敵が[r]
+現れそうじゃ…
+[p]
+
+ 
+ 
+ //セリフ2
+[balloon x = 140 y = -100 shape="005_02" scale = 0.8 action = "fadein" time = 0.1]
+ [wait_anim target=".bln"]
+
+ [font size = 32]
+確実に[r]
+厳しい闘いになる[r]
+じゃろう
+[p]
+
+
+*002
+//-------------------------------------------------------------------------------
+//  界王
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+//bg界王星
+[coma shape="N0003L" bg = "bg_080_001"]
+
+[character x = -150 y = -50 storage = "90001/stand" scale = 0.7 action = "fadein" time = 0.1]
+
+ //セリフ1
+[balloon x = 130 y = 80 shape="005_01" scale = 0.8 action = "fadein" time = 0.1]
+ [wait_anim target=".bln"]
+
+ [font size = 32]
+…そこでじゃ！[r]
+[font color="#FF0000"]ドッカンモード[font color="#141414"]に[r]
+ついて教えよう[r]
+[p]
+
+ 
+ 
+ //セリフ2
+[balloon x = 140 y = -120 shape="005_02" scale = 0.75 action = "fadein" time = 0.1]
+ [wait_anim target=".bln"]
+
+ [font size = 36]
+心して[r]
+聞くのじゃぞ？
+[p]
+
+
+
+*003
+//-------------------------------------------------------------------------------
+//  界王
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+//bg界王星
+[coma shape="N0001L" bg = "bg_080_001"]
+
+
+[character x = -180 y = -40 storage = "90001/stand" scale = 0.5 action = "fadein" time = 0.1]
+
+
+//セリフ1
+[balloon x = 100 y = 80 shape="005_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+
+[font size = 28]
+[font color="#FF0000"]ドッカンモード[font color="#141414"]は[r]
+ドッカンゲージを[r]
+溜めることで発動する…
+[p]
+ 
+ 
+//セリフ2
+[balloon x = 120 y = -120 shape="005_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 3 time = 0.2]
+[font size = 32]
+戦士の限界を超えた[r]
+超大技なのじゃ！！
+[p]
+
+
+*004
+//-------------------------------------------------------------------------------
+//  界王
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+//bg界王星
+[coma shape="N0003L" bg = "bg_080_001"]
+
+[character x = -150 y = -50 storage = "90001/stand" scale = 0.7 action = "fadein" time = 0.1]
+
+
+//セリフ1
+[balloon x = 130 y = 80 shape="005_01" scale = 0.8 action = "fadein" time = 0.1]
+ [wait_anim target=".bln"]
+
+ [font size = 32]
+ついでに[r]
+ドッカンゲージの[r]
+溜め方も説明しよう[r]
+[p]
+ 
+ 
+ //セリフ2
+[balloon x = 110 y = -145 shape="005_02" scale = 0.9 action = "fadein" time = 0.1]
+ [wait_anim target=".bln"]
+
+ [font size = 28]
+その戦士と同じ属性と[r]
+同じ属性の気の玉なら[r]
+ゲージも[r]溜まりやすくなる！
+[p]
+
+
+
+
+*005
+//-------------------------------------------------------------------------------
+//  界王
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+//bg界王星
+[coma shape="N0002L" bg = "bg_080_001"]
+
+
+[character x = -150 y = -60 storage = "90001/stand" scale = 0.7 action = "fadein" time = 0.1]
+
+[balloon x = 145 y = 20 shape="005_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[quake target = ".bln" power = 3 time = 0.2]
+[font size = 32]
+[font color="#FF0000"]ドッカンモード[font color="#141414"]を活用[r]
+して強敵に対抗[r]
+するのじゃ！！
+[p]
+
+
+[stopbgm]

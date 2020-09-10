@@ -1,0 +1,257 @@
+*start|スタート
+
+//-------------------------------------------------------------------------------
+[bgm storage = "047"]
+//-------------------------------------------------------------------------------
+
+*001
+//-------------------------------------------------------------------------------
+//悟飯（未来）
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0001R" bg = "bg_015_001"]
+
+//[character x = 200 y = -120 storage = "00209/idl_side_e_01" scale = 1.2 action = "fadein" time = 0.1]
+[character x = 205 y = -180 storage = "00209/card_05" scale = 0.9 action = "fadein" time = 0.1]
+
+
+
+[balloon x = -130 y = 60 shape="004_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 7 time = 0.2]
+はあ…[r]はあ……！！
+[p]
+
+
+*002
+//----------------------------------------------------------
+//17号
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_015_001"]
+
+[character x = -200 y = -180 storage = "00021/17_card_01" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon x = 120 y = 60 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+ふっふっふ…[r]
+ではそろそろ[r]
+フルパワーでいくか
+[p]
+
+*003
+//-------------------------------------------------------------------------------
+//悟飯（未来）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_015_001"]
+
+[character x = 205 y = -180 storage = "00209/card_05" scale = 0.9 action = "fadein" time = 0.1]
+
+[balloon x = -110 y = 60 shape="004_02" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 40]
+[quake target =".bln" power = 3 time = 0.2]
+なに…！？
+[p]
+
+
+*004
+//-------------------------------------------------------------------------------
+//襲いかかる17号、18号
+//-------------------------------------------------------------------------------
+[se storage = "3014"]
+[coma shape="N0002L" bg = "bg_015_001"]
+
+[lwfobject id = "kaki1" storage="kakimoji:ef_023" in="02" x=0 y=-230 scale = 1.4 action = "expand" time = 0.2]
+[quake target ="kaki1" power = 9 time = 0.4]
+
+
+[character id = "18" x = 165 y = -100 storage = "00020/card_1003780" scale = 1.1 angle = 5 action = "expand" time = 0.2]
+[quake target ="18" power = 8 time = 0.4]
+
+[character id = "17" x = -130 y = -120 storage = "00021/card_1003790" scale = 1.3 action = "expand" time = 0.2]
+[quake target ="17" power = 8 time = 0.4]
+
+[wait_anim target = "kaki1"]
+
+
+[se storage = "3025"]
+//点滅
+[balloon shape="008_02" x = 0 y = 0 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+//[balloon shape="008_02" x = 0 y = 0 scale = 50 action = "fadein" time = 0.1]
+//[wait time = 0.3]
+//[clear target = ".bln"]
+
+[balloon x=0 y=0 shape="008_02" scale = 50.0 action = "fadein" time = 2.0]
+
+[wait time = 1.0] 
+
+
+//フェードアウト（フェードアウトするコマ）
+[stopbgm fadeout = 1.5]
+[balloon x=0 y=0 shape="008_03" scale = 50.0 action = "fadein" time = 0.5]
+[wait time = 0.7]
+
+
+
+*005
+//----------------------------------------------------------
+//トランクス（未来）
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="S0001" bg = "bg_000_068"]
+
+//フェードイン（フェードインするコマ）
+[balloon id = "kuro" x=0 y=0 shape="008_03" scale = 50]
+[wait time = 2]
+
+
+
+
+[balloon x = -130 y = 150 shape="004_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//s[quake target =".bln" power = 3 time = 0.2]
+…う……ん…[r]
+ご…悟飯さん……
+[p]
+
+
+
+[balloon x = 140 y = -140 shape="006_01" scale = 0.65 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 44]
+[quake target =".bln" power = 7 time = 0.2]
+はっ！！
+[p]
+
+[fadeout target = "kuro" time = 2]
+[wait_anim target="kuro"]
+
+
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+
+*006
+//----------------------------------------------------------
+//トランクス（未来）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_085"]
+
+[character x = -220 y = -120-30 storage = "00216/heapup_p_01" scale = 1.3 action = "fadein" time = 0.1]
+
+[balloon x = 120 y = 50 shape="004_01" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+か…[r]
+感じられない……！！[r]
+悟飯さんの気が……！！
+[p]
+
+
+*007
+//-------------------------------------------------------------------------------
+//
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0003R" bg = "bg_000_014"]
+
+[balloon x = 0 y = -30 shape="003_02" scale = 1.4 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 16]
+冷酷無比の[r]
+人造人間の前に[r]
+ついに悟飯も倒れた…[r]
+　[r]
+敬愛する悟飯の亡骸を[r]
+目の当たりにし[r]
+トランクスは絶叫する…
+[p]
+
+
+*008
+//-------------------------------------------------------------------------------
+//トランクス、超サイヤ人になる
+//-------------------------------------------------------------------------------
+[se storage = "3038"]
+[coma shape="S0001" bg = "bg_000_085"]
+
+[character id = "trks" x = -50 y = -70 storage = "00216/card_01" scale = 1.1 action = "fadein" time = 0.1]
+//[quake target ="trks" power = 1 time = 300]
+
+[balloon x = 170 y = 400 shape="006_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 7 time = 0.2]
+ウソだ……[r]
+悟飯さん！！[r]
+悟飯さーん！！
+[p]
+
+[se storage = "10"]
+[quake target ="trks" power = 9 time = 0.3]
+
+[balloon x = 0 y = -400 shape="007_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 7 time = 0.2]
+うわあああーっ！！
+[p]
+
+//点滅（白）
+[se storage = "3025"]
+//点滅
+[balloon shape="008_02" x = 140 y = -30 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+
+[clear target = "trks"]
+
+[character id = "super" x = -90 y = 50 storage = "99999/supersaiyan" scale = 1.4 action = "fade:50" time = 0.1]
+[quake target ="super" power = 2 time = 300]
+
+[character id = "trks" x = -50 y = -70 storage = "00216/card_01" scale = 1.1]
+
+[balloon id = "wh" shape="008_02" x = 140 y = -30 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+//[clear target = ".bln"]
+
+[fadeout target = "wh" time = 2.0]
+
+[wait_anim target="wh"]
+
+
+
+//フェードアウト（フェードアウトするコマ）
+[balloon x=0 y=0 shape="008_03" scale = 50.0 action = "fadein" time = 1.5]
+[wait time = 3.0] 
+
+[balloon x = -0 y = 0 shape="003_02" scale = 1.6 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 14]
+ついにトランクスは[r]
+超サイヤ人に目覚めた[r]
+　[r]
+…しかし[r]
+その引き換えに[r]
+失ったものは[r]
+あまりにも大きかった…[r]
+　[r]
+…そして[r]
+さらに３年の月日が[r]
+流れた……
+[p]
+
+//終わりのフェードアウト
+[stopbgm fadeout = 1.5]
+[balloon x=0 y=0 shape="008_03" scale = 50.0 action = "fadein" time = 0.5]
+[wait time = 2.5]
+

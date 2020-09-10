@@ -1,0 +1,331 @@
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+//[bgm storage = "012"]
+
+
+*01
+//-------------------------------------------------------------------------------
+//  占いババ
+//-------------------------------------------------------------------------------
+
+//[se storage = "04"]
+[coma shape="S0001" bg = "bg_022_001"]
+
+[character x = -140 y = 0 storage = "90003/uranai_baba" scale = 1.6 action = "fadein" time = 0.1]
+[wait_anim target=".chara"]
+
+[balloon x=140 y=210 shape="001_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target = ".bln" power = 3 time = 0.2]
+[font size = 28]
+ほっほっほ…[r]
+わしが占いババじゃ[p]
+
+[balloon x=125 y=-160 shape="001_02" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target = ".bln" power = 3 time = 0.2]
+[font size = 24]
+おまえが[r]
+わしのところへ来るのは[r]
+占いでわかっておったぞ[p]
+
+
+*02
+//-------------------------------------------------------------------------------
+//  占いババ
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_022_001"]
+
+[character x = -200 y = -70 storage = "90003/uranai_baba" scale = 1.5 action = "fadein" time = 0.1]
+
+[balloon x=80 y=150 shape="001_03" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target = ".bln" power = 3 time = 0.2]
+[font size = 24]
+…そして おまえが[r]
+聞きたいことは[r]
+「交換所」のことじゃな[p]
+
+[balloon x=100 y=-90 shape="001_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target = ".bln" power = 3 time = 0.2]
+[font size = 32]
+それも ちゃ〜んと[r]
+わかっておる[p]
+
+
+
+//---------------------------------------------
+
+[if !$is_cleared]    
+// 達成済みか否かは $is_cleared 変数に入っているので、それを用いて if 分岐します。
+
+//---------------------------------------------
+
+//*explain|任務内容詳細説明    // ラベルを付けておくと、テスターで見やすくなります。
+
+// ******************************************************
+//  ここには、
+//  まだ、このミッションを達成していない場合の展開を記述します。
+// ******************************************************
+
+*explain|任務内容詳細説明
+*03_mitatu
+//-------------------------------------------------------------------------------
+//  オバケ
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_022_001"]
+
+[character x = 180 y = 0 storage = "90003/obake" scale = 0.9 action = "fadein" time = 0.1]
+
+[balloon x=-125 y=70 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target = ".bln" power = 3 time = 0.2]
+[font size = 28]
+占いババさま[r]
+今日は[r]
+やけに親切ですね[p]
+
+
+
+*04_mitatu
+//-------------------------------------------------------------------------------
+//  占いババ
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_022_001"]
+
+[character x = -200 y = -70 storage = "90003/uranai_baba" scale = 1.5 action = "fadein" time = 0.1]
+
+[balloon x=125 y=120 shape="001_02" scale = 1 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target = ".bln" power = 3 time = 0.2]
+[font size = 24]
+「交換所」の来客が増えれば[r]
+わしの楽しみも増える[p]
+
+[balloon x=125 y=-100 shape="001_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target = ".bln" power = 3 time = 0.2]
+[font size = 28]
+それだけのことじゃよ[r]
+ひっひっひ…[p]
+
+
+
+*05_mitatu
+//-------------------------------------------------------------------------------
+//  オバケ
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_022_001"]
+
+[character x = 180 y = 0 storage = "90003/obake" scale = 0.9 action = "fadein" time = 0.1]
+
+[balloon x=-125 y=110 shape="001_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target = ".bln" power = 3 time = 0.2]
+[font size = 28]
+では わたしが[r]
+案内しましょう[p]
+
+[balloon x=-125 y=-90 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target = ".bln" power = 3 time = 0.2]
+[font size = 28]
+「交換所」とは[r]
+いろいろなアイテムを[r]
+交換できる場所です[p]
+
+
+*06_mitatu
+//-------------------------------------------------------------------------------
+//  占いババ
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_022_001"]
+
+[character x = -200 y = -70 storage = "90003/uranai_baba" scale = 1.5 action = "fadein" time = 0.1]
+
+[balloon x=125 y=80 shape="001_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target = ".bln" power = 3 time = 0.2]
+[font size = 28]
+いま オススメの[r]
+アイテムはなんじゃ？[p]
+
+*07_mitatu
+//-------------------------------------------------------------------------------
+//  オバケ
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_022_001"]
+
+[character x = 180 y = 0 storage = "90003/obake" scale = 0.9 action = "fadein" time = 0.1]
+
+[balloon x=-125 y=80 shape="001_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[quake target = ".bln" power = 3 time = 0.2]
+[font size = 28]
+修業場所の[r]
+「神様の神殿」です[r]
+占いババさま！[p]
+
+
+*08_mitatu
+//-------------------------------------------------------------------------------
+//  占いババ
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0002L" bg = "bg_022_001"]
+
+[character x = -150 y = -110 storage = "90003/uranai_baba" scale = 1.7 action = "fadein" time = 0.1]
+
+[balloon x=125 y=120 shape="001_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target = ".bln" power = 3 time = 0.2]
+[font size = 28]
+「神様の神殿」なら[r]
+ゼニーと交換してやろう[p]
+
+[balloon x=140 y=-180 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target = ".bln" power = 3 time = 0.2]
+[font size = 28]
+「ゼニ—交換所」で[r]
+待っておるぞ[p]
+
+
+//---------------------------------------------
+[else]
+//*has_been_cleared|すでに達成済み    // ラベルを付けておくと、テスターでチェックしやすくなります。
+
+// ******************************************************
+//  ここには、
+//  すでに、このミッションを達成している場合の展開を記述します。
+// ******************************************************
+
+*has_been_cleared|すでに達成済み
+
+*09
+//-------------------------------------------------------------------------------
+//  オバケ
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_022_001"]
+
+[character x = 180 y = 0 storage = "90003/obake" scale = 0.9 action = "fadein" time = 0.1]
+
+[balloon x=-100 y=120 shape="001_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target = ".bln" power = 3 time = 0.2]
+[font size = 32]
+占いババさま[p]
+
+[balloon x=-110 y=-80 shape="001_02" scale = 1 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target = ".bln" power = 3 time = 0.2]
+[font size = 24]
+このひと 以前「交換所」に[r]
+いらっしゃったような…？[p]
+
+
+*10
+//-------------------------------------------------------------------------------
+//  占いババ
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_022_001"]
+
+[character x = -200 y = -70 storage = "90003/uranai_baba" scale = 1.5 action = "fadein" time = 0.1]
+
+[balloon x=100 y=120 shape="001_03" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target = ".bln" power = 3 time = 0.2]
+[font size = 32]
+わかっておる[p]
+
+[balloon x=125 y=-90 shape="001_02" scale = 1 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target = ".bln" power = 3 time = 0.2]
+[font size = 24]
+今日は[r]
+ゼニー以外でも[r]
+交換ができることを[r]
+教えてやろうと思ってな[p]
+
+*11
+//-------------------------------------------------------------------------------
+//  オバケ
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_022_001"]
+
+[character x = 180 y = 0 storage = "90003/obake" scale = 0.9 action = "fadein" time = 0.1]
+
+[balloon x=-125 y=110 shape="001_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target = ".bln" power = 3 time = 0.2]
+[font size = 28]
+「交換pt」と[r]
+「秘宝」のことですね[p]
+
+[balloon x=-125 y=-100 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[quake target = ".bln" power = 3 time = 0.2]
+[font size = 28]
+こちらのほうも[r]
+どんどん活用して[r]
+いただきたいですね！[p]
+
+
+*12
+//-------------------------------------------------------------------------------
+//  占いババ
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0002L" bg = "bg_022_001"]
+
+[character x = -150 y = -110 storage = "90003/uranai_baba" scale = 1.7 action = "fadein" time = 0.1]
+
+[balloon x=125 y=110 shape="001_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target = ".bln" power = 3 time = 0.2]
+[font size = 32]
+ひっひっひ…[r]
+そうじゃのう[p]
+
+[balloon x=125 y=-190 shape="001_02" scale = 1 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[quake target = ".bln" power = 3 time = 0.2]
+[font size = 24]
+おぬしがまた「交換所」に[r]
+やってくる日を[r]
+楽しみにしておるぞ！[p]
+
+
+
+[endif]
+*conclusion|結び
+
+//---------------------------------------------
+
+
+
+//[stopbgm]

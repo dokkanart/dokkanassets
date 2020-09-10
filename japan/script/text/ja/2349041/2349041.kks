@@ -1,0 +1,137 @@
+//""エリア４ゴール"
+
+*start|スタート
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "013"]
+
+*001
+//-------------------------------------------------------------------------------
+//  "超サイヤ人悟空　超サイヤ人ベジータ"
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0003R" bg = "bg_050_001"]
+
+[character x = 50 y = -70 storage = "00281/SR_atc_energyball_e_01" scale = 0.8 action = "fadein" time = 0.1]
+
+[character x = 240 y = -80 storage = "00004/SSR_heapup_e_01" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x=-150 y=120 shape="004_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+ハアッ…[r]ハアッ……[r]
+く…くそ……！
+[p]
+
+*002
+//-------------------------------------------------------------------------------
+//  メタルクウラ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0003L" bg = "bg_050_001"]
+
+[character id = "5" x = 190 y = -130 storage = "00368/sc" scale = 1.0 action = "fadein" time = 0.1]
+[character id = "4" x = 40 y = -130 storage = "00368/sc" scale = 1.0 action = "fadein" time = 0.1]
+[character id = "6" x = -260 y = -160 storage = "00368/idl_side_p_01" scale = 1.0 action = "fadein" time = 0.1]
+[character id = "1s" x = -130 y = -230 storage = "00368/idl_side_p_01" scale = 1.4 action = "fadein" time = 0.1]
+[character id = "2s" x = 70 y = -180 storage = "00368/idl_side_p_01" scale = 1.0 action = "fadein" time = 0.1]
+[character id = "3s" x = 240 y = -170 storage = "00368/idl_side_p_01" scale = 0.8 action = "fadein" time = 0.1]
+
+[balloon x=120 y=-80 shape="002_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+ふふ…[r]
+それが限界らしいな
+[p]
+
+*003
+//-------------------------------------------------------------------------------
+//  超サイヤ人悟空
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_050_001"]
+
+[character x = 250 y = -90 storage = "00281/idl_side_e_02" scale = 1.1 action = "fadein" time = 0.1]
+
+[balloon x=-110 y=120 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+ど…どれだけ倒しても[r]
+やつの数は減らねえ…
+[p]
+
+[balloon x=-130 y=-90 shape="001_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+こっちのパワーが[r]
+減っていくだけだ…！
+[p]
+
+*004
+//-------------------------------------------------------------------------------
+//  メタルクウラ
+//-------------------------------------------------------------------------------
+[se storage = "03"]
+[coma shape="N0003L" bg = "bg_050_001"]
+
+//[lwfobject id = "kaki1" storage="kakimoji:ef_023" in="04" x=50 y=120 scale = 1.5]
+//[quake target = "kaki1" power = 15 time = 0.2]
+
+[character id = "5" x = 190 y = -130 storage = "00368/sc" scale = 1.0 action = "fadein" time = 0.1]
+[character id = "4" x = 40 y = -130 storage = "00368/sc" scale = 1.0 action = "fadein" time = 0.1]
+[character id = "6" x = -260 y = -160 storage = "00368/idl_side_p_01" scale = 1.0 action = "fadein" time = 0.1]
+[character id = "1s" x = -130 y = -230 storage = "00368/idl_side_p_01" scale = 1.4 action = "fadein" time = 0.1]
+[character id = "2s" x = 70 y = -180 storage = "00368/idl_side_p_01" scale = 1.0 action = "fadein" time = 0.1]
+[character id = "3s" x = 240 y = -170 storage = "00368/idl_side_p_01" scale = 0.8 action = "fadein" time = 0.1]
+
+[balloon x=120 y=-120 shape="006_02" scale = 0.8 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 7 time = 0.2]
+終わりだ…[r]
+超サイヤ人！！
+[p]
+
+
+[se storage = "3025"]
+//点滅
+[balloon shape="008_02" x = 0 y = 0 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+[balloon shape="008_02" x = 0 y = 0 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+
+
+*005
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0004R" bg = "bg_000_014"]
+
+
+
+
+[balloon x=0 y=-30 shape="003_01" scale = 1.5 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 16]
+//[quake target =".bln" power = 3 time = 0.2]
+全力を出し切った[r]
+悟空とベジータの前に[r]
+現れた何百体もの[r]
+メタルクウラ…！！[r]
+　[r]
+その圧倒的な[r]
+数とパワーの前に[r]
+ふたりは敗れ[r]
+捕らえられてしまう…
+[p]
+
+//-------------------------------------------------------------------------------
+[stopbgm]

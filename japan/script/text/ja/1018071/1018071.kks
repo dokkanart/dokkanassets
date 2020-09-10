@@ -1,0 +1,162 @@
+*start|スタート
+ 
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "005"]
+ 
+*001
+//-------------------------------------------------------------------------------
+//  トランクス
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0001R" bg = "bg_004_001"]
+ 
+[character x = 210 y = -200 storage = "90000/wait_right_anger" scale = 1.2 action = "fadein" time = 0.1]
+ 
+[balloon x=-90 y=110 shape="001_02" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+…魔界の者が[r]
+なぜ悟空さんの力を[r]
+借りようとしているんだ？
+[p]
+
+*002
+//-------------------------------------------------------------------------------
+//  メラ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_004_001"]
+ 
+[character x = -220 y = -180 storage = "00487/idl_side_p_01" scale = 1.5 action = "fadein" time = 0.1]
+ 
+[balloon x=80 y=120 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+…今の魔界は[r]
+もう何百年も王が[r]
+不在の状態なんだ…
+[p]
+ 
+[balloon x=120 y=-75 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+おまえたちが[r]
+いた次元ではどうか[r]
+知らないけどね
+[p]
+
+*003
+//-------------------------------------------------------------------------------
+//  ゴラ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_004_001"]
+ 
+[character x = -240 y = -100 storage = "00488/idl_side_p_01" scale = 1.4 action = "fadein" time = 0.1]
+ 
+[balloon x=120 y=120 shape="002_01" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+そして今[r]
+次元の歪みによって[r]
+世界の隔たりがなくなった
+[p]
+ 
+[balloon x=130 y=-90 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+王を探し[r]
+魔界へ連れ戻す[r]
+絶好の機会なんだ！
+[p]
+
+*004
+//-------------------------------------------------------------------------------
+//  トランクス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_004_001"]
+ 
+[character x = 210 y = -200 storage = "90000/think_right_anger" scale = 1.2 action = "fadein" time = 0.1]
+
+
+ 
+[balloon x=-100 y=110 shape="001_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+…それで[r]
+悟空さんの力も[r]
+借りたいと…？
+[p]
+ 
+[balloon x=-90 y=-90 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+いったい おまえたちと[r]
+悟空さんは[r]
+どういう関係なんだ？
+[p]
+
+*005
+//-------------------------------------------------------------------------------
+//  メラ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_004_001"]
+ 
+[character x = -220 y = -180 storage = "00487/idl_side_p_01" scale = 1.5 action = "fadein" time = 0.1]
+ 
+[balloon x=70 y=100 shape="002_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+悟空は…
+[p]
+
+*006
+//-------------------------------------------------------------------------------
+//  シュラの声
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0003L" bg = "bg_000_016"]
+ 
+//[character x = -120 y = -100 storage = "00025/atc_down_p_01" scale = 1.6 action = "fadein" time = 0.1]
+ 
+[balloon x=0 y=80 shape="002_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+おまえたち[r]
+何をしている！
+[p]
+
+*007
+//-------------------------------------------------------------------------------
+//  シュラが登場
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002L" bg = "bg_004_001"]
+
+[wait time = 0.7]
+
+//フェードイン 
+[character x = -80 y = -120 storage = "00486/card_1006050" scale = 1.6 action = "fadein" time = 0.7]
+
+[wait_anim target=".chara"]
+ 
+// 空のフキダシ（セリフがないコマを送るために使用）
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+ 
+//-------------------------------------------------------------------------------
+[stopbgm]

@@ -1,0 +1,388 @@
+
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "005"]
+
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0003L" bg = "bg_000_005"]
+
+
+
+//キャラがいないと吹き出しの出かたが変だよ
+//[wait_anim target=".chara"]
+
+[wait time = 0.7]
+
+[balloon x=0 y=130 shape="003_01" scale = 1.4 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 19]
+はるか彼方の[r]
+宇宙…[r]
+　[r]
+惑星ベジータで[r]
+ひとりの男の子が[r]
+産声をあげた…
+[p]
+
+*002
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+
+
+
+[se storage = "04"]
+[coma shape="N0004R" bg = "bg_000_003"]
+
+[character x=210 y=-220 storage = "00261/idl_back_e_01" scale = 1.2 action = "fadein" time = 0.1]
+
+
+[wait_anim target=".chara"]
+
+//[wait time = 0.7]
+
+[balloon x=-140 y=80 shape="003_01" scale = 1.5 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 18]
+
+「カカロット」と[r]
+名付けられた[r]
+この赤ん坊は[r]
+辺境の星・地球の[r]
+制圧のため[r]
+惑星ベジータを[r]
+飛び立とうとしていた
+[p]
+
+*003
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0004L" bg = "bg_000_009" scale = 10]
+
+//フリーザ
+[character x=-260 y=-310 storage = "00005/card_01" scale = 1.2 action = "fadein" time = 0.1]
+
+//トテッポ
+[character x=-120 y=-115 storage = "00078/idl_side_p_01" scale = 0.4 action = "fadein" time = 0.1]
+
+//パンブーキン
+[character x=-40 y=-130 storage = "00079/idl_side_p_01" scale = 0.4 action = "fadein" time = 0.1]
+
+//トーマ
+[character x=-160 y=-140 storage = "00077/idl_side_p_01" scale = 0.45 action = "fadein" time = 0.1]
+
+//セリパ
+[character x=-200 y=-130 storage = "00070/idl_side_p_01" scale = 0.35 action = "fadein" time = 0.1]
+
+//バーダック
+[character x=-80 y=-140 storage = "00067/idl_side_p_01" scale = 0.5 action = "fadein" time = 0.1]
+
+[wait_anim target=".chara"]
+
+[balloon x=160 y=85 shape="003_01" scale = 1.4 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 19]
+一方…[r]
+カカロットの父親[r]
+バーダックは[r]
+フリーザの命を受け[r]
+仲間とともに[r]
+カナッサ星の制圧へ[r]
+向かおうとしていた[r]
+……
+[p]
+
+[stopbgm]
+
+//フェードアウト
+[balloon x=130 y=40 shape="008_03" scale = 50.0 action = "fadein" time = 0.5]
+
+[wait time = 0.7]
+
+*title
+//-------------------------------------------------------------------------------
+//  title
+//-------------------------------------------------------------------------------
+
+
+[coma id = "coma1" shape="S0001" bg = "bg_000_003"]
+
+
+
+//フェードイン
+[balloon x=130 y=40 shape="008_03" scale = 50]
+[wait time = 1]
+[fadeout target = ".bln" time = 1]
+
+[wait_anim target=".bln"]
+
+
+
+[balloon x=30 y=0 shape="011_02" scale = 1.1 action = "fadein" time = 2.0]
+
+[wait_anim target=".bln"]
+
+[p]
+
+*004
+//-------------------------------------------------------------------------------
+//  パンブーキン
+//-------------------------------------------------------------------------------
+[bgm storage = "004"]
+
+//[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_009"]
+
+[character x=-220 y=-120 storage = "00079/idl_side_p_01" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon id="radhi1" x=125 y=120 shape="002_03" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+いやあ…しかし[r]
+フリーザ様には[r]
+感謝しなくちゃな
+[p]
+
+[balloon id="radhi2" x=120 y=-70 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+毎度毎度[r]
+オレたちをよく[r]
+使ってくださるぜ
+[p]
+
+*005
+//-------------------------------------------------------------------------------
+//  バーダック
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_009"]
+
+[character x=250 y=-160 storage = "00067/idl_side_e_01" scale = 1.5 action = "fadein" time = 0.1]
+
+[balloon x=-120 y=80 shape="002_03" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+…今度の[r]
+ターゲットは[r]
+カナッサ星か…
+[p]
+
+[balloon x=-120 y=-100 shape="002_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 3 time = 0.2]
+[font size = 32]
+へ…っ[r]
+腕が鳴るぜ…！
+[p]
+
+*006
+//-------------------------------------------------------------------------------
+//  セリパ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_009"]
+
+[character x=-200 y=-270 storage = "00070/heapup_p_01" scale = 1.5 action = "fadein" time = 0.1]
+
+[balloon id="radhi1" x=125 y=120 shape="002_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+カナッサ星の前に…
+[p]
+
+[balloon id="radhi2" x=120 y=-70 shape="002_03" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+自分の子供に[r]
+会ってきたら[r]
+どうなんだい？
+[p]
+
+*007
+//-------------------------------------------------------------------------------
+//  バーダック
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_009"]
+
+
+//アップ
+[character x=250 y=-278 storage = "00067/idl_side_e_01" scale = 1.9 action = "fadein" time = 0.1]
+
+[balloon x=-130 y=80 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+なんの見所もねえ[r]
+最下級兵士の[r]
+クソガキに…
+[p]
+
+[balloon x=-155 y=-100 shape="002_03" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+…わざわざ会いに行く[r]
+バカがいるか
+[p]
+
+
+*008
+//-------------------------------------------------------------------------------
+//  バーダック
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0004R" bg = "bg_000_009"]
+
+[character x=-350 y=-250 storage = "00070/idl_side_p_01" scale = 1.3 action = "fadein" time = 0.1]
+
+[character x=260 y=-280 storage = "00067/idl_side_p_01" scale = 2.0 action = "fadein" time = 0.1]
+
+[wait_anim target=".chara"]
+
+[balloon x=90 y=90 shape="002_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+どうにでもしろと[r]
+言っとけよ
+[p]
+
+
+
+[balloon id="radhi1" x=-50 y=-130 shape="002_01" scale = 0.7 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+ふ…[r]
+そうかい…
+[p]
+
+
+
+
+
+
+*010
+//-------------------------------------------------------------------------------
+//  バーダック
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0003L" bg = "bg_000_009"]
+
+//トテッポ
+[character x=-320 y=-75 storage = "00078/idl_side_p_01" scale = 0.6 action = "fadein" time = 0.1]
+
+//パンブーキン
+[character x=-120 y=-160 storage = "00079/idl_side_p_01" scale = 0.5 action = "fadein" time = 0.1]
+
+//トーマ
+[character x=-210 y=-180 storage = "00077/idl_side_p_01" scale = 0.8 action = "fadein" time = 0.1]
+
+//セリパ
+[character x=-330 y=-150 storage = "00070/idl_side_p_01" scale = 0.6 action = "fadein" time = 0.1]
+
+//バーダック
+[character x=150 y=-210 storage = "00067/idl_side_p_01" scale = 1.4 action = "fadein" time = 0.1]
+
+[wait time = 0.7]
+
+[balloon x=-20 y=80 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 3 time = 0.2]
+[font size = 28]
+さあ！[r]
+さっさとカナッサ星を[r]
+ぶっ潰しにいくぞ！
+[p]
+
+
+
+
+*011
+//-------------------------------------------------------------------------------
+//  トーマ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_009"]
+
+[character x=-140 y=-140 storage = "00077/atc_sp01_p_01" scale = 1.4 action = "fadein" time = 0.1]
+
+[balloon id="radhi1" x=150 y=120 shape="002_03" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 38]
+そうあせるなよ[r]
+バーダック
+[p]
+
+[balloon id="radhi2" x=145 y=-70 shape="002_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+出発の前に肩ならし[r]
+しておこうぜ
+[p]
+
+
+
+*012
+//-------------------------------------------------------------------------------
+//  バーダック
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_009"]
+
+[character x=250 y=-160 storage = "00067/idl_side_e_01" scale = 1.5 action = "fadein" time = 0.1]
+
+[balloon x=-100 y=80 shape="002_03" scale = 0.6 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 3 time = 0.2]
+[font size = 52]
+チ…ッ
+[p]
+
+[balloon x=-155 y=-100 shape="002_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+しょうがねえな…
+[p]
+
+
+*013
+//-------------------------------------------------------------------------------
+//  バーダック
+//-------------------------------------------------------------------------------
+[se storage = "3022"]
+[coma shape="N0002R" bg = "bg_000_009"]
+
+[lwfobject id = "ガッ" storage="kakimoji:ef_023" in="02" x = 170 y=-130 scale = 1.5 action = "fadein" time = 0.1]
+[quake target ="ガッ" power = 12 time = 0.2]
+
+[character x=220 y=-140 storage = "00067/heapup_e_01" scale = 1.5 action = "fadein" time = 0.1]
+[quake target =".chara" power = 5 time = 0.2]
+
+[balloon x=-140 y=80 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+じゃあ[r]
+かるく準備運動でも[r]
+するか…！
+[p]
+
+[balloon x=-160 y=-145 shape="002_03" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 3 time = 0.2]
+[font size = 32]
+てめえら[r]
+ちゃんとついて[r]
+こいよ！？
+[p]
+
+
+
+[stopbgm]
+

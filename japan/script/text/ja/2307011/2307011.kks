@@ -1,0 +1,121 @@
+//エリア１ゴール
+
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "013"]
+
+
+//-------------------------------------------------------------------------------
+//  ドーレ
+//-------------------------------------------------------------------------------
+
+[coma shape="N0001L" bg = "bg_000_022"]
+
+[character x=-230 y=-220 storage = "00286/idl_side_p_01" scale = 1.5 action = "fadein" time = 0.1]
+
+
+[balloon x=120 y=100 shape="002_01" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][font size = 25]
+こんなもんなのか？[r]
+伝説の超サイヤ人って[r]
+やつは…[p]
+
+*coma2
+//-------------------------------------------------------------------------------
+//  悟飯
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_022"]
+
+[character x=140 y=-135 storage = "00007/okappa_right" scale = 1.1 action = "fadein" time = 0.1]
+
+
+[balloon x=-120 y=70 shape="004_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][font size = 28][quake target =".bln" power = 3 time = 0.2]
+はあ…はあ……[r]
+く……くそー…[p]
+
+*coma3
+//-------------------------------------------------------------------------------
+//  ネイズ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_022"]
+
+[character x=-270 y=-220 storage = "00287/idl_side_p_01" scale = 1.5 action = "fadein" time = 0.1]
+
+
+[balloon x=120 y=100 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][font size = 28]
+拍子抜けだな…[r]
+もうオレたちだけで[r]
+片付けちまおうぜ！[p]
+
+*coma4
+//-------------------------------------------------------------------------------
+//  悟空
+//-------------------------------------------------------------------------------
+[se storage = "03"]
+[coma shape="N0001R" bg = "bg_000_022"]
+
+[balloon shape="006_01" x = -150 y = 90 scale = 0.75 action = "expand" time = 0.1]
+[font size = 42]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 7 time = 0.2]
+待てーっ！！
+
+[wait_anim target=".bln"]
+
+
+[character x=300 y=-160 storage = "00300/atc_energyball_e_02" scale = 1.5 action = "slide:right" time = 0.3]
+[wait time = 0.2]
+
+[se storage = "3022"]
+
+[lwfobject id = "kaki1" storage="kakimoji:ef_023" in="04" x=120 y=-120 scale = 1.2]
+[quake target = "kaki1" power = 15 time = 0.2]
+
+[wait time = 0.1]
+
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+*coma5
+//-------------------------------------------------------------------------------
+//  ドーレ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_022"]
+
+[character x=-230 y=-220 storage = "00286/idl_side_p_01" scale = 1.5 action = "fadein" time = 0.1]
+
+
+[balloon x=120 y=60 shape="002_03" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 34]
+[quake target =".bln" power = 3 time = 0.2]
+なんだおまえは！？[p]
+
+*coma6
+//-------------------------------------------------------------------------------
+//  悟空
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_000_022"]
+
+[character x=170 y=-140 storage = "00300/heapup_e_01" scale = 1.5 action = "fadein" time = 0.1]
+
+[balloon x=-140 y=80 shape="001_02" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 38]
+[quake target =".bln" power = 3 time = 0.2]
+オラ[r]
+孫悟空だ！！[p]
+
+
+
+
+[stopbgm]

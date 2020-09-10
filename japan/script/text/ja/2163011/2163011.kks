@@ -1,0 +1,102 @@
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+//[bgm storage = "012"]
+
+
+*01
+//-------------------------------------------------------------------------------
+//  ランチ（金髪）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_026_001"]
+
+[character x = -130 y = -220 storage = "00401/card_01" scale = 1.3 action = "fadein" time = 0.1]
+
+
+[balloon x=110 y=100 shape="001_03" scale = 0.65 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[quake target = ".bln" power = 3 time = 0.2]
+[font size = 44]
+へっ！
+[p]
+
+[balloon x=130 y=-110 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target = ".bln" power = 3 time = 0.2]
+[font size = 28]
+素直にわたせば[r]
+痛い目見ずに[r]
+すんだのによぉ！
+[p]
+
+
+
+*02
+//-------------------------------------------------------------------------------
+//  ランチ（金髪）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0003L" bg = "bg_000_014"]
+
+[wait time = 0.3]
+
+
+
+[balloon x=-150 y=70 shape="004_02" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target = ".bln" power = 3 time = 0.2]
+[font size = 40]
+は…は……
+[p]
+
+
+[se storage = "03"]
+
+[balloon x=130 y=-110 shape="006_01" scale = 0.8 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[quake target = ".bln" power = 7 time = 0.2]
+[font size = 32]
+はっくしょい！！
+//[p]
+
+//[wait time = 0.1]
+
+
+
+//点滅
+[balloon shape="008_02" x = 0 y = 0 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+
+*03
+//---------------------
+//  ランチ（黒髪）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002L" bg = "bg_000_016"]
+
+[character x = -140 y = -80 storage = "00401/card_02" scale = 1.0 action = "fadein" time = 0.1]
+
+[wait time = 0.3]
+
+[balloon x=130 y=70 shape="001_01" scale = 0.65 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target = ".bln" power = 3 time = 0.2]
+[font size = 44]
+あら〜？[p]
+
+[balloon x=140 y=-180 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target = ".bln" power = 3 time = 0.2]
+[font size = 28]
+わたし…[r]
+なにかいけないこと[r]
+しました？
+[p]
+
+[balloon x=0 y=0 shape="008_03" scale = 50.0 action = "fadein" time = 0.5]
+
+[wait time = 2.5]

@@ -1,0 +1,93 @@
+*start|スタート
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "017"]
+
+*001
+//-------------------------------------------------------------------------------
+//  魔人ブウ（善）
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_016"]
+
+[character x = -200 y = -110-20 storage = "00229/energyball_p_02" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x=100 y=80 shape="002_02" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 40]
+//[quake target =".bln" power = 3 time = 0.2]
+ん…？
+[p]
+
+
+*002
+//-------------------------------------------------------------------------------
+//  ゴテンクス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_016"]
+
+
+[character x = 210 y = -140 storage = "00276/idl_side_p_01" scale = 1.0 action = "fadein" time = 0.1]
+[flip target =".chara" h=1]
+
+[balloon x = -90 y = 90 shape="001_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+へへ…わるいな[r]
+ムダ口たたいてるヒマ[r]
+ねえんだ
+[p]
+
+
+[balloon x=-110 y=-105 shape="001_03" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+てっとりばやく[r]
+かたづけさせてもらうぜ！
+[p]
+
+
+*003
+//-------------------------------------------------------------------------------
+//  魔人ブウ（善）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_016"]
+
+[character x = -200 y = -110-20 storage = "00229/energyball_p_02" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x=120 y=80 shape="002_03" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+//[quake target =".bln" power = 3 time = 0.2]
+だれだ！？[r]
+おまえ！
+[p]
+
+
+*004
+//-------------------------------------------------------------------------------
+//  ゴテンクス
+//-------------------------------------------------------------------------------
+[se storage = "3022"]
+[coma shape="N0002R" bg = "bg_000_016"]
+
+[character x = 160 y = -110 storage = "00276/card_01" scale = 1.2 action = "fadein" time = 0.1]
+[quake target =".chara" power = 5 time = 0.4]
+
+[balloon x = -170 y = 50 shape="006_02" scale = 0.7 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 40]
+[quake target =".bln" power = 7 time = 0.2]
+いくぞ！[r]
+やーっ！！
+[p]
+
+
+
+//-------------------------------------------------------------------------------
+[stopbgm]

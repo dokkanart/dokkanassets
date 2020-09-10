@@ -1,0 +1,103 @@
+*start|スタート
+
+//"エリア５ゴール"
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "009"]
+ 
+*001
+//-------------------------------------------------------------------------------
+// 大爆発が起こる。
+//-------------------------------------------------------------------------------
+[se storage = "3016"]
+[coma shape="S0001" bg = "bg_000_014"]
+ 
+[lwfobject id = "kaki2" storage="kakimoji:ef_019" in="04" x=0 y=350 scale = 3.5 action = "fadein" time = 0.1]
+[quake target = "kaki2" power = 15 time = 1]
+
+[character x=0 y=20 storage = "99999/ef_explode_005" scale = 3.0 angle = -20 action = "expand" time = 0.1]
+[quake target = ".chara" power = 10 time = 1]
+
+
+
+
+[balloon x=0 y=0 shape="008_02" scale = 50 action = "fadein" time = 0.5]
+[wait_anim target=".bln"]
+[fadeout target = ".bln" time = 1.5]
+
+//[wait time = 0.3]
+
+//[fadeout target = "kaki2" time = 0.8]
+
+//[fadeout target = ".chara" time = 1.0]
+
+
+//[wait time = 1.5]
+//[wait_anim target=".chara"]
+
+
+[wait_anim target=".bln"]
+
+//空のフキダシ
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+
+
+*002
+//-------------------------------------------------------------------------------
+//  トランクス 孫悟天
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_016"]
+ 
+[character x = 80 y = -130 storage = "00225/idl_side_p_01" scale = 1.0 action = "fadein" time = 0.1]
+[flip target =".chara" h=1]
+[character x=240 y=-90 storage = "00200/idl_side_e_01" scale = 1.0 action = "fadein" time = 0.1]
+ 
+ 
+ 
+[balloon x=-40 y=120 shape="001_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+これでブロリーも[r]
+完全におしまいだ！
+[p]
+
+[balloon x=-160 y=-80 shape="001_03" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 40]
+[quake target =".bln" power = 3 time = 0.2]
+うん！
+[p]
+
+*003
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002L" bg = "bg_000_016"]
+ 
+
+[balloon x=0 y=0 shape="003_01" scale = 1.6 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 15]
+ついに[r]
+強敵ブロリーを[r]
+打ち倒した[r]
+トランクスと悟天！[r]
+　[r]
+伝説の超サイヤ人との[r]
+長き因縁も[r]
+ついに終焉を[r]
+迎えたのだった…
+[p] 
+
+//終わりのフェードアウト
+[balloon x=130 y=40 shape="008_03" scale = 50.0 action = "fadein" time = 0.5]
+[wait time = 2.5]
+
+//-------------------------------------------------------------------------------
+[stopbgm]

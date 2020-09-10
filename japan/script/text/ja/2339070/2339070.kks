@@ -1,0 +1,423 @@
+*start|スタート
+//"エリア7スタート"
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "005"]
+
+*01
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="S0001" bg = "bg_050_001"]
+
+[character x = 180 y = -190 storage = "90003/db_n_4" scale = 1.0 angle = -20 action = "fadein" time = 0.1]
+
+
+[character x = 140 y = 440 storage = "90003/db_n_7" scale = 0.6 angle = -20 action = "fadein" time = 0.1]
+
+[character x = -60 y = 510 storage = "90003/db_n_6" scale = 0.6 angle = -20 action = "fadein" time = 0.1]
+
+[character x = -0 y = 410 storage = "90003/db_n_5" scale = 0.7 angle = -20 action = "fadein" time = 0.1]
+
+[character x = -270 y = 210 storage = "90003/db_n_3" scale = 0.7 angle = -10 action = "fadein" time = 0.1]
+
+[character x = -180 y = 410 storage = "90003/db_n_2" scale = 0.8 angle = 20 action = "fadein" time = 0.1]
+
+[balloon x=0 y=120 shape="003_02" scale = 1.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 13]
+//[quake target =".bln" power = 7 time = 0.2]
+フリーザたちは5個[r]
+ベジータは1個の[r]
+ドラゴンボールを手に入れ[r]
+悪の手に落ちていない[r]
+残りのボールはあとひとつ…[r]
+　[r]
+クリリンはデンデの案内で[r]
+残りひとつの[r]
+ドラゴンボールを[r]
+手に入れるため[r]
+最長老のところへと向かった
+[p]
+
+
+*02
+//-------------------------------------------------------------------------------
+//  ネイル
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_050_002"]
+
+[character x = -190 y = -290 storage = "00036/card_01" scale = 1.3 action = "fadein" time = 0.1]
+//[flip target =".chara" h=1]
+
+[balloon shape="002_02" x = 90 y = 125 scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+よく来たな[r]
+デンデ
+[p]
+
+[balloon shape="002_01" x = 130 y = -80 scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+最長老さまは[r]
+おおよその成り行きを[r]
+知っておいでだ…
+[p]
+
+*03
+//-------------------------------------------------------------------------------
+//  デンデ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_050_002"]
+
+[character x = 210 y = -120 storage = "00605/idl_side_p_01" scale = 1.3 action = "fadein" time = 0.1]
+[flip target =".chara" h=1]
+//[character x = -230 y = 60 storage = "99999/ase" scale = 0.7 action = "fadein" time = 0.1]
+
+[balloon x=-80 y=100 shape="001_03" scale = 0.75 action = "fadein" time = 0.1]
+[font size = 36]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 3 time = 0.2]
+ネイルさん！
+[p]
+
+[balloon x=-100 y=-90 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+よかった…！！[r]
+無事だったんですね！！
+[p]
+
+*04
+//-------------------------------------------------------------------------------
+//  クリリン
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_050_002"]
+
+[character x = 180 y = -100 storage = "00009/idl_side_e_03" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon x=-90 y=100 shape="001_02" scale = 0.8 action = "fadein" time = 0.1]
+[font size = 32]
+[wait_anim target=".bln"]
+//[quake target =".bln" power = 3 time = 0.2]
+は…話がはやくて[r]
+助かるぜ…
+[p]
+
+[balloon x=-140 y=-90 shape="001_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+それにしても[r]
+ピッコロにそっくり[r]
+だ……
+[p]
+
+*05
+//-------------------------------------------------------------------------------
+//  最長老
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_050_002"]
+
+[character x = -192 y = 125 storage = "90003/db_n_1" scale = 0.3 angle = 0 action = "fadein" time = 0.1]
+
+[character x = -200 y = -100 storage = "90003/saityoro" scale = 1.1 action = "fadein" time = 0.1]
+//[flip target =".chara" h=1]
+
+[balloon shape="001_03" x = 110 y = 60 scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+ようこそ…[r]
+あなたは地球人ですね
+[p]
+
+*06
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0003L" bg = "bg_000_024"]
+
+[character x = 190 y = 5 storage = "90003/db_n_1" scale = 1 angle = 0 action = "fadein" time = 0.1]
+
+[balloon x=-130 y=30 shape="003_02" scale = 1.6 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 15]
+//[quake target =".bln" power = 7 time = 0.2]
+最長老から[r]
+最後のドラゴンボールを[r]
+託されるクリリン…[r]
+　[r]
+さらにクリリンは[r]
+最長老に眠れる力を[r]
+呼び覚ましてもらい[r]
+とんでもないパワーアップ[r]
+を遂げる！
+[p]
+
+*07
+//-------------------------------------------------------------------------------
+//  クリリン
+//-------------------------------------------------------------------------------
+[se storage = "3011"]
+[coma shape="N0001R" bg = "bg_050_002"]
+
+[character x = 180 y = -100 storage = "00009/heapup_e_03" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon x=-100 y=100 shape="007_02" scale = 0.9 action = "expand" time = 0.1]
+[font size = 28]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 7 time = 0.2]
+力が[r]
+ふきだしてきたっ！！[r]
+すっげーっ！！
+[p]
+
+[balloon x=-140 y=-100 shape="007_01" scale = 0.75 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+[quake target =".bln" power = 7 time = 0.2]
+ありがとう[r]
+ございました！！
+[p]
+
+*08
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0003L" bg = "bg_050_002"]
+
+//[character x=150 y=70 storage = "00004/card_01" scale = 1.1 action = "fadein" time = 0.1]
+
+[balloon x=0 y=20 shape="003_02" scale = 1.4 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 17]
+//[quake target =".bln" power = 7 time = 0.2]
+時を同じくして[r]
+ベジータが隠した[r]
+ドラゴンボールを[r]
+レーダーで[r]
+発見した悟飯は[r]
+そのボールを探しに[r]
+向かうのだった
+[p]
+
+*09
+//-------------------------------------------------------------------------------
+//  孫悟飯
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_050_001"]
+
+//[character x = 200 y = -60 storage = "00007/headup_e_01_okappa" scale = 1.2 action = "fadein" time = 0.1]
+
+[character x = 220 y = -80 storage = "00007/idl_side_e_03" scale = 1.2 action = "fadein" time = 0.1]
+
+
+[balloon x=-90 y=120 shape="001_03" scale = 0.75 action = "fadein" time = 0.1]
+[font size = 36]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 3 time = 0.2]
+今のうちだ！
+[p]
+
+[balloon x=-110 y=-85 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+近くに[r]
+おそろしいヤツの気は[r]
+ぜんぜん感じない！！
+[p]
+
+*10
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002L" bg = "bg_000_014"]
+
+[character x = -240 y = 80 storage = "90003/db_n_7" scale = 0.6 angle = -20 action = "fadein" time = 0.1]
+
+[character x = 260 y = 110 storage = "90003/db_n_6" scale = 0.5 angle = -20 action = "fadein" time = 0.1]
+
+[character x = 265 y = -120 storage = "90003/db_n_5" scale = 0.5 angle = -20 action = "fadein" time = 0.1]
+
+[character x = -270 y = -50 storage = "90003/db_n_3" scale = 0.4 angle = -10 action = "fadein" time = 0.1]
+
+[character x = 220 y = 10 storage = "90003/db_n_2" scale = 0.4 angle = 20 action = "fadein" time = 0.1]
+
+[balloon x=0 y=20 shape="003_02" scale = 1.6 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 14]
+//[quake target =".bln" power = 7 time = 0.2]
+一方その頃…[r]
+フリーザの宇宙船へと[r]
+連れてこられたベジータは[r]
+そこで治療を受ける[r]
+　[r]
+驚異の回復力で復活した[r]
+ベジータはまんまと[r]
+フリーザが持つ[r]
+５つのドラゴンボールを[r]
+奪い去るのだった…！！
+[p]
+
+*11
+//-------------------------------------------------------------------------------
+//  ベジータ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_050_001"]
+
+//[character x = 180 y = -110 storage = "00061/idl_side_e_03" scale = 1.1 angle = 0 action = "fadein" time = 0.1]
+
+[character x = 190 y = -140 storage = "00061/heapup_p_03" scale = 1.2 action = "fadein" time = 0.1]
+[flip target =".chara" h=1]
+
+[balloon x=-80 y=130 shape="002_02" scale = 0.8 action = "fadein" time = 0.1]
+[font size = 32]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 3 time = 0.2]
+ふははははは…！！
+[p]
+
+[balloon x=-140 y=-90 shape="007_02" scale = 0.9 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 7 time = 0.2]
+なにからなにまで[r]
+このオレに運が向いて[r]
+きやがったぞ！！
+[p]
+
+*12
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0004L" bg = "bg_000_014"]
+
+[character x = 190 y = -340 storage = "00016/card_01" scale = 1.3 action = "fadein" time = 0.1]
+
+[balloon x=-130 y=0 shape="003_02" scale = 1.5 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 16]
+//[quake target =".bln" power = 7 time = 0.2]
+さらにベジータは[r]
+最長老からもらった[r]
+一星球を持ったクリリン[r]
+を発見し追い詰める…[r]
+　[r]
+しかし そのベジータも[r]
+怒りに震えるフリーザの[r]
+命令を受けたザーボンに[r]
+追跡されていたのだった[r]
+[p]
+
+*13
+//-------------------------------------------------------------------------------
+//  クリリン
+//-------------------------------------------------------------------------------
+[se storage = "03"]
+[coma shape="N0001L" bg = "bg_050_001"]
+
+	
+//立ち_01
+[character x = -180 y = -100 storage = "00009/idl_side_p_03" scale = 1.0 action = "fadein" time = 0.1]
+
+[character x = -50 y = -8 storage = "90003/db_n_1" scale = 0.55 angle = 0 action = "fadein" time = 0.1]
+
+[balloon x=120 y=70 shape="007_02" scale = 0.75 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+[quake target =".bln" power = 7 time = 0.2]
+ベジータ！！
+[p]
+
+*14
+//-------------------------------------------------------------------------------
+//  ベジータ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_050_001"]
+
+[character x = 180 y = -110 storage = "00061/idl_side_e_03" scale = 1.1 angle = 0 action = "fadein" time = 0.1]
+
+[balloon x=-110 y=120 shape="002_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 7 time = 0.2]
+意外なところで会ったな[r]
+地球人…
+[p]
+
+[balloon x=-120 y=-100 shape="002_03" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 7 time = 0.2]
+その大事そうに持っている[r]
+ドラゴンボールを見ると…[r]
+どうやら目的は同じらしいな
+[p]
+
+*15
+//-------------------------------------------------------------------------------
+//  クリリン
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_050_001"]
+
+[character x = -180 y = -100 storage = "00009/idl_side_p_03" scale = 1.0 action = "fadein" time = 0.1]
+
+[character x = -50 y = -8 storage = "90003/db_n_1" scale = 0.55 angle = 0 action = "fadein" time = 0.1]
+
+[balloon x=80 y=70 shape="004_01" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 40]
+[quake target =".bln" power = 3 time = 0.2]
+…く……
+[p]
+
+
+*16
+//-------------------------------------------------------------------------------
+//  ベジータ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_050_001"]
+ 
+[character x = 165 y = -115 storage = "00061/idl_side_e_03" scale = 1.2 action = "fadein" time = 0.1]
+ 
+[balloon x=-130 y=110 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+いいか オレには[r]
+そのボールを[r]いただく前に[r]
+することがある
+[p]
+ 
+[balloon x=-130 y=-220 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+だが そいつを持って[r]
+逃げようなんて気は[r]
+起こさんほうがいいぞ
+[p]
+
+//-------------------------------------------------------------------------------
+[stopbgm]

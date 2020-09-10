@@ -1,0 +1,51 @@
+*start|スタート
+//究極のDB編_エリア１：スタート
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "006"]
+
+
+*001
+//-------------------------------------------------------------------------------
+//  悟空
+//-------------------------------------------------------------------------------
+
+//[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_030"]
+
+[character x=200 y=-70 storage = "00324/adult_heapup_e_01" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon x=-110 y=120 shape="001_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+よ〜し ウーブ！[p]
+
+[balloon x=-130 y=-80 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+おめえの今までの[r]
+修業の成果[r]
+オラに見せてくれ！
+[p]
+
+
+*002
+//-------------------------------------------------------------------------------
+//  ウーブ（青年期）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002L" bg = "bg_000_031"]
+
+[character x = -180 y = -100 storage = "00449/idl_side_p_01" scale = 1.4 action = "fadein" time = 0.1]
+
+[balloon x=160 y=100 shape="001_03" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+はい！ 悟空さん！
+[p]
+
+
+[stopbgm]

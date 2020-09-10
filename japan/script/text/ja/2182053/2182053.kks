@@ -1,0 +1,37 @@
+*start|スタート
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+//[bgm storage = "026"]
+
+*001
+//-------------------------------------------------------------------------------
+//  セル（完全体）
+//-------------------------------------------------------------------------------
+[se storage = "3022"]
+[coma shape="S0001" bg = "bg_005_005"]
+
+
+[character id = "sell1" x=150 y=50 storage = "00205/card_14" scale = 1.1 action = "fadein" time = 0.1 angle=0] 
+[quake target =".chara" power = 5 time = 0.4]
+
+[balloon x=-50 y=440 shape="002_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+では[r]
+みせてやるぞ……！
+[p]
+
+
+
+[balloon x=180 y=-420 shape="006_01" scale = 0.9 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 7 time = 0.2]
+このセルの[r]
+恐ろしい[r]
+真のパワーを…！！
+[p]
+
+//[stopbgm]

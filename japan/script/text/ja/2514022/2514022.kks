@@ -1,0 +1,126 @@
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+//[bgm storage = "004"]
+
+
+*001
+//-------------------------------------------------------------------------------
+//  悟空
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+//[coma shape="S0001" bg = "bg_000_055"]
+[coma shape="N0002R" bg = "bg_000_055"]
+
+
+
+[character id = "gok" x = 0 y = 0 storage = "00350/card_04" scale = 1.0 action = "fadein" time = 0.1]
+
+
+
+[balloon x = -150 y = 450 shape="001_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target = ".bln" power = 3 time = 0.2]
+こんなんじゃ[r]
+おめえ[r]
+本気出せねえよな
+[p]
+
+
+
+[quake target = "gok" power = 3 time = 0.3]
+
+[balloon x = 150 y = -200 shape="006_01" scale = 0.7 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 40]
+[quake target = ".bln" power = 7 time = 0.2]
+それじゃ[r]
+いくぜ！！
+[p]
+
+
+[se storage = "44"]
+
+[character id = "ki" x = 0 y = 0 storage = "99999/genki_ef_01" scale = 7.0 angle = 30 action = "fadein" time = 0.1]
+[quake target = "ki" power = 9 time = 300]
+[paint target="ki" color="#A9D0F5"]
+
+
+[character id = "ki2" x = 0 y = 0 storage = "99999/genki_ef_01" scale = 7.0 angle = -80 action = "fadein" time = 0.1]
+[quake target = "ki2" power = 9 time = 300]
+[paint target="ki2" color="#A9D0F5"]
+
+
+[character id = "ki3" x = 0 y = 200 storage = "99999/genki_ef_01" scale = 7.0 angle = -190 action = "fadein" time = 0.1]
+[quake target = "ki3" power = 9 time = 300]
+[paint target="ki3" color="#A9D0F5"]
+
+
+[paint target="gok" color="#81BEF7"]
+[quake target = "gok" power = 7 time = 300]
+
+
+//[balloon x = 0 y = -200 shape="006_01" scale = 0 action = "expand" time = 0.1]
+//[p]
+
+[wait time = 0.3]
+
+
+//[se storage = "3025"]
+
+
+//点滅
+[balloon shape="008_02" x = 0 y = 0 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+[balloon shape="008_02" x = 0 y = 0 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+
+//フェードアウト
+//[balloon x= 0 y= 0 shape="008_02" scale = 50.0 action = "fadein" time = 0.3]
+//[wait time = 0.5]
+
+*002
+//-------------------------------------------------------------------------------
+//  悟空
+//-------------------------------------------------------------------------------
+[se storage = "3029"]
+[coma shape="S0001" bg = "bg_000_055"]
+
+
+//[lwfobject id = "kaki2" storage="kakimoji:ef_020" x= 150 y= 0 scale = 2.0 angle = 15 action = "fadein" time = 0.1]
+//[quake target = "kaki2" power = 9 time = 0.4]
+
+[character id = "ki" x = 0 y = 0 storage = "99999/ef_aura_front" scale = 3.0 action = "expand" time = 0.3]
+
+
+
+
+[character id = "gok" x = 60 y = -100 storage = "00239/card_06" scale = 1.0 action = "fadein" time = 0.1]
+[quake target = "gok" power = 5 time = 0.4]
+
+
+[balloon x = 0 y = 460 shape="006_01" scale = 0.7 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 44]
+[quake target = ".bln" power = 7 time = 0.2]
+はああ！！
+
+
+[wait time = 0.4]
+
+
+[fadeout target = "ki" time = 0.7]
+
+
+[wait_anim target="ki"]
+
+[balloon x = 0 y = 0 shape="001_02" scale = 0 action = "fadein" time = 0.1]
+[p]
+
+//-------------------------------------------------------------------------------
+//[stopbgm]

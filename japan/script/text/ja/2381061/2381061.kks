@@ -1,0 +1,43 @@
+//エリア6ゴール
+
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+//[bgm storage = "011"]
+
+*coma1
+//-------------------------------------------------------------------------------
+//  サイヤマン2号
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="S0001" bg = "bg_019_001"]
+
+[character x=-110 y=-10-15 storage = "00323/card_003" scale = 0.8 action = "fadein" time = 0.1]
+
+[character x=115 y=-10-15 storage = "00366/card_09" scale = 0.85 action = "fadein" time = 0.1]
+
+
+
+
+[balloon x=-55 y=420 shape="001_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+悟飯くん そろそろ[r]
+新しいポーズも[r]
+考えましょうよ！[p]
+
+
+
+[balloon x=55 y=-460 shape="001_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+そうですね！[r]
+今度いっしょに[r]
+練習しましょう！[p]
+
+
+//[stopbgm]

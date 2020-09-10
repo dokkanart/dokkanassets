@@ -1,0 +1,73 @@
+*start|スタート
+//復讐鬼ベビー編_エリア７：第二ラウンド
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+//[bgm storage = "007"]
+ 
+*001
+//-------------------------------------------------------------------------------
+//  スーパーベビー1
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_037"]
+ 
+[character x=-200 y=-140 storage = "00483/idl_side_p_01" scale = 1.0 action = "fadein" time = 0.1]
+ 
+[balloon x=80 y=150 shape="007_02" scale = 0.8 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 7 time = 0.2]
+ツフル人となった[r]
+地球人たち！ 
+[p]
+ 
+[balloon x=110 y=-90 shape="007_01" scale = 1.0 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+[quake target =".bln" power = 7 time = 0.2]
+おまえたちの[r]
+サイヤ人に対する恨みの気を[r]
+このオレに送るのだ！！ 
+[p]
+
+//点滅（白）
+[se storage = "3025"]
+//点滅
+[balloon shape="008_02" x = 140 y = -30 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+[balloon shape="008_02" x = 140 y = -30 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+
+//フェードアウト（フェードアウトするコマ）
+[balloon x=130 y=40 shape="008_02" scale = 50.0 action = "fadein" time = 0.3]
+[wait time = 0.5] 
+
+*002
+//-------------------------------------------------------------------------------
+//  スーパーベビー２に変身
+//-------------------------------------------------------------------------------
+
+//[se storage = "04"]
+[coma shape="S0001" bg = "bg_000_037"]
+ 
+[character x=-0 y=-50 storage = "00484/idl_side_p_01" scale = 1.4 action = "fadein" time = 0.1]
+
+//フェードイン（フェードインするコマ）
+[balloon x=130 y=40 shape="008_02" scale = 50]
+[wait time = 0.5]
+[fadeout target = ".bln" time = 1]
+[wait_anim target=".bln"]
+ 
+// 空のフキダシ（セリフがないコマを送るために使用）
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+ 
+
+
+
+//[stopbgm]
+

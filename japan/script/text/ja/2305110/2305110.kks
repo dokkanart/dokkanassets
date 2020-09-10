@@ -1,0 +1,114 @@
+//"ステージ１１スタート"
+
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "013"]
+
+*001
+//-------------------------------------------------------------------------------
+//  ゴールデンフリーザ
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0001L" bg = "bg_004_002"]
+
+[character x=-200 y=-350 storage = "00241/card_01" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x=120 y=120 shape="002_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+…ただこのまま殺しても[r]
+おもしろくありませんね
+[p]
+
+[balloon x=130 y=-90 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+ベジータさん[r]
+あなたにやらせて[r]
+あげましょうか？
+[p]
+
+*002
+//-------------------------------------------------------------------------------
+//  ベジータ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_004_002"]
+
+[character x = 190 y = -100 storage = "00245/idl_side_e_01" scale = 1.8 action = "fadein" time = 0.1]
+
+[balloon x=-120 y=120 shape="002_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+せっかくだが悪いな
+[p]
+
+[balloon x=-130 y=-90 shape="002_01" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+このやろうはムカつくけど[r]
+オレが強くなるために[r]
+必要なんだ
+[p]
+
+*003
+//-------------------------------------------------------------------------------
+//  ゴールデンフリーザ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_004_002"]
+
+[character x=-200 y=-350 storage = "00241/card_01" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x=120 y=130 shape="002_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+ふふ…[r]
+ではこうしましょう
+[p]
+
+[balloon x=130 y=-70 shape="002_01" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+あなたを[r]
+フリーザ軍の最高司令官に[r]
+してあげます
+[p]
+
+*004
+//-------------------------------------------------------------------------------
+//  ベジータ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_004_002"]
+
+[character x = 190 y = -110 storage = "00245/idl_side_e_01" scale = 2.0 action = "fadein" time = 0.1]
+
+[balloon x=-120 y=120 shape="002_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+…そいつは[r]
+惜しいことをしたな…
+[p]
+
+[balloon x=-130 y=-190 shape="002_01" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+もう決めちまったんだよ…[r]
+てめえを完全に[r]
+消去してやるって
+[p]
+
+//-------------------------------------------------------------------------------
+[stopbgm]

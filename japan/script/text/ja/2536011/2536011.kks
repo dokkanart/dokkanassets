@@ -1,0 +1,44 @@
+*start|スタート
+ 
+ "エリア1 BOSS前"
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+//[bgm storage = "012"]
+ 
+*001
+//-------------------------------------------------------------------------------
+//  孫悟空（天使）
+//-------------------------------------------------------------------------------
+[se storage = "3022"]
+[coma shape="S0001" bg = "bg_056_001"]
+
+[character id = "2" x = 100 y = -200 storage = "00282/card_05" scale = 1.2 action = "fadein" time = 0.1]
+//[quake target ="2" power = 5 time = 0.4]
+
+[character id = "1" x = -220 y = 120 storage = "00003/card_14" scale = 1.2 angle = 15 action = "fadein" time = 0.1]
+[quake target ="1" power = 4 time = 0.2]
+
+ 
+ 
+[balloon x=160 y=400 shape="001_03" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+[quake target =".bln" power = 3 time = 0.2]
+おめえ[r]
+強そうだな！
+[p]
+
+[quake target ="2" power = 4 time = 0.2]
+
+[balloon x=130 y=-490 shape="002_03" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+あの世でも[r]
+大暴れしてやる！
+[p]
+ 
+
+//-------------------------------------------------------------------------------
+//[stopbgm]

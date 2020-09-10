@@ -1,0 +1,99 @@
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+//[bgm storage = "003"]
+
+*001
+//-------------------------------------------------------------------------------
+//  フリーザ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_018"]
+
+[character x=-250 y=-160 storage = "00068/heapup_p_01" scale = 1.3 action = "fadein" time = 0.1]
+
+[balloon x=120 y=130 shape="006_01" scale = 1.05 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 23]
+[quake target =".bln" power = 7 time = 0.2]
+こうなったら[r]
+見せてやるぞ…[r]
+１００パーセントの力を！！
+[p]
+
+//点滅
+[se storage = "3025"]
+//点滅
+[balloon shape="008_02" x = 140 y = -30 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+//[balloon shape="008_02" x = 140 y = -30 scale = 50 action = "fadein" time = 0.1]
+//[wait time = 0.3]
+//[clear target = ".bln"]
+
+//フェードアウト（フェードアウトするコマ）
+[balloon x=130 y=40 shape="008_02" scale = 50.0 action = "fadein" time = 0.2]
+[wait time = 0.5] 
+
+
+*002
+//-------------------------------------------------------------------------------
+//  フリーザ_変身
+//-------------------------------------------------------------------------------
+
+//[se storage = "37"]
+[coma shape="S0001" bg = "bg_000_018"]
+
+[character id = "ball1" x=0 y=0 storage = "99999/charge_ball" scale = 7.0 action = "fadein" time = 0.1]
+[quake target ="ball1" power = 1 time = 300]
+
+[character id = "f" x=0 y=0 storage = "00349/card_1003320" scale = 1.7 action = "fadein" time = 0.1]
+[quake target ="f" power = 1 time = 300]
+
+
+
+//フェードイン（フェードインするコマ）
+[balloon x=130 y=40 shape="008_02" scale = 50]
+[wait time = 0.5]
+[fadeout target = ".bln" time = 1.0]
+[wait_anim target=".bln"]
+
+
+[fadeout target = "ball1" time = 1.0]
+
+[wait time = 0.3]
+
+[lwfobject id = "kaki1" storage="kakimoji:ef_020" in="04" x=-0 y=-200 scale = 3.5]
+[quake target = "kaki1" power = 15 time = 1.5]
+
+
+[character id = "ball2" x=0 y=0 storage = "99999/charge_ball" scale = 8.0 action = "expand" time = 0.5]
+
+[wait time = 0.3]
+
+[fadeout target = "ball2" time = 0.7]
+
+[wait time = 0.3]
+
+[fadeout target = "kaki1" time = 0.3]
+
+[character id = "ball3" x=0 y=0 storage = "99999/charge_ball" scale = 8.0 action = "expand" time = 0.5]
+
+[wait time = 0.3]
+
+[fadeout target = "ball3" time = 0.7]
+
+[wait time = 0.3]
+
+[character id = "ball4" x=0 y=0 storage = "99999/charge_ball" scale = 10.0 action = "expand" time = 0.5]
+[quake target ="ball4" power = 1 time = 300]
+
+[wait_anim target="ball3"]
+
+//空のフキダシ
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+
+[p]
+

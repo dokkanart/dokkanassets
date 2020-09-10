@@ -1,0 +1,228 @@
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "012"]
+
+*01
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0002R" bg = "bg_000_024"]
+
+
+[balloon x=0 y=70 shape="003_02" scale = 1.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 13]
+//[quake target =".bln" power = 7 time = 0.2]
+第6宇宙との激闘を終え[r]
+祝勝会が[r]
+カプセルコーポレーションで[r]
+開かれることになった[r]
+　[r]
+祝勝会には[r]
+ビルスとウイス…[r]
+そして勝利の立役者である[r]
+モナカも招待されることに[r]
+なったが……
+[p]
+
+*02
+//-------------------------------------------------------------------------------
+//  ビルス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_015"]
+
+[character x = -240 y = -280 storage = "00242/idl_side_p_01" scale = 1.4 action = "fadein" time = 0.1]
+
+[balloon x=120 y=50 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+孫悟空に[r]
+モナカを会わせると[r]
+また闘わせろと[r]
+しつこいだろうな[p]
+
+
+
+*03
+//-------------------------------------------------------------------------------
+//  ウイス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_015"]
+
+[character x = 180 y = -290 storage = "00243/atc_sp01_e_01" scale = 1.7 action = "fadein" time = 0.1]
+
+[balloon x=-130 y=70 shape="001_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+モナカさんが[r]
+本当は弱いことを[r]
+白状しては[r]
+いかがでしょう？[p]
+
+
+*04
+//-------------------------------------------------------------------------------
+//  ビルス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_015"]
+
+[character x = -210 y = -280 storage = "00242/heapup_p_01" scale = 1.4 action = "fadein" time = 0.1]
+
+[balloon x=120 y=125 shape="006_01" scale = 0.65 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 44]
+[quake target =".bln" power = 7 time = 0.2]
+ダメだ！[p]
+
+[balloon x=110 y=-90 shape="006_02" scale = 1 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+[quake target =".bln" power = 7 time = 0.2]
+神様がウソつきだって[r]
+ことになったら[r]
+権威というものが[r]
+失われてしまう！[p]
+
+
+*05
+//-------------------------------------------------------------------------------
+//  ウイス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_015"]
+
+[character x = 210 y = -300 storage = "00243/idl_side_e_01" scale = 1.7 action = "fadein" time = 0.1]
+
+[balloon x=-80 y=70 shape="001_03" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+そうですか…[p]
+
+*06
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0003L" bg = "bg_000_016"]
+
+[balloon x=0 y=0 shape="003_02" scale = 1.5 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 16]
+//[quake target =".bln" power = 7 time = 0.2]
+そして祝勝会当日…[r]
+　[r]
+ビルスの心配をよそに[r]
+悟空とモナカは[r]
+再会してしまう[r]
+　[r]
+ビルスのウソを信じ[r]
+モナカが宇宙一だと[r]
+思い込んでいる悟空は…
+[p]
+
+*07
+//-------------------------------------------------------------------------------
+//  悟空
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_014_001"]
+
+[character x = 200 y = -150 storage = "00003/heapup_e_06" scale = 1.3 action = "fadein" time = 0.1]
+
+[balloon x = -110 y = 110 shape="001_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target = ".bln" power = 3 time = 0.2]
+モナカ！[r]
+来てくれたんか！
+[p]
+
+[balloon x = -120 y = -90 shape="001_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target = ".bln" power = 3 time = 0.2]
+今日こそオラと[r]
+手合わせしてくれ！[p]
+
+*08
+//-------------------------------------------------------------------------------
+//  モナカ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_014_001"]
+
+
+[character id = "monaka" x = -180 y = -150 storage = "00557/card_02" scale = 0.7 action = "fadein" time = 0.1]
+
+//[character id = "monaka" x = -180 y = -120 storage = "00557/card_01" scale = 1.0 action = "fadein" time = 0.1]
+//[character id = "ase4" x = -130 y = 90 storage = "99999/ase" scale = 0.5 action = "fadein" time = 0.1]
+
+[balloon x = 110 y = 60 shape="004_04" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 40]
+//[quake target = ".bln" power = 3 time = 0.2]
+う〜……[p]
+
+*09
+//-------------------------------------------------------------------------------
+//  ビルス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_014_001"]
+
+[character x = -210 y = -280 storage = "00242/heapup_p_01" scale = 1.4 action = "fadein" time = 0.1]
+
+//怒り_01＋あせ
+[character x = -220 y = 40 storage = "99999/ase" scale = 0.6 action = "fadein" time = 0.1]
+
+
+
+[balloon x=120 y=50 shape="007_02" scale = 0.8 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 7 time = 0.2]
+ダメだ！[r]
+勝手なことは[r]ゆるさん！[p]
+
+
+
+*10
+//-------------------------------------------------------------------------------
+//  悟空
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_014_001"]
+
+[character x = 170 y = -180 storage = "00003/heapup_e_06" scale = 1.4 action = "fadein" time = 0.1]
+
+[balloon x = -130 y = 100 shape="001_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target = ".bln" power = 3 time = 0.2]
+頼むよビルスさま[r]
+なっ？いいだろ？[p]
+
+
+[balloon x = -140 y = -200 shape="001_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target = ".bln" power = 3 time = 0.2]
+かるい組手[r]やるだけさ[p]
+
+
+
+
+
+
+//-------------------------------------------------------------------------------
+[stopbgm]

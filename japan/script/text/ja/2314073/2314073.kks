@@ -1,0 +1,41 @@
+//"エリア７ボス前"
+
+*start|スタート
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "008"]
+
+*001
+//-------------------------------------------------------------------------------
+//  超サイヤ人ベジータ
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0002L" bg = "bg_014_001"]
+
+[character x = -150 y = -40 storage = "00002/card_02" scale = 0.7 action = "fadein" time = 0.1]
+
+[balloon x=145 y=110 shape="004_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+くそっ！！[r]
+もうどうにでもなれ！！
+[p]
+
+[se storage = "3024"]
+
+[lwfobject id = "kaki1" storage="kakimoji:ef_020" in="04" x=-190 y=-200 scale = 1.6]
+[quake target = "kaki1" power = 15 time = 0.2]
+
+[quake target =".chara" power = 9 time = 0.3]
+
+[balloon x=145 y=-140 shape="006_02" scale = 0.9 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 7 time = 0.2]
+はあああぁぁーっ！！
+[p]
+
+//-------------------------------------------------------------------------------
+[stopbgm]

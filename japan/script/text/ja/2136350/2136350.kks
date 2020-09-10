@@ -1,0 +1,182 @@
+*start|スタート
+//エリア３5スタート
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+//[bgm storage = "012"]
+[bgm storage = "05"]
+
+//-------------------------------------------------------------------------------
+//  test
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="S0001" bg = "bg_000_014"]
+
+[balloon shape="009_15" x = 50 y = 170 scale = 1.2 action = "fadein" time = 0.1]
+
+//19×7
+[balloon shape="009_16" x = 35 y = -200 scale = 0.95 action = "fadein" time = 0.1]
+[font size = 27]
+[wait_anim target=".bln"]
+ひとつの小さな出会いから始まった[r]
+ななつのドラゴンボールをめぐる物語…[r]
+　[r]
+トランクスのタイムマシンで[r]
+未来へとやってきた悟空とベジータ…[r]
+はたして未来の世界をゴクウブラックの[r]
+魔の手から救うことができるのか…！？[p]
+
+*001
+//-------------------------------------------------------------------------------
+//  ブラックが現れる
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+
+[coma shape="N0001L" bg = "bg_073_001"]
+[wait time = 0.5]
+[character x = -220 y = -175 storage = "00621/idl_side_p_01" scale = 1.25 action = "fadein" time = 0.7]
+
+// 空のフキダシ（セリフがないコマを送るために使用）
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+*002
+//-------------------------------------------------------------------------------
+//  トランクス 孫悟空
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+
+[coma shape="N0001R" bg = "bg_073_001"]
+[character x = 140 y = -120 storage = "00300/idl_side_e_01" scale = 1.0 action = "fadein" time = 0.1]
+[character x = 260 y = -105 storage = "00623/heapup_e_01" scale = 1.1 action = "fadein" time = 0.1]
+
+[wait_anim target=".chara"]
+
+//[wait time = 0.7]
+
+[balloon shape="004_02" x = -140 y = 40 scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+[quake target =".bln" power = 3 time = 0.2]
+
+ブラック……！！[p]
+
+*003
+//----------------------------------------------------------
+//ベジータ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_073_001"]
+
+//[wait_anim target=".coma"]
+
+[character id = "vgt" x = 170 y = -190 storage = "00240/heapup_p_01" scale = 1.3 action = "fadein" time = 0.1]
+[flip target = "vgt" h = 1]
+
+[balloon shape="002_01" x = -80 y = 130 scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+ひとつだけ[r]
+教えてやろう[p]
+
+[balloon shape="006_01" x = -120 y = -90 scale = 0.9 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target ="vgt" power = 10 time = 0.2]
+[quake target =".bln" power = 7 time = 0.2]
+きさまを葬るのは[r]
+この[r]超サイヤ人ブルーだ！！[p]
+
+*004
+//-------------------------------------------------------------------------------
+//  ゴクウブラック
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+
+[coma shape="N0002L" bg = "bg_073_001"]
+
+[character x = -220 y = -175 storage = "00621/idl_side_p_01" scale = 1.25 action = "fadein" time = 0.1]
+
+[balloon x=120 y=115 shape="002_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+すばらしいな…[r]
+戦闘民族が神の気を[r]
+まとった姿がそれか…
+[p]
+
+[balloon x=120 y=-170 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+褒美に[r]
+いいものを見せてやろう[p]
+
+[se storage = "3025"]
+//点滅
+[balloon shape="008_02" x = 140 y = -30 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+//[balloon shape="008_02" x = 140 y = -30 scale = 50 action = "fadein" time = 0.1]
+//[wait time = 0.3]
+//[clear target = ".bln"]
+
+//フェードアウト（フェードアウトするコマ）
+[balloon x=130 y=40 shape="008_02" scale = 50.0 action = "fadein" time = 0.3]
+[wait time = 0.5]
+
+*005
+//-------------------------------------------------------------------------------
+//  ブラック（超サイヤ人ロゼ）
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="S0001" bg = "bg_073_001"]
+
+//ゴゴゴゴ
+//[lwfobject id = "kaki1" storage="kakimoji:ef_009" in="04" x=-170 y=-165 scale = 2.0 angle = 10 action = "fadein" time = 0.1]
+//[quake target = "kaki1" power = 2 time = 300]
+
+[character x = 0 y = 60 storage = "00654/card_02" scale = 0.9 action = "fadein" time = 0.1]
+
+//フェードイン（フェードインするコマ）
+[balloon x=130 y=40 shape="008_02" scale = 50]
+[wait time = 0.2]
+[fadeout target = ".bln" time = 1.5]
+[wait_anim target=".bln"]
+
+[balloon x=-150 y=450 shape="002_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+どうだ この色…[r]
+美しいだろう？[p]
+
+[balloon x=120 y=-320 shape="002_03" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+おまえらのセンスに合わせて[r]
+名付けるとしたら… “ロゼ”[r]
+そう…超サイヤ人ロゼ[p]
+
+*006
+//-------------------------------------------------------------------------------
+//  トランクス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+
+[coma shape="N0002R" bg = "bg_073_001"]
+
+[character x = 200 y = -145 storage = "00623/heapup_e_01" scale = 1.3 action = "fadein" time = 0.1]
+
+[balloon shape="004_02" x = -125 y = 90 scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+
+超サイヤ人…[r]
+…ロゼ……！？[p]
+//-------------------------------------------------------------------------------
+[stopbgm]

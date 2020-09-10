@@ -1,0 +1,495 @@
+*start|スタート
+
+//"エリア５ゴール"
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "041"]
+ 
+*001
+//-------------------------------------------------------------------------------
+//  タピオンが笛を吹く
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma id = "coma1" shape="S0001" bg = "bg_015_002"]
+ 
+[character x = 60 y = 40 storage = "00313/card_05" scale = 1.1 action = "fadein" time = 0.1]
+[move target =".chara" y=50 time = 1.5]
+
+[wait_anim target=".chara"]
+ 
+// 空のフキダシ（セリフがないコマを送るために使用）
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+*002
+//-------------------------------------------------------------------------------
+//  ホイ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_015_002"]
+ 
+[character x = -240 y = -140 storage = "00312/heapup_p_01" scale = 1.2 action = "fadein" time = 0.1]
+ 
+[balloon x=90 y=100 shape="002_01" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+[quake target =".bln" power = 3 time = 0.2]
+勇者の笛…！？
+[p]
+ 
+[balloon x=110 y=-100 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+ふん… バカめ！[r]
+そんなものが[r]
+今さら通用するか！
+[p]
+
+*003
+//-------------------------------------------------------------------------------
+//  タピオン
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_015_002"]
+ 
+[character x = 240 y = -250 storage = "00313/card_05" scale = 1.0 action = "fadein" time = 0.1]
+ 
+[balloon x=-120 y=120 shape="001_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+この星まで[r]
+巻き添えにする[r]
+わけにはいかない！
+[p]
+ 
+[balloon x=-130 y=-90 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+人々の苦しみを糧にして[r]
+いつまでこんなことを[r]
+すれば気がすむんだ！
+[p]
+
+//[se storage = "3025"]
+//点滅
+//[balloon shape="008_02" x = 0 y = 0 scale = 50 action = "fadein" time = 0.1]
+//[wait time = 0.3]
+//[clear target = ".bln"]
+//[balloon shape="008_02" x = 0 y = 0 scale = 50 action = "fadein" time = 0.1]
+//[wait time = 0.3]
+//[clear target = ".bln"]
+
+
+
+*004
+//-------------------------------------------------------------------------------
+//  ヒルデガーン封印
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0003R" bg = "bg_015_002"]
+
+[character id = "tap" x = 230 y = 40 storage = "00313/card_05" scale = 0.1 action = "fadein" time = 0.1]
+ 
+[character id = "hiru" x = -120 y = -100 storage = "00311/idl_front_p_01" scale = 1.3 action = "fadein" time = 0.1]
+[quake target ="hiru" power = 1 time = 300]
+
+[wait time = 0.7]
+
+[se storage = "3025"]
+//点滅
+[balloon shape="008_02" x = 0 y = 0 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+[balloon shape="008_02" x = 0 y = 0 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+
+[fadeout target = "hiru" time = 1.5]
+
+[character id = "hikari" x = -200 y = -70 storage = "99999/04_syougeki" scale = 2.6 action = "fadein" time = 0.7]
+[spin target="hikari" velocity=-800]
+[wait time = 0.7]
+
+[fadeout target = "hikari" time = 1.0]
+
+[wait time = 0.4]
+
+
+[se storage = "44"]
+[character id = "hikari2" x = 225 y = 65 storage = "99999/04_syougeki" scale = 0.3 action = "fadein" time = 0.4]
+[spin target="hikari2" velocity=-800]
+[wait time = 0.4]
+[fadeout target = "hikari2" time = 0.4]
+
+
+[quake target ="tap" power = 3 time = 0.4]
+
+
+[wait_anim target="tap"]
+
+ 
+// 空のフキダシ（セリフがないコマを送るために使用）
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+*005
+//-------------------------------------------------------------------------------
+//  ホイ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_015_002"]
+ 
+[character x = -240 y = -140 storage = "00312/heapup_p_01" scale = 1.2 action = "fadein" time = 0.1]
+ 
+[balloon x=90 y=90 shape="004_02" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+[quake target =".bln" power = 3 time = 0.2]
+バ…[r]
+バカな！！
+[p]
+ 
+[balloon x=130 y=-100 shape="004_01" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+[quake target =".bln" power = 3 time = 0.2]
+おまえにヒルデガーンを[r]
+封印する力など[r]
+あるはずが…！！
+[p]
+
+*006
+//-------------------------------------------------------------------------------
+//  トランクス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_015_002"]
+ 
+[character x=210 y=-90 storage = "00200/heapup_e_01" scale = 1.3 action = "fadein" time = 0.1]
+ 
+[balloon x=-90 y=70 shape="001_03" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+やったあ！[r]
+お兄ちゃん！！
+[p]
+
+
+*007
+//-------------------------------------------------------------------------------
+//  タピオン
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_015_002"]
+ 
+[character x = -220 y = -180 storage = "00313/heapup_p_01" scale = 1.2 action = "fadein" time = 0.1]
+ 
+[balloon x=120 y=70 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+トランクス…[r]
+ヒルデガーンとともに[r]
+オレを斬るんだ！
+[p]
+ 
+
+*008
+//-------------------------------------------------------------------------------
+//  トランクス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_015_002"]
+ 
+[character x=210 y=-90 storage = "00200/heapup_e_01" scale = 1.3 action = "fadein" time = 0.1]
+ 
+[balloon x=-70 y=100 shape="004_01" scale = 0.65 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 44]
+[quake target =".bln" power = 3 time = 0.2]
+ええっ！？ 
+[p]
+ 
+[balloon x=-110 y=-90 shape="004_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+で…できないよ[r]
+そんなこと！！ 
+[p]
+
+*009
+//-------------------------------------------------------------------------------
+//  タピオン
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_015_002"]
+ 
+[character x = -220 y = -180 storage = "00313/heapup_p_01" scale = 1.2 action = "fadein" time = 0.1]
+ 
+[balloon x=120 y=60 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+斬れ！！[r]
+おまえも勇者に[r]
+なりたいだろう！！
+[p]
+
+*010
+//-------------------------------------------------------------------------------
+//  トランクス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_015_002"]
+ 
+[character x=210 y=-90 storage = "00200/heapup_e_01" scale = 1.3 action = "fadein" time = 0.1]
+ 
+[balloon x=-90 y=70 shape="004_02" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+//[quake target =".bln" power = 3 time = 0.2]
+…で…[r]
+できないよ……
+[p]
+
+*011
+//-------------------------------------------------------------------------------
+//  タピオン
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_015_002"]
+ 
+[character x = -220 y = -180 storage = "00313/heapup_p_01" scale = 1.2 action = "fadein" time = 0.1]
+ 
+[balloon x=120 y=110 shape="001_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+トランクス…[r]
+このままでは[r]
+地球が滅ぶ……
+[p]
+ 
+[balloon x=130 y=-90 shape="001_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+たのむ…[r]
+オレを勇者のまま[r]
+死なせてくれ…！ 
+[p]
+
+*012
+//-------------------------------------------------------------------------------
+//  トランクス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_015_002"]
+ 
+[character x=210 y=-90 storage = "00200/heapup_e_01" scale = 1.3 action = "fadein" time = 0.1]
+ 
+[balloon x=-80 y=70 shape="004_01" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 44]
+[quake target =".bln" power = 3 time = 0.2]
+……！！ 
+[p]
+
+*013
+//-------------------------------------------------------------------------------
+//  タピオン
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_015_002"]
+ 
+[character x = -220 y = -180 storage = "00313/heapup_p_01" scale = 1.2 action = "fadein" time = 0.1]
+ 
+[balloon x=120 y=110 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+やつが[r]
+もう一度復活したら[r]
+もう止められない…
+[p]
+ 
+[balloon x=130 y=-90 shape="001_03" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 40]
+[quake target =".bln" power = 3 time = 0.2]
+たのむ……！
+[p]
+
+*014
+//-------------------------------------------------------------------------------
+//  トランクス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0004R" bg = "bg_000_014"]
+ 
+[character x=270 y=-330 storage = "00200/idl_side_e_01" scale = 3.0 action = "fadein" time = 0.1]
+ 
+[balloon x=-140 y=60 shape="001_03" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 54]
+//[quake target =".bln" power = 3 time = 0.2]
+………
+[p]
+
+*015
+//-------------------------------------------------------------------------------
+//  トランクスが剣を構える
+//-------------------------------------------------------------------------------
+[se storage = "22"]
+[coma shape="S0001" bg = "bg_015_002"]
+ 
+[character x = 90 y = 40 storage = "00200/card_07" scale = 1.3 action = "fadein" time = 0.1]
+ 
+[balloon x=-150 y=360 shape="001_03" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 54]
+//[quake target =".bln" power = 3 time = 0.2]
+………
+[p]
+
+
+*017
+//-------------------------------------------------------------------------------
+//  タピオン
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0004L" bg = "bg_000_024"]
+ 
+//[character x = 160 y = -990 storage = "00313/card_05" scale = 3.0 action = "fadein" time = 0.1]
+
+[character x = 90 y = -597 storage = "00313/card_01" scale = 2.8 action = "fadein" time = 0.1]
+ 
+[balloon id = "1" x=-160 y=80 shape="001_03" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+//[quake target =".bln" power = 3 time = 0.2]
+ありがとう……
+[p]
+ 
+[balloon id = "2" x=160 y=60 shape="001_02" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+//[quake target =".bln" power = 3 time = 0.2]
+おまえに会えて[r]
+よかったよ…
+[p]
+
+
+[balloon id = "dokun" x = 0 y = -50 shape="008_30" scale = 3.0 angle = -10 action = "fadein" time = 0.1]
+[quake target ="dokun" power = 15 time = 1.0]
+
+[se storage = "10"]
+//点滅
+[balloon id = "wh"shape="008_02" x = 0 y = 0 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+
+
+*019
+//-------------------------------------------------------------------------------
+//  ヒルデガーンの封印が再び解かれる
+//-------------------------------------------------------------------------------
+[se storage = "3024"]
+[coma id = "coma1" shape="S0001" bg = "bg_000_014"]
+
+[character x = 20 y = -50 storage = "00313/card_02" scale = 1.3 action = "fadein" time = 0.1]
+
+[character x = 30 y = -90 storage = "00313/card_03" scale = 1.5 action = "fadein" time = 0.9]
+
+[character x = 40 y = -110 storage = "00313/card_03" scale = 1.7 action = "fadein" time = 1.3]
+
+[character x = 50 y = -130 storage = "00313/card_03" scale = 2.5 action = "fadein" time = 1.7]
+
+[balloon shape="007_02" x = 0 y = -300 scale = 1.1 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 7 time = 0.2]
+うわあああ〜っ！！
+//[p]
+
+[wait time = 1.0]
+ 
+//点滅
+[balloon shape="008_02" x = 0 y = 0 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+
+*020
+//-------------------------------------------------------------------------------
+//  
+//-------------------------------------------------------------------------------
+[se storage = "50"]
+[coma id = "coma1" shape="S0001" bg = "bg_015_002"]
+
+[lwfobject id = "kaki1" storage="kakimoji:ef_013" x=0 y=-50 scale = 2.5 angle = 10 action = "fadein" time = 0.1]
+[quake target = "kaki1" power = 10 time = 0.5]
+
+[character x = 0 y = 30 storage = "00311/card_01" scale = 1.5 angle = -90 action = "fadein" time = 0.1]
+[quake target = ".chara" power = 13 time = 0.5]
+
+
+// 空のフキダシ（セリフがないコマを送るために使用）
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+
+*021
+//-------------------------------------------------------------------------------
+//  ホイ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_015_002"]
+ 
+[character x = -240 y = -140 storage = "00312/heapup_p_01" scale = 1.2 action = "fadein" time = 0.1]
+ 
+[balloon x=80 y=120 shape="006_01" scale = 0.7 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 40]
+[quake target =".bln" power = 7 time = 0.2]
+バカめ！！
+[p]
+
+ 
+[balloon x=130 y=-110 shape="006_02" scale = 1.0 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+[quake target =".bln" power = 7 time = 0.2]
+おまえには[r]
+完全体のヒルデガーンを[r]
+封じ込めておく力など[r]
+ないわい！！
+[p]
+
+*022
+//-------------------------------------------------------------------------------
+//  ヒルデガーン（完全体）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0004L" bg = "bg_015_002"]
+ 
+[character x = 0 y = -380 storage = "00311/card_01" scale = 3.0 angle = -90 action = "fadein" time = 0.1]
+ 
+[quake target = ".chara" power = 12 time = 0.4]
+[se storage = "3024"]
+
+[balloon shape="006_01" x = 0 y = -210 scale = 0.9 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+[quake target =".bln" power = 7 time = 0.2]
+グオオオオッ！！
+[p]
+
+  
+//-------------------------------------------------------------------------------
+[stopbgm]

@@ -1,0 +1,142 @@
+*start|スタート
+//ステージ5スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "013"]
+
+*01
+//-------------------------------------------------------------------------------
+//  孫悟空
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0001R" bg = "bg_050_001"]
+
+[character x=250 y=-140 storage = "00300/idl_side_e_01" scale = 1.1 action = "fadein" time = 0.1]
+
+[balloon x=-90 y=100 shape="001_01" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+[quake target =".bln" power = 7 time = 0.2]
+どうする[r]
+おめえたち！！
+[p]
+
+[balloon x=-100 y=-90 shape="001_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 7 time = 0.2]
+とっとと[r]
+自分たちの星に[r]
+帰るか！？
+[p]
+
+*02
+//-------------------------------------------------------------------------------
+//  ジース
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_050_001"]
+
+[character x=-180 y=-75 storage = "00034/idl_side_p_02" scale = 1.5 action = "fadein" time = 0.1]
+
+
+
+[balloon x=100 y=100 shape="002_02" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+//[quake target =".bln" power = 3 time = 0.2]
+聞いたか？[r]
+バータ
+[p]
+
+[balloon x=125 y=-100 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+あの おとぼけ野郎が[r]
+また あんな寝言を[r]
+ほざきやがったぜ
+[p]
+
+*03
+//-------------------------------------------------------------------------------
+//  バータ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_050_001"]
+
+[character x=-230 y=-90 storage = "00033/idl_side_p_02" scale = 1.2 action = "fadein" time = 0.1]
+
+
+[balloon x=120 y=90 shape="002_03" scale = 1 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+ああ… どうやら実力で[r]
+リクームを倒したと[r]
+勘違いしてやがるようだぜ
+[p]
+
+[balloon x=125 y=-100 shape="002_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+　油断したリクームと[r]
+　妙な偶然が ただ[r]
+　重なっただけなのによ…
+[p]
+
+*04
+//-------------------------------------------------------------------------------
+//  ジース
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_050_001"]
+
+//[character x=-180 y=-85 storage = "00034/guard_p_01" scale = 1.5 action = "fadein" time = 0.1]
+[character x=-170 y=-80 storage = "00034/heapup_p_01" scale = 1.5 action =  "fadein" time = 0.1]
+
+
+[balloon x=120 y=90 shape="002_03" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+ああ 偶然に[r]
+決まっているだろう…[r]
+ヤツの戦闘力数値はほとんど[r]
+変わっていなかったんだ…
+[p]
+
+[balloon x=125 y=-100 shape="002_01" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+[quake target =".bln" power = 3 time = 0.2]
+オレたちは天下の[r]
+ギニュー特戦隊だぞ…[r]
+そいつをわからせてやる！
+[p]
+
+
+
+
+*05
+//-------------------------------------------------------------------------------
+//  孫悟空
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_050_001"]
+
+[character id = "gok" x = 200 y = -150 storage = "00300/idl_side_e_01" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x = -150 y = 50 shape="001_02" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target = ".bln"]
+[font size = 36]
+//[quake target = ".bln" power = 7 time = 0.2]
+やっぱ[r]
+帰らねえか…
+[p]
+
+//-------------------------------------------------------------------------------
+[stopbgm]

@@ -1,0 +1,309 @@
+*start|スタート
+//若返るか！？ピッコロ大魔王 ゴール"
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "005"]
+
+*01
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0003R" bg = "bg_000_024"]
+ 
+//[wait_anim target=".coma"]
+ 
+[balloon x=0 y=30 shape="003_01" scale = 1.6 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 15]
+//[quake target =".bln" power = 3 time = 0.2]
+大魔王を封印する秘策[r]
+魔封波を放つ[r]亀仙人だったが[r]
+失敗し[r]命を落としてしまう…[r]
+　[r]
+ついに[r]
+ピッコロ大魔王は[r]
+7個すべての[r]ドラゴンボールを[r]
+我が物とし…
+[p]
+
+
+
+
+
+
+ 
+*02
+//-------------------------------------------------------------------------------
+//  ピッコロ大魔王
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_021"]
+ 
+[character x = -230 y = -160 storage = "00263/idl_side_p_01" scale = 1.3 action = "fadein" time = 0.1]
+
+ 
+[balloon x=120 y=70 shape="007_01" scale = 0.8 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 7 time = 0.2]
+さあ 出てこい[r]
+神龍とやらよ！！
+[p]
+
+
+*03
+//-------------------------------------------------------------------------------
+//  ななつのドラゴンボールが光る。
+//-------------------------------------------------------------------------------
+[coma shape="N0002R" bg = "bg_000_014"]
+
+[balloon x=0 y=0 shape="010_01" scale = 1.4 action = "fadein" time = 0.05]
+[balloon x=-110 y=-90 shape="010_02" scale = 1.4 action = "fadein" time = 0.05]
+[balloon x=-45 y=100 shape="010_03" scale = 1.4 action = "fadein" time = 0.05]
+[balloon x=210 y=-30 shape="010_04" scale = 1.4 action = "fadein" time = 0.05]
+[balloon x=-205 y=15 shape="010_05" scale = 1.4 action = "fadein" time = 0.05]
+[balloon x=110 y=90 shape="010_06" scale = 1.4 action = "fadein" time = 0.05]
+[balloon x=90 y=-100 shape="010_07" scale = 1.4 action = "fadein" time = 0.05]
+
+[wait time = 0.7]
+
+[se storage = "3024"]
+
+[balloon id = "db1" x=0 y=0 shape="010_08" scale = 1.4 action = "fadein" time = 1.2]
+[balloon id = "db2" x=-110 y=-90 shape="010_08" scale = 1.4 action = "fadein" time = 1.2]
+[balloon id = "db3" x=-45 y=100 shape="010_08" scale = 1.4 action = "fadein" time = 1.2]
+[balloon id = "db4" x=210 y=-30 shape="010_08" scale = 1.4 action = "fadein" time = 1.2]
+[balloon id = "db5" x=-205 y=15 shape="010_08" scale = 1.4 action = "fadein" time = 1.2]
+[balloon id = "db6" x=110 y=90 shape="010_08" scale = 1.4 action = "fadein" time = 1.2]
+[balloon id = "db7" x=90 y=-100 shape="010_08" scale = 1.4 action = "fadein" time = 1.2]
+
+[wait time = 0.8]
+
+[fadeout target = "db1" time = 0.7]
+[fadeout target = "db2" time = 0.7]
+[fadeout target = "db3" time = 0.7]
+[fadeout target = "db4" time = 0.7]
+[fadeout target = "db5" time = 0.7]
+[fadeout target = "db6" time = 0.7]
+[fadeout target = "db7" time = 0.7]
+
+[wait time = 0.4]
+
+[balloon id = "db1" x=0 y=0 shape="010_08" scale = 1.4 action = "fadein" time = 1.2]
+[balloon id = "db2" x=-110 y=-90 shape="010_08" scale = 1.4 action = "fadein" time = 1.2]
+[balloon id = "db3" x=-45 y=100 shape="010_08" scale = 1.4 action = "fadein" time = 1.2]
+[balloon id = "db4" x=210 y=-30 shape="010_08" scale = 1.4 action = "fadein" time = 1.2]
+[balloon id = "db5" x=-205 y=15 shape="010_08" scale = 1.4 action = "fadein" time = 1.2]
+[balloon id = "db6" x=110 y=90 shape="010_08" scale = 1.4 action = "fadein" time = 1.2]
+[balloon id = "db7" x=90 y=-100 shape="010_08" scale = 1.4 action = "fadein" time = 1.2]
+
+[wait time = 1.3]
+
+[fadeout target = "db1" time = 0.7]
+[fadeout target = "db2" time = 0.7]
+[fadeout target = "db3" time = 0.7]
+[fadeout target = "db4" time = 0.7]
+[fadeout target = "db5" time = 0.7]
+[fadeout target = "db6" time = 0.7]
+[fadeout target = "db7" time = 0.7]
+
+[wait time = 1.0]
+
+[se storage = "3025"]
+//点滅
+[balloon shape="008_02" x = 0 y = 0 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+[balloon shape="008_02" x = 0 y = 0 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+
+
+*04
+//-------------------------------------------------------------------------------
+//  神龍が現れる。
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0003R" bg = "bg_000_014"]
+
+[wait_anim target= ".coma"]
+
+[character x = 60 y = -130 storage = "90003/shenron" scale = 1.3 action = "fadein" time = 1.5]
+
+[wait_anim target= ".chara"]
+
+[bgm storage = "005"]
+
+[balloon x = -160 y = 150 shape="001_03" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+さあ 願いを言え
+[p]
+
+
+[balloon x = 180 y = -120 shape="001_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+どんな願いも[r]
+ひとつだけ[r]叶えてやろう
+[p]
+
+*05
+//-------------------------------------------------------------------------------
+//  ピッコロ大魔王
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_014"]
+ 
+[character x = -230 y = -160 storage = "00263/idl_side_p_01" scale = 1.3 action = "fadein" time = 0.1]
+
+ 
+[balloon x=120 y=95 shape="007_01" scale = 0.8 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 7 time = 0.2]
+このわたしを[r]
+若返らせてくれ！！
+[p]
+
+[balloon x=120 y=-110 shape="007_01" scale = 0.8 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 7 time = 0.2]
+もっともパワーに[r]あふれていた[r]
+あの頃にな！！
+[p]
+
+
+ *06
+//-------------------------------------------------------------------------------
+//  神龍
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0003R" bg = "bg_000_014"]
+
+[character x = 60 y = -170 storage = "90003/shenron" scale = 1.3 action = "fadein" time = 0.1]
+
+
+[balloon x = -160 y = 110 shape="001_03" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+たやすいことだ
+[p]
+
+[se storage = "3025"]
+//点滅
+[balloon shape="008_02" x = 0 y = 0 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+//[balloon shape="008_02" x = 0 y = 0 scale = 50 action = "fadein" time = 0.1]
+//[wait time = 0.3]
+//[clear target = ".bln"]
+
+//フェードアウト（フェードアウトするコマ）
+[balloon x=0 y=0 shape="008_02" scale = 50.0 action = "fadein" time = 0.5]
+[wait time = 0.7] 
+
+*07
+//-------------------------------------------------------------------------------
+//  ピッコロ大魔王が若返る。
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+//[coma shape="N0001L" bg = "bg_006_001"]
+[coma shape="S0001" bg = "bg_000_014"]
+ 
+ 
+ 
+[character x = 0 y = -10 storage = "00263/card_02" scale = 1.2 action = "fadein" time = 0.1]
+
+//フェードイン（フェードインするコマ）
+[balloon x=0 y=0 shape="008_02" scale = 50]
+[wait time = 1]
+[fadeout target = ".bln" time = 2]
+[wait_anim target=".bln"]
+
+ 
+[balloon x=120 y=435 shape="007_01" scale = 0.9 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 7 time = 0.2]
+はっはっはっは！！[r]
+これだ！！ [r]このあふれる[r]パワー感だっ！！
+[p]
+
+[balloon x=-140 y=-300 shape="007_01" scale = 0.8 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 7 time = 0.2]
+もどったぞ！！[r]
+若返ったのだーっ！！
+[p]
+
+*08
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0003R" bg = "bg_006_001"]
+ 
+//[wait_anim target=".coma"]
+ 
+[balloon x=0 y=-20 shape="003_01" scale = 1.6 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 15]
+//[quake target =".bln" power = 3 time = 0.2]
+こうして[r]
+ピッコロ大魔王は[r]
+若返ることで[r]
+全盛期の力をとりもどし[r]
+世界征服の野望に[r]
+また1歩[r]近づくのだった…[r]
+だが……
+[p]
+
+
+
+*09
+//-------------------------------------------------------------------------------
+//  四星球にマイナスエネルギーがたまる。
+//-------------------------------------------------------------------------------
+[se storage = "44"]
+[coma shape="N0002L" bg = "bg_000_014"]
+ 
+[balloon x=0 y=-40 shape="010_04" scale = 2.5 action = "fadein" time = 0.05]
+
+[balloon id = "1" x=0 y=-40 shape="010_35" scale = 0.4 action = "fade:60" time=1.0]
+[wait time = 1.0]
+[fadeout target = "1" time = 1.7]
+
+
+[balloon id = "2" x=0 y=-40 shape="010_36" scale = 0.6 action = "fade:60" time=1.0]
+[wait time = 1.0]
+[fadeout target = "2" time = 1.7]
+
+
+[balloon id = "3" x=0 y=-40 shape="010_37" scale = 0.4 action = "fade:60" time=0.5]
+[wait time = 1.0]
+[fadeout target = "3" time = 1.7]
+
+
+[balloon id = "4" x=0 y=-40 shape="010_38" scale = 0.4 action = "fade:60" time=0.5]
+[wait time = 0.2]
+
+
+[wait_anim target="3"]
+[p]
+
+
+[balloon x=0 y=0 shape="008_03" scale = 50.0 action = "fadein" time = 1.5]
+[wait time = 2.5]
+
+
+
+
+ 
+//-------------------------------------------------------------------------------
+[stopbgm]

@@ -1,0 +1,116 @@
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "007"]
+
+*01
+//-------------------------------------------------------------------------------
+//  クリリン
+//-------------------------------------------------------------------------------
+
+//[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_021"]
+
+[character x = 180 y = -100 storage = "00009/heapup_e_01" scale = 1.7 action = "fadein" time = 0.1]
+
+[balloon x=-125 y=80 shape="006_01" scale = 0.8 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 7 time = 0.2]
+[font size = 32]
+ヤ…[r]
+ヤムチャさーん！！[p]
+
+*02
+//-------------------------------------------------------------------------------
+//  ナッパ
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_021"]
+
+[character x = -210 y = -80 storage = "00015/idl_side_p_02" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x=135 y=80 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target =".bln" power = 3 time = 0.2]
+[font size = 28]
+なさけねえ栽培マンだぜ[r]
+相討ちとはよ！！[p]
+
+
+*03
+//-------------------------------------------------------------------------------
+//  クリリン
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_021"]
+
+[character x = 180 y = -100 storage = "00009/heapup_e_01" scale = 1.7 action = "fadein" time = 0.1]
+//[quake target =".chara" power = 1 time = 300]
+
+[balloon x=-115 y=100 shape="004_01" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 3 time = 0.2]
+[font size = 24]
+き…きっとヤムチャさんは[r]
+いやな予感がしてたんだ…[r]
+それでオレの代わりに……[p]
+
+[balloon x=-125 y=-100 shape="004_01" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 3 time = 0.2]
+[font size = 24]
+ち…ちきしょう…[r]
+プーアルやブルマさんたちに[r]
+なんて言やいいんだよ……[p]
+
+
+*04
+//-------------------------------------------------------------------------------
+//  ベジータ
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_021"]
+
+//[character x = -180 y = -40 storage = "00015/idl_side_p_02" scale = 0.9 action = "fadein" time = 0.1]
+[character x = -180 y = -180 storage = "00061/card_02" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x=125 y=80 shape="002_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target =".bln" power = 3 time = 0.2]
+[font size = 28]
+おい！ きたないから[r]
+片付けておけよ[r]
+そのボロクズを！[p]
+
+
+*05
+//-------------------------------------------------------------------------------
+//  クリリン
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_000_021"]
+
+[character x = 170 y = -60 storage = "00009/idl_side_e_02" scale = 2.2 action = "fadein" time = 0.1]
+
+[balloon x=-125 y=110 shape="004_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 3 time = 0.2]
+[font size = 32]
+く…[r]
+くそったれ！！[p]
+
+[balloon x=-125 y=-120 shape="006_01" scale = 0.8 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 7 time = 0.2]
+[font size = 32]
+修業の成果を[r]
+見せてやる…！！[p]
+
+//-------------------------------------------------------------------------------
+[stopbgm]

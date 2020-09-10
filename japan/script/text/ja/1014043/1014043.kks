@@ -1,0 +1,66 @@
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "008"]
+
+//-------------------------------------------------------------------------------
+//  １３号
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0001L" bg = "bg_023_004"]
+
+[character x=-190 y=-210 storage = "00288/idl_side_p_01" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x=120 y=130 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+小僧…[r]
+オレたちのジャマを[r]
+する気か？[p]
+
+[balloon x=130 y=-75 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+あまり頭がいいとは[r]
+言えんな…[p]
+
+*001
+//-------------------------------------------------------------------------------
+//  トランクス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_023_004"]
+
+[character x = 210 y = -200 storage = "90000/wait_right_anger_strong" scale = 1.2 action = "fadein" time = 0.1]
+
+
+[balloon shape="001_02" x = -100 y = 90 scale = 0.9 action = "fadein" time = 0.1]
+[font size = 28]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 3 time = 0.2]
+おまえたちの[r]
+やることを見過ごせる[r]
+わけないだろ…！！
+[p]
+
+*002
+//-------------------------------------------------------------------------------
+//  １３号
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002L" bg = "bg_023_004"]
+
+[character x=-140 y=-275 storage = "00288/heapup_p_01" scale = 1.4 action = "fadein" time = 0.1]
+
+[balloon x=130 y=90 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+ふ…[r]
+生きてこの場を逃れる[r]
+ことはできんぞ…！！[p]
+
+
+[stopbgm]

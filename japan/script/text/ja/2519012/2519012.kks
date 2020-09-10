@@ -1,0 +1,101 @@
+//"エリア１スタート"
+
+*start|スタート
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+
+//[bgm storage = "013"]
+
+*001
+//-------------------------------------------------------------------------------
+//  孫悟空
+//-------------------------------------------------------------------------------
+//[se storage = "03"]
+
+[coma shape="N0003R" bg = "bg_000_024"]
+
+[character x = 200 y = -150 storage = "00003/card_01" scale = 1.4 action = "fadein" time = 0.1]
+
+
+
+
+*002
+//-------------------------------------------------------------------------------
+//  ベジータ
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0003L" bg = "bg_000_024"]
+
+[character x = -185 y = -340 storage = "00004/card_01" scale = 1.4 angle=-0 action = "fadein" time = 0.1]
+
+[wait time = 0.7]
+
+
+[se storage = "3034"]
+[balloon id = "potara" x=30 y=170 shape="011_12" scale = 1.2 angle=15 action = "fadein" time = 0.1]
+[quake target ="potara" power = 5 time = 0.4]
+
+[wait_anim target="potara"]
+
+[balloon x=-125 y=480 shape="001_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+ベジータ…すまねえ[r]
+力かしてくれ！！[r]
+[p]
+
+
+
+[balloon x=150 y=-80 shape="002_02" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+//[quake target =".bln" power = 7 time = 0.2]
+…ちっ…！[p]
+
+
+[se storage = "3025"]
+//点滅
+[balloon shape="008_02" x = 140 y = -30 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+//[balloon shape="008_02" x = 140 y = -30 scale = 50 action = "fadein" time = 0.1]
+//[wait time = 0.3]
+//[clear target = ".bln"]
+
+//フェードアウト（フェードアウトするコマ）
+[balloon x=130 y=40 shape="008_02" scale = 50.0 action = "fadein" time = 0.3]
+[wait time = 0.5] 
+
+
+*003
+//-------------------------------------------------------------------------------
+//  ベジット
+//-------------------------------------------------------------------------------
+[coma shape="S0001" bg = "bg_073_001"]
+
+[character id = "beji" x = -30 y = -0 storage = "00653/card_01" scale = 1.2 action = "fadein" time = 0.1] 
+
+
+//フェードイン（フェードインするコマ）
+[balloon x=130 y=40 shape="008_02" scale = 50]
+[wait time = 0.5]
+[fadeout target = ".bln" time = 1.5]
+[wait_anim target=".bln"]
+
+
+//[lwfobject id = "kaki1" storage="kakimoji:ef_020" in="04" x=0 y=-300 scale = 3] 
+//[quake target = "kaki1" power = 15 time = 0.4] 
+
+
+[balloon x=-0 y=-350 shape="006_02" scale = 1.0 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 7 time = 0.2]
+これが！[r]
+ベジットブルー[r]だ！！
+[p]
+
+//-------------------------------------------------------------------------------
+//[stopbgm]

@@ -1,0 +1,40 @@
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+//[bgm storage = "003"]
+
+*001
+//-------------------------------------------------------------------------------
+//  
+//-------------------------------------------------------------------------------
+[se storage = "3022"]
+[coma shape="N0002L" bg = "bg_000_009"]
+
+[lwfobject id = "kaki1" storage="kakimoji:ef_023" in="04" x=-130 y=50 scale = 2.0]
+[quake target = "kaki1" power = 10 time = 0.4]
+
+[character x=30 y=-60 storage = "00064/card_02" scale = 1.3 action = "fadein" time = 0.1]
+
+[wait_anim target="kaki1"]
+
+[balloon x=-180 y=410 shape="002_02" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+[quake target =".bln" power = 3 time = 0.2]
+生意気な…！！
+[p]
+
+
+[balloon x=140 y=-180 shape="006_02" scale = 0.9 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 7 time = 0.2]
+きさまを倒し[r]
+この宇宙は[r]
+オレが支配する！！
+[p]
+
+
+//[stopbgm]

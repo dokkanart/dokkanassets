@@ -1,0 +1,81 @@
+*start|スタート
+
+//"ラウンド2開始"
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+//[bgm storage = "013"]
+
+ 
+*001
+//-------------------------------------------------------------------------------
+//  ベジータ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_008_001"]
+
+//[character x = 165 y = -115 storage = "00004/idl_side_e_02" scale = 1.2 action = "fadein" time = 0.1]
+ 
+[character id= "vgt" x = 180 y = -150 storage = "00282/idl_side_p_01" scale = 1.1 action = "fadein" time = 0.1]
+[flip target ="vgt" h=1]
+  
+[balloon x=-130 y=90 shape="002_01" scale =0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+きさまを倒すのは[r]
+このオレだ！！
+[p]
+
+[clear target = "vgt"]
+
+[character id = "super" x = 170 y = -240 storage = "99999/supersaiyan" scale = 1.4]
+[quake target ="super" power = 5 time = 0.3]
+
+[character id = "vgt2" x = 180 y = -150 storage = "00282/idl_side_p_01" scale = 1.1]
+[flip target ="vgt2" h=1]
+[quake target ="vgt2" power = 3 time = 0.3]
+
+//[wait_anim target="super"]
+//[wait time = 0.1]
+
+
+//点滅（白）
+[se storage = "50"]
+//点滅
+[balloon shape="008_02" x = 140 y = -30 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+
+[balloon shape="008_02" x = 140 y = -30 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+
+[wait_anim target=".bln"]
+ 
+ 
+*002
+//-------------------------------------------------------------------------------
+//  ベジータ
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+
+[coma shape="S0001" bg = "bg_008_001"]
+
+[character id = "1" x = 140 y = 20 storage = "00282/card_03" scale = 1.1 action = "fadein" time = 0.1]
+[quake target ="1" power = 4 time = 0.2]
+
+[character id = "2" x = -120 y = -120 storage = "00003/card_12" scale = 1.2 action = "fadein" time = 0.1]
+[quake target ="2" power = 4 time = 0.2]
+
+
+[balloon x=0 y=460 shape="006_01" scale = 0.8 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 7 time = 0.2]
+サイヤ人を[r]
+あまくみるなよ！！
+[p]
+ 
+//-------------------------------------------------------------------------------
+//[stopbgm]

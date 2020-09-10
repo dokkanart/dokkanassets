@@ -1,0 +1,109 @@
+
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "011"]
+
+//-------------------------------------------------------------------------------
+//  悟空
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+//[coma shape="N0001R" bg = "bg_080_001"]
+
+//[character x = 185 y = -190 storage = "00003/card_01" scale = 1.1 action = "fadein" time = 0.1]
+
+//[balloon x = -150 y = 10 shape="001_02" scale = 0.8 action = "fadein" time = 0.1]
+//[wait_anim target=".bln"][font size = 32]
+//[quake target = ".bln" power = 3 time = 0.2]
+//やったな〜！[r]
+//蛇の道の終点だ！
+//[p]
+
+
+
+
+*coma2
+//-------------------------------------------------------------------------------
+//  悟空
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0001R" bg = "bg_080_001"]
+
+[character x = 185 y = -190 storage = "00003/card_01" scale = 1.1 action = "fadein" time = 0.1]
+
+[balloon x = -140 y = 100 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][font size = 28]
+ここまで辿り着いた[r]
+だけでも相当[r]
+鍛えられたはずだ！
+[p]
+
+
+[balloon x = -135 y = -110 shape="001_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][font size = 28]
+//[quake target = ".bln" power = 3 time = 0.2]
+けど界王さまの[r]
+修業を受ければ[r]
+もっと強くなれるぞ！
+[p]
+
+*coma3
+//-------------------------------------------------------------------------------
+//  界王フェードインで登場
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_080_001"]
+
+[wait_anim target=".coma"]
+
+[character x = -160 y = -90 storage = "90001/stand" scale = 0.8 action = "fadein" time = 1.5]
+
+[wait_anim target=".chara"]
+
+[balloon x = 150 y = 100 shape="001_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][font size = 32]
+ふっふっふ…[r]
+そういうことだ！
+[p]
+
+
+[balloon x = 165 y = -110 shape="001_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][font size = 28]
+//[quake target = ".bln" power = 3 time = 0.2]
+…ただし修業は[r]
+テストに合格して[r]
+からだ！
+[p]
+
+*coma4
+//-------------------------------------------------------------------------------
+//  界王
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0003L" bg = "bg_080_001"]
+
+[character x = -150 y = -50 storage = "90001/stand" scale = 0.7 action = "fadein" time = 0.1]
+
+[balloon x = 150 y = 100 shape="001_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][font size = 32]
+わしをシャレで[r]
+笑わせることが[r]
+できるかな？
+[p]
+
+
+[balloon x = 165 y = -110 shape="001_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][font size = 28]
+[quake target = ".bln" power = 3 time = 0.2]
+修業はそれからだ…[r]
+じっくり考えて[r]
+みるがよい！
+[p]
+
+//フェードアウト
+[balloon x=130 y=40 shape="008_03" scale = 50.0 action = "fadein" time = 0.5]
+[wait time = 3.5]
+
+[stopbgm]

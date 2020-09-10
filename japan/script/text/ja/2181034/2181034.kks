@@ -1,0 +1,158 @@
+*start|スタート
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+//[bgm storage = "028"]
+
+*001
+//-------------------------------------------------------------------------------
+//  フリーザ（最終形態）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_086_003"]
+
+[character x = -130 y = -200 storage = "00205/idl_side_p_01" scale = 0.9 action = "fadein" time = 0.1]
+
+
+//[character  x=-120 y=-250 storage = "00068/idl_side_p_01" scale = 1.2 action = "fadein" time = 0.1]
+[character id = "f" x=-290 y=-180 storage = "00068/idl_back_p_01" scale = 1.2 action = "fadein" time = 0.1]
+
+
+[balloon x=120 y=90 shape="002_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+気に入りませんね…[r]
+その態度
+[p]
+
+[balloon x=135 y=-100 shape="002_03" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+これが[r]
+全力だと思ったら[r]
+大間違いですよ！
+[p]
+
+*002
+//-------------------------------------------------------------------------------
+//  グレートサイヤマン４号
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_086_003"]
+
+//[character x = 270 y = -90 storage = "00970/heapup_e_01" scale = 1.05 action = "fadein" time = 0.1]
+[character x = 265 y = -130 storage = "00970/idl_side_e_01" scale = 1.1 action = "fadein" time = 0.1]
+
+
+[balloon x = -85 y = 60 shape="004_02" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+[quake target =".bln" power = 3 time = 0.2]
+な…[r]
+なんだって！？
+[p]
+
+*003
+//-------------------------------------------------------------------------------
+//  フリーザ（最終形態）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002L" bg = "bg_086_003"]
+
+[character id ="seru01"  x = -160 y = -170 storage = "00205/heapup_p_01" scale = 1.0 action = "fadein" time = 0.1]
+[character id ="friza01" x=-270 y=-270 storage = "00068/heapup_p_01" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x=140 y=80 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+見せてあげましょう[r]
+わたしたちの[r]
+フルパワーをね！
+[p]
+
+[se storage = "3038"]
+[lwfobject id = "kaki1" storage="kakimoji:ef_009" x=-230 y=-240 scale = 1.2 action = "fadein" time = 0.7]
+[quake target = "kaki1" power = 1 time = 300]
+
+[quake target ="friza01" power = 1 time = 300]
+[quake target ="seru01" power = 1 time = 300]
+
+[balloon x=160 y=-200 shape="006_02" scale = 0.7 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 40]
+[quake target =".bln" power = 7 time = 0.2]
+カァアアア[r]アア！！
+[p]
+
+[se storage = "3025"]
+//点滅
+[balloon shape="008_02" x = 0 y = 0 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+[balloon shape="008_02" x = 0 y = 0 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+
+//フェードアウト（フェードアウトするコマ）
+//[balloon x=0 y=0 shape="008_02" scale = 50.0 action = "fadein" time = 0.5]
+//[wait time = 0.7]
+
+*004
+//-------------------------------------------------------------------------------
+//  フリーザ（フルパワー）
+//-------------------------------------------------------------------------------
+//[se storage = "3017"]
+[coma shape="S0001" bg = "bg_086_003"]
+
+[lwfobject id = "kaki1" storage="kakimoji:ef_020" x=10 y=-200 scale = 2.6 action = "fadein" time = 0.1]
+[quake target = "kaki1" power = 16 time = 0.5]
+
+
+[character id = "s" x=150 y=80 storage = "00205/card_02" scale = 0.8 action = "fadein" time = 0.1]
+[quake target ="s" power = 10 time = 0.4]
+
+[character id = "f" x=-150 y=-20 storage = "00349/card_1003320" scale = 1.4 action = "fadein" time = 0.1]
+[quake target ="f" power = 10 time = 0.4]
+
+//フェードイン（フェードインするコマ）
+//[balloon x=0 y=0 shape="008_02" scale = 50]
+//[wait time = 1]
+//[fadeout target = ".bln" time = 2]
+//[wait_anim target=".bln"]
+
+[wait time = 0.3]
+
+[fadeout target = "kaki1" time = 1]
+
+[wait time = 0.9]
+
+[balloon x=-145 y=330 shape="002_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size =28]
+//[quake target =".bln" power = 3 time = 0.2]
+ふふふ…待たせたな[r]
+これがオレの[r]フルパワーだ
+[p]
+
+[balloon x = 135 y = -400 shape="002_03" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 5 time = 0.2]
+礼を言わせてもらおう[r]
+おまえたちとの闘いで[r]
+このわたしも[r]
+パワーアップしたようだ
+[p]
+
+//空のフキダシ
+//[balloon x = 0 y = 0 shape="002_01" scale = 0]
+//[p]
+
+
+//-------------------------------------------------------------------------------
+//[stopbgm]
+
+

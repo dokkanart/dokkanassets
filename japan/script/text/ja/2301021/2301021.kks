@@ -1,0 +1,113 @@
+
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "008"]
+
+//-------------------------------------------------------------------------------
+//  ラディッツ
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0001L" bg = "bg_027_001"]
+
+[character x=-190 y=-100 storage = "00014/idl_side_p_02" scale = 1.5 action = "fadein" time = 0.1]
+
+[balloon id="radhi1" x=150 y=120 shape="002_03" scale = 0.85 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 30]
+せっかくの忠告を[r]
+聞かずにはむかう[r]
+おろか者には…
+[p]
+
+[balloon id="radhi1" x=150 y=-90 shape="002_01" scale = 0.85 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 34]
+死あるのみだ…！
+[p]
+
+
+*002
+//-------------------------------------------------------------------------------
+//  悟空
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_027_001" scale = 10]
+[lwfobject id="syuutyuu1" storage="syucyu:ef_001" mask="inside" loop=1 priority=10 scale=0.7]
+[move target = "syuutyuu1" x = 140 y = 0]
+
+[character x=195 y=-110 storage = "00003/heapup_e_01" scale = 1.8 action = "fadein" time = 0.1]
+
+[balloon x=-100 y=100 shape="007_01" scale = 0.9 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 7 time = 0.2]
+[font size = 30]
+それより[r]
+オラの息子はどこだ！
+[p]
+
+[balloon x=-140 y=-120 shape="007_01" scale = 0.9 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 7 time = 0.2]
+[font size = 32]
+どこに[r]
+かくしやがった！！
+[p]
+
+
+*003
+//-------------------------------------------------------------------------------
+//  穴
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0004L" bg = "bg_027_003"]
+
+[wait_anim target=".coma"]
+
+
+[balloon id="radhi1" x=-150 y=80 shape="002_02" scale = 0.85 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 30]
+あそこに穴があろう[r]
+そこだ
+[p]
+
+[balloon id="radhi1" x=175 y=-10 shape="001_01" scale = 0.65 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 46]
+[quake target =".bln" power = 3 time = 0.2]
+あれか…！
+[p]
+
+
+*004
+//-------------------------------------------------------------------------------
+//  悟空
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_027_001"]
+[lwfobject id="syuutyuu1" storage="syucyu:ef_001" mask="inside" loop=1 priority=10 scale=1.2]
+[move target = "syuutyuu1" x = 120 y = -30]
+
+[character x=195 y=-60 storage = "00003/heapup_e_01" scale = 1.9 action = "fadein" time = 0.1]
+
+
+[balloon x=-100 y=100 shape="007_01" scale = 0.8 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 7 time = 0.2]
+[font size = 34]
+まってろよ悟飯！！
+[p]
+
+[balloon x=-120 y=-130 shape="007_01" scale = 0.9 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 7 time = 0.2]
+[font size = 30]
+とうちゃんがすぐに[r]
+助けてやっからな！！
+[p]
+
+
+[stopbgm]

@@ -1,0 +1,133 @@
+*start|スタート
+
+//"エリア２ゴール"
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "002"]
+ 
+*001
+//-------------------------------------------------------------------------------
+//  ジャガー
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0001L" bg = "bg_070_006"]
+ 
+[character x = -180 y = -110 storage = "90003/jaguar" scale = 1.0 action = "fadein" time = 0.1]
+[character x = -225 y = 110 storage = "99999/ase" scale = 0.6 action = "fadein" time = 0.1]
+ 
+[balloon x=110 y=70 shape="004_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+な…[r]
+なんてやつらだ！！
+[p]
+
+*002
+//-------------------------------------------------------------------------------
+//  ミスター・サタン
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_070_006"]
+ 
+[character x=200 y=-110 storage = "00038/heapup_e_02" scale = 1.1 action = "fadein" time = 0.1]
+ 
+[balloon x=-100 y=110 shape="001_02" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+ふふ…[r]
+ジャガー どうだね？[r]
+わたしの弟子たちの強さは！
+[p]
+ 
+[balloon x=-110 y=-100 shape="001_03" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+[quake target =".bln" power = 3 time = 0.2]
+わたしの出る幕もなかった[r]
+ガハハハハ！！
+[p]
+
+*003
+//-------------------------------------------------------------------------------
+//  ジャガー
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_070_006"]
+ 
+[character x = -180 y = -110 storage = "90003/jaguar" scale = 1.0 action = "fadein" time = 0.1]
+ 
+[balloon x=120 y=110 shape="006_02" scale = 1.0 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 23]
+[quake target =".bln" power = 7 time = 0.2]
+　  これからが[r]
+　  本番だ サタン！！[r]
+　  オレには最後の切り札が[r]
+　  残ってる[r]
+　  見ておどろくな！？
+[p]
+ 
+[balloon x=120 y=-120 shape="006_01" scale = 0.8 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 7 time = 0.2]
+あやまるなら[r]
+今のうちだぞ！！
+[p]
+
+*004
+//-------------------------------------------------------------------------------
+//  ミスター・サタン
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_070_006"]
+ 
+[character x=200 y=-110 storage = "00038/heapup_e_02" scale = 1.1 action = "fadein" time = 0.1]
+ 
+[balloon x=-80 y=90 shape="001_03" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+心配無用！[r]
+誰でもつれてこい！
+[p]
+
+[balloon x=-100 y=-90 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+誰をつれてこようと[r]
+わたしたちとは[r]
+勝負にならんからな！[r]
+なあ みんな！
+[p]
+
+*005
+//-------------------------------------------------------------------------------
+//  トランクス 孫悟天 18号
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_070_006"]
+
+
+[character x = 150 y = -100 storage = "00020/idl_side_e_04" scale = 1.0 action = "fadein" time = 0.1] 
+[character x = 80 y = -170 storage = "00225/idl_side_p_01" scale = 1.0 action = "fadein" time = 0.1]
+[flip target =".chara" h=1]
+[character x=240 y=-170 storage = "00200/idl_side_e_01" scale = 1.0 action = "fadein" time = 0.1]
+
+[character x = 180 y = 145 storage = "99999/ase" scale = 0.6 action = "fadein" time = 0.1]
+[character x = 90 y = -40 storage = "99999/ase" scale = 0.6 action = "fadein" time = 0.1]
+[character x = 220 y = -10 storage = "99999/ase" scale = 0.6 action = "fadein" time = 0.1]
+ 
+[balloon x=-130 y=70 shape="001_03" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 54]
+//[quake target =".bln" power = 3 time = 0.2]
+………
+[p]
+ 
+//-------------------------------------------------------------------------------
+[stopbgm]

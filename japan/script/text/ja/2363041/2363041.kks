@@ -1,0 +1,140 @@
+*start|スタート
+//"ステージ4ゴール"
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "029"]
+
+*001
+//-------------------------------------------------------------------------------
+//  超サイヤ人２ケール
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_086"]
+
+//[character x = 210 y = -150 storage = "00738/idl_side_e_03" scale = 1.2 action = "fadein" time = 0.1]
+
+[character x = 290 y = -90 storage = "00738/atc_punch_e_05" scale = 1.2 action = "fadein" time = 0.1]
+
+[character id = "s2" x = 220 y = -30 storage = "99999/supersaiyan2" scale = 1.0 angle = -10 action = "fadein" time = 0.1]
+[flip target ="s2" h=1]
+
+[balloon shape="001_03" x = -120 y = 90 scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+ケール！[r]
+すっげえじゃねえか！
+[p]
+
+[balloon x=-100 y=-100 shape="001_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+さすが[r]
+あたしの妹分だぜ！
+[p]
+
+*002
+//-------------------------------------------------------------------------------
+//  ケール（暴走）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_086"]
+
+[character id = "1" x = -180 y = -200 storage = "00737/idl_side_e_02" scale = 1.1 action = "fadein" time = 0.1]
+[flip target ="1" h=1]
+
+
+
+[balloon x=100 y=60 shape="004_02" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+[quake target =".bln" power = 3 time = 0.2]
+あ…[r]
+あねさん……！
+[p]
+
+//  ケールが正気にもどる。
+[se storage = "45"]
+
+[fadeout target = "1" time = 1.5]
+
+[character id = "2" x = -220 y = -170 storage = "00737/idl_side_p_04" scale = 1.2 action = "fadein" time = 1.5]
+
+[wait_anim target=".chara"]
+
+// 空のフキダシ（セリフがないコマを送るために使用）
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+*004
+//-------------------------------------------------------------------------------
+//  キャベ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_086"]
+
+[character x = 240 y = -160 storage = "00552/idl_side_p_01" scale = 1.2 action = "fadein" time = 0.1]
+[flip target =".chara" h=1]
+
+[balloon shape="001_02" x = -100 y = 50 scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+思いがけず[r]すごい戦士が[r]
+仲間になったかも…[r]ですね
+[p]
+
+*005
+//-------------------------------------------------------------------------------
+//  超サイヤ人２ケール
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_086"]
+
+
+[character x = 290 y = -90 storage = "00738/atc_punch_e_05" scale = 1.2 action = "fadein" time = 0.1]
+
+[character id = "s2" x = 220 y = -30 storage = "99999/supersaiyan2" scale = 1.0 angle = -10 action = "fadein" time = 0.1]
+[flip target ="s2" h=1]
+
+[balloon x=-120 y=60 shape="001_03" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 40]
+//[quake target =".bln" power = 3 time = 0.2]
+ふふ…
+[p]
+
+*006
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0004L" bg = "bg_000_059"]
+
+[character id = "koma" x=180 y=-30 storage = "99999/bubutai" scale = 0.7 action = "fadein" time = 0.1]
+
+
+[balloon x=-125 y=-30 shape="003_02" scale = 1.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 14]
+//[quake target =".bln" power = 3 time = 0.2]
+熾烈なサバイバルの[r]
+勝ち残りをかけ[r]
+着々と代表選手を[r]
+そろえていった第6宇宙…[r]
+　[r]
+それぞれの思惑が[r]
+交錯する中[r]
+いよいよ運命を決する[r]
+力の大会が[r]
+始まろうとしていた…
+[p]
+
+[balloon x=0 y=0 shape="008_03" scale = 50.0 action = "fadein" time = 0.5]
+
+[wait time = 2.5]
+
+//-------------------------------------------------------------------------------
+[stopbgm]

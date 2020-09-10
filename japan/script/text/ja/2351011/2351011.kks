@@ -1,0 +1,225 @@
+*start|スタート
+//ステージ１ゴール
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "012"]
+
+
+
+*01
+//-------------------------------------------------------------------------------
+//  ビーデル
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0001R" bg = "bg_019_001"]
+
+//[character x=-230 y=-140 storage = "00039/idl_side_p_01" scale = 1.0 action = "fadein" time = 0.1]
+
+[character x=230 y=-140 storage = "00039/idl_side_p_01" scale = 1.0 action = "fadein" time = 0.1]
+[flip target =".chara" h=1]
+
+[balloon x=-110 y=50 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[font size = 28]
+[wait_anim target=".bln"]
+//[quake target =".bln" power = 3 time = 0.2]
+…ところで孫悟飯くん[r]
+どうやって授業を[r]
+抜け出してきたの？[r]
+[p]
+
+
+*02
+//-------------------------------------------------------------------------------
+//  グレートサイヤマン
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_019_001"]
+
+[character x = -200 y = -220 storage = "00366/idl_front_p_01" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x=125 y=100 shape="001_03" scale = 0.9 action = "fadein" time = 0.1]
+[font size = 28]
+[wait_anim target=".bln"]
+//[quake target =".bln" power = 3 time = 0.2]
+便所に[r]
+行きたいって[r]
+出てきたんですよ[p]
+
+[balloon x=130 y=-100 shape="001_01" scale = 0.8 action = "fadein" time = 0.1]
+[font size = 32]
+[wait_anim target=".bln"]
+//[quake target =".bln" power = 3 time = 0.2]
+だから[r]
+早く帰らないと…[p]
+
+*03
+//-------------------------------------------------------------------------------
+//  ビーデル
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_019_001"]
+
+[character x=230 y=-140 storage = "00039/idl_side_p_01" scale = 1.0 action = "fadein" time = 0.1]
+[flip target =".chara" h=1]
+
+[balloon x=-110 y=70 shape="007_01" scale = 0.75 action = "expand" time = 0.1]
+[font size = 36]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 7 time = 0.2]
+やっぱり！！[p]
+
+
+*04
+//-------------------------------------------------------------------------------
+//  グレートサイヤマン
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_019_001"]
+
+[character x = -200 y = -220 storage = "00366/idl_front_p_01" scale = 1.2 action = "fadein" time = 0.1]
+
+
+[balloon x=110 y=60 shape="001_01" scale = 0.65 action = "fadein" time = 0.1]
+[font size = 44]
+[wait_anim target=".bln"]
+//[quake target =".bln" power = 3 time = 0.2]
+え？[p]
+
+
+*05
+//-------------------------------------------------------------------------------
+//  ビーデル
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_019_001"]
+
+[character x=230 y=-140 storage = "00039/idl_side_p_01" scale = 1.0 action = "fadein" time = 0.1]
+[flip target =".chara" h=1]
+
+[balloon x=-120 y=50 shape="007_01" scale = 0.9 action = "fadein" time = 0.1]
+[font size = 28]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 7 time = 0.2]
+やっぱり[r]
+あんたの正体は[r]
+孫悟飯くん[r]だったのねっ！！[p]
+
+
+*06
+//-------------------------------------------------------------------------------
+//  グレートサイヤマン
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_019_001"]
+
+//[character x=180 y=-240 storage = "00366/guard_e_01" scale = 1.2 action = "fadein" time = 0.1]
+
+[character x=-180 y=-240 storage = "00366/guard_p_01" scale = 1.2 action = "fadein" time = 0.1]
+[character x = -285 y = 90 storage = "99999/ase" scale = 0.7 action = "fadein" time = 0.1]
+
+
+[balloon x=130 y=50 shape="004_01" scale = 0.9 action = "fadein" time = 0.1]
+[font size = 28]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 3 time = 0.2]
+し…！！[r]
+しし……[r]
+しまった……！！[p]
+
+
+
+*07
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_000_024"]
+
+[balloon shape="003_01" x = 0 y = 15 scale = 1.7 action = "fadein" time = 0.1]
+[font size = 14]
+[wait_anim target=".bln"]
+//[quake target =".bln" power = 3 time = 0.2]
+鋭い洞察力で[r]
+グレートサイヤマンの[r]正体は[r]
+転校生の孫悟飯だと[r]
+見破ったビーデル…[r]
+　[r]
+ビーデルは[r]
+その秘密を守るかわりに[r]
+孫悟飯に[r]
+天下一武道会への出場を[r]承諾させるのだった[r]
+さらに…
+[p]
+
+
+*08
+//-------------------------------------------------------------------------------
+//  ビーデル
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_019_001"]
+
+[character x=230 y=-140 storage = "00039/idl_side_p_01" scale = 1.0 action = "fadein" time = 0.1]
+[flip target =".chara" h=1]
+
+[balloon x=-110 y=90 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[font size = 28]
+[wait_anim target=".bln"]
+//[quake target =".bln" power = 7 time = 0.2]
+あ それと[r]
+今度 空の飛びかた[r]
+わたしに教えてよね[r]
+[p]
+
+[balloon x=-110 y=-100 shape="001_03" scale = 0.8 action = "fadein" time = 0.1]
+[font size = 32]
+[wait_anim target=".bln"]
+//[quake target =".bln" power = 7 time = 0.2]
+あんただけ[r]
+飛べるってのは[r]
+ずるいわ
+[p]
+
+
+*09
+//-------------------------------------------------------------------------------
+//  グレートサイヤマン
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_019_001"]
+
+[character x = -200 y = -220 storage = "00366/idl_front_p_01" scale = 1.2 action = "fadein" time = 0.1]
+
+
+[balloon x=120 y=60 shape="001_03" scale = 0.75 action = "fadein" time = 0.1]
+[font size = 36]
+[wait_anim target=".bln"]
+//[quake target =".bln" power = 3 time = 0.2]
+い…[r]
+いいですよ……
+[p]
+
+*10
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_000_016"]
+
+[balloon shape="003_01" x = 0 y = -20 scale = 1.6 action = "fadein" time = 0.1]
+[font size = 15]
+[wait_anim target=".bln"]
+//[quake target =".bln" power = 3 time = 0.2]
+思わぬところで[r]
+意外な[r]ライバルを見つけた[r]
+ビーデル…[r]
+　[r]
+ビーデルは[r]
+悟飯との試合と[r]
+新たな力の習得に向け[r]
+胸をふくらませる[r]のだった
+[p]
+
+//-------------------------------------------------------------------------------
+[stopbgm]

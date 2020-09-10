@@ -1,0 +1,60 @@
+*start|スタート
+
+//"２3−５ボス前" 
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "013"]
+ 
+*001
+//-------------------------------------------------------------------------------
+//  トランクス
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_004"]
+ 
+[character x = 210 y = -200 storage = "90000/wait_right_anger_strong" scale = 1.2 action = "fadein" time = 0.1]
+ 
+[balloon x=-110 y=120 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+まだ 完全体という[r]
+わけではない…！ 
+[p]
+ 
+[balloon x=-100 y=-90 shape="001_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+倒せるチャンスは[r]
+あるはずだ…！ 
+[p]
+
+*002
+//-------------------------------------------------------------------------------
+//  セル（第二形態）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002L" bg = "bg_000_004"]
+ 
+[character x = -230 y = -180 storage = "00204/heapup_p_01" scale = 1.4 action = "fadein" time = 0.1]
+ 
+[balloon x=120 y=120 shape="002_02" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+すばらしいパワーに[r]
+わたし自身も驚いているよ… 
+[p]
+ 
+[balloon x=130 y=-210 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+もちろん １７号を[r]
+吸収したおかげだ… 
+[p]
+ 
+//-------------------------------------------------------------------------------
+[stopbgm]

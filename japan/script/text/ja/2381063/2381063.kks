@@ -1,0 +1,36 @@
+//エリア6ボス1前
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+//[bgm storage = "003"]
+
+*coma1
+//-------------------------------------------------------------------------------
+//  魔人ブウ（善）
+//-------------------------------------------------------------------------------
+[se storage = "3022"]
+[coma shape="S0001" bg = "bg_019_001"]
+
+[character x=10 y=60 storage = "00229/card_004" scale = 0.9 action = "fadein" time = 0.1]
+[quake target =".chara" power = 5 time = 0.4]
+
+
+[balloon shape="002_01" x = 0 y = 480 scale = 0.75 action = "fadein" time = 0.1]
+[font size = 36]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 3 time = 0.2]
+いえ〜っ！！[p]
+
+[balloon shape="002_03" x = 0 y = -445 scale = 0.8 action = "fadein" time = 0.1]
+[font size = 32]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 3 time = 0.2]
+もっともっと[r]
+壊しちゃお〜っ！！[p]
+
+
+
+
+//[stopbgm]

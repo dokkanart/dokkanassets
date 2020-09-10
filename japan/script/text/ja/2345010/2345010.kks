@@ -1,0 +1,324 @@
+*start|スタート
+//"ステージ１スタート"
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "004"]
+
+*001
+//-------------------------------------------------------------------------------
+//  ドクター・ミュー
+//-------------------------------------------------------------------------------
+//[se storage = "3029"]
+[coma shape="S0001" bg = "bg_081_016"]
+
+[wait time = 0.7]
+
+[character x = 170 y = 0 storage = "00329/idl_side_e_01" scale = 1.3 action = "fadein" time = 0.7]
+
+[wait_anim target=".chara"]
+
+[balloon x=-140 y=120 shape="002_03" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+//[quake target =".bln" power = 3 time = 0.2]
+どこだ…[r]
+ここは……？
+[p]
+
+*002
+//-------------------------------------------------------------------------------
+//  ドクター・ゲロの声
+//-------------------------------------------------------------------------------
+[se storage = "3034"]
+[coma shape="N0004L" bg = "bg_081_016"]
+
+[balloon x=0 y=80 shape="005_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+待っておったぞ[r]
+ドクター・ミュー！
+[p]
+
+
+*003
+//-------------------------------------------------------------------------------
+//  ドクター・ミュー
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_081_016"]
+
+[character x = 210 y = -160 storage = "00329/idl_side_e_01" scale = 1.1 action = "fadein" time = 0.1]
+
+[balloon x=-110 y=80 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+わしの名を呼ぶのは[r]
+誰だ！
+[p]
+
+
+*004
+//-------------------------------------------------------------------------------
+//  ドクター・ゲロ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_081_016"]
+
+[wait time = 0.3]
+
+[se storage = "48"]
+
+//フェードインで登場。
+[character x = -170 y = -135 storage = "00019/gero_idl_side_p_01" scale = 1.0 action = "fadein" time = 0.7]
+
+[wait_anim target=".chara"]
+
+[balloon x=100 y=100 shape="002_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+わしは[r]
+ドクター・ゲロ
+[p]
+
+[balloon x=150 y=-100 shape="002_03" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+地球で一番の[r]
+天才科学者だ
+[p]
+
+*005
+//-------------------------------------------------------------------------------
+//  ドクター・ミュー
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_081_016"]
+
+[character x = 210 y = -160 storage = "00329/idl_side_e_01" scale = 1.1 action = "fadein" time = 0.1]
+
+[balloon x=-100 y=80 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+そのゲロが[r]
+わしになんの用だ？
+[p]
+
+
+*006
+//-------------------------------------------------------------------------------
+//  ドクター・ゲロ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_081_016"]
+
+[character x = -170 y = -135 storage = "00019/gero_idl_side_p_01" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon x=120 y=60 shape="002_03" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+わしの研究にどうしても[r]
+おぬしの頭脳…ツフル人の[r]
+科学力がほしいのだ[r]
+[p]
+
+*007
+//-------------------------------------------------------------------------------
+//  ドクター・ミュー
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_081_016"]
+
+[character x = 210 y = -160 storage = "00329/idl_side_e_01" scale = 1.1 action = "fadein" time = 0.1]
+
+[balloon x=-100 y=80 shape="002_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+地獄の底に落ちても[r]
+まだ研究しておるとは[r]
+あきれたやつだ
+[p]
+
+
+*008
+//-------------------------------------------------------------------------------
+//  ドクター・ゲロ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_081_016"]
+
+[character x = -170 y = -135 storage = "00019/gero_idl_side_p_01" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon x=100 y=70 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+それが[r]
+孫悟空への復讐だと[r]
+したら？
+[p]
+
+*009
+//-------------------------------------------------------------------------------
+//  ドクター・ミュー
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_081_016"]
+
+[character x = 210 y = -160 storage = "00329/idl_side_e_01" scale = 1.1 action = "fadein" time = 0.1]
+
+[balloon x=-100 y=100 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+なに？[r]
+孫悟空に復讐する[r]だと…？
+[p]
+
+
+[balloon x=-100 y=-90 shape="002_03" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+…あの忌々しい[r]
+サイヤ人め……！！
+[p]
+
+*010
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002L" bg = "bg_081_016"]
+
+
+
+[balloon x=0 y=-40 shape="003_02" scale = 1.6 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 15]
+//[quake target =".bln" power = 3 time = 0.2]
+ベビーに殺され[r]地獄に落ちた[r]
+ドクター・ミューの前に[r]
+ドクター・ゲロが現れた[r]
+　[r]
+地獄の底で[r]
+手を結んだこのふたり…[r]
+いったいなにを[r]
+始めようというのか…！？
+[p]
+
+
+
+
+//場面転換
+//フェードアウト（フェードアウトするコマ）
+[balloon x=0 y=0 shape="008_03" scale = 50.0 action = "fadein" time = 0.5]
+[wait time = 0.7]
+
+*011
+//-------------------------------------------------------------------------------
+//  タイトル
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="S0001" bg = "bg_000_024"]
+
+
+
+[balloon x=0 y=0 shape="008_03" scale = 50]
+[wait time = 1]
+[fadeout target = ".bln" time = 2]
+[wait_anim target=".bln"]
+
+[se storage = "10"]
+
+[balloon x=-180 y=170 shape="010_11" scale = 1.6 action = "fadein" time = 0.7]
+
+[balloon x=-160 y=-240 shape="010_12" scale = 1.2 action = "fadein" time = 0.7]
+
+[balloon x=50 y=200 shape="010_13" scale = 1.1 action = "fadein" time = 0.7]
+
+[balloon x=180 y=-210 shape="010_14" scale = 2.0 action = "fadein" time = 0.7]
+
+[balloon x=-280 y=40 shape="010_15" scale = 1.3 action = "fadein" time = 0.7]
+
+[balloon x=250 y=60 shape="010_16" scale = 1.5 action = "fadein" time = 0.7]
+
+[balloon x=0 y=-190 shape="010_17" scale = 1.1 action = "fadein" time = 0.7]
+
+//[bgm storage = "024"]
+
+[wait time = 0.5]
+
+[balloon x=0 y=-15 shape= "011_23" scale = 1.4 action = "fadein" time = 0.5]
+
+[wait time = 0.5]
+
+[p]
+
+//[bgm storage = "012"]	
+
+
+*012
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002L" bg = "bg_000_016"]
+
+
+
+[balloon x=0 y=100 shape="003_02" scale = 1.6 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 15]
+//[quake target =".bln" power = 3 time = 0.2]
+ベビーの[r]
+全宇宙ツフル化計画の[r]
+野望は悟空たちの[r]
+活躍により打ち砕かれ[r]
+地球は平和な日々が[r]
+続いていた…[r]
+　[r]
+そんなある日[r]
+トランクスは[r]
+悟空の家の食事に[r]
+招待されるのだった
+[p]
+
+
+
+
+*013
+//-------------------------------------------------------------------------------
+//  トランクス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_014_001"]
+
+[character x = 210 y = -100 storage = "00325/idl_side_e_01" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x=-130 y=60 shape="001_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+すっかり[r]
+遅くなっちゃった[r]なあ…
+[p]
+
+[balloon x=-120 y=-180 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+さあ！[r]
+悟空さんの家まで[r]
+急いで行かないと！
+[p]
+
+//-------------------------------------------------------------------------------
+[stopbgm]

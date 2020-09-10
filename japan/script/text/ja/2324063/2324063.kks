@@ -1,0 +1,81 @@
+*start|スタート
+//復讐鬼ベビー編_エリア6：ボス前
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "008"]
+ 
+*001
+//-------------------------------------------------------------------------------
+//  孫悟空（GT）
+//-------------------------------------------------------------------------------
+
+//[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_004"]
+ 
+[character x=200 y=-50 storage = "00324/heapup_e_01" scale = 1.1 action = "fadein" time = 0.1]
+
+[balloon x=-90 y=150 shape="006_01" scale = 0.8 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 7 time = 0.2]
+どうしたんだ[r]
+悟飯！ 悟天！
+[p]
+
+[balloon x=-110 y=-70 shape="006_02" scale = 0.9 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 7 time = 0.2]
+地球を[r]
+ぶっこわす気か！？
+[p]
+
+*002
+//-------------------------------------------------------------------------------
+//  孫悟天(GT)：寄生
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_004"]
+ 
+[character x = -220 y = -170 storage = "00510/idl_side_p_01" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x=110 y=80 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+地球？[r]
+なんだ こんな星なんか！
+[p]
+
+
+*003
+//-------------------------------------------------------------------------------
+//  孫悟天(GT)：寄生
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0002L" bg = "bg_000_004"]
+ 
+[character x = -210 y = -160 storage = "00509/idl_side_p_01" scale = 1.4 action = "fadein" time = 0.1]
+ 
+[balloon x=120 y=120 shape="002_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+ふっふっふ…
+[p]
+
+[balloon x=110 y=-150 shape="002_01" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+父さんたちといっしょに[r]
+吹き飛ばしてあげますよ
+[p]
+
+[stopbgm]
+
+

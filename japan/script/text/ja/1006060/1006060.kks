@@ -1,0 +1,103 @@
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "007"]
+
+
+*01
+//-------------------------------------------------------------------------------
+//  人造人間１７号
+//-------------------------------------------------------------------------------
+[se storage = "3022"]
+[coma shape="S0001" bg = "bg_000_016"]
+
+
+[lwfobject id = "kaki2" storage="kakimoji:ef_023" in="04" x=-130 y=-100 scale = 2.0 angle = -10 action = "fadein" time = 0.1]
+[quake target = "kaki2" power = 5 time = 0.4]
+
+[character x=0 y=100 storage = "00021/card_1003790" scale = 1.8 action = "expand" time = 0.1]
+[quake target = ".chara" power = 10 time = 0.4]
+
+[wait_anim target=".chara"]
+
+
+*02
+//-------------------------------------------------------------------------------
+//  トランクス
+//-------------------------------------------------------------------------------
+[se storage = "3001"]
+[coma shape="N0001R" bg = "bg_023_001"]
+
+
+[character x=240 y=-90 storage = "00008/dam_roll_e_01" scale = 1.7 angle = 15 action = "fadein" time = 0.1]
+[quake target = ".chara" power = 5 time = 0.4]
+
+
+[lwfobject id = "kaki1" storage="kakimoji:ef_022" in="04" x=-130 y=-50 scale = 2.5 angle = -20 action = "fadein" time = 0.1]
+[quake target = "kaki1" power = 8 time = 0.4]
+
+
+
+[balloon x=130 y=150 shape="007_01" scale = 0.65 action = "expand" time = 0.1]
+[wait_anim target=".bln"][font size = 44]
+[quake target = ".bln" power = 7 time = 0.2]
+ぐわあ！！[p]
+
+
+
+*03
+//-------------------------------------------------------------------------------
+//  人造人間１８号
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_023_001"]
+
+//18号
+[character x=-260 y=-150 storage = "00020/idl_side_p_01" scale = 0.6 action = "fadein" time = 0.1]
+
+//17号
+[character x = -70 y = -120 storage = "00021/idl_side_p_01" scale = 1.0 action = "fadein" time = 0.1]
+
+
+
+
+[balloon x=160 y=150 shape="002_02" scale = 0.8 action = "fadein" time = 0.2]
+[wait_anim target=".bln"][font size = 32]
+
+このオレも参加[r]させてもらうぞ…！[p]
+
+[balloon x=-30 y=-100 shape="002_03" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][font size = 32]
+[quake target = ".bln" power = 3 time = 0.2]
+１７号！[r]
+ジャマしないでよ！[p]
+
+
+*04
+//-------------------------------------------------------------------------------
+//  人造人間１７号
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002L" bg = "bg_023_001"]
+
+
+[character x = -160 y = -210 storage = "00021/17_card_01" scale = 1.2 action = "fadein" time = 0.1]
+//[quake target = ".chara" power = 9 time = 0.2]
+
+[balloon x=120 y=100 shape="002_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][font size = 28]
+おまえのお遊びには[r]つきあって[r]られないんだよ[p]
+
+
+
+[balloon x=120 y=-180 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][font size = 28]
+[quake target = ".bln" power = 3 time = 0.2]
+さっさと片付けて[r]孫悟空をさがすぞ！
+[p]
+
+
+
+[stopbgm]

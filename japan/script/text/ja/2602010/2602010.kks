@@ -1,0 +1,40 @@
+*start|スタート
+
+//エリア１スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "003"]
+
+*001
+//-------------------------------------------------------------------------------
+//  フリーザ（第一形態）
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="S0001" bg = "bg_050_001"]
+
+[character x=0 y=-60 storage = "00005/card_02" scale = 1.1 action = "fadein" time = 0.1]
+
+[balloon x=-30 y=420 shape="002_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 7 time = 0.2]
+わたしの恐ろしさが[r]
+わかっていない[r]
+ようですねえ…
+[p]
+
+[quake target =".chara" power = 5 time = 0.3]
+
+[balloon x=110 y=-320 shape="007_02" scale = 0.9 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 7 time = 0.2]
+今すぐ[r]
+思い知らせて[r]
+あげましょう！！
+[p]
+
+
+[stopbgm]

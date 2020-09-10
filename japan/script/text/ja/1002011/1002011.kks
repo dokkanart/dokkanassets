@@ -1,0 +1,285 @@
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "012"]
+
+*01
+//-------------------------------------------------------------------------------
+//  場面転換
+//-------------------------------------------------------------------------------
+[coma id = "coma1" shape="S0001" bg = "bg_014_001"]
+
+//[se storage = "03"]
+
+[balloon id="satan1" x=0 y=100 shape="006_01" scale = 0.9 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[quake target = ".bln" power = 7 time = 0.2]
+[font size = 34]
+どわあぁぁーっ！！
+[p]
+
+//[wait time = 0.7]
+
+*02
+//-------------------------------------------------------------------------------
+//  サタン
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_014_001"]
+
+//ガード_01
+[character x=-190 y=-115 storage = "00038/guard_p_02" scale = 1.1 action = "fadein" time = 0.1]
+//ガード_01+あせ
+[character x=-280 y=110 storage = "99999/ase" scale = 0.6 action = "fadein" time = 0.1]
+
+[balloon x=110 y=120 shape="004_01" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+//[quake target = ".bln" power = 3 time = 0.2]
+な…[r]
+なんだ……[p]
+
+[balloon x=110 y=-90 shape="004_02" scale = 1 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+[$player]…[r]
+おまえたちか[r]
+おどかしやがって…！[p]
+//元シナリオ
+//な、なんだ[r]おまえたちか…[r]
+//おどかしやがって…！
+
+*03
+//-------------------------------------------------------------------------------
+//  トランクス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_014_001"]
+
+[character x=210 y=-200 storage = "90000/wait_right_surprise" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x=-100 y=60 shape="001_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+サタンさん…！？[r]
+どうして[r]こんなところに？[p]
+
+*04
+//-------------------------------------------------------------------------------
+//  サタン
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_014_001"]
+
+[character x=-210 y=-110 storage = "00038/idl_side_p_01" scale = 1.1 action = "fadein" time = 0.1]
+
+//[balloon id="satan1" x=40 y=70 shape="001_02" scale = 0.5 action = "fadein" time = 0.1]
+//[wait_anim target=".bln"][talk target = "satan1"]
+//[font size = 40]
+//い、いや…[p]
+
+[balloon x=130 y=90 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+この町からの連絡が[r]
+突然とだえたという[r]
+情報が寄せられてな…
+[p]
+
+
+//元シナリオ
+//この街の住人からの連絡が[r]突然とだえたという[r]情報が寄せられてな…
+
+
+*05
+//-------------------------------------------------------------------------------
+//  トランクス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_014_001"]
+
+[character x=210 y=-200 storage = "90000/wait_right_anger" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x=-100 y=70 shape="001_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+それで調べに[r]きたんですか？[p]
+
+*06
+//-------------------------------------------------------------------------------
+//  サタン
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_014_001"]
+
+[character x=-210 y=-110 storage = "00038/idl_side_p_01" scale = 1.1 action = "fadein" time = 0.1]
+
+//[balloon shape="006_02" x = 90 y = 100 scale = 0.7 action = "fadein" time = 0.1]
+//[font size = 34]
+//[wait_anim target=".bln"][quake target = ".bln" power = 7 time = 0.4]
+//そういうことだ！[p]
+
+[balloon shape="001_02" x = 130 y = 90 scale = 0.9 action = "fadein" time = 0.1]
+[font size = 28]
+[wait_anim target=".bln"]
+武道家が襲われている[r]
+事件と関係あるかも[r]
+しれんと思ってな！
+[p]
+
+//元シナリオ
+//例の武道家が[r]襲われている事件と[r]なにか関連があるかも[r]しれんと思ってな！
+
+*07
+//-------------------------------------------------------------------------------
+//  サタン
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0003L" bg = "bg_014_001"]
+
+[wait time = 0.3]
+
+//[character x = -165 y = -110 storage = "00038/heapup_p_01" scale = 1.6 action = "fadein" time = 0.1]
+
+
+
+[balloon x=-130 y=130 shape="001_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+犯人を見つけたら[r]
+わたしが倒してやろう[r]
+と思ったのだが…
+[p]
+
+
+[character x = 0 y = -7 storage = "99999/silent" scale = 1.0 action = "fadein" time = 0.7]
+[wait_anim target=".chara"]
+
+//元シナリオ
+//もし犯人を[r]見つけたら
+//このワシの華麗な技で[r]かっこよく[r]倒してやろうと[r]思ったのだが…[p]
+
+[balloon x=140 y=-120 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target = ".bln" power = 3 time = 0.2]
+犯人どころか[r]
+住民もマスコミも[r]
+まったくおらんのだ！
+[p]
+
+
+//元シナリオ
+//見ての通り犯人どころか[r]ギャラリーもマスコミも[r]まったくおらんのだ！！
+
+*08
+//-------------------------------------------------------------------------------
+//  トランクス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_014_001"]
+
+[character x=210 y=-200 storage = "90000/wait_right_anger" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x=-90 y=110 shape="001_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+ええ…ここはまるで[r]
+ゴーストタウンですね
+[p]
+
+[balloon x=-90 y=-100 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+…サタンさんはもう[r]
+帰ったほうがいい…[r]
+ここは危険です
+[p]
+
+//元シナリオ
+//サタンさん[r]あなたはもう[r]帰ったほうがいい…[r]
+//ここは危険です
+
+*09
+//-------------------------------------------------------------------------------
+//  サタン
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_014_001"]
+
+[character x=-200 y=-110 storage = "00038/heapup_p_02" scale = 1.1 action = "fadein" time = 0.1]
+//タメ_01+あせ
+[character x=-210 y=125 storage = "99999/ase" scale = 0.5 action = "fadein" time = 0.1]
+
+[balloon x=140 y=70 shape="006_01" scale = 0.9 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 7 time = 0.2]
+[font size = 28]
+な…なんだとぉ！？[r]
+このミスター・サタン[r]
+にむかって帰れとは…
+[p]
+
+//元シナリオ
+//な、なんだとぉ！？[r]
+//チャンピオンである[r]このミスター・サタンに[r]むかって「帰れ」とは…
+//まったく…[r]無礼なイナカ者には[r]困ったもんだ！！
+
+*10
+//-------------------------------------------------------------------------------
+//  サタン
+//-------------------------------------------------------------------------------
+[se storage = "3022"]
+[coma shape="N0003L" bg = "bg_014_001"]
+//[lwfobject id="syuutyuu1" storage="syucyu:ef_002" mask="inside" loop=1 priority=10 scale=1.0]
+
+
+[lwfobject id = "kaki1" storage="kakimoji:ef_023" in="02" x=-160 y=-110 scale = 1.7]
+[quake target ="kaki1" power = 9 time = 0.4]
+
+[character x = 150 y = -90 storage = "00038/card_03" scale = 0.8 action = "fadein" time = 0.1 action = "slide:left" time = 0.3]
+
+[balloon x=-150 y=110 shape="006_01" scale = 0.9 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 7 time = 0.2]
+[font size = 28]
+よし…！わたしが[r]
+この町の謎を解明して[r]
+みせようじゃないか！
+[p]
+
+//[se storage = "03"]
+
+[balloon x=180 y=-150 shape="006_02" scale = 0.75 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 7 time = 0.2]
+[font size = 36]
+さあ！！[r]
+ついてこい！！
+[p]
+
+//元シナリオ
+//よーし、いいだろう！[r]
+//おまえたちの目の前で[r]
+//ワシがこの事件の謎を[r]
+//解明してみせようじゃないか！
+//さあ[r]ついてこい！！
+
+
+*11
+//-------------------------------------------------------------------------------
+//  トランクス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_014_001"]
+
+[character x=170 y=-325 storage = "90000/wait_right_surprise" scale = 1.4 action = "fadein" time = 0.1]
+
+[balloon x=-110 y=-10 shape="004_01" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 54]
+…………[p]
+
+[stopbgm]

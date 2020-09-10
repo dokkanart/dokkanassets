@@ -1,0 +1,119 @@
+//スタート
+
+*start|スタート
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+
+[bgm storage = "018"]
+
+*001
+//-------------------------------------------------------------------------------
+//  
+//-------------------------------------------------------------------------------
+[se storage = "17"]
+
+[coma shape="N0002R" bg = "bg_000_016"]
+
+[coma shape="N0002L" bg = "bg_025_001"]
+
+//空から降りてきて、セリフ。
+
+[character id = "baba" x = -185 y = 1500 storage = "90003/uranai_baba" scale = 1.4 action = "fadein" time = 0.1]
+[move target ="baba" y=50 time = 2]
+[wait_anim target="baba"]
+
+[se storage = "31"]
+
+[move target ="baba" y=80 time = 0.3]
+[wait_anim target="baba"]
+
+
+[balloon x=120 y=200 shape="001_02" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+ふぉっふぉっふぉ…[r]
+おまえさんかな？[r]
+悟空と試合したい[r]というのは…
+[p]
+
+[balloon x=125 y=-70 shape="001_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+望みどおり[r]
+連れてきてやったぞい
+[p]
+
+*002
+//-------------------------------------------------------------------------------
+//  孫悟空（天使） 
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+
+[coma shape="N0003R" bg = "bg_025_001"]
+
+[character id = "baba" x = 85 y = -90 storage = "90003/uranai_baba" scale = 0.7 action = "fadein" time = 0.1]
+
+[wait time = 0.3]
+
+//孫悟空（天使） 占いババの横に現れる。
+
+//悟空
+[character id = "gok" x=-160 y=-255 storage = "00003/card_10" scale = 1.1 action = "fadein" time = 0.2] 
+[quake target = "gok" power = 7 time = 0.4] 
+[character id = "wa" x=-150 y=190 storage = "99999/ring" scale = 0.9 action = "fadein" time = 0.2] 
+[quake target = "wa" power = 7 time = 0.4]
+
+
+[se storage = "3035"]
+
+//シュンッ
+[lwfobject id = "kaki2" storage="kakimoji:ef_012" in="04" x=-80 y=-110 scale = 2.5]
+[quake target = "kaki2" power = 15 time = 0.2]
+
+[wait time = 0.2]
+
+[fadeout target = "kaki2" time = 0.4]
+
+[wait_anim target="kaki2"]
+
+[balloon x=100 y=100 shape="001_01" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+[quake target =".bln" power = 3 time = 0.2]
+へへー[r]
+ヤッホー！
+[p]
+
+*003
+//-------------------------------------------------------------------------------
+//  占いババ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+
+[coma shape="N0002L" bg = "bg_025_001"]
+
+[character x = 0 y = -60 storage = "90003/uranai_baba" scale = 1.5 action = "fadein" time = 0.1]
+
+
+[balloon x=-160 y=140 shape="001_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+じゃあ24時間じゃぞ[r]
+よいな？
+[p]
+
+[balloon x=140 y=-240 shape="001_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+悔いの残らぬよう[r]
+おもいきり闘うがいい
+[p]
+
+
+//-------------------------------------------------------------------------------
+[stopbgm]

@@ -1,0 +1,127 @@
+*start|スタート
+//旅の始まり
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "012"]
+
+*001
+//-------------------------------------------------------------------------------
+//  マンバ
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0001L" bg = "bg_081_015"]
+
+[character id = "manba" x=-220 y=-280 storage = "00712/card_01" scale = 1.2 action = "fadein" time = 0.1]
+[character id = "ase" x=-250 y=100 storage = "99999/ase" scale = 0.8 action = "fadein" time = 0.1]
+
+[balloon x=80 y=120 shape="004_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+お…おのれ[r]
+おまえたち！！
+[p]
+
+[balloon x=120 y=-90 shape="007_02" scale = 0.9 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 7 time = 0.2]
+絶対に[r]
+食ってやるぞーっ！！
+[p]
+
+[se storage = "07"]	
+//セリフ後、フェードアウト。
+[fadeout target = "ase" time = 0.3]
+[fadeout target = "manba" time = 0.5]
+
+[wait_anim target="manba"]
+
+// 空のフキダシ（セリフがないコマを送るために使用）
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+*002
+//-------------------------------------------------------------------------------
+//  パック
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_081_015"]
+
+[character x=200 y=-130 storage = "90003/pack" scale = 0.9 action = "fadein" time = 0.1]
+[character id = "ase" x=240 y=130 storage = "99999/ase" scale = 0.5 action = "fadein" time = 0.1]
+
+[balloon x=-100 y=70 shape="001_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+あ…あのおばさんが[r]
+パオズ山の化け物[r]
+だったのか…
+[p]
+
+*003
+//-------------------------------------------------------------------------------
+//  孫悟空Jr.
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_081_015"]
+
+[character x = 220 y = -70 storage = "00710/guard_e_01" scale = 1.1 action = "fadein" time = 0.1]
+[character id = "ase" x=240 y=60 storage = "99999/ase" scale = 0.7 action = "fadein" time = 0.1]
+
+[balloon x = -90 y =70 shape="004_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target = ".bln" power = 3 time = 0.2]
+ビ…[r]
+ビックリした〜…
+[p]
+
+
+*004
+//-------------------------------------------------------------------------------
+//  パック
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_081_015"]
+
+[character x=200 y=-130 storage = "90003/pack" scale = 0.9 action = "fadein" time = 0.1]
+
+[balloon x = -90 y =110 shape="001_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target = ".bln" power = 3 time = 0.2]
+こ…これくらいで[r]
+ビビってんじゃねえよ[r]
+悟空！
+[p]
+
+[balloon x = -110 y =-90 shape="001_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target = ".bln" power = 3 time = 0.2]
+パンばあちゃんを[r]
+助けるんだろ！？
+[p]
+
+*005
+//-------------------------------------------------------------------------------
+//  孫悟空Jr.
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_081_015"]
+
+[character x=170 y=-80 storage = "00710/heapup_e_01" scale = 1.3 action = "fadein" time = 0.1]
+
+[balloon x = -115 y =50 shape="001_01" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+//[quake target = ".bln" power = 3 time = 0.2]
+う…うん…！
+[p]
+
+
+//-------------------------------------------------------------------------------
+[stopbgm]

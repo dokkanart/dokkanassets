@@ -1,0 +1,87 @@
+*start|スタート
+//ステージ2 スタート
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "011"]
+
+*01
+//-------------------------------------------------------------------------------
+//  
+//-------------------------------------------------------------------------------
+[se storage = "46"]
+[coma shape="S0001" bg = "bg_000_058"]
+
+
+//カクンサ
+[character x = -220 y = 120 storage = "00819/card_01" scale = 0.7 angle = -20 action = "fadein" time = 0.1]
+
+//ロージィ
+[character x = 230 y = 80 storage = "00818/card_01" scale = 0.9 action = "fadein" time = 0.1]
+
+//リブリアン
+[character x = 0 y = 0 storage = "00816/card_03" scale = 1.0 angle = 0 action = "fadein" time = 0.1]
+
+[balloon shape="001_02" x = 0 y = 440 scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+さあ！[r]
+みんなに愛をお届けよ！
+[p]
+
+*02
+//-------------------------------------------------------------------------------
+//  ヘレス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+
+[coma shape="N0001L" bg = "bg_000_058"]
+
+[character x = -210 y = -310 storage = "90003/heresu" scale = 1.1 action = "fadein" time = 0.1]
+
+[balloon shape="001_02" x = 110 y = 100 scale = 0.9 action = "fadein" time = 0.1]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+[wait_anim target=".bln"]
+おお…美しく[r]
+そして輝く乙女の愛…[r]
+まことにすばらしい！
+[p]
+
+[balloon shape="001_03" x = 135 y = -100 scale = 0.9 action = "fadein" time = 0.1]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+[wait_anim target=".bln"]
+その愛で[r]
+この世の全てを[r]
+照らしつくすのです！
+[p]
+
+*03
+//-------------------------------------------------------------------------------
+//  リブリアン
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_000_057"]
+
+[character x = 140 y = -200 storage = "00816/card_03" scale = 1.2 angle = 0 action = "fadein" time = 0.1]
+
+[balloon shape="001_03" x = -150 y = 90 scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+わかっております[r]
+ヘレスさま！
+[p]
+
+[balloon shape="001_02" x = -140 y = -240 scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+美しく！華麗に！[r]
+愛をお届け！
+[p]
+
+//-------------------------------------------------------------------------------
+[stopbgm]

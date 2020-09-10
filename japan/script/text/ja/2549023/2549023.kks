@@ -1,0 +1,112 @@
+*start|スタート
+//ボス前
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+//[bgm storage = "003"]
+
+*001
+//----------------------------------------------------------
+//　ゴジータ
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0002R" bg = "bg_070_010"]
+
+[wait time = 0.3]
+
+[se storage = "3022"]
+
+[character id = "gogeta1" x = -5 y = -1260 storage = "00931/atc_sp01_p_01" scale = 1.0 action = "fadein" time = 0.1]
+[move target = "gogeta1" y = 240 ease = "out:20" time = 0.7]
+
+//[character id = "veg1" x = 0 y = -1300 storage = "00275/card_07" scale = 1.0 action = "fade:50" time = 0.1]
+//[move target ="veg1" y=200 time = 0.7 ease="Out:20"]
+
+[wait_anim target = "gogeta1"]
+
+[fadeout target = "gogeta1" time = 0.1]
+
+[se storage = "3038"]
+
+[character id ="ki1" x = -210 y = 0 storage = "99999/final_hope_02" scale = 3.0 action = "fade:70" time = 0.5]
+
+[character id ="ki2" x = 210 y = 0 storage = "99999/final_hope_02" scale = 3.0 action = "fade:70" time = 0.5]
+[flip target ="ki2" h=1]
+
+[character id = "gogeta2" x = -5 y = 240 storage = "00931/atc_sp01_p_01" scale = 1.0]
+
+[quake target =".coma" power = 10 time = 0.5]
+
+[balloon x=0 y= -200 shape="007_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+[quake target =".bln" power = 3]
+はああああ…
+
+[wait time = 0.3]
+
+[scale target = "gogeta2" scale = 3.5 time = 0.1]
+[move target ="gogeta2" x = -30 y=-710 time = 0.1]
+
+[se storage = "44"]
+
+[character id = "gogeta3" x = -50 y = -1150 storage = "00931/atc_sp01_p_01" scale = 5.0 action = "fade:70" time = 0.3]
+
+[wait time = 0.2]
+
+[fadeout target = "gogeta3" time = 0.5]
+
+[wait time = 0.5]
+
+[se storage = "3025"]
+//点滅
+[balloon shape="008_02" x = 140 y = -30 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+[balloon shape="008_02" x = 140 y = -30 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+
+//フェードアウト（フェードアウトするコマ）
+[balloon x=130 y=40 shape="008_02" scale = 50.0 action = "fadein" time = 0.3]
+[wait time = 0.5]
+
+
+*002
+//-------------------------------------------------------------------------------
+//  SSGSSゴジータ
+//-------------------------------------------------------------------------------
+//[se storage = "50"]
+[coma shape="S0001" bg = "bg_070_010"]
+
+[character id = "aura" x = -40 y = -70 storage = "00932/card_02" action = "fadein" scale = 0.95 time = 0.1]
+[quake target = "aura" power = 1]
+[character id = "gogeta" x = -40 y = -70 storage = "00932/card_01" scale = 0.95 action = "fadein" time = 0.1]
+
+
+//[character id = "vegetto" x = 0 y = -70 storage = "00653/card_03" scale = 1.1 action = "fade:60" time = 0.1] 
+
+//フェードイン（フェードインするコマ）
+[balloon x=130 y=40 shape="008_02" scale = 50]
+[wait time = 0.5]
+[fadeout target = ".bln" time = 1.5]
+[wait_anim target = ".bln"]
+
+//[character id = "shougeki" x =0 y = 0 storage = "99999/04_syougeki" scale = 10.0 action = "expand" time = 0.4]
+//[fadeout target = "shougeki" time = 0.4]
+
+[balloon x = 0 y = 470 shape = "006_01" scale = 0.7 action = "expand" time = 0.1]
+[wait_anim target = ".bln"]
+[font size = 40]
+[quake target =".bln" power = 7 time = 0.2]
+でりゃあぁ！！
+
+[wait_anim target=".bln"]
+
+//空のフキダシ
+[balloon x = 0 y = 0 shape = "001_01" scale = 0]
+[p]
+
+
+//-------------------------------------------------------------------------------
+//[stopbgm]

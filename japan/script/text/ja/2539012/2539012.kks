@@ -1,0 +1,40 @@
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+//[bgm storage = "012"]
+
+*001
+//-------------------------------------------------------------------------------
+//  ターレス
+//-------------------------------------------------------------------------------
+//[se storage = "3011"]
+[coma id = "coma1" shape="S0001" bg = "bg_000_026"]
+
+//[lwfobject id = "kaki1" storage="kakimoji:ef_013" x=180 y=400 angle = 35 scale = 2.2 action = "fadein" time = 0.1]
+//[quake target = "kaki1" power = 15 time = 0.3]
+
+[character id = "1" x = 0 y = -50 storage = "00298/card_02" scale = 1.1 action = "fadein" time = 0.1]
+//[quake target ="1" power = 6 time = 0.3]
+
+[balloon shape="002_03" x = -100 y = 440 scale = 1.0 action = "fadein" time = 0.1]
+[font size = 24]
+[wait_anim target=".bln"]
+//[quake target =".bln" power = 7 time = 0.2]
+神精樹の実を食べ続けてきた[r]
+このオレに勝てると思うか？[r]
+[p]
+
+[balloon shape="002_01" x = 80 y = -420 scale = 1.0 action = "fadein" time = 0.1]
+[font size = 24]
+[wait_anim target=".bln"]
+//[quake target =".bln" power = 7 time = 0.2]
+ふ…[r]
+おまえのパワーとは[r]
+天と地ほどの差があるのだ
+[p]
+
+
+
+//[stopbgm]

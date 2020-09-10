@@ -1,0 +1,39 @@
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+//[bgm storage = "026"]
+
+*001
+//-------------------------------------------------------------------------------
+//  
+//-------------------------------------------------------------------------------
+//[se storage = "3022"]
+[coma shape="S0001" bg = "bg_000_033"]
+
+[character id = "veg" x = 0 y = -20 storage = "00207/card_01" scale = 1.1 angle = -9 action = "fadein" time = 0.1]
+
+[character id = "ss2" x=10 y=55 storage = "99999/supersaiyan2" scale = 1.5 angle = 0 action = "fadein" time = 0.1]
+//[flip target ="ss2" h=1]
+[quake target ="ss2" power = 1 time = 300]
+
+
+
+[balloon x=0 y= 480 shape="002_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+どうやら[r]
+それが限界らしいな…
+[p]
+
+[balloon x= 100 y= -450 shape="002_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+たいしたことない[r]
+ヤロウだ
+[p]
+
+//[stopbgm]

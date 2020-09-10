@@ -1,0 +1,215 @@
+*start|スタート
+//復讐鬼ベビー編_エリア５：ゴール
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "013"]
+ 
+*001
+//-------------------------------------------------------------------------------
+//  トランクス（GT）
+//-------------------------------------------------------------------------------
+
+//[se storage = "04"]
+[coma shape="N0001R" bg = "bg_014_001"]
+ 
+[character x=240 y=-100 storage = "00325/heapup_e_01" scale = 1.2 action = "fadein" time = 0.1]
+ 
+[balloon x=-70 y=140 shape="001_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+きさまは…[r]
+ベビーだな！？[r]
+生きていたのか…！
+[p]
+
+[balloon x=-100 y=-80 shape="006_01" scale = 0.8 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 7 time = 0.2]
+父さんの体から[r]
+出ていけ！！
+[p]
+
+*002
+//-------------------------------------------------------------------------------
+//  ベジータベビー
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_014_001"]
+ 
+[character x=-190 y=-140 storage = "00482/idl_side_p_01" scale = 1.2 action = "fadein" time = 0.1]
+ 
+[balloon x=120 y=90 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+くっくっく…[r]
+威勢がいいのも[r]
+そこまでだ…！
+[p]
+
+*003
+//-------------------------------------------------------------------------------
+//  トランクス（GT）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_014_001"]
+ 
+[character x=240 y=-100 storage = "00325/heapup_e_01" scale = 1.2 action = "fadein" time = 0.1]
+ 
+[balloon x=-100 y=80 shape="006_01" scale = 0.75 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+[quake target =".bln" power = 7 time = 0.2]
+なんだと！？
+[p]
+
+*004
+//-------------------------------------------------------------------------------
+//  ベジータベビー
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_014_001"]
+ 
+[character x=-190 y=-140 storage = "00482/idl_side_p_01" scale = 1.2 action = "fadein" time = 0.1]
+ 
+[balloon x=120 y=120 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+きさまの体には[r]
+オレのタマゴを[r]
+生みつけた…
+[p]
+
+[balloon x=110 y=-80 shape="002_03" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+そのタマゴがかえり[r]
+脳まで細胞が行きわたると[r]
+おまえはオレの意志で[r]
+動くようになる…！！
+[p]
+
+*005
+//-------------------------------------------------------------------------------
+//  トランクス（GT）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_014_001"]
+ 
+[character id = "tra" x=240 y=-100 storage = "00325/heapup_e_01" scale = 1.2 action = "fadein" time = 0.1]
+ 
+[balloon x=-80 y=100 shape="004_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+タ…[r]
+タマゴだと！？
+[p]
+
+[character id = "ase" x=220 y=60 storage = "99999/ase" scale = 0.4 action = "fadein" time = 0.5]
+
+[quake target ="tra" power = 5 time = 0.5]
+
+[balloon x=-100 y=-80 shape="004_03" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+…うっ！！[r]
+ぐああ…！！[r]
+か…体が……
+[p]
+
+*006
+//-------------------------------------------------------------------------------
+//  ベジータベビー
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_014_001"]
+ 
+[character x=-190 y=-140 storage = "00482/idl_side_p_01" scale = 1.2 action = "fadein" time = 0.1]
+ 
+[balloon x=110 y=120 shape="002_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+さあ トランクス[r]
+今日はキミの[r]
+新しい誕生日だ
+[p]
+
+[balloon x=120 y=-80 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+オレの[r]
+しもべとしてのな…！
+[p]
+
+//点滅（白）
+[se storage = "3025"]
+//点滅
+[balloon shape="008_02" x = 140 y = -30 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+[balloon shape="008_02" x = 140 y = -30 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+
+[wait_anim target=".bln"]
+
+*007
+//-------------------------------------------------------------------------------
+//  トランクス（GT)：寄生
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_014_001"]
+ 
+[character x=240 y=-120 storage = "00511/idl_side_e_02" scale = 1.2 action = "fadein" time = 0.1]
+
+[wait_anim target=".chara"]
+ 
+//[wait time = 0.7] 
+ 
+[balloon x=-90 y=100 shape="002_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+はい…！[r]
+ベビーさま
+[p]
+
+*008
+//-------------------------------------------------------------------------------
+//  ドベジータベビー
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0002L" bg = "bg_014_001"]
+ 
+[character x = -210 y = -220 storage = "00482/idl_side_p_01" scale = 1.5 action = "fadein" time = 0.1]
+
+[balloon x=130 y=50 shape="002_01" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+[quake target =".bln" power = 3 time = 0.2]
+オレはこのタマゴを[r]
+全地球…全宇宙に生み続け[r]
+この宇宙を[r]
+永遠に支配するのだ！！
+[p]
+
+
+[stopbgm]
+
+
+

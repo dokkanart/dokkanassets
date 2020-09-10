@@ -1,0 +1,549 @@
+*start|スタート
+
+//"２6－８ゴール" 
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "036"]
+ 
+*001
+//-------------------------------------------------------------------------------
+//  ピッコロ
+//-------------------------------------------------------------------------------
+[se storage = "13"]
+[coma shape="N0001L" bg = "bg_023_004"]
+ 
+[character x=-220 y=-140 storage = "00056/idl_side_e_01" scale = 1.5 action = "fadein" time = 0.1]
+[flip target =".chara" h=1]
+[quake target =".chara" power = 5 time = 0.4]
+ 
+[balloon x=100 y=130 shape="006_02" scale = 0.7 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 44]
+[quake target =".bln" power = 7 time = 0.2]
+はっ！！
+[p]
+
+[balloon x=130 y=-90 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+こ…これは…！？[r]
+オレはいったい何を…
+[p]
+
+*002
+//-------------------------------------------------------------------------------
+//  トランクス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_023_004"]
+ 
+[character x = 210 y = -200 storage = "90000/wait_right_shout" scale = 1.2 action = "fadein" time = 0.1]
+ 
+[balloon x=-90 y=90 shape="001_01" scale = 0.75 action = "fadein" time = 0.1]
+[font size = 36]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 3 time = 0.2]
+ピッコロさん！
+[p]
+
+[balloon x=-90 y=-90 shape="001_03" scale = 0.8 action = "fadein" time = 0.1]
+[font size = 32]
+[wait_anim target=".bln"]
+//[quake target =".bln" power = 3 time = 0.2]
+洗脳が[r]
+解けたんですね！
+[p]
+
+*003
+//-------------------------------------------------------------------------------
+//  ドクター・コーチン
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_023_004"]
+ 
+[character x = -260 y = -130 storage = "00546/heapup_p_01" scale = 1.1 action = "fadein" time = 0.1]
+ 
+[balloon x=120 y=120 shape="004_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+な…[r]
+なんだと！？
+[p]
+ 
+[balloon x=130 y=-90 shape="004_03" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+そんなバカな…！！
+[p]
+
+*004
+//-------------------------------------------------------------------------------
+//  ドクター・ゲロ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_023_004"]
+ 
+[character x = -210 y = -110 storage = "00019/gero_heapup_p_01" scale = 1.3 action = "fadein" time = 0.1]
+ 
+[balloon x=120 y=120 shape="004_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+くっ…[r]
+しかたない…
+[p]
+ 
+[balloon x=130 y=-85 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+ここは[r]
+いったん退くぞ！[r]
+ドクター・コーチン！
+[p]
+
+*005
+//-------------------------------------------------------------------------------
+//  ピッコロ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_023_004"]
+ 
+[character x = 150 y = -100 storage = "00056/heapup_e_01" scale = 0.8 action = "fadein" time = 0.1]
+ 
+[balloon x=-130 y=130 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[font size = 28]
+[wait_anim target=".bln"]
+//[quake target =".bln" power = 3 time = 0.2]
+こいつらが[r]
+このオレをいいように[r]
+あやつっていたのか…
+[p]
+
+[quake target =".chara" power = 5 time = 0.3]
+
+[balloon x=-140 y=-80 shape="006_01" scale = 0.75 action = "expand" time = 0.1]
+[font size = 36]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 7 time = 0.2]
+ゆるせん！！
+[p]
+
+*006
+//-------------------------------------------------------------------------------
+//  16号が前に出てくる。
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0003L" bg = "bg_023_004"]
+
+//[wait_anim target=".coma"]
+
+[character x = -60 y = -150 storage = "00546/heapup_p_01" scale = 0.6 action = "fadein" time = 0.1]
+
+[character x = -240 y = -135 storage = "00019/gero_idl_side_p_01" scale = 0.9 action = "fadein" time = 0.1]
+
+[wait time = 0.3]
+
+[se storage = "3022"]
+
+[character id = "16" x=-500 y=-150 storage = "00022/idl_side_p_02" scale = 1.7 action = "fadein" time = 0.1]
+[move target ="16" x=-10 time = 0.4]
+
+[wait_anim target=".chara"]
+ 
+[balloon x=125 y=-90 shape="002_01" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+ドクター・ゲロさま[r]
+この場はオレに[r]
+お任せください…
+[p]
+
+*007
+//-------------------------------------------------------------------------------
+//  ドクター・ゲロ ドクター・コーチン
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_023_004"]
+ 
+[character id = "1" x = -60 y = -150 storage = "00546/idl_side_p_01" scale = 0.7 action = "fadein" time = 0.1]
+
+[character id = "2" x = -220 y = -135 storage = "00019/gero_idl_side_p_01" scale = 1.0 action = "fadein" time = 0.1]
+
+ 
+[balloon x=120 y=80 shape="002_03" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+よし…[r]
+頼むぞ 16号！！
+[p]
+
+[se storage = "3019"]
+
+[move target ="2" x=-800 time = 0.7]
+[wait time = 0.2]
+[move target ="1" x=-700 time = 0.7]
+
+[wait_anim target="1"]
+
+// 空のフキダシ（セリフがないコマを送るために使用）
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+
+*008
+//-------------------------------------------------------------------------------
+//  トランクス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_023_004"]
+ 
+[character x = 210 y = -200 storage = "90000/wait_right_anger_strong" scale = 1.2 action = "fadein" time = 0.1]
+ 
+[balloon x=-90 y=100 shape="001_02" scale = 1.05 action = "fadein" time = 0.1]
+[font size = 22]
+[wait_anim target=".bln"]
+//[quake target =".bln" power = 3 time = 0.2]
+16号…おまえも[r]
+ゲロの言いなりになるような[r]
+やつではなかったはずだ…！
+[p]
+
+[balloon x=-90 y=-100 shape="001_03" scale = 0.9 action = "fadein" time = 0.1]
+[font size = 28]
+[wait_anim target=".bln"]
+//[quake target =".bln" power = 3 time = 0.2]
+17号や18号のように…
+[p]
+
+*009
+//-------------------------------------------------------------------------------
+//  16号
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_023_004"]
+ 
+[character x=-215 y=-180 storage = "00022/idl_side_p_02" scale = 1.5 action = "fadein" time = 0.1]
+
+ 
+[balloon x=120 y=70 shape="002_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+17号…[r]
+18号……？
+[p]
+
+*010
+//-------------------------------------------------------------------------------
+//  トランクス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_023_004"]
+ 
+[character x = 210 y = -200 storage = "90000/wait_right_anger" scale = 1.2 action = "fadein" time = 0.1]
+ 
+[balloon x=-90 y=90 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[font size = 28]
+[wait_anim target=".bln"]
+//[quake target =".bln" power = 3 time = 0.2]
+17号も18号も[r]
+故障したおまえを[r]
+ずっと心配していたぞ
+[p]
+
+*011
+//-------------------------------------------------------------------------------
+//  16号
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_023_004"]
+ 
+[character x=-215 y=-180 storage = "00022/idl_side_p_02" scale = 1.5 action = "fadein" time = 0.1]
+
+ 
+[balloon x=120 y=120 shape="002_01" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+17号…18号……[r]
+いったい…[r]
+…な…なんだ…！？
+[p]
+
+[balloon x=120 y=-90 shape="002_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+メモリーが[r]
+熱くなるような[r]
+この感覚は……！
+[p]
+
+*012
+//-------------------------------------------------------------------------------
+//  トランクス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_023_004"]
+ 
+[character x = 210 y = -200 storage = "90000/wait_right_surprise" scale = 1.2 action = "fadein" time = 0.1]
+ 
+[balloon x=-90 y=100 shape="001_01" scale = 0.7 action = "fadein" time = 0.1]
+[font size = 40]
+[wait_anim target=".bln"]
+//[quake target =".bln" power = 3 time = 0.2]
+16号…！
+[p]
+
+[balloon x=-90 y=-90 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[font size = 28]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 3 time = 0.2]
+まだ完全にゲロに[r]
+支配されたわけじゃ[r]
+ないんだな！？
+[p]
+
+*013
+//-------------------------------------------------------------------------------
+//  16号
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_023_004"]
+ 
+[character x=-215 y=-180 storage = "00022/idl_side_p_02" scale = 1.5 action = "fadein" time = 0.1]
+
+ 
+[balloon x=120 y=110 shape="004_02" scale = 1.05 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 22]
+//[quake target =".bln" power = 3 time = 0.2]
+…オ…オレは[r]
+ドクター・ゲロさまを守り[r]
+ドクター・ゲロさまのために[r]
+闘う…そ…それだけだ！
+[p]
+
+[balloon x=120 y=-110 shape="002_03" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+[quake target =".bln" power = 3 time = 0.2]
+ドクター・ゲロさまの[r]
+邪魔をするなら今度こそ[r]
+おまえたちの[r]息の根をとめる！！
+[p]
+
+//セリフ後、フェードアウト。
+[fadeout target = ".chara" time = 0.7]
+
+[wait_anim target=".chara"]
+
+// 空のフキダシ（セリフがないコマを送るために使用）
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+*014
+//-------------------------------------------------------------------------------
+//  トランクス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_023_004"]
+ 
+[character x=170 y=-325 storage = "90000/wait_right_anger" scale = 1.4 action = "fadein" time = 0.1]
+ 
+[balloon x=-120 y=90 shape="001_03" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 54]
+//[quake target =".bln" power = 3 time = 0.2]
+………[p]
+
+[balloon x=-100 y=-190 shape="001_02" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 40]
+//[quake target =".bln" power = 3 time = 0.2]
+16号……[p]
+
+//場面転換 フェードアウト→フェードイン
+[balloon x=130 y=40 shape="008_03" scale = 50.0 action = "fadein" time = 0.5]
+[wait time = 0.7] 
+
+*015
+//-------------------------------------------------------------------------------
+//  場面転換
+//-------------------------------------------------------------------------------
+[bgm storage = "005"]
+
+//[se storage = "04"]
+[coma shape="S0001" bg = "bg_023_002"]
+
+[balloon x=130 y=40 shape="008_03" scale = 50]
+[wait time = 1]
+[fadeout target = ".bln" time = 2]
+[wait_anim target=".bln"]
+
+// 空のフキダシ（セリフがないコマを送るために使用）
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+*016
+//-------------------------------------------------------------------------------
+//  ピッコロ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_023_002"]
+
+//ピッコロはマント有り
+[character x = -180 y = -90 storage = "00010/idl_side_e_02" scale = 1.5 action = "fadein" time = 0.1]
+[flip target =".chara" h=1]
+ 
+[balloon x=120 y=150 shape="002_01" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+[$player][r]
+トランクス…
+[p]
+
+[balloon x=130 y=-70 shape="002_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+今回は おまえらに[r]
+借りができたな…
+[p]
+
+*017
+//-------------------------------------------------------------------------------
+//  トランクス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_023_002"]
+ 
+[character x = 210 y = -200 storage = "90000/wait_right_normal" scale = 1.2 action = "fadein" time = 0.1]
+ 
+[balloon x=-90 y=120 shape="001_01" scale = 0.8 action = "fadein" time = 0.1]
+[font size = 32]
+[wait_anim target=".bln"]
+//[quake target =".bln" power = 3 time = 0.2]
+とんでもないです
+[p]
+
+[balloon x=-90 y=-90 shape="001_02" scale = 1.0 action = "fadein" time = 0.1]
+[font size = 24]
+[wait_anim target=".bln"]
+//[quake target =".bln" power = 3 time = 0.2]
+オレたちのほうが[r]
+もっとたくさん[r]
+ピッコロさんに助けて[r]
+もらっていますから…
+[p]
+
+*018
+//-------------------------------------------------------------------------------
+//  ピッコロ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_023_002"]
+
+//ピッコロはマント有り
+[character x = -180 y = -90 storage = "00010/idl_side_e_02" scale = 1.5 action = "fadein" time = 0.1]
+[flip target =".chara" h=1]
+ 
+[balloon x=120 y=130 shape="002_02" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+//[quake target =".bln" power = 3 time = 0.2]
+そうか…
+[p]
+
+[balloon x=120 y=-90 shape="002_03" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+…だが これからまた[r]
+おまえたちの力を[r]
+借りることになりそうだ
+[p]
+
+*019
+//-------------------------------------------------------------------------------
+//  トランクス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_023_002"]
+ 
+[character x = 210 y = -200 storage = "90000/wait_right_anger" scale = 1.2 action = "fadein" time = 0.1]
+ 
+[balloon x=-90 y=70 shape="001_02" scale = 0.8 action = "fadein" time = 0.1]
+[font size = 32]
+[wait_anim target=".bln"]
+//[quake target =".bln" power = 3 time = 0.2]
+大界王神さまのこと[r]
+ですね？
+[p]
+
+*020
+//-------------------------------------------------------------------------------
+//  ピッコロ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_023_002"]
+
+//ピッコロはマント有り
+[character x = -180 y = -90 storage = "00010/idl_side_e_02" scale = 1.5 action = "fadein" time = 0.1]
+[flip target =".chara" h=1]
+ 
+[balloon x=120 y=120 shape="002_01" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+魔人ブウに[r]
+吸収されてしまった[r]
+大界王神さまを[r]
+救出するには…
+[p]
+
+[balloon x=120 y=-90 shape="002_02" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+おまえたちの力が[r]
+必ず必要になってくる[r]
+よろしく頼むぞ
+[p]
+
+*021
+//-------------------------------------------------------------------------------
+//  トランクス
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_023_002"]
+
+[character x=170 y=-325 storage = "90000/wait_right_shout" scale = 1.4 action = "fadein" time = 0.1]
+
+[balloon x=-120 y=80 shape="001_02" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 3 time = 0.2]
+[font size = 44]
+はい！
+[p]
+
+[balloon x=-120 y=-180 shape="001_02" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target =".bln" power = 3 time = 0.2]
+[font size = 24]
+こちらこそ[r]
+よろしくお願いします！
+[p]
+
+
+//-------------------------------------------------------------------------------
+[stopbgm]

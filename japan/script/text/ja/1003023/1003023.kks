@@ -1,0 +1,151 @@
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "012"]
+
+
+*01
+//-------------------------------------------------------------------------------
+//  亀仙人
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0001L" bg = "bg_012_001"]
+
+[character x = -210 y = -100 storage = "00023/heapup_p_01" scale = 1.7 action = "fadein" time = 0.1]
+
+[balloon x = 90 y = 120 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][font size = 28]
+ほう…よく[r]
+わしに追いついたのう
+[p]
+
+[balloon x = 130 y = -90 shape="001_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][font size = 28]
+よし…闘う前に[r]
+わしからアドバイスを[r]
+してやろう
+[p]
+
+
+
+*02
+//-------------------------------------------------------------------------------
+//  亀仙人
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_012_001"]
+
+[character x = -180 y = -100 storage = "00023/idl_side_p_02" scale = 1.7 action = "fadein" time = 0.1]
+
+[balloon x = 100 y = 90 shape="001_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][font size = 28]
+同じ属性の気の玉を[r]
+集めるといくつかの[r]
+効果がある
+[p]
+
+[balloon x = 130 y = -120 shape="001_02" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][font size = 24]
+「[font color="#FF0000"]２倍[font color="#141414"]の気力が溜まる」[r]
+「HPが少し[font color="#ff67e4"]回復[font color="#141414"]」[r]
+「[font color="#FF0000"]ドッカンゲージ[font color="#141414"]が[r]　溜まりやすくなる」
+[p]
+
+
+*03
+//-------------------------------------------------------------------------------
+//  亀仙人
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_012_001"]
+
+[character x = -210 y = -100 storage = "00023/heapup_p_01" scale = 1.7 action = "fadein" time = 0.1]
+
+[balloon x = 140 y = -6 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][font size = 28]
+
+…これをうまく[r]
+活用すればさらに[r]
+強くなれるはずじゃ！
+[p]
+
+
+*04
+//-------------------------------------------------------------------------------
+//  亀仙人
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002L" bg = "bg_012_001"]
+
+[character x = -140 y = -140 storage = "00023/idl_front_p_03" scale = 2.0]
+
+[balloon x = 130 y = 70 shape="001_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][font size = 28]
+…おっと…[r]
+少しおしゃべりが[r]
+長くなったな
+[p]
+
+[balloon x = 130 y = -230 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][font size = 28]
+//[quake target = ".bln" power = 3 time = 0.2]
+ではそろそろ[r]
+決着をつけるとするか[r]
+…いくぞい！
+[p]
+
+//以下説明画像
+//フェードアウト
+[balloon x=130 y=40 shape="008_03" scale = 50.0 action = "fadein" time = 1.5]
+
+[wait time = 1.5]
+
+//空のフキダシ
+//[balloon x = 0 y = 0 shape="002_01" scale = 0]
+//[p]
+
+
+
+
+
+
+//予告
+[balloon x = -0 y =250 shape="009_02" scale = 1.0 action = "fadein" time = 2]
+
+[wait_anim target=".bln"]
+
+[p]
+
+
+//フェードアウト
+[balloon x=130 y=40 shape="008_03" scale = 50.0 action = "fadein" time = 1.5]
+
+[wait time = 1.5]
+
+
+
+//予告
+[balloon x = -0 y =250 shape="009_09" scale = 1.0 action = "fadein" time = 2]
+
+[wait_anim target=".bln"]
+
+[p]
+
+//フェードアウト
+[balloon x=130 y=40 shape="008_03" scale = 50.0 action = "fadein" time = 1.5]
+
+[wait time = 1.5]
+
+
+
+//予告
+[balloon x = -0 y =250 shape="009_08" scale = 1.0 action = "fadein" time = 2]
+
+[wait_anim target=".bln"]
+
+[p]
+
+
+[stopbgm]

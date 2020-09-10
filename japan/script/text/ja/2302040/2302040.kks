@@ -1,0 +1,146 @@
+
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "007"]
+
+*001
+//-------------------------------------------------------------------------------
+//  ナッパ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0004L" bg = "bg_008_001"]
+
+[character x=-150 y=-150 storage = "00015/atc_down_p_02" scale = 0.9 action = "fadein" time = 0.1]
+
+[character x=550 y=100 storage = "00061/atc_energyball_p_01" scale = 3.0 action = "fadein" time = 0.1]
+
+[balloon x=-130 y=70 shape="004_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+べ…ベジータ…[r]
+た…助けてくれ……！
+[p]
+
+[balloon x=160 y=-100 shape="002_02" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 54]
+………
+[p]
+
+*002
+//-------------------------------------------------------------------------------
+//  ベジータ
+//-------------------------------------------------------------------------------
+[se storage = "3024"]
+[coma shape="N0003L" bg = "bg_008_001"]
+[lwfobject id="syuutyuu1" storage="syucyu:ef_002" mask="inside" loop=1 priority=10 scale=1.0]
+
+[lwfobject id = "ガッ" storage="kakimoji:ef_023" in="02" x = 200 y=-85 scale = 1.7 action = "fadein" time = 0.1]
+[quake target ="ガッ" power = 12 time = 0.2]
+
+[character x=-165 y=-120 storage = "00061/atc_energyball_p_01" scale = 1.3 action = "fadein" time = 0.1]
+[quake target =".chara" power = 5 time = 0.3]
+
+
+[balloon x=130 y=130 shape="002_01" scale = 1 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+動けないサイヤ人など[r]
+必要ない！！
+[p]
+
+
+
+*003
+//-------------------------------------------------------------------------------
+//  ベジータのナッパへの攻撃
+//-------------------------------------------------------------------------------
+[se storage = "3017"]
+
+[coma shape="N0004L" bg = "bg_008_001"]
+[lwfobject id="syuutyuu1" storage="syucyu:ef_001" mask="inside" loop=1 priority=10 scale=1]
+[move target = "syuutyuu1" x = 0 y = -30]
+
+
+[lwfobject id = "kaki2" storage="kakimoji:ef_013" in="04" x=0 y=0 scale = 3]
+[quake target = "kaki2" power = 15 time = 1]
+
+
+[character x=0 y=0 storage = "90000/bomb" scale = 0.9 action = "expand" time = 0.1]
+[quake target = ".chara" power = 10 time = 1]
+
+
+[balloon x=130 y=40 shape="008_02" scale = 50 action = "fadein" time = 0.5]
+
+[wait_anim target=".bln"]
+
+[fadeout target = ".bln" time = 1.5]
+
+[wait time = 1.5]
+
+
+//空のフキダシ
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+
+//[wait time = 0.7]
+
+
+//[balloon shape="008_02" x = 140 y = -30 scale = 50 action = "fadein" time = 1.5]
+
+
+
+//[wait time = 2]
+
+*004
+//-------------------------------------------------------------------------------
+//  クリリン
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_008_001"]
+
+[character x=180 y=-110 storage = "00009/guard_e_01" scale = 1.8 action = "fadein" time = 0.1]
+
+
+[balloon x=-130 y=100 shape="004_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+………！！[r]
+な…なんてやつだ…
+[p]
+
+[balloon x=-150 y=-90 shape="004_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+自分の仲間まで[r]
+殺しちまいやがった…
+[p]
+
+*005
+//-------------------------------------------------------------------------------
+//  悟空
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_008_001"]
+
+[character x=195 y=-60 storage = "00003/heapup_e_01" scale = 1.9 action = "fadein" time = 0.1]
+
+
+[balloon x=-140 y=60 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[font size = 30]
+…あいつの強さは[r]
+オラが思っていた以上[r]
+みたいだ…
+[p]
+
+
+
+[stopbgm]
+

@@ -1,0 +1,273 @@
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+//[bgm storage = "012"]
+
+
+*01
+//-------------------------------------------------------------------------------
+//  界王
+//-------------------------------------------------------------------------------
+
+//[se storage = "04"]
+[coma shape="S0001" bg = "bg_080_001"]
+
+[character x = -130 y = 0 storage = "90001/stand" scale = 0.7 action = "fadein" time = 0.1]
+
+[wait_anim target=".chara"]
+
+[balloon x=130 y=180 shape="001_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target = ".bln" power = 3 time = 0.2]
+[font size = 28]
+う〜ん かい〜よ〜[r]
+かい〜お〜…[r]
+界王じゃ！[p]
+
+[balloon x=135 y=-130 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target = ".bln" power = 3 time = 0.2]
+[font size = 28]
+どうじゃ 今のシャレ！[r]
+遠慮なく笑っても[r]
+かまわんぞ！[p]
+
+*02
+//-------------------------------------------------------------------------------
+//  界王
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_080_001"]
+
+[character x = -180 y = -50 storage = "90001/stand" scale = 0.6 action = "fadein" time = 0.1]
+
+[balloon x=125 y=140 shape="001_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target = ".bln" power = 3 time = 0.2]
+[font size = 28]
+[font color="#e59522"]龍石[font color="#141414"]でガシャが[r]
+引けることは[r]
+もう知っておるな？[p]
+
+[balloon x=125 y=-80 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[quake target = ".bln" power = 3 time = 0.2]
+[font size = 28]
+だが[font color="#e59522"]龍石[font color="#141414"]以外で引ける[r]
+ガシャもある！[r]
+それが友情ガシャじゃ！[p]
+
+
+//---------------------------------------------
+
+[if !$is_cleared]    
+// 達成済みか否かは $is_cleared 変数に入っているので、それを用いて if 分岐します。
+
+//---------------------------------------------
+
+//*explain|任務内容詳細説明    // ラベルを付けておくと、テスターで見やすくなります。
+
+// ******************************************************
+//  ここには、
+//  まだ、このミッションを達成していない場合の展開を記述します。
+// ******************************************************
+
+*explain|任務内容詳細説明
+*03_mitatu
+//-------------------------------------------------------------------------------
+//  グレゴリー（後ろにバブルスもいる）
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_080_001"]
+
+[character x = 260 y = -100 storage = "90003/baburusu" scale = 0.5 angle = 9 action = "fadein" time = 0.1]
+[character x = 140 y = -20 storage = "90003/guregori" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon x=-125 y=100 shape="001_02" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target = ".bln" power = 3 time = 0.2]
+[font size = 24]
+友情ポイントで引けるのが[r]
+友情ガシャなんですよね！[r]
+界王さま！[p]
+
+
+*04_mitatu
+//-------------------------------------------------------------------------------
+//  界王
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_080_001"]
+
+[character x = -180 y = -50 storage = "90001/stand" scale = 0.6 action = "fadein" time = 0.1]
+
+[balloon x=90 y=120 shape="001_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target = ".bln" power = 3 time = 0.2]
+[font size = 32]
+そのとおりじゃ！[p]
+
+[balloon x=125 y=-90 shape="001_02" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target = ".bln" power = 3 time = 0.2]
+[font size = 24]
+友情ガシャで手に入れた[r]
+キャラクターは修業相手に[r]
+もってこいだぞ！[p]
+
+
+*05_mitatu
+//-------------------------------------------------------------------------------
+//  グレゴリー（後ろにバブルスもいる）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_080_001"]
+
+[character x = 260 y = -100 storage = "90003/baburusu" scale = 0.5 angle = 9 action = "fadein" time = 0.1]
+[character x = 140 y = -20 storage = "90003/guregori" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon x=-125 y=85 shape="001_02" scale = 1 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target = ".bln" power = 3 time = 0.2]
+[font size = 24]
+修業相手に選ぶと[r]
+たくさんの経験値がもらえる[r]
+キャラクターもいますよ！[p]
+
+
+*06_mitatu
+//-------------------------------------------------------------------------------
+//  界王
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0002L" bg = "bg_080_001"]
+
+[character x = -150 y = -50 storage = "90001/stand" scale = 0.7 action = "fadein" time = 0.1]
+
+[balloon x=125 y=120 shape="001_02" scale = 1 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[quake target = ".bln" power = 3 time = 0.2]
+[font size = 23]
+友情ガシャの[r]
+「連続ガシャ」を引いて[r]
+キャラクターを集めるのだ！[p]
+
+
+
+//---------------------------------------------
+[else]
+//*has_been_cleared|すでに達成済み    // ラベルを付けておくと、テスターでチェックしやすくなります。
+
+// ******************************************************
+//  ここには、
+//  すでに、このミッションを達成している場合の展開を記述します。
+// ******************************************************
+
+*has_been_cleared|すでに達成済み
+
+*07
+//-------------------------------------------------------------------------------
+//  グレゴリー（後ろにバブルスもいる）
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_080_001"]
+
+[character x = 260 y = -100 storage = "90003/baburusu" scale = 0.5 angle = 9 action = "fadein" time = 0.1]
+[character x = 140 y = -20 storage = "90003/guregori" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon x=-125 y=90 shape="001_02" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target = ".bln" power = 3 time = 0.2]
+[font size = 24]
+界王さま… どうやら[r]
+すでに友情ガシャを[r]
+引いたことが[r]
+あるみたいですよ[p]
+
+*08
+//-------------------------------------------------------------------------------
+//  界王
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_080_001"]
+
+[character x = -180 y = -50 storage = "90001/stand" scale = 0.6 action = "fadein" time = 0.1]
+
+[balloon x=125 y=120 shape="001_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target = ".bln" power = 3 time = 0.2]
+[font size = 28]
+な…なんと[r]
+いつのまに…！！[p]
+
+[balloon x=125 y=-90 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target = ".bln" power = 3 time = 0.2]
+[font size = 28]
+こいつは[r]
+楽しみなやつだわい[p]
+
+*09
+//-------------------------------------------------------------------------------
+//  グレゴリー（後ろにバブルスもいる）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_080_001"]
+
+[character x = 260 y = -100 storage = "90003/baburusu" scale = 0.5 angle = 9 action = "fadein" time = 0.1]
+[character x = 140 y = -20 storage = "90003/guregori" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon x=-125 y=120 shape="001_01" scale = 1 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target = ".bln" power = 3 time = 0.2]
+[font size = 24]
+友情ガシャで手に入る[r]
+キャラクターは修業相手に[r]
+ぴったりです！[p]
+
+[balloon x=-100 y=-100 shape="001_02" scale = 1.05 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target = ".bln" power = 3 time = 0.2]
+[font size = 22]
+修業相手に選ぶと[r]
+たくさんの経験値がもらえる[r]
+キャラクターもいるんですよ！[p]
+
+
+
+
+*10
+//-------------------------------------------------------------------------------
+//  界王
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0002L" bg = "bg_080_001"]
+
+//[character x = 180 y = -200 storage = "00011/card_01" scale = 1 action = "fadein" time = 0.1]
+[character x = -150 y = -50 storage = "90001/stand" scale = 0.7 action = "fadein" time = 0.1]
+
+[balloon x=135 y=60 shape="001_02" scale = 1 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[quake target = ".bln" power = 3 time = 0.2]
+[font size = 24]
+友情ポイントがたまったら[r]
+またガシャを[r]
+引いてみるといいぞ！[p]
+
+[endif]
+*conclusion|結び
+
+//---------------------------------------------
+
+
+
+//[stopbgm]

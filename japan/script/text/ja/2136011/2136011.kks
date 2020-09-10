@@ -1,0 +1,120 @@
+
+
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "012"]
+
+*01
+//-------------------------------------------------------------------------------
+//  ウーロン（変身）
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+
+
+[coma shape="N0001L" bg = "bg_000_004"]
+
+[character x = -230 y = -130 storage = "00344/heapup_p_01" scale = 1.2 action = "fadein" time = 0.1]
+[character x = -210 y = 90 storage = "99999/ase" scale = 0.6 action = "fadein" time = 0.1]
+
+
+[balloon shape="004_03" x = 130 y = 100 scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+
+やっ[r]
+やばいっ！！[p]
+
+
+[balloon shape="004_01" x = 140 y = -100 scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size =32]
+[quake target =".bln" power = 3 time = 0.2]
+
+そろそろ[r]
+時間がっ！！[r]
+
+//[se storage = "3025"]
+//点滅
+[balloon shape="008_02" x = 140 y = -30 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+//[balloon shape="008_02" x = 140 y = -30 scale = 50 action = "fadein" time = 0.1]
+//[wait time = 0.3]
+//[clear target = ".bln"]
+
+
+*02
+//-------------------------------------------------------------------------------
+//  ウーロン
+//-------------------------------------------------------------------------------
+[se storage = "3037"]
+
+
+[coma shape="N0002L" bg = "bg_000_004"]
+
+[character id="somke" x = 40 y = -0 storage = "99999/ef_sp_smoke" scale = 2 action = "expand" time = 0.5]
+
+
+[wait time = 0.5]
+
+[fadeout target = "somke" time = 0.7]
+
+[character x = 0 y = -0 storage = "00344/card_01" scale = 1 action = "fadein" time = 0.1]
+[character x = 50 y = 60 storage = "99999/ase" scale = 0.7 action = "fadein" time = 0.1]
+
+[wait_anim target="somke"]
+
+// 空のフキダシ（セリフがないコマを送るために使用）
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+
+*03
+//-------------------------------------------------------------------------------
+//  悟空
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+
+
+[coma shape="N0001R" bg = "bg_000_004"]
+
+[character x = 190 y = -50 storage = "00261/card_03" scale = 1 action = "fadein" time = 0.1]
+
+
+[balloon shape="001_03" x = -110 y = 70 scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+
+おまえだったのかー[r]
+ウーロンは！！[p]
+
+
+*04
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+
+
+[coma shape="N0002L" bg = "bg_000_004"]
+
+[balloon shape="003_01" x = -0 y = -40 scale = 1.5 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 15]
+//[quake target =".bln" power = 3 time = 0.2]
+
+退治したウーロンを[r]
+新たな仲間に加え[r]
+悟空たちの[r]
+ドラゴンボールさがしの[r]
+旅は まだまだ[r]
+続くのであった…[p]
+
+
+
+[stopbgm]

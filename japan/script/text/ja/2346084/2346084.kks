@@ -1,0 +1,164 @@
+*start|スタート
+//ステージ8ラウンド２開始
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+//[bgm storage = "005"]
+
+*01
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+[se storage = "3017"]
+
+[coma shape="S0001" bg = "bg_050_002"]
+
+[lwfobject id = "kaki2" storage="kakimoji:ef_019" in="04" x=0 y=350 scale = 3.5 action = "fadein" time = 0.1]
+
+[quake target = "kaki2" power = 15 time = 1]
+
+[character x=0 y=20 storage = "99999/ef_explode_005" scale = 3.0 angle = -20 action = "expand" time = 0.1]
+
+[quake target = ".chara" power = 10 time = 1]
+
+[balloon x=0 y=0 shape="008_02" scale = 50 action = "fadein" time = 0.5]
+
+[wait_anim target=".bln"]
+
+[fadeout target = ".bln" time = 1.5]
+
+[wait time = 0.3]
+
+[fadeout target = "kaki2" time = 0.8]
+
+[fadeout target = ".chara" time = 1.2]
+
+[wait time = 1.5]
+
+[balloon x=0 y=80 shape="003_02" scale = 1.6 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 15]
+//[quake target =".bln" power = 7 time = 0.2]
+死を乗り越えるほどに[r]
+サイヤ人は強さを増す…[r]
+　[r]
+悟空からもらった仙豆で[r]
+回復し さらに戦闘力を[r]
+上げていたベジータは[r]
+ジースをあっというまに[r]
+倒してしまうのだった…
+[p]
+
+*02
+//-------------------------------------------------------------------------------
+//  悟空(ギニュー)
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_050_001"]
+
+[character x = 190 y = -90 storage = "00017/heapup_e_01" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x=-110 y=110 shape="004_01" scale = 0.8 action = "fadein" time = 0.1]
+[font size = 32]
+[wait_anim target=".bln"]
+//[quake target =".bln" power = 3 time = 0.2]
+べ…[r]
+ベジータ…！！
+[p]
+
+[balloon x=-120 y=-90 shape="004_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+とどめをさす必要は[r]
+ねえだろ！！
+[p]
+
+*03
+//-------------------------------------------------------------------------------
+//  ベジータ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_050_001"]
+
+[character x = 180 y = -110 storage = "00061/idl_side_e_04" scale = 1.1 angle = 0 action = "fadein" time = 0.1]
+
+
+
+[balloon x=-110 y=100 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[font size = 28]
+[wait_anim target=".bln"]
+//[quake target =".bln" power = 3 time = 0.2]
+せいぜい そうやって[r]
+甘い戯言をほざいてろ[r]
+カカロット…
+[p]
+
+[balloon x=-120 y=-90 shape="002_01" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+きさまは一生[r]
+超サイヤ人になれん[r]
+資格があるのは[r]このオレさ…
+[p]
+
+*04
+//-------------------------------------------------------------------------------
+//  ギニュー(悟空)
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_050_001"]
+
+[character x = -190 y = -110 storage = "00074/heapup_p_01" scale = 1.2 action = "fadein" time = 0.1]
+
+
+[balloon x=110 y=100 shape="004_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+ジ…ジースが[r]
+ベジータに……！！
+[p]
+
+
+
+[balloon x=125 y=-105 shape="004_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 7 time = 0.2]
+な…[r]
+なんということだ[r]
+……！！
+[p]
+
+*05
+//-------------------------------------------------------------------------------
+//  ベジータ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_050_001"]
+ 
+[character x = 160 y = -190 storage = "00061/heapup_e_04" scale = 1.4 action = "fadein" time = 0.1]
+//[flip target =".chara" h=1]
+
+
+[balloon x=-125 y=70 shape="002_03" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+ギニューよ…どうやら[r]
+カカロットが言ったように[r]
+そのカラダをうまく[r]
+使えないようだな…
+[p]
+
+[quake target =".chara" power = 4 time = 0.3]
+
+[balloon x=-140 y=-230 shape="006_01" scale = 0.9 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 7 time = 0.2]
+きさまも このオレが[r]
+始末してやる！！
+[p]

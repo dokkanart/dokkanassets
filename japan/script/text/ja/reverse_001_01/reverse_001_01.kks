@@ -1,0 +1,259 @@
+*start|スタート
+
+//リバース
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+//[bgm storage = "012"]
+
+
+*001
+//-------------------------------------------------------------------------------
+//  
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma id = "coma1" shape="N0002R" bg = "bg_000_023"]
+//[wait time = 0.7]
+
+[wait_anim target="coma1"]
+
+//老界王神
+[character id = "kai1" x = 200 y = -170 storage = "90003/oldkaiousin" scale = 1.1 action = "fadein" time = 0.7]
+
+[wait time = 0.3]
+
+//孫悟空
+[character id = "gok1" x=-220 y=-220 storage = "00003/card_10" scale = 0.9 action = "fadein" time = 0.7]
+
+[wait_anim target="gok1"]
+
+
+//老界王神
+[balloon id = "1" x=90 y=140 shape="001_03" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+リバースとは[r]
+なにか説明しよう
+[p]
+
+
+[clear target = "1"]
+
+//老界王神
+[balloon id = "2" x=60 y=200 shape="001_02" scale = 1.2 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 20]
+//[quake target =".bln" power = 3 time = 0.2]
+リバースで[r]
+限界突破UR・LRのキャラクターを[r]
+一時的にドッカン覚醒前の状態に[r]
+戻すことができるのじゃ
+[p]
+
+[clear target = "2"]
+
+
+//孫悟空
+[balloon id = "3" x=-15 y=140 shape="001_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target ="3" power = 7 time = 0.2]
+でもよ…[r]
+わざわざ戻す必要なんて[r]
+あんのかな？
+[p]
+
+
+//孫悟空
+[balloon id = "4" x=-25 y=-220 shape="001_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target ="4" power = 3 time = 0.2]
+弱くなっちまうって[r]
+ことだろ？
+[p]
+
+
+[clear target = "3"]
+[clear target = "4"]
+
+
+//「「こんな場面で使おう」の説明画像を出す
+[character id = "guide1" x=0 y=440 storage = "90003/reverse_01" scale = 1.1 action = "fadein" time = 0.5]
+
+//孫悟空
+//[character id = "gok2" x=-220 y=-220 storage = "00003/card_10" scale = 0.9]
+
+[wait_anim target="guide1"]
+
+
+//老界王神
+[balloon id = "7" x=15 y=70 shape="001_03" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+こういうときに[r]
+使うんじゃよ
+[p]
+
+
+//孫悟空
+[balloon id = "8" x=-80 y=-235 shape="001_02" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+//[quake target =".bln" power = 3 time = 0.2]
+ああ〜[r]
+なるほどなあ
+[p]
+
+[clear target = "guide1"]
+
+[clear target = "7"]
+[clear target = "8"]
+
+//「ルール１」の説明画像を出す
+[character id = "guide2" x=0 y=440 storage = "90003/reverse_02" scale = 1.1]
+
+[wait time = 0.7]
+
+//老界王神
+[balloon id = "9" x=40 y=120 shape="001_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+リバースに[r]
+必要なメダルは交換所で[r]
+手に入るぞい
+[p]
+
+//孫悟空
+[balloon id = "10" x=-60 y=-235 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+占いババの[r]
+ばあちゃんのトコだな！
+[p]
+
+[clear target = "guide2"]
+
+[clear target = "9"]
+[clear target = "10"]
+
+
+
+//「「ルール２」の説明画像を出す
+[character id = "guide3" x=0 y=440 storage = "90003/reverse_03" scale = 1.1]
+
+[wait time = 0.7]
+
+//老界王神
+[balloon id = "11" x=10 y=100 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 27]
+//[quake target =".bln" power = 3 time = 0.2]
+リバースで一時的に[r]
+パラメータは下がるが[r]
+ちゃんと元に戻せるぞい
+[p]
+
+
+//孫悟空
+[balloon id = "12" x=-30 y=-220 shape="001_03" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+な〜んだ[r]
+これでひと安心だ！
+[p]
+
+
+[clear target = "guide3"]
+
+[clear target = "11"]
+[clear target = "12"]
+
+//「ルール３」の説明画像を出す
+[character id = "guide4" x=0 y=440 storage = "90003/reverse_04" scale = 1.1]
+
+[wait time = 0.7]
+
+
+//老界王神
+[balloon id = "13" x=25 y=110 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+再度[r] 
+ドッカン覚醒するときに[r]
+覚醒メダルやゼニーは[r]
+必要ないんじゃ
+[p]
+
+
+//孫悟空
+[balloon id = "14" x=-40 y=-230 shape="001_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+ずいぶん気前が[r]
+いいんだな〜
+[p]
+
+
+[clear target = "13"]
+[clear target = "14"]
+
+
+
+
+//老界王神
+[balloon id = "15" x=40 y=-235 shape="001_03" scale = 1.1 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 20]
+//[quake target =".bln" power = 3 time = 0.2]
+これで[r]
+ドッカン覚醒したキャラクターの[r]
+ルート開放や必殺技Lvアップが[r]
+しやすくなるじゃろ？
+[p]
+
+[clear target = "15"]
+
+//孫悟空
+[balloon id = "16" x=10 y=100 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+ああ！[r]
+すっげえ便利だって[r]
+ことはわかったぞ！
+[p]
+
+
+
+[clear target = "16"]
+
+//老界王神
+[balloon id = "17" x=15 y=110 shape="001_03" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+ただし[r]
+リバースできるのは[r]
+限界突破UR・LRの[r]
+キャラクターだけじゃ
+[p]
+
+
+//老界王神
+[balloon id = "18" x=20 y=-220 shape="001_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+注意するのじゃぞ！
+[p]
+
+//[stopbgm]

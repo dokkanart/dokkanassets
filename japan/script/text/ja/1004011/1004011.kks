@@ -1,0 +1,171 @@
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "007"]
+
+
+*01
+//-------------------------------------------------------------------------------
+//  キュイ
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0001L" bg = "bg_006_001"]
+
+[character x=-250 y=-80 storage = "00046/atc_sp01_p_02" scale = 1.7 action = "fadein" time = 0.1]
+
+[balloon x=120 y=120 shape="004_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][font size = 28]
+[quake target = ".bln" power = 3 time = 0.2]
+…バ…バカな…[r]
+戦闘力数値がどんどん[r]上がっていく…！[p]
+
+[balloon x=150 y=-100 shape="004_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][font size = 32]
+[quake target = ".bln" power = 3 time = 0.2]
+スカウターの故障[r]か…！？[p]
+
+*02
+//-------------------------------------------------------------------------------
+//  トランクス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_006_001"]
+
+[character x=210 y=-200 storage = "90000/wait_right_anger_strong" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x=-110 y=80 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][font size = 28]
+おまえ…何者なんだ？[r]この地球でなにを[r]しようとしている？[p]
+
+
+*03
+//-------------------------------------------------------------------------------
+//  キュイ
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+//[coma shape="N0001L" bg = "bg_006_001"]
+
+//[character x=-170 y=-40 storage = "00046/idl_side_p_02" scale = 1.3 action = "fadein" time = 0.1]
+
+//[balloon x=80 y=40 shape="004_04" scale = 0.6 action = "expand" time = 0.1]
+//[wait_anim target=".bln"][font size = 44]
+//[quake target = ".bln" power = 3 time = 0.2]
+//…くっ！！[p]
+
+
+*04
+//-------------------------------------------------------------------------------
+//  キュイ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_006_001"]
+
+[character id = "1" x=-230 y=-80 storage = "00046/atc_sp01_p_01" scale = 1.8 action = "fadein" time = 0.1]
+
+[balloon x=140 y=120 shape="007_01" scale = 0.75 action = "expand" time = 0.1]
+[wait_anim target=".bln"][font size = 36]
+[quake target = ".bln" power = 7 time = 0.2]
+…くっ！！[r]
+おぼえておけよ[r]
+きさまら！！[p]
+
+[balloon x=100 y=-100 shape="007_02" scale = 0.9 action = "expand" time = 0.1]
+[wait_anim target=".bln"][font size = 28]
+[quake target = ".bln" power = 7 time = 0.2]
+この星の人間は[r]フリーザさまに[r]滅ぼされるのだ！！[p]
+
+[clear target = "1"]
+
+[se storage = "3022"]
+
+[lwfobject id = "kaki1" storage="kakimoji:ef_023" in="02" x=-220 y=-110 scale = 1.0]
+[quake target = "kaki1" power = 9 time = 0.2]
+
+[character id = "2" x=-150 y=-80 storage = "00046/dash_e_01" scale = 2.0]
+[move target ="2" x=-600 time = 0.3]
+
+// 空のフキダシ（セリフがないコマを送るために使用）
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+*05
+//-------------------------------------------------------------------------------
+//  キュイにげる
+//-------------------------------------------------------------------------------
+//[se storage = "45"]
+//[coma shape="N0003R" bg = "bg_006_001"]
+//[lwfobject id="syuutyuu1" storage="syucyu:ef_005" mask="inside" loop=1 priority=10 scale=0.5]
+//[move target = "syuutyuu1" x = 120 y = 0]
+
+//[lwfobject id = "kaki1" storage="kakimoji:ef_023" in="02" x=-10 y=15 scale = 1.3 action = "expand" time = 0.1]
+//[quake target = "kaki1" power = 9 time = 0.2]
+
+//[character x=-600 y=-5 storage = "00046/dash_e_01" scale = 0.8 action = "slide:right" time = 0.4]
+
+
+
+//[balloon x=120 y=110 shape="002_01" scale = 0]
+//[p]
+
+
+//[bgm storage = "003"]
+
+
+*06
+//-------------------------------------------------------------------------------
+//  トランクス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0003R" bg = "bg_006_001"]
+
+
+[character x = 170 y = -380 storage = "90000/wait_right_surprise" scale = 1.7 action = "fadein" time = 0.1]
+
+[balloon x=-120 y=70 shape="004_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][font size = 28]
+[quake target = ".bln" power = 3 time = 0.2]
+な…なに…！！[r]
+フリーザだって…！？[p]
+
+*07
+//-------------------------------------------------------------------------------
+//  トランクス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_006_001"]
+
+[character x=210 y=-200 storage = "90000/wait_right_anger" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x=-100 y=110 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][font size = 28]
+あいつまでこの世界に[r]現れるなんて…！！[p]
+
+[balloon x=-75 y=-100 shape="001_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][font size = 28]
+次元の歪みは[r]ひどくなるばかりだ…[p]
+
+*08
+//-------------------------------------------------------------------------------
+//  トランクス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_006_001"]
+
+[character x=170 y=-325 storage = "90000/wait_right_anger_strong" scale = 1.4 action = "fadein" time = 0.1]
+
+[balloon x=-100 y=85 shape="001_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][font size = 28]
+フリーザとその部下が[r]この地球に攻め込んで[r]きたらしい…
+[p]
+
+
+
+
+[balloon x=-110 y=-190 shape="001_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][font size = 32]
+[quake target = ".bln" power = 3 time = 0.2]
+ここは手分けして[r]やつらの侵略を[r]防ぎましょう！[p]
+
+[stopbgm]

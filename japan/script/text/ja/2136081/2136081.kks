@@ -1,0 +1,184 @@
+
+
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "007"]
+
+*01
+//-------------------------------------------------------------------------------
+//  クリリン
+//-------------------------------------------------------------------------------
+
+//[se storage = "04"]
+[coma shape="N0001R" bg = "bg_050_001"]
+
+//[character x=50 y=-90 storage = "00007/idl_side_e_02" scale = 1.2 action = "fadein" time = 0.1]
+[character x = 180 y = -100 storage = "00009/idl_side_e_02" scale = 1.7 action = "fadein" time = 0.1]
+
+[balloon x=-100 y=100 shape="004_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 3 time = 0.2]
+[font size = 28]
+ま…まさか おまえに[r]
+助けられるとはな…[r]
+ベジータ…[p]
+
+
+*02
+//-------------------------------------------------------------------------------
+//  悟飯
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_050_001"]
+
+[character x=180 y=-90 storage = "00007/headup_e_01_okappa" scale = 1.1 action = "fadein" time = 0.1]
+
+
+[balloon x=-70 y=70 shape="001_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target =".bln" power = 3 time = 0.2]
+[font size = 32]
+あ…[r]
+ありがとう……[p]
+
+
+*03
+//-------------------------------------------------------------------------------
+//  ベジータ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+
+
+[coma shape="N0001R" bg = "bg_050_001"]
+
+[character x = 220 y = -120 storage = "00061/idl_side_p_01" scale = 1.2 action = "fadein" time = 0.1]
+[flip target =".chara" h=1]
+
+
+[balloon shape="002_01" x = -80 y = 120 scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+
+ホッとしている[r]
+場合じゃないぞ…[p]
+
+
+[balloon shape="002_03" x = -120 y = -80 scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+
+覚悟しろ……[r]
+幸運はこれまでだ…[p]
+
+
+*04
+//-------------------------------------------------------------------------------
+//  ジース
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+
+[coma shape="N0001L" bg = "bg_050_001"]
+
+[character x=-150 y=-100 storage = "00033/bata_idl_front_p_01" scale = 1.1 action = "fadein" time = 0.1]
+
+[character x=-230 y=-160 storage = "00034/heapup_p_01" scale = 1.5 action = "fadein" time = 0.1]
+
+
+[balloon x=120 y=120 shape="002_03" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+[quake target = ".bln" power = 3 time = 0.2]
+おいおいおお！ グルドのやつ[r]
+やられちまいやがったぜ！[p]
+
+[balloon x=110 y=-100 shape="004_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target = ".bln" power = 3 time = 0.2]
+こ[r]
+こまったぞ…[p]
+
+
+*06
+//-------------------------------------------------------------------------------
+//  リクーム
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+
+[coma shape="N0001L" bg = "bg_050_001"]
+
+[character x=-210 y=-120 storage = "00031/rcm_idl_front_p_01" scale = 1.1 action = "fadein" time = 0.1]
+
+
+[balloon x=90 y=120 shape="002_02" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 40]
+//[quake target = ".bln" power = 7 time = 0.2]
+う…うむ…[p]
+
+
+[balloon x=110 y=-80 shape="002_03" scale = 1 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][font size = 24]
+//[quake target = ".bln" power = 7 time = 0.2]
+ひとり欠けては[r]
+われわれ特戦隊の[r]
+スペシャルファイティング[r]
+ポーズは美しくない…[p]
+
+*07
+//-------------------------------------------------------------------------------
+//  ベジータ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+
+[coma shape="N0001R" bg = "bg_050_001"]
+
+[character x = 220 y = -120 storage = "00061/idl_side_p_01" scale = 1.2 action = "fadein" time = 0.1]
+[flip target =".chara" h=1]
+
+[balloon shape="002_01" x = -90 y = 80 scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+
+これからが[r]
+本当の地獄だ…[p]
+
+
+*08
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+
+
+[coma shape="N0002L" bg = "bg_050_001"]
+
+
+[balloon shape="003_01" x = 0 y = -40 scale = 1.5 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 15]
+//[quake target =".bln" power = 3 time = 0.2]
+
+フリーザの秘密兵器[r]
+ギニュー特戦隊…[r]
+　[r]
+ベジータすら敵わぬ[r]
+強敵たちだったが[r]
+修業でパワーアップした[r]
+悟空の力も加え[r]
+見事勝利を収める[r]
+　[r]
+残る敵は帝王フリーザ[r]
+はたして…！？[p]
+
+
+
+[stopbgm]

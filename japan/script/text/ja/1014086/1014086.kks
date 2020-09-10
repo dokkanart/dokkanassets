@@ -1,0 +1,111 @@
+
+*start|スタート
+
+//"１４−８ZHARDボス後"
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "007"]
+
+//-------------------------------------------------------------------------------
+//  セル（完全体）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_023_004"]
+
+[character x=-200 y=-200 storage = "00205/idl_side_p_01" scale = 1.1 action = "fadein" time = 0.1]
+
+[balloon x=110 y=150 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 30]
+どうした…？
+[p]
+
+[balloon x=150 y=-70 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+まだ[r]
+パワーだけに頼って[r]
+いるのではないか？
+[p]
+
+*coma2
+//-------------------------------------------------------------------------------
+//  トランクス
+//-------------------------------------------------------------------------------
+[coma shape="N0001R" bg = "bg_023_004"]
+
+[character x = 210 y = -200 storage = "90000/wait_right_anger_strong" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon id = "01" x = -100 y = 80 shape="001_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target = "01"]
+[font size = 36]
+//[quake target =".bln" power = 3 time = 0.2]
+はあ…[r]
+はあ……
+[p]
+
+*coma3
+//-------------------------------------------------------------------------------
+//  セル（完全体）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+
+[coma shape="N0001L" bg = "bg_023_004"]
+
+[character x=-200 y=-200 storage = "00205/idl_side_p_01" scale = 1.1 action = "fadein" time = 0.1]
+
+[balloon x=120 y=80 shape="002_01" scale = 0.95 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 27]
+ふふふ…[r]
+これでは孫悟空にも[r]
+期待できそうにないな
+[p]
+
+*coma4
+//-------------------------------------------------------------------------------
+//  トランクス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_023_004"]
+
+[character x = 210 y = -200 storage = "90000/wait_right_anger_strong" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon id = "01" x = -110 y = 125 shape="001_02" scale = 0.85 action = "fadein" time = 0.1]
+[wait_anim target = "01"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+そ…[r]
+そんなことはない！
+[p]
+
+[balloon id = "01" x = -100 y = -80 shape="001_03" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target = "01"]
+[font size = 25]
+[quake target =".bln" power = 3 time = 0.2]
+悟空さんなら…[r]
+悟空さんたちなら必ず[r]
+願いを叶えてくれる！！
+[p]
+
+
+*coma5
+//-------------------------------------------------------------------------------
+//  セル（完全体）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+
+[coma shape="N0002L" bg = "bg_023_004"]
+
+[character x=-200 y=-200 storage = "00205/idl_side_p_01" scale = 1.1 action = "fadein" time = 0.1]
+
+[balloon x=115 y=90 shape="002_02" scale = 0.95 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 27]
+ふ…[r]
+では楽しみにしているぞ
+[p]
+
+[stopbgm]

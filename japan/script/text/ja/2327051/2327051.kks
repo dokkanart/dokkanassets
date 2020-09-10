@@ -1,0 +1,278 @@
+
+
+*start|スタート
+//2327051 "ステージ５ゴール"世界一の殺し屋現る！！
+//ペンギン村
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "008"]
+
+*01
+//-------------------------------------------------------------------------------
+//  孫悟空
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0001R" bg = "bg_074_002"]
+[character x = 220 y = -40 storage = "00261/idl_side_e_01" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon shape="001_02" x = -130 y = 20 scale = 0.9 action = "fadein" time = 0.1]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+[wait_anim target=".bln"]
+とっくに[r]
+３秒はすぎちゃったぞ！[p]
+
+*02
+//----------------------------------------------------------------------------
+//  桃白白
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0003L" bg = "bg_074_002"]
+
+[character id = "tao"  x=-215 y=-135 storage = "00024/tao_atc_sp01_p_01" scale = 1.3  action = "fadein" time = 0.1]
+
+[balloon shape="007_02" x = 130 y = 110 scale = 0.9 action = "expand" time = 0.1]
+[font size = 28]
+[quake target =".bln" power = 7 time = 0.2]
+[wait_anim target=".bln"]
+おのれ〜！！[r]
+こうなったら[r]
+こいつをくらえい！！[p]
+
+[se storage = "3025"]
+
+[lwfobject id = "kaki1" storage="kakimoji:ef_025" in="04" x=160 y=-110 scale = 1.2]
+[quake target = "kaki1" power = 15 time = 0.2]
+
+//セリフ後、桃白白がどどん波を撃つ。
+[character id = "dodo"  x=360 y=-10 storage = "99999/dodonpa" scale = 1.2 action = "fadein" time = 0.1]
+
+[quake target ="tao" power = 7 time = 0.3]
+[quake target ="dodo" power = 5 time = 0.3]
+
+
+[balloon shape="007_02" x = -150 y = -140 scale = 0.8 action = "expand" time = 0.1]
+[font size = 36]
+[quake target =".bln" power = 7 time = 0.2]
+[wait_anim target=".bln"]
+必殺どどん波！！
+//[p]
+
+
+//[wait_anim target="dodo"]
+
+//[wait time = 0.1]
+
+[move target ="tao" x=-500 time = 0.5]
+[move target ="dodo" x=-500 time = 0.5]
+
+[fadeout target = "tao" time = 0.2]
+[fadeout target = "dodo" time = 0.2]
+
+
+[character id = "dod2"  x=-190 y=-15 storage = "99999/dodonpa" scale = 2.0 action = "fadein" time = 0.2]
+[quake target ="dod2" power = 8 time = 0.4]
+[move target ="dodo" x=300 time = 0.3]
+
+[wait_anim target="dod2"]
+*03
+//-------------------------------------------------------------------------------
+//  孫悟空
+//-------------------------------------------------------------------------------
+[se storage = "03"]
+[coma shape="N0004R" bg = "bg_000_014"]
+[character x = 260 y = -150 storage = "00261/idl_side_e_01" scale = 2.2 action = "fadein" time = 0.1]
+
+
+[lwfobject id = "kaki2" storage="kakimoji:ef_001" in="04" x=-80 y=25 scale = 3.0 angle = -10 action = "fadein" time = 0.1]
+[quake target = "kaki2" power = 7 time = 0.4]
+
+//空のフキダシ
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+*04
+//-------------------------------------------------------------------------------
+//悟空がどどん波を受けてふっとぶ。
+//-------------------------------------------------------------------------------
+[se storage = "3017"]
+[coma shape="N0003L" bg = "bg_074_002"]
+
+[lwfobject id = "kaki2" storage="kakimoji:ef_019" in="04" x=-150 y=70  angle = -40 scale = 2.5]
+[quake target = "kaki2" power = 15 time = 1]
+
+[character id = "bomb" x=-70 y=-100 storage = "99999/ef_sp_explosion" scale = 1.9 angle = -20 action = "expand" time = 0.1]
+[quake target = "bomb" power = 10 time = 1]
+
+[character id = "gok" x = 100 y = -40 storage = "00261/dam_front_e_01" scale = 1.7 action = "fadein" time = 0.1]
+[quake target = "gok" power = 10 time = 1]
+
+[balloon x=130 y=40 shape="008_02" scale = 50 action = "fadein" time = 0.5]
+[wait_anim target=".bln"]
+[fadeout target = ".bln" time = 0.7]
+[wait time = 0.7]
+//空のフキダシ
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+*05
+//----------------------------------------------------------------------------
+//  桃白白
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_074_002"]
+
+[character  x=-205 y=-135 storage = "00024/tao_idl_side_p_01" scale = 1.2  action = "fadein" time = 0.1]
+[balloon shape="002_01" x = 120 y = 100 scale = 0.9 action = "fadein" time = 0.1]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+[wait_anim target=".bln"]
+ふん… ガキが[r]
+お調子にのるからだ[p]
+
+*06
+//-------------------------------------------------------------------------------
+//  則巻アラレ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_074_001"]
+
+//[character id = "gaji_1" x=100 y=130 storage = "00635/gattyan_05_guard_p_01" scale = 0.7  action = "fadein" time = 0.1]
+//[flip target ="gaji_1" h=1]
+//[character id = "gaji_2" x=265 y=130 storage = "00635/gattyan_06_guard_p_01" scale = 0.7 action = "fadein" time = 0.1]
+//[flip target ="gaji_2" h=1]
+[character  x=175 y=-55 storage = "00635/arare2_idl_side_e_01" scale = 1.1  action = "fadein" time = 0.1]
+
+[balloon shape="001_03" x = -100 y = 100 scale = 0.8 action = "fadein" time = 0.1]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+[wait_anim target=".bln"]
+ほよよ〜！[r]
+悟空くんが[r]
+やられちった！[p]
+
+[balloon shape="001_02" x = -100 y = -80 scale = 0.9 action = "fadein" time = 0.1]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+[wait_anim target=".bln"]
+ねえねえ おっさん[r]
+あたしとも遊んでちょ！[p]
+
+*07
+//----------------------------------------------------------------------------
+//  桃白白
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_074_002"]
+
+[character  x=-245 y=-135 storage = "00024/tao_heapup_p_01" scale = 1.3  action = "fadein" time = 0.1]
+
+[balloon shape="002_01" x = 120 y = 100 scale = 0.9 action = "fadein" time = 0.1]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+[wait_anim target=".bln"]
+おっさんだと？[r]
+なれなれしい…！[p]
+
+
+[balloon shape="002_03" x = 110 y = -120 scale = 1.0 action = "fadein" time = 0.1]
+[font size = 24]
+[quake target =".bln" power = 3 time = 0.2]
+[wait_anim target=".bln"]
+世界一の殺し屋が[r]
+おまえのようなガキんちょと[r]
+遊んでいるヒマなどないわ！[p]
+
+*08
+//----------------------------------------------------------------------------
+//  桃白白
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0003L" bg = "bg_074_002"]
+
+[character id = "tao"  x=-215 y=-135 storage = "00024/tao_atc_sp01_p_01" scale = 1.3  action = "fadein" time = 0.1]
+
+[lwfobject id = "kaki1" storage="kakimoji:ef_025" in="04" x=160 y=-110 scale = 1.2]
+[quake target = "kaki1" power = 15 time = 0.2]
+
+[se storage = "3025"]
+//セリフ後、桃白白がどどん波を撃つ。
+[character id = "dodo"  x=360 y=-10 storage = "99999/dodonpa" scale = 1.2 action = "fadein" time = 0.1]
+
+[quake target ="tao" power = 7 time = 0.3]
+[quake target ="dodo" power = 5 time = 0.3]
+
+
+[balloon shape="007_02" x = -150 y = -140 scale = 0.8 action = "expand" time = 0.1]
+[font size = 36]
+[quake target =".bln" power = 7 time = 0.2]
+[wait_anim target=".bln"]
+どどん波ーっ！！
+//[p]
+
+
+//[wait_anim target="dodo"]
+
+//[wait time = 0.1]
+
+[move target ="tao" x=-500 time = 0.5]
+[move target ="dodo" x=-500 time = 0.5]
+
+[fadeout target = "tao" time = 0.2]
+[fadeout target = "dodo" time = 0.2]
+
+
+[character id = "dod2"  x=-190 y=-15 storage = "99999/dodonpa" scale = 2.0 action = "fadein" time = 0.2]
+[quake target ="dod2" power = 8 time = 0.4]
+[move target ="dodo" x=300 time = 0.3]
+
+[wait_anim target="dod2"]
+
+*09
+//-------------------------------------------------------------------------------
+//  則巻アラレふっとぶ
+//-------------------------------------------------------------------------------
+[se storage = "3017"]
+[coma shape="N0003L" bg = "bg_074_002"]
+
+[lwfobject id = "kaki2" storage="kakimoji:ef_019" in="04" x=-150 y=50  angle = -40 scale = 2.5]
+[quake target = "kaki2" power = 15 time = 1]
+
+[character id = "bomb" x=-70 y=-130 storage = "99999/ef_sp_explosion" scale = 1.8 angle = -20 action = "expand" time = 0.1]
+[quake target = "bomb" power = 10 time = 1]
+
+[character id = "arare" x = 140 y = -20 storage = "00635/arare2_dam_front_e_01" scale = 1.2 action = "fadein" time = 0.1]
+[quake target = "arare" power = 10 time = 1]
+
+[balloon id = "hoyo" shape="001_02" x = -40 y = -150 scale = 0.7 action = "fadein" time = 0.1]
+[font size = 40]
+[wait_anim target="hoyo"]
+[quake target ="hoyo" power = 3 time = 0.2]
+ほよよよ！！
+[balloon id = "white"x=130 y=40 shape="008_02" scale = 50 action = "fadein" time = 0.5]
+[wait_anim target="white"]
+[fadeout target = "white" time = 0.7]
+[wait time = 0.7]
+
+// 空のフキダシ（セリフがないコマを送るために使用）
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+*10
+//----------------------------------------------------------------------------
+//  桃白白
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002L" bg = "bg_074_002"]
+
+[character  x=-195 y=-135 storage = "00024/tao_idl_side_p_01" scale = 1.3  action = "fadein" time = 0.1]
+[balloon shape="002_01" x = 130 y = 100 scale = 0.9 action = "fadein" time = 0.1]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+[wait_anim target=".bln"]
+ふん… 少し[r]
+おとなげなかったかな…[p]
+
+//-------------------------------------------------------------------------------
+[stopbgm]

@@ -1,0 +1,95 @@
+*start|スタート
+
+//ラウンド4
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+//[bgm storage = "002"]
+
+*01
+//----------------------------------------------------------
+//超サイヤ人ゴッド SSベジータ
+//-------------------------------------------------------------------------------
+[se storage = "3038"]
+[coma shape="N0002R" bg = "bg_000_060"]
+
+[lwfobject id = "kaki1" storage="kakimoji:ef_009" x=150 y=-180 scale = 1.4 action = "fadein" time = 0.7]
+[quake target = "kaki1" power = 2 time = 300]
+
+
+[character id = "veg1" x = 190 y = -190 storage = "00240/card_04" scale = 1.1 action = "fadein" time = 0.1]
+[quake target = "veg1" power = 1 time = 300]
+
+
+[balloon x=-134 y=70 shape="006_01" scale = 0.7 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+[quake target =".bln" power = 7 time = 0.2]
+オレのやり方で[r]
+限界なんぞ[r]超えてやる！
+[p]
+
+[balloon x=-130 y=-240 shape="006_02" scale = 0.8 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 7 time = 0.2]
+そして[r]
+きさまに勝つ！！[r]
+はああああ……！！
+[p]
+
+[clear target = "veg1"]
+
+[character id = "SS" x = 160 y = -330 storage = "99999/supersaiyangodss" scale = 2.0 action = "expand" time = 0.2]
+
+[character id = "veg2" x = 190 y = -190 storage = "00240/card_04" scale = 1.1]
+
+
+
+[se storage = "3025"]
+//点滅
+[balloon shape="008_02" x = 0 y = -0 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+//[balloon shape="008_02" x = 0 y = -0 scale = 50 action = "fadein" time = 0.1]
+//[wait time = 0.3]
+//[clear target = ".bln"]
+
+//フェードアウト（フェードアウトするコマ）
+[balloon x=0 y=0 shape="008_02" scale = 50.0 action = "fadein" time = 0.3]
+[wait time = 0.5] 
+
+*02
+//-------------------------------------------------------------------------------
+//  ベジータがパワーアップする。
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="S0001" bg = "bg_000_014"]
+
+[lwfobject id = "kaki1" storage="kakimoji:ef_009" x=-190 y=400 scale = 2.0 angle = 20 action = "fadein" time = 0.7]
+[quake target = "kaki1" power = 2 time = 300]
+
+[character id = "ss" x = 0 y = 90 storage = "99999/supersaiyangodss2" scale = 4.0 action = "fadein" time = 0.1]
+[quake target ="ss" power = 1 time = 300]
+
+
+[character x = 0 y = 0 storage = "00240/card_05" scale = 1.2 action = "fadein" time = 0.1]
+
+
+
+//フェードイン（フェードインするコマ）
+[balloon x=0 y=0 shape="008_02" scale = 50]
+[wait time = 0.5]
+[fadeout target = ".bln" time = 1.5]
+[wait_anim target=".bln"]
+
+[balloon x=0 y=-400 shape="006_01" scale = 0.75 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+[quake target =".bln" power = 7 time = 0.2]
+これが[r]
+オレの全てだ！！
+[p]
+
+//-------------------------------------------------------------------------------
+//[stopbgm]

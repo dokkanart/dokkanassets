@@ -1,0 +1,205 @@
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "013"]
+
+
+*01
+//-------------------------------------------------------------------------------
+//  魔人ベジータ
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+
+
+[coma shape="N0001R" bg = "bg_000_033"]
+
+[character id = "beji" x=240 y=-150 storage = "00228/idl_side_p_01" scale = 1.1 action = "fadein" time = 0.1]
+[flip target ="beji" h=1]
+
+[balloon x=-90 y=120 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+きさまの[r]
+かたづけかたが[r]
+わかったぜ…[p]
+
+[balloon x=-140 y=-80 shape="002_02" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 40]
+//[quake target =".bln" power = 3 time = 0.2]
+やっとな……[p]
+
+
+*02
+//-------------------------------------------------------------------------------
+//  ブウ（善）
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_032"]
+
+[character id="buu" x = -200 y = -120 storage = "00229/energyball_p_02" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x=100 y=100 shape="002_01" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 3 time = 0.2]
+[font size = 40]
+え？[p]
+
+
+*03
+//-------------------------------------------------------------------------------
+//  魔人ベジータ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+
+
+[coma shape="N0001R" bg = "bg_000_033"]
+
+[character id = "beji" x=240 y=-150 storage = "00228/idl_side_p_01" scale = 1.1 action = "fadein" time = 0.1]
+[flip target ="beji" h=1]
+
+[balloon x=-100 y=70 shape="002_03" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+[quake target =".bln" power = 3 time = 0.2]
+きさまを倒すには[r]
+二度と修復できないよう[r]
+こなごなに吹っとばす[r]
+ことだ…！！[p]
+
+
+
+
+
+*04
+//-------------------------------------------------------------------------------
+//  ブウ（善）
+//-------------------------------------------------------------------------------
+
+[se storage = "03"]
+[coma shape="N0004L" bg = "bg_000_014"]
+
+[lwfobject id = "kaki1" storage="kakimoji:ef_001" in="04" x=140 y=40 angle = 10 scale = 3.0]
+[quake target = "kaki1" power = 7 time = 0.2]
+
+[character id="buu" x = -340 y = -570 storage = "00229/energyball_p_01" scale = 3.0 action = "fadein" time = 0.1]
+
+
+
+
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+
+*05
+//-------------------------------------------------------------------------------
+//  魔人ベジータ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+
+
+[coma shape="N0004R" bg = "bg_000_014"]
+
+
+[character id ="beji" x=180 y=-40 storage = "00228/card_01" scale = 2.1 angle = 8 action = "fadein" time = 0.1]
+//[flip target ="beji" h=1]
+
+[balloon x=-140 y=30 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+さらばだ[r]
+ブルマ…トランクス……[r]
+そして…カカロット……[p]
+
+
+[stopbgm]
+
+*06
+//-------------------------------------------------------------------------------
+//  魔人ベジータ
+//-------------------------------------------------------------------------------
+[se storage = "50"]
+
+[coma shape="S0001" bg = "bg_000_033"]
+
+
+[character id ="beji" x=60 y=-120 storage = "00228/card_02" scale = 1.8 angle = 0 action = "fadein" time = 0.1]
+
+[character id ="ki1" x=60 y=-120 storage = "99999/supersaiyan" scale = 2.0 angle = 0 action = "fadein" time = 0.4]
+
+[wait time = 0.4]
+
+[fadeout target = "ki1" time = 0.3]
+
+//[wait_anim target="ki1"]
+
+[wait time = 0.1]
+
+[se storage = "3025"]
+
+[balloon id ="ki2" x=-0 y=-0 shape="010_08" scale = 80.0 action = "expand" time = 2.0]
+
+[quake target ="beji" power = 5 time = 300]
+
+[balloon id ="1" x=-0 y=-120 shape="007_02" scale = 1.2 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+[quake target =".bln" power = 35 time = 300]
+うおおおーっ！！
+//[p]
+
+[wait time = 1.0]
+
+[fadeout target = "1" time = 1.5]
+
+[fadeout target = "beji" time = 1.5]
+
+[fadeout target = "ki2" time = 4.0]
+
+[wait_anim target="ki2"]
+
+
+
+[wait time = 0.7]
+
+
+[character id ="beji" x=50 y=-260 storage = "00228/card_03" scale = 1.5 angle = 0 action = "fadein" time = 0.5]
+
+
+*07
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+
+[coma shape="N0002L" bg = "bg_000_014"]
+
+
+
+
+[balloon shape="003_01" x = -0 y = -40 scale = 1.6 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 14]
+//[quake target =".bln" power = 3 time = 0.2]
+
+愛する者のために[r]
+散るベジータ[r]
+…しかし…[r]
+ベジータの[r]
+命を燃やした最後の[r]
+攻撃も 魔人ブウには[r]
+通用しなかった[r]
+　[r]
+このまま地球は[r]
+魔人ブウの手によって[r]
+地獄に変えられて[r]
+しまうのか…！[p]
+
+
+
+[stopbgm]

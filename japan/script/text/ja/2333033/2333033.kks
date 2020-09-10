@@ -1,0 +1,174 @@
+*start|スタート
+
+//"エリア３ボス前"
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "013"]
+ 
+*001
+//-------------------------------------------------------------------------------
+//  バイオブロリー
+//-------------------------------------------------------------------------------
+[se storage = "3029"]
+[coma shape="N0003L" bg = "bg_070_006"]
+ 
+[character x = -180 y = -350 storage = "00453/card_01" scale = 1.4 action = "fadein" time = 0.1]
+[quake target =".chara" power = 10 time = 0.4]
+ 
+[balloon x=130 y=170 shape="006_02" scale = 0.9 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 7 time = 0.2]
+ウォオオオッ！！
+[p]
+
+
+*002
+//-------------------------------------------------------------------------------
+//  ジャガー
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_070_006"]
+ 
+[character x = -180 y = -110 storage = "90003/jaguar" scale = 1.0 action = "fadein" time = 0.1]
+ 
+[balloon x=120 y=100 shape="001_03" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+さあ 超戦士よ[r]
+おまえの力を見せてくれ
+[p]
+
+[balloon x=120 y=-90 shape="001_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+サタンを[r]
+倒してみろっ！！
+[p]
+
+
+*003
+//-------------------------------------------------------------------------------
+//  ミスター・サタン
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_070_006"]
+ 
+[character id = "satan" x=190 y=-115 storage = "00038/guard_e_02" scale = 1.1 action = "fadein" time = 0.1]
+//ガード_01+あせ
+[character id = "ase" x=280 y=110 storage = "99999/ase" scale = 0.6 action = "fadein" time = 0.1] 
+
+[balloon x=-100 y=110 shape="004_04" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+あわわ……！！
+[p]
+
+[quake target ="satan" power = 5 time = 0.3]
+[quake target ="ase" power = 4 time = 0.3]
+
+[balloon x=-100 y=-80 shape="004_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+じゅ…18号[r]
+やっぱり おまえから[r]
+行けっ！！
+[p]
+
+*004
+//-------------------------------------------------------------------------------
+//  18号
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_070_006"]
+
+[character x = 200 y = -160 storage = "00020/heapup_e_02" scale = 1.1 action = "fadein" time = 0.1]
+
+[balloon x=-100 y=120 shape="002_01" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+よーし これで[r]
+2000万ゼニープラスだ
+[p]
+
+[balloon x=-100 y=-80 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+こいつを倒したら[r]
+さっさと帰るからな！[r]
+ちゃんとはらえよ！
+[p]
+
+ 
+
+
+*005
+//-------------------------------------------------------------------------------
+//  トランクス 孫悟天
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_070_006"]
+ 
+[character id = "goten1" x = 30 y = -90 storage = "00225/heapup_p_01" scale = 0.9 action = "fadein" time = 0.1]
+[flip target ="goten1" h=1]
+[character id = "tra1" x=240 y=-90 storage = "00200/heapup_e_01" scale = 1.1 action = "fadein" time = 0.1]
+ 
+[balloon x=-130 y=120 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+悟天！[r]
+今度は負けないぞ！！
+[p]
+
+[balloon x=-170 y=-180 shape="001_01" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 44]
+[quake target =".bln" power = 3 time = 0.2]
+うん！！
+[p]
+
+//トランクスと悟天が超サイヤ人に変身する。
+
+[clear target = "goten1"]
+[clear target = "tra1"]
+
+[se storage = "50"] 
+
+[lwfobject id = "kaki1" storage="kakimoji:ef_020" in="04" x=140 y=-150 scale = 2.0] 
+[quake target = "kaki1" power = 15 time = 0.4] 
+
+[character id = "ss" x = 0 y = -150 storage = "99999/supersaiyan" scale = 0.8]
+[quake target = "ss" power = 10 time = 0.4] 
+
+[character id = "goten2"x = 30 y = -85 storage = "00279/heapup_e_01" scale = 0.9]
+[quake target = "goten2" power = 7 time = 0.4]
+
+[character id = "ss" x = 220 y = -140 storage = "99999/supersaiyan" scale = 0.9]
+[quake target = "ss" power = 10 time = 0.4] 
+
+[character id = "tra2" x=240 y=-95 storage = "00200/heapup_e_03" scale = 1.1]
+[quake target = "tra2" power = 7 time = 0.4]
+[wait_anim target="tra2"] 
+
+[fadeout target = "kaki1" time = 0.7]
+
+
+
+[wait_anim target="kaki1"] 
+
+
+// 空のフキダシ（セリフがないコマを送るために使用）
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+
+//-------------------------------------------------------------------------------
+[stopbgm]

@@ -1,0 +1,35 @@
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+//[bgm storage = "003"]
+
+*01
+//-------------------------------------------------------------------------------
+//  超サイヤ人トランクス（未来）
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+
+[coma shape="S0001" bg = "bg_073_001"]
+
+[character x = -0 y = 40 storage = "00624/card_04" scale = 1.4 action = "fadein" time = 0.1]
+//[quake target =".chara" power = 8 time = 0.4]
+
+[balloon x=-120 y=390 shape="001_03" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+必ず勝機はある…！[p]
+
+[quake target =".chara" power = 5 time = 0.3]
+
+[balloon x=0 y=-410 shape="006_01" scale = 0.8 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 7 time = 0.2]
+…この攻撃に[r]
+全てを賭ける！！[p]
+
+//-------------------------------------------------------------------------------
+//[stopbgm]

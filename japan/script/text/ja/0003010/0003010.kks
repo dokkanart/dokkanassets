@@ -1,0 +1,279 @@
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+//[bgm storage = "012"]
+
+
+*01
+//-------------------------------------------------------------------------------
+//  界王
+//-------------------------------------------------------------------------------
+
+//[se storage = "04"]
+[coma shape="S0001" bg = "bg_080_001"]
+
+
+
+[character x = -130 y = 0 storage = "90001/stand" scale = 0.7 action = "fadein" time = 0.1]
+
+[wait_anim target=".chara"]
+
+
+[balloon x=140 y=170 shape="001_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[quake target = ".bln" power = 3 time = 0.2]
+[font size = 28]
+おっほん…[r]
+界王じゃ！[r]
+しばらくぶりじゃな[p]
+
+*02
+//-------------------------------------------------------------------------------
+//  界王
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_080_001"]
+
+[character x = -180 y = -50 storage = "90001/stand" scale = 0.6 action = "fadein" time = 0.1]
+
+[balloon x=110 y=140 shape="001_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target = ".bln" power = 3 time = 0.2]
+[font size = 28]
+あれから また[r]
+成長したようじゃのう…[p]
+
+[balloon x=110 y=-90 shape="001_02" scale = 1.1 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target = ".bln" power = 3 time = 0.2]
+[font size = 20]
+どうじゃ？[r]
+「まったなし！ 超本気の超決戦」[r]
+の難易度Z-HARDに[r]
+挑戦してみるというのは…[p]
+
+
+//---------------------------------------------
+
+[if !$is_cleared]    
+// 達成済みか否かは $is_cleared 変数に入っているので、それを用いて if 分岐します。
+
+//---------------------------------------------
+
+//*explain|任務内容詳細説明    // ラベルを付けておくと、テスターで見やすくなります。
+
+// ******************************************************
+//  ここには、
+//  まだ、このミッションを達成していない場合の展開を記述します。
+// ******************************************************
+
+*explain|任務内容詳細説明
+*03_mitatu
+//-------------------------------------------------------------------------------
+//  グレゴリー（後ろにバブルスもいる）
+//-------------------------------------------------------------------------------
+
+
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_080_001"]
+
+[character x = 260 y = -100 storage = "90003/baburusu" scale = 0.5 angle = 9 action = "fadein" time = 0.1]
+[character x = 140 y = -20 storage = "90003/guregori" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon x=-125 y=110 shape="001_02" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target = ".bln" power = 3 time = 0.2]
+[font size = 24]
+Z-HARDでは敵が[r] 
+強力になっていますよ！？[p]
+
+[balloon x=-125 y=-100 shape="001_01" scale = 1 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target = ".bln" power = 3 time = 0.2]
+[font size = 24]
+なぜなら属性が[r]
+Z覚醒後の 「超」になって[r]
+いるからです！[p]
+
+*04_mitatu
+//-------------------------------------------------------------------------------
+//  界王
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_080_001"]
+
+[character x = -180 y = -50 storage = "90001/stand" scale = 0.6 action = "fadein" time = 0.1]
+
+[balloon x=125 y=100 shape="001_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target = ".bln" power = 3 time = 0.2]
+[font size = 28]
+…とはいえ[r]
+ビビッていても[r]
+しかたないわい[p]
+
+[balloon x=125 y=-110 shape="001_02" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[quake target = ".bln" power = 3 time = 0.2]
+[font size = 24]
+万が一[r]
+負けてしまうことがあっても[r]
+「修業」でLvを上げて[r]
+再挑戦じゃ！[p]
+
+*05_mitatu
+//-------------------------------------------------------------------------------
+//  グレゴリー（後ろにバブルスもいる）
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_080_001"]
+
+[character x = 260 y = -100 storage = "90003/baburusu" scale = 0.5 angle = 9 action = "fadein" time = 0.1]
+[character x = 140 y = -20 storage = "90003/guregori" scale = 1.0 action = "fadein" time = 0.1]
+
+
+[balloon x=-125 y=80 shape="001_01" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target = ".bln" power = 3 time = 0.2]
+[font size = 24]
+ガシャを引いて[r]
+仲間を集め チームを[r]
+強化するのもいいですよ！[p]
+
+
+*06_mitatu
+//-------------------------------------------------------------------------------
+//  界王
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002L" bg = "bg_080_001"]
+
+
+
+[character x = -150 y = -50 storage = "90001/stand" scale = 0.7 action = "fadein" time = 0.1]
+
+[balloon x=140 y=80 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[quake target = ".bln" power = 3 time = 0.2]
+[font size = 28]
+では[r]
+クリアを目指して[r]
+がんばるのじゃ！[p]
+
+//---------------------------------------------
+[else]
+//*has_been_cleared|すでに達成済み    // ラベルを付けておくと、テスターでチェックしやすくなります。
+
+// ******************************************************
+//  ここには、
+//  すでに、このミッションを達成している場合の展開を記述します。
+// ******************************************************
+
+*has_been_cleared|すでに達成済み
+
+*07
+//-------------------------------------------------------------------------------
+//  グレゴリー（後ろにバブルスもいる）
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_080_001"]
+
+[character x = 260 y = -100 storage = "90003/baburusu" scale = 0.5 angle = 9 action = "fadein" time = 0.1]
+[character x = 140 y = -20 storage = "90003/guregori" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon x=-125 y=90 shape="001_02" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[quake target = ".bln" power = 3 time = 0.2]
+[font size = 24]
+か…界王さま！[r]
+このひと すでにZ-HARDも[r]
+クリアしているようですよ！[p]
+
+*08
+//-------------------------------------------------------------------------------
+//  界王
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_080_001"]
+
+[character x = -180 y = -50 storage = "90001/stand" scale = 0.6 action = "fadein" time = 0.1]
+[character x = -220 y = 70 storage = "99999/ase" scale = 0.6 action = "fadein" time = 0.1]
+
+[balloon x=100 y=120 shape="001_03" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[quake target = ".bln" power = 3 time = 0.2]
+[font size = 36]
+な…なんと！？[p]
+
+[balloon x=140 y=-80 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target = ".bln" power = 3 time = 0.2]
+[font size = 28]
+う〜む…[r]
+これは わしの想像以上[r]
+だったのう…[p]
+
+*09
+//-------------------------------------------------------------------------------
+//  グレゴリー（後ろにバブルスもいる）
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_080_001"]
+
+[character x = 260 y = -100 storage = "90003/baburusu" scale = 0.5 angle = 9 action = "fadein" time = 0.1]
+[character x = 140 y = -20 storage = "90003/guregori" scale = 1.0 action = "fadein" time = 0.1]
+
+
+[balloon x=-125 y=100 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target = ".bln" power = 3 time = 0.2]
+[font size = 28]
+ちゃ〜んと「修業」や[r]
+チーム強化を続けて[r]
+いたみたいですね！[p]
+
+*10
+//-------------------------------------------------------------------------------
+//  界王
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002L" bg = "bg_080_001"]
+
+
+
+[character x = -150 y = -50 storage = "90001/stand" scale = 0.7 action = "fadein" time = 0.1]
+
+[balloon x=140 y=100 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[quake target = ".bln" power = 3 time = 0.2]
+[font size = 28]
+どうせ目指すなら[r]
+宇宙一じゃっ！！[r]
+天下一じゃっ！！[p]
+
+[balloon x=130 y=-160 shape="001_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[quake target = ".bln" power = 3 time = 0.2]
+[font size = 28]
+肉体も！！[r]
+そして心もだ！！[r]
+よいなっ！！[p]
+
+
+
+[endif]
+*conclusion|結び
+
+//---------------------------------------------
+
+
+
+//[stopbgm]

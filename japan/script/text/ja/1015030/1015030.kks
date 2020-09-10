@@ -1,0 +1,68 @@
+
+*start|スタート
+
+//"１５−３スタート"
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "005"]
+
+//-------------------------------------------------------------------------------
+//  トランクス
+//-------------------------------------------------------------------------------
+[coma shape="N0001R" bg = "bg_005_001"]
+
+[character x = 210 y = -200 storage = "90000/wait_right_anger_strong" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon id = "01" x = -120 y = 80 shape="001_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target = "01"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+なんて強い[r]
+サイヤ人なんだ…！
+[p]
+
+*coma2
+//-------------------------------------------------------------------------------
+//  バーダック
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+
+[coma shape="N0001L" bg = "bg_005_001"]
+
+[character x=-240 y=-160 storage = "00067/idl_side_p_01" scale = 1.5 action = "fadein" time = 0.1]
+
+[balloon x=140 y=80 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+てめえら…[r]
+サイヤ人を知って[r]
+いるのか！？
+[p]
+
+*coma3
+//-------------------------------------------------------------------------------
+//  バーダック
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+
+[coma shape="N0002L" bg = "bg_005_001"]
+
+[character x=-200 y=-150 storage = "00067/heapup_p_01" scale = 1.5 action = "fadein" time = 0.1]
+
+[balloon x=145 y=130 shape="002_01" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 25]
+そういや…てめえのツラ[r]
+どこかで見たような気が…
+[p]
+
+[balloon x=110 y=-170 shape="002_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 30]
+[quake target =".bln" power = 3 time = 0.2]
+…ベジータ王……！？
+[p]
+
+[stopbgm]

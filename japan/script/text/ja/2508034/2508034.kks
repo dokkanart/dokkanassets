@@ -1,0 +1,41 @@
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+//[bgm storage = "003"]
+
+*001
+//-------------------------------------------------------------------------------
+//  アルティメット悟飯
+//-------------------------------------------------------------------------------
+[se storage = "3029"]
+
+[coma shape="b0001" bg = "bg_008_002"]
+
+[lwfobject id = "kaki1" storage="kakimoji:ef_009" in="04" x=-120 y=-170 scale = 2.2]
+[quake target = "kaki1" power = 2 time = 300]
+
+[character id = "vgt" x = 0 y = -180 storage = "00235/card_04" scale = 1.3 angle = 2 action = "fadein" time = 0.1] 
+
+
+
+[balloon x=-120 y=450 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+ボクが目指すのは…[r]
+まだ誰も見たことのない[r]
+究極の姿！！
+[p]
+
+
+[balloon x=120 y=-440 shape="006_01" scale = 0.8 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 7 time = 0.2]
+そこを目指す！！
+[p]
+
+//[stopbgm]
+

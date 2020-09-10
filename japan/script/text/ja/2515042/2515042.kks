@@ -1,0 +1,118 @@
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+//[bgm storage = "012"]
+
+*001
+//-------------------------------------------------------------------------------
+//  魔人ブウ（善）から出た煙が、魔人ブウ（純粋悪）へと変わる。
+//-------------------------------------------------------------------------------
+[se storage = "09"]
+[coma shape="N0003R" bg = "bg_000_014"]
+
+[balloon id = "kaki" x = 10 y = 200 shape = "008_34" scale = 2.0 angle = 10 action = "fadein" time = 0.1]
+[quake target = "kaki" power = 15 time = 0.4]
+
+[character id = "buu" x= 0 y= -130 storage = "00229/card_005" scale = 1.2 action = "fadein" time = 0.1]
+//[quake target = "buu" power = 1]
+
+//[character id = "1"  x = 170 y = 220 storage = "99999/smoke_buu_1" scale = 0.8 action = "fade:100" time = 0.1]
+
+//[character id = "2"  x = -150 y = 220 storage = "99999/smoke_buu_1" scale = 0.8 action = "fade:100" time = 0.1]
+//[flip target ="2" h=1]
+
+
+[character id = "5"  x = 135 y = 210 storage = "99999/smoke_buu_1" scale = 0.6 action = "fade:100" time = 0.1]
+
+[character id = "6"  x = -115 y = 210 storage = "99999/smoke_buu_1" scale = 0.6 action = "fade:100" time = 0.1]
+[flip target ="6" h=1]
+
+
+
+
+
+
+
+
+[character id = "3" x = -135 y = 205 storage = "99999/smoke_buu_1" scale = 0.8 action = "fade:100" time = 0.1]
+[flip target ="3" h=1]
+
+
+
+
+[character id = "4" x = 155 y = 205 storage = "99999/smoke_buu_1" scale = 0.8 action = "fade:100" time = 0.1]
+//[paint target = ".chara" color = "#bbffff"]
+//[scale target = ".chara" scale = 1.5 time = 0.4]
+
+
+[wait_anim target="kaki"]
+
+
+
+//空のフキダシ
+[balloon x= 0 y= 0 shape="001_01" scale = 0]
+[p]
+
+*002
+//-------------------------------------------------------------------------------
+//  魔人ブウ（純粋悪）
+//-------------------------------------------------------------------------------
+[se storage = "3038"]
+[coma shape="N0002L" bg = "bg_000_016"]
+
+
+ //x= -40 y= -170
+
+[character id = "buu2" x= 0-40 y=100-270 storage = "00230/card_01" scale = 1.0 action = "fade:0" time = 0.1]
+[character id = "kemuri" x = -20-40 y = 100-270 storage = "99999/smoke_buu_2" scale = 2.4 angle = -15 action = "fadein" time = 0.1]
+//[paint target = "kemuri" color = "#ccffff"]
+[quake target = "kemuri" power = 1]
+
+[wait time = 0.7]
+
+//[fadeout target = "kemuri" time = 1.0]
+//[scale target = "kemuri" scale = 0.6 time = 0.7]
+
+[wait time = 1.3]
+
+//[se storage = "48"]
+[fadeout target = "kemuri" time = 1.0]
+[fadein target = "buu2" time = 1.0]
+[wait_anim target = "buu2"]
+
+//空のフキダシ
+[balloon x= 0 y= 0 shape="001_03" scale = 0]
+[p]
+
+*003
+//-------------------------------------------------------------------------------
+//  魔人ブウ（善）& 魔人ブウ（純粋悪）
+//-------------------------------------------------------------------------------
+//[se storage = "3022"]
+[coma shape="S0001" bg = "bg_000_103"]
+
+[character x= 125 y= -35 storage = "00229/card_006" scale = 1.0 action = "fadein" time = 0.1]
+[character x= -135 y= 35 storage = "00230/card_02" scale = 1.0 action = "fadein" time = 0.1]
+
+//魔人ブウ（善）
+[balloon x= 175 y= 380 shape="004_03" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+[quake target =".bln" power = 3 time = 0.2]
+なんだーっ！？[r]
+おまえは！！
+[p]
+
+//魔人ブウ（純粋悪）
+[balloon x= -50 y=-420 shape="002_02" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+[quake target =".bln" power = 3 time = 0.2]
+オレは[r]
+魔人ブウだ！！
+[p]
+
+
+//[stopbgm]

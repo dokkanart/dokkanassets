@@ -1,0 +1,276 @@
+*start|スタート
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "039"]
+
+*001
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0004L" bg = "bg_000_014"]
+
+[character id = "BG" x = 0 y = 0 storage = "99999/flare" scale = 20 action = "fadein" time = 0.1 mask="inside"]
+[paint target="BG" color="#B40404"]
+
+
+
+[character id = "13gou" x = -170 y = -455 storage = "00289/card_01" scale = 1.3 action = "fadein" time = 0.1]
+
+
+
+
+
+[balloon x=140 y=-10 shape="003_01" scale = 1.6 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 14]
+//[quake target =".bln" power = 3 time = 0.2]
+14号と15号の[r]
+戦闘データと[r]
+エネルギー炉を取り込んだ[r]人造人間13号の[r]
+圧倒的パワーの前に[r]
+次々と[r]倒れていく戦士たち…[r]
+　[r]
+だが 悟空は……
+[p]
+
+
+*002
+//-------------------------------------------------------------------------------
+//  孫悟空
+//-------------------------------------------------------------------------------
+[se storage = "48"]
+[coma shape="S0001" bg = "bg_000_024"]
+
+[character x=40 y=10 storage = "00300/atc_sp01_e_01" scale = 0.7 action = "fadein" time = 0.1]
+
+[wait time = 0.7]
+
+[balloon x = 0 y = 450 shape="001_03" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+オラに…[r]
+オラに元気をわけてくれ…[r]
+海よ…山よ……
+[p]
+
+
+[balloon x=0 y=-375 shape="001_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+オラに[r]
+すべての元気を[r]
+わけてくれ…
+[p]
+
+
+*003
+//-------------------------------------------------------------------------------
+//  合体13号
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_074"]
+
+//[character x = -200 y = -240 storage = "00289/idl_side_p_01" scale = 1.15 action = "fadein" time = 0.1]
+[character x = -190 y = -220 storage = "00289/heapup_p_01" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x=120 y=75 shape="002_01" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 40]
+[quake target =".bln" power = 3 time = 0.2]
+ムゥ！？
+[p]
+
+
+*004
+//-------------------------------------------------------------------------------
+//  トランクス（青年期）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_074"]
+
+[character x = 230 y = -120 storage = "00069/heapup_e_04" scale = 1.2 action = "fadein" time = 0.1]
+
+
+[balloon x = -110 y = 60 shape="004_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+悟空さんに[r]
+元気玉を…
+[p]
+
+
+*005
+//-------------------------------------------------------------------------------
+//  ベジータ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_074"]
+
+[character x = 180 y = -110 storage = "00004/idl_side_e_02" scale = 1.1 action = "fadein" time = 0.1]
+
+
+[balloon x = -120 y = 70 shape="002_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+カカロット…！
+[p]
+
+
+
+*006
+//-------------------------------------------------------------------------------
+//  ピッコロ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_074"]
+
+[character x = 190 y = -110 storage = "00056/heapup_e_04" scale = 0.9 action = "fadein" time = 0.1]
+
+
+[balloon x = -140 y = 75 shape="002_01" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size =  40]
+//[quake target =".bln" power = 3 time = 0.2]
+…孫！！
+[p]
+
+
+*007
+//-------------------------------------------------------------------------------
+//  元気玉の元気が集まってくる。
+//-------------------------------------------------------------------------------
+[se storage = "3038"]
+[coma shape="N0004R" bg = "bg_000_024"]
+
+//ごゴゴゴ
+[lwfobject id = "kaki1" storage="kakimoji:ef_009" x=-250 y=-70 scale = 1.0 angle = 0 action = "fadein" time = 0.1]
+[quake target = "kaki1" power = 1 time = 300]
+
+
+
+[character id = "genki_1" x=0 y=-0 storage = "99999/genki_ef_02" scale = 1.0 action = "fadein" time = 0.1]
+[character id = "genki_2" x=0 y=-0 storage = "99999/genki_ef_02" scale = 0.5 action = "fadein" time = 0.1]
+//[scale target = "genki_1" scale = 1.0 time = 1.0]
+//[scale target = "genki_2" scale = 0.5 time = 1.0]
+
+
+
+[character x=0 y=-445 storage = "00300/card_15" scale = 0.8 action = "fadein" time = 0.1]
+
+
+
+[character id = "genkidama" x= 0 y= 490 storage = "99999/genkidama" scale = 2.0 action = "fadein" time = 0.1]
+//[scale target = "genkidama" scale = 0.5 time = 1.0]
+[quake target ="genkidama" power = 1 time = 300]
+
+
+
+
+//空のフキダシ
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+
+
+*008
+//-------------------------------------------------------------------------------
+//  トランクス（青年期）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_074"]
+
+[character x = 230 y = -120 storage = "00069/heapup_e_04" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x = -110 y = 120 shape="006_01" scale = 0.7 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 40]
+[quake target =".bln" power = 7 time = 0.2]
+こい！[r]
+人造人間！！
+[p]
+
+
+[balloon x=-120 y=-80 shape="006_02" scale = 0.9 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 7 time = 0.2]
+　オレは[r]
+　20年後の未来から[r]
+　やってきた[r]
+　トランクスだ！！
+[p]
+
+
+*009
+//-------------------------------------------------------------------------------
+//  合体13号
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_074"]
+
+
+[character x = -200 y = -240 storage = "00289/idl_side_p_01" scale = 1.15 action = "fadein" time = 0.1]
+
+
+
+[balloon x=120 y=70 shape="002_02" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 54]
+//[quake target =".bln" power = 3 time = 0.2]
+………
+[p]
+
+//[se storage = "3025"]
+//点滅
+[balloon shape="008_02" x = 0 y = 0 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+
+
+*010
+//-------------------------------------------------------------------------------
+//  トランクス（青年期）
+//-------------------------------------------------------------------------------
+[se storage = "50"]
+[coma shape="N0002R" bg = "bg_000_074"]
+
+
+//人造人間起動
+[character id = "ki" x=135 y=-120 storage = "99999/ef_aura_front" scale = 1.6 action = "fade:90" time = 0.1]
+[quake target="ki" power=2 time=300]
+[paint target="ki" color="#F4FA58"]
+
+[character id = "tra1" x = 100 y = -120 storage = "00069/card_03" scale = 0.9 angle =-10 action = "fadein" time = 0.1]
+[quake target ="tra1" power = 6 time = 0.4]
+
+
+
+
+[balloon x = -185 y = 15 shape="006_01" scale = 0.8 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 7 time = 0.2]
+20年後の地球には[r]
+おまえは[r]存在していない！
+[p]
+
+
+[balloon x = -180 y = -210 shape="006_02" scale = 0.9 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 7 time = 0.2]
+今日 ここで[r]
+悟空さんに倒されて[r]
+しまうからだ！！
+[p]
+
+
+
+//-------------------------------------------------------------------------------
+[stopbgm]

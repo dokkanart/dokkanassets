@@ -1,0 +1,80 @@
+
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "009"]
+
+
+*01
+//-------------------------------------------------------------------------------
+//  悟空
+//-------------------------------------------------------------------------------
+[se storage = "44"]
+
+
+[coma shape="S0001" bg = "bg_000_016"]
+
+//[character x = 0 y = 50 storage = "00261/card_06" scale = 1.6 action = "fadein" time = 0.1]
+
+[character id = "goku1" x = 0 y = 50 storage = "00261/card_05" scale = 1.6 action = "fadein" time = 0.1]
+
+[balloon id = "1" shape="006_01" x = -110 y = 200 scale = 0.9 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 7 time = 0.2]
+
+オラのすべてを[r]
+この拳にかける！！[p]
+
+[se storage = "3029"]
+
+[move target ="1" x=-110 y=440 time = 0.4]
+
+[clear target = "goku1"]
+
+[character x = 0 y = 50 storage = "00261/card_06" scale = 1.6 action = "fadein" time = 0.4]
+
+[character id = "goku2" x = 0 y = 50 storage = "00261/card_05" scale = 1.6]
+[quake target ="goku2" power = 15 time = 0.4]
+
+[balloon shape="006_02" x = 130 y = -370 scale = 0.9 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 7 time = 0.2]
+
+つらぬけーっ！！[r]
+はーっ！！[p]
+
+
+
+
+*02
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+
+
+[coma shape="N0002L" bg = "bg_000_014"]
+
+//[character x = 160 y = -40 storage = "00261/card_01" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon shape="003_01" x = 0 y = -40 scale = 1.5 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 15]
+//[quake target =".bln" power = 3 time = 0.2]
+
+全てを込めた[r]
+悟空の一撃により[r]
+ピッコロ大魔王は敗れ[r]
+世界に平和はもどった…[r]
+　[r]
+しかし その平和は…[r]
+　[r]
+つかの間かもしれない…[p]
+
+
+
+[stopbgm]

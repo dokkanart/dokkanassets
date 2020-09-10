@@ -1,0 +1,154 @@
+*start|スタート
+
+//"２4－６スタート" 
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "028"]
+ 
+*001
+//-------------------------------------------------------------------------------
+//  人造人間17号（ヘルファイター17号）
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0001L" bg = "bg_029_001"]
+ 
+[character x = -170 y = -120 storage = "00021/idl_side_p_01" scale = 1.0 action = "fadein" time = 0.1]
+ 
+[balloon id = "01" x = 110 y = 80 shape="002_02" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target = "01"]
+[font size = 44]
+ふん…
+[p]
+
+*002
+//-------------------------------------------------------------------------------
+//  トランクス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_029_001"]
+ 
+[character x = 210 y = -200 storage = "90000/wait_right_surprise" scale = 1.2 action = "fadein" time = 0.1]
+ 
+[balloon x=-120 y=70 shape="001_03" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+どういうことだ…！？[r]
+１７号が桁ちがいに[r]
+パワーアップしている…
+[p]
+
+*003
+//-------------------------------------------------------------------------------
+//  ドクター・ゲロ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_029_001"]
+ 
+[character x = -170 y = -135 storage = "00019/gero_idl_side_p_01" scale = 1.0 action = "fadein" time = 0.1]
+ 
+[balloon x=120 y=70 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+パワーアップだと？[r]
+その程度で驚くとは[r]
+あきれたやつだ…
+[p]
+
+*004
+//-------------------------------------------------------------------------------
+//  トランクス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_029_001"]
+ 
+[character x = 210 y = -200 storage = "90000/wait_right_anger_strong" scale = 1.2 action = "fadein" time = 0.1]
+ 
+[balloon x=-90 y=80 shape="001_03" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+[quake target =".bln" power = 3 time = 0.2]
+なんだと！？
+[p]
+
+
+*005
+//-------------------------------------------------------------------------------
+//  ドクター・ゲロ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_029_001"]
+ 
+[character x = -170 y = -135 storage = "00019/gero_idl_side_p_01" scale = 1.0 action = "fadein" time = 0.1]
+ 
+[balloon x=120 y=120 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+１７号は[r]
+生まれ変わるのだ… 
+[p]
+ 
+[balloon x=130 y=-70 shape="002_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+…ん？[r]
+やっと来たか… 
+[p]
+
+
+*006
+//-------------------------------------------------------------------------------
+//  もうひとり、１７号が現れる。
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0003L" bg = "bg_029_001"]
+ 
+//もうひとり、１７号が現れる。 
+ 
+[character x = 0 y = -120 storage = "00021/idl_side_p_01" scale = 0.8 action = "fadein" time = 0.1]
+ 
+[wait time = 0.7]
+
+[se storage = "3022"]
+ 
+//人造人間17号（ヘルファイター17号）が現れる。 
+[character x = -170 y = -120 storage = "00021/idl_side_p_01" scale = 1.0 action = "slide:left" time = 0.3]
+
+[wait_anim target=".chara"] 
+
+// 空のフキダシ（セリフがないコマを送るために使用）
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+*007
+//-------------------------------------------------------------------------------
+//  トランクス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_029_001"]
+ 
+[character x=170 y=-325 storage = "90000/wait_right_anger" scale = 1.4 action = "fadein" time = 0.1]
+ 
+[balloon x=-120 y=90 shape="004_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+ど…[r]
+どういうことだ！？ 
+[p]
+ 
+[balloon x=-130 y=-190 shape="004_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+１７号が…[r]
+ふたり……！？ 
+[p]
+
+ 
+//-------------------------------------------------------------------------------
+[stopbgm]

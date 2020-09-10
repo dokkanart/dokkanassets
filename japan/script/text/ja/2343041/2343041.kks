@@ -1,0 +1,79 @@
+*start|スタート
+//ステージ4 ゴール
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "002"]
+
+*01
+//-------------------------------------------------------------------------------
+//  孫悟空
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_066"]
+
+//[character x=250 y=-140 storage = "00003/none_idl_side_e_01" scale = 1.1 action = "fadein" time = 0.1]
+
+[character x=250 y=-140 storage = "00300/idl_side_e_01" scale = 1.2 action = "fadein" time = 0.1]
+
+
+[balloon x=-90 y=80 shape="001_03" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 54]
+………
+[p]
+
+
+*02
+//-------------------------------------------------------------------------------
+//  クリリン
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_066"]
+
+[character x = 180 y = -100 storage = "00009/idl_side_e_03" scale = 1.0 action = "fadein" time = 0.1]
+
+//立ち_01＋あせ
+[character x = 170 y = 60 storage = "99999/ase" scale = 0.6 action = "fadein" time = 0.1]
+
+[balloon x=-90 y=60 shape="004_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+オ…[r]
+オレの出番がない…！
+[p]
+
+
+*03
+//-------------------------------------------------------------------------------
+//  スラッグ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002L" bg = "bg_000_066"]
+
+[wait time = 0.3]
+
+[character x = -230 y = -220 storage = "00441/idl_side_p_01" scale = 1.5 action = "slide:left" time = 0.3]
+
+[wait_anim target=".chara"]
+
+[balloon x=140 y=90 shape="002_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 7 time = 0.2]
+クズどもが…！
+[p]
+
+[balloon x=140 y=-230 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+それでも[r]
+このオレさまの部下か！！
+[p]
+
+
+
+//-------------------------------------------------------------------------------
+[stopbgm]

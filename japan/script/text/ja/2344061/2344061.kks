@@ -1,0 +1,156 @@
+*start|スタート
+//ステージ6 ゴール
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "035"]
+
+*01
+//-------------------------------------------------------------------------------
+//  ベジータ
+//-------------------------------------------------------------------------------
+[se storage = "10"]
+[coma shape="N0002R" bg = "bg_000_061"]
+
+[character id ="beji" x = 185 y = 0 storage = "00240/heapup_e_02" scale = 1.0 action = "fadein" time = 0.1]
+[flip target =".chara" h=1]
+//[quake target =".chara" power = 1 time = 300]
+[move target =".chara" y=90 time = 2.0]
+
+[wait time = 1.0]
+
+[balloon x=-120 y=270 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+破壊しきれぬほどの[r]
+技をくらわせてやる…
+//[p]
+
+[wait_anim target="beji"]
+
+[balloon x=-110 y=-60 shape="007_02" scale = 0.8 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 7 time = 0.2]
+はああああ……！！
+//[p]
+
+[se storage = "50"]
+
+[lwfobject id = "kaki1" storage="kakimoji:ef_013" x=150 y=480 scale = 2.5 angle = -5 action = "expand" time = 0.1]
+[quake target = "kaki1" power = 9 time = 3.0]
+
+[quake target ="beji" power = 9 time = 0.3]
+
+[character id ="ki1" x=185 y=90 storage = "99999/ef_beam_circle" scale = 4.3 angle = 0 action = "fadein" time = 0.4]
+
+[wait time = 0.4]
+
+[fadeout target = "ki1" time = 0.3]
+
+[wait time = 0.1]
+
+[se storage = "3025"]
+
+[balloon id ="ki2" x=185 y=90 shape="010_08" scale = 80.0 action = "expand" time = 2.0]
+
+//[quake target ="beji" power = 5 time = 300]
+
+
+
+[wait time = 1.0]
+
+[fadeout target = "1" time = 1.5]
+
+//[fadeout target = "beji" time = 1.5]
+
+[fadeout target = "kaki1" time = 0.1]
+
+[fadeout target = "ki2" time = 2.0]
+
+[wait_anim target="ki2"]
+
+
+
+//[wait time = 0.7]
+
+*02
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0003L" bg = "bg_000_014"]
+
+[balloon x=0 y=0 shape="003_02" scale = 1.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 15]
+//[quake target =".bln" power = 7 time = 0.2]
+真の力を解放した[r]
+トッポを倒すため[r]
+死力を尽くした大技を[r]
+繰り出すベジータ…！[r]
+　[r]
+その壮絶なエネルギーは[r]
+ついに難敵トッポを[r]
+退けるのだった
+[p]
+
+
+*03
+//-------------------------------------------------------------------------------
+//  ジレン
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_061"]
+
+[character x = -210 y = -180 storage = "00812/idl_side_p_01" scale = 1.2 action = "fadein" time = 0.1]
+
+
+[balloon x=100 y=85 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+全て捨てずに[r]
+これほどまでの力を[r]
+得るとはな
+[p]
+
+[balloon x=110 y=-95 shape="002_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+よくぞトッポを倒した[r]
+…ほめてやる！
+[p]
+
+
+
+
+*04
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0003R" bg = "bg_000_062"]
+
+[balloon x=0 y=-50 shape="003_02" scale = 1.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 13]
+//[quake target =".bln" power = 7 time = 0.2]
+トッポを倒し[r]
+第11宇宙を追いつめた[r]
+第7宇宙…[r]
+　[r]
+最後のひとりとなった[r]ジレンと[r]
+悟空たちの闘いの行方は[r]
+いったいどうなるのか！？[r]
+　[r]
+力の大会 試合終了まで[r]
+残りあと4分…！
+[p]
+
+
+//-------------------------------------------------------------------------------
+[stopbgm]

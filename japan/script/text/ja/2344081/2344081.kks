@@ -1,0 +1,286 @@
+*start|スタート
+//"エリア８ゴール"
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "026"]
+
+*01
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0003L" bg = "bg_000_014"]
+
+[balloon x=0 y=20 shape="003_02" scale = 1.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 15]
+//[quake target =".bln" power = 7 time = 0.2]
+身勝手の極意を[r]
+ついに極めた悟空…！[r]
+　[r]
+ジレンを圧倒するも[r]
+限界を超えた神の力は[r]
+体への負担が大きく[r]
+悟空は闘いの途中で[r]
+力尽き倒れてしまう…
+[p]
+
+*02
+//-------------------------------------------------------------------------------
+//  悟空
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_061"]
+
+[character id = "gokui" x=200 y=0 storage = "99999/ultra_instinct" scale = 2.0 action = "fadein" time = 0.1]
+
+//[character x = 200 y = -150 storage = "00281/heapup_e_01" scale = 1.3 action = "fadein" time = 0.1]
+[character x = 200 y = -150 storage = "00003/heapup_e_07" scale = 1.3 action = "fadein" time = 0.1]
+
+
+[wait time = 0.3]
+
+
+[se storage = "45"]
+[fadeout target = "gokui" time = 0.7]
+//[fadeout target = "gokui2" time = 0.7]
+
+[wait_anim target="gokui"]
+
+
+[balloon x=-125 y=70 shape="004_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+はあ…はあ……[r]
+くっ…！
+[p]
+
+*03
+//-------------------------------------------------------------------------------
+//  ベルモッド
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_062"]
+
+[character x = -190 y = -340 storage = "90003/vermouth" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x=125 y=110 shape="006_01" scale = 0.8 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 7 time = 0.2]
+ジレン！[r]
+孫悟空を落とせ！！
+[p]
+
+[balloon x=135 y=-90 shape="006_02" scale = 0.8 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 7 time = 0.2]
+このまま[r]
+負けていいのか！！
+[p]
+
+
+*04
+//-------------------------------------------------------------------------------
+//  ジレンはだか
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_061"]
+
+//[character x = -210 y = -180 storage = "00812/idl_side_p_01" scale = 1.2 action = "fadein" time = 0.1]
+//はだか
+[character x = -230 y = -200 storage = "00812/idl_side_p_03" scale = 1.3 action = "fadein" time = 0.1]
+
+[balloon x=120 y=110 shape="002_02" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+…孫悟空…このような形で[r]
+おまえとの決着を[r]
+つけねばならぬのは[r]
+不本意だ
+[p]
+
+
+[balloon x=120 y=-110 shape="002_03" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+だが おまえが消えても[r]
+おまえの存在は[r]
+オレの記憶の中で生き続ける[r]
+……さらばだ！
+[p]
+
+
+*05
+//-------------------------------------------------------------------------------
+//  そこへ、フリーザと17号が現れる。
+//-------------------------------------------------------------------------------
+[se storage = "3022"]
+[coma shape="N0001R" bg = "bg_000_061"]
+
+[lwfobject id = "kaki1" storage="kakimoji:ef_023" x=-160 y=90 scale = 1.5 action = "fadein" time = 0.1]
+[quake target = "kaki1" power = 5 time = 0.4]
+
+
+
+
+[character id = "f" x=70 y=-190 storage = "00068/heapup_p_01" scale = 1.1 action = "slide:right" time = 0.4]
+[flip target ="f" h=1]
+[character id = "wa2" x = 30 y = 120 storage = "99999/ring" scale = 0.7 action = "slide:right" time = 0.4]
+
+
+[character id = "17gou" x = 240 y = -180 storage = "00021/idl_side_e_03" scale = 1.2 action = "slide:right" time = 0.3]
+
+[wait_anim target="17gou"]
+
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+
+
+
+*06
+//-------------------------------------------------------------------------------
+//  ジレン
+//-------------------------------------------------------------------------------
+[se storage = "03"]
+[coma shape="N0001L" bg = "bg_000_061"]
+
+//[character x = -210 y = -180 storage = "00812/idl_side_p_01" scale = 1.2 action = "fadein" time = 0.1]
+[character x = -230 y = -160 storage = "00812/heapup_p_03" scale = 1.3 action = "fadein" time = 0.1]
+[quake target = ".chara" power = 4 time = 0.4]
+
+//！！
+[lwfobject id = "kaki1" storage="kakimoji:ef_001" x=40 y=120 scale = 2.5 angle = 10 action = "fadein" time = 0.1]
+[quake target = "kaki1" power = 3 time = 0.4]
+
+
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+
+
+*07
+//-------------------------------------------------------------------------------
+//  ベルモッド
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_062"]
+
+[character x = -190 y = -340 storage = "90003/vermouth" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x=125 y=110 shape="006_01" scale = 0.8 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 7 time = 0.2]
+ジレン！！[r]
+このままだと[r]
+時間切れになる！！
+[p]
+
+[balloon x=135 y=-90 shape="006_02" scale = 0.8 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 7 time = 0.2]
+さっさと[r]
+やつらを落とせ！！
+[p]
+
+
+*08
+//-------------------------------------------------------------------------------
+//  ジレン
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_061"]
+
+//[character x = -210 y = -180 storage = "00812/idl_side_p_01" scale = 1.2 action = "fadein" time = 0.1]
+[character x = -230 y = -200 storage = "00812/idl_side_p_03" scale = 1.3 action = "fadein" time = 0.1]
+
+[balloon x=90 y=70 shape="004_03" scale = 0.65 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 44]
+[quake target =".bln" power = 3 time = 0.2]
+くっ…！！
+[p]
+
+
+*09
+//-------------------------------------------------------------------------------
+//  17号
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_061"]
+
+[character x = 170 y = -180 storage = "00021/idl_side_e_03" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon shape="002_02" x = -85 y = 100 scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+孫悟空があの状態だ
+[p]
+
+
+
+[balloon shape="002_03" x = -85 y = -90 scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+オレたちふたりで[r]
+やるしかないな
+[p]
+
+
+*10
+//-------------------------------------------------------------------------------
+//  フリーザ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_061"]
+
+[character id = "f" x=220 y=-190 storage = "00068/heapup_p_01" scale = 1.2 action = "fadein" time = 0.1]
+[flip target ="f" h=1]
+[character id = "wa2" x = 165 y = 150 storage = "99999/ring" scale = 0.8 action = "fadein" time = 0.1]
+
+
+[balloon x=-85 y=70 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+言われなくっても！！
+[p]
+
+
+*11
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0003L" bg = "bg_000_061"]
+
+[balloon x=0 y=-40 shape="003_02" scale = 1.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 14]
+//[quake target =".bln" power = 7 time = 0.2]
+限界をはるかに[r]
+超えた死闘の末に[r]
+悟空は大きな代償を[r]
+負ってしまった[r]
+　[r]
+残り時間はあとわずか…[r]
+はたして[r]
+この闘いの結末は[r]
+どうなってしまうのか？
+[p]
+
+
+//-------------------------------------------------------------------------------
+
+[stopbgm]

@@ -1,0 +1,62 @@
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+//[bgm storage = "026"]
+
+*001
+//-------------------------------------------------------------------------------
+//  
+//-------------------------------------------------------------------------------
+[se storage = "50"]
+[coma shape="S0001" bg = "bg_000_033"]
+
+
+[lwfobject id = "kaki1" storage="kakimoji:ef_020" x=0 y=-250 angle = 0 scale = 2.5 action = "fadein" time = 0.1]
+[quake target = "kaki1" power = 15 time = 0.4]
+
+[character id = "ss" x=0 y=200 storage = "99999/supersaiyan" scale = 1.8 action = "expand" time = 0.3]
+
+
+//[character id = "gok" x = 40 y = -50 storage = "00066/card_06" scale = 1.1 action = "fadein" time = 0.1]
+[character id = "veg" x = 25 y = -50 storage = "00207/card_03" scale = 1.0 action = "fadein" time = 0.1]
+
+
+[character id = "ss2" x=40 y=55 storage = "99999/supersaiyan2" scale = 1.6 angle = -9 action = "fadein" time = 0.1]
+[flip target ="ss2" h=1]
+[quake target ="ss2" power = 1 time = 300]
+
+
+//[se storage = "3025"]
+//点滅
+[balloon shape="008_02" x = 0 y = 0 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+//[balloon shape="008_02" x = 0 y = 0 scale = 50 action = "fadein" time = 0.1]
+//[wait time = 0.3]
+//[clear target = ".bln"]
+
+[fadeout target = "ss" time = 0.7]
+[fadeout target = "kaki1" time = 0.7]
+
+
+[wait_anim target="ss"]
+
+[balloon x= 0 y= 485 shape="002_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+なら[r]
+見せてやるぜ…
+[p]
+
+[balloon x= -40 y= -440 shape="002_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size =  32]
+[quake target =".bln" power = 3 time = 0.2]
+超サイヤ人の壁を[r]
+こえた力を！！
+[p]
+
+//[stopbgm]

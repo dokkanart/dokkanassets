@@ -1,0 +1,114 @@
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "012"]
+
+
+*01
+//-------------------------------------------------------------------------------
+//  ヤジロベー
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+//[se storage = "03"]
+[coma shape="N0001L" bg = "bg_027_001"]
+
+//[character x = -180 y = -60 storage = "00035/idl_side_p_01" scale = 1.2 action = "fadein" time = 0.1]
+
+[character x = -180 y = -60 storage = "00035/heapup_p_02" scale = 1.2 action = "fadein" time = 0.1]
+
+
+[balloon x = 110 y = 100 shape="006_01" scale = 0.9 action = "expand" time = 0.1]
+[wait_anim target=".bln"][font size = 28]
+[quake target = ".bln" power = 7 time = 0.2]
+てめえたちだな！？[r]オレの魚をぬすみ食い[r]したのは！！[p]
+
+*02
+//-------------------------------------------------------------------------------
+//  クリリン
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_027_001"]
+
+[character x = 180 y = -100 storage = "00009/idl_side_e_03" scale = 1.0 action = "fadein" time = 0.1]
+[character x = 170 y = 60 storage = "99999/ase" scale = 0.6 action = "fadein" time = 0.1]
+
+
+[balloon x = -100 y = 80 shape="004_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][font size = 28]
+
+ヤジロベー…[r]そりゃ誤解だって[r]言ってるだろ…？[p]
+
+*03
+//-------------------------------------------------------------------------------
+//  ヤジロベー
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_027_001"]
+
+[character x = -180 y = -60 storage = "00035/heapup_p_02" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x = 120 y = 70 shape="006_02" scale = 0.9 action = "expand" time = 0.1]
+[wait_anim target=".bln"][font size = 28]
+[quake target = ".bln" power = 7 time = 0.2]
+なにが誤解だ！！[r]オレの朝メシ[r]だったんだぞ！！[r]はきだせ！！[p]
+
+*04
+//-------------------------------------------------------------------------------
+//  トランクス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_027_001"]
+
+[character x = 210 y = -200 storage = "90000/think_right_think" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x = -120 y = 70 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][font size = 28]
+焼き魚を落ちていると[r]思い食べてしまう…[r]それって……
+[p]
+
+//元シナリオ
+//…や…焼き魚を[r]「落ちている」と勘ちがいして[r]食べてしまう…
+//それって……[p]
+
+*05
+//-------------------------------------------------------------------------------
+//  クリリン
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_027_001"]
+
+[character x = 180 y = -100 storage = "00009/idl_side_e_03" scale = 1.0 action = "fadein" time = 0.1]
+[character x = 170 y = 60 storage = "99999/ase" scale = 0.6 action = "fadein" time = 0.1]
+
+[balloon x = -100 y = 110 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][font size = 28]
+
+…ああ…そんなヤツ[r]悟空くらいしか[r]いないだろうな…[p]
+
+[balloon x = -110 y = -90 shape="001_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][font size = 28]
+
+あいつはホントに[r]ガキのころから[r]かわらないな……[p]
+
+*06
+//-------------------------------------------------------------------------------
+//  トランクス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_027_001"]
+
+[character x=170 y=-325 storage = "90000/wait_right_shout" scale = 1.4 action = "fadein" time = 0.1]
+
+[balloon x = -120 y = 30 shape="001_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][font size = 28]
+//[quake target = ".bln" power = 3 time = 0.2]
+
+どうやらこの近くに[r]悟空さんはいる[r]みたいですね…！！[p]
+
+
+
+
+
+[stopbgm]

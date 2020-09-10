@@ -1,0 +1,257 @@
+*start|スタート
+//ステージ１スタート
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "012"]
+
+*01
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0003R" bg = "bg_000_024"]
+
+//[wait time = 0.7]
+
+[character x = 240 y = -50 storage = "00039/card_02" scale = 0.8 action = "fadein" time = 0.1]
+
+[character x = -240 y = 0 storage = "00038/card_06" scale = 0.6 action = "fadein" time = 0.1]
+
+
+[balloon shape="003_01" x = 0 y = 40 scale = 1.6 action = "fadein" time = 0.1]
+[font size = 15]
+[wait_anim target=".bln"]
+//[quake target =".bln" power = 3 time = 0.2]
+セルの魔の手から[r]
+世界を救った英雄[r]ミスター・サタン…[r]
+そのサタンの[r]ひとり娘であるビーデルは[r]
+サタンシティにある[r]
+高校に通いながら[r]
+町の平和を守る[r]正義の味方として[r]
+日夜 悪と戦っていた…
+[p]
+
+*02
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0003L" bg = "bg_019_001"]
+
+[character x = -220 y = -180 storage = "00366/idl_front_p_01" scale = 1.2 action = "fadein" time = 0.1]
+
+//[wait time = 0.7]
+
+[balloon shape="003_01" x = 120 y = 20 scale = 1.8 action = "fadein" time = 0.1]
+[font size = 13]
+[wait_anim target=".bln"]
+//[quake target =".bln" power = 3 time = 0.2]
+そんなある日[r]
+ビーデルが通う高校に[r]
+“孫悟飯”という転校生が[r]
+やってくる[r]
+…さらに 時を同じくして[r]
+サタンシティに[r]
+“グレートサイヤマン”[r]と名乗るニューヒーローが[r]
+現れるのだった[r]
+　[r]
+ビーデルは[r]
+グレートサイヤマンの正体に[r]
+興味を持つが…
+[p]
+
+*03
+//-------------------------------------------------------------------------------
+//  ビーデル
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_019_001"]
+
+[character x = 200 y = -160 storage = "00039/card_06" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon shape="001_03" x = -100 y = 70 scale = 0.9 action = "fadein" time = 0.1]
+[font size = 28]
+[wait_anim target=".bln"]
+//[quake target =".bln" power = 3 time = 0.2]
+ねえ あんたって[r]
+いったい何者なの？
+[p]
+
+
+
+*04
+//-------------------------------------------------------------------------------
+//  グレートサイヤマン
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0003L" bg = "bg_019_001"]
+
+[character x = -160 y = -150 storage = "00366/card_002" scale = 1.1 action = "fadein" time = 0.1]
+
+[balloon shape="001_03" x = 155 y = 120 scale = 0.8 action = "fadein" time = 0.1]
+[font size = 32]
+[wait_anim target=".bln"]
+//[quake target =".bln" power = 3 time = 0.2]
+それなら前にも[r]
+言ったはずですよ
+[p]
+
+[se storage = "48"]
+
+[balloon shape="001_02" x = 140 y = -90 scale = 0.9 action = "fadein" time = 0.1]
+[font size = 28]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 3 time = 0.2]
+わたしは 悪は絶対に[r]
+ゆるせない正義の味方[r]
+グレートサイヤマンだ！
+[p]
+
+*05
+//-------------------------------------------------------------------------------
+//  ビーデル
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_019_001"]
+
+[character x = 200 y = -160 storage = "00039/card_06" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon shape="006_01" x = -110 y = 60 scale = 0.75 action = "expand" time = 0.1]
+[font size = 36]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 7 time = 0.2]
+ふざけないで！
+[p]
+
+
+
+*06
+//-------------------------------------------------------------------------------
+//  グレートサイヤマン
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0003L" bg = "bg_019_001"]
+
+[character x = -160 y = -150 storage = "00366/card_002" scale = 1.1 action = "fadein" time = 0.1]
+
+[character x = -210 y = 30 storage = "99999/ase" scale = 0.7 action = "fadein" time = 0.1]
+
+[balloon shape="004_02" x = 150 y = 60 scale = 0.9 action = "fadein" time = 0.1]
+[font size = 28]
+[wait_anim target=".bln"]
+//[quake target =".bln" power = 3 time = 0.2]
+いや…別に[r]
+ふざけてるわけじゃ…
+[p]
+
+
+*07
+//-------------------------------------------------------------------------------
+//  ビーデル
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_019_001"]
+
+[character x = 200 y = -160 storage = "00039/card_06" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon shape="001_02" x = -110 y = 100 scale = 0.9 action = "fadein" time = 0.1]
+[font size = 28]
+[wait_anim target=".bln"]
+//[quake target =".bln" power = 3 time = 0.2]
+あんたって[r]
+見かけはダサイけど[r]
+空は飛べるし強さも[r]
+ハンパじゃないわ
+[p]
+
+[balloon shape="001_01" x = -110 y = -100 scale = 0.8 action = "fadein" time = 0.1]
+[font size = 32]
+[wait_anim target=".bln"]
+//[quake target =".bln" power = 3 time = 0.2]
+とても[r]
+普通の人間とは[r]
+思えないのよね
+[p]
+
+*08
+//-------------------------------------------------------------------------------
+//  グレートサイヤマン
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_019_001"]
+
+[character x = -200 y = -220 storage = "00366/idl_front_p_01" scale = 1.2 action = "fadein" time = 0.1]
+[character x = -210 y = 100 storage = "99999/ase" scale = 0.6 action = "fadein" time = 0.1]
+
+[balloon shape="001_03" x = 100 y = 70 scale = 0.7 action = "fadein" time = 0.1]
+[font size = 54]
+[wait_anim target=".bln"]
+//[quake target =".bln" power = 3 time = 0.2]
+………
+[p]
+
+
+*09
+//-------------------------------------------------------------------------------
+//  ビーデル
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_019_001"]
+
+[character x = 200 y = -160 storage = "00039/card_06" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon shape="001_01" x = -100 y = 70 scale = 0.8 action = "fadein" time = 0.1]
+[font size = 32]
+[wait_anim target=".bln"]
+//[quake target =".bln" power = 3 time = 0.2]
+どうしても[r]
+秘密なわけ？
+[p]
+
+
+
+*10
+//-------------------------------------------------------------------------------
+//  グレートサイヤマン
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_019_001"]
+
+[character x = -200 y = -220 storage = "00366/idl_front_p_01" scale = 1.2 action = "fadein" time = 0.1]
+[character x = -210 y = 100 storage = "99999/ase" scale = 0.6 action = "fadein" time = 0.1]
+
+[balloon shape="001_03" x = 110 y = 70 scale = 0.75 action = "fadein" time = 0.1]
+[font size = 36]
+[wait_anim target=".bln"]
+//[quake target =".bln" power = 3 time = 0.2]
+え…ええ[r]
+どうしても
+[p]
+
+
+
+
+
+
+
+*11
+//-------------------------------------------------------------------------------
+//  ビーデル
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_019_001"]
+
+[character x = 180 y = -230 storage = "00039/card_06" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon shape="001_02" x = -125 y = 40 scale = 0.9 action = "fadein" time = 0.1]
+[font size = 28]
+[wait_anim target=".bln"]
+//[quake target =".bln" power = 3 time = 0.2]
+そう言われると[r]
+よけい[r]
+知りたくなるのよね
+[p]
+
+//-------------------------------------------------------------------------------
+[stopbgm]

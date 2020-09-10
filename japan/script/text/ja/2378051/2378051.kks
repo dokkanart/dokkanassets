@@ -1,0 +1,204 @@
+*start|スタート
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "047"]
+
+*001
+//-------------------------------------------------------------------------------
+//  魔人ブウ（善）
+//-------------------------------------------------------------------------------
+[se storage = "3006"]
+[coma shape="N0003R" bg = "bg_000_016"]
+
+[lwfobject id = "bi" x = -140 y = -120 storage = "kakimoji:ef_025" scale = 1.2 action = "fadein" time = 0.1]
+[quake target = "bi" power = 10 time = 0.4]
+
+
+[character x = 200 y = -110 storage = "00229/card_010" scale = 1.0 angle = -20 action = "fadein" time = 0.1]
+
+
+[character id = "beem" x = -120 y = 20 storage = "99999/beam_05" scale = 1.1 action = "fade:90" time = 0.1]
+[quake target = "beem" power = 1]
+
+
+
+[balloon x = 100 y = 180 shape="006_02" scale = 0.9 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 7 time = 0.2]
+チョ…チョコに…[r]
+チョコに[r]
+してやるーっ！！
+[p]
+
+
+
+*002
+//-------------------------------------------------------------------------------
+//  魔人ブウ（善）がビームを撃つが、魔人ブウ（純粋悪）がビームをはね返す。
+//-------------------------------------------------------------------------------
+[se storage = "3024"]
+[coma shape="N0004L" bg = "bg_000_014"]
+
+[character x = -100 y = -200 storage = "00230/card_06" scale = 2.0 action = "fadein" time = 0.1]
+
+[lwfobject id = "ba" x = -200 y = 20 storage = "kakimoji:ef_023" scale = 1.2 angle = -10 action = "fadein" time = 0.1]
+[quake target = "ba" power = 10 time = 0.3]
+
+[wait time = 0.5]
+
+//空のフキダシ
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+*003
+//-------------------------------------------------------------------------------
+//  魔人ブウ（善）
+//-------------------------------------------------------------------------------
+[se storage = "3012"]
+[coma shape="N0003R" bg = "bg_000_014"]
+
+[character id = "buu" x = 150 y = -90 storage = "00229/card_009" scale = 1.1 action = "fadein" time = 0.1]
+[quake target = "buu" power = 10 time = 0.4]
+
+[character id = "beem" x = 100 y = -480 storage = "99999/beam_05" scale = 4.5 angle = 90 action = "fade:60" time = 0.1]
+[quake target = "beem" power = 11 time = 0.4]
+
+[balloon x = -180 y = 90 shape="007_02" scale = 0.65 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 44]
+[quake target =".bln" power = 7 time = 0.2]
+あっ！！
+[p]
+
+
+//点滅
+[se storage = "31"]
+[balloon shape="008_02" x = 0 y = 0 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+[balloon shape="008_02" x = 0 y = 0 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+
+
+*004
+//-------------------------------------------------------------------------------
+//  魔人ブウ（善）がチョコになる。
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_000_024"]
+
+[wait time = 0.7]
+
+[se storage = "48"]
+[character x= 10 y= 5 storage = "00229/card_007" scale = 0.8 angle = -120 action = "fadein" time = 0.7]
+
+
+[wait time = 0.7]
+
+
+//空のフキダシ
+[balloon x= 0 y= 450 shape="001_03" scale = 0]
+[p]
+
+
+
+
+*005
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0003L" bg = "bg_000_024"]
+
+[character x = -180 y = -100 storage = "00230/card_04" scale = 0.9 action = "fadein" time = 0.1]
+
+[balloon x=140 y=0 shape="003_01" scale = 1.6 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 14]
+//[quake target =".bln" power = 3 time = 0.2]
+分離したときに[r]
+力の大半をうばっていた[r]
+純粋悪の魔人ブウは[r]
+チョコになった魔人ブウを[r]
+食べてしまうのだった[r]
+　[r]
+…そして[r]
+純粋悪の魔人ブウは[r]
+さらに変化を始め……
+[p]
+
+
+[se storage = "3025"]
+//点滅
+[balloon shape="008_02" x = 0 y = 0 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+[balloon shape="008_02" x = 0 y = 0 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+
+
+//フェードアウト（フェードアウトするコマ）
+[balloon x=0 y=0 shape="008_02" scale = 50.0 action = "fadein" time = 0.5]
+[wait time = 0.7]
+
+
+
+
+
+*006
+//-------------------------------------------------------------------------------
+//  魔人ブウ（純粋悪）が、魔人ブウ（悪）に変身する。
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="S0001" bg = "bg_000_014"]
+
+[character id = "wa" x = 0 y = 0 storage = "99999/flare" scale = 4.0 action = "fadein" time = 0.1 mask="inside"]
+[paint target="wa" color="#8000FF"]
+
+
+[character x = 0 y = 30 storage = "00231/card_003" scale = 1.3 action = "fadein" time = 0.1]
+
+//フェードイン（フェードインするコマ）
+[balloon x=0 y=0 shape="008_02" scale = 50]
+[wait time = 1]
+[fadeout target = ".bln" time = 2]
+[wait_anim target=".bln"]
+
+
+//空のフキダシ
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+
+
+*007
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0004L" bg = "bg_000_014"]
+
+//[character id = "wa" x = 0 y = 0 storage = "99999/flare" scale = 4.0 action = "fadein" time = 0.1]
+//[paint target="wa" color="#8000FF"]
+
+[balloon x=0 y=-30 shape="003_02" scale = 1.5 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 15]
+//[quake target =".bln" power = 3 time = 0.2]
+待ったなしの破局…！[r]
+　[r]
+最後の希望をも[r]
+その腹にのみこんで[r]
+さらなるパワーアップを[r]
+遂げてしまった[r]魔人ブウ…[r]
+　[r]
+はたして[r]
+打つ手はあるのか！？
+[p]
+
+//-------------------------------------------------------------------------------
+[stopbgm]

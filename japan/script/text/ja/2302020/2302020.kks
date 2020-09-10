@@ -1,0 +1,93 @@
+
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "007"]
+
+
+*001
+//-------------------------------------------------------------------------------
+//  ナッパ
+//-------------------------------------------------------------------------------
+[se storage = "3024"]
+[coma shape="N0003L" bg = "bg_008_001"]
+
+[character x=-190 y=-90 storage = "00015/heapup_p_01" scale = 1.4 action = "fadein" time = 0.1]
+[quake target = ".chara" power = 2 time = 300]
+
+
+[lwfobject id = "ゴゴゴゴ" storage="kakimoji:ef_009" in="02" x = -230 y = -100 scale = 1.6]
+[quake target = "ゴゴゴゴ" power = 3 time = 300]
+
+[balloon x=135 y=120 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 30]
+せいぜい楽しませて[r]
+くれよ…[p]
+
+[balloon x=110 y=-160 shape="006_01" scale = 0.9 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[quake target = ".bln" power = 7 time = 0.2]
+[font size = 32]
+はああああ……！！[p]
+
+
+*003
+//-------------------------------------------------------------------------------
+//  天津飯
+//-------------------------------------------------------------------------------
+[se storage = "3034"]
+[coma shape="N0001R" bg = "bg_008_001"]
+
+[character x=180 y=-90 storage = "00009/guard_e_01" scale = 1.7 action = "fadein" time = 0.1]
+[quake target = ".chara" power = 2 time = 300]
+
+[balloon x=-130 y=20 shape="004_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 30]
+[quake target =".bln" power = 3 time = 0.2]
+だ…大地が[r]
+震えている……！！
+[p]
+
+
+*004
+//-------------------------------------------------------------------------------
+//  ピッコロ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_008_001"]
+
+[character x=220 y=-170 storage = "00056/idl_side_e_01" scale = 1.8 action = "fadein" time = 0.1]
+[quake target = ".chara" power = 2 time = 300]
+
+[balloon x=-130 y=70 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 3 time = 0.2]
+[font size = 30]
+こ…[r]
+これほどまでとは…！
+[p]
+
+*005
+//-------------------------------------------------------------------------------
+//  ナッパ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002L" bg = "bg_008_001"]
+
+[character x=-190 y=-90 storage = "00015/heapup_p_01" scale = 1.4 action = "fadein" time = 0.1]
+
+[balloon x=170 y=120 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 3 time = 0.2]
+[font size = 30]
+さあて…どいつから[r]
+かたづけてやるかな…
+[p]
+
+
+[stopbgm]
+

@@ -1,0 +1,111 @@
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "008"]
+
+*coma1
+//-------------------------------------------------------------------------------
+//  フリーザ
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0001L" bg = "bg_004_001"]
+
+
+[character x=-190 y=-90 storage = "00005/atc_sp01_p_01" scale = 1.7 action = "fadein" time = 0.1]
+
+
+[balloon x=90 y=120 shape="002_03" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][font size = 24]
+ギニュー隊長の上をいく[r]
+者がいるとは驚きです[r]
+部下にほしいくらいですよ
+[p]
+
+
+[balloon x=100 y=-90 shape="002_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][font size = 28]
+あなたたち…[r]
+わたしの下で働く[r]
+気はありませんか？[p]
+
+
+//[balloon x=120 y=-70 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+//[wait_anim target=".bln"][font size = 30]
+//部下に[r]ほしいくらいですよ[p]
+
+*coma2
+//-------------------------------------------------------------------------------
+//  フリーザ
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+//[coma shape="N0001L" bg = "bg_004_001"]
+
+
+//[character x=-185 y=-60 storage = "00005/idl_side_p_02" scale = 1.7 action = "fadein" time = 0.1]
+
+//[balloon x=100 y=-25 shape="002_01" scale = 1 action = "fadein" time = 0.1]
+//[wait_anim target=".bln"][font size = 27]
+//あなたたち…[r]わたしの下で働く[r]気はありませんか？[p]
+
+*coma3
+//-------------------------------------------------------------------------------
+//  トランクス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_004_001"]
+
+[character x=210 y=-200 storage = "90000/wait_right_anger_strong" scale = 1.2 action = "fadein" time = 0.1]
+
+
+[balloon x=-90 y=100 shape="001_03" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target =".bln" power = 3 time = 0.2]
+[font size = 32]
+ジョーダンじゃ[r]ない…！[p]
+
+[balloon x=-70 y=-100 shape="001_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+オレたちが[r]そんな申し出受ける[r]わけないだろう！[p]
+
+*coma4
+//-------------------------------------------------------------------------------
+//  フリーザ
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+//[coma shape="N0001L" bg = "bg_004_001"]
+
+
+//[character x=-190 y=-90 storage = "00005/atc_sp01_p_01" scale = 1.7 action = "fadein" time = 0.1]
+
+
+//[balloon x=130 y=0 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+//[wait_anim target=".bln"][font size = 30]
+//ふふ…そう言うと[r]思いましたけどね[p]
+
+*coma5
+//-------------------------------------------------------------------------------
+//  フリーザ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002L" bg = "bg_004_001"]
+
+[lwfobject id = "kaki1" storage="kakimoji:ef_009" x=-210 y=-150 scale = 2.0 action = "fadein" time = 0.1]
+[quake target ="kaki1" power = 1 time = 300]
+
+[character x = -120 y = -180 storage = "00005/card_01" scale = 1.1 action = "fadein" time = 0.1]
+
+[balloon x=155 y=70 shape="002_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][font size = 32]
+ふふ…そう言うと[r]思いましたけどね[p]
+
+
+[balloon x=140 y=-190 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"][quake target =".bln" power = 3 time = 0.2]
+[font size = 28]
+では全宇宙一である[r]わたしの恐ろしさを[r]見せてあげましょう！
+[p]
+
+[stopbgm]

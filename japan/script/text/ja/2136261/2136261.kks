@@ -1,0 +1,234 @@
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "013"]
+
+*01
+//-------------------------------------------------------------------------------
+//  "フリーザ最終形態"
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0001L" bg = "bg_004_002"]
+
+[character x=-230 y=-150 storage = "00068/heapup_p_01" scale = 1.4 action = "fadein" time = 0.1]
+
+[balloon x=120 y=120 shape="004_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+お…おのれ……[r]
+そんな…バカな…！
+[p]
+
+*02
+//-------------------------------------------------------------------------------
+//  "ベジータ（超サイヤ人ゴッドSS）"
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_004_002"]
+
+[character x = 230 y = -120 storage = "00240/card_01" scale = 1.3 action = "fadein" time = 0.1]
+
+[balloon x=-120 y=-70 shape="002_02" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+てめえはもう終わりだ…[r]
+二度と甦るんじゃないぞ！
+[p]
+
+*03
+//-------------------------------------------------------------------------------
+//  "フリーザ最終形態"
+//-------------------------------------------------------------------------------
+[se storage = "03"]
+[coma shape="N0004L" bg = "bg_004_002"]
+
+[character x=-260 y=-430 storage = "00068/heapup_p_01" scale = 2.5 action = "fadein" time = 0.1]
+
+[balloon x=120 y=90 shape="006_01" scale = 0.9 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 7 time = 0.2]
+おまえたちもね！！
+[p]
+
+*04
+//-------------------------------------------------------------------------------
+//  "ベジータ（超サイヤ人ゴッドSS）"
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0004R" bg = "bg_004_002"]
+
+[character x = 240 y = -230 storage = "00240/card_01" scale = 2.0 action = "fadein" time = 0.1]
+
+[balloon x=-100 y=-100 shape="002_02" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 40]
+[quake target =".bln" power = 3 time = 0.2]
+なに！？
+//[p]
+
+[stopbgm]
+
+//[lwfobject id = "kaki1" storage="kakimoji:ef_005" in="04" x=-0 y=-80 scale = 3.0]
+//[quake target = "kaki1" power = 15 time = 0.2]
+
+[wait time = 0.4]
+
+[se storage = "3016"]
+
+//点滅
+[balloon shape="008_02" x = 140 y = -30 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+
+//フェードアウト（フェードアウトするコマ）
+[balloon x=130 y=40 shape="008_02" scale = 50.0 action = "fadein" time = 0.5]
+[wait time = 0.3] 
+
+[balloon x=130 y=40 shape="008_03" scale = 50.0 action = "fadein" time = 2.0]
+[balloon x=0 y=40 shape="008_28" scale = 1.5 action = "fadein" time = 2.0]
+
+[wait time = 1.8] 
+
+[balloon x=0 y=250 shape="008_29" scale = 1.3 action = "fadein" time = 2.0]
+
+[wait time = 1.8] 
+
+[balloon x=130 y=40 shape="008_02" scale = 50.0 action = "fadein" time = 2.0]
+[wait time = 2.5] 
+
+ 
+*05
+//-------------------------------------------------------------------------------
+//  フリーザのはなった一撃で地球が消滅する
+//-------------------------------------------------------------------------------
+[coma shape="S0001" bg = "bg_000_003"]
+
+//フェードイン（フェードインするコマ）
+[balloon x=130 y=40 shape="008_02" scale = 50]
+[wait time = 1]
+[fadeout target = ".bln" time = 2]
+[wait_anim target=".bln"]
+
+
+
+
+[balloon x=0 y=0 shape="003_01" scale = 1.5 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 15]
+追い詰められた[r]
+フリーザは地球を[r]
+消滅させてしまう…[r]
+　[r]
+しかしウイスの力で[r]
+地球が消滅する前まで[r]
+時間を巻き戻し[r]
+悟空はフリーザに[r]
+とどめの一撃を[r]
+放つのだった
+//[p]
+
+[wait time = 0.3]
+
+[bgm storage = "009"]
+
+[character x=-170 y=170 storage = "00243/card_01" scale = 0.6 action = "fadein" time = 0.7]
+
+[wait time = 0.4]
+
+[character x=180 y=230 storage = "00239/atc_sp01_e_02" scale = 1.6 action = "fadein" time = 0.7]
+
+[wait_anim target=".chara"]
+
+// 空のフキダシ（セリフがないコマを送るために使用）
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+
+*07
+//-------------------------------------------------------------------------------
+//  悟空
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_014_001"]
+
+[character x=220 y=-110 storage = "00244/idl_side_e_01" scale = 1.5 action = "fadein" time = 0.1]
+
+[balloon x=-120 y=160 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+最初から２人で組んでりゃ[r]
+こんなピンチに[r]
+ならなかった…
+[p]
+
+[balloon x=-130 y=-70 shape="001_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+たまには組んだほうが[r]
+いいと思うか？
+[p]
+
+*08
+//-------------------------------------------------------------------------------
+//  ベジータ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_014_001"]
+
+[character x = -200 y = -130 storage = "00245/idl_side_p_01" scale = 1.7 action = "fadein" time = 0.1]
+
+[balloon x=120 y=80 shape="002_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+ふん…それでも[r]
+オレはごめんだ
+[p]
+
+*09
+//-------------------------------------------------------------------------------
+//  悟空
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0003R" bg = "bg_014_001"]
+
+[character x=195 y=-130 storage = "00244/heapup_e_01" scale = 2.1 action = "fadein" time = 0.1]
+
+[balloon x=-120 y=100 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+へへへ…よかったあ[r]
+オラもだ
+[p]
+
+*10
+//-------------------------------------------------------------------------------
+//  ベジータ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0003L" bg = "bg_014_001"]
+
+[character x = -120 y = -240 storage = "00245/card_01" scale = 1.5 action = "fadein" time = 0.1]
+
+[balloon x=140 y=120 shape="002_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+はじめて[r]
+意見が合ったな
+[p]
+
+//終わりのフェードアウト
+[balloon x=130 y=40 shape="008_03" scale = 50.0 action = "fadein" time = 0.5]
+[wait time = 2.5]
+
+//-------------------------------------------------------------------------------
+[stopbgm]

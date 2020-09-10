@@ -1,0 +1,111 @@
+*start|スタート
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "008"]
+
+*001
+//-------------------------------------------------------------------------------
+//  ゴテンクス
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_016"]
+
+[se storage = "3002"]
+//点滅
+[balloon shape="008_02" x = 0 y = 0 scale = 50 action = "fadein" time = 0.1]
+
+
+
+[character x = -145 y = -50 storage = "00276/dam_front_p_01" scale = 1.1 angle = 20 action = "fadein" time = 0.1]
+[quake target = ".chara" power = 7 time = 0.4]
+
+[wait time = 0.3]
+[clear target = ".bln"]
+
+[balloon x=110 y=70 shape="004_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+うわあああ！！[r]
+ごめんなさ〜い！！
+[p]
+
+
+*002
+//-------------------------------------------------------------------------------
+//  ビルス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_016"]
+
+[character x = 245 y = -255+30 storage = "00242/idl_side_e_02" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x = -100 y = 70 shape="001_03" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 40]
+//[quake target =".bln" power = 3 time = 0.2]
+ふん…
+[p]
+
+
+*003
+//-------------------------------------------------------------------------------
+//  ベジータ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_016"]
+
+[character x = -180 y = -110 storage = "00004/idl_side_e_02" scale = 1.1 action = "fadein" time = 0.1]
+[flip target = ".chara" h = 1]
+
+[balloon x=130 y= 80 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+破壊神ビルス…[r]
+とんでもないやつだとは[r]
+想像していたが…
+[p]
+
+[balloon x=130 y=-100 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+まさか[r]
+ここまでレベルが[r]
+ちがうとはな…
+[p]
+
+
+*004
+//-------------------------------------------------------------------------------
+//  ビルス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_000_016"]
+
+[character x = 170 y = -270 storage = "00242/card_06" scale = 1.1 action = "fadein" time = 0.1]
+
+[balloon x = -130 y = 50 shape="001_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+プリンも品切れ…[r]
+超サイヤ人ゴッドも[r]
+いない…
+[p]
+
+
+[balloon x = -130 y = -180 shape="001_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+…もう[r]
+破壊ですかね…
+[p]
+
+
+
+//-------------------------------------------------------------------------------
+[stopbgm]

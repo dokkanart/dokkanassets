@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="50" height="50" tilewidth="40" tileheight="40" nextobjectid="94">
+ <properties>
+  <property name="charageki_bg_01" value="normal_003_001"/>
+ </properties>
+ <tileset firstgid="1" name="Path" tilewidth="40" tileheight="40" spacing="1" tilecount="32" columns="4">
+  <image source="../ishin_design/Resources/sugoroku/map/image/common/mapchip-base.png" width="163" height="327"/>
+ </tileset>
+ <tileset firstgid="33" name="Attribute" tilewidth="40" tileheight="40" spacing="1" tilecount="32" columns="4">
+  <image source="../ishin_design/Resources/sugoroku/map/image/common/mapchip-meta.png" width="163" height="327"/>
+ </tileset>
+ <tileset firstgid="65" name="concrete" tilewidth="40" tileheight="40" spacing="1" tilecount="240" columns="20">
+  <image source="../ishin_design/Resources/sugoroku/map/image/common/concrete.png" width="819" height="491"/>
+ </tileset>
+ <tileset firstgid="305" name="gray" tilewidth="40" tileheight="40" spacing="1" tilecount="144" columns="12">
+  <image source="../ishin_design/Resources/sugoroku/map/image/area_083/gray.png" width="491" height="491"/>
+ </tileset>
+ <tileset firstgid="449" name="Path" tilewidth="40" tileheight="40" spacing="1" tilecount="32" columns="4">
+  <image source="image/common/mapchip-base.png" width="163" height="327"/>
+ </tileset>
+ <layer name="bg" width="50" height="50">
+  <data encoding="base64" compression="zlib">
+   eJztwwEJAAAMBKFr+v1bLMdAwVVTVVVVVVVVVVXV5w9cxZ/q
+  </data>
+ </layer>
+ <layer name="obj" width="50" height="50">
+  <data encoding="base64" compression="zlib">
+   eJzt1alWggEURWF4JERpDtgEoYnDC+BAA9TGoA1wRJoDNieaID6dO//RwrlrnfDVm+5eJ5NOpZaQxTJWkEMVhzjCMU5Qwy3ucI8hHjBCZsF3VrGGdWwgj03U0UATpzjDOR7xhGe8YIxXgTtbKKCIbZRQRgttdNDFBS7xhnd84BNfmAjc2UEFu9jDPg7QQx8DXOEaN/jGFDP8YI5fgTtRe0jeidpD8k7UHpJ3ovaQvKP2594PrT/3fsTswfuh1YP3Q7sXtT/3fmj9ufcjZg/eD60evB/avaj9ufcjZg/eD60evB/avaj9ufdD68+9HzF78H5o9eD90O5F7c+9HzF78H5o9eD90O5F7c//e+cPhqWUVw==
+  </data>
+ </layer>
+ <layer name="Path" width="50" height="50">
+  <data encoding="base64" compression="zlib">
+   eJztzrEJACAMAMEgaG/h/quqK6gQhDv4/iMAAAAAyNJXNXviwv5vq5E9cuj3/63E3/8AAAAA8NIEs+YAhg==
+  </data>
+ </layer>
+ <layer name="Attribute" width="50" height="50">
+  <data encoding="base64" compression="zlib">
+   eJztzgENAAAIAyAraf9wxrhukIAqAAAAAJImHeC1TgcAAAAA4JAFA5gAZA==
+  </data>
+ </layer>
+ <objectgroup name="PathAttributes">
+  <object id="78" name="0" type="space" x="880" y="1000" width="40" height="40">
+   <properties>
+    <property name="group" value="0"/>
+    <property name="next" value="1"/>
+   </properties>
+  </object>
+  <object id="79" name="1" type="space" x="960" y="960" width="40" height="40">
+   <properties>
+    <property name="group" value="0"/>
+    <property name="next" value="2"/>
+   </properties>
+  </object>
+  <object id="80" name="2" type="space" x="1040" y="920" width="40" height="40">
+   <properties>
+    <property name="group" value="0"/>
+    <property name="next" value="3"/>
+   </properties>
+  </object>
+  <object id="81" name="3" type="space" x="1120" y="880" width="40" height="40"/>
+ </objectgroup>
+</map>

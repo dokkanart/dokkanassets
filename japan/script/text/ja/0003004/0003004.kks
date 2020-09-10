@@ -1,0 +1,325 @@
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+//[bgm storage = "012"]
+
+
+*01
+//-------------------------------------------------------------------------------
+//  ブルマ
+//-------------------------------------------------------------------------------
+
+//[se storage = "04"]
+[coma shape="S0001" bg = "bg_014_001"]
+
+[character x = -180 y = -0 storage = "90003/bluma_jinzou" scale = 1.2 action = "fadein" time = 0.1]
+
+[wait_anim target=".chara"]
+
+[balloon x=125 y=190 shape="001_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[quake target = ".bln" power = 3 time = 0.2]
+[font size = 28]
+はあ〜い！[r]
+わたし ブルマよ[p]
+
+
+[balloon x=125 y=-160 shape="001_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target = ".bln" power = 3 time = 0.2]
+[font size = 32]
+調子はどう？[p]
+
+
+*02
+//-------------------------------------------------------------------------------
+//  ブルマ
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_014_001"]
+
+[character x = -200 y = -340 storage = "90003/bluma_jinzou" scale = 1.3 action = "fadein" time = 0.1]
+
+[balloon x=105 y=120 shape="001_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target = ".bln" power = 3 time = 0.2]
+[font size = 28]
+闘って強くなるのも[r]
+いいけどさあ…[p]
+
+
+[balloon x=125 y=-100 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target = ".bln" power = 3 time = 0.2]
+[font size = 28]
+ドラゴンボールも[r]
+ちゃんと集めてる？[p]
+
+
+//---------------------------------------------
+
+[if !$is_cleared]    
+// 達成済みか否かは $is_cleared 変数に入っているので、それを用いて if 分岐します。
+
+//---------------------------------------------
+
+*explain|任務内容詳細説明    // ラベルを付けておくと、テスターで見やすくなります。
+
+// ******************************************************
+//  ここには、
+//  まだ、このミッションを達成していない場合の展開を記述します。
+// ******************************************************
+
+
+*explain|任務内容詳細説明
+*03_mitatu
+//-------------------------------------------------------------------------------
+//  トランクス（青年期）
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_014_001"]
+
+[character x=190 y=-200 storage = "90000/talk_right_normal" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x=-125 y=120 shape="001_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target = ".bln" power = 3 time = 0.2]
+[font size = 28]
+ドラゴンボールは[r]
+『冒険』で手に入れる[r]
+ことができます[p]
+
+
+[balloon x=-125 y=-90 shape="001_02" scale = 1 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target = ".bln" power = 3 time = 0.2]
+[font size = 22]
+『冒険』の「追跡！桃白白」に[r]
+挑戦してみましょう！[r]
+難易度はNORMALで[r]
+大丈夫ですよ[p]
+
+*04_mitatu
+//-------------------------------------------------------------------------------
+//  ブルマ
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_014_001"]
+
+[character x = -200 y = -340 storage = "90003/bluma_jinzou" scale = 1.3 action = "fadein" time = 0.1]
+
+[balloon x=110 y=100 shape="001_03" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target = ".bln" power = 3 time = 0.2]
+[font size = 24]
+ぴったりとマスに[r]
+止まらないと[r]
+ドラゴンボールは[r]
+手に入らないの！[p]
+
+
+[balloon x=100 y=-95 shape="001_02" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target = ".bln" power = 3 time = 0.2]
+[font size = 36]
+気をつけてね[p]
+
+
+*05_mitatu
+//-------------------------------------------------------------------------------
+//  トランクス（青年期）
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_014_001"]
+
+[character x=190 y=-200 storage = "90000/wait_right_shout" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x=-125 y=120 shape="001_01" scale = 1 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target = ".bln" power = 3 time = 0.2]
+[font size = 24]
+ドラゴンボールを[r]
+入手できずステージを[r]
+クリアしてしまっても[r]
+大丈夫です[p]
+
+
+[balloon x=-125 y=-90 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target = ".bln" power = 3 time = 0.2]
+[font size = 28]
+再挑戦すれば[r]
+同じ場所に[r]
+ドラゴンボールは[r]
+ありますよ[p]
+
+
+
+*06_mitatu
+//-------------------------------------------------------------------------------
+//  ブルマ
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0002L" bg = "bg_014_001"]
+
+[character x = -180 y = -350 storage = "90003/bluma_jinzou" scale = 1.4 action = "fadein" time = 0.1]
+
+[balloon x=135 y=100 shape="001_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[quake target = ".bln" power = 3 time = 0.2]
+[font size = 28]
+ドラゴンボールを[r]
+７つ全部集めると[r]
+イイことがあるわよ！[p]
+
+
+[balloon x=135 y=-170 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target = ".bln" power = 3 time = 0.2]
+[font size = 28]
+まずはひとつ[r]
+自分の力で[r]
+見つけてみてね！[p]
+
+
+//---------------------------------------------
+[else]
+//*has_been_cleared|すでに達成済み    // ラベルを付けておくと、テスターでチェックしやすくなります。
+
+// ******************************************************
+//  ここには、
+//  すでに、このミッションを達成している場合の展開を記述します。
+// ******************************************************
+
+
+*has_been_cleared|すでに達成済み
+*07
+//-------------------------------------------------------------------------------
+//  トランクス（青年期）
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_014_001"]
+
+[character x=190 y=-200 storage = "90000/wait_right_normal" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x=-125 y=120 shape="001_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target = ".bln" power = 3 time = 0.2]
+[font size = 28]
+心配しなくても[r]
+大丈夫ですよ[r]
+母さん[p]
+
+
+[balloon x=-125 y=-90 shape="001_02" scale = 1 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target = ".bln" power = 3 time = 0.2]
+[font size = 24]
+もう『冒険』で[r]
+ドラゴンボールを[r]
+見つけたことがある[r]
+みたいですから[p]
+
+
+*08
+//-------------------------------------------------------------------------------
+//  ブルマ
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_014_001"]
+
+[character x = -200 y = -340 storage = "90003/bluma_jinzou" scale = 1.3 action = "fadein" time = 0.1]
+
+[balloon x=100 y=110 shape="001_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target = ".bln" power = 3 time = 0.2]
+[font size = 32]
+な〜んだ！[r]
+そうだったの？[p]
+
+
+[balloon x=115 y=-90 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target = ".bln" power = 3 time = 0.2]
+[font size = 28]
+まあ わたしが[r]
+手伝ってれば[r]
+もっと早く見つけてた[r]
+と思うけど！[p]
+
+
+*09
+//-------------------------------------------------------------------------------
+//  トランクス（青年期）
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_014_001"]
+
+[character x=190 y=-200 storage = "90000/talk_right_normal" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x=-125 y=120 shape="001_01" scale = 1 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target = ".bln" power = 3 time = 0.2]
+[font size = 24]
+…もしドラゴンボールを[r]
+入手できずステージを[r]
+クリアしてしまっても[r]
+大丈夫ですよ[p]
+
+
+[balloon x=-125 y=-100 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target = ".bln" power = 3 time = 0.2]
+[font size = 28]
+再挑戦すれば[r]
+同じ場所に[r]
+ドラゴンボールは[r]
+ありますから！[p]
+
+
+*10
+//-------------------------------------------------------------------------------
+//  ブルマ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002L" bg = "bg_014_001"]
+
+[character x = -180 y = -350 storage = "90003/bluma_jinzou" scale = 1.4 action = "fadein" time = 0.1]
+
+[balloon x=135 y=100 shape="001_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[quake target = ".bln" power = 3 time = 0.2]
+[font size = 28]
+ドラゴンボールを[r]
+７つ全部集めると[r]
+イイことがあるわよ！
+[p]
+
+
+[balloon x=120 y=-170 shape="001_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target = ".bln" power = 3 time = 0.2]
+[font size = 32]
+がんばって[r]
+探し出してね！[p]
+
+
+
+[endif]
+*conclusion|結び
+
+//---------------------------------------------
+
+
+
+//[stopbgm]

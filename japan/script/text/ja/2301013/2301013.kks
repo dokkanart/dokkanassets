@@ -1,0 +1,76 @@
+
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "008"]
+
+//-------------------------------------------------------------------------------
+//  ラディッツ
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0001L" bg = "bg_027_001"]
+
+[character x=-150 y=-90 storage = "00014/atc_sp01_p_01" scale = 1.1 action = "fadein" time = 0.1]
+
+[balloon id="radhi1" x=100 y=120 shape="002_03" scale = 0.6 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 52]
+ふん…
+[p]
+
+[balloon id="radhi1" x=120 y=-70 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+その程度の戦闘力で[r]
+のこのこやってくる[r]
+とはな
+[p]
+
+
+*002
+//-------------------------------------------------------------------------------
+//  悟空
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_027_001"]
+
+[character x=195 y=-110 storage = "00003/heapup_e_01" scale = 1.8 action = "fadein" time = 0.1]
+
+[balloon x=-130 y=30 shape="004_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 34]
+[quake target =".bln" power = 3 time = 0.2]
+なんてパワーと[r]
+スピードだ…！
+[p]
+
+
+*003
+//-------------------------------------------------------------------------------
+//  ラディッツ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002L" bg = "bg_027_001"]
+
+[character x=-200 y=-120 storage = "00014/heapup_p_01" scale = 1.8 action = "fadein" time = 0.1]
+
+[balloon id="radhi1" x=150 y=130 shape="002_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 30]
+//だが[r]
+きさまらが死ぬのも[r]
+時間の問題だ…
+[p]
+
+[balloon id="radhi1" x=160 y=-110 shape="002_01" scale = 0.95 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 27]
+[quake target =".bln" power = 3 time = 0.2]
+じわじわと[r]
+少しずつ攻撃を[r]
+強くしていってやるぞ
+[p]
+
+[stopbgm]

@@ -1,0 +1,773 @@
+*start|スタート
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "002"]
+
+*000
+//-------------------------------------------------------------------------------
+//  
+//-------------------------------------------------------------------------------
+[coma shape="S0001" bg = "bg_000_014"]
+
+//黒
+//[balloon x=0 y=0 shape="008_03" scale = 50.0]
+[character id = "kuro2" x=0 y=0 storage = "99999/black" scale = 50 angle = 90 action = "fade:100"] 
+
+
+[character x = 0 y = -120 storage = "00878/card_03" scale = 1.2 action = "fade:40" time = 0.1]
+
+
+
+[balloon id = "n" x=0 y=80 shape="009_17" scale = 1.0 action = "fadein" time = 2.0]
+[font color="#FFFFFF"]
+[font size = 30]
+はるか彼方の宇宙…[r]
+　[r]
+サイヤ人たちが暮らす[r]
+惑星ベジータに[r]
+コルド軍の宇宙船が降り立った[r]
+　[r]
+　[r]
+　[r]
+　[r]
+　[r]
+　[r]
+　[r]
+　[r]
+　[r]
+　[r]
+　[r]
+　[r]
+　[r]
+突然の引退宣言をする[r]
+コルド大王…[r]
+続けて[r]
+息子フリーザが代わりに[r]
+軍を受け継ぐことが発表される
+
+[balloon id = "kuro" x=0 y=0 shape="008_03" scale = 50.0]
+[wait time = 0.7]
+[fadeout target = "kuro" time = 1.0]
+
+
+[wait_anim target="kuro"]
+
+
+// 空のフキダシ（セリフがないコマを送るために使用）
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+
+//ここから２コマ目
+
+
+[balloon id = "kuro2" x=0 y=0 shape="008_03" scale = 50.0 action = "fadein" time = 1.0]
+
+[wait_anim target="kuro2"]
+
+
+
+[character id = "veg" x=-60 y=-50 storage = "01079/atc_front_p_01" scale = 1.2 angle = 0 action = "fade:40" priority=100]
+//[paint target="veg" color="#6E6E6E"]
+
+
+[character id = "kk" x=0 y=-250 storage = "99999/gake" scale = 2.0 action = "fade:100" priority=130]
+[paint target="kk" color="#000000"]
+[flip target ="kk" v=1]	
+
+[character id = "kk2" x=0 y=-250 storage = "99999/gake" scale = 2.0 action = "fade:100" priority=130]
+[paint target="kk2" color="#000000"]
+[flip target ="kk2" v=1]	
+
+
+
+
+
+
+[balloon id = "n2" x=0 y=0 shape="009_17" scale = 1.0 priority=150]
+[font color="#FFFFFF"]
+[font size = 30]
+新たな総帥フリーザに[r]
+支配されることになった[r]
+サイヤ人…[r]
+　[r]
+　[r]
+　[r]
+　[r]
+　[r]
+　[r]
+　[r]
+　[r]
+　[r]
+　[r]
+　[r]
+　[r]
+　[r]
+だが[r]
+そのサイヤ人を束ねる[r]
+ベジータ王も野心を[r]
+失ったわけではなく[r]
+まだ幼い息子の才能に[r]
+一族の再起をかけていた
+
+
+[balloon id = "kuro3" x=0 y=0 shape="008_03" scale = 50.0 priority=160]
+
+
+
+[wait time = 0.7]
+[fadeout target = "kuro3" time = 2.0]
+
+
+[wait_anim target="kuro3"]
+
+// 空のフキダシ（セリフがないコマを送るために使用）
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+
+
+
+//ここから３コマ目
+
+
+[balloon id = "kuro4" x=0 y=0 shape="008_03" scale = 50.0 action = "fadein" time = 1.0 priority=170]
+
+[wait_anim target="kuro4"]
+
+
+
+[character id = "eki" x=0 y=220 storage = "99999/baiyoueki" scale = 1.5 angle = 0 action = "fade:100" priority=180]
+
+
+
+[balloon id = "n3" x=0 y=-220 shape="009_17" scale = 1.0 priority=200]
+[font color="#FFFFFF"]
+[font size = 30]
+まだ幼いながらも[r]
+天才的な戦闘力を持つ[r]
+ベジータ王子…[r]
+　[r]
+しかし[r]
+そんなベジータ王子を[r]
+上回る潜在能力を秘めた[r]
+子供の存在が[r]
+ベジータ王の野望に[r]
+影を落とす[r]
+　[r]
+それはパラガス大佐の[r]
+息子ブロリーだった…
+
+
+[balloon id = "kuro5" x=0 y=0 shape="008_03" scale = 50.0 priority=210]
+
+
+
+[wait time = 0.7]
+[fadeout target = "kuro5" time = 2.0]
+
+[wait_anim target="kuro5"]
+
+
+// 空のフキダシ（セリフがないコマを送るために使用）
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+//フェードアウト（フェードアウトするコマ）
+
+[balloon x=0 y=0 shape="008_03" scale = 50.0 action = "fadein" time = 0.5 priority=220]
+
+[wait time = 0.7] 
+
+
+
+*001
+//-------------------------------------------------------------------------------
+//  
+//-------------------------------------------------------------------------------
+[coma shape="S0001" bg = "bg_070_015"]
+
+
+
+
+//フェードイン（フェードインするコマ）
+
+[balloon x=0 y=0 shape="008_03" scale = 50]
+
+[wait time = 1]
+
+[fadeout target = ".bln" time = 2]
+
+[wait_anim target=".bln"]
+
+
+
+[balloon x=0 y=0 shape="002_01" scale = 0 action = "fadein" time = 0.1]
+[p]
+
+
+
+
+*004
+//-------------------------------------------------------------------------------
+//  パラガス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_070_015"]
+
+[character x = 190 y = -240 storage = "00943/card_03" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon x = -110 y = 100 shape="002_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+ご無礼を[r]
+おゆるしください
+[p]
+
+
+[balloon x=-120 y=-95 shape="002_01" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+我が息子ブロリーを[r]
+ポッドで辺境の星にとばす[r]
+おつもりだとか…
+[p]
+
+
+*005
+//-------------------------------------------------------------------------------
+//  ベジータ王
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_070_015"]
+
+[character x = -235 y = -260 storage = "01079/idl_side_p_01" scale = 1.15 action = "fadein" time = 0.1]
+
+[balloon x=100 y=75 shape="002_02" scale = 0.65 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 44]
+//[quake target =".bln" power = 3 time = 0.2]
+そうだ
+[p]
+
+
+*006
+//-------------------------------------------------------------------------------
+//  パラガス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_070_015"]
+
+[character x = 190 y = -240 storage = "00943/card_03" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon x = -120 y = 60 shape="004_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+そ…それは[r]
+下級戦士の役割…
+[p]
+
+
+*007
+//-------------------------------------------------------------------------------
+//  ベジータ王
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_070_015"]
+
+[character x = -235 y = -260 storage = "01079/idl_side_p_01" scale = 1.15 action = "fadein" time = 0.1]
+
+[balloon x=115 y=120 shape="002_02" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+星を制圧できるほどに[r]
+成長できれば[r]
+さらに強力な戦士に[r]
+なるかもしれんだろ
+[p]
+
+
+[balloon x=130 y=-100 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+星を支配して高く売る…[r]
+それが我々[r]
+戦闘民族サイヤ人だ
+[p]
+
+
+*008
+//-------------------------------------------------------------------------------
+//  パラガス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_070_015"]
+
+[character x = 190 y = -240 storage = "00943/card_03" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon x = -110 y = 80 shape="002_02" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+目的地である[r]
+小惑星バンパは[r]
+人間さえいない[r]
+過酷なだけの星です
+[p]
+
+
+[balloon x=-130 y=-115 shape="002_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+高く売れるとは[r]
+思われませんが…
+[p]
+
+
+*009
+//-------------------------------------------------------------------------------
+//  ベジータ王
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_070_015"]
+
+[character x = -235 y = -260 storage = "01079/idl_side_p_01" scale = 1.15 action = "fadein" time = 0.1]
+
+[balloon x=110 y=100 shape="002_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+…おまえの息子の[r]
+潜在能力は[r]
+異常なまでに高すぎる
+[p]
+
+
+[balloon x=120 y=-110 shape="002_03" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+突然変異といっても[r]
+いいだろう…
+[p]
+
+
+*010
+//-------------------------------------------------------------------------------
+//  パラガス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_070_015"]
+
+[character x = 190 y = -240 storage = "00943/card_03" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon x = -105 y = 70 shape="004_02" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 54]
+//[quake target =".bln" power = 3 time = 0.2]
+………
+[p]
+
+
+*011
+//-------------------------------------------------------------------------------
+//  ベジータ王
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_070_015"]
+
+[character x = -235 y = -260 storage = "01079/idl_side_p_01" scale = 1.15 action = "fadein" time = 0.1]
+
+[balloon x=110 y=105 shape="002_02" scale = 1.1 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 20]
+//[quake target =".bln" power = 3 time = 0.2]
+いずれ正常な精神状態は[r]
+保てなくなり我がベジータ軍は[r]
+おろか宇宙そのものを[r]
+危険にさらすことになる
+[p]
+
+
+[balloon x=120 y=-100 shape="002_01" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+命を絶たずに[r]
+星に飛ばしてやるだけでも[r]
+ありがたく思え！
+[p]
+
+
+*012
+//-------------------------------------------------------------------------------
+//  パラガス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_070_015"]
+
+
+[character x = 190 y = -220 storage = "00943/card_04" scale = 1.2 action = "fadein" time = 0.1]
+//[character x = 190 y = -240 storage = "00943/card_03" scale = 1.0 action = "fade:60" time = 0.1]
+
+[balloon x = -100 y = 90 shape="004_01" scale = 0.65 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 44]
+[quake target =".bln" power = 3 time = 0.2]
+くっ…
+[p]
+
+
+[balloon x=-120 y=-95 shape="004_03" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+あ…あなたは[r]
+王子より高い潜在能力を[r]
+持ったブロリーに嫉妬し[r]
+亡き者にしようと…
+[p]
+
+
+*013
+//-------------------------------------------------------------------------------
+//  ベジータ王
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_070_015"]
+
+[character x = -235 y = -260 storage = "01079/idl_side_p_01" scale = 1.15 action = "fadein" time = 0.1]
+
+[balloon x=100 y=80 shape="002_02" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+//[quake target =".bln" power = 3 time = 0.2]
+それ以上[r]
+口を開いてみろ
+[p]
+
+
+[balloon x=120 y=-115 shape="002_03" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+//[quake target =".bln" power = 3 time = 0.2]
+きさまは[r]
+死ぬことになるぞ
+[p]
+
+
+*014
+//-------------------------------------------------------------------------------
+//  パラガス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_070_015"]
+
+[character x = 190 y = -220 storage = "00943/card_04" scale = 1.2 action = "fadein" time = 0.1]
+//[character x = 190 y = -240 storage = "00943/card_03" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon x = -105 y = 70 shape="004_03" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 54]
+//[quake target =".bln" power = 3 time = 0.2]
+………
+[p]
+
+
+*015
+//-------------------------------------------------------------------------------
+//  ベジータ王
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_070_015"]
+
+[character x = -235 y = -260 storage = "01079/idl_side_p_01" scale = 1.15 action = "fadein" time = 0.1]
+
+[balloon x=100 y=80 shape="002_01" scale = 0.76 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+//[quake target =".bln" power = 3 time = 0.2]
+それに[r]
+もう遅い…
+[p]
+
+
+[balloon x=120 y=-105 shape="002_02" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+//[quake target =".bln" power = 3 time = 0.2]
+ポッドは[r]
+今 発射した
+[p]
+
+
+*016
+//-------------------------------------------------------------------------------
+//  パラガス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_070_015"]
+
+[character x = 190 y = -220 storage = "00943/card_04" scale = 1.2 action = "fadein" time = 0.1]
+//[character x = 190 y = -240 storage = "00943/card_03" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon x = -110 y = 70 shape="004_03" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 40]
+[quake target =".bln" power = 3 time = 0.2]
+な…！？
+[p]
+
+
+*017
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0003L" bg = "bg_000_003"]
+
+[balloon x=0 y= 5 shape="003_01" scale = 1.6 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 14]
+//[quake target =".bln" power = 3 time = 0.2]
+まだ幼いブロリーを[r]
+辺境の星へと追放し[r]
+保身を図るベジータ王…[r]
+　[r]
+我が子への横暴な仕打ちに[r]
+怒りを露わにした[r]パラガスは[r]
+ブロリーを救出するため[r]
+部下のビーツと共に[r]
+小惑星バンパへと[r]
+向かうのだった…
+[p]
+
+
+*018
+//-------------------------------------------------------------------------------
+//  パラガス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_008"]
+
+[character x = 190 y = -240 storage = "00943/card_03" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon x = -110 y = 105 shape="002_01" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+ベジータ王は[r]
+同時期に生まれた王子の[r]
+天才的な能力が自慢だった…
+[p]
+
+
+[balloon x=-120 y=-105 shape="002_03" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+その能力を超えてしまった[r]
+我が息子ブロリーの存在が[r]
+気に入らなかったんだ…
+[p]
+
+
+*019
+//-------------------------------------------------------------------------------
+//  ビーツ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_008"]
+
+[character x = -210 y = -300 storage = "90003/beets" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon x=100 y=55 shape="002_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+ポッドの目的地は[r]
+辺境の星だったとか…
+[p]
+
+
+*020
+//-------------------------------------------------------------------------------
+//  パラガス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_008"]
+
+[character x = 190 y = -240 storage = "00943/card_03" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon x = -115 y = 55 shape="002_03" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+94番恒星を回る[r]
+バンパという小惑星だ
+[p]
+
+
+*021
+//-------------------------------------------------------------------------------
+//  ビーツ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_008"]
+
+[character x = -200 y = -285 storage = "90003/beets" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon x=130 y=50 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+なぜ…？[r]
+あの辺りに[r]人間のいるような[r]
+星はないはず…
+[p]
+
+
+*022
+//-------------------------------------------------------------------------------
+//  パラガス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_008"]
+
+[character x = 190 y = -240 storage = "00943/card_03" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon x = -105 y = 70 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+王の目的は[r]
+星を手に入れること[r]じゃない…
+[p]
+
+
+[balloon x = -120 y = -115 shape="002_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+我が息子ブロリーの[r]抹殺だ
+[p]
+
+
+*023
+//-------------------------------------------------------------------------------
+//  ビーツ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_008"]
+
+[character x = -200 y = -285 storage = "90003/beets" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon x=100 y=60 shape="004_01" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+//[quake target =".bln" power = 3 time = 0.2]
+そ…[r]
+そんな……！
+[p]
+
+
+*024
+//-------------------------------------------------------------------------------
+//  パラガス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_008"]
+
+[character x = 190 y = -240 storage = "00943/card_03" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon x = -125 y = 80 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+心配するな ビーツ[r]
+ブロリーを救出したら[r]
+オレたちはどこか[r]
+別の星で暮らす…
+[p]
+
+
+[balloon x=-130 y=-95 shape="002_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+おまえは[r]
+オレたちを星に降ろして[r]
+惑星ベジータに帰れ
+[p]
+
+
+*025
+//-------------------------------------------------------------------------------
+//  ビーツ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_008"]
+
+[character x = -200 y = -285 storage = "90003/beets" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon x=115 y=60 shape="002_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+あなたは[r]
+帰らないんですか？
+[p]
+
+
+*026
+//-------------------------------------------------------------------------------
+//  パラガス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0004R" bg = "bg_000_014"]
+
+[character x = 0 y = 0 storage = "99999/flare" scale = 4.0 action = "fadein" time = 0.1 mask = "inside"]
+//[paint target=".chara" color="#8000FF"]
+
+
+
+//[character x = 10 y = -980 storage = "00943/card_03" scale = 3.0 action = "fade:100" time = 0.1]
+//[paint target=".chara" color="#F6CECE"]
+
+//[character x = 200 y = -1290 storage = "00943/card_03" scale = 4.0 action = "fade:100" time = 0.1]
+//[paint target=".chara" color="#A4A4A4"]
+
+[character x = 245 y = -950 storage = "00943/card_04" scale = 4.0 action = "fade:100" time = 0.1]
+[paint target=".chara" color="#A4A4A4"]
+
+
+[balloon x = -135 y = 80 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+当然だろう[r]
+帰っても[r]処刑されるだけだ
+[p]
+
+
+[balloon x = -140 y = -125 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+…オレはブロリーを[r]
+最強の戦士に育て…[r]
+いずれベジータ王に[r]
+復讐をする！！
+[p]
+
+
+
+//-------------------------------------------------------------------------------
+[stopbgm]

@@ -1,0 +1,158 @@
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  場面転換
+//-------------------------------------------------------------------------------
+[bgm storage = "012"]
+
+*01
+//-------------------------------------------------------------------------------
+//  界王
+//-------------------------------------------------------------------------------
+[se storage = "3034"]
+//bg界王星
+[coma shape="S0001" bg = "bg_014_001"]
+
+[character x = 0 y = -50 storage = "00025/card_01" scale = 1.0 action = "fadein" time = 0.1]
+[wait time = 0.5]
+
+//[character id = "kaio" x = -230 y = -40 storage = "90001/stand" scale = 0.7 action = "fadein" time = 1.0]
+
+//[wait_anim target="kaio"]
+
+[balloon x = -120 y = 200 shape="005_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 3 time = 0.2]
+[font size = 32]
+むむ…！？[r]
+そいつらはたしか…
+[p]
+
+
+[balloon x = 115 y = -265 shape="005_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[quake target = ".bln" power = 3 time = 0.2]
+[font size = 32]
+そうじゃ！[r]
+ピラフ一味じゃ！
+[p]
+
+
+*02
+//-------------------------------------------------------------------------------
+//  界王
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+//bg界王星
+[coma shape="N0003L" bg = "bg_080_001"]
+
+[character x = -150 y = -50 storage = "90001/stand" scale = 0.7 action = "fadein" time = 0.1]
+
+
+//セリフ1
+[balloon x = 130 y = 90 shape="005_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+
+[font size = 28]
+何度も悟空たちの前に[r]
+現れては敗れ続けた[r]
+哀れな連中じゃ…
+[p]
+
+
+
+
+
+
+*02
+//-------------------------------------------------------------------------------
+//  界王
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+//bg界王星
+[coma shape="N0001L" bg = "bg_080_001"]
+
+
+[character x = -180 y = -40 storage = "90001/stand" scale = 0.5 action = "fadein" time = 0.1]
+
+
+[balloon x = 120 y = 135 shape="005_02" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+…とはいえ[r]
+油断は禁物じゃ
+[p]
+
+[balloon x = 110 y = -80 shape="005_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//ガードができず[r]
+//攻撃をくらい続ければ[r]
+//当然負けてしまう…
+
+属性の相性を考えず[r]
+攻撃をしていては[r]
+勝利が遠のいてしまうぞ
+[p]
+
+*03
+//-------------------------------------------------------------------------------
+//  界王
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+//bg界王星
+[coma shape="N0002L" bg = "bg_080_001"]
+
+[character x = -150 y = -60 storage = "90001/stand" scale = 0.7 action = "fadein" time = 0.1]
+
+
+
+[balloon x = 140 y =70 shape="005_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[quake target = ".bln" power = 3 time = 0.2]
+[font size = 28]
+//ピラフは「[font color="#8A2BE2"]知[font color="#141414"]」属性[r]
+//なので「[font color="#eed500"]体[font color="#141414"]」属性で[r]
+//攻撃するのじゃ！
+
+ピラフは「[font color="#8A2BE2"]知[font color="#141414"]」属性[r]
+なので「[font color="#eed500"]体[font color="#141414"]」属性で[r]
+攻撃すれば与える[r]
+ダメージが増幅される！
+
+
+[p]
+
+[balloon x = 110 y = -200 shape="005_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[quake target = ".bln" power = 3 time = 0.2]
+[font size = 28]
+//そうすれば攻撃を[r]
+//ガードすることが[r]
+//できるぞ！
+
+相性の悪い「[font color="#119100"]技[font color="#141414"]」属性の[r]
+攻撃は逆にガードされて[r]
+しまうので注意するのじゃ
+
+[p]
+
+//以下説明画像
+//フェードアウト
+[balloon x=130 y=40 shape="008_03" scale = 50.0 action = "fadein" time = 1.5]
+
+[wait time = 1.5]
+
+//空のフキダシ
+//[balloon x = 0 y = 0 shape="002_01" scale = 0]
+//[p]
+
+//予告
+[balloon x = -0 y =250 shape="009_04" scale = 1.0 action = "fadein" time = 2]
+
+[wait_anim target=".bln"]
+
+[p]
+
+
+[stopbgm]

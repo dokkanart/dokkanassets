@@ -1,0 +1,310 @@
+*start|スタート
+//ステージ12スタート
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "002"]
+
+*01
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0003L" bg = "bg_014_004"]
+
+[balloon x=0 y=240 shape="003_02" scale = 1.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 13]
+//[quake target =".bln" power = 7 time = 0.2]
+フリーザを[r]
+実力で押さえつけ[r]
+10番目の仲間にした悟空は[r]
+悟飯たちのもとへ向かう…[r]
+　[r]
+ついに第7宇宙の[r]
+代表選手10人全員が[r]
+顔を合わせることとなった
+[p]
+
+*02
+//-------------------------------------------------------------------------------
+//  フリーザ（天使）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_014_004"]
+
+[character id = "f" x=240 y=-180 storage = "00068/idl_back_p_01" scale = 1.2 action = "fadein" time = 0.1]
+[flip target ="f" h=1]
+//天使の輪
+[character x = 190 y = 190 storage = "99999/ring" scale = 0.8 action = "fadein" time = 0.1]
+
+
+[balloon x=-100 y=70 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+おやおや[r]
+顔なじみの皆さんが[r]
+おそろいで…
+[p]
+
+*03
+//-------------------------------------------------------------------------------
+//  ビルス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_014_004"]
+
+[character x = -210 y = -280 storage = "00242/heapup_p_01" scale = 1.4 action = "fadein" time = 0.1]
+
+[balloon x=110 y=70 shape="001_03" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+バカなマネをすれば[r]
+ボクが黙ってないからな
+[p]
+
+*04
+//-------------------------------------------------------------------------------
+//  フリーザ（天使）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_014_004"]
+
+[character id = "f" x=240 y=-180 storage = "00068/idl_back_p_01" scale = 1.2 action = "fadein" time = 0.1]
+[flip target ="f" h=1]
+//天使の輪
+[character x = 190 y = 190 storage = "99999/ring" scale = 0.8 action = "fadein" time = 0.1]
+
+
+[balloon x=-100 y=80 shape="002_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+わかっていますよ[r]
+ビルスさま
+[p]
+
+*05
+//-------------------------------------------------------------------------------
+//  ベジータ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_014_004"]
+
+[character x = -180 y = -110 storage = "00004/idl_side_e_02" scale = 1.1 action = "fadein" time = 0.1]
+[flip target =".chara" h=1]
+
+[balloon x=120 y=70 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+天使の輪が ずいぶん[r]
+似合ってるじゃないか[r]
+フリーザ
+[p]
+
+*06
+//-------------------------------------------------------------------------------
+//  フリーザ（天使）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_014_004"]
+
+[character id = "f" x=240 y=-180 storage = "00068/idl_back_p_01" scale = 1.2 action = "fadein" time = 0.1]
+[flip target ="f" h=1]
+//天使の輪
+[character x = 190 y = 190 storage = "99999/ring" scale = 0.8 action = "fadein" time = 0.1]
+
+
+[balloon x=-100 y=100 shape="002_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+あなたのほうが[r]
+似合いそうですよ？
+[p]
+
+[balloon x=-100 y=-100 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+わたしが[r]
+プレゼントして[r]
+さしあげましょうか？
+[p]
+
+*07
+//-------------------------------------------------------------------------------
+//  ベジータ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_014_004"]
+
+[character x = -180 y = -110 storage = "00004/idl_side_e_02" scale = 1.1 action = "fadein" time = 0.1]
+[flip target =".chara" h=1]
+
+[balloon x=100 y=80 shape="002_02" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 40]
+//[quake target =".bln" power = 3 time = 0.2]
+ほう…？
+[p]
+
+*08
+//-------------------------------------------------------------------------------
+//  ピッコロ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_014_004"]
+
+[character x = 180 y = -90 storage = "00010/idl_side_e_02" scale = 1.5 action = "fadein" time = 0.1]
+
+
+[balloon x=-115 y=70 shape="002_03" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+たきつけるな！[r]
+ベジータ！
+[p]
+
+*09
+//-------------------------------------------------------------------------------
+//  ビルス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_014_004"]
+
+[character x = -210 y = -280 storage = "00242/heapup_p_01" scale = 1.4 action = "fadein" time = 0.1]
+[character x = -220 y = 40 storage = "99999/ase" scale = 0.6 action = "fadein" time = 0.1]
+
+[balloon x=120 y=70 shape="004_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+言ったそばから[r]
+こいつらは〜っ！！
+[p]
+
+
+*10
+//-------------------------------------------------------------------------------
+//  孫悟空
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_014_004"]
+
+[character x=-250 y=-140 storage = "00003/idl_side_p_06" scale = 1.1 action = "fadein" time = 0.1]
+
+
+[balloon x=120 y=70 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+フリーザ…[r]
+おとなしくしてろよ！[r]
+な？
+[p]
+
+*11
+//-------------------------------------------------------------------------------
+//  フリーザ（天使）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_014_004"]
+
+[character id = "f" x=240 y=-180 storage = "00068/idl_back_p_01" scale = 1.2 action = "fadein" time = 0.1]
+[flip target ="f" h=1]
+//天使の輪
+[character x = 190 y = 190 storage = "99999/ring" scale = 0.8 action = "fadein" time = 0.1]
+
+
+[balloon x=-100 y=70 shape="002_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+あなたの命令は[r]
+聞かないと言いましたよ
+[p]
+
+
+*12
+//-------------------------------------------------------------------------------
+//  天津飯
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_014_004"]
+
+[character x = 200 y = -130 storage = "00304/heapup_e_01" scale = 1.0 action = "fadein" time = 0.1]
+
+
+[balloon x=-100 y=90 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+悟空！[r]
+本当にこいつを[r]
+メンバーに入れるのか？
+[p]
+
+*13
+//-------------------------------------------------------------------------------
+//  孫悟空
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_014_004"]
+
+[character x=-250 y=-140 storage = "00003/idl_side_p_06" scale = 1.1 action = "fadein" time = 0.1]
+
+
+[balloon x=100 y=110 shape="001_03" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+大丈夫！[r]
+何かしたらオラが止めるさ
+[p]
+
+[balloon x=120 y=-110 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+それに[r]
+ブウの代わりになるやつ[r]
+他にいねえだろ？
+[p]
+
+
+*14
+//-------------------------------------------------------------------------------
+//  孫悟飯
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_014_004"]
+
+[character x = 220 y = -145 storage = "00235/idl_side_e_02" scale = 1.3 action = "fadein" time = 0.1]
+
+[balloon shape="001_02" x = -120 y = 65 scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+以前はいろいろ[r]
+あったかもしれませんけど[r]
+勝つためには[r]
+チームワークは必要ですよ
+[p]
+
+[balloon shape="001_03" x = -130 y = -210 scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+ちょっと[r]
+チームプレイの練習を[r]
+しておきませんか？
+[p]
+
+
+//-------------------------------------------------------------------------------
+[stopbgm]

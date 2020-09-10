@@ -1,0 +1,342 @@
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+//[bgm storage = "012"]
+
+
+*01
+//-------------------------------------------------------------------------------
+//  界王神
+//-------------------------------------------------------------------------------
+
+//[se storage = "04"]
+[coma shape="S0001" bg = "bg_000_023"]
+
+[character x = -150 y = -0 storage = "00361/card_01" scale = 1.3 action = "fadein" time = 0.1]
+
+[wait_anim target=".chara"]
+
+
+[balloon x=125 y=240 shape="001_01" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target = ".bln" power = 3 time = 0.2]
+[font size = 24]
+わたしは界王神…[r]
+すべての界王たちの神です[p]
+
+[balloon x=135 y=-180 shape="001_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target = ".bln" power = 3 time = 0.2]
+[font size = 28]
+あ…大丈夫ですよ[r]
+そんなに[r]
+緊張なさらなくても[p]
+
+*02
+//-------------------------------------------------------------------------------
+//  界王神
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_023"]
+
+[character x = -190 y = -150 storage = "00361/card_01" scale = 1.1 action = "fadein" time = 0.1]
+
+[balloon x=100 y=110 shape="001_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target = ".bln" power = 3 time = 0.2]
+[font size = 28]
+あなたの強さに[r]
+興味がありましてね[p]
+
+[balloon x=125 y=-90 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target = ".bln" power = 3 time = 0.2]
+[font size = 28]
+いったい どんな[r]
+「修業」をされて[r]
+いるのでしょうか…？[p]
+
+//---------------------------------------------
+
+[if !$is_cleared]    
+// 達成済みか否かは $is_cleared 変数に入っているので、それを用いて if 分岐します。
+
+//---------------------------------------------
+
+//*explain|任務内容詳細説明    // ラベルを付けておくと、テスターで見やすくなります。
+
+// ******************************************************
+//  ここには、
+//  まだ、このミッションを達成していない場合の展開を記述します。
+// ******************************************************
+
+*explain|任務内容詳細説明
+*03_mitatu
+//-------------------------------------------------------------------------------
+//  キビト
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_023"]
+
+[character x=165 y=-190 storage = "00359/card_01" scale = 1.1 action = "fadein" time = 0.1]
+
+
+[balloon x=-125 y=80 shape="001_03" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[quake target = ".bln" power = 3 time = 0.2]
+[font size = 24]
+む…！？ 界王神さま[r]
+同じ場所でばかり[r]
+「修業」している[r]
+ようですぞ[p]
+
+*04_mitatu
+//-------------------------------------------------------------------------------
+//  界王神
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_023"]
+
+//[character x = -150 y = -120 storage = "00003/card_01" scale = 1 action = "fadein" time = 0.1]
+[character x = -190 y = -150 storage = "00361/card_01" scale = 1.1 action = "fadein" time = 0.1]
+
+[balloon x=100 y=120 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target = ".bln" power = 3 time = 0.2]
+[font size = 28]
+それは[r]
+よくないですねえ…[p]
+
+[balloon x=115 y=-90 shape="001_03" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target = ".bln" power = 3 time = 0.2]
+[font size = 24]
+もっと[r]
+いろんな所に行かないと[r]
+上達しませんよ？[p]
+
+*05_mitatu
+//-------------------------------------------------------------------------------
+//  キビト
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_023"]
+
+//[character x=260 y=-240 storage = "00010/card_01" scale = 0.9 action = "fadein" time = 0.1]
+[character x=165 y=-190 storage = "00359/card_01" scale = 1.1 action = "fadein" time = 0.1]
+
+
+[balloon x=-125 y=115 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target = ".bln" power = 3 time = 0.2]
+[font size = 28]
+「修業」のとき[r]
+修業場所を[r]
+選んでみるのだ[p]
+
+[balloon x=-125 y=-100 shape="001_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target = ".bln" power = 3 time = 0.2]
+[font size = 28]
+修業場所を使うと[r]
+修業相手の数だけ[r]
+効果が上がるぞ[p]
+
+*06_mitatu
+//-------------------------------------------------------------------------------
+//  界王神
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_023"]
+
+//[character x = -150 y = -120 storage = "00003/card_01" scale = 1 action = "fadein" time = 0.1]
+[character x = -190 y = -150 storage = "00361/card_01" scale = 1.1 action = "fadein" time = 0.1]
+
+[balloon x=100 y=70 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target = ".bln" power = 3 time = 0.2]
+[font size = 28]
+それと[r]
+修業アイテムを使うと[r]
+獲得できる経験値も[r]
+増えます[p]
+
+
+*07_mitatu
+//-------------------------------------------------------------------------------
+//  キビト
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_023"]
+
+//[character x=260 y=-240 storage = "00010/card_01" scale = 0.9 action = "fadein" time = 0.1]
+[character x=165 y=-190 storage = "00359/card_01" scale = 1.1 action = "fadein" time = 0.1]
+
+[balloon x=-125 y=100 shape="001_02" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target = ".bln" power = 3 time = 0.2]
+[font size = 24]
+同じ属性の修業相手や[r]
+修業アイテムを使うと[r]
+経験値が1.5倍になるのだ[p]
+
+[balloon x=-125 y=-100 shape="001_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target = ".bln" power = 3 time = 0.2]
+[font size = 28]
+これも[r]
+覚えておくといい[p]
+
+*08_mitatu
+//-------------------------------------------------------------------------------
+//  界王神
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0002L" bg = "bg_000_023"]
+
+
+[character x = -170 y = -190 storage = "00361/card_01" scale = 1.3 action = "fadein" time = 0.1]
+
+[balloon x=125 y=100 shape="001_02" scale = 1 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target = ".bln" power = 3 time = 0.2]
+[font size = 22]
+…そういうわけで[r]
+修業アイテムと修業場所を[r]
+うまく使って さらに[r]
+「修業」に励んでください[p]
+
+[balloon x=125 y=-180 shape="001_03" scale = 1.1 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target = ".bln" power = 3 time = 0.2]
+[font size = 20]
+まずは[r]
+【あふれる闘争心】孫悟空【R】[r]
+のLvをMaxにしてみましょう[p]
+
+//---------------------------------------------
+[else]
+//*has_been_cleared|すでに達成済み    // ラベルを付けておくと、テスターでチェックしやすくなります。
+
+// ******************************************************
+//  ここには、
+//  すでに、このミッションを達成している場合の展開を記述します。
+// ******************************************************
+
+*has_been_cleared|すでに達成済み
+
+*07
+//-------------------------------------------------------------------------------
+//  キビト
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_023"]
+
+//[character x=260 y=-240 storage = "00010/card_01" scale = 0.9 action = "fadein" time = 0.1]
+[character x=165 y=-190 storage = "00359/card_01" scale = 1.1 action = "fadein" time = 0.1]
+
+[balloon x=-120 y=110 shape="001_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[quake target = ".bln" power = 3 time = 0.2]
+[font size = 28]
+おお…[r]
+さすが界王神さまが[r]
+見込んだ者ですな[p]
+
+[balloon x=-120 y=-90 shape="001_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target = ".bln" power = 3 time = 0.2]
+[font size = 28]
+ちゃんと[r]
+キャラクターのLvを[r]
+上げているようです[p]
+
+*08
+//-------------------------------------------------------------------------------
+//  界王神
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_023"]
+
+//[character x = -150 y = -120 storage = "00003/card_01" scale = 1 action = "fadein" time = 0.1]
+[character x = -190 y = -150 storage = "00361/card_01" scale = 1.1 action = "fadein" time = 0.1]
+
+[balloon x=100 y=70 shape="001_03" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target = ".bln" power = 3 time = 0.2]
+[font size = 24]
+修業アイテムや修業場所を[r]
+うまく使って「修業」[r]
+しているようですね…[p]
+
+*09
+//-------------------------------------------------------------------------------
+//  キビト
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_023"]
+
+
+[character x=165 y=-190 storage = "00359/card_01" scale = 1.1 action = "fadein" time = 0.1]
+
+[balloon x=-125 y=100 shape="001_01" scale = 1 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target = ".bln" power = 3 time = 0.2]
+[font size = 24]
+同じ属性の修業相手や[r]
+修業アイテムを使うと[r]
+経験値が1.5倍になるのだ[p]
+
+[balloon x=-125 y=-100 shape="001_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target = ".bln" power = 3 time = 0.2]
+[font size = 28]
+これも覚えておくと[r]
+修業の効率が上がるぞ[p]
+
+*10
+//-------------------------------------------------------------------------------
+//  界王神
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0002L" bg = "bg_000_023"]
+
+
+[character x = -170 y = -190 storage = "00361/card_01" scale = 1.3 action = "fadein" time = 0.1]
+
+[balloon x=110 y=100 shape="001_01" scale = 1.1 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target = ".bln" power = 3 time = 0.2]
+[font size = 21]
+まったく信じがたい事実…[r]
+この界王神が下の世界の人間に[r]
+驚かされるなんて…[p]
+
+[balloon x=130 y=-180 shape="001_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+//[quake target = ".bln" power = 3 time = 0.2]
+[font size = 28]
+…今後も[r]
+期待していますよ[p]
+
+[endif]
+*conclusion|結び
+
+//---------------------------------------------
+
+
+
+//[stopbgm]

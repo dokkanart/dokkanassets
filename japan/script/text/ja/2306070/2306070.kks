@@ -1,0 +1,86 @@
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  強敵ボージャック！！ スタート
+//-------------------------------------------------------------------------------
+[bgm storage = "008"]
+
+//-------------------------------------------------------------------------------
+//  ボージャック
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_019"]
+
+[character x=-180 y=-160 storage = "00292/idl_side_p_01" scale = 1.3 action = "fadein" time = 0.1]
+
+
+[balloon x=150 y=120 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 30]
+ふ…[r]
+きさまらでは[r]
+相手にならんな…
+[p]
+
+
+
+*002
+//-------------------------------------------------------------------------------
+//  超サイヤ人トランクス
+//-------------------------------------------------------------------------------
+[se storage = "03"]
+[coma shape="N0001R" bg = "bg_000_019"]
+
+
+
+
+
+[balloon shape="006_02" x = -90 y = 150 scale = 0.8 action = "expand" time = 0.1]
+[font size = 38]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 7 time = 0.2]
+待てっ！！
+//[p]
+
+//コマとセリフが出たあとにキャラクターが登場
+[wait time = 0.7]
+
+[se storage = "3035"]
+
+//描き文字：シュンッ
+[lwfobject id = "kaki1" storage="kakimoji:ef_012" in="04" x=210 y=-100 scale = 1.5]
+[quake target = "kaki1" power = 15 time = 0.2]
+
+[character x = 190 y = -70 storage = "00069/card_02" scale = 1.2 action = "fadein" time = 0.1]
+[quake target = ".chara" power = 7 time = 0.2]
+
+[wait time = 0.7]
+
+[balloon shape="001_01" x = -120 y = -90 scale = 0.9 action = "fadein" time = 0.1]
+[font size = 28]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 3 time = 0.2]
+さっきのお返しを[r]
+たっぷりしてやるぜ！！
+[p]
+
+
+*003
+//-------------------------------------------------------------------------------
+//  ボージャック
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002L" bg = "bg_000_019"]
+
+[character x=-190 y=-230 storage = "00292/atc_sp01_p_01" scale = 1.3 action = "fadein" time = 0.1]
+
+
+[balloon x=160 y=85 shape="002_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+懲りんやつだ…
+[p]
+
+
+
+[stopbgm]

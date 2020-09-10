@@ -1,0 +1,300 @@
+
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "013"]
+
+*001
+//-------------------------------------------------------------------------------
+//  悟飯
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_008_001"]
+
+[character x=180 y=-145 storage = "00007/guard_e_01" scale = 2.3 action = "fadein" time = 0.1]
+
+
+[balloon x=-130 y=20 shape="004_02" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 48]
+………
+[p]
+
+
+*002
+//-------------------------------------------------------------------------------
+//  ナッパ
+//-------------------------------------------------------------------------------
+[se storage = "3022"]
+[coma shape="N0003L" bg = "bg_008_001"]
+[lwfobject id="syuutyuu1" storage="syucyu:ef_002" mask="inside" loop=1 priority=10 scale=1.0]
+
+[character x=-190 y=40 storage = "00015/dash_p_01" scale = 1.6 action = "fadein" time = 0.1]
+[quake target =".chara" power = 5 time = 0.2]
+
+[balloon x=130 y=120 shape="002_01" scale = 0.85 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 3 time = 0.2]
+[font size = 34]
+はーっはっは！！
+[p]
+
+[balloon x=165 y=-110 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 3 time = 0.2]
+[font size = 28]
+カカロットへの[r]
+いい見せしめになるぜ！
+[p]
+
+
+
+*003
+//-------------------------------------------------------------------------------
+//  爆発
+//-------------------------------------------------------------------------------
+[se storage = "3012"]
+[coma id = "coma1" shape="N0003R" bg = "bg_008_001"]
+[lwfobject id="syuutyuu1" storage="syucyu:ef_002" mask="inside" loop=1 priority=10 scale=1.0]
+
+
+[character x=-600 y=-30 storage = "00003/dash_e_01" scale = 2.0 action = "slide:right" time = 0.3]
+
+[wait_anim target = ".chara"]
+
+[se storage = "3001"]
+[lwfobject id = "ガッ" storage="kakimoji:ef_017" in="02" x = 70 y=30 scale = 3.2 action = "fadein" time = 0.1]
+
+
+
+[character id = "napa" x = -120 y = -70 storage = "00015/dam_front_p_01" scale = 1.6 action = "fadein" time = 0.1 action = "slide:right" time = 0.5 ease = "ExponentialOut"]
+//[quake target ="napa" power = 9 time = 0.2]
+
+[wait_anim target = ".coma"]
+
+[quake target ="ガッ" power = 12 time = 0.2]
+[quake target = ".coma" power = 9 time = 0.5]
+
+[wait_anim target = ".coma"]
+
+// 空のフキダシ
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+[bgm storage = "008"]
+*004
+//-------------------------------------------------------------------------------
+//  悟飯
+//-------------------------------------------------------------------------------
+[se storage = "03"]
+[coma shape="N0001R" bg = "bg_008_001"]
+
+[character x=180 y=-145 storage = "00007/guard_e_01" scale = 2.3 action = "fadein" time = 0.1]
+[quake target =".chara" power = 5 time = 0.2]
+
+[lwfobject id = "ガッ" storage="kakimoji:ef_002" in="02" x = 25 y=70 scale = 2 action = "fadein" time = 0.1]
+[quake target ="ガッ" power = 15 time = 0.2]
+
+[p]
+
+*005
+//-------------------------------------------------------------------------------
+//  ナッパ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_008_001"]
+
+[character x=-165 y=-90 storage = "00015/guard_p_01" scale = 1.0 action = "fadein" time = 0.1]
+[quake target =".chara" power = 5 time = 0.2]
+
+[balloon x=130 y=80 shape="002_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 3 time = 0.2]
+[font size = 34]
+…な…[r]
+なに……！？
+[p]
+
+
+*006
+//-------------------------------------------------------------------------------
+//  ベジータ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0004L" bg = "bg_008_001"]
+
+[character x=-195 y=-180 storage = "00218/idl_side_p_01" scale = 1.5 action = "fadein" time = 0.1]
+
+[balloon x=130 y=55 shape="002_02" scale = 0.85 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+ついに[r]
+現れたな……！！
+[p]
+
+*007
+//-------------------------------------------------------------------------------
+//  悟空登場
+//-------------------------------------------------------------------------------
+[se storage = "3022"]
+[coma shape="N0002R" bg = "bg_008_001"]
+
+[character id = "goku" x=0 y=-90 storage = "00003/card_01" scale = 1.2 action = "fadein" time = 0.1]
+[quake target ="goku" power = 7 time = 0.2]
+
+// 空のフキダシ
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+*008
+//-------------------------------------------------------------------------------
+//  クリリン
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_008_001"]
+
+[character x=180 y=-110 storage = "00009/heapup_e_01" scale = 1.9 action = "fadein" time = 0.1]
+
+
+[balloon x=-130 y=30 shape="001_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 3 time = 0.2]
+[font size = 30]
+ご…悟空…！！[r]
+待ってたぞ……！！
+[p]
+
+
+*009
+//-------------------------------------------------------------------------------
+//  悟飯
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_008_001"]
+
+[character x=180 y=-110 storage = "00007/heapup_e_01" scale = 2.3 action = "fadein" time = 0.1]
+
+
+[balloon x=-130 y=10 shape="001_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 30]
+お…[r]
+おとうさん……！！
+[p]
+
+
+
+*010
+//-------------------------------------------------------------------------------
+//  悟空
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0004R" bg = "bg_008_001"]
+
+[character x=210 y=-170 storage = "00007/heapup_back_e_01" scale = 1.3 action = "fadein" time = 0.1]
+
+[character x=-170 y=-130 storage = "00003/heapup_back_e_01" scale = 1.0 action = "fadein" time = 0.1]
+
+[wait time = 0.7]
+
+[balloon x=-140 y=110 shape="001_02" scale = 0.85 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 34]
+………[r]
+…ピッコロ……
+[p]
+
+[balloon x=195 y=100 shape="001_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 30]
+ピッコロさんは[r]
+ボクをかばって[r]
+死んだんだよ…
+[p]
+
+
+
+
+*012
+//-------------------------------------------------------------------------------
+//  ナッパ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_008_001"]
+
+[character x=-190 y=-90 storage = "00015/heapup_p_01" scale = 1.1 action = "fadein" time = 0.1]
+
+[balloon x=165 y=120 shape="002_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 34]
+へっへっへ…！！
+[p]
+
+
+[balloon x=140 y=-145 shape="002_03" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 34]
+バカな仲間が[r]死んじまって[r]
+ショックか？
+[p]
+
+
+*013
+//-------------------------------------------------------------------------------
+//  ナッパ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0003L" bg = "bg_008_001"]
+
+[character x=-140 y=-170 storage = "00015/atc_energyball_p_01" scale = 1.7 action = "fadein" time = 0.1]
+
+[balloon x=130 y=80 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 30]
+悲しむ必要はないぜ
+[p]
+
+
+[balloon x=130 y=-110 shape="002_01" scale = 0.85 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 34]
+すぐにきさまも[r]
+仲間入りだ
+[p]
+
+
+
+*014
+//-------------------------------------------------------------------------------
+//  悟空
+//-------------------------------------------------------------------------------
+[se storage = "3029"]
+[coma shape="N0002R" bg = "bg_008_001"]
+
+
+[lwfobject id = "ゴゴゴゴ" storage="kakimoji:ef_009" in="02" x = 180 y = -140 scale = 1.8]
+[quake target = "ゴゴゴゴ" power = 3 time = 300]
+
+
+[character x=195 y=-60 storage = "00003/heapup_e_01" scale = 1.9 action = "fadein" time = 0.1]
+[quake target =".chara" power = 5 time = 0.2]
+
+
+
+[balloon x=-140 y=110 shape="006_02" scale = 0.8 action = "expand" time = 0.1]
+[font size = 38]
+[quake target =".bln" power = 7 time = 0.2]
+ゆるさんぞ[r]……！！
+[p]
+
+[balloon x=-165 y=-145 shape="006_02" scale = 0.8 action = "expand" time = 0.1]
+[font size = 38]
+[quake target =".bln" power = 7 time = 0.2]
+きさまら[r]……！！
+[p]
+
+
+[stopbgm]
+

@@ -1,0 +1,270 @@
+*start|スタート
+//ステージ2 スタート
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "002"]
+
+*01
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0003R" bg = "bg_000_056"]
+
+[balloon x=0 y=220 shape="003_02" scale = 1.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 14]
+//[quake target =".bln" power = 7 time = 0.2]
+負ければ消滅の力の大会…[r]
+残り時間も少なくなり[r]
+生き残りをかけた闘いは[r]
+さらに激しさを[r]
+増していくのだった[r]
+　[r]
+そしてここでは[r]
+第6宇宙のナメック星人と[r]
+悟飯、ピッコロの闘いが[r]
+始まろうとしていた…
+[p]
+
+
+*02
+//-------------------------------------------------------------------------------
+//  シャンパ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_060"]
+
+[character x = -170 y = -290 storage = "00582/card_01" scale = 1.3 action = "fadein" time = 0.1]
+//[character x = -200 y = -270 storage = "00582/idl_side_p_01" scale = 1.4 action = "fadein" time = 0.1]
+
+[balloon x=120 y=135 shape="006_02" scale = 0.9 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 7 time = 0.2]
+サオネル！ピリナ！[r]
+負けんじゃねえぞ！
+[p]
+
+[balloon x=120 y=-95 shape="006_01" scale = 0.9 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 7 time = 0.2]
+おまえらが落ちたら[r]
+第6宇宙が[r]
+消えちまうんだからな！
+[p]
+
+
+*03
+//-------------------------------------------------------------------------------
+//  "サオネル ピリナ"
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_056"]
+
+[character x = -120 y = -120 storage = "00832/heapup_p_01" scale = 0.8 action = "fadein" time = 0.1]
+
+[character x = -270 y = -120 storage = "00833/idl_side_p_01" scale = 1.1 action = "fadein" time = 0.1]
+
+[balloon x=130 y=110 shape="002_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+心配いりませんよ！
+[p]
+
+[balloon x=135 y=-100 shape="002_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+勝つのは[r]オレたちだ！
+[p]
+
+*04
+//-------------------------------------------------------------------------------
+//  ヴァドス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_060"]
+
+[character x = -220 y = -320 storage = "00583/atc_sp01_p_01" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x=95 y=110 shape="001_03" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+こちらの残りは[r]
+たったのふたり
+[p]
+
+[balloon x=125 y=-90 shape="001_02" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+どうなってしまうんでしょう[r]
+わたしたち…じゃなくて[r]
+シャンパさまたち
+[p]
+
+*05
+//-------------------------------------------------------------------------------
+//  カリフラ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_060"]
+
+[character x = -210 y = -130 storage = "00738/idl_front_p_01" scale = 1.1 action = "fadein" time = 0.1]
+
+
+
+[balloon x=90 y=95 shape="006_01" scale = 0.8 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 7 time = 0.2]
+気合い[r]
+入れやがれよ！！
+[p]
+
+[balloon x=110 y=-120 shape="006_02" scale = 0.9 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 7 time = 0.2]
+負けやがったら[r]
+ぶっとばすかんな！！
+[p]
+
+
+
+*06
+//-------------------------------------------------------------------------------
+//  ピリナ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_056"]
+
+[character x = -210 y = -170 storage = "00833/idl_side_p_01" scale = 1.3 action = "fadein" time = 0.1]
+
+[balloon x=100 y=90 shape="002_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+ふん[r]
+カリフラのやつ…
+[p]
+
+[balloon x=125 y=-110 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+オレたちが[r]
+負けたら消滅なのに[r]
+ぶっとばすも何も…
+[p]
+
+
+*07
+//-------------------------------------------------------------------------------
+//  サオネル
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_056"]
+
+[character x = -240 y = -140 storage = "00832/heapup_p_01" scale = 1.1 action = "fadein" time = 0.1]
+
+[balloon x=100 y=70 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+だが おかげで[r]
+気合いは入ったかな…
+[p]
+
+
+*08
+//-------------------------------------------------------------------------------
+//  ウイス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_060"]
+
+[character x = 210 y = -300 storage = "00243/idl_side_e_01" scale = 1.7 action = "fadein" time = 0.1]
+
+[balloon x=-50 y=115 shape="001_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+先ほどからお静かですね[r]
+ビルスさま
+[p]
+
+[balloon x=-90 y=-95 shape="001_02" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+悟飯さんたちの勝利は[r]
+シャンパさまの消滅…[r]
+さすがに[r]複雑なお気持ちで？
+[p]
+
+*09
+//-------------------------------------------------------------------------------
+//  ビルス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_060"]
+
+[character x = 210 y = -280 storage = "00242/heapup_e_01" scale = 1.4 action = "fadein" time = 0.1]
+
+[balloon x=-110 y=100 shape="001_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+ふん！[r]
+バカを言うな！
+[p]
+
+[balloon x=-110 y=-90 shape="006_01" scale = 0.75 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+[quake target =".bln" power = 7 time = 0.2]
+がんばれ[r]第7宇宙！！
+[p]
+
+
+*10
+//-------------------------------------------------------------------------------
+//  ピッコロ 孫悟飯
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_000_056"]
+
+//孫悟飯
+[character id = "gohan" x = -0 y = -140 storage = "00235/heapup_e_01" scale = 0.9 action = "fadein" time = 0.1]
+
+
+//ピッコロ
+[character x = 220 y = -150 storage = "00056/heapup_e_01" scale = 0.9 action = "fadein" time = 0.1]
+
+[wait time = 0.3]
+
+
+[balloon shape="006_01" x = -40 y = 120 scale = 0.65 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 44]
+[quake target =".bln" power = 7 time = 0.2]
+いくぞ！！[r]
+悟飯！！
+[p]
+
+[balloon shape="001_02" x = -130 y = -220 scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 3 time = 0.2]
+必ず勝ちましょう！[r]
+ボクたちふたりで！！
+[p]
+
+//-------------------------------------------------------------------------------
+[stopbgm]

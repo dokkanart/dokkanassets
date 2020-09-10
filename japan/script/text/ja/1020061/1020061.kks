@@ -1,0 +1,303 @@
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "013"]
+
+
+*001
+//-------------------------------------------------------------------------------
+//  トランクス
+//-------------------------------------------------------------------------------
+
+//[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_032"]
+
+[character x = 210 y = -200 storage = "90000/wait_right_anger" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x=-80 y=80 shape="001_01" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 3 time = 0.2]
+[font size = 44]
+やった！！[p]
+
+
+*002
+//-------------------------------------------------------------------------------
+//  ダーブラ
+//-------------------------------------------------------------------------------
+
+[se storage = "3034"]
+[coma shape="N0003L" bg = "bg_000_032"]
+
+//[character x = -200 y = -140 storage = "00233/atc_sp01_p_01" scale = 0.9 action = "fadein" time = 0.1]
+
+[balloon x=0 y=40 shape="005_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 3 time = 0.2]
+[font size = 32]
+バカめ…！！[r]
+それは残像だ！！[p]
+
+
+*003
+//-------------------------------------------------------------------------------
+//  クリリン
+//-------------------------------------------------------------------------------
+
+[se storage = "03"]
+[coma shape="N0001R" bg = "bg_000_032"]
+
+[lwfobject id = "kaki2" storage="kakimoji:ef_002" in="02" x=40 y=110 scale = 2 angle=-10] 
+[quake target ="kaki2" power = 15 time = 0.4]
+
+
+[character x = 180 y = -100 storage = "00009/idl_side_e_02" scale = 1.7 action = "fadein" time = 0.1]
+//[character x = 180 y = 40 storage = "99999/ase" scale = 0.4 action = "fadein" time = 0.1]
+
+
+
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+
+*004
+//-------------------------------------------------------------------------------
+//  ダーブラ
+//-------------------------------------------------------------------------------
+
+[se storage = "3024"]
+[coma shape="N0001L" bg = "bg_000_032"]
+
+[lwfobject id = "kaki2" storage="kakimoji:ef_023" in="02" x=30 y=-110 scale = 1.2 angle=10] 
+[quake target ="kaki2" power = 15 time = 0.4]
+
+[character x = -220 y = -175 storage = "00233/energyball_p_01" scale = 1.4 action = "fadein" time = 0.1]
+[quake target =".chara" power = 6 time = 0.4]
+
+[balloon x=140 y=140 shape="006_01" scale = 0.8 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 7 time = 0.2]
+[font size = 32]
+本物はこっちだ！！[p]
+
+
+*005
+//-------------------------------------------------------------------------------
+//  クリリン
+//-------------------------------------------------------------------------------
+
+[se storage = "3016"]
+[coma shape="N0002L" bg = "bg_000_032"]
+
+[lwfobject id = "kaki2" storage="kakimoji:ef_019" in="02" x=-140 y=70 scale = 2.5 angle=-40] 
+[quake target ="kaki2" power = 15 time = 0.4]
+
+[character id = "baku" x = -70 y = -0 storage = "99999/ef_explode_005" scale = 2.0 action = "fadein" time = 0.1]
+[quake target ="baku" power = 5 time = 0.5]
+
+[character id = "kur" x = 140 y = -0 storage = "00009/dam_front_e_01" scale = 1.2 action = "expand" time = 0.2]
+[quake target ="kur" power = 7 time = 0.5]
+
+[wait_anim target="kur"]
+
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+
+*006
+//-------------------------------------------------------------------------------
+//  ブウの玉
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0004L" bg = "bg_000_014"]
+
+[lwfobject id = "kaki2" storage="kakimoji:ef_009" in="02" x=-190 y=70 scale = 2] 
+[quake target ="kaki2" power = 1 time = 300]
+
+[character id = "kemuri4" x = 240 y = 30 storage = "99999/ef_sp_smoke" scale = 0.4 angle=80 action = "fadein" time = 0.1]
+[character id = "kemuri3" x = -240 y = -60 storage = "99999/ef_sp_smoke" scale = 0.4 angle=50 action = "fadein" time = 0.1]
+[character id = "kemuri1" x = 270 y = -90 storage = "99999/ef_sp_smoke" scale = 0.7 angle=-30 action = "fadein" time = 0.1]
+[character id = "kemuri2" x = -250 y = -110 storage = "99999/ef_sp_smoke" scale = 0.5 angle=-90 action = "fadein" time = 0.1]
+
+[quake target ="kemuri1" power = 3 time = 300]
+[quake target ="kemuri2" power = 3 time = 300]
+[quake target ="kemuri3" power = 3 time = 300]
+[quake target ="kemuri4" power = 3 time = 300]
+
+[character id = "tama" x = 0 y = -90 storage = "99999/majin_tama" scale = 1.2 action = "fadein" time = 0.1]
+
+[character id = "hikari" x = 0 y = -20 storage = "99999/charge_ball" scale = 3 action = "fadein" time = 1.2]
+
+[wait time = 0.8]
+
+[fadeout target = "hikari" time = 1.0]
+
+[wait time = 0.5]
+
+[character id = "hikari" x = 0 y = -20 storage = "99999/charge_ball" scale = 3 action = "fadein" time = 1.2]
+[wait time = 0.8]
+[fadeout target = "hikari" time = 1.5]
+
+
+[wait time = 1.5]
+
+
+
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+
+*007
+//-------------------------------------------------------------------------------
+//  大界王神
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_032"]
+
+[character id="daikai" x = 250 y = -100 storage = "00413/heapup_p_01" scale = 1.2 action = "fadein" time = 0.1]
+[flip target ="daikai" h=1]
+[character id="ase" x = 165 y = 100 storage = "99999/ase" scale = 0.5 action = "fadein" time = 0.1]
+
+[balloon x=-100 y=120 shape="007_02" scale = 0.8 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 7 time = 0.2]
+[font size = 32]
+し……[r]
+しまった…！！[p]
+
+
+*008
+//-------------------------------------------------------------------------------
+//  バビディ
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_032"]
+
+[character x = -230 y = -100 storage = "00238/guard_p_01" scale = 1.2 angle=20 action = "fadein" time = 0.1]
+
+[quake target =".chara" power = 3 time = 0.4]
+
+[balloon x=100 y=120 shape="006_01" scale = 0.8 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 7 time = 0.2]
+[font size = 32]
+フルパワーに[r]
+なったぁーっ！！[p]
+
+[quake target =".chara" power = 5 time = 0.2]
+
+[balloon x=100 y=-80 shape="006_02" scale = 0.8 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 7 time = 0.2]
+[font size = 32]
+ついに魔人ブウの[r]
+復活だーっ！！[p]
+
+
+*009
+//-------------------------------------------------------------------------------
+//  トランクス
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_032"]
+
+[character x = 210 y = -200 storage = "90000/wait_right_surprise" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x=-90 y=80 shape="004_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 3 time = 0.2]
+[font size = 32]
+そ…[r]
+そんな…！！[p]
+
+
+*010
+//-------------------------------------------------------------------------------
+//  ピッコロ&悟空
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_032"]
+
+
+[character x = 80 y = -170 storage = "00010/heapup_e_01" scale = 0.8 action = "fadein" time = 0.1]
+
+//悟空
+[character x = 230 y = -100 storage = "00300/heapup_e_01" scale = 1.2 action = "fadein" time = 0.1]
+
+
+
+[balloon x=-85 y=100 shape="001_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 3 time = 0.2]
+[font size = 32]
+…なんて気だ…！！[p]
+
+
+
+*011
+//-------------------------------------------------------------------------------
+//  バビディ
+//-------------------------------------------------------------------------------
+
+[se storage = "04"]
+[coma shape="N0002L" bg = "bg_000_032"]
+
+[character x = -150 y = -90 storage = "00238/energyball_e_01" scale = 1.5 action = "fadein" time = 0.1]
+[flip target =".chara" h=1]
+
+[balloon x=120 y=130 shape="006_01" scale = 0.75 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 7 time = 0.2]
+[font size = 36]
+出るぞーっ！！[p]
+
+[balloon x=120 y=-170 shape="006_02" scale = 0.85 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[quake target =".bln" power = 7 time = 0.2]
+[font size = 32]
+魔人ブウーッ！！[p]
+
+[se storage = "3025"]
+//点滅
+[balloon shape="008_02" x = 140 y = -30 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+[balloon shape="008_02" x = 140 y = -30 scale = 50 action = "fadein" time = 0.1]
+[wait time = 0.3]
+[clear target = ".bln"]
+
+//フェードアウト（フェードアウトするコマ）
+[balloon x=130 y=40 shape="008_02" scale = 50.0 action = "fadein" time = 0.5]
+[wait time = 0.7] 
+
+*012
+//-------------------------------------------------------------------------------
+//  ブウ
+//-------------------------------------------------------------------------------
+
+
+[coma shape="S0001" bg = "bg_000_032"]
+
+
+[character x = 0 y = -0 storage = "00232/card_001" scale = 1.4 action = "fadein" time = 0.1]
+[move target =".chara" y=30 time = 2.8]
+
+
+//フェードイン（フェードインするコマ）
+[balloon x=130 y=40 shape="008_02" scale = 50]
+[wait time = 1]
+[fadeout target = ".bln" time = 2]
+[wait_anim target=".bln"]
+
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+
+[stopbgm]

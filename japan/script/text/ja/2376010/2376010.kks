@@ -1,0 +1,730 @@
+*start|スタート
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "003"]
+
+*000
+//-------------------------------------------------------------------------------
+//  
+//-------------------------------------------------------------------------------
+[coma shape="S0001" bg = "bg_000_014"]
+
+//黒
+//[balloon x=0 y=0 shape="008_03" scale = 50.0]
+[character id = "kuro2" x=0 y=0 storage = "99999/black" scale = 50 angle = 90 action = "fade:100"] 
+
+
+[character x = 0 y = -10 storage = "00621/card_04" scale = 1.0 action = "fade:40" time = 0.1]
+
+
+
+[balloon id = "n" x=0 y=0 shape="009_17" scale = 1.0 action = "fadein" time = 2.0]
+[font color="#FFFFFF"]
+[font size = 30]
+突如 現れた[r]
+悟空とソックリの顔を持つ[r]
+黒衣の男[r]
+ゴクウブラックの手により[r]
+トランクスのいる[r]
+未来の世界は[r]
+荒廃の一途をたどっていた
+
+[balloon id = "kuro" x=0 y=0 shape="008_03" scale = 50.0]
+[wait time = 0.7]
+[fadeout target = "kuro" time = 1.0]
+
+
+[wait_anim target="kuro"]
+
+
+// 空のフキダシ（セリフがないコマを送るために使用）
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+
+//ここから２コマ目
+
+
+[balloon id = "kuro2" x=0 y=0 shape="008_03" scale = 50.0 action = "fadein" time = 1.0]
+
+[wait_anim target="kuro2"]
+
+
+
+[character id = "veg" x=-180 y=290 storage = "00240/card_04" scale = 0.4 angle = 0 action = "fade:100" priority=100]
+[paint target="veg" color="#6E6E6E"]
+
+[character id = "gok" x=0 y=310 storage = "00239/card_06" scale = 0.4 action = "fade:100" priority=110]
+[paint target="gok" color="#6E6E6E"]
+
+[character id = "tra" x=120 y=310 storage = "00623/card_02" scale = 0.65 action = "fade:100" priority=120]
+[paint target="tra" color="#6E6E6E"]
+
+
+
+[character id = "kk" x=0 y=50 storage = "99999/gake" scale = 2.0 action = "fade:100" priority=130]
+[paint target="kk" color="#000000"]
+[flip target ="kk" v=1]	
+
+[character id = "kk2" x=0 y=50 storage = "99999/gake" scale = 2.0 action = "fade:100" priority=130]
+[paint target="kk2" color="#000000"]
+[flip target ="kk2" v=1]	
+
+
+//[character id = "kk3" x=0 y=0 storage = "99999/gake" scale = 5.0 action = "fade:100" priority=130]
+//[paint target="kk3" color="#000000"]
+//[flip target ="kk3" v=1]	
+
+//ザマス
+[character x=120 y=-800 storage = "00660/card_03" scale = 1.9 action = "fade:40" priority=140]
+
+
+
+
+
+
+[balloon id = "n2" x=0 y=100 shape="009_17" scale = 1.0 priority=150]
+[font color="#FFFFFF"]
+[font size = 30]
+トランクスは[r]
+ゴクウブラックに対抗するため[r]
+タイムマシンを使い[r]
+過去の世界の[r]
+悟空とベジータを[r]
+未来へとつれてくる[r]
+　[r]
+未来の世界で[r]
+ゴクウブラックと闘う悟空たち…[r]
+だがそこへ なんと[r]
+第10宇宙の界王ザマスが[r]
+現れるのだった
+
+
+[balloon id = "kuro3" x=0 y=0 shape="008_03" scale = 50.0 priority=160]
+
+
+
+[wait time = 0.7]
+[fadeout target = "kuro3" time = 2.0]
+
+
+[wait_anim target="kuro3"]
+
+// 空のフキダシ（セリフがないコマを送るために使用）
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+
+
+
+//ここから３コマ目
+
+
+[balloon id = "kuro4" x=0 y=0 shape="008_03" scale = 50.0 action = "fadein" time = 1.0 priority=170]
+
+[wait_anim target="kuro4"]
+
+
+
+[character id = "roze" x=150 y=20 storage = "00654/card_03" scale = 1.0 angle = 0 action = "fade:40" priority=180]
+//[paint target="roze" color="#6E6E6E"]
+
+[character id = "zam" x=-160 y=0 storage = "00660/card_04" scale = 1.0 action = "fade:40" priority=190]
+//[paint target="zam" color="#6E6E6E"]
+
+
+
+
+[balloon id = "n3" x=0 y=-200 shape="009_17" scale = 1.0 priority=200]
+[font color="#FFFFFF"]
+[font size = 30]
+この世の全ての人間を消し去る[r]
+『人間０計画』[r]
+その計画の遂行のために[r]
+ゴクウブラックとザマスは[r]
+手を組んだという[r]
+　[r]
+超サイヤ人ロゼに変身した[r]
+ゴクウブラックと[r]
+超ドラゴンボールで[r]
+不死身となったザマスに[r]
+敗北した悟空とベジータは[r]
+対抗策を練るため[r]
+タイムマシンで現代へと[r]
+もどってくるのだった…
+
+
+[balloon id = "kuro5" x=0 y=0 shape="008_03" scale = 50.0 priority=210]
+
+
+
+[wait time = 0.7]
+[fadeout target = "kuro5" time = 2.0]
+
+[wait_anim target="kuro5"]
+
+
+// 空のフキダシ（セリフがないコマを送るために使用）
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+//フェードアウト（フェードアウトするコマ）
+
+[balloon x=0 y=0 shape="008_03" scale = 50.0 action = "fadein" time = 0.5 priority=220]
+
+[wait time = 0.7] 
+
+
+
+*001
+//-------------------------------------------------------------------------------
+//  
+//-------------------------------------------------------------------------------
+//[se storage = "19"]
+[coma shape="S0001" bg = "bg_014_004"]
+
+
+[character id = "hikari" x= -10 y=200 storage = "99999/ef_aura_front" scale = 1.0 action = "fadein" time = 0.1]
+[quake target ="hikari" power = 2 time = 4.0]
+
+
+[character id = "tm" x= 0 y=200 storage = "90003/timemachine_2" scale = 0.5 action = "fadein" time = 0.1]
+
+
+
+
+//フェードイン（フェードインするコマ）
+
+[balloon x=0 y=0 shape="008_03" scale = 50]
+
+[wait time = 1]
+
+[se storage = "17"]
+
+[fadeout target = ".bln" time = 2]
+
+[wait_anim target=".bln"]
+
+[wait_anim target="hikari"]
+
+[se storage = "3006"]
+
+[move target ="hikari" y=10 time = 0.7]
+[fadeout target = "hikari" time = 0.2]
+[move target ="tm" y=10 time = 0.7]
+[fadeout target = "tm" time = 0.7]
+
+[wait_anim target="tm"]
+
+[balloon x=0 y=0 shape="002_01" scale = 0 action = "fadein" time = 0.1]
+[p]
+
+
+*004
+//-------------------------------------------------------------------------------
+//  ウイス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_014_004"]
+
+//[character x = -210 y = -300 storage = "00243/idl_side_p_01" scale = 1.7 action = "fadein" time = 0.1]
+[character x = -210 y = -310 storage = "00243/idl_side_p_02" scale = 1.15 action = "fadein" time = 0.1]
+
+
+[balloon x=100 y=50 shape="001_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+それでは[r]
+むこうの世界の[r]
+界王神は…
+[p]
+
+
+*005
+//-------------------------------------------------------------------------------
+//  ベジータ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_014_004"]
+
+[character x = 180 y = -110 storage = "00004/idl_side_e_02" scale = 1.1 action = "fadein" time = 0.1]
+
+[balloon x = -105 y = 90 shape="002_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+ああ[r]
+やつらは言っていた
+[p]
+
+
+[balloon x=-120 y=-95 shape="002_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+すべての神を殺し[r]
+未来にいる神は[r]
+自分たちだけだと…
+[p]
+
+
+*006
+//-------------------------------------------------------------------------------
+//  ビルス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_014_004"]
+
+//[character x = -240 y = -280 storage = "00242/idl_side_p_01" scale = 1.4 action = "fadein" time = 0.1]
+[character x = -245 y = -255 storage = "00242/idl_side_p_02" scale = 1.2 action = "fadein" time = 0.1]
+
+
+[balloon x=90 y=65 shape="001_03" scale = 0.65 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 44]
+//[quake target =".bln" power = 3 time = 0.2]
+ふ〜ん
+[p]
+
+
+*007
+//-------------------------------------------------------------------------------
+//  ベジータ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_014_004"]
+
+[character x = 180 y = -110 storage = "00004/idl_side_e_02" scale = 1.1 action = "fadein" time = 0.1]
+
+[balloon x = -125 y = 85 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+さらに言えばブラックは[r]
+ザマスがつくった[r]
+人形ではない
+[p]
+
+
+[balloon x=-120 y=-100 shape="002_01" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+この世界にいたザマスが[r]
+カカロットの体を奪い[r]
+ブラックになったんだ
+[p]
+
+
+*008
+//-------------------------------------------------------------------------------
+//  ウイス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002L" bg = "bg_014_004"]
+
+//[character x = -180 y = -290 storage = "00243/atc_sp01_p_03" scale = 1.7 action = "fadein" time = 0.1]
+//[character x = -210 y = -310 storage = "00243/idl_side_p_02" scale = 1.15 action = "fadein" time = 0.1]
+[character id="uis" x = -180 y = -480 storage = "00243/card_01" scale = 1.2 action = "fadein" time = 0.1]
+
+
+[balloon x=155 y=70 shape="001_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+それでブラックは[r]
+ザマスと同じ気を[r]
+もっていたんですね　
+[p]
+
+
+[balloon x=110 y=-230 shape="001_03" scale = 1.1 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 20]
+//[quake target =".bln" power = 3 time = 0.2]
+これで謎が解けました…[r]
+すべては悟空さんとザマスが[r]
+手合わせをしたあの時に[r]
+始まっていたという[r]ことですね
+[p]
+
+
+//フェードアウト（フェードアウトするコマ）
+[balloon x=0 y=0 shape="008_03" scale = 50.0 action = "fadein" time = 0.5]
+[wait time = 0.7]
+
+
+*009
+//-------------------------------------------------------------------------------
+//  場面転換・回想
+//-------------------------------------------------------------------------------
+[bgm storage = "004"]
+
+[coma shape="S0001" bg = "bg_000_038"]
+
+//フェードイン（フェードインするコマ）
+[balloon x=0 y=0 shape="008_03" scale = 50]
+[wait time = 0.5]
+[fadeout target = ".bln" time = 1]
+[wait_anim target=".bln"]
+
+// 空のフキダシ
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+
+*010
+//-------------------------------------------------------------------------------
+//  ゴワス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_038"]
+
+[character x=200 y=-300+20 storage = "90003/gowasu" scale = 1.0 action = "fadein" time = 0.1]
+
+
+[balloon x = -90 y = 80 shape="001_01" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+//[quake target =".bln" power = 3 time = 0.2]
+これはこれは[r]
+ビルスさま
+[p]
+
+
+*011
+//-------------------------------------------------------------------------------
+//  ビルス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_038"]
+
+[character x = -240 y = -245 storage = "00242/idl_side_p_01" scale = 1.2 action = "fadein" time = 0.1]
+//[character x = -245 y = -255 storage = "00242/idl_side_p_02" scale = 1.2 action = "fade:40" time = 0.1]
+
+[balloon x=90 y=60 shape="001_03" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 44]
+//[quake target =".bln" power = 3 time = 0.2]
+やあ
+[p]
+
+
+*011-2
+//-------------------------------------------------------------------------------
+//  
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_038"]
+
+
+
+[character x = -210 y = -310 storage = "00243/idl_side_p_02" scale = 1.15 action = "fadein" time = 0.1]
+
+
+
+
+[balloon x=100 y=60 shape="001_03" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+おひさしぶりで[r]
+ございます
+[p]
+
+
+*012
+//-------------------------------------------------------------------------------
+//  ゴワス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_038"]
+
+[character x=200 y=-300+20 storage = "90003/gowasu" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon x = -105 y = 50 shape="001_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+こちらの者は[r]
+わが弟子ザマスです
+[p]
+
+
+*013
+//-------------------------------------------------------------------------------
+//  ザマス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_038"]
+
+//[character x=180 y=-300 storage = "00660/sp01_heapup_e_01" scale = 1.2 action = "fadein" time = 0.1]
+[character x=175 y=-200 storage = "00660/card_07" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon x = -105 y = 65 shape="001_03" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+どうぞ[r]
+お見知りおきを
+[p]
+
+
+*014
+//-------------------------------------------------------------------------------
+//  孫悟空
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_038"]
+
+[character x = -200 y = -150 storage = "00003/heapup_p_06" scale = 1.3 action = "fadein" time = 0.1]
+
+[balloon x=120 y=70 shape="001_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+あんたが[r]
+天才的に強えっちゅう[r]
+界王さまか！
+[p]
+
+
+*015
+//-------------------------------------------------------------------------------
+//  ザマス
+//-------------------------------------------------------------------------------
+[se storage = "03"]
+[coma shape="N0001R" bg = "bg_000_038"]
+
+//[character x=180 y=-300 storage = "00660/sp01_heapup_e_01" scale = 1.2 action = "fadein" time = 0.1]
+[character x=175 y=-200 storage = "00660/card_07" scale = 1.0 action = "fadein" time = 0.1]
+
+
+
+[lwfobject id = "kaki2" storage="kakimoji:ef_001" in="04"  angle = -10 x= 20 y= 100 scale = 2.5 action = "fadein" time = 0.1]
+[quake target = "kaki2" power = 9 time = 0.4]
+
+//空のフキダシ
+[balloon x = -105 y = 90 shape="001_02" scale = 0]
+[p]
+
+
+[balloon x=-130 y=-120 shape="004_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+人間が[r]
+なぜここに…！
+[p]
+
+
+*016
+//-------------------------------------------------------------------------------
+//  ビルス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_038"]
+
+[character x = -240 y = -245 storage = "00242/idl_side_p_01" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x = 100 y = 50 shape = "001_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target = ".bln"]
+[font size = 28]
+地球というグルメな星に[r]
+住んでいるサイヤ人だ
+[p]
+
+
+*017
+//-------------------------------------------------------------------------------
+//  ザマス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_038"]
+
+//[character x=180 y=-300 storage = "00660/sp01_heapup_e_01" scale = 1.2 action = "fadein" time = 0.1]
+[character x=175 y=-200 storage = "00660/card_07" scale = 1.0 action = "fadein" time = 0.1]
+
+
+[balloon x = -105 y = 60 shape="004_02" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 40]
+//[quake target =".bln" power = 3 time = 0.2]
+サイヤ人…！？
+[p]
+
+
+*018
+//-------------------------------------------------------------------------------
+//  孫悟空
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_038"]
+
+[character x = -200 y = -150 storage = "00003/heapup_p_06" scale = 1.3 action = "fadein" time = 0.1]
+
+
+[balloon x=120 y=50 shape="001_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+オラと[r]
+いっちょ闘って[r]
+くれねえか！？
+[p]
+
+
+*019
+//-------------------------------------------------------------------------------
+//  ザマス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_038"]
+
+//[character x=180 y=-300 storage = "00660/sp01_heapup_e_01" scale = 1.2 action = "fadein" time = 0.1]
+[character x=175 y=-200 storage = "00660/card_07" scale = 1.0 action = "fadein" time = 0.1]
+
+
+[balloon x = -105 y = 60 shape="004_03" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+//[quake target =".bln" power = 3 time = 0.2]
+闘うだと…！？
+[p]
+
+
+*020
+//-------------------------------------------------------------------------------
+//  孫悟空
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_038"]
+
+[character x = -200 y = -150 storage = "00003/heapup_p_06" scale = 1.3 action = "fadein" time = 0.1]
+
+[balloon x=120 y=80 shape="001_03" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 40]
+//[quake target =".bln" power = 3 time = 0.2]
+なあ頼むよ
+[p]
+
+
+[balloon x=140 y=-105 shape="001_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+オラ そのために[r]
+はるばる[r]
+来たんだからさ！
+[p]
+
+
+*021
+//-------------------------------------------------------------------------------
+//  ザマス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_038"]
+
+//[character x=180 y=-300 storage = "00660/sp01_heapup_e_01" scale = 1.2 action = "fadein" time = 0.1]
+[character x=175 y=-200 storage = "00660/card_07" scale = 1.0 action = "fadein" time = 0.1]
+
+
+
+[balloon x = -105 y = 50 shape="006_01" scale = 0.75 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+[quake target =".bln" power = 7 time = 0.2]
+口の聞き方に[r]
+気をつけるんだ[r]人間！
+[p]
+
+
+*022
+//-------------------------------------------------------------------------------
+//  ゴワス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_038"]
+
+[character x=200 y=-300+20 storage = "90003/gowasu" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon x = -105 y = 50 shape="001_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+闘ってさしあげなさい[r]
+ザマス
+[p]
+
+
+*023
+//-------------------------------------------------------------------------------
+//  ザマス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_038"]
+
+//[character x=180 y=-300 storage = "00660/sp01_heapup_e_01" scale = 1.2 action = "fadein" time = 0.1]
+[character x=175 y=-200 storage = "00660/card_07" scale = 1.0 action = "fadein" time = 0.1]
+
+
+[balloon x = -105 y = 55 shape="004_02" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+//[quake target =".bln" power = 3 time = 0.2]
+ゴワスさま…！！
+[p]
+
+
+*024
+//-------------------------------------------------------------------------------
+//  ゴワス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_038"]
+
+[character x=200 y=-300+20 storage = "90003/gowasu" scale = 1.0 action = "fadein" time = 0.1]
+
+[balloon x = -105 y = 50 shape="001_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+これは[r]
+おまえが人間を知る[r]
+良い機会になるだろう[r]
+　[r]
+[p]
+
+
+*025
+//-------------------------------------------------------------------------------
+//  ザマス
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_000_038"]
+
+[character x= 150+15 y=-320-20 storage = "00660/card_01" scale = 1.1 action = "fadein" time = 0.1]
+
+[balloon x = -150 y = 70 shape="004_02" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 54]
+//[quake target =".bln" power = 3 time = 0.2]
+………
+[p]
+
+
+[balloon x = -160 y = -160 shape="001_03" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+//[quake target =".bln" power = 3 time = 0.2]
+わかりました…
+[p]
+
+
+
+//-------------------------------------------------------------------------------
+[stopbgm]

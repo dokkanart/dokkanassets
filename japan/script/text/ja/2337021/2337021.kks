@@ -1,0 +1,62 @@
+*start|スタート
+//ステージ2 ゴール
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "002"]
+
+*01
+//-------------------------------------------------------------------------------
+//  ビルス
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_016"]
+
+[character x = -170 y = -370 storage = "00242/card_03" scale = 1.5 action = "fadein" time = 0.1]
+
+[balloon x=120 y=150 shape="001_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+いったいなにを[r]
+したかったのかな？
+[p]
+
+[balloon x=120 y=-110 shape="001_02" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+まったく情けないねえ…[r]
+これで戦闘民族とか[r]
+言ってるんだから
+[p]
+
+*02
+//-------------------------------------------------------------------------------
+//  ベジータ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_000_016"]
+
+[character x = 165 y = -115 storage = "00004/idl_side_e_02" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x=-125 y=60 shape="004_02" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+破壊神ビルス…[r]
+とんでもないやつだとは[r]
+想像していたが…
+[p]
+
+[balloon x=-120 y=-230 shape="004_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+くそ…！！[r]
+とうとう終わりか…！
+[p]
+
+//-------------------------------------------------------------------------------
+[stopbgm]

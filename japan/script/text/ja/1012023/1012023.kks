@@ -1,0 +1,35 @@
+
+*start|スタート
+
+//１２−２ボス前
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "008"]
+
+//-------------------------------------------------------------------------------
+//  セリパ
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+
+[coma shape="N0002L" bg = "bg_015_001"]
+
+[character x=-30 y=-150 storage = "00079/idl_side_p_01" scale = 1.3 action = "fadein" time = 0.1]
+
+[character x=-200 y=-150 storage = "00070/heapup_p_01" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x=170 y=-60 shape="002_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+本気で[r]
+やってやるぜ！
+[p]
+
+[balloon x=-90 y=-200 shape="002_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+覚悟するんだね…！[p]
+
+[stopbgm]

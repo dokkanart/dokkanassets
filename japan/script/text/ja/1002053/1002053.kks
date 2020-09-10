@@ -1,0 +1,225 @@
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "008"]
+
+*01
+//-------------------------------------------------------------------------------
+//  場面転換
+//-------------------------------------------------------------------------------
+[coma shape="N0003L" bg = "bg_014_001"]
+
+[character x=-280 y=-120 storage = "00006/idl_side_p_02" scale = 1 action = "fadein" time = 0.1]
+
+[wait time = 0.7]
+
+[se storage = "38"]
+[character x=260 y=-140 storage = "00040/idl_side_p_01" scale = 1 action = "fadein" time = 0.3]
+
+[wait time = 0.2]
+
+[se storage = "38"]
+[character x=160 y=-125 storage = "00040/heapup_p_01" scale = 1.4 action = "fadein" time = 0.3]
+
+[wait time = 0.3]
+
+[se storage = "38"]
+[character x=30 y=-125 storage = "00040/atc_energyball_p_02" scale = 1.8 action = "fadein" time = 0.3]
+
+[wait_anim target=".chara"]
+
+[balloon x=0 y=115 shape="002_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[quake target = ".bln" power = 3 time = 0.2]
+[font size = 32]
+さあ行け！[r]
+セルジュニアたちよ[r]
+[p]
+
+[balloon x=-130 y=-140 shape="002_03" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[quake target = ".bln" power = 3 time = 0.2]
+[font size = 32]
+あいつらを[r]
+痛めつけてやるのだ！
+[p]
+
+
+*02
+//-------------------------------------------------------------------------------
+//  トランクス
+//-------------------------------------------------------------------------------
+[se storage = "03"]
+[coma shape="N0003R" bg = "bg_014_001"]
+
+[character x = 170 y = -380 storage = "90000/wait_right_surprise" scale = 1.7 action = "fadein" time = 0.1]
+
+
+[lwfobject id = "!!" storage="kakimoji:ef_001" x = -90 y = 60 scale = 2.7 angle = -11 action = "fadein" time = 0.1]
+[quake target = "!!" power = 10 time = 0.4]
+[wait_anim target = "!!"]
+
+
+
+// 空のフキダシ
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+
+
+
+
+*03
+//-------------------------------------------------------------------------------
+//  界王
+//-------------------------------------------------------------------------------
+//[se storage = "3034"]
+[se storage = "04"]
+
+//bg界王星
+[coma shape="N0001L" bg = "bg_080_001"]
+
+
+//天使の輪
+//[character x = -172 y = 145 storage = "99999/ring" scale = 0.6 action = "fadein" time = 0.1]
+[character x = -180 y = -40 storage = "90001/stand" scale = 0.5 action = "fadein" time = 0.1]
+[character x = -220 y = 60 storage = "99999/ase" scale = 0.7 action = "fadein" time = 0.1]
+
+
+
+
+[balloon x = 120 y = 130 shape="005_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[quake target = ".bln" power = 3 time = 0.2]
+[font size = 28]
+
+あわわわ…！！[r]
+人造人間セル…！[r]
+とんでもないヤツじゃ…
+[p]
+
+
+[balloon x = 130 y = -90 shape="005_02" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[quake target = ".bln" power = 3 time = 0.2]
+[font size = 36]
+これはかなり[r]
+ヤバいぞ！
+[p]
+
+
+*04
+//-------------------------------------------------------------------------------
+//  界王
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+//bg界王星
+[coma shape="N0003L" bg = "bg_080_001"]
+
+
+[character x = -150 y = -50 storage = "90001/stand" scale = 0.7 action = "fadein" time = 0.1]
+
+
+//セリフ1
+[balloon x = 140 y = 30 shape="005_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+
+[font size = 32]
+わしが[r]攻略法を教えるから[r]心して聞くのじゃ
+[p]
+
+
+
+
+
+
+*05
+//-------------------------------------------------------------------------------
+//  界王
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+//bg界王星
+[coma shape="N0001L" bg = "bg_080_001"]
+
+
+[character x = -180 y = -40 storage = "90001/stand" scale = 0.5 action = "fadein" time = 0.1]
+
+
+[balloon x = 90 y = 125 shape="005_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+
+[font size = 28]
+
+まずはセルジュニア[r]
+から倒すのじゃ！[r]
+よいな！？
+[p]
+
+
+[balloon x = 120 y = -100 shape="005_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+
+[font size = 28]
+セルジュニアは素早い！[r]
+さらに攻撃するまでの[r]
+ターンが短い！！
+[p]
+
+
+*06
+//-------------------------------------------------------------------------------
+//  界王
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+//bg界王星
+[coma shape="N0003L" bg = "bg_080_001"]
+
+[character x = -150 y = -50 storage = "90001/stand" scale = 0.7 action = "fadein" time = 0.1]
+
+[balloon x = 125 y = 55 shape="005_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+
+[font size = 28]
+
+１人ずつの力は弱くても[r]
+放っておくとやっかい[r]
+なことになる！！
+[p]
+
+
+
+
+*07
+//-------------------------------------------------------------------------------
+//  界王
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+//bg界王星
+[coma shape="N0002L" bg = "bg_080_001"]
+
+
+[character x = -150 y = -60 storage = "90001/stand" scale = 0.7 action = "fadein" time = 0.1]
+
+
+[balloon x = 120 y = 125 shape="005_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+
+[font size = 32]
+
+よいな！？[r]
+セルジュニアから[r]
+倒すんじゃぞ！？
+[p]
+
+
+[balloon x = 115 y = -190 shape="005_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[quake target = ".bln" power = 3 time = 0.2]
+[font size = 28]
+ここでやられてしまえば[r]
+おしまいじゃからな！
+[p]
+
+[stopbgm]

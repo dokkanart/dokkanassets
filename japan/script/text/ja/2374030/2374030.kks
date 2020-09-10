@@ -1,0 +1,358 @@
+*start|スタート
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "012"]
+
+*001
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0003L" bg = "bg_000_016"]
+
+[balloon x= 0 y=80 shape="003_01" scale = 1.4 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 16]
+//[quake target =".bln" power = 3 time = 0.2]
+いよいよ[r]
+天下一武道会当日…[r]
+　[r]
+なつかしい仲間たちが[r]
+会場に集結し[r]
+悟空も [r]
+あの世から１日だけ[r]
+帰ってくるのだった！
+[p]
+
+
+*002
+//-------------------------------------------------------------------------------
+//  孫悟空（天使）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_025_001"]
+
+[character  x=195 y=205-10 storage = "99999/ring" scale = 0.9 action = "fadein" time = 0.1]
+
+[character x = 180 y = -210-10 storage = "00003/card_10" scale = 1.0 action = "fadein" time = 0.1]
+
+
+//[character x= 250 y=-130 storage = "00366/heapup_e_01" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x = -95 y = 70 shape="001_02" scale = 0.65 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 44]
+[quake target =".bln" power = 3 time = 0.2]
+へへー[r]
+ヤッホー！
+[p]
+
+
+*003
+//-------------------------------------------------------------------------------
+//  孫悟飯（青年期）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_025_001"]
+
+[character x= -250 y=-130-20 storage = "00366/heapup_p_02" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x=100 y=65 shape="001_03" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 40]
+[quake target =".bln" power = 3 time = 0.2]
+お父さん！！
+[p]
+
+
+*004
+//-------------------------------------------------------------------------------
+//  クリリン
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_025_001"]
+
+[character x = -210 y = -100 storage = "00412/idl_side_e_01" scale = 1.0 action = "fadein" time = 0.1]
+[flip target =".chara" h=1]
+
+[balloon x=100 y=50 shape="001_01" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 40]
+[quake target =".bln" power = 3 time = 0.2]
+悟空っ！！
+[p]
+
+
+*005
+//-------------------------------------------------------------------------------
+//  孫悟空（天使）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_025_001"]
+
+[character  x=195 y=205-10 storage = "99999/ring" scale = 0.9 action = "fadein" time = 0.1]
+
+[character x = 180 y = -210-10 storage = "00003/card_10" scale = 1.0 action = "fadein" time = 0.1]
+
+
+[balloon x = -115 y = 80 shape="001_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+あはー！ けっこう[r]
+かわっちまったかな…[r]
+みんな
+[p]
+
+
+[balloon x=-120 y=-110 shape="001_02" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+//[quake target =".bln" power = 3 time = 0.2]
+でも[r]
+元気だったか！？
+[p]
+
+
+*006
+//-------------------------------------------------------------------------------
+//  チチ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_025_001"]
+
+[character x=-220 y=-240 storage = "90003/chichi_02" scale = 1.1 action = "fadein" time = 0.1]
+
+[balloon x=100 y=60 shape="004_02" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 40]
+//[quake target =".bln" power = 3 time = 0.2]
+ご……[r]
+悟空さ…
+[p]
+
+
+*007
+//-------------------------------------------------------------------------------
+//  亀仙人
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_025_001"]
+
+[character x = -180 y = -100 storage = "00023/card_04" scale = 0.8 action = "fadein" time = 0.1]
+
+[balloon x=120 y=50 shape="001_02" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+//[quake target =".bln" power = 3 time = 0.2]
+よう[r]
+帰ってきたのう
+[p]
+
+
+*008
+//-------------------------------------------------------------------------------
+//  ブルマ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_025_001"]
+
+[character x = -200 y = -280-20 storage = "90003/bluma_majin" scale = 1.0 action = "fadein" time = 0.1]
+
+
+[balloon x=80 y=65 shape="001_03" scale = 0.65 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 44]
+//[quake target =".bln" power = 3 time = 0.2]
+孫くん…
+[p]
+
+
+*009
+//-------------------------------------------------------------------------------
+//  占いババ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_025_001"]
+
+[character x = -190 y = -80 storage = "90003/uranai_baba" scale = 1.4 action = "fadein" time = 0.1]
+
+[balloon x = 130 y = 50 shape="001_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+じゃあ[r]
+24時間じゃぞ[r]
+よいな 悟空
+[p]
+
+
+*010
+//-------------------------------------------------------------------------------
+//  孫悟空（天使）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_025_001"]
+
+[character  x=195 y=205-10 storage = "99999/ring" scale = 0.9 action = "fadein" time = 0.1]
+
+[character x = 180 y = -210-10 storage = "00003/card_10" scale = 1.0 action = "fadein" time = 0.1]
+
+
+[balloon x = -105 y = 50 shape="001_02" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+//[quake target =".bln" power = 3 time = 0.2]
+ありがとう[r]
+占いババ！！
+[p]
+
+//[stopbgm fadeout = 1.5]
+
+*011
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+//[bgm storage = "020"]	
+
+[se storage = "04"]
+[coma shape="N0003L" bg = "bg_025_003"]
+
+[balloon x=0 y=40 shape="003_01" scale = 1.3 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 17]
+//[quake target =".bln" power = 3 time = 0.2]
+悟空も帰ってきて[r]
+フルメンバーで挑む[r]
+天下一武道会…[r]
+　[r]
+まずは15歳以下の[r]
+チビッコたちが[r]
+優勝を競う少年の部が[r]
+始まった
+[p]
+
+
+*012
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+
+
+[se storage = "04"]
+[coma shape="N0003R" bg = "bg_025_004"]
+
+[character x = -240 y = -70 storage = "00225/card_03" scale = 0.75 action = "fadein" time = 0.1]
+
+[character x = 240 y = -80 storage = "00200/card_11" scale = 0.7 action = "fadein" time = 0.1]
+
+
+
+[balloon x= 0 y=0 shape="003_02" scale = 1.3 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 17]
+//[quake target =".bln" power = 3 time = 0.2]
+少年の部に出場した[r]
+トランクスと悟天は[r]
+どんどんと勝ち進み[r]
+当然のように[r]
+決勝戦は[r]
+ふたりの闘いに[r]なった…
+[p]
+
+
+*013
+//-------------------------------------------------------------------------------
+//  審判
+//-------------------------------------------------------------------------------
+[bgm storage = "020"]	
+
+[se storage = "39"]
+[coma shape="N0001R" bg = "bg_025_004"]
+
+[character x=210 y=-190 storage = "90003/shout_1" scale = 1.2 action = "fadein" time = 0.1]
+
+[balloon x = -105 y = 100 shape="005_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+さあー！！[r]
+いよいよ少年の部の[r]
+決勝戦です！！
+[p]
+
+
+[balloon x=-120 y=-110 shape="005_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+はたして優勝は[r]
+トランクスくんか[r]
+孫悟天くんか！！
+[p]
+
+
+*014
+//-------------------------------------------------------------------------------
+//  トランクス（幼年期）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_025_004"]
+
+[character x=230 y=-110 storage = "00200/idl_side_e_01" scale = 1.1 action = "fadein" time = 0.1]
+
+//[character x=200 y=-95 storage = "00225/idl_side_p_01" scale = 1.1 action = "fade:60" time = 0.1]
+//[flip target =".chara" h=1]
+
+[balloon x = -105 y = 50 shape="001_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+言っとくが[r]
+手かげんはしないぞ[r]
+悟天……
+[p]
+
+
+*015
+//-------------------------------------------------------------------------------
+//  孫悟天（幼年期）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_025_004"]
+
+[character x=-200 y=-95-20 storage = "00225/idl_side_p_01" scale = 1.1 action = "fadein" time = 0.1]
+
+
+
+[balloon x=100 y=50 shape="001_02" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 40]
+//[quake target =".bln" power = 3 time = 0.2]
+うん…[r]
+ボクもだよ
+[p]
+
+
+*016
+//-------------------------------------------------------------------------------
+//  トランクス（幼年期）
+//-------------------------------------------------------------------------------
+[se storage = "3022"]
+[coma shape="N0002R" bg = "bg_025_004"]
+
+[character x=180 y=-110 storage = "00200/card_01" scale = 0.9 action = "fadein" time = 0.1]
+
+[balloon x = -170 y = 60 shape="006_01" scale = 0.7 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 40]
+[quake target =".bln" power = 7 time = 0.2]
+よしっ！[r]
+いくぞ！！
+[p]
+
+
+
+//-------------------------------------------------------------------------------
+[stopbgm]

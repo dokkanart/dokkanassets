@@ -1,0 +1,107 @@
+
+*start|スタート
+
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "008"]
+
+//-------------------------------------------------------------------------------
+//  ラディッツ
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0001L" bg = "bg_027_001"]
+
+[character x=-150 y=-90 storage = "00014/atc_sp01_p_01" scale = 1.1 action = "fadein" time = 0.1]
+
+[balloon id="radhi1" x=150 y=120 shape="002_03" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+…きさまら…ここへ[r]
+なにしに来た？[r]
+[p]
+
+
+*002
+//-------------------------------------------------------------------------------
+//  悟空
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_027_001"]
+
+[character x=195 y=-110 storage = "00003/heapup_e_01" scale = 1.8 action = "fadein" time = 0.1]
+
+[balloon x=-130 y=120 shape="007_01" scale = 0.8 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+[quake target =".bln" power = 7 time = 0.2]
+決まってるだろ！
+[p]
+
+[balloon x=-140 y=-120 shape="007_02" scale = 0.95 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+[quake target =".bln" power = 7 time = 0.2]
+オラの子をとり返しに[r]
+きたんだ！
+[p]
+
+*003
+//-------------------------------------------------------------------------------
+//  ラディッツ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_027_001"]
+
+[character x=-190 y=-100 storage = "00014/idl_side_p_02" scale = 1.5 action = "fadein" time = 0.1]
+
+[balloon id="radhi1" x=150 y=20 shape="002_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+兄に逆らうつもり[r]
+なんだな？
+[p]
+
+
+*004
+//-------------------------------------------------------------------------------
+//  悟空
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_027_001"]
+
+[character x=195 y=-110 storage = "00003/heapup_e_01" scale = 1.8 action = "fadein" time = 0.1]
+
+[balloon x=-130 y=50 shape="001_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 30]
+オラにはアニキなんて[r]
+いねえさ！
+[p]
+
+*005
+//-------------------------------------------------------------------------------
+//  ラディッツ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002L" bg = "bg_027_001"]
+[lwfobject id="syuutyuu1" storage="syucyu:ef_001" mask="inside" loop=1 priority=10 scale=1.2]
+[move target = "syuutyuu1" x = -120 y = -30]
+
+[character x=-200 y=-120 storage = "00014/heapup_p_01" scale = 1.8 action = "fadein" time = 0.1]
+
+[balloon id="radhi1" x=140 y=120 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 30]
+カカロット…きさまは[r]
+わが一族の恥だ！！
+[p]
+
+[balloon id="radhi1" x=170 y=-110 shape="006_02" scale = 0.9 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 34]
+[quake target =".bln" power = 7 time = 0.2]
+死んでしまえ！！
+[p]
+
+[stopbgm]

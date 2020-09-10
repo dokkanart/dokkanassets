@@ -1,0 +1,188 @@
+*start|スタート
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "042"]
+
+*000
+//-------------------------------------------------------------------------------
+//  
+//-------------------------------------------------------------------------------
+[se storage = "3017"]
+[coma shape="S0001" bg = "bg_000_003"]
+[quake target =".coma" power = 5 time = 0.7]
+
+
+
+[lwfobject id = "kaki1" storage="kakimoji:ef_019" x=0 y=230 scale = 3.5 action = "fadein" time = 0.1]
+[quake target = "kaki1" power = 15 time = 1]
+
+
+[character x = 0 y = 0 storage = "99999/minus_ball" scale = 1.5 action = "fade:100" time = 0.1 mask="inside"]
+
+[character x = 0 y = 0 storage = "99999/gekirin" scale = 2.0 action = "fade:70" time = 0.1 mask="inside"]
+
+[balloon x=0 y=0 shape="008_02" scale = 50 action = "fadein" time = 0.5]
+
+[wait_anim target=".bln"]
+
+[fadeout target = ".bln" time = 1.5]
+
+[wait time = 0.3]
+
+[fadeout target = "kaki2" time = 0.8]
+
+//[fadeout target = ".chara" time = 1.2]
+
+[wait time = 2.0]
+
+[balloon x = 0 y = 0 shape="002_02" scale = 0 action = "fadein" time = 0.1]
+[p]
+
+
+
+*001
+//-------------------------------------------------------------------------------
+//  フリーザ（第一形態）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_003"]
+
+[character x = -165 y = -140 storage = "00005/card_07" scale = 1.0 action = "fadein" time = 0.1]
+
+
+
+[balloon x = 140 y = 115 shape="002_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+ほっほっほ…[r]
+これでスッキリしました
+[p]
+
+
+
+*002
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0004R" bg = "bg_000_003"]
+
+[character x = 0 y = 50 storage = "99999/rock_02" scale = 1.1 angle = 90 action = "fadein" time = 0.1]
+//[spin target = ".chara" velocity = 5]
+
+[balloon x= 0 y=-30 shape="003_01" scale = 1.4 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 16]
+//[quake target =".bln" power = 3 time = 0.2]
+サイヤ人絶滅…[r]
+　[r]
+フリーザの謀略を[r]
+阻止するため[r]
+果敢に挑む[r]
+バーダックだったが[r]
+惑星ベジータと共に[r]
+命を落としてしまう…
+[p]
+
+//フェードアウト（フェードアウトするコマ）
+
+[balloon id = "z1" x=0 y=0 shape="008_02" scale = 50.0 action = "fadein" time = 0.5]
+[paint target="z1" color="#070B19"]
+
+
+
+[wait time = 0.7] 
+
+
+*003
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="S0001" bg = "bg_000_003"]
+
+
+
+
+//フェードイン（フェードインするコマ）
+
+[balloon id = "z2" x=0 y=0 shape="008_02" scale = 50]
+[paint target="z2" color="#070B19"]
+[wait time = 1.5]
+//[fadeout target = ".bln" time = 2]
+//[wait_anim target=".bln"]
+
+
+[balloon id = "n2" x=0 y=120 shape="009_17" scale = 1.0 priority=250]
+[font color="#FFFFFF"]
+[font size = 30]
+惑星ベジータの爆発に[r]
+巻き込まれることなく[r]
+生き延びたサイヤ人は[r]
+ごくわずか…[r]
+　[r]
+　[r]
+　[r]
+　[r]
+　[r]
+王子のベジータ…[r]
+　[r]
+追放されたサイヤ人[r]ブロリー…[r]
+　[r]
+地球へ送り込まれた[r]
+カカロット…[r]
+　[r]
+　[r]
+　[r]
+はたして[r]彼らの運命は……！？
+
+[balloon id = "z3" x=0 y=0 shape="008_02" scale = 50 priority=300]
+[paint target="z3" color="#070B19"]
+
+
+//ベジータ
+//[se storage = "44"]
+[character id = "1" x= -235 y= 200 storage = "01057/card_01" scale = 0.6 action = "fadein" time = 1.5 priority=350]
+[wait time = 1.0]
+
+
+
+//ブロリー
+//[se storage = "44"]
+[character id = "3" x=0 y= -410 storage = "01058/card_01" scale = 0.6 action = "fadein" time = 1.5 priority=350]
+[wait time = 1.0]
+
+
+
+//カカロット
+//[se storage = "44"]
+[character x =230 y = 330 storage = "90003/kakarot" scale = 0.7 action = "fadein" time = 1.5 priority=350]
+[wait time = 1.0]
+
+
+
+[fadeout target = "z3" time = 1.5]
+
+
+
+
+[wait_anim target="z3"]
+
+
+
+
+
+//空のフキダシ
+[balloon x = 0 y = 0 shape="001_01" scale = 0]
+[p]
+
+
+//終わりのフェードアウト
+[stopbgm fadeout = 1.5]
+[balloon x=0 y=0 shape="008_03" scale = 50.0 action = "fadein" time = 0.5 priority=400]
+[wait time = 2.5]
+
+//-------------------------------------------------------------------------------
+[stopbgm]
