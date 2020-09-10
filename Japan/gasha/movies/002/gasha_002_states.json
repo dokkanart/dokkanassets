@@ -1,0 +1,603 @@
+{
+  "lwf_file": "outgame/effect/anim_10002/anim_10002.lwf",
+  "states": {
+    "start": {
+      "method": "sequence",
+      "movie": "ef_100",
+      "replace": [
+        {
+          "if": [
+            "!",
+            "point_gasha"
+          ],
+          "parts": {
+            "t100": "outgame/effect/anim_10002/bg_sora_red.png",
+            "t101": "outgame/effect/anim_10002/bg_sora_red02.png",
+            "t102": "outgame/effect/anim_10002/bg_kumo2_red.png",
+            "t103": "outgame/effect/anim_10002/bg_kumo_red_01.png",
+            "t104": "outgame/effect/anim_10002/bg_kumo_red_02.png",
+            "t105": "outgame/effect/anim_10002/bg_kumo_red_03.png",
+            "t106": "outgame/effect/anim_10002/ob_inseki_red.png",
+            "t107": "outgame/effect/anim_10002/bg_inseki_ef_01_red.png",
+            "t108": "outgame/effect/anim_10002/bg_inseki_ef_02_red.png",
+            "t109": "outgame/effect/anim_10002/bg_inseki_ef_03_red.png"
+          }
+        }
+      ],
+      "actions": [
+        {
+          "time": 0,
+          "se": 205
+        }
+      ]
+    },
+    "仲間_ベジータ": {
+      "method": "join",
+      "members": [
+        {
+          "rate": 100,
+          "members": [
+            "ベジータ"
+          ]
+        },
+        {
+          "rate": 50,
+          "members": [
+            "孫悟飯",
+            "ピッコロ",
+            "孫悟天",
+            "トランクス"
+          ]
+        },
+        {
+          "rate": 50,
+          "members": [
+            "天津飯",
+            "餃子",
+            "ヤムチャ"
+          ]
+        },
+        {
+          "rate": 50,
+          "members": [
+            "クリリン",
+            "魔人ブウ"
+          ]
+        }
+      ]
+    },
+    "仲間_クリリン": {
+      "method": "join",
+      "members": [
+        {
+          "rate": 100,
+          "members": [
+            "クリリン"
+          ]
+        }
+      ]
+    },
+    "仲間_孫悟飯&ピッコロ": {
+      "method": "join",
+      "members": [
+        {
+          "rate": 100,
+          "members": [
+            "孫悟飯"
+          ]
+        },
+        {
+          "rate": 100,
+          "members": [
+            "ピッコロ"
+          ]
+        }
+      ]
+    },
+    "仲間_孫悟天&トランクス": {
+      "method": "join",
+      "members": [
+        {
+          "rate": 100,
+          "members": [
+            "孫悟天"
+          ]
+        },
+        {
+          "rate": 100,
+          "members": [
+            "トランクス"
+          ]
+        }
+      ]
+    },
+    "仲間_天津飯&餃子": {
+      "method": "join",
+      "members": [
+        {
+          "rate": 100,
+          "members": [
+            "天津飯"
+          ]
+        },
+        {
+          "rate": 100,
+          "members": [
+            "餃子"
+          ]
+        }
+      ]
+    },
+    "仲間_天津飯&餃子&ヤムチャ": {
+      "method": "join",
+      "members": [
+        {
+          "rate": 100,
+          "members": [
+            "天津飯"
+          ]
+        },
+        {
+          "rate": 100,
+          "members": [
+            "餃子"
+          ]
+        },
+        {
+          "rate": 100,
+          "members": [
+            "ヤムチャ"
+          ]
+        }
+      ]
+    },
+    "仲間_魔人ブウ（サタン乗せ）": {
+      "method": "join",
+      "members": [
+        {
+          "rate": 100,
+          "members": [
+            "魔人ブウ（サタン乗せ）"
+          ]
+        }
+      ]
+    },
+    "仲間なし": {
+      "method": "join",
+      "members": null
+    },
+    "仲間1人": {
+      "method": "join",
+      "members": [
+        {
+          "rate": 100,
+          "members": [
+            "ベジータ",
+            "孫悟飯",
+            "ピッコロ",
+            "孫悟天",
+            "トランクス",
+            "天津飯",
+            "餃子",
+            "ヤムチャ",
+            "魔人ブウ"
+          ]
+        }
+      ]
+    },
+    "仲間2人": {
+      "method": "join",
+      "members": [
+        {
+          "rate": 100,
+          "members": [
+            "ベジータ",
+            "孫悟飯",
+            "ピッコロ",
+            "魔人ブウ",
+            "孫悟天",
+            "トランクス"
+          ]
+        },
+        {
+          "rate": 100,
+          "members": [
+            "天津飯",
+            "餃子",
+            "ヤムチャ",
+            "クリリン"
+          ]
+        }
+      ]
+    },
+    "仲間3人": {
+      "method": "join",
+      "members": [
+        {
+          "rate": 100,
+          "members": [
+            "ベジータ",
+            "孫悟飯",
+            "ピッコロ"
+          ]
+        },
+        {
+          "rate": 100,
+          "members": [
+            "クリリン",
+            "孫悟天",
+            "トランクス"
+          ]
+        },
+        {
+          "rate": 100,
+          "members": [
+            "魔人ブウ",
+            "天津飯",
+            "餃子"
+          ]
+        }
+      ]
+    },
+    "仲間4人": {
+      "method": "join",
+      "members": [
+        {
+          "rate": 100,
+          "members": [
+            "ベジータ",
+            "クリリン",
+            "魔人ブウ"
+          ]
+        },
+        {
+          "rate": 100,
+          "members": [
+            "孫悟飯",
+            "ピッコロ"
+          ]
+        },
+        {
+          "rate": 100,
+          "members": [
+            "孫悟天",
+            "トランクス"
+          ]
+        },
+        {
+          "rate": 100,
+          "members": [
+            "天津飯",
+            "餃子",
+            "ヤムチャ"
+          ]
+        }
+      ]
+    },
+    "構え": {
+      "method": "nop"
+    },
+    "溜め開始_黒髪": {
+      "method": "nop"
+    },
+    "溜め開始_超サイヤ人": {
+      "method": "nop"
+    },
+    "溜め完了_黒髪": {
+      "method": "nop"
+    },
+    "溜め完了_黒髪_虹文字": {
+      "method": "nop"
+    },
+    "溜め完了_超サイヤ人": {
+      "method": "nop"
+    },
+    "溜め完了_超サイヤ人_虹文字": {
+      "method": "nop"
+    },
+    "かめはめ波_黒髪": {
+      "method": "kamehameha"
+    },
+    "かめはめ波_超サイヤ人": {
+      "method": "kamehameha"
+    },
+    "かめはめ波_超ベジット": {
+      "method": "kamehameha"
+    },
+    "かめはめ波_ベジットブルー": {
+      "method": "kamehameha"
+    },
+    "ステップアップ無し": {
+      "method": "sequence",
+      "movie": "ef_600",
+      "replace": [
+        {
+          "if": [
+            "!",
+            "point_gasha"
+          ],
+          "parts": {
+            "t106": "outgame/effect/anim_10002/ob_inseki_red.png"
+          }
+        }
+      ],
+      "actions": [
+        {
+          "time": 1.25,
+          "se": 208
+        },
+        {
+          "time": 1.5,
+          "se": 205
+        },
+        {
+          "time": 2.9,
+          "se": 211
+        }
+      ]
+    },
+    "ステップアップ1": {
+      "method": "sequence",
+      "movie": "ef_601",
+      "replace": [
+        {
+          "if": [
+            "!",
+            "point_gasha"
+          ],
+          "parts": {
+            "t106": "outgame/effect/anim_10002/ob_inseki_red.png"
+          }
+        }
+      ],
+      "actions": [
+        {
+          "time": 0.1,
+          "se": 50
+        },
+        {
+          "time": 1.85,
+          "se": 208
+        },
+        {
+          "time": 2.1,
+          "se": 205
+        },
+        {
+          "time": 3.5,
+          "se": 211
+        }
+      ]
+    },
+    "ステップアップ2": {
+      "method": "sequence",
+      "movie": "ef_602",
+      "replace": [
+        {
+          "if": [
+            "!",
+            "point_gasha"
+          ],
+          "parts": {
+            "t106": "outgame/effect/anim_10002/ob_inseki_red.png"
+          }
+        }
+      ],
+      "actions": [
+        {
+          "time": 0.1,
+          "se": 50
+        },
+        {
+          "time": 1.65,
+          "se": 50
+        },
+        {
+          "time": 4.0,
+          "se": 208
+        },
+        {
+          "time": 4.25,
+          "se": 205
+        },
+        {
+          "time": 5.65,
+          "se": 211
+        }
+      ]
+    },
+    "ステップアップ3_超サイヤ人3": {
+      "method": "sequence",
+      "movie": "ef_603",
+      "replace": [
+        {
+          "if": [
+            "!",
+            "point_gasha"
+          ],
+          "parts": {
+            "t106": "outgame/effect/anim_10002/ob_inseki_red.png"
+          }
+        }
+      ],
+      "actions": [
+        {
+          "time": 0.1,
+          "se": 50
+        },
+        {
+          "time": 1.65,
+          "se": 50
+        },
+        {
+          "time": 3.65,
+          "se": 50
+        },
+        {
+          "time": 5.65,
+          "se": 208
+        },
+        {
+          "time": 5.9,
+          "se": 205
+        },
+        {
+          "time": 7.3,
+          "se": 211
+        }
+      ]
+    },
+    "ステップアップ3_超サイヤ人ゴッド": {
+      "method": "sequence",
+      "movie": "ef_604",
+      "replace": [
+        {
+          "if": [
+            "!",
+            "point_gasha"
+          ],
+          "parts": {
+            "t106": "outgame/effect/anim_10002/ob_inseki_red.png"
+          }
+        }
+      ],
+      "actions": [
+        {
+          "time": 0.1,
+          "se": 50
+        },
+        {
+          "time": 1.65,
+          "se": 50
+        },
+        {
+          "time": 3.65,
+          "se": 50
+        },
+        {
+          "time": 5.15,
+          "se": 50
+        },
+        {
+          "time": 7.4,
+          "se": 208
+        },
+        {
+          "time": 7.65,
+          "se": 205
+        },
+        {
+          "time": 9.0,
+          "se": 211
+        }
+      ]
+    },
+    "ステップアップ3_超サイヤ人ゴッドSS": {
+      "method": "sequence",
+      "movie": "ef_605",
+      "replace": [
+        {
+          "if": [
+            "!",
+            "point_gasha"
+          ],
+          "parts": {
+            "t106": "outgame/effect/anim_10002/ob_inseki_red.png"
+          }
+        }
+      ],
+      "actions": [
+        {
+          "time": 0.1,
+          "se": 50
+        },
+        {
+          "time": 1.65,
+          "se": 50
+        },
+        {
+          "time": 3.65,
+          "se": 50
+        },
+        {
+          "time": 5.15,
+          "se": 50
+        },
+        {
+          "time": 7.4,
+          "se": 208
+        },
+        {
+          "time": 7.65,
+          "se": 205
+        },
+        {
+          "time": 9.0,
+          "se": 211
+        }
+      ]
+    },
+    "画面割れ_STEP1_オレはおこったぞー": {
+      "method": "sequence",
+      "movie": "ef_700",
+      "actions": [
+        {
+          "time": 0.1,
+          "se": 1040
+        },
+        {
+          "time": 0.6,
+          "se": 12
+        }
+      ]
+    },
+    "画面割れ_STEP1_バイバイみんな": {
+      "method": "sequence",
+      "movie": "ef_701",
+      "actions": [
+        {
+          "time": 0.1,
+          "se": 1040
+        },
+        {
+          "time": 0.6,
+          "se": 12
+        }
+      ]
+    },
+    "画面割れ_STEP1_サンキュードラゴンボール": {
+      "method": "sequence",
+      "movie": "ef_702",
+      "actions": [
+        {
+          "time": 0.1,
+          "se": 1040
+        },
+        {
+          "time": 0.6,
+          "se": 12
+        }
+      ]
+    },
+    "画面割れ_STEP2_ギャルのパンティおくれー": {
+      "method": "sequence",
+      "movie": "ef_800",
+      "actions": [
+        {
+          "time": 0.1,
+          "se": 1040
+        },
+        {
+          "time": 0.6,
+          "se": 12
+        }
+      ]
+    },
+    "スカウター": {
+      "method": "scouter"
+    },
+    "finish": {
+      "method": "finish"
+    }
+  }
+}

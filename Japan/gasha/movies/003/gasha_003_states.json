@@ -1,0 +1,816 @@
+{
+  "lwf_file": "outgame/effect/anim_10002/anim_10002.lwf",
+  "states": {
+    "start": {
+      "method": "nop"
+    },
+    "友情ガシャ背景": {
+      "method": "sequence",
+      "movie": "ef_100"
+    },
+    "龍石ガシャ背景": {
+      "method": "sequence",
+      "movie": "ef_101"
+    },
+    "プレミアム背景": {
+      "method": "sequence",
+      "movie": "ef_102"
+    },
+    "仲間_分岐": {
+      "method": "nop"
+    },
+    "仲間_ビルスandウイス": {
+      "method": "join",
+      "movie": [
+        null
+      ],
+      "members": [
+        {
+          "rate": 100,
+          "members": [
+            "ビルス"
+          ]
+        },
+        {
+          "rate": 100,
+          "members": [
+            "ウイス"
+          ]
+        },
+        {
+          "rate": 50,
+          "members": [
+            "ベジータ",
+            "クリリン",
+            "魔神ブウ",
+            "孫悟飯",
+            "ピッコロ",
+            "人造人間17号",
+            "人造人間18号"
+          ]
+        },
+        {
+          "rate": 50,
+          "members": [
+            "孫悟天",
+            "トランクス",
+            "天津飯",
+            "餃子",
+            "ヤムチャ",
+            "未来トランクス"
+          ]
+        }
+      ]
+    },
+    "仲間_ビルスorウイス": {
+      "method": "join",
+      "members": [
+        {
+          "rate": 100,
+          "members": [
+            "ビルス",
+            "ウイス"
+          ]
+        },
+        {
+          "rate": 25,
+          "members": [
+            "ベジータ",
+            "クリリン",
+            "人造人間17号",
+            "人造人間18号"
+          ]
+        },
+        {
+          "rate": 25,
+          "members": [
+            "孫悟天",
+            "トランクス",
+            "天津飯",
+            "餃子",
+            "ヤムチャ",
+            "未来トランクス"
+          ]
+        },
+        {
+          "rate": 25,
+          "members": [
+            "魔人ブウ",
+            "孫悟飯",
+            "ピッコロ"
+          ]
+        }
+      ]
+    },
+    "仲間_未来トランクスandマイ": {
+      "method": "join",
+      "members": [
+        {
+          "rate": 100,
+          "members": [
+            "未来トランクス&マイ"
+          ]
+        },
+        {
+          "rate": 50,
+          "members": [
+            "ビルス",
+            "ウイス",
+            "ベジータ",
+            "クリリン",
+            "人造人間17号",
+            "人造人間18号"
+          ]
+        },
+        {
+          "rate": 50,
+          "members": [
+            "孫悟天",
+            "天津飯",
+            "餃子",
+            "ヤムチャ"
+          ]
+        },
+        {
+          "rate": 50,
+          "members": [
+            "魔人ブウ",
+            "孫悟飯",
+            "ピッコロ"
+          ]
+        }
+      ]
+    },
+    "仲間_17号and18号": {
+      "method": "join",
+      "members": [
+        {
+          "rate": 100,
+          "members": [
+            "人造人間17号"
+          ]
+        },
+        {
+          "rate": 100,
+          "members": [
+            "人造人間18号"
+          ]
+        },
+        {
+          "rate": 50,
+          "members": [
+            "ビルス",
+            "ウイス",
+            "ベジータ",
+            "孫悟天",
+            "天津飯",
+            "餃子",
+            "ヤムチャ"
+          ]
+        },
+        {
+          "rate": 50,
+          "members": [
+            "魔人ブウ",
+            "孫悟飯",
+            "ピッコロ",
+            "未来トランクス"
+          ]
+        }
+      ]
+    },
+    "仲間_クリリンand18号": {
+      "method": "join",
+      "members": [
+        {
+          "rate": 100,
+          "members": [
+            "クリリン"
+          ]
+        },
+        {
+          "rate": 100,
+          "members": [
+            "人造人間18号"
+          ]
+        },
+        {
+          "rate": 50,
+          "members": [
+            "ビルス",
+            "ウイス",
+            "ベジータ",
+            "孫悟天",
+            "天津飯",
+            "餃子",
+            "ヤムチャ"
+          ]
+        },
+        {
+          "rate": 50,
+          "members": [
+            "魔人ブウ",
+            "孫悟飯",
+            "ピッコロ",
+            "未来トランクス"
+          ]
+        }
+      ]
+    },
+    "仲間_ベジータ": {
+      "method": "join",
+      "members": [
+        {
+          "rate": 100,
+          "members": [
+            "ベジータ"
+          ]
+        },
+        {
+          "rate": 50,
+          "members": [
+            "孫悟飯",
+            "ピッコロ",
+            "孫悟天",
+            "トランクス",
+            "ビルス",
+            "ウイス",
+            "未来トランクス"
+          ]
+        },
+        {
+          "rate": 50,
+          "members": [
+            "天津飯",
+            "餃子",
+            "ヤムチャ"
+          ]
+        },
+        {
+          "rate": 50,
+          "members": [
+            "クリリン",
+            "魔人ブウ",
+            "人造人間17号",
+            "人造人間18号"
+          ]
+        }
+      ]
+    },
+    "仲間_クリリン": {
+      "method": "join",
+      "members": [
+        {
+          "rate": 100,
+          "members": [
+            "クリリン"
+          ]
+        }
+      ]
+    },
+    "仲間_孫悟飯andピッコロ": {
+      "method": "join",
+      "members": [
+        {
+          "rate": 100,
+          "members": [
+            "孫悟飯"
+          ]
+        },
+        {
+          "rate": 100,
+          "members": [
+            "ピッコロ"
+          ]
+        }
+      ]
+    },
+    "仲間_孫悟天andトランクス": {
+      "method": "join",
+      "members": [
+        {
+          "rate": 100,
+          "members": [
+            "孫悟天"
+          ]
+        },
+        {
+          "rate": 100,
+          "members": [
+            "トランクス"
+          ]
+        }
+      ]
+    },
+    "仲間_天津飯and餃子": {
+      "method": "join",
+      "members": [
+        {
+          "rate": 100,
+          "members": [
+            "天津飯"
+          ]
+        },
+        {
+          "rate": 100,
+          "members": [
+            "餃子"
+          ]
+        }
+      ]
+    },
+    "仲間_天津飯and餃子andヤムチャ": {
+      "method": "join",
+      "members": [
+        {
+          "rate": 100,
+          "members": [
+            "天津飯"
+          ]
+        },
+        {
+          "rate": 100,
+          "members": [
+            "餃子"
+          ]
+        },
+        {
+          "rate": 100,
+          "members": [
+            "ヤムチャ"
+          ]
+        }
+      ]
+    },
+    "仲間_魔人ブウandサタン": {
+      "method": "join",
+      "members": [
+        {
+          "rate": 100,
+          "members": [
+            "魔人ブウ（サタン乗せ）"
+          ]
+        }
+      ]
+    },
+    "仲間なし": {
+      "method": "join",
+      "members": null
+    },
+    "仲間1人": {
+      "method": "join",
+      "members": [
+        {
+          "rate": 100,
+          "members": [
+            "ベジータ",
+            "孫悟飯",
+            "ピッコロ",
+            "孫悟天",
+            "トランクス",
+            "天津飯",
+            "餃子",
+            "ヤムチャ",
+            "魔人ブウ",
+            "未来トランクス",
+            "人造人間17号",
+            "人造人間18号"
+          ]
+        }
+      ]
+    },
+    "仲間2人": {
+      "method": "join",
+      "members": [
+        {
+          "rate": 100,
+          "members": [
+            "ベジータ",
+            "孫悟飯",
+            "ピッコロ",
+            "魔人ブウ",
+            "孫悟天",
+            "トランクス",
+            "未来トランクス"
+          ]
+        },
+        {
+          "rate": 100,
+          "members": [
+            "天津飯",
+            "餃子",
+            "ヤムチャ",
+            "クリリン",
+            "人造人間17号",
+            "人造人間18号"
+          ]
+        }
+      ]
+    },
+    "仲間3人": {
+      "method": "join",
+      "members": [
+        {
+          "rate": 100,
+          "members": [
+            "ベジータ",
+            "孫悟飯",
+            "ピッコロ",
+            "ビルス",
+            "ウイス"
+          ]
+        },
+        {
+          "rate": 100,
+          "members": [
+            "クリリン",
+            "孫悟天",
+            "トランクス",
+            "人造人間17号",
+            "人造人間18号",
+            "未来トランクス"
+          ]
+        },
+        {
+          "rate": 100,
+          "members": [
+            "魔人ブウ",
+            "天津飯",
+            "餃子",
+            "ヤムチャ"
+          ]
+        }
+      ]
+    },
+    "仲間4人": {
+      "method": "join",
+      "members": [
+        {
+          "rate": 100,
+          "members": [
+            "ベジータ",
+            "クリリン",
+            "魔人ブウ",
+            "人造人間17号",
+            "人造人間18号"
+          ]
+        },
+        {
+          "rate": 100,
+          "members": [
+            "孫悟飯",
+            "ピッコロ",
+            "ビルス",
+            "ウイス"
+          ]
+        },
+        {
+          "rate": 100,
+          "members": [
+            "孫悟天",
+            "トランクス",
+            "未来トランクス"
+          ]
+        },
+        {
+          "rate": 100,
+          "members": [
+            "天津飯",
+            "餃子",
+            "ヤムチャ"
+          ]
+        }
+      ]
+    },
+    "構え": {
+      "method": "nop"
+    },
+    "構え_ひっぱれ": {
+      "method": "nop"
+    },
+    "構え_よこせ": {
+      "method": "nop"
+    },
+    "全王_抽選": {
+      "method": "nop"
+    },
+    "全王": {
+      "method": "nop"
+    },
+    "溜め開始_黒髪": {
+      "method": "nop"
+    },
+    "溜め開始_超サイヤ人": {
+      "method": "nop"
+    },
+    "溜め完了_黒髪": {
+      "method": "nop"
+    },
+    "溜め完了_黒髪_虹文字": {
+      "method": "nop"
+    },
+    "溜め完了_超サイヤ人": {
+      "method": "nop"
+    },
+    "溜め完了_超サイヤ人_虹文字": {
+      "method": "nop"
+    },
+    "溜め完了_はやく": {
+      "method": "nop"
+    },
+    "かめはめ波_黒髪": {
+      "method": "kamehameha"
+    },
+    "かめはめ波_超サイヤ人": {
+      "method": "kamehameha"
+    },
+    "かめはめ波_超ベジット": {
+      "method": "kamehameha"
+    },
+    "かめはめ波_ベジットブルー": {
+      "method": "kamehameha"
+    },
+    "ステップアップ_無し": {
+      "method": "sequence",
+      "movie": "ef_600",
+      "replace": [
+        {
+          "if": "@プレミアム背景",
+          "parts": {
+            "t106": "outgame/effect/anim_10002/ob_inseki_premium.png"
+          }
+        },
+        {
+          "if": [
+            "!",
+            "point_gasha"
+          ],
+          "parts": {
+            "t106": "outgame/effect/anim_10002/ob_inseki_red.png"
+          }
+        }
+      ]
+    },
+    "ステップアップ_無し_long": {
+      "method": "sequence",
+      "movie": "ef_609",
+      "replace": [
+        {
+          "if": "@プレミアム背景",
+          "parts": {
+            "t106": "outgame/effect/anim_10002/ob_inseki_premium.png"
+          }
+        },
+        {
+          "if": [
+            "!",
+            "point_gasha"
+          ],
+          "parts": {
+            "t106": "outgame/effect/anim_10002/ob_inseki_red.png"
+          }
+        }
+      ]
+    },
+    "ステップアップ_1": {
+      "method": "sequence",
+      "movie": "ef_601",
+      "replace": [
+        {
+          "if": "@プレミアム背景",
+          "parts": {
+            "t106": "outgame/effect/anim_10002/ob_inseki_premium.png"
+          }
+        },
+        {
+          "if": [
+            "!",
+            "point_gasha"
+          ],
+          "parts": {
+            "t106": "outgame/effect/anim_10002/ob_inseki_red.png"
+          }
+        }
+      ]
+    },
+    "ステップアップ_1_long": {
+      "method": "sequence",
+      "movie": "ef_610",
+      "replace": [
+        {
+          "if": "@プレミアム背景",
+          "parts": {
+            "t106": "outgame/effect/anim_10002/ob_inseki_premium.png"
+          }
+        },
+        {
+          "if": [
+            "!",
+            "point_gasha"
+          ],
+          "parts": {
+            "t106": "outgame/effect/anim_10002/ob_inseki_red.png"
+          }
+        }
+      ]
+    },
+    "ステップアップ_1_2": {
+      "method": "sequence",
+      "movie": "ef_602",
+      "replace": [
+        {
+          "if": "@プレミアム背景",
+          "parts": {
+            "t106": "outgame/effect/anim_10002/ob_inseki_premium.png"
+          }
+        },
+        {
+          "if": [
+            "!",
+            "point_gasha"
+          ],
+          "parts": {
+            "t106": "outgame/effect/anim_10002/ob_inseki_red.png"
+          }
+        }
+      ]
+    },
+    "ステップアップ_1_2_long": {
+      "method": "sequence",
+      "movie": "ef_611",
+      "replace": [
+        {
+          "if": "@プレミアム背景",
+          "parts": {
+            "t106": "outgame/effect/anim_10002/ob_inseki_premium.png"
+          }
+        },
+        {
+          "if": [
+            "!",
+            "point_gasha"
+          ],
+          "parts": {
+            "t106": "outgame/effect/anim_10002/ob_inseki_red.png"
+          }
+        }
+      ]
+    },
+    "ステップアップ_1_2_3": {
+      "method": "sequence",
+      "movie": "ef_603",
+      "replace": [
+        {
+          "if": "@プレミアム背景",
+          "parts": {
+            "t106": "outgame/effect/anim_10002/ob_inseki_premium.png"
+          }
+        },
+        {
+          "if": [
+            "!",
+            "point_gasha"
+          ],
+          "parts": {
+            "t106": "outgame/effect/anim_10002/ob_inseki_red.png"
+          }
+        }
+      ]
+    },
+    "ステップアップ_1_2_3_god": {
+      "method": "sequence",
+      "movie": "ef_604",
+      "replace": [
+        {
+          "if": "@プレミアム背景",
+          "parts": {
+            "t106": "outgame/effect/anim_10002/ob_inseki_premium.png"
+          }
+        },
+        {
+          "if": [
+            "!",
+            "point_gasha"
+          ],
+          "parts": {
+            "t106": "outgame/effect/anim_10002/ob_inseki_red.png"
+          }
+        }
+      ]
+    },
+    "ステップアップ_1ex": {
+      "method": "sequence",
+      "movie": "ef_606",
+      "replace": [
+        {
+          "if": "@プレミアム背景",
+          "parts": {
+            "t106": "outgame/effect/anim_10002/ob_inseki_premium.png"
+          }
+        },
+        {
+          "if": [
+            "!",
+            "point_gasha"
+          ],
+          "parts": {
+            "t106": "outgame/effect/anim_10002/ob_inseki_red.png"
+          }
+        }
+      ]
+    },
+    "ステップアップ_1_2ex": {
+      "method": "sequence",
+      "movie": "ef_607",
+      "replace": [
+        {
+          "if": "@プレミアム背景",
+          "parts": {
+            "t106": "outgame/effect/anim_10002/ob_inseki_premium.png"
+          }
+        },
+        {
+          "if": [
+            "!",
+            "point_gasha"
+          ],
+          "parts": {
+            "t106": "outgame/effect/anim_10002/ob_inseki_red.png"
+          }
+        }
+      ]
+    },
+    "ステップアップ_1_2_3ex": {
+      "method": "sequence",
+      "movie": "ef_608",
+      "replace": [
+        {
+          "if": "@プレミアム背景",
+          "parts": {
+            "t106": "outgame/effect/anim_10002/ob_inseki_premium.png"
+          }
+        },
+        {
+          "if": [
+            "!",
+            "point_gasha"
+          ],
+          "parts": {
+            "t106": "outgame/effect/anim_10002/ob_inseki_red.png"
+          }
+        }
+      ]
+    },
+    "ステップアップ_ベジット": {
+      "method": "sequence",
+      "movie": "ef_612",
+      "replace": [
+        {
+          "if": "@プレミアム背景",
+          "parts": {
+            "t106": "outgame/effect/anim_10002/ob_inseki_premium.png"
+          }
+        },
+        {
+          "if": [
+            "!",
+            "point_gasha"
+          ],
+          "parts": {
+            "t106": "outgame/effect/anim_10002/ob_inseki_red.png"
+          }
+        }
+      ]
+    },
+    "画面割れ_STEP1_オレはおこったぞー": {
+      "method": "sequence",
+      "movie": "ef_700"
+    },
+    "画面割れ_STEP1_バイバイみんな": {
+      "method": "sequence",
+      "movie": "ef_701"
+    },
+    "画面割れ_STEP1_サンキュードラゴンボール": {
+      "method": "sequence",
+      "movie": "ef_702"
+    },
+    "画面割れ_STEP2_ギャルのパンティおくれー": {
+      "method": "sequence",
+      "movie": "ef_800"
+    },
+    "画面割れ_STEP2_ぱふぱふ": {
+      "method": "sequence",
+      "movie": "ef_801"
+    },
+    "ウイス巻き戻し": {
+      "method": "sequence",
+      "movie": "ef_1000"
+    },
+    "スカウター": {
+      "method": "scouter"
+    },
+    "finish": {
+      "method": "finish"
+    }
+  }
+}
