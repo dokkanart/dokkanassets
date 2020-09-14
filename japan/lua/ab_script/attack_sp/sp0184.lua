@@ -89,7 +89,7 @@ setEffReplaceTexture( speff, 2, 0);                         -- カード差し�
 setEffReplaceTexture( speff, 5, 4);                                  -- 技名テクスチャ差し替え
 
 
-entryFade( SP_start+ 255, 3, 2, 4, fcolor_r, fcolor_g, fcolor_b, 255);     -- white fade
+entryFade( SP_start+ 255, 3, 2+2, 4, fcolor_r, fcolor_g, fcolor_b, 255);     -- white fade
 setMoveKey( SP_start+  255,    0,   0,  0,   0);
 
 ------------------------------------------------------
@@ -392,11 +392,11 @@ shuchusen = entryEffectLife( SP_start+  spep_5+ 4, 906, 120, 0x00,  -1, 0,  0,  
 entryEffect( SP_start+  spep_5+ 4, 1600,  0x00,  -1,  0,30, -130);   -- ひび割れ
 
 -- ダメージ表示
-dealDamage( SP_start+  spep_5+ 17);
+dealDamage( SP_start+  spep_5+ 17 -10);
 
-entryFade( SP_start+  spep_5+ 101, 9,  10, 1, 8, 8, 8, 255);             -- black fade
+--entryFade( SP_start+  spep_5+ 101, 9,  10, 1, 8, 8, 8, 255);             -- black fade
 
-endPhase( SP_start+  spep_5+ 111);
+endPhase( SP_start+  spep_5+ 111 -10);
 
 else
 
@@ -447,7 +447,7 @@ setEffReplaceTexture( speff, 2, 0);                         -- カード差し�
 setEffReplaceTexture( speff, 5, 4);                                  -- 技名テクスチャ差し替え
 
 
-entryFade( SP_start+ 255, 3, 2, 4, fcolor_r, fcolor_g, fcolor_b, 255);     -- white fade
+entryFade( SP_start+ 255, 3, 2+2, 4, fcolor_r, fcolor_g, fcolor_b, 255);     -- white fade
 setMoveKey( SP_start+  255,    0,   0,  0,   0);
 
 ------------------------------------------------------
@@ -750,10 +750,10 @@ shuchusen = entryEffectLife( SP_start+  spep_5+ 4, 906, 120, 0x00,  -1, 0,  0,  
 entryEffect( SP_start+  spep_5+ 4, 1600,  0x00,  -1,  0,30, -130);   -- ひび割れ
 
 -- ダメージ表示
-dealDamage( SP_start+  spep_5+ 17);
+dealDamage( SP_start+  spep_5+ 17 -10);
 
-entryFade( SP_start+  spep_5+ 101, 9,  10, 1, 8, 8, 8, 255);             -- black fade
+--entryFade( SP_start+  spep_5+ 101, 9,  10, 1, 8, 8, 8, 255);             -- black fade
 
-endPhase( SP_start+  spep_5+ 111);
+endPhase( SP_start+  spep_5+ 111 -10);
 
 end

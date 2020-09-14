@@ -26,50 +26,63 @@ SP_06 = 151918;  --タックル（敵）
 
 multi_frm = 2;
 
+setVisibleUI( 0, 0);
+
+changeAnime( 0, 0, 0);
+changeAnime( 0, 1, 100);
+setDisp( 0, 0, 0);
+setDisp( 0, 1, 0);
+
+setMoveKey(   0,   0,    0, -5000,   0);
+setMoveKey(   1,   0,    0, -5000,   0);
+setMoveKey(   2,   0,    0, -5000,   0);
+setMoveKey(   3,   0,    0, -5000,   0);
+setMoveKey(   4,   0,    0, -5000,   0);
+setMoveKey(   5,   0,    0, -5000,   0);
+setMoveKey(   6,   0,    0, -5000,   0);
+setScaleKey(  0,   0,  1.6, 1.6 );
+setScaleKey(  1,   0,  1.6, 1.6 );
+setScaleKey(  2,   0,  1.6, 1.6 );
+setScaleKey(  3,   0,  1.6, 1.6 );
+setScaleKey(  4,   0,  1.6, 1.6 );
+setScaleKey(  5,   0,  1.6, 1.6 );
+setScaleKey(  6,   0,  1.6, 1.6 );
+setRotateKey( 0,   0,  0 );
+setRotateKey( 1,   0,  0 );
+setRotateKey( 2,   0,  0 );
+setRotateKey( 3,   0,  0 );
+setRotateKey( 4,   0,  0 );
+setRotateKey( 5,   0,  0 );
+setRotateKey( 6,   0,  0 );
+
+setMoveKey(   0,   1,    0, -5000,   0);
+setMoveKey(   1,   1,    0, -5000,   0);
+setMoveKey(   2,   1,    0, -5000,   0);
+setMoveKey(   3,   1,    0, -5000,   0);
+setMoveKey(   4,   1,    0, -5000,   0);
+setMoveKey(   5,   1,    0, -5000,   0);
+setMoveKey(   6,   1,    0, -5000,   0);
+setScaleKey(  0,   1,  1.6, 1.6 );
+setScaleKey(  1,   1,  1.6, 1.6 );
+setScaleKey(  2,   1,  1.6, 1.6 );
+setScaleKey(  3,   1,  1.6, 1.6 );
+setScaleKey(  4,   1,  1.6, 1.6 );
+setScaleKey(  5,   1,  1.6, 1.6 );
+setScaleKey(  6,   1,  1.6, 1.6 );
+setRotateKey( 0,   1,  0 );
+setRotateKey( 1,   1,  0 );
+setRotateKey( 2,   1,  0 );
+setRotateKey( 3,   1,  0 );
+setRotateKey( 4,   1,  0 );
+setRotateKey( 5,   1,  0 );
+setRotateKey( 6,   1,  0 );
+
 kame_flag = 0x00;
 if (_IS_PLAYER_SIDE_ == 1) then
-
--- ** 敵味方非表示 ** --
-changeAnime( 0, 0, 1); --味方立ちポーズ
-changeAnime( 0, 1, 101);                       -- 立ち
-setDisp( 0, 0, 1); --味方表示
-setDisp( 0, 1, 0); --敵非表示
-
-setMoveKey(   0,   0,    -2000,  0,  0);
-setMoveKey(   1,   0,    -2000,  0,  0);
-setMoveKey(   2,   0,    -2000,  0,  0);
-setMoveKey(   3,   0,    -2000,  0,  0);
-setMoveKey(   4,   0,    -2000,  0,  0);
-setMoveKey(   5,   0,    -2000,  0,  0);
-setMoveKey(   6,   0,    -2000,  0,  0);
-setScaleKey(  0,  0,  1.5,  1.5);
-setScaleKey(   1,   0, 1.5, 1.5);
-setScaleKey(   2,   0, 1.5, 1.5);
-setScaleKey(   3,   0, 1.5, 1.5);
-setScaleKey(   4,   0, 1.5, 1.5);
-setScaleKey(   5,   0, 1.5, 1.5);
-setScaleKey(   6,   0, 1.5, 1.5);
-
--- 敵
-setMoveKey(   0,   1,    -2000,  0,  0);
-setMoveKey(   1,   1,    -2000,  0,  0);
-setMoveKey(   2,   1,    -2000,  0,  0);
-setMoveKey(   3,   1,    -2000,  0,  0);
-setMoveKey(   4,   1,    -2000,  0,  0);
-setMoveKey(   5,   1,    -2000,  0,  0);
-setMoveKey(   6,   1,    -2000,  0,  0);
-setScaleKey(   1,   1, 1.5, 1.5);
-setScaleKey(   2,   1, 1.5, 1.5);
-setScaleKey(   3,   1, 1.5, 1.5);
-setScaleKey(   4,   1, 1.5, 1.5);
-setScaleKey(   5,   1, 1.5, 1.5);
-setScaleKey(   6,   1, 1.5, 1.5);
 
 ------------------------------------------------------
 -- 手前に突っ込む(60F)
 ------------------------------------------------------
-
-setVisibleUI(0, 0);
 
 -- ** 背景 ** --
 entryFadeBg( 0, 0, 62, 0, 0, 0, 0, 110); -- ベース暗め　背景
@@ -134,7 +147,7 @@ setEffAlphaKey( 56, ctzuo, 0 );
 setEffAlphaKey( 58, ctzuo, 0 );
 
 -- ** 音 ** --
-playSe( 1, SE_01);
+SE000x = playSe( 1, SE_01);
 
 ------------------------------------------------------
 -- 回避
@@ -145,6 +158,7 @@ if(_IS_DODGE_ == 1) then
 SP_dodge = 30; --エンドフェイズのフレーム数を置き換える
 
 playSe( SP_dodge-12, 1042);
+stopSe( SP_dodge-12, SE000x, 0 );
 
 speff = entryEffectUnpausable( SP_dodge-12, 1504, 0x100, -1, 0, 0, -350); -- eff_005 (カットイン)
 setEffReplaceTexture( speff, 3, 6); -- カットイン差し替え
@@ -275,9 +289,9 @@ setMoveKey( spep_1+43, 1, 598.9, 251.7 , 0 );
 setMoveKey( spep_1+45, 1, 666.2, 279.2 , 0 );
 setMoveKey( spep_1+47, 1, 709.6, 295.4 , 0 );
 setMoveKey( spep_1+49, 1, 777.6, 336.1 , 0 );
-setMoveKey( spep_1+51, 1, 0, -2000 , 0 );
-setMoveKey( spep_1+52, 1, 0, -2000 , 0 );
-setMoveKey( spep_1+70, 1, 0, -2000 , 0 );
+setMoveKey( spep_1+51, 1, 0 +1000, -2000 +2400 , 0 );
+setMoveKey( spep_1+52, 1, 0 +1000, -2000 +2400 , 0 );
+setMoveKey( spep_1+70, 1, 0 +1000, -2000 +2400 , 0 );
 setScaleKey( spep_1+27, 1, 1.95, 1.95 );
 setScaleKey( spep_1+29, 1, 1.99, 1.99 );
 setScaleKey( spep_1+31, 1, 2.03, 2.03 );
@@ -449,10 +463,37 @@ spep_4 = spep_3+111;
 -- カードカットイン(316F開始)
 ------------------------------------------------------
 
+--[[speff = entryEffect( spep_4, 1507, 0, -1, 0, 0, 0); -- カード
+setEffReplaceTexture( speff, 1, 1);
+setEffReplaceTexture( speff, 2, 0); -- カード差し替え
+setEffReplaceTexture( speff, 5, 4); -- 技名テクスチャ差し替え]]
+
+if (_SPECIAL_SKILL_LEVEL_ == 0) then
+print ("_SPECIAL_SKILL_LEVEL_ == 0");
+playSe( spep_4, SE_04);
 speff = entryEffect( spep_4, 1507, 0, -1, 0, 0, 0); -- カード
 setEffReplaceTexture( speff, 1, 1);
 setEffReplaceTexture( speff, 2, 0); -- カード差し替え
 setEffReplaceTexture( speff, 5, 4); -- 技名テクスチャ差し替え
+
+
+elseif(_SPECIAL_SKILL_LEVEL_ == 1) then
+print ("_SPECIAL_SKILL_LEVEL_ == 1");
+playSe( spep_4, SE_04);
+speff = entryEffect( spep_4, 1120, 0, -1, 0, 0, 0); -- カード
+setEffReplaceTexture( speff, 1, 1);
+setEffReplaceTexture( speff, 2, 0); -- カード差し替え
+setEffReplaceTexture( speff, 5, 4); -- 技名テクスチャ差し替え
+
+
+elseif(_SPECIAL_SKILL_LEVEL_ == 2) then
+print ("_SPECIAL_SKILL_LEVEL_ == 2");
+playSe( spep_4, SE_04);
+speff = entryEffect( spep_4, 1121, 0, -1, 0, 0, 0); -- カード
+setEffReplaceTexture( speff, 1, 1);
+setEffReplaceTexture( speff, 2, 0); -- カード差し替え
+setEffReplaceTexture( speff, 5, 4); -- 技名テクスチャ差し替え
+end
 
 -- ** 集中線 ** --
 shuchusen4 = entryEffectLife( spep_4, 906, 91, 0x100,  -1, 0,  0,  0);   -- 集中線4
@@ -465,7 +506,7 @@ setEffRotateKey( spep_4, shuchusen4, 0);
 entryFade( spep_4+83, 5, 5, 8, fcolor_r, fcolor_g, fcolor_b, 255); -- white fade
 
 -- ** 音 ** --
-playSe( spep_4, SE_04);
+--playSe( spep_4, SE_04);
 
 spep_5 = spep_4+93;
 
@@ -745,9 +786,9 @@ entryEffect( spep_7+3, 1600, 0x00, -1, 0, 30, -130);   -- ひび割れ
 shuchusenkuro = entryEffectLife( spep_7+15, 1657, 108, 0x80,  -1, 0,  0,  0);   -- 集中線黒
 
 -- ダメージ表示
-dealDamage( spep_7+16);
-entryFade( spep_7+100, 9, 10, 1, 8, 8, 8, 255); -- black fade
-endPhase( spep_7+110);
+dealDamage( spep_7+16 -10);
+--entryFade( spep_7+100, 9, 10, 1, 8, 8, 8, 255); -- black fade
+endPhase( spep_7+110 -10);
 
 else
 
@@ -757,8 +798,6 @@ else
 ------------------------------------------------------
 -- 手前に突っ込む(60F)
 ------------------------------------------------------
-
-setVisibleUI(0, 0);
 
 -- ** 背景 ** --
 entryFadeBg( 0, 0, 62, 0, 0, 0, 0, 110); -- ベース暗め　背景
@@ -823,7 +862,7 @@ setEffAlphaKey( 56, ctzuo, 0 );
 setEffAlphaKey( 58, ctzuo, 0 );
 
 -- ** 音 ** --
-playSe( 1, SE_01);
+SE000x = playSe( 1, SE_01);
 
 ------------------------------------------------------
 -- 回避
@@ -834,6 +873,7 @@ if(_IS_DODGE_ == 1) then
 SP_dodge = 30; --エンドフェイズのフレーム数を置き換える
 
 playSe( SP_dodge-12, 1042);
+stopSe( SP_dodge-12, SE000x, 0 );
 
 speff = entryEffectUnpausable( SP_dodge-12, 1504, 0x100, -1, 0, 0, -350); -- eff_005 (カットイン)
 setEffReplaceTexture( speff, 3, 6); -- カットイン差し替え
@@ -964,9 +1004,9 @@ setMoveKey( spep_1+43, 1, 598.9, 251.7 , 0 );
 setMoveKey( spep_1+45, 1, 666.2, 279.2 , 0 );
 setMoveKey( spep_1+47, 1, 709.6, 295.4 , 0 );
 setMoveKey( spep_1+49, 1, 777.6, 336.1 , 0 );
-setMoveKey( spep_1+51, 1, 0, -2000 , 0 );
-setMoveKey( spep_1+52, 1, 0, -2000 , 0 );
-setMoveKey( spep_1+70, 1, 0, -2000 , 0 );
+setMoveKey( spep_1+51, 1, 0 +1000, -2000 +2400 , 0 );
+setMoveKey( spep_1+52, 1, 0 +1000, -2000 +2400 , 0 );
+setMoveKey( spep_1+70, 1, 0 +1000, -2000 +2400 , 0 );
 setScaleKey( spep_1+27, 1, 1.95, 1.95 );
 setScaleKey( spep_1+29, 1, 1.99, 1.99 );
 setScaleKey( spep_1+31, 1, 2.03, 2.03 );
@@ -1135,10 +1175,37 @@ spep_4 = spep_3+111;
 -- カードカットイン(316F開始)
 ------------------------------------------------------
 
+--[[speff = entryEffect( spep_4, 1507, 0, -1, 0, 0, 0); -- カード
+setEffReplaceTexture( speff, 1, 1);
+setEffReplaceTexture( speff, 2, 0); -- カード差し替え
+setEffReplaceTexture( speff, 5, 4); -- 技名テクスチャ差し替え]]
+
+if (_SPECIAL_SKILL_LEVEL_ == 0) then
+print ("_SPECIAL_SKILL_LEVEL_ == 0");
+playSe( spep_4, SE_04);
 speff = entryEffect( spep_4, 1507, 0, -1, 0, 0, 0); -- カード
 setEffReplaceTexture( speff, 1, 1);
 setEffReplaceTexture( speff, 2, 0); -- カード差し替え
 setEffReplaceTexture( speff, 5, 4); -- 技名テクスチャ差し替え
+
+
+elseif(_SPECIAL_SKILL_LEVEL_ == 1) then
+print ("_SPECIAL_SKILL_LEVEL_ == 1");
+playSe( spep_4, SE_04);
+speff = entryEffect( spep_4, 1120, 0, -1, 0, 0, 0); -- カード
+setEffReplaceTexture( speff, 1, 1);
+setEffReplaceTexture( speff, 2, 0); -- カード差し替え
+setEffReplaceTexture( speff, 5, 4); -- 技名テクスチャ差し替え
+
+
+elseif(_SPECIAL_SKILL_LEVEL_ == 2) then
+print ("_SPECIAL_SKILL_LEVEL_ == 2");
+playSe( spep_4, SE_04);
+speff = entryEffect( spep_4, 1121, 0, -1, 0, 0, 0); -- カード
+setEffReplaceTexture( speff, 1, 1);
+setEffReplaceTexture( speff, 2, 0); -- カード差し替え
+setEffReplaceTexture( speff, 5, 4); -- 技名テクスチャ差し替え
+end
 
 -- ** 集中線 ** --
 shuchusen4 = entryEffectLife( spep_4, 906, 91, 0x100,  -1, 0,  0,  0);   -- 集中線4
@@ -1151,7 +1218,7 @@ setEffRotateKey( spep_4, shuchusen4, 0);
 entryFade( spep_4+83, 5, 5, 8, fcolor_r, fcolor_g, fcolor_b, 255); -- white fade
 
 -- ** 音 ** --
-playSe( spep_4, SE_04);
+--playSe( spep_4, SE_04);
 
 spep_5 = spep_4+93;
 ------------------------------------------------------
@@ -1430,8 +1497,8 @@ entryEffect( spep_7+3, 1600, 0x00, -1, 0, 30, -130);   -- ひび割れ
 shuchusenkuro = entryEffectLife( spep_7+15, 1657, 108, 0x80,  -1, 0,  0,  0);   -- 集中線黒
 
 -- ダメージ表示
-dealDamage( spep_7+16);
-entryFade( spep_7+100, 9, 10, 1, 8, 8, 8, 255); -- black fade
-endPhase( spep_7+110);
+dealDamage( spep_7+16 -10);
+--entryFade( spep_7+100, 9, 10, 1, 8, 8, 8, 255); -- black fade
+endPhase( spep_7+110 -10);
 
 end

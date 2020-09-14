@@ -262,6 +262,7 @@ setEffRotateKey(SP_ATK01+35, eff01,-10);--角度
 --entryFlashBg( (SP_ATK01+35), 1, fcolor_r, fcolor_g, fcolor_b, 200);
 changeAnime( SP_ATK01+36, 1, 106);--やられ   
 seID = playSe( SP_ATK01+35, SE_09);
+stopSe(SP_ATK01+60+diff01,seID,5);
 entryFadeBg( SP_ATK01+35, 0, 66, 0, 0, 0, 0, 255);          -- ベース暗め　背景
 pauseAll(SP_ATK01+36,10);
 
@@ -272,7 +273,8 @@ eff02 = entryEffect( SP_ATK01+50+diff01, SP_04,  0, -1,  0,  0,  0);   -- 攻撃
 setEffScaleKey( SP_ATK01+50+diff01, eff02,0.4,3);--サイズ
 setEffRotateKey(SP_ATK01+50+diff01, eff02,-70);--角度
 --entryFlashBg( (SP_ATK01+50+diff01), 1, fcolor_r, fcolor_g, fcolor_b, 200);
-playSe( SP_ATK01+50+diff01, SE_08);
+SE002 = playSe( SP_ATK01+50+diff01, SE_08);
+stopSe(SP_ATK01+67+diff01,SE002,5);
 changeAnime( SP_ATK01+50+diff01, 1, 105);--やられ 
 setShake( SP_ATK01+50+diff01, 3, 14);
 setMoveKey(  SP_ATK01+50+diff01, 1, 0,  0,  0);
@@ -281,7 +283,8 @@ setMoveKey(  SP_ATK01+51+diff01, 1, 50,  -50,  0);
 eff03 = entryEffect( SP_ATK01+57+diff01, SP_04,  0, -1,  0,  50,  0);   -- 攻撃4
 setEffScaleKey( SP_ATK01+57+diff01, eff03, 0.4,3);--サイズ
 setEffRotateKey(SP_ATK01+57+diff01, eff03, 70);--角度
-playSe( SP_ATK01+57+diff01, SE_09);
+SE003 = playSe( SP_ATK01+57+diff01, SE_09);
+stopSe(SP_ATK01+75+diff01,SE003,5);
 changeAnime( SP_ATK01+57+diff01, 1, 108);--やられ 
 setShake( SP_ATK01+57+diff01, 3, 14);
 setMoveKey(  SP_ATK01+57+diff01, 1, 50,  -50,  -128);
@@ -290,7 +293,8 @@ setMoveKey(  SP_ATK01+58+diff01, 1, -80,  30,  -128);
 eff04 = entryEffect( SP_ATK01+65+diff01, SP_04,  0, -1,  0,  -80,  0);   -- 攻撃5
 setEffScaleKey( SP_ATK01+65+diff01, eff04, 0.4,2.5);--サイズ
 setEffRotateKey(SP_ATK01+65+diff01, eff04, -80);--角度
-playSe( SP_ATK01+65+diff01, SE_08);
+SE004 = playSe( SP_ATK01+65+diff01, SE_08);
+stopSe(SP_ATK01+82+diff01,SE004,5);
 changeAnime( SP_ATK01+65+diff01, 1, 106);--やられ 
 setShake( SP_ATK01+65+diff01, 3, 14);
 setMoveKey(  SP_ATK01+65+diff01, 1, -80,  30,  -128);
@@ -300,7 +304,8 @@ eff05 = entryEffect( SP_ATK01+72+diff01, SP_04,  0, -1,  0,  20,  0);   -- 攻�
 setEffScaleKey( SP_ATK01+72+diff01, eff05, 0.4,3);--サイズ
 setEffRotateKey(SP_ATK01+72+diff01, eff05, 45);--角度
 --entryFlashBg( (SP_ATK01+72+diff01), 1, fcolor_r, fcolor_g, fcolor_b, 200);
-playSe( SP_ATK01+72+diff01, SE_09);
+SE005 = playSe( SP_ATK01+72+diff01, SE_09);
+stopSe(SP_ATK01+86+diff01,SE005,5);
 setShake( SP_ATK01+72+diff01, 3, 14);
 setMoveKey(  SP_ATK01+72+diff01, 1, 40,  -35,  -128);
 setMoveKey(  SP_ATK01+73+diff01, 1, -90,  -90,  -128);
@@ -308,7 +313,8 @@ setMoveKey(  SP_ATK01+73+diff01, 1, -90,  -90,  -128);
 eff06 = entryEffect( SP_ATK01+76+diff01, SP_04,  0, -1,  0,  -60,  0);   -- 攻撃3
 setEffScaleKey( SP_ATK01+76+diff01, eff06, 0.4,2);--サイズ
 setEffRotateKey(SP_ATK01+76+diff01, eff06, -100);--角度
-playSe( SP_ATK01+76+diff01, SE_08);
+SE006 = playSe( SP_ATK01+76+diff01, SE_08);
+stopSe(SP_ATK01+90+diff01,SE006,5);
 changeAnime( SP_ATK01+76+diff01, 1, 105);--やられ 
 setShake( SP_ATK01+76+diff01, 3, 14);
 setMoveKey(  SP_ATK01+76+diff01, 1, 90,  -90,  -128);
@@ -691,6 +697,7 @@ setEffRotateKey(SP_ATK01+35, eff01,-10);--角度
 --entryFlashBg( (SP_ATK01+35), 1, fcolor_r, fcolor_g, fcolor_b, 200);
 changeAnime( SP_ATK01+36, 1, 106);--やられ   
 seID = playSe( SP_ATK01+35, SE_09);
+stopSe(SP_ATK01+60+diff01,seID,5);
 entryFadeBg( SP_ATK01+35, 0, 66, 0, 0, 0, 0, 255);          -- ベース暗め　背景
 pauseAll(SP_ATK01+36,10);
 
@@ -701,7 +708,8 @@ eff02 = entryEffect( SP_ATK01+50+diff01, SP_04,  0, -1,  0,  0,  0);   -- 攻撃
 setEffScaleKey( SP_ATK01+50+diff01, eff02,0.4,3);--サイズ
 setEffRotateKey(SP_ATK01+50+diff01, eff02,-70);--角度
 --entryFlashBg( (SP_ATK01+50+diff01), 1, fcolor_r, fcolor_g, fcolor_b, 200);
-playSe( SP_ATK01+50+diff01, SE_08);
+SE002 = playSe( SP_ATK01+50+diff01, SE_08);
+stopSe(SP_ATK01+67+diff01,SE002,5);
 changeAnime( SP_ATK01+50+diff01, 1, 105);--やられ 
 setShake( SP_ATK01+50+diff01, 3, 14);
 setMoveKey(  SP_ATK01+50+diff01, 1, 0,  0,  0);
@@ -710,7 +718,8 @@ setMoveKey(  SP_ATK01+51+diff01, 1, 50,  -50,  0);
 eff03 = entryEffect( SP_ATK01+57+diff01, SP_04,  0, -1,  0,  50,  0);   -- 攻撃4
 setEffScaleKey( SP_ATK01+57+diff01, eff03, 0.4,3);--サイズ
 setEffRotateKey(SP_ATK01+57+diff01, eff03, 70);--角度
-playSe( SP_ATK01+57+diff01, SE_09);
+SE003 = playSe( SP_ATK01+57+diff01, SE_09);
+stopSe(SP_ATK01+75+diff01,SE003,5);
 changeAnime( SP_ATK01+57+diff01, 1, 108);--やられ 
 setShake( SP_ATK01+57+diff01, 3, 14);
 setMoveKey(  SP_ATK01+57+diff01, 1, 50,  -50,  -128);
@@ -719,7 +728,8 @@ setMoveKey(  SP_ATK01+58+diff01, 1, -80,  30,  -128);
 eff04 = entryEffect( SP_ATK01+65+diff01, SP_04,  0, -1,  0,  -80,  0);   -- 攻撃5
 setEffScaleKey( SP_ATK01+65+diff01, eff04, 0.4,2.5);--サイズ
 setEffRotateKey(SP_ATK01+65+diff01, eff04, -80);--角度
-playSe( SP_ATK01+65+diff01, SE_08);
+SE004 = playSe( SP_ATK01+65+diff01, SE_08);
+stopSe(SP_ATK01+82+diff01,SE004,5);
 changeAnime( SP_ATK01+65+diff01, 1, 106);--やられ 
 setShake( SP_ATK01+65+diff01, 3, 14);
 setMoveKey(  SP_ATK01+65+diff01, 1, -80,  30,  -128);
@@ -729,7 +739,8 @@ eff05 = entryEffect( SP_ATK01+72+diff01, SP_04,  0, -1,  0,  20,  0);   -- 攻�
 setEffScaleKey( SP_ATK01+72+diff01, eff05, 0.4,3);--サイズ
 setEffRotateKey(SP_ATK01+72+diff01, eff05, 45);--角度
 --entryFlashBg( (SP_ATK01+72+diff01), 1, fcolor_r, fcolor_g, fcolor_b, 200);
-playSe( SP_ATK01+72+diff01, SE_09);
+SE005 = playSe( SP_ATK01+72+diff01, SE_09);
+stopSe(SP_ATK01+86+diff01,SE005,5);
 setShake( SP_ATK01+72+diff01, 3, 14);
 setMoveKey(  SP_ATK01+72+diff01, 1, 40,  -35,  -128);
 setMoveKey(  SP_ATK01+73+diff01, 1, -90,  -90,  -128);
@@ -737,7 +748,8 @@ setMoveKey(  SP_ATK01+73+diff01, 1, -90,  -90,  -128);
 eff06 = entryEffect( SP_ATK01+76+diff01, SP_04,  0, -1,  0,  -60,  0);   -- 攻撃3
 setEffScaleKey( SP_ATK01+76+diff01, eff06, 0.4,2);--サイズ
 setEffRotateKey(SP_ATK01+76+diff01, eff06, -100);--角度
-playSe( SP_ATK01+76+diff01, SE_08);
+SE006 = playSe( SP_ATK01+76+diff01, SE_08);
+stopSe(SP_ATK01+90+diff01,SE006,5);
 changeAnime( SP_ATK01+76+diff01, 1, 105);--やられ 
 setShake( SP_ATK01+76+diff01, 3, 14);
 setMoveKey(  SP_ATK01+76+diff01, 1, 90,  -90,  -128);

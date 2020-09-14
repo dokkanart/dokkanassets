@@ -499,11 +499,24 @@ setEffAlphaKey(spep_5+58, ct5, 255);
 playSe( spep_5,31);
 playSe( spep_5+6,31);
 playSe( spep_5+14,31);
+--[[
 playSe( spep_5+20,1008);
 playSe( spep_5+26,1008);
 playSe( spep_5+33,1008);
 playSe( spep_5+39,1008);
 playSe( spep_5+46,1008);
+]]
+--4.11
+SE001 = playSe( spep_5+20,1008);
+stopSe(spep_5+26+5,SE001,5);
+SE002 = playSe( spep_5+26,1008);
+stopSe(spep_5+33+5,SE002,5);
+SE003 = playSe( spep_5+33,1008);
+stopSe(spep_5+39+5,SE003,5);
+SE004 = playSe( spep_5+39,1008);
+stopSe(spep_5+46+5,SE004,5);
+SE005 = playSe( spep_5+46,1008);
+
 
 entryFade(spep_5+44,12,10,6.255,255,255,255);
 ------------------------------------------------------
@@ -527,6 +540,7 @@ setShakeChara( spep_6+5, 1, 30, 25);
 setShakeChara( spep_6+45, 1, 40, 15);
 
 --playSe( spep_6,1008);
+--[[
 playSe( spep_6+8,1008);
 playSe( spep_6+20,1008);
 playSe( spep_6+20,1008);
@@ -538,6 +552,29 @@ playSe( spep_6+58,1008);
 playSe( spep_6+70,1008);
 playSe( spep_6+78,1008);
 playSe( spep_6+82,1008);
+]]
+--4.11
+SE006 = playSe( spep_6+8,1008);
+stopSe(spep_6+20+5,SE006,5);
+SE007 = playSe( spep_6+20,1008);
+stopSe(spep_6+22+5,SE007,5);
+--SE008 = playSe( spep_6+20,1008);
+SE009 = playSe( spep_6+22,1008);
+stopSe(spep_6+28+5,SE009,5);
+SE010 = playSe( spep_6+28,1008);
+stopSe(spep_6+32+5,SE010,5);
+SE011 = playSe( spep_6+32,1008);
+stopSe(spep_6+52+5,SE011,5);
+SE012 = playSe( spep_6+52,1008);
+stopSe(spep_6+58+5,SE012,5);
+SE013 = playSe( spep_6+58,1008);
+stopSe(spep_6+70+5,SE013,5);
+SE014 = playSe( spep_6+70,1008);
+stopSe(spep_6+78+5,SE014,5);
+SE015 = playSe( spep_6+78,1008);
+stopSe(spep_6+82+5,SE015,5);
+SE016 = playSe( spep_6+82,1008);
+
 
 setDisp( spep_6+99, 1, 0);
 
@@ -1034,11 +1071,23 @@ setEffAlphaKey(spep_5+58, ct5, 255);
 playSe( spep_5,31);
 playSe( spep_5+6,31);
 playSe( spep_5+14,31);
+--[[
 playSe( spep_5+20,1008);
 playSe( spep_5+26,1008);
 playSe( spep_5+33,1008);
 playSe( spep_5+39,1008);
 playSe( spep_5+46,1008);
+]]
+--4.11
+SE001 = playSe( spep_5+20,1008);
+stopSe(spep_5+26+5,SE001,5);
+SE002 = playSe( spep_5+26,1008);
+stopSe(spep_5+33+5,SE002,5);
+SE003 = playSe( spep_5+33,1008);
+stopSe(spep_5+39+5,SE003,5);
+SE004 = playSe( spep_5+39,1008);
+stopSe(spep_5+46+5,SE004,5);
+SE005 = playSe( spep_5+46,1008);
 
 entryFade(spep_5+44,12,10,6.255,255,255,255);
 ------------------------------------------------------
@@ -1062,6 +1111,7 @@ setShakeChara( spep_6+5, 1, 30, 25);
 setShakeChara( spep_6+45, 1, 40, 15);
 
 --playSe( spep_6,1008);
+--[[
 playSe( spep_6+8,1008);
 playSe( spep_6+20,1008);
 playSe( spep_6+20,1008);
@@ -1073,6 +1123,28 @@ playSe( spep_6+58,1008);
 playSe( spep_6+70,1008);
 playSe( spep_6+78,1008);
 playSe( spep_6+82,1008);
+]]
+--4.11
+SE006 = playSe( spep_6+8,1008);
+stopSe(spep_6+20+5,SE006,5);
+SE007 = playSe( spep_6+20,1008);
+stopSe(spep_6+22+5,SE007,5);
+--SE008 = playSe( spep_6+20,1008);
+SE009 = playSe( spep_6+22,1008);
+stopSe(spep_6+28+5,SE009,5);
+SE010 = playSe( spep_6+28,1008);
+stopSe(spep_6+32+5,SE010,5);
+SE011 = playSe( spep_6+32,1008);
+stopSe(spep_6+52+5,SE011,5);
+SE012 = playSe( spep_6+52,1008);
+stopSe(spep_6+58+5,SE012,5);
+SE013 = playSe( spep_6+58,1008);
+stopSe(spep_6+70+5,SE013,5);
+SE014 = playSe( spep_6+70,1008);
+stopSe(spep_6+78+5,SE014,5);
+SE015 = playSe( spep_6+78,1008);
+stopSe(spep_6+82+5,SE015,5);
+SE016 = playSe( spep_6+82,1008);
 
 setDisp( spep_6+99, 1, 0);
 

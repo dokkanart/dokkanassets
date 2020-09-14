@@ -327,11 +327,11 @@ shuchusen = entryEffectLife( 473, 906, 120, 0x00,  -1, 0,  0,  0);   -- 集中�
 entryEffect( 473, 1600,  0x00,  -1,  0,30, -130);   -- ひび割れ
 
 -- ダメージ表示
-dealDamage(486);
+dealDamage(486 -10);
 
-entryFade( 570, 9,  10, 1, 8, 8, 8, 255);             -- black fade
+--entryFade( 570, 9,  10, 1, 8, 8, 8, 255);             -- black fade
 
-endPhase(580);
+endPhase(580 -10);
 else
 
 -----------------------------------------
@@ -467,7 +467,8 @@ setDamage( SP_ATK_3+28, 1, 0);  -- ダメージ振動等
 playSe( SP_ATK_3, SE_08);
 
 --end
-
+setDisp( SP_ATK_3 -20, 0, 0);
+entryFade( SP_ATK_3-6, 4,  4, 2, fcolor_r, fcolor_g, fcolor_b, 255);     -- white fade
 setDisp( SP_ATK_3, 0, 0);
 setDisp( SP_ATK_3, 1, 1);
 changeAnime( SP_ATK_3, 1, 104);                        -- ガード
@@ -598,10 +599,10 @@ shuchusen = entryEffectLife( SP_ATK_4, 906, 120, 0x00,  -1, 0,  0,  0);   -- 集
 entryEffect( SP_ATK_4+3, 1600,  0x00,  -1,  0,30, -130);   -- ひび割れ
 
 -- ダメージ表示
-dealDamage(SP_ATK_4+15);
+dealDamage(SP_ATK_4+15 -10);
 
-entryFade( SP_ATK_4+100, 9,  10, 1, 8, 8, 8, 255);             -- black fade
+--entryFade( SP_ATK_4+100, 9,  10, 1, 8, 8, 8, 255);             -- black fade
 
-endPhase(SP_ATK_4+120);
+endPhase(SP_ATK_4+120 -10);
 
 end

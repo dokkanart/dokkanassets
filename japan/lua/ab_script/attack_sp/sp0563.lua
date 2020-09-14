@@ -184,8 +184,15 @@ setEffAlphaKey( spep_0+8 + 68, ctgogo, 255 );
 setEffAlphaKey( spep_0+8 + 136, ctgogo, 255 );
 
 -- ** 音 ** --
+--[[
 playSe( spep_0 + 24, SE_02 );  --ため
 playSe( spep_0 + 44, SE_02 );  --ため
+]]
+--4.11
+SE001 = playSe( spep_0 + 24, SE_02 );  --ため
+stopSe(spep_0+44+8,SE001,5);
+SE002 = playSe( spep_0 + 44, SE_02 );  --ため
+
 playSe( spep_0 + 68, SE_04 );  --ゴゴゴ
 
 -- ** 黒背景 ** --
@@ -901,8 +908,15 @@ setEffAlphaKey( spep_0+8 + 68, ctgogo, 255 );
 setEffAlphaKey( spep_0+8 + 136, ctgogo, 255 );
 
 -- ** 音 ** --
+--[[
 playSe( spep_0 + 24, SE_02 );  --ため
 playSe( spep_0 + 44, SE_02 );  --ため
+]]
+--4.11
+SE001 = playSe( spep_0 + 24, SE_02 );  --ため
+stopSe(spep_0+44+8,SE001,5);
+SE002 = playSe( spep_0 + 44, SE_02 );  --ため
+
 playSe( spep_0 + 68, SE_04 );  --ゴゴゴ
 
 -- ** 黒背景 ** --

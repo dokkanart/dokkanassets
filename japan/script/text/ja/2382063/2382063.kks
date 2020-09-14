@@ -1,0 +1,64 @@
+*start|スタート
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+//[bgm storage = "012"]
+
+*001
+//-------------------------------------------------------------------------------
+//  超サイヤ人２ベジータ（天使）
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="S0001" bg = "bg_000_023"]
+
+//[character id = "veg" x= 0 y=0 storage = "00282/card_16" scale = 1.0 action = "fadein" time = 0.1]
+[character id = "veg" x= 0 y=0 storage = "00282/card_07" scale = 1.2 action = "fadein" time = 0.1]
+
+[character id = "ki" x = -60 y = 50 storage = "99999/supersaiyan2" scale = 1.5 angle = 5 action = "fadein" time = 0.1]
+[quake target = "ki" power = 1]
+
+//[character id = "aura" x = 0 y = 0 storage = "99999/ef_aura_front" scale = 2.4 action = "expand" time = 0.4]
+
+
+
+[balloon x = -0 y = 500 shape="002_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+かせいでやるぜ[r]
+１分間…！
+[p]
+
+
+[balloon x=-0 y=-340 shape="006_01" scale = 0.8 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 7 time = 0.2]
+オレさまの[r]
+誇りにかけてな…！
+[p]
+
+
+*002
+//-------------------------------------------------------------------------------
+//  魔人ブウ（純粋）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002L" bg = "bg_000_023"]
+
+
+[character x = -135 y = -100 storage = "00232/card_002" scale = 1.2 action = "fadein" time = 0.1]
+[quake target =".chara" power = 5 time = 0.4]
+
+
+[balloon x = 160 y = -150 shape="006_02" scale = 0.65 action = "expand" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 44]
+[quake target =".bln" power = 7 time = 0.2]
+ギッ！！
+[p]
+
+
+
+//-------------------------------------------------------------------------------
+//[stopbgm]

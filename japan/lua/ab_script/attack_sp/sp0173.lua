@@ -331,12 +331,22 @@ playSe( SP_start3+ SP_start+ 478, 1008);
 setDamage( SP_start3+ SP_start+ 486, 1, 0);  -- ダメージ振動等
 playSe( SP_start3+ SP_start+ 486, 1014);
 
+--[[
 playSe( SP_start3+ SP_start+ 510, SE_10);
 playSe( SP_start3+ SP_start+ 540, SE_10);
 playSe( SP_start3+ SP_start+ 560, SE_10);
 --playSe( SP_start3+ SP_start+ 580, SE_10);
 playSe( SP_start3+ SP_start+ 575, SE_10);
 --playSe( SP_start3+ SP_start+ 620, SE_10);
+]]
+--4.11
+SE001 = playSe( SP_start3+ SP_start+ 510, SE_10);
+stopSe(SP_start3+ SP_start+ 550,SE001,10);
+SE002 = playSe( SP_start3+ SP_start+ 540, SE_10);
+stopSe(SP_start3+ SP_start+ 570,SE001,10);
+SE003 = playSe( SP_start3+ SP_start+ 560, SE_10);
+stopSe(SP_start3+ SP_start+ 585,SE001,10);
+SE004 = playSe( SP_start3+ SP_start+ 575, SE_10);
 
 --setMoveKey( SP_start3+ SP_start+  490,    0,  -468,  680,   0);
 setMoveKey( SP_start3+ SP_start+  470,    0,  -218,  380,   0);
@@ -639,12 +649,22 @@ playSe( SP_start3+ SP_start+ 478, 1008);
 setDamage( SP_start3+ SP_start+ 486, 1, 0);  -- ダメージ振動等
 playSe( SP_start3+ SP_start+ 486, 1014);
 
+--[[
 playSe( SP_start3+ SP_start+ 510, SE_10);
 playSe( SP_start3+ SP_start+ 540, SE_10);
 playSe( SP_start3+ SP_start+ 560, SE_10);
 --playSe( SP_start3+ SP_start+ 580, SE_10);
 playSe( SP_start3+ SP_start+ 575, SE_10);
 --playSe( SP_start3+ SP_start+ 620, SE_10);
+]]
+--4.11
+SE001 = playSe( SP_start3+ SP_start+ 510, SE_10);
+stopSe(SP_start3+ SP_start+ 550,SE001,10);
+SE002 = playSe( SP_start3+ SP_start+ 540, SE_10);
+stopSe(SP_start3+ SP_start+ 570,SE001,10);
+SE003 = playSe( SP_start3+ SP_start+ 560, SE_10);
+stopSe(SP_start3+ SP_start+ 585,SE001,10);
+SE004 = playSe( SP_start3+ SP_start+ 575, SE_10);
 
 --setMoveKey( SP_start3+ SP_start+  490,    0,  -468,  680,   0);
 setMoveKey( SP_start3+ SP_start+  470,    0,  -218,  380,   0);

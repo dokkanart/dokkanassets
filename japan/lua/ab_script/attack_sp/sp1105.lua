@@ -214,11 +214,11 @@ else end
 
 -- ** 星マーク音 ** --
 playSe( spep_4+5, 44);
-playSe( spep_4+7, 44);
-playSe( spep_4+9, 44);
-playSe( spep_4+11,44);
-playSe( spep_4+13,44);
-playSe( spep_4+15,44);
+--playSe( spep_4+7, 44);
+--playSe( spep_4+9, 44);
+--playSe( spep_4+11,44);
+--playSe( spep_4+13,44);
+--playSe( spep_4+15,44);
 
 -- ** 連打音 ** --
 playSe( spep_4+52,1000);--SE1
@@ -295,6 +295,7 @@ playSe( spep_6+5,1019);
 playSe( spep_6+65,1019);
 
 -- ** やられエフェクトその2 ** --
+--[[
 playSe( spep_6+6,1025);
 playSe( spep_6+16,1027);
 playSe( spep_6+26,1025);
@@ -308,6 +309,37 @@ playSe( spep_6+96,1027);
 playSe( spep_6+106,1025);
 playSe( spep_6+116,1027);
 playSe( spep_6+126,1025);
+]]
+SE001 = playSe( spep_6+6,1025);
+SE002 = playSe( spep_6+16,1027);
+stopSe(spep_6+36,SE001,5);
+stopSe(spep_6+46,SE002,5);
+
+SE003 = playSe( spep_6+26,1025);
+SE004 = playSe( spep_6+36,1027);
+stopSe(spep_6+56,SE003,5);
+stopSe(spep_6+66,SE004,5);
+
+SE005 = playSe( spep_6+46,1025);
+SE006 = playSe( spep_6+56,1027);
+stopSe(spep_6+76,SE005,5);
+stopSe(spep_6+86,SE006,5);
+
+SE007 = playSe( spep_6+66,1025);
+SE008 = playSe( spep_6+76,1027);
+stopSe(spep_6+96,SE007,5);
+stopSe(spep_6+106,SE008,5);
+
+SE009 = playSe( spep_6+86,1025);
+SE010 = playSe( spep_6+96,1027);
+stopSe(spep_6+116,SE009,5);
+stopSe(spep_6+126,SE010,5);
+
+SE011 = playSe( spep_6+106,1025);
+SE012 = playSe( spep_6+116,1027);
+stopSe(spep_6+136,SE011,5);
+
+SE013 = playSe( spep_6+126,1025);
 
 spep_7 = spep_6+124; -- 引数
 
@@ -544,12 +576,12 @@ do return end
 else end
 -- ** 星マーク音 ** --
 playSe( spep_4+5, 44);
-playSe( spep_4+7, 44);
+--[[playSe( spep_4+7, 44);
 playSe( spep_4+9, 44);
 playSe( spep_4+11,44);
 playSe( spep_4+13,44);
 playSe( spep_4+15,44);
-
+]]
 
 -- ** 連打音 ** --
 playSe( spep_4+52,1000);--SE1
@@ -625,6 +657,7 @@ playSe( spep_6+5,1019);
 playSe( spep_6+65,1019);
 
 -- ** やられエフェクトその2 ** --
+--[[
 playSe( spep_6+6,1025);
 playSe( spep_6+16,1027);
 playSe( spep_6+26,1025);
@@ -638,6 +671,37 @@ playSe( spep_6+96,1027);
 playSe( spep_6+106,1025);
 playSe( spep_6+116,1027);
 playSe( spep_6+126,1025);
+]]
+SE001 = playSe( spep_6+6,1025);
+SE002 = playSe( spep_6+16,1027);
+stopSe(spep_6+36,SE001,5);
+stopSe(spep_6+46,SE002,5);
+
+SE003 = playSe( spep_6+26,1025);
+SE004 = playSe( spep_6+36,1027);
+stopSe(spep_6+56,SE003,5);
+stopSe(spep_6+66,SE004,5);
+
+SE005 = playSe( spep_6+46,1025);
+SE006 = playSe( spep_6+56,1027);
+stopSe(spep_6+76,SE005,5);
+stopSe(spep_6+86,SE006,5);
+
+SE007 = playSe( spep_6+66,1025);
+SE008 = playSe( spep_6+76,1027);
+stopSe(spep_6+96,SE007,5);
+stopSe(spep_6+106,SE008,5);
+
+SE009 = playSe( spep_6+86,1025);
+SE010 = playSe( spep_6+96,1027);
+stopSe(spep_6+116,SE009,5);
+stopSe(spep_6+126,SE010,5);
+
+SE011 = playSe( spep_6+106,1025);
+SE012 = playSe( spep_6+116,1027);
+stopSe(spep_6+136,SE011,5);
+
+SE013 = playSe( spep_6+126,1025);
 
 spep_7 = spep_6+124; -- 引数
 

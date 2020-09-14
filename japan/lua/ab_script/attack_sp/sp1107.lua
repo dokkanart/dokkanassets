@@ -365,6 +365,7 @@ setMoveKey( spep_4+90, 1, 2000, 0, 0); --敵位置
 rouga3 = entryEffect( spep_4, SP_03, 0x100, 0, 1, 0, 50); --狼牙ダメージ
 
 -- ** 音 ** --
+
 playSe( spep_4+7, SE_08);
 playSe( spep_4+15, SE_07);
 playSe( spep_4+29, SE_08);
@@ -583,6 +584,7 @@ setScaleKey( spep_6+87, 1, 2.2, 2.2); --敵のサイズ
 --playSe( spep_6+3, SE_09);
 playSe( spep_6+65, SE_07);
 
+--[[
 playSe( spep_6, SE_13);
 playSe( spep_6+10, SE_13);
 playSe( spep_6+20, SE_13);
@@ -590,6 +592,21 @@ playSe( spep_6+30, SE_13);
 playSe( spep_6+40, SE_13);
 playSe( spep_6+50, SE_13);
 playSe( spep_6+60, SE_13);
+]]
+--4.11調整
+SE001 = playSe( spep_6, SE_13);
+stopSe(spep_6+20,SE001,5);
+SE002 = playSe( spep_6+10, SE_13);
+stopSe(spep_6+30,SE002,5);
+SE003 = playSe( spep_6+20, SE_13);
+stopSe(spep_6+40,SE003,5);
+SE004 = playSe( spep_6+30, SE_13);
+stopSe(spep_6+50,SE004,5);
+SE005 = playSe( spep_6+40, SE_13);
+stopSe(spep_6+60,SE005,5);
+SE006 = playSe( spep_6+50, SE_13);
+stopSe(spep_6+70,SE006,5);
+SE007 = playSe( spep_6+60, SE_13);
 
 -- ** ホワイトフェード ** --
 entryFade( spep_6+80, 5, 12, 10, fcolor_r, fcolor_g, fcolor_b, 255); -- white fade
@@ -1316,6 +1333,7 @@ setScaleKey( spep_6+87, 1, 2.2, 2.2); --敵のサイズ
 --playSe( spep_6+3, SE_09);
 playSe( spep_6+65, SE_07);
 
+--[[
 playSe( spep_6, SE_13);
 playSe( spep_6+10, SE_13);
 playSe( spep_6+20, SE_13);
@@ -1323,6 +1341,21 @@ playSe( spep_6+30, SE_13);
 playSe( spep_6+40, SE_13);
 playSe( spep_6+50, SE_13);
 playSe( spep_6+60, SE_13);
+]]
+--4.11調整
+SE001 = playSe( spep_6, SE_13);
+stopSe(spep_6+20,SE001,5);
+SE002 = playSe( spep_6+10, SE_13);
+stopSe(spep_6+30,SE002,5);
+SE003 = playSe( spep_6+20, SE_13);
+stopSe(spep_6+40,SE003,5);
+SE004 = playSe( spep_6+30, SE_13);
+stopSe(spep_6+50,SE004,5);
+SE005 = playSe( spep_6+40, SE_13);
+stopSe(spep_6+60,SE005,5);
+SE006 = playSe( spep_6+50, SE_13);
+stopSe(spep_6+70,SE006,5);
+SE007 = playSe( spep_6+60, SE_13);
 
 -- ** ホワイトフェード ** --
 entryFade( spep_6+80, 5, 12, 10, fcolor_r, fcolor_g, fcolor_b, 255); -- white fade

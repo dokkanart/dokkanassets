@@ -381,6 +381,7 @@ setRotateKey( spep_1 -3 + 62, 1, -28.4 );
 setRotateKey( spep_1 -3 + 108, 1, -28.5 );
 
 --SE
+--[[
 playSe( spep_1+ 18, 1023 );  --爆発
 --playSe( spep_1+ 24, 1023 );  --爆発
 playSe( spep_1+ 30, 1023 );  --爆発
@@ -392,6 +393,18 @@ playSe( spep_1+ 54, 1023 );  --爆発
 playSe( spep_1+ 68, 1023 );  --爆発
 --playSe( spep_1+ 72, 1023 );  --爆発
 playSe( spep_1+ 80, 44 );  --突進
+]]
+--4.11
+SE001 = playSe( spep_1+ 18, 1023 );  --爆発
+stopSe(spep_1+30+10,SE001,10);
+SE002 = playSe( spep_1+ 30, 1023 );  --爆発
+stopSe(spep_1+40+10,SE002,10);
+SE003 = playSe( spep_1+ 40, 1023 );  --爆発
+stopSe(spep_1+54+10,SE003,10);
+SE004 = playSe( spep_1+ 54, 1023 );  --爆発
+stopSe(spep_1+68+10,SE004,10);
+SE005 = playSe( spep_1+ 68, 1023 );  --爆発
+SE006 = playSe( spep_1+ 80, 44 );  --突進
 
 
 -- ** ホワイトフェード ** --
@@ -1427,6 +1440,7 @@ setRotateKey( spep_1 -3 + 62, 1, -28.4 );
 setRotateKey( spep_1 -3 + 108, 1, -28.5 );
 
 --SE
+--[[
 playSe( spep_1+ 18, 1023 );  --爆発
 --playSe( spep_1+ 24, 1023 );  --爆発
 playSe( spep_1+ 30, 1023 );  --爆発
@@ -1438,6 +1452,18 @@ playSe( spep_1+ 54, 1023 );  --爆発
 playSe( spep_1+ 68, 1023 );  --爆発
 --playSe( spep_1+ 72, 1023 );  --爆発
 playSe( spep_1+ 80, 44 );  --突進
+]]
+--4.11
+SE001 = playSe( spep_1+ 18, 1023 );  --爆発
+stopSe(spep_1+30+10,SE001,10);
+SE002 = playSe( spep_1+ 30, 1023 );  --爆発
+stopSe(spep_1+40+10,SE002,10);
+SE003 = playSe( spep_1+ 40, 1023 );  --爆発
+stopSe(spep_1+54+10,SE003,10);
+SE004 = playSe( spep_1+ 54, 1023 );  --爆発
+stopSe(spep_1+68+10,SE004,10);
+SE005 = playSe( spep_1+ 68, 1023 );  --爆発
+SE006 = playSe( spep_1+ 80, 44 );  --突進
 
 
 -- ** ホワイトフェード ** --

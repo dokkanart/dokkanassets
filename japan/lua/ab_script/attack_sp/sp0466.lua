@@ -475,6 +475,7 @@ else end
 ------------------------------------------------------
 
 --SE
+--[[
 playSe( spep_3+15 , 1011);
 playSe( spep_3+30 , 1011);
 --playSe( spep_3+35 , SE_05);
@@ -482,6 +483,19 @@ playSe( spep_3+45 , 1011);
 --playSe( spep_3+55 , SE_05);
 playSe( spep_3+60 , 1011);
 playSe( spep_3+75 , 1011);
+]]
+
+--4.11調整
+SE001 = playSe( spep_3+15 , 1011);
+stopSe( spep_3+40,SE001,5);
+SE002 = playSe( spep_3+30 , 1011);
+stopSe( spep_3+55,SE002,5);
+SE003 = playSe( spep_3+45 , 1011);
+stopSe( spep_3+70,SE003,5);
+SE004 = playSe( spep_3+60 , 1011);
+stopSe( spep_3+85,SE004,5);
+SE005 = playSe( spep_3+75 , 1011);
+
 
 ------------------------------------------------------
 --魔貫光殺砲構え
@@ -1405,6 +1419,7 @@ else end
 ------------------------------------------------------
 
 --SE
+--[[
 playSe( spep_3+15 , 1011);
 playSe( spep_3+30 , 1011);
 --playSe( spep_3+35 , SE_05);
@@ -1412,6 +1427,18 @@ playSe( spep_3+45 , 1011);
 --playSe( spep_3+55 , SE_05);
 playSe( spep_3+60 , 1011);
 playSe( spep_3+75 , 1011);
+]]
+
+--4.11調整
+SE001 = playSe( spep_3+15 , 1011);
+stopSe( spep_3+40,SE001,5);
+SE002 = playSe( spep_3+30 , 1011);
+stopSe( spep_3+55,SE002,5);
+SE003 = playSe( spep_3+45 , 1011);
+stopSe( spep_3+70,SE003,5);
+SE004 = playSe( spep_3+60 , 1011);
+stopSe( spep_3+85,SE004,5);
+SE005 = playSe( spep_3+75 , 1011);
 
 ------------------------------------------------------
 --魔貫光殺砲構え

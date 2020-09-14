@@ -1357,10 +1357,20 @@ entryFade( spep_4 + 144, 0, 2, 0, fcolor_r, fcolor_g, fcolor_b, 255 );  -- white
 
 -- ** 音 ** --
 playSe( spep_4 + 44 -a, 1011 );  --バゴォ
+--[[
 playSe( spep_4 + 102, 1023 );  --炎
 playSe( spep_4 + 116, 1023 );  --炎
 playSe( spep_4 + 124, 1023 );  --炎
 playSe( spep_4 + 136, 1023 );  --炎
+]]
+--4.11調整
+SE001 = playSe( spep_4 + 102, 1023 );  --炎
+stopSe(spep_4+126,SE001,5);
+SE002 = playSe( spep_4 + 116, 1023 );  --炎
+stopSe(spep_4+134,SE002,5);
+SE003 = playSe( spep_4 + 124, 1023 );  --炎
+stopSe(spep_4+146,SE003,5);
+SE004 = playSe( spep_4 + 136, 1023 );  --炎
 
 -- ** 次の準備 ** --
 spep_5 = spep_4 + 146;
@@ -2817,10 +2827,20 @@ entryFade( spep_4 + 144, 0, 2, 0, fcolor_r, fcolor_g, fcolor_b, 255 );  -- white
 
 -- ** 音 ** --
 playSe( spep_4 + 44 -a, 1011 );  --バゴォ
+--[[
 playSe( spep_4 + 102, 1023 );  --炎
 playSe( spep_4 + 116, 1023 );  --炎
 playSe( spep_4 + 124, 1023 );  --炎
 playSe( spep_4 + 136, 1023 );  --炎
+]]
+--4.11調整
+SE001 = playSe( spep_4 + 102, 1023 );  --炎
+stopSe(spep_4+126,SE001,5);
+SE002 = playSe( spep_4 + 116, 1023 );  --炎
+stopSe(spep_4+134,SE002,5);
+SE003 = playSe( spep_4 + 124, 1023 );  --炎
+stopSe(spep_4+146,SE003,5);
+SE004 = playSe( spep_4 + 136, 1023 );  --炎
 
 -- ** 次の準備 ** --
 spep_5 = spep_4 + 146;

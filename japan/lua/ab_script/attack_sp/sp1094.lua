@@ -389,10 +389,20 @@ setScaleKey(  spep_6+18,   1,   2.5,  2.5);--2.0
 setScaleKey(  spep_6+40,   1,   2.5,  2.5);--2.0
 --setScaleKey(  spep_6+40,   1,   2.5,  2.5);
 
+--[[
 playSe( spep_6+20, SE_01);
 playSe( spep_6+40, SE_01);
 playSe( spep_6+60, SE_01);
 playSe( spep_6+80, SE_01);
+]]
+--4.11調整
+SE001 = playSe( spep_6+20, SE_01);
+stopSe( spep_6+50,SE001,10);
+SE002 = playSe( spep_6+40, SE_01);
+stopSe( spep_6+70,SE002,10);
+SE003 = playSe( spep_6+60, SE_01);
+stopSe( spep_6+90,SE002,10);
+SE004 = playSe( spep_6+80, SE_01);
 
 --setMoveKey(  spep_6+70,   1,  230,  220,   0);--76
 setMoveKey(  spep_6+70,   1,  270,  220,   0);--76
@@ -854,10 +864,20 @@ setScaleKey(  spep_6+18,   1,   2.5,  2.5);--2.0
 setScaleKey(  spep_6+40,   1,   2.5,  2.5);--2.0
 --setScaleKey(  spep_6+40,   1,   2.5,  2.5);
 
+--[[
 playSe( spep_6+20, SE_01);
 playSe( spep_6+40, SE_01);
 playSe( spep_6+60, SE_01);
 playSe( spep_6+80, SE_01);
+]]
+--4.11調整
+SE001 = playSe( spep_6+20, SE_01);
+stopSe( spep_6+50,SE001,10);
+SE002 = playSe( spep_6+40, SE_01);
+stopSe( spep_6+70,SE002,10);
+SE003 = playSe( spep_6+60, SE_01);
+stopSe( spep_6+90,SE002,10);
+SE004 = playSe( spep_6+80, SE_01);
 
 --setMoveKey(  spep_6+70,   1,  230,  220,   0);--76
 setMoveKey(  spep_6+70,   1,  270,  220,   0);--76

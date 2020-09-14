@@ -62,6 +62,10 @@ setEffAlphaKey(spep_1,Toujou,255);
 setEffAlphaKey(spep_1+92,Toujou,255);
 
 playSe( spep_1,SE_01);
+
+-- ** 背景 ** --
+entryFadeBg( spep_1 + 94, 0, 96, 0, 0, 0, 0, 255 );  --黒　背景
+
 ------------------------------------------------------
 -- 156F
 ------------------------------------------------------
@@ -184,10 +188,37 @@ spep_3 = spep_2+156;
 entryFade( spep_3, 0, 0, 8, fcolor_r, fcolor_g, fcolor_b, 255);     -- white fade
 entryFade( spep_3+72, 14, 2, 0, fcolor_r, fcolor_g, fcolor_b, 255);     -- white fade
 
-speff = entryEffect(  spep_3,   1507,   0,  -1,  0,  0,  0);   -- カード
+--[[speff = entryEffect(  spep_3,   1507,   0,  -1,  0,  0,  0);   -- カード
 setEffReplaceTexture( speff, 1, 1);
 setEffReplaceTexture( speff, 2, 0);                         -- カード差し替え
-setEffReplaceTexture( speff, 5, 4);                                  -- 技名テクスチャ差し替え
+setEffReplaceTexture( speff, 5, 4);                                  -- 技名テクスチャ差し替え]]
+
+if (_SPECIAL_SKILL_LEVEL_ == 0) then
+print ("_SPECIAL_SKILL_LEVEL_ == 0");
+playSe( spep_3, SE_05);
+speff = entryEffect( spep_3, 1507, 0, -1, 0, 0, 0); -- カード
+setEffReplaceTexture( speff, 1, 1);
+setEffReplaceTexture( speff, 2, 0); -- カード差し替え
+setEffReplaceTexture( speff, 5, 4); -- 技名テクスチャ差し替え
+
+
+elseif(_SPECIAL_SKILL_LEVEL_ == 1) then
+print ("_SPECIAL_SKILL_LEVEL_ == 1");
+playSe( spep_3, SE_05);
+speff = entryEffect( spep_3, 1120, 0, -1, 0, 0, 0); -- カード
+setEffReplaceTexture( speff, 1, 1);
+setEffReplaceTexture( speff, 2, 0); -- カード差し替え
+setEffReplaceTexture( speff, 5, 4); -- 技名テクスチャ差し替え
+
+
+elseif(_SPECIAL_SKILL_LEVEL_ == 2) then
+print ("_SPECIAL_SKILL_LEVEL_ == 2");
+playSe( spep_3, SE_05);
+speff = entryEffect( spep_3, 1121, 0, -1, 0, 0, 0); -- カード
+setEffReplaceTexture( speff, 1, 1);
+setEffReplaceTexture( speff, 2, 0); -- カード差し替え
+setEffReplaceTexture( speff, 5, 4); -- 技名テクスチャ差し替え
+end
 
 shuchusen3 = entryEffectLife( spep_3, 906, 88, 0x100,  -1, 0,  0,  0);  --集中線
 
@@ -201,7 +232,7 @@ setEffRotateKey(  spep_3+88,  shuchusen3,  0);
 setEffAlphaKey(  spep_3+88,  shuchusen3,  255);
 
 --SE
-playSe( spep_3, SE_05);
+--playSe( spep_3, SE_05);
 
 ------------------------------------------------------
 -- 128F 
@@ -756,6 +787,10 @@ setEffAlphaKey(spep_1,Toujou,255);
 setEffAlphaKey(spep_1+92,Toujou,255);
 
 playSe( spep_1,SE_01);
+
+-- ** 背景 ** --
+entryFadeBg( spep_1 + 94, 0, 96, 0, 0, 0, 0, 255 );  --黒　背景
+
 ------------------------------------------------------
 -- 156F
 ------------------------------------------------------
@@ -878,10 +913,37 @@ spep_3 = spep_2+156;
 entryFade( spep_3, 0, 0, 8, fcolor_r, fcolor_g, fcolor_b, 255);     -- white fade
 entryFade( spep_3+72, 14, 2, 0, fcolor_r, fcolor_g, fcolor_b, 255);     -- white fade
 
-speff = entryEffect(  spep_3,   1507,   0,  -1,  0,  0,  0);   -- カード
+--[[speff = entryEffect(  spep_3,   1507,   0,  -1,  0,  0,  0);   -- カード
 setEffReplaceTexture( speff, 1, 1);
 setEffReplaceTexture( speff, 2, 0);                         -- カード差し替え
-setEffReplaceTexture( speff, 5, 4);                                  -- 技名テクスチャ差し替え
+setEffReplaceTexture( speff, 5, 4);                                  -- 技名テクスチャ差し替え]]
+
+if (_SPECIAL_SKILL_LEVEL_ == 0) then
+print ("_SPECIAL_SKILL_LEVEL_ == 0");
+playSe( spep_3, SE_05);
+speff = entryEffect( spep_3, 1507, 0, -1, 0, 0, 0); -- カード
+setEffReplaceTexture( speff, 1, 1);
+setEffReplaceTexture( speff, 2, 0); -- カード差し替え
+setEffReplaceTexture( speff, 5, 4); -- 技名テクスチャ差し替え
+
+
+elseif(_SPECIAL_SKILL_LEVEL_ == 1) then
+print ("_SPECIAL_SKILL_LEVEL_ == 1");
+playSe( spep_3, SE_05);
+speff = entryEffect( spep_3, 1120, 0, -1, 0, 0, 0); -- カード
+setEffReplaceTexture( speff, 1, 1);
+setEffReplaceTexture( speff, 2, 0); -- カード差し替え
+setEffReplaceTexture( speff, 5, 4); -- 技名テクスチャ差し替え
+
+
+elseif(_SPECIAL_SKILL_LEVEL_ == 2) then
+print ("_SPECIAL_SKILL_LEVEL_ == 2");
+playSe( spep_3, SE_05);
+speff = entryEffect( spep_3, 1121, 0, -1, 0, 0, 0); -- カード
+setEffReplaceTexture( speff, 1, 1);
+setEffReplaceTexture( speff, 2, 0); -- カード差し替え
+setEffReplaceTexture( speff, 5, 4); -- 技名テクスチャ差し替え
+end
 
 shuchusen3 = entryEffectLife( spep_3, 906, 88, 0x100,  -1, 0,  0,  0);  --集中線
 
@@ -895,7 +957,7 @@ setEffRotateKey(  spep_3+88,  shuchusen3,  0);
 setEffAlphaKey(  spep_3+88,  shuchusen3,  255);
 
 --SE
-playSe( spep_3, SE_05);
+--playSe( spep_3, SE_05);
 
 ------------------------------------------------------
 -- 128F 

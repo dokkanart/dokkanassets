@@ -315,8 +315,14 @@ setMoveKey(step_5+12,1,300,-250);
 setScaleKey(step_5+12,1,2.0,2.0);
 setRotateKey(step_5+12,0);
 
+--[[
 playSe(step_5+32,9);
 playSe(step_5+48,9);
+]]
+--4.11
+SE001 = playSe(step_5+32,9);
+stopSe(step_5+48+3,SE001,5);
+SE002 = playSe(step_5+48,9);
 
 ------------------------------------------------------
 -- 回避
@@ -713,8 +719,14 @@ setMoveKey(step_5+12,1,300,-250);
 setScaleKey(step_5+12,1,2.0,2.0);
 setRotateKey(step_5+12,0);
 
+--[[
 playSe(step_5+32,9);
 playSe(step_5+48,9);
+]]
+--4.11
+SE001 = playSe(step_5+32,9);
+stopSe(step_5+48+3,SE001,5);
+SE002 = playSe(step_5+48,9);
 
 ------------------------------------------------------
 -- 回避

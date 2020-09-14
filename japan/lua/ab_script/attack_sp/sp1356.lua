@@ -39,11 +39,11 @@ multi_frm = 2;
 
 setVisibleUI( 0, 0);
 
-
+--[[
 if( _IS_EXTRA_ATTACK_ == 0 ) then
  adjustAttackerLabel( 0, 205);
 end
-
+]]
 setDisp( 0, 0, 0);
 changeAnime( 0, 0, 0);
 

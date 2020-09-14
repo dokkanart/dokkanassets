@@ -143,7 +143,7 @@ setEffScaleKey( spep_0 +4 + 98, ctgogo, 1.07, 1.07 );
 
 --SE
 SE=playSe(spep_0,1044);
-stopSe(spep_0+30,SE,0);
+stopSe(spep_0+37,SE,5);
 playSe( spep_0+32, SE_04); --ゴゴ
 
 --黒背景
@@ -951,7 +951,7 @@ setEffScaleKey( spep_0 +4 + 98, ctgogo, -1.07, 1.07 );
 
 --SE
 SE=playSe(spep_0,1044);
-stopSe(spep_0+30,SE,0);
+stopSe(spep_0+37,SE,5);
 playSe( spep_0+32, SE_04); --ゴゴ
 
 --黒背景

@@ -241,6 +241,7 @@ else
 
 	for cnt = 0, 174, 3 do
 	Machinegun = playSe( 260+cnt, SE_13);
+	setSeVolumeByWorkId( 260+cnt,Machinegun,70);
 	end
 
 end
@@ -538,6 +539,7 @@ else
 
 	for cnt = 0, 174, 3 do
 	Machinegun = playSe( 260+cnt, SE_13);
+	setSeVolumeByWorkId( 260+cnt,Machinegun,70);
 	end
 
 end

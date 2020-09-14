@@ -294,6 +294,7 @@ setRotateKey( spep_0 + 170, 1, 180 );
 setRotateKey( spep_0 + 196, 1, 180 );
 
 -- ** 音 ** --
+--[[
 playSe( spep_0 + 154, 1010 );  --殴る
 playSe( spep_0 + 198, 1023 );  --地面に当たる
 playSe( spep_0 + 218, 1034 );  --走る
@@ -305,6 +306,28 @@ playSe( spep_0 + 338, 1034 );  --走る
 playSe( spep_0 + 368, 1034 );  --走る
 playSe( spep_0 + 398, 1034 );  --走る
 playSe( spep_0 + 428, 1034 );  --走る
+playSe( spep_0 + 452, 1013 );  --着地
+playSe( spep_0 + 458, 1034 );  --走る
+]]
+--4.11
+playSe( spep_0 + 154, 1010 );  --殴る
+playSe( spep_0 + 198, 1023 );  --地面に当たる
+SE001 = playSe( spep_0 + 218, 1034 );  --走る
+stopSe(spep_0+248+4,SE001,5);
+SE002 = playSe( spep_0 + 248, 1034 );  --走る
+stopSe(spep_0+278+4,SE002,5);
+SE003 = playSe( spep_0 + 278, 1034 );  --走る
+stopSe(spep_0+308+4,SE003,5);
+SE004 = playSe( spep_0 + 308, 1034 );  --走る
+stopSe(spep_0+338+4,SE004,5);
+playSe( spep_0 + 332, 1003 );  --ジャンプ
+SE005 = playSe( spep_0 + 338, 1034 );  --走る
+stopSe(spep_0+368+4,SE005,5);
+SE006 = playSe( spep_0 + 368, 1034 );  --走る
+stopSe(spep_0+398+4,SE006,5);
+SE007 = playSe( spep_0 + 398, 1034 );  --走る
+stopSe(spep_0+428+4,SE007,5);
+SE008 = playSe( spep_0 + 428, 1034 );  --走る
 playSe( spep_0 + 452, 1013 );  --着地
 playSe( spep_0 + 458, 1034 );  --走る
 
@@ -631,6 +654,7 @@ setRotateKey( spep_0 + 170, 1, 180 );
 setRotateKey( spep_0 + 196, 1, 180 );
 
 -- ** 音 ** --
+--[[
 playSe( spep_0 + 154, 1010 );  --殴る
 playSe( spep_0 + 198, 1023 );  --地面に当たる
 playSe( spep_0 + 218, 1034 );  --走る
@@ -642,6 +666,28 @@ playSe( spep_0 + 338, 1034 );  --走る
 playSe( spep_0 + 368, 1034 );  --走る
 playSe( spep_0 + 398, 1034 );  --走る
 playSe( spep_0 + 428, 1034 );  --走る
+playSe( spep_0 + 452, 1013 );  --着地
+playSe( spep_0 + 458, 1034 );  --走る
+]]
+--4.11
+playSe( spep_0 + 154, 1010 );  --殴る
+playSe( spep_0 + 198, 1023 );  --地面に当たる
+SE001 = playSe( spep_0 + 218, 1034 );  --走る
+stopSe(spep_0+248+4,SE001,5);
+SE002 = playSe( spep_0 + 248, 1034 );  --走る
+stopSe(spep_0+278+4,SE002,5);
+SE003 = playSe( spep_0 + 278, 1034 );  --走る
+stopSe(spep_0+308+4,SE003,5);
+SE004 = playSe( spep_0 + 308, 1034 );  --走る
+stopSe(spep_0+338+4,SE004,5);
+playSe( spep_0 + 332, 1003 );  --ジャンプ
+SE005 = playSe( spep_0 + 338, 1034 );  --走る
+stopSe(spep_0+368+4,SE005,5);
+SE006 = playSe( spep_0 + 368, 1034 );  --走る
+stopSe(spep_0+398+4,SE006,5);
+SE007 = playSe( spep_0 + 398, 1034 );  --走る
+stopSe(spep_0+428+4,SE007,5);
+SE008 = playSe( spep_0 + 428, 1034 );  --走る
 playSe( spep_0 + 452, 1013 );  --着地
 playSe( spep_0 + 458, 1034 );  --走る
 

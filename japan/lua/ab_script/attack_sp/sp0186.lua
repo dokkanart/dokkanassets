@@ -398,7 +398,9 @@ setMoveKey(  SP_ATK_4+1,    1,    0,   0,   128);
 setScaleKey( SP_ATK_4+1,    1,  0.1, 0.1);
 
 changeAnime( SP_ATK_4+1, 1, 107);                         -- 手前ダメージ
-entryEffect( SP_ATK_4+1, SP_08,  0x80,  -1,  0,  0,  0);   -- 全体攻撃用爆発
+ef1=entryEffect( SP_ATK_4+1, SP_08,  0x80,  -1,  0,  0,  0);   -- 全体攻撃用爆発
+setEffScaleKey( SP_ATK_4+1, ef1, 1.1, 1.1 );
+setEffScaleKey( SP_ATK_4+80, ef1, 1.1, 1.1 );
 playSe( SP_ATK_4+1, SE_10);
 
 setMoveKey(  SP_ATK_4+8,    1,    0,    -250,   128);

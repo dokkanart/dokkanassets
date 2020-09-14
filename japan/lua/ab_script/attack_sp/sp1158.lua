@@ -372,7 +372,9 @@ setMoveKey( spep_3+100, 1, 0, -500, 0); --敵位置
 setMoveKey( spep_3+140, 1, 0, -1500, 0); --敵位置
 setMoveKey( spep_3+180, 1, 0, -10000, 0); --敵位置
 
+
 playSe( spep_3+27, SE_09);
+--[[
 playSe( spep_3+70, 1011);
 playSe( spep_3+80, 1011);
 playSe( spep_3+90, 1011);
@@ -381,6 +383,23 @@ playSe( spep_3+110, 1011);
 playSe( spep_3+120, 1011);
 playSe( spep_3+130, 1011);
 playSe( spep_3+140, 1011);
+]]
+--4.11調整
+SE001 = playSe( spep_3+70, 1011);
+stopSe( spep_3+90,SE001,5);
+SE002 = playSe( spep_3+80, 1011);
+stopSe( spep_3+100,SE002,5);
+SE003 = playSe( spep_3+90, 1011);
+stopSe( spep_3+110,SE003,5);
+SE004 = playSe( spep_3+100, 1011);
+stopSe( spep_3+120,SE004,5);
+SE005 = playSe( spep_3+110, 1011);
+stopSe( spep_3+130,SE005,5);
+SE006 = playSe( spep_3+120, 1011);
+stopSe( spep_3+140,SE006,5);
+SE007 = playSe( spep_3+130, 1011);
+stopSe( spep_3+150,SE007,5);
+SE008 = playSe( spep_3+140, 1011);
 
 ------------------------------------------------------
 -- 正面溜め(120F)
@@ -839,6 +858,7 @@ setMoveKey( spep_3+140, 1, 0, -1500, 0); --敵位置
 setMoveKey( spep_3+180, 1, 0, -10000, 0); --敵位置
 
 playSe( spep_3+27, SE_09);
+--[[
 playSe( spep_3+70, 1011);
 playSe( spep_3+80, 1011);
 playSe( spep_3+90, 1011);
@@ -847,6 +867,23 @@ playSe( spep_3+110, 1011);
 playSe( spep_3+120, 1011);
 playSe( spep_3+130, 1011);
 playSe( spep_3+140, 1011);
+]]
+--4.11調整
+SE001 = playSe( spep_3+70, 1011);
+stopSe( spep_3+90,SE001,5);
+SE002 = playSe( spep_3+80, 1011);
+stopSe( spep_3+100,SE002,5);
+SE003 = playSe( spep_3+90, 1011);
+stopSe( spep_3+110,SE003,5);
+SE004 = playSe( spep_3+100, 1011);
+stopSe( spep_3+120,SE004,5);
+SE005 = playSe( spep_3+110, 1011);
+stopSe( spep_3+130,SE005,5);
+SE006 = playSe( spep_3+120, 1011);
+stopSe( spep_3+140,SE006,5);
+SE007 = playSe( spep_3+130, 1011);
+stopSe( spep_3+150,SE007,5);
+SE008 = playSe( spep_3+140, 1011);
 
 ------------------------------------------------------
 -- 正面溜め(120F)

@@ -318,7 +318,7 @@ setEffReplaceTexture( speff, 2, 0);                         -- カード差し�
 setEffReplaceTexture( speff, 5, 4);                                  -- 技名テクスチャ差し替え
 
 
-entryFade( 600+85, 3, 2, 4, fcolor_r, fcolor_g, fcolor_b, 255);     -- white fade
+entryFade( 600+85, 3, 2 +4, 4, fcolor_r, fcolor_g, fcolor_b, 255);     -- white fade
 
 -- ** エフェクト等 ** --
 --entryFlash( (170+10), 1, fcolor_r, fcolor_g, fcolor_b, 200);
@@ -440,7 +440,7 @@ setEffAlphaKey(889, ct, 255);
 setEffAlphaKey(926, ct, 255);
 setEffAlphaKey(941, ct, 0);
 
-entryFade( 936, 6,  5, 10, fcolor_r, fcolor_g, fcolor_b, 255);     -- white fade
+entryFade( 936-2, 6,  5 +2, 10, fcolor_r, fcolor_g, fcolor_b, 255);     -- white fade
 
 
 
@@ -748,7 +748,7 @@ setEffReplaceTexture( speff, 2, 0);                         -- カード差し�
 setEffReplaceTexture( speff, 5, 4);                                  -- 技名テクスチャ差し替え
 
 
-entryFade( 600+85, 3, 2, 4, fcolor_r, fcolor_g, fcolor_b, 255);     -- white fade
+entryFade( 600+85, 3, 2 +4, 4, fcolor_r, fcolor_g, fcolor_b, 255);     -- white fade
 
 -- ** エフェクト等 ** --
 --entryFlash( (170+10), 1, fcolor_r, fcolor_g, fcolor_b, 200);
@@ -870,7 +870,7 @@ setEffAlphaKey(889, ct, 255);
 setEffAlphaKey(926, ct, 255);
 setEffAlphaKey(941, ct, 0);
 
-entryFade( 936, 6,  5, 10, fcolor_r, fcolor_g, fcolor_b, 255);     -- white fade
+entryFade( 936 -2, 6,  5 +2, 10, fcolor_r, fcolor_g, fcolor_b, 255);     -- white fade
 
 
 

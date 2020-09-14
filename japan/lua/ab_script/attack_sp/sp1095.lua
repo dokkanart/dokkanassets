@@ -256,12 +256,27 @@ entryFade( spep_2+2, 2, 4, 2, fcolor_r, fcolor_g, fcolor_b, 255);     -- white f
 entryFade( spep_2+54, 2, 4, 4, fcolor_r, fcolor_g, fcolor_b, 255);     -- white fade
 
 --SE
+--[[
 playSe( spep_2+10, 1009);
 playSe( spep_2+20, 1009);
 playSe( spep_2+34, 1010);
 playSe( spep_2+40, 1010);
 playSe( spep_2+48, 1010);
 playSe( spep_2+62, 1011);
+]]
+--4.11調整
+SE001 = playSe( spep_2+10, 1009);
+stopSe( spep_2+30,SE001,5);
+SE002 = playSe( spep_2+20, 1009);
+stopSe( spep_2+44,SE002,5);
+SE003 = playSe( spep_2+34, 1010);
+stopSe( spep_2+50,SE003,5);
+SE004 = playSe( spep_2+40, 1010);
+stopSe( spep_2+58,SE004,5);
+SE005 = playSe( spep_2+48, 1010);
+stopSe( spep_2+72,SE005,5);
+SE006 = playSe( spep_2+62, 1011);
+
 
 ketta = entryEffect(  spep_2,   SP_03,   0,  -1,  0,  0,  0);   -- 蹴り
 setEffScaleKey( spep_2, ketta, 1.0, 1.0);
@@ -1100,12 +1115,26 @@ entryFade( spep_2+2, 2, 4, 2, fcolor_r, fcolor_g, fcolor_b, 255);     -- white f
 entryFade( spep_2+54, 2, 4, 4, fcolor_r, fcolor_g, fcolor_b, 255);     -- white fade
 
 --SE
+--[[
 playSe( spep_2+10, 1009);
 playSe( spep_2+20, 1009);
 playSe( spep_2+34, 1010);
 playSe( spep_2+40, 1010);
 playSe( spep_2+48, 1010);
 playSe( spep_2+62, 1011);
+]]
+--4.11調整
+SE001 = playSe( spep_2+10, 1009);
+stopSe( spep_2+30,SE001,5);
+SE002 = playSe( spep_2+20, 1009);
+stopSe( spep_2+44,SE002,5);
+SE003 = playSe( spep_2+34, 1010);
+stopSe( spep_2+50,SE003,5);
+SE004 = playSe( spep_2+40, 1010);
+stopSe( spep_2+58,SE004,5);
+SE005 = playSe( spep_2+48, 1010);
+stopSe( spep_2+72,SE005,5);
+SE006 = playSe( spep_2+62, 1011);
 
 ketta = entryEffect(  spep_2,   SP_03,   0,  -1,  0,  0,  0);   -- 蹴り
 setEffScaleKey( spep_2, ketta, 1.0, 1.0);

@@ -216,7 +216,7 @@ setEffScaleKey(spep_4+40, ctZuo, 6.0, 6.0);
 
 for cnt = 0, 96, 3 do --174
 seid=playSe( 260+cnt, SE_13);
-setSeVolume(260+cnt, SE_13, 70 );
+setSeVolume(260+cnt, SE_13, 60 );
 end
 
 ------------------------------------------------------
@@ -565,7 +565,7 @@ setEffScaleKey(spep_4+40, ctZuo, 6.0, 6.0);
 
 for cnt = 0, 96, 3 do --174
 seid=playSe( 260+cnt, SE_13);
-setSeVolume(260+cnt, SE_13, 70 );
+setSeVolume(260+cnt, SE_13, 60 );
 end
 
 ------------------------------------------------------

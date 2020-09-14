@@ -284,9 +284,16 @@ setScaleKey( SP_start2+ SP_start+ spep_5+1,    1,  0.1, 0.1);
 
 changeAnime( SP_start2+ SP_start+ spep_5+1, 1, 107);                         -- 手前ダメージ
 --entryEffect( SP_start2+ SP_start+ spep_5+1, SP_08,  0x80,  -1,  0,  0,  0);   -- 全体攻撃用爆発
+--[[
 playSe( SP_start2+ SP_start+ spep_5+1, SE_10);
 playSe( SP_start2+ SP_start+ spep_5+41, SE_10);
 playSe( SP_start2+ SP_start+ spep_5+61, SE_10);
+]]
+SE001 = playSe( SP_start2+ SP_start+ spep_5+1, SE_10);
+stopSe( SP_start2+ SP_start+ spep_5+51,SE001,10);
+SE002 = playSe( SP_start2+ SP_start+ spep_5+41, SE_10);
+stopSe( SP_start2+ SP_start+ spep_5+71,SE002,10);
+SE003 = playSe( SP_start2+ SP_start+ spep_5+61, SE_10);
 
 setMoveKey( SP_start2+ SP_start+  spep_5+8,    1,    -120,    200,   128);
 setMoveKey( SP_start2+ SP_start+  spep_5+15,   1,  60,    -200,  -100);
@@ -573,9 +580,16 @@ setScaleKey( SP_start2+ SP_start+ spep_5+1,    1,  0.1, 0.1);
 
 changeAnime( SP_start2+ SP_start+ spep_5+1, 1, 107);                         -- 手前ダメージ
 --entryEffect( SP_start2+ SP_start+ spep_5+1, SP_08,  0x80,  -1,  0,  0,  0);   -- 全体攻撃用爆発
+--[[
 playSe( SP_start2+ SP_start+ spep_5+1, SE_10);
 playSe( SP_start2+ SP_start+ spep_5+41, SE_10);
 playSe( SP_start2+ SP_start+ spep_5+61, SE_10);
+]]
+SE001 = playSe( SP_start2+ SP_start+ spep_5+1, SE_10);
+stopSe( SP_start2+ SP_start+ spep_5+51,SE001,10);
+SE002 = playSe( SP_start2+ SP_start+ spep_5+41, SE_10);
+stopSe( SP_start2+ SP_start+ spep_5+71,SE002,10);
+SE003 = playSe( SP_start2+ SP_start+ spep_5+61, SE_10);
 
 setMoveKey( SP_start2+ SP_start+  spep_5+8,    1,    -120,    200,   128);
 setMoveKey( SP_start2+ SP_start+  spep_5+15,   1,  60,    -200,  -100);

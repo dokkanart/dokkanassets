@@ -141,7 +141,7 @@ setEffReplaceTexture( speff, 1, 1);
 setEffReplaceTexture( speff, 2, 0);                         -- カード差し替え
 setEffReplaceTexture( speff, 5, 4);                                  -- 技名テクスチャ差し替え
 
-entryFade( spep_2+85, 3, 2, 4, fcolor_r, fcolor_g, fcolor_b, 255);     -- white fade
+entryFade( spep_2+85, 3, 2 +2, 4, fcolor_r, fcolor_g, fcolor_b, 255);     -- white fade
 
 -- ** エフェクト等 ** --
 --entryFlash( (170+10), 1, fcolor_r, fcolor_g, fcolor_b, 200);
@@ -322,7 +322,9 @@ spep_5=spep_4+82+17 --410 469
 -- 爆発 (110F)
 ------------------------------------------------------
 
-entryEffect( spep_5,1553,0,-1,0,0,0);
+eff001 = entryEffect( spep_5,1553,0,-1,0,0,0);
+setEffScaleKey( spep_5, eff001, 1.2, 1.2);
+setEffScaleKey( spep_5 +120, eff001, 1.2, 1.2);
 
 setDisp( spep_5, 1, 0);
 
@@ -467,7 +469,7 @@ setEffReplaceTexture( speff, 1, 1);
 setEffReplaceTexture( speff, 2, 0);                         -- カード差し替え
 setEffReplaceTexture( speff, 5, 4);                                  -- 技名テクスチャ差し替え
 
-entryFade( spep_2+85, 3, 2, 4, fcolor_r, fcolor_g, fcolor_b, 255);     -- white fade
+entryFade( spep_2+85, 3, 2 +2, 4, fcolor_r, fcolor_g, fcolor_b, 255);     -- white fade
 
 -- ** エフェクト等 ** --
 --entryFlash( (170+10), 1, fcolor_r, fcolor_g, fcolor_b, 200);
@@ -648,7 +650,9 @@ spep_5=spep_4+82+17 --410 469
 -- 爆発 (110F)
 ------------------------------------------------------
 
-entryEffect( spep_5,1553,0,-1,0,0,0);
+eff001 = entryEffect( spep_5,1553,0,-1,0,0,0);
+setEffScaleKey( spep_5, eff001, 1.2, 1.2);
+setEffScaleKey( spep_5 +120, eff001, 1.2, 1.2);
 
 setDisp( spep_5, 1, 0);
 

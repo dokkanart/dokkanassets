@@ -122,7 +122,7 @@ setEffScaleKey(90, ct, 1.4, 1.4);
 setScaleKey( 169,   0, 1.5, 1.5);
 setScaleKey( 170,   0, 1.0, 1.0);
 
-playSe( 170, SE_05);
+--playSe( 170, SE_05);
 --speff = entryEffect(  170,   1507,   0,  -1,  0,  0,  0);   -- カード
 --setEffReplaceTexture( speff, 1, 1);
 --setEffReplaceTexture( speff, 2, 0);                         -- カード差し替え
@@ -447,7 +447,7 @@ setEffScaleKey(90, ct, 1.4, 1.4);
 setScaleKey( 169,   0, 1.5, 1.5);
 setScaleKey( 170,   0, 1.0, 1.0);
 
-playSe( 170, SE_05);
+--playSe( 170, SE_05);
 --speff = entryEffect(  170,   1507,   0,  -1,  0,  0,  0);   -- カード
 --setEffReplaceTexture( speff, 1, 1);
 --setEffReplaceTexture( speff, 2, 0);                         -- カード差し替え

@@ -417,11 +417,11 @@ shuchusen = entryEffectLife( SP_ATK_4, 906, 120, 0x00,  -1, 0,  0,  0);   -- 集
 entryEffect( SP_ATK_4+3, 1600,  0x00,  -1,  0,30, -130);   -- ひび割れ
 
 -- ダメージ表示
-dealDamage(SP_ATK_4+10);
+dealDamage(SP_ATK_4+10 -10);
 
-entryFade( SP_ATK_4+100, 9,  10, 1, 8, 8, 8, 255);             -- black fade
+--entryFade( SP_ATK_4+100, 9,  10, 1, 8, 8, 8, 255);             -- black fade
 
-endPhase(SP_ATK_4+110);
+endPhase(SP_ATK_4+110 -10);
 
 else
 -----------------------------------------
@@ -720,11 +720,11 @@ shuchusen = entryEffectLife( SP_ATK_4, 906, 120, 0x00,  -1, 0,  0,  0);   -- 集
 entryEffect( SP_ATK_4+3, 1600,  0x00,  -1,  0,30, -130);   -- ひび割れ
 
 -- ダメージ表示
-dealDamage(SP_ATK_4+10);
+dealDamage(SP_ATK_4+10 -10);
 
-entryFade( SP_ATK_4+100, 9,  10, 1, 8, 8, 8, 255);             -- black fade
+--entryFade( SP_ATK_4+100, 9,  10, 1, 8, 8, 8, 255);             -- black fade
 
-endPhase(SP_ATK_4+120);
+endPhase(SP_ATK_4+120 -10);
 end
 
 print ("[lua]sp0001 end");

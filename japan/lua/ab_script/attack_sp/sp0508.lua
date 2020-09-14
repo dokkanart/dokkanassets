@@ -275,10 +275,22 @@ playSe( spep_2 + 66, 1034 );  --溜め
 playSe( spep_2 + 81, 1034 );  --溜め
 --playSe( spep_2 + 96, 1034 );  --溜め
 playSe( spep_2 + 82, 1022 );  --発射音
+
+--[[
 playSe( spep_2 + 152, 1023 );  --着弾
 playSe( spep_2 + 162, 1023 );  --着弾
 playSe( spep_2 + 172, 1023 );  --着弾
 playSe( spep_2 + 182, 1023 );  --着弾
+]]
+--4.11調整
+SE001 = playSe( spep_2 + 152, 1023 );  --着弾
+stopSe( spep_2 + 172, SE001,5);
+SE002 = playSe( spep_2 + 162, 1023 );  --着弾
+stopSe( spep_2 + 182, SE002,5);
+SE003 = playSe( spep_2 + 172, 1023 );  --着弾
+stopSe( spep_2 + 192, SE003,5);
+SE004 = playSe( spep_2 + 182, 1023 );  --着弾
+
 
 -- ** ホワイトフェード ** --
 entryFade( spep_2 + 218, 2, 2, 2, fcolor_r, fcolor_g, fcolor_b, 255 );  -- white fade
@@ -641,10 +653,20 @@ playSe( spep_2 + 66, 1034 );  --溜め
 playSe( spep_2 + 81, 1034 );  --溜め
 --playSe( spep_2 + 96, 1034 );  --溜め
 playSe( spep_2 + 82, 1022 ); --発射音
+--[[
 playSe( spep_2 + 152, 1023 );  --着弾
 playSe( spep_2 + 162, 1023 );  --着弾
 playSe( spep_2 + 172, 1023 );  --着弾
 playSe( spep_2 + 182, 1023 );  --着弾
+]]
+--4.11調整
+SE001 = playSe( spep_2 + 152, 1023 );  --着弾
+stopSe( spep_2 + 172, SE001,5);
+SE002 = playSe( spep_2 + 162, 1023 );  --着弾
+stopSe( spep_2 + 182, SE002,5);
+SE003 = playSe( spep_2 + 172, 1023 );  --着弾
+stopSe( spep_2 + 192, SE003,5);
+SE004 = playSe( spep_2 + 182, 1023 );  --着弾
 
 -- ** ホワイトフェード ** --
 entryFade( spep_2 + 218, 2, 2, 2, fcolor_r, fcolor_g, fcolor_b, 255 );  -- white fade

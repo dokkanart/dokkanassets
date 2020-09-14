@@ -186,7 +186,7 @@ playSe(  spep_2,  1016);
 playSe(  spep_2+9,  1016);
 playSe(  spep_2+19,  1016);
 playSe(  spep_2+29,  1016);
-playSe(  spep_2+29,  1016);
+--playSe(  spep_2+29,  1016);
 playSe(  spep_2+39,  1016);
 
 
@@ -301,10 +301,20 @@ setScaleKey( spep_3+75, 1, 1.05, 1.05 );
 setRotateKey( spep_3+22, 1, 0 );
 setRotateKey( spep_3+75, 1, 0 );
 
+--[[
 playSe(spep_3+4,  SE_09);
 playSe(spep_3+18,  SE_09);
 playSe(spep_3+30,  SE_09);
 playSe(spep_3+44,  SE_09);
+]]
+--4.11
+SE001 = playSe(spep_3+4,  SE_09);
+stopSe(spep_3+28,SE001,10);
+SE002 = playSe(spep_3+18,  SE_09);
+stopSe(spep_3+40,SE002,10);
+SE003 = playSe(spep_3+30,  SE_09);
+stopSe(spep_3+54,SE003,10);
+SE004 = playSe(spep_3+44,  SE_09);
 
 entryFade( spep_3+4, 0, 0, 4, fcolor_r, fcolor_g, fcolor_b, 255);     -- white fade
 entryFade( spep_3+18, 0, 0, 4, fcolor_r, fcolor_g, fcolor_b, 255);     -- white fade
@@ -829,7 +839,7 @@ playSe(  spep_2,  1016);
 playSe(  spep_2+9,  1016);
 playSe(  spep_2+19,  1016);
 playSe(  spep_2+29,  1016);
-playSe(  spep_2+29,  1016);
+--playSe(  spep_2+29,  1016);
 playSe(  spep_2+39,  1016);
 
 
@@ -943,10 +953,20 @@ setScaleKey( spep_3+75, 1, 1.05, 1.05 );
 setRotateKey( spep_3+22, 1, 0 );
 setRotateKey( spep_3+75, 1, 0 );
 
+--[[
 playSe(spep_3+4,  SE_09);
 playSe(spep_3+18,  SE_09);
 playSe(spep_3+30,  SE_09);
 playSe(spep_3+44,  SE_09);
+]]
+--4.11
+SE001 = playSe(spep_3+4,  SE_09);
+stopSe(spep_3+28,SE001,10);
+SE002 = playSe(spep_3+18,  SE_09);
+stopSe(spep_3+40,SE002,10);
+SE003 = playSe(spep_3+30,  SE_09);
+stopSe(spep_3+54,SE003,10);
+SE004 = playSe(spep_3+44,  SE_09);
 
 entryFade( spep_3+4, 0, 0, 4, fcolor_r, fcolor_g, fcolor_b, 255);     -- white fade
 entryFade( spep_3+18, 0, 0, 4, fcolor_r, fcolor_g, fcolor_b, 255);     -- white fade

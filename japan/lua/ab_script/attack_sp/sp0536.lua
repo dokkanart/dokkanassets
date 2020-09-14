@@ -311,7 +311,7 @@ setEffAlphaKey( spep_4 + 0, shuchusen1, 255 );
 setEffAlphaKey( spep_4 + 90, shuchusen1, 255 );
 
 -- ** 音 ** --
-playSe( spep_4 + 0, SE_05 );
+--playSe( spep_4 + 0, SE_05 );
 
 -- ** 次の準備 ** --
 entryFade( spep_4 + 82, 6, 6, 0, fcolor_r, fcolor_g, fcolor_b, 255 );  --white fade
@@ -578,7 +578,7 @@ setRotateKey( spep_6 + 36, 1, 0 );
 
 -- ** 音 ** --
 SEzudo = playSe( spep_6 + 0, 1044 );
-stopSe( spep_6 + 34, SEzudo, 0 );
+stopSe( spep_6 + 46, SEzudo, 5 );
 playSe( spep_6 + 36, 1023 );
 
 -- ** 黒背景 ** --
@@ -842,7 +842,7 @@ setEffAlphaKey( spep_4 + 0, shuchusen1, 255 );
 setEffAlphaKey( spep_4 + 90, shuchusen1, 255 );
 
 -- ** 音 ** --
-playSe( spep_4 + 0, SE_05 );
+--playSe( spep_4 + 0, SE_05 );
 
 -- ** 次の準備 ** --
 entryFade( spep_4 + 82, 6, 6, 0, fcolor_r, fcolor_g, fcolor_b, 255 );  --white fade
@@ -1109,7 +1109,7 @@ setRotateKey( spep_6 + 36, 1, 0 );
 
 -- ** 音 ** --
 SEzudo = playSe( spep_6 + 0, 1044 );
-stopSe( spep_6 + 34, SEzudo, 0 );
+stopSe( spep_6 + 46, SEzudo, 5 );
 playSe( spep_6 + 36, 1023 );
 
 -- ** 黒背景 ** --

@@ -398,6 +398,7 @@ endPhase(SP_dodge+10);
 do return end
 else end
 
+--[[
 playSe( SP_ATK01+35, SE_09);
 playSe( SP_ATK01+50+diff01, SE_08);
 playSe( SP_ATK01+57+diff01, SE_09);
@@ -406,6 +407,20 @@ playSe( SP_ATK01+72+diff01, SE_09);
 playSe( SP_ATK01+76+diff01, SE_08);
 playSe( SP_ATK01+80+diff01, SE_08);
 playSe( SP_ATK01+91+diff01+diff02, SE_09);
+]]
+--4.11
+SE001 = playSe( SP_ATK01+35, SE_09);
+stopSe(SP_ATK01+65+diff01,SE001,5);
+SE002 = playSe( SP_ATK01+50+diff01, SE_08);
+SE003 = playSe( SP_ATK01+57+diff01, SE_09);
+stopSe(SP_ATK01+80+diff01,SE003,5);
+SE004 = playSe( SP_ATK01+65+diff01, SE_08);
+SE005 = playSe( SP_ATK01+72+diff01, SE_09);
+stopSe(SP_ATK01+91+diff01,SE005,5);
+SE006 = playSe( SP_ATK01+76+diff01, SE_08);
+SE007 = playSe( SP_ATK01+80+diff01, SE_08);
+SE008 = playSe( SP_ATK01+91+diff01+diff02, SE_09);
+
 
 ------------------------------------------------------
 -- ガ
@@ -655,7 +670,8 @@ setEffScaleKey( SP_ATK01+35, eff01,2,2);--サイズ
 setEffRotateKey(SP_ATK01+35, eff01,-10);--角度
 --entryFlashBg( (SP_ATK01+35), 1, fcolor_r, fcolor_g, fcolor_b, 200);
 changeAnime( SP_ATK01+36, 1, 106);--やられ   
-playSe( SP_ATK01+35, SE_09);
+SE001 = playSe( SP_ATK01+35, SE_09);
+stopSe(SP_ATK01+60+diff01,SE001,5);
 entryFadeBg( SP_ATK01+35, 0, 66, 0, 0, 0, 0, 255);          -- ベース暗め　背景
 pauseAll(SP_ATK01+36,10);
 
@@ -675,7 +691,8 @@ setMoveKey(  SP_ATK01+51+diff01, 1, 50,  -50,  0);
 eff03 = entryEffect( SP_ATK01+57+diff01, SP_04,  0, -1,  0,  50,  0);   -- 攻撃4
 setEffScaleKey( SP_ATK01+57+diff01, eff03, 3,3);--サイズ
 setEffRotateKey(SP_ATK01+57+diff01, eff03, 70);--角度
-playSe( SP_ATK01+57+diff01, SE_09);
+SE002 = playSe( SP_ATK01+57+diff01, SE_09);
+stopSe(SP_ATK01+75+diff01,SE002,5);
 changeAnime( SP_ATK01+57+diff01, 1, 108);--やられ 
 setShake( SP_ATK01+57+diff01, 3, 14);
 setMoveKey(  SP_ATK01+57+diff01, 1, 50,  -50,  -128);
@@ -694,7 +711,8 @@ eff05 = entryEffect( SP_ATK01+72+diff01, SP_04,  0, -1,  0,  20,  0);   -- 攻�
 setEffScaleKey( SP_ATK01+72+diff01, eff05, 0.4,3);--サイズ
 setEffRotateKey(SP_ATK01+72+diff01, eff05, 45);--角度
 --entryFlashBg( (SP_ATK01+72+diff01), 1, fcolor_r, fcolor_g, fcolor_b, 200);
-playSe( SP_ATK01+72+diff01, SE_09);
+SE003 = playSe( SP_ATK01+72+diff01, SE_09);
+stopSe( SP_ATK01+90+diff01,SE003,5);
 setShake( SP_ATK01+72+diff01, 3, 14);
 setMoveKey(  SP_ATK01+72+diff01, 1, 40,  -35,  -128);
 setMoveKey(  SP_ATK01+73+diff01, 1, -90,  -90,  -128);

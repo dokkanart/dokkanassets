@@ -454,6 +454,7 @@ setEffAlphaKey(spep6,shuchusen6,255);
 setEffAlphaKey(spep6+80,shuchusen6,255);
 
 --SE
+--[[
 playSe(spep6+20,1011);
 playSe(spep6+25,1011);
 playSe(spep6+30,1011);
@@ -466,6 +467,43 @@ playSe(spep6+65,1011);
 playSe(spep6+70,1011);
 playSe(spep6+75,1011);
 playSe(spep6+80,1011);
+]]
+--4.11調整
+SE001 = playSe(spep6+20,1011);
+stopSe(spep6+35,SE001,5);
+setSeVolumeByWorkId(spep6+20,SE001,90);
+SE002 = playSe(spep6+25,1011);
+stopSe(spep6+40,SE002,5);
+setSeVolumeByWorkId(spep6+25,SE002,90);
+SE003 = playSe(spep6+30,1011);
+stopSe(spep6+50,SE003,5);
+setSeVolumeByWorkId(spep6+30,SE003,90);
+SE004 = playSe(spep6+40,1011);
+stopSe(spep6+55,SE004,5);
+setSeVolumeByWorkId(spep6+40,SE004,90);
+SE005 = playSe(spep6+45,1011);
+stopSe(spep6+60,SE005,5);
+setSeVolumeByWorkId(spep6+45,SE005,90);
+SE006 = playSe(spep6+50,1011);
+stopSe(spep6+65,SE006,5);
+setSeVolumeByWorkId(spep6+65,SE006,90);
+SE007 = playSe(spep6+55,1011);
+stopSe(spep6+70,SE007,5);
+setSeVolumeByWorkId(spep6+55,SE007,90);
+SE008 = playSe(spep6+60,1011);
+stopSe(spep6+75,SE008,5);
+setSeVolumeByWorkId(spep6+60,SE008,90);
+SE009 = playSe(spep6+65,1011);
+stopSe(spep6+80,SE009,5);
+setSeVolumeByWorkId(spep6+65,SE009,90);
+SE010 = playSe(spep6+70,1011);
+stopSe(spep6+85,SE010,5);
+setSeVolumeByWorkId(spep6+70,SE010,90);
+SE011 = playSe(spep6+75,1011);
+stopSe(spep6+90,SE011,5);
+setSeVolumeByWorkId(spep6+90,SE011,90);
+SE012 = playSe(spep6+80,1011);
+setSeVolumeByWorkId(spep6+80,SE012,90);
 
 --背景・ホワイトフェイド
 entryFadeBg( spep6, 0, 80, 0, 0, 0, 0, 210);  -- 黒　背景
@@ -511,6 +549,7 @@ setEffAlphaKey(spep7+98,Hitbehind,255);
 setEffRotateKey(spep7,Hitbehind,0);
 setEffRotateKey(spep7+98,Hitbehind,0);
 
+--[[
 playSe( spep7+5, 1011);
 playSe( spep7+10, 1011);
 playSe( spep7+15, 1011);
@@ -529,6 +568,61 @@ playSe( spep7+85, 1011);
 playSe( spep7+90, 1011);
 playSe( spep7+95, 1011);
 playSe( spep7+100, 1011);
+]]
+--4.11調整
+SE020 = playSe( spep7+5, 1011);
+stopSe(spep7+20,SE020,5);
+setSeVolumeByWorkId(spep7+5,SE020,90);
+SE021 = playSe( spep7+10, 1011);
+stopSe(spep7+25,SE021,5);
+setSeVolumeByWorkId(spep7+10,SE021,90);
+SE022 = playSe( spep7+15, 1011);
+stopSe(spep7+30,SE022,5);
+setSeVolumeByWorkId(spep7+15,SE022,90);
+SE023 = playSe( spep7+20, 1011);
+stopSe(spep7+35,SE023,5);
+setSeVolumeByWorkId(spep7+20,SE023,90);
+SE024 = playSe( spep7+25, 1011);
+stopSe(spep7+40,SE024,5);
+setSeVolumeByWorkId(spep7+25,SE024,90);
+SE025 = playSe( spep7+30, 1011);
+stopSe(spep7+45,SE025,5);
+setSeVolumeByWorkId(spep7+30,SE025,90);
+SE026 = playSe( spep7+35, 1011);
+stopSe(spep7+50,SE026,5);
+setSeVolumeByWorkId(spep7+35,SE026,90);
+SE027 = playSe( spep7+40, 1011);
+stopSe(spep7+65,SE027,5);
+setSeVolumeByWorkId(spep7+40,SE027,90);
+SE028 = playSe( spep7+55, 1011);
+stopSe(spep7+70,SE028,5);
+setSeVolumeByWorkId(spep7+55,SE028,90);
+SE029 = playSe( spep7+60, 1011);
+stopSe(spep7+75,SE029,5);
+setSeVolumeByWorkId(spep7+60,SE029,90);
+SE030 = playSe( spep7+65, 1011);
+stopSe(spep7+80,SE030,5);
+setSeVolumeByWorkId(spep7+65,SE030,90);
+SE031 = playSe( spep7+70, 1011);
+stopSe(spep7+85,SE031,5);
+setSeVolumeByWorkId(spep7+70,SE031,90);
+SE032 = playSe( spep7+75, 1011);
+stopSe(spep7+90,SE032,5);
+setSeVolumeByWorkId(spep7+75,SE032,90);
+SE033 = playSe( spep7+80, 1011);
+stopSe(spep7+95,SE033,5);
+setSeVolumeByWorkId(spep7+80,SE033,90);
+SE034 = playSe( spep7+85, 1011);
+stopSe(spep7+100,SE034,5);
+setSeVolumeByWorkId(spep7+85,SE034,90);
+SE035 = playSe( spep7+90, 1011);
+stopSe(spep7+105,SE035,5);
+setSeVolumeByWorkId(spep7+90,SE035,90);
+SE036 = playSe( spep7+95, 1011);
+stopSe(spep7+110,SE036,5);
+setSeVolumeByWorkId(spep7+95,SE036,90);
+SE037 = playSe( spep7+100, 1011);
+setSeVolumeByWorkId(spep7+100,SE037,90);
 
 --背景・ホワイトフェイド
 entryFadeBg( spep7, 0, 100, 0, 0, 0, 0, 210);  -- 黒　背景
@@ -982,6 +1076,7 @@ setEffAlphaKey(spep6,shuchusen6,255);
 setEffAlphaKey(spep6+80,shuchusen6,255);
 
 --SE
+--[[
 playSe(spep6+20,1011);
 playSe(spep6+25,1011);
 playSe(spep6+30,1011);
@@ -994,6 +1089,43 @@ playSe(spep6+65,1011);
 playSe(spep6+70,1011);
 playSe(spep6+75,1011);
 playSe(spep6+80,1011);
+]]
+--4.11調整
+SE001 = playSe(spep6+20,1011);
+stopSe(spep6+35,SE001,5);
+setSeVolumeByWorkId(spep6+20,SE001,90);
+SE002 = playSe(spep6+25,1011);
+stopSe(spep6+40,SE002,5);
+setSeVolumeByWorkId(spep6+25,SE002,90);
+SE003 = playSe(spep6+30,1011);
+stopSe(spep6+50,SE003,5);
+setSeVolumeByWorkId(spep6+30,SE003,90);
+SE004 = playSe(spep6+40,1011);
+stopSe(spep6+55,SE004,5);
+setSeVolumeByWorkId(spep6+40,SE004,90);
+SE005 = playSe(spep6+45,1011);
+stopSe(spep6+60,SE005,5);
+setSeVolumeByWorkId(spep6+45,SE005,90);
+SE006 = playSe(spep6+50,1011);
+stopSe(spep6+65,SE006,5);
+setSeVolumeByWorkId(spep6+65,SE006,90);
+SE007 = playSe(spep6+55,1011);
+stopSe(spep6+70,SE007,5);
+setSeVolumeByWorkId(spep6+55,SE007,90);
+SE008 = playSe(spep6+60,1011);
+stopSe(spep6+75,SE008,5);
+setSeVolumeByWorkId(spep6+60,SE008,90);
+SE009 = playSe(spep6+65,1011);
+stopSe(spep6+80,SE009,5);
+setSeVolumeByWorkId(spep6+65,SE009,90);
+SE010 = playSe(spep6+70,1011);
+stopSe(spep6+85,SE010,5);
+setSeVolumeByWorkId(spep6+70,SE010,90);
+SE011 = playSe(spep6+75,1011);
+stopSe(spep6+90,SE011,5);
+setSeVolumeByWorkId(spep6+90,SE011,90);
+SE012 = playSe(spep6+80,1011);
+setSeVolumeByWorkId(spep6+80,SE012,90);
 
 --背景・ホワイトフェイド
 entryFadeBg( spep6, 0, 80, 0, 0, 0, 0, 210);  -- 黒　背景
@@ -1039,6 +1171,7 @@ setEffAlphaKey(spep7+98,Hitbehind,255);
 setEffRotateKey(spep7,Hitbehind,0);
 setEffRotateKey(spep7+98,Hitbehind,0);
 
+--[[
 playSe( spep7+5, 1011);
 playSe( spep7+10, 1011);
 playSe( spep7+15, 1011);
@@ -1057,6 +1190,61 @@ playSe( spep7+85, 1011);
 playSe( spep7+90, 1011);
 playSe( spep7+95, 1011);
 playSe( spep7+100, 1011);
+]]
+--4.11調整
+SE020 = playSe( spep7+5, 1011);
+stopSe(spep7+20,SE020,5);
+setSeVolumeByWorkId(spep7+5,SE020,90);
+SE021 = playSe( spep7+10, 1011);
+stopSe(spep7+25,SE021,5);
+setSeVolumeByWorkId(spep7+10,SE021,90);
+SE022 = playSe( spep7+15, 1011);
+stopSe(spep7+30,SE022,5);
+setSeVolumeByWorkId(spep7+15,SE022,90);
+SE023 = playSe( spep7+20, 1011);
+stopSe(spep7+35,SE023,5);
+setSeVolumeByWorkId(spep7+20,SE023,90);
+SE024 = playSe( spep7+25, 1011);
+stopSe(spep7+40,SE024,5);
+setSeVolumeByWorkId(spep7+25,SE024,90);
+SE025 = playSe( spep7+30, 1011);
+stopSe(spep7+45,SE025,5);
+setSeVolumeByWorkId(spep7+30,SE025,90);
+SE026 = playSe( spep7+35, 1011);
+stopSe(spep7+50,SE026,5);
+setSeVolumeByWorkId(spep7+35,SE026,90);
+SE027 = playSe( spep7+40, 1011);
+stopSe(spep7+65,SE027,5);
+setSeVolumeByWorkId(spep7+40,SE027,90);
+SE028 = playSe( spep7+55, 1011);
+stopSe(spep7+70,SE028,5);
+setSeVolumeByWorkId(spep7+55,SE028,90);
+SE029 = playSe( spep7+60, 1011);
+stopSe(spep7+75,SE029,5);
+setSeVolumeByWorkId(spep7+60,SE029,90);
+SE030 = playSe( spep7+65, 1011);
+stopSe(spep7+80,SE030,5);
+setSeVolumeByWorkId(spep7+65,SE030,90);
+SE031 = playSe( spep7+70, 1011);
+stopSe(spep7+85,SE031,5);
+setSeVolumeByWorkId(spep7+70,SE031,90);
+SE032 = playSe( spep7+75, 1011);
+stopSe(spep7+90,SE032,5);
+setSeVolumeByWorkId(spep7+75,SE032,90);
+SE033 = playSe( spep7+80, 1011);
+stopSe(spep7+95,SE033,5);
+setSeVolumeByWorkId(spep7+80,SE033,90);
+SE034 = playSe( spep7+85, 1011);
+stopSe(spep7+100,SE034,5);
+setSeVolumeByWorkId(spep7+85,SE034,90);
+SE035 = playSe( spep7+90, 1011);
+stopSe(spep7+105,SE035,5);
+setSeVolumeByWorkId(spep7+90,SE035,90);
+SE036 = playSe( spep7+95, 1011);
+stopSe(spep7+110,SE036,5);
+setSeVolumeByWorkId(spep7+95,SE036,90);
+SE037 = playSe( spep7+100, 1011);
+setSeVolumeByWorkId(spep7+100,SE037,90);
 
 --背景・ホワイトフェイド
 entryFadeBg( spep7, 0, 100, 0, 0, 0, 0, 210);  -- 黒　背景

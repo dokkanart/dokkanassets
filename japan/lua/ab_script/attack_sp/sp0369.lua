@@ -232,7 +232,7 @@ setScaleKey(  spep_4-1,   1,   1.6,  1.6);
 setScaleKey(  spep_4+75,   1,   1.6,  1.6);
 
 
-playSe( spep_4, SE_07);
+--playSe( spep_4, SE_07);
 
 entryFade( spep_4+35, 2,  5, 4, fcolor_r, fcolor_g, fcolor_b, 255);     -- white fade
 
@@ -536,7 +536,7 @@ setScaleKey(  spep_4,   1,   1.6,  1.6);
 setScaleKey(  spep_4+75,   1,   1.6,  1.6);
 
 
-playSe( spep_4, SE_07);
+--playSe( spep_4, SE_07);
 
 entryFade( spep_4+35, 2,  5, 4, fcolor_r, fcolor_g, fcolor_b, 255);     -- white fade
 

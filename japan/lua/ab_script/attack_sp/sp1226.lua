@@ -154,7 +154,7 @@ setEffRotateKey(spep_0+206,ctgogo,0);
 
 --se
 SE1=playSe(spep_0+18,15);
-stopSe(spep_0+60,SE1,0);
+stopSe(spep_0+70,SE1,5);
 playSe(spep_0+62,40);
 playSe(spep_0+116,9);
 playSe( spep_0+136, SE_04); --ゴゴゴ
@@ -667,7 +667,7 @@ setEffRotateKey(spep_0+206,ctgogo,0);
 
 --se
 SE1=playSe(spep_0+18,15);
-stopSe(spep_0+60,SE1,0);
+stopSe(spep_0+70,SE1,5);
 playSe(spep_0+62,40);
 playSe(spep_0+116,9);
 playSe( spep_0+136, SE_04); --ゴゴゴ

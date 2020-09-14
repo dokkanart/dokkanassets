@@ -111,7 +111,7 @@ setEffScaleKey( spep_1, aura2, 1.5, 1.5);
 setShakeChara( spep_1, 0, 49, 5);
 
 -- 書き文字エントリー
-ct2 = entryEffectLife( spep_1+25, 10008, 70, 0x100, -1, 0, -190, 300);    -- ゴゴゴ・・・
+ct2 = entryEffectLife( spep_1+25, 10008, 70, 0x100, -1, 0, -190 -50, 300);    -- ゴゴゴ・・・
 setEffShake( spep_1+25, ct2, 73, 8);
 setEffScaleKey( spep_1+25, ct2, 1.4, 1.4);
 

@@ -137,7 +137,7 @@ setEffAlphaKey( spep_0 + 64, ryuusen, 255 );
 
 --SE
 SE1=playSe(spep_0+18,17);
-stopSe(spep_0+48,SE1,0);
+stopSe(spep_0+60,SE1,10);
 
 --黒背景
 entryFadeBg(spep_0, 0, 64, 0, 0, 0, 0, 255);  -- 黒　背
@@ -770,7 +770,7 @@ setEffAlphaKey( spep_0 + 64, ryuusen, 255 );
 
 --SE
 SE1=playSe(spep_0+18,17);
-stopSe(spep_0+48,SE1,0);
+stopSe(spep_0+60,SE1,10);
 
 
 --黒背景

@@ -199,7 +199,7 @@ setEffRotateKey(spep_2+47,ctkaltu,-10);
 setEffShake(spep_2+29,ctkaltu,10,15);
 
 SE1=playSe(spep_2+29,15);
-stopSe(spep_2+50,SE1,0);
+stopSe(spep_2+68,SE1,5);
 
 --文字エントリー
 ctzuo=entryEffectLife(spep_2+58,10012,38,0x100,-1,110,500);--ズオ
@@ -539,7 +539,7 @@ setEffRotateKey(spep_2+47,ctkaltu,-10);
 setEffShake(spep_2+29,ctkaltu,10,15);
 
 SE1=playSe(spep_2+29,15);
-stopSe(spep_2+50,SE1,0);
+stopSe(spep_2+68,SE1,5);
 
 --文字エントリー
 ctzuo=entryEffectLife(spep_2+58,10012,38,0x100,-1,110,500);--ズオ

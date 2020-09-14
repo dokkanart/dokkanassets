@@ -575,8 +575,8 @@ playSe( spep_4+120, 1019);
 Seid1=playSe(spep_4+155, 1019);
 stopSe(spep_4+167,Seid1,0);
 
-playSe( spep_4+15, 1044);
-Seid2=playSe( spep_4+75, 1044);
+--playSe( spep_4+15, 1044);
+Seid2=playSe( spep_4+15, 1044);
 stopSe(spep_4+167,Seid2,0);
 
 ------------------------------------------------------
@@ -1194,8 +1194,8 @@ playSe( spep_4+120, 1019);
 Seid1=playSe(spep_4+155, 1019);
 stopSe(spep_4+167,Seid1,0);
 
-playSe( spep_4+15, 1044);
-Seid2=playSe( spep_4+75, 1044);
+--playSe( spep_4+15, 1044);
+Seid2=playSe( spep_4+15, 1044);
 stopSe(spep_4+167,Seid2,0);
 
 ------------------------------------------------------

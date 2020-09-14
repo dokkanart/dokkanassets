@@ -294,12 +294,24 @@ entryFadeBg(spep_0, 0, 200, 0, 0, 0, 0, 255);  -- 黒　背
 
 
 --SE
+--[[
 playSe( spep_0, 1019);--BGM的な
 playSe( spep_0+60, 1019);--BGM的な
 playSe( spep_0+120, 1019);--BGM的な
 SE1=playSe( spep_0+180, 1019);--BGM的な
 
 stopSe(200,SE1,0)
+]]
+--4.11調整
+SE001 = playSe( spep_0, 1019);--BGM的な
+SE002 = playSe( spep_0+60, 1019);--BGM的な
+SE003 = playSe( spep_0+120, 1019);--BGM的な
+SE1=playSe( spep_0+180, 1019);--BGM的な
+
+stopSe(200,SE1,0)
+stopSe(200,SE001,0)
+stopSe(200,SE002,0)
+stopSe(200,SE003,0)
 -- ** エフェクト等 ** --
 entryFade(spep_0+192, 4, 6, 4,fcolor_r,fcolor_g,fcolor_b,255);     -- white fade
 
@@ -1384,12 +1396,25 @@ entryFadeBg(spep_0, 0, 200, 0, 0, 0, 0, 255);  -- 黒　背
 
 
 --SE
+--[[
 playSe( spep_0, 1019);--BGM的な
 playSe( spep_0+60, 1019);--BGM的な
 playSe( spep_0+120, 1019);--BGM的な
 SE1=playSe( spep_0+180, 1019);--BGM的な
 
 stopSe(200,SE1,0)
+]]
+--4.11調整
+SE001 = playSe( spep_0, 1019);--BGM的な
+SE002 = playSe( spep_0+60, 1019);--BGM的な
+SE003 = playSe( spep_0+120, 1019);--BGM的な
+SE1=playSe( spep_0+180, 1019);--BGM的な
+
+stopSe(200,SE1,0)
+stopSe(200,SE001,0)
+stopSe(200,SE002,0)
+stopSe(200,SE003,0)
+
 -- ** エフェクト等 ** --
 entryFade(spep_0+192, 4, 6, 4,fcolor_r,fcolor_g,fcolor_b,255);     -- white fade
 

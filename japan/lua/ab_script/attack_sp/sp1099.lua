@@ -128,12 +128,38 @@ setDisp( 47, 0, 0);
 ------------------------------------------------------
 -- カードカットイン(90F)
 ------------------------------------------------------
-playSe( 47, SE_05);
+--[[playSe( 47, SE_05);
 speff = entryEffect(  47,   1507,   0,  -1,  0,  0,  0);   -- カード
 setEffReplaceTexture( speff, 1, 1);
 setEffReplaceTexture( speff, 2, 0);                         -- カード差し替え
-setEffReplaceTexture( speff, 5, 4);                                  -- 技名テクスチャ差し替え
+setEffReplaceTexture( speff, 5, 4);                                  -- 技名テクスチャ差し替え]]
 
+if (_SPECIAL_SKILL_LEVEL_ == 0) then
+print ("_SPECIAL_SKILL_LEVEL_ == 0");
+playSe( 47, SE_05);
+speff = entryEffect( 47, 1507, 0, -1, 0, 0, 0); -- カード
+setEffReplaceTexture( speff, 1, 1);
+setEffReplaceTexture( speff, 2, 0); -- カード差し替え
+setEffReplaceTexture( speff, 5, 4); -- 技名テクスチャ差し替え
+
+
+elseif(_SPECIAL_SKILL_LEVEL_ == 1) then
+print ("_SPECIAL_SKILL_LEVEL_ == 1");
+playSe( 47, SE_05);
+speff = entryEffect( 47, 1120, 0, -1, 0, 0, 0); -- カード
+setEffReplaceTexture( speff, 1, 1);
+setEffReplaceTexture( speff, 2, 0); -- カード差し替え
+setEffReplaceTexture( speff, 5, 4); -- 技名テクスチャ差し替え
+
+
+elseif(_SPECIAL_SKILL_LEVEL_ == 2) then
+print ("_SPECIAL_SKILL_LEVEL_ == 2");
+playSe( 47, SE_05);
+speff = entryEffect( 47, 1121, 0, -1, 0, 0, 0); -- カード
+setEffReplaceTexture( speff, 1, 1);
+setEffReplaceTexture( speff, 2, 0); -- カード差し替え
+setEffReplaceTexture( speff, 5, 4); -- 技名テクスチャ差し替え
+end
 
 spep_1=90 +47;
 entryFade( spep_1-5, 3, 5, 4, fcolor_r, fcolor_g, fcolor_b, 255);     -- white fade
@@ -142,7 +168,7 @@ entryFadeBg( spep_1, 0, 80, 0, 0, 0, 0, 255);          -- ベース暗め　背�
 ------------------------------------------------------
 --サタン突進(60F)
 ------------------------------------------------------
-playSe( spep_1, SE_01);
+SE000x = playSe( spep_1, SE_01);
 
 shuchusen1 = entryEffectLife( spep_1, 906, 43, 0x100,  -1, 0,  0,  0);   -- 集中線
 setEffScaleKey( spep_1, shuchusen1, 1.5, 1.5);
@@ -159,9 +185,10 @@ setEffScaleKey( spep_1, tosshin, 1.0, 1.0);
 
 if(_IS_DODGE_ == 1) then
 
-SP_dodge = 177; --エンドフェイズのフレーム数を置き換える
+SP_dodge = 177; --エンドフェイズのフレーム数を置き換える(spep_1+40)
 
 playSe( SP_dodge-12, 1042);
+stopSe( SP_dodge-12, SE000x, 0 );
 
 speff = entryEffectUnpausable(  SP_dodge-12,   1504,   0x100,     -1,  0,  0,  -350);   -- eff_005 (カットイン)
 setEffReplaceTexture( speff, 3, 6);                           -- カットイン差し替え
@@ -456,11 +483,11 @@ else
 	]]
 
 -- ダメージ表示
-dealDamage(spep_9+16);
+dealDamage(spep_9+16 -10);
 
-entryFade( spep_9+100, 9,  10, 1, 8, 8, 8, 255);             -- black fade
+--entryFade( spep_9+100, 9,  10, 1, 8, 8, 8, 255);             -- black fade
 
-endPhase(spep_9+110);
+endPhase(spep_9+110 -10);
 else
 
 
@@ -527,12 +554,38 @@ setDisp( 47, 0, 0);
 ------------------------------------------------------
 -- カードカットイン(90F)
 ------------------------------------------------------
-playSe( 47, SE_05);
+--[[playSe( 47, SE_05);
 speff = entryEffect(  47,   1507,   0,  -1,  0,  0,  0);   -- カード
 setEffReplaceTexture( speff, 1, 1);
 setEffReplaceTexture( speff, 2, 0);                         -- カード差し替え
-setEffReplaceTexture( speff, 5, 4);                                  -- 技名テクスチャ差し替え
+setEffReplaceTexture( speff, 5, 4);                                  -- 技名テクスチャ差し替え]]
 
+if (_SPECIAL_SKILL_LEVEL_ == 0) then
+print ("_SPECIAL_SKILL_LEVEL_ == 0");
+playSe( 47, SE_05);
+speff = entryEffect( 47, 1507, 0, -1, 0, 0, 0); -- カード
+setEffReplaceTexture( speff, 1, 1);
+setEffReplaceTexture( speff, 2, 0); -- カード差し替え
+setEffReplaceTexture( speff, 5, 4); -- 技名テクスチャ差し替え
+
+
+elseif(_SPECIAL_SKILL_LEVEL_ == 1) then
+print ("_SPECIAL_SKILL_LEVEL_ == 1");
+playSe( 47, SE_05);
+speff = entryEffect( 47, 1120, 0, -1, 0, 0, 0); -- カード
+setEffReplaceTexture( speff, 1, 1);
+setEffReplaceTexture( speff, 2, 0); -- カード差し替え
+setEffReplaceTexture( speff, 5, 4); -- 技名テクスチャ差し替え
+
+
+elseif(_SPECIAL_SKILL_LEVEL_ == 2) then
+print ("_SPECIAL_SKILL_LEVEL_ == 2");
+playSe( 47, SE_05);
+speff = entryEffect( 47, 1121, 0, -1, 0, 0, 0); -- カード
+setEffReplaceTexture( speff, 1, 1);
+setEffReplaceTexture( speff, 2, 0); -- カード差し替え
+setEffReplaceTexture( speff, 5, 4); -- 技名テクスチャ差し替え
+end
 
 spep_1=90 +47;
 entryFade( spep_1-5, 3, 5, 4, fcolor_r, fcolor_g, fcolor_b, 255);     -- white fade
@@ -541,7 +594,7 @@ entryFadeBg( spep_1, 0, 80, 0, 0, 0, 0, 255);          -- ベース暗め　背�
 ------------------------------------------------------
 --サタン突進(60F)
 ------------------------------------------------------
-playSe( spep_1, SE_01);
+SE000x = playSe( spep_1, SE_01);
 
 shuchusen1 = entryEffectLife( spep_1, 906, 43, 0x100,  -1, 0,  0,  0);   -- 集中線
 setEffScaleKey( spep_1, shuchusen1, 1.5, 1.5);
@@ -561,6 +614,7 @@ if(_IS_DODGE_ == 1) then
 SP_dodge = 177; --エンドフェイズのフレーム数を置き換える
 
 playSe( SP_dodge-12, 1042);
+stopSe( SP_dodge-12, SE000x, 0 );
 
 speff = entryEffectUnpausable(  SP_dodge-12,   1504,   0x100,     -1,  0,  0,  -350);   -- eff_005 (カットイン)
 setEffReplaceTexture( speff, 3, 6);                           -- カットイン差し替え
@@ -867,10 +921,10 @@ else
 	]]
 
 -- ダメージ表示
-dealDamage(spep_9+16);
+dealDamage(spep_9+16 -10);
 
-entryFade( spep_9+100, 9,  10, 1, 8, 8, 8, 255);             -- black fade
+--entryFade( spep_9+100, 9,  10, 1, 8, 8, 8, 255);             -- black fade
 
-endPhase(spep_9+110);
+endPhase(spep_9+110 -10);
 
 end

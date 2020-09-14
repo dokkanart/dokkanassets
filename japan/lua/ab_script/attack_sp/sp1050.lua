@@ -261,7 +261,7 @@ setEffScaleKey( spep_4+55, hit_eff_1, 1.5, 1.5);
 setEffScaleKey( spep_4+55, hit_eff_2, 1.5, 1.5);
 setEffScaleKey( spep_4+55, hit_eff_3, 1.5, 1.5);
 
-playSe( spep_4+55, SE_09);
+--playSe( spep_4+55, SE_09);
 -- 敵吹っ飛ぶモーション
 changeAnime( spep_4+55, 1, 108);
 setMoveKey( spep_4+55, 1,  250,    0,  0);
@@ -604,7 +604,7 @@ setEffScaleKey( spep_4+55, hit_eff_1, 1.5, 1.5);
 setEffScaleKey( spep_4+55, hit_eff_2, 1.5, 1.5);
 setEffScaleKey( spep_4+55, hit_eff_3, 1.5, 1.5);
 
-playSe( spep_4+55, SE_09);
+--playSe( spep_4+55, SE_09);
 -- 敵吹っ飛ぶモーション
 changeAnime( spep_4+55, 1, 108);
 setMoveKey( spep_4+55, 1,  250,    0,  0);

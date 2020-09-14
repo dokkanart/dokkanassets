@@ -208,7 +208,7 @@ setScaleKey( 370,    1,  0.7, 0.7);
 setMoveKey(  400,    1,   120,  0,   0);
 setScaleKey(  400,   1,   1.6,  1.6);
 
-playSe( 390, SE_06);
+SE00x = playSe( 390, SE_06);
 
 kamehame_beam2 = entryEffect( 370, SP_03,   0, -1,  0,  0,  0);   -- 迫るかめはめ波
 setEffScaleKey(370, kamehame_beam2, 1, 1);
@@ -265,6 +265,7 @@ if (_IS_DODGE_ == 1) then
 SP_dodge = 420; --エンドフェイズのフレーム数を置き換える
 
 playSe( SP_dodge-12, 1042);
+stopSe( SP_dodge-12, SE00x, 0 );
 
 speff = entryEffectUnpausable(  SP_dodge-12,   1504,   0x100,     -1,  0,  0,  -350);   -- eff_005 (カットイン)
 setEffReplaceTexture( speff, 3, 6);                           -- カットイン差し替え
@@ -506,7 +507,7 @@ setEffScaleKey(tyo2+268, ct, 0.0, 0.0);
 setEffScaleKey(tyo2+272, ct, 1.3, 1.3);
 setEffScaleKey(tyo2+292, ct, 1.3, 1.3);
 setEffScaleKey(tyo2+300, ct, 6.0, 6.0);
-playSe(tyo2+300, SE_07);
+SE01x = playSe(tyo2+300, SE_07);
 
 ------------------------------------------------------
 -- かめはめは迫る(tyo2+100F)
@@ -523,8 +524,6 @@ setScaleKey(tyo2+370,    1,  0.7, 0.7);
 setMoveKey(tyo2+400,    1,   120,  0,   0);
 setScaleKey(tyo2+400,   1,   1.6,  1.6);
 
-playSe(tyo2+390, SE_06);
-
 kamehame_beam2 = entryEffect(tyo2+370, SP_03,   0, -1,  0,  0,  0);   -- 迫るかめはめ波
 setEffScaleKey(tyo2+370, kamehame_beam2, 1, 1);
 setEffScaleKey(360, kamehame_beam2, 1, 1);
@@ -539,7 +538,6 @@ setDamage(tyo2+452, 1, 0);  -- ダメージ振動等
 --setEffReplaceTexture(tyo2+speff, 6, 3);                       -- カットイン差し替え
 --playSe(tyo2+370, SE_08);
 
-playSe(tyo2+455, SE_09);
 -- 敵吹っ飛ぶモーション
 changeAnime(365, 1, 108);
 setMoveKey(365, 1,  120,    0,  0);
@@ -575,6 +573,7 @@ if(_IS_DODGE_ == 1) then
 SP_dodge = 185+155; --エンドフェイズのフレーム数を置き換える
 
 playSe( SP_dodge-12, 1042);
+stopSe( SP_dodge-12, SE01x, 0 );
 
 speff = entryEffectUnpausable(  SP_dodge-12,   1504,   0x100,     -1,  0,  0,  -350);   -- eff_005 (カットイン)
 setEffReplaceTexture( speff, 3, 6);                           -- カットイン差し替え
@@ -594,6 +593,9 @@ else end
 ------------------------------------------------------
 -- 爆発 (tyo2+110F)
 ------------------------------------------------------
+playSe(tyo2+390, SE_06);
+playSe(tyo2+455, SE_09);
+
 setDisp(tyo2-6+469, 1, 1);
 setMoveKey(tyo2-6+469,    1,  400,  0,   0);
 setScaleKey(tyo2-6+469,    1,  1.0, 1.0);

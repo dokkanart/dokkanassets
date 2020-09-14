@@ -117,6 +117,7 @@ setEffRotateKey( spep_0+104, shuchusen_b, 0);
 
 -- ** 音 ** --
 playSe( spep_0+46, 43);
+--[[
 playSe( spep_0+100, 1009);
 playSe( spep_0+105, 1009);
 playSe( spep_0+110, 1009);
@@ -126,6 +127,27 @@ playSe( spep_0+125, 1009);
 playSe( spep_0+130, 1009);
 playSe( spep_0+135, 1009);
 playSe( spep_0+140, 1009);
+]]
+--4.11調整
+SE001 = playSe( spep_0+100, 1009);
+stopSe(spep_0+110,SE001,6);
+SE002 = playSe( spep_0+105, 1009);
+stopSe(spep_0+115,SE002,6);
+SE003 = playSe( spep_0+110, 1009);
+stopSe(spep_0+120,SE003,6);
+SE004 = playSe( spep_0+115, 1009);
+stopSe(spep_0+125,SE004,6);
+SE005 = playSe( spep_0+120, 1009);
+stopSe(spep_0+130,SE005,6);
+SE006 = playSe( spep_0+125, 1009);
+stopSe(spep_0+135,SE006,6);
+SE007 = playSe( spep_0+130, 1009);
+stopSe(spep_0+140,SE007,6);
+SE008 = playSe( spep_0+135, 1009);
+stopSe(spep_0+145,SE008,6);
+SE009 = playSe( spep_0+140, 1009);
+
+
 playSe( spep_0+170, SE_09);
 
 entryFade( spep_0+104, 0, 3, 8, fcolor_r, fcolor_g, fcolor_b, 240);     -- white fade
@@ -547,6 +569,7 @@ setEffRotateKey( spep_0+104, shuchusen_b, 0);
 
 -- ** 音 ** --
 playSe( spep_0+46, 43);
+--[[
 playSe( spep_0+100, 1009);
 playSe( spep_0+105, 1009);
 playSe( spep_0+110, 1009);
@@ -556,6 +579,25 @@ playSe( spep_0+125, 1009);
 playSe( spep_0+130, 1009);
 playSe( spep_0+135, 1009);
 playSe( spep_0+140, 1009);
+]]
+--4.11調整
+SE001 = playSe( spep_0+100, 1009);
+stopSe(spep_0+110,SE001,6);
+SE002 = playSe( spep_0+105, 1009);
+stopSe(spep_0+115,SE002,6);
+SE003 = playSe( spep_0+110, 1009);
+stopSe(spep_0+120,SE003,6);
+SE004 = playSe( spep_0+115, 1009);
+stopSe(spep_0+125,SE004,6);
+SE005 = playSe( spep_0+120, 1009);
+stopSe(spep_0+130,SE005,6);
+SE006 = playSe( spep_0+125, 1009);
+stopSe(spep_0+135,SE006,6);
+SE007 = playSe( spep_0+130, 1009);
+stopSe(spep_0+140,SE007,6);
+SE008 = playSe( spep_0+135, 1009);
+stopSe(spep_0+145,SE008,6);
+SE009 = playSe( spep_0+140, 1009);
 playSe( spep_0+170, SE_09);
 
 entryFade( spep_0+104, 0, 3, 8, fcolor_r, fcolor_g, fcolor_b, 240);     -- white fade

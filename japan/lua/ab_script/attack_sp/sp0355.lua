@@ -446,6 +446,7 @@ setDisp( spep_5+70, 1, 0);
 
 setShake(spep_5, 140, 17);
 
+--[[
 playSe( spep_5, SE_09);
 playSe( spep_5+15, SE_09);
 playSe( spep_5+27, SE_09);
@@ -457,7 +458,28 @@ playSe( spep_5+88, SE_09);
 playSe( spep_5+96, SE_09);
 playSe( spep_5+109, SE_09);
 playSe( spep_5+117, SE_09);
-
+]]
+SE001 = playSe( spep_5, SE_09);
+stopSe(spep_5+25,SE001,10);
+SE002 = playSe( spep_5+15, SE_09);
+stopSe(spep_5+37,SE002,10);
+SE003 = playSe( spep_5+27, SE_09);
+stopSe(spep_5+49,SE003,10);
+SE004 = playSe( spep_5+39, SE_09);
+stopSe(spep_5+61,SE004,10);
+SE005 = playSe( spep_5+51, SE_09);
+stopSe(spep_5+75,SE005,10);
+SE006 = playSe( spep_5+65, SE_09);
+stopSe(spep_5+83,SE006,10);
+SE007 = playSe( spep_5+73, SE_09);
+stopSe(spep_5+98,SE007,10);
+SE008 = playSe( spep_5+88, SE_09);
+stopSe(spep_5+106,SE008,10);
+SE009 = playSe( spep_5+96, SE_09);
+stopSe(spep_5+119,SE009,10);
+SE010 = playSe( spep_5+109, SE_09);
+stopSe(spep_5+127,SE010,10);
+SE011 = playSe( spep_5+117, SE_09);
 
 
 playSe( spep_5+118, 1011);
@@ -875,6 +897,7 @@ setDisp( spep_5+70, 1, 0);
 
 setShake(spep_5, 140, 17);
 
+--[[
 playSe( spep_5, SE_09);
 playSe( spep_5+15, SE_09);
 playSe( spep_5+27, SE_09);
@@ -886,6 +909,28 @@ playSe( spep_5+88, SE_09);
 playSe( spep_5+96, SE_09);
 playSe( spep_5+109, SE_09);
 playSe( spep_5+117, SE_09);
+]]
+SE001 = playSe( spep_5, SE_09);
+stopSe(spep_5+25,SE001,10);
+SE002 = playSe( spep_5+15, SE_09);
+stopSe(spep_5+37,SE002,10);
+SE003 = playSe( spep_5+27, SE_09);
+stopSe(spep_5+49,SE003,10);
+SE004 = playSe( spep_5+39, SE_09);
+stopSe(spep_5+61,SE004,10);
+SE005 = playSe( spep_5+51, SE_09);
+stopSe(spep_5+75,SE005,10);
+SE006 = playSe( spep_5+65, SE_09);
+stopSe(spep_5+83,SE006,10);
+SE007 = playSe( spep_5+73, SE_09);
+stopSe(spep_5+98,SE007,10);
+SE008 = playSe( spep_5+88, SE_09);
+stopSe(spep_5+106,SE008,10);
+SE009 = playSe( spep_5+96, SE_09);
+stopSe(spep_5+119,SE009,10);
+SE010 = playSe( spep_5+109, SE_09);
+stopSe(spep_5+127,SE010,10);
+SE011 = playSe( spep_5+117, SE_09);
 
 
 

@@ -265,7 +265,9 @@ setEffScaleKey( spep_3+71, shuchusen, 1.0, 1.0);
 setEffShake( spep_3, shuchusen, 45, 5);
 
 playSe( spep_3, 1018);
-playSeLife( spep_3+72, 1037, 45, 8);
+SE001 = playSe( spep_3+72, 1037);
+stopSe(spep_3+118,SE001,8);
+--playSeLife( spep_3+72, 1037, 45, 8);
 
 
 
@@ -382,12 +384,18 @@ bakuhatsu2 = entryEffectLife( spep_5+21, SP_02, 100,  0x40,      0,  0,  85,  -1
 --[[setEffScaleKey( spep_5, bakuhatsu, 1.5, 1.5);
 setEffScaleKey( spep_5+120, bakuhatsu, 15.0, 15.0);
 setEffMoveKey( spep_5+120, bakuhatsu, -50, 80);]]
-playSe( spep_5+10, SE_10);
-playSe( spep_5+20, SE_10);
-playSe( spep_5+30, SE_10);
-playSe( spep_5+40, SE_10);
-playSe( spep_5+50, SE_10);
-playSe( spep_5+60, SE_10);
+
+SE002 = playSe( spep_5+10, SE_10);
+stopSe(spep_5+30,SE002,5);
+SE003 = playSe( spep_5+20, SE_10);
+stopSe(spep_5+40,SE003,5);
+SE004 = playSe( spep_5+30, SE_10);
+stopSe(spep_5+50,SE004,5);
+SE005 = playSe( spep_5+40, SE_10);
+stopSe(spep_5+60,SE005,5);
+SE006 = playSe( spep_5+50, SE_10);
+stopSe(spep_5+70,SE006,5);
+SE007 = playSe( spep_5+60, SE_10);
 
 
 shuchusen = entryEffectLife( spep_5, 906, 50, 0x100,  -1, 0,  -60,  250);   -- 集中線
@@ -731,7 +739,9 @@ setEffScaleKey( spep_3+71, shuchusen, 1.0, 1.0);
 setEffShake( spep_3, shuchusen, 45, 5);
 
 playSe( spep_3, 1018);
-playSeLife( spep_3+72, 1037, 45, 8);
+SE001 = playSe( spep_3+72, 1037);
+stopSe(spep_3+118,SE001,8);
+--playSeLife( spep_3+72, 1037, 45, 8);
 
 
 
@@ -848,12 +858,17 @@ bakuhatsu2 = entryEffectLife( spep_5+21, SP_02, 100,  0x40,      0,  0,  85,  -1
 --[[setEffScaleKey( spep_5, bakuhatsu, 1.5, 1.5);
 setEffScaleKey( spep_5+120, bakuhatsu, 15.0, 15.0);
 setEffMoveKey( spep_5+120, bakuhatsu, -50, 80);]]
-playSe( spep_5+10, SE_10);
-playSe( spep_5+20, SE_10);
-playSe( spep_5+30, SE_10);
-playSe( spep_5+40, SE_10);
-playSe( spep_5+50, SE_10);
-playSe( spep_5+60, SE_10);
+SE002 = playSe( spep_5+10, SE_10);
+stopSe(spep_5+30,SE002,5);
+SE003 = playSe( spep_5+20, SE_10);
+stopSe(spep_5+40,SE003,5);
+SE004 = playSe( spep_5+30, SE_10);
+stopSe(spep_5+50,SE004,5);
+SE005 = playSe( spep_5+40, SE_10);
+stopSe(spep_5+60,SE005,5);
+SE006 = playSe( spep_5+50, SE_10);
+stopSe(spep_5+70,SE006,5);
+SE007 = playSe( spep_5+60, SE_10);
 
 
 shuchusen = entryEffectLife( spep_5, 906, 50, 0x100,  -1, 0,  -60,  250);   -- 集中線

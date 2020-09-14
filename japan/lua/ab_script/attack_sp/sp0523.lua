@@ -530,6 +530,7 @@ setRotateKey( spep_2 -3 + 0, 1, 0 );
 setRotateKey( spep_2 -3 + 88, 1, 0 );
 
 --SE
+--[[
 playSe(spep_2+6,1023);
 --playSe(spep_2+14,1023);
 playSe(spep_2+22,1023);
@@ -537,6 +538,15 @@ playSe(spep_2+22,1023);
 playSe(spep_2+36,1023);
 --playSe(spep_2+40,1023);
 playSe(spep_2+48,1023);
+]]
+--4.11調整
+SE001 = playSe(spep_2+6,1023);
+stopSe(spep_2+32,SE001,5);
+SE002 = playSe(spep_2+22,1023);
+stopSe(spep_2+46,SE002,5);
+SE003 = playSe(spep_2+36,1023);
+stopSe(spep_2+58,SE003,5);
+SE004 = playSe(spep_2+48,1023);
 
 --黒背景
 entryFadeBg(spep_2, 0,90, 0, 0, 0, 0, 255);  -- 黒　背
@@ -1648,6 +1658,7 @@ setRotateKey( spep_2 -3 + 0, 1, 0 );
 setRotateKey( spep_2 -3 + 88, 1, 0 );
 
 --SE
+--[[
 playSe(spep_2+6,1023);
 --playSe(spep_2+14,1023);
 playSe(spep_2+22,1023);
@@ -1655,6 +1666,15 @@ playSe(spep_2+22,1023);
 playSe(spep_2+36,1023);
 --playSe(spep_2+40,1023);
 playSe(spep_2+48,1023);
+]]
+--4.11調整
+SE001 = playSe(spep_2+6,1023);
+stopSe(spep_2+32,SE001,5);
+SE002 = playSe(spep_2+22,1023);
+stopSe(spep_2+46,SE002,5);
+SE003 = playSe(spep_2+36,1023);
+stopSe(spep_2+58,SE003,5);
+SE004 = playSe(spep_2+48,1023);
 
 --黒背景
 entryFadeBg(spep_2, 0,90, 0, 0, 0, 0, 255);  -- 黒　背

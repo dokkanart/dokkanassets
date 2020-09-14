@@ -325,11 +325,24 @@ endPhase(SP_dodge+10);
 do return end
 else end
 
+--[[
 playSe( spep6+18, SE_09);
 playSe( spep6+74, SE_09);
 playSe( spep6+109, SE_09);
 playSe( spep6+129, SE_09);
 playSe( spep6+147, SE_09);
+]]
+--4.11
+SE001 = playSe( spep6+18, SE_09);
+stopSe(spep6+84,SE001,10);
+SE002 = playSe( spep6+74, SE_09);
+stopSe(spep6+119,SE002,10);
+SE003 = playSe( spep6+109, SE_09);
+stopSe(spep6+139,SE003,10);
+SE004 = playSe( spep6+129, SE_09);
+stopSe(spep6+157,SE004,10);
+SE005 = playSe( spep6+147, SE_09);
+
 ------------------------------------------------------
 -- 爆発 (110F)
 ------------------------------------------------------
@@ -653,11 +666,23 @@ endPhase(SP_dodge+10);
 do return end
 else end
 
+--[[
 playSe( spep6+18, SE_09);
 playSe( spep6+74, SE_09);
 playSe( spep6+109, SE_09);
 playSe( spep6+129, SE_09);
 playSe( spep6+147, SE_09);
+]]
+--4.11
+SE001 = playSe( spep6+18, SE_09);
+stopSe(spep6+84,SE001,10);
+SE002 = playSe( spep6+74, SE_09);
+stopSe(spep6+119,SE002,10);
+SE003 = playSe( spep6+109, SE_09);
+stopSe(spep6+139,SE003,10);
+SE004 = playSe( spep6+129, SE_09);
+stopSe(spep6+157,SE004,10);
+SE005 = playSe( spep6+147, SE_09);
 ------------------------------------------------------
 -- 爆発 (110F)
 ------------------------------------------------------

@@ -446,9 +446,18 @@ entryFadeBg( spep_8, 0, 100, 0,0, 0, 0, 255);          -- ベース暗め　背�
 
 daihassya = entryEffect( spep_8+10,SP_10,0,-1,0,0,0);
 setEffScaleKey( spep_8+10, daihassya, 1.0, 1.0);
+
+--[[
 playSe( spep_8+10, SE_10);
 playSe( spep_8+30, SE_10);
 playSe( spep_8+50, SE_10);
+]]
+--4.11調整
+SE001 = playSe( spep_8+10, SE_10);
+stopSe(spep_8+40,SE001,5);
+SE002 = playSe( spep_8+30, SE_10);
+stopSe(spep_8+60,SE002,5);
+SE003 = playSe( spep_8+50, SE_10);
 
 ryusendai = entryEffectLife( spep_8+10, 921, 100, 0x80,  -1,  0,  0,  0); -- 流線斜め
 setEffRotateKey( spep_8+10, ryusendai, 225);
@@ -471,10 +480,18 @@ setEffAlphaKey( spep_8+94, chakudan, 255);
 
 
 --playSe( spep_5+9, 1023);
+--[[
 playSe( spep_9+29, SE_09);
 playSe( spep_9+59, SE_09);
 
 playSe( spep_9+89, SE_10);
+]]
+--4.11
+SE004 = playSe( spep_9+29, SE_09);
+stopSe(spep_9+69,SE004,5);
+SE005 = playSe( spep_9+59, SE_09);
+stopSe(spep_9+99,SE005,5);
+SE006 = playSe( spep_9+89, SE_10);
 
 setDamage( spep_9+75, 1, 0);  -- ダメージ振動等
 
@@ -882,9 +899,17 @@ entryFadeBg( spep_8, 0, 100, 0,0, 0, 0, 255);          -- ベース暗め　背�
 
 daihassya = entryEffect( spep_8+10,SP_10em,0,-1,0,0,0);
 setEffScaleKey( spep_8+10, daihassya, 1.0, 1.0);
+--[[
 playSe( spep_8+10, SE_10);
 playSe( spep_8+30, SE_10);
 playSe( spep_8+50, SE_10);
+]]
+--4.11調整
+SE001 = playSe( spep_8+10, SE_10);
+stopSe(spep_8+40,SE001,5);
+SE002 = playSe( spep_8+30, SE_10);
+stopSe(spep_8+60,SE002,5);
+SE003 = playSe( spep_8+50, SE_10);
 
 ryusendai = entryEffectLife( spep_8+10, 921, 100, 0x80,  -1,  0,  0,  0); -- 流線斜め
 setEffRotateKey( spep_8+10, ryusendai, 225);
@@ -907,10 +932,18 @@ setEffAlphaKey( spep_8+94, chakudan, 255);
 
 
 --playSe( spep_5+9, 1023);
+--[[
 playSe( spep_9+29, SE_09);
 playSe( spep_9+59, SE_09);
 
 playSe( spep_9+89, SE_10);
+]]
+--4.11
+SE004 = playSe( spep_9+29, SE_09);
+stopSe(spep_9+69,SE004,5);
+SE005 = playSe( spep_9+59, SE_09);
+stopSe(spep_9+99,SE005,5);
+SE006 = playSe( spep_9+89, SE_10);
 
 setDamage( spep_9+75, 1, 0);  -- ダメージ振動等
 

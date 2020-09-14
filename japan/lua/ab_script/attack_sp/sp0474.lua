@@ -113,7 +113,7 @@ setEffAlphaKey( spep_0 + 198, shuthu1, 255 );
 --SE
 playSe(spep_0,SE_05);
 SE1=playSe( spep_0+70, 17);
-stopSe(spep_0+120,SE1,0);
+stopSe(spep_0+130,SE1,5);
 
 --[[
 playSe(spep_0+70,SE_03);
@@ -592,7 +592,7 @@ setEffAlphaKey( spep_0 + 198, shuthu1, 255 );
 --SE
 playSe(spep_0,SE_05);
 SE1=playSe( spep_0+70, 17);
-stopSe(spep_0+120,SE1,0);
+stopSe(spep_0+130,SE1,5);
 
 --[[
 playSe(spep_0+70,SE_03);

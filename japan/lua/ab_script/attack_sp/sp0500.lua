@@ -157,7 +157,7 @@ setEffAlphaKey( spep_0 + 198, shuchusen1, 255 );
 playSe(spep_0+28,1003);--丸くなる
 playSe(spep_0+58,1013);--広がる
 SE1=playSe(spep_0+62,15);
-stopSe(spep_0+120,SE1,0);
+stopSe(spep_0+134,SE1,5);
 playSe( spep_0+124, SE_04); --ゴゴゴ
 
 --黒背景
@@ -612,7 +612,7 @@ setEffAlphaKey( spep_0 + 198, shuchusen1, 255 );
 playSe(spep_0+28,1003);--丸くなる
 playSe(spep_0+58,1013);--広がる
 SE1=playSe(spep_0+62,15);
-stopSe(spep_0+120,SE1,0);
+stopSe(spep_0+134,SE1,5);
 playSe( spep_0+124, SE_04); --ゴゴゴ
 
 --黒背景

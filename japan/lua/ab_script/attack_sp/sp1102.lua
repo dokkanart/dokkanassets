@@ -201,10 +201,20 @@ entryFade( spep_4-5, 3, 5, 4, fcolor_r, fcolor_g, fcolor_b, 255);     -- white f
 entryFadeBg( spep_4, 0, 70, 0, 10, 10, 10, 180);          -- ベース暗め　背景
 
 playSe( spep_4, 1018);
+--[[
 playSe( spep_4+20, SE_09);
 playSe( spep_4+28, SE_09);
 playSe( spep_4+44, SE_09);
 playSe( spep_4+56, SE_09);
+]]
+--4.11
+SE001 = playSe( spep_4+20, SE_09);
+stopSe(spep_4+38,SE001,5);
+SE002 = playSe( spep_4+28, SE_09);
+stopSe(spep_4+54,SE002,5);
+SE003 = playSe( spep_4+44, SE_09);
+stopSe(spep_4+66,SE003,5);
+SE004 = playSe( spep_4+56, SE_09);
 
 bunnshin = entryEffect(  spep_4,   SP_02,   0,     -1,  0,  0,  0);--導入
 setEffScaleKey( spep_4, bunnshin, 1.0, 1.0);
@@ -581,10 +591,20 @@ entryFade( spep_4-5, 3, 5, 4, fcolor_r, fcolor_g, fcolor_b, 255);     -- white f
 entryFadeBg( spep_4, 0, 70, 0, 10, 10, 10, 180);          -- ベース暗め　背景
 
 playSe( spep_4, 1018);
+--[[
 playSe( spep_4+20, SE_09);
 playSe( spep_4+28, SE_09);
 playSe( spep_4+44, SE_09);
 playSe( spep_4+56, SE_09);
+]]
+--4.11
+SE001 = playSe( spep_4+20, SE_09);
+stopSe(spep_4+38,SE001,5);
+SE002 = playSe( spep_4+28, SE_09);
+stopSe(spep_4+54,SE002,5);
+SE003 = playSe( spep_4+44, SE_09);
+stopSe(spep_4+66,SE003,5);
+SE004 = playSe( spep_4+56, SE_09);
 
 bunnshin = entryEffect(  spep_4,   SP_02,   0,     -1,  0,  0,  0);--導入
 setEffScaleKey( spep_4, bunnshin, 1.0, 1.0);

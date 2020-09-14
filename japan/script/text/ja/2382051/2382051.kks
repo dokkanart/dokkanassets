@@ -1,0 +1,378 @@
+*start|スタート
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "045"]
+
+
+*001
+//-------------------------------------------------------------------------------
+//  悟空とブウの戦闘風景
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="S0001" bg = "bg_000_105"]
+
+[wait time = 0.3]
+
+[se storage = "3000"]
+[lwfobject id = "kaki1" storage="kakimoji:ef_021" x=-180 y=0 scale = 1.8]
+[quake target = "kaki1" power = 15 time = 0.2]
+
+[character x=-200 y=60 storage = "99999/04_syougeki" scale = 1.0 action = "fadein" time = 0.1]
+[quake target =".chara" power = 7 time = 0.2]
+
+[wait time = 0.2]
+
+[fadeout target = ".chara" time = 0.3]
+[fadeout target = "kaki1" time = 0.3]
+
+[se storage = "3001"]
+[lwfobject id = "kaki2" storage="kakimoji:ef_017" x=210 y=140 scale = 1.5]
+[quake target = "kaki2" power = 15 time = 0.2]
+
+[character x=200 y=90 storage = "99999/04_syougeki" scale = 0.8 action = "fadein" time = 0.1]
+[quake target =".chara" power = 7 time = 0.2]
+
+[wait time = 0.2]
+
+[fadeout target = ".chara" time = 0.3]
+[fadeout target = "kaki2" time = 0.3]
+
+[wait time = 0.2]
+
+
+[se storage = "3002"]
+[lwfobject id = "kaki3" storage="kakimoji:ef_020" x=170 y=-100 angle = 30 scale = 1.2]
+[quake target = "kaki3" power = 15 time = 0.2]
+
+[character x=180 y=-20 storage = "99999/04_syougeki" scale = 0.5 action = "fadein" time = 0.1]
+[quake target =".chara" power = 7 time = 0.2]
+
+[wait time = 0.2]
+[fadeout target = "kaki3" time = 0.3]
+[fadeout target = ".chara" time = 0.3]
+
+[wait time = 0.3]
+
+
+
+[balloon shape="008_02" x = 0 y = 0 scale = 50 action = "fadein" time = 0.1]
+
+[lwfobject id = "ga" x = -20 y = 320 storage = "kakimoji:ef_006" scale = 2.0 angle = -20 action = "fadein" time = 0.1]
+[quake target ="ga" power = 15 time = 0.4]
+
+[se storage = "3008"]
+[character id = "dageki" x=-0 y=60 storage = "99999/04_syougeki" scale = 2.0 action = "fade:70" time = 0.1]
+[quake target ="dageki" power = 7 time = 0.2]
+
+[character id = "goku" x = 70 y = 0 storage = "00227/atc_kick_e_01" scale = 1.0 angle = -40 action = "fadein" time = 0.1]
+[quake target ="goku" power = 12 time = 0.4]
+
+[character id = "buu" x = -90 y = -60 storage = "00232/atc_kick_p_03" scale = 0.65 angle = -20 action = "fadein" time = 0.1]
+[quake target ="buu" power = 12 time = 0.4]
+
+[wait time = 0.2]
+
+[clear target = ".bln"]
+
+[wait time = 0.4]
+
+//空のフキダシ
+[balloon x = 0 y = 0 shape="002_01" scale = 0]
+[p]
+
+
+
+*002
+//-------------------------------------------------------------------------------
+//  ベジータ（天使）
+//-------------------------------------------------------------------------------
+//[stopbgm fadeout = 1.0]
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_023"]
+
+//[character x=215 y=-185 storage = "00282/card_17" scale = 0.9 action = "fadein" time = 0.1]
+[character x = 200 y = 175 storage = "99999/ring" scale = 0.8 action = "fadein" time = 0.1]
+[character x=210 y=-115 storage = "00282/idl_side_p_01" scale = 0.9 action = "fadein" time = 0.1]
+[flip target =".chara" h=1]
+
+
+
+[balloon x = -105 y = 110 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+カカロット…[r]
+すごいヤツだよ[r]
+おまえは…
+[p]
+
+
+[balloon x=-120 y=-90 shape="002_03" scale = 1.05 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 22]
+//[quake target =".bln" power = 3 time = 0.2]
+…あの魔人ブウは[r]
+オレにはとてもかなう相手じゃ[r]
+なかった…あいつと闘えるのは[r]
+おまえだけだ…
+[p]
+
+
+
+
+
+
+
+
+*003
+//-------------------------------------------------------------------------------
+//  ベジータの声
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0004R" bg = "bg_000_105"]
+
+[character id = "buu" x=-170 y=-60 storage = "00232/dam_roll_p_01" scale = 0.5 angle = 0 action = "fadein" time = 0.1]
+[quake target ="buu" power = 8 time = 0.4]
+
+[character id = "goku" x = 100 y = -110 storage = "00227/atc_punch_e_04" scale = 1.0 angle = 10 action = "fadein" time = 0.1]
+[quake target ="goku" power = 9 time = 0.4]
+
+
+
+[wait time = 0.7]
+
+
+
+
+[balloon x = -155 y = 110 shape="002_03" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+…なんとなく[r]
+わかった気がする……
+[p]
+
+
+[balloon x=130 y=-150 shape="002_01" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+…なぜ[r]
+天才であるはずのオレが[r]
+おまえにかなわないのか…
+[p]
+
+
+
+*004
+//-------------------------------------------------------------------------------
+//  ベジータの声
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0003R" bg = "bg_000_024"]
+
+[character x = 70+170 y = -150 storage = "90003/bluma_majin" scale = 0.6 action = "fadein" time = 0.1]
+
+[character x= -70+170 y= -160 storage = "00200/card_11" scale = 0.5 action = "fadein" time = 0.1]
+
+
+
+[balloon x = -140 y = 60 shape="002_03" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+守りたいものがあるからだと[r]
+思っていた…守りたいという[r]
+強い心が得体の知れない力を[r]
+生み出しているのだと…
+[p]
+
+[balloon x=-140 y=-125 shape="002_02" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+　たしかに[r]
+　それもあるかもしれないが[r]
+　それは[r]
+　今のオレも同じことだ…
+[p]
+
+
+*005
+//-------------------------------------------------------------------------------
+//  ベジータの声
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0004R" bg = "bg_000_024"]
+
+[character x= 220 y= -320 storage = "00061/card_02" scale = 2.0 action = "fadein" time = 0.1]
+
+
+[balloon x = -100 y = 0 shape="002_03" scale = 1.1 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 20]
+//[quake target =".bln" power = 3 time = 0.2]
+　…オレは[r]
+　オレの思いどおりにするために…[r]
+　楽しみのために…敵を殺すために…[r]
+　そしてプライドのために[r]
+　闘ってきた…
+[p]
+
+
+[se storage = "04"]
+[coma shape="N0004L" bg = "bg_000_024"]
+
+
+[character x= -200 y= -450 storage = "00003/card_25" scale = 1.5 action = "fadein" time = 0.1]
+
+
+[balloon x=120 y=10 shape="002_02" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+だが…あいつはちがう…[r]
+勝つために闘うんじゃない[r]
+絶対負けないために限界を[r]
+極め続け闘うんだ…！
+[p]
+
+
+*006
+//-------------------------------------------------------------------------------
+//  ベジータの声
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_023"]
+
+//[character x=215 y=-185 storage = "00282/card_17" scale = 0.9 action = "fadein" time = 0.1]
+[character x = 200 y = 175 storage = "99999/ring" scale = 0.8 action = "fadein" time = 0.1]
+[character x=210 y=-115 storage = "00282/idl_side_p_01" scale = 0.9 action = "fadein" time = 0.1]
+[flip target =".chara" h=1]
+
+
+
+[balloon x = -110 y = 90 shape="002_03" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+…あいつは[r]
+ついにこのオレを[r]
+殺しはしなかった
+[p]
+
+
+
+[balloon x=-120 y=-90 shape="002_01" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+…まるで今のオレが[r]
+ほんの少しだけ人の心を[r]
+持つようになるのが[r]
+わかっていたかのように…
+[p]
+
+
+*007
+//-------------------------------------------------------------------------------
+//  ベジータの声
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0004R" bg = "bg_000_105"]
+
+
+[character id = "goku" x = 200 y = -80 storage = "00227/atc_sp01_e_02" scale = 0.7 angle = 10 action = "fadein" time = 0.1]
+[quake target ="goku" power = 3 time = 0.4]
+
+
+[character id = "buu" x=-250 y=-130 storage = "00232/atc_energyball_p_03" scale = 1.5 angle = 0 action = "fadein" time = 0.1]
+[quake target ="buu" power = 4 time = 0.4]
+
+
+
+[wait time = 0.7]
+
+
+[balloon x = -130 y = 85 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+…アタマにくるぜ…！[r]
+闘いが大好きで[r]
+やさしいサイヤ人[r]
+なんてよ…！！
+[p]
+
+
+[balloon x=-70 y=-100 shape="002_02" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 54]
+//[quake target =".bln" power = 3 time = 0.2]
+………
+[p]
+
+
+*008
+//-------------------------------------------------------------------------------
+//  ベジータ（天使）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+//[coma shape="N0001R" bg = "bg_000_105"]
+[coma shape="N0001R" bg = "bg_000_023"]
+
+//[character x= 150 y= -190 storage = "00282/card_18" scale = 1.0 action = "fadein" time = 0.1]
+[character x = 200 y = 175 storage = "99999/ring" scale = 0.8 action = "fadein" time = 0.1]
+[character x=210 y=-115 storage = "00282/idl_side_p_01" scale = 0.9 action = "fadein" time = 0.1]
+[flip target =".chara" h=1]
+
+[balloon x = -150 y = 80 shape="002_01" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+//[quake target =".bln" power = 3 time = 0.2]
+がんばれ[r]
+カカロット…
+[p]
+
+
+[balloon x=-150 y=-110 shape="002_02" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+[quake target =".bln" power = 3 time = 0.2]
+おまえが[r]
+ナンバー１だ！！
+[p]
+
+
+*009
+//-------------------------------------------------------------------------------
+//  ナレーション
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002L" bg = "bg_000_024"]
+
+
+[character id = "BG" x = 0 y = 0 storage = "99999/flare" scale = 20 action = "fadein" time = 0.1 mask="inside"]
+
+
+[balloon x=0 y=-30 shape="003_01" scale = 1.6 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 14]
+//[quake target =".bln" power = 3 time = 0.2]
+敵として[r]
+ライバルとして[r]
+そして仲間として……[r]
+共に戦場を駆けてきた[r]
+悟空へ[r]
+エールを送るベジータ[r]
+　[r]
+全宇宙の運命を賭けて[r]
+悟空と魔人ブウの[r]
+最終決戦はさらに続く…！
+[p]
+
+
+
+//-------------------------------------------------------------------------------
+[stopbgm]

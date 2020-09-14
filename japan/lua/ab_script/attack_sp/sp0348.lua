@@ -105,12 +105,38 @@ setEffAlphaKey( 55, tame, 255);
 ------------------------------------------------------
 -- カードカットイン(90F)
 ------------------------------------------------------
-playSe( 60, SE_05);
+--[[playSe( 60, SE_05);
 speff = entryEffect(  60,   1507,   0,  -1,  0,  0,  0);   -- カード
 setEffReplaceTexture( speff, 1, 1);
 setEffReplaceTexture( speff, 2, 0);                         -- カード差し替え
-setEffReplaceTexture( speff, 5, 4);                                  -- 技名テクスチャ差し替え
+setEffReplaceTexture( speff, 5, 4);                                  -- 技名テクスチャ差し替え]]
 
+if (_SPECIAL_SKILL_LEVEL_ == 0) then
+print ("_SPECIAL_SKILL_LEVEL_ == 0");
+playSe( 60, SE_05);
+speff = entryEffect( 60, 1507, 0, -1, 0, 0, 0); -- カード
+setEffReplaceTexture( speff, 1, 1);
+setEffReplaceTexture( speff, 2, 0); -- カード差し替え
+setEffReplaceTexture( speff, 5, 4); -- 技名テクスチャ差し替え
+
+
+elseif(_SPECIAL_SKILL_LEVEL_ == 1) then
+print ("_SPECIAL_SKILL_LEVEL_ == 1");
+playSe( 60, SE_05);
+speff = entryEffect( 60, 1120, 0, -1, 0, 0, 0); -- カード
+setEffReplaceTexture( speff, 1, 1);
+setEffReplaceTexture( speff, 2, 0); -- カード差し替え
+setEffReplaceTexture( speff, 5, 4); -- 技名テクスチャ差し替え
+
+
+elseif(_SPECIAL_SKILL_LEVEL_ == 2) then
+print ("_SPECIAL_SKILL_LEVEL_ == 2");
+playSe( 60, SE_05);
+speff = entryEffect( 60, 1121, 0, -1, 0, 0, 0); -- カード
+setEffReplaceTexture( speff, 1, 1);
+setEffReplaceTexture( speff, 2, 0); -- カード差し替え
+setEffReplaceTexture( speff, 5, 4); -- 技名テクスチャ差し替え
+end
 
 spep_1=90 +60;
 entryFade( spep_1-5, 3, 5, 4, fcolor_r, fcolor_g, fcolor_b, 255);     -- white fade
@@ -135,7 +161,7 @@ setEffScaleKey( spep_1, shuchusen1, 1.5, 1.5);
 setEffAlphaKey( spep_1, shuchusen1, 255);
 
 playSe( spep_1+ 0, 1003);
-playSe( spep_1+ 40, 1053);--1019
+SE000x = playSe( spep_1+ 40, 1053);--1019
 
 -- 書き文字エントリー
 --[[
@@ -202,11 +228,12 @@ playSe( spep_1+ 120, SE_10);
 
 if(_IS_DODGE_ == 1) then
 
-SP_dodge = 215; --エンドフェイズのフレーム数を置き換える
+SP_dodge = 215; --エンドフェイズのフレーム数を置き換える(spep_1+65)
 
 entryFadeBg( SP_dodge, 0, 225, 0, 10, 10, 10, 180);          -- ベース暗め　背景
 
 playSe( SP_dodge-12, 1042);
+stopSe( SP_dodge-12, SE000x, 0 );
 
 speff = entryEffectUnpausable(  SP_dodge-12,   1504,   0x100,     -1,  0,  0,  -350);   -- eff_005 (カットイン)
 setEffReplaceTexture( speff, 3, 6);                           -- カットイン差し替え
@@ -722,12 +749,38 @@ setEffAlphaKey( 55, tame, 255);
 ------------------------------------------------------
 -- カードカットイン(90F)
 ------------------------------------------------------
-playSe( 60, SE_05);
+--[[playSe( 60, SE_05);
 speff = entryEffect(  60,   1507,   0,  -1,  0,  0,  0);   -- カード
 setEffReplaceTexture( speff, 1, 1);
 setEffReplaceTexture( speff, 2, 0);                         -- カード差し替え
-setEffReplaceTexture( speff, 5, 4);                                  -- 技名テクスチャ差し替え
+setEffReplaceTexture( speff, 5, 4);                                  -- 技名テクスチャ差し替え]]
 
+if (_SPECIAL_SKILL_LEVEL_ == 0) then
+print ("_SPECIAL_SKILL_LEVEL_ == 0");
+playSe( 60, SE_05);
+speff = entryEffect( 60, 1507, 0, -1, 0, 0, 0); -- カード
+setEffReplaceTexture( speff, 1, 1);
+setEffReplaceTexture( speff, 2, 0); -- カード差し替え
+setEffReplaceTexture( speff, 5, 4); -- 技名テクスチャ差し替え
+
+
+elseif(_SPECIAL_SKILL_LEVEL_ == 1) then
+print ("_SPECIAL_SKILL_LEVEL_ == 1");
+playSe( 60, SE_05);
+speff = entryEffect( 60, 1120, 0, -1, 0, 0, 0); -- カード
+setEffReplaceTexture( speff, 1, 1);
+setEffReplaceTexture( speff, 2, 0); -- カード差し替え
+setEffReplaceTexture( speff, 5, 4); -- 技名テクスチャ差し替え
+
+
+elseif(_SPECIAL_SKILL_LEVEL_ == 2) then
+print ("_SPECIAL_SKILL_LEVEL_ == 2");
+playSe( 60, SE_05);
+speff = entryEffect( 60, 1121, 0, -1, 0, 0, 0); -- カード
+setEffReplaceTexture( speff, 1, 1);
+setEffReplaceTexture( speff, 2, 0); -- カード差し替え
+setEffReplaceTexture( speff, 5, 4); -- 技名テクスチャ差し替え
+end
 
 spep_1=90 +60;
 entryFade( spep_1-5, 3, 5, 4, fcolor_r, fcolor_g, fcolor_b, 255);     -- white fade
@@ -752,7 +805,7 @@ setEffScaleKey( spep_1, shuchusen1, 1.5, 1.5);
 setEffAlphaKey( spep_1, shuchusen1, 255);
 
 playSe( spep_1+ 0, 1003);
-playSe( spep_1+ 40, 1053);--1019
+SE000x = playSe( spep_1+ 40, 1053);--1019
 
 -- 書き文字エントリー
 --[[
@@ -824,6 +877,7 @@ SP_dodge = 215; --エンドフェイズのフレーム数を置き換える
 entryFadeBg( SP_dodge, 0, 225, 0, 10, 10, 10, 180);          -- ベース暗め　背景
 
 playSe( SP_dodge-12, 1042);
+stopSe( SP_dodge-12, SE000x, 0 );
 
 speff = entryEffectUnpausable(  SP_dodge-12,   1504,   0x100,     -1,  0,  0,  -350);   -- eff_005 (カットイン)
 setEffReplaceTexture( speff, 3, 6);                           -- カットイン差し替え

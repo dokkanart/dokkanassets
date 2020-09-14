@@ -186,9 +186,18 @@ setEffAlphaKey( spep_0 + 66, ctgogo, 255 );
 setEffAlphaKey( spep_0 + 136, ctgogo, 255 );
 
 -- ** 音 ** --
+--[[
 playSe( spep_0 + 18, SE_03 );  --気溜め
 playSe( spep_0 + 38, SE_03 );  --気溜め
 playSe( spep_0 + 58, SE_03 );  --気溜め
+]]
+--4.11
+SE001 = playSe( spep_0 + 18, SE_03 );  --気溜め
+stopSe(spep_0+38+8,SE001,5);
+SE002 = playSe( spep_0 + 38, SE_03 );  --気溜め
+stopSe(spep_0+58+8,SE002,5);
+SE003 = playSe( spep_0 + 58, SE_03 );  --気溜め
+
 playSe( spep_0 + 68, SE_04 );  --ゴゴゴ
 
 -- ** 黒背景 ** --
@@ -827,9 +836,17 @@ setEffAlphaKey( spep_0 + 66, ctgogo, 255 );
 setEffAlphaKey( spep_0 + 136, ctgogo, 255 );
 
 -- ** 音 ** --
+--[[
 playSe( spep_0 + 18, SE_03 );  --気溜め
 playSe( spep_0 + 38, SE_03 );  --気溜め
 playSe( spep_0 + 58, SE_03 );  --気溜め
+]]
+--4.11
+SE001 = playSe( spep_0 + 18, SE_03 );  --気溜め
+stopSe(spep_0+38+8,SE001,5);
+SE002 = playSe( spep_0 + 38, SE_03 );  --気溜め
+stopSe(spep_0+58+8,SE002,5);
+SE003 = playSe( spep_0 + 58, SE_03 );  --気溜め
 playSe( spep_0 + 68, SE_04 );  --ゴゴゴ
 
 -- ** 黒背景 ** --
