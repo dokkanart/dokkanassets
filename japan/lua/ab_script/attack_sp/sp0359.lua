@@ -101,7 +101,7 @@ setEffScaleKey( 30, aura, 1.5, 1.5);
 setShakeChara( 70, 0, 49, 5);
 
 -- 書き文字エントリー
-ct = entryEffectLife( 90, 10008, 39, 0x100, -1, 0, -190, 300);    -- ゴゴゴ・・・
+ct = entryEffectLife( 90, 10008, 39, 0x100, -1, 0, -190 -40, 300);    -- ゴゴゴ・・・
 setEffShake(90, ct, 40, 8);
 setEffScaleKey(90, ct, 1.4, 1.4);
 
@@ -119,7 +119,7 @@ setEffReplaceTexture( speff, 2, 0);                         -- カード差し�
 setEffReplaceTexture( speff, 5, 4);                                  -- 技名テクスチャ差し替え
 
 
-entryFade( 255, 3, 2, 4, fcolor_r, fcolor_g, fcolor_b, 255);     -- white fade
+entryFade( 255, 3, 2 +4, 4, fcolor_r, fcolor_g, fcolor_b, 255);     -- white fade
 
 -- ** エフェクト等 ** --
 --entryFlash( (170+10), 1, fcolor_r, fcolor_g, fcolor_b, 200);
@@ -425,7 +425,7 @@ setEffReplaceTexture( speff, 2, 0);                         -- カード差し�
 setEffReplaceTexture( speff, 5, 4);                                  -- 技名テクスチャ差し替え
 
 
-entryFade( 255, 3, 2, 4, fcolor_r, fcolor_g, fcolor_b, 255);     -- white fade
+entryFade( 255, 3, 2 +4, 4, fcolor_r, fcolor_g, fcolor_b, 255);     -- white fade
 
 -- ** エフェクト等 ** --
 --entryFlash( (170+10), 1, fcolor_r, fcolor_g, fcolor_b, 200);
