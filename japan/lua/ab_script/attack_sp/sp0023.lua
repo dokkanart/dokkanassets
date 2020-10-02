@@ -137,7 +137,7 @@ setMoveKey(  270,    0,   -100,  0,   0);
 
 kamehame_beam = entryEffectLife( 260, SP_02, 109, 0x40,  0,  300,  0,  0);   -- 伸びるかめはめ波
 
-playSe( 260, SE_07);
+SE01 = playSe( 260, SE_07);
 
 spname = entryEffect( 260, 1508,  0,  -1,  0,  0,  0);               -- かめはめ波文字
 setEffReplaceTexture(spname, 7, 4);                                  -- 技名テクスチャ差し替え
@@ -181,7 +181,7 @@ setEffScaleKey(268, ct, 0.0, 0.0);
 setEffScaleKey(272, ct, 1.3, 1.3);
 setEffScaleKey(292, ct, 1.3, 1.3);
 setEffScaleKey(300, ct, 6.0, 6.0);
-playSe( 300, SE_07);
+SE00 = playSe( 300, SE_07);
 
 
 
@@ -200,8 +200,6 @@ setScaleKey( 370,    1,  0.7, 0.7);
 setMoveKey(  400,    1,   120,  0,   0);
 setScaleKey(  400,   1,   1.6,  1.6);
 
-playSe( 390, SE_06);
-
 kamehame_beam2 = entryEffect( 370, SP_03,   0, -1,  0,  0,  0);   -- 迫るかめはめ波
 setEffScaleKey(370, kamehame_beam2, 1, 1);
 setEffScaleKey(452, kamehame_beam2, 1, 1);
@@ -212,7 +210,6 @@ setDamage( 452, 1, 0);  -- ダメージ振動等
 --setEffReplaceTexture( speff, 6, 3);                       -- カットイン差し替え
 --playSe( 370, SE_08);
 
-playSe( 455, SE_09);
 -- 敵吹っ飛ぶモーション
 changeAnime( 455, 1, 108);
 setMoveKey(  455, 1,  120,    0,  0);
@@ -256,6 +253,8 @@ if (_IS_DODGE_ == 1) then
 SP_dodge = 395; --エンドフェイズのフレーム数を置き換える
 
 playSe( SP_dodge-12, 1042);
+stopSe( SP_dodge-12, SE00, 0 );
+stopSe( SP_dodge-12, SE01, 0 );
 
 speff = entryEffectUnpausable(  SP_dodge-12,   1504,   0x100,     -1,  0,  0,  -350);   -- eff_005 (カットイン)
 setEffReplaceTexture( speff, 3, 6);                           -- カットイン差し替え
@@ -277,6 +276,9 @@ else end
 ------------------------------------------------------
 -- 爆発 (110F)
 ------------------------------------------------------
+playSe( 390, SE_06);
+playSe( 455, SE_09);
+
 setDisp( 469, 1, 1);
 setMoveKey(  469,    1,  100,  0,   0);
 setScaleKey( 469,    1,  1.0, 1.0);
@@ -425,7 +427,7 @@ setMoveKey(  270,    0,   -100,  0,   0);
 
 kamehame_beam = entryEffectLife( 260, SP_02, 109, 0x40,  0,  300,  0,  0);   -- 伸びるかめはめ波
 
-playSe( 260, SE_07);
+SE01 = playSe( 260, SE_07);
 
 spname = entryEffect( 260, 1508,  0,  -1,  0,  0,  0);               -- かめはめ波文字
 setEffReplaceTexture(spname, 7, 4);                                  -- 技名テクスチャ差し替え
@@ -469,7 +471,7 @@ setEffScaleKey(268, ct, 0.0, 0.0);
 setEffScaleKey(272, ct, 1.3, 1.3);
 setEffScaleKey(292, ct, 1.3, 1.3);
 setEffScaleKey(300, ct, 6.0, 6.0);
-playSe( 300, SE_07);
+SE00 = playSe( 300, SE_07);
 
 
 
@@ -488,8 +490,6 @@ setScaleKey( 370,    1,  0.7, 0.7);
 setMoveKey(  400,    1,   120,  0,   0);
 setScaleKey(  400,   1,   1.6,  1.6);
 
-playSe( 390, SE_06);
-
 kamehame_beam2 = entryEffect( 370, SP_03,   0, -1,  0,  0,  0);   -- 迫るかめはめ波
 setEffScaleKey(370, kamehame_beam2, 1, 1);
 setEffScaleKey(452, kamehame_beam2, 1, 1);
@@ -500,7 +500,6 @@ setDamage( 452, 1, 0);  -- ダメージ振動等
 --setEffReplaceTexture( speff, 6, 3);                       -- カットイン差し替え
 --playSe( 370, SE_08);
 
-playSe( 455, SE_09);
 -- 敵吹っ飛ぶモーション
 changeAnime( 455, 1, 108);
 setMoveKey(  455, 1,  120,    0,  0);
@@ -544,6 +543,8 @@ if (_IS_DODGE_ == 1) then
 SP_dodge = 395; --エンドフェイズのフレーム数を置き換える
 
 playSe( SP_dodge-12, 1042);
+stopSe( SP_dodge-12, SE00, 0 );
+stopSe( SP_dodge-12, SE01, 0 );
 
 speff = entryEffectUnpausable(  SP_dodge-12,   1504,   0x100,     -1,  0,  0,  -350);   -- eff_005 (カットイン)
 setEffReplaceTexture( speff, 3, 6);                           -- カットイン差し替え
@@ -565,6 +566,9 @@ else end
 ------------------------------------------------------
 -- 爆発 (110F)
 ------------------------------------------------------
+playSe( 390, SE_06);
+playSe( 455, SE_09);
+
 setDisp( 469, 1, 1);
 setMoveKey(  469,    1,  100,  0,   0);
 setScaleKey( 469,    1,  1.0, 1.0);

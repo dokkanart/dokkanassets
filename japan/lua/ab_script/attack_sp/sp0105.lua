@@ -32,6 +32,7 @@ SP_03 = 102044;
 
 
 multi_frm = 2;
+setVisibleUI( 0, 0);
 
 changeAnime( 0, 0, 0);                       -- 立ち
 setDisp( 0, 1, 0);
@@ -58,7 +59,7 @@ setQuake(30,39,15);
 entryFade( 62, 5, 4, 8, fcolor_r, fcolor_g, fcolor_b,  100);     -- white fade
 
 -- ** エフェクト等 ** --
-aura = entryEffectLife(  30,   311, 39, 0x40,  0,  1,  0,  0); -- オーラ
+aura = entryEffectLife(  30,   311, 39, 0x40,  0,  1,  0,  0 -100); -- オーラ
 setEffScaleKey( 30, aura, 1.5, 1.5);
 setShakeChara( 30, 0, 19, 5);
 
@@ -75,7 +76,7 @@ playSe( 30, SE_02);
 ------------------------------------------------------
 -- かめはめ波溜め！(100F)
 ------------------------------------------------------
-setVisibleUI(69, 0);
+--setVisibleUI(69, 0);
 changeAnime( 70, 0, 30);                       -- 溜め!
 playSe( 73, SE_03);
 
@@ -106,6 +107,8 @@ setEffScaleKey(90, ct, 1.4, 1.4);
 ------------------------------------------------------
 -- カードカットイン(90F)
 ------------------------------------------------------
+entryFade( 170 -10, 6, 6, 0, fcolor_r, fcolor_g, fcolor_b, 255);     -- white fade
+
 setScaleKey( 169,   0, 1.5, 1.5);
 setScaleKey( 170,   0, 1.0, 1.0);
 
@@ -142,8 +145,8 @@ setMoveKey(  290,    0,   -30,  0,   20);
 kamehame_beam = entryEffectLife( 260, SP_02, 109, 0x40,  0,  300,  0,  0);   -- 伸びるかめはめ波
 playSe( 260, SE_07);
 
-spname = entryEffect( 260, 1508,  0,  -1,  0,  0,  0);               -- かめはめ波文字
-setEffReplaceTexture(spname, 7, 4);                                  -- 技名テクスチャ差し替え
+--spname = entryEffect( 260, 1508,  0,  -1,  0,  0,  0);               -- かめはめ波文字
+--setEffReplaceTexture(spname, 7, 4);                                  -- 技名テクスチャ差し替え
 
 -- 途中からカメハメハが伸びる
 --setMoveKey(  299,    0,   -100,  0,   0);
@@ -378,7 +381,7 @@ playSe(5, SE_01);
 setQuake(5,39,15);
 
 -- ** エフェクト等 ** --
-aura = entryEffectLife(5,   311, 39, 0x40+0x80,  0,  1,  0,  0); -- オーラ
+aura = entryEffectLife(5,   311, 39, 0x40+0x80,  0,  1,  0,  0 -100); -- オーラ
 setEffScaleKey(5, aura, 1.5, 1.5);
 setShakeChara(5, 0, 19, 5);
 
@@ -395,7 +398,7 @@ playSe(5, SE_02);
 ------------------------------------------------------
 -- かめはめ波溜め！(100F)
 ------------------------------------------------------
-setVisibleUI( tyo+69, 0);
+--setVisibleUI( tyo+69, 0);
 changeAnime(0, 0, 30);                       -- 溜め!
 playSe( tyo+73, SE_03);
 

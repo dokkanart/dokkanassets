@@ -1,0 +1,94 @@
+*start|スタート
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+[bgm storage = "002"]
+
+*001
+//-------------------------------------------------------------------------------
+//  フリーザ（第一形態）
+//-------------------------------------------------------------------------------
+//[se storage = "04"]
+[coma shape="N0001R" bg = "bg_000_008"]
+
+[character x = 200 y = -130 storage = "00005/idl_side_e_01" scale = 0.9 action = "fadein" time = 0.1]
+
+[balloon x = -120 y = 100 shape="002_01" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+さて…と[r]
+まずは かるく肩ならし[r]
+といきますか…
+[p]
+
+
+[balloon x=-120 y=-100 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+ソルベさん[r]
+あなたの部下を[r]
+適当に見繕って[r]
+手配してください
+[p]
+
+
+*002
+//-------------------------------------------------------------------------------
+//  ソルベ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001L" bg = "bg_000_008"]
+
+[character x = -220 y = -130 storage = "00247/idl_side_p_01" scale = 1.4 action = "fadein" time = 0.1]
+
+[balloon x=110 y=70 shape="002_01" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+[quake target =".bln" power = 3 time = 0.2]
+は…はい！[r]
+かしこまりました
+[p]
+
+
+[balloon x=120 y=-110 shape="002_02" scale = 0.75 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 36]
+//[quake target =".bln" power = 3 time = 0.2]
+すぐに[r]
+準備します！
+[p]
+
+
+*003
+//-------------------------------------------------------------------------------
+//  フリーザ（第一形態）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002R" bg = "bg_000_008"]
+
+[character x = 200 y = -190 storage = "00005/card_05" scale = 0.9 action = "fadein" time = 0.1]
+
+[balloon x = -130 y = 50 shape="002_02" scale = 0.8 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 32]
+//[quake target =".bln" power = 3 time = 0.2]
+ひさしぶりの[r]
+戦闘ですからね…
+[p]
+
+
+[balloon x = -110 y = -200 shape="002_03" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+力のコントロールが[r]できずに[r]
+殺してしまったら[r]すみませんね[r]
+ホホホホ…
+[p]
+
+
+
+//-------------------------------------------------------------------------------
+[stopbgm]

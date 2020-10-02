@@ -1,0 +1,65 @@
+*start|スタート
+//-------------------------------------------------------------------------------
+//  BGM
+//-------------------------------------------------------------------------------
+//[bgm storage = "012"]
+
+*001
+//-------------------------------------------------------------------------------
+//  フリーザ（第一形態）
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0001R" bg = "bg_085_001"]
+
+[character x = 200 y = -130 storage = "00005/atc_sp01_e_03" scale = 0.9 action = "fadein" time = 0.1]
+
+[balloon x = -120 y = 90 shape="002_03" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+この星なら わたしも[r]
+宇宙船を壊す心配もなく[r]
+トレーニングができます
+[p]
+
+
+[balloon x=-120 y=-95 shape="002_02" scale = 0.9 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 28]
+//[quake target =".bln" power = 3 time = 0.2]
+さあ…[r]
+さっそく始めますよ[r]
+タゴマさん
+[p]
+
+
+*002
+//-------------------------------------------------------------------------------
+//  タゴマ
+//-------------------------------------------------------------------------------
+[se storage = "04"]
+[coma shape="N0002L" bg = "bg_085_001"]
+
+[character x=-150 y=-240 storage = "00248/atc_sp01_p_01" scale = 1.8 action = "fadein" time = 0.1]
+
+[balloon x=120 y=70 shape="002_01" scale = 0.7 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 40]
+[quake target =".bln" power = 3 time = 0.2]
+はい！
+[p]
+
+
+[balloon x = 125 y = -210 shape="002_03" scale = 1.0 action = "fadein" time = 0.1]
+[wait_anim target=".bln"]
+[font size = 24]
+//[quake target =".bln" power = 3 time = 0.2]
+フリーザさまの[r]
+トレーニングのお相手ができ[r]
+光栄です！！
+[p]
+
+
+
+//-------------------------------------------------------------------------------
+//[stopbgm]

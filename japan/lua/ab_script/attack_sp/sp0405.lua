@@ -405,11 +405,11 @@ entryFadeBg( spep_6, 0, 120, 0, 10, 10, 10, 200);          -- ベース暗め　
 setDamage( spep_6+33, 1, 0);  -- ダメージ振動等
 
 -- ダメージ表示
-dealDamage( spep_6+32);
+dealDamage( spep_6+32 -10);
 
-entryFade( spep_6+105, 9,  10, 1, 8, 8, 8, 255);             -- black fade
+--entryFade( spep_6+105, 9,  10, 1, 8, 8, 8, 255);             -- black fade
 
-endPhase( spep_6+115);
+endPhase( spep_6+115 -10);
 
 
 else
@@ -753,10 +753,10 @@ entryFadeBg( spep_6, 0, 120, 0, 10, 10, 10, 200);          -- ベース暗め　
 setDamage( spep_6+33, 1, 0);  -- ダメージ振動等
 
 -- ダメージ表示
-dealDamage( spep_6+32);
+dealDamage( spep_6+32 -10);
 
-entryFade( spep_6+105, 9,  10, 1, 8, 8, 8, 255);             -- black fade
+--entryFade( spep_6+105, 9,  10, 1, 8, 8, 8, 255);             -- black fade
 
-endPhase( spep_6+115);
+endPhase( spep_6+115 -10);
 
 end
